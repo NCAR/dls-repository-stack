@@ -1,0 +1,50 @@
+.pager {
+	white-space:nowrap;
+}
+
+.pager-item {
+	display: inline;
+	padding:0px 4px 0px 4px;
+	list-style-type:none;
+}
+
+a.pager-item:hover {
+	background-color:#E3E4F1;
+}
+
+.pager-item.current-page {
+	font-weight: bold;
+	background-color:#333366;
+	color:white;
+}
+
+.search-input {
+	border:none;
+	background-color:#ffffcc;
+}
+
+.my-input-wrapper {
+	border:thin black solid;
+	padding:2px 15px 2px 2px;
+}
+
+.clear-icon {
+	position:relative;
+	top:4px;
+	left:14px;
+}
+
+.pager-arrow {
+	width:16px;
+	height:13px;
+	border:none;
+	padding: 0px 5px 0px 5px;
+}
+
+/* checkboxes in search */
+.checkbox-control {
+	position:relative;
+	top:-1px;
+	margin-left:5px;
+	font-size:.8em;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: creator-mast-fields-en-us.xml,v 1.5 2009/07/29 22:19:29 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/non-vocab-fields.xsd">
+  <field name="Creator" metaFormat="mast" metaVersion="1.0" language="en-us" path="/record/contributions/creators/creator">
+		<definition attribution="Dublin Core Metadata Element Set, Version 1.1: Reference Description at http://dublincore.org/documents/dces/">An entity primarily responsible for making the resource.</definition>
+		 
+		 
+		 <bestPractices>
+		<dos>
+			<practice status="current" originDate="2008-10-20">Examples of creators include authors of written documents, artists, photographers, collectors of natural specimens or artifacts, organizations that generate archival collections, etc. The function of a creator may be included in parentheses after the name. For example: 'Adams, Ansel (photographer)'.</practice> <!--source:CDP-->
+		<practice status="current" originDate="2008-10-20">Enter multiple creators either in the order in which they appear in the resource, or in order of their importance. Use separate Creator elements to enter multiple creators or clearly separate each entry by a semicolon and a space within an element. </practice> <!--source:CDP-->
+		<practice status="current" originDate="2008-10-20">Secondary authors, editors, etc., may be entered using the Contributor element.</practice> <!--source:CDP-->
+			<practice status="current" originDate="2008-10-20">Personal names should be listed surname or family name first, followed by forename or given name. When in doubt, give the name as it appears, and do not invert.</practice> <!--source:GEM-->
+			<practice status="current" originDate="2008-10-20">In the case of organizations where there is clearly a hierarchy present, list the parts of the hierarchy from largest to smallest, separated by full stops (periods). If it is not clear whether there is a hierarchy present, or which is the larger or smaller portion of the body, give the name as it appears in the entity being described. In the case of a long group or organization name that includes subordinate units, sometimes the name can be shortened by eliminating some of the hierarchical parts not considered necessary for uniquely identifying the body in question. For example, to enter the CIA as a contributor, use the form of the name as given in Library of Congress Authorities File (United States. Central Intelligence Agency) instead of the full hierarchical name (United States. National Security Council. Central Intelligence Agency).</practice> <!--source:GEM-->
+			
+			<practice status="current" originDate="2008-10-20">Entities responsible for digitizing an existing resource should be entered in the Contributor element.</practice><!--CDP-->
+			
+		</dos>
+</bestPractices>
+		
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

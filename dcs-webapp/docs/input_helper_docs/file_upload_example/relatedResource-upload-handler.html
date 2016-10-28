@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Handler Proxy</title>
+		<script src="../../../lib/javascript/prototype.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var parms = window.location.search.toQueryParams()
+			function log (s) {
+				if (window.console)
+					console.log (s)
+			}
+
+			$H(parms).each (function (pair) {
+					log (' - ' + pair.key + ': ' + pair.value);
+			});
+			
+			// make the imgUrl at which this image is available from the server
+			// NOTE: the imgUrl below points to the same place at which _I_ am selecting images so 
+			// i can see images for testing. In production, imgURL would point to the image as
+			// it has been stored on the image server
+			
+			var baseImageUrl =  "http://www.dls.ucar.edu/people/ostwald/tmp_images"
+			var imgUrl = baseImageUrl + "/" + parms.image
+			
+			// We're going to send a request back to the referrer
+			var referrer = document.referrer;
+			var params = {
+				approved : '1',
+				imgURL : imgUrl,
+				helperID : parms.helperID
+			}
+			
+			var responseUrl = referrer.split('?')[0] + '?' + $H(params).toQueryString();
+			log ('responseUrl ' + responseUrl);
+		
+		</script>
+	</head>
+	<body> 
+	
+	<h1>Image Upload Handler</h1>
+	
+	<input type="button" id="respond-button" value="respond" />
+	
+	<div style="margin:20px;padding:5px;border:thin dashed black;">		
+		<p>This page simulates an external <i>Image Server</i>, which would handle the request
+		from the <i>Uploader</i> and then call the uploader back with imageURL and
+		approval token.</p>
+		
+		<p>Usually this step takes place behind the scenes and the User simply ends
+		back at the editor but in this example we are just simulating a server so
+		we stop the process here to look at the params received by this page:</p>
+		
+		<div id="params-display">
+		<div><b>request params</b></div>
+		</div><p>
+		
+		<p>Clicking on <i>respond</i> will send a request back to the <i>Uploader</i> to
+		simulate the real imgage server, which would write the image file to disk
+		and return the real url to it.</p>
+	</div>
+	
+	</body>
+	
+	<script type="text/javascript">
+	$H(parms).each (function (pair) {
+		$('params-display').insert (
+			new Element('div').update (' - ' + pair.key + ': ' + pair.value));
+	});
+	$("respond-button").observe ('click', function (event) {
+			window.location = responseUrl;
+	});
+	</script>
+</html>

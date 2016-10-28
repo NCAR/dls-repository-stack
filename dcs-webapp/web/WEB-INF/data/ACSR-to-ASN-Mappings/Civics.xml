@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="Civics">
+  <mapping>
+    <acsrInfo id="4e52ff54-6b8b-4cc0-aebb-a6c1461f16ef">
+      <title>Alaska Content Standards Government and Citizenship</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>AK</jurisdiction>
+      <fileName>Government Citizenship Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002D9">
+      <title>Alaska Content Standards Government and Citizenship</title>
+      <created>2006</created>
+      <topic>Civics</topic>
+      <author>Alaska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="604d4918-b1cf-4e34-a9e0-55ab29e3d972">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Civics Framework Revised 2000</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000170">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <created>2000</created>
+      <topic>Civics</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="969fa5d7-a1cc-48e3-91ac-b3e8d40ab8f2">
+      <title>Academic Standards: Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Social Studies Civics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000092">
+      <title>Academic Standards: Social Studies</title>
+      <created>2000</created>
+      <topic>Civics</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1a5c95b4-f29e-4fc3-b3d8-983065f4c3b4">
+      <title>Social Studies Strand 3 - Civics/Government</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Strand 3 - Civics&amp;Government</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000287">
+      <title>Social Studies Strand 3 - Civics/Government</title>
+      <created>2006</created>
+      <topic>Civics</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d2c86e0b-4107-458f-8c27-3e5c68053e48">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>CA</jurisdiction>
+      <fileName>Social Science Civics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001AB">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <created>1998</created>
+      <topic>Civics</topic>
+      <author>California</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="57303883-b72c-4dd6-bfb0-72487d0ce4b0">
+      <title>Colorado Model Content Standards for Civics</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Model Content Standards Civics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100013B">
+      <title>Colorado Model Content Standards for Civics</title>
+      <created>1998</created>
+      <topic>Civics</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b9fe879e-c360-415b-8959-93058f84b1e3">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>Social Studies Civics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000101">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <created>1998</created>
+      <topic>Civics</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="641a9db9-4fa6-4a30-8894-7d78144885f1">
+      <title>Civics Standards, updated January 2010</title>
+      <localAdoptionDate>2010</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Civics Standards updated 2010</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003ED">
+      <title>Civics Standards, updated January 2010</title>
+      <created>2010</created>
+      <topic>Civics</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="73555133-960f-4db1-88c8-c01b40c41981">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Sunshine State Standards Civics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000074">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <created>1999</created>
+      <topic>Civics</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a47aec17-ab29-43cd-95f3-0cf2fc573dd5">
+      <title>Social Studies Quality Core Curriculum K-12</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>Social Studies QCC Civics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001F3">
+      <title>Social Studies Quality Core Curriculum K-12</title>
+      <created>1999</created>
+      <topic>Civics</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="149b6507-5f3e-44ed-abe0-d7638929d7cf">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>HI</jurisdiction>
+      <fileName>Social Studies Civics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000040">
+      <title>Social Studies Content Standards</title>
+      <created>1999</created>
+      <topic>Civics</topic>
+      <author>Hawaii</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5da0f9af-dcf9-4563-85e5-53aa8d8bc4c0">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Achievement Standards Civics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000168">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <created>2001</created>
+      <topic>Civics</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f344d74e-0e1e-48c2-a7b2-546a293693ce">
+      <title>Illinois Learning Standards for Social Science</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Learning Standards Civics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100016B">
+      <title>Illinois Learning Standards for Social Science</title>
+      <created>1997</created>
+      <topic>Civics</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f160584a-f45a-43a9-9a0a-c93d92071738">
+      <title>Social Studies Proficiency Guide</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Civics Proficiency Guide</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000087">
+      <title>Social Studies Proficiency Guide</title>
+      <created>1996</created>
+      <topic>Civics</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dab1b0c2-a2ee-477c-a759-332d4858fe13">
+      <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Curricular Standards Civics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000198">
+      <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+      <created>1999</created>
+      <topic>Civics</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="82859923-e253-47d5-9e9e-2aea9347d108">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Social Studies Civics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100018A">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <created>1998</created>
+      <topic>Civics</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fbd069e7-8b9f-4e3d-bf71-f78aa004531d">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Civics Content Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000003">
+      <title>Social Studies Content Standards</title>
+      <created>1997</created>
+      <topic>Civics</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f11c7c21-7bf0-4cf5-b881-4a3b3ed3908c">
+      <title>Social Studies Grade-Level Expectations</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Social Studies Civics Grade-Level E</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100015B">
+      <title>Social Studies Grade-Level Expectations</title>
+      <created>2003</created>
+      <topic>Civics</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="34d3fe9a-9f1c-4978-a44a-eb852542fa07">
+      <title>Massachusetts History and Social Science Framework</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>History and Social Science Framewor</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000021">
+      <title>Massachusetts History and Social Science Framework</title>
+      <created>2003</created>
+      <topic>Civics</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8cf45dd7-4c84-451f-a452-712efc8045ef">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000136">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>Civics</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2ecd772f-2907-4e80-9258-1f43bec35e81">
+      <title>Learning Results for Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Learning Results for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001B7">
+      <title>Learning Results for Social Studies</title>
+      <created>1997</created>
+      <topic>Civics</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="392f2e2c-a7f0-4adc-a1d9-d1e8c91f045f">
+      <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Social Studies Standards Working Dr</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000070">
+      <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+      <created>1995</created>
+      <topic>Civics</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="acec0f6a-0921-41ca-80be-997571f1c114">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Graduation Standards for Social Stu</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000C4">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <created>1998</created>
+      <topic>Civics</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e7978d68-f7eb-4835-a564-7211e53a8d2d">
+      <title>Montana Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Montana Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100013A">
+      <title>Montana Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>Civics</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3aba4514-c5e4-4ad7-a2cd-74f7306649ac">
+      <title>Social Studies Standard Course of Study</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Social Studies Standard Course of S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000141">
+      <title>Social Studies Standard Course of Study</title>
+      <created>1996</created>
+      <topic>Civics</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="83a0eb3c-6b30-4cd8-88ec-93b1bd835038">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Social Studies Content Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000102">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <created>2000</created>
+      <topic>Civics</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5d632780-03c0-4231-ab93-872b86b6d25b">
+      <title>Nebraska Social Studies/History Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Social Studies History Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000123">
+      <title>Nebraska Social Studies/History Standards</title>
+      <created>1998</created>
+      <topic>Civics</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ec6c35db-9a55-4e34-b634-8be1242ce775">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Social Studies Curriculum Fram</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000EF">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <created>1995</created>
+      <topic>Civics</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c8e21f5b-b7a5-404b-b8fc-97abc0f259da">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000BF">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <created>1996</created>
+      <topic>Civics</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="70785f50-8ecd-4564-9f98-f8fe7d4ec906">
+      <title>New Mexico Standards for Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Standards for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000007">
+      <title>New Mexico Standards for Social Studies</title>
+      <created>2001</created>
+      <topic>Civics</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="940a1b29-82a7-4066-99e7-fe8b3dfa6c07">
+      <title>Nevada Social Studies Standards Civics K-12 Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>Social Studies Standards Civics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002C6">
+      <title>Nevada Social Studies Standards Civics K-12 Standards</title>
+      <created>2000</created>
+      <topic>Civics</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1056b814-de1e-468d-9899-e47846aeb205">
+      <title>Civics, Citizenship, and Government</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>Civics, Citizenship, and Government</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100003C">
+      <title>Civics, Citizenship, and Government</title>
+      <created>1996</created>
+      <topic>Civics</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="79e480e5-603c-4af6-ade8-b9a2dcefe5a6">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <localAdoptionDate>1994</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Social Studies: Ohio's Model Compet</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000098">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <created>1994</created>
+      <topic>Civics</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4b2c68e8-7cb4-4d9b-bf56-8c18be0a4223">
+      <title>Academic Content Standards Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Academic Content Standards Social S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000F1">
+      <title>Academic Content Standards Social Studies</title>
+      <created>2002</created>
+      <topic>Civics</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ffabf6ad-e766-46e9-a1bd-d876b256b2e1">
+      <title>Priority Academic Student Skills for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000041">
+      <title>Priority Academic Student Skills for Social Studies</title>
+      <created>2000</created>
+      <topic>Civics</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8254b1fd-a2ab-4baa-855b-199ddf026857">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001E4">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <created>2002</created>
+      <topic>Civics</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f8fe216c-402a-432c-8c83-bde0c544427c">
+      <title>Social Sciences 2001-2002</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Social Sciences 2001-2002</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000A2">
+      <title>Social Sciences 2001-2002</title>
+      <created>2001</created>
+      <topic>Civics</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c7829156-fff1-4655-be43-8d2949b533c7">
+      <title>Academic Standards for Civics and Government</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>PA</jurisdiction>
+      <fileName>Academic Standards Civics and Gover</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000F3">
+      <title>Academic Standards for Civics and Government</title>
+      <created>2003</created>
+      <topic>Civics</topic>
+      <author>Pennsylvania</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6268fdde-eda7-4a01-99ee-c9abf0757f10">
+      <title>Social Studies Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Social Studies Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100005E">
+      <title>Social Studies Standards</title>
+      <created>1997</created>
+      <topic>Civics</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="92f1dfb4-1bb9-488f-b10c-166fd2dd29a2">
+      <title>Social Studies Frameworks K-12</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Social Studies Frameworks K-12</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001D9">
+      <title>Social Studies Frameworks K-12</title>
+      <created>1996</created>
+      <topic>Civics</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="69a72ee2-3f6a-4610-bbb2-7f5fd2aa6788">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>Chapter 113. TEKS for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000115">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <created>1997</created>
+      <topic>Civics</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="16060c88-4ae0-4d27-9190-2be609004771">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100018B">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>1995</created>
+      <topic>Civics</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ac575b07-b7ea-4df6-9083-b292ee3239d8">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100008F">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>2001</created>
+      <topic>Civics</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9b7004b9-be54-4dc9-8ad8-20593e8b9321">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Vermont's Framework of Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001BA">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <created>2000</created>
+      <topic>Civics</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3066a1ab-c646-4374-9b5c-ed5b9cbf0687">
+      <title>Essential Academic Learning Requirements in Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Essential Academic Learning Require</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000023">
+      <title>Essential Academic Learning Requirements in Social Studies</title>
+      <created>1997</created>
+      <topic>Civics</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2b92e617-a01d-489e-9afa-f7f3d3c622ce">
+      <title>Civics Essential Academic Learning Requirements</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>EALRs Civics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002A1">
+      <title>Civics Essential Academic Learning Requirements</title>
+      <created>2003</created>
+      <topic>Civics</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="69901890-b189-469c-a9ca-6282dfd97b19">
+      <title>Wisconsin Model Academic Standards for Social Studies</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>WI</jurisdiction>
+      <fileName>Wisconsin Academic Standards Civics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000150">
+      <title>Wisconsin Model Academic Standards for Social Studies</title>
+      <created>1998</created>
+      <topic>Civics</topic>
+      <author>Wisconsin</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7fd64bf7-994a-4814-9cd9-e2f7a974cd10">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia's Social Studies Inst</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000037">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <created>2000</created>
+      <topic>Civics</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e7a8a0e8-11f5-4937-9cb0-e17d225c1a49">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia Social Studies Conten</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000034">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <created>2004</created>
+      <topic>Civics</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="29d134eb-9bf2-47be-9d00-118df3fb550a">
+      <title>Social Studies Content and Performance Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Civics</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Social Studies Content and Performa</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001D1">
+      <title>Social Studies Content and Performance Standards</title>
+      <created>1999</created>
+      <topic>Civics</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+</mappings>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: kind-idEntry-adn-groups-default-en-us.xml,v 1.1 2009/01/30 21:34:41 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Kind - record id</title>
+<groups:concept language="en-us" metaFormat="adn" metaVersion="0.6.50" text="Kind - record id" audience="default" path="/itemRecord/relations/relation/idEntry/@kind" deftn="the type of relationship between the resource being described and a related resource"/>
+</head>
+<body>
+<outline groups:vocab="DC:Conforms to" type="vocab" text="Conforms to" groups:deftn="a reference to an established standard to which the resource conforms (supports)" groups:attribution="Dublin Core Metadata Initiative"/>
+<outline groups:vocab="DC:Has format" type="vocab" text="Has format" groups:deftn="the described resource pre-existed the referenced resource, which is essentially the same intellectual content presented in another format" groups:attribution="Dublin Core Metadata Initiative"/>
+<outline groups:vocab="DC:Has part" type="vocab" text="Has part" groups:deftn="the described resource includes the referenced resource either physically or logically" groups:attribution="Dublin Core Metadata Initiative"/>
+<outline groups:vocab="DC:Has version" type="vocab" text="Has version" groups:deftn="the described resource has a version, edition, or adaptation, namely, the referenced resource" groups:attribution="Dublin Core Metadata Initiative"/>
+<outline groups:vocab="DC:Is format of" type="vocab" text="Is format of" groups:deftn="the described resource is the same intellectual content of the referenced resource, but presented in another format" groups:attribution="Dublin Core Metadata Initiative"/>
+<outline groups:vocab="DC:Is part of" type="vocab" text="Is part of" groups:deftn="the described resource is a physical or logical part of the referenced resource (needs to be more than just a hyperlink with more information)" groups:attribution="Dublin Core Metadata Initiative"/>
+<outline groups:vocab="DC:Is referenced by" type="vocab" text="Is referenced by" groups:deftn="the described resource is referenced, cited, or otherwise pointed to by the referenced resource (e.g. the resource being cataloged is linked to in the referenced resource)" groups:attribution="Dublin Core Metadata Initiative"/>
+<outline groups:vocab="DC:Is replaced by" type="vocab" text="Is replaced by" groups:deftn="the described resource is supplanted, displaced, or superseded by the referenced resource" groups:attribution="Dublin Core Metadata Initiative"/>
+<outline groups:vocab="DC:Is required by" type="vocab" text="Is required by" groups:deftn="the described resource is required by the referenced resource, either physically or logically" groups:attribution="Dublin Core Metadata Initiative"/>
+<outline groups:vocab="DC:Is version of" type="vocab" text="Is version of" groups:deftn="the described resource is a version, edition, or adaptation of the referenced resource. Changes in version imply substantive changes in content rather than differences in format." groups:attribution="Dublin Core Metadata Initiative"/>
+<outline groups:vocab="DC:References" type="vocab" text="References" groups:deftn="the described resource references, cites, or otherwise points to the referenced resource (e.g. the resource being cataloged links to the related resource). The described resource does not require the related resource." groups:attribution="Dublin Core Metadata Initiative"/>
+<outline groups:vocab="DC:Replaces" type="vocab" text="Replaces" groups:deftn="the described resource supplants, displaces, or supersedes the referenced resource" groups:attribution="Dublin Core Metadata Initiative"/>
+<outline groups:vocab="DC:Requires" type="vocab" text="Requires" groups:deftn="the described resource requires the referenced resource to support its function, delivery, or coherence of content" groups:attribution="Dublin Core Metadata Initiative"/>
+<outline groups:vocab="DLESE:Has thumbnail" type="vocab" text="Has thumbnail" groups:deftn="the described resource has a thumbnail image that illustrates it"/>
+<outline groups:vocab="DLESE:Is associated with" type="vocab" text="Is associated with" groups:deftn="the described resource is connected to the referenced resource; it may or may not point to the related resource and it does not require, conform to, have format of it, nor is it a basis for or part of the related resource (e.g. two different classroom activities use the same visualization but in different ways)"/>
+<outline groups:vocab="DLESE:Is based on" type="vocab" text="Is based on" groups:deftn="the described resource has a significant amount of its intellectual thought, creative ideas, questions or images based on a related resource"/>
+<outline groups:vocab="DLESE:Is basis for" type="vocab" text="Is basis for" groups:deftn="the described resource provides the foundation of intellectual thought, creative ideas, questions or images for a related resource"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

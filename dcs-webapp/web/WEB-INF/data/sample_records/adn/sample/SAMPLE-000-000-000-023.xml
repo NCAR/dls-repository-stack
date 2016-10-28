@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>Indian Peaks, Colorado Front Range, U.S.A. Virtual Field Trip</title>
+<description>This virtual field trip to the Indian Peaks region of the Colorado Front Range introduces students to altitudinal zonation of vegetation and climate, alpine glacial processes and landforms and geographic fieldwork techniques. It offers background information on the physical geography of the region and step-by-step instructions for navigating the field trip and the associated activities. This resource can be adapted to a wide range of grade levels and may be presented as a lesson for introductory physical geography. Activities involve students recording &quot;field&quot; observations in a journal, synthesizing field data to uncover relationships between elevation, temperature and vegetation form, and using online topographic maps and air photographs to identify alpine glacial landforms. At the conclusion of the field trip students will be able to describe how the vegetation relates to location (elevation) and climate, and describe how the following alpine glacial and periglacial landforms are created: aretes, U-shaped valley, cirque, tarn, paternoster lake, moraines, and rock glaciers.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Physical geography</subject>
+</subjects>
+</general>
+<lifecycle>
+<contributors>
+<contributor date="1997-06-25" role="Author">
+<person>
+<nameFirst>Michael</nameFirst>
+<nameMiddle>E.</nameMiddle>
+<nameLast>Ritter</nameLast>
+<instName>The University of Wisconsin - Stevens Point, The Virtual Geography Department Project</instName>
+<emailPrimary>mritter@uwsp.edu</emailPrimary>
+</person>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-023">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-11-16" created="2000-11-16"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://www.uwsp.edu/geo/projects/virtdept/ipvft/start.html</primaryURL>
+<mediums>
+<medium>text/html</medium>
+</mediums>
+<requirements>
+<requirement>
+<reqType>DLESE:General:No specific technical requirements</reqType>
+</requirement>
+</requirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:High school</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate lower division</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Learning materials:Virtual field trip</resourceType>
+</resourceTypes>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>This module is part of the Virtual Geography Department Project and has been prepared for the Virtual Field Trips and Studies Working Group of the Project. These materials may be used for study, research, and education, but please credit the author and source: Michael Ritter, The Virtual Geography Department Project, The University of Wisconsin - Stevens Point. All commercial rights reserved. Copyright 1996 by Michael E. Ritter.</description>
+</rights>
+<geospatialCoverages>
+<geospatialCoverage>
+<body>
+<planet>Earth</planet>
+</body>
+<geodeticDatumGlobalOrHorz>DLESE:Unknown</geodeticDatumGlobalOrHorz>
+<projection type="DLESE:Unknown"/>
+<coordinateSystem type="DLESE:Geographic latitude and longitude"/>
+<boundBox>
+<westCoord>-105.75</westCoord>
+<eastCoord>-105.59</eastCoord>
+<northCoord>40.13</northCoord>
+<southCoord>40.00</southCoord>
+<bbSrcName>Cataloger supplied</bbSrcName>
+<bbPlaces>
+<place>
+<name>Indian Peaks Wilderness, Colorado, United States</name>
+<source>Unknown</source>
+</place>
+</bbPlaces>
+</boundBox>
+<detGeos>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="40.13" longitude="-105.59"/>
+<longLat latitude="40.00" longitude="-105.59"/>
+<longLat latitude="40.00" longitude="-105.75"/>
+<longLat latitude="40.13" longitude="-105.75"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detPlaces>
+<place>
+<name>Indian Peaks Wilderness, Colorado, United States</name>
+<source>Unknown</source>
+</place>
+</detPlaces>
+</detGeo>
+</detGeos>
+</geospatialCoverage>
+</geospatialCoverages>
+</itemRecord>

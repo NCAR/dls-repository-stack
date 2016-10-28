@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>Stream Floods</title>
+<description>This exercise is designed to explore the nature of floods and flood prediction. Prediction of flooding relies heavily upon statistical techniques based on historical records of stream behavior. This series of exercises first reviews basic concepts in flood prediction such as calculating the Recurrence Interval (RI), which is the average interval in years between occurrences of two discharges of equal magnitude; and the Weibull equation, which calculates the probability that a given discharge will be exceeded in any particular year. The student then accesses historical data on U.S. stream flow and performs these calculations independently.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Hydrology</subject>
+<subject>DLESE:Natural hazards</subject>
+</subjects>
+</general>
+<lifecycle>
+<contributors>
+<contributor date="2000-11-03" role="Author">
+<person>
+<nameFirst>Warren</nameFirst>
+<nameMiddle>D.</nameMiddle>
+<nameLast>Huff</nameLast>
+<instName>University of Cincinnati, Department of Geology</instName>
+<emailPrimary>Warren.Huff@uc.edu</emailPrimary>
+</person>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-016">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-11-20" created="2000-11-20"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://homepages.uc.edu/~huffwd/Flood_Frequency/Flood.html</primaryURL>
+<mediums>
+<medium>text/html</medium>
+</mediums>
+<requirements>
+<requirement>
+<reqType>DLESE:Browser:Netscape</reqType>
+<minimumVersion>4.0</minimumVersion>
+</requirement>
+</requirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:Undergraduate lower division</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Learning materials:Problem set</resourceType>
+</resourceTypes>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>Copyright and Other Restrictions Information is Unknown</description>
+</rights>
+</itemRecord>

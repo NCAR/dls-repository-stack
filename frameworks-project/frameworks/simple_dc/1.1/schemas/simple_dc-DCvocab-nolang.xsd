@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: simple_dc-DCvocab-nolang.xsd,v 1.2 2008/02/21 22:21:33 ginger Exp $ -->
+<xsd:schema targetNamespace="http://www.dlsciences.org/frameworks/simple_dc/" xmlns:simple_dc="http://www.dlsciences.org/frameworks/simple_dc/"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="simple_dc1.1">
+	<xsd:annotation>
+		<xsd:documentation>************************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA PUPOSE  and INTENT  *****</xsd:documentation>
+		<xsd:documentation>************************************************</xsd:documentation>
+		<xsd:documentation>Define a simple Dublin Core schema that is similar to the OAI-PMH oai_dc schema but that does not use the XML choice element.</xsd:documentation>
+		<xsd:documentation>To create a schema that when used in a cataloging tool that creates its interface based directly on a schema, the tool interface will expose the schema elements directly rather than requiring the user to make a choice.</xsd:documentation>
+		
+		<xsd:documentation>******************************</xsd:documentation>
+		<xsd:documentation>*****  NAMESPACES  *****</xsd:documentation>
+		<xsd:documentation>******************************</xsd:documentation>
+		<xsd:documentation>This schema has a target namespaces of: http://www.dlsciences.org/frameworks/simple_dc/</xsd:documentation>
+		<xsd:documentation>This schema does not have a default namespace</xsd:documentation>
+		<xsd:documentation>This schema has a namespace of simple_dc http://www.dlsciences.org/frameworks/simple_dc/ for the root element</xsd:documentation>
+		<xsd:documentation>This schema also has a namespace called dc http://purl.org/dc/elements/1.1/ to work with imported schemas</xsd:documentation>
+
+		<xsd:documentation>****************************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMAS TO INCLUDE or IMPORT *****</xsd:documentation>
+		<xsd:documentation>****************************************************</xsd:documentation>
+		<xsd:documentation>DCelements.xsd - the Dublin Core elements from the DCMI schema for unqualified Dublin Core</xsd:documentation>
+	</xsd:annotation>
+	<xsd:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="DCelements-DCvocab-nolang.xsd"/>
+	
+	<xsd:annotation>
+		<xsd:documentation>********************************</xsd:documentation>
+		<xsd:documentation>*****  ROOT ELEMENT *****</xsd:documentation>
+		<xsd:documentation>********************************</xsd:documentation>
+		<xsd:documentation>This schema has a root element of: oai:dc:dc</xsd:documentation>
+		<xsd:documentation>Included schemas do not have a root element</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="dc" type="simple_dc:simple_dcType"/>
+
+	<xsd:annotation>
+		<xsd:documentation>***************************************************</xsd:documentation>
+		<xsd:documentation>*****  COMPLEX TYPES (alpha order)   *****</xsd:documentation>
+		<xsd:documentation>***************************************************</xsd:documentation>
+		<xsd:documentation>simple_dcType - is root element type</xsd:documentation>
+	</xsd:annotation>
+	
+	<xsd:complexType name="simple_dcType">
+		<xsd:sequence>
+			<xsd:element ref="dc:title" minOccurs="0" maxOccurs="unbounded" /> 
+			<xsd:element ref="dc:creator" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="dc:subject" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="dc:description" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="dc:publisher" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="dc:contributor" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="dc:date" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="dc:type" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="dc:format" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="dc:identifier" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="dc:source" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="dc:language" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="dc:relation" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="dc:coverage" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="dc:rights" minOccurs="0" maxOccurs="unbounded"/> 
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:annotation>
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA DEVELOPMENT  *****</xsd:documentation>
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>Created: 2006-10-02</xsd:documentation>
+		<xsd:documentation>Last Modified 2006-10-05</xsd:documentation>
+
+		<xsd:documentation>**********************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA AUTHOR  *****</xsd:documentation>
+		<xsd:documentation>**********************************</xsd:documentation>
+		<xsd:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger@ucar.edu</xsd:documentation>
+
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>*****  LICENSE INFORMATION  *****</xsd:documentation>
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>Copyright  (c) 2006 University Corporation for Atmospheric Research (UCAR) P.O. Box 3000, Boulder, CO 80307, United States of America</xsd:documentation>
+		
+		<xsd:documentation>******************************************************</xsd:documentation>
+		<xsd:documentation>*****  OTHER COPYRIGHT INFORMATION  *****</xsd:documentation>
+		<xsd:documentation>******************************************************</xsd:documentation>
+		<xsd:documentation>This schema is based on the Open Archives schema at: http://www.openarchives.org/OAI/2.0/oai_dc.xsd</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

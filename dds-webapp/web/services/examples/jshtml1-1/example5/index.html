@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Extreme Weather! - search DLESE resources</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	
+	<!-- Include the suggested_styles.css -->
+	<LINK REL="stylesheet" TYPE="text/css" HREF="@DDS_SERVER_BASE_URL@/services/jshtml1-1/suggested_styles.css">
+	
+	<style type="text/css">
+		<!--
+		/* All of the text in the DLESE search is within a TD element */
+		TD { 
+			font-family: Arial, Helvetica, sans-serif; 
+			font-size: 10pt; 
+		} 
+		BODY { 
+			margin-top:4px;
+			font-family: Arial, Helvetica, sans-serif; 
+			font-size: 10pt; 
+		}	
+		A:link {
+			color: #69261E; 
+			text-decoration: underline; 
+			font-weight: bold;
+			font-size: 10pt; 	
+		}
+		A:visited {
+			color: #C89C97; 
+			text-decoration: underline; 
+			font-weight: bold;
+			font-size: 10pt; 	
+		}
+		A:active {
+			color: #69261E; 
+			text-decoration: underline; 
+			font-size: 10pt; 	
+		}
+		H1 {
+			font-family:  Arial, Helvetica, sans-serif; 
+			font-size: 14pt; 
+		} 		
+		H2 { 
+			font-family: Arial, Helvetica, sans-serif; 
+			font-size: 12pt; 
+		} 
+
+		-->
+	</style>	
+</head>
+
+<body>
+<p> 
+  <a href="index.html" title="Home" alt="Home"><img src="images/bannerNaturalEvents.jpg" width="800" height="108" border="0"></a></p>
+
+<table width="798" height="205" border="0" cellpadding="10" cellspacing="0">
+  <tr>
+    <td width="697" vAlign=top> The Extreme Weather Collection, in collaboration with the meteorological and educational communities, develops and implements programs designed to enhance meteorological and Earth Science education in K-12 schools, colleges and universities, and in adult education.
+		  <p> <a href="http://www.photolibrary.fema.gov" target="_blank">Federal Emergency Management Agency Online Photo Library </a>
+		  <br>
+		<span class="style1">The Federal Emergency Management Agency (FEMA) has updated its online photo library, a collection of more than 9,200 images of natural disasters and terrorist events, including response and recovery activities, taken by FEMA's disaster photographers. </span></p>
+		<p> <a href="http://www.disasterlinks.com/" target="_blank">EFW Home Safety Disaster Links </a> <br>
+		  <span class="style1"> Find answers to questions like: Where are the brush fires? Where is it threatening to flood? What are the current National Weather Service warnings in effect right now? Where is the hurricane at now? </span></p>
+		<p><a href="http://www.wildweather.com/gallery/" target="_blank">Extreme Weather Gallery</a><br>
+		  <span class="style1"> Collections of satellite/radar images and storm chase photos depicting severe weather  events. </span></p>    
+	</td>
+    <td vAlign=top>
+
+		<b>View resources about:</b><br>
+		<a href='JavaScript:SmartLink("meteorology","Meteorology")'>Meteorology</a><br>   
+		<a href='JavaScript:SmartLink("\"Weather\"","Weather")'>Weather</a><br>
+		<a href='JavaScript:SmartLink("hurricane OR storm OR blizzard OR hail OR thunder OR lightning","Natural events")'>Natural events</a><br>
+		<br>
+
+		<strong>Search over educational resources:</strong>
+		
+		<!-- Reference the serviceURL and insert commands -->
+		<SCRIPT TYPE="text/javascript" SRC="@DDS_SERVER_BASE_URL@/services/jshtml1-1/javascript_search_service.js"></SCRIPT>
+		<SCRIPT TYPE="text/javascript">
+			<!--	
+			
+			ShowElement("gradeLevelsMenu");
+			
+			CustomMenuItem("Topics","Hurricanes", "hurricanes");
+			CustomMenuItem("Topics","Tornadoes", "tornado");
+			CustomMenuItem("Topics","Tsunamis", "tsunamis");
+			CustomMenuItem("Topics","Floods", "floods");
+			CustomMenuItem("Topics","Drought", "drought");
+			
+			ShowElement("searchBox");	
+			
+			RedirectSearchTo("example5.html");
+			HideElement("logo");
+			
+			RenderPage();	
+			
+			-->
+		</SCRIPT>
+
+		</td>
+  </tr>
+  <tr>
+    <td vAlign=top><em>Note: This is an example application for the JavaScript Search Service for DLESE and is not a real collection. <a href="../index.html#examples">Back to the Examples</a>.</em></td>
+    <td vAlign=top>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+
+</html>

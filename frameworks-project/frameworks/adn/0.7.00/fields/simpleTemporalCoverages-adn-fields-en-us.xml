@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: simpleTemporalCoverages-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:48 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Temporal coverages - simple" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/general/simpleTemporalCoverages">
+		<definition>a listing of non-specific dates or time information that is the subject or primary content of a resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-05-02" link1="description - simple temporal" style1="bold">Complete the required subfield of description - simple temporal.</practice>
+				<practice status="current" originDate="2005-05-10">Use when expressing a time period for which no permanent calendar date can be assigned (e.g. Morning).</practice>
+				<practice status="current" originDate="2005-05-10">Use when expressing a time period that may have shifting calendar dates that may occur throughout the year (e.g. First quarter).</practice>
+				<practice status="current" originDate="2005-05-10">Use when a calendar date is not known.</practice>
+				<practice status="current" originDate="2005-05-10">Use when a calendar date is not appropriate.</practice>
+				<practice status="current" originDate="2005-05-10" link1="temporal coverages" style1="bold">If specific calendar date information is known, complete the temporal coverages field instead.</practice>
+				<practice status="current" originDate="2005-05-04">Temporal coverages are independent of geospatial coverages.</practice>
+				<practice status="current" originDate="2005-05-05">Descriptions should be very short, a phrase at most.</practice>
+</dos>
+			<donts>
+				<practice status="current" originDate="2005-05-10">Do not use for known calendar dates like 2005, 2005-06, 2005-06-30.</practice>
+				<practice status="current" originDate="2005-05-10">Do not use for known date ranges like 2005-06-01 to 2005-06-30.</practice>
+				<practice status="current" originDate="2005-05-10">Do not use for the name of known time periods. That is, do not use this field for 2007 International Polar Year which has a known begin and end date.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2005-05-10">Morning.</practice>
+				<practice status="current" originDate="2005-05-10">Fall.</practice>
+				<practice status="current" originDate="2005-05-10">First quarter.</practice>
+				<practice status="current" originDate="2005-05-10">Morning and afternoon.</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<children>
+				<child>description</child>
+			</children>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>the child element</domain>
+			<example>&lt;description&gt;</example>
+			<other>true</other>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

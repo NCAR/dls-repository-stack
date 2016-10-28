@@ -1,0 +1,122 @@
+<!-- 
+    ===== NCS Context Desriptor Template ====
+    
+    Replace variables (e.g., ${VARIABLE}) with values for your installation.
+    - APP_NAME - should match the name of the application directory in ${TOMCAT}/webapps, 
+      which is "ncs" by default.
+    - TOMCAT - the path to your tomcat installation
+    
+    All other parameter definitions are OPTIONAL. All should be either specified
+    or removed (or commented out). These values in this file will override
+    application defaults 
+-->
+
+<Context path="/${APP_NAME}" 
+    docBase="${TOMCAT}/webapps/${APP_NAME}" 
+    reloadable="true" debug="0">
+        
+    <Parameter name="debug" value="true" override="false" />
+
+    <!--  
+    	===== Parameters for Persistant data - Highly Recommended for ongoing deployment =====
+	
+        It is recommended to place indexing and other application information
+        outside the application folder. This allows you to easily upgrade the
+        sytem, preserving the configurations and other data built up though use.
+        For illustration, the following parameters place this information in
+        subfolders of ${TOMCAT}/ncs_app_info.
+    -->
+    
+    <!-- collBaseDir - The full path to your metadata records. Replace the value here with
+    a path in your file system. If the path does not exist it will be
+    created when the system starts up. -->
+     <Parameter name="collBaseDir" 
+        value="C:/Example/records/path"
+        override="false" />  
+        
+    <!-- dcsConfig - The directory under which your NCS Configuration files will go, including:
+        User information, collection-specific configurations, and configurations for the metadata 
+        frameworks supported by this instance of the NCS. It is _strongly_ recommended to supply a
+        path outside of the application folder for this important information!
+        suggested value: ${TOMCAT}/ncs_conf 
+    -->        
+    <Parameter name="dcsConfig"
+        value="${TOMCAT}/ncs_conf"
+        override="false"/>
+        
+    <!-- repositoryData - The directory where the index and other data crucial to the repository
+         is stored -->
+    <Parameter name="repositoryData"
+       value="${TOMCAT}/ncs_app_info/repositoryData"
+       override="false"/>
+        
+    <!-- exportBaseDir - The path to directory under which all exports will go. Replace the
+    value below with one appropriate for your setup -->    
+    <Parameter name="exportBaseDir"
+       value="C:/exportBaseDir/path"
+       override="false"/>
+       
+    <!--  
+    	===== Optional Parameters to customize the appearance and functionality
+    -->
+       
+    <!-- authenticationEnabled (true | false) Supply any value BUT "true" here to disable the 
+         authorization system. Note: when authentication is NOT enabled there will be no login
+         and no support for roles andpermissions. 
+    -->   
+    <Parameter name="authenticationEnabled"
+       value="false"
+       override="false"/>
+    
+    
+    <!-- instanceName - Defines a label to use as the name of your DCS application, which will appear
+        at the top of each page of the application. If you do not desire such a label, supply a
+        value of "".  -->
+    <Parameter name="instanceName"
+       value=""
+       override="false"/>
+    
+	<!-- logo - name of an image file that will be place in the header of each page. 
+		This file must be placed in the "images" directory of the expanded application
+		directory within webapps. The logo image is displayed at 35px high and 135
+		pixels wide.  -->
+	<!--
+	<Parameter name="logo"
+       value=""
+       override="false"/> -->
+	   
+	<!-- instanceHelp - Url to an instance-specific help file. When this param is specified,
+		 a link appears on the "Help" menu at the top of every page. -->
+	<Parameter name="instanceHelp"
+		value=""
+		override="false"/>
+
+	<!-- instanceHelpLabel - Label for instanceHelp link (defaults to "instance help") -->
+	<Parameter name="instanceHelpLabel"
+		value="instance help"
+		override="false"/>
+    
+	<!--   ===== 
+		ASN Standards Support - the NCS is able to display ASN Standards 
+		 picker to aid in cataloging ASN Standards
+	
+		 Document hierarchies to enable cataloging to the ASN standards. This
+		 service involves two configuration parameters: 
+		 standardsServiceConfig and asnStandardsLibrary-->
+
+	<!-- standardsServiceConfig - path to the config file
+	     for the StandardsService.  -->
+	<Parameter name="standardsServiceConfig"
+		value="${TOMCAT}/ncs_conf/suggestionServiceConfig.xml"
+		override="false"/> 
+ 	
+	<!-- asnStandardsLibrary - a directory that caches ASN standards documents
+ 		 that have been obtained from the ASN web service. This directory should
+ 		 be placed outside the application so it will not be overwritten by
+ 		 application updates. -->
+	<Parameter name="asnStandardsLibrary"
+		value="${TOMCAT}/ncs_app_info/standards-library"
+		override="false"/>
+       
+</Context>
+

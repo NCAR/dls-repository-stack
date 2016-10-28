@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: gemMethod-mast-fields-en-us.xml,v 1.6 2009/07/30 15:27:17 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/GEMmethod.xsd">
+  <field name="GEM Instructional (Teaching) Method" metaFormat="mast" metaVersion="1.0" language="en-us" path="/record/educational/instructionalMethods/gemMethod">
+		<definition attribution="Dublin Core Metadata Element Set, Version 1.1: Reference Description at http://dublincore.org/documents/dces/">A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support.</definition> 
+
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="GEM Instructional (Teaching) Method" levelDeftn="A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support."/>
+		</vocabLevels>
+
+		<terms><!--From: http://www.thegateway.org/about/documentation/gem-controlled-vocabularies/vocabulary-teaching-methods-->
+			<termAndDeftn vocab="Advanced organizers" attribution="UCAR">Methods that organize and present new material based on the learners pre-existing knowledge.</termAndDeftn> 
+			<termAndDeftn vocab="Brainstorming" attribution="GEM via ERIC">Activity or technique to encourage the creative generation of ideas -- usually a group process, in which group members contribute suggestions in a spontaneous, noncritical manner.</termAndDeftn> 
+			<termAndDeftn vocab="Computer assisted instruction" attribution="GEM via ERIC">Interactive instructional technique in which a computer is used to present instructional material, monitor learning, and select additional instructional material in accordance with individual learner needs.</termAndDeftn> 
+			<termAndDeftn vocab="Computer simulations" attribution="GEM via ERIC"> Computer based representation of real situations or systems.</termAndDeftn> 
+			<termAndDeftn vocab="Contingency management" attribution="GEM via ERIC">Systematic arrangement of reinforcing events in order to strengthen or weaken specific behavior.</termAndDeftn> 
+			<termAndDeftn vocab="Cooperative learning" attribution="GEM via ERIC">Learning situation in which students work together in small groups and receive rewards or recognition based on their group's performance.</termAndDeftn> 
+			<termAndDeftn vocab="Demonstrations" attribution="GEM via ERIC">Teaching method in which explanations are given by example or experiment.</termAndDeftn> 
+			<termAndDeftn vocab="Dialog journals" attribution="GEM via ERIC">Logs or notebooks used by more than one person for exchanging experiences, ideas, or reflections -- used most often in education as a means of sustained writing interaction between students and teachers at all educational levels and in second language and other types of instruction.</termAndDeftn> 
+			<termAndDeftn vocab="Discovery learning" attribution="GEM via ERIC">Learning situation in which the principal content of what is to be learned is not given but must be independently discovered by the learner.</termAndDeftn> 
+			<termAndDeftn vocab="Discussions" attribution="GEM via ERIC">Oral, and sometimes written, exchange of opinions - usually to analyze, clarify, or reach conclusions about issues, questions, or problems.</termAndDeftn> 
+			<termAndDeftn vocab="Dramatic play drills" attribution="UCAR">A process in which students represent themselves in imagined situations, e.g. assuming identities other than themselves in situations that may involved altered time or space.</termAndDeftn> 
+			<termAndDeftn vocab="Experiential learning" attribution="GEM via ERIC">Learning by doing -- includes knowledge and skills acquired outside of book\lecture learning situations through work, play, and other life experiences (note: do not confuse with "learning experience").</termAndDeftn> 
+			<termAndDeftn vocab="Guided design" attribution="GEM via ERIC">Reasoning-centered instructional method developed by Charles E. Wales and Robert A. Stager that uses small-group techniques and a prepared outline of decision making steps to guide students through the process of resolving open-ended problems.</termAndDeftn> 
+			<termAndDeftn vocab="Hands-on learning" attribution="GEM via ERIC">Learning by doing - includes knowledge and skills acquired outside of book/lecture learning situations through work, play, and other life experiences.</termAndDeftn> 
+			<termAndDeftn vocab="Integrated instruction" attribution="UCAR">Instruction that utilizes an interdisciplinary approach to explore subject matter topically or thematically through a variety of sources.</termAndDeftn> 
+			<termAndDeftn vocab="Interdisciplinary" attribution="GEM via ERIC">Participation or cooperation of two or more disciplines.</termAndDeftn> 
+			<termAndDeftn vocab="Lab procedures" attribution="UCAR">Hands-on activities in a lab setting in which the learner participates in experimental process that is outlined through detailed procedures and instructions. </termAndDeftn> 
+			<termAndDeftn vocab="Learning modules" attribution="GEM via ERIC">Packets of subject-related teaching materials containing objectives, directions for use, and test items.</termAndDeftn> 
+			<termAndDeftn vocab="Lecture" attribution="GEM via ERIC">Teaching method in which information is presented orally to a class with a minimal amount of class participation.</termAndDeftn> 
+			<termAndDeftn vocab="Montessori method" attribution="GEM via ERIC">Child-centered approach to teaching, developed by Maria Montessori and most often used in the early childhood years, that features a wide range of graded, self-motivational techniques and materials specially designed to provide sensorimotor pathways to higher learning.</termAndDeftn> 
+			<termAndDeftn vocab="Multimedia instruction" attribution="GEM via ERIC">The integration of more than one medium in a presentation or module of instruction.</termAndDeftn> 
+			<termAndDeftn vocab="Multiple activities" attribution="UCAR">Teaching that utilizes several independent but related lessons to address a specific learning goal.</termAndDeftn> 
+			<termAndDeftn vocab="Museum education" attribution="GEM via DOE3">(1) Those changes brought about in the individual through ideas suggested or communicated by museum materials and their arrangement. (2) The formal or informal educational program carried on by museums</termAndDeftn> 
+			<termAndDeftn vocab="Peer tutoring" attribution="GEM via ERIC">Instruction provided by a learner, or small group of learners, by direct interaction with a peer with appropriate traing or experience.</termAndDeftn> 
+			<termAndDeftn vocab="Programmed instruction" attribution="GEM via ERIC">Instruction in which learners progress at their own rate using workbooks, textbooks, or electromechanical devices that provide information in discrete steps, test learning at each step, and provide immediate feedback about achievement.</termAndDeftn> 
+			<termAndDeftn vocab="Project-based learning" attribution="UCAR/UOregon">An individual or group activity that goes on over a period of time, resulting in a product, presentation, or performance. </termAndDeftn> 
+			<termAndDeftn vocab="Questioning techniques" attribution="GEM via ERIC">Methods used for constructing and presenting questions in order to promote effective discussions and learning or to elicit information.</termAndDeftn> 
+			<termAndDeftn vocab="Role playing" attribution="GEM">The deliberate acting out of a role (possibly a role that one would not normally occupy), as part of group therapy or of a learning session directed towards understanding that role or the situations with which this occupants have to cope.</termAndDeftn> 
+			<termAndDeftn vocab="Self-directed groups" attribution="GEM via ERIC">Groups with a passive leader or without a specified leader in which all members mutually agree on group goals and procedures.</termAndDeftn> 
+			<termAndDeftn vocab="Self-paced learning modules" attribution="GEM via DOE">Refers to materials, learning, courses, etc where the student is free to learn at his own pace. That is, the speed of presentation of learning materials is not decided by a teacher, a machine, or other students in a group, e.g. as in independent learning.</termAndDeftn> 
+			<termAndDeftn vocab="Simulations and games" attribution="GEM via DOE3">The use of role playing by the actors during the operation of a comparatively complex symbolic model of an actual of hypothetical social process; usually includes gaming and may be all-man, man-computer, or all-computer operations.</termAndDeftn> 
+			<termAndDeftn vocab="Teaching guides" attribution="GEM via ERIC">Manuals containing presentation methods for, and further information on, a topic -- usually for use with a specific text.</termAndDeftn> 
+			<termAndDeftn vocab="Team teaching" attribution="GEM via DOE">An arrangement whereby a group of teachers co-operate so that their classes have contact with more than one of those teachers during a given learning session or period.</termAndDeftn> 
+			<termAndDeftn vocab="Thematic approach" attribution="GEM via ERIC">Teaching approach that organizes subject matter around unifying themes.</termAndDeftn> 
+			<termAndDeftn vocab="Tutorial programs" attribution="GEM via ERIC">Programs, established by educational institutions, to tutor selected students. (note: prior to March 1980, this term was not scoped and was occasionally used for programs to train tutors).</termAndDeftn> 
+			<termAndDeftn vocab="Visual instruction" attribution="GEM via DOE3">Instruction with a great variety of illustrative materials such as visual slides, films, models, and specimens may be utilized as aids in pupil understanding or appreciation; not to be confused by sight saving.</termAndDeftn> 
+			<termAndDeftn vocab="Whole language approach" attribution="GEM via ERIC">Method of integrating language arts "across the curriculum" that uses the real literature of various age groups and subject fields to promote literacy (i.e., reading, writing, speaking, listening, as well as thinking, skills).</termAndDeftn> 
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2008-10-20">This element should be used to describe or identify a teaching method explicitly found in the resource being described.</practice>	<!--GEM-->
+				
+			
+			</dos>
+			<otherPractices>
+				<otherPractice header="Attribution of Term Definitions">
+					<practice status="current" originDate="2008-05-22" link1="GEM metadata documentation" url1="http://www.thegateway.org/about/documentation/gem-controlled-vocabularies/vocabulary-teaching-methods">The definitions of the terms for the controlled vocabulary are from the Gateway to 21st Century Skills: GEM metadata documentation. GEM uses the following sources: DOE: A Dictionary of Education, Totowa, N.J.: Barnes and Noble Books, 1982, c1981., DOE3: Dictionary of education, 3d edition; New York, McGraw-Hill, 1973 and ERIC: Thesaurus of ERIC Descriptors, 13th edition; Phoenix, AZ, Orxy Press, 1995.</practice>
+					<practice status="current" originDate="2008-05-22">Any definitions not provided in the GEM metadata documentation are definitions created by the University Corporation for Atmospheric Research (UCAR).</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+	</field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

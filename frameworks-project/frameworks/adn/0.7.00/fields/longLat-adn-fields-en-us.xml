@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: longLat-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:47 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Longitude and latitude" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/longLats/longLat">
+		<definition>a longitude and latitude pair that represents a point location on the Earth's surface or other planetary body when describing a detailed geometry</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-05-04" link1="longitude" style1="bold" link2="latitude" style2="bold">Complete the subfields of longitude and latitude. They are required fields.</practice>
+				<practice status="current" originDate="2005-05-04">Detailed geometries are entered as a listing of latitude and longitude pairs. </practice>
+				<practice status="current" originDate="2005-05-04">The minimum number of longitude and latitude pairs to enter depends on the type of geometry being described. See the examples.</practice>
+				<practice status="current" originDate="2005-05-05">Longitude and latitude pairs are connected in the order entered.</practice>
+				<practice status="current" originDate="2005-05-05">Enter coordinates in sequential fashion in the order they are to be connected.</practice>	
+				<practice status="current" originDate="2005-05-05">Lines have different beginning and ending points.</practice>
+				<practice status="current" originDate="2005-05-05">Boxes and polygons have the same beginning and ending points.</practice>
+			</dos>
+			<examples>
+				<practice status="current" originDate="2005-05-04" link1="Point:" style1="bold">Point: use 1 longitude-latitude pair (e.g. -122.13, 32.97)</practice>
+				<practice status="current" originDate="2005-05-04" link1="Bounding box:" style1="bold">Bounding box: use 4 longitude-latitude pairs; (e.g. -122.13, 32.97; -122.13, 35.25; -119.31, 35.25; -119.31, 32.97)</practice>
+				<practice status="current" originDate="2005-05-04" link1="Polyline:" style1="bold">Polyline: use at least 2 longitude-latitude pairs (e.g. -122.13, 32.97; -119.31, 35.25)</practice>
+				<practice status="current" originDate="2005-05-04" link1="Polygon:" style1="bold">Polygon: use at least 3 longitude-latitude pairs  (e.g. 10.0, 15.0; 15.0, 7.0; 8.0,11.0)</practice>
+				
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<attributes>
+				<attribute>longitude</attribute>
+				<attribute>latitude</attribute>
+			</attributes>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>the attribute elements</domain>
+			<example>&lt;longitude&gt;, &lt;latitude&gt;</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

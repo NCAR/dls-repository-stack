@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Upload an image</title>
+		<script type="text/javascript">
+		
+			function log (s) {
+				if (window.console)
+					console.log (s)
+			}
+		
+			// get query parameters from url
+			function gup( name )
+			{
+			  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+			  var regexS = "[\\?&]"+name+"=([^&#]*)";
+			  var regex = new RegExp( regexS );
+			  var results = regex.exec( window.location.href );
+			  if( results == null )
+				return "";
+			  else
+				return results[1];
+			}
+			
+			var server = decodeURIComponent( gup('imgserver') );
+			var apvd = gup('approved'); 
+			
+			// approved is returned from handler
+			if( apvd==='1' )
+			{
+				// alert('approved - callback to opener and close this window');
+				var imgurl = decodeURIComponent( gup('imgURL') );
+				var helperid = decodeURIComponent( gup('helperID') );
+				// alert (' imgserver returned ' + imgurl + ', ' + helperid);
+				opener.callback( imgurl, helperid);  // pass back imageUrl
+				window.close();
+			}
+			else if( apvd==='0' )
+			{
+				// Here you would want to add some error handling
+				// alert('not approved');
+				window.close();
+			}
+			// we aren't from the imgserver, so we must have been opened from inputhelper
+			var recid = decodeURIComponent( gup('recID'));
+			var helperid = decodeURIComponent( gup('helperID') );
+			
+			log ('recid: ' + recid);
+			log ('imgserver: ' + server);
+			log ('helperid: ' + helperid);
+		</script>
+	</head>
+	<body>
+		<h3>Uploader</h3>
+	
+		<p>Browse for the image file on your computer (JPG, GIF, or PNG format only), then 
+		click submit to upload the file .</p>
+		<form name="uploader" 
+			  
+			  action=""
+			  enctype="multipart/form-data"
+		>
+			<!-- the fillowing should be a form param above, but removed for debugging 
+			method="post"
+			-->
+			<input type="file" name="image" id="image"/>
+			<input type="hidden" name="recID" id="recID"/>
+			<input type="hidden" name="helperID" id="helperID"/>
+			<br/>
+			<input type="submit" value="submit"/>
+		</form>
+		
+	<div style="margin:20px;padding:5px;border:thin dashed black;">		
+		Clicking on submit sends a request to the image server, which
+		will process form data (upload) and then send back a response to this location,
+		but with params <i>imgURL</i> and <i>approved</i>.
+	</div>
+		
+	</body>
+</html>
+<script type="text/javascript">
+
+
+/* In this example, the image server needs a recid (as well as the image, which is already
+   in form data
+*/
+if( recid != '')
+{
+	// does handler have to respond?
+	document.forms[0].action = server;
+	document.forms[0]['recID'].value = recid;
+	document.forms[0]['helperID'].value = helperid;
+}
+
+for (key in document.forms[0])
+	log ('- ' + key + ': ' + document.forms[0][key].value);
+
+</script>

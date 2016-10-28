@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<termsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/adn-i/kind.xsd">
+	<field name="kind" id="ki" language="en-us">
+		<definition system="meta" interface="default">The kind of relationship between the resource being cataloged and a related resource</definition>
+		<definition system="dds" interface="default"></definition>
+
+		<value vocab="DC:Conforms to" id="00">
+			<definition system="meta" interface="default">The described resource meets an established education or training standard</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+		
+		<value vocab="DC:Has format" id="01">
+			<definition system="meta" interface="default">The described resource pre-existed the referenced resource, which is essentially the same intellectual content presented in another format</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DC:Has part" id="02">
+			<definition system="meta" interface="default">The described resource includes the referenced resource either physically or logically</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DC:Has version" id="03">
+			<definition system="meta" interface="default">The described resource has a version, edition, or adaptation, namely, the referenced resource</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DC:Is format of" id="04">
+			<definition system="meta" interface="default">The described resource is the same intellectual content of the referenced resource, but presented in another format</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DC:Is part of" id="05">
+			<definition system="meta" interface="default">The described resource is a physical or logical part of the referenced resource (needs to be more than just a hyperlink with more information)</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DC:Is referenced by" id="06">
+			<definition system="meta" interface="default">The described resource is referenced, cited, or otherwise pointed to by the referenced resource. (e.g. the resource being cataloged is hyperlinked in another resource)</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DC:Is replaced by" id="07">
+			<definition system="meta" interface="default">The described resource is supplanted, displaced, or superseded by the referenced resource</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DC:Is required by" id="08">
+			<definition system="meta" interface="default">The described resource is required by the referenced resource, either physically or logically</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DC:Is version of" id="09">
+			<definition system="meta" interface="default">The described resource is a version, edition, or adaptation of the referenced resource. Changes in version imply substantive changes in content rather than differences in format</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DC:References" id="0a">
+			<definition system="meta" interface="default">The described resource references, cites, or otherwise points to the referenced resource (e.g. within the resource being cataloged there is a hyperlink to another resource). The described resource is not an absolutely necessary component of the related resource.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DC:Replaces" id="0b">
+			<definition system="meta" interface="default">The described resource supplants, displaces, or supersedes the referenced resource</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DC:Requires" id="0c">
+			<definition system="meta" interface="default">The described resource requires the referenced resource to support its function, delivery, or coherence of content</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Has thumbnail" id="0d">
+			<definition system="meta" interface="default">The described resource has a thumbnail image that illustrates it</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Is associated with" id="0e">
+			<definition system="meta" interface="default">The described resource is closely fits with or aligns with a another resource (e.g. a time series of images could be associated with an html page, or text, that describes the images but may not actually link to the images).</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Is based on" id="0f">
+			<definition system="meta" interface="default">Means that a significant amount of intellectual thought, creative ideas, questions</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Is basis for" id="0g">
+			<definition system="meta" interface="default">Means that the resource being cataloged provided a significant amount of intellectual thought, creative ideas, questions or images for another resource</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+
+	</field>
+</termsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

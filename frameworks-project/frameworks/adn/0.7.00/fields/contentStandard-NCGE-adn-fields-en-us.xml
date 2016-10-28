@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: contentStandard-NCGE-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:13 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/contentStandard.xsd">
+	<field name="Content standard - geography - National Council for Geographic Education (NCGE)" id="cs" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/educational/contentStandards/contentStandard">
+		<definition>a vision to produce a geographically informed person who sees meaning in the arrangement of things in space and applies a spatial perspective to life situations</definition>
+
+		<vocabLevels number="3">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="NCGE">National Council for Geographic Education</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="2" levelName="System, place or use" levelDeftn="the system, place or use to which the standard applies">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="Environment and Society">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Human Systems">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Physical Systems">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Places and Regions">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="The Uses of Geography">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="The World in Spatial Terms">self-explanatory</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="3" levelName="Standard" levelDeftn="a level of achievement to which learners are expected to aspire; see the allowed combination of terms below; the standard part of the term is the phrase after the last colon"/>
+		</vocabLevels>
+
+		<terms>
+
+			<termAndDeftn vocab="NCGE:Environment and Society:How human actions modify the physical environment" id="00">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCGE:Environment and Society:How physical systems affect human systems" id="01">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCGE:Environment and Society:The changes that occur in the meaning, use, distribution, and importance of resources" id="02">self-explanatory</termAndDeftn>
+
+		
+			<termAndDeftn vocab="NCGE:Human Systems:How forces of cooperation and conflict among people influence the division and control of Earth's surface" id="03">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCGE:Human Systems:The characteristics, distribution, and migration of human populations on Earth's surface" id="04">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCGE:Human Systems:The characteristics, distributions, and complexity of Earth's cultural mosaics" id="05">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCGE:Human Systems:The patterns and networks of economic interdependence on Earth's surface" id="06">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCGE:Human Systems:The process, patterns, and functions of human settlement" id="07">self-explanatory</termAndDeftn>
+
+		
+			<termAndDeftn vocab="NCGE:Physical Systems:The characteristics and spatial distribution of ecosystems on Earth's surface" id="08">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCGE:Physical Systems:The physical processes that shape the patterns of Earth's surface" id="09">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCGE:Places and Regions:How culture and experience influence people's perception of places and regions" id="0a">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NCGE:Places and Regions:That people create regions to interpret Earth's complexity" id="0b">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCGE:Places and Regions:The physical and human characteristics of places" id="0c">self-explanatory</termAndDeftn>
+
+		
+			<termAndDeftn vocab="NCGE:The Uses of Geography:How to apply geography to interpret the past" id="0d">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCGE:The Uses of Geography:How to apply geography to interpret the present and plan for the future" id="0e">self-explanatory</termAndDeftn>
+
+		
+			<termAndDeftn vocab="NCGE:The World in Spatial Terms:How to analyze the spatial organization of people, places, and environments on Earth's surface" id="0f">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information" id="0g">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCGE:The World in Spatial Terms:How to use mental maps to organize information about people, places, and environments" id="0h">self-explanatory</termAndDeftn>
+
+
+		</terms>
+
+		<bestPractices>
+			<dos>
+<!--				<practice status="hide" originDate="2002-10-22" archDate="2005-04-25">Choosing an educational standard and associating it with a resource signifies that the content of the resource supports student learning and attainment of the specific ability noted. This can be through many different mechanisms and resource types, including access to background, text-based material. Some standards available for cataloging are general in nature, hence the resource need not address the entire scope of the standard to be eligible for these data.</practice> -->
+<!--				<practice status="hide" originDate="2002-10-22" archDate="2005-04-25">Additional, more detailed information on the specific concepts included in each standard is available for each grade level grouping, K-4, 5-8, and 9-12 (courtesy SRI International) to assist in making appropriate choices.</practice>-->
+				<practice status="current" originDate="2005-04-25">Choosing a standard signifies that the content of the resource supports student learning and attainment of the abilities articulated in the standard.</practice>
+
+
+<!--				<practice status="hide" originDate="2002-10-22" archDate="2005-04-25">Use standards only with materials where student learning occurs.</practice>-->
+				<practice status="current" originDate="2005-04-25">Use standards with materials intended for student learning.</practice>
+
+
+<!--				<practice status="hide" originDate="2002-10-22" archDate="2005-04-25">When standards are identified by the resource creator and presented in the resource, all catalogers should include these data in the record, or select those that are in keeping with the abovementioned criteria</practice>-->
+				<practice status="current" originDate="2005-04-25">Catalogers with experience and familiarity with standards may evaluate the standards identified by resource creators in the resource for appropriateness and completeness.</practice>
+
+				<practice status="current" originDate="2005-04-25">If catalogers do not have experience and familiarity with standards but the resource has standards associated with, catalogers may include the standards indicated by the resource creator.</practice>
+
+
+<!--				<practice status="hide" originDate="2002-10-22" archDate="2005-04-25">Catalogers are expected to have experience and familiarity with the standards they choose to include in a record. If you do not, please refrain from using this field or consult a colleague before entering such data.</practice>-->
+				<practice status="current" originDate="2005-04-25">Catalogers with experience and familiarity with standards may evaluate a resource to identify appropriate standards.</practice>
+
+				<practice status="current" originDate="2005-04-25">Use standards sparingly with reference materials, portal resources or other resources where student interaction with the resource is low or passive.</practice>
+
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2005-04-25">Catalogers who do not have experience and familiarity with standards, should not complete this field.</practice>
+
+<!--				<practice status="hide" originDate="2002-10-22" archDate="2005-04-25">If you are not familiar with the use of educational standards and if the resource does not explicitly contain this information, please refrain from using this field. </practice>-->
+<!--				<practice status="hide" originDate="2002-10-22">Do not create a compiled list of standards addressed by a collection of diverse resources. For example, if the URL being cataloged is an overarching site that provides access to a collection of lesson plans, create a record for each lesson plan and associate the standards directly with the individual lesson plan, rather than combining them all into one long list.</practice>-->
+				<practice status="current" originDate="2005-04-25">Do not create a compiled list of standards addressed by a collection of resources. For example, do not create a long list of standards for an overarching resource that includes individual lesson plans, activities or modules that support individual standards. Describe each lesson plan, activity or module, etc. individually and associate the standards directly.</practice>
+
+				<practice status="current" originDate="2005-04-25">Do not choose every standard for a resource. Most resources only support a few standards really well.</practice>
+			</donts>
+
+			<otherPractices>
+				<otherPractice header="The resource has existing standards. Do this:">
+					<practice status="current" originDate="2005-04-25">When standards are identified by the resource creator and presented in the resource, capture this information when it meets the other criteria described by these best practices.</practice>
+				</otherPractice>
+
+				<otherPractice header="Does an entire resource need to support the standard?">
+					<practice status="current" originDate="2005-04-25">A resource need not cover the entire scope of a standard for the association to be made but the resource content should clearly fall within the bounds of the standard. Some of the standards are broad in scope. Therefore, it is not expected that single resources, like lesson plans, activities or modules, support the entirety of a standard.</practice>
+				</otherPractice>
+
+				<otherPractice header="Examples for science standards (NSES)">
+					<practice status="current" originDate="2002-10-22" link1="NSES:9-12:Content Standard A:Science as Inquiry Standards:Abilities necessary to do scientific inquiry" style1="bold" link2="Stratospheric Ozone" url2="http://www.ccpo.odu.edu/SEES/ozone/ozone.htm">NSES:9-12:Content Standard A:Science as Inquiry Standards:Abilities necessary to do scientific inquiry is supported in Stratospheric Ozone.</practice>
+					<practice status="current" originDate="2006-03-07" link1="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth in the solar system" style1="bold" link2="Global Sun Temperature" url2="http://www.k12science.org/curriculum/tempproj3/en/">NSES:5-8:Content Standard D Earth and Space Science Standards:Earth in the solar system is supported in the Global Sun Temperature project.</practice>
+				</otherPractice>
+
+				<otherPractice header="Examples for geography (NCGE)">
+					<practice status="current" originDate="2006-03-06" link1="NCGE:Physical Systems:The physical processes that shape the patterns of Earth's surface" style1="bold" link2="Introduction to Waves" url2="http://www.nationalgeographic.com/xpeditions/lessons/07/gk2/wavesintro.html">NCGE:Physical Systems:The physical processes that shape the patterns of Earth's surface is supported in Introduction to Waves.</practice>
+					<practice status="current" originDate="2002-10-22" link1="NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information" style1="bold" link2="Exploring Earthquakes in Space and Time Through the Internet and a Geographic Information System" url2="http://rockyweb.cr.usgs.gov/public/outreach/quakegis/main.html">NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information is supported in Exploring Earthquakes in Space and Time Through the Internet and a Geographic Information System.</practice>
+				</otherPractice>
+
+				<otherPractice header="NCGE standards? Do this:">
+					<practice status="current" originDate="2006-03-07">The National Council for Geographic Education standards are designed to emphasize the knowledge skills of a geographically informed person.</practice>
+					<practice status="current" originDate="2006-03-07">Choose appropriate geography standards from the list.</practice>
+				</otherPractice>
+
+				<otherPractice header="NSES standards? Do this:">
+					<practice status="current" originDate="2005-04-25">The National Science Education Standards (NSES) are designed to emphasize interacting with the science content, the processes of science, inquiry and decision-making skills.</practice>
+					<practice status="current" originDate="2006-03-07">Choose appropriate science standards from the list.</practice>
+				</otherPractice>
+
+				<otherPractice header="NSES Grades K-4 specific information">
+					<practice status="current" originDate="2002-06-30" link1="fourth level of the standard" url1="http://pals.sri.com/standards/nsesK-4text.html">See the fourth level of the standard which includes specific abilities.</practice>
+				</otherPractice>
+				<otherPractice header="NSES Grades 5-8 specific information">
+					<practice status="current" originDate="2002-06-30" link1="fourth level of the standard" url1="http://pals.sri.com/pals/standards/nses5-8text.html">See the fourth level of the standard which includes specific abilities.</practice>
+				</otherPractice>
+				<otherPractice header="NSES Grades 9-12 specific information">
+					<practice status="current" originDate="2002-06-30" link1="fourth level of the standard" url1="http://pals.sri.com/pals/standards/nses9-12text.html">See the fourth level of the standard which includes specific abilities.</practice>
+				</otherPractice>
+
+				<otherPractice header="Other standards? Do this:">
+<!--					<practice status="obsolete" originDate="2002-10-22" archDate="2005-04-25">Use the separate field of Science Standards to add National Science Education Standards.</practice>-->
+	
+					<practice status="current" originDate="2002-10-22" link1="description - educational" style1="bold">If the resource indicates other standards such as the Benchmarks for Science Literacy (by the American Association for the Advancement of Science (AAAS), the Principles and Standards for School Mathematics by the National Council of Teachers of Mathematics (NCTM) or the National Educational Technology Standards by International Society for Technology in Education (ISTE) etc., enter this information in the description - educational field, citing the authorizing body and source for the standard.</practice>
+				</otherPractice>
+
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>NCGE:Physical Systems:The physical processes that shape the patterns of Earth's surface</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR he Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR he Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

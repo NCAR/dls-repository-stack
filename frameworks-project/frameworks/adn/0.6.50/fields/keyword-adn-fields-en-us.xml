@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: keyword-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/non-vocab-fields.xsd">
+	<field name="Keyword" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/general/keywords/keyword">
+		<definition>a concept or idea that expresses detailed information about the content of a resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2000-06-30">Use keywords from the resource. This keyword field is not from a controlled vocabulary list.</practice>
+				<practice status="current" originDate="2000-06-30" link1="description - resource" style1="bold" link2="subject - list" style2="bold">Use keywords to express ideas and concepts not expressed in the metadata fields of description - resource or subject - list.</practice>
+				<practice status="current" originDate="2000-06-30">Each keyword term or phrase should focus on one topic, e.g. Plate tectonics.</practice>
+				<practice status="current" originDate="2005-05-09">Spell out acronyms.</practice>
+				<practice status="current" originDate="2005-05-09">Capitalize proper nouns.</practice>
+				<practice status="current" originDate="2005-05-09">Capitalize single keywords.</practice>
+				<practice status="current" originDate="2005-05-09">Capitalize the first word of a keyword phrase: Tropical rainforest climate</practice>
+			</dos>
+			
+			<donts>
+				<practice status="current" originDate="2000-06-30">Do not put multiples entries or lists of words into a single field. That is, don't enter plate tectonics, glaciers, or snow in a single keyword field. Use multiple keyword fields to express all these concepts.</practice>
+				<practice status="current" originDate="2000-06-30" link1="title - resource" style1="bold" link2="description - resource" style2="bold">Do not repeat words from the title - resource or description - resource.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2005-05-09">GOES (Geostationary Operational Environmental Satellite) imagery </practice>
+				<practice status="current" originDate="2005-05-09">Longwave radiation</practice>
+				<practice status="current" originDate="2005-05-09">Santa Ana wind</practice>
+				<practice status="current" originDate="2005-05-09">Tropical rainforest climate</practice>
+			</examples>
+			<otherPractices>
+				<otherPractice header="Want to use &amp;, ', &quot;, &gt;, &lt;? Do this:">
+					<practice status="current" originDate="2006-03-08">Enter characters like the ampersand apostrophe, double quote, less than and greater than sign by using their respective html references of &amp;, &apos;, &quot;, &lt; and &gt;.</practice>
+				</otherPractice>
+				<otherPractice header="Want to use other special characters like ©, é, ñ or ê? Do this:">
+					<practice status="current" originDate="2005-10-05" link1="entity references" url1="http://www.w3schools.com/tags/ref_entities.asp">Enter special characters and symbols using their entity references numbers. For the copyright symbol this means entering an ampersand symbol followed by the pound sign followed by the number 169 followed by a semicolon.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<attributes>
+				<attribute>src</attribute>
+				<attribute>url</attribute>
+				<attribute>id</attribute>
+			</attributes>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text and attributes</domain>
+			<example>ozone, Wein's law, plate tectonics</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

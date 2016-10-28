@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: interactivityLevel-adn-groups-default-en-us.xml,v 1.1 2009/01/30 21:34:41 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Interactivity - level</title>
+<groups:concept language="en-us" metaFormat="adn" metaVersion="0.6.50" text="Interactivity - level" audience="default" path="/itemRecord/educational/interactivityLevel" deftn="the level of interaction between a resource and end user; that is the degree to which the learner can influence the behavior of the resource"/>
+</head>
+<body>
+<outline groups:vocab="LOM:Very high" type="vocab" text="Very high" groups:deftn="learner interactions determine various paths through a resource; learner actions result in different and undetermined outcomes from learner to learner based on the actions chosen"/>
+<outline groups:vocab="LOM:High" type="vocab" text="High" groups:deftn="learner interactions determine various paths through a resource; learner actions result in different but known outcomes from learner to learner"/>
+<outline groups:vocab="LOM:Medium" type="vocab" text="Medium" groups:deftn="learner interactions determine various paths through a resource; students observe and answer questions but all learners arrive at generally the same outcome"/>
+<outline groups:vocab="LOM:Low" type="vocab" text="Low" groups:deftn="generally a single path takes a learner through a resource; no learner interactions occur rather generally observations"/>
+<outline groups:vocab="LOM:Very low" type="vocab" text="Very low" groups:deftn="the resource is not intended to be interactive"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

@@ -1,0 +1,82 @@
+<%-- Metadata Editor Navigation Menu --%>
+<table class="nav-menu-box" width="100%"><tr><td>
+<c:if test="${not empty sef.pageList.pages}">	
+	<%-- nav menu populated by metadata-editor-support.js --%>
+	<table  class="nav-menu-table" > 
+	<tr id="page-nav" align="center"></tr>
+	</table>
+</c:if>
+<div style="margin-top:2px">
+	<table cellspacing="0" cellpadding="0" border="0"  width="100%" >
+		<tr valign="middle">
+		
+			<td align="left">
+				<%-- SAVE --%>
+				<c:if test="${not empty sef.collection}">
+					<input type="button" value="Save record" onClick="doSave('${sef.recId}')"
+							title="Save record and continue to edit"/>
+				</c:if>
+			</td>
+			
+			<%-- VALIDATE button --%>
+			<td align="center" NOWRAP="1" width="130">
+						<input type="button" value="Validate page" id="validate-button" onClick="doValidate()"
+									title="Validate the fields in this page"/>
+						<%-- validate page help icon commented out 8/10/2010 --%>
+<%-- 				<jsp:include page="/lib/tool-help-link.jsp">
+							<jsp:param name="topic" value="validate"/>
+						</jsp:include> --%>
+						<c:if test="${sef.currentPage == 'viewRecord'}" >
+							<script type="text/javascript">$("validate-button").disable()</script>
+						</c:if>
+			</td>
+			
+			
+			<td align="right"> <%-- Change Status --%> 
+				<c:if test="${sef.xmlFormat != 'dlese_collect'}">
+					<nobr>
+						<input type="button" value="Change status" onclick="editStatus('${sef.recId}')" />
+					</nobr>
+				</c:if>
+			</td>
+			
+			<%-- VIEW / EDIT --%>
+			<td align="right" width="40%">
+				<c:choose>
+					<c:when test="${sef.currentPage == 'viewRecord'}">
+					<input type="button" value="Edit" onClick="changeForm('${sef.previousPage}')"
+								title="Edit record"/>
+					</c:when>
+					<c:otherwise><b>Edit</b>&nbsp;</c:otherwise>
+				</c:choose>
+
+			</td>
+			<td align="left" width="40%">
+				<c:choose>
+					<c:when test="${sef.currentPage != 'viewRecord'}">
+					<input type="button" value="View record" onClick="changeForm('viewRecord')"
+								title="See full view of record"/>
+					</c:when>
+					<c:otherwise>&nbsp;<b>View record</b></c:otherwise>
+				</c:choose>
+			</td>
+			
+			<%-- Exit button --%>
+			<td align="left" >
+				<c:choose>
+					<c:when test="${sef.xmlFormat == 'dlese_collect' && sef.collection == 'collect'}">
+						<input type="button" value="Exit" 
+							onClick="guardedExit('${contextPath}/admin/admin.do?page=collections');"
+							title="Exit without saving"/>
+					</c:when>
+					<c:otherwise>
+						<input type="button" value="Exit" onClick="guardedExit('forwardToCaller');"
+								title="Exit without saving"/>
+					</c:otherwise>
+				</c:choose>
+			</td>
+			
+		</tr>
+	</table>
+</div>
+</td></tr></table>

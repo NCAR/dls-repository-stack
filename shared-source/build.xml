@@ -1,0 +1,703 @@
+ <!--  
+	shared-source: Instructions for building this java library (formerly named dlese-tools-project)
+	
+	This project is a Java library that is included as a dependency in application
+	software such as the dds-project, dcs-webapp.
+	
+	In general this build file is called from within the build of the parant project 
+	and is not executed directly. 
+	
+	The primary output of the build is a Java library encapulated as a jar file.
+	There are also some scripts that use this library that are part of this project.
+	
+	To build this software you must install Ant on your local system.
+	For information about installing and using Ant, go to http://jakarta.apache.org/ant/
+	
+	To compile this library by itself, simply issue the 'compile' or 'all'
+	targets.
+	
+	To build the library jar file issue the 'deploy' target.
+	
+	To set optional properties, place a build.properties file in your 
+	home directory or the project's root directory and define one or more of the following 
+	property(s):  
+	  
+	  catalina.home  	# The base direcory of your development Tomcat installation.
+	  					# Used for the compile target (to source it's libs).
+
+      tools.deploy.home	# The location where this library will be deployed for command-line
+	  					# use. Creates bin and lib directories. Used in the deploy target.
+	  
+      vocab.lib.dir (optional)  # An optional property that points to the vocab-project's web/WEB-INF/lib
+	  					# directory in your working area. If this property is set then you 
+						# can us the copy-jar-to-vocab target to copy this projects's jar to 
+						# that location. This is useful if the vocab-project needs these classes for
+						# execution and you want an easy way to update them.
+																		
+      register.lib.dir (optional)  # An optional property that points to the register-project's web/WEB-INF/lib
+	  					# directory in your working area. If this property is set then you 
+						# can us the copy-jar-to-register target to copy this projects's jar to 
+						# that location. This is useful if the register-project needs these classes for
+						# execution and you want an easy way to update them.
+																			  
+	  For example, on UNIX plattforms your build.properties file might look like:
+	  
+	  catalina.home = /home/username/dev/tomcat-4.0.1
+	  tools.deploy.home = /export/devel/common/resources/DLSLibs/latest_build
+	  vocab.lib.dir = /home/username/dev/projects/vocab-project/build_lib
+						
+	  On Windows plattforms your build.properties file might look like:
+
+	  catalina.home = K:/username/dev/tomcat-4.0.1
+	  tools.deploy.home = H:/common/resources/DLSLibs/latest_build
+	  vocab.lib.dir = K:/username/dev/projects/vocab-project/build_lib	  	  
+
+	  
+	Overview of Ant build files: 
+	 
+	A "project" describes a set of targets that may be requested 
+	when Ant is executed.  The "default" attribute defines the 
+	target which is executed if no specific target is requested, 
+	and the "basedir" attribute defines the current working directory 
+	from which Ant executes the requested task.  This is normally 
+	set to the current working directory. 
+	 
+	Example commands at the your shell prompt: 
+	> ant 
+	# This executes the default target, in this case "compile" 
+	 
+	> ant deploy 
+	# This executes the "deploy" target. Since the deploy target 
+	# is dependent on the compile target, ant will be sure the  
+	# compile target is executed (if needed) before executing deploy. 
+--> 
+
+<project name="Java Libraries" default="compile" basedir=".">
+
+<!-- ===================== Property Definitions =========================== -->
+
+<!--
+
+  Each of the following properties are used in the build script.
+  Values for these properties are set by the first place they are
+  defined, from the following list:
+  * Definitions on the "ant" command line (ant -Dcatalina.home=xyz compile)
+  * Definitions from a "build.properties" file in the top level
+    source directory
+  * Definitions from a "build.properties" file in the developer's
+    home directory
+  * Default definitions in this build.xml file
+
+  You will note below that property values can be composed based on the
+  contents of previously defined properties.  This is a powerful technique
+  that helps you minimize the number of changes required when your development
+  environment is modified.  Note that property composition is allowed within
+  "build.properties" files as well as in the "build.xml" script.
+
+-->
+
+  <property file="../dpc.properties"/>
+  <property file="${user.home}/build.properties"/>
+  <property file="build.properties"/> 
+  
+  
+<!-- ==================== File and Directory Names ======================== -->
+
+<!--
+
+  These properties generally define file and directory names (or paths) that
+  affect where the build process stores its outputs.
+
+  app.name             Base name of this application, used to
+                       construct filenames and directories.
+                       Defaults to "myapp".
+
+  app.version          Version identifier for this application.
+
+  build.home           The directory into which the "prepare" and
+                       "compile" targets will generate their output.
+                       Defaults to "build".
+
+  catalina.home        The directory in which you have installed
+                       a binary distribution of Tomcat 4.  This is 
+					   only used to get depenant jars for compiling.
+					   No files are copied to or from catalina.home.
+
+  tools.deploy.home    The name of the directory into which the
+                       deployment hierarchy will be created, and into
+                       which the build directory will be copied.
+                       Defaults to "${catalina.home}/webapps/${app.name}".
+
+     dist.home         The name of the base directory in which
+                       distribution files are created.
+                       Defaults to "dist".
+
+-->
+
+  <property name="app.name"      				value="dls-libs"/>
+  <property name="app.version"   				value="1.7.0"/>
+  <property name="build.home"    				value="build"/>
+  <property name="build.lib"    				value="build_lib"/>
+  <property name="external.project.build.lib"	value="${build.lib}"/>
+  <property name="dist.home"     				value="dist"/>
+  <property name="junit.test.dir"     			value="test"/>
+  <property name="jar.filename" 				value="${app.name}.jar"/>
+  <property name="jar.lib.dir"					value="${build.home}/lib"/>
+  <property name="tomcat.docs.home"  			value="${catalina.home}/webapps/${app.name}_docs"/> 
+  <property name="javadoc.default" 				value="${dist.home}/docs/javadoc"/>
+
+  <!-- Set the global Tomcat lib dir. These are at ${catalina.home}/common/lib in TC5, ${catalina.home}/lib in TC6 -->
+  <property name="catalina.lib.dir" value="${catalina.home}/common/lib" />
+  
+  <!-- Set the catalina.home variable in your build.properties file to point to your 
+  own dev area installaion of tomcat. -->
+  <!-- <property name="catalina.home" value="/export/devel/common/resources/tomcat/jakarta-tomcat-4.1.12"/> -->
+  
+  <!-- 	Set the tools.deploy.home variable in your build.properties file to the location where
+  		the deploy target will copy the build -->
+  <!-- <property name="tools.deploy.home"   value="/export/devel/common/resources/${app.name}/latest_build"/> -->
+
+
+
+<!--  ==================== Compilation Control Options ==================== -->
+
+<!--
+
+  These properties control option settings on the Javac compiler when it
+  is invoked using the <javac> task.
+
+-->
+
+  <property name="compile.debug"       value="true"/>
+  <property name="compile.deprecation" value="false"/>
+  <property name="compile.optimize"    value="true"/>
+
+
+
+<!-- ==================== External Dependencies =========================== -->
+
+
+<!--
+
+  Use property values to define the locations of external JAR files on which
+  your application will depend.  In general, these values will be used for
+  two purposes:
+  * Inclusion on the classpath that is passed to the Javac compiler
+  * Being copied into the "/WEB-INF/lib" directory during execution
+    of the "deploy" target.
+
+  Because we will automatically include all of the Java classes that Tomcat 4
+  exposes to web applications, we will not need to explicitly list any of those
+  dependencies.  You only need to worry about external dependencies for JAR
+  files that you are going to include inside your "/WEB-INF/lib" directory.
+
+-->
+
+
+
+
+<!-- ==================== Compilation Classpath =========================== -->
+
+<!--
+
+  Rather than relying on the CLASSPATH environment variable, Ant includes
+  features that makes it easy to dynamically construct the classpath you
+  need for each compilation.  The example below constructs the compile
+  classpath to include the servlet.jar file, as well as the other components
+  that Tomcat makes available to web applications automatically, plus anything
+  that you explicitly added.
+
+-->
+
+  <path id="compile.classpath"> 
+  	
+	<!-- Include all JAR files from an external project (if indicated) -->
+	<fileset dir="${external.project.build.lib}">
+      <include name="*.jar"/>
+    </fileset>  
+  
+    <!-- Include all JAR files that are dependent on building this app -->
+	<fileset dir="${build.lib}">
+      <include name="*.jar"/>
+    </fileset>
+    
+	<pathelement location="${build.home}/classes-junit"/>
+	<pathelement location="${build.home}/classes"/>
+	
+  </path>
+
+	<!-- NSDL ant task extensions -->
+	<path id="ant.task.classpath">
+		<pathelement location="${basedir}/build_lib/nsdl_ant_goodies-1.0.jar" />
+	</path>
+			
+	<taskdef name="replace_headers" classname="org.nsdl.util.ant.HeaderReplacementTask" classpathref="ant.task.classpath" />
+	
+	
+  
+
+<!-- ==================== All Target ====================================== -->
+
+<!--
+
+  The "all" target is a shortcut for running the "clean" target followed
+  by the "compile" target, to force a complete recompile.
+
+-->
+
+  <target name="all" depends="clean,compile"
+   description="Clean build and dist, then compile"/>
+
+
+
+<!-- ==================== Clean Target ==================================== -->
+
+<!--
+
+  The "clean" target deletes any previous "build" and "dist" directory,
+  so that you can be ensured the application can be built from scratch.
+
+-->
+
+  <target name="clean"
+   description="Delete old build and dist directories">
+    <delete dir="${build.home}"/>
+    <delete dir="${dist.home}"/>
+    <delete dir="${junit.test.dir}"/>
+  </target>
+
+  <target name="deploy-clean"
+   description="Delete old deploy directory">
+    <delete dir="${tools.deploy.home}"/>
+  </target>
+
+<!-- ==================== Compile Target ================================== -->
+
+<!--
+
+  The "compile" target transforms source files (from your "src" directory)
+  into object files in the appropriate location in the build directory.
+  This example assumes that you will be including your classes in an
+  unpacked directory hierarchy under "/WEB-INF/classes".
+
+-->
+
+  <target name="compile" depends="prepare"
+   description="Compile Java sources">
+    
+   <echo>Compiling DLS Java libraries</echo>
+   
+    <!-- Compile Java classes as necessary -->
+    <mkdir    dir="${build.home}/classes"/>
+    <javac srcdir="src"
+    	includeantruntime="false"
+          destdir="${build.home}/classes"
+           debug="${compile.debug}"
+     deprecation="${compile.deprecation}"
+        optimize="${compile.optimize}">
+        <classpath refid="compile.classpath"/>
+    </javac>
+	
+    <!-- Copy associated resource files -->
+    <copy  todir="${build.home}/classes">
+    	<fileset dir="src" includes="**/*.properties"/>
+		<fileset dir="src" includes="**/*.xml"/>
+    </copy>
+	
+    <!-- Copy tld's -->
+	<mkdir    dir="${build.home}/classes/META-INF"/>	
+	<copy  todir="${build.home}/classes/META-INF">
+		<fileset dir="src/META-INF" />
+	</copy>
+	
+  </target>
+
+  
+<!-- ==================== Compile JUnit Target ================================== -->
+
+  <target name="compile-junit" depends="compile"
+   description="Compile JUnit Java sources">
+   
+    <!-- Compile JUnit classes as necessary --> 
+    <mkdir    dir="${build.home}/classes-junit"/> 
+    <javac srcdir="junit_src"
+    	includeantruntime="false"
+          destdir="${build.home}/classes-junit" 
+           debug="${compile.debug}" 
+     deprecation="${compile.deprecation}" 
+        optimize="${compile.optimize}"> 
+        <classpath refid="compile.classpath"/> 
+    </javac> 
+	
+  </target>
+  
+ 
+<!-- ==================== Run JUnit Tests ================================== 
+
+  Use this target to run the JUnit tests for the application and generate a report.
+
+-->
+
+  <target name="unit-test" depends="compile-junit" description="Run JUnit tests">
+   
+    <!-- make a clean directory for expendable test files -->
+    <delete dir="${junit.test.dir}"/>
+    <mkdir dir="${junit.test.dir}"/> 
+    
+    <!-- <property name="myclasspath" refid="compile.classpath"/>
+    <echo message="classpath=${myclasspath}"/> -->
+
+    
+   <junit printsummary="withOutAndErr" haltonfailure="yes" haltonerror="yes"> 
+      <!-- Make the junit test directory location available via a System prop -->
+	  <sysproperty key="junit.test.dir" value="${basedir}/${junit.test.dir}"/>
+      <classpath refid="compile.classpath"/>
+      <formatter type="plain" usefile="false"/>
+      <test name="edu.ucar.dls.junit.AllToolsUnitTests"/>
+    </junit>
+    
+  </target>
+
+
+ 
+  
+<!-- ==================== Jar Target =================================== -->
+
+<!--
+
+  The "jar" target creates a jar of the source classes, minus the junit classes.
+
+-->
+  
+  <!-- Copy the contents of the build directory -->
+  <target name="jar" depends="compile" 
+   description="Creates the project jar file in the local build area">
+	<echo>${jar.lib.dir}</echo>
+	<property name="jar.fullpath" 		value="${jar.lib.dir}/${jar.filename}"/>
+    <!-- Create and place a jar file instead of the classes -->
+    <mkdir    dir="${jar.lib.dir}"/>
+    <jar destfile="${jar.fullpath}" 
+    	basedir="${build.home}/classes"
+		excludes="**/junit*"
+		index="true" />
+	
+  </target> 
+  
+
+<!-- ==================== Deploy Target =================================== -->
+
+<!--
+
+  The "deploy" target copies the contents of the build directory into the 
+  directory specified with the tools.deploy.home property
+
+-->
+  
+  <!-- Copy the contents of the build directory -->
+  <target name="deploy" depends="jar" if="tools.deploy.home"
+   description="Deploy the project jar, docs and other files to the deployment area">
+	
+	<property name="jar.filename" value="${app.name}.jar"/>
+	<property name="jar.fullpath" value="${tools.deploy.home}/lib/${jar.filename}"/>
+	
+    <mkdir     dir="${tools.deploy.home}"/>
+    <copy    todir="${tools.deploy.home}">
+      <fileset dir="${build.home}" 
+          excludes="classes/, classes-junit/" />
+    </copy>
+    
+	<mkdir     dir="${tools.deploy.home}/lib"/>
+	<copy    todir="${tools.deploy.home}/lib">
+      <fileset dir="${build.lib}" 
+          includes="**/xerces*" />
+    </copy>
+	<copy    todir="${tools.deploy.home}/lib/lib-xslt-2">
+      <fileset dir="${build.lib}" 
+          includes="saxon*" />
+    </copy>	
+    
+	<echo message="Setting execution permissions in ${tools.deploy.home}/bin (works on UNIX only)"/>
+	<chmod file="${tools.deploy.home}/bin/harvest" perm="ugo+rx"/>
+	<chmod dir="${tools.deploy.home}/bin" perm="ugo+rx" includes="**/*"/>	
+	
+  </target>
+
+
+<!-- ==================== Copy-Jar Target(s) =================================== -->
+
+<!--
+
+	Copy the jar file for this project to a location specified by the developer
+	via the given propery(s).
+
+-->
+  
+
+  <!-- Copy this project's jar file to the developer's local vocab-project lib directory -->
+  <target name="copy-jar-to-vocab" if="vocab.lib.dir" depends="jar" 
+   description="Copy this project's jar file to the developer's local vocab-project lib directory (property: 'vocab.lib.dir')">
+		
+	<copy file="${jar.fullpath}" todir="${vocab.lib.dir}" overwrite="yes"/>	
+	<echo message="Copied ${jar.fullpath} to ${vocab.lib.dir}"/>
+	
+  </target>
+
+  <!-- Copy this project's jar file to the developer's local register-project lib directory -->
+  <target name="copy-jar-to-register" if="register.lib.dir" depends="jar" 
+   description="Copy this project's jar file to the developer's local register-project lib directory (property: 'register.lib.dir')">
+		
+	<copy file="${jar.fullpath}" todir="${register.lib.dir}" overwrite="yes"/>	
+	<echo message="Copied ${jar.fullpath} to ${register.lib.dir}"/>
+	
+  </target>  
+  
+<!-- ==================== Dist Target ===================================== -->
+
+
+<!--
+
+  The "dist" target creates a binary distribution of your application
+  in a directory structure ready to be archived in a tar.gz or zip file.
+  Note that this target depends on two others:
+  * "deploy" so that the entire web application (including external
+    dependencies) will have been assembled
+  * "javadoc" so that the application Javadocs will have been created
+
+-->
+
+  <target name="dist" depends="deploy"
+   description="Create binary distribution with documentation">
+
+    <!-- Copy documentation subdirectory -->
+    <copy    todir="${dist.home}/docs">
+      <fileset dir="docs"/>
+    </copy>
+        
+    <!-- Copy additional files to ${dist.home} as necessary -->
+    <copy    todir="${dist.home}">
+      <fileset dir="${tools.deploy.home}"
+	  		excludes="/classes-junit" />
+    </copy>
+ 
+  </target> 
+
+
+<!-- ==================== Javadoc Target ================================== -->
+
+<!--
+
+  The "javadoc" target creates Javadoc API documentation for the Java
+  classes included in your application.  Normally, this is only required
+  when preparing a distribution release, but is available as a separate
+  target in case the developer wants to create Javadocs independently.
+
+-->
+
+  <target name="javadoc" description="Generate Javadoc for all DLS Java Libraries">
+    
+	<property name="javadoc.home" value="${javadoc.default}"/>
+	
+	<echo message="Building DLSLibs javadoc to ${javadoc.home}"/>
+    <mkdir          dir="${javadoc.home}"/>
+    <javadoc sourcepath="src"
+                destdir="${javadoc.home}"
+           packagenames="*"
+		   windowtitle="DLS Java Libraries API Documentation v${app.version}"
+		   doctitle="DLS Java Libraries, v${app.version}"
+		   header="&lt;b&gt;DLS Java Libraries &lt;br&gt;v${app.version}&lt;/b&gt;"
+		   overview="src/overview.html">
+	  <link href="http://docs.oracle.com/javase/6/docs/api/"/>
+	  <link href="http://java.sun.com/j2ee/sdk_1.3/techdocs/api/"/>
+	  <link href="http://lucene.apache.org/core/old_versioned_docs/versions/3_5_0/api/all/"/>
+	  <link href="http://struts.apache.org/1.2.7/api/"/>
+	  <link href="http://dom4j.sourceforge.net/dom4j-1.6.1/apidocs/"/>	  
+      <classpath refid="compile.classpath"/>
+    </javadoc>
+	
+	<!-- Copy supporting files and documentation -->
+	<copy file="src/META-INF/dlsELFunctions.tld" tofile="${javadoc.home}/dlsELFunctions.xml" overwrite="yes"/>
+	<copy file="src/META-INF/dlsELFunctions.xsl" tofile="${javadoc.home}/dlsELFunctions.xsl" overwrite="yes"/>
+	<mkdir dir="${javadoc.home}/javadoc-includes"/>
+	<copy todir="${javadoc.home}/javadoc-includes" overwrite="yes">
+		<fileset dir="docs/javadoc-includes"/>
+	</copy>
+	
+  </target>
+
+
+  
+  	<!-- Replace/update the licence/copyright statement in source files (only works in unix, not Windows) -->
+	<target name="replace-license-headers">
+		<property name="java.files.basedir" value="${basedir}/src/org/dlese/dpc/"/>
+		<echo>Updating the license in all Java files under ${java.files.basedir}</echo>
+		<replace_headers file="${basedir}/license/license_statement_for_java_source_code.txt" before="package">
+			<fileset dir="${java.files.basedir}" includes="**/*.java" />
+		</replace_headers>
+		
+		<property name="java.files.junit.basedir" value="${basedir}/junit_src/org/dlese/dpc/"/>
+		<echo>Updating the license in all Java files under ${java.files.junit.basedir}</echo>
+		<replace_headers file="${basedir}/license/license_statement_for_java_source_code.txt" before="package">
+			<fileset dir="${java.files.junit.basedir}" includes="**/*.java" />
+		</replace_headers>		
+	</target>    
+  
+  
+<!-- ==================== Prepare Target ================================== -->
+
+<!--
+
+  The "prepare" target is used to create the "build" destination directory,
+  and copy the static contents of your web application to it.  If you need
+  to copy static files from external dependencies, you can customize the
+  contents of this task.
+
+  Normally, this task is executed indirectly when needed.
+
+-->
+
+  <target name="prepare">
+
+    <!-- Create build directory and copy static content -->
+    <mkdir  dir="${build.home}"/>
+
+    <!-- Copy in the scripts -->
+    <mkdir    dir="${build.home}/bin"/>
+    <copy  todir="${build.home}/bin">
+    	<fileset dir="scripts" includes="*"/>
+    </copy>  	
+	
+    <!-- Copy external dependencies as required -->
+
+    <!-- Copy static files from external dependencies as needed -->
+
+  </target>
+
+
+
+
+
+
+<!-- ==================== Idmapper-deploy Target ========================== -->
+
+<!--
+
+  The "idmapper-deploy" target initializes the Idmapper database.
+  Mysql must be running.
+  Note: the ant "sql" task is foobared.  It reports success on
+  "CREATE TABLE xxx", even though the table never gets created.
+  Similarly with "DROP TABLE IF EXISTS xxx".
+  So we use the exec task instead.
+-->
+
+  <target name="idmapper-deploy" depends="compile"
+   description="Initialize the Idmapper database">
+
+	<fail unless="javahome" message="Please spec property: javahome  e.g. -Djavahome=/export/devel/qaroot/usr/local/j2sdk1.4.0" />
+	<fail unless="codebase" message="Please spec property: codebase  e.g. -Dcodebase=/usr/local/dpc/idmap/dlese-tools-project" />
+	<fail unless="destdir" message="Please spec property: destdir  e.g. -Ddestdir=/usr/local/dpc/idmap" />
+	<fail unless="dbuserid" message="Please spec property: dbuserid  e.g. -Ddbuserid=idmap" />
+	<fail unless="emailhost" message="Please spec property: emailhost  e.g. -Demailhost=mail.dpc.ucar.edu" />
+	<fail unless="emailperson" message="Please spec property: emailperson  e.g. -Demailperson=someone@dpc.ucar.edu" />
+
+	<property name="srcdir" value="${codebase}/src/org/dlese/dpc/services/idmapper" />
+    <echo message="codebase=${codebase}"/>
+    <echo message="srcdir=${srcdir}"/>
+    <echo message="dest=${destdir}"/>
+    <echo message="dbuserid=${dbuserid}"/>
+
+    <echo message=""/>
+    <echo message="CAUTION: This will delete and rebuild the entire Idmapper database." />
+    <input message="Press control-C to stop now.  To continue, press enter." />
+
+    <input message="Enter idmapper password for mysql userid ${dbuserid}: " addproperty="dbpswd"/>
+
+    <copy overwrite="true" todir="${destdir}">
+		<fileset dir="${srcdir}" includes="Idmap.props initdb.sh initdb.sql removedb.sql runidmap.sh testpagedesc.sh" />
+		<filterset begintoken="@@@" endtoken="@@@">
+			<filter token="Userid" value="${dbuserid}" />
+			<filter token="Password" value="${dbpswd}" />
+			<filter token="codebase" value="${codebase}" />
+			<filter token="destdir" value="${destdir}" />
+			<filter token="javahome" value="${javahome}" />
+			<filter token="emailhost" value="${emailhost}" />
+			<filter token="emailperson" value="${emailperson}" />
+		</filterset>
+	</copy>
+	<chmod file="${destdir}/Idmap.props" perm="600" />
+	<chmod file="${destdir}/initdb.sh" perm="700" />
+	<chmod file="${destdir}/initdb.sql" perm="600" />
+	<chmod file="${destdir}/runidmap.sh" perm="700" />
+	<chmod file="${destdir}/testpagedesc.sh" perm="700" />
+
+	<exec dir="${destdir}"  executable="${destdir}/initdb.sh">
+		<arg line="${dbuserid} ${dbpswd}" />
+	</exec>
+
+    <echo message="Now, as webadmin, issue: crontab -e"/>
+    <echo message="and add the following lines to crontab:"/>
+    <echo message="Now, as webadmin, issue: crontab -e"/>
+    <echo message="and add the lines:"/>
+
+    <echo message="  # Run the idmapper:" />
+    <echo message="  # one hour before east coast opens; one hour after west coast closes" />
+    <echo message="  # min  hr  dayofmon  mon  dayofweek" />
+    <echo message="    0    5,19    *      *     *       (cd /usr/local/dpc/idmap; ./runidmap.sh dir=/export/devel/ginger/records)" />
+    <echo message=""/>
+    <echo message="CAUTION: the file:  ${destdir}/Idmap.props"/>
+    <echo message="contains the DB password.  It should be well protected!"/>
+
+  </target>
+
+
+
+
+
+<!-- ==================== Idmapper-remove Target ========================== -->
+
+<!--
+
+  The "idmapper-remove" target removes all Idmapper database tables.
+  Dangerous!  Mysql must be running.
+
+-->
+
+  <target name="idmapper-remove" depends="compile"
+   description="Remove all Idmapper database tables">
+
+	<fail unless="destdir" message="Please spec property: destdir  e.g. -Ddestdir=/usr/local/dpc/idmap" />
+	<fail unless="dbuserid" message="Please spec property: dbuserid  (e.g. -Ddbuserid=idmap)"/>
+
+    <echo message="destdir=${destdir}"/>
+    <echo message="dbuserid=${dbuserid}"/>
+
+    <echo message="CAUTION: This will delete the entire Idmapper database." />
+    <input message="Press control-C to stop now.  To continue, press enter." />
+
+    <input message="Enter idmapper password for mysql userid ${dbuserid}: " addproperty="dbpswd"/>
+
+    <sql driver="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/DLESE_Systems"
+        userid="${dbuserid}"
+        password="${dbpswd}"
+        src="${destdir}/removedb.sql"
+        onerror="continue"
+    />
+  </target>
+
+  
+	<!-- 
+		Building DleseGui.jar is only necessary when using pre-release functionality, as every
+		release of dlese-gui-project will update this project with the latest JAR in /build_lib/.
+	-->	
+	<target name="deploy-gui-jar"
+		description="Build and deploy DleseGui.jar to /build_lib/"> 
+		<ant antfile="../dlese-gui-project/build.xml" inheritall="false" target="deploy">
+			<property name="pre.jdk5" value="true" />
+		</ant>
+		<copy file="../dlese-gui-project/dist/DleseGui.jar" 
+			tofile="./build_lib/DleseGui.jar" overwrite="yes" />
+	</target>
+  
+</project>
+
+

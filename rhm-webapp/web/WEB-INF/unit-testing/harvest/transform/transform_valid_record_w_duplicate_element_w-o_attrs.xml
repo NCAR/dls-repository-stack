@@ -1,0 +1,57 @@
+
+<nsdl_dc:nsdl_dc xmlns:nsdl_dc="http://ns.nsdl.org/nsdl_dc_v1.02/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ieee="http://www.ieee.org/xsd/LOMv1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.02.000" xsi:schemaLocation="http://ns.nsdl.org/nsdl_dc_v1.02/ http://ns.nsdl.org/schemas/nsdl_dc/nsdl_dc_v1.02.xsd">
+  <dc:identifier>compadre.org:11507</dc:identifier>
+  <dc:identifier xsi:type="dct:URI">http://www.teachengineering.org/view_lesson.php?url=http://www.teachengineering.org/collection/duk_/lessons/duk_friction_smary_less/duk_friction_smary_less.xml</dc:identifier>
+  <dc:identifier xsi:type="nsdl_dc:MetadataHandle">hdl:2200/20111121002155615T</dc:identifier>
+  <dc:identifier xsi:type="nsdl_dc:ResourceHandle">hdl:2200/20100927200249549T</dc:identifier>
+  <dc:identifier xsi:type="nsdl_dc:NSDLPartnerID">oai:compadre.org:11507</dc:identifier>
+  <dct:conformsTo xsi:type="dct:URI">http://www.project2061.org/publications/bsl/online/index.php?chapter=4#bm_4EM2</dct:conformsTo>
+  <dct:conformsTo xsi:type="dct:URI">http://www.project2061.org/publications/bsl/online/index.php?chapter=4#bm_4FM3a</dct:conformsTo>
+  <dct:created xsi:type="dct:W3CDTF">2011-10-11T08:11:28Z</dct:created>
+  <dct:modified xsi:type="dct:W3CDTF">2011-10-11T08:19:22Z</dct:modified>
+  <dct:modified xsi:type="dct:W3CDTF">2011-11-17T02:28:41Z</dct:modified>
+  <dct:dateAccepted xsi:type="dct:W3CDTF">2011-10-11T08:19:23Z</dct:dateAccepted>
+  <dct:dateCopyrighted xsi:type="dct:W3CDTF">2004</dct:dateCopyrighted>
+  <dc:title xml:lang="en">Teach Engineering: Discovering Friction</dc:title>
+  <dc:subject xml:lang="en">frictional force</dc:subject>
+  <dc:subject xml:lang="en">Newton's Laws</dc:subject>
+  <dc:subject xml:lang="en">static friction</dc:subject>
+  <dc:subject xml:lang="en">kinetic friction</dc:subject>
+  <dc:subject>Education Practices</dc:subject>
+  <dc:subject>Active Learning</dc:subject>
+  <dc:subject>Other Sciences</dc:subject>
+  <dc:subject>Classical Mechanics</dc:subject>
+  <dc:subject>Newton's Second Law</dc:subject>
+  <dc:subject>Applications of Newton's Laws</dc:subject>
+  <dc:subject>Friction</dc:subject>
+  <dc:description xml:lang="en">This inquiry-based lesson for Grades 6-9 introduces the concept of friction as a force that impedes motion when two surfaces are in contact. Students use a spring scale to measure the frictional force between a moving coffee mug and the surface it slides on. This resource includes background information for teachers, suggestions for lesson introduction and closure, and extension activities. &lt;i&gt;TeachEngineering&lt;/i&gt; is a Pathway project of the National Science Digital Library. It provides a large collection of teacher-tested, research-based content for K-12 teachers to connect real-world experiences with curricular content.</dc:description>
+  <dc:publisher>Integrated Teaching and Learning Program: Teach Engineering</dc:publisher>
+  <dc:contributor>National Science Foundation</dc:contributor>
+  <dc:rights>Has a copyright or other licensing restriction.</dc:rights>
+  <dct:conformsTo>SMS-BMK-0203</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S2366891</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S2470938</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S2470928</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S2471300</dct:conformsTo>
+  <dct:conformsTo>SMS-BMK-1761</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S2366810</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S2470795</dct:conformsTo>
+  <dct:educationLevel xsi:type="nsdl_dc:NSDLEdLevel">Middle School</dct:educationLevel>
+  <dct:educationLevel xsi:type="nsdl_dc:NSDLEdLevel">Vocational/Professional Development Education</dct:educationLevel>
+  <dct:audience xsi:type="nsdl_dc:NSDLAudience">Educator</dct:audience>
+  <dc:type xsi:type="nsdl_dc:NSDLType">Activity</dc:type>
+  <dc:type xsi:type="nsdl_dc:NSDLType">Instructional Material</dc:type>
+  <dc:type xsi:type="nsdl_dc:NSDLType">Instructor Guide/Manual</dc:type>
+  <dc:type xsi:type="nsdl_dc:NSDLType">Lesson/Lesson Plan</dc:type>
+  <dc:format xsi:type="dct:IMT">text/html</dc:format>
+  <dc:format xsi:type="dct:IMT">text</dc:format>
+  <dct:accessRights xsi:type="nsdl_dc:NSDLAccess">Free access</dct:accessRights>
+  <dc:subject>Physics</dc:subject>
+  <dc:subject>Education</dc:subject>
+  <dc:subject>Engineering</dc:subject>
+  <dc:subject>Technology</dc:subject>
+  <dc:language>English</dc:language>
+  <lar:readiness xmlns:lar="http://ns.nsdl.org/schemas/dc/lar" xsi:type="lar:Ready">Mostly ready</lar:readiness>
+  <lar:metadataTerms xmlns:lar="http://ns.nsdl.org/schemas/dc/lar">The National Science Digital Library (NSDL), located at the University Corporation for Atmospheric Research (UCAR), provides these metadata terms: These data and metadata may not be reproduced, duplicated, copied, sold, or otherwise exploited for any commercial purpose that is not expressly permitted by NSDL. More information is available at: http://nsdl.org/help/terms-of-use.</lar:metadataTerms>
+  <!--The National Science Digital Library (NSDL) has normalized this metadata record for use across its systems and services.-->
+</nsdl_dc:nsdl_dc>

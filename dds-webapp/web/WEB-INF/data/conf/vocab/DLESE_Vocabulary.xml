@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE load_vocabulary_files SYSTEM "ControlledVocabLoader.dtd">
+<!-- 
+	NOTE: These XML config files are supplied for out-of-the-box functionality. The
+	'vocabConfig' context parameter should be overridden to point to a location
+	that exists outside of the CVS tree, and the 'sqlURL' and associated parameters
+	should also be overridden so that an SQL database will be used to assign
+	encoded vocabulary IDs, as well as to register vocabulary changes.
+-->
+<load_vocabulary_files>
+	<definitions>
+		<file>WEB-INF/data/conf/vocab/adn-i/contentStd-terms-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/gradeRange-terms-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/resourceType-terms-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/subject-terms-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/kind-terms-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/cost-terms-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/requirements-terms-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/collection/key-terms-en-us.xml</file>
+	</definitions> 
+	<user_interfaces>
+		<file>WEB-INF/data/conf/vocab/adn-i/contentStd-groups-dds-def-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/gradeRange-groups-dds-def-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/gradeRange-groups-dds-frontpage-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/resourceType-groups-dds-def-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/resourceType-groups-dds-frontpage-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/subject-groups-dds-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/kind-groups-dds-def-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/cost-groups-dds-def-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/adn-i/requirements-groups-dds-def-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/collection/key-groups-dds-def-en-us.xml</file>
+		<file>WEB-INF/data/conf/vocab/collection/key-groups-dds-dropdown-en-us.xml</file>
+	</user_interfaces>
+</load_vocabulary_files>
+

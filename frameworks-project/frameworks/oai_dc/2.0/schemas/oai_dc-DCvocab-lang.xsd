@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: oai_dc-DCvocab-lang.xsd,v 1.1 2008/02/20 16:55:29 ginger Exp $ -->
+<xs:schema targetNamespace="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="oai_dc2.0">
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA PUPOSE  and INTENT  *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>Define a simple Dublin Core schema that is similar to the OAI-PMH oai_dc schema but that does not use the XML choice element</xs:documentation>
+		<xs:documentation>To create a schema that when used in a cataloging tool that creates its interface based directly on a schema, the tool interface will expose the schema elements directly rather than requiring the user to make a choice.</xs:documentation>
+		
+		<xs:documentation>******************************</xs:documentation>
+		<xs:documentation>*****  NAMESPACES  *****</xs:documentation>
+		<xs:documentation>******************************</xs:documentation>
+		<xs:documentation>This schema has a target namespaces of: http://www.dlese.org/Metadata/dc/oai_dc</xs:documentation>
+		<xs:documentation>This schema does not have a default namespace</xs:documentation>
+		<xs:documentation>This schema has a namespace of oai_dc http://www.openarchives.org/OAI/2.0/oai_dc/ for the root element</xs:documentation>
+		<xs:documentation>This schema also has a namespace called dc http://purl.org/dc/elements/1.1/ to work with imported schemas</xs:documentation>
+
+		<xs:documentation>****************************************************</xs:documentation>
+		<xs:documentation>***** SCHEMAS TO INCLUDE or IMPORT *****</xs:documentation>
+		<xs:documentation>****************************************************</xs:documentation>
+	</xs:annotation>
+	<xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="../../../simple_dc/1.1/schemas/DCelements-DCvocab-lang.xsd"><!--the Dublin Core elements from a schema for simple Dublin Core--></xs:import>
+	
+	<xs:annotation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>This schema has a root element of: oai:dc:dc</xs:documentation>
+		<xs:documentation>Included schemas do not have a root element</xs:documentation>
+	</xs:annotation>
+	<xs:element name="dc" type="oai_dc:oai_dcType"/>
+
+	<xs:annotation>
+		<xs:documentation>***************************************************</xs:documentation>
+		<xs:documentation>*****  COMPLEX TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>***************************************************</xs:documentation>
+		<xs:documentation>oai_dcType - is root element type</xs:documentation>
+	</xs:annotation>
+	
+	<xs:complexType name="oai_dcType">
+		<xs:sequence>
+			<xs:element ref="dc:title" minOccurs="0" maxOccurs="unbounded" /> 
+			<xs:element ref="dc:creator" minOccurs="0" maxOccurs="unbounded"/> 
+			<xs:element ref="dc:subject" minOccurs="0" maxOccurs="unbounded"/> 
+			<xs:element ref="dc:description" minOccurs="0" maxOccurs="unbounded"/> 
+			<xs:element ref="dc:publisher" minOccurs="0" maxOccurs="unbounded"/> 
+			<xs:element ref="dc:contributor" minOccurs="0" maxOccurs="unbounded"/> 
+			<xs:element ref="dc:date" minOccurs="0" maxOccurs="unbounded"/> 
+			<xs:element ref="dc:type" minOccurs="0" maxOccurs="unbounded"/> 
+			<xs:element ref="dc:format" minOccurs="0" maxOccurs="unbounded"/> 
+			<xs:element ref="dc:identifier" minOccurs="0" maxOccurs="unbounded"/> 
+			<xs:element ref="dc:source" minOccurs="0" maxOccurs="unbounded"/> 
+			<xs:element ref="dc:language" minOccurs="0" maxOccurs="unbounded"/> 
+			<xs:element ref="dc:relation" minOccurs="0" maxOccurs="unbounded"/> 
+			<xs:element ref="dc:coverage" minOccurs="0" maxOccurs="unbounded"/> 
+			<xs:element ref="dc:rights" minOccurs="0" maxOccurs="unbounded"/> 
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:annotation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>Created: 2006-10-02</xs:documentation>
+		<xs:documentation>Last Modified 2006-10-05</xs:documentation>
+
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>***** SCHEMA AUTHOR  *****</xs:documentation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger@ucar.edu</xs:documentation>
+
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>*****  LICENSE INFORMATION  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>Copyright (c) 2006 University Corporation for Atmospheric Research (UCAR) P.O. Box 3000, Boulder, CO 80307, United States of America</xs:documentation>
+		
+		<xs:documentation>******************************************************</xs:documentation>
+		<xs:documentation>*****  OTHER COPYRIGHT INFORMATION  *****</xs:documentation>
+		<xs:documentation>******************************************************</xs:documentation>
+		<xs:documentation>This schema is based on the Open Archives schema at: http://www.openarchives.org/OAI/2.0/oai_dc.xsd</xs:documentation>
+	</xs:annotation>
+</xs:schema>

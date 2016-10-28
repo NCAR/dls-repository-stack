@@ -1,0 +1,65 @@
+#!/bin/csh
+
+# This script harvests XML metadata using the OAI-PMH v2.0.
+# See http://www.openarchives.org/ for more information.
+#
+# This script assumes the following environmental variables have been set:
+#
+# JAVA_HOME = The base directory of a Java j2sdk v1.4 or later
+# 
+# DLS_LIBS_HOME = The home directory of the dls-libs.jar and xercesImpl-x.x.x.jar.
+#
+# Author: John Weatherley
+
+### Define the path the Java JVM or SDK:
+#set JAVA_HOME = /path/to/java/jvm/
+
+### Define the path to the directory where dls-libs.jar and xercesImpl-x.x.x.jar are located:
+#set DLS_LIBS_HOME = /path/to/required/jar/files/lib/
+
+set CP = ""
+
+if( $#argv >= 3 && $#argv <= 6) then
+	if( $argv[1] != "-h" && $argv[1] != "--help" ) then
+		
+		if($?DLS_LIBS_HOME == 0) then
+			echo "DLS_LIBS_HOME is not set"
+			exit 1
+		endif			
+
+		if($?JAVA_HOME == 0) then
+			echo "JAVA_HOME is not set"
+			exit 1
+		endif
+		
+		# Construct the classpath
+		foreach file ($DLS_LIBS_HOME/*.jar)
+			set CP = $CP$file\:
+		end
+				
+        # Run harvest
+		$JAVA_HOME/bin/java -cp $CP org.dlese.dpc.oai.harvester.Harvester $*
+		if ( $status == 0 ) then
+			echo "Harvest completed successfully."
+			exit 0
+		else
+			echo "Harvest exited with errors."
+			exit 1
+		endif
+		
+	endif
+endif
+
+# If we've gotten this far then send use msg:
+echo ""
+echo "USAGE: harvest outdir baseURL metadataPrefix [ -set:setSpec ] [ -from:fromDate ] [ -until:untilDate ] [ -splitBySet:true|False ] [ -writeHeaders:true|False ]"
+echo ""
+echo " Example: harvest . http://www.dlese.org/oai/provider adn"
+echo " Example: harvest . http://www.dlese.org/oai/provider oai_dc -set:dcc"
+echo " Example: harvest /usr/home/myHarvestDir http://www.dlese.org/oai/provider oai_dc -set:dcc -from:2003-01-02T04:35:46Z -until:2003-04-02T04:35:46Z -splitBySet:true -writeHeaders:true"
+echo ""
+echo ""
+echo "This harvester is OAI-PMH v2.0 and v1.1 compliant. See http://www.openarchives.org for details."
+exit 1
+
+

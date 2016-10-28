@@ -1,0 +1,36 @@
+<%-- searching_record_actions.jspf --%>
+
+<div style="white-space:nowrap;display:inline">
+<c:set var="frameworkLoaded" value="${sf:listContains (frameworkRegistry.allFormats, result.docReader.nativeFormat)}"/>
+<c:if test="${not frameworkLoaded}">
+	<div style="font-style:italic;font-size:75%" align="right">${result.docReader.nativeFormat} framework is NOT loaded</div>
+</c:if>
+<c:if test="${readOnlyMode}">
+	<div style="font-style:italic;font-size:75%" align="right">Repository is in Read-Only Mode</div>
+</c:if>
+<a 	href="#" class="status-visibility-widget"
+		title="Click to show/hide status information"
+		style="position:relative;top:7px"><img src='${contextPath}/images/status-widget.png' 
+			alt="Click to show/hide status information" border="0" hspace="0" width="11" height="20" /></a>
+
+<%-- <a 	href="javascript:toggleStatusVisibility('statusNote_${result.docReader.id}');" 
+		title="Click to show/hide status information"
+		style="position:relative;top:7px"><img src='${contextPath}/images/status-widget.png' 
+			alt="Click to show/hide status information" border="0" hspace="0" width="11" height="20" /></a> --%>
+<span style="padding:0px 20px 0px 0px">
+	<st:editRecordStatusButton label="chg status" id="${result.docReader.id}" disabled="${readOnlyMode}"/>
+</span> 
+
+<st:viewRecordButton id="${result.docReader.id}" disabled="${not frameworkLoaded}"/> 
+<st:editRecordButton reader="${result.docReader}"  disabled="${not frameworkLoaded || readOnlyMode}"/>
+
+<%-- don't permit these operations on master collection records! --%>
+<c:if test="${result.docReader.myCollectionDoc.key != 'collect'}">
+	<st:copyRecordButton id="${result.docReader.id}" disabled="${not frameworkLoaded || readOnlyMode}"/>
+	<st:copyMoveRecordButton id="${result.docReader.id}"  disabled="${not frameworkLoaded || readOnlyMode}"/>
+	<st:moveRecordButton id="${result.docReader.id}"  disabled="${not frameworkLoaded || readOnlyMode}"/>
+	<st:deleteRecordButton id="${result.docReader.id}" disabled="${readOnlyMode}"/>
+</c:if>
+</div>
+
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: copyrightNotice-osm-fields-en-us.xml,v 1.10 2011/12/13 21:10:54 julianneblomer Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/non-vocab-fields.xsd">
+  <field name="Copyright notice" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/rights/copyrightNotice">
+		<definition>a statement outlining the ways in which and circumstances under which a resource may be accessed and used</definition> 
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2100-12-13" link1="copyrightNotice" style1="bold" link2="type" style2="bold" link3="Holder" style3="bold" link4="Url" style4="bold">These best practices apply to the copyrightNotice, type, holder, and url fields.</practice>
+			</dos>
+			<otherPractices>
+				<otherPractice header="For Articles in Journals, Newsletters, and Other Periodicals:">
+				<practice status="current" originDate="2011-12-13" link1="copyright notice" style1="bold">Refer to OSGC Publishers and Rights Table for the copyright notice text, making sure to use the correct notice depending on if asset is uploaded and which version (final published, preprint, or postprint). If publication is not in the OSGC Publishers and Rights table, text should be: Copyright [year of publication] [copyright holder]. Check that record does not have a full-text asset.</practice>
+				<practice status="current" originDate="2011-12-13" link1="type" style1="bold">Leave type unspecified (except for Creative Commons licenses*).</practice>
+				<practice status="current" originDate="2011-12-13" link1="Holder" style1="bold">Holder should be publisher unless it was published on behalf of another organization (then choose producer).</practice>
+				</otherPractice>
+
+				<otherPractice header="For Books, Monographs, Book Chapters, and Encyclopedias:">
+				<practice status="current" originDate="2011-12-13" link1="copyright notice" style1="bold">Use copyright notice from the resource's verso page. If it's not available (you can often see it using previews at Amazon.com or Google Books if not the publisher's website), use: Copyright [year of publication] [copyright holder].</practice>
+				<practice status="current" originDate="2011-12-13" link1="type" style1="bold">Leave type unspecified (except for Creative Commons licenses*).</practice>
+				<practice status="current" originDate="2011-12-13" link1="Holder" style1="bold">Holder should be publisher unless it was published on behalf of another organization (then choose producer).</practice>
+				</otherPractice>
+
+				<otherPractice header="For Posters and Presentations:">
+				<practice status="current" originDate="2011-12-13" link1="copyright notice" style1="bold">For UCAR-authored resources, enter copyright notice as follows: Copyright [year] University Corporation for Atmospheric Research (UCAR). The user is granted the right to use this resource for non-commercial, non-profit research, or educational purposes only, as are more fully described in the NCAR Library Terms of Use.</practice>
+				<practice status="current" originDate="2011-12-13" link1="type" style1="bold">Leave type unspecified.</practice>
+				<practice status="current" originDate="2011-12-13" link1="Holder" style1="bold">Holder should be UCAR.</practice>
+				<practice status="current" originDate="2011-12-13" link1="Url" style1="bold">Url should be: http://www.ucar.edu/legal/terms_of_use.shtml.</practice>
+				<practice status="current" originDate="2011-12-13">For non-UCAR authorship, confirm with Jennifer or Katy that the resource should be cataloged.</practice>
+				</otherPractice>
+
+				<otherPractice header="For Published Proceedings (both abstracts and articles):">
+				<practice status="current" originDate="2011-12-13" link1="copyright notice" style1="bold">Copyright notice should be: Copyright [year of publication] [copyright holder].</practice>
+				<practice status="current" originDate="2011-12-13" link1="type" style1="bold">Leave type unspecified (except for Creative Commons licenses*).</practice>
+				<practice status="current" originDate="2011-12-13" link1="Holder" style1="bold">Holder should be publisher unless it was published on behalf of another organization (then choose producer).</practice>
+				</otherPractice>
+
+				<otherPractice header="For Unpublished Reports and Manuscripts:">
+				<practice status="current" originDate="2011-12-13">UCAR authorship: follow guidelines for posters and presentations above.</practice>
+				<practice status="current" originDate="2011-12-13">For non-UCAR authorship, confirm with Jennifer or Katy that resource should be cataloged.</practice>
+				</otherPractice>
+
+				<otherPractice header="*For Creative Commons Resources:">
+				<practice status="current" originDate="2011-12-13" link1="copyright notice" style1="bold">If the resource identifies itself as having a Creative Commons Attribution 3.0 license, use the following for copyright notice: Copyright Author(s) [year]. This work is distributed under the Creative Commons Attribution 3.0 License.</practice>
+				<practice status="current" originDate="2011-12-13" link1="type" style1="bold">For type, choose Creative commons: Attribution (by).</practice>
+				<practice status="current" originDate="2011-12-13" link1="holder" style1="bold">For holder, choose Author.</practice>
+				<practice status="current" originDate="2011-12-13" link1="type" style1="bold">The vast majority of Creative Commons Licenses will be CC Attribution 3.0. For others, choose the corresponding type and alter the copyright statement accordingly..</practice>
+				</otherPractice>
+				
+			</otherPractices>
+		 </bestPractices>
+		 <documentation>
+				<obligation>required</obligation>
+				<min>1</min>
+				<max>1</max>
+				<XMLdataTypes>
+					<XMLdataType>string</XMLdataType>
+				</XMLdataTypes>
+				<domain>free text</domain>
+				<example>Copyright information is unknown. Please contact the creator, author or publisher for further information.</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

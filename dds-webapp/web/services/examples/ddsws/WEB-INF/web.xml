@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>  
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+ 
+<!-- web.xml setup for the DLESE web services client application -->
+<web-app>  
+
+	<!-- 	A Servlet Filter that converts JSP output into JavaScript writeln statements or 
+			places it's output into a JS variable. The filter is activated by supplying a 
+			request query parameter rt=jswl or rt=jsvar. The filter also gzips the response. -->  
+	<filter>
+		<filter-name>JavaScriptWritelnFilter</filter-name>
+		<filter-class>edu.ucar.dls.webapps.servlets.filters.JavaScriptWritelnFilter</filter-class>
+	</filter>	
+		
+	<!-- Configure all pages to filter using the JavaScript filter. --> 
+	<filter-mapping>
+		<filter-name>JavaScriptWritelnFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>	
+	
+	<!-- The Usual Welcome File List -->  
+	<welcome-file-list> 
+		<welcome-file>index.jsp</welcome-file> 
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file> 		
+	</welcome-file-list>  
+  
+</web-app>  

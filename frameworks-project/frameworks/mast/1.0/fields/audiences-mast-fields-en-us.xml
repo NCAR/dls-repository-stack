@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- $Id: audiences-mast-fields-en-us.xml,v 1.4 2009/07/29 22:19:29 ginger Exp $ --> 
+
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/non-vocab-fields.xsd">
+  <field name="Audiences" metaFormat="mast" metaVersion="1.0" language="en-us" path="/record/educational/audiences">
+		<definition attribution="Digital Learning Sciences at the University Corporation for Atmospheric Research">A list of intended users of a resource chosen from a controlled vocabulary and/or provided as free text.</definition> 
+		
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2008-10-20"> A class of entity may be determined by the creator or the publisher or by a third party.</practice> <!--source:GEM-->
+				<practice status="current" originDate="2008-10-20"> Where the creator or publisher of the resource being described explicitly states that the resource is intended to address the needs of a specific audience, information about that audience should be included by the cataloger. Thus, terms for making statements about the audience for the resource should be drawn directly from the text of the resource. Unless qualified, the cataloger should not make statements about the audience that are merely implied from the resource.</practice> <!--source:GEM-->
+				<practice status="current" originDate="2008-10-20">The kinds of information about the audience that have proven useful for educators searching for resources include statements about the following audience characteristics: Mediator Roles/Characteristics (e.g., teachers, parents, administrators);  academic/training level (e.g., 5th grade students, middle school student, sophomores); beneficiary characteristics (e.g. gifted students, visually impaired students, students, cultural/linguistic groups, gender, linguistic ability, learning prerequisites, age.)</practice> <!--source:GEM-->
+				
+			</dos>
+		</bestPractices>
+  </field>
+  
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

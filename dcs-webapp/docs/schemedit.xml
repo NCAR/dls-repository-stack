@@ -1,0 +1,46 @@
+<Context path="/${DCS_NAME}" 
+		docBase="${TOMCAT_HOME}/webapps/${DCS_NAME}" 
+		reloadable="true" debug="0">
+		
+	<Parameter name="debug" value="true" override="false" />
+
+	<!-- Defines a label to use as the name of your DCS application. Replace
+	the "myDCS" value with an instance name for your installation. -->
+	<Parameter name="instanceName"
+	   value="myDCS"
+	   override="false"/>
+	   
+	<!-- Supply any value BUT "true" here to disable the authorization system. 
+		Note: when authentication is NOT enabled there will be no login and no 
+		support for roles and permissions. -->   
+	<Parameter name="authenticationEnabled"
+	   value=""
+	   override="false"/>
+	   
+	<!-- The path to directory under which your collection and framework and authorization
+	configuration files will go. -->		
+	<Parameter name="dcsConfig"
+		value="${TOMCAT_HOME}/dcs_conf"
+		override="false"/>
+			   
+	<!-- The full path to your metadata records. Replace the value here with
+	a path in your file system. If the path does not exist it will be
+	created when the system starts up. -->
+	 <Parameter name="collBaseDir" 
+		value="C:/Example/records/path"
+		override="false" />  
+		
+	<!-- The path to directory under which all exports will go. Replace the
+	value below with one appropriate for your setup -->	
+	<Parameter name="exportBaseDir"
+	   value="C:/exportBaseDir/path"
+	   override="false"/>
+	   
+	<!--  (opotional) name of an image file that will be place in the header of each page. This file must
+	be placed in the "images" directory of the expanded application directory within webapps -->
+	<Parameter name="logo"
+		   value="NSDL_4PMS.gif"
+	   override="false"/>  
+	   
+</Context>
+

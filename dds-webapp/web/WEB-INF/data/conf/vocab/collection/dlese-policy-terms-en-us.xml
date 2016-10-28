@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<termsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/collection/dlese-policy.xsd">
+	<field name="DLESEpolicy" id="" language="en-us">
+		<definition system="meta" interface="default">An indication of what DLESE policies a collections meets</definition>
+		<definition system="dcs" interface="default"></definition>
+		<definition system="dds" interface="default"></definition>
+
+		<value vocab="Articles of federation" id="">
+			<definition system="meta" interface="default">The governing document of the Digital Library for Earth System Education</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="Collection criteria" id="">
+			<definition system="meta" interface="default">The requirements resource must have in order to be in DLESE</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="Collection scope" id="">
+			<definition system="meta" interface="default">Describes the purpose, collection criteria, required metadata and types of collection in DLESE</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="Collections accession" id="">
+			<definition system="meta" interface="default">Describes the process for becoming a collection within DLESE</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="Collections deaccession" id="">
+			<definition system="meta" interface="default">Describes the method in which DLESE will use to deaccession resources and collections</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="Intellectual property" id="">
+			<definition system="meta" interface="default">Describes how intellectual property at DLESE is treated</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="Pathway documentation" id="">
+			<definition system="meta" interface="default">Describes the procedure for how annotation services become gatekeepers for the DLESE Reviewed Collection</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="Privacy policy" id="">
+			<definition system="meta" interface="default">Describes the privacy issues at DLESE</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="Terms of use" id="">
+			<definition system="meta" interface="default">Describes how information and DLESE products may be used</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+	</field>
+</termsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

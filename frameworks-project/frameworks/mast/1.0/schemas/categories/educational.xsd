@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: educational.xsd,v 1.8 2009/07/30 16:12:03 ginger Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dcmi="http://purl.org/dc/dcmitype/" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.02">	
+	<xs:annotation>
+		<xs:documentation>*****************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*****************************************</xs:documentation>
+		<xs:documentation>Created: 2008-02-29</xs:documentation>
+		<xs:documentation>Author: Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger@ucar.edu</xs:documentation>
+		<xs:documentation>To create the educationally oriented elements for the mast metadata format.</xs:documentation>
+		<xs:documentation>This particular schema groups elements of educational interest like: audience, educationLevel, instructionalMethod, type</xs:documentation>
+		
+		<xs:documentation>*******************************************************</xs:documentation>
+		<xs:documentation>*****  LICENSE/COPYRIGHT INFORMATION  *****</xs:documentation>
+		<xs:documentation>*******************************************************</xs:documentation>
+		<xs:documentation>See below</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>****************************************************</xs:documentation>
+		<xs:documentation>***** INCLUDED/ IMPORTED SCHEMAS  *****</xs:documentation>
+		<xs:documentation>****************************************************</xs:documentation>
+		<xs:documentation>Included schemas contain controlled vocabulary terms for elements defined in this schema</xs:documentation>
+	</xs:annotation>
+
+	<xs:include schemaLocation="commonfields.xsd"/>
+	<xs:include schemaLocation="../vocabs/GEMedLevel.xsd"/>
+	<xs:include schemaLocation="../vocabs/GEMmethod.xsd"/>
+	<xs:include schemaLocation="../vocabs/GEMtype.xsd"/>
+	<xs:import namespace="http://purl.org/dc/dcmitype/" schemaLocation="http://dublincore.org/schemas/xmls/qdc/2004/06/14/dcmitype.xsd"/>
+
+
+	<xs:annotation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>None.</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  COMPLEX TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>educationalLevelsType - part of educationalType</xs:documentation>
+		<xs:documentation>educationalType - is part of recordType</xs:documentation>
+		<xs:documentation>instructionalMethodsType - part of educationalType</xs:documentation>
+		<xs:documentation>standardsType - part of educationalType</xs:documentation>
+		<xs:documentation>typesType - part of educationalType</xs:documentation>
+	</xs:annotation>
+
+
+	<xs:complexType name="audiencesType">
+		<xs:annotation>
+			<xs:documentation>audienceType - a class of entity may be determined by the creator or the publisher or by a third party</xs:documentation>
+			<xs:documentation>gemEdLevel - a grade level or educational setting chosen from the GEM controlled vocabulary </xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="audience" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="gemEdLevel" type="GEMedLevelType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="educationalType">
+		<xs:annotation>
+			<xs:documentation>*****  educationalType  *****</xs:documentation>
+			<xs:documentation>educationLevels - a list of grade levels or educational settings associated with a resource</xs:documentation>
+			<xs:documentation>types - a list of resource types</xs:documentation>
+			<xs:documentation>audience - a list of entities for whom a resource is intended or useful</xs:documentation>
+			<xs:documentation>standards - a list references to a an established standard to which a resource follows</xs:documentation>
+			<xs:documentation>instructionalMethods - a list of teaching methods</xs:documentation>
+		</xs:annotation>
+		<xs:all>
+<!--			<xs:element name="educationLevels" type="educationLevelsType" minOccurs="0" maxOccurs="1"/>-->
+			<xs:element name="types" type="typesType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="audiences" type="audiencesType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="standards" type="standardsType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="instructionalMethods" type="instructionalMethodsType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="essentials" type="essentialsType" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+
+<!--	<xs:complexType name="educationLevelsType">
+		<xs:annotation>
+			<xs:documentation>made the sequence have min and max occurs so that the mast to qualified_dc XSLT transform can write the sequenced elements in any order; used the sequence construct (rather than wrapper tags around each sequenced element) to flatten the XML structure in the catalog tool;</xs:documentation>
+			<xs:documentation>gemEdLevel - a grade level or educational setting chosen from the GEM controlled vocabulary </xs:documentation>
+			<xs:documentation>otherEdLevel - any grade level or educational setting associated with a resource</xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="gemEdLevel" type="GEMedLevelType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="otherEdLevel" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>-->
+
+	<xs:complexType name="essentialsType">
+		<xs:annotation>
+			<xs:documentation>made the sequence have min and max occurs so that the mast to qualified_dc XSLT transform can write the sequenced elements in any order; used the sequence construct (rather than wrapper tags around each sequenced element) to flatten the XML structure in the catalog tool;</xs:documentation>
+			<xs:documentation>duration - the recommended time or number of sessions needed to effectively use the entity being described</xs:documentation>
+			<xs:documentation>essentialResource - a brief free-text listing of materials essential to the successful use of the entity by the teacher as stated in the entity being described</xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="duration" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="essentialResource" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+ 	<xs:complexType name="instructionalMethodsType">
+		<xs:annotation>
+			<xs:documentation>made the sequence have min and max occurs so that the mast to qualified_dc XSLT transform can write the sequenced elements in any order; used the sequence construct (rather than wrapper tags around each sequenced element) to flatten the XML structure in the catalog tool;</xs:documentation>
+			<xs:documentation>method - a way of presenting instructional materials or conducting instructional activities</xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="gemMethod" type="GEMmethodType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="otherMethod" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="standardsType">
+		<xs:annotation>
+			<xs:documentation>asnID - a URI provided by ASN that is the reference to an established standard associated with a resource</xs:documentation>
+			<xs:documentation>standard - any established standard (URL, free text or controlled vocabulary) associated with a resource</xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="asnID" type="urlType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="standard" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="typesType">
+		<xs:annotation>
+			<xs:documentation>made the sequence have min and max occurs so that the mast to qualified_dc XSLT transform can write the sequenced elements in any order; used the sequence construct (rather than wrapper tags around each sequenced element) to flatten the XML structure in the catalog tool;</xs:documentation>
+			<xs:documentation>gemType - a resource type term from the GEM controlled vocabulary</xs:documentation>
+			<xs:documentation>dcmiType - a resource type term from the Dublin Core Metadata Initiative (DCMI)</xs:documentation>
+			<xs:documentation>otherType - any resource type associated with a resource</xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="gemType" type="GEMtypeType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dcmiType" type="dcmi:DCMIType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="otherType" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

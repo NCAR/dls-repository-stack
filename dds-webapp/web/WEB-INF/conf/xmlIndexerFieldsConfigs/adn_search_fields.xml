@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="adn">
+	<customFields>
+		<!-- customField attributes: name, store, [type OR analyzer] -->
+		<!-- <customField name="exampleKeyField" store="yes" type="key">
+			<xpaths>
+				<xpath>/itemRecord/educational/resourceTypes/resourceType</xpath>
+			</xpaths>
+		</customField> -->	
+		
+		<customField facetCategory="CCSAssetUrl"> 
+			<xpaths>
+				<!-- Index protected asset urls found in the adn record -->
+				<xpath>/itemRecord/technical/online/primaryURL[(starts-with(.,'http://ccs.dls.ucar.edu/home/protected/'))]</xpath>
+				<xpath>/itemRecord/relations/relation/urlEntry/@url[(starts-with(.,'http://ccs.dls.ucar.edu/home/protected/'))]</xpath>
+				<xpath>/itemRecord/relations/relation/urlEntry[(starts-with(.,'http://ccs.dls.ucar.edu/home/protected/'))]</xpath>
+			</xpaths>		
+		</customField>		
+		
+	</customFields>
+</XMLIndexerFieldsConfig>
+

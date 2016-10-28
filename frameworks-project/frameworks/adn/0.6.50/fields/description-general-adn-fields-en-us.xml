@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: description-general-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/non-vocab-fields.xsd">
+	<field name="Description - resource" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/general/description">
+		<definition>a textual narrative describing the content, purpose, organization, or goal of a resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2001-01-01">Since description is a primary search field, include information that would be useful in discovering the resource such as concepts, topics and events included in the content.</practice>
+
+				<practice status="current" originDate="2001-01-01">As a starting point, use resource provided tables of content, abstracts, outlines, indexes and descriptions to grasp the scope of the resource.</practice>
+
+				<practice status="current" originDate="2003-01-01">In order to maintain balance and non-political messages in metadata descriptions, please use caution when copying text directly from the resource, especially if a topic is one of much scientific debate or if you are unfamiliar with the topic.</practice>
+
+				<practice status="current" originDate="2001-01-01">Use complete sentences in a voice that does not imply the user is at the resource's website but rather is reading a library description. For example, edit "The figure below shows the relationship between x, y and z." to read "A figure is provided that depicts the relationship between x, y and z."</practice>
+
+				<practice status="current" originDate="2001-01-01">If describing a model or simulation, try to include information about the input and output variables of the model or simulation.</practice>
+				
+				<practice status="current" originDate="2006-09-18">If a chosen resource type is a resource type that encompasses other resources, like a course, it is okay to use the description to describe these additional resource types. An example would be: This course includes lesson plans and classroom activities that emphasize the use of realtime weather data.</practice>
+
+				<practice status="current" originDate="2001-01-01">Spell out first instances of all acronyms, including government agencies.</practice>
+
+				<practice status="current" originDate="2006-07-17" link1="contributor - resource creators" style1="bold" link2="organization name - organizational resource creator" style2="bold">If the government agency is the creator or publisher, enter the agency in the contributor - resource creators field with the role of Publisher and spell out the agency name in the organization name - organizational resource creator field.</practice>
+
+				<practice status="current" originDate="2001-01-01">Craft lists of keywords and concepts into sentences by summarizing related ideas to avoid repetitive text.</practice>
+
+				<practice status="current" originDate="2001-01-01">If a resource requires a subscription or a membership for use, please indicate that information in this field.</practice>
+	
+				<practice status="current" originDate="2006-03-08">Avoid excessive capitalization of words. Lower case everything but proper nouns for easier reading and comprehension.</practice>
+			</dos>
+
+			<donts>
+				
+				<practice status="current" originDate="2006-07-07">Avoid describing resources that do not relate their content to physical properties or effects on the Earth system.</practice>
+				<practice status="current" originDate="2006-07-07">For example, do not catalog a resources about sea turtles unless it includes Earth system properties like habitat, water salinity or ocean currents, etc.</practice>
+
+				<practice status="current" originDate="2002-01-01">Do not include evaluative information or testimonials about the resource. That is do not include text like: 1) this site offers outstanding curricular materials for teaching and learning about the Earth system,  2) named Educational Site of the Week by XYZ,  3) we have been recommended by teachers across the nation as the place to go to find materials that will significantly improve student learning, or 4) our experts provide comprehensive reviews of each resource for accuracy and pedagogical effectiveness. Change such text to be like: "This site offers curricular materials for teaching and learning about the Earth system. The focus is on student learning, and a review of each resource for scientific accuracy and pedagogical effectiveness is provided."</practice>
+
+				<practice status="current" originDate="2002-01-01">Do not make the description a list of keywords. Craft lists of keywords and concepts into sentences by summarizing related ideas to avoid repetitive text.</practice>
+
+				<practice status="current" originDate="2002-01-01">Avoid long comma separated lists of words or phrases.</practice>
+
+				<practice status="current" originDate="2002-01-01">Generally, do not include information that is handled elsewhere in the metadata (e.g. resource creators or resource types). Some redundancy of terms is acceptable, but a description that relies solely upon this does not serve as an enhancement to search.</practice>
+
+				<practice status="current" originDate="2002-01-01">Do not put quotes around the description or use them excessively.</practice>
+			
+				<practice status="current" originDate="2006-03-08">Do not use the ampersand symbol to represent the word 'and'. Spell out the word 'and.' </practice>
+
+				<practice status="current" originDate="2002-01-01" link1="version - resource" style1="bold">Do not include resource version numbers; this is included in the version - resource field.</practice>
+
+				<practice status="current" originDate="2002-01-01" link1="description - technical" style1="bold">Do not describe techniques, materials, or media used in the creation of the resource. It is generally not necessary since most resources will be digital and it is more appropriate to describe this information in the description - technical field.</practice>
+
+				<practice status="current" originDate="2002-01-01">Do not create relationships between two distinctly different resources. For example, do not say this is one of four modules that describe polar processes, ozone, oceanography and global warming when the one you are cataloging deals only with ozone. This would cause your ozone related resource to be returned when someone is searching on polar. (Not good).</practice>
+
+
+				<practice status="current" originDate="2002-01-01">If cataloging subpages of the resource as separate objects, do not describe the subpages in this description.</practice>
+
+
+			</donts>
+			
+			<examples>
+				<practice status="current" originDate="2006-09-18" link1="Climate and Carbon Dioxide: Analyzing Their Relationship" url1="http://www.nationalgeographic.com/xpeditions/lessons/07/g912/co2.html"> Climate and Carbon Dioxide: Analyzing Their Relationship: Through this activity, students learn about atmospheric carbon dioxide and its role in the greenhouse effect. They can identify the leading producers of carbon dioxide emissions and read about the global climate conference that was held in Kyoto, Japan, in 1997 to set international limits on these emissions. The material provides information to increase students' understanding of the implications and processes of possible changes in the world's climate.</practice>
+				<practice status="current" originDate="2006-09-18" link1="Big Trouble in Earthquake Country" url1="http://cse.ssl.berkeley.edu/SegwayEd/abtbigt.html">Big Trouble in Earthquake Country: This activity has students use online earthquake hazard maps and other relevant geological information to assess hazards to life and property associated with hypothetical earthquakes. Students working in small groups use this information to develop strategies to reduce damage and loss of life in the area near their home or school. This lesson will help students gain an understanding of the effect of earthquakes on natural and man-made systems and afford them a better understanding of the complex consequences of earthquakes for human beings. The background information is structured to cater to both Bay area residents and non-residents.</practice>
+
+			</examples>
+			
+			<otherPractices>
+				<otherPractice header="Want to use &amp;, ', &quot;, &gt;, &lt;? Do this:">
+					<practice status="current" originDate="2006-03-08">Enter characters like the ampersand apostrophe, double quote, less than and greater than sign by using their respective html references of &amp;, &apos;, &quot;, &lt; and &gt;.</practice>
+				</otherPractice>
+				<otherPractice header="Want to use other special characters like ©, é, ñ or ê? Do this:">
+					<practice status="current" originDate="2005-10-05" link1="entity references" url1="http://www.w3schools.com/tags/ref_entities.asp">Enter special characters and symbols using their entity references numbers. For the copyright symbol this means entering an ampersand symbol followed by the pound sign followed by the number 169 followed by a semicolon.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+<!--Obsolete Practices - DO NOT USE
+				<practice status="obsolete" originDate="2001-01-01" archDate="2006-09-18" link1="The Briny Deep:" url1="http://oceansjsu.com/105d/exped_briny/1.html">The Briny Deep: This expedition explores the chemical and physical properties of the ocean and their role in governing oceanic processes. Topics include: salt in seawater, ions of salt, sources of salt, salinity variability, salinity and precipitation, calculating salinity, ocean temperature, solar radiation, variations in the properties of seawater, light penetration, temperature, thermocline, density, layering, and the velocity of sound in water.</practice>
+
+				<practice status="obsolete" originDate="2001-01-01" archDate="2006-09-18" link1="The Climate System:" url1="http://eesc.columbia.edu/courses/ees/climate/">The Climate System: The Climate System provides an integrated view of the climate component of the Earth system. Topics covered include origin and development of the atmosphere and oceans, formation of winds, storms and ocean currents, reasons for changes through geologic time, recent influence of human activity, i.e. the ozone hole, global warming, acid rain, water pollution, and laboratory exploration of topics through demonstrations, experimentation, computer data analysis and modeling.</practice>-->
+<!--				<practice status="hide" originDate="2005-02-28">It is not necessary to catalog textual subpages of a resource, since the content of the resource is indexed and searchable.</practice>
+				<practice status="obsolete" originDate="2002-01-01" archDate="2005-02-28">Do not exceed the maximum character count of 2048 (this includes white space).The input box does not indicate when the 2048 character limit is reached. If your input goes beyond the limit, only the first 2048 characters are saved in the catalog record. Since we don't have an .</practice>-->
+<!--				<practice status="hide" originDate="2001-01-01" archDate="2006-03-08">Avoid using the characters &amp; (ampersand), &lt; (less than), &gt; (greater than), " (double quote) and ' (apostrophe) because these are special characters in XML (the format metadata records are saved in).</practice>
+				<practice status="hide" originDate="2005-03-18" archDate="2006-03-08">Do not use special characters (e.g. ñ or é).</practice>-->
+				
+				
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>This site provides information about the composition, structure, and dynamics of our atmosphere. It offers links to detailed descriptions of the magnetosphere, exosphere, thermosphere, ionosphere, mesosphere, ozone layer, stratosphere and troposphere. The site also has information on the dynamics of the atmosphere including temperature, pressure, winds and the jet stream, and the Coriolis force.</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/educational/description</note>
+				<note>Other XPATH: /itemRecord/general/simplePlacesAndEvents/placeAndEvent/description</note>
+				<note>Other XPATH: /itemRecord/general/simpleTemporalCoverages/description</note>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/description</note>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/boundBox/description</note>
+				<note>Other XPATH: /itemRecord/lifecycle/description</note>
+				<note>Other XPATH: /itemRecord/metaMetadata/description</note>
+				<note>Other XPATH: /itemRecord/objectsInSpace/object/description</note>
+				<note>Other XPATH: /itemRecord/rights/description</note>
+				<note>Other XPATH: /itemRecord/technical/online/description</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

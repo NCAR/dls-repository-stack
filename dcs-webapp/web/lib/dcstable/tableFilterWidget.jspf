@@ -1,0 +1,170 @@
+<c:if test="${true or (not applicationScope['authenticationEnabled']) || user.isAdminUser }">
+<c:set var="contextPath"><%@ include file="/ContextPath.jsp" %></c:set>
+<script language="JavaScript" src="${contextPath}/lib/javascript/scriptaculous.js?load=effects"></script>
+
+<style type="text/css">
+
+/* the div wrapping the entire widget */
+#table-filter {
+	position:relative;
+ 	border:thin solid #333366;
+	/* background-color:#E3E4F1; */
+	padding:3px;
+	margin: 0px 15px 5px 0px;
+	/* width:210px; */
+}
+
+/* widget label (e.g., collections filter) 
+inherits from styles input-label */
+.input-label {
+	/* padding:1px 3px 3px 3px; */
+	/* cursor:pointer; */
+	white-space:nowrap;
+}
+
+/* .input-label.over-label {
+	background-color:#E3E4F1;
+} */
+
+
+/* everything below the label */
+#filter-body {
+  position:relative;
+	top:0px;
+	left:0px;
+	/* padding:0px 2px 2px 15px; */
+	display:inline-block;
+	/* border:blue solid thin; */
+	padding:0px;
+	margin:0px;
+}
+
+#filter-input {
+	position:relative;
+	top:-1px;
+	height:20px;
+	padding-top:2px;
+	margin-bottom:1px;
+}
+
+#filter-menu {
+	position:absolute;
+	top:22px;
+	left:20px;
+	padding:3px;
+	text-align:left;
+	background-color:white;
+	border-right:2px #333366 solid;
+	border-bottom:2px #333366 solid;
+	border-left:1px #333366 solid;
+}
+
+#filter-prompt {
+	text-align:left;
+	font-size:75%;
+	margin-left: 25px;
+}
+
+#remember-button {
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	color: #333366; 
+	height: 16px; 
+	background-color: #eeeeee;
+	margin:0px 0px 0px 15px;
+}
+
+.menu-choice {
+	/* padding:1px 0px 1px 25px; */
+	padding:1px 3px 1px 0px;
+	list-style-type:none;
+}
+
+.menu-choice.selected {
+	/* padding:1px 0px 1px 25px; */
+	/* background-color:yellow; */
+	font-weight:bold;
+}
+
+.menu-choice.over{
+	color:#333366;
+	background-color:#E3E4F1;
+	cursor:pointer;
+}
+
+/* filter icons display too high without adjustment */
+#filter-clear, #filter-trigger {
+	position:relative;
+	top:3px;
+}
+
+#filter-trigger {
+	display:inline;
+	cursor:pointer;
+}
+
+</style>
+
+<div id="table-filter">
+	<table cellspacing="0" cellpadding="0" width="100%">
+		<tr>
+			<td align="left">
+				<span class="input-label">Table filter</span></td>
+			<td>
+				<input type="button" id="remember-button" value="remember" />
+			</td>
+		</tr>
+	</table>
+	<div  id="filter-body" style="display:block">
+			<img id="filter-trigger" class="filter-icon" alt="filter-icon" title="change filter criteria"
+				src="../images/search/search-icon.png"/>
+			<input type="text" id="filter-input" size="20"/> 
+			<img src="../images/search/search-clear.png" id="filter-clear" title="clear filter" />
+			<div id="filter-menu" style="display:none">
+				<span style="color:#999999">filter</span>
+			</div>
+			<div id="filter-prompt"></div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+function rememberFilter (event) {
+	event.stop()
+	$("remember-button").blur();
+	
+	// if (window.dcsTable && window.dcsTable.tableFilter) {
+	if (window.filterWidget) {
+		var filterSpec = filterWidget.getFilterSpec();
+		// log ("column: " + filterWidget.column);
+		// log ("value: " + filterWidget.value);
+		
+		var params = $H(filterSpec);
+		params.update ({command:"updateCollectionFilter"});
+		
+		// log ("home.do?" + $H(params).toQueryString());
+		
+		new Ajax.Request("${contextPath}/user/ui-info.do", {
+		  parameters: params,
+		  method: 'get',
+		  onSuccess: function(transport) {
+			// log ("success");
+		  }
+		});
+
+	}
+	else 
+		log ("no filter spec found");
+	return false;
+}
+
+Event.observe (window, "load", function () {
+	$('remember-button').observe ('click', rememberFilter);
+});
+
+</script>
+	
+
+</c:if>
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: union-vocabs.xsd,v 1.1 2009/01/30 21:38:35 ginger Exp $ -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  SCHEMA PURPOSE  *****</xsd:documentation>
+		<xsd:documentation>Controlled vocabulary schema for metadata-ui management of the collection metadata framework.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  HISTORY *****</xsd:documentation>
+		<xsd:documentation>2005-12-05: Initial file creation</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***** LICENSE INFORMATION *****</xsd:documentation>
+		<xsd:documentation>Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org</xsd:documentation>
+		<xsd:documentation>These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  ROOT ELEMENT ********</xsd:documentation>
+		<xsd:documentation>This schema does not containt the root element of the instance document</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*******  VOCABULARY schemas for the Collection framework *********</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>Vocabularies for category ACCESS</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/frequency.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/itemFormat.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/key.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/OAIversion.xsd"/>
+
+	<xsd:annotation>
+		<xsd:documentation>Vocabularies for category APPROVAL</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/roleApproval.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/state.xsd"/>
+
+	<xsd:annotation>
+		<xsd:documentation>Vocabularies for category GENERAL</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/costDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/defaults.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/policyType.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/subjectDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/subjectOtherDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/gradeRangeDLESE.xsd"/>
+
+	<xsd:annotation>
+		<xsd:documentation>Vocabularies for category COMMONFIELDS</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/nameTitle.xsd"/>
+
+	<xsd:annotation>
+		<xsd:documentation>Vocabularies for category LIFECYCLE</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/roleLifecycle.xsd"/>
+
+	<xsd:annotation>
+		<xsd:documentation>Vocabularies for category METAMETADATA</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/status.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/roleMetaMetadata.xsd"/>
+
+	<xsd:annotation>
+		<xsd:documentation>Vocabularies for category NSDL</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/nsdlType.xsd"/>
+
+	<xsd:annotation>
+		<xsd:documentation>Vocabularies for category RELATIONS</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/current/vocabs/relationType.xsd"/>
+
+	<xsd:annotation>
+		<xsd:documentation>******    Simple Types (alpha order)  *****</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="stringTextType">
+		<xsd:annotation>
+			<xsd:documentation>Use this patterned string to ensure that a null tag is not valid string content.</xsd:documentation>
+			<xsd:documentation>Note: that xsd:string allows content to be null even if the element is required.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value=".[\S\s]*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>******  Union Types (alpha order) ******</xsd:documentation>
+		<xsd:documentation>These simple types are composed of union or member types</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="union.costType">
+		<xsd:union memberTypes="DLESEcostType suppliedType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.costLeafType">
+		<xsd:union memberTypes="DLESEcostLeafType suppliedLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.defaultsType">
+		<xsd:union memberTypes="missingType notapplicableType unknownType suppliedType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.defaultsLeafType">
+		<xsd:union memberTypes="missingLeafType notapplicableLeafType unknownLeafType suppliedLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.gradeRangeType">
+		<xsd:union memberTypes="DLESEgradeRangeType suppliedType notapplicableType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.gradeRangeLeafType">
+		<xsd:union memberTypes="DLESEgradeRangeLeafType suppliedLeafType notapplicableLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.subjectType">
+		<xsd:union memberTypes="DLESEsubjectType suppliedType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.subjectLeafType">
+		<xsd:union memberTypes="DLESEsubjectLeafType suppliedLeafType"/>
+	</xsd:simpleType>
+</xsd:schema>

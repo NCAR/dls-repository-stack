@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  OVERVIEW  *************************</xsd:documentation>
+		<xsd:documentation>Framework: Collection-level CATEGORY schema</xsd:documentation>
+		<xsd:documentation>Tag(s) defined: access</xsd:documentation>
+		<xsd:documentation>Source: DLESE Program Center (DPC); http://www.dlese.org</xsd:documentation>
+		<xsd:documentation>Last update:	2004-01-28</xsd:documentation>
+		<xsd:documentation>Notes: Developed and maintained at the DPC</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. </xsd:documentation>
+		<xsd:documentation>These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  CATEGORY schemas to include  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="commonfields.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>*****  VOCABULARY schemas to include  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="union-vocabs.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>*****  ROOT element   *************************</xsd:documentation>
+		<xsd:documentation>There is no root element for this schema.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  Complex Types (alpha order)  *******************</xsd:documentation>
+		<xsd:documentation>accessType	is part of collectionType in collection.xsd</xsd:documentation>
+		<xsd:documentation>keyLibraryType is part of accessType</xsd:documentation>
+		<xsd:documentation>oaiHarvestType is part of oaiHarvestsType</xsd:documentation>
+		<xsd:documentation>oaiHarvestsType is part of accessType</xsd:documentation>
+		<xsd:documentation>oaiProvideType is part of oaiProvidesType</xsd:documentation>
+		<xsd:documentation>oaiProvidesType is part of accessType</xsd:documentation>
+		<xsd:documentation>otherHarvestType is part of oaiHarvestType</xsd:documentation>
+		<xsd:documentation>otherHarvestsType is part of accessType</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  accessType  *************************</xsd:documentation>
+		<xsd:documentation>collectionLocation is a string - the URL to a collection location or discovery system</xsd:documentation>
+		<xsd:documentation>key is complex; see key.xsd - the internal DLESE Program Center (DPC) tracking name for a collection</xsd:documentation>
+		<xsd:documentation>drc is boolean; membership indicator for the DLESE Reviewed Collection (DRC)</xsd:documentation>
+		<xsd:documentation>oaiHarvests is complex - the OAI information for harvesting the collection</xsd:documentation>
+		<xsd:documentation>otherHarvests is complex - non-OAI mechanisms for harvesting the collection</xsd:documentation>
+		<xsd:documentation>oaiProviders is complex - the OAI information providing the collection to DLESE externals</xsd:documentation>
+		<xsd:documentation>services is complex - information on the DLESE services that the collection uses</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="accessType">
+		<xsd:sequence>
+			<xsd:element name="collectionLocation" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="key" type="keyLibraryType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="drc" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="oaiHarvests" type="oaiHarvestsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="otherHarvests" type="otherHarvestsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="oaiProvides" type="oaiProvidesType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="services" type="servicesType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  keyLibraryType *************************</xsd:documentation>
+		<xsd:documentation>union.keyType is simple; see union-vocab.xsd</xsd:documentation>
+		<xsd:documentation>libraryFormat is simple type; see itemFormat.xsd - the metadata format of the collection in DLESE</xsd:documentation>
+		<xsd:documentation>static is boolean - indicates harvest status; if true, don't harvest via OAI, email or other means but do URL checking</xsd:documentation>
+		<xsd:documentation>redistribute is boolean - indicates whether the collection can be redistributed externally</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="keyLibraryType">
+		<xsd:simpleContent>
+			<xsd:extension base="union.keyType">
+				<xsd:attribute name="libraryFormat" type="itemFormatType" use="required"/>
+				<xsd:attribute name="static" type="xsd:boolean" use="required"/>
+				<xsd:attribute name="redistribute" type="xsd:boolean" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  oaiHarvestType *************************</xsd:documentation>
+		<xsd:documentation>version is simple type; see OAIversion.xsd - the version of OAI being used</xsd:documentation>
+		<xsd:documentation>repName is a string - the name of the OAI re</xsd:documentation>
+		<xsd:documentation>baseUrl is a string - the OAI base URL for the repository</xsd:documentation>
+		<xsd:documentation>metadata is simple; see itemFormat.xsd - the metadata format to harvest using OAI</xsd:documentation>
+		<xsd:documentation>updateFrequency is simple; see frequency.xsd - how often an OAI harvest should be performed</xsd:documentation>
+		<xsd:documentation>set is a string - the OAI set name to harvest</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="oaiHarvestType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="version" type="versionType" use="required"/>
+				<xsd:attribute name="repName" type="xsd:string" use="optional"/>
+				<xsd:attribute name="baseUrl" type="xsd:string" use="required"/>
+				<xsd:attribute name="metadata" type="itemFormatType" use="required"/>
+				<xsd:attribute name="updateFrequency" type="frequencyType" use="optional"/>
+				<xsd:attribute name="set" type="xsd:string" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  oaiHarvestsType  *************************</xsd:documentation>
+		<xsd:documentation>oaiHarvest is complex - OAI information for each set or repository that makes the collection</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="oaiHarvestsType">
+		<xsd:sequence>
+			<xsd:element name="oaiHarvest" type="oaiHarvestType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  oaiProvideType *************************</xsd:documentation>
+		<xsd:documentation>metadata is simple; see itemFormat.xsd - the metadata format to provide using OAI</xsd:documentation>
+		<xsd:documentation>set is a string - the OAI set name to provide</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="oaiProvideType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="metadata" type="itemFormatType" use="required"/>
+				<xsd:attribute name="set" type="xsd:string" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  oaiProvidesType  *************************</xsd:documentation>
+		<xsd:documentation>oaiProvide is complex - OAI information for each set or repository that makes the collection</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="oaiProvidesType">
+		<xsd:sequence>
+			<xsd:element name="oaiProvide" type="oaiProvideType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  otherHarvestType *************************</xsd:documentation>
+		<xsd:documentation>metadata is simple type; see itemFormat.xsd - the metadata format of arriving records</xsd:documentation>
+		<xsd:documentation>updateFrequency is simple; see frequencey.xsd - how often records are expected to be updated</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="otherHarvestType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="metadata" type="itemFormatType" use="required"/>
+				<xsd:attribute name="updateFrequency" type="xsd:string" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  otherHarvestsType  *************************</xsd:documentation>
+		<xsd:documentation>otherHarvest is complex - harvesting information for non-OAI collections</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="otherHarvestsType">
+		<xsd:sequence>
+			<xsd:element name="otherHarvest" type="otherHarvestType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  servicesType  *************************</xsd:documentation>
+		<xsd:documentation>service is complex - information on what DLESE services the collection is using</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="servicesType">
+		<xsd:sequence>
+			<xsd:element name="service" type="union.serviceType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:documentation>*****  	Simple Types (alpha order)   *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  union.keyType  *************************</xsd:documentation>
+		<xsd:documentation>unions the controlled vocabulary of keyType and free text string</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="union.keyType">
+		<xsd:union memberTypes="xsd:string keyType"/>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*****  union.serviceType  *************************</xsd:documentation>
+		<xsd:documentation>unions the controlled vocabulary of keyType and free text string</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="union.serviceType">
+		<xsd:union memberTypes="xsd:string serviceType"/>
+	</xsd:simpleType>
+</xsd:schema>

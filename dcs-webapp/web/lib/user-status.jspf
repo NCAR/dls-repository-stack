@@ -1,0 +1,17 @@
+<c:if test='${applicationScope["authenticationEnabled"]}'>
+	<c:if test="${not empty user}">
+		User: ${user.username} <%-- (${user.role}) --%>
+		&nbsp;|&nbsp;
+		<html:link href="${contextPath}/logoff.do">logout</html:link>
+		<c:if test="${not editorMode && 
+									pageContext.request.servletPath != '/user/edit-user.jsp' &&
+									user.username != 'guest'}">
+			&nbsp;|&nbsp;
+			<html:link page="/user/userInfo.do?username=${user.username}&command=edit">edit 
+				user info</html:link>
+		</c:if>
+	</c:if>
+	<c:if test="${empty user && pageContext.request.servletPath != '/auth/logon.jsp'}">
+		<html:link forward="logon">login</html:link>
+	</c:if>
+</c:if>

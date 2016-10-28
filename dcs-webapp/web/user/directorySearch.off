@@ -1,0 +1,101 @@
+function checkLdapUsername (evnt) {
+	evnt.stop();
+	var button = evnt.element();
+	var searchString = $F('ldapSearchString');
+	var form = $(document.forms['userForm']);
+	if (!form)
+		throw ("userform not found");
+
+	var ldapfieldInput = $A(form['ldapSearchField']).find (function (button) {
+		return button.checked;
+		});
+	
+	var params = {
+		'command' : 'ldapUserInfo',
+		'searchString' : searchString,
+		'ldapField' : $F(ldapfieldInput)
+		}
+
+	new Ajax.Request ('userInfo.do', {
+		parameters: params,
+		onSuccess: function (transport) {
+				// log ("responseText: ");
+				var response = transport.responseText;
+				console.log ("response: %s" , response.trim());
+				try {
+					var json = response.evalJSON();
+				} catch (error) { 
+					log ("Error evaluating JSON: %s", error);
+					return;
+				}
+				button.blur();
+				try {
+					displayLdapDirectoryInfo (json);
+				} catch (error) {
+					log ("display error: " + error);
+				}
+		},
+		onFailure: function() { 
+			log ('Something went wrong...') 
+		}
+	});
+}
+
+function displayLdapDirectoryInfo (json) {
+	var target = $("directory-search-results");
+	target.update();
+	var tbody = new Element ('tbody');
+	target.appendChild (tbody);
+	// var entries = $H(json.ldapInfo).get ('entry');
+	
+		// make header row 
+		
+		// columns :(value/label)
+		var columns = $A([['uid','username'], ['name','fullname'], ['email','email']]);
+		var headerrow = new Element ('tr', {'bgcolor':'#CCCEE6'});
+		tbody.appendChild (headerrow);
+		columns.each (function (col) { 
+			console.log (col + " " + col[0]);
+			headerrow.appendChild (new Element ('th').update (col[1])) 
+		});
+	
+	var entries = json.ldapInfo.entry;
+	if (!entries) {
+		log ("nothing found");
+		var row = new Element ('tr', {'bgcolor':'white'});
+		var cell = new Element ('td', {'colspan':columns.size()}).update ("nothing found");
+		tbody.appendChild (row);
+		row.appendChild (cell);
+	}
+		
+	else {
+		
+		// we want to deal with an ARRAY of entries
+		if (entries.length)
+			entries = $A(entries);
+		else
+			entries = $A([entries]);
+			
+		entries.each (function (entry) {
+			var row = new Element ('tr', {'bgcolor':'white'});
+			columns.each ( function (col) {
+				row.appendChild (new Element ('td').update ($H(entry).get (col[0])));
+			tbody.appendChild(row);
+			});
+		});
+			
+	}
+		
+	$('directory-info').show();
+}
+
+function ldapSearchInit () {
+	$('ldapSearchButton').observe ("click", checkLdapUsername);
+	// if user hits "return" in the text box, do search
+	
+	$('ldapSearchString').observe ('keyup', function (evnt) {
+		/* log (evnt.element().identify()); */
+		if (evnt.keyCode == 13) 
+			checkLdapUsername (evnt);
+	});
+}

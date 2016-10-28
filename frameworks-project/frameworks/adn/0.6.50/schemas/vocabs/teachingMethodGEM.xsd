@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.6.50">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Overview  **************************************************************
+			Definition: 			Controlled vocabulary schema for DLESE metadata frameworks
+			Framework use: 	ADN-I (item)
+			Source org:			Gateway to Educational Materials (GEM); http://www.geminfo.org/
+			Vocab values:		http://www.geminfo.org/Workbench/Metadata/Vocab_Pedagogy.html
+			Vocab last update:	2000-02-02
+			DPC last update:		2003-01-16
+			Notes:				GEM took their vocabulary from several different sources.
+			Notes:				GEM vocab adapted to meet DLESE needs (terms, capitalization, punctuation)
+
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>2002-1-16: Used all GEM terms except 'Learning modules' and 'Teaching guides'because that is part of the DLESE resource type list.
+							2003-1-16: Changed capitalization and punctuation to be aligned with DLESE
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="GEMteachingMethodType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  GEMteachingMethodType  ***************************************
+				Lists the values that will appear in the metadata record
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="GEM:Advanced organizers"/>
+			<xsd:enumeration value="GEM:Brainstorming"/>
+			<xsd:enumeration value="GEM:Computer assisted instruction"/>
+			<xsd:enumeration value="GEM:Computer simulations"/>
+			<xsd:enumeration value="GEM:Contingency management"/>
+			<xsd:enumeration value="GEM:Cooperative learning"/>
+			<xsd:enumeration value="GEM:Demonstrations"/>
+			<xsd:enumeration value="GEM:Dialog journals"/>
+			<xsd:enumeration value="GEM:Discovery learning"/>
+			<xsd:enumeration value="GEM:Discussions"/>
+			<xsd:enumeration value="GEM:Dramatic play drills"/>
+			<xsd:enumeration value="GEM:Experiential learning"/>
+			<xsd:enumeration value="GEM:Guided design"/>
+			<xsd:enumeration value="GEM:Hands-on learning"/>
+			<xsd:enumeration value="GEM:Interdisciplinary"/>
+			<xsd:enumeration value="GEM:Integrated instruction"/>
+			<xsd:enumeration value="GEM:Lab procedures"/>
+			<xsd:enumeration value="GEM:Lecture"/>
+			<xsd:enumeration value="GEM:Montessori method"/>
+			<xsd:enumeration value="GEM:Multiple activities"/>
+			<xsd:enumeration value="GEM:Multimedia instruction"/>
+			<xsd:enumeration value="GEM:Museum education"/>
+			<xsd:enumeration value="GEM:Peer tutoring"/>
+			<xsd:enumeration value="GEM:Programmed instruction"/>
+			<xsd:enumeration value="GEM:Project-based learning"/>
+			<xsd:enumeration value="GEM:Questioning techniques"/>
+			<xsd:enumeration value="GEM:Role playing"/>
+			<xsd:enumeration value="GEM:Self-directed groups"/>
+			<xsd:enumeration value="GEM:Self-paced learning"/>
+			<xsd:enumeration value="GEM:Simulations and games"/>
+			<xsd:enumeration value="GEM:Team teaching"/>
+			<xsd:enumeration value="GEM:Thematic approach"/>
+			<xsd:enumeration value="GEM:Tutorial programs"/>
+			<xsd:enumeration value="GEM:Visual instruction"/>
+			<xsd:enumeration value="GEM:Whole language approach"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="GEMteachingMethodLeafType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  GEMteachingMethodLeafType  ***************************************
+				Lists the values that will appear in the metadata record
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Advanced organizers"/>
+			<xsd:enumeration value="Brainstorming"/>
+			<xsd:enumeration value="Computer assisted instruction"/>
+			<xsd:enumeration value="Computer simulations"/>
+			<xsd:enumeration value="Contingency management"/>
+			<xsd:enumeration value="Cooperative learning"/>
+			<xsd:enumeration value="Demonstrations"/>
+			<xsd:enumeration value="Dialog journals"/>
+			<xsd:enumeration value="Discovery learning"/>
+			<xsd:enumeration value="Discussions"/>
+			<xsd:enumeration value="Dramatic play drills"/>
+			<xsd:enumeration value="Experiential learning"/>
+			<xsd:enumeration value="Guided design"/>
+			<xsd:enumeration value="Hands-on learning"/>
+			<xsd:enumeration value="Interdisciplinary"/>
+			<xsd:enumeration value="Integrated instruction"/>
+			<xsd:enumeration value="Lab procedures"/>
+			<xsd:enumeration value="Lecture"/>
+			<xsd:enumeration value="Montessori method"/>
+			<xsd:enumeration value="Multiple activities"/>
+			<xsd:enumeration value="Multimedia instruction"/>
+			<xsd:enumeration value="Museum education"/>
+			<xsd:enumeration value="Peer tutoring"/>
+			<xsd:enumeration value="Programmed instruction"/>
+			<xsd:enumeration value="Project-based learning"/>
+			<xsd:enumeration value="Questioning techniques"/>
+			<xsd:enumeration value="Role playing"/>
+			<xsd:enumeration value="Self-directed groups"/>
+			<xsd:enumeration value="Self-paced learning"/>
+			<xsd:enumeration value="Simulations and games"/>
+			<xsd:enumeration value="Team teaching"/>
+			<xsd:enumeration value="Thematic approach"/>
+			<xsd:enumeration value="Tutorial programs"/>
+			<xsd:enumeration value="Visual instruction"/>
+			<xsd:enumeration value="Whole language approach"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

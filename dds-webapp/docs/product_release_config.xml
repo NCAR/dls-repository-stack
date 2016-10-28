@@ -1,0 +1,33 @@
+<productReleases>
+	<!-- 
+		This configuration file is used to generate a page with information and liks for DDS
+		downloads. The JSP page that does the rendering is in the services area of the
+		dds-webapp (/services/dds_software.jsp).
+		This config should be installed at http://www.dlese.org/downloads/dds/product_release_config.xml.
+		To add a new release, copy a <release> element and replace the information
+		as appropriate. The current release is always the first one.
+	-->
+	<package id="dds">
+		<name>Digital Discovery System</name>
+		<description>
+			<![CDATA[ 
+			The Digital Discovery System (DDS) is a Java-based open source XML repository, search and discovery system that is built with <a href="http://lucene.apache.org/">Lucene</a>. 
+			Its repository is accessed through Web services and APIs that may be used for a wide variety of applications.
+			The software runs in the <a href="http://tomcat.apache.org/">Tomcat</a> servlet container and can be installed on Windows, Linux, Mac OS or UNIX systems.
+			
+			<br/><br/>
+			
+			This software is developed by <a href="http://www.dlsciences.org/">Digital Learning Sciences</a> at the
+			<a href="http://www.ucar.edu/">University Corporation for Atmospheric Research</a> with the support of the
+			<a href="http://www.nsf.gov/">National Science Foundation</a>.
+			]]>
+		</description>
+		<release>
+			<link>
+				<name>Download from SourceForge</name>
+				<url>http://sourceforge.net/project/showfiles.php?group_id=198325&amp;package_id=269884</url>
+			</link>
+		</release>		
+		
+	</package>
+</productReleases>

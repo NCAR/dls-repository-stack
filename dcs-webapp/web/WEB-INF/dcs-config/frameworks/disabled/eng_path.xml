@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.dlese.org/Metadata/dcs/framework-config/dcsFrameworkConfig.xsd">
+  <xmlFormat>eng_path</xmlFormat>
+  <schemaInfo>
+    <rootElementName>record</rootElementName>
+    <schemaURI>http://ns.nsdl.org/ncs/eng_path/1.00/schemas/record.xsd</schemaURI>
+    <paths>
+      <path pathName="url" valueType="uniqueUrl" requiredByCopyRecord="true">/record/general/url</path>
+      <path pathName="title" readOnly="false" requiredByMinimalRecord="true" requiredByCopyRecord="true">/record/general/title</path>
+      <path pathName="description" readOnly="false" requiredByMinimalRecord="true" requiredByCopyRecord="true">/record/general/description</path>
+      <path pathName="id" readOnly="true" requiredByCopyRecord="true" requiredByMinimalRecord="true">/record/general/recordID</path>
+      <path pathName="recordDate" readOnly="true" requiredByCopyRecord="true" requiredByMinimalRecord="true" valueType="date">/record/general/recordDate</path>
+      <path pathName="evaluation" readOnly="true">/record/educational/evaluation</path>
+    </paths>
+  </schemaInfo>
+  <name>eng_path</name>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <firstPage>general</firstPage>
+    <rebuildOnStart>true</rebuildOnStart>
+    <vocabLayoutURI>http://ns.nsdl.org/ncs/eng_path/1.00/build/groups-list.xml</vocabLayoutURI>
+    <fieldInfoURI>http://ns.nsdl.org/ncs/eng_path/1.00/build/fields-list.xml</fieldInfoURI>
+    <baseRenderLevel>3</baseRenderLevel>
+    <editorPages>
+      <editorPage pageLabel="General">general</editorPage>
+      <editorPage pageLabel="Educational">educational</editorPage>
+      <editorPage pageLabel="Contributors">lifecycle</editorPage>
+      <editorPage pageLabel="Coverage">coverage</editorPage>
+    </editorPages>
+  </editorInfo>
+  <userInfo autoPopulate="Record Creation">
+    <property>
+      <property>lastName</property>
+      <path>/record/lifecycle/contributors/person/@role</path>
+    </property>
+    <property>
+      <property>lastName</property>
+      <path>/record/lifecycle/contributors/person/lastName</path>
+    </property>
+    <property>
+      <property>firstName</property>
+      <path>/record/lifecycle/contributors/person/firstName</path>
+    </property>
+    <property>
+      <property>email</property>
+      <path>/record/lifecycle/contributors/person/contactEmailAddress</path>
+    </property>
+  </userInfo>
+</frameworkConfigRecord>

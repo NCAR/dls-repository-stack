@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: LCSHsubject.xsd,v 1.11 2012/07/20 13:44:04 ginger Exp $-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.00">
+	<xs:annotation>
+		<xs:documentation>*********************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*********************************************</xs:documentation>
+		<xs:documentation>Created: 2009-11-23</xs:documentation>
+		<xs:documentation>Author: Katy Ginger, University Corporation for Atmospheric Research (UCAR),  ginger@ucar.edu</xs:documentation>
+		<xs:documentation>Purpose: Controlled vocabulary for OSMsubject</xs:documentation>
+		<xs:documentation>Copyright for this file: See LICENSE AND COPYRIGHT at the end of this file.</xs:documentation>
+		<xs:documentation>Source: http://authorities.loc.gov/</xs:documentation>
+	</xs:annotation>
+	<xs:annotation>
+		<xs:documentation>**********************************************************</xs:documentation>
+		<xs:documentation>*****  HISTORY OF IMPORTANT CHANGES  *****</xs:documentation>
+		<xs:documentation>**********************************************************</xs:documentation>
+		<xs:documentation>2012-07-20: changed: Architecture1960-1970. to Architecture--1960-1970.</xs:documentation>
+		<xs:documentation>2012-07-20: changed: Architecture--Modern20th centuryArchival resources. to Architecture--Modern--20th century--Archival resources.</xs:documentation>
+		<xs:documentation>2011-05-31: added: Hail control--United States</xs:documentation>
+		<xs:documentation>2011-03-18 fixed typo</xs:documentation>
+		<xs:documentation>2010-10-15: Added: 
+Balloons--Scientific applications.
+Balloons -- United States -- Scientific applications -- History  
+Balloons, Sounding.
+
+</xs:documentation>
+		<xs:documentation>2010-09-03: Added: 
+American Association for the Advancement of Science.
+American Geophysical Union.
+American Meteorological Society
+Climatic changes.
+Climate change mitigation.
+Global temperature changes.
+Diversity
+Affirmative action programs--United States.
+African American scientists.
+Diversity in the workplace--United States.
+Global warming.
+Global warming--Research.
+Global Warming Science &amp; Policy
+Hail control--United States
+Meteorology.
+National Center for Atmospheric Research (U.S.). Climate and Global Dynamics Division
+Supercomputing
+</xs:documentation>
+		<xs:documentation>2010-09-03: removed: Architecture--Colorado--Boulder; added: Architecture--Colorado</xs:documentation>
+		<xs:documentation>2010-09-03: removed: Architecture--1960-1970; added: Architecture--1960-1970.</xs:documentation>
+		<xs:documentation>2010-09-03: removed: Architecture--Modern--20th century--Archival resources; added: Architecture--Modern--20th century--Archival resources.</xs:documentation>
+		<xs:documentation>2010-09-03: removed: National Center for Atmospheric Research (U.S.) Mesa Laboratory; added: National Center for Atmospheric Research (U.S.). Mesa Laboratory</xs:documentation>
+	</xs:annotation>
+	<xs:annotation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>None</xs:documentation>
+	</xs:annotation>
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  SIMPLE TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="LCSHsubjectType">
+		<xs:annotation>
+			<xs:documentation>***** LCSHsubjectType  *****</xs:documentation>
+			<xs:documentation>Valid values for the element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Affirmative action programs--United States."/>
+			<xs:enumeration value="African American scientists."/>
+			<xs:enumeration value="American Association for the Advancement of Science."/>
+			<xs:enumeration value="American Geophysical Union."/>
+			<xs:enumeration value="American Meteorological Society"/>
+			<xs:enumeration value="Architecture--1960-1970."/>
+			<xs:enumeration value="Architecture--Colorado"/>
+			<xs:enumeration value="Architecture--Modern--20th century--Archival resources."/>
+			<xs:enumeration value="Balloons--Scientific applications."/>
+			<xs:enumeration value="Balloons, Sounding."/>
+			<xs:enumeration value="Balloons -- United States -- Scientific applications -- History"/>
+			<xs:enumeration value="Climate change mitigation."/>
+			<xs:enumeration value="Climatic changes."/>
+			<xs:enumeration value="Diversity"/>
+			<xs:enumeration value="Diversity in the workplace--United States."/>
+			<xs:enumeration value="Global temperature changes."/>
+			<xs:enumeration value="Global warming."/>
+			<xs:enumeration value="Global warming--Research."/>
+			<xs:enumeration value="Global Warming Science &amp; Policy"/>
+			<xs:enumeration value="I.M. Pei &amp; Associates"/>
+			<xs:enumeration value="Meteorology."/>
+			<xs:enumeration value="National Center for Atmospheric Research (U.S.). Climate and Global Dynamics Division"/>
+			<xs:enumeration value="National Center for Atmospheric Research (U.S.). Mesa Laboratory"/>
+			<xs:enumeration value="Supercomputing"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

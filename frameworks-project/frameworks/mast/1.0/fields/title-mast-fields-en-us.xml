@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: title-mast-fields-en-us.xml,v 1.6 2009/07/30 15:27:17 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/non-vocab-fields.xsd">
+	<field name="Title" language="en-us" metaFormat="mast" metaVersion="1.0" path="/record/general/title">
+		<definition attribution="Dublin Core Metadata Element Set, Version 1.1: Reference Description at http://dublincore.org/documents/dces/">A name given to the resource.</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-12-20">Enter a name by which the resource is formally known.</practice><!--source:GEM-->
+				<practice status="current" originDate="2006-10-05">Specify subtitles but do not use the word subtitle; rather separate a subtitle from a title with a colon.</practice><!--source:DLESE-->
+				<practice status="current" originDate="2008-10-20">Enter multiple titles in the order in which they appear on the resource or in order of their importance.</practice><!--source:CDP-->
+				<practice status="current" originDate="2008-10-20">Use separate Title elements to enter multiple titles or clearly separate each entry by a semicolon and a space within an element.</practice><!--source:CDP-->
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2006-07-17">Do not include individual page or paragraph headings in title.</practice><!--source:DLESE-->
+
+				<practice status="current" originDate="2001-01-01">Do not use phrases like "by Joe Smith" in title.</practice><!--source:DLESE-->
+				<practice status="current" originDate="2001-01-01">Do not include phrases like "Welcome to the". Such phrases can be omitted.</practice><!--source:DLESE-->
+			</donts>
+
+			
+
+			<otherPractices><!--source:DLESE-->
+				<otherPractice header="No title? Do this:">
+				<practice status="current" originDate="2008-10-20"> Transcribe the title, if there is one, from the resource itself, such as a caption from a photograph or a title on a map. When no title is found on the resource itself, use a title assigned by the contributing institution or found in reference sources.</practice>
+					<practice status="current" originDate="2006-10-05">If the creator or publisher does not display a title on screen for the user, create a title to describe the overall content of the resource. Follow this with the phrase "title provided or enhanced by cataloger" in parentheses.</practice>
+					
+
+					
+				</otherPractice>
+			</otherPractices>
+			<examples><!--source:DLESE-->
+				<practice status="current" originDate="2006-10-05">Title: Remote Sensing Using Satellites.</practice>
+				<practice status="current" originDate="2006-10-05">Title and subtitle:Clouds: How Condensation Happens.</practice>
+				<practice status="current" originDate="2006-10-05" link1="Mountain Simulation: Assignment" url1="http://www.pals.iastate.edu/simulations/Mtnsim/index.html">Title enhancement by cataloger: Mountain Simulation: Assignment (title provided or enhanced by cataloger).</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>Remote Sensing Using Satellites</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

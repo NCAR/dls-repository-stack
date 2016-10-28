@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- alphabetical listing of framework groups filenames -->
+<metadataGroupsInfo>
+	<files>
+		<file>annotation/1.0.00/groups/annotation-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/annotationRecord-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/content-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/context-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/contributor-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/contributors-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/created-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/dateContrib-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/dateService-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/description-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/emailAlt-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/emailO-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/emailP-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/format-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/instDeptO-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/instDeptP-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/instNameO-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/instNameP-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/instPositionO-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/instPositionP-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/itemID-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/modified-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/moreInfo-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/name-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/nameFirst-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/nameLast-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/nameMiddle-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/nameTitle-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/organization-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/pathway-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/person-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/rating-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/recordID-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/role-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/service-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/share-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/status-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/title-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/type-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/url-anno-groups-default-en-us.xml</file>
+		<file>annotation/1.0.00/groups/urlContrib-anno-groups-default-en-us.xml</file>
+	</files>
+</metadataGroupsInfo>

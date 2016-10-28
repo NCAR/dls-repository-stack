@@ -1,0 +1,403 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<title>DCS Repository WebService v1.0</title>
+
+
+<!-- BEGIN HEADER: DO NOT EDIT! -->
+	<!-- These are needed for site/side nav display: -->
+	<link rel="stylesheet" type="text/css" href="/dlese_shared/dlese_styles.css"/>
+	<script type="text/javascript" src="/dlese_shared/dlese_script_nav.js"></script>
+	<script type="text/javascript" src="/dlese_shared/dlese_site_menus.js"></script>
+<!-- END HEADER: DO NOT EDIT! -->
+
+<!-- If your site has a side menu, replace "my_side_menus.js" with the name of your _menus.js file and remove this comment
+<script type="text/javascript" src="/dlese_menus/my_side_menus.js"></script>
+-->
+
+
+<style type="text/css"><!--
+	/* Tweak the dlese_styles css to work with HTML that was imported form the old Swiki */	
+	TD { font-size:100%; }
+	H1 { margin-left: 0px; padding-left: 0px; margin-bottom: 10px; margin-top: 5px; }
+	H2 { 
+		font-size: 140%;
+		font-style: normal;	
+		margin-left: 0px; 
+		padding-left: 0px; 
+		margin-bottom: 10px; 
+		margin-top: 5px;	
+	}	
+	H3 { margin-left: 0px; padding-left: 0px; margin-bottom: 10px; margin-top: 5px; }
+	H4 { margin-left: 0px; padding-left: 0px; margin-bottom: 10px; margin-top: 5px; }
+	UL { 
+		padding-left: 7px;
+		padding-top: 2px;
+		padding-bottom: 0px;
+		margin-left: 16px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	LI { 
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	PRE {
+		font-size: 110%;	
+	}
+-->
+</style>
+
+</head>
+
+<body onload="dlese_pageOnLoad();" bgcolor="#ffffff" text="#000000" link="#0000cc" alink="#ff0000" vlink="#551a8b" leftmargin="8" topmargin="8">
+<!-- Sub-title just underneath logo -->
+<div class="dlese_sectionTitle" id="dlese_sectionTitle">
+   Web <br/> Services
+</div>
+
+<!-- BEGIN TOP CONTENT: DO NOT EDIT! -->
+
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" height="105">
+		<td background="/dlese_shared/images/navigation/site_banner_inside_short_mi.gif" 
+			valign="top" width="114" nowrap><img alt="DLESE Home" border="0" vspace="0" hspace="0"
+			src="/dlese_shared/images/navigation/site_banner_inside_short.jpg" usemap="#homeLink"></td>
+		<td background="/dlese_shared/images/navigation/site_banner_inside_short_mi.gif" nowrap>
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td nowrap valign="center" height="57">
+						<a href='http://www.dlese.org/resources/index.html' target="_top"><img 
+						border='0' alt='Educational Resources' 
+						src='/dlese_shared/images/navigation/edres_noscript.gif' 
+						width='86' height='32' hspace='4'></a>	
+						<a href='http://www.dlese.org/educators/index.html' target="_top"><img 
+						border='0' alt='For Educators' 
+						src='/dlese_shared/images/navigation/fored_noscript.gif' 
+						width='79' height='32' hspace='4'></a>
+						<a href='http://www.dlese.org/news_opportunities/index.html' target="_top"><img 
+						border='0' alt='News & Opportunities' 
+						src='/dlese_shared/images/navigation/news_noscript.gif' 
+						width='91' height='32' hspace='4'></a>				
+						<a href='http://www.dlese.org/people/index.html' target="_top"><img 
+						border='0' alt='People & Groups' 
+						src='/dlese_shared/images/navigation/people_noscript.gif' 
+						width='76' height='32' hspace='4'></a>					
+						<a href='http://www.dlese.org/libdev/index.html' target="_top"><img 
+						border='0' alt='For Developers' 
+						src='/dlese_shared/images/navigation/fordev_noscript.gif' 
+						width='85' height='32' hspace='4'></a>
+						<a href='http://www.dlese.org/about/index.html' target="_top"><img 
+						border='0' alt='About DLESE' 
+						src='/dlese_shared/images/navigation/about_noscript.gif' 
+						width='62' height='32' hspace='4'></a>				
+					</td>
+				</tr>
+				<tr>
+					<td background="/dlese_shared/images/navigation/site_banner_inside_short_mi_bottom.gif"  
+						valign="top" height="48">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<form name="ddsQueryForm" action="http://www.dlese.org/dds/query.do" method="GET" 
+								class="dlese_SearchForm" onsubmit="dlese_siteSearch(); return false;">
+								<input type="hidden" name="s" value="0">
+								<td width="20">&nbsp;</td>
+								<td background="/dlese_shared/images/navigation/site_banner_inside_short_mi_bottom.gif"
+									valign="center" height="48">	
+									<font face="courier new"><input type="text" name="q" size="25" 
+									class="dlese_SearchKeywords"></font>
+								</td>
+								<td background="/dlese_shared/images/navigation/site_banner_inside_short_mi_bottom.gif"
+									width="9">&nbsp;</td>			
+								<td background="/dlese_shared/images/navigation/site_banner_inside_short_mi_bottom.gif"
+									valign="center">
+									<div class="dlese_SearchOverDiv">Search<br />over:</div>
+								</td>
+								<td background="/dlese_shared/images/navigation/site_banner_inside_short_mi_bottom.gif"
+									width="9">&nbsp;</td>		
+								<td background="/dlese_shared/images/navigation/site_banner_inside_short_mi_bottom.gif"
+									width="160" valign="center">
+										<select name="over" id="dlese_searchOverSelect">
+											<option value="1">Educational resources</option>
+											<option value="2">News &amp; opportunities</option>
+											<option value="3">Email discussions</option>
+											<option value="4">Everything else</option>
+										</select>
+								</td>
+								<td background="/dlese_shared/images/navigation/site_banner_inside_short_mi_bottom.gif"
+									width="9">&nbsp;</td>		
+								<td background="/dlese_shared/images/navigation/site_banner_inside_short_mi_bottom.gif"
+									valign="center">
+									<input type="image" alt="Start the search" 
+										src="/dlese_shared/images/navigation/search_on_gold.gif" border="0">	
+								</td>
+							</form>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td background="/dlese_shared/images/navigation/site_banner_inside_short_mi.gif" 
+			align="right" valign="top" nowrap><nobr>
+				<font size="1" face="arial,helvetica" class="dlese_HomeLinks">
+				<a href="http://www.dlese.org/" target="_top" class="dlese_HomeLink"><font color="#ffffff" class="dlese_HomeLink">Home</font></a><br>
+				<a href="http://www.dlese.org/register/" target="_top" class="dlese_HomeLink"><font color="#ffffff" class="dlese_HomeLink">Register</font></a><br>
+				<a href="http://www.dlese.org/new_dlese/" target="_top" class="dlese_HomeLink"><font color="#ffffff" class="dlese_HomeLink">New to DLESE?</font></a><br>
+				</font><br>
+				<a href="http://www.dlese.org/resources/search_tips.html"><img class="dlese_SearchTipsImg" id="dlese_SearchTipsImg"
+					alt="Search tips" src="/dlese_shared/images/navigation/search_tips.gif" 
+					border="0" vspace="0"></a></nobr></td>
+		<td background="/dlese_shared/images/navigation/site_banner_inside_short_mi.gif" 
+			width="5">&nbsp;</td>
+	</table>
+	<script type="text/javascript"><!--	
+		dlese_openHtmlBody();
+	//-->
+	</script>
+<a name="dleseSkipNav"></a> 
+<!-- END OF TOP CONTENT: DO NOT EDIT! -->
+
+<!-- Uncomment the following noscript paragraph if this is a side menu site (replace the href
+		with a pointer to your noscript navigation page). -->
+<!--
+	<noscript>
+		<p class='dlese_noscriptBlurb'>See the <a href='/sitemap.html'>Site map</a>
+			for navigation links (this site looks best with Javascript turned on).
+		</p>
+	</noscript>
+	-->
+<!-- Start page content -->
+<!-- InstanceBeginEditable name="Content" --> 
+<!--END COPY FOR HEADER HERE. ALSO COPY THE FOOTER BELOW. LOOK FOR THE "FOOTER" COMMENT -->
+
+<a name="top">
+</a><table border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr>
+<td valign="top" width="100%">
+
+<h2>DCS Repository WebService v1.0</h2>
+<div style="padding-bottom:20px">
+	Service version 1.0<br>
+	Document version $Revision: 1.1.1.1 $<br>
+	Last revised $Date: 2007/09/26 21:52:50 $
+</div>
+
+<a href="mailto:mailto:ostwald@ucar.edu">Jonathan Ostwald</a> &lt;<a
+href="mailto:ostwald@ucar.edu">ostwald@ucar.edu</a>&gt; - University Corporation
+for Atmospheric Research, DLESE Program Center.<br>
+<br>
+The DLESE Collection System (DCS) Repository Web Service (DCSWebService)
+provides programmatic access to the DCS Repository.<br>
+<br>
+The DCS Repository Web Service enables information to be inserted into the DCS repository, and thereby
+compliments the DDS Discovery System (DDS) Web Service, which enables <i>searching</i> over the contents
+ of the repository.
+Both services are supported by the DCS.<br><br>
+
+<div style="border:thin blue solid;padding:3px">Please see the 
+<a href="../ddsws1-0/service_specification.html">DDS Web Service
+specification</a> for basic information about Web Services, as well as for more detailed
+information about the DDS Web Service. In particular, the following concepts are explained 
+in the DDS Web Service spec, which provide essential background for understanding the web services
+documented on this page:<br><br>
+<ul>
+<li>Web Service Definitions and concepts, and 
+<li>General HTTP request format.
+</ul>
+
+<br>To experiment with DDS Web Services, visit the <a
+href="../../services/">DLESE Web services portal</a>.
+</div>
+
+<br>
+<a name="requests"></a>
+<h2>DCS Repository Web Service requests and responses</h2>
+This section defines the available requests or <i>verbs</i>. <br>
+<br>
+The HTTP request format has the following format:<br>
+[base URL]?verb=<i>request</i>[&additional arguments]. <br>
+<br>
+For example:<br>
+<pre>http://www.dlese.org/dds/services/ddsws1-0?
+        verb=GetRecord&amp;id=DLESE-000-000-000-001</pre><br>
+<b>Summary of available requests:</b><br>
+<br>
+
+<a href="#GetId">GetId</a> - Allows an authorized client to obtain a record ID
+for a specified collection. The returned ID is unique for that collection.<br>
+<br>
+<a href="#PutRecord">PutRecord</a> - Allows an authorized client to add a
+metadata record to the repository in a specified collection. The metadata record
+is supplied by the client, and must contain a valid and unique ID.<br>
+
+<br>
+<a name="GetId"></a>
+<h3>GetId</h3>
+<b>Sample request</b>
+<br>
+The following request obtains an ID for the "dcc" collection:<br>
+<br>
+<a href="http://dcs.dlese.org/schemedit/services/dcsws1-0?verb=GetId&collection=crs" 
+	target="_blank">http://dcs.dlese.org/schemedit/services/dcsws1-0?verb=GetId&collection=crs</a><br>
+<br>
+<b>Summary and usage</b><br>
+<br>
+The GetId service returns a record identifier that is guaranteed to be unique
+across the specified collection. This service is used in conjunction with the <a
+href="#PutRecord">PutRecord</a> service to programmatically insert a record into
+a particular collection. Both the GetId and PutRecord services require that the
+client is authenticated to perform the requests, since they both modify the
+information managed by the DCS.<br><br>
+
+<b>Arguments</b><br>
+<br>
+<ul>
+<li>collection - a <i>required</i> argument that specifies the collection for which the ID is obtained.
+</ul>
+<br>
+<b>Errors and exceptions</b><br>
+<br>
+Error is indicted if the request does not the required arguments or if an argument is included that is not supported.<br>
+<br>
+<b>Example</b><br>
+<br>
+<i><b>Request</b></i><br>
+<br>
+Request an ID for the "dcc" collection.<br>
+<br>
+<pre>http://dcs.dlese.org/schemedit/services/dcsws1-0?
+           verb=GetId&amp;collection=dcc</pre><br>
+<i><b>Response</b></i><br>
+<br>
+<table border=1 cellspacing=0 cellpadding=5>
+<tr><td><pre>
+&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;DCSWebService&gt;
+  &lt;GetId&gt;
+    &lt;id&gt;DCC-000-000-000-006&lt;/id&gt;
+  &lt;/GetId&gt;
+&lt;/DCSWebService&gt;
+</pre> </td></tr>
+</table>
+<br>
+<br>
+<i><b>Request</b></i><br>
+<br>
+Perform a request that contains a non-existent collection and thus is in error.<br>
+<br>
+<pre>http://dcs.dlese.org/schemedit/services/dcsws1-0?
+		verb=GetId&amp;collection=mycollection</pre><br>
+<i><b>Response</b></i><br>
+<br>
+<table border=1 cellspacing=0 cellpadding=5>
+<tr><td><pre>
+&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;DCSWebService&gt;
+    &lt;error&gt;collection 'mycollection' not recognized&lt;/error&gt;
+&lt;/DCSWebService&gt;
+</pre> </td></tr>
+</table>
+<br>
+
+<br>
+<a name="PutRecord"></a>
+<h3>PutRecord</h3>
+<b>Sample request</b>
+<br>
+<br>
+<b>Summary and usage</b><br>
+<br>
+The PutRecord request inserts an XML record into the specified collection in the repository of the DCS. It is commonly used
+by external applications that collect information from a user, package the information as an XML record, and finally insert the
+record into the DCS. The PutRecord service might also be used to programmatically move records from some external location 
+into the DCS.<br>
+<br>
+<b>Arguments</b><br>
+<br>
+<ul>
+<li>xmlFormat - a <i>required</i> argument that specifies the metadata framework of the record.</li><br>
+<li>collection - a <i>required</i> argument that specifies the collection into which the record is to be inserted.</li><br>
+<!-- 
+	notes on id param:
+	- the id inside the record is the one that takes precedence. (why should it even be required?)
+	- records having that id will be overwritten!
+	-->
+<li>id - a <i>required</i> argument that specifies the ID of the record (see <a href="#GetId">GetId</a>)</li><br>
+<li>recordXml - a <i>required</i> argument supplying the XML record (as an encoded string) to be inserted 
+into the DCS repository. For more information about encoding the recordXml, see
+ the <a href="http://www.ietf.org/rfc/rfc2396.txt">syntax rules for URIs</a>. </li>
+</ul><br>
+
+<b>Examples</b><br>
+<br>
+<i><b>Request</b></i><br>
+<br>
+Invoke the PutRecord service to insert a record of <i>adn</i> format and having an 
+id of <i>DCC-000-000-000-020</i> into the <i>dcc</i> collection.
+ The (encoded) recordXml parameter is abbreviated for clarity.<br>
+<br>
+<pre>http://dcs.dlese.org/schemedit/services/dcsws1-0?
+		verb=PutRecord&amp;xmlFormat=adn&amp;collection=dcc&amp;id=DCC-000-000-000-020&amp;recordXml=%3C...%3E</pre><br>
+<i><b>Response</b></i><br>
+<br>
+<table border=1 cellspacing=0 cellpadding=5>
+<tr><td><pre>
+&lt;DCSWebService&gt;
+  &lt;PutRecord&gt;
+    &lt;result&gt;Success&lt;/result&gt;
+    &lt;xmlFormat&gt;adn&lt;/xmlFormat&gt;
+    &lt;collection&gt;dcc&lt;/collection&gt;
+    &lt;id&gt;DCC-000-000-000-020&lt;/id&gt;
+  &lt;/PutRecord&gt;
+&lt;/DCSWebService&gt;
+</pre> </td></tr>
+</table>
+<br>
+<br>
+<i><b>Request</b></i><br>
+<br>
+Invoke the PutRecord service without the required "xmlFormat" and "collection" arguments, which results in an error. (Again, the 
+(encoded) recordXml parameter is abbreviated for clarity).<br>
+<br>
+<pre>http://dcs.dlese.org/schemedit/services/dcsws1-0?
+		verb=PutRecord&amp;id=DCC-000-000-000-020&amp;recordXml=%3C...%3E</pre><br>
+<i><b>Response</b></i><br>
+<br>
+<table border=1 cellspacing=0 cellpadding=5>
+<tr><td><pre>
+&lt;DCSWebService&gt;
+  &lt;error&gt;The request had the following errors:
+    &lt;err&gt;1 - The 'xmlFormat' argument is required but is missing or empty&lt;/err&gt;
+    &lt;err&gt;2 - The 'collection' argument is required but is missing or empty&lt;/err&gt;
+  &lt;/error&gt;
+&lt;/DCSWebService&gt;
+</pre> </td></tr>
+</table>
+<br>
+
+</td>
+</tr></tbody></table>
+
+
+
+<!-- BEGIN BOTTOM CONTENT: DO NOT EDIT! -->
+<p id='dlese_footer'><br />
+	<hr width="100%">
+	<div class='dlese_footer'>
+		<a href="http://www.dlese.org/">DLESE HOME</a> | 
+		<a href="http://www.dlese.org/faq/">FAQ</a> | 
+		<a href="http://www.dlese.org/documents/glossary.html">GLOSSARY</a> | 	
+		<a href="http://www.dlese.org/sitemap.html">SITE MAP</a> |
+		<a href="mailto:support@dlese.org">CONTACT US</a><br />
+		<a href="http://www.dlese.org/"><img src="/dlese_shared/images/littlelogo.jpg" 
+			border="0" vspace="7" alt="Digital Library for Earth System Education"></a>
+	</div>
+	</p>
+	<script type="text/javascript"><!--
+		dlese_closeHtmlBody();
+	//-->
+	</script>
+<!-- END BOTTOM CONTENT: DO NOT EDIT! -->
+
+
+</body></html>

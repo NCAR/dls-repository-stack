@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: fundingEntity-osm-fields-en-us.xml,v 1.5 2011/07/01 21:41:44 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/fundingEntity.xsd">
+  <field name="Funding entity" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/classify/fundingEntity">
+		<definition>The name of the entity that provides fiscal support for a program, project, or other research endeavor.</definition> 
+<!--per catlog working group meeting 2011-06-30, director's office does not use funding source info; so OS does not QA but rather just accepts the information in this field-->
+		<prompts>
+			<prompt>Do not need to QA.</prompt>
+		</prompts>
+
+<!--
+		<terms>
+			<termAndDeftn vocab="IBM Shared University Research Program"/>
+			<termAndDeftn vocab="National Aeronautics and Space Administration (NASA)"/>
+			<termAndDeftn vocab="National Oceanic and Atmospheric Administration (NOAA)"/>
+			<termAndDeftn vocab="U.S. Department of Defense (DOD)"/>
+			<termAndDeftn vocab="U.S. Department of Education"/>
+			<termAndDeftn vocab="National Science Foundation (NSF)"/>
+			<termAndDeftn vocab="Office of Naval Research (ONR)"/>
+			<termAndDeftn vocab="U.S. Department of Energy (DOE)"/>
+			<termAndDeftn vocab="World Meteorological Organization (WMO)"/>
+			
+		</terms>
+-->		
+		 <bestPractices>
+			<dos>
+				<practice status="current" originDate="2010-05-31">This is an optional field.</practice> 
+				<practice status="current" originDate="2010-05-31">This field can be repeated.</practice> 
+			 </dos>
+			 <donts>
+				 <practice status="current" originDate="2010-05-31">Do not include more than one funding agency per entry. Add new entires instead.</practice> 
+			 </donts>
+			 <examples>
+				<practice status="current" originDate="2010-05-31">National Aeronautics and Space Administration (NASA)</practice>
+			</examples>
+		 </bestPractices>
+		 <documentation>
+				<obligation>optional</obligation>
+				<min>0</min>
+				<max>unbounded</max>
+				<XMLdataTypes>
+					<XMLdataType>string</XMLdataType>
+				</XMLdataTypes>
+				<domain>free text and controlled</domain>
+				<example>National Aeronautics and Space Administration (NASA)</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

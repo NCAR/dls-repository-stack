@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: beneficiary-adn-groups-default-en-us.xml,v 1.1 2009/01/29 22:30:05 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Beneficiary</title>
+<groups:concept language="en-us" metaFormat="adn" metaVersion="0.7.00" text="Beneficiary" audience="default" path="/itemRecord/educational/audiences/audience/beneficiary" deftn="a recipient of the instruction or information of the resource"/>
+</head>
+<body>
+<outline groups:vocab="DLESE:Earth system data specialists" type="vocab" text="Earth system data specialists" groups:deftn="individuals who primary responsibility is to work with, process, analyze, package or redistribute Earth data sets"/>
+<outline groups:vocab="DLESE:Evaluators" type="vocab" text="Evaluators" groups:deftn="individuals whose determine significance, worth or condition by careful study, appraisal or assessment"/>
+<outline groups:vocab="DLESE:Media specialists" type="vocab" text="Media specialists" groups:deftn="individuals whose specialty is understanding information skills, methods and integration and combining this with educational technologies "/>
+<outline groups:vocab="DLESE:Researchers" type="vocab" text="Researchers" groups:deftn="individuals who investigate relevant topics, problems, issues or events in order to advance knowledge of a field"/>
+<outline groups:vocab="DLESE:Science professionals" type="vocab" text="Science professionals" groups:deftn="individuals working in the scientific arena but who position is more operations oriented rather than research oriented"/>
+<outline groups:vocab="GEM:Administrators" type="vocab" text="Administrators" groups:deftn="individuals who manage others, large projects or budgets within an organization  "/>
+<outline groups:vocab="GEM:Adult education students" type="vocab" text="Adult education students" groups:deftn="individuals generally above the age of 18 who have returned to or are starting out in a formal academic environment"/>
+<outline groups:vocab="GEM:Advanced placement students" type="vocab" text="Advanced placement students" groups:deftn="individual who are taking college-level and often college-credit courses in high school"/>
+<outline groups:vocab="GEM:African-American students" type="vocab" text="African-American students"/>
+<outline groups:vocab="GEM:Asian-American students" type="vocab" text="Asian-American students"/>
+<outline groups:vocab="GEM:At-risk students" type="vocab" text="At-risk students" groups:deftn="individuals who are struggling in a school setting and may be in danger of dropping out because of social, economic or psychological factors"/>
+<outline groups:vocab="GEM:Bilingual students" type="vocab" text="Bilingual students" groups:deftn="individuals fluent in multiple languages usually the dominant language of the learning situation and another language"/>
+<outline groups:vocab="GEM:Culturally diverse classroom" type="vocab" text="Culturally diverse classroom" groups:deftn="a learning setting with culturally differentiated groups"/>
+<outline groups:vocab="GEM:Curriculum supervisors" type="vocab" text="Curriculum supervisors" groups:deftn="individuals responsible for defining or managing sets of courses constituting an academic area of specialization"/>
+<outline groups:vocab="GEM:Developmentally disabled students" type="vocab" text="Developmentally disabled students" groups:deftn="individuals with developmental challenges due to their social environment "/>
+<outline groups:vocab="GEM:Disabled students" type="vocab" text="Disabled students" groups:deftn="learners with any handicaps whether it be physical, emotional, developmental, economic, hearing or vision"/>
+<outline groups:vocab="GEM:Economically disadvantaged students" type="vocab" text="Economically disadvantaged students" groups:deftn="individuals facing challenges due to their financial or economic situation"/>
+<outline groups:vocab="GEM:Elementary school teachers" type="vocab" text="Elementary school teachers" groups:deftn="educators whose primary responsibility it is to instruct students in kindergarten through grade five"/>
+<outline groups:vocab="GEM:Emotionally disabled students" type="vocab" text="Emotionally disabled students" groups:deftn="individuals who are emotionally challenged"/>
+<outline groups:vocab="GEM:English as a second language (ESL) students" type="vocab" text="English as a second language (ESL) students" groups:deftn="individuals whose first language is a language other than English"/>
+<outline groups:vocab="GEM:Female students" type="vocab" text="Female students"/>
+<outline groups:vocab="GEM:General public" type="vocab" text="General public" groups:deftn="individuals in the general population"/>
+<outline groups:vocab="GEM:Gifted or honors students" type="vocab" text="Gifted or honors students" groups:deftn="individuals taking courses above grade level"/>
+<outline groups:vocab="GEM:Hearing impaired students" type="vocab" text="Hearing impaired students" groups:deftn="individuals with no or minimal abilities to hear the spoken word"/>
+<outline groups:vocab="GEM:Hispanic-American students" type="vocab" text="Hispanic-American students"/>
+<outline groups:vocab="GEM:Learning disabled students" type="vocab" text="Learning disabled students" groups:deftn="individuals who may have visual, auditory, spatial, conceptual, memory or behavioral deficits that benefit from alternative or multiple teaching methods in order to understand topics and concepts"/>
+<outline groups:vocab="GEM:Librarians" type="vocab" text="Librarians" groups:deftn="specialists in the care and management of a library or collections of related items"/>
+<outline groups:vocab="GEM:Limited English proficiency (LEP) students" type="vocab" text="Limited English proficiency (LEP) students" groups:deftn="individuals who have only a slight understanding of or ability to speak English"/>
+<outline groups:vocab="GEM:Male students" type="vocab" text="Male students"/>
+<outline groups:vocab="GEM:Middle school teachers" type="vocab" text="Middle school teachers" groups:deftn="educators whose primary responsibility is to instruct students in grades six through eight."/>
+<outline groups:vocab="GEM:Minority students" type="vocab" text="Minority students" groups:deftn="individuals that are in disproportionate representation in STEM (science, technology, mathematics, engineering) disciplines; includes ethnicity, gender or socioeconomic populations"/>
+<outline groups:vocab="GEM:Native American students" type="vocab" text="Native American students"/>
+<outline groups:vocab="GEM:Other educational professionals" type="vocab" text="Other educational professionals" groups:deftn="individuals who consider themselves teachers or instructors but may not be formally associated with an institution or organization and who may teach across all grade ranges and ages (e.g. professional tutors)"/>
+<outline groups:vocab="GEM:Pacific Islanders" type="vocab" text="Pacific Islanders"/>
+<outline groups:vocab="GEM:Parents" type="vocab" text="Parents" groups:deftn="individuals who raise or care for offspring or other persons"/>
+<outline groups:vocab="GEM:Physically disabled students" type="vocab" text="Physically disabled students" groups:deftn="individuals with physical challenges or handicaps; does not include hearing or vision-impaired learners"/>
+<outline groups:vocab="GEM:Policymakers" type="vocab" text="Policymakers" groups:deftn="individuals whose primary responsibility is to develop and define plans, rules, strategies, guidelines, principles, actions or procedures for institutions or government agencies"/>
+<outline groups:vocab="GEM:Remedial students" type="vocab" text="Remedial students" groups:deftn="individuals taking courses that are generally deemed below grade level "/>
+<outline groups:vocab="GEM:Rural students" type="vocab" text="Rural students" groups:deftn="individuals in school settings that are located in country or agricultural areas"/>
+<outline groups:vocab="GEM:Secondary school teachers" type="vocab" text="Secondary school teachers" groups:deftn="educators whose primary responsibility is to instruct students in grades nine through twelve."/>
+<outline groups:vocab="GEM:Student teachers" type="vocab" text="Student teachers" groups:deftn="individuals pursuing a teaching certificate and who are currently working in a classroom setting."/>
+<outline groups:vocab="GEM:Students" type="vocab" text="Students" groups:deftn="individuals who investigate topics, problems, issues or events in order to advance their own knowledge, skills or understanding; often in a structured learning environment or through self-study"/>
+<outline groups:vocab="GEM:Students with multiple disabilities" type="vocab" text="Students with multiple disabilities" groups:deftn="individuals with more than one physical, developmental, or emotional challenge"/>
+<outline groups:vocab="GEM:Suburban students" type="vocab" text="Suburban students" groups:deftn="individuals in school settings adjacent or within commuting distance of major cities"/>
+<outline groups:vocab="GEM:Supervisors" type="vocab" text="Supervisors" groups:deftn="individuals who manage others or projects within an organization "/>
+<outline groups:vocab="GEM:Teacher educators" type="vocab" text="Teacher educators" groups:deftn="individuals who train professional teachers"/>
+<outline groups:vocab="GEM:Teachers" type="vocab" text="Teachers" groups:deftn="individuals whose primary responsibility or occupation is the instruction of others"/>
+<outline groups:vocab="GEM:Teaching professionals" type="vocab" text="Teaching professionals" groups:deftn="educators whose occupation is teaching or instructing"/>
+<outline groups:vocab="GEM:University instructors" type="vocab" text="University instructors" groups:deftn="educators at the college level who teach primarily undergraduate and graduate students"/>
+<outline groups:vocab="GEM:Urban students" type="vocab" text="Urban students" groups:deftn="learners within a city setting"/>
+<outline groups:vocab="GEM:Vision impaired students" type="vocab" text="Vision impaired students" groups:deftn="individuals whose eyesight is limited or no longer functioning"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

@@ -1,0 +1,23 @@
+written 2009-05-29
+by: Katy Ginger, University Corporation for Atmospheric Research (UCAR)
+
+Please note: that this project may not have version 1.0 of the groups metadata framework. 
+
+The difference between the groups metadata framework version 1.0 and version 2.0 is:
+
+version 2.0 removes the groups namespace qualification on the concepts element and certain attributes on the outline element (namely the attributes of vocab, deftn, and attribution)
+
+
+version 2.0 removed the opml namespace from the groups instance XML documents
+
+
+version 2.0 uses the fields namespace in the groups instance XML documents because fields and groups instance XML documents call the same schema (which from previous work was using the fields namespace)
+
+
+version 2.0 makes controlled vocabularies of a metadata framework enforceable in the groups instance XML documents. This means that if one wants to make a grouping that has a checkbox associated with it, there is metadata framework XML schema enhancement to back it up. One just has to decide which controlled vocab term to use. Multiple terms are not allowed.
+
+
+version 2.0 groups schema files for each framework reside in the ~/schemas/fields directory because of legacy issues and namespace issues.
+
+
+version 2.0 groups files removes the opml namespace as well.

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: authority-vocabs-groups-cataloger-en-us.xml,v 1.2 2011/06/07 20:23:12 ginger Exp $ --> 
+<opml version="1.0" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/vocabs/1.0/schemas/fields/authority.xsd" xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<head>
+		<concept metaVersion="1.0" path="/vocabTerm/sourceInfo/authority" audience="cataloger" language="en-US" text="authority" metaFormat="vocab"/>
+	</head>
+	<body>
+		<outline vocab="LOC" type="vocab" text="Library of Congress"/>
+		<outline vocab="NCAR Library" type="vocab" text="NCAR Library"/>
+		<outline vocab="Organization website" type="vocab" text="Organization website"/>
+	</body>
+</opml>

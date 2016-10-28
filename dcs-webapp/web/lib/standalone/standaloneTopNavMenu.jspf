@@ -1,0 +1,13 @@
+<%-- Top Navigation Menu --%>
+
+
+<%-- breadcrumbs --%>
+<st:breadcrumbs>
+	<a href="javascript:guardedExit('../admin/browse.do')">Collections</a>
+	<st:breadcrumbArrow />
+	<a href="javascript:guardedExit('../admin/browse.do?sc=0${sef.collection}&q')">${sef.collectionName}</a>
+	<st:breadcrumbArrow />
+	<span class="current">${sef.recId}</span>
+</st:breadcrumbs>
+<%@ include file="standaloneNavMenu.jspf" %>
+

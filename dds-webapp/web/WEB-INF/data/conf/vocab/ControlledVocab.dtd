@@ -1,0 +1,23 @@
+<!ELEMENT field (definition+, value+)>
+<!ATTLIST field
+	name		CDATA	#REQUIRED
+	id			CDATA	#REQUIRED
+	language	CDATA	#REQUIRED
+>
+
+<!ELEMENT definition (#PCDATA)>
+<!ATTLIST definition
+	system		CDATA	#REQUIRED
+	interface	CDATA	#REQUIRED
+>
+
+<!ELEMENT value (definition+)>
+<!ATTLIST value
+	name	CDATA	#REQUIRED
+	vocab	CDATA	#REQUIRED
+	id		CDATA	#REQUIRED
+>
+
+
+
+

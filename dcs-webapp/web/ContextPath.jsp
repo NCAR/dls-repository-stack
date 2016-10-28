@@ -1,0 +1,2 @@
+<%=request.getContextPath().trim()%>
+

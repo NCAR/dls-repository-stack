@@ -1,0 +1,17 @@
+<c:if test="${not empty catalogingInfo}">
+	<script type="text/javascript"><!--
+		
+		function doCatalogingInfo () {
+			var features = "innerHeight=640,height=640,innerWidth=700,width=700,resizable=yes,scrollbars=yes";
+			features += ",locationbar=no,menubar=no,location=no,toolbar=no";
+			// alert ("url: " + url);
+			// bpwin = window.open (url);
+			var cInfo = window.open ("${catalogingInfo}", "cInfo", features);
+			cInfo.focus();
+	}
+	// -->
+	</script>
+	<div><a href="javascript:doCatalogingInfo()">${not empty initParam.catalogingInfoLabel ?
+																								initParam.catalogingInfoLabel :
+																								'Cataloging Info'}</a></div>
+</c:if>

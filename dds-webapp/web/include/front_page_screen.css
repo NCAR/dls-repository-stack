@@ -1,0 +1,221 @@
+/* Styles used on the front page of the DLESE Discovery System (http://www.dlese.org/dds/) */
+
+A { 
+	z-index: 300; 
+}
+.dlese_HomeLink { 
+	z-index: 10000; 
+	text-decoration: underline; 
+}
+.registerLink { 
+	margin-top: 14px; 
+	margin-right: 10px; 
+	z-index: 4; 
+}	
+.gettingStarted { 
+	position: absolute; 
+	top: 165px; 
+	left: 233px; 
+	z-index: 14; 
+}	
+.freeService { 
+	position: absolute; 
+	top: 546px; 
+	left: 11px; 
+	z-index: 14; 
+}  
+.frontPageContentTable {
+	position: absolute;
+	top: 90px;
+	left: 0px;
+	z-index: 10; 
+	width: 100%;
+}
+.footerRuleSizer {
+	font-size: 1px;
+}
+.queryFormDiv {
+	position: absolute; 
+	top: 238px; 
+	left: 20px; 
+	z-index: 20; 
+	padding: 0px; 
+	margin: 0px;  
+}
+.queryForm { 
+	margin: 0px; 
+	padding: 0px; 
+}
+.queryFormKeywordInput { 
+	width: 220px; 
+	position: absolute; 
+	left: 5px; 
+	top: 0px;
+}
+.searchTipsImg {
+	position: absolute; 
+	top: 143px; 
+	left: 300px;
+}
+.educationalResourcesRadio {
+	position: absolute; 
+	top: 28px; 
+	left: 0px;
+	font-size: 13px;
+}
+.emailDiscussionsRadio {
+	position: absolute; 
+	top: 138px; 
+	left: 0px;
+	font-size: 13px;
+}
+.newsOppsRadio {
+	position: absolute; 
+	top: 114; 
+	left: 0px;
+	font-size: 13px;
+}
+.everythingElseRadio {
+	position: absolute; 
+	top: 162px; 
+	left: 0px;
+	font-size: 13px;
+}
+.viewAllResourcesLink {
+	font-weight: bold; 
+	position: absolute; 
+	top: 58px; 
+	left: 20px;
+	font-size: 13px;
+}
+.startSearchImg { 
+	position: absolute; 
+	top: 156px; 
+	left: 174px; 
+}
+.radioLabels {
+	font-weight: bold;
+}
+.footerLinks {
+	margin-left: 6px;
+	margin-right: 6px;
+}
+.smallFont {
+	font-size: 2px;
+}
+.headerTables {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 4;
+}
+.navButtonTable {
+	position: absolute;
+	top: 0px;
+	left: 115px;
+	width: 100%;		
+}
+.earthImgOffset {
+	height: 33px;
+}
+.vocabNoscriptGradeLevel {
+	position: absolute;
+	top: 38px; 
+	left: 173px;
+}
+.vocabNoscriptResourceType {
+	position: absolute;
+	top: 66px;
+	left: 173px;
+}
+.vocabNoscriptCollections {
+	position: absolute;
+	top: 94px;
+	left: 173px;
+}
+.vocabNoscriptStandards {
+	position: absolute;
+	top: 122px;
+	left: 173px;
+}
+.whatsNew {
+	background-color: #ffffff;
+	border: 2px solid black;
+	position: absolute;
+	top: 474px; left: 80px;
+	padding: 5px;
+}
+P {
+	margin-top: 2px; 
+	margin-bottom: 2px; 
+	margin-right: 3px; 
+	padding-right: 3px;
+}
+UL {
+	margin-top: 0px; 
+	margin-bottom: 7px; 
+	margin-right: 15px; 
+	margin-left: 20px;
+}
+LI {
+	margin-top: 0px; 
+	margin-right: 15px;
+}
+FORM { 
+	padding: 3px; 
+	margin: 2px; 
+}
+.roiItem {
+	margin-left: 9px; 
+	padding-left: 9px; 
+	margin-top: 3px; 
+	margin-right: 5px;
+	margin-bottom: 7px;
+}
+.roiItem IMG {
+	margin-left: 3px; 
+	margin-right: 9px;
+}
+.roiItem H3 A:link {
+	text-decoration: none;
+	color: #000099;
+}
+.roiItem H3 A:visited {
+	text-decoration: none;
+	color: #000099;
+}
+.roiItem H3 {
+	margin-bottom: 3px;
+	margin-left: 3px;
+	padding-left: 0px;
+	padding-top: 3px;
+	margin-top: 3px;
+	font-size: 110%;
+}
+.roiItem P {
+	margin-left: 0px;
+	padding-left: 0px;	
+}
+.roiItem FORM {
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 4px;
+}
+.bulletHeaders {
+	padding-bottom: 3px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	font-size: 125%;
+	margin-top: 0px;
+	padding-top: 0px;
+	white-space: nowrap;
+}
+H1 IMG {
+	position: relative;
+	top: 2px;
+}	
+.footerLinks {
+	margin-left: 2px;
+	margin-right: 2px;
+}

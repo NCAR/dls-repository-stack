@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<Ingestor>
+	<target-format>comm_para</target-format>
+	<populate-resource-handles>false</populate-resource-handles>
+	<harvest-data-format>JSON</harvest-data-format>
+
+   	<target-format-processors>
+   		<DataFormatTransform>
+   			<source-format>JSON</source-format>
+   			<target-format>XML</target-format>
+   		</DataFormatTransform>
+		<XSLTransform>
+   		 	<uri>http://ns.nsdldev.org/xsl_harvest_ingest_2_0/lr_paradata.xsl</uri>
+   		</XSLTransform>
+   		
+   		<!-- specifying location to be top is important. The XSD requires these to be before any usage data -->
+   		<AddElement>
+   			<location>top</location>
+   			<element-xml><![CDATA[<usageDataResourceURL xmlns="http://ns.nsdl.org/ncs/comm_para">$url</usageDataResourceURL>]]></element-xml>
+   		</AddElement>
+   		<AddElement>
+  			<location>top</location>
+   			<element-xml><![CDATA[<recordId xmlns="http://ns.nsdl.org/ncs/comm_para" catalog="LR">$partner_id</recordId>]]></element-xml>
+   		</AddElement>
+   		<RemoveDuplicateElementsTransform/>
+   		<PrettyPrint/>
+   		<RecordSchemaValidator/> 
+   	</target-format-processors>
+</Ingestor>

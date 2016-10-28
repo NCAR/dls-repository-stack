@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: bbVert-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:13 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Bounding box - vertical info" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/geospatialCoverages/geospatialCoverage/boundBox/bbVert">
+		<definition>the vertical extent (range of altitude or depth) covered by the bounding box of the resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-04-19" link1="geodetic datum, vertical base level, vertical minimum and vertical maximum" style1="bold">Complete the required subfields of geodetic datum, vertical base level, vertical minimum and vertical maximum. </practice>
+				<practice status="current" originDate="2005-05-02">Complete vertical information when it contributes to the understanding of a resource. For example if the resource is about the ozone hole, use vertical dimensions.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2005-05-02">Do not use vertical dimensions if the resource mentions places or events casually. That is, the event or place is not of primary importance to understanding the resource.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2005-05-02">Ozone layer maximum: 20 to 30 kilometers .</practice>
+				<practice status="current" originDate="2005-05-02">Mountain peak: 14383 feet.</practice>
+				<practice status="current" originDate="2005-05-02">Aleutian trench: -7.7 kilometers.</practice>
+				<practice status="current" originDate="2005-05-02">Jet stream winds: 9 to 11 kilometers.</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<children>
+				<child>geodeticDatumGlobalOrVert</child>
+				<child>vertBase</child>
+				<child>vertMin</child>
+				<child>vertMax</child>
+				<child>vertAcc</child>
+			</children>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>the child elements</domain>
+			<example>&lt;vertBase&gt;, &lt;vertMax&gt;</example>
+			<notes>
+				<note>The vertical dimensions of the bounding box are given as a range of values based on either sea level or local surface level.</note>
+				<note>Negative values indicated distance below the base level.</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

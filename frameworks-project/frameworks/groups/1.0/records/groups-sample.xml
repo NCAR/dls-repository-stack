@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: groups-sample.xml,v 1.3 2008/02/22 21:20:55 ginger Exp $ -->
+<opml xmlns="http://www.dlsciences.org/frameworks/opml" xmlns:groups="http://www.dlsciences.org/frameworks/groups" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlsciences.org/frameworks/opml
+http://www.dlsciences.org/frameworks/groups/1.0/schemas/groups-opml.xsd" version="2.0">
+	<head>
+		<title>String</title>
+		<dateCreated>Mon, 00 Jan 0000 00:00:00 +0000</dateCreated>
+		<dateModifed>Mon, 00 Jan 0000 00:00:00 +0000</dateModifed>
+		<ownerName>String</ownerName>
+		<ownerEmail>aa@[250.250.250.aa</ownerEmail>
+		<ownerId>http://www.xmlspy.com</ownerId>
+		<docs>http://www.xmlspy.com</docs>
+		<expansionState>String</expansionState>
+		<vertScrollState>2</vertScrollState>
+		<windowTop>0</windowTop>
+		<windowLeft>0</windowLeft>
+		<windowBottom>0</windowBottom>
+		<windowRight>0</windowRight>
+		<groups:concept path="String" id="String" metaFormat="adn" metaVersion="String" language="String" deftn="String" text="String" textAbbrev="String" textBrief="String" audience="community" attribution="String"/>
+	</head>
+	<body>
+		<outline text="String" type="group" isComment="false" isBreakpoint="false" created="Mon, 00 Jan 0000 00:00:00 +0000" category="String" description="String" url="http://www.xmlspy.com" htmlUrl="http://www.xmlspy.com" xmlUrl="http://www.xmlspy.com" title="String" version="String" language="unknown" groups:textAbbrev="String" groups:textBrief="String" groups:textFull="String" groups:deftn="String" groups:collapsible="true" groups:wrap="false" groups:display="true" groups:id="String" groups:vocab="String" groups:attribution="String">Text</outline>
+	</body>
+</opml>

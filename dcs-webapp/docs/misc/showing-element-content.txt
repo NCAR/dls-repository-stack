@@ -1,0 +1,56 @@
+Notes regarding display of metadata fields under different conditions (see DLESERenderer)
+
+
+getXsdStringElementsToHide() returns a List of (normalized) paths for which we do not show elements
+- returns value of xsdStringElementsToHide
+			/itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/longLats/longLat
+			/itemRecord/metaMetadata/dateInfo
+			/annotationRecord/service/date
+- called by showXsdStringElement
+
+
+showXsdStringElement(xpath) controls whether an INPUT object is shown for given path
+	DEFINITIONS
+		- RendererImpl - simply returns true
+		- ViewerRenderer - simply returns true (is this one needed??) DON"T THINK SO
+	if framework is "adn" or "dlese_anno", 
+		call getXsdStringElementsToHide with normalized path
+	else
+		return true
+		
+	so we show all xpaths of frameworks other than "adn" and "dlese_anno"
+	
+	CALLERS - 
+		- MdeDerivedTextOnlyModel.renderTextExtensionElement()
+			if extensionTypeName.equals ("xsd:string") && !renderer.showXsdStringElement(xpath)
+				- then don't render
+				
+		- MdeRepeatingDerivedTextOnlyModel
+			same as above
+	
+	
+----------------
+
+getXsdStringInputsToHide - returns a list of xsd:string elements for which 
+	we do not display INPUT elements. 
+
+	accessor for "xsdStringInputsToHide" - initialized by creating a list of paths.
+			/itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/longLats/longLat
+			/itemRecord/metaMetadata/dateInfo
+			/itemRecord/temporalCoverages/timeAndPeriod/timeInfo/timeAD/begin
+			/itemRecord/temporalCoverages/timeAndPeriod/timeInfo/timeAD/end
+			/annotationRecord/service/date
+			
+show XsdStringInput (xpath) - boolean
+	if framework is "adn",
+		return true if getXsdStringInputsToHide() contains xpath
+		
+	otherwise return false
+	
+	CALLER - DleseEditorRenderer.getTextInput:
+		if schemaNode.isDerivedModel AND extensionType.equals (xsd:string)
+			if showXsdStringInput (xpath):
+				SHOW element
+
+	
+	

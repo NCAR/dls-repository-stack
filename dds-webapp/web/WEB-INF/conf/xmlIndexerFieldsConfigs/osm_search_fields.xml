@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="osm">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<xpaths>
+				<xpath>/record/general/recordID</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="url">
+			<xpaths>
+				<xpath>/record/general/urlOfRecord</xpath>
+			</xpaths>		
+		</standardField>		
+		<standardField name="title">
+			<xpaths>
+				<xpath>/record/general/title</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/record/general/description</xpath>
+			</xpaths>		
+		</standardField>		
+	</standardFields>
+	<customFields>
+		<!-- customField attributes: name, store, [type OR analyzer] -->
+		<!-- Index resource handle -->		
+		<customField name="osmDateFiscal" store="yes" type="key" indexFieldPreprocessor="edu.ucar.dls.repository.indexing.NormalizedDateToDayFieldPreprocessor">
+			<xpaths>
+				<xpath>/record/coverage/date[@type='Fiscal']</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmDateCreated" store="yes" type="key" indexFieldPreprocessor="edu.ucar.dls.repository.indexing.NormalizedDateToDayFieldPreprocessor">
+			<xpaths>
+				<xpath>/record/coverage/date[@type='Created']</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmDateInpress" store="yes" type="key" indexFieldPreprocessor="edu.ucar.dls.repository.indexing.NormalizedDateToDayFieldPreprocessor">
+			<xpaths>
+				<xpath>/record/coverage/date[@type='In press']</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmDateModified" store="yes" type="key" indexFieldPreprocessor="edu.ucar.dls.repository.indexing.NormalizedDateToDayFieldPreprocessor">
+			<xpaths>
+				<xpath>/record/coverage/date[@type='Modified']</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmDatePresented" store="yes" type="key" indexFieldPreprocessor="edu.ucar.dls.repository.indexing.NormalizedDateToDayFieldPreprocessor">
+			<xpaths>
+				<xpath>/record/coverage/date[@type='Presented']</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmDatePublished" store="yes" type="key" indexFieldPreprocessor="edu.ucar.dls.repository.indexing.NormalizedDateToDayFieldPreprocessor">
+			<xpaths>
+				<xpath>/record/coverage/date[@type='Published']</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmDateRangePublishedStart" store="yes" type="key">
+			<xpaths>
+				<xpath>/record/coverage/dateRange[@type='Published']/@start</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmDateRangePublishedEnd" store="yes" type="key">
+			<xpaths>
+				<xpath>/record/coverage/dateRange[@type='Published']/@end</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmAuthorUCARid" store="yes" type="key">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Author']/@UCARid</xpath>
+			</xpaths>
+		</customField>		
+		<!-- 
+			The following fields enable searching by author and sorting with priority to first author, etc.
+		-->
+		<customField name="osmAuthorLastName" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Author']/lastName</xpath>
+			</xpaths>
+		</customField>		
+		<customField name="osmAuthorLastNameOrder1" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Author'][@order='1']/lastName</xpath>
+			</xpaths>
+		</customField>		
+		<customField name="osmAuthorLastNameOrder2" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Author'][@order='2']/lastName</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmAuthorLastNameOrder3" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Author'][@order='3']/lastName</xpath>
+			</xpaths>
+		</customField>	
+		<customField name="osmAuthorFirstName" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Author']/firstName</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmAuthorMiddleName" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Author']/middleName</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmAuthorInstName" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Author']/affiliation/instName</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmAuthorInstDivision" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Author']/affiliation/instDivision</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmPublisherInstName" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/organization[@role='Publisher']/affiliation/instName</xpath>
+			</xpaths>
+		</customField>	
+		<customField name="osmPublisherInstName" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Publisher']/affiliation/instName</xpath>
+			</xpaths>
+		</customField>
+		<customField facetCategory="UCARDivision" facetPathDelimeter=":"> 
+			<xpaths>
+				<xpath>/record/contributors/organization/affiliation/instDivision</xpath>
+				<xpath>/record/contributors/person/affiliation/instDivision</xpath>
+			</xpaths>		
+		</customField>
+	</customFields>
+</XMLIndexerFieldsConfig>

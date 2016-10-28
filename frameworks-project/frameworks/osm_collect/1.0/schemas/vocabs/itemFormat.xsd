@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xs:annotation>
+		<xs:documentation>********************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>********************************************</xs:documentation>
+		<xs:documentation>Created: 2010-05-12</xs:documentation>
+
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>***** SCHEMA AUTHOR  *****</xs:documentation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger@ucar.edu</xs:documentation>
+
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>*****  COPYRIGHT and LICENSE INFORMATION  *****</xs:documentation>
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>See LICENSE AND COPYRIGHT below.</xs:documentation>
+
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>*****  HOSTORY OF IMPORTANT CHANGES****** *****</xs:documentation>
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>None.</xs:documentation>
+		
+	</xs:annotation>
+	<xs:simpleType name="itemFormatType">
+		<xs:annotation>
+			<xs:documentation>***** itemFormatType  *****</xs:documentation>
+			<xs:documentation>Valid values for the element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="adn"/>
+			<xs:enumeration value="briefmeta"/>
+			<xs:enumeration value="concepts"/>
+			<xs:enumeration value="dlese_anno"/>
+			<xs:enumeration value="dlese_collect"/>
+			<xs:enumeration value="fields"/>
+			<xs:enumeration value="groups"/>
+			<xs:enumeration value="library_dc"/>
+			<xs:enumeration value="ncs_collect"/>
+			<xs:enumeration value="ncs_item"/>
+			<xs:enumeration value="news_opps"/>
+			<xs:enumeration value="nsdl_dc"/>
+			<xs:enumeration value="oai_dc"/>
+			<xs:enumeration value="osm"/>
+			<xs:enumeration value="osm_collect"/>
+			<xs:enumeration value="osm_next"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

@@ -1,0 +1,116 @@
+Installation instructions for the Harvest Repository Manager software v@VERSION@.
+
+These instructions are for installing from a WAR file, not from source.
+
+To install and run the Harvest Repository Manager software you must have the following:
+  
+1. Harvest Repository Manager Web application software (hm.war or hm deployment directory).
+2. Tomcat v6.x
+3. Java 8 (should work with Java 6 and 7 too)
+4. An installation of the Digital Collection System (DCS) that contains one or more ncs_collect records (used to configure where to harvest from)
+5. MySQL - To house the harvested records repository
+
+
+
+Step 1: Download and install an instance of the DCS and
+create one or more ncs_collect records that define the OAI settings
+for an the collection. The DCS is available at:
+https://wiki.ucar.edu/pages/viewpage.action?pageId=78352766
+
+Step 2: Download and install a Tomcat servlet container on your server. 
+To install Tomcat, follow the instructions available from Apache at
+http://tomcat.apache.org/
+
+Step 3: Place the file 'hm.war' into the 'webapps' directory found in    
+your Tomcat installation. 'webapps' is the default location where Tomcat 
+expects to find web applications. Alternatively, you may build and deploy
+the software directly to Tomcat from the project source files
+
+Step 4: Install MySQL and configure the necessary database schemas and a
+DB user account with read/write access to the these schemas (db user and password
+will be configured in the webapp configuration step).
+
+Follow the instructions here to set up the DB schemas and tables:
+https://wiki.ucar.edu/display/nsdlto/Installation+and+Dev+Setup
+
+A copy of the above is also in the project docs: web/docs/Database-and-app-InstallationandDevSetup-instructions.pdf
+
+- 'hm_repository' - The tables in this DB schema are the repository that hold the
+latest harvested and normalized records from all collections
+
+- 'harvest' - Tables in the schema are used to stage the most recent harvest and logs
+
+- 'harvest_workspace' - Schema used for temporary tables during a harvest
+
+
+Step 5: Start or restart Tomcat. Upon startup the first time, Tomcat will
+automatically unpack the hm.war archive, creating a directory and 
+application context named 'hm'.
+  
+Step 6: The Harvest Repository Manager software should now be running. Launch a
+web browser and type in the URL to the tomcat server and context, for example
+http://localhost:8080/hm/
+
+Step 7: Configure the harvest manager webapp settings. The default settings for the software are defined in the Web Application deployment
+descriptor file found at (${tomcat}/webapps/hm/WEB-INF/web.xml)  - see the context parameters (<context-param> elements).
+The purpose of each setting is described in detail in that file.
+Edit the default settings to configure your local installation (settings should be placed in ${tomcat}/conf/server.xml
+or ${tomcat}/conf/Catalina/localhost/hm.xml).
+
+Step 8: Configure the 'records' context, which is used to display links to access the raw downloaded harvested records
+and error messages that appear in the for the 'Harvested Records' tab in the Harvest Repository Manager:
+
+	To configure the 'records' context for Tomcat 6, do as follows:
+
+	a. Copy the file ${tomcat}/webapps/hm/records_tab_directory_listing.xsl to the ${tomcat}/conf directory
+       ${tomcat}/conf/records_tab_directory_listing.xsl
+
+       Note: As of Tomcat 6.0.44, this XSL file must be in the conf directory, not the webapps/hm directory
+
+	b. Edit the default context config file ${tomcat}/conf/web.xml
+
+		- Add an init-param 'globalXsltFile' to configure the ${tomcat}/conf/records_tab_directory_listing.xsl
+		style sheet for directory listings:
+	
+			<init-param>
+				<param-name>globalXsltFile</param-name>
+				<param-value>/INSERT-PATH-TO-TOMCAT/conf/records_tab_directory_listing.xsl</param-value>
+			</init-param>
+			
+		- Set the listing param to 'true':
+		
+			<init-param>
+				<param-name>listings</param-name>
+				<param-value>true</param-value>
+			</init-param>		
+		
+	c. Add a Tomcat context '/records' in server.xml mounted to the root folder of the ingest records directory (the directory
+	where the ingested files are saved by the ingest process):
+	
+			<Context path="/records" docBase="/usr/local/ingest"
+					debug="0"
+					reloadable="false">
+			</Context>	
+	
+	d. In the Harvest Repository Manager context config in server.xml (/hm), add the attribute crossContext="true":
+	
+		<Context path="/hm" docBase="/hm" debug="0" reloadable="true" crossContext="true">
+			... other params here
+		</Context>
+
+		
+Step 8 (optional): Configure apache to proxy http requests through to the Tomcat Harvest Repository Manager (/hm) and
+records (/records) contexts. This can be achieved with mod_proxy, mod_jk, or mod_proxy_ajp (documentation not
+included here). Note that when using mod_proxy, an additional configuraion must be placed
+in Tomcat's server.xml <Connector> (for both port 80 and 443) to define the 
+proxyName and proxyPort attributes, for example:
+
+    <Connector port="8380" maxHttpHeaderSize="8192"
+               maxThreads="150" minSpareThreads="25" maxSpareThreads="75"
+               enableLookups="false" redirectPort="8443" acceptCount="100"
+               connectionTimeout="30000" disableUploadTimeout="true" 
+               proxyName="harvest.nsdl.org"
+               proxyPort="80" />
+		
+
+

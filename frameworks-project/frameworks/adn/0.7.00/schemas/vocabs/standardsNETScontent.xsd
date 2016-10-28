@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.7.00">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Overview  **************************************************************
+			Definition: 			Controlled vocabulary schema for DLESE metadata frameworks
+			Framework use: 	ADN-I (item)
+			Source org:			International Society for Technology in Education (ISTE); http://www.iste.org/ and 
+								the National Educational Technology Standards Project is at: http://cnets.iste.org/
+			Vocab values:		http://cnets.iste.org/students/s_stands.html (for teachers and students)
+			Vocab last update:	Unknown
+			DPC last update:		2002-2-7
+			Notes: 				Represents the technology standards.		
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************ History of Change *****************************8
+2003-2-7: Add the missing category Technoloby communication tools
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="NETStechnologyContentStandardsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				******************************  NETStechnologyContentStandardsType  **********************************
+				Lists the values that will appear in the metadata record
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="NETS:Basic operations and concepts:Students demonstrate a sound understanding of the nature and operation of technology systems"/>
+			<xsd:enumeration value="NETS:Basic operations and concepts:Students are proficient in the use of technology"/>
+			<xsd:enumeration value="NETS:Social, ethical, and human issues:Students understand the ethical, cultural, and societal issues related to technology"/>
+			<xsd:enumeration value="NETS:Social, ethical, and human issues:Students practice responsible use of technology systems, information, and software"/>
+			<xsd:enumeration value="NETS:Social, ethical, and human issues:Students develop positive attitudes toward technology uses that support lifelong learning, collaboration, personal pursuits, and productivity"/>
+			<xsd:enumeration value="NETS:Technology productivity tools:Students use technology tools to enhance learning, increase productivity, and promote creativity"/>
+			<xsd:enumeration value="NETS:Technology productivity tools:Students use productivity tools to collaborate in constructing technology-enhanced models, prepare publications, and produce other creative works"/>
+			<xsd:enumeration value="NETS:Technology communications tools:Students use telecommunications to collaborate, publish, and interact with peers, experts, and other audiences"/>
+			<xsd:enumeration value="NETS:Technology communications tools:Students use a variety of media and formats to communicate information and ideas effectively to multiple audiences"/>
+			<xsd:enumeration value="NETS:Technology research tools:Students use technology to locate, evaluate, and collect information from a variety of sources"/>
+			<xsd:enumeration value="NETS:Technology research tools:Students use technology tools to process data and report results"/>
+			<xsd:enumeration value="NETS:Technology research tools:Students evaluate and select new information resources and technological innovations based on the appropriateness for specific tasks"/>
+			<xsd:enumeration value="NETS:Technology problem-solving and decision-making tools:Students use technology resources for solving problems and making informed decisions"/>
+			<xsd:enumeration value="NETS:Technology problem-solving and decision-making tools:Students employ technology in the development of strategies for solving problems in the real world"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="NETStechnologyContentStandardsLeafType">
+		<xsd:annotation>
+			<xsd:documentation>
+				******************************  NETStechnologyContentStandardsLeafType  **********************************
+				Lists leaf values
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Students demonstrate a sound understanding of the nature and operation of technology systems"/>
+			<xsd:enumeration value="Students are proficient in the use of technology"/>
+			<xsd:enumeration value="Students understand the ethical, cultural, and societal issues related to technology"/>
+			<xsd:enumeration value="Students practice responsible use of technology systems, information, and software"/>
+			<xsd:enumeration value="Students develop positive attitudes toward technology uses that support lifelong learning, collaboration, personal pursuits, and productivity"/>
+			<xsd:enumeration value="Students use technology tools to enhance learning, increase productivity, and promote creativity"/>
+			<xsd:enumeration value="Students use productivity tools to collaborate in constructing technology-enhanced models, prepare publications, and produce other creative works"/>
+			<xsd:enumeration value="Students use telecommunications to collaborate, publish, and interact with peers, experts, and other audiences"/>
+			<xsd:enumeration value="Students use a variety of media and formats to communicate information and ideas effectively to multiple audiences"/>
+			<xsd:enumeration value="Students use technology to locate, evaluate, and collect information from a variety of sources"/>
+			<xsd:enumeration value="Students use technology tools to process data and report results"/>
+			<xsd:enumeration value="Students evaluate and select new information resources and technological innovations based on the appropriateness for specific tasks"/>
+			<xsd:enumeration value="Students use technology resources for solving problems and making informed decisions"/>
+			<xsd:enumeration value="Students employ technology in the development of strategies for solving problems in the real world"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

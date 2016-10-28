@@ -1,0 +1,180 @@
+<html>
+<head>
+<title> Documentation for Digital Discovery System (DDS) </title>
+
+	<link rel="stylesheet" type="text/css" href="/dlese_shared/dlese_styles.css" />
+	<link rel="stylesheet" type="text/css" href="/libdev/docs/docs_styles.css" />
+
+</head>
+<body>
+<h1> Documentation for the Digital 
+    Discovery System (DDS)</h1>
+<p>
+See <a href="http://dlsciences.cvs.sourceforge.net/*checkout*/dlsciences/dds-project/docs/CHANGES.txt">releases and changes</a></p>
+<h2> Description </h2> 
+<p>The Digital Discovery System (DDS) is a Java-based  XML repository, search and discovery system that is built over the <A href="http://lucene.apache.org/" 
+target=_blank>Apache Lucene</A> indexing and search API. The DDS creates an index that is accessed using <A href="http://www.dlese.org/dds/services/">Web services and APIs </A> and may be used in a wide variety of digital resource discovery and dissemination applications. It is currently used to implement <A 
+href="http://www.dlese.org/">DLESE</A> and several other repository portals. The software runs in a servlet container such as <A href="http://tomcat.apache.org/" 
+target=_blank>Apache Tomcat</A> and can be installed on Windows, Linux, Mac OS or UNIX systems. DDS may be configure to populate it's repository from the <a href="http://wiki.nsdl.org/index.php/Community:NDR">NSDL Data Repository</a> (NDR) or from XML files that reside on a file system.</p>
+<p>The DDS software is built upon a Model-View-Controller 
+  (MVC) architecture that is implemented using the <a href="http://struts.apache.org/">Struts 
+    application framework</a>. In this MVC architecture, the major parts of 
+  the software are broken up into three separate components: First, the Model component contains and exposes the metadata repository and accompanying information model; Second, the View  provides the data presentation through the search web service and APIs; Third, the Controller component dispatches requests and controls flow between the Model and the View components (see [1]). The specific Java classes that are 
+  associated with these components are outlined in the DDS 
+  MVC class diagram below.</p>
+<table width="200" border="0">
+
+  <tr>
+    <td><img src="dds-MVC-design.png" width="750" height="563"></td>
+  </tr>
+   <tr>
+    <td><p>DDS MVC class diagram</p></td>
+  </tr> 
+</table>
+<p>&nbsp;</p>
+<h3>Indexing and searching algorithms</h3>
+<p>To provide rapid search and retrieval over the repository, 
+  a reverse index of each of the items in the repository is created and maintained, which is constructed from the metadata and, in some cases, the content of the resources refereced by the metadata. The index is rebuilt once a day to incorporate additions, modifications or deletions to the repository. The Java class <a href="http://www.dlese.org/oai/docs/javadoc/org/dlese/dpc/index/FileIndexingService.html">FileIndexingService</a> 
+  is used to manage the indexing process and in general there is a <a href="http://www.dlese.org/oai/docs/javadoc/org/dlese/dpc/index/writer/package-summary.html">DocWriter</a> class responsible for indexing each of the metadata frameworks available in the repository.</p>
+<p>During index creation time, a <a href="http://www.dlese.org/oai/docs/javadoc/org/dlese/dpc/repository/RecordDataService.html">RecordDataService</a> 
+  is used to access information from the ID Mapper 
+  service about duplicate records across collections that refer to the same resource and to get the content from the resources for indexing. 
+  The <a href="http://www.dlese.org/oai/docs/javadoc/org/dlese/dpc/repository/RecordDataService.html">RecordDataService</a> 
+  also retrieves information from the index about annotations. Information about 
+  duplicate records and annotations is then used by the <a href="http://www.dlese.org/oai/docs/javadoc/org/dlese/dpc/index/writer/ADNFileIndexingWriter.html">ADNFileIndexingWriter</a> 
+  and incorporated into the individual item-level index entries for each record. 
+  This information is used at search time to boost the ranking of items that contain 
+  annotations and to provide a single resource-centric result for each resource that 
+  has multiple record entries in the repository. </p>
+<h4>Removing duplicate entries for resources in search results</h4>
+<p>The repository may  contain multiple collections of digital objects. Collections may be developed and maintained independently and there may be  resources that are cataloged multiple times across collections. The DDS provides  a single resource-centric search result 
+  for each resource that exists in the repository, aggregating all metadata records into a single result set when there are multiple records 
+  across collections that refer to the resource. </p>
+<p>To implement the single result set per resource, special techniques 
+  are used both at index creation time and at search time. At index creation time, 
+  two separate Lucene indexes are created: a primary index and a secondary index. 
+  The primary index is constructed with two kinds of entries: single-item entries 
+  that contain the text/field data from a single metadata record, which occurs 
+  when the record is the only one in the repository that refers to a given resource, 
+  and multi-item entries that contain the commingled text/field data from a group 
+  of metadata records, which occurs when there are multiple records across collections 
+  that refer to the same resource. The indexed content for the title field in 
+  a single-item entry, for example, will consist of the text from a single metadata 
+  record whereas the indexed content in the title field for a multi-record entry 
+  will contain the title field text from multiple metadata records concatenated 
+  together. Fields such as the title, description, URL, subject, grade level and 
+  resource type are stored in the index to allow rapid retrieval for display at 
+  search time. Single-item entries contain data that is ready for display, however 
+  because multi-item entries contain concatenated data from multiple records in 
+  these fields, they can not be used for display purposes. </p>
+<p>When the indexing process is complete, each record in the repository has been 
+  accounted for in the primary index, some as single-item entries and some as 
+  members of multi-item entries. As the primary index is being constructed, the 
+  secondary index is also being generated. The secondary index is constructed 
+  by inserting single-item entries for each of the individual records that are 
+  members of multi-item entries in the primary index. These single-item entries 
+  are identical to the single-item entries in the primary index. This is important 
+  because it allows them to be searched in the same way and used interchangeably 
+  along with the single-item entries in the primary index to facilitate the display 
+  of results at search time.</p>
+<p>At search time, the primary and secondary indexes are accessed in two stages 
+  to produce the results that get selected and displayed to the user. In stage 
+  one, the primary index is searched using the query criteria to form 
+  an ordered list of matching results. This list contains a mixture of single-item 
+  and multi-item entries. As noted earlier, only single-item entries can be displayed 
+  in results in the UI, so the multi-item entries in the initial results list 
+  must be replace with single-item entries prior to displaying them to users. 
+  In the second stage, then, the secondary index is searched each time a multi-item 
+  entry is encountered, and the best-matching single-item entry is selected from 
+  among the resources that comprise the multi-item record. This single-item entry 
+  is used in the display to the user, and links are provided in the UI that allow 
+  access to the other records that make up the multi-item entry. </p>
+<p>In this second search stage, up to three searches may be necessary in order 
+  to arrive at a best-matching result from among the records that make up a multi-item 
+  entry. As a first try, the user's original search criteria are applied to the 
+  individual single-item records located in the secondary index that comprise 
+  the multi-item entry. In many cases this search will produce one or more results. 
+  If results are present, the best-matching one is returned for display to the 
+  user. It is possible, however, that no results will be encountered. This may 
+  occur if the user's search criteria does not match the content of any one single-item 
+  entry. For example, consider two records that make up a multi-item entry: record 
+  A contains the searchable text &quot;ocean&quot; but does not contain the grade 
+  range 9-12; record B contains the grade range 9-12 but does not contain the 
+  text &quot;ocean.&quot; The user types the search &quot;ocean&quot; while selecting 
+  grades 9-12. In this case, the multi-item entry corresponding to records A and 
+  B contains both the text &quot;ocean&quot; and grade range 9-12 and thus it 
+  appears in the list of results generated in stage one. In stage two the same 
+  search criteria are applied to the single-item entries for records A and B. 
+  Since neither A or B contain both the text &quot;ocean&quot; and grade range 
+  9-12, no matching results are found. When this occurs, additional searches using 
+  less precise search criteria are required in order to select a best-match. As 
+  a second pass, precision is reduced by giving precedence to the keyword portion 
+  of the user's query and removing any non-text-based search criteria. In the 
+  current example this would mean a search for &quot;ocean&quot; without grade 
+  range 9-12. Based on this refined search criteria, record A would appear as 
+  a matching result and would thus be returned for display to the user. Even with 
+  this more lenient criteria, however, it is still possible that no matches will 
+  be found. This can occur if the user did not use any keywords in their search 
+  or if the user entered multiple terms as part of their search, some of which 
+  being part of record A and the others part of record B. At this point, the third 
+  and final search case must produce a result since it is the last search to be 
+  performed. To ensure a result, then, one of either record A or B is chosen at 
+  random and used in the results display.</p>
+<h3>Search fields</h3>
+<p>The <a href="http://www.dlese.org/dds/services/ddsws1-1/service_specification.jsp#availableSearchFields">search fields are described here</a>, as part of the search web service documentation. </p>
+<h2> Audience </h2> 
+<p>Developers, collection builders and repository administrators. 
+</p>
+<h2> How this component is used </h2>
+<p>For developers:</p>
+<ul>
+  <li>Use the <a href="http://www.dlese.org/dds/services/">search service and APIs</a>  to build custom search interfaces for items in the repository.</li>
+</ul>
+<p>For repository administrators:</p>
+<ul>
+  <li>View information about the repository's collections such as the number of records in each collection and errors found in the records.</li>
+  <li>Enable and disable collections for discovery in the repository and search web service. </li>
+</ul>
+<h2> Functional requirements </h2>
+<ul>
+  <li>Provide <a href="http://www.dlese.org/dds/services/">web services and APIs</a> to access the metadata repository and search functionality. </li>
+  <li>Support the construction of search and browsing interfaces. </li>
+  <li>Identify and aggregate resources across collections that refer to the same resource and 
+    return a single result for that resource. 
+    <ul>
+      <li>Access metadata about each collection that refers to a given resource.</li>
+    </ul>
+  </li>
+  <li>Provide search and discovery over metadata that conforms to any XML schema structure (ADN, news and opportunities, annotation, collection, others). </li>
+  <li>Provide collection management functions that enable addition, disabling 
+    and removal of individual collections from the repository. </li>
+  <li>Provide feedback to administrators regarding the integrity of the repository 
+    and the status of individual items within.</li>
+</ul>
+<h2> Technologies used </h2>
+<p>Java 1.5/1.6, J2EE, Struts, Apache Lucene 2.0, Tomcat 5.5/6.0, Dom4j, JSTL 1.1 tag libraries. 
+</p>
+<h2> Development process and workflow </h2>
+<p>See the <a href="software-development-process.html">development process documentation</a>. </p>
+<h2>Dependencies on other components </h2>
+<p>DDS uses (all optional):</p>
+<ul>
+  <li> IDMapper process </li>
+  <li>NSDL Data Repository (NDR) </li>
+</ul>
+<h2> Testing and maintenance procedures </h2>
+<p>See the <a href="software-development-process.html#testing">development process 
+  documentation section on testing</a>. 
+</p>
+<p>&nbsp;</p>
+<p>[1] Designing Enterprise Applications with the J2EETM Platform, Second Edition. 
+  Inderjeet Singh, Beth Stearns, Mark Johnson, and the Enterprise Team. <a href="http://java.sun.com/blueprints/guidelines/designing_enterprise_applications_2e/titlepage.html">http://java.sun.com/blueprints/guidelines/designing_enterprise_applications_2e/titlepage.html</a>.</p>
+<p><br>
+  <i>Last updated: $Date: 2009/09/02 23:02:38 $</i><br>
+  <i>Author: John Weatherley</i><br>
+</p>
+</body>
+</html>
+
+
+

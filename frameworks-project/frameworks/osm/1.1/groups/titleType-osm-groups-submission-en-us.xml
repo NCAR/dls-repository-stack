@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: titleType-osm-groups-submission-en-us.xml,v 1.21 2013/08/12 16:40:14 ginger Exp $-->
+<!--HISTORY of CHANGES:
+2013-08-08: Notes is no longer part of titleType.It had no definition here.
+2012-02-16: Abstract is no longer part of the controlled vocab. It had the definition of: a brief, objective representation of the essential content of a book, article, speech, report, dissertation, patent, standard, or other work
+2011-09-06: suppressed abstract because do not want abstract information to come through submission form
+2011-09-19: Comment is no longer a part of the controlled vocab. It had the definition of: introductory remarks preceding the text of a work, usually written by a person other than the author
+
+-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/titleType.xsd"
+version="2.0">
+	<head>
+		<title>Resource Type</title>
+		<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="Resource Type" audience="submission" path="/record/general/title/@type" deftn="The nature or the genre of the resource being entered."/>
+	</head>
+	<body>
+		<outline type="vocab" vocab="Article" text="Article-magazine" deftn="a self-contained composition on a fairly narrow topic or subject, written by one or more authors and published or submitted for publication in a magazine"/>
+		<outline type="vocab" vocab="Article" text="Article-journal" deftn="a self-contained composition on a fairly narrow topic or subject, written by one or more authors and published or submitted for publication in a journal"/>
+		<outline type="vocab" vocab="Article" text="Article-newsletter" deftn="a self-contained composition on a fairly narrow topic or subject, written by one or more authors and published or submitted for publication in a newsletter"/>
+		<outline type="vocab" vocab="Book/monograph" text="Book" deftn="a written work or composition that has been published and bound as a single volume"/>
+		<outline type="vocab" vocab="Book chapter" text="Book chapter" deftn="one of two or more major divisions of a book, each complete in itself but related in theme or structure to the division preceding and/or following it"/>
+		<outline type="vocab" vocab="Book review" text="Book review" deftn="an evaluative account of a book, usually written by a qualified person for publication in a newspaper, magazine, or journal"/>
+		<outline type="vocab" vocab="Encyclopedia" text="Encyclopedia-book" deftn="a book or numbered set of books containing authoritative summary information about a variety of topics in the form of short essays, usually arranged alphabetically"/>
+		<outline type="vocab" vocab="Article" text="Encyclopedia-entry" deftn="a topical division of an encyclopedia that provides an authoritative and summative explication of a given subject"/>
+		<outline type="vocab" vocab="Image" text="Image" deftn="a single visual representation"/>
+		<outline type="vocab" vocab="Interactive resource" text="Interactive" deftn="materials designed to respond to input from a human being, usually in the form of commands, data and/or actions"/>
+		<outline type="vocab" vocab="Manual" text="Manual" deftn="a book used as a reference in the operation of a task, computer program, procedure, job or other function"/>
+		<outline type="vocab" vocab="Manuscript" text="Manuscript" deftn="a written and, traditionally, unpublished work or composition"/>
+		<outline type="vocab" vocab="Report" text="NCAR Technical Note" deftn="a technical note written by one or more NCAR employees"/>
+		<outline type="vocab" vocab="Newsletter" text="Newsletter" deftn="a serial publication consisting of no more than a few pages, devoted to news, announcements, and current information that is of interest primarily to a specialized group of subscribers or members of an association or organization"/>
+		<outline type="vocab" vocab="Poster" text="Poster" deftn="a visual medium created to publicize a forthcoming event or communicate scholarly or scientific work, with or without illustration"/>
+		<outline type="vocab" vocab="Presentation/webcast" text="Presentation/webcast" deftn="a broadcast, podcast, or formal representation of ideas communicated in person or via the Internet"/>
+		<outline type="vocab" vocab="Article" text="Proceeding-article" deftn="a self-contained prose composition on a fairly narrow topic or subject, written by one or more authors and published as part of the record of a conference, congress, symposium, or other meeting sponsored by a society or association"/>
+		<outline type="vocab" vocab="Report" text="Report" deftn="a record of research findings, research still in progress, or other technical findings"/>
+		<outline type="vocab" vocab="Software" text="Software" deftn="a computer program, application, or model that must be run on a computer server"/>
+		<outline type="vocab" vocab="Report" text="Technical note" deftn="short, focused essays or supplementary documentation related to disciplinarily-specific research or field work"/>
+
+
+<!-- -->
+		<outline type="vocab" vocab="Archives" text="Archives" display="false"/>
+		<outline type="vocab" vocab="Animation/moving image" text="Animation/moving image" display="false"/>
+		<outline type="vocab" vocab="Artifact/physical object" text="Artifact/physical object" display="false"/>
+		<outline type="vocab" vocab="Bibliography/index" text="Bibliography/index" display="false"/>
+		<outline type="vocab" vocab="Blog/forum/email list" text="Blog/forum/email list" display="false"/>
+		<outline type="vocab" vocab="Collection" text="Collection" display="false"/>
+		<outline type="vocab" vocab="Journal/magazine/periodical" text="Journal/magazine/periodical" display="false"/>
+		<outline type="vocab" vocab="Metadata profile" text="Metadata profile" deftn="a specification that defines the properties and values of a metadata format" display="false"/>
+		<outline type="vocab" vocab="Sound" text="Audio" display="false"/>
+		<outline type="vocab" vocab="Thesis/dissertation" text="Thesis/dissertation" display="false"/>
+		<outline type="vocab" vocab="Transcript" text="Transcript" display="false"/>
+		
+</body>
+
+
+	<bestPractices>
+		<practice>This is an required field that uses a drop-down menu.</practice> 
+		<practice link1="opensky@ucar.edu" url1="mailto:opensky@ucar.edu">If the resource type is not listed, please contact opensky@ucar.edu.</practice>
+	</bestPractices>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->
+
+
+

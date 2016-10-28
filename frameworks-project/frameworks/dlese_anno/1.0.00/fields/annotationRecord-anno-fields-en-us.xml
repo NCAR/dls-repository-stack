@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: annotationRecord-anno-fields-en-us.xml,v 1.1 2009/01/30 21:32:40 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/annotation/1.0.00/non-vocab-fields.xsd">
+	<field name="Annotation record" language="en-us" metaFormat="dlese_anno" metaVersion="1.0.00" path="/annotationRecord">
+		<definition>the root element of the annotation metadata record</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-01-11" link1="service" style1="bold" link2="item ID" style2="bold" link3="annotation" style3="bold">Complete the required subfields of service, item ID and annotation.</practice>
+			</dos>
+		</bestPractices>
+
+		<documentation>
+			<children>
+				<child>service</child>
+				<child>itemID</child>
+				<child>annotation</child>
+			</children>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>the children elements are the domain</domain>
+			<example>&lt;service&gt;, &lt;itemID&gt;, &lt;annotation&gt;</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

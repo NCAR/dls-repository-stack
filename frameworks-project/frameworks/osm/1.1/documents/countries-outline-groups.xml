@@ -1,0 +1,202 @@
+
+<!--this was the starting data for the country-osm-groups-(cataloger and submission).xml files-->
+
+<body>
+    <outline text="Countries" type="group">
+        <outline text="United States of America" type="vocab" vocab="US"/>
+        <outline text="Afghanistan" type="vocab" vocab="AF"/>
+        <outline text="Albania" type="vocab" vocab="AL"/>
+        <outline text="Algeria" type="vocab" vocab="DZ"/>
+        <outline text="Andorra" type="vocab" vocab="AD"/>
+        <outline text="Angola" type="vocab" vocab="AO"/>
+        <outline text="Antigua and Barbuda" type="vocab" vocab="AG"/>
+        <outline text="Argentina" type="vocab" vocab="AR"/>
+        <outline text="Armenia" type="vocab" vocab="AM"/>
+        <outline text="Australia" type="vocab" vocab="AU"/>
+        <outline text="Austria" type="vocab" vocab="AT"/>
+        <outline text="Azerbaijan" type="vocab" vocab="AZ"/>
+        <outline text="Bahamas" type="vocab" vocab="BS"/>
+        <outline text="Bahrain" type="vocab" vocab="BH"/>
+        <outline text="Bangladesh" type="vocab" vocab="BD"/>
+        <outline text="Barbados" type="vocab" vocab="BB"/>
+        <outline text="Belarus" type="vocab" vocab="BY"/>
+        <outline text="Belgium" type="vocab" vocab="BE"/>
+        <outline text="Belize" type="vocab" vocab="BZ"/>
+        <outline text="Benin" type="vocab" vocab="BJ"/>
+        <outline text="Bhutan" type="vocab" vocab="BT"/>
+        <outline text="Bolivia" type="vocab" vocab="BO"/>
+        <outline text="Bosnia and Herzegovina" type="vocab" vocab="BA"/>
+        <outline text="Botswana" type="vocab" vocab="BW"/>
+        <outline text="Brazil" type="vocab" vocab="BR"/>
+        <outline text="Brunei Darussalam" type="vocab" vocab="BN"/>
+        <outline text="Bulgaria" type="vocab" vocab="BG"/>
+        <outline text="Burkina Faso" type="vocab" vocab="BF"/>
+        <outline text="Burundi" type="vocab" vocab="BI"/>
+        <outline text="Cambodia" type="vocab" vocab="KH"/>
+        <outline text="Cameroon" type="vocab" vocab="CM"/>
+        <outline text="Canada" type="vocab" vocab="CA"/>
+        <outline text="Cape Verde" type="vocab" vocab="CV"/>
+        <outline text="Cayman Islands" type="vocab" vocab="KY"/>
+        <outline text="Central African Republic" type="vocab" vocab="CF"/>
+        <outline text="Chad" type="vocab" vocab="TD"/>
+        <outline text="Chile" type="vocab" vocab="CL"/>
+        <outline text="China" type="vocab" vocab="CN"/>
+        <outline text="Colombia" type="vocab" vocab="CO"/>
+        <outline text="Comoros" type="vocab" vocab="KM"/>
+        <outline text="Congo" type="vocab" vocab="CG"/>
+        <outline text="Costa Rica" type="vocab" vocab="CR"/>
+        <outline text="Cote d'Ivoire" type="vocab" vocab="CI"/>
+        <outline text="Croatia" type="vocab" vocab="HR"/>
+        <outline text="Cuba" type="vocab" vocab="CU"/>
+        <outline text="Cyprus" type="vocab" vocab="CY"/>
+        <outline text="Czech Republic" type="vocab" vocab="CZ"/>
+        <outline text="Denmark" type="vocab" vocab="DK"/>
+        <outline text="Djibouti" type="vocab" vocab="DJ"/>
+        <outline text="Dominica" type="vocab" vocab="DM"/>
+        <outline text="Dominican Republic" type="vocab" vocab="DO"/>
+        <outline text="Ecuador" type="vocab" vocab="EC"/>
+        <outline text="Egypt" type="vocab" vocab="EG"/>
+        <outline text="El Salvador" type="vocab" vocab="SV"/>
+        <outline text="Equatorial Guinea" type="vocab" vocab="GQ"/>
+        <outline text="Eritrea" type="vocab" vocab="ER"/>
+        <outline text="Estonia" type="vocab" vocab="EE"/>
+        <outline text="Ethiopia" type="vocab" vocab="ET"/>
+        <outline text="Federated States Of Micronesia" type="vocab" vocab="FM"/>
+        <outline text="Fiji" type="vocab" vocab="FJ"/>
+        <outline text="Finland" type="vocab" vocab="FI"/>
+        <outline text="France" type="vocab" vocab="FR"/>
+        <outline text="French Southern Territories" type="vocab" vocab="TF"/>
+        <outline text="Gabon" type="vocab" vocab="GA"/>
+        <outline text="Gambia" type="vocab" vocab="GM"/>
+        <outline text="Georgia" type="vocab" vocab="GE"/>
+        <outline text="Germany" type="vocab" vocab="DE"/>
+        <outline text="Ghana" type="vocab" vocab="GH"/>
+        <outline text="Greece" type="vocab" vocab="GR"/>
+        <outline text="Grenada" type="vocab" vocab="GD"/>
+        <outline text="Guatemala" type="vocab" vocab="GT"/>
+        <outline text="Guinea" type="vocab" vocab="GN"/>
+        <outline text="Guinea-Bissau" type="vocab" vocab="GW"/>
+        <outline text="Guyana" type="vocab" vocab="GY"/>
+        <outline text="Haiti" type="vocab" vocab="HT"/>
+        <outline text="Honduras" type="vocab" vocab="HN"/>
+        <outline text="Hungary" type="vocab" vocab="HU"/>
+        <outline text="Iceland" type="vocab" vocab="IS"/>
+        <outline text="India" type="vocab" vocab="IN"/>
+        <outline text="Indonesia" type="vocab" vocab="ID"/>
+        <outline text="Iran" type="vocab" vocab="IR"/>
+        <outline text="Iraq" type="vocab" vocab="IQ"/>
+        <outline text="Ireland" type="vocab" vocab="IE"/>
+        <outline text="Israel" type="vocab" vocab="IL"/>
+        <outline text="Italy" type="vocab" vocab="IT"/>
+        <outline text="Jamaica" type="vocab" vocab="JM"/>
+        <outline text="Japan" type="vocab" vocab="JP"/>
+        <outline text="Jordan" type="vocab" vocab="JO"/>
+        <outline text="Kazakhstan" type="vocab" vocab="KZ"/>
+        <outline text="Kenya" type="vocab" vocab="KE"/>
+        <outline text="Kiribati" type="vocab" vocab="KI"/>
+        <outline text="Kuwait" type="vocab" vocab="KW"/>
+        <outline text="Kyrgyzstan" type="vocab" vocab="KG"/>
+        <outline text="Laos" type="vocab" vocab="LA"/>
+        <outline text="Latvia" type="vocab" vocab="LV"/>
+        <outline text="Lebanon" type="vocab" vocab="LB"/>
+        <outline text="Lesotho" type="vocab" vocab="LS"/>
+        <outline text="Liberia" type="vocab" vocab="LR"/>
+        <outline text="Libya" type="vocab" vocab="LY"/>
+        <outline text="Liechtenstein" type="vocab" vocab="LI"/>
+        <outline text="Lithuania" type="vocab" vocab="LT"/>
+        <outline text="Luxembourg" type="vocab" vocab="LU"/>
+        <outline text="Macedonia" type="vocab" vocab="MK"/>
+        <outline text="Madagascar" type="vocab" vocab="MG"/>
+        <outline text="Malawi" type="vocab" vocab="MW"/>
+        <outline text="Malaysia" type="vocab" vocab="MY"/>
+        <outline text="Maldives" type="vocab" vocab="MV"/>
+        <outline text="Mali" type="vocab" vocab="ML"/>
+        <outline text="Marshall Islands" type="vocab" vocab="MH"/>
+        <outline text="Mauritania" type="vocab" vocab="MR"/>
+        <outline text="Mauritius" type="vocab" vocab="MU"/>
+        <outline text="Mexico" type="vocab" vocab="MX"/>
+        <outline text="Moldova" type="vocab" vocab="MD"/>
+        <outline text="Mongolia" type="vocab" vocab="MN"/>
+        <outline text="Montenegro" type="vocab" vocab="ME"/>
+        <outline text="Morocco" type="vocab" vocab="MA"/>
+        <outline text="Mozambique" type="vocab" vocab="MZ"/>
+        <outline text="Myanmar" type="vocab" vocab="MM"/>
+        <outline text="Namibia" type="vocab" vocab="NA"/>
+        <outline text="Nauru" type="vocab" vocab="NR"/>
+        <outline text="Nepal" type="vocab" vocab="NP"/>
+        <outline text="Netherlands" type="vocab" vocab="NL"/>
+        <outline text="New Zealand" type="vocab" vocab="NZ"/>
+        <outline text="Nicaragua" type="vocab" vocab="NI"/>
+        <outline text="Niger" type="vocab" vocab="NE"/>
+        <outline text="Nigeria" type="vocab" vocab="NG"/>
+        <outline text="North Korea" type="vocab" vocab="KP"/>
+        <outline text="Norway" type="vocab" vocab="NO"/>
+        <outline text="Oman" type="vocab" vocab="OM"/>
+        <outline text="Pakistan" type="vocab" vocab="PK"/>
+        <outline text="Palau" type="vocab" vocab="PW"/>
+        <outline text="Panama" type="vocab" vocab="PA"/>
+        <outline text="Papua New Guinea" type="vocab" vocab="PG"/>
+        <outline text="Paraguay" type="vocab" vocab="PY"/>
+        <outline text="Peru" type="vocab" vocab="PE"/>
+        <outline text="Philippines" type="vocab" vocab="PH"/>
+        <outline text="Poland" type="vocab" vocab="PL"/>
+        <outline text="Portugal" type="vocab" vocab="PT"/>
+        <outline text="Qatar" type="vocab" vocab="QA"/>
+        <outline text="Romania" type="vocab" vocab="RO"/>
+        <outline text="Russian Federation" type="vocab" vocab="RU"/>
+        <outline text="Rwanda" type="vocab" vocab="RW"/>
+        <outline text="Saint Helena" type="vocab" vocab="SH"/>
+        <outline text="Saint Kitts and Nevis" type="vocab" vocab="KN"/>
+        <outline text="Saint Vincent and The Grenedines" type="vocab" vocab="VC"/>
+        <outline text="Samoa" type="vocab" vocab="WS"/>
+        <outline text="San Marino" type="vocab" vocab="SM"/>
+        <outline text="Sao Tome and Principe" type="vocab" vocab="ST"/>
+        <outline text="Saudi Arabia" type="vocab" vocab="SA"/>
+        <outline text="Senegal" type="vocab" vocab="SN"/>
+        <outline text="Serbia" type="vocab" vocab="RS"/>
+        <outline text="Seychelles" type="vocab" vocab="SC"/>
+        <outline text="Sierra Leone" type="vocab" vocab="SL"/>
+        <outline text="Singapore" type="vocab" vocab="SG"/>
+        <outline text="Slovakia" type="vocab" vocab="SK"/>
+        <outline text="Slovenia" type="vocab" vocab="SI"/>
+        <outline text="Solomon Islands" type="vocab" vocab="SB"/>
+        <outline text="Somalia" type="vocab" vocab="SO"/>
+        <outline text="South Africa" type="vocab" vocab="ZA"/>
+        <outline text="South Korea" type="vocab" vocab="KR"/>
+        <outline text="Spain" type="vocab" vocab="ES"/>
+        <outline text="Sri Lanka" type="vocab" vocab="LK"/>
+        <outline text="Sudan" type="vocab" vocab="SD"/>
+        <outline text="Suriname" type="vocab" vocab="SR"/>
+        <outline text="Swaziland" type="vocab" vocab="SZ"/>
+        <outline text="Sweden" type="vocab" vocab="SE"/>
+        <outline text="Switzerland" type="vocab" vocab="CH"/>
+        <outline text="Syria" type="vocab" vocab="SY"/>
+        <outline text="Taiwan" type="vocab" vocab="TW"/>
+        <outline text="Tajikistan" type="vocab" vocab="TJ"/>
+        <outline text="Tanzania" type="vocab" vocab="TZ"/>
+        <outline text="Thailand" type="vocab" vocab="TH"/>
+        <outline text="The Democratic Republic Of The Congo" type="vocab" vocab="CD"/>
+        <outline text="Timor-Leste" type="vocab" vocab="TL"/>
+        <outline text="Togo" type="vocab" vocab="TG"/>
+        <outline text="Tonga" type="vocab" vocab="TO"/>
+        <outline text="Trinidad and Tobago" type="vocab" vocab="TT"/>
+        <outline text="Tunisia" type="vocab" vocab="TN"/>
+        <outline text="Turkey" type="vocab" vocab="TR"/>
+        <outline text="Turkmenistan" type="vocab" vocab="TM"/>
+        <outline text="Tuvalu" type="vocab" vocab="TV"/>
+        <outline text="Uganda" type="vocab" vocab="UG"/>
+        <outline text="Ukraine" type="vocab" vocab="UA"/>
+        <outline text="United Arab Emirates" type="vocab" vocab="AE"/>
+        <outline text="United Kingdom" type="vocab" vocab="GB"/>
+        <outline text="United States Minor Outlying Islands" type="vocab" vocab="UM"/>
+        <outline text="Uruguay" type="vocab" vocab="UY"/>
+        <outline text="Uzbekistan" type="vocab" vocab="UZ"/>
+        <outline text="Vanuatu" type="vocab" vocab="VU"/>
+        <outline text="Venezuela" type="vocab" vocab="VE"/>
+        <outline text="Vietnam" type="vocab" vocab="VN"/>
+        <outline text="Western Sahara" type="vocab" vocab="EH"/>
+        <outline text="Yemen" type="vocab" vocab="YE"/>
+        <outline text="Zambia" type="vocab" vocab="ZM"/>
+        <outline text="Zimbabwe" type="vocab" vocab="ZW"/>
+    </outline>
+</body>

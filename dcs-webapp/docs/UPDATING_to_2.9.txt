@@ -1,0 +1,33 @@
+Notes about upgrading to 2.9
+
+1 - Context-descriptor parameter changes (these affect either server.xml or a
+stand-alone context descriptor file).
+
+A - the following params are no longer needed and can be removed: 
+- indexLocation
+- repositoryConfigDir
+
+B - The 'repositoryData' parameter exists, but now the system is using this
+directory in a different way. I recommend that you rename your existing
+repositoryData dir (when tomcat has been stopped). When tomcat is started up and
+reindexed, it will create a new repositoryData directory and populate it
+contents.
+
+NOTE: You must "reindex all records" when you start up after making these
+changes.
+
+2 - Changes to the way the ASN Standards Service is configured.
+
+A - The 'standardsSuggestionServiceConfig' parameter is no longer used. You can 
+delete it or rename it as 'suggestionServiceConfig' and configure as described below.
+
+B - For the ASN Standards service you'll need to make sure that two
+context-descriptor params are defined:
+
+- asnStandardsLibrary, and - standardsServiceConfig
+
+See the context_descriptor_template.xml file for more about these parameters.
+
+You will also have to make a new standardsServiceConfig file (see
+INSTALL_INSTRUCTIONS.txt for details).
+

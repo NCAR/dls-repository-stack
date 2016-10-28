@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Jonathan Ostwald (UCAR) -->
+<xsd:schema targetNamespace="http://dcs_data.dlese.org" xmlns="http://dcs_data.dlese.org" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:include schemaLocation="categories/metaMetadata.xsd"/>
+	<xsd:element name="dcsDataRecord" type="dcsDataType"/>
+	<xsd:complexType name="dcsDataType">
+		<xsd:all>
+			<xsd:element name="recordID" type="xsd:string"/>
+			<xsd:element name="lastEditor" type="stringTextType"/>
+			<xsd:element name="status" type="dcsStatusType"/>
+			<xsd:element name="statusNote" type="xsd:string"/>
+			<xsd:element name="lastTouchDate" type="union.dateType"/>
+			<xsd:element name="isValid" type="xsd:boolean"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:simpleType name="dcsStatusType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  statusVocabType  ***************************************
+				Status values for DCS
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Accessioned"/>
+			<xsd:enumeration value="Deaccessioned"/>
+			<xsd:enumeration value="Disabled"/>
+			<xsd:enumeration value="Holding_NoRecheck"/>
+			<xsd:enumeration value="Holding_Recheck"/>
+			<xsd:enumeration value="Resubmitted"/>
+			<xsd:enumeration value="Submitted"/>
+			<xsd:enumeration value="Unknown"/>
+			<xsd:enumeration value="Unsubmitted"/>
+			<xsd:enumeration value="Working"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

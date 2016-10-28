@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE lrmi  [
+<!ENTITY common_nsdl_dc_normalization SYSTEM "common_nsdl_dc_normalization.xml">
+]>
+<Ingestor>
+	<target-format>nsdl_dc</target-format>
+	<harvest-data-format>JSON</harvest-data-format>
+	<populate-resource-handles>true</populate-resource-handles>
+	
+	<!-- For LRMI records coming from the LR we want to dedup them by their url
+	since some people are not doing updates and just publishing the same document
+	over and over -->
+	<post-harvest-processors>
+		<DedupRecords>
+   			<dedup-by>URL</dedup-by>
+   			<priority>last</priority>
+   		</DedupRecords>
+	</post-harvest-processors>
+	
+   	
+   	<target-format-processors>
+   		<DataFormatTransform>
+   			<source-format>JSON</source-format>
+   			<target-format>XML</target-format>
+   		</DataFormatTransform>
+   		
+		<XSLTransform>
+   		 	<uri>http://ns.nsdldev.org/xsl_harvest_ingest_2_0/lrmi.xsl</uri>
+   		</XSLTransform>
+   		
+   		
+   		<!-- LRMI does not enforce having a identifier in the JSON therefore we are taking what was selected as the url
+   		and forcing it to be put in dc:identifier, if it was already put there due to transformation it will just be
+   		a duplicate and removed during RemoveDuplicateElementsTransform. So no harm done. -->
+   		<AddElement>
+  			<location>top</location>
+   			<element-xml><![CDATA[<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dct:URI">$url</dc:identifier>]]></element-xml>
+   		</AddElement>
+
+   		<!--  Try to convert any conform to tags that were created to ASN ids, note
+  		the original one if its the url will also stay -->
+ 		<ASNConversion>
+ 			<element-xpath>*[name()='dct:conformsTo']</element-xpath>
+ 		</ASNConversion>
+		
+		<!-- This xpath could make sure it only selects conforms to that are asn ids, 
+ 		but since the code checks it anyway before it makes the call no reason to have
+ 		it in two places. So we will just select all conforms too and let the processor
+ 		figure out which ones are asn ids. -->
+ 		<AddNSDLElementsFromASN>
+ 			<asn-element-xpath>*[name()='dct:conformsTo']</asn-element-xpath>
+ 		</AddNSDLElementsFromASN>
+ 		
+ 		&common_nsdl_dc_normalization; 
+
+   	</target-format-processors>
+</Ingestor>

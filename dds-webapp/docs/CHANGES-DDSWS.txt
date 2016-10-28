@@ -1,0 +1,110 @@
+Changes in the web service search JSP client template and examples
+
+v3.1
+
+- ListCollections response now properly populates the <additionalMetadata><dlese_collect> 
+element in the header (previously was empty).
+
+- Rendering guidelines elements now only disply content if the metadata vocay has values
+for them, else they are empty
+
+- When metadata vocabs are empty, the default, unencoded value is displayed in certain
+responses rather than empty
+
+- ListCollections returns the short title for the label under rendering guidelines instead of 
+blank if there is no metadata vocab for it
+
+
+v3.0
+
+- Client updated to use DDSWS protocol v1.1. 
+For DDSWS v1.0, use client version 2.6 or earlier.
+
+v2.6
+
+- Added arrow down annimation to the checkbox menus when clicked, 
+and ability to click the label to select/de-select an item
+
+- Fixed the redirect URL, which was missing the & in front of the 
+ID parameter in full/collection description pages
+
+- Added check to be sure the vocab labels Maps get loaded for
+display in the search results and full description
+
+v2.5
+
+- Created separate CSS classes for all elements in the template
+so that they can be defined separatly from other styles
+used by sites that incorporate the template
+
+- Added xalan.jar for compatibility with Tomcat 5.5
+
+- Improved the response time performance for rendering the page.
+Vocabs stored and cached in a HashMap for rapid look-up for 
+display.
+
+- Simplified the default display of search results.
+
+- Disabled ability to search within the smart links - this behavior
+was confusing for users
+
+- Changed the page layout and display and created more usable example
+menus and smart links
+
+- Added additional documentation for developers
+
+v2.4
+
+- Added a JavaScript proxy configuration to the distribution 
+and a static HTML page for displaying the search template.
+The JavaScript proxy makes it possible to serve any page in 
+this client using a static HTML page. With this technique, any
+dynamic page (search, etc.) can be made available via a
+static web site
+
+- Added subjects to the brief display
+
+- Added unique variable names for the check box menus. It is
+now possible to install multiple search contexts in a single
+Tomcat/JVM without possible variable name collisions with 
+the menus.
+
+- Added some additional instructions for using the template
+
+v2.3
+
+- Updated the links for annotations to accomodate
+comments and the display of multiple annotations
+for a single resource
+
+- Template now uses UserSearch request instead of Search
+because of it's simplified query language and 
+automatic support for boosting
+
+v2.2
+
+- Updated the link for submitting reviews to the CRS 
+
+- Added grade levels and type of resource to the brief search 
+results page
+
+v2.1
+
+- Changed the link to submit a teaching tip to one for
+submitting comments or teaching tips
+
+- Smart link menu added that is edited and defined through an
+XML configuration file. The file defines the menus and the 
+search queries that are associated with each menu item 
+in the menu.
+
+v2.0
+
+- Added links to the CRS annotation service in the JSP template for
+both reading and submitting reviews and teaching tips
+
+- Added stemming to the default query used in the JSP template
+and boosting for records with matching terms in their title 
+(highest boost) or description (next)
+
+- Revamped the look-and-feel of the JSP template page a bit

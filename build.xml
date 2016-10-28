@@ -1,0 +1,56 @@
+<!--
+   Global Ant build file for the DLS Repository Stack
+
+   Targets here call targets in the individual builds for
+
+   dds-webapp
+   dcs-webapp
+   rhm-webapp
+   shared-source
+-->
+
+
+<project name="DLS Repository Stack" default="help" basedir=".">
+
+    <target name="help" description="Prints help insructions">
+
+        <echo>
+            This is the global ant build for the DLS Repository Stack: DCS webapp, DDS webapp, RHM webapp, and Java Libraries.
+
+            To build each webapp separately, change into the sub-directory and issue the desired ant target directly within.
+        </echo>
+
+    </target>
+
+
+    <target name="deploy-all" description="Deploys all webapps (DDC, DCS, RHM)">
+        <ant antfile="dds-webapp/build.xml" inheritAll="false" target="deploy"/>
+        <ant antfile="dcs-webapp/build.xml" inheritAll="false" target="deploy"/>
+        <ant antfile="rhm-webapp/build.xml" inheritAll="false" target="deploy"/>
+    </target>
+
+    <target name="clean-all" description="Cleans all webapps and code (DDC, DCS, RHM, Java libs)">
+        <ant antfile="dds-webapp/build.xml" inheritAll="false" target="clean"/>
+        <ant antfile="dds-webapp/build.xml" inheritAll="false" target="dist-clean"/>
+        <ant antfile="dcs-webapp/build.xml" inheritAll="false" target="clean"/>
+        <ant antfile="rhm-webapp/build.xml" inheritAll="false" target="clean"/>
+    </target>
+
+    <target name="deploy-clean-all" description="Cleans (deletes) the deployed webapps from Tomcat">
+        <ant antfile="dds-webapp/build.xml" inheritAll="false" target="deploy-clean"/>
+        <ant antfile="dcs-webapp/build.xml" inheritAll="false" target="deploy-clean"/>
+        <ant antfile="rhm-webapp/build.xml" inheritAll="false" target="deploy-clean"/>
+    </target>
+
+
+    <target name="compile" description="Compile shared Java sources">
+        <ant antfile="shared-source/build.xml" inheritAll="false" target="compile"/>
+    </target>
+
+    <target name="javadoc" description="Create DLS Libs Javadoc API documentation">
+        <ant antfile="shared-source/build.xml" inheritAll="false" target="javadoc"/>
+    </target>
+
+</project> 
+ 
+ 

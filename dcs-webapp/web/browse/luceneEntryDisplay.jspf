@@ -1,0 +1,45 @@
+<%-- The max number of annos/relations to display in-line --%>
+
+<c:set var="MAX_ANNOS" value="10"/>
+
+<%-- The max number of fields to display in the lucene data --%>
+<c:set var="MAX_FIELDS" value="120"/>
+
+<c:if test="${empty docMap}">
+	<c:if test="${empty result}"><h5>no docMap found!</h5></c:if>
+	<%-- <c:set var="docMap" value="${result.lazyDocMap}"/> --%>
+</c:if>
+
+<%-- Save the display for the full field data from the Lucene Document Map --%>
+<c:if test="${not empty docMap}">
+		<c:set var="dataTitle">Index Record</c:set>
+	<div>
+		<a href="javascript:toggleVisibility('luceneDoc_${status.index}');" 
+			title="Click to show/hide" 
+			class="vocabHeading"><img src='../images/btnExpandClsd.gif' 
+			alt="Click to show/hide" border="0" hspace="5" width="11" hight="11" id="luceneDoc_${status.index}_arrow">${dataTitle}</a>							
+	</div>					
+	
+	<table bgcolor="#666666" cellpadding="6" cellspacing="1" border="0" align="center" id="luceneDoc_${status.index}" style="display:none; width:95%;margin-top:8px;">
+		<c:catch var="docMapErr">
+			<c:forEach items="${docMap}" var="field" varStatus="i" end="${MAX_FIELDS}"> 
+				<tr bgcolor='#DDDFF7'> 
+					<td>						
+						<div class="searchResultValues"><b>${field.key}</b> &nbsp;<c:out value="${field.value}" escapeXml="true"/></div>
+					</td>
+				</tr>
+			</c:forEach>
+			<c:if test="${fn:length(docMap) > MAX_FIELDS-1}">
+				<tr bgcolor='#DDDFF7'> 
+					<td>						
+						<div class="searchResultValues"><b>Plus ${fn:length(docMap) - MAX_FIELDS} fields not shown...</b></div>
+					</td>
+				</tr>
+			</c:if>
+		</c:catch>
+		<c:if test="${not empty docMapErr}">
+			<!-- docMapErr: ${docMapErr} -->
+		</c:if>
+	</table>
+</c:if>
+

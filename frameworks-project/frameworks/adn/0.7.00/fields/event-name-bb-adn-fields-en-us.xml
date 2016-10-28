@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: event-name-bb-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:42 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Name - event - bounding box" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/geospatialCoverages/geospatialCoverage/boundBox/bbEvents/event/name">
+		<definition>the name of an event that occurred within a bounding box</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-05-03">Events should occur within the bounding box or detailed geometry.</practice>
+				<practice status="current" originDate="2005-05-03">Detailed geometries tend to be well suited to event-names while bounding boxes that encompass multiple detailed geometries are not.</practice>
+				<practice status="current" originDate="2005-05-03">Capitalize proper nouns and the first word of the name.</practice>
+				<practice status="current" originDate="2005-05-03">Names should contain words or phrases indicating the type of event. For example use Hurricane Camille - not just Camille.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2005-05-03">Do not put multiples entries within the same field.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2005-05-03">Hurricane Camille.</practice>
+				<practice status="current" originDate="2005-05-03">1906 San Francisco earthquake.</practice>
+				<practice status="current" originDate="2005-05-03">Mt. St. Helens eruption.</practice>
+			</examples>
+			<otherPractices>
+				<otherPractice header="Want to use &amp;, ', &quot;, &gt;, &lt;? Do this:">
+					<practice status="current" originDate="2006-03-08">Enter characters like the ampersand apostrophe, double quote, less than and greater than sign by using their respective html references of &amp;, &apos;, &quot;, &lt; and &gt;.</practice>
+				</otherPractice>
+				<otherPractice header="Want to use other special characters like ©, é, ñ or ê? Do this:">
+					<practice status="current" originDate="2005-10-05" link1="entity references" url1="http://www.w3schools.com/tags/ref_entities.asp">Enter special characters and symbols using their entity references numbers. For the copyright symbol this means entering an ampersand symbol followed by the pound sign followed by the number 169 followed by a semicolon.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>Hurricane Camille, 1906 San Francisco earthquake</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/boundBox/bbPlaces/place/name</note>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/detPlaces/place/name</note>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/detEvents/event/name</note>
+				<note>Other XPATH: /itemRecord/temporalCoverages/timeAndPeriod/periods/period/name</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  OVERVIEW  *************************</xsd:documentation>
+		<xsd:documentation>Framework: Collection-level CATEGORY schema</xsd:documentation>
+		<xsd:documentation>Tag(s) defined: relation</xsd:documentation>
+		<xsd:documentation>Source: DLESE Program Center (DPC); http://www.dlese.org</xsd:documentation>
+		<xsd:documentation>Last update:	2004-01-28</xsd:documentation>
+		<xsd:documentation>Notes: Developed and maintained at the DPC</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. </xsd:documentation>
+		<xsd:documentation>These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  CATEGORY schemas to include  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="commonfields.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>*****  VOCABULARY schemas to include  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="union-vocabs.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>*****  ROOT element   *************************</xsd:documentation>
+		<xsd:documentation>There is no root element for this schema.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  Complex Types (alpha order)  *******************</xsd:documentation>
+		<xsd:documentation>relationsType is part of collectionType in collection.xsd</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  	relationsType  *************************</xsd:documentation>
+		<xsd:documentation>relation is a complex - indicates the kind of relation betweeen the cataloged item and the related item and the catalog record number of the related item</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="relationsType">
+		<xsd:sequence>
+			<xsd:element name="relation" type="relationType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  	relationType  *************************</xsd:documentation>
+		<xsd:documentation>type is simple; see relationType.xsd - the kind of relationship</xsd:documentation>
+		<xsd:documentation>idNum is simple - the catalog record number of the related item</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="relationType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="type" type="relationTypeType" use="required"/>
+				<xsd:attribute name="idNum" type="idNumType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  Simple Types (alpha order)  *************************</xsd:documentation>
+		<xsd:documentation>*****  idNumType  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="idNumType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="DLESE-COLLECTION-[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

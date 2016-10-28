@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.dlese.org/Metadata/dcs/framework-config/dcsFrameworkConfig.xsd">
+  <xmlFormat>comm_para</xmlFormat>
+  <schemaInfo>
+    <rootElementName>commParadata</rootElementName>
+    <schemaURI>http://ns.nsdl.org/ncs/comm_para/1.00/schemas/comm_para.xsd</schemaURI>
+    <paths>
+      <path pathName="id" readOnly="true" requiredByCopyRecord="true" requiredByMinimalRecord="true">/commParadata/recordId</path>
+    </paths>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <rebuildOnStart>true</rebuildOnStart>
+    <firstPage></firstPage>
+    <vocabLayoutURI>http://ns.nsdl.org/ncs/comm_para/1.00/build/groups-list.xml</vocabLayoutURI>
+    <fieldInfoURI>http://ns.nsdl.org/ncs/comm_para/1.00/build/fields-list.xml</fieldInfoURI>
+  </editorInfo>
+</frameworkConfigRecord>

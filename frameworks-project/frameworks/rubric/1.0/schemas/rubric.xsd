@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.00">
+	<xs:element name="record" type="RubricType">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="RubricType">
+		<xs:all>
+			<xs:element name="recordID" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="longTitle" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="shortTitle" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="url" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="categories" type="CategoriesType" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="CategoriesType">
+		<xs:sequence>
+			<xs:element name="category" type="CategoryType" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+
+	</xs:complexType>
+	<xs:complexType name="CategoryType">
+		<xs:all>
+			<xs:element name="longTitle" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="shortTitle" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="url" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ratingNames" type="RatingNamesType" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+		<xs:attribute name="num" type="xs:positiveInteger" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="RatingNamesType">
+		<xs:sequence>
+			<xs:element name="ratingName" type="RatingNameType" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RatingNameType">
+		<xs:all>
+			<xs:element name="longTitle" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="shortTitle" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="url" type="xs:string" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+		<xs:attribute name="num" type="xs:positiveInteger" use="optional"/>
+	</xs:complexType>
+</xs:schema>

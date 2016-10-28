@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.nsdl.org/ncs" xsi:schemaLocation="http://ns.nsdl.org/ncs http://ns.nsdl.org/ncs/ncs_item/1.02/schemas/ncs-item.xsd">
+	<general>
+		<recordID>NCS-SMPL-000-000-000-001</recordID>
+		<url>http://www.plantgdb.org/</url>
+		<title>PlantGDB: Plant Genome Database</title>
+		<description>This database provides plant genome sequence data gathered from whole genome sequencing and assembly (Arabidopsis thaliana, rice, Medicago truncatula), genome survey sequencing (maize), and expressed sequence tags (ESTs). It enables users to access species-specific nucleotide sequences for approximately 60,000 plant species and putative unique transcript assemblies (PUTs) for 100 plant species. There is also a set of custom browsers and tools for exploring gene space in major crops and model plant species; evaluation and documentation of gene model evidence; and links to online resources for plant genomic research. The database can be searched by keyword, by species, and with the use of a table-making tool that presents data in custom-made tables.</description>
+		<subject>Biological science</subject>
+		<subject>Botany</subject>
+		<subject>Genetics</subject>
+		<subject>Genomics</subject>
+		<languages>
+			<ISOcode>eng</ISOcode>
+		</languages>
+	</general>
+	<educational>
+		<educationLevels>
+			<nsdlEdLevel>Higher Education</nsdlEdLevel>
+			<nsdlEdLevel>Undergraduate (Upper Division)</nsdlEdLevel>
+			<nsdlEdLevel>Graduate/Professional</nsdlEdLevel>
+		</educationLevels>
+		<types>
+			<nsdlType>Dataset</nsdlType>
+			<nsdlType>Database</nsdlType>
+			<nsdlType>Reference Material</nsdlType>
+			<nsdlType>Nonfiction Reference</nsdlType>
+			<nsdlType>Tool</nsdlType>
+			<nsdlType>Search Engine</nsdlType>
+			<dcmiType>Dataset</dcmiType>
+			<dcmiType>Service</dcmiType>
+			<dcmiType>Text</dcmiType>
+		</types>
+		<audiences>
+			<nsdlAudience>Educator</nsdlAudience>
+			<nsdlAudience>Learner</nsdlAudience>
+			<nsdlAudience>Professional/Practitioner</nsdlAudience>
+			<nsdlAudience>Researcher</nsdlAudience>
+		</audiences>
+	</educational>
+	<technical>
+		<mimeTypes>
+			<mimeType>text/html</mimeType>
+		</mimeTypes>
+	</technical>
+	<rights>
+		<accessRights>
+			<meansOfAccess>Free access</meansOfAccess>
+		</accessRights>
+	</rights>
+</record>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: format-mast-fields-en-us.xml,v 1.4 2009/07/30 15:27:17 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/non-vocab-fields.xsd">
+  <field name="Format" metaFormat="mast" metaVersion="1.0" language="en-us" path="/record/general/format">
+		<definition attribution="Dublin Core Metadata Element Set, Version 1.1: Reference Description at http://dublincore.org/documents/dces/">The file format, physical medium, or dimensions of the resource.</definition> 
+		
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2008-10-20">Recommended best practice is to select a value from a controlled vocabulary (for example, the list of Internet Media Types [MIME] defining computer media formats).</practice><!--source:GEM-->
+				<practice status="current" originDate="2008-10-20">The Format element is reserved for describing the access file only (be it image, audio, or video).</practice><!--source:CDP-->
+				<practice status="current" originDate="2008-10-20">Some digital objects may involve more than one format, for example, an oral history interview may have audio formats and text format transcriptions. Use separate Format elements to enter multiple formats or clearly separate each entry by a semicolon and a space within an element.</practice><!--source:CDP-->
+				<practice status="current" originDate="2008-10-20">For audio and video file formats include the duration (i.e., play time) of the resource.</practice> <!--source:CDP-->
+				<practice status="current" originDate="2008-10-20">Information concerning the size of a resource may be included in the content of the Format element. In resource discovery this might be used as a criterion to select resources of interest, since a user may need to evaluate whether they can make use of the resource within the infrastructure available to them.</practice><!--source:GEM-->
+			</dos>
+		</bestPractices>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

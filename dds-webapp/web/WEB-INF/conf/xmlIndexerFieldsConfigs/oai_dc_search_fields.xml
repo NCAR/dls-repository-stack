@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="oai_dc">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->	
+		<standardField name="url">
+			<xpaths>
+				<xpath>/dc/identifier[starts-with(.,'http://') or starts-with(.,'https://') or starts-with(.,'ftp://')]</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="title">
+			<xpaths>
+				<xpath>/dc/title</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/dc/description</xpath>
+			</xpaths>		
+		</standardField>		
+	</standardFields>
+	<customFields>
+		<!-- customField attributes: name, store, [type OR analyzer] -->
+		<customField name="dcIdentifier" store="yes" type="key">
+			<xpaths>
+				<xpath>/dc/identifier</xpath>
+			</xpaths>
+		</customField>		
+		<customField name="dcType" store="yes" type="text">
+			<xpaths>
+				<xpath>/dc/type</xpath>
+			</xpaths>
+		</customField>
+		<customField name="dcPublisher" store="yes" type="text">
+			<xpaths>
+				<xpath>/dc/publisher</xpath>
+			</xpaths>
+		</customField>	
+	</customFields>	
+</XMLIndexerFieldsConfig>

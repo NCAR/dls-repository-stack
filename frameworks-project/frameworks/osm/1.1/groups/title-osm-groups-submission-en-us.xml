@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: title-osm-groups-submission-en-us.xml,v 1.4 2012/10/01 20:59:33 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/non-vocab-fields.xsd"
+version="2.0">
+	<head>
+		<title>Title</title>
+		<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="Title" audience="submission" path="/record/general/title" deftn="A phrase or groups of words, usually appearing on an item, that names the work for purposes of identification and reference."/>
+	</head>
+	<bestPractices>
+		<practice>This field is required.</practice>
+		<practice>The title is the name of a book chapter, poster, presentation, report, manuscript, manual, etc. This is not publication title (i.e. the name of a book).</practice>
+		<practice>Capitalize the first word of a title and the first word of subtitles (e.g. An introduction to DART: A community facility for ensemble data assimilation).</practice>
+		<practice>Capitalize other words only as appropriate (e.g. Earth).  Proper nouns, chemical abbreviations, instrument or model abbreviations, and the titles of conferences should also be capitalized.</practice>
+		<practice>Separate the title and the subtitle with a colon.</practice>
+		<practice>Do not end the title with any form of punctuation, unless it is part of the title itself.</practice>
+		<practice>If the title indicates that the resource is a “part” of a larger whole, capitalize the P and use either Roman or Arabic numerals, as indicated within the title of the resource itself (e.g. The art of painting: Part 3)</practice>
+
+<!--2011 OS submission form version when the form was used for cataloging
+		<practice>Use this field for the titles of works published within larger works, such as journal articles or book chapters.</practice>
+		<practice>Capitalize the first word of a title and the first word of subtitles (e.g. An introduction to DART: A community facility for ensemble data assimilation).</practice>
+		<practice>Capitalize other words only as appropriate (e.g. Earth).  Proper nouns, chemical abbreviations, instrument or model abbreviations, and the titles of conferences should also be capitalized.</practice>
+		<practice>Separate the title and the subtitle with a colon.</practice>
+		<practice>Do not end the title with any form of punctuation, unless it is part of the title itself.</practice>
+		<practice>If the title indicates that the resource is a “part” of a larger whole, capitalize the P and use either Roman or Arabic numerals, as indicated within the title of the resource itself (e.g. The art of painting: Part 3)</practice>
+-->
+	</bestPractices>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

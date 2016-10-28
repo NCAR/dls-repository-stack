@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: contributor-simple-dc-fields-en-us.xml,v 1.1 2008/02/22 20:31:49 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:DCMI="http://purl.org/dc/dcmitype/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/simple_dc/1.1/schemas/fields/non-vocab-fields.xsd">
+	<field name="Contributor" language="en-us" metaFormat="simple_dc" metaVersion="2.0" path="/simple_dc:dc/dc:contributor">
+		<definition attribution="Dublin Core Metadata Element Set, Version 1.1: Reference Description at http://dublincore.org/documents/dces/">an entity responsible for making contributions to the content of the resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-12-20">Include persons, organizations, or services.</practice>
+				<practice status="current" originDate="2004-12-20">The name of a contributor should be used to indicate the entity.</practice>
+				<practice status="current" originDate="2006-10-06">For people, include a first and last (family) name in the format of firstname lastname. See examples.</practice>
+				<practice status="current" originDate="2006-10-06">To enter values for multiple people, either repeat this metadata field or create a semicolon separated list. See examples.</practice>
+				<practice status="current" originDate="2006-10-06">To enter an organizational and departmental entity, enter the department first followed by a comma and then the organization.</practice>
+				<practice status="current" originDate="2006-10-06">Spell out organizational acronyms.</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2004-12-20">Do not include person, organization or services involved in creating metadata information.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2006-10-06">Single person example: Jane Doe.</practice>
+				<practice status="current" originDate="2006-10-06">Multiple person example: Jane Doe; Bill Kelp.</practice>
+				<practice status="current" originDate="2006-10-06">Departmental and organizational entity: Department of Geophysics, Colorado School of Mines.</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>Jane Doe; Bill Kelp</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--LICENSE INFORMATION: Copyright 2006 University Corporation for Atmospheric Research (UCAR) P.O. Box 3000, Boulder, CO 80307, United States of America email: support@dlese.org -->

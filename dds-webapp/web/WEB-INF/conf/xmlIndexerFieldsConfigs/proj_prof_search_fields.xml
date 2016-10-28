@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="proj_prof">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<xpaths>
+				<xpath>/proj_profile/recordID</xpath>
+			</xpaths>		
+		</standardField>	
+		<standardField name="title">
+			<xpaths>
+				<xpath>/proj_profile/profileName</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/proj_profile/description</xpath>
+			</xpaths>		
+		</standardField>		
+	</standardFields>		
+</XMLIndexerFieldsConfig>

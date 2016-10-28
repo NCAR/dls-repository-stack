@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: resourceType-adn-groups-cataloger-en-us.xml,v 1.1 2009/01/30 21:34:41 ginger Exp $ -->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+	<head>
+		<title>Resource type</title>
+		<groups:concept id="re" language="en-us" metaFormat="adn" metaVersion="0.6.50"  audience="cataloger" text="Resource type"  path="/itemRecord/educational/resourceTypes/resourceType"/>
+	</head>
+	<body>
+		<outline text="Learning materials" type="group" groups:collapsible="false" groups:textAbbrev="Classroom" groups:deftn="For the classroom means resources for use in a learning environment">
+			<outline groups:vocab="DLESE:Learning materials:Classroom activity" type="vocab" text="Classroom activity"/>
+			<outline groups:vocab="DLESE:Learning materials:Computer activity" type="vocab" text="Computer activity"/>
+			<outline groups:vocab="DLESE:Learning materials:Field activity" type="vocab" text="Field activity"/>
+			<outline groups:vocab="DLESE:Learning materials:Lab activity" type="vocab" text="Lab activity"/>
+			<outline groups:vocab="DLESE:Learning materials:Assessment" type="vocab" text="Assessment / Evaluation"/>
+			<outline groups:vocab="DLESE:Learning materials:Case study" type="vocab" text="Case study" groups:wrap="true"/>
+			
+			<outline groups:vocab="DLESE:Learning materials:Course" type="vocab" text="Course"/>
+			<outline groups:vocab="DLESE:Learning materials:Curriculum" type="vocab" text="Curriculum"/>
+			<outline groups:vocab="DLESE:Learning materials:Virtual field trip" type="vocab" text="Virtual field trip"/>
+			<outline groups:vocab="DLESE:Learning materials:Field trip guide" type="vocab" text="Field trip guide"/>
+			<outline groups:vocab="DLESE:Learning materials:Instructor guide" type="vocab" text="Instructor guide"/>
+			<outline groups:vocab="DLESE:Learning materials:Lesson plan" type="vocab" text="Lesson plan" groups:wrap="true"/>
+			
+			<outline groups:vocab="DLESE:Learning materials:Module or unit" type="vocab" text="Module / Unit"/>
+			<outline groups:vocab="DLESE:Learning materials:Presentation or demonstration" type="vocab" text="Presentation / Demo"/>
+			<outline groups:vocab="DLESE:Learning materials:Problem set" type="vocab" text="Problem set"/>
+			<outline groups:vocab="DLESE:Learning materials:Project" type="vocab" text="Project"/>
+			<outline groups:vocab="DLESE:Learning materials:Syllabus" type="vocab" text="Syllabus"/>
+			<outline groups:vocab="DLESE:Learning materials:Tutorial" type="vocab" text="Tutorial"/>
+		</outline>
+		
+		<outline text="Visual" type="group" groups:deftn="Static and moving images">
+			<outline groups:vocab="DLESE:Visual:Artistic illustration" type="vocab" text="Artistic illustration"/>
+			<outline groups:vocab="DLESE:Visual:Scientific illustration" type="vocab" text="Scientific illustration"/>
+			<outline groups:vocab="DLESE:Visual:Remotely sensed imagery" type="vocab" text="Remotely sensed imagery"/>
+			<outline groups:vocab="DLESE:Visual:Map" type="vocab" text="Map" groups:wrap="true"/>
+			
+			<outline groups:vocab="DLESE:Visual:Photograph" type="vocab" text="Photograph"/>
+			<outline groups:vocab="DLESE:Visual:Video" type="vocab" text="Video"/>
+			<outline groups:vocab="DLESE:Visual:Scientific visualization" type="vocab" text="Scientific visualization"/>
+			<outline groups:vocab="DLESE:Visual:Visual webcast" type="vocab" text="Webcast"/>
+		</outline>
+	
+		<outline text="Text" type="group" groups:deftn="Resources whose content is primarily words for reading">
+			<outline groups:vocab="DLESE:Text:Glossary" type="vocab" text="Glossary"/>
+			<outline groups:vocab="DLESE:Text:Index or bibliography" type="vocab" text="Index / Bibliography"/>
+			<outline groups:vocab="DLESE:Text:Reference" type="vocab" text="Ref. material"/>
+			<outline groups:vocab="DLESE:Text:Book" type="vocab" text="Book"/>
+			<outline groups:vocab="DLESE:Text:Journal article" type="vocab" text="Journal article"/>
+			<outline groups:vocab="DLESE:Text:Periodical" type="vocab" text="Periodical" groups:wrap="true"/>
+			
+			<outline groups:vocab="DLESE:Text:Abstract or summary" type="vocab" text="Abstract / Summary"/>
+			<outline groups:vocab="DLESE:Text:Proceedings" type="vocab" text="Proceedings"/>
+			<outline groups:vocab="DLESE:Text:Proposal" type="vocab" text="Proposal"/>
+			<outline groups:vocab="DLESE:Text:Report" type="vocab" text="Report"/>
+			<outline groups:vocab="DLESE:Text:Thesis" type="vocab" text="Thesis"/>
+			<outline groups:vocab="DLESE:Text:Policy or procedure" type="vocab" text="Policy / Procedure"/>
+		</outline>
+	
+		<outline text="Audio" type="group" groups:deftn="Resources whose content is primarily audio or intended to be realized in audio">
+			<outline groups:vocab="DLESE:Audio:Audio book" type="vocab" text="Book"/>
+			<outline groups:vocab="DLESE:Audio:Lecture" type="vocab" text="Lecture"/>
+			<outline groups:vocab="DLESE:Audio:Music" type="vocab" text="Music"/>
+			<outline groups:vocab="DLESE:Audio:Oral history" type="vocab" text="Oral history" groups:wrap="true"/>
+			
+			<outline groups:vocab="DLESE:Audio:Radio broadcast" type="vocab" text="Radio broadcast"/>
+			<outline groups:vocab="DLESE:Audio:Sound" type="vocab" text="Sound"/>
+			<outline groups:vocab="DLESE:Audio:Audio webcast" type="vocab" text="Webcast"/>
+		</outline>
+
+		<outline text="Portal" type="group" groups:deftn="Homepages of large complex web site holding a variety of related resources">
+			<outline groups:vocab="DLESE:Portal:Commercial portal" type="vocab" text="Commercial portal"/>
+			<outline groups:vocab="DLESE:Portal:Educational portal" type="vocab" text="Educational portal"/>
+			<outline groups:vocab="DLESE:Portal:Government portal" type="vocab" text="Government portal"/>
+			<outline groups:vocab="DLESE:Portal:Nonprofit portal" type="vocab" text="Non-profit portal"/>
+		</outline>
+
+		<outline text="Services" type="group" groups:deftn="System that provide value to the end-users">
+			<outline groups:vocab="DLESE:Service:Ask an expert" type="vocab" text="Ask an expert"/>
+			<outline groups:vocab="DLESE:Service:Clearinghouse" type="vocab" text="Clearinghouse"/>
+			<outline groups:vocab="DLESE:Service:Forum or discussion" type="vocab" text="Forum / Discussion" groups:wrap="true"/>
+			
+			<outline groups:vocab="DLESE:Service:Listserv" type="vocab" text="List serv"/>
+			<outline groups:vocab="DLESE:Service:Message board" type="vocab" text="Message board"/>
+			<outline groups:vocab="DLESE:Service:Search engine" type="vocab" text="Search engine"/>
+		</outline>
+
+		<outline text="Dataset" type="group" groups:deftn="Structured information encoded in lists, tables, databases, files etc.">
+			<outline groups:vocab="DLESE:Data:In situ dataset" type="vocab" text="In-situ dataset"/>
+			<outline groups:vocab="DLESE:Data:Modeled dataset" type="vocab" text="Modeled dataset"/>
+			<outline groups:vocab="DLESE:Data:Remotely sensed dataset" type="vocab" text="Remotely sensed dataset"/>
+		</outline>
+		
+		<outline text="Tools" type="group" groups:deftn="Resources that aid in accomplishing tasks">
+			<outline groups:vocab="DLESE:Tool:Calculation or conversion tool" type="vocab" text="Calculation / Conversion"/>
+			<outline groups:vocab="DLESE:Tool:Code" type="vocab" text="Code"/>
+			<outline groups:vocab="DLESE:Tool:Software" type="vocab" text="Software"/>
+		</outline>
+
+		<outline groups:vocab="DLESE:Offline:Physical object" type="vocab" text="Physical object" groups:display="false"/>
+		<outline groups:vocab="DLESE:To be supplied" type="vocab" text="To be supplied" groups:display="false"/>
+	</body>
+</opml>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->
+

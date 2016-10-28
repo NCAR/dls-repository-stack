@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: locationType.xsd,v 1.1 2010/05/19 19:47:10 ginger Exp $ -->
+<xsd:schema targetNamespace="http://www.dlsciences.org/frameworks/fields" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.dlsciences.org/frameworks/fields" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:annotation>
+		<xsd:documentation>************************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA PUPOSE  and INTENT  *****</xsd:documentation>
+		<xsd:documentation>************************************************</xsd:documentation>
+		<xsd:documentation>Defines an XML instance document for managing metadata framework documentation</xsd:documentation>
+		<xsd:documentation>To document metadata fields that use a controlled vocaublary.</xsd:documentation>
+		<xsd:documentation>The metadataFieldInfo instance document tracks metadata field names, metadata field definitions, vocabulary terms, field id numbers, term id numbers, cataloging best  practices and information about each metadata field (min, max, obligation, domain, XML datatype, other occurrence and examples)</xsd:documentation>
+		<xsd:documentation>See the fields.xsd schemas (included as part of this schema) for further schema explanations</xsd:documentation>
+
+		<xsd:documentation>******************************</xsd:documentation>
+		<xsd:documentation>*****  NAMESPACES  *****</xsd:documentation>
+		<xsd:documentation>******************************</xsd:documentation>
+		<xsd:documentation>This schema has a target namespace</xsd:documentation>
+		<xsd:documentation>This schema has a default namespace</xsd:documentation>
+
+		<xsd:documentation>********************************</xsd:documentation>
+		<xsd:documentation>*****  ROOT ELEMENT *****</xsd:documentation>
+		<xsd:documentation>********************************</xsd:documentation>
+		<xsd:documentation>This schema does not have a root element. See fields.xsd for the root element.</xsd:documentation>
+
+		<xsd:documentation>****************************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMAS TO INCLUDE or IMPORT *****</xsd:documentation>
+		<xsd:documentation>****************************************************</xsd:documentation>
+		<xsd:documentation>fields.xsd - contains the root element</xsd:documentation>
+		<xsd:documentation>union-vocabs.xsd - provides access to the controlled vocabularies</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="../../../../fields/1.0/schemas/fields.xsd"/>
+	<xsd:include schemaLocation="../../../../groups/2.0/schemas/groups.xsd"/>
+	<xsd:include schemaLocation="union-vocabs.xsd"/>
+
+	<xsd:annotation>
+		<xsd:documentation>***************************************************</xsd:documentation>
+		<xsd:documentation>*****  SIMPLE TYPES (alpha order)   *****</xsd:documentation>
+		<xsd:documentation>***************************************************</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:simpleType name="vocabType">
+		<xsd:restriction base="locationTypeType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="vocabLeafType">
+		<xsd:restriction base="locationTypeType"/>
+	</xsd:simpleType>
+
+
+	<xsd:annotation>
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA DEVELOPMENT  *****</xsd:documentation>
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>Created: 2010-05-18</xsd:documentation>
+		<xsd:documentation>Last Modified 2010-05-18</xsd:documentation>
+
+		<xsd:documentation>**********************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA AUTHOR  *****</xsd:documentation>
+		<xsd:documentation>**********************************</xsd:documentation>
+		<xsd:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger at ucar dot edu</xsd:documentation>
+
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>*****  LICENSE INFORMATION  *****</xsd:documentation>
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>See below</xsd:documentation>		
+	</xsd:annotation>
+</xsd:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

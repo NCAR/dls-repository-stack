@@ -1,0 +1,234 @@
+
+/* used in at least two of: edit-access, edit-user, and edit-users */
+
+.open-close-widget {
+	text-decoration:none;
+	white-space:nowrap;
+}
+
+.open-close-widget:hover {
+	text-decoration:underline;
+}
+
+.widget-img {
+	border:none;
+	hspace="5" 
+	width:11px;
+	height:11px;
+	padding:0px 5px 0px 5px;
+}
+
+.highlight {
+	background-color:#ffffcc;
+}
+
+/* styles to display the different roles */
+
+.none-role {
+	color:grey;
+}
+
+.cataloger-role {
+	color:black;
+}
+
+.manager-role {
+	font-weight:bold;
+}
+
+.manager-role {
+	font-weight:bold;
+	font-style:italic;
+}
+
+.manage-link a {
+	text-decoration:underline;
+}
+
+.manage-link a:hover {
+	background:#ffffcc;
+}
+
+.table-title {
+	font-size: 150%;
+	font-weight:bold;
+	Color : #333366;
+	margin-left:5px;	
+	white-space:nowrap;
+}
+
+.item-table {
+	width:100%;
+	border-collapse: collapse;
+	border:1px black solid;
+}
+
+.item-table .header-row, 
+.item-table .footer-row {
+	background:#CCCEE6;
+	text-align:center;
+}
+
+/* .table-header-cell {
+	color:#ffffff;
+	text-align:center;
+	border-bottom:6px white solid;
+} */
+
+/* TEXT appearing in header-row */
+.item-table .header-row td {
+	white-space: nowrap;
+	font-weight: bold;
+	font-size:0.7em;
+}
+
+/* LINKS appearing in header-row */
+.item-table .header-row a {
+	color:#333366;
+}
+
+.item-table .header-row a:hover {
+	color:black;
+}
+
+/* table Rows (with support for rollover*/
+.item-table-row {
+	background: #e3e4f1;
+	/* border:1px solid #666666; */
+}
+
+.item-table-row.over {
+	background: #ebebf1;
+}
+
+.item-table-row.highlight {
+	background: #ffffcc;
+}
+
+/* item table CELLS */
+.item-table tr td {
+	/* border:1px solid #666666; */
+	padding:5px;
+	border-top:1px solid #666666;
+	border-bottom:1px solid #666666;
+}
+
+/* experimenting with manage page links instead of buttons, but i like buttons better ... */
+/* .edit-item-button, .edit-access-button {
+	white-space:nowrap;
+	border:1px black solid;
+	background-color:white;
+	padding:1px;
+	text-decoration:none;
+} */
+
+/* ------- item body -------------*/
+
+/* the DIV surrounding the item body */
+.item-wrapper {
+	width:100%;
+	padding:0px;
+	border:none;
+}
+
+.inner-table {
+	 width:100%;
+	 border-collapse: collapse;
+	 border:none;
+}
+
+.inner-table tr {
+	background-color:#ffffff;
+}
+
+.inner-table tr.over {
+	background: #ebebf1;
+}
+
+.inner-table tr td {
+	border-top:none;
+	border-bottom:1px #cccccc solid;
+	padding:3px;
+}
+
+.indented {
+	margin-left:100px;
+}
+
+
+
+.input-label {
+	text-align:right;
+}
+
+.input {}
+
+/* opens / closes lists, selects / deselects boxes . shown against dark grey background*/
+.action-link {
+	font-size:85%;
+}
+
+/* .action-link a {
+	color:#ffffcc;
+}
+ */
+.action-button {
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	font-size:0.8em;
+	font-style:normal;
+}
+/* User Manager Styles */
+
+/* Access Manager Styles */
+.url-pattern {
+	text-align:center;
+	font-weight:bold;
+}
+
+/* Index status */
+.smallButton {
+	font-size: 11px;
+	white-space:nowrap;
+}
+
+.smallButton.warning { 
+   background-color:#ff9999;
+}
+
+.msgList {
+	border:thin solid #888888;
+	height:200px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	background:#E3E4F1;
+	background:white;
+}
+
+.msgList ul {
+	margin:1px 0px 1px;
+	/*padding:0px; */
+	background:#E3E4F1;
+}
+
+.msgList li {
+	padding:3px 0px 3px;
+}
+
+#page-message {
+	margin:10px;
+	border:thin green solid;
+	padding:5px;
+	color:green;
+	width:50%;
+}
+
+.closeBx {
+	background-image: url(../images/close.gif);
+	background-repeat: no-repeat;
+	height: 14px;
+	width: 15px;
+	cursor: pointer;
+}
+
+

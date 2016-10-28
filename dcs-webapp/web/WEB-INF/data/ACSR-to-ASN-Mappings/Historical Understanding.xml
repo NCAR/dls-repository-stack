@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="Historical Understanding">
+  <mapping>
+    <acsrInfo id="7e5e28cf-7ec9-4a15-b758-dd0610eb9217">
+      <title>Alaska Content Standards History</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>AK</jurisdiction>
+      <fileName>Content Standards History</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002DA">
+      <title>Alaska Content Standards History</title>
+      <created>2006</created>
+      <topic>Historical Understanding</topic>
+      <author>Alaska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0cbbf311-d8d8-4652-b11c-16b79adccd1e">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Historical Understanding Revised 20</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001DB">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <created>2000</created>
+      <topic>Historical Understanding</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1d6b1436-a3ca-4398-9cf6-2fd10bec64a0">
+      <title>Academic Standards: Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Social Studies Historical Understan</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000190">
+      <title>Academic Standards: Social Studies</title>
+      <created>2000</created>
+      <topic>Historical Understanding</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="365c43bd-25d0-434f-8847-5b5d71a7a03c">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>CA</jurisdiction>
+      <fileName>Historical Understanding</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000145">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <created>1998</created>
+      <topic>Historical Understanding</topic>
+      <author>California</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="459588bf-79b3-4827-9d0b-b1e473e17ea3">
+      <title>Colorado Model Content Standards for History</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Historical Understanding Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100008B">
+      <title>Colorado Model Content Standards for History</title>
+      <created>1995</created>
+      <topic>Historical Understanding</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b736bd44-56f5-408a-84c1-4301418da251">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>Social Studies Historical Understan</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100017B">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <created>1998</created>
+      <topic>Historical Understanding</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="59ca114a-9d8c-4cc6-a15f-d09258937f2e">
+      <title>History Standards, updated January 2010</title>
+      <localAdoptionDate>2010</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>History Standards updated 2010</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003EE">
+      <title>History Standards, updated January 2010</title>
+      <created>2010</created>
+      <topic>Historical Understanding</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2c5b5fd8-9e5d-4df6-8942-48e28124e3f4">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Sunshine State Standards Hist Under</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000187">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <created>1999</created>
+      <topic>Historical Understanding</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7ab3aa7d-0d31-4cd8-a5a8-d5ab2a95c6bf">
+      <title>Social Studies Quality Core Curriculum K-12</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>Social Studies QCC Historical Under</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000073">
+      <title>Social Studies Quality Core Curriculum K-12</title>
+      <created>1999</created>
+      <topic>Historical Understanding</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="14fd2d9b-a20b-4343-8c7d-dcb9aff70fb4">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>HI</jurisdiction>
+      <fileName>Social Studies Historical Understan</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000050">
+      <title>Social Studies Content Standards</title>
+      <created>1999</created>
+      <topic>Historical Understanding</topic>
+      <author>Hawaii</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="434041e5-1888-430b-90d6-98cc4f2251bb">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Achievement Standards Historical Un</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000C3">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <created>2001</created>
+      <topic>Historical Understanding</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1c5b62e3-c357-426d-a6cc-07b596282309">
+      <title>Illinois Learning Standards for Social Science</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Learning Standards Historical Under</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100020F">
+      <title>Illinois Learning Standards for Social Science</title>
+      <created>1997</created>
+      <topic>Historical Understanding</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3dce7634-6fe2-4561-8909-a0c9aac7e78a">
+      <title>Social Studies Proficiency Guide</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Proficiency Guide Historical Unders</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000D1">
+      <title>Social Studies Proficiency Guide</title>
+      <created>1996</created>
+      <topic>Historical Understanding</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0c780e01-2713-4a26-889c-bc974e67a531">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Social Studies Historical Understan</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000A0">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <created>1998</created>
+      <topic>Historical Understanding</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7e95b1ac-314f-4945-bbe0-dba313c0c676">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Historical Understanding Content St</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100004B">
+      <title>Social Studies Content Standards</title>
+      <created>1997</created>
+      <topic>Historical Understanding</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b7cd299b-6210-4f4f-ac4e-b152adae660f">
+      <title>Social Studies Grade-Level Expectations</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Historical Understanding Grade-Leve</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000089">
+      <title>Social Studies Grade-Level Expectations</title>
+      <created>2003</created>
+      <topic>Historical Understanding</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0e550c08-0603-4d22-b611-acc8ae684421">
+      <title>Massachusetts History and Social Science Framework</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>History and Social Science Framewor</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000AF">
+      <title>Massachusetts History and Social Science Framework</title>
+      <created>2003</created>
+      <topic>Historical Understanding</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c34b95b0-2b35-4a5d-84c9-85b3ed3395f6">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100011E">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>Historical Understanding</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b22c297d-8fa8-4148-ab82-225b22afc8b7">
+      <title>Learning Results for Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Learning Results for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001BF">
+      <title>Learning Results for Social Studies</title>
+      <created>1997</created>
+      <topic>Historical Understanding</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c49aaa3f-7476-4447-8df5-e832081bf089">
+      <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Social Studies Standards Working Dr</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100001A">
+      <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+      <created>1995</created>
+      <topic>Historical Understanding</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3e0e1587-54ff-4ed8-923f-cd3d2e5046e5">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Graduation Standards for Social Stu</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000068">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <created>1998</created>
+      <topic>Historical Understanding</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4773bce8-9a71-4854-8e92-15deeb9d23c8">
+      <title>Montana Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Montana Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001D8">
+      <title>Montana Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>Historical Understanding</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="32b409a1-f47e-464d-9a75-dda9033e3058">
+      <title>Social Studies Standard Course of Study</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Social Studies Standard Course of S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000052">
+      <title>Social Studies Standard Course of Study</title>
+      <created>1996</created>
+      <topic>Historical Understanding</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6121c2fe-7648-4c1d-a0ec-6ea65b4901d9">
+      <title>National Standards for History, Revised Edition, 1996</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>NCHS</jurisdiction>
+      <fileName>National Standards for History</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003BD">
+      <title>National Standards for History, Revised Edition, 1996</title>
+      <created>1996</created>
+      <topic>Historical Understanding</topic>
+      <author>NCHS</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e9aa3998-db6e-412a-9383-4d8e1cb83479">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Social Studies Content Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100015F">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <created>2000</created>
+      <topic>Historical Understanding</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8d2a923d-a8ea-460b-8575-073aba952124">
+      <title>Nebraska Social Studies/History Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Social Studies History Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100020D">
+      <title>Nebraska Social Studies/History Standards</title>
+      <created>1998</created>
+      <topic>Historical Understanding</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="30a4877e-e321-40a0-98ff-127b0b5f10ab">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Social Studies Curriculum Fram</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001D3">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <created>1995</created>
+      <topic>Historical Understanding</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f59b211a-88d9-49ad-8be7-b1077abf6c5e">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000088">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <created>1996</created>
+      <topic>Historical Understanding</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d52f338b-6497-4991-8df9-a364231c10d3">
+      <title>New Mexico Standards for Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Standards for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000D7">
+      <title>New Mexico Standards for Social Studies</title>
+      <created>2001</created>
+      <topic>Historical Understanding</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b35154b4-a5c3-444c-a224-74b7cecf4322">
+      <title>Nevada Social Studies Standards History K-12 Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>Social Studies Standards History</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002C7">
+      <title>Nevada Social Studies Standards History K-12 Standards</title>
+      <created>2000</created>
+      <topic>Historical Understanding</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6d61d73e-3dca-4921-b323-450e3ded4c04">
+      <title>Learning Standards for Social Studies</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>Learning Standards for Social Studi</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100017F">
+      <title>Learning Standards for Social Studies</title>
+      <created>1996</created>
+      <topic>Historical Understanding</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="85e0567c-9773-49c5-80d9-cb9bef12ec2a">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <localAdoptionDate>1994</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Social Studies: Ohio's Model Compet</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000064">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <created>1994</created>
+      <topic>Historical Understanding</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9d0372f7-47ab-4833-a7ac-f00ddc75a278">
+      <title>Academic Content Standards Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Academic Content Standards Social S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100002B">
+      <title>Academic Content Standards Social Studies</title>
+      <created>2002</created>
+      <topic>Historical Understanding</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3a25e44d-3b68-4e99-8bb0-d97dfe2d42ad">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000045">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <created>2002</created>
+      <topic>Historical Understanding</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="359a5a6c-f648-4a83-a902-5216cd9d50ed">
+      <title>Social Sciences 2001-2002</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Social Sciences 2001-2002</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000165">
+      <title>Social Sciences 2001-2002</title>
+      <created>2001</created>
+      <topic>Historical Understanding</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="636e036e-dd41-4d92-9557-d9c97ae6b30e">
+      <title>Academic Standards for History</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>PA</jurisdiction>
+      <fileName>Academic Standards for History</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000046">
+      <title>Academic Standards for History</title>
+      <created>2003</created>
+      <topic>Historical Understanding</topic>
+      <author>Pennsylvania</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="13af59b8-7a7c-4776-8fe5-e5f2022dd65a">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>SC</jurisdiction>
+      <fileName>Social Studies Content Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000015">
+      <title>Social Studies Content Standards</title>
+      <created>2000</created>
+      <topic>Historical Understanding</topic>
+      <author>South Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="babd563f-b52e-4786-b1ba-dc994dca2aff">
+      <title>Social Studies Frameworks K-12</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Social Studies Frameworks K-12</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100004F">
+      <title>Social Studies Frameworks K-12</title>
+      <created>1996</created>
+      <topic>Historical Understanding</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="67b11641-d6fe-4725-883b-c892fcb6305d">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>Chapter 113. TEKS for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000085">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <created>1997</created>
+      <topic>Historical Understanding</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="54345e82-d111-4598-8628-613fbe7f7287">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100014F">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>1995</created>
+      <topic>Historical Understanding</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="22796489-ed8a-4240-9eee-13ad8183b897">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001D5">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>2001</created>
+      <topic>Historical Understanding</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="415c73e3-335b-4868-8f07-702812811caf">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Vermont's Framework of Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000133">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <created>2000</created>
+      <topic>Historical Understanding</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3da0dfc6-4a04-444d-96a7-6809c7933487">
+      <title>Essential Academic Learning Requirements in Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Essential Academic Learning Require</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000158">
+      <title>Essential Academic Learning Requirements in Social Studies</title>
+      <created>1997</created>
+      <topic>Historical Understanding</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="72caae8f-4bda-4a93-895f-ec538bcef7e9">
+      <title>History Essential Academic Learning Requirements</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>History EALR</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002B1">
+      <title>History Essential Academic Learning Requirements</title>
+      <created>2003</created>
+      <topic>Historical Understanding</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="00a906b7-fd59-477b-a40b-6382b3d13247">
+      <title>Wisconsin Model Academic Standards for Social Studies</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>WI</jurisdiction>
+      <fileName>Wisconsin Model Academic Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000151">
+      <title>Wisconsin Model Academic Standards for Social Studies</title>
+      <created>1998</created>
+      <topic>Historical Understanding</topic>
+      <author>Wisconsin</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cd74dcf7-d892-4866-b391-c6135313e88f">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia's Social Studies Inst</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100007D">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <created>2000</created>
+      <topic>Historical Understanding</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="aac7a649-f80f-4a92-a35d-0f65e1eae8eb">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia Social Studies Conten</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001FC">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <created>2004</created>
+      <topic>Historical Understanding</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9acb4ef3-5428-49ed-b90c-216f62b20153">
+      <title>Social Studies Content and Performance Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Historical Understanding</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Social Studies Content and Performa</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001BD">
+      <title>Social Studies Content and Performance Standards</title>
+      <created>1999</created>
+      <topic>Historical Understanding</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+</mappings>

@@ -1,0 +1,47 @@
+
+<div class="browse-item-title">
+	${result.docReader.shortTitle}
+</div>
+<logic:notEmpty name="result" property="docReader.collectionUrl">
+	<div class="searchResultValues">
+	<a href='<bean:write name="result" property="docReader.collectionUrl" filter="false" />' 
+		title='view url in a new window' target="_blank">${sf:truncate(result.docReader.collectionUrl, urlTruncateLen)}</a> 
+	(collection URL)
+	</div>	
+</logic:notEmpty>
+
+<c:if test="${not empty result.docReader.description}">
+	<div class="searchResultValues"><em>Description:</em> &nbsp;
+		<dds:keywordsHighlight>${result.docReader.description}</dds:keywordsHighlight>
+	</div>
+</c:if>
+
+<c:if test="${not empty result.docReader.gradeRanges}">
+	<div class="searchResultValues"><em>Grade ranges:</em> &nbsp;
+		<c:forEach var="gr" items="${result.docReader.gradeRanges}" varStatus="i">
+				<vocabs:uiLabel
+				metaFormat="dlese_collect"
+				audience="community"
+				language="${initParam.metadataVocabLanguage}"	
+				field="gr" 
+				value="${gr}" />${(not i.last) ? ',' : ''}
+		</c:forEach>
+	</div>
+</c:if>
+
+
+<c:if test="${not empty result.docReader.subjects}">
+	<div class="searchResultValues"><em>Subjects:</em> &nbsp;
+			<c:forEach var="su" items="${result.docReader.subjects}" varStatus="i">
+					<dds:keywordsHighlight>
+					<vocabs:uiLabel
+						metaFormat="dlese_collect"
+						audience="community"
+						language="${initParam.metadataVocabLanguage}"	
+						field="su" 
+						value="${su}" />${(not i.last) ? ',' : ''}</dds:keywordsHighlight>
+			</c:forEach>
+		</div>				
+</c:if>
+
+

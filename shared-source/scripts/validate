@@ -1,0 +1,77 @@
+#!/bin/csh
+
+# This script validates a single .xml file or directory of xml files.
+# A report of the results is sent to standard output.
+#
+# This script assumes the following variables have been set:
+#
+# JAVA_HOME = The base directory of a Java j2sdk v1.4 or later
+# 
+# DLS_LIBS_HOME = The home directory of the dls-libs.jar and xercesImpl-x.x.x.jar.
+#
+# Author: John Weatherley
+
+
+### Define the path the Java JVM or SDK:
+#set JAVA_HOME = /path/to/java/jvm/
+
+### Define the path to the directory where dls-libs.jar and xercesImpl-x.x.x.jar are located:
+#set DLS_LIBS_HOME = /path/to/required/jar/files/lib/
+
+set CP = ""
+
+if( $#argv == 1 || $#argv == 2 ) then
+	if( $argv[1] != "-h" && $argv[1] != "--help" ) then
+		
+		if($?DLS_LIBS_HOME == 0) then
+			echo "DLS_LIBS_HOME is not set"
+			exit 1
+		endif			
+
+		if($?JAVA_HOME == 0) then
+			echo "JAVA_HOME is not set"
+			exit 1
+		endif
+		
+		# Construct the classpath
+		foreach file ($DLS_LIBS_HOME/*.jar)
+			set CP = $CP$file\:
+		end
+		
+        # Run validation
+		if( $#argv == 1 ) then
+			echo "running: $JAVA_HOME/bin/java -cp $CP org.dlese.dpc.xml.XMLValidator $argv[1]"
+			$JAVA_HOME/bin/java -cp $CP org.dlese.dpc.xml.XMLValidator $argv[1]
+		endif
+
+		if( $#argv == 2 ) then
+			$JAVA_HOME/bin/java -cp $CP org.dlese.dpc.xml.XMLValidator $argv[1] $argv[2]
+		endif
+		
+		if ( $status == 0 ) then
+			#echo "Validation completed successfully."
+			exit 0
+		else
+			#echo "Validation exited with errors."
+			exit 1
+		endif
+	endif
+endif
+
+# If we've gotten this far then send use msg:
+echo "USAGE: validate file|direcory [modifiedSinceDate]"
+echo "  Where:"
+echo "     file|directory = a file or directory of files"
+echo "     modifiedSinceDate = optional parameter in UTCdatetime format (YYYY-MM-DDThh:mm:ssZ) that indicates"
+echo "                         validation should be performed only if a given input file has been modified"
+echo "                         since that date"
+echo ""
+echo "  Example: validate filename.xml"
+echo "  Example: validate .  (process all files in the current directory)"
+echo "  Example: validate my_xml_files_directory"
+echo "  Example: validate my_xml_files_directory 2004-01-15T21:57:54Z"
+echo "  Example: validate my_xml_files_directory > output.txt  (saves output to file)"
+echo ""
+exit 1
+
+

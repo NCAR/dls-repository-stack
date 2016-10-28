@@ -1,0 +1,78 @@
+
+
+<c:if test="${not empty record.myCollectionDoc}">
+	<div class="searchResultValues"><em>Collection:</em> &nbsp; ${record.myCollectionDoc.shortTitle}</div>
+</c:if>
+<div class="searchResultValues"><em>Record format:</em> &nbsp; ${record.nativeFormat}</div>
+<c:if test="${not empty record.description}">
+<div class="searchResultValues"><em>Description:</em> &nbsp; ${record.description}</div>
+</c:if>
+
+<c:if test="${not empty record.gradeRanges}">
+	<div class="searchResultValues"><em>Grade ranges:</em> &nbsp;
+		<c:forEach var="gr" items="${record.gradeRanges}" varStatus="i">
+				<vocabs:uiLabel
+				metaFormat="adn"
+				audience="${initParam.metadataVocabAudience}"
+				language="${initParam.metadataVocabLanguage}"	
+				field="gr" 
+				value="${gr}" />${(not i.last) ? ',' : ''}
+		</c:forEach>
+	</div>
+</c:if>
+
+<c:if test="${not empty record.resourceTypes}">
+	<div class="searchResultValues"><em>Resource types:</em> &nbsp;
+		<c:forEach var="re" items="${record.resourceTypes}" varStatus="i">
+				<vocabs:uiLabel
+				metaFormat="adn"
+				audience="${initParam.metadataVocabAudience}"
+				language="${initParam.metadataVocabLanguage}"	
+				field="re" 
+				value="${re}" />${(not i.last) ? ',' : ''}
+		</c:forEach>
+	</div>
+</c:if>
+
+<c:if test="${not empty record.subjects}">
+	<div class="searchResultValues"><em>Subjects:</em> &nbsp;
+		<c:forEach var="su" items="${record.subjects}" varStatus="i">
+				<vocabs:uiLabel
+				metaFormat="adn"
+				audience="${initParam.metadataVocabAudience}"
+				language="${initParam.metadataVocabLanguage}"	
+				field="su" 
+				value="${su}" />${(not i.last) ? ',' : ''}
+		</c:forEach>
+	</div>
+</c:if>
+
+<div class="searchResultValues"><em>File location:</em> ${record.docsource}</div>
+
+<%-- Annotations for this item-level record --%>
+<c:if test="${not empty record.annotationResultDocs}">
+	<div class="annotations-box">
+		<div class="label">Annotations for this resource</div>
+		<ul>
+		<c:forEach var="annotationResult" items="${record.annotationResultDocs}">
+			<li>
+			<c:set var="annotation" value="${annotationResult.docReader}" />
+			<c:choose>
+				<c:when test="${not empty annotation.title}">
+					<div class="annotation-title">${annotation.title}</div>
+				</c:when>
+				<c:otherwise>
+					<div class="searchResultValues2"><font color="#333333">
+						<b>Annotation</b>
+					</font></div>
+				</c:otherwise>
+			</c:choose>
+			
+			<div class="searchResultValues2">${annotation.id}</div>	
+			</li>
+		</c:forEach>
+		<ul>
+	</div>
+</c:if>
+
+

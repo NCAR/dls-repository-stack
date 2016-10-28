@@ -1,0 +1,111 @@
+		<!-- Now we normalize it using are usual normalized nsdl_dc to make sure its up to snuff -->
+ 		<XSLTransform>
+ 		 	<uri>http://ns.nsdl.org/xsl_harvest_ingest_2_0/normalized_nsdl_dc.xsl</uri>
+ 		</XSLTransform>
+ 		
+ 		<!--  Try to convert any conform to tags that were created to ASN ids, This will use defined
+ 		RDF files to try to find the ASN via standard URL, standard dot notation and then standard description -->
+ 		<ASNConversion>
+ 			<element-xpath>*[name()='dct:conformsTo']</element-xpath>
+ 		</ASNConversion>
+ 		
+ 		<!-- Normalize text throughout the document using set vocab. This includes the  AAAS_NGSS to NGSS mappings
+ 		 -->
+ 		<TransformViaGroupFiles>
+   			<group-file-uri>http://ns.nsdl.org/ncs/ddsws/1-1/groupsNormal/vocab_selections.xml</group-file-uri>
+   			<write-comments>false</write-comments>
+   		</TransformViaGroupFiles>
+   		
+   		<!-- Some collections escape HTML in order to get the subscripts and superscripts,
+   		these processors actually encode them correctly. Examples collections are ChemEd and 
+   		Math DL, For example the records has text H<sub>2</sub> this really should be H₂  -->
+  		<SubscriptTransform>
+	   		<regular-expressions>
+	   			<regular-expression><![CDATA[&lt;sub&gt;(.+?)&lt;/sub&gt;]]></regular-expression>
+	   		</regular-expressions>
+   		</SubscriptTransform>
+        <SuperscriptTransform>
+	   		<regular-expressions>
+	   			<regular-expression><![CDATA[&lt;sup&gt;(.+?)&lt;/sup&gt;]]></regular-expression>
+	   		</regular-expressions>
+   		</SuperscriptTransform>
+   		
+ 		<EncodedCharsTransform/>
+   		  	
+ 		<!--  Adding extra identifiers to the top of the document -->
+		<AddElement>
+  			<location>2</location>
+  			<replace>true</replace>
+   			<element-xml><![CDATA[<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="nsdl_dc:MetadataHandle">hdl:$metadata_handle</dc:identifier>]]></element-xml>
+   		</AddElement>
+   		<AddElement>
+  			<location>3</location>
+  			<replace>true</replace>
+   			<element-xml><![CDATA[<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="nsdl_dc:ResourceHandle">hdl:$resource_handle</dc:identifier>]]></element-xml>
+   		</AddElement>
+   		<AddElement>
+  			<location>4</location>
+  			<replace>true</replace>
+   			<element-xml><![CDATA[<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="nsdl_dc:NSDLPartnerID">$partner_id</dc:identifier>]]></element-xml>
+   		</AddElement>
+
+   		<!-- Adding a few last items that are required that were originally taken from the indexer  -->
+ 		<AddLARReadinessElement/>
+ 		<!-- <AddElement>
+  			<location>bottom</location>  
+  			<replace>true</replace>                       
+   			<element-xml><![CDATA[<lar:metadataTerms xmlns:lar="http://ns.nsdl.org/schemas/dc/lar">The National Science Digital Library (NSDL), located at the University Corporation for Atmospheric Research (UCAR), provides these metadata terms: These data and metadata may not be reproduced, duplicated, copied, sold, or otherwise exploited for any commercial purpose that is not expressly permitted by NSDL. More information is available at: http://nsdl.org/help/terms-of-use.</lar:metadataTerms>]]></element-xml>
+   		</AddElement> -->
+ 		
+		<!-- End taken from the indexer -->
+	
+	
+		<!-- Now we normalize it using are usual normalized nsdl_dc to make sure its up to snuff. These normalizations
+		are usually like http:// fields will get an attribute of type="URI" -->
+ 		<XSLTransform>
+ 		 	<uri>http://ns.nsdl.org/xsl_harvest_ingest_2_0/normalized_nsdl_dc.xsl</uri>
+ 		</XSLTransform>
+	
+		<!-- Remove all duplicate tags -->
+		<RemoveDuplicateElementsTransform>
+   			<ignore-attributes>true</ignore-attributes>
+   		</RemoveDuplicateElementsTransform>
+   		
+   		<AddComment>
+ 			 <comment>UCARConnect has normalized this metadata record for use across its systems and services.</comment>
+ 		</AddComment>
+ 		
+		<!-- pretty print all elements so the xml is clean -->
+ 		<PrettyPrint/>
+ 		
+ 		<!-- Make sure that the nsdl_dc record has a description and title, if not throw an error and don't process record -->
+ 		<RequireElement>
+ 			<throw-error>true</throw-error>
+ 			<xpaths>
+	   			<xpath>*[name()='dc:description']</xpath>
+	   		</xpaths>
+ 		</RequireElement>
+		
+		<RequireElement>
+ 			<throw-error>true</throw-error>
+ 			<xpaths>
+	   			<xpath>*[name()='dc:title']</xpath>
+	   		</xpaths>
+ 		</RequireElement>
+ 		
+		<!-- Make sure that the nsdl_dc record has a URI identifier -->
+		<URINormalizer>
+ 			 <uri-required>true</uri-required>
+    		 <xpaths>
+ 		 		<xpath>*[name()='dc:identifier'][starts-with(.,'http://') or starts-with(.,'https://') or starts-with(.,'ftp://')]</xpath>
+ 		 	</xpaths>
+ 		</URINormalizer>
+ 		
+ 		<!--  This is a temporary report that is being ran to compare defined education levels in the record
+ 		vs what the alignment's education levels are. This report must be after the crosswalk processor -->
+ 		<EducationLevelsVsAlignmentsReport>
+ 			<asn-element-xpath>*[name()='dct:conformsTo']</asn-element-xpath>
+ 		</EducationLevelsVsAlignmentsReport>
+ 		
+ 		<!-- Finally validate the schema  -->
+ 		<RecordSchemaValidator/> 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: instName.xsd,v 1.7 2008/10/23 16:24:15 ginger Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xs:annotation>
+		<xs:documentation>*****************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*****************************************</xs:documentation>
+		<xs:documentation>Modified: 2008-10-20</xs:documentation>
+		<xs:documentation>Created: 2008-09-05</xs:documentation>
+		<xs:documentation>Author: Katy Ginger, University Corporation for Atmospheric Research (UCAR),  ginger@ucar.edu</xs:documentation>
+		<xs:documentation>Purpose: NCAR Library institutional controlled vocabulary</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>None. See ../library_dc.xsd</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  SIMPLE TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="instNameType">
+		<xs:annotation>
+			<xs:documentation>***** instNameType  *****</xs:documentation>
+			<xs:documentation>Valid values for the element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Aeronautical Research Associates of Princeton, Inc."/>
+			<xs:enumeration value="European Centre for Medium Range Weather Forecasts (ECMWF)"/>
+			<xs:enumeration value="Hauser Research and Engineering Company"/>
+			<xs:enumeration value="Hawaii Institute of Geophysics"/>
+			<xs:enumeration value="Los Alamos National Laboratory (LANL)"/>
+			<xs:enumeration value="NASA Goddard Space Flight Center (GSFC"/>
+			<xs:enumeration value="National Center for Atmospheric Research (NCAR)"/>
+			<xs:enumeration value="National Climatic Center (NCC)"/>
+			<xs:enumeration value="National Oceanic and Atmospheric Administration (NOAA)"/>
+			<xs:enumeration value="National Weather Records Center (NWRC)"/>
+			<xs:enumeration value="Nielsen Norman Group"/>
+			<xs:enumeration value="Raven Industries, Inc."/>
+			<xs:enumeration value="Scribner"/>
+			<xs:enumeration value="State University of New York at Stony Brook"/>
+			<xs:enumeration value="University of Colorado"/>
+			<xs:enumeration value="University of Hawaii"/>
+			<xs:enumeration value="University Corporation for Atmospheric Research (UCAR)"/>
+			<xs:enumeration value="U.S. Air Force Flight Dynamics Laboratory"/>
+			<xs:enumeration value="U.S. Bureau of Reclamation"/>
+			<xs:enumeration value="U.S. Department of Defense (DOD)"/>
+			<xs:enumeration value="U.S. Weather Research Program (USWRP)"/>
+			<xs:enumeration value="UCAR Office of Programs (UOP)"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:annotation>
+		<xs:documentation>*******************************************************</xs:documentation>
+		<xs:documentation>*****  LICENSE/COPYRIGHT INFORMATION  *****</xs:documentation>
+		<xs:documentation>*******************************************************</xs:documentation>
+		<xs:documentation>Copyright (c) 2008 University Corporation for Atmospheric Research (UCAR) P.O. Box 3000, Boulder, CO 80307, United States of America</xs:documentation>
+	</xs:annotation>
+</xs:schema>

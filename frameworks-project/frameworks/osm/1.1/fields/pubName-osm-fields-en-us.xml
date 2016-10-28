@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: pubName-osm-fields-en-us.xml,v 1.6 2011/07/05 17:50:34 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/pubName.xsd">
+  <field name="Publication name" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/general/pubName">
+		<definition>the name of the publication in which a published work appears</definition>
+		<prompts>
+			<prompt>Please read the best practices.</prompt>
+		</prompts> 
+
+		 <bestPractices>
+			<dos>
+				<practice status="current" originDate="2010-05-31">This field is optional.</practice> 
+				<practice status="current" originDate="2010-05-31">This field cannot be repeated.</practice> 
+				<practice status="current" originDate="2011-06-27">This field is required for articles, books, monographs, book chapters, book forewords, book reviews, encyclopedia, encyclopedia entries and newsletters. Some resource types like interactive resource may or may not have a publication name.</practice>
+				<practice status="current" originDate="2010-05-31">For AMS conference preprints/proceedings that may contain what appear to be written articles, poster abstracts or slides of the presentation, choose presentation as the title type; choose presented for the status; choose non-refereed as the classification. Do not complete a publication name but do complete an event name. Do not complete pagination information either. Also be sure the written articles and poster abstracts are the versions without the AMS page numbers in order not to violate AMS policies.</practice> 
+				<practice status="current" originDate="2010-05-31">If a proceedings is refereed, choose article as the title type; choose published as the status. Then complete both a publication name and event name for the resource.</practice> 
+				<practice status="current" originDate="2010-05-31">If a proceedings is non-AMS and non-refereed, the resource could be a poster, presentation or article (choose the appropriate one). The resource is probably unpublished (check that). If the resource is published, then complete publication name. Always complete event name.</practice> 
+				<practice status="current" originDate="2010-05-31">Books and monographs are non-refereed and the title and publication name should be the same. Generally, they should have a status of published.</practice> 
+				<practice status="current" originDate="2010-05-31">Books chapters are non-refereed and the title and publication name will be different. Generally, they should have a status of published.</practice> 
+				<practice status="current" originDate="2010-05-31">NCAR monographs are non-refereed; have a status of published and should have a publication name.</practice> 
+				<practice status="current" originDate="2010-05-31">NCAR books are non-refereed; have a status of published and should have a publication name.</practice> 
+				<practice status="current" originDate="2010-05-31">NCAR manuscripts are non-refereed; have a status of published and should not have a publication name.</practice> 
+				<practice status="current" originDate="2010-05-31">SOARS papers are non-refereed; have a status of unpublished and should not have a publication name.</practice> 
+				<practice status="current" originDate="2010-05-31">Both OSGC and UCAR History contain a variety of resources such that each resource needs to be analyzed independently to determine whether it needs a publication name.</practice> 
+				<practice status="current" originDate="2011-06-27">Capitalize the first word of a title and the first word of subtitles (e.g. An introduction to DART: A community facility for ensemble data assimilation).</practice>
+				<practice status="current" originDate="2011-06-27">Capitalize other words only as appropriate (e.g. Earth).  Proper nouns, chemical abbreviations, instrument or model abbreviations, and the titles of conferences should also be capitalized.</practice>
+				<practice status="current" originDate="2011-06-27">Separate the title and the subtitle with a colon.</practice>
+				<practice status="current" originDate="2011-06-27">If the title indicates that the resource is a 'part' of a larger whole, capitalize the P and use either Roman or Arabic numerals, as indicated within the title of the resource itself (e.g. The art of painting: Part 3)</practice>
+			 </dos>
+			 <donts>
+				<practice status="current" originDate="2010-05-31">Do not complete publication name for abstracts, animations, artifacts, blog/emails, correspondence, images, manuscripts, notes, newsletters, posters, presentations.</practice> 
+				<practice status="current" originDate="2010-05-31">Do not use publication name for most archival materials or oral histories.</practice> 
+				<practice status="current" originDate="2011-06-27">Do not end the title with any form of punctuation, unless it is part of the title itself.</practice>
+			 </donts>
+			 <examples>
+				<practice status="current" originDate="2010-05-31" link1="Presentation" style1="bold">Presentation: AMS preprint with a written article and/or slide presentation: see OSGC-000-000-002-056.</practice>
+				<practice status="current" originDate="2010-05-31" link1="Proceedings" style1="bold" link2="ERAD 2010 Proceedings" url2="http://www.erad2010.org/Sibiu.htm">Proceedings: ERAD 2010 Proceedings</practice>
+				<practice status="current" originDate="2010-05-31" link1="Proceedings" style1="bold" link2="Proceedings of the Royal Society B" url2="http://rspb.royalsocietypublishing.org/">Proceedings: Proceedings of the Royal Society B</practice>
+				<practice status="current" originDate="2010-05-31" link1="Not a Proceedings" style1="bold" link2="Third US-Korea Joint Workshop on Storm- and Mesoscale Weather Analysis and Prediction" url2="http://www.cosmic.ucar.edu/2002Conference/abstractsFeb02.html">Not a Proceedings: Third US-Korea Joint Workshop on Storm- and Mesoscale Weather Analysis and Prediction.</practice>
+				<practice status="current" originDate="2010-05-31" link1="Not a Proceedings" style1="bold" link2="AMS presentation" url2="http://ams.confex.com/ams/91Annual/webprogram/Paper184631.html">Not a Proceedings: AMS presentation.</practice>
+			</examples>
+			<otherPractices>
+				<otherPractice header="Special Characters to Encode? Do This:">
+					<practice status="current" originDate="2011-06-10" link1="numeric entity encodings" url1="http://theorem.ca/~mvcorks/code/charsets/auto.html">All special characters like subscripts, superscripts, copyright and other symbols must be entity encoded numerically. See the numeric entity encodings.</practice>
+				</otherPractice>
+			</otherPractices>
+		 </bestPractices>
+		 <documentation>
+				<obligation>optional</obligation>
+				<min>0</min>
+				<max>1</max>
+				<XMLdataTypes>
+					<XMLdataType>string</XMLdataType>
+				</XMLdataTypes>
+				<domain>controlled vocabulary</domain>
+				<example>10th AMS Conference on Polar Meteorology and Oceanography</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

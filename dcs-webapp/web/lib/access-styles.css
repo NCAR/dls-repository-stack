@@ -1,0 +1,133 @@
+h1, h2, h3, h4 {
+	font-weight:bold;
+	padding:3px;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+H1 { 
+	font-size: 145%;
+	Color : #ffffff;
+	background-color:#330066;
+} 
+H2 { 
+	font-size: 130%;
+	font-style: italic;
+	color: #ffffff;
+	background-color:#330099;
+} 
+H3 { 	
+	font-size: 125%;
+	color: #ffffff;
+	background-color:#9999ff;
+} 
+H4 { 
+	font-size: 110%;
+	font-style: italic;
+	color: #333366; 	
+	background-color:#d5d5fb;
+} 
+H5 { 
+	font-size: 90%;
+	font-weight: bold;
+	color: #000000; 
+} 
+H6 { 
+	font-size: 85%;	
+	font-weight: normal; 
+	color: #000000; 
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-style: italic;	
+}
+
+/* used in at least two of: edit-access, edit-user, and edit-users */
+
+.table-banner {
+	background-color:#CCCEE6;
+	width:100%;
+	padding:2px;
+	margin:5px 0px 5px 0px;
+}
+
+.table-banner tr {
+	white-space:nowrap;
+}
+
+.table-banner .title, .table-banner-title {
+	font-size: 145%;
+	font-weight:bold;
+	Color : #333366;
+	margin: 3px 15px 0px 3px;	
+	white-space:nowrap;
+}
+
+.main-table {
+	width:100%;
+	background-color:#999999;
+	border:none;
+}
+
+.table-header-row {
+	background-color:#999999;
+	text-align:center;
+}
+
+.table-header-cell {
+	color:#ffffff;
+	text-align:center;
+	border-bottom:6px white solid;
+}
+
+.input-label {
+	text-align:right;
+}
+
+.input {}
+
+/* opens / closes lists, selects / deselects boxes . shown against dark grey background*/
+.action-link {
+	font-size:85%;
+}
+
+/* .action-link a {
+	color:#ffffcc;
+}
+ */
+.action-button {
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	font-size:0.8em;
+	font-style:normal;
+}
+/* User Manager Styles */
+
+
+
+/* Access Manager Styles */
+.url-pattern {
+	text-align:center;
+	font-weight:bold;
+}
+
+.primary-row {
+	background-color:#cccccc;
+}
+
+ /* yellow background highlight */
+.highlight-primary-row, .highlight {
+	background-color:#ffffcc;
+}
+
+.secondary-row {
+	background-color:#ffffff;
+}
+
+.secondary-row-cell {
+	border-bottom:1px #cccccc solid;
+}
+
+.secondary-row-cell .indented {
+	margin-left:100px;
+}
+

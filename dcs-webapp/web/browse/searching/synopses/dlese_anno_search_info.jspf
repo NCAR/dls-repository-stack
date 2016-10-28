@@ -1,0 +1,47 @@
+
+		<c:choose>
+			<c:when test="${not empty result.docReader.title}">
+				<div class="browse-item-title">${result.docReader.title}</div>
+			</c:when>
+			<c:otherwise>
+				<div class="browse-item-title">Annotation</div>
+			</c:otherwise>
+		</c:choose>
+		
+		<c:if test="${not empty result.docReader.url}">
+			<div class="searchResultValues">
+			<a href="${result.docReader.url}"
+					title='view resource in a new window'
+					target="_blank">${sf:truncate(result.docReader.url, urlTruncateLen)}</a>
+			</div>
+		</c:if>
+
+
+		<c:if test="${not empty result.docReader.description}">
+			<div class="searchResultValues"><em>Description:</em> &nbsp;
+				<dds:keywordsHighlight>${result.docReader.description}</dds:keywordsHighlight>
+			</div>
+		</c:if>	
+		
+		<c:if test="${not empty result.docReader.rating}">
+			<div class="searchResultValues"><em>Rating:</em>
+				<%-- ${result.docReader.rating} --%>
+				<c:forEach begin="1" end="${result.docReader.rating}">
+					<img src="${contextPath}/images/star.gif"/>
+				</c:forEach>
+			</div>
+		</c:if>
+		
+		<c:if test="${not empty result.docReader.type}">
+			<div class="searchResultValues"><em>Type:</em> &nbsp;
+				${result.docReader.type}
+			</div>	
+		</c:if>			
+				
+		<c:if test="${not empty result.docReader.status}">
+			<div class="searchResultValues"><em>Annotation status:</em>  &nbsp;
+				${result.docReader.status}
+			</div>
+		</c:if>
+
+

@@ -1,0 +1,2276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="Math">
+  <mapping>
+    <acsrInfo id="b043105f-6454-45de-ac7c-0c5a56487a63">
+      <title>Mathematics Content Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>AK</jurisdiction>
+      <fileName>Mathematics Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001F0">
+      <title>Mathematics Content Standards</title>
+      <created>2000</created>
+      <topic>Math</topic>
+      <author>Alaska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="96f8417c-5e06-4e94-a707-ba72ae5d602a">
+      <title>Math Performance Standards (Grade Level Expectations) For Grades 3-10</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>AK</jurisdiction>
+      <fileName>Math Performance Standards GLEs</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000223">
+      <title>Math Performance Standards (Grade Level Expectations) For Grades 3-10</title>
+      <created>2005</created>
+      <topic>Math</topic>
+      <author>Alaska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1aa4ef23-e118-46ab-a9fd-b333cf9cf0e5">
+      <title>Alaska Content Standards Mathematics</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>AK</jurisdiction>
+      <fileName>Content Standards Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000253">
+      <title>Alaska Content Standards Mathematics</title>
+      <created>2006</created>
+      <topic>Math</topic>
+      <author>Alaska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9675d412-5239-4465-99ec-d6b143025887">
+      <title>Alabama Course of Study: Mathematics</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>AL</jurisdiction>
+      <fileName>Course of Study: Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100003F">
+      <title>Alabama Course of Study: Mathematics</title>
+      <created>2003</created>
+      <topic>Math</topic>
+      <author>Alabama</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f199430f-5380-4a69-b885-b98cb73e0d0d">
+      <title>Arkansas State Mathematics Framework</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Mathematics Framework</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000097">
+      <title>Arkansas State Mathematics Framework</title>
+      <created>1998</created>
+      <topic>Math</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="eaadb135-ab8e-4a76-a337-d56358507b45">
+      <title>Mathematics Curriculum Framework</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Mathematics Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000222">
+      <title>Mathematics Curriculum Framework</title>
+      <created>2004</created>
+      <topic>Math</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6f75c279-6894-446a-847c-41faa0a5d3f5">
+      <title>Academic Standards: Mathematics</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Academic Standards: Mathematics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000179">
+      <title>Academic Standards: Mathematics</title>
+      <created>1996</created>
+      <topic>Math</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3c4964e8-ad03-49f7-9b49-557c04c77f7e">
+      <title>Academic Content Standards - Mathematics</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Content Standards - Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100016E">
+      <title>Academic Content Standards - Mathematics</title>
+      <created>2003</created>
+      <topic>Math</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4c85a5b3-0712-4eeb-9541-cdfd89860018">
+      <title>Arizona Mathematics Standard Articulated by Grade Level</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Math Standard by Grade Level</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000355">
+      <title>Arizona Mathematics Standard Articulated by Grade Level</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="515e2d87-02f3-449d-ab3c-85df12fc0085">
+      <title>Mathematics Content Standards for California Public Schools, Kindergarten Through Grade Twelve</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>CA</jurisdiction>
+      <fileName>Mathematics Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100011F">
+      <title>Mathematics Content Standards for California Public Schools, Kindergarten Through Grade Twelve</title>
+      <created>1997</created>
+      <topic>Math</topic>
+      <author>California</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fa29a7bc-4eb1-4f2a-ab0c-7ed5df34fe36">
+      <title>Common Core State Standards for Mathematics</title>
+      <localAdoptionDate>2010</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>CCSS</jurisdiction>
+      <fileName>Common Core Math</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003FB">
+      <title>Common Core State Standards for Mathematics</title>
+      <created>2010</created>
+      <topic>Math</topic>
+      <author>CCSS</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9b57815f-9ff1-4765-a429-04bbd3ad6481">
+      <title>Colorado Model Content Standards Mathematics, Amended 9-15-05</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Content Standards Math Amended 2005</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000256">
+      <title>Colorado Model Content Standards Mathematics, Amended 9-15-05</title>
+      <created>1995</created>
+      <topic>Math</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8df12114-3e23-43c9-b2eb-20f4589aaffa">
+      <title>Colorado Model Content Standards for Mathematics</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Content Standards Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001BC">
+      <title>Colorado Model Content Standards for Mathematics</title>
+      <created>1995</created>
+      <topic>Math</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="14679abd-6d44-4180-b44d-f85c3339dcde">
+      <title>Colorado Academic Standards for Mathematics</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Colorado Academic Standards Math</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003F3">
+      <title>Colorado Academic Standards for Mathematics</title>
+      <created>2009</created>
+      <topic>Math</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cb90058d-2bb8-432f-8e70-c311d04aaa88">
+      <title>The Connecticut Mathematics Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>Mathematics Curriculum</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100007A">
+      <title>The Connecticut Mathematics Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <created>1998</created>
+      <topic>Math</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b290a536-bfaa-4945-b79b-d17ed5f58f01">
+      <title>2005 Connecticut Mathematics Curriculum Framework</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>Mathematics Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100021F">
+      <title>2005 Connecticut Mathematics Curriculum Framework</title>
+      <created>2005</created>
+      <topic>Math</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c74d8841-9c8d-4c37-ac6a-25b2aaeca71a">
+      <title>PreK-8 Math Framework Standards and Grade-Level Expectations</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>PK-8 Framework Standards and GLEs</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000344">
+      <title>PreK-8 Math Framework Standards and Grade-Level Expectations</title>
+      <created>2007</created>
+      <topic>Math</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e28ba7ee-ba08-4f9f-a671-13474a958f81">
+      <title>Mathematics Standards</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>DC</jurisdiction>
+      <fileName>Mathematics Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100035D">
+      <title>Mathematics Standards</title>
+      <created>2005</created>
+      <topic>Math</topic>
+      <author>District of Columbia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="34e9dfe7-b35c-43e3-b031-0408facd367b">
+      <title>Delaware Mathematics Curriculum Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Mathematics Curriculum Framework</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000205">
+      <title>Delaware Mathematics Curriculum Framework</title>
+      <created>1995</created>
+      <topic>Math</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="05549d52-fcb3-4d09-bb2b-4a3af02b6781">
+      <title>Delaware Math Grade-Level Expectations</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Math Grade-Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000260">
+      <title>Delaware Math Grade-Level Expectations</title>
+      <created>2006</created>
+      <topic>Math</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b9697379-fcd8-498a-a36b-7ef8fcb843d8">
+      <title>Mathematics Standards and GLEs 9-12</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Mathematics Standards and GLEs 9-12</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100037C">
+      <title>Mathematics Standards and GLEs 9-12</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1c9d8940-ca37-490a-98c0-c21b24d74157">
+      <title>Mathematics Standards and GLEs K-8</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Mathematics Standards and GLEs K-8</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100037B">
+      <title>Mathematics Standards and GLEs K-8</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="898e4445-9959-4303-9cac-858f9e585c3b">
+      <title>Sunshine State Standards Grade Level Expectations: Mathematics</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Sunshine State Standards GLE Math</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100011D">
+      <title>Sunshine State Standards Grade Level Expectations: Mathematics</title>
+      <created>1996</created>
+      <topic>Math</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="44f7af5a-856e-4f5a-9477-16bccf774d1b">
+      <title>Sunshine State Standards: Mathematics</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Sunshine State Standards: Math</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100029B">
+      <title>Sunshine State Standards: Mathematics</title>
+      <created>2007</created>
+      <topic>Math</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="11f78f21-c587-4b9c-a751-16f0ef5704fb">
+      <title>Georgia Quality Core Curriculum Standards for Mathematics</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>QCC Standards for Mathematics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001DD">
+      <title>Georgia Quality Core Curriculum Standards for Mathematics</title>
+      <created>1999</created>
+      <topic>Math</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3e4d1a16-c2db-4165-b43e-f3f776dd09dc">
+      <title>Georgia Mathematics Performance Standards</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>Mathematics Performance Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000031">
+      <title>Georgia Mathematics Performance Standards</title>
+      <created>2004</created>
+      <topic>Math</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="78ac89d0-ea08-407c-9b7d-b436fca5c2a0">
+      <title>Georgia Mathematics Performance Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>Mathematics Performance Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100029F">
+      <title>Georgia Mathematics Performance Standards</title>
+      <created>2006</created>
+      <topic>Math</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8c05ccaf-35aa-4f75-a230-b29910de93b6">
+      <title>Georgia Mathematics Performance Standards K-5, Sept. 11, 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>Georgia Mathematics Performance Sta</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003AB">
+      <title>Georgia Mathematics Performance Standards K-5, Sept. 11, 2008</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e2564937-e33b-43d4-a559-deca141d7e2c">
+      <title>Mathematics Content Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>HI</jurisdiction>
+      <fileName>Mathematics Content Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000057">
+      <title>Mathematics Content Standards</title>
+      <created>1999</created>
+      <topic>Math</topic>
+      <author>Hawaii</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ca07e518-706a-49ea-a955-52cad0825a7e">
+      <title>HCPS III Mathematics</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>HI</jurisdiction>
+      <fileName>HCPS III Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000273">
+      <title>HCPS III Mathematics</title>
+      <created>2005</created>
+      <topic>Math</topic>
+      <author>Hawaii</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="192ddd63-781c-45ec-ad5d-89803da3cfc4">
+      <title>Math Core Content Standards and Benchmarks Corresponding to the Iowa Tests</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>IA</jurisdiction>
+      <fileName>Math Core Content Corresponding to</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000274">
+      <title>Math Core Content Standards and Benchmarks Corresponding to the Iowa Tests</title>
+      <created>2005</created>
+      <topic>Math</topic>
+      <author>Iowa</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ca2192f1-1a5b-4775-9f76-34dfbc0e5158">
+      <title>Math Model Core Curriculum for Iowa High Schools</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>IA</jurisdiction>
+      <fileName>Math Core Curriculum for Iowa High</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000278">
+      <title>Math Model Core Curriculum for Iowa High Schools</title>
+      <created>2006</created>
+      <topic>Math</topic>
+      <author>Iowa</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="27d14d6a-61fb-4bc8-9065-42a4e2f16b8e">
+      <title>Mathematics Grade Level Indicators</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>IA</jurisdiction>
+      <fileName>Mathematics Grade Level Indicators</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100034D">
+      <title>Mathematics Grade Level Indicators</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>Iowa</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2b80b39a-7b02-47dc-9e4d-7cd6d2c6fbc7">
+      <title>Iowa Core Curriculum K-12 Mathematics</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>IA</jurisdiction>
+      <fileName>Iowa Core Curriculum K-12 Mathemati</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003D7">
+      <title>Iowa Core Curriculum K-12 Mathematics</title>
+      <created>2009</created>
+      <topic>Math</topic>
+      <author>Iowa</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="51ed0dae-ab18-4e9b-b2b3-7a8846fa8e5a">
+      <title>Idaho State Achievement Standards K-12 in Mathematics</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Achievement Standards Mathematics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100010C">
+      <title>Idaho State Achievement Standards K-12 in Mathematics</title>
+      <created>2001</created>
+      <topic>Math</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="57fbb83a-65b1-4e5a-8924-4e3a814bacbd">
+      <title>Idaho Content Standards - Mathematics</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Content Standards - Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000266">
+      <title>Idaho Content Standards - Mathematics</title>
+      <created>2006</created>
+      <topic>Math</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b8c9da53-d8c6-4c2f-ac2d-0b06c660737c">
+      <title>Illinois Learning Standards for Mathematics</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Learning Standards Math</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001EB">
+      <title>Illinois Learning Standards for Mathematics</title>
+      <created>1997</created>
+      <topic>Math</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="55240e16-b71c-4e87-a00e-a2396cc4ac01">
+      <title>Mathematics Performance Descriptors</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Mathematics Performance Descriptors</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000D4">
+      <title>Mathematics Performance Descriptors</title>
+      <created>2002</created>
+      <topic>Math</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="191d53e9-fd60-4804-bf3f-e33ad6c9ce62">
+      <title>Indiana's Academic Standards 2000 in Mathematics</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Academic Standards Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000038">
+      <title>Indiana's Academic Standards 2000 in Mathematics</title>
+      <created>2000</created>
+      <topic>Math</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fd24c3e2-d90b-49d6-ae3b-537cb4442121">
+      <title>IndianaÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Core Standards for Mathematics</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Core Standards for Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000345">
+      <title>IndianaÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Core Standards for Mathematics</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="13144c7d-8265-40ab-a47e-fc74930b497d">
+      <title>Indiana's Academic Standards for Mathematics</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Indiana's Academic Standards for Ma</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003C0">
+      <title>Indiana's Academic Standards for Mathematics</title>
+      <created>2009</created>
+      <topic>Math</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="90addab1-3e38-476a-88d3-964515907fa9">
+      <title>Mathematics Program in Japan (Kindergarten to Upper Secondary School) by the Japan Society of Mathematical Education (J S M E)</title>
+      <localAdoptionDate>1990</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>Japan</jurisdiction>
+      <fileName>Mathematics Program in Japan (Kinde</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000BE">
+      <title>Mathematics Program in Japan (Kindergarten to Upper Secondary School) by the Japan Society of Mathematical Education (J S M E)</title>
+      <created>1990</created>
+      <topic>Math</topic>
+      <author></author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a043d05b-55c2-4a8a-9ff2-fa7a0274c7d0">
+      <title>Mathematics Curriculum Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Mathematics Curriculum Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100000B">
+      <title>Mathematics Curriculum Standards</title>
+      <created>1999</created>
+      <topic>Math</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0ffabaee-89b9-4b54-ac41-1c3eb986324b">
+      <title>Kansas Curricular Standards for Mathematics</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Curricular Standards Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001B3">
+      <title>Kansas Curricular Standards for Mathematics</title>
+      <created>2003</created>
+      <topic>Math</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bd36fe2b-9dbb-469b-94d3-f940ae5ef12a">
+      <title>Kansas Extended Mathematics Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Extended Mathematics Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000279">
+      <title>Kansas Extended Mathematics Standards</title>
+      <created>2006</created>
+      <topic>Math</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="64da6066-62bf-4f0f-9a2f-3bb608a9f8fa">
+      <title>Program of Study Mathematics (Primary, Intermediate, High School)</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Program of Study Mathematics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001A7">
+      <title>Program of Study Mathematics (Primary, Intermediate, High School)</title>
+      <created>1998</created>
+      <topic>Math</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cbe7dc89-b61c-4870-b2fe-ab85138316b7">
+      <title>Student Performance Level Descriptions - Mathematics</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Performance Level Descriptions - Ma</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100022C">
+      <title>Student Performance Level Descriptions - Mathematics</title>
+      <created>2001</created>
+      <topic>Math</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1cbb4b41-df1a-4c2d-9efd-96621b6606b6">
+      <title>Core Content for Mathematics</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Core Content for Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100024B">
+      <title>Core Content for Mathematics</title>
+      <created>2006</created>
+      <topic>Math</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fa8e827c-bdc1-4d23-b3ba-f504c6adb13d">
+      <title>Program of Study Mathematics</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Program of Study Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100024C">
+      <title>Program of Study Mathematics</title>
+      <created>2006</created>
+      <topic>Math</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="88225c95-9625-4a59-b53b-1dea9c249715">
+      <title>Mathematics Framework</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Mathematics Framework</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001B6">
+      <title>Mathematics Framework</title>
+      <created>1997</created>
+      <topic>Math</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c307d5ff-4e2b-4f9a-b0e6-34f0ba165a27">
+      <title>Mathematics Grade-Level Expectations</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Mathematics Grade-Level Expectation</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100019C">
+      <title>Mathematics Grade-Level Expectations</title>
+      <created>2004</created>
+      <topic>Math</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4e567450-c47b-481c-bd39-a96559eca480">
+      <title>Louisiana Content Standards for Mathematics</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Content Standards for Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000269">
+      <title>Louisiana Content Standards for Mathematics</title>
+      <created>2005</created>
+      <topic>Math</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fdb9ad03-65ab-4f60-a204-dd91ceae39a0">
+      <title>Massachusetts Mathematics Curriculum Framework: Achieving Mathematical Power</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>Mathematics Achieving Mathematical</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000051">
+      <title>Massachusetts Mathematics Curriculum Framework: Achieving Mathematical Power</title>
+      <created>1996</created>
+      <topic>Math</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5f80351d-e862-4b3d-8251-8d970806bd83">
+      <title>Massachusetts Mathematics Curriculum Framework</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>Mathematics Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000F4">
+      <title>Massachusetts Mathematics Curriculum Framework</title>
+      <created>2000</created>
+      <topic>Math</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="388ee358-318e-4e3d-92a2-3f73f6923313">
+      <title>Supplement to the Massachusetts Mathematics Curriculum Framework</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>Supplement Mathematics Curriculum F</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001AE">
+      <title>Supplement to the Massachusetts Mathematics Curriculum Framework</title>
+      <created>2004</created>
+      <topic>Math</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0dffbed7-cc4f-4226-82d2-b9f6fc73efc1">
+      <title>Maryland State Content Standards for Mathematics</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Content Standards for Mathematics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000099">
+      <title>Maryland State Content Standards for Mathematics</title>
+      <created>2000</created>
+      <topic>Math</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="491fe1be-8697-4468-8e72-6cad66b0e5d5">
+      <title>Mathematics High School Core Learning Goals</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Mathematics Core Learning Goals</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000366">
+      <title>Mathematics High School Core Learning Goals</title>
+      <created>2001</created>
+      <topic>Math</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="71b59fc3-867f-444d-b0ee-de1989964e7b">
+      <title>Voluntary State Curriculum for Mathematics</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Voluntary State Curriculum for Math</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000055">
+      <title>Voluntary State Curriculum for Mathematics</title>
+      <created>2004</created>
+      <topic>Math</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="69633184-c264-4e7d-96c8-71892bbb2637">
+      <title>Learning Results for Mathematics</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Learning Results for Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000139">
+      <title>Learning Results for Mathematics</title>
+      <created>1997</created>
+      <topic>Math</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="63e38f9f-ee43-4eb5-9fd6-a2d7a05b8b0e">
+      <title>2007 Mathematics Grade Level Expectations for Grades 3-8</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Mathematics Grade Level Expectation</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100026B">
+      <title>2007 Mathematics Grade Level Expectations for Grades 3-8</title>
+      <created>2007</created>
+      <topic>Math</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d80d5353-37bd-4ead-9420-a2c18d70772f">
+      <title>Mathematics Learning Results: Parameters for Essential Instruction</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Mathematics Learning Results</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000388">
+      <title>Mathematics Learning Results: Parameters for Essential Instruction</title>
+      <created>2007</created>
+      <topic>Math</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c879c84e-6572-4940-b4b0-dbef909d447b">
+      <title>Maine Federal, State, and Local Accountability Standards - Mathematics</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Maine Federal, State, and Local</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003B6">
+      <title>Maine Federal, State, and Local Accountability Standards - Mathematics</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="58fece00-3044-4cb8-8934-a8c7d292a7ab">
+      <title>Mathematics Content Standards with Working Draft Benchmarks</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Content Standards with Working Draf</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000DD">
+      <title>Mathematics Content Standards with Working Draft Benchmarks</title>
+      <created>1995</created>
+      <topic>Math</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3545172c-4f90-433b-a026-a44015b8bb1a">
+      <title>Michigan Curriculum Framework</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Curriculum Framework</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000220">
+      <title>Michigan Curriculum Framework</title>
+      <created>1996</created>
+      <topic>Math</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="20862276-547e-4bc1-b729-4599ce3bf059">
+      <title>Mathematics Grade Level Expectations</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Math Grade Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000181">
+      <title>Mathematics Grade Level Expectations</title>
+      <created>2004</created>
+      <topic>Math</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ffcbcad1-e8c1-4f8a-9260-5555a965b886">
+      <title>High School Content Expectations Mathematics</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>High School Expectations Mathematic</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000283">
+      <title>High School Content Expectations Mathematics</title>
+      <created>2006</created>
+      <topic>Math</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dcfeb793-c2c7-482d-a4dc-1c9bfeaeff33">
+      <title>Mathematics Grade Level Content Expectations v.12.05</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Mathematics v.12.05 Grade Level Con</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100027D">
+      <title>Mathematics Grade Level Content Expectations v.12.05</title>
+      <created>2006</created>
+      <topic>Math</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9d098955-91e5-4317-baef-ee3ee98af43a">
+      <title>Minnesota Graduation Standards for Math</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Graduation Standards for Math</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000025">
+      <title>Minnesota Graduation Standards for Math</title>
+      <created>1998</created>
+      <topic>Math</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7cd46242-a00c-41e7-9ea9-d603ae9bae99">
+      <title>Minnesota Academic Standards Mathematics K-12</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Academic Standards Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100003E">
+      <title>Minnesota Academic Standards Mathematics K-12</title>
+      <created>2003</created>
+      <topic>Math</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="443279de-999c-43d1-9e60-36d1fc372a76">
+      <title>Minnesota Academic Standards Mathematics K-12</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Academic Standards Mathematics K-12</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100036B">
+      <title>Minnesota Academic Standards Mathematics K-12</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="022743ee-7f37-41e1-9b53-405be8a86ffe">
+      <title>Mathematics Grade-Level Expectations</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>Mathematics Grade-Level Expectation</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001AF">
+      <title>Mathematics Grade-Level Expectations</title>
+      <created>2004</created>
+      <topic>Math</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0209489e-f2c1-4f9a-9b1b-4b523ea2de3d">
+      <title>Version 2.0 Mathematics Course Level Expectations, April 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>Version 2.0 Course Expectation 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100036F">
+      <title>Version 2.0 Mathematics Course Level Expectations, April 2008</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1a1023b2-33b4-4efd-b14d-307dc9bcd2bc">
+      <title>Version 2.0 Mathematics Grade Level Expectations, April 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>Version 2.0 Mathematics April 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100036E">
+      <title>Version 2.0 Mathematics Grade Level Expectations, April 2008</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="22b9ad08-45f1-470e-9637-8f17c74d830c">
+      <title>Marco Polo Discovers Mississippi Mathematics Framework</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MS</jurisdiction>
+      <fileName>Marco Polo Discovers Mississippi Ma</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000F8">
+      <title>Marco Polo Discovers Mississippi Mathematics Framework</title>
+      <created>2000</created>
+      <topic>Math</topic>
+      <author>Mississippi</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bb83b1e0-2612-487a-987f-07609e99e128">
+      <title>2007 Mississippi Mathematics Framework Revised</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MS</jurisdiction>
+      <fileName>Mathematics Framework Revised</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000263">
+      <title>2007 Mississippi Mathematics Framework Revised</title>
+      <created>2007</created>
+      <topic>Math</topic>
+      <author>Mississippi</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fa77985e-fdce-4d8c-9257-4d19dbbcdd3a">
+      <title>Montana Standards for Mathematics</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Montana Standards for Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100015D">
+      <title>Montana Standards for Mathematics</title>
+      <created>1998</created>
+      <topic>Math</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1fac9cbf-ea4e-413f-942c-c1e277907524">
+      <title>Mathematics Grade Level Expectations</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Math Grade Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100032D">
+      <title>Mathematics Grade Level Expectations</title>
+      <created>2007</created>
+      <topic>Math</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3c5ca188-fd01-473a-803f-6b520ac3085c">
+      <title>Montana K-12 Mathematics Content Standards</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>K-12 Mathematics Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003DB">
+      <title>Montana K-12 Mathematics Content Standards</title>
+      <created>2009</created>
+      <topic>Math</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1ba9e2d2-1034-489f-b96a-90f83b2bcc14">
+      <title>NAEP 2005 Math Framework</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NAEP</jurisdiction>
+      <fileName>NAEP 2005 Math Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100023F">
+      <title>NAEP 2005 Math Framework</title>
+      <created>2005</created>
+      <topic>Math</topic>
+      <author>NAEP</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4148e1b8-aa8b-4a37-bdd1-05c50d4a48b4">
+      <title>Mathematics Framework for the 2007 NAEP</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NAEP</jurisdiction>
+      <fileName>Mathematics Framework 2007 NAEP</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100036A">
+      <title>Mathematics Framework for the 2007 NAEP</title>
+      <created>2007</created>
+      <topic>Math</topic>
+      <author>NAEP</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="70e6b820-62ab-4a00-b759-bdf7c1357872">
+      <title>Mathematics Standard Course of Study</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Mathematics Standard Course of Stud</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000A3">
+      <title>Mathematics Standard Course of Study</title>
+      <created>1999</created>
+      <topic>Math</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1e2f70f8-ecc4-45f0-9dc2-25a037d8c338">
+      <title>Standard Course of Study and Grade Level Indicator</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Standard Course of Study and Grade</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001C3">
+      <title>Standard Course of Study and Grade Level Indicator</title>
+      <created>2003</created>
+      <topic>Math</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9e7db6e9-2eeb-464a-853e-9cc52aea29e5">
+      <title>Essential Standards for Math K-12</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Essential Standards for Math K-12</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003DF">
+      <title>Essential Standards for Math K-12</title>
+      <created>2009</created>
+      <topic>Math</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7c7c1e3c-c0ff-4339-932b-32a3da6927bd">
+      <title>New Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NCEE</jurisdiction>
+      <fileName>New Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000196">
+      <title>New Standards</title>
+      <created>1997</created>
+      <topic>Math</topic>
+      <author>NCEE</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="92401223-3c6b-40c1-bb70-fa0a0b172f6c">
+      <title>Principles and Standards for School Mathematics</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NCTM</jurisdiction>
+      <fileName>Principles and Standards for School</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100000A">
+      <title>Principles and Standards for School Mathematics</title>
+      <created>2000</created>
+      <topic>Math</topic>
+      <author>NCTM</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3daab231-713b-409c-95a6-617f7970fce7">
+      <title>North Dakota Mathematics Content and Achievement Standards</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Mathematics Content and Achievement</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100022D">
+      <title>North Dakota Mathematics Content and Achievement Standards</title>
+      <created>2005</created>
+      <topic>Math</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="34c45733-ac58-4151-ac9e-0643e8669c40">
+      <title>Nebraska K-12 Mathematics Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>K-12 Mathematics Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100020C">
+      <title>Nebraska K-12 Mathematics Standards</title>
+      <created>1998</created>
+      <topic>Math</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e64a7420-bf6a-493c-b664-f12baea8b837">
+      <title>Nebraska Mathematics Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Mathematics Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100022A">
+      <title>Nebraska Mathematics Standards</title>
+      <created>2000</created>
+      <topic>Math</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="adc69fc7-1374-4619-b5f9-33991a5cebef">
+      <title>Nebraska Mathematics Standards</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Nebraska Mathematics Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003DC">
+      <title>Nebraska Mathematics Standards</title>
+      <created>2009</created>
+      <topic>Math</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="933d7c43-8b61-4f36-8df4-18655537b034">
+      <title>K-12 Mathematics Curriculum Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Mathematics Curriculum Framewo</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001E0">
+      <title>K-12 Mathematics Curriculum Framework</title>
+      <created>1995</created>
+      <topic>Math</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cb1fe050-34f4-4d12-8151-c14856323ccb">
+      <title>K-12 Mathematics New Hampshire Curriculum Framework</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Mathematics Curriculum Framewo</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100026D">
+      <title>K-12 Mathematics New Hampshire Curriculum Framework</title>
+      <created>2006</created>
+      <topic>Math</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="33345aac-d1c6-47be-8b4b-e84acc44d6b0">
+      <title>New Jersey Core Curriculum Content Standards for Mathematics</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Mathematics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100001B">
+      <title>New Jersey Core Curriculum Content Standards for Mathematics</title>
+      <created>1996</created>
+      <topic>Math</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="50ae2aff-1cdf-4c9c-a9a4-5136ed99e16a">
+      <title>New Jersey Core Curriculum Content Standards for Mathematics</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000164">
+      <title>New Jersey Core Curriculum Content Standards for Mathematics</title>
+      <created>2002</created>
+      <topic>Math</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="797283f1-1f66-41ab-994d-fc17f4e7de58">
+      <title>New Jersey Core Curriculum Content Standards for Mathematics</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Core Curriculum Standards Math</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100033C">
+      <title>New Jersey Core Curriculum Content Standards for Mathematics</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dd692a0c-5284-4262-99e3-d8b166d8e8f7">
+      <title>New Mexico Content Standards for Mathematics</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Content Standards for Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000044">
+      <title>New Mexico Content Standards for Mathematics</title>
+      <created>2002</created>
+      <topic>Math</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1b0b2120-f323-474a-bd36-bec61a1b9614">
+      <title>Nevada Mathematics Content Standards for Kindergarten and Grades 1 through 8 and 12</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>Mathematics Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000A5">
+      <title>Nevada Mathematics Content Standards for Kindergarten and Grades 1 through 8 and 12</title>
+      <created>2001</created>
+      <topic>Math</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="27e29a52-206a-4376-9bd5-50e65eac9cda">
+      <title>Nevada Mathematics Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>Mathematics Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000261">
+      <title>Nevada Mathematics Standards</title>
+      <created>2006</created>
+      <topic>Math</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8efbabbd-2432-41b2-8e0e-a8947a428f66">
+      <title>Elementary Science, Intermediate Science, Living Environment, Earth Science, Chemistry, and Physics Core Curriculum</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>Elementary Science, Intermediate Sc</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000224">
+      <title>Elementary Science, Intermediate Science, Living Environment, Earth Science, Chemistry, and Physics Core Curriculum</title>
+      <created>1996</created>
+      <topic>Math</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f4db82d9-0739-45a6-87a5-0ef59adb9e27">
+      <title>Mathematics Resource Guide with Core Curriculum</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>Mathematics Resource Guide with Cor</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001F9">
+      <title>Mathematics Resource Guide with Core Curriculum</title>
+      <created>1999</created>
+      <topic>Math</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9d40ac80-7df8-4322-8fe2-d1ab17fcc743">
+      <title>Mathematics Core Curriculum</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>Mathematics Core Curriculum</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000221">
+      <title>Mathematics Core Curriculum</title>
+      <created>2005</created>
+      <topic>Math</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="756daebb-d31c-43b4-bec6-5d26ea7f86bc">
+      <title>Mathematics: Ohio's Model Competency-Based Program</title>
+      <localAdoptionDate>1994</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Mathematics: Ohio's Model Competenc</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100014A">
+      <title>Mathematics: Ohio's Model Competency-Based Program</title>
+      <created>1994</created>
+      <topic>Math</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d8a251f1-6c54-492c-92e6-422c80c02250">
+      <title>Academic Content Standards K-12 Mathematics</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Academic Content Standards K-12 Mat</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100017A">
+      <title>Academic Content Standards K-12 Mathematics</title>
+      <created>2001</created>
+      <topic>Math</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bf8253a1-0d5d-4580-9739-e833e1ff8b7c">
+      <title>Early Learning Content Standards - Mathematics</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Early Learning Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000351">
+      <title>Early Learning Content Standards - Mathematics</title>
+      <created>2003</created>
+      <topic>Math</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6eec1d10-0ba9-49e4-b013-5f8f7836bf1d">
+      <title>Priority Academic Student Skills for Mathematics</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Mathematics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100014E">
+      <title>Priority Academic Student Skills for Mathematics</title>
+      <created>2000</created>
+      <topic>Math</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e3cd6ddf-ada1-4cc9-ba27-40dd5b7766e6">
+      <title>Priority Academic Student Skills (PASS) for Mathematics</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001B1">
+      <title>Priority Academic Student Skills (PASS) for Mathematics</title>
+      <created>2002</created>
+      <topic>Math</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3dc8c31a-b0dc-4ad0-9f0b-883e96989460">
+      <title>Priority Academic Student Skills - Math Revised 2009</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS - Math rev.2009</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003D4">
+      <title>Priority Academic Student Skills - Math Revised 2009</title>
+      <created>2002</created>
+      <topic>Math</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="27136faa-24e0-4953-9e0b-77024444090f">
+      <title>Mathematics Grade-Level Standards &amp;amp; K-2 Foundations</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Mathematics Grade-Level Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000143">
+      <title>Mathematics Grade-Level Standards &amp;amp; K-2 Foundations</title>
+      <created>2002</created>
+      <topic>Math</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8c614514-4662-438d-ac60-06c271cba5bf">
+      <title>Oregon High School Math Standards, Oregon Standards Newspaper 2008-2009</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Oregon High School Math 08-09</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000373">
+      <title>Oregon High School Math Standards, Oregon Standards Newspaper 2008-2009</title>
+      <created>2002</created>
+      <topic>Math</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="82f299f9-c018-42cd-8492-cba61daf3d4f">
+      <title>Mathematics Content Standards For Kindergarten through Grade 8</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Mathematics Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100033A">
+      <title>Mathematics Content Standards For Kindergarten through Grade 8</title>
+      <created>2007</created>
+      <topic>Math</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="61f4bafc-0cec-40ee-bbfc-992ab94ee59b">
+      <title>State of Oregon 2009 High School Mathematics Academic Content Standards</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>High School Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003D1">
+      <title>State of Oregon 2009 High School Mathematics Academic Content Standards</title>
+      <created>2009</created>
+      <topic>Math</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c3f0bf45-cf6b-4679-a2c1-90650c618aca">
+      <title>Academic Standards for Mathematics</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>PA</jurisdiction>
+      <fileName>Academic Standards for Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000FC">
+      <title>Academic Standards for Mathematics</title>
+      <created>1999</created>
+      <topic>Math</topic>
+      <author>Pennsylvania</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b5c23fe2-bb00-4f77-a273-c3c3a27f3497">
+      <title>The Rhode Island Mathematics Framework K-12</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>RI</jurisdiction>
+      <fileName>Mathematics Framework K-12</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100007B">
+      <title>The Rhode Island Mathematics Framework K-12</title>
+      <created>1995</created>
+      <topic>Math</topic>
+      <author>Rhode Island</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5f1c0f4e-71f7-4417-b518-43ca009dc048">
+      <title>Mathematics Grade-Level Expectations</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>RI</jurisdiction>
+      <fileName>Math Grade Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000337">
+      <title>Mathematics Grade-Level Expectations</title>
+      <created>2007</created>
+      <topic>Math</topic>
+      <author>Rhode Island</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c05b3e5f-3b8d-4b26-ba68-1cdb1a2f388d">
+      <title>Mathematics Curriculum Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>SC</jurisdiction>
+      <fileName>Mathematics Curriculum Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001B4">
+      <title>Mathematics Curriculum Standards</title>
+      <created>2000</created>
+      <topic>Math</topic>
+      <author>South Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7fe78793-21d2-4f98-b11f-9f41351a6eeb">
+      <title>South Carolina Mathematics Academic Standards</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>SC</jurisdiction>
+      <fileName>Mathematics Academic Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100029D">
+      <title>South Carolina Mathematics Academic Standards</title>
+      <created>2007</created>
+      <topic>Math</topic>
+      <author>South Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a6dba343-4808-4a13-965b-88cf166f8b0e">
+      <title>Mathematics Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Mathematics Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000E7">
+      <title>Mathematics Standards</title>
+      <created>1998</created>
+      <topic>Math</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e432903f-f53b-4c81-acab-3710476dcae0">
+      <title>Mathematics Content Standards</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Mathematics Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100019D">
+      <title>Mathematics Content Standards</title>
+      <created>2004</created>
+      <topic>Math</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8587f61e-010f-44bd-a2e4-285576427786">
+      <title>Secondary Mathematics Syllabuses</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>Singapore</jurisdiction>
+      <fileName>Secondary Mathematics Syllabuses</fileName>
+      <status>In Process</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000357">
+      <title>Secondary Mathematics Syllabuses</title>
+      <created>2007</created>
+      <topic>Math</topic>
+      <author></author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0334fdef-966a-4264-b3e8-e0744fd6c67f">
+      <title>2001 Tennessee Mathematics Curriculum Standards</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Mathematics Curriculum Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000032">
+      <title>2001 Tennessee Mathematics Curriculum Standards</title>
+      <created>2001</created>
+      <topic>Math</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="044fbe78-cd1f-471f-8e07-2cade986ecf1">
+      <title>Mathematics Curriculum Standards: Grade Level Accomplishments</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Grade Level Accomplishments</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100018D">
+      <title>Mathematics Curriculum Standards: Grade Level Accomplishments</title>
+      <created>2001</created>
+      <topic>Math</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c62fad85-0f4a-4985-9b7d-0630e2cce609">
+      <title>Tennessee Mathematics Courses 9 - 12</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Mathematics Courses 9 - 12</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000231">
+      <title>Tennessee Mathematics Courses 9 - 12</title>
+      <created>2004</created>
+      <topic>Math</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="63477e93-7e50-4de7-97da-65b4665e25c5">
+      <title>Tennessee Mathematics Standards</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Mathematics Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000339">
+      <title>Tennessee Mathematics Standards</title>
+      <created>2009</created>
+      <topic>Math</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5f56a8e0-dc08-40cd-9a77-3a100ca7ef53">
+      <title>Chapter 111. Texas Essential Knowledge and Skills for Mathematics</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>Chapter 111. TEKS for Mathematics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001A4">
+      <title>Chapter 111. Texas Essential Knowledge and Skills for Mathematics</title>
+      <created>1998</created>
+      <topic>Math</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5ffda79e-c0b6-4337-963e-7dfdd4c49021">
+      <title>Chapter 111. Texas Essential Knowledge and Skills for Mathematics, Amended 2006</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>TEKS Math Amended 2006</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000247">
+      <title>Chapter 111. Texas Essential Knowledge and Skills for Mathematics, Amended 2006</title>
+      <created>1998</created>
+      <topic>Math</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="de32e79b-59d8-4fb1-b2dd-d1435013e58d">
+      <title>Mathematics Core Curriculum</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>UT</jurisdiction>
+      <fileName>Mathematics Core Curriculum</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100006E">
+      <title>Mathematics Core Curriculum</title>
+      <created>2003</created>
+      <topic>Math</topic>
+      <author>Utah</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="892d8b1e-00f4-4b78-b2a5-80b9b5b2dbf3">
+      <title>Utah Mathematics Core Curriculum</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>UT</jurisdiction>
+      <fileName>Mathematics Core Curriculum</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002A0">
+      <title>Utah Mathematics Core Curriculum</title>
+      <created>2007</created>
+      <topic>Math</topic>
+      <author>Utah</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e906d1f2-f6e0-4748-b242-7664c7830be7">
+      <title>Mathematics Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>Mathematics Standards of Learning f</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000142">
+      <title>Mathematics Standards of Learning for Virginia Public Schools</title>
+      <created>1995</created>
+      <topic>Math</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fbffd3e8-6fb0-497e-a3eb-6da53e665b0a">
+      <title>Mathematics Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>Mathematics Standards of Learning f</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100012C">
+      <title>Mathematics Standards of Learning for Virginia Public Schools</title>
+      <created>2001</created>
+      <topic>Math</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bb9913a8-b4c3-4353-952d-cf552db62ef5">
+      <title>Mathematics Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>Mathematics Standards of Learning f</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003C5">
+      <title>Mathematics Standards of Learning for Virginia Public Schools</title>
+      <created>2009</created>
+      <topic>Math</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7582c08d-3191-42f2-acea-2f698d0237c1">
+      <title>Vermont's Framework of Standards and Learning Opportunities: Science, Mathematics, and Technology</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Science, Mathematics, and Technolog</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100018F">
+      <title>Vermont's Framework of Standards and Learning Opportunities: Science, Mathematics, and Technology</title>
+      <created>2000</created>
+      <topic>Math</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3abf3ef9-c30f-4a1e-99d3-d45f1d167303">
+      <title>Grade Expectations for Vermont's Framework of Standards and Learning Opportunities</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Grade Expectations for Vermont's Fr</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100022F">
+      <title>Grade Expectations for Vermont's Framework of Standards and Learning Opportunities</title>
+      <created>2004</created>
+      <topic>Math</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c9733f64-245b-4b3b-940d-10a0b6c6be6f">
+      <title>Essential Academic Learning Requirements in Mathematics</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Essential Academic Learning Require</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001CE">
+      <title>Essential Academic Learning Requirements in Mathematics</title>
+      <created>1997</created>
+      <topic>Math</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="308a4c25-357d-4619-b240-43f95dc30347">
+      <title>Essential Academic Learning Requirements in Mathematics</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Essential Academic Learning Require</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100017D">
+      <title>Essential Academic Learning Requirements in Mathematics</title>
+      <created>2004</created>
+      <topic>Math</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dad046c5-0f9d-460b-bc4a-8a76af0f19b1">
+      <title>Washington State K-12 Mathematics Standards</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>K-12 Mathematics Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000340">
+      <title>Washington State K-12 Mathematics Standards</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="52a73d86-c23e-4b1d-a597-dc7ec51c4f2e">
+      <title>Wisconsin Model Academic Standards for Mathematics</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>WI</jurisdiction>
+      <fileName>Wisconsin Model Academic Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100004E">
+      <title>Wisconsin Model Academic Standards for Mathematics</title>
+      <created>1998</created>
+      <topic>Math</topic>
+      <author>Wisconsin</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e9c5cb2f-6515-49de-b764-e96731f03a92">
+      <title>Wisconsin Proficiency Score Standards</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>WI</jurisdiction>
+      <fileName>Wisconsin Proficiency Score Standar</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100022E">
+      <title>Wisconsin Proficiency Score Standards</title>
+      <created>2002</created>
+      <topic>Math</topic>
+      <author>Wisconsin</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4952cf76-cbad-46d6-81f1-8f512f30e78f">
+      <title>West Virginia's Mathematics Instructional Goals and Objectives</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia's Mathematics Instruc</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000F9">
+      <title>West Virginia's Mathematics Instructional Goals and Objectives</title>
+      <created>2000</created>
+      <topic>Math</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="52ad4ce4-62d4-4465-aade-c799885a24a8">
+      <title>Mathematics Content Standards and Objectives for West Virginia Schools</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>Mathematics Content Standards and O</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000082">
+      <title>Mathematics Content Standards and Objectives for West Virginia Schools</title>
+      <created>2003</created>
+      <topic>Math</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cab97521-e00c-4e2d-9d0f-6ae835d76f8f">
+      <title>21st Century Mathematics Content Standards and Objectives for West Virginia Schools</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>21st Century Mathematics Content St</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100023B">
+      <title>21st Century Mathematics Content Standards and Objectives for West Virginia Schools</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bf973577-081f-450b-b603-bb2c1e9eda3c">
+      <title>Mathematics Content and Performance Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Mathematics Content and Performance</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100009D">
+      <title>Mathematics Content and Performance Standards</title>
+      <created>1998</created>
+      <topic>Math</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b9b64ec2-d1f4-434b-8d7d-9f1140badf49">
+      <title>Wyoming Mathematics Content and Performance Standards</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Mathematics Content and Performance</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000230">
+      <title>Wyoming Mathematics Content and Performance Standards</title>
+      <created>2003</created>
+      <topic>Math</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ebda4de7-44fc-4989-b1bf-7a667dd340b6">
+      <title>Wyoming Mathematics Content and Performance Standards</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Math</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Wyoming Mathematics Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000381">
+      <title>Wyoming Mathematics Content and Performance Standards</title>
+      <created>2008</created>
+      <topic>Math</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+</mappings>

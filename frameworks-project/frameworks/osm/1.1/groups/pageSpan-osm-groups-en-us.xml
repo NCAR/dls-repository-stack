@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: pageSpan-osm-groups-en-us.xml,v 1.2 2011/06/27 20:26:21 ginger Exp $ --> 
+<opml version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/non-vocab-fields.xsd">
+	<head>
+		<title>Page Start/End</title>
+		<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="Page Start/End" audience="submission" path="/record/general/pageSpan" deftn="The numbered/lettered page range that comprises an individual resource."/>
+	</head>
+	<bestPractices>
+		<practice>This field is optional.</practice> 
+		<practice>Use for articles (journal, magazine, newsletter, proceedings or encyclopedia entries), book chapters, book forewords, book reviews, bibliographies/indexes or portions of technical notes and reports.</practice> 
+		<practice>Enter either the page start or page end depending on which field you are completing.</practice>
+		<practice>Complete using Arabic numerals and/or letters, as appropriate.</practice> 
+		<practice>Use a hyphen between the start and end pages (e.g. 53-67).</practice> 
+		<practice>When page numbers already use hyphens, use a slash between the start and end pages (e.g. 1-2/1-17).</practice> 
+		<practice link1="Identifier" style1="bold">Some publishers, such as AGU, utilize article and/or citation numbers (e.g. EG4066032) rather than traditional page numbers. Thus, enter the article/citation number in the Identifier field, and leave this field blank.</practice> 
+		 <practice>Do not enter the total number of pages (e.g. 53 pp).</practice> 
+		 <practice link1="Total Pages" style1="bold">Do not use this field when you would express the entire page span for an item (e.g. entire journals, magazines, newsletters, proceedings, books, or encyclopedias). Use the Total Pages field instead.</practice> 
+		 <practice>Do not preface or follow the pages with a number sign or any abbreviations.</practice> 
+		<practice>Example: 1-2/1-17</practice>
+		<practice>Example: 12-26</practice>
+	 </bestPractices>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

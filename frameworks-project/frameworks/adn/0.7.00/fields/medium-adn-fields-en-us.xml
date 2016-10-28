@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: medium-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:47 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Medium" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/technical/online/mediums/medium">
+		<definition>the MIME type associated with the content of a resource which specifies the type and subtype of data so that a web browser can launch the appropriate helper application or plug-in</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-11-22">Enter MIME type in the form of type/subtype (e.g. text/html).</practice>
+				<practice status="current" originDate="2005-11-22">Include the MIME type for the resource itself.</practice>
+				<practice status="current" originDate="2005-11-02">If a resource needs or uses a helper application, include the MIME type for the needed application, audio, image, text or video that are downloadable or viewable from the resource.</practice>
+				<practice status="current" originDate="2005-11-22" link1="MIME types list" url1="http://www.ltsw.se/knbase/internet/mime.htp">Use a MIME types list to help determine the proper MIME type.</practice>
+			</dos>
+
+
+			<donts>
+				<practice status="current" originDate="2005-11-22">Do not include a MIME type for everything the resource uses - only those that are absolutely required in order for the resource to function.</practice>
+				<practice status="current" originDate="2005-11-22">Do not break apart a resource into all conceivable MIME types, use the most dominant MIME type(s).</practice>
+				<practice status="obsolete" originDate="2001-01-01" archDate="2005-11-22">Do not include the MIME type for the webpage of the resource itself.</practice>
+			</donts>
+			
+			<examples>
+				<practice status="current" originDate="2006-03-09" link1="application/msword:" style1="bold">application/msword: any Microsoft Word document.</practice>
+				<practice status="current" originDate="2006-03-09" link1="text:/html:" style1="bold">text:/html: a generic web page.</practice>
+				<practice status="current" originDate="2006-03-09" link1="image/jpeg:" style1="bold" link2="satellite image" url2="http://weather.is.kochi-u.ac.jp/SE/00Latest.jpg">image/jpeg: a jpg image like this satellite image showing the coast of China.</practice>
+				<practice status="current" originDate="2006-03-09" link1="audio/x-wav:" style1="bold">audio/x-wav: audio files with a file extension of .wav.</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>application/msword</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005, 2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>Mountain Simulation: Assignment (title provided or enhanced by cataloger)</title>
+<description>This applet simulates the difficult concepts of adiabatic processes. A leaf visually symbolizes a parcel of air rising over a mountain. Users are allowed to vary the beginning temperature and vapor-pressure of the parcel of air, and the relative wind speed as it moves up and over a mountain. Graphs then display temperature verus altitude and vapor pressure as the leaf rises and falls. A series of questions guide the student to explore the conditions ( temperature, altitude, vapor pressure, dew point ) under which a cloud would form.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Atmospheric science</subject>
+</subjects>
+<keywords>
+<keyword>Adiabatic processes</keyword>
+<keyword>Vapor pressure</keyword>
+<keyword>Cloud formation</keyword>
+<keyword>Temperature</keyword>
+<keyword>Dew point</keyword>
+</keywords>
+</general>
+<lifecycle>
+<contributors>
+<contributor date="1999" role="Author">
+<person>
+<nameTitle>Dr</nameTitle>
+<nameFirst>Douglas</nameFirst>
+<nameLast>Yarger</nameLast>
+<instName>Partnerships to Advance Learning in Science (PALS), Department of Geological and Atmospheric Sciences</instName>
+<emailPrimary>doug@iastate.edu</emailPrimary>
+</person>
+</contributor>
+<contributor role="Contact">
+<person>
+<nameTitle>Dr</nameTitle>
+<nameFirst>Douglas</nameFirst>
+<nameLast>Yarger</nameLast>
+<instName>Partnerships to Advance Learning in Science (PALS), Department of Geological and Atmospheric Sciences</instName>
+<emailPrimary>doug@iastate.edu</emailPrimary>
+</person>
+</contributor>
+<contributor date="1999" role="Publisher">
+<organization>
+<instName>Partnerships to Advance Learning in Science (PALS), Department of Geological and Atmospheric Sciences</instName>
+<instUrl>http://www.pals.iastate.edu</instUrl>
+</organization>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-029">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-08-01" created="2000-08-01"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://www.pals.iastate.edu/simulations/Mtnsim/index.html</primaryURL>
+<mediums>
+<medium>text/x-java-source</medium>
+<medium>text/html</medium>
+</mediums>
+<requirements>
+<requirement>
+<reqType>DLESE:Other:More specific technical requirements</reqType>
+</requirement>
+</requirements>
+<otherRequirements>
+<otherRequirement>
+<otherType>Java must be enabled on your browser.</otherType>
+</otherRequirement>
+</otherRequirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:Undergraduate lower division</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate upper division</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Learning materials:Computer activity</resourceType>
+<resourceType>DLESE:Learning materials:Lab activity</resourceType>
+<resourceType>DLESE:Visual:Scientific visualization</resourceType>
+</resourceTypes>
+<interactivityLevel>LOM:High</interactivityLevel>
+<interactivityType>LOM:Active</interactivityType>
+<description>Developing, Implementing, and Sharing Constructivist Learning Resources</description>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>Copyright 1999, PALS, all rights reserved</description>
+</rights>
+<relations>
+<relation>
+<idEntry entry="DLESE-000-000-000-736" kind="DC:Is part of"/>
+</relation>
+<relation>
+<idEntry entry="DLESE-000-000-004-887" kind="DC:Is part of"/>
+</relation>
+</relations>
+</itemRecord>

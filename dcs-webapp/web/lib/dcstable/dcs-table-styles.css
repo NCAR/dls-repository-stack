@@ -1,0 +1,88 @@
+
+/* DCS Table Styles */
+#dcs-table {
+	width:100%;
+	border-collapse: collapse;
+}
+
+img.sort-widget {
+	border: 0;
+	width : 11px;
+	height: 11px;
+	padding: 0px 0px 0px 5px;
+}
+
+#dcs-table .header-row {
+	background-color:#CCCEE6;
+	text-align:center;
+	cursor:default;
+}
+
+/* TEXT appearing in header-row */
+#dcs-table .header-row td {
+	white-space: nowrap;
+	font-weight: bold;
+	font-size:0.7em;
+}
+
+/* table Rows (with support for rollover*/
+.dcs-table-row {
+	background-color: #e3e4f1;
+	cursor:default;
+}
+
+/* not used - this is how we would zebra-fy (see dcs-table.js)*/
+.dcs-table-row.odd {
+	background-color: white;
+}
+
+.dcs-table-row.over {
+	background-color: #ebebf1;
+}
+
+.dcs-table-row.highlight {
+	background-color: #ffffcc;
+}
+
+/* dcs table CELLS */
+#dcs-table tr td {
+	border:1px solid #666666;
+	padding:5px;
+}
+
+/* header cells (sortable) with clickHandlers */
+#dcs-table tr.header-row td.clickable {
+	color:#333366;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+#dcs-table tr.header-row td.clickable.over {
+	/* color:white; */
+	color:purple;
+	background-color:#CCCEE6;
+}
+
+/* item cells */
+#dcs-table tr.dcs-table-row td.over {
+	/* background-color:#f6f6f6; */
+	background-color:#ffffff;
+}
+
+/* item cells with clickHandlers */
+#dcs-table tr.dcs-table-row td.clickable {
+	color:#333366;
+	/* text-decoration:underline; */
+	cursor:pointer;
+}
+
+#dcs-table tr.dcs-table-row td.clickable.over {
+	color:purple;
+}
+
+#dcs-table tr.dcs-table-row td.clickable.selected {
+	color:white;
+	background-color:#333366;
+}
+
+

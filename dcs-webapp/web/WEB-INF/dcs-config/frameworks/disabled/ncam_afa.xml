@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.dlese.org/Metadata/dcs/framework-config/dcsFrameworkConfig.xsd">
+  <xmlFormat>ncam_afa</xmlFormat>
+  <schemaInfo>
+    <rootElementName>record</rootElementName>
+    <schemaURI>http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd</schemaURI>
+    <paths>
+      <path pathName="id" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="true">/record/general/recordID</path>
+      <path pathName="recordDate" valueType="date" readOnly="true" requiredByMinimalRecord="true" requiredByCopyRecord="true">/record/general/recordDate</path>
+      <path pathName="url" requiredByCopyRecord="true" valueType="uniqueUrl" requiredByMinimalRecord="true" readOnly="false">/record/general/url</path>
+      <path pathName="title" requiredByCopyRecord="true" readOnly="false" requiredByMinimalRecord="true">/record/general/title</path>
+      <path pathName="description" requiredByCopyRecord="true" readOnly="false" requiredByMinimalRecord="true">/record/general/description</path>
+    </paths>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>3</baseRenderLevel>
+    <rebuildOnStart>true</rebuildOnStart>
+    <firstPage>general</firstPage>
+    <editorPages>
+      <editorPage pageLabel="General">general</editorPage>
+      <editorPage pageLabel="Access For All">accessForAll</editorPage>
+      <editorPage pageLabel="Educational">educational</editorPage>
+      <editorPage pageLabel="Lifecycle">lifecycle</editorPage>
+    </editorPages>
+    <vocabLayoutURI>http://ns.nsdl.org/ncs/ncam_afa/1.00/build/groups-list.xml</vocabLayoutURI>
+    <fieldInfoURI>http://ns.nsdl.org/ncs/ncam_afa/1.00/build/fields-list.xml</fieldInfoURI>
+  </editorInfo>
+</frameworkConfigRecord>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: keyword-id-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:46 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Source id - keyword" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/general/keywords/keyword/@id">
+		<definition>a unique identification number from the source cited for the keyword</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2006-02-27">Enter keyword id information when the keyword is derived from an external library/repository or thesaurus and it is desirable to access the source of the term.</practice>
+			</dos>
+			<examples>
+				<practice status="current" originDate="2006-09-20">Id: SoMeLIB-123</practice>
+				<practice status="current" originDate="2006-09-20">Src: The ABC Thesaurus</practice>
+				<practice status="current" originDate="2006-09-20">Url: http://some.url.org</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>SoMeLIB-123</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

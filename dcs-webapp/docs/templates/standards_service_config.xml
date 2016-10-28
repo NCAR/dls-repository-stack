@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Comment "config" elements to deactivate the 
+	 standards service for that framework -->
+
+<SuggestionServiceConfig>
+
+<!-- msp2 is not active -->
+<!--   
+  <config>
+    <xmlFormat>msp2</xmlFormat>
+    <xpath>/record/educational/standard_ASN_ID</xpath>
+	<stdSource>
+		<asn/>
+	</stdSource>
+  </config> -->
+  
+  <config>
+    <xmlFormat version="0.7.00">adn</xmlFormat>
+    <xpath>/itemRecord/educational/contentStandards/contentStandard</xpath>
+    <stdSource>
+      <dataTypes>
+        <dataType>NCGEgeographyContentStandardsType</dataType>
+        <dataType>NSESscienceContentStandardsAllType</dataType>
+      </dataTypes>
+    </stdSource>
+  </config>
+  
+  <!-- math_path and comm_anno are deactivated -->
+<!-- 
+  <config>
+    <xmlFormat>math_path</xmlFormat>
+    <xpath>/record/educational/standard_ASN_ID</xpath>
+	<stdSource>
+		<asn/>
+	</stdSource>
+  </config>
+  
+  <config>
+    <xmlFormat>comm_anno</xmlFormat>
+    <xpath>/comm_anno/ASNstandard</xpath>
+	<stdSource>
+		<asn/>
+	</stdSource>
+  </config> 
+ -->
+  
+  <config>
+    <xmlFormat>lar</xmlFormat>
+    <xpath>/record/standard/alignment/id</xpath>
+	<stdSource>
+		<asn/>
+	</stdSource>
+  </config>
+ 
+  <config>
+    <xmlFormat>ncs_item</xmlFormat>
+    <xpath>/record/educational/standards/asnID</xpath>
+	<stdSource>
+		<asn/>
+	</stdSource>
+  </config>
+  
+  <config>
+    <xmlFormat>eng_path</xmlFormat>
+    <xpath>/record/educational/standard_ASN_ID</xpath>
+	<stdSource>
+		<asn/>
+	</stdSource>
+  </config>
+</SuggestionServiceConfig>

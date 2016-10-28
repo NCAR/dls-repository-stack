@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: dateType-osm-fields-en-us.xml,v 1.15 2013/08/27 20:32:42 ginger Exp $ --> 
+<!--documentation: 2013-08-27: removed terms Accepted, In press, Modified and Submitted-->
+<!--
+			<termAndDeftn vocab="Accepted">date on which a work was selected for publication</termAndDeftn>
+			<termAndDeftn vocab="In press">date on which a work was in the process of being published</termAndDeftn>
+			<termAndDeftn vocab="Modified">date on which a resource was altered from a previous state</termAndDeftn>
+			<termAndDeftn vocab="Submitted">date on which a work was sent to a publisher for consideration</termAndDeftn>
+-->
+
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/dateType.xsd">
+  <field name="Date - type" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/coverage/date/@type">
+		<definition>the kind of date being associated with the resource</definition> 
+
+		<terms>
+			<termAndDeftn vocab="Circa">approximate date on which a resource was produced</termAndDeftn>
+			<termAndDeftn vocab="Created">date on which a resource was produced</termAndDeftn>
+			<termAndDeftn vocab="Digitized">date on which an analog or physical resource was transferred into or replicated by an electronic format</termAndDeftn>
+			<termAndDeftn vocab="Folder">date applied to a file unit of like materials</termAndDeftn>
+			<termAndDeftn vocab="Presented">date on which a work was communicated to an audience</termAndDeftn>
+			<termAndDeftn vocab="Published">date on which a resource formally appeared in print</termAndDeftn>
+			
+		</terms>
+		 <bestPractices>
+			<dos>
+				<practice status="current" originDate="2010-05-31">This is field is required.</practice> 
+				<practice status="current" originDate="2010-05-31">This field cannot be repeated unless a new date tag set is added.</practice> 
+				<practice status="current" originDate="2010-07-17" link1="Created" style1="bold">Use the term Created for works that exist but are not published.</practice>
+				<practice status="current" originDate="2012-02-17" link1="Folder" style1="bold">Use the term Folder for archival materials.</practice>
+				 <practice status="current" originDate="2010-05-31">Use to express dates within the publishing lifecycle.</practice> 
+
+			 </dos>
+			 <donts>
+				 <practice status="current" originDate="2010-05-31" link1="dateRange" style1="bold">Do not use this field to represent a embargo time periods. Use the dateRange field instead.</practice> 
+			 </donts>
+			 <examples>
+				<practice status="current" originDate="2010-05-31" link1="Created" style1="bold">Created: the group of SOARS papers were created and digitized but they were not published in a journal.</practice>
+			</examples>
+		 </bestPractices>
+		 <documentation>
+				<obligation>required</obligation>
+				<min>1</min>
+				<max>1</max>
+				<XMLdataTypes>
+					<XMLdataType>string</XMLdataType>
+				</XMLdataTypes>
+				<domain>controlled vocabulary</domain>
+				<example>Published</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

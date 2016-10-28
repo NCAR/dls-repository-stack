@@ -1,0 +1,17 @@
+
+		<div class="browse-item-title">
+			${viewForm.docReader.shortTitle}
+		</div>
+		<logic:notEmpty name="viewForm" property="docReader.collectionUrl">
+			<div class="searchResultValues">
+				<a href='${viewForm.docReader.collectionUrl}' 
+					 target="_blank">${sf:truncate(viewForm.docReader.collectionUrl, urlTruncateLen)}</a> 
+				(collection URL)
+			</div>
+		</logic:notEmpty>
+
+<%-- 		<!-- overview for master collections 
+			(not relevant for item-level collection records -->
+		<st:collectionOverview reader="${viewForm.docReader}" /> 
+--%>
+

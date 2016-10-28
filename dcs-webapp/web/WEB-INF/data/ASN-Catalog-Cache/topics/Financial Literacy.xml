@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AsnDocuments topic="Financial Literacy">
+  <asnDocument id="http://asn.jesandco.org/resources/D2588434">
+    <title>Iowa Core 21st Century Skills - Financial Literacy</title>
+    <topic>Financial Literacy</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2604492">
+    <title>National Standards for Financial Literacy</title>
+    <topic>Financial Literacy</topic>
+    <author>NCEE</author>
+    <authorName>NCEE</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2588054">
+    <title>Personal Finance Standards</title>
+    <topic>Financial Literacy</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2568945">
+    <title>South Dakota Personal Finance Content Standards</title>
+    <topic>Financial Literacy</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569683">
+    <title>Priority Academic Student Skills (PASS) for Personal Financial Literacy</title>
+    <topic>Financial Literacy</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+</AsnDocuments>

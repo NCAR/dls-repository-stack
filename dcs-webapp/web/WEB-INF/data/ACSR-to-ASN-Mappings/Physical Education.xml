@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="Physical Education">
+  <mapping>
+    <acsrInfo id="e9481e93-5ca5-405e-ac2f-2a60eee4e5d9">
+      <title>Physical Education Content Standards and Benchmarks</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Physical Education</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Physical Education Content Standard</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003D5">
+      <title>Physical Education Content Standards and Benchmarks</title>
+      <created>2007</created>
+      <topic>Physical Education</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="901d18a1-fd87-4323-851f-60ea9b94ec44">
+      <title>Physical Education K-8 Grade Level Content Expectations v.03.08</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Physical Education</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Physical Education K-8 GLCE v.03.08</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003E1">
+      <title>Physical Education K-8 Grade Level Content Expectations v.03.08</title>
+      <created>2008</created>
+      <topic>Physical Education</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="54a1750e-7d75-4ebb-a6b1-8760a79e629b">
+      <title>Physical Education Standards with Benchmarks and Performance Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Physical Education</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Physical Education Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000372">
+      <title>Physical Education Standards with Benchmarks and Performance Standards</title>
+      <created>2006</created>
+      <topic>Physical Education</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+</mappings>

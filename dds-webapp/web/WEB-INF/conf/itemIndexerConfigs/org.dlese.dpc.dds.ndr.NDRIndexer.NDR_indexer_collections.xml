@@ -1,0 +1,67 @@
+<!-- 
+	This file configures the NDR collections that are indexed and sychronized in the DDS repository.
+	Edit this file and replace the examples below with the desired NDR instance and 
+	configuration for collections. Choose one or more configuration option as desired (may be combined).
+	
+	DDS looks for this file in the location defined by the context parameter 'itemIndexerConfigDir'
+-->
+<NDR_Collections>
+	
+	<!-- The location of the NDR instance to fetch records from. -->
+	<!-- <ndrApiBaseUrl>http://ndr.nsdl.org/api</ndrApiBaseUrl> --><!-- Production instance -->
+	<ndrApiBaseUrl>http://ndr.nsdlib.org/api</ndrApiBaseUrl><!-- Test instance -->
+	
+	<!-- HTTP User-Agent sent in NDR requests (defaults to 'DDS Indexer') -->
+	<userAgent>DDS Indexer</userAgent>
+	
+	
+	<!-- 	
+		Configure NDR collections that are defined in the NCS.
+		This goes out to the NCS web service to discover the collections and then
+		configures them in the DDS. Items are indexed as nsdl_dc canonical form or
+		in their native format, as indicated below.
+		
+		* ncsSearchApiBaseUrl - Base URL to the NCS instance that manages the collections in the NDR
+		* formatType - One of 'canonical_nsdl_dc' or 'native' 
+		* ncsCollectionStatus - One or more collection status to limit to (optional)
+		* searchQueryConstraint - Query to constrin to (optional) 
+	-->
+	<ncsManagedCollections>
+		<ncsSearchApiBaseUrl>http://ncs.nsdl.org/mgr/services/ddsws1-1</ncsSearchApiBaseUrl>
+		<formatType>canonical_nsdl_dc</formatType>
+		<canonicalNsdlDcRelatedFormats>
+			<relatedFormat>comm_anno</relatedFormat>
+			<relatedFormat>comm_para</relatedFormat>
+			<!-- <relatedFormat>dlese_anno</relatedFormat> -->			
+		</canonicalNsdlDcRelatedFormats>		
+		<ncsCollectionStatusFilter>
+			<ncsCollectionStatus>Done</ncsCollectionStatus>
+			<!-- <ncsCollectionStatus>In Progress</ncsCollectionStatus> -->
+		</ncsCollectionStatusFilter>
+		
+		<!-- Remove collections that do not have the proper OAI status for sharing: -->
+		<!-- <searchQueryConstraint>(*:* NOT /key//record/collection/OAIvisibility:(private OR protected))</searchQueryConstraint> -->
+	</ncsManagedCollections>
+
+	
+	<!-- ============= Parameters used for normalizing NSDL DC records ============= -->
+
+	<!-- Perform metadata normalization using the follwing config: -->
+	<!-- <nsdlDcVocabSelections>http://ns.nsdl.org/ncs/ddsws/1-1/groupsNormal/vocab_selections.xml</nsdlDcVocabSelections> -->
+	
+	<!-- Write verbose comments into the files about what terms were normalized? -->
+	<!-- <writeVerboseComments>true</writeVerboseComments> -->
+	
+	<!-- ============= Optional parameters for testing purposes ============= -->
+	
+	<!-- The max number of collections DDS will suck in from NDR (remove to use default value) -->
+	<maxNumCollections>30000</maxNumCollections>
+	<!-- The max number of records DDS will suck in from NDR per collection (remove to use default value) -->
+	<maxNumRecordsPerCollection>800000</maxNumRecordsPerCollection>
+	
+	<!-- Generate dup resource URLs for testing? -->
+	<!-- <generateDupResourceUrls>true</generateDupResourceUrls> -->
+	<!-- Omit these IDs when generating dup URLs (comma-separated) -->
+	<!-- <generateDupResourceUrlsOmitIds>ID-123</generateDupResourceUrlsOmitIds> -->	
+		
+</NDR_Collections>

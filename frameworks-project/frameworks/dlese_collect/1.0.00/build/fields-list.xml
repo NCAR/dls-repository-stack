@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- alphabetical listing of framework fields filenames -->
+<!-- alphabetical listing of framework fields field names -->
+<metadataFieldsInfo>
+	<files>
+		<file>collection/1.0.00/fields/gradeRange-collect-fields-en-us.xml</file>
+		<file>collection/1.0.00/fields/key-collect-fields-en-us.xml</file>
+		<file>collection/1.0.00/fields/subject-collect-fields-en-us.xml</file>
+		<file>collection/1.0.00/fields/fullTitle-collect-fields-en-us.xml</file>
+	</files>
+	<fields>
+		<field>Grade range</field>
+		<field>Key</field>
+		<field>Subject</field>
+		<field>Title</field>
+	</fields>
+</metadataFieldsInfo>

@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AsnDocuments topic="Economics">
+  <asnDocument id="http://asn.jesandco.org/resources/D10001CA">
+    <title>Minnesota Graduation Standards for Social Studies</title>
+    <topic>Economics</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100007C">
+    <title>Wisconsin Model Academic Standards for Social Studies</title>
+    <topic>Economics</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100020A">
+    <title>Montana Standards for Social Studies</title>
+    <topic>Economics</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000CE">
+    <title>Social Studies Content Standards and Benchmarks</title>
+    <topic>Economics</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100002F">
+    <title>Social Studies Standard Course of Study</title>
+    <topic>Economics</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000036">
+    <title>Essential Academic Learning Requirements in Social Studies</title>
+    <topic>Economics</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002B2">
+    <title>Economics Essential Academic Learning Requirements</title>
+    <topic>Economics</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569938">
+    <title>Grade Span Expectations for Economics</title>
+    <topic>Economics</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000095">
+    <title>Illinois Learning Standards for Social Science</title>
+    <topic>Economics</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001AC">
+    <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+    <topic>Economics</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100001F">
+    <title>Social Studies Proficiency Guide</title>
+    <topic>Economics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569946">
+    <title>Indiana Academic Standards for Social Studies: Global Economics</title>
+    <topic>Economics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569948">
+    <title>Indiana Academic Standards for Social Studies: Economics</title>
+    <topic>Economics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001F7">
+    <title>K-12 Social Studies Curriculum Framework</title>
+    <topic>Economics</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100005A">
+    <title>Nebraska Social Studies/History Standards</title>
+    <topic>Economics</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000107">
+    <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+    <topic>Economics</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000004">
+    <title>Academic Standards: Social Studies</title>
+    <topic>Economics</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000285">
+    <title>Social Studies Strand 5 - Economics</title>
+    <topic>Economics</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000067">
+    <title>Massachusetts History and Social Science Framework</title>
+    <topic>Economics</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003EC">
+    <title>Delaware Economics Standards</title>
+    <topic>Economics</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000368">
+    <title>Voluntary National Content Standards in Economics</title>
+    <topic>Economics</topic>
+    <author>NCEE</author>
+    <authorName>NCEE</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2604645">
+    <title>Voluntary National Content Standards in Economics</title>
+    <topic>Economics</topic>
+    <author>NCEE</author>
+    <authorName>NCEE</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100016C">
+    <title>Social Studies Curriculum Frameworks Revised 2000</title>
+    <topic>Economics</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000069">
+    <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+    <topic>Economics</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001D6">
+    <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+    <topic>Economics</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000026">
+    <title>West Virginia Social Studies Content Standards K-12</title>
+    <topic>Economics</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001E7">
+    <title>Learning Results for Social Studies</title>
+    <topic>Economics</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000E5">
+    <title>Social Studies Content Standards</title>
+    <topic>Economics</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000035">
+    <title>Maryland State Content Standards for Social Studies</title>
+    <topic>Economics</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100008A">
+    <title>Social Studies Content and Performance Standards</title>
+    <topic>Economics</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000147">
+    <title>Social Sciences 2001-2002</title>
+    <topic>Economics</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000E3">
+    <title>Social Studies Content Standards</title>
+    <topic>Economics</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000159">
+    <title>Social Studies Grade-Level Expectations</title>
+    <topic>Economics</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000B2">
+    <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+    <topic>Economics</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000094">
+    <title>Social Studies Frameworks K-12</title>
+    <topic>Economics</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000AB">
+    <title>Academic Standards for Economics</title>
+    <topic>Economics</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2384140">
+    <title>Academic Standards for Economics (Pre-K-3)</title>
+    <topic>Economics</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2384141">
+    <title>Academic Standards for Economics (Elementary)</title>
+    <topic>Economics</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2384142">
+    <title>Academic Standards for Economics (Secondary)</title>
+    <topic>Economics</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000138">
+    <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+    <topic>Economics</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000065">
+    <title>Social Studies (Primary, Intermediate, High School)</title>
+    <topic>Economics</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000193">
+    <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+    <topic>Economics</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100024F">
+    <title>Chapter 118. Texas Essential Knowledge and Skills for Economics with Emphasis on the Free Enterprise System and Its Benefits</title>
+    <topic>Economics</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2485243">
+    <title>Texas Essential Knowledge and Skills for Economics with Emphasis on the Free Enterprise System and Its Benefits</title>
+    <topic>Economics</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001BE">
+    <title>New Mexico Standards for Social Studies</title>
+    <topic>Economics</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000049">
+    <title>Colorado Model Content Standards for Economics</title>
+    <topic>Economics</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000114">
+    <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+    <topic>Economics</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100001C">
+    <title>Social Studies Quality Core Curriculum K-12</title>
+    <topic>Economics</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002C5">
+    <title>Nevada Social Studies Standards Economics K-12 Standards</title>
+    <topic>Economics</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000184">
+    <title>Economics</title>
+    <topic>Economics</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000129">
+    <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+    <topic>Economics</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001B8">
+    <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+    <topic>Economics</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2563853">
+    <title>Standards of Learning Documents for Economics and Personal Finance</title>
+    <topic>Economics</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001F8">
+    <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+    <topic>Economics</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002C0">
+    <title>CTE/Economic &amp; Entrepreneurship Education</title>
+    <topic>Economics</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2000</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2389542">
+    <title>South Carolina Social Studies Academic Standards</title>
+    <topic>Economics</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001E9">
+    <title>Social Studies Standards</title>
+    <topic>Economics</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100003D">
+    <title>Social Studies: Ohio's Model Competency-Based Program</title>
+    <topic>Economics</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>1994</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000199">
+    <title>Academic Content Standards Social Studies</title>
+    <topic>Economics</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100005D">
+    <title>Priority Academic Student Skills for Social Studies</title>
+    <topic>Economics</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000D9">
+    <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+    <topic>Economics</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100009A">
+    <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+    <topic>Economics</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+</AsnDocuments>

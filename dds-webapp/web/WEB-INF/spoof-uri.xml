@@ -1,0 +1,60 @@
+<!-- 
+	Map *.htm URI requests to dynamic ones. Uses regular expression match and replace
+	(ala Perl s/(.*)/$1/), although this is optional. 
+	
+	This file is loaded as specified in a webapp's web.xml file:
+	
+	<context-param>
+		<param-name>UriSpoof.config</param-name>
+		<param-value>/WEB-INF/spoof-uri.xml</param-value>
+	</context-param>
+	
+	For mappings to work, web.xml must also have the *.htm servlet mapping url pattern defined 
+	(or any other patterns in this file).  That definition should reference the UriSpoofServlet
+	class as such:
+
+	<servlet>  
+		<servlet-name>UriSpoofServlet</servlet-name>  
+		<servlet-class>edu.ucar.dls.util.uri.UriSpoofServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>  
+	
+	<servlet-mapping> 
+		<servlet-name>UriSpoofServlet</servlet-name>
+		<url-pattern>*.htm</url-pattern>
+	</servlet-mapping>  	
+-->
+<uri-mappings>
+
+	<!-- New resources and reviews (no params that are user-specified) -->
+	<map 	uri="/new.htm"
+			to="/query.do?q=&amp;s=0&amp;sortby=wndate&amp;wnfrom=recent&amp;wntype=itemnew" />
+	<map 	uri="/newReviewed.htm"
+			to="/query.do?q=&amp;s=0&amp;sortby=wndate&amp;wnfrom=recent&amp;wntype=itemannocomplete" />
+	<map 	uri="/newToReview.htm"
+			to="/query.do?q=&amp;s=0&amp;sortby=wndate&amp;wnfrom=recent&amp;wntype=itemannoinprogress" />
+
+	<!-- Browse resources/collections pages -->
+	<map 	uri="/browse.htm"
+			to="/histogram.do?group=subject" />
+	<map 	uri="/browsenav_([^/_-]+).htm"
+			to="/histogram.do?group=$1" />
+	<map 	uri="/browsenav_([^/_-]+)_([^/_-]+).htm"
+			to="/histogram.do?group=$1&amp;subgroup=$2" />			
+	<!-- Search results invoked by browse histograms -->
+	<map 	uri="/browse_([^/_-]+)_([^/_-]+)_([^/_-]+)_([^/_-]+).htm"
+			to="/query.do?q=&amp;s=0&amp;hist=true&amp;$1=$2&amp;$3=$4" />
+	<map 	uri="/browse_([^/_-]+)_([^/_-]+).htm"
+			to="/query.do?q=&amp;s=0&amp;hist=true&amp;$1=$2" />
+	<!-- Paged search results invoked by browse histograms -->
+	<map 	uri="/browse_([^/_-]+)_([^/_-]+)_([^/_-]+)_([^/_-]+)-([^/_-]+).htm"
+			to="/query.do?q=&amp;s=$5&amp;hist=true&amp;$1=$2&amp;$3=$4" />
+	<map 	uri="/browse_([^/_-]+)_([^/_-]+)-([^/_-]+).htm"
+			to="/query.do?q=&amp;s=$3&amp;hist=true&amp;$1=$2" />
+
+	<!-- Resource full description (takes one user param) -->
+	<map	uri="/catalog_([^/]+).htm"
+			to="/view_resource.do?description=$1" />
+
+</uri-mappings>
+

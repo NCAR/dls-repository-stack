@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://nldr.library.ucar.edu/metadata/osm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nldr.library.ucar.edu/metadata/osm http://test.nldr.library.ucar.edu/metadata/osm/1.1/schemas/osm.xsd">
+	<general>
+		<recordID>ABC-000-000-000-123</recordID>
+		<recordDate>2009</recordDate>
+		<seriesTitle>Geophysical Monograph Series</seriesTitle>
+		<title type="Article">This is a test PAPER</title>
+	</general>
+	<resources>
+		<primaryAsset url="http://to.the.asset/inRepos">
+			<version>Postprint</version>
+		</primaryAsset>
+		<relation type="Has version" recordID="OSGC-000-000-000-001" title="This is a test PRESENTATION"/>
+	</resources>
+	<contributors>
+		<person role="Author">
+			<lastName>djfldfj</lastName>
+			<firstName>fjdkfj</firstName>
+			<affiliation>
+				<instName>University Corporation for Atmospheric Research</instName>
+				<instDivision>University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Institute for Mathematics Applied to the Geosciences (IMAGe):Turbulence Numerics Team (TNT)</instDivision>
+				<instDivision>University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Instrumentation Group (IG)</instDivision>
+				<instProject>Developmental Testbed Center</instProject>
+				<instProject>GARP Atlantic Tropical Experiment (GATE)</instProject>
+			</affiliation>
+			<affiliation>
+				<instName>California Environmental Protection Agency</instName>
+			</affiliation>
+		</person>
+		<organization role="Author">
+			<affiliation>
+				<instName>A. Deepak Publishing</instName>
+			</affiliation>
+		</organization>
+	</contributors>
+	<classify>
+		<language>en</language>
+		<classification>Refereed</classification>
+	</classify>
+	<rights>
+		<copyrightNotice holder="UCAR" type="Owner license">free accesss</copyrightNotice>
+	</rights>
+	<coverage>
+		<date type="Published">2009</date>
+		<dateRange start="2010" type="Author embargo" end="2012"/>
+		<location type="Meeting" country="US" state="US-WY" city="Jackson"/>
+	</coverage>
+</record>

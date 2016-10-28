@@ -1,0 +1,557 @@
+/* style upload helper page body */
+.uploadBody {
+	font-family:verdana, helvetica;
+	font-size:12px;
+	padding:0px;
+	margin:0px;
+	border:#595b6e 2px solid;
+	border-color:#CCCEE6;
+	background-color:white;
+}
+
+#modal-background {
+	position:absolute; 
+	top:0px; 
+	left:0px;
+	height:100%; 
+	width:100%;
+	z-index:110;
+	filter:alpha(opacity=30);
+	-moz-opacity:.30;
+	opacity:.30; 
+	background-color:#666666;
+}
+
+#upload-helper{
+}
+
+#helper-tools {
+	height:340px;
+	width:570px;
+	padding:0px;
+	overflow:hidden;
+	border:transparent solid thin;
+	border-left-color:#CCCCCC;
+	
+}
+
+#tool-controls {
+	list-style-type:none;
+	float:left;
+	width:20%;
+	margin:0px;
+}
+
+#tool-controls li {
+	padding-top:10px;
+}
+
+#tool-controls button {
+	background-color:transparent;
+	color:#595b6e;
+	border:2px solid transparent;
+	border-radius:6px;
+	cursor:pointer;
+	font-size:120%;
+}
+
+#tool-controls button:hover {
+	border-color:#EAEAFB;
+}
+
+#tool-controls button.current {
+	color:black;
+	font-weight:bold;
+}
+
+#helper-banner {
+	position:relative;
+	min-height:40px;
+	border:transparent solid thin;
+	border-bottom-color:#CCCCCC;
+	padding:8px 8px;
+}
+
+/* #helper-banner .circle-closer, 
+#file-select-collections .circle-closer, */
+.closer.upper-right-closer {
+	position:absolute;
+	font-size:1.3em;
+	top:3px;
+	right:5px;
+
+}
+
+#helper-banner H1 {
+	font-size:200%;
+	font-family:arial;
+	font-weight:normal;
+	margin:0px;
+}
+
+#helper-banner #current-value {
+	position:absolute;
+	bottom:3px;
+	left:8px;
+}
+
+#helper-footer {
+	min-height:40px;
+	text-align:right;
+	border:transparent solid thin;
+	border-top-color:#CCCCCC;
+	padding:8px 8px 0px 0px;
+}
+
+.helper-tool {
+	/* width:580px; */
+}
+
+/* SELECT TOOL -------- */
+/* see also class=helper-tool */
+#file-select-tool {
+	position:relative;
+	padding:10px;
+}
+
+#view-status-msg {
+	float:none;
+	margin:0px;
+	font-size:90%;
+}
+
+#select-files-toolbar,
+#select-collections-toolbar {
+	/* display:table; */
+	list-style:none;
+	margin:0;
+	padding:0px 0px;
+	/* width:500px; */
+	background:whitesmoke;
+}
+
+#select-files-toolbar {
+	position:relative;
+	height:35px;
+	width:500px;
+/* 	border:thin solid grey;
+	border-radius:10px; */
+	background:transparent;
+	/* for some reason this allows me to align vertically */
+	/* border:thin black solid; */ 
+}
+
+#select-files-toolbar li,
+#select-collections-toolbar li{
+	display:table-cell;
+	font-size:90%;
+	/* vertical-align:middle; */
+	/* height:inherit; */
+}
+
+#select-files-toolbar li#filter-tool{
+	/* padding-right:10px; */
+	white-space:nowrap;
+}
+
+#select-files-toolbar .ui-button{
+	height:20px;
+	padding-top:5px;
+	min-width: 40px;
+	vertical-align:0px;
+}
+
+#select-files-toolbar input[type='text']{
+	position:relative;
+	top:2px;
+	height:20px;
+	margin:0;
+	padding:0;
+	font-size:110%;
+}
+
+#select-files-toolbar #collections-toggle {
+	/* margin-left:20px; */
+	/* white-space:nowrap; */
+	position:absolute;
+	right:0px;
+	top:1px;
+	z-index:130;
+	min-width:60px;
+	
+/* 	background-image:url(../../images/closed.gif);
+	background-repeat:no-repeat;
+	background-position:5px 5px;
+	background-size:15 15px; 
+	padding-left:20px; */
+	
+	padding-left:18px;
+	padding-right:5px;
+	
+}
+
+#select-files-toolbar #collections-toggle.active {
+	/* background-image:url(../../images/opened.gif); */
+	border-color:black;
+}
+
+#coll-toggle-icon {
+	position:absolute;
+	left:4px;
+	top:4px;
+}
+ 
+#select-files-toolbar li#match-widget{
+	padding-left:10px;
+}
+
+#file-select-body {
+	border:2px #CCCEE6 solid;
+}
+
+#filter-clear.closer {
+	/* display:inline-block; */
+	/* position:relative; */
+	/* top:6px; */
+	/* left:-12px; */
+	vertical-align:-5px;
+	color:#666666;
+}
+
+ul#search_results {
+	clear:all;
+	height:240px;
+	overflow-y:auto;
+	width:500px;
+	overflow-x:hidden;
+	border:black solid thin;
+	padding:2px 4px 4px 6px;
+	margin:3px 0px;
+	/* box-shadow: inset 2px 2px 2px; */
+	background-color:whitesmoke;
+	list-style-type:none;
+}
+
+li.select_item:hover {
+	/* color:green; */
+	background-color:#EAEAFB;
+	cursor:pointer;
+}
+
+li.select_item {
+	position:relative;
+	padding:1px;
+}
+
+li.select_item.selected {
+	background-color:#CCCEE6;
+	color:black;
+	font-weight:bold;
+}
+
+/* .select_item i.fa-download {
+	font-size:1.2em;
+} */
+
+/* position download icon */
+.select_item .asset-link {
+	float:none;
+	z-index:5;
+	position:absolute;
+	right:0px;
+	top:-3px;
+	font-size:1em;
+}
+
+.select_item .collection {
+	float:right;
+	font-size:90%;
+	color:#666666;
+	margin-right:23px;
+}
+
+
+#file-select-collections {
+	position:absolute;
+	z-index:120;
+	top:0px;
+	/* left:150px; */
+	right:0px;
+	background-color:#CCCEE6;
+	padding:5px;
+	border:black thin solid;
+}
+
+select#selected-collections {
+	/* background-color:whitesmoke; */
+	background-color:yellow;
+	font-size:110%;
+	height:265px;
+	width:400px;
+}
+
+select#selected-collections option {
+	font-size:12px;
+	font-family:verdana;
+}
+
+
+#collections_list {
+	height:270px;
+	max-width:300px;
+	
+	overflow-y:auto;
+	width:500px;
+	overflow-x:hidden;
+	border:black solid thin;
+	padding:4px;
+	/* box-shadow: inset 2px 2px 2px; */
+	/* background-color:whitesmoke; */
+	background-color:white;
+}
+
+#collections_list li.__all__ {
+	border-bottom:black solid thin;
+}
+	
+
+#collections-display {
+	position:absolute;
+	right:7px;
+	top:0px;
+/* 	float:right;
+	clear:right; */
+	padding:3px;
+	background-color:#EAEAFB;
+	border:thin solid #CCCEE6;
+	z-index:10;
+	box-shadow: 1px 1px 2px #333333;
+}
+
+
+/* --  end select tool -------*/
+
+/* buttons and widgets */
+
+/* defines the image and default size for circle closer */
+.closer {
+/* 	background-image:url(../../images/circle-closer.png);
+	background-repeat:no-repeat;
+	background-color:transparent;
+	background-position:center;
+	background-size:20px; */
+/* 	height:20px;
+	width:20px; */
+	font-size:normal;
+	cursor:pointer;
+}
+
+.ui-label {
+	/* color:#666666; */
+	color:red;
+}
+
+/* helper buttons */
+.ui-button {
+	display:inline-block;
+	border-radius:4px;
+	padding:0px 2px;
+	border:1px #CCCEE6 solid;
+	text-decoration:none;
+	cursor:pointer;
+	min-width:50px;
+	text-align:center;
+	font-size:11px;
+	font-weight:bold;
+	font-family:arial, sans-serif;
+	background-color:#FAFAFA;
+}
+
+.match-spec-button {
+	padding:0px 5px;
+}
+
+.ui-button.active, .ui-button.active:hover,
+.ui-button.active:hover {
+	/* background-color:#CCCEE6; */
+	background-color:#6666ff;
+	color:white;
+	font-weight:bold;
+}
+
+.ui-button:hover{
+	background-color:#f7f7e5;
+}
+
+.ui-button:active {
+	/* background-color:#CCCEE6; */
+	box-shadow: inset 1px 1px  #aaaaaa;
+}
+
+
+/* Search-browse-tabs */
+ul.basic_tabs {
+	list-style:none;
+	margin:0;
+	padding:0;
+	padding-top:15px;
+	/* clear:both; */
+	height:20px;
+}
+ 
+ul.basic_tabs li  {
+	float:left;
+	margin-right:3px;
+	font-size: 100%;
+	margin-top:0px;
+}
+
+ul.basic_tabs a {
+	display:block;
+	height:20px;
+	width:90px;
+	padding:0px;
+	background-color:#EAEAFB;
+	/* background-image: url(images/tab-light.gif); */
+	background-repeat: no-repeat;	
+	color:black;
+	text-decoration: none;
+	outline: none;
+	text-align: center;
+	overflow:hidden;
+	border-radius:5px 5px 0px 0px;
+	
+}
+
+.file-select-tab {
+	padding:0px;
+	padding-top:2px;
+	width:auto;
+}
+
+ul.basic_tabs a:visited {
+	text-decoration: none;
+}
+
+ul.basic_tabs a:hover {
+	color: green;
+	/* background-color:#CEDF7D; */	
+}
+
+ul.basic_tabs a.active {
+	background-color:#CCCEE6;
+	/* background-image: url(images/tab-dark.gif); */
+	background-repeat: no-repeat;
+	color:black;
+	font-weight:bold;
+	border:black solid thin;
+	border-left:none;
+}
+
+
+
+ /* -- ASSET INFO -- */
+#assetInfo {
+/* 	overflow-y:auto;
+	max-height:200px; */
+}
+
+#assetInfo .tool-blurb {
+	padding:2px 0px;
+}
+
+#assetChoices {
+	overflow-y:auto;
+	height:200px;
+	border:thin #CCCCCC solid;
+	margin-top:2px;
+}
+
+.asset {
+	border-top:thin solid #EAEAFB;
+	padding:5px 5px 3px 3px;
+}
+
+.details {
+	padding-left:20px;
+}
+
+.record-list-item {
+	
+}
+
+.record-list-item .record {
+	font-size:90%;
+	padding:2px;
+}
+
+.record-list-item .record.current {
+	background-color:#EAEAFB
+}
+
+.vert-divider {
+	color:#666666;
+}
+
+.asset .detail{
+	position:relative;
+	display:inline-block;
+	/* padding-bottom:3px; */
+	height:20px;
+	padding:0px 5px 0px 5px;
+/* 	border:1px solid transparent;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC; */
+}
+
+.asset .detail .small-ui-label {
+	padding-left:0px;
+}
+
+.asset .detail img{
+	width:20px;
+	align:bottom;
+	padding-bottom:0px;
+	top:10px;
+}
+
+.asset-link {
+	float:right;
+}
+
+.asset .collection-name {
+	/* color:red; */
+	font-weight:bold;
+}
+
+.asset input[type='radio'] {
+	/* display:inline-block; */
+	float:left;
+	margin-right:5px;
+}
+
+#assetInfoTable {
+	border-collapse:collapse;
+	width:100%;
+	margin-top:10px;
+	padding:1px;
+}
+
+#assetInfoTable td, #assetInfoTable th {
+	font-size:8pt;
+	border:thin black solid;
+}
+
+i.fa-download {
+	color:#666666;
+}
+
+i.fa-download {
+	font-size:1.3em;
+}
+
+i.fa-download.fa-over {
+	color:blue;
+}
+
+

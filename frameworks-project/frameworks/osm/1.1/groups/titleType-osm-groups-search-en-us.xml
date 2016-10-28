@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: titleType-osm-groups-search-en-us.xml,v 1.15 2013/08/09 19:04:43 kmaull-ucar Exp $-->
+<!--HISTORY of CHANGES:
+
+2013-08-09: kmaull - Correspondence is not longer part of the CV.  It had the definition of : "letters, memoranda, notes, postcards, email, or other written and addressed messages exchanged between two or more people"	
+2013-08-08: Notes is no longer part of the controlled vocabulary. It had the definition of: brief explanations or descriptions that usually supplement the understanding of a work, subject or object.
+2011-09-19: Comment is no longer a part of the controlled vocab. It had the definition of: introductory remarks preceding the text of a work, usually written by a person other than the author
+2011-09-06: suppressed abstract because hoping to get rid of this title type so do not want the ability to search on it
+2011-12-16: Abstract is no longer part of the controlled vocab. It had a definition of  a brief, objective representation of the essential content of a book, article, speech, report, dissertation, patent, standard, or other work
+-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/titleType.xsd"
+version="2.0">
+	<head>
+		<title>Title - type</title>
+		<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="Title - type" audience="search" path="/record/general/title/@type" deftn="the nature or the genre of a resource"/>
+	</head>
+	<body>
+
+		<outline type="vocab" vocab="Archives" text="Archives" deftn="primary source materials from the Archives that do not fall under any other title type, such as correspondence, newsletter, or transcript"/>
+
+		<outline type="vocab" vocab="Article" text="Articles" deftn="a self-contained composition on a fairly narrow topic or subject, written by one or more authors and published or submitted for publication in a magazine, journal, proceedings, encyclopedia, or newsletter"/>
+
+		<outline type="vocab" vocab="Sound" text="Audio" deftn="recorded auditory material that can be heard by the human ear"/>
+
+		<outline type="vocab" vocab="Bibliography/index" text="Bibliography/index" deftn="a list resources or the headings treated in a work with references for accessing the indicated information"/>
+
+		<outline type="vocab" vocab="Book/monograph" text="Books" deftn="a written work or composition that has been published and bound as a single volume"/>
+
+		<outline type="vocab" vocab="Book chapter" text="Book chapters" deftn="one of two or more major divisions of a book, each complete in itself but related in theme or structure to the division preceding and/or following it"/>
+
+		<outline type="vocab" vocab="Book review" text="Book reviews" deftn="an evaluative account of a book, usually written by a qualified person for publication in a newspaper, magazine, or journal." display="false"/>
+
+		<outline type="vocab" vocab="Encyclopedia" text="Encyclopedias" deftn="a book or numbered set of books containing authoritative summary information about a variety of topics in the form of short essays, usually arranged alphabetically"/>
+
+		<outline type="vocab" vocab="Image" text="Still images" deftn="a single visual representation or a series of related images, which create the illusion of movement when viewed in rapid succession"/>
+
+		<outline type="vocab" vocab="Animation/moving image" text="Moving images" deftn="a series of related images, which create the illusion of movement when viewed in rapid succession"/>
+
+		<outline type="vocab" vocab="Interactive resource" text="Interactive resources" deftn="materials designed to respond to input from a human being, usually in the form of commands, data and/or actions"/>
+
+		<outline type="vocab" vocab="Journal/magazine/periodical" text="Journs./mags./periods." deftn="Journal: a periodical devoted to disseminating original research and commentary on current developments in a specific discipline, subdiscipline, or field of study; Magazine: a popular interest periodical usually containing articles on a variety of topics, written by various authors in a nonscholarly style; Periodical: a serial publication with its own distinctive title, containing a mix of articles, editorial, reviews, columns, short stories, poems, or other short works written by more than one contributor, generally published at regular stated intervals of less than a year"/>
+
+		<outline type="vocab" vocab="Manual" text="Manuals" deftn="a book used as a reference in the operation of a task, computer program, procedure, job or other function"/>
+
+		<outline type="vocab" vocab="Manuscript" text="Manuscripts" deftn="a written and, traditionally, unpublished work or composition"/>
+
+		<outline type="vocab" vocab="Newsletter" text="Newsletters" deftn="a serial publication consisting of no more than a few pages, devoted to news, announcements, and current information that is of interest primarily to a specialized group of subscribers or members of an association or organization"/>
+
+		<outline type="vocab" vocab="Poster" text="Posters" deftn="a visual medium created to publicize a forthcoming event or communicate scholarly or scientific work, with or without illustration"/>
+
+		<outline type="vocab" vocab="Presentation/webcast" text="Presentation/webcast" deftn="a broadcast, podcast, or formal representation of ideas communicated in person or via the Internet"/>
+
+
+		<outline type="vocab" vocab="Report" text="Reports/tech notes" deftn="a record of research findings, research still in progress, documentation or other technical findings; also includes NCAR Technotes"/>
+
+		<outline type="vocab" vocab="Software" text="Software" deftn="a computer program, application, or model that must be run on a computer server"/>
+
+		<outline type="vocab" vocab="Thesis/dissertation" text="Thesis/dissertation" deftn="a written document on a particular subject in which one has done original research that is for a diploma or degree"/>
+
+		<outline type="vocab" vocab="Transcript" text="Transcript" deftn="the written record of words spoken in a speech, interview, broadcast, sound recording or other proceedings"/>
+
+
+
+<!--Other terms in the vocab that are not displayed in search -->
+		<outline type="vocab" vocab="Artifact/physical object" text="Artifact/physical object" display="false"/>
+		<outline type="vocab" vocab="Blog/forum/email list" text="Blog/forum/email list" display="false"/>
+		<outline type="vocab" vocab="Collection" text="Collection" display="false"/>
+		<outline type="vocab" vocab="Metadata profile" text="Metadata profile" deftn="a specification that defines the properties and values of a metadata format" display="false"/>
+
+</body>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->
+
+
+

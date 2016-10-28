@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: keyword-osm-groups-submission-en-us.xml,v 1.4 2011/06/15 20:04:20 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/non-vocab-fields.xsd"
+version="2.0">
+	<head>
+		<title>Keyword</title>
+		<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="Keyword" audience="submission" path="/record/general/keyword" deftn="Significant words or phrases that may not be covered in the title, abstract, content or text of a resource and can be used as search terms to retrieve the resource."/>
+	</head>
+	<bestPractices>
+		<practice>The abstracts and front matter of many academic publications contain keywords.  You may cut and paste these, or submit your own.</practice>
+		<practice>Be sure to use when no abstract is available.</practice>
+		<practice>Keywords may also be a phrase.</practice>
+		<practice>Use semicolons between keywords and between keywords and phrases.</practice>
+	</bestPractices>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

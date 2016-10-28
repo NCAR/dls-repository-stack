@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: instNameLO-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/non-vocab-fields.xsd">
+	<field name="Organization name - organizational resource creator" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/lifecycle/contributors/contributor/organization/instName">
+		<definition>the formal name of an organization creating, authoring or responsible for intellectual content of a resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-09-17">Spell out acronyms.</practice>
+				<practice status="current" originDate="2004-09-17">The institutional name should be a formal name of an organization or entity and not a person or a position.</practice>
+				<practice status="current" originDate="2004-10-26">If the organization contains .com as part of its name, include the .com part in the name of the organization.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2004-09-15" link1="department - organizational resource creator" style1="bold">Do not enter departmental information. Use the department - organizational resource creator field instead.</practice>
+				<practice status="current" originDate="2005-03-02">Do not use just acronyms.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2004-10-16">American Geophysical Union (AGU)</practice>
+				<practice status="current" originDate="2004-10-16">Digital Library for Earth System Education (DLESE)</practice>
+				<practice status="current" originDate="2004-10-16">Accuweather</practice>
+				<practice status="current" originDate="2004-10-16">Rolling Meadows High School</practice>
+				<practice status="current" originDate="2004-10-26">The Weather Channel</practice>
+				<practice status="current" originDate="2004-10-16">earthscience.com</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>American Geophysical Union (AGU), Rolling Meadows High School, Digital Library for Earth System Education (DLESE), The Weather Channel</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/metaMetadata/contributors/contributor/person/instName</note>
+				<note>Other XPATH: /itemRecord/metaMetadata/contributors/contributor/organization/instName</note>
+				<note>Other XPATH: /itemRecord/lifecycle/contributors/contributor/person/instName</note>
+			</notes>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

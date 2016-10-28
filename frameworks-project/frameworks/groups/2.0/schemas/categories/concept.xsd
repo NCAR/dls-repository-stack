@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: concept.xsd,v 1.3 2010/06/30 14:29:53 ginger Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:annotation>
+		<xs:documentation>**********************</xs:documentation>
+		<xs:documentation>***** HISTORY  *****</xs:documentation>
+		<xs:documentation>**********************</xs:documentation>
+		<xs:documentation>2010-06-30: added the smartCheckBox ttribute on the concept element</xs:documentation>
+		<xs:documentation>2009-08-25: added the collapseExpand attribute on the concept element</xs:documentation>
+		<xs:documentation>2006-05-03: Made the id attribute optional rather than required</xs:documentation>
+		<xs:documentation>2006-05-03: Attached a controlled vocabulary to the audience attribute rather than free text</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>******************************************</xs:documentation>
+		<xs:documentation>***** SCHEMAS TO INCLUDE  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>metaFormat.xsd - contains the list of acceptable metadata formats</xs:documentation>
+		<xs:documentation>audience.xsd - contains appropriate audience terms</xs:documentation>
+	</xs:annotation>
+	<xs:include schemaLocation="../../../../fields/1.0/schemas/vocabs/metaFormat.xsd"/>
+	<xs:include schemaLocation="../vocabs/audience.xsd"/>
+
+	<xs:annotation>
+		<xs:documentation>path - the XPATH to a metadata field or attribute</xs:documentation>
+		<xs:documentation>id - a number assigned to metadata fields or controlled vocabulary terms in order to shorten the length of search queries</xs:documentation>
+		<xs:documentation>metaFormat - an indication of the metadata format of the metadata field being described; see metaFormat.xsd</xs:documentation>
+		<xs:documentation>metaVersion - an indication of the version of the metadata format of the metadata field being described</xs:documentation>
+		<xs:documentation>language - the language of the intended user interface</xs:documentation>
+		<xs:documentation>deftn - the definition of a metadata element or controlled vocabulary term</xs:documentation>
+		<xs:documentation>text - content for the default user interface</xs:documentation>
+		<xs:documentation>textAbbrev - text to use in the abbreviated or bread crumbs portion of a user interface</xs:documentation>
+		<xs:documentation>textBrief - text to use in the brief display user interface</xs:documentation>
+		<xs:documentation>audience - the intended users or applications</xs:documentation>
+		<xs:documentation>attribution - the source of definition (deftn) information</xs:documentation>
+		<xs:documentation>collapseExpand - an indication as to whether an [expand all][collapse all] toggle should be displayed with a vocabulary layout</xs:documentation>
+		<xs:documentation>smartCheckBox - an indication as to whether checkboxes should be smart; that is if a leaf vocabulary node is checked, then upper nodes are checked as well and vice versa with delete.</xs:documentation>
+		<xs:documentation>notes: the groups OPML files consist of two sets of files, one called default groups files and audience-specific groups files. While deftn is needed in the default files, it can not be required because it is not always needed in the audience-specific groups files. The same goes for textAbbrev and textBrief. These may be need in the audience-specific groups files, but they are not needed in the default groups files. So they are optional.</xs:documentation>
+	</xs:annotation>
+
+	<xs:element name="concept">
+		<xs:complexType>
+			<xs:attribute name="path" type="xs:string" use="required"/>
+			<xs:attribute name="id" type="xs:string" use="optional"/>
+			<xs:attribute name="metaFormat" type="metaFormatType" use="required"/>
+			<xs:attribute name="metaVersion" type="xs:string" use="required"/>
+			<xs:attribute name="language" type="xs:string" use="required"/>
+			<xs:attribute name="deftn" type="xs:string" use="optional"/>
+			<xs:attribute name="text" type="xs:string" use="required"/>
+			<xs:attribute name="textAbbrev" type="xs:string" use="optional"/>
+			<xs:attribute name="textBrief" type="xs:string" use="optional"/>
+			<xs:attribute name="audience" type="audienceType" use="required"/>
+			<xs:attribute name="attribution" type="xs:string" use="optional"/>
+			<xs:attribute name="collapseExpand" type="xs:boolean" use="optional"/>
+			<xs:attribute name="smartCheckBox" type="xs:boolean" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:annotation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>***** SCHEMA PUPOSE *****</xs:documentation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>Define a list of attributes for the groups OPML-specific OPML element called concept that appears in the head section of OPML</xs:documentation>
+
+		<xs:documentation>*******************************</xs:documentation>
+		<xs:documentation>*****SCHEMA INTENT  *****</xs:documentation>
+		<xs:documentation>*******************************</xs:documentation>
+		<xs:documentation>Intended to be called by an overarching schema that creates an OPML 2.0 document</xs:documentation>
+		<xs:documentation>The overarching schema defines the root element called opml</xs:documentation>
+
+		<xs:documentation>******************************</xs:documentation>
+		<xs:documentation>*****  NAMESPACES  *****</xs:documentation>
+		<xs:documentation>******************************</xs:documentation>
+		<xs:documentation>This schema has a target namespaces of: http://www.dlese.org/Metadata/ui/groups in order make qualification with a namespace prefix necessary</xs:documentation>
+		<xs:documentation>This schema has a default namespace of: http://www.dlese.org/Metadata/ui/groups in order to make elements, attributes, simple types and complex types from included schemas, that are not using a target namespace, have the (default) namespace of this schema</xs:documentation>
+		<xs:documentation>The W3C schema is in the xs namespace</xs:documentation>	
+		<xs:documentation>The overarching schema used to create the OPML document may use a namespace</xs:documentation>
+
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>This schema does not contain a root element</xs:documentation>
+		<xs:documentation>The overarching schema needs to define the root element and call this schema to create OPML</xs:documentation>
+
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>Tends to follow the Venetian Blind approach that defines types that can be extended</xs:documentation>
+		<xs:documentation>Created: 2006-04-20</xs:documentation>
+		<xs:documentation>Last Modified 2006-05-03</xs:documentation>
+
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>***** SCHEMA AUTHOR  *****</xs:documentation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), Digital Library for Earth System Education (DLESE) Program Center; email: support@dlese.org or ginger@ucar.edu</xs:documentation>
+
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>*****  LICENSE INFORMATION  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>Copyright  (c) 2008 Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR) P.O. Box 3000, Boulder, CO 80307, United States of America</xs:documentation>
+		<xs:documentation>This schema is free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</xs:documentation>
+
+		<xs:documentation>******************************************************</xs:documentation>
+		<xs:documentation>*****  OTHER COPYRIGHT INFORMATION  *****</xs:documentation>
+		<xs:documentation>******************************************************</xs:documentation>
+		
+		<xs:documentation>Parts of this page are copied and developed from Dave Winer's OPML specification found at: http://www.opml.org/spec2. Per the request of that document, its copyright notice is included here and applies to information in this directory and corresponding subdirectories:
+
+&#169; Copyright 2000 UserLand Software, Inc. All Rights Reserved.
+&#169; Copyright 2006 Scripting News, Inc. All Rights Reserved.
+
+UserLand Software, Inc. and Scripting News, Inc. are refererred to in the following as "the Companies."
+
+This document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and these paragraphs are included on all such copies and derivative works. 
+
+This document may not be modified in any way, such as by removing the copyright notice or references to the Companies or other organizations. Further, while these copyright restrictions apply to the written OPML specification, no claim of ownership is made by the Companies to the format it describes. Any party may, for commercial or non-commercial purposes, implement this format without royalty or license fee to the Companies. The limited permissions granted herein are perpetual and will not be revoked by the Companies or their successors or assigns.
+
+This document and the information contained herein is provided on an "AS IS" basis and THE COMPANIES DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.</xs:documentation>
+	</xs:annotation>
+</xs:schema>

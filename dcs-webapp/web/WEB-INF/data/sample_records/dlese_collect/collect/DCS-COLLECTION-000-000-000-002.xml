@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collectionRecord xmlns="http://collection.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://collection.dlese.org http://www.dlese.org/Metadata/collection/1.0.00/collection.xsd">
+	<general>
+		<fullTitle>Sample Collection</fullTitle>
+		<shortTitle>Sample Collection</shortTitle>
+		<description>This collection ships with the DCS</description>
+		<language>en</language>
+		<subjects>
+			<subject>DLESE:Agricultural science</subject>
+			<subject>DLESE:Atmospheric science</subject>
+			<subject>DLESE:Biological oceanography</subject>
+			<subject>DLESE:Biology</subject>
+			<subject>DLESE:Chemical oceanography</subject>
+			<subject>DLESE:Chemistry</subject>
+			<subject>DLESE:Climatology</subject>
+			<subject>DLESE:Cryology</subject>
+			<subject>DLESE:Ecology</subject>
+			<subject>DLESE:Educational theory and practice</subject>
+			<subject>DLESE:Environmental science</subject>
+			<subject>DLESE:Forestry</subject>
+			<subject>DLESE:Geochemistry</subject>
+			<subject>DLESE:Geologic time</subject>
+			<subject>DLESE:Geology</subject>
+			<subject>DLESE:Geophysics</subject>
+			<subject>DLESE:History and philosophy of science</subject>
+			<subject>DLESE:Human geography</subject>
+			<subject>DLESE:Hydrology</subject>
+			<subject>DLESE:Mathematics</subject>
+			<subject>DLESE:Mineralogy or petrology</subject>
+			<subject>DLESE:Natural hazards</subject>
+			<subject>DLESE:Paleontology</subject>
+			<subject>DLESE:Physical geography</subject>
+			<subject>DLESE:Physical oceanography</subject>
+			<subject>DLESE:Physics</subject>
+			<subject>DLESE:Policy issues</subject>
+			<subject>DLESE:Soil science</subject>
+			<subject>DLESE:Space science</subject>
+			<subject>DLESE:Structural geology</subject>
+			<subject>DLESE:Technology</subject>
+		</subjects>
+		<keywords>
+			<keyword>Data</keyword>
+			<keyword>Lesson plan</keyword>
+			<keyword>Modules</keyword>
+			<keyword>Visualizations</keyword>
+			<keyword>Text</keyword>
+			<keyword>Reference</keyword>
+			<keyword>Portals</keyword>
+			<keyword>Labs</keyword>
+			<keyword>Activity</keyword>
+			<keyword>Activities</keyword>
+			<keyword>Learning materials</keyword>
+		</keywords>
+		<gradeRanges>
+			<gradeRange>DLESE:General public</gradeRange>
+			<gradeRange>DLESE:Graduate or professional</gradeRange>
+			<gradeRange>DLESE:High school</gradeRange>
+			<gradeRange>DLESE:Informal education</gradeRange>
+			<gradeRange>DLESE:Intermediate elementary</gradeRange>
+			<gradeRange>DLESE:Middle school</gradeRange>
+			<gradeRange>DLESE:Primary elementary</gradeRange>
+			<gradeRange>DLESE:Undergraduate lower division</gradeRange>
+			<gradeRange>DLESE:Undergraduate upper division</gradeRange>
+		</gradeRanges>
+		<cost>DLESE:Unknown</cost>
+		<policies>
+			<policy type="Collection scope" url="http://www.dlese.org/Metadata/collections/scopes/dcc-scope.htm" name="Sample Collection Scope Statement">The policy describes the goals, collection policy, collection criteria, terms of use, quality assurance and the persistence plan of the collection.</policy>
+			<policy type="Intellectual property of metadata" url="http://www.dlese.org/documents/policy/DLESE_IP_approved.html" name="Intellectual Property Policy"/>
+			<policy type="Terms of use for metadata" url="http://www.dlese.org/documents/policy/terms_use_full.html" name="Terms of Use">If the user does contribute comments, reviews, metadata, or other information, the user voluntarily grants DLESE or UCAR or its affiliates a nonexclusive, royalty-free, perpetual, irrevocable, and full right to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display the contribution throughout the world in any media. The user grants DLESE and UCAR or its affiliates the right to use the name (if any) that the user submits in connection with such contribution, if the user so chooses. In the case where attribution is made to the contributor of original material (e.g. reviews, messages on listservs/email groups, and other comments), DLESE will not alter such content. However, contributed metadata (resource descriptions, subjects, resource types, etc.) may be changed to enhance resource description and discovery.</policy>
+			<policy type="Other" url="http://www.dlese.org/documents/policy/privacy_policy.html" name="Privacy policy">This privacy policy covers our treatment of personally identifiable information (e.g. first and last names, email address, a home or physical address, a telephone number, institution or affiliation) that DLESE may hold. You can visit any DLESE website without identifying who you are, or revealing personally identifiable information</policy>
+		</policies>
+	</general>
+	<lifecycle>
+		<contributors>
+			<contributor role="Contact" date="2003">
+				<organization>
+					<instName>DLESE Program Center</instName>
+					<instEmail>support@dlese.org</instEmail>
+				</organization>
+			</contributor>
+			<contributor role="Responsible party" date="2003">
+				<organization>
+					<instName>DLESE Program Center</instName>
+					<instEmail>support@dlese.org</instEmail>
+				</organization>
+			</contributor>
+		</contributors>
+	</lifecycle>
+	<approval>
+		<collectionStatuses>
+			<collectionStatus state="Approved" date="2003-07-07"/>
+			<collectionStatus state="Accessioned" date="2003-07-10"/>
+		</collectionStatuses>
+		<contributors>
+			<contributor role="Documentation approver" date="2003-01-23">
+				<person>
+					<nameTitle>Ms</nameTitle>
+					<nameFirst>Katy</nameFirst>
+					<nameLast>Ginger</nameLast>
+					<instName>University Corporation for Atmospheric Research</instName>
+					<instDept>DLESE Program Center</instDept>
+					<emailPrimary>ginger@ucar.edu</emailPrimary>
+				</person>
+			</contributor>
+			<contributor role="Technical approver" date="2003-01-23">
+				<person>
+					<nameTitle>Ms</nameTitle>
+					<nameFirst>Katy</nameFirst>
+					<nameLast>Ginger</nameLast>
+					<instName>University Corporation for Atmospheric Research</instName>
+					<instDept>DLESE Program Center</instDept>
+					<emailPrimary>ginger@ucar.edu</emailPrimary>
+				</person>
+			</contributor>
+			<contributor role="Accession approver" date="2003-07-07">
+				<organization>
+					<instName>Collections Approval Committee</instName>
+				</organization>
+			</contributor>
+		</contributors>
+	</approval>
+	<access>
+		<key libraryFormat="adn" static="false" redistribute="true">sample</key>
+		<drc>false</drc>
+		<otherHarvests>
+			<otherHarvest metadata="dlese_ims" updateFrequency="daily">Get records from FLOOD repository.</otherHarvest>
+		</otherHarvests>
+		<oaiProvides>
+			<oaiProvide metadata="adn" set="nsdl"/>
+			<oaiProvide metadata="adn" set="dcc"/>
+		</oaiProvides>
+	</access>
+	<metaMetadata>
+		<catalogEntries>
+			<catalog entry="DCS-COLLECTION-000-000-000-02">Digital Library for Earth System Education (DLESE) Collection Record Collection</catalog>
+		</catalogEntries>
+		<dateInfo created="2003-04-28" accessioned="2003-04-28"/>
+		<statusOf status="Done"/>
+		<language>en-us</language>
+		<scheme>Digital Library for Earth System Education (DLESE) Collection Metadata</scheme>
+		<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research). All rights reserved.</copyright>
+		<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+		<contributors>
+			<contributor role="Creator" date="2003-04-28">
+				<person>
+					<nameTitle>Ms</nameTitle>
+					<nameFirst>Katy</nameFirst>
+					<nameLast>Ginger</nameLast>
+					<instName>University Corporation for Atmospheric Research</instName>
+					<instDept>DLESE Program Center</instDept>
+					<emailPrimary>ginger@ucar.edu</emailPrimary>
+				</person>
+			</contributor>
+		</contributors>
+	</metaMetadata>
+	<NSDL type="dlese" logo="http://www.dlese.org/Metadata/collections/logos/dlese.org.gif">
+		<formats>
+			<format>text/html</format>
+			<format>video/mpeg</format>
+			<format>image/gif</format>
+			<format>image/jpeg</format>
+			<format>video/quicktime</format>
+			<format>application/msexcel</format>
+			<format>application/msword</format>
+			<format>application/mspowerpoint</format>
+			<format>application/pdf</format>
+			<format>application/shockwave-flash</format>
+			<format>application/vnd.rn-realmedia</format>
+		</formats>
+	</NSDL>
+</collectionRecord>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: relationType.xsd,v 1.2 2009/04/28 21:20:39 ginger Exp $-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.00">
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA PUPOSE  and INTENT  *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>Purpose: Controlled vocabulary for the type of relation between related resources.</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>**********************************************************</xs:documentation>
+		<xs:documentation>*****  HISTORY OF IMPORTANT CHANGES  *****</xs:documentation>
+		<xs:documentation>**********************************************************</xs:documentation>
+		<xs:documentation>None at the moment.</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>None</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  SIMPLE TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="relationTypeType">
+		<xs:annotation>
+			<xs:documentation>***** relationTypeType  *****</xs:documentation>
+			<xs:documentation>Valid values for the element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+<!--			<xs:enumeration value="Is Based On"/>
+			<xs:enumeration value="Is Basis For"/>
+			<xs:enumeration value="Is Format Of"/>
+			<xs:enumeration value="Has Format"/>
+			<xs:enumeration value="Is Part Of"/>-->
+			<xs:enumeration value="Has part"/>
+			<xs:enumeration value="Is related"/>
+<!--			<xs:enumeration value="Is Referenced By"/>
+			<xs:enumeration value="References"/>
+			<xs:enumeration value="Is Replaced By"/>		
+			<xs:enumeration value="Replaces"/>
+			<xs:enumeration value="Is Required By"/>
+			<xs:enumeration value="Requires"/>
+			<xs:enumeration value="Is Version Of"/>
+			<xs:enumeration value="Has Version"/>-->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:annotation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>Created: 2009-04-13</xs:documentation>
+		<xs:documentation>Last Modified 2009-04-27</xs:documentation>
+
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>***** SCHEMA AUTHOR  *****</xs:documentation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger@ucar.edu</xs:documentation>
+
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>*****  COPYRIGHT and LICENSE INFORMATION  *****</xs:documentation>
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>See LICENSE AND COPYRIGHT below.</xs:documentation>
+	</xs:annotation>
+</xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

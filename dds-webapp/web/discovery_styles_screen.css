@@ -1,0 +1,198 @@
+/* DDS screen styles */
+.descHeader {
+	font-weight: bold;
+	margin-bottom: 3px;
+	margin-top: 6px;
+	margin-left: 6px;
+}
+.descSubHeader {
+	margin-bottom: 3px;
+	margin-top: 0px;
+	margin-left: 6px;
+	font-style: italic;
+}
+.desc {
+	font-size: 1em;
+	margin-left: 6px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.headers {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+.cursorPointer {
+	cursor: pointer;
+}
+.cursorHelp {
+	cursor: help;
+}
+.cursorCrosshair {
+	cursor: crosshair;
+}
+.yourSelectionsNoscriptLabel {
+	/* So graphical browsers with scripting turned off won't see it (they'll see the graphic), but
+		text readers will: */
+	position: relative;
+	display: none;
+	z-index: 1000;
+}
+.yourSelectionsCriteria {
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	display: block;
+	visibility: visible;
+	padding-top: 0px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0px;
+	color: #0000bb;
+	height: 17px;
+	overflow: hidden;
+	z-index: 100;
+	position: absolute; 
+	top: 117px; 
+	left: 127px;
+}
+.dlese_clearAllButton {
+	position: absolute;
+	visibility: hidden;
+	top: 91px; 
+	left: 517px;
+	z-index: 2100;
+}
+/* Search results list styles: */
+.pageTitle {
+	background-color: #FFFFFF;
+	color: #00008b; 
+	font-family: arial, helvetica, sans-serif;
+	margin: 0px;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	padding-left: 0px; 
+	padding-right: 0px;
+	width: 100%;
+}
+.pageTitle TD {
+	background-color: #FFFFFF;
+	color: #00008b;
+	font-family: arial, helvetica, sans-serif;
+	margin: 0px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-left: 6px; 
+	padding-right: 5px;
+}
+.pageTitleNoTable {
+	background-color: #FFFFFF;
+	color: #00008b;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 6px; 
+	padding-right: 5px;
+}
+.breadcrumbs {
+	position: absolute;
+	top: 135px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #F8F0E6;
+	width: 100%;
+	border-bottom: 1px solid #747474;
+	z-index: 1000;
+}
+.breadcrumbsText {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 6px;
+}
+.vocabDescription {
+	z-index: 99999999;
+}
+.dlese_bannerDiv {
+	margin-bottom: 22px;
+}
+.blueBand {
+	background-color: #E8ECF4;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px; 
+	padding-right: 5px;
+}
+.pagingLink {
+	font-weight: bold;
+	text-decoration: underline;
+	margin-left: 2px;
+	margin-right: 2px;
+	cursor: pointer;
+}
+.pagingThisPage {
+	font-weight: normal;
+	text-decoration: none;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.resourceTitle {
+	text-decoration: none; 
+	color: #000000;
+	font-size: 1.05em;
+	font-weight: bold;
+	margin-bottom: 0px; 
+	padding-bottom: 0px;
+	margin-left: 2px;
+	padding: 0px;
+}
+.resourceTitle:link {
+	color: #000000;
+	text-decoration: none; 
+}
+.resourceTitle:visited {
+	color: #000000;
+	text-decoration: none; 
+}
+.resourceTitle:hover {
+	color: #000000;
+	text-decoration: none; 
+}
+.resourceURL { 
+	font-family: arial, helvetica, sans-serif; 
+	margin-bottom: 2px;
+	margin-top: 0px;
+	margin-left: 4px;
+	font-size: 0.9em;
+}
+.searchResultDescription { 
+	font-family: arial, helvetica, sans-serif; 
+	margin-top: 4px;
+	margin-left: 6px;
+	margin-bottom: 4px;
+}
+.searchResultValues { 
+	margin-top: 0px;
+	margin-bottom: 3px;
+	margin-left: 15px;	
+	margin-right: 7px;
+	text-indent: -9px;
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 95%;
+	padding: 0px;
+} 
+.histogramHeader {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.dleseReviewedHeader {
+	font-size: 0.9em; 
+	font-weight: normal;
+}
+
+

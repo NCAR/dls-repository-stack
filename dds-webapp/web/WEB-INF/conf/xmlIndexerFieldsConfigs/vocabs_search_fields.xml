@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="vocabs">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<xpaths>
+				<xpath>/vocabTerm/recordID</xpath>
+			</xpaths>		
+		</standardField>	
+		<standardField name="title">
+			<xpaths>
+				<xpath>/vocabTerm/fullName</xpath>
+				<xpath>/vocabTerm/altName</xpath>
+			</xpaths>		
+		</standardField>
+<!-- 		<standardField name="description">
+			<xpaths>
+				<xpath>/vocabTerm/otherNotes</xpath>
+			</xpaths>		
+		</standardField> -->		
+	</standardFields>
+	
+	
+	<!-- Relationships that this format of record defines. -->	
+	<relationships>
+		<!-- 	Relationship of the target record to this.
+		
+				The given relationship name will be attached to the target record, not this record.
+				
+				Examples:
+					target 'isAnnotatedBy' this
+					target 'isExtendedBy' this
+					target 'isMemberOf' this
+					etc.
+					
+				attributes: name=[relationshop name] -->
+				
+		<!-- Xpath where the target record's ID or URL is stored
+			 attribute type=[id|url] -->
+			 
+		<relationship name="supersededBy">
+			<xpaths>
+				<xpath type="id">/vocabTerm/otherRecords/supersedes</xpath>
+			</xpaths>		
+		</relationship>
+		<relationship name="replacedBy">
+			<xpaths>
+				<xpath type="id">/vocabTerm/otherRecords/replaces</xpath>
+			</xpaths>		
+		</relationship>			
+	</relationships>	
+</XMLIndexerFieldsConfig>

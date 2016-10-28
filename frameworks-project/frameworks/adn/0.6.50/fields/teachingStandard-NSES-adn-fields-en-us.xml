@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: teachingStandard-NSES-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/teachingStandard.xsd">
+	<field name="Teaching standard - science - National Science Education Standards (NSES)" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/educational/teachingStandards/teachingStandard">
+		<definition attribution="National Research Council - National Science Education Standards (NSES)">a description of what educators of science should understand and be able to do</definition>
+
+		<vocabLevels number="3">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="NSES">National Science Education Standards</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="2" levelName="Standard" levelDeftn="a named and lettered level of what educators of science should understand and be able to do">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="Teaching Standard A Teachers of science plan an inquiry-based science program for their students">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Teaching Standard B Teachers of science guide and facilitate learning">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Teaching Standard C Teachers of science engage in ongoing assessment of their teaching and of student learning">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Teaching Standard D Teachers of science design and manage learning environments that provide students with the time, space, and resources needed for learning science">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Teaching Standard E Teachers of science develop communities of science learners that reflect the intellectual rigor of scientific inquiry and the attitudes and social values conducive to science learning">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Teaching Standard F Teachers of science actively participate in the ongoing planning and development of the school science program">self-explanatory</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>
+			
+			<levelAndDeftn level="3" levelName="Concept" levelDeftn="the high-level topic area addressed by the standard; see the allowed combination of terms below; the concept part of the term is the phrase after the last colon"/>
+		</vocabLevels>
+
+
+		<terms>
+			<termAndDeftn vocab="NSES:Teaching Standard A Teachers of science plan an inquiry-based science program for their students:Develop a framework of yearlong and short-term goals for students">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard A Teachers of science plan an inquiry-based science program for their students:Select science content and adapt and design curricula to meet the interests, knowledge, understanding, abilities, and experiences of students">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard A Teachers of science plan an inquiry-based science program for their students:Select teaching and assessment strategies that support the development of student understanding and nurture a community of science learners">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard A Teachers of science plan an inquiry-based science program for their students:Work together as colleagues within and across disciplines and grade levels">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:Teaching Standard B Teachers of science guide and facilitate learning:Focus and support inquiries while interacting with students">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard B Teachers of science guide and facilitate learning:Orchestrate discourse among students about scientific ideas">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard B Teachers of science guide and facilitate learning:Challenge students to accept and share responsibility for their own learning">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard B Teachers of science guide and facilitate learning:Recognize and respond to student diversity and encourage all students to participate fully in science learning">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard B Teachers of science guide and facilitate learning:Encourage and model the skills of scientific inquiry, as well as the curiosity, openness to new ideas and data, and skepticism that characterize science">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:Teaching Standard C Teachers of science engage in ongoing assessment of their teaching and of student learning:Use multiple methods and systematically gather data about student understanding and ability">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard C Teachers of science engage in ongoing assessment of their teaching and of student learning:Analyze assessment data to guide teaching">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard C Teachers of science engage in ongoing assessment of their teaching and of student learning:Guide students in self-assessment">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard C Teachers of science engage in ongoing assessment of their teaching and of student learning:Use student data, observations of teaching, and interactions with colleagues to reflect on and improve teaching practice">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard C Teachers of science engage in ongoing assessment of their teaching and of student learning:Use student data, observations of teaching, and interactions with colleagues to report student achievement and opportunities to learn to students, teachers, parents, policy makers, and the general public">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:Teaching Standard D Teachers of science design and manage learning environments that provide students with the time, space, and resources needed for learning science:Structure the time available so that students are able to engage in extended investigations">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard D Teachers of science design and manage learning environments that provide students with the time, space, and resources needed for learning science:Create a setting for student work that is flexible and supportive of science inquiry">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard D Teachers of science design and manage learning environments that provide students with the time, space, and resources needed for learning science:Ensure a safe working environment">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard D Teachers of science design and manage learning environments that provide students with the time, space, and resources needed for learning science:Make the available science tools, materials, media, and technological resources accessible to students">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard D Teachers of science design and manage learning environments that provide students with the time, space, and resources needed for learning science:Identify and use resources outside the school">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard D Teachers of science design and manage learning environments that provide students with the time, space, and resources needed for learning science:Engage students in designing the learning environment">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:Teaching Standard E Teachers of science develop communities of science learners that reflect the intellectual rigor of scientific inquiry and the attitudes and social values conducive to science learning:Display and demand respect for the diverse ideas, skills, and experiences of all students">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard E Teachers of science develop communities of science learners that reflect the intellectual rigor of scientific inquiry and the attitudes and social values conducive to science learning:Enable students to have a significant voice in decisions about the content and context of their work and require students to take responsibility for the learning of all members of the community">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard E Teachers of science develop communities of science learners that reflect the intellectual rigor of scientific inquiry and the attitudes and social values conducive to science learning:Nurture collaboration among students">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard E Teachers of science develop communities of science learners that reflect the intellectual rigor of scientific inquiry and the attitudes and social values conducive to science learning:Structure and facilitate ongoing formal and informal discussion based on a shared understanding of rules of scientific discourse">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard E Teachers of science develop communities of science learners that reflect the intellectual rigor of scientific inquiry and the attitudes and social values conducive to science learning:Model and emphasize the skills, attitudes, and values of scientific inquiry">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:Teaching Standard F Teachers of science actively participate in the ongoing planning and development of the school science program:Plan and develop the school science program">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard F Teachers of science actively participate in the ongoing planning and development of the school science program:Participate in decisions concerning the allocation of time and other resources to the science program">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NSES:Teaching Standard F Teachers of science actively participate in the ongoing planning and development of the school science program:Participate fully in planning and implementing professional growth and development strategies for themselves and their colleagues">self-explanatory</termAndDeftn>
+		</terms>
+
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2006-02-24">Choosing a standard signifies that the content of the resource supports educators in the teaching of science articulated in the standard.</practice>
+
+				<practice status="current" originDate="2006-02-24">Catalogers with experience and familiarity with teaching and the educational setting may associate these standards with resources.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2006-09-20">Do not choose too many standards. Most resources can only adequately address 3-4 standards.</practice>
+			</donts>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>NSES:Teaching Standard A Teachers of science plan an inquiry-based science program for their students:Develop a framework of yearlong and short-term goals for students</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

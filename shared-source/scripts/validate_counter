@@ -1,0 +1,76 @@
+#!/bin/csh
+
+# This script validates a single .xml file or directory of xml files.
+# A report of the results is sent to standard output.
+#
+# Author: John Weatherley
+
+
+set HOST = `uname -n`
+set USER = `whoami`
+
+if ($USER == "jweather" || $USER == "ginger") then
+	set LIB = ~/bin/lib
+else
+	set LIB = /export/local/scripts/lib
+endif
+
+if ($HOST == "quake.dpc.ucar.edu") then
+	#set JAVA_HOME = /usr/local/IBMJava2-13
+	set JAVA_HOME = /export/local/j2sdk1.4.0
+	#set JAVA_HOME = /export/devel/qaroot/usr/local/jdk1.3.0.sun
+	#set JAVA_HOME = /export/devel/jweather/Workshop-test/jdk1.3.1_03
+	#set JAVA_HOME = /export/devel_old/qaroot/usr/local/jdk1.3.0
+endif
+
+if ($HOST == "mortimer.dpc.ucar.edu") then
+	set JAVA_HOME = /usr/local/java/IBMJava2-13
+endif
+
+if ($HOST == "flood.dpc.ucar.edu") then
+	set JAVA_HOME = /export/local/java/IBMJava2-131
+endif
+
+
+
+
+set CP = ""
+
+if( $#argv == 1 ) then
+	if( $argv[1] != "-h" && $argv[1] != "--help" ) then
+
+		set XERCES_DIR = /export/devel/jweather/xerces/xerces-2_0_1		
+		set CLASS_DIR = /export/devel/jweather/oaiProvider/src2.0/classes
+		
+		# Construct the classpath
+		#foreach file ($LIB/*.jar)
+		#	set CP = $CP$file\:
+		#end
+		
+		#set CP = $LIB/servlet.jar:$LIB/xerces.jar:$LIB/a-xercesImpl.jar:$LIB/a-xmlParserAPIs.jar:$LIB/oai.jar
+		set CP = $XERCES_DIR/xercesImpl.jar:$XERCES_DIR/xmlParserAPIs.jar:$CLASS_DIR
+		
+		echo "Using classpath $CP"
+		echo ""
+		echo "Using JAVA_HOME $JAVA_HOME"
+		echo ""
+		echo "arg is $argv[1]"
+		echo ""
+		
+        # Run validation
+		$JAVA_HOME/bin/java -cp $CP org.dlese.dpc.commands.Counter -v -s -f $argv[1]
+		
+		exit 1
+	endif
+endif
+
+# If we've gotten this far then send use msg:
+echo "USAGE: validate [file|direcory]"
+echo ""
+echo " Example: validate filename.xml"
+echo " Example: validate .  (process all files in the current directory)"
+echo " Example: validate my_xml_files_directory"
+echo " Example: validate my_xml_files_directory > output.txt  (saves output to file)"
+echo ""
+
+

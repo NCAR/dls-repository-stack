@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ns.nsdl.org/ncs/framework_config/1.00/schemas/dcsFrameworkConfig.xsd">
+  <xmlFormat>mast</xmlFormat>
+  <schemaInfo>
+    <rootElementName>record</rootElementName>
+    <schemaURI>http://meta.usu.edu/frameworks/mast/1.0/schemas/mast-dc-gem.xsd</schemaURI>
+    <paths>
+      <path pathName="id" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="true">/record/general/recordID</path>
+      <path pathName="url" requiredByCopyRecord="true" valueType="uniqueUrl" requiredByMinimalRecord="true" readOnly="false">/record/general/url</path>
+    </paths>
+    <nameSpaceInfo/>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>3</baseRenderLevel>
+    <firstPage>general</firstPage>
+    <editorPages>
+      <editorPage pageLabel="General">general</editorPage>
+      <editorPage pageLabel="Educational">educational</editorPage>
+      <editorPage pageLabel="Contributor Info">contributions</editorPage>
+    </editorPages>
+    <rebuildOnStart>true</rebuildOnStart>
+    <fieldInfoURI>http://meta.usu.edu/frameworks/mast/1.0/build/fields-list.xml</fieldInfoURI>
+    <vocabLayoutURI>file:///C:/Documents and Settings/ostwald/devel/projects/frameworks-project/frameworks/mast/1.0/build/groups-list.xml</vocabLayoutURI>
+  </editorInfo>
+  <standAloneInfo>
+    <recordsDir>not configured here - see "dcsConfig" in web.xml and server.xml</recordsDir>
+  </standAloneInfo>
+</frameworkConfigRecord>

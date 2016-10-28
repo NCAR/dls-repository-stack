@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>Nature: International Weekly Journal of Science</title>
+<description>This site is a gateway to all Nature-titled journals and sites for all levels of visitors. It provides full text services to subscribers of the weekly printed edition of Nature, but an extensive range of free content and other services are available to registered users and visitors, including an archive of the full text of the journal from 1997 to present. Nature appears weekly and publishes papers from any area of science with great potential impact. The importance of Nature papers often extends well beyond the confines of the specific discipline concerned. Nature also publishes a broad range of informal material in the form of Opinion articles, News stories, Briefings and Recruitment features, and contributed material such as Correspondence; Commentary; News and Views; Scientific Correspondence; and book, software and product reviews. This site requires membership which is free and you can sign up on the site.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Biology</subject>
+<subject>DLESE:Ecology</subject>
+</subjects>
+</general>
+<lifecycle>
+<contributors>
+<contributor role="Publisher">
+<organization>
+<instName>Macmillian Publishers Ltd, Nature Publishing Group</instName>
+<instEmail>nature@nature.com</instEmail>
+</organization>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-030">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-11-13" created="2000-11-13"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://www.nature.com/nature/index.html</primaryURL>
+<mediums>
+<medium>text/html</medium>
+</mediums>
+<requirements>
+<requirement>
+<reqType>DLESE:General:No specific technical requirements</reqType>
+</requirement>
+</requirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:Graduate or professional</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:High school</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate lower division</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate upper division</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Text:Periodical</resourceType>
+</resourceTypes>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>Nature Copyright Macmillan Publishers Ltd 2000 Registered No. 785998 England</description>
+</rights>
+</itemRecord>

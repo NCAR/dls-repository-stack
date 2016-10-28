@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: contributor-anno-fields-en-us.xml,v 1.1 2009/01/30 21:32:40 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/annotation/1.0.00/non-vocab-fields.xsd">
+	<field name="Contributor" language="en-us" metaFormat="dlese_anno" metaVersion="1.0.00" path="/annotationRecord/annotation/contributors/contributor">
+		<definition>the person or organization making the annotation</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-10-28" link1="role" style1="bold" link2="date" style2="bold">Complete the required subfields of role and date.</practice>
+				<practice status="current" originDate="2004-09-03" link1="person" style1="bold" link2="organization" style2="bold">Complete either the person subfield or the organization subfield. One of them is required.</practice>
+				<practice status="current" originDate="2006-09-21" link1="share" style1="bold">Complete the share field to indicate whether name, email and organizational information can be shared.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2004-12-02">Do not include webmasters as contributors.</practice>
+			</donts>
+		</bestPractices>
+
+		<documentation>
+			<attributes>
+				<attribute>role</attribute>
+				<attribute>share</attribute>
+				<attribute>date</attribute>
+			</attributes>
+			<children>
+				<child>organization</child>
+				<child>person</child>
+			</children>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>the attributes and child elements; date formats and the controlled vocabularies for role and share</domain>
+			<example>&lt;organization&gt;, &lt;person&gt;, 2004-10-26</example>
+			<notes>
+				<note>Organizations or people include authors, contacts, editors, publishers, educators or students.</note>
+			</notes>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

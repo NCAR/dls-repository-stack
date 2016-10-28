@@ -1,0 +1,72 @@
+Cataloging standards in the NCS
+
+the new MSP2 framework is standards-cataloging-friendly because it provides
+metadata fields that are closely related to the CAT API parameters.
+
+the subjects field is a large hierarchical list that provides a structure and
+vocab choices that can be KEY WORDS in standards documents (Key Concepts)
+
+this secondary, more understandable structure, can allow users to express higher-level groupings,
+similar to "strands" and "bands" for less effort. (even a clunky hierarchy can
+be better than a freetext box, especially in complex info spaces).
+
+(HECK - this may simply be making a case for making "subject" more important in
+the standards-suggesting service, which seems to be a no-brainer, at least in the case of MSP2, ADN,
+...)
+
+Should we "constrain (filter, hide) the hierarchy by values in the UI?
+
+UI Notes
+- controls for "criteria": reset, dis/enable, edit? (but with edit, we'll have
+to be tricky indeed) 
+- why not a "mac"-like browser for fields such as msp2's subjects? (then you'd
+need a "show only selected" functionality
+- would this be a good way of exploring standards documents as well?
+
+Frameworks and the Fields that inform CAT
+-all
+	- URL
+	- Title(s)
+	- Description
+	- GradeRanges
+	- ~keywords
+- ncs_item
+	- NSESstandard (full-ADN-text that can be feed into query - 
+		/record/education/standards/NSESstandard)
+	- subject (record/general/subject) - this is a combo-union (vocab + free
+	text)
+	+ NO KEYWORDS
+- adn
+	- subject (/itemRecord/general/subjects/subject)
+	- KEYWORDS (/itemRecord/general/keywords/keyword
+- msp2
+	- keyword (/record/general/keyword)
+	- subjects
+		/record/general/subjects/scienceSubject
+		/record/general/subjects/mathSubject
+		/record/general/subjects/scienceSubject
+	- gsdlSubject? (/record/general/gsdlSubject) - don't know about this. at
+		this point would we be stretching it?
+- mast
+	- gemSubject (/record/general/subjects/gemSubject)
+	- gemSubject (/record/general/subjects/otherSubject)
+	
+SUMMARY
+What we're talking about here is adding the ability for a XXX object to "export"
+a set of fields, including but not limited to:
+- id
+- url
+- title
+- description
+- gradeRanges
+- keywords
+- subjects
+
+these fields need not be available, so UI has to ask for them
+
+fields: 
+	
+
+NOTES about current ASN/NCS issues
+docs that don't return any hits:
+Alaska - Mathematics Content Standards (2000) 

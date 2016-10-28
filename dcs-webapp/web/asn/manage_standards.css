@@ -1,0 +1,147 @@
+.framework {
+	/* border:thin blue solid; */
+	margin:0px 0px 0px 0px;
+	/* background-color:#CCCEE6; */
+	padding:4px;
+	border-bottom:thin solid #333366;
+}
+
+.framework-header-table {
+	width: 100%;
+	border-collapse:collapse;
+	/* background-color:#CCCEE6; */
+}
+
+.framework-name {
+	font-size:16px;
+	font-weight:bold;
+	font-family:arial;
+	color:#333366;
+}
+
+.framework_content {
+	/* margin:0px 0px 0px 20px; */
+	margin:0px 0px 0px 0px;
+}
+
+.subject {
+	margin:5px 0px 0px 20px;
+	/* background-color:#CCCEE6; */
+	padding:0px;
+	/* border:thin solid #333366; */
+	border-top:thin solid #CCCEE6;
+}
+
+.subject-header-table {
+	/* width: 100%; */
+	border-collapse:collapse;
+	margin:0px;
+}
+
+.subject-name {
+	font-size:14px;
+	font-weight:bold;
+	font-family:arial;
+	color:#333366;
+}
+
+table.subject_content {
+	border-collapse:collapse;
+	margin:0px 0px 0px 20px;
+	padding:0px;
+	/* border:2px solid #333366; */
+	border:1px solid #333366;
+	background-color:white;
+}
+
+.subject_content td {
+	padding:3px;
+	border:1px solid #333366;
+}
+
+.title {
+	width:90%;
+}
+
+/* Styles for standards docs */
+.author, .created, .key {
+	white-space:nowrap;
+	width:125;
+}
+
+.small-button { /* e.g. to open and close subitems */
+	font-size:8pt;
+	padding:0px;
+	margin:0px;
+	
+}
+
+.collapsible-button {
+	/* list-style-image:transparent url('/images/opened.gif') no-repeat 0 0; */
+	background:url('../images/closed.gif') left no-repeat;
+	margin:0px;
+	padding-left:20px;
+}
+
+.collapsible-button.collapsible-button-open {
+	background-image:url('../images/opened.gif');
+}
+
+/* standards docs */
+.registered-doc {
+	/* background:green; */
+	background-color:#E3E4F1;
+	font-weight:normal;
+	font-style:normal;
+}
+
+.registered-doc.default-doc-over {
+	/* background:green; */
+	background-color:#f7f8ff;
+	cursor:pointer;
+}
+
+.highlighted {
+	border:#333366 2px dashed;
+}
+
+.extra-doc {
+	background:#FFFFCC;
+	font-style:italic;
+	/* opacity:0.6; */
+}
+
+#key-table {
+	border-collapse:collapse;
+	width:200px;
+}
+
+#key-table td {
+	border:black thin solid;
+}
+
+/* erase me */
+.default-link {
+	white-space:nowrap;
+	font-style:italic;
+	font-weight:bold;
+}
+
+.default-doc {
+	background-color:#333366;
+	color:white;
+}
+
+.default-doc-control {
+	/* margin-left:40px; */
+	width:100%;
+	text-align:center;
+}
+
+.set-default-prompt {
+	color:#333366;
+	padding:10px;
+	border:#333366 2px solid;
+	width:50%;
+}
+

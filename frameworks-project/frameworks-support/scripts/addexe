@@ -1,0 +1,12 @@
+chmod o+x copy-frameworks.py
+chmod g+x copy-frameworks.py
+chmod u+x copy-frameworks.py
+chmod o+x checkFieldFiles.sh
+chmod g+x checkFieldFiles.sh
+chmod u+x checkFieldFiles.sh
+chmod o+x create-build-and-loader-files.py
+chmod g+x create-build-and-loader-files.py
+chmod u+x create-build-and-loader-files.py
+chmod o+x generate-default-groups.py
+chmod g+x generate-default-groups.py
+chmod u+x generate-default-groups.py

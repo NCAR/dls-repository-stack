@@ -1,0 +1,63 @@
+<%-- 
+	javascript supporting the comboInput tag which allows user to make a choice from a supplied set of values, or alternatively
+	type in a value. 
+--%>
+
+<script type="text/javascript">	
+<!--
+	/* hide the combo select element and show the combo text element */
+	function showComboTextInput (id) {
+		var text = document.getElementById( id + "_text" );
+		var text_input = document.getElementById ( id + "_text_input");
+		var select = document.getElementById (id + "_select");
+		if (text && text_input && select) {
+				select.style.display = "none"
+				text.style.display = "block"
+ 				text_input.value = "${sef.comboOtherOption.label}"
+				text_input.select();
+				text_input.focus();
+		}
+		// else
+			// alert ("ERROR: an object could not be found")
+	}
+	
+	/* show the combo select element and hide the combo text element */
+	function showComboSelect (id) {
+		var text = document.getElementById( id + "_text" );
+		var text_input = document.getElementById ( id + "_text_input");
+		var select = document.getElementById (id + "_select");
+		if (text && text_input && select) {
+				select.style.display = "block"
+				text.style.display = "none"
+		}
+		// else
+			// alert ("ERROR: an object could not be found")
+	}
+	
+	/* called when a selection has been made in the comboSelect element.
+	 if "-- other --" has been selected, then show the combo text input element
+	 */
+	function comboSelectOnChangeHandler (id, selected) {
+		if (selected == "${sef.comboOtherOption.value}") {
+			showComboTextInput (id)
+		}
+	}
+		
+	/* add an "other value" provided by user via combo text element to the combo select element */
+	function updateComboSelect (id, new_option) {
+		var select_menu = document.getElementById (id + "_select_menu");
+		if (select_menu) {
+			if (new_option == "${sef.comboOtherOption.label}") {
+				select_menu.options[0].selected = true;
+			}
+			else {
+				// alert ("there are " + select_menu.length + " options")
+				optionObj = new Option (new_option);
+				optionObj.selected = true;
+				select_menu.options[select_menu.length] = optionObj;
+			}
+		}
+		showComboSelect(id)
+	}
+//-->
+</script>

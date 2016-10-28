@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ns.nsdl.org/ncs/framework_config/1.00/schemas/dcsFrameworkConfig.xsd">
+  <xmlFormat>adn</xmlFormat>
+  <schemaInfo>
+    <rootElementName>itemRecord</rootElementName>
+    <schemaURI>http://www.dlese.org/Metadata/adn-item/0.7.00/record.xsd</schemaURI>
+    <paths>
+      <path pathName="id" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="true">/itemRecord/metaMetadata/catalogEntries/catalog/@entry</path>
+      <path pathName="dateCreated" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="true" valueType="date">/itemRecord/metaMetadata/dateInfo/@created</path>
+      <path pathName="title" requiredByCopyRecord="true" requiredByMinimalRecord="true">/itemRecord/general/title</path>
+      <path pathName="description" requiredByCopyRecord="true" requiredByMinimalRecord="true">/itemRecord/general/description</path>
+      <path pathName="url" requiredByCopyRecord="true" requiredByMinimalRecord="true" valueType="uniqueUrl" inputHelper="ndr_upload/widget.jsp">/itemRecord/technical/online/primaryURL</path>
+      <path valueType="collectionInfo" requiredByMinimalRecord="true" pathName="termsOfUse">/itemRecord/metaMetadata/termsOfUse</path>
+      <path valueType="collectionInfo" requiredByMinimalRecord="true" pathName="termsOfUseURI">/itemRecord/metaMetadata/termsOfUse/@URI</path>
+      <path valueType="collectionInfo" requiredByMinimalRecord="true" pathName="copyright">/itemRecord/metaMetadata/copyright</path>
+      <path defaultValue="en" requiredByMinimalRecord="true" pathName="metaLanguage">/itemRecord/metaMetadata/language</path>
+      <path defaultValue="Accessioned" requiredByMinimalRecord="true" pathName="statusOf">/itemRecord/metaMetadata/statusOf/@status</path>
+      <path valueType="url" requiredByMinimalRecord="false" pathName="mirrorURL">/itemRecord/technical/online/mirrorURLs/mirrorURL</path>
+      <path pathName="additionalInfo" inputHelper="propVal/ccs_adn_additionInfo.jsp">/itemRecord/general/additionalInfo</path>
+      <path pathName="eduDescription" inputHelper="propVal/ccs_adn_eduDescription.jsp">/itemRecord/educational/description</path>
+      <path pathName="online" initialFieldCollapse="open">/itemRecord/technical/online</path>
+    </paths>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>3</baseRenderLevel>
+    <firstPage>general</firstPage>
+    <editorPages>
+      <editorPage pageLabel="General">general</editorPage>
+      <editorPage pageLabel="Lifecycle">lifecycle</editorPage>
+      <editorPage pageLabel="Meta Metadata">metaMetadata</editorPage>
+      <editorPage pageLabel="Technical">technical</editorPage>
+      <editorPage pageLabel="Educational">educational</editorPage>
+      <editorPage pageLabel="Rights">rights</editorPage>
+      <editorPage pageLabel="Relations">relations</editorPage>
+      <editorPage pageLabel="Geospatial">geospatialCoverages</editorPage>
+      <editorPage pageLabel="Temporal">temporalCoverages</editorPage>
+      <editorPage pageLabel="Objects In Space">objectsInSpace</editorPage>
+    </editorPages>
+    <rebuildOnStart>true</rebuildOnStart>
+    <fieldInfoURI>http://www.dlese.org/Metadata/adn-item/0.6.50/build/fields-list.xml</fieldInfoURI>
+    <vocabLayoutURI>http://www.dlese.org/Metadata/adn-item/0.6.50/build/groups-list.xml</vocabLayoutURI>
+  </editorInfo>
+  <standAloneInfo>
+    <recordsDir>nada</recordsDir>
+  </standAloneInfo>
+  <name>ADN</name>
+</frameworkConfigRecord>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  OVERVIEW  *************************</xsd:documentation>
+		<xsd:documentation>Framework: Collection-level CATEGORY schema</xsd:documentation>
+		<xsd:documentation>Tag(s) defined: lifecycle</xsd:documentation>
+		<xsd:documentation>Source: DLESE Program Center (DPC); http://www.dlese.org</xsd:documentation>
+		<xsd:documentation>Last update:	2004-01-28</xsd:documentation>
+		<xsd:documentation>Notes: Developed and maintained at the DPC</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. </xsd:documentation>
+		<xsd:documentation>These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  CATEGORY schemas to include  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="commonfields.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>*****  VOCABULARY schemas to include  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="union-vocabs.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>*****  ROOT element   *************************</xsd:documentation>
+		<xsd:documentation>There is no root element for this schema.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  Complex Types (alpha order)  *******************</xsd:documentation>
+		<xsd:documentation>contributorLifecyleType is part of lifecycleType</xsd:documentation>
+		<xsd:documentation>contributorsLifecyleType is part of lifecycleType</xsd:documentation>
+		<xsd:documentation>lifecycleType is part of collectionType in collection.xsd</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  	contributorLifecyleType  *************************</xsd:documentation>
+		<xsd:documentation>role is a simple type attribute; see roleLifecycle.xsd - the function of the contributor</xsd:documentation>
+		<xsd:documentation>date is a simple type attribute; see commonfields.xsd; the date of the contributor's contribution; should be known so required; but may only be known to the year</xsd:documentation>
+		<xsd:documentation>organization is complex; see commonfields.xsd - information about an institution</xsd:documentation>
+		<xsd:documentation>person is complex; see commonfields.xsd - information about a person</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="contributorLifecycleType">
+		<xsd:choice>
+			<xsd:element name="person" type="personType" maxOccurs="1"/>
+			<xsd:element name="organization" type="organizationType" maxOccurs="1"/>
+		</xsd:choice>
+		<xsd:attribute name="role" type="roleLifecycleType" use="required"/>
+		<xsd:attribute name="date" type="union.dateType"/>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  	contributorsLifecyleType  *************************</xsd:documentation>
+		<xsd:documentation>contributor is complex - either an organization or person who can be contacted with collection questions</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="contributorsLifecycleType">
+		<xsd:sequence>
+			<xsd:element name="contributor" type="contributorLifecycleType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  	lifecycleType  *************************</xsd:documentation>
+		<xsd:documentation>contributors is complex - either an organization or person who can be contacted with collection questions</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="lifecycleType">
+		<xsd:sequence>
+			<xsd:element name="contributors" type="contributorsLifecycleType" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

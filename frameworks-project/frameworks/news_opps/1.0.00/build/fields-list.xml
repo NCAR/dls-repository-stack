@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- alphabetical listing of framework fields filenames -->
+<!-- alphabetical listing of framework fields field names -->
+<metadataFieldsInfo>
+	<files>
+		<file>news-opps/1.0.00/fields/announcement-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/announcements-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/audience-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/audiences-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/city-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/contactIDO-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/contactIDP-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/contributor-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/contributors-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/archiveDate-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/dateContrib-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/descr-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/otherDate-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/postDate-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/recordCreationDate-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/type-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/otherDates-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/instDeptP-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/instDeptO-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/description-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/diversity-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/diversities-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/emailP-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/emailO-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/emailAlt-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/keyword-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/keywords-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/language-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/meta-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/resource-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/location-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/locations-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/nameFirst-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/nameLast-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/nameMiddle-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/nameTitle-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/news-oppsRecord-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/organization-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/instNameP-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/instNameO-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/person-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/instPositionP-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/instPositionO-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/recordID-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/role-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/share-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/source-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/title-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/topic-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/topics-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/announcementURL-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/url-no-fields-en-us.xml</file>
+		<file>news-opps/1.0.00/fields/url-src-no-fields-en-us.xml</file>
+	</files>
+	<fields>
+		<field>Announcement type</field>
+		<field>Announcement type list</field>
+		<field>Audience</field>
+		<field>Audience list</field>
+		<field>City</field>
+		<field>Contact ID - organization</field>
+		<field>Contact ID - person</field>
+		<field>Contributor</field>
+		<field>Contributor list</field>
+		<field>Date - archive</field>
+		<field>Date - contribution</field>
+		<field>Date - description</field>
+		<field>Date - other</field>
+		<field>Date - post</field>
+		<field>Date - record creation</field>
+		<field>Date - type</field>
+		<field>Dates - other (list)</field>
+		<field>Department - (when describing a person)</field>
+		<field>Department - (when describing an organization)</field>
+		<field>Description</field>
+		<field>Diversity</field>
+		<field>Diversity list</field>
+		<field>Email - (when describing a person)</field>
+		<field>Email - (when describing an organization)</field>
+		<field>Email - alternate</field>
+		<field>Keyword</field>
+		<field>Keyword list</field>
+		<field>Language</field>
+		<field>Language - metadata</field>
+		<field>Language - resource</field>
+		<field>Location</field>
+		<field>Location list</field>
+		<field>Name - first</field>
+		<field>Name - last</field>
+		<field>Name - middle</field>
+		<field>Name title</field>
+		<field>News/opps record</field>
+		<field>Organization</field>
+		<field>Organization name - (when describing a person)</field>
+		<field>Organization name - (when describing an organization)</field>
+		<field>Person</field>
+		<field>Position - (when describing a person)</field>
+		<field>Position - (when describing an organization)</field>
+		<field>Record ID</field>
+		<field>Role</field>
+		<field>Share</field>
+		<field>Source</field>
+		<field>Title</field>
+		<field>Topic</field>
+		<field>Topic list</field>
+		<field>URL - announcement</field>
+		<field>URL - organization</field>
+		<field>URL - source</field>
+	</fields>
+</metadataFieldsInfo>

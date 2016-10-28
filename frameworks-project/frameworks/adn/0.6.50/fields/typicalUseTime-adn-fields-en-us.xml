@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: typicalUseTime-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/non-vocab-fields.xsd">
+	<field name="Use time" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/educational/audiences/audience/typicalUseTime">
+		<definition>the typical amount of time for a particular grade range to interact with the resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-04-25">Use for resources that are intended for student learning like lesson plans, case studies, activities, course, curriculums and other types of learning materials.</practice>
+				<practice status="current" originDate="2005-04-25">Express use time specific to the grade range being described.</practice>
+				<practice status="current" originDate="2006-03-01">Express use time in the following format: PnYnMnDTnHnMnS.</practice>
+				<practice status="current" originDate="2006-03-01">Y means years, M means months, D means days, T means time, H means hours, M means minutes, S means seconds and n means the number of each.</practice>
+				<practice status="current" originDate="2006-03-01">The capital P must be present with every value.</practice>
+				<practice status="current" originDate="2006-03-01">Always include the capital T when expressing hours, minutes or seconds.</practice>
+				<practice status="current" originDate="2006-03-01">Always capitalize Y, M, D, T, H, M and S.</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2005-04-25">Do not use for resources like data, data viewers, reference materials or portal sites.</practice>
+				<practice status="current" originDate="2006-03-01">Do not use to express how long an audio or audiovisual resource takes to play.</practice>
+			</donts>
+			
+			<examples>
+				<practice status="current" originDate="2005-04-20" link1="Middle school" style1="bold">If the grade range is Middle school, then a lab activity that takes about 90 minutes with eight graders would be expressed as PT1H30M.</practice>
+				<practice status="current" originDate="2006-03-01">Use time of 1 minute 40 secords: PT1M40S</practice>
+				<practice status="current" originDate="2006-03-01">Use time of 1 year, 2 months, 3 days, 10 hours and 30 minutes: P1Y2M3DT10H30M</practice>
+
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>duration</XMLdataType>
+			</XMLdataTypes>
+			<domain>fixed text format indicating time length</domain>
+			<example>PT1H30M (for a use time of 1 hour and 30 minutes)</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

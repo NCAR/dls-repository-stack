@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: urlOfRelation-osm-fields-en-us.xml,v 1.2 2011/07/07 17:55:00 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/non-vocab-fields.xsd">
+  <field name="URL - relation" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/resources/relation/@url">
+		<definition>a web address that provides access to the resource</definition> 
+		 <bestPractices>
+			<dos>
+				<practice status="current" originDate="2010-05-31">This field is optional.</practice> 
+				<practice status="current" originDate="2010-05-31">If there are two or more related resource URLs, add another relation tag set.</practice>
+
+				<practice status="current" originDate="2011-07-06" link1="landing" url1="http://www.springerlink.com/content /p42k481247700k30/" link2="full text" url2="http://www.springerlink.com/content /p42k481247700k30/fulltext.pdf">Use this field to provide access to a resource (abstract or article) on publisher or sponsor websites. Use appropriate landing pages over full text pages.</practice> <!--is published type-->
+				<practice status="current" originDate="2011-07-06">Use this field to provice access to other publisher materials that can include corrections to previously published works, supplementary materials, or bibliographic records in other citation databases or on e-print servers.</practice> 
+				<practice status="current" originDate="2011-07-06">Ideally, URLs to publisher or sponsor landing pages should be citable, permanent and possibly resolvable by a DOI resolver.</practice> 
+
+				<practice status="current" originDate="2011-07-06">For newsletters, like Staff Notes and NCAR Technical Notes, use the relation field to help catalog photo captions (i.e. type=Has image; title=Photo; description=Jane Doe; url is blank).</practice> 
+				<practice status="current" originDate="2011-07-06">For NCAR authored books, use this field for accessioning an electronic version or a publisher's landing page.</practice> 
+<!--
+				<practice status="current" originDate="2011-07-06" link1="http://opensky.library.ucar.edu/collections/?itemId=NAB-000-000-000-099" url1="http://opensky.library.ucar.edu/collections/?itemId=NAB-000-000-000-099">For NCAR authored books, if the book is not available from the NCAR Library collection, provide an opportunity to access via interlibrary loan (i.e. type=Is published; title=Interlibrary loan; description=To obtain this book, please request an interlibrary loan. url: http://www.ucar.edu/library/services/interlibraryloan) See http://opensky.library.ucar.edu/collections/?itemId=NAB-000-000-000-099 as an example.</practice> 
+-->				
+				
+				<practice status="current" originDate="2011-07-06" link1="http://opensky.library.ucar.edu/collections/?itemId=OSGC-000-000-000-035" url1="http://opensky.library.ucar.edu/collections/?itemId=OSGC-000-000-000-035">If the related resource resides in the OpenSky General Collection or other library non-archives collection, the URL structure is: http://opensky.library.ucar.edu/collections/?itemId=[DCS record number]  (e.g. http://opensky.library.ucar.edu/collections/?itemId=OSGC-000-000-000-035).</practice><!--most often is related type; sometimes is part of--> 
+				<practice status="current" originDate="2011-07-06" link1="https://nldr.library.ucar.edu/archon/?p=collections/controlcard&amp;id=21" url1="https://nldr.library.ucar.edu/archon/?p=collections/controlcard&amp;id=21">If the related resource resides in a library archives collection for which a URL link can be created (e.g. GATE), the URL structure is: https://nldr.library.ucar.edu/archon/?p=collections/controlcard&amp;id=[appropriate archon number]  (e.g. for GATE: https://nldr.library.ucar.edu/archon/?p=collections/controlcard&amp;id=21).</practice> <!--is part of type for archives-->
+
+				<practice status="current" originDate="2011-07-06" link1="https://nldr.library.ucar.edu/archon/?p=collections/controlcard&amp;id=21" url1="https://nldr.library.ucar.edu/archon/?p=collections/controlcard&amp;id=21">If the related resource resides in a library archives collection for which a URL cannot be created (e.g. Mesa Lab Construction), then enter the folder name in the title field (e.g. 'Folder: Dedication: Planning Memos, 1965-1967').</practice> <!--is part of type for archives-->
+					
+				<practice status="current" originDate="2011-07-06">When creating relationships to other OpenSky resource that are in non-archive collections, be sure to create a similar relation in the record of the other resource.</practice> [when a presentation or poster  is a surragote for published paper, put poster/presenation assets in the same record as the paper. Do not use the relation field, use asset field and title.
+				
+				
+				
+				
+				
+				<practice status="current" originDate="2010-05-31" link1="AGU" style1="bold" link2="AMS" style2="bold" link3="date" style3="bold" link4="embargo" style4="bold">AGU and AMS: OpenSky is allowed to post the published versions 6 months after publication. If the uploaded AMS or AGU paper is less than 6 months from publication, be sure to use the date field (under coverage) to set up a 6 month embargo period.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="Springer" style1="bold">Springer: OpenSky is allowed to post the published versions immediately but only publications that occur before the year 2014. Any publications after 2014, need to be embargoed until a new agreement is in place.</practice> 
+				<practice status="current" originDate="2010-05-31">When moving records with assets, be sure to move the asset.</practice> 
+				<practice status="current" originDate="2010-05-31">If you are unsure whether OpenSky should be holding a particular asset, contact an OpenSky administrator and do not give the record a Done status.</practice> 
+			 </dos>
+			 <donts>
+				 <practice status="current" originDate="2010-05-31">Do not use citeable URLs.</practice> 
+			 </donts>
+			 <examples>
+				<practice status="current" originDate="2010-05-31" link1="Technotes" style1="bold" link2="http://nldr.library.ucar.edu/collections/technotes/asset-000-000-000-579.pdf" url2="http://nldr.library.ucar.edu/collections/technotes/asset-000-000-000-579.pdf">Technotes: http://nldr.library.ucar.edu/collections/technotes/asset-000-000-000-579.pdf</practice>
+				<practice status="current" originDate="2010-05-31" link1="OSGC" style1="bold" link2="http://nldr.library.ucar.edu/collections/osgc/OSGC-000-000-002-177.pdf" url2="http://nldr.library.ucar.edu/collections/osgc/OSGC-000-000-002-177.pdf">OSGC: http://nldr.library.ucar.edu/collections/osgc/OSGC-000-000-002-177.pdf</practice>
+				<practice status="current" originDate="2010-05-31" link1="SOARS" style1="bold" link2="http://nldr.library.ucar.edu/collections/soars/2007_Aguilar_Theresa.pdf" url2="http://nldr.library.ucar.edu/collections/soars/2007_Aguilar_Theresa.pdf">SOARS: http://nldr.library.ucar.edu/collections/soars/2007_Aguilar_Theresa.pdf</practice>
+			</examples>
+		 </bestPractices>
+		 <documentation>
+				<obligation>required metadata if parent tag is present</obligation>
+				<min>1</min>
+				<max>1</max>
+				<XMLdataTypes>
+					<XMLdataType>anyURI</XMLdataType>
+				</XMLdataTypes>
+				<domain>patterned string</domain>
+				<example>http://nldr.library.ucar.edu/collections/osgc/183_Joach3.pdf</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

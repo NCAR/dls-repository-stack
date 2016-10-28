@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="../styles.css" type="text/css">
+		<title>Tool Help - Validate</title>
+	</head>
+<body>
+<h3>Tool Help - Validate</h3>
+
+<p>The <span class="help-em">Validate</span> button checkes the input values for the current page
+against the acceptable values as defined in the XML Schema.</p>
+
+<p>Currently, SchemEdit does not require validation either when moving from page to
+page or before writing to disk. The policy of leaving validation up to the user can be
+easily changed, however, if required by a particular workflow.</p>
+
+<h4>Implementation Details</h4>
+<p>SchemEdit uses the <a
+href="http://wwws.sun.com/software/xml/developers/xsdlib2/index.html"
+target="_blank">Sun XML Datatypes Library</a> to validate field values. The Sun
+Datatype Library contains validators for almost all of the datatypes defined in
+the <a href="http://www.w3.org/TR/xmlschema-2/" target="_blank">XML Schema Part
+2</a> specification. Schemas define data types by extending these built-in
+datatypes. SchemEdit automatically creates validators for derived data types.
+</p>
+
+<p>There are a few known problems with the Sun Datatype library, including:
+<ul>
+	<li><i>language type</i> - which accepts nearly any string, and</li>
+	
+	<li>some <i>date/time related types</i> which do not work properly because the XML
+		Schema Part 2 is broken with respect to dates (for details, see
+		<a href="http://lists.w3.org/Archives/Public/www-xml-schema-comments/2001JanMar/0365.html" target="_blank">[1]</a>
+		<a href="http://lists.w3.org/Archives/Public/www-xml-schema-comments/2001JanMar/0366.html" target="_blank">[2]</a>
+		<a href="http://lists.w3.org/Archives/Public/www-xml-schema-comments/2001JanMar/0367.html" target="_blank">[3]</a> and
+		<a href="http://lists.w3.org/Archives/Public/www-xml-schema-comments/2001JanMar/0368.html" target="_blank">[4]</a>
+		) 
+	</li>
+</ul>
+
+These limitations will be addressed by creating alternate validation classes for the affected types.
+</p>
+
+</body>
+</html>

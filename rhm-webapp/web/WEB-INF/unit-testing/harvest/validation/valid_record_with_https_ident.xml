@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <commParadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns="http://ns.nsdl.org/ncs/comm_para"
+              xsi:schemaLocation="http://ns.nsdl.org/ncs/comm_para http://ns.nsdl.org/ncs/comm_para/1.00/schemas/comm_para.xsd">
+   <recordId>CTE-PARA-216328</recordId>
+   <paradataTitle>
+      <string language="en">Paradata for 'History of the y-intercept'</string>
+   </paradataTitle>
+   <paradataDescription>
+      <string language="en">This record contains paradata for the resource 'History of the y-intercept'</string>
+   </paradataDescription>
+   <usageDataReferenceURL>http://www.cteonline.org/portal/default/Resources/Viewer/ResourceViewer?action=2&amp;resid=216328</usageDataReferenceURL>
+   <usageDataResourceURL>https://mathforum.org/library/drmath/view/52603.html</usageDataResourceURL>
+   <usageDataProvidedForName>
+      <string language="en">History of the y-intercept</string>
+   </usageDataProvidedForName>
+   <usageDataSummary>
+      <integer type="downloaded" dateTimeStart="2010-10-20T11:00:32"
+               dateTimeEnd="2012-02-09T16:20:42">0</integer>
+      <integer type="favorited" dateTimeStart="2010-10-20T11:00:32"
+               dateTimeEnd="2012-02-09T16:20:42">0</integer>
+      <integer type="commented" dateTimeStart="2010-10-20T11:00:32"
+               dateTimeEnd="2012-02-09T16:20:42">0</integer>
+      <integer type="viewed" dateTimeStart="2010-10-20T11:00:32"
+               dateTimeEnd="2012-02-09T16:20:42">8</integer>
+      <integer type="subscribed" dateTimeStart="2010-10-20T11:00:32"
+               dateTimeEnd="2012-02-09T16:20:42">0</integer>
+      <integer type="recommended" dateTimeStart="2010-10-20T11:00:32"
+               dateTimeEnd="2012-02-09T16:20:42">0</integer>
+   </usageDataSummary>
+</commParadata>
+
+
+
+
+
+ 
+
+
+

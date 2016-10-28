@@ -1,0 +1,24 @@
+Term count report information
+-----------------------------
+
+The data in this report are as follows:
+
+Term: a term that appears in one or more of the given fields.
+
+Term count: the total number of times the term appears within the 
+given field(s) throughout all records in the index.
+
+Record count: the total number of records in which the term
+appears in one or more of the given field(s).
+
+Appears in these fields: when multiple fields are requested,
+a list of fields among the requested fields in which the 
+term appears.
+
+
+Note that if more than one field is requested the report takes considerably
+longer to generate than if only one field is requested.
+
+The reports may be imported into Excel via WebQuery or, 
+from Internet Explorer, right-click on the table and
+choose 'Export to Microsoft Excel'.

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groupsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/adn-i/subject.xsd">
+	<concept name="subject" system="dds" interface="default" language="en-us" label="Subject">
+
+		<item vocab="DLESE:Agricultural science"></item>
+		<item vocab="DLESE:Atmospheric science"></item>
+		<item vocab="DLESE:Biology"></item>
+		<item vocab="DLESE:Chemistry"></item>
+		<item vocab="DLESE:Climatology"></item>
+		<item vocab="DLESE:Cryology"></item>
+		<item vocab="DLESE:Ecology"></item>
+		<item vocab="DLESE:Educational theory and practice"></item>
+		<item vocab="DLESE:Environmental science"></item>
+		<item vocab="DLESE:Forestry"></item>
+
+		<group label="Geographical Sciences">
+			<deftn>The study of human and physical geography</deftn>
+			<item vocab="DLESE:Human geography"></item>
+			<item vocab="DLESE:Physical geography"></item>
+		</group>
+		
+		<group label="Geological Sciences">
+			<deftn>The study of geochemistry, geology, geophysics, mineralogy, paleontology and structural geology</deftn>
+			<item vocab="DLESE:Geochemistry"></item>
+			<item vocab="DLESE:Geologic time"></item>
+			<item vocab="DLESE:Geology"></item>
+			<item vocab="DLESE:Geophysics"></item>
+			<item vocab="DLESE:Mineralogy or petrology"></item>
+			<item vocab="DLESE:Paleontology"></item>
+			<item vocab="DLESE:Structural geology"></item>
+		</group>
+		
+		<item vocab="DLESE:History and philosophy of science"></item>
+		<item vocab="DLESE:Hydrology"></item>
+		<item vocab="DLESE:Mathematics"></item>
+		<item vocab="DLESE:Natural hazards"></item>
+		
+		<group label="Oceanographical Sciences">
+			<deftn>The study of biological, chemical and physical oceanography</deftn>
+			<item vocab="DLESE:Biological oceanography"></item>
+			<item vocab="DLESE:Chemical oceanography"></item>
+			<item vocab="DLESE:Physical oceanography"></item>
+		</group>
+		
+		<item vocab="DLESE:Physics"></item>
+		<item vocab="DLESE:Policy issues"></item>
+		<item vocab="DLESE:Soil science"></item>
+		<item vocab="DLESE:Space science"></item>
+		<item vocab="DLESE:Technology"></item>
+		<item vocab="DLESE:Other"></item>
+		<item vocab="DLESE:To be supplied" noDisplay="true"/>
+	</concept>	
+</groupsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->
+

@@ -1,0 +1,35 @@
+
+<div id="ldap-directory-search" class="toggling-header directory-search-header"></div>
+
+<div id="ldap-search">
+
+	<div class="search-control">
+		<input type="text" id="ldapSearchString" value="" />
+		<select id="ldapSearchField">
+			<option value="">-- ldap field --</option>
+			<option value="uid">user name</option>
+			<option value="cn">full name</option>
+		</select>
+		<input type="button" id="ldapSearchButton" value=" search " />
+		<input type="button" id="ldapClearButton" value=" clear " />
+		<div class="search-control-label">selects records with any occurance of search string in selected field</div>
+	</div>
+	
+<div id="ldap-display" style="display:none;margin-top:10px">
+	<div class="search-control-label">search results</div>
+	<table id="ldap-search-results" class="user-listing-table">
+	</table>
+</div>
+
+</div>
+<script type="text/javascript">
+// requires "directory-search.js" - see edit-user.jsp
+	try {
+		new LdapSearcher();
+		log ("ldapSearcher instantiated");
+	} catch (error) {
+		alert ("could not instantiate ldap searcher: " + error)
+	}
+</script>
+
+

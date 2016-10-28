@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>Ice Core Contributions To Global Change Research: Past Successes and Future Directions</title>
+<description>The U.S. ice coring community has, in concert with its international partners, made remarkable strides to advance in the understanding of global change. This document was assembled by the Ice Core Working Group (ICWG), and provides a synthesis of the global change lessons learned thus far, and the requirements and plans for solving new global change questions utilizing future ice coring activities. Sections on lessons learned include: the greenhouse/gas relationship, rapid climate change events, natural climate variability during the Holocene, extreme events (volcanoes and biomass burning), recent climate change as a precursor to modern climate, hindcasting instruments, anthropogenic impact on atmospheric chemistry, and human response to climate change as deduced from the paleorecord.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Climatology</subject>
+<subject>DLESE:Cryology</subject>
+</subjects>
+</general>
+<lifecycle>
+<contributors>
+<contributor date="1998-05" role="Contact">
+<person>
+<nameFirst>Paul</nameFirst>
+<nameMiddle>A.</nameMiddle>
+<nameLast>Mayewski</nameLast>
+<instName>University of New Hampshire</instName>
+<emailPrimary>paul_mayewski@grg.sr.unh.edu</emailPrimary>
+</person>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-022">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-11-20" created="2000-11-20"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://www.nicl-smo.sr.unh.edu/documents/1998/index.html</primaryURL>
+<mediums>
+<medium>text/html</medium>
+<medium>application/pdf</medium>
+</mediums>
+<requirements>
+<requirement>
+<reqType>DLESE:Software or plug-in:Adobe Acrobat reader</reqType>
+</requirement>
+</requirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:Graduate or professional</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate lower division</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate upper division</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Text:Report</resourceType>
+</resourceTypes>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>Copyright and Other Restrictions Information is Unknown</description>
+</rights>
+</itemRecord>

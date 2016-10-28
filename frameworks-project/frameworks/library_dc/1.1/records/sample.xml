@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record 
+xsi:schemaLocation="http://nldr.library.ucar.edu/metadata/library_dc http://nldr.library.ucar.edu/metadata/library_dc/1.1/schemas/library_dc.xsd" 
+xmlns="http://nldr.library.ucar.edu/metadata/library_dc" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<recordID>String</recordID>
+	<dateCataloged>1967-08-13</dateCataloged>
+	<URL>String</URL>
+	<volume>ABA</volume>
+	<issue>123</issue>
+	<source>String</source>
+	<title>String</title>
+	<altTitle>String</altTitle>
+	<earlierTitle>String</earlierTitle>
+	<laterTitle>String</laterTitle>
+	<creator>String</creator>
+	<contributor>String</contributor>
+	<description>String</description>
+	<date>2009-10-29</date>
+	<dateDigitized>2009-10-29</dateDigitized>
+	<subject>String</subject>
+	<instName>Aeronautical Research Associates of Princeton, Inc.</instName>
+	<instDivision>Acid Deposition Modeling Project (ADMP)</instDivision>
+	<libraryType>BOOK</libraryType>
+	<otherType>Collection</otherType>
+	<format>String</format>
+	<identifier>String</identifier>
+	<language>String</language>
+	<relation type="Has part">String</relation>
+	<coverage>String</coverage>
+	<rights>String</rights>
+	<publisher>String</publisher>
+</record>

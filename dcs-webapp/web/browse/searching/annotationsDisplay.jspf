@@ -1,0 +1,68 @@
+<%-- 
+	Display annotations and relations for this record
+	code pulled form dds-project//admin/search_result_display.jsp - 12/12/2010 --%>
+
+<c:set var="MAX_ANNOS" value="10"/>
+
+<c:if test='${not empty result.docReader.relatedRecordsMap}'>
+	<div class="searchResultValues"><em>Relationships:</em>
+		<c:forEach items="${result.docReader.relatedRecordsMap}" var="relatedRecordsEntry" varStatus="i">
+			${relatedRecordsEntry.key}${i.last ? '' : ','}
+		</c:forEach>
+		<div style="padding-left:25px;">
+			<c:forEach items="${result.docReader.relatedRecordsMap}" var="relatedRecordsEntry" varStatus="i">
+				<div>
+					<em>${relatedRecordsEntry.key}:</em>
+					<c:set var="numRelations" value="${fn:length(relatedRecordsEntry.value)}"/>
+					<c:forEach items="${relatedRecordsEntry.value}" var="relatedRecordsResultDoc" varStatus="j" end="${MAX_ANNOS-1}">
+						<a 	href='${contextPath}/browse/view.do?id=${relatedRecordsResultDoc.docReader.id}' 
+							title='View this record'>${relatedRecordsResultDoc.docReader.id}</a>${j.last ? '' : ','}</c:forEach><c:if 
+							test="${numRelations > MAX_ANNOS}">, plus ${numRelations - MAX_ANNOS} more...</c:if>
+					${empty relatedRecordsEntry.value ? 'No records found for this relation' : ''}
+				</div>
+			</c:forEach>					
+		</div>
+	</div>
+</c:if>
+
+<c:if test='${not empty result.docReader.assignedByIdRelatedRecordsMap}'>
+	<div class="searchResultValues"><em>Assigns relationships by ID:</em>
+		<c:forEach items="${result.docReader.assignedByIdRelatedRecordsMap}" var="relatedRecordsEntry" varStatus="i">
+			${relatedRecordsEntry.key}${i.last ? '' : ','}
+		</c:forEach>
+		<div style="padding-left:25px;">
+			<c:forEach items="${result.docReader.assignedByIdRelatedRecordsMap}" var="relatedRecordsEntry" varStatus="i">
+				<div>
+					Assigns <em>${relatedRecordsEntry.key}</em> relationship by ID (to this) for:
+					<c:set var="numRelations" value="${fn:length(relatedRecordsEntry.value)}"/>
+					<c:forEach items="${relatedRecordsEntry.value}" var="relatedRecordsResultDoc" varStatus="j" end="${MAX_ANNOS-1}">
+						<a 	href='${contextPath}/browse/view.do?id=${relatedRecordsResultDoc.docReader.id}' 
+							title='View this record'>${relatedRecordsResultDoc.docReader.id}</a>${j.last ? '' : ','}</c:forEach><c:if 
+							test="${numRelations > MAX_ANNOS}">, plus ${numRelations - MAX_ANNOS} more...</c:if>
+					${empty relatedRecordsEntry.value ? 'No records found for this relation' : ''}
+				</div>
+			</c:forEach>					
+		</div>
+	</div>
+</c:if>			
+
+<c:if test='${not empty result.docReader.assignedByUrlRelatedRecordsMap}'>
+	<div class="searchResultValues"><em>Assigns relationships by URL:</em>
+		<c:forEach items="${result.docReader.assignedByUrlRelatedRecordsMap}" var="relatedRecordsEntry" varStatus="i">
+			${relatedRecordsEntry.key}${i.last ? '' : ','}
+		</c:forEach>
+		<div style="padding-left:25px;">
+			<c:forEach items="${result.docReader.assignedByUrlRelatedRecordsMap}" var="relatedRecordsEntry" varStatus="i">
+				<div>
+					Assigns <em>${relatedRecordsEntry.key}</em> relationship by URL (to this) for:
+					<c:set var="numRelations" value="${fn:length(relatedRecordsEntry.value)}"/>
+					<c:forEach items="${relatedRecordsEntry.value}" var="relatedRecordsResultDoc" varStatus="j" end="${MAX_ANNOS-1}">
+						<a 	href='${contextPath}/browse/view.do?id=${relatedRecordsResultDoc.docReader.id}' 
+							title='View this record'>${relatedRecordsResultDoc.docReader.id}</a>${j.last ? '' : ','}</c:forEach><c:if 
+							test="${numRelations > MAX_ANNOS}">, plus ${numRelations - MAX_ANNOS} more...</c:if>
+					${empty relatedRecordsEntry.value ? 'No records found for this relation' : ''}
+				</div>
+			</c:forEach>					
+		</div>
+	</div>
+</c:if>		

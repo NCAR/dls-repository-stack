@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: title-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/non-vocab-fields.xsd">
+	<field name="Title - resource" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/general/title">
+		<definition>the name given to a resource by a creator, publisher or cataloger</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2001-01-01">Use the title displayed on screen to a user, not the title in a browser's title bar.</practice>
+
+				<practice status="current" originDate="2001-01-01">Specify subtitles but do not use the word subtitle; rather separate a subtitle from a title with a colon.</practice>
+
+				<practice status="current" originDate="2001-01-01">If a title is long, check to see if the entire title is needed. Edit if necessary.</practice>
+
+				<practice status="current" originDate="2001-01-01">Capitalize the words of the title excluding prepositions, articles and pronouns.</practice>
+
+				<practice status="current" originDate="2001-01-01">If a resource has a version number as part of the title, include it if necessary to disambiguate title information; otherwise do not include version numbers in the title field.</practice>
+
+				<practice status="current" originDate="2005-02-28" link1="description - resource" style1="bold">If a title has an acronym, use the acronym but spell out acronyms (excluding organizations and government agencies) in the description - resource field.</practice>
+
+				<practice status="current" originDate="2006-07-17" link1="contributor - resource creators" style1="bold" link2="Publisher" style2="bold" link3="organization name - organizational resource creator" style3="bold">Enter organizational and government agency acronyms in the contributor - resource creators field with the role of Publisher and spell out the organizational name in the organization name - organizational resource creator field.</practice>
+
+<!--				<practice status="obsolete" originDate="2001-01-01" archDate="2005-02-28">If a title has an acronym you do not have to spell it out, but reference it and spell it out in the Description if possible.</practice>-->
+
+				<practice status="current" originDate="2001-01-01">Use the source page view in your browser to obtain pertinent metadata information about the resource.</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2006-07-17">Do not include individual page or paragraph headings in title.</practice>
+
+				<practice status="current" originDate="2001-01-01">Do not include fact sheet numbers, course numbers or other alphanumeric referencing information unless it is necessary for comprehending the title or content, such as K-12 or necessary resource version information.</practice>
+
+				<practice status="current" originDate="2001-01-01">Do not use phrases like "by Joe Smith" in title.</practice>
+
+				<practice status="current" originDate="2001-01-01">Do not include phrases like "Welcome to the". Such phrases can be omitted.</practice>
+
+<!--				<practice status="obsolete" originDate="2001-01-01" archDate="2005-02-28">Do not exceed the maximum character count of 1024 (this includes white space). The input box does not indicate when the 1024 character limit is reached. If your input goes beyond the limit, only the first 1024 characters are saved in the catalog record. Since we don't have an effective method for counting characters at the moment, we suggest using a word processing program to count characters.</practice> -->
+			</donts>
+
+			<examples>
+				<practice status="current" originDate="2005-02-28" link1="Association of American Geographers (AAG) Hands-On: Introduction to the Human Dimensions of Global Change" url1="http://www.aag.org/HDGC/Intro_HDGC.html">If a title is too long: Association of American Geographers (AAG) Hands-On: Introduction to the Human Dimensions of Global Change amend it to: Introduction to the Human Dimensions of Global Change.</practice>
+
+<!--				<practice status="obsolete" originDate="2001-01-01" archDate="2005-02-28" url1="http://www.aag.org/HDGC/Hands_On.html">If a title is too long: "Hands-On: Developing Active Learning Modules On the Human Dimensions Of Global Change: Project Overview and Module Summaries: An Invitation " amend it to: "Hands-on: Developing Active Learning Modules On the Human Dimensions Of Global Change."</practice> -->
+
+				<practice status="current" originDate="2001-01-01" link1="How the Earth Works: Dynamic Planet" url1="http://www-personal.umich.edu/%7Evdpluijm/gs205.htm">Subtitle example: How the Earth Works: Dynamic Planet.</practice>
+
+				<practice status="current" originDate="2001-01-01" link1="Mountain Simulation: Assignment" url1="http://www.pals.iastate.edu/simulations/Mtnsim/index.html">Title enhancement by cataloger: Mountain Simulation: Assignment (title provided or enhanced by cataloger).</practice>
+			</examples>
+
+			<otherPractices>
+				<otherPractice header="No title? Do this:">
+					<practice status="current" originDate="2001-01-01">If the creator or publisher does not display a title on screen for the user, create a title to describe the overall content of the resource.</practice>
+
+					<practice status="current" originDate="2001-01-01">When a title is created or enhanced by a cataloger, indicate this by including the phrase "(title provided or enhanced by cataloger)" in the title field as shown in the example above.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>Remote Sensing Using Satellites</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/relations/relation/urlEntry/@title</note>
+				<note>Other XPATH: /itemRecord/relations/relation/idEntry/@title</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

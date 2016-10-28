@@ -1,0 +1,7 @@
+<%-- getMessages.jspf - requires that a propertyId variable is set --%>
+<%-- NOT USED! --%>
+<logic:messagesPresent property="${propertyId}">
+	<html:messages id="msg" property="${propertyId}"> 
+		<font color="red"><bean:write name="msg"/></font><br>										
+	</html:messages>
+</logic:messagesPresent>

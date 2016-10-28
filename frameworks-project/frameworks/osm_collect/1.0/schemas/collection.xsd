@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+targetNamespace="http://nldr.library.ucar.edu/metadata/osm_collect" 
+xmlns="http://nldr.library.ucar.edu/metadata/osm_collect"   
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+elementFormDefault="qualified" 
+attributeFormDefault="unqualified" 
+version="1.0">
+	<xs:annotation>
+		<xs:documentation>********************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>********************************************</xs:documentation>
+		<xs:documentation>Created: 2010-04-28</xs:documentation>
+		<xs:documentation>Author: Katy Ginger, University Corporation for Atmospheric Research (UCAR),  ginger at ucar dot edu</xs:documentation>
+		<xs:documentation>Purpose: To supports collection-level metadata in the NCAR library OpenSky repository and archives group.</xs:documentation>
+		
+		<xs:documentation>***********************************************************</xs:documentation>
+		<xs:documentation>*****  LICENSE/COPYRIGHT INFORMATION  *****</xs:documentation>
+		<xs:documentation>***********************************************************</xs:documentation>
+		<xs:documentation>Copyright  (c) 2010 University Corporation for Atmospheric Research (UCAR) P.O. Box 3000, Boulder, CO 80307, United States of America</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>******************************************************</xs:documentation>
+		<xs:documentation>***** INCLUDED/ IMPORTED SCHEMAS  *****</xs:documentation>
+		<xs:documentation>******************************************************</xs:documentation>
+		<xs:documentation>Included schemas contain elements that are organized around a common theme like coverage, rights, technical, etc.</xs:documentation>
+	</xs:annotation>
+	<xs:include schemaLocation="commonfields.xsd"/>
+	<xs:include schemaLocation="vocabs/context.xsd"/>
+	<xs:include schemaLocation="vocabs/key.xsd"/>
+	<xs:include schemaLocation="vocabs/itemFormat.xsd"/>
+	
+	<xs:annotation>
+		<xs:documentation>*********************************************</xs:documentation>
+		<xs:documentation>*********** ROOT ELEMENT  ***********</xs:documentation>
+		<xs:documentation>*********************************************</xs:documentation>
+	</xs:annotation>
+	<xs:element name="collectionRecord" type="collectionType"/>
+	
+	<xs:annotation>
+		<xs:documentation>***************************************************</xs:documentation>
+		<xs:documentation>*****  COMPLEX TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>***************************************************</xs:documentation>
+		<xs:documentation>xxxx</xs:documentation>
+	</xs:annotation>
+
+<!--****************************-->
+<!--do description, title, keywords need to be context dependent or will the same description, title etc be used regardless of the context?-->
+<!--****************************-->
+
+	<xs:complexType name="collectionType">
+		<xs:annotation>
+			<xs:documentation>*****  collectionType    *************************</xs:documentation>
+			<xs:documentation>recordID is xxxx</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="recordID" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="recordDate" type="union.dateType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="shortTitle" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="longTitle" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="description" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="URL" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="keyword" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="contexts" type="contextsType" minOccurs="1" maxOccurs="1"/>
+<!--			<xs:element name="context" type="contextType" minOccurs="1" maxOccurs="unbounded"/>-->
+			<xs:element name="accessionDate" type="union.dateType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="itemFormat" type="union.itemFormatType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="key" type="union.keyType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="redistribute" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="contact" type="contactType" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="contactType">
+		<xs:annotation>
+			<xs:documentation>*****  contactType  ******</xs:documentation>
+			<xs:documentation>name - name of the collection contact</xs:documentation>
+			<xs:documentation>email - email address of the collection contact</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="name" type="xs:string" use="required"/>
+				<xs:attribute name="email" type="xs:string" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>	
+	</xs:complexType>
+
+
+	<xs:complexType name="contextsType">
+		<xs:annotation>
+			<xs:documentation>*****  contextsType  ******</xs:documentation>
+			<xs:documentation>email - email address of the collection contact</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="context" type="contextType" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  SIMPLE TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation></xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="union.itemFormatType">
+		<xs:annotation>
+			<xs:documentation>***** union.itemFormatType  *****</xs:documentation>
+			<xs:documentation>Combines the itemFormat with free text</xs:documentation>
+			</xs:annotation> 
+		<xs:union memberTypes="itemFormatType xs:string"/>
+	</xs:simpleType>
+
+	<xs:simpleType name="union.keyType">
+		<xs:annotation>
+			<xs:documentation>***** union.keyType  *****</xs:documentation>
+			<xs:documentation>Combines the itemFormat with free text</xs:documentation>
+			</xs:annotation> 
+		<xs:union memberTypes="keyType xs:string"/>
+	</xs:simpleType>
+</xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

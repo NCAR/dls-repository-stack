@@ -1,0 +1,16 @@
+<taglib>
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <short-name>Example TLD</short-name>
+  <tag>
+    <name>display-blob</name>
+    <tag-class>edu.ucar.dls.harvestmanager.tags.DisplayBlob</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+       <name>blob</name>
+       <required>true</required>
+       <rtexprvalue>true</rtexprvalue>
+       <type>byte[]</type>
+    </attribute>
+  </tag>
+</taglib>

@@ -1,0 +1,13 @@
+<%-- no selected standards --%>
+<c:if test="${empty sef.suggestionServiceHelper.selectedStandards}">
+	<div  class="level-1">
+		<table class="no-input-field-table">
+			<tr class="form-row">
+				<td class="label-cell" />
+				<td class="input-cell">
+					<div style="margin-left:25px;font-style:italic;">There are no learning goals selected</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</c:if>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: location-no-groups-default-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Location</title>
+<groups:concept language="en-us" metaFormat="news_opps" metaVersion="1.0.00" text="Location" audience="default" path="/news-oppsRecord/locations/location" deftn="the US or Mexican state, Canadian province or world country (and possibly the city within the country or state) in which the event, news, or opportunity occurs"/>
+</head>
+<body>
+<outline groups:vocab="AD" type="vocab" text="AD" groups:deftn="Andorra"/>
+<outline groups:vocab="AE" type="vocab" text="AE" groups:deftn="United Arab Emirates"/>
+<outline groups:vocab="AF" type="vocab" text="AF" groups:deftn="Afghanistan"/>
+<outline groups:vocab="AG" type="vocab" text="AG" groups:deftn="Antigua and Barbuda"/>
+<outline groups:vocab="AI" type="vocab" text="AI" groups:deftn="Anguilla"/>
+<outline groups:vocab="AL" type="vocab" text="AL" groups:deftn="Albania"/>
+<outline groups:vocab="AM" type="vocab" text="AM" groups:deftn="Armenia"/>
+<outline groups:vocab="AN" type="vocab" text="AN" groups:deftn="Netherlands Antilles"/>
+<outline groups:vocab="AO" type="vocab" text="AO" groups:deftn="Angola"/>
+<outline groups:vocab="AQ" type="vocab" text="AQ" groups:deftn="Antarctica"/>
+<outline groups:vocab="AR" type="vocab" text="AR" groups:deftn="Argentina"/>
+<outline groups:vocab="AS" type="vocab" text="AS" groups:deftn="American Samoa"/>
+<outline groups:vocab="AT" type="vocab" text="AT" groups:deftn="Austria"/>
+<outline groups:vocab="AU" type="vocab" text="AU" groups:deftn="Australia"/>
+<outline groups:vocab="AW" type="vocab" text="AW" groups:deftn="Aruba"/>
+<outline groups:vocab="AX" type="vocab" text="AX" groups:deftn="Åland Islands"/>
+<outline groups:vocab="AZ" type="vocab" text="AZ" groups:deftn="Azerbaijan"/>
+<outline groups:vocab="BA" type="vocab" text="BA" groups:deftn="Bosnia and Hercegovenia"/>
+<outline groups:vocab="BB" type="vocab" text="BB" groups:deftn="Barbados"/>
+<outline groups:vocab="BD" type="vocab" text="BD" groups:deftn="Bangladesh"/>
+<outline groups:vocab="BE" type="vocab" text="BE" groups:deftn="Belgium"/>
+<outline groups:vocab="BF" type="vocab" text="BF" groups:deftn="Burkina Faso"/>
+<outline groups:vocab="BG" type="vocab" text="BG" groups:deftn="Bulgaria"/>
+<outline groups:vocab="BH" type="vocab" text="BH" groups:deftn="Bahrain"/>
+<outline groups:vocab="BI" type="vocab" text="BI" groups:deftn="Burundi"/>
+<outline groups:vocab="BJ" type="vocab" text="BJ" groups:deftn="Benin"/>
+<outline groups:vocab="BM" type="vocab" text="BM" groups:deftn="Bermuda"/>
+<outline groups:vocab="BN" type="vocab" text="BN" groups:deftn="Brunei Darussalam"/>
+<outline groups:vocab="BO" type="vocab" text="BO" groups:deftn="Bolivia"/>
+<outline groups:vocab="BR" type="vocab" text="BR" groups:deftn="Brazil"/>
+<outline groups:vocab="BS" type="vocab" text="BS" groups:deftn="Bahamas"/>
+<outline groups:vocab="BT" type="vocab" text="BT" groups:deftn="Bhutan"/>
+<outline groups:vocab="BV" type="vocab" text="BV" groups:deftn="Bouvet Island"/>
+<outline groups:vocab="BW" type="vocab" text="BW" groups:deftn="Botswana"/>
+<outline groups:vocab="BY" type="vocab" text="BY" groups:deftn="Belarus"/>
+<outline groups:vocab="BZ" type="vocab" text="BZ" groups:deftn="Belize"/>
+<outline groups:vocab="CA" type="vocab" text="CA" groups:deftn="Canada"/>
+<outline groups:vocab="CA-AB" type="vocab" text="CA-AB" groups:deftn="Alberta, Canada"/>
+<outline groups:vocab="CA-BC" type="vocab" text="CA-BC" groups:deftn="British Columbia, Canada"/>
+<outline groups:vocab="CA-MB" type="vocab" text="CA-MB" groups:deftn="Manitoba, Canada"/>
+<outline groups:vocab="CA-NB" type="vocab" text="CA-NB" groups:deftn="New Brunswick, Canada"/>
+<outline groups:vocab="CA-NL" type="vocab" text="CA-NL" groups:deftn="Newfoundland and Labrador, Canada"/>
+<outline groups:vocab="CA-NS" type="vocab" text="CA-NS" groups:deftn="Nova Scotia, Canada"/>
+<outline groups:vocab="CA-NT" type="vocab" text="CA-NT" groups:deftn="Northwest Territories, Canada"/>
+<outline groups:vocab="CA-NU" type="vocab" text="CA-NU" groups:deftn="Nunavut, Canada"/>
+<outline groups:vocab="CA-ON" type="vocab" text="CA-ON" groups:deftn="Ontario, Canada"/>
+<outline groups:vocab="CA-PE" type="vocab" text="CA-PE" groups:deftn="Prince Edward Island, Canada"/>
+<outline groups:vocab="CA-QC" type="vocab" text="CA-QC" groups:deftn="Québec, Canada"/>
+<outline groups:vocab="CA-SK" type="vocab" text="CA-SK" groups:deftn="Saskatchewan, Canada"/>
+<outline groups:vocab="CA-YT" type="vocab" text="CA-YT" groups:deftn="Yukon Territory, Canada"/>
+<outline groups:vocab="CC" type="vocab" text="CC" groups:deftn="Cocos (Keeling) Islands"/>
+<outline groups:vocab="CD" type="vocab" text="CD" groups:deftn="The Democratic Republic of the Congo (Zaire)"/>
+<outline groups:vocab="CF" type="vocab" text="CF" groups:deftn="Central African Republic"/>
+<outline groups:vocab="CG" type="vocab" text="CG" groups:deftn="Congo"/>
+<outline groups:vocab="CH" type="vocab" text="CH" groups:deftn="Switzerland"/>
+<outline groups:vocab="CI" type="vocab" text="CI" groups:deftn="Côte d'Ivoire (Ivory Coast)"/>
+<outline groups:vocab="CK" type="vocab" text="CK" groups:deftn="Cook Islands"/>
+<outline groups:vocab="CL" type="vocab" text="CL" groups:deftn="Chile"/>
+<outline groups:vocab="CM" type="vocab" text="CM" groups:deftn="Cameroon"/>
+<outline groups:vocab="CN" type="vocab" text="CN" groups:deftn="China"/>
+<outline groups:vocab="CO" type="vocab" text="CO" groups:deftn="Colombia"/>
+<outline groups:vocab="CR" type="vocab" text="CR" groups:deftn="Costa Rica"/>
+<outline groups:vocab="CS" type="vocab" text="CS" groups:deftn="Serbia and Montenegro"/>
+<outline groups:vocab="CU" type="vocab" text="CU" groups:deftn="Cuba"/>
+<outline groups:vocab="CV" type="vocab" text="CV" groups:deftn="Cape Verde Islands"/>
+<outline groups:vocab="CX" type="vocab" text="CX" groups:deftn="Christmas Island"/>
+<outline groups:vocab="CY" type="vocab" text="CY" groups:deftn="Cyprus"/>
+<outline groups:vocab="CZ" type="vocab" text="CZ" groups:deftn="Czech Republic"/>
+<outline groups:vocab="DE" type="vocab" text="DE" groups:deftn="Germany"/>
+<outline groups:vocab="DJ" type="vocab" text="DJ" groups:deftn="Djibouti"/>
+<outline groups:vocab="DK" type="vocab" text="DK" groups:deftn="Denmark"/>
+<outline groups:vocab="DM" type="vocab" text="DM" groups:deftn="Dominica"/>
+<outline groups:vocab="DO" type="vocab" text="DO" groups:deftn="Dominican Republic"/>
+<outline groups:vocab="DZ" type="vocab" text="DZ" groups:deftn="Algeria"/>
+<outline groups:vocab="EC" type="vocab" text="EC" groups:deftn="Ecuador"/>
+<outline groups:vocab="EE" type="vocab" text="EE" groups:deftn="Estonia"/>
+<outline groups:vocab="EG" type="vocab" text="EG" groups:deftn="Egypt"/>
+<outline groups:vocab="EH" type="vocab" text="EH" groups:deftn="Western Sahara"/>
+<outline groups:vocab="ER" type="vocab" text="ER" groups:deftn="Eretria"/>
+<outline groups:vocab="ES" type="vocab" text="ES" groups:deftn="Spain"/>
+<outline groups:vocab="ET" type="vocab" text="ET" groups:deftn="Ethiopia"/>
+<outline groups:vocab="FI" type="vocab" text="FI" groups:deftn="Finland"/>
+<outline groups:vocab="FJ" type="vocab" text="FJ" groups:deftn="Fiji"/>
+<outline groups:vocab="FK" type="vocab" text="FK" groups:deftn="Falkland Islands"/>
+<outline groups:vocab="FM" type="vocab" text="FM" groups:deftn="Federated States of Micronesia"/>
+<outline groups:vocab="FO" type="vocab" text="FO" groups:deftn="Faroe Islands"/>
+<outline groups:vocab="FR" type="vocab" text="FR" groups:deftn="France"/>
+<outline groups:vocab="GA" type="vocab" text="GA" groups:deftn="Gabon"/>
+<outline groups:vocab="GB" type="vocab" text="GB" groups:deftn="United Kingdom"/>
+<outline groups:vocab="GD" type="vocab" text="GD" groups:deftn="Grenada"/>
+<outline groups:vocab="GE" type="vocab" text="GE" groups:deftn="Georgia"/>
+<outline groups:vocab="GF" type="vocab" text="GF" groups:deftn="French Guiana"/>
+<outline groups:vocab="GH" type="vocab" text="GH" groups:deftn="Ghana"/>
+<outline groups:vocab="GI" type="vocab" text="GI" groups:deftn="Gibraltar"/>
+<outline groups:vocab="GL" type="vocab" text="GL" groups:deftn="Greenland"/>
+<outline groups:vocab="GM" type="vocab" text="GM" groups:deftn="Gambia"/>
+<outline groups:vocab="GN" type="vocab" text="GN" groups:deftn="Guinea"/>
+<outline groups:vocab="GP" type="vocab" text="GP" groups:deftn="Guadeloupe"/>
+<outline groups:vocab="GQ" type="vocab" text="GQ" groups:deftn="Equatorial Guinea"/>
+<outline groups:vocab="GR" type="vocab" text="GR" groups:deftn="Greece"/>
+<outline groups:vocab="GS" type="vocab" text="GS" groups:deftn="South Georgia and the South Sandwich Islands"/>
+<outline groups:vocab="GT" type="vocab" text="GT" groups:deftn="Guatemala"/>
+<outline groups:vocab="GU" type="vocab" text="GU" groups:deftn="Guam"/>
+<outline groups:vocab="GW" type="vocab" text="GW" groups:deftn="Guinea-Bissau"/>
+<outline groups:vocab="GY" type="vocab" text="GY" groups:deftn="Guyana"/>
+<outline groups:vocab="HK" type="vocab" text="HK" groups:deftn="Hong Kong"/>
+<outline groups:vocab="HM" type="vocab" text="HM" groups:deftn="Heard Island and McDonald Islands"/>
+<outline groups:vocab="HN" type="vocab" text="HN" groups:deftn="Honduras"/>
+<outline groups:vocab="HR" type="vocab" text="HR" groups:deftn="Croatia"/>
+<outline groups:vocab="HT" type="vocab" text="HT" groups:deftn="Haiti"/>
+<outline groups:vocab="HU" type="vocab" text="HU" groups:deftn="Hungary"/>
+<outline groups:vocab="ID" type="vocab" text="ID" groups:deftn="Indonesia"/>
+<outline groups:vocab="IE" type="vocab" text="IE" groups:deftn="Ireland (does not include Northern Ireland)"/>
+<outline groups:vocab="IL" type="vocab" text="IL" groups:deftn="Israel"/>
+<outline groups:vocab="IN" type="vocab" text="IN" groups:deftn="India"/>
+<outline groups:vocab="IO" type="vocab" text="IO" groups:deftn="British Indian Ocean Territory"/>
+<outline groups:vocab="IQ" type="vocab" text="IQ" groups:deftn="Iraq"/>
+<outline groups:vocab="IR" type="vocab" text="IR" groups:deftn="Iran"/>
+<outline groups:vocab="IS" type="vocab" text="IS" groups:deftn="Iceland"/>
+<outline groups:vocab="IT" type="vocab" text="IT" groups:deftn="Italy (includes Sicily and Sardinia)"/>
+<outline groups:vocab="JM" type="vocab" text="JM" groups:deftn="Jamaica"/>
+<outline groups:vocab="JO" type="vocab" text="JO" groups:deftn="Jordan"/>
+<outline groups:vocab="JP" type="vocab" text="JP" groups:deftn="Japan"/>
+<outline groups:vocab="JT" type="vocab" text="JT" groups:deftn="Johnston Island"/>
+<outline groups:vocab="KE" type="vocab" text="KE" groups:deftn="Kenya"/>
+<outline groups:vocab="KG" type="vocab" text="KG" groups:deftn="Kyrgyzstan"/>
+<outline groups:vocab="KH" type="vocab" text="KH" groups:deftn="Cambodia"/>
+<outline groups:vocab="KI" type="vocab" text="KI" groups:deftn="Kiribati"/>
+<outline groups:vocab="KM" type="vocab" text="KM" groups:deftn="Comoros"/>
+<outline groups:vocab="KN" type="vocab" text="KN" groups:deftn="Saint Kitts and Nevis"/>
+<outline groups:vocab="KP" type="vocab" text="KP" groups:deftn="Democratic People's Republic of Korea (North Korea)"/>
+<outline groups:vocab="KR" type="vocab" text="KR" groups:deftn="Republic of Korea (South Korea)"/>
+<outline groups:vocab="KW" type="vocab" text="KW" groups:deftn="Kuwait"/>
+<outline groups:vocab="KY" type="vocab" text="KY" groups:deftn="Cayman Islands"/>
+<outline groups:vocab="KZ" type="vocab" text="KZ" groups:deftn="Kazakhstan"/>
+<outline groups:vocab="LA" type="vocab" text="LA" groups:deftn="Lao People's Democratic Republic (Laos)"/>
+<outline groups:vocab="LB" type="vocab" text="LB" groups:deftn="Lebanon"/>
+<outline groups:vocab="LC" type="vocab" text="LC" groups:deftn="Saint Lucia"/>
+<outline groups:vocab="LI" type="vocab" text="LI" groups:deftn="Liechtenstein"/>
+<outline groups:vocab="LK" type="vocab" text="LK" groups:deftn="Sri Lanka"/>
+<outline groups:vocab="LR" type="vocab" text="LR" groups:deftn="Liberia"/>
+<outline groups:vocab="LS" type="vocab" text="LS" groups:deftn="Lesotho"/>
+<outline groups:vocab="LT" type="vocab" text="LT" groups:deftn="Lithuania"/>
+<outline groups:vocab="LU" type="vocab" text="LU" groups:deftn="Luxembourg"/>
+<outline groups:vocab="LV" type="vocab" text="LV" groups:deftn="Latvia"/>
+<outline groups:vocab="LY" type="vocab" text="LY" groups:deftn="Libya (Libyan Arab Jamahiriya)"/>
+<outline groups:vocab="MA" type="vocab" text="MA" groups:deftn="Morocco"/>
+<outline groups:vocab="MC" type="vocab" text="MC" groups:deftn="Monaco"/>
+<outline groups:vocab="MD" type="vocab" text="MD" groups:deftn="Moldova"/>
+<outline groups:vocab="MG" type="vocab" text="MG" groups:deftn="Madagascar"/>
+<outline groups:vocab="MH" type="vocab" text="MH" groups:deftn="Marshall Islands"/>
+<outline groups:vocab="MI" type="vocab" text="MI" groups:deftn="Midway Islands"/>
+<outline groups:vocab="MK" type="vocab" text="MK" groups:deftn="Macedonia"/>
+<outline groups:vocab="ML" type="vocab" text="ML" groups:deftn="Mali"/>
+<outline groups:vocab="MM" type="vocab" text="MM" groups:deftn="Myanmar"/>
+<outline groups:vocab="MN" type="vocab" text="MN" groups:deftn="Mongolia"/>
+<outline groups:vocab="MO" type="vocab" text="MO" groups:deftn="Macao"/>
+<outline groups:vocab="MP" type="vocab" text="MP" groups:deftn="Northern Mariana Islands"/>
+<outline groups:vocab="MQ" type="vocab" text="MQ" groups:deftn="Martinique"/>
+<outline groups:vocab="MR" type="vocab" text="MR" groups:deftn="Mauritania"/>
+<outline groups:vocab="MS" type="vocab" text="MS" groups:deftn="Montserrat"/>
+<outline groups:vocab="MT" type="vocab" text="MT" groups:deftn="Malta"/>
+<outline groups:vocab="MU" type="vocab" text="MU" groups:deftn="Mauritius"/>
+<outline groups:vocab="MV" type="vocab" text="MV" groups:deftn="Maldives"/>
+<outline groups:vocab="MW" type="vocab" text="MW" groups:deftn="Malawi"/>
+<outline groups:vocab="MX" type="vocab" text="MX" groups:deftn="Mexico"/>
+<outline groups:vocab="MX-AG" type="vocab" text="MX-AG" groups:deftn="Aguascalientes, Mexico"/>
+<outline groups:vocab="MX-BA" type="vocab" text="MX-BA" groups:deftn="Baja California North, Mexico"/>
+<outline groups:vocab="MX-BJ" type="vocab" text="MX-BJ" groups:deftn="Baja California South, Mexico"/>
+<outline groups:vocab="MX-CE" type="vocab" text="MX-CE" groups:deftn="Campeche, Mexico"/>
+<outline groups:vocab="MX-CH" type="vocab" text="MX-CH" groups:deftn="Chihuahua, Mexico"/>
+<outline groups:vocab="MX-CI" type="vocab" text="MX-CI" groups:deftn="Chiapas, Mexico"/>
+<outline groups:vocab="MX-CL" type="vocab" text="MX-CL" groups:deftn="Colima, Mexico"/>
+<outline groups:vocab="MX-CU" type="vocab" text="MX-CU" groups:deftn="Coahuila, Mexico"/>
+<outline groups:vocab="MX-DF" type="vocab" text="MX-DF" groups:deftn="Distrito Federal Mexico, Mexico"/>
+<outline groups:vocab="MX-DO" type="vocab" text="MX-DO" groups:deftn="Durango, Mexico"/>
+<outline groups:vocab="MX-GR" type="vocab" text="MX-GR" groups:deftn="Guerrero, Mexico"/>
+<outline groups:vocab="MX-GU" type="vocab" text="MX-GU" groups:deftn="Guanajuato, Mexico"/>
+<outline groups:vocab="MX-HL" type="vocab" text="MX-HL" groups:deftn="Hidalgo, Mexico"/>
+<outline groups:vocab="MX-JL" type="vocab" text="MX-JL" groups:deftn="Jalisco, Mexico"/>
+<outline groups:vocab="MX-MC" type="vocab" text="MX-MC" groups:deftn="Michoacan, Mexico"/>
+<outline groups:vocab="MX-MR" type="vocab" text="MX-MR" groups:deftn="Morelos, Mexico"/>
+<outline groups:vocab="MX-MX" type="vocab" text="MX-MX" groups:deftn="Mexico State, Mexico"/>
+<outline groups:vocab="MX-NA" type="vocab" text="MX-NA" groups:deftn="Nayarit, Mexico"/>
+<outline groups:vocab="MX-NL" type="vocab" text="MX-NL" groups:deftn="Nuevo Leon, Mexico"/>
+<outline groups:vocab="MX-OA" type="vocab" text="MX-OA" groups:deftn="Oaxaca, Mexico"/>
+<outline groups:vocab="MX-PE" type="vocab" text="MX-PE" groups:deftn="Puebla, Mexico"/>
+<outline groups:vocab="MX-QR" type="vocab" text="MX-QR" groups:deftn="Quintana Roo, Mexico"/>
+<outline groups:vocab="MX-QU" type="vocab" text="MX-QU" groups:deftn="Queretaro, Mexico"/>
+<outline groups:vocab="MX-SI" type="vocab" text="MX-SI" groups:deftn="Sinaloa, Mexico"/>
+<outline groups:vocab="MX-SL" type="vocab" text="MX-SL" groups:deftn="San Luis Potosi, Mexico"/>
+<outline groups:vocab="MX-SO" type="vocab" text="MX-SO" groups:deftn="Sonora, Mexico"/>
+<outline groups:vocab="MX-TA" type="vocab" text="MX-TA" groups:deftn="Tamaulipas, Mexico"/>
+<outline groups:vocab="MX-TB" type="vocab" text="MX-TB" groups:deftn="Tabasco, Mexico"/>
+<outline groups:vocab="MX-TL" type="vocab" text="MX-TL" groups:deftn="Tlaxcala, Mexico"/>
+<outline groups:vocab="MX-VC" type="vocab" text="MX-VC" groups:deftn="Veracruz, Mexico"/>
+<outline groups:vocab="MX-YU" type="vocab" text="MX-YU" groups:deftn="Yucatan, Mexico"/>
+<outline groups:vocab="MX-ZA" type="vocab" text="MX-ZA" groups:deftn="Zacatecas, Mexico"/>
+<outline groups:vocab="MY" type="vocab" text="MY" groups:deftn="Malaysia"/>
+<outline groups:vocab="MZ" type="vocab" text="MZ" groups:deftn="Mozambique"/>
+<outline groups:vocab="NA" type="vocab" text="NA" groups:deftn="Namibia"/>
+<outline groups:vocab="NC" type="vocab" text="NC" groups:deftn="New Caledonia"/>
+<outline groups:vocab="NE" type="vocab" text="NE" groups:deftn="Niger"/>
+<outline groups:vocab="NF" type="vocab" text="NF" groups:deftn="Norfolk Island"/>
+<outline groups:vocab="NG" type="vocab" text="NG" groups:deftn="Nigeria"/>
+<outline groups:vocab="NI" type="vocab" text="NI" groups:deftn="Nicaragua"/>
+<outline groups:vocab="NL" type="vocab" text="NL" groups:deftn="Netherlands (Holland)"/>
+<outline groups:vocab="NO" type="vocab" text="NO" groups:deftn="Norway"/>
+<outline groups:vocab="NP" type="vocab" text="NP" groups:deftn="Nepal"/>
+<outline groups:vocab="NR" type="vocab" text="NR" groups:deftn="Nauru"/>
+<outline groups:vocab="NU" type="vocab" text="NU" groups:deftn="Niue"/>
+<outline groups:vocab="NZ" type="vocab" text="NZ" groups:deftn="New Zealand"/>
+<outline groups:vocab="OM" type="vocab" text="OM" groups:deftn="Oman"/>
+<outline groups:vocab="PA" type="vocab" text="PA" groups:deftn="Panama"/>
+<outline groups:vocab="PE" type="vocab" text="PE" groups:deftn="Peru"/>
+<outline groups:vocab="PF" type="vocab" text="PF" groups:deftn="French Polynesia"/>
+<outline groups:vocab="PG" type="vocab" text="PG" groups:deftn="Papua New Guinea"/>
+<outline groups:vocab="PH" type="vocab" text="PH" groups:deftn="Philippines"/>
+<outline groups:vocab="PK" type="vocab" text="PK" groups:deftn="Pakistan"/>
+<outline groups:vocab="PL" type="vocab" text="PL" groups:deftn="Poland"/>
+<outline groups:vocab="PM" type="vocab" text="PM" groups:deftn="Saint Pierre and Miquelon"/>
+<outline groups:vocab="PN" type="vocab" text="PN" groups:deftn="Pitcairn"/>
+<outline groups:vocab="PR" type="vocab" text="PR" groups:deftn="Puerto Rico"/>
+<outline groups:vocab="PS" type="vocab" text="PS" groups:deftn="Palestinian Territory, Occupied"/>
+<outline groups:vocab="PT" type="vocab" text="PT" groups:deftn="Portugal"/>
+<outline groups:vocab="PW" type="vocab" text="PW" groups:deftn="Palau"/>
+<outline groups:vocab="PY" type="vocab" text="PY" groups:deftn="Paraguay"/>
+<outline groups:vocab="QA" type="vocab" text="QA" groups:deftn="Qatar"/>
+<outline groups:vocab="RE" type="vocab" text="RE" groups:deftn="Réunion"/>
+<outline groups:vocab="RO" type="vocab" text="RO" groups:deftn="Romania"/>
+<outline groups:vocab="RU" type="vocab" text="RU" groups:deftn="Russian Federation"/>
+<outline groups:vocab="RW" type="vocab" text="RW" groups:deftn="Rwanda"/>
+<outline groups:vocab="SA" type="vocab" text="SA" groups:deftn="Saudi Arabia"/>
+<outline groups:vocab="SB" type="vocab" text="SB" groups:deftn="Solomon Islands"/>
+<outline groups:vocab="SC" type="vocab" text="SC" groups:deftn="Seychelles"/>
+<outline groups:vocab="SD" type="vocab" text="SD" groups:deftn="Sudan"/>
+<outline groups:vocab="SE" type="vocab" text="SE" groups:deftn="Sweden"/>
+<outline groups:vocab="SG" type="vocab" text="SG" groups:deftn="Singapore"/>
+<outline groups:vocab="SH" type="vocab" text="SH" groups:deftn="Saint Helena"/>
+<outline groups:vocab="SI" type="vocab" text="SI" groups:deftn="Slovenia"/>
+<outline groups:vocab="SJ" type="vocab" text="SJ" groups:deftn="Svalbard and Jan Mayen"/>
+<outline groups:vocab="SK" type="vocab" text="SK" groups:deftn="Slovakia"/>
+<outline groups:vocab="SL" type="vocab" text="SL" groups:deftn="Sierra Leone"/>
+<outline groups:vocab="SM" type="vocab" text="SM" groups:deftn="San Marino"/>
+<outline groups:vocab="SN" type="vocab" text="SN" groups:deftn="Senegal"/>
+<outline groups:vocab="SO" type="vocab" text="SO" groups:deftn="Somalia"/>
+<outline groups:vocab="SR" type="vocab" text="SR" groups:deftn="Suriname"/>
+<outline groups:vocab="ST" type="vocab" text="ST" groups:deftn="Sao Tome and Principe"/>
+<outline groups:vocab="SV" type="vocab" text="SV" groups:deftn="El Salvador"/>
+<outline groups:vocab="SY" type="vocab" text="SY" groups:deftn="Syria (Syrian Arab Republic)"/>
+<outline groups:vocab="SZ" type="vocab" text="SZ" groups:deftn="Swaziland"/>
+<outline groups:vocab="TC" type="vocab" text="TC" groups:deftn="Turks and Caicos Islands"/>
+<outline groups:vocab="TD" type="vocab" text="TD" groups:deftn="Chad"/>
+<outline groups:vocab="TF" type="vocab" text="TF" groups:deftn="French Southern Territories"/>
+<outline groups:vocab="TG" type="vocab" text="TG" groups:deftn="Togo"/>
+<outline groups:vocab="TH" type="vocab" text="TH" groups:deftn="Thailand"/>
+<outline groups:vocab="TJ" type="vocab" text="TJ" groups:deftn="Tajikistan"/>
+<outline groups:vocab="TK" type="vocab" text="TK" groups:deftn="Tokelau"/>
+<outline groups:vocab="TL" type="vocab" text="TL" groups:deftn="Timor-Leste"/>
+<outline groups:vocab="TM" type="vocab" text="TM" groups:deftn="Turkmenistan"/>
+<outline groups:vocab="TN" type="vocab" text="TN" groups:deftn="Tunisia"/>
+<outline groups:vocab="TO" type="vocab" text="TO" groups:deftn="Tonga"/>
+<outline groups:vocab="TR" type="vocab" text="TR" groups:deftn="Turkey"/>
+<outline groups:vocab="TT" type="vocab" text="TT" groups:deftn="Trinidad and Tobago"/>
+<outline groups:vocab="TV" type="vocab" text="TV" groups:deftn="Tuvalu"/>
+<outline groups:vocab="TW" type="vocab" text="TW" groups:deftn="Taiwan, Republic of China"/>
+<outline groups:vocab="TZ" type="vocab" text="TZ" groups:deftn="Tanzania, United Republic of"/>
+<outline groups:vocab="UA" type="vocab" text="UA" groups:deftn="Ukraine"/>
+<outline groups:vocab="UG" type="vocab" text="UG" groups:deftn="Uganda"/>
+<outline groups:vocab="UM" type="vocab" text="UM" groups:deftn="United States Minor Outlying Islands"/>
+<outline groups:vocab="US" type="vocab" text="US" groups:deftn="United States of America"/>
+<outline groups:vocab="US-AK" type="vocab" text="US-AK" groups:deftn="Alaska, United States"/>
+<outline groups:vocab="US-AL" type="vocab" text="US-AL" groups:deftn="Alabama, United States"/>
+<outline groups:vocab="US-AR" type="vocab" text="US-AR" groups:deftn="Arkansas, United States"/>
+<outline groups:vocab="US-AZ" type="vocab" text="US-AZ" groups:deftn="Arizona, United States"/>
+<outline groups:vocab="US-CA" type="vocab" text="US-CA" groups:deftn="California, United States"/>
+<outline groups:vocab="US-CO" type="vocab" text="US-CO" groups:deftn="Colorado, United States"/>
+<outline groups:vocab="US-CT" type="vocab" text="US-CT" groups:deftn="Connecticut, United States"/>
+<outline groups:vocab="US-DC" type="vocab" text="US-DC" groups:deftn="District of Columbia, United States"/>
+<outline groups:vocab="US-DE" type="vocab" text="US-DE" groups:deftn="Delaware, United States"/>
+<outline groups:vocab="US-FL" type="vocab" text="US-FL" groups:deftn="Florida, United States"/>
+<outline groups:vocab="US-GA" type="vocab" text="US-GA" groups:deftn="Georgia, United States"/>
+<outline groups:vocab="US-HI" type="vocab" text="US-HI" groups:deftn="Hawaii, United States"/>
+<outline groups:vocab="US-IA" type="vocab" text="US-IA" groups:deftn="Iowa, United States"/>
+<outline groups:vocab="US-ID" type="vocab" text="US-ID" groups:deftn="Idaho, United States"/>
+<outline groups:vocab="US-IL" type="vocab" text="US-IL" groups:deftn="Illinois, United States"/>
+<outline groups:vocab="US-IN" type="vocab" text="US-IN" groups:deftn="Indiana, United States"/>
+<outline groups:vocab="US-KS" type="vocab" text="US-KS" groups:deftn="Kansas, United States"/>
+<outline groups:vocab="US-KY" type="vocab" text="US-KY" groups:deftn="Kentucky, United States"/>
+<outline groups:vocab="US-LA" type="vocab" text="US-LA" groups:deftn="Louisiana, United States"/>
+<outline groups:vocab="US-MA" type="vocab" text="US-MA" groups:deftn="Massachusetts, United States"/>
+<outline groups:vocab="US-MD" type="vocab" text="US-MD" groups:deftn="Maryland, United States"/>
+<outline groups:vocab="US-ME" type="vocab" text="US-ME" groups:deftn="Maine, United States"/>
+<outline groups:vocab="US-MI" type="vocab" text="US-MI" groups:deftn="Michigan, United States"/>
+<outline groups:vocab="US-MN" type="vocab" text="US-MN" groups:deftn="Minnesota, United States"/>
+<outline groups:vocab="US-MO" type="vocab" text="US-MO" groups:deftn="Missouri, United States"/>
+<outline groups:vocab="US-MS" type="vocab" text="US-MS" groups:deftn="Mississippi, United States"/>
+<outline groups:vocab="US-MT" type="vocab" text="US-MT" groups:deftn="Montana, United States"/>
+<outline groups:vocab="US-NC" type="vocab" text="US-NC" groups:deftn="North Carolina, United States"/>
+<outline groups:vocab="US-ND" type="vocab" text="US-ND" groups:deftn="North Dakota, Unites States"/>
+<outline groups:vocab="US-NE" type="vocab" text="US-NE" groups:deftn="Nebraska, United States"/>
+<outline groups:vocab="US-NH" type="vocab" text="US-NH" groups:deftn="New Hampshire, United States"/>
+<outline groups:vocab="US-NJ" type="vocab" text="US-NJ" groups:deftn="New Jersey, United States"/>
+<outline groups:vocab="US-NM" type="vocab" text="US-NM" groups:deftn="New Mexico, United States"/>
+<outline groups:vocab="US-NV" type="vocab" text="US-NV" groups:deftn="Nevada, United States"/>
+<outline groups:vocab="US-NY" type="vocab" text="US-NY" groups:deftn="New York, United States"/>
+<outline groups:vocab="US-OH" type="vocab" text="US-OH" groups:deftn="Ohio, United States"/>
+<outline groups:vocab="US-OK" type="vocab" text="US-OK" groups:deftn="Oklahoma, United States"/>
+<outline groups:vocab="US-OR" type="vocab" text="US-OR" groups:deftn="Oregon, United States"/>
+<outline groups:vocab="US-PA" type="vocab" text="US-PA" groups:deftn="Pennsylvania, United States"/>
+<outline groups:vocab="US-RI" type="vocab" text="US-RI" groups:deftn="Rhode Island, United States"/>
+<outline groups:vocab="US-SC" type="vocab" text="US-SC" groups:deftn="South Carolina, United States"/>
+<outline groups:vocab="US-SD" type="vocab" text="US-SD" groups:deftn="South Dakota, United States"/>
+<outline groups:vocab="US-TN" type="vocab" text="US-TN" groups:deftn="Tennessee, United States"/>
+<outline groups:vocab="US-TX" type="vocab" text="US-TX" groups:deftn="Texas, United States"/>
+<outline groups:vocab="US-UT" type="vocab" text="US-UT" groups:deftn="Utah, United States"/>
+<outline groups:vocab="US-VA" type="vocab" text="US-VA" groups:deftn="Virginia, United States"/>
+<outline groups:vocab="US-VT" type="vocab" text="US-VT" groups:deftn="Vermont, United States"/>
+<outline groups:vocab="US-WA" type="vocab" text="US-WA" groups:deftn="Washington, United States"/>
+<outline groups:vocab="US-WI" type="vocab" text="US-WI" groups:deftn="Wisconsin, United States"/>
+<outline groups:vocab="US-WV" type="vocab" text="US-WV" groups:deftn="West Virginia, United States"/>
+<outline groups:vocab="US-WY" type="vocab" text="US-WY" groups:deftn="Wyoming, United States"/>
+<outline groups:vocab="UY" type="vocab" text="UY" groups:deftn="Uruguay"/>
+<outline groups:vocab="UZ" type="vocab" text="UZ" groups:deftn="Uzbekistan"/>
+<outline groups:vocab="VA" type="vocab" text="VA" groups:deftn="Vatican City"/>
+<outline groups:vocab="VC" type="vocab" text="VC" groups:deftn="Saint Vincent and the Grenadines"/>
+<outline groups:vocab="VE" type="vocab" text="VE" groups:deftn="Venezuela"/>
+<outline groups:vocab="VG" type="vocab" text="VG" groups:deftn="Virgin Islands, British"/>
+<outline groups:vocab="VI" type="vocab" text="VI" groups:deftn="Virgin Islands, U.S."/>
+<outline groups:vocab="VN" type="vocab" text="VN" groups:deftn="Vietnam"/>
+<outline groups:vocab="VU" type="vocab" text="VU" groups:deftn="Vanuatu"/>
+<outline groups:vocab="WF" type="vocab" text="WF" groups:deftn="Wallis and Futuna"/>
+<outline groups:vocab="WK" type="vocab" text="WK" groups:deftn="Wake Island"/>
+<outline groups:vocab="WS" type="vocab" text="WS" groups:deftn="Samoa"/>
+<outline groups:vocab="XX" type="vocab" text="XX" groups:deftn="Unknown"/>
+<outline groups:vocab="YE" type="vocab" text="YE" groups:deftn="Yemen"/>
+<outline groups:vocab="YT" type="vocab" text="YT" groups:deftn="Mayotte"/>
+<outline groups:vocab="ZA" type="vocab" text="ZA" groups:deftn="South Africa"/>
+<outline groups:vocab="ZM" type="vocab" text="ZM" groups:deftn="Zambia"/>
+<outline groups:vocab="ZW" type="vocab" text="ZW" groups:deftn="Zimbabwe"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.7.00">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Schema Overview  **************************************************************
+			Definition: 			Controlled vocabulary schema for DLESE metadata frameworks
+			Framework use: 		ADN-I (item)
+			Source org:			Dublin Core Metadata Initiative (DCMI) http://dublincore.org/
+			Source values:		Adopted from http://dublincore.org/usage/terms/dc/
+			Source last update:	2002-12-03
+			DPC last update:		2002-12-03
+			Notes:				DC vocab adapted to meet DLESE needs (terms, capitalization, punctuation)
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Complex Types  ******************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="DCkindType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  DCkindType  *****************************************
+				Lists the values that will appear in the metadata record
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="DC:Is part of"/>
+			<xsd:enumeration value="DC:Has part"/>
+			<xsd:enumeration value="DC:Is version of"/>
+			<xsd:enumeration value="DC:Has version"/>
+			<xsd:enumeration value="DC:Is format of"/>
+			<xsd:enumeration value="DC:Has format"/>
+			<xsd:enumeration value="DC:References"/>
+			<xsd:enumeration value="DC:Is referenced by"/>
+			<xsd:enumeration value="DC:Requires"/>
+			<xsd:enumeration value="DC:Is required by"/>
+			<xsd:enumeration value="DC:Is replaced by"/>
+			<xsd:enumeration value="DC:Replaces"/>
+			<xsd:enumeration value="DC:Conforms to"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DCkindLeafType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  DCkindLeafType  *****************************************
+				Lists leaf values
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Is part of"/>
+			<xsd:enumeration value="Has part"/>
+			<xsd:enumeration value="Is version of"/>
+			<xsd:enumeration value="Has version"/>
+			<xsd:enumeration value="Is format of"/>
+			<xsd:enumeration value="Has format"/>
+			<xsd:enumeration value="References"/>
+			<xsd:enumeration value="Is referenced by"/>
+			<xsd:enumeration value="Requires"/>
+			<xsd:enumeration value="Is required by"/>
+			<xsd:enumeration value="Is replaced by"/>
+			<xsd:enumeration value="Replaces"/>
+			<xsd:enumeration value="Conforms to"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

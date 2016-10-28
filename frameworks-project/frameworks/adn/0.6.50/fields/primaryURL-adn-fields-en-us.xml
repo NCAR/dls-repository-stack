@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: primaryURL-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/non-vocab-fields.xsd">
+	<field name="URL - primary" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/technical/online/primaryURL">
+		<definition>the URL that resolves to the resource being described or resolves to information about ordering, receiving, or purchasing the resource being described</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2001-01-01">Catalog URLs at an appropriate level of granularity for the type of resource being cataloged. For example, catalog lesson plans separately rather than cataloging an overarching page that lists all the lessons plans.</practice>
+
+				<practice status="current" originDate="2001-01-01">Begin URLs with an appropriate Internet scheme like http://, ftp://, https://, etc.</practice>
+
+				<practice status="current" originDate="2001-01-01">URLs with ampersands, equal signs, question marks, spaces, percent 20's, underscores and numbers are okay, but, if possible, minimize cataloging such URLs.</practice>
+
+				<practice status="current" originDate="2005-03-01">If anchor links go to separate and different animations or images on a page, the anchor links may be cataloged as separate resources if appropriate.</practice>
+
+				<practice status="current" originDate="2005-03-01">Be careful cataloging dynamic URLs that contain many symbols.</practice>
+			</dos>
+
+
+			<donts>
+				<practice status="current" originDate="2005-03-01">Do not catalog every URL within a resource because DLESE indexes some of the resource content directly.</practice>
+				<practice status="current" originDate="2005-03-01">Do not catalog anchor links within text pages. Cataloging anchor links to different animations or images is acceptable.</practice>
+
+
+				<practice status="obsolete" originDate="2001-01-01" archDate="2005-03-01">Do not use other URL specifiers (ftp or https) other than http because they are not supported and will cause this tool to crash.</practice>
+			</donts>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>http://www.dlese.org/dds/histogram.do?group=subject&amp;key=jesse</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

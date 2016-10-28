@@ -1,0 +1,57 @@
+
+		<div class="browse-item-title">${result.docReader.title}</a></div>
+		
+		<div class="searchResultValues">
+			<a href='${result.docReader.url}' target="_blank"
+				title='view resource in a new window'>${sf:truncate(result.docReader.url, urlTruncateLen)}</a>
+		</div>
+		
+		<c:if test="${not empty result.docReader.description}">
+			<div class="searchResultValues"><em>Description:</em> &nbsp; 
+						<dds:keywordsHighlight>
+							${result.docReader.description}
+						</dds:keywordsHighlight></div>
+		</c:if>
+
+		<c:if test="${not empty result.docReader.gradeRanges}">
+			<div class="searchResultValues"><em>Grade ranges:</em> &nbsp;
+				<c:forEach var="gr" items="${result.docReader.gradeRanges}" varStatus="i">
+						<vocabs:uiLabel
+						metaFormat="adn"
+						audience="${initParam.metadataVocabAudience}"
+						language="${initParam.metadataVocabLanguage}"	
+						field="gr" 
+						value="${gr}" />${(not i.last) ? ',' : ''}
+				</c:forEach>
+			</div>
+		</c:if>
+
+		<c:if test="${not empty result.docReader.resourceTypes}">
+			<div class="searchResultValues"><em>Resource types:</em> &nbsp;
+				<c:forEach var="re" items="${result.docReader.resourceTypes}" varStatus="i">
+					<dds:keywordsHighlight>
+						<vocabs:uiLabel
+						metaFormat="adn"
+						audience="${initParam.metadataVocabAudience}"
+						language="${initParam.metadataVocabLanguage}"	
+						field="re" 
+						value="${re}" />${(not i.last) ? ',' : ''}</dds:keywordsHighlight>
+				</c:forEach>
+			</div>
+		</c:if>
+		
+		<c:if test="${not empty result.docReader.subjects}">
+			<div class="searchResultValues"><em>Subjects:</em> &nbsp;
+				<c:forEach var="su" items="${result.docReader.subjects}" varStatus="i">
+					<dds:keywordsHighlight>
+						<vocabs:uiLabel
+						metaFormat="adn"
+						audience="${initParam.metadataVocabAudience}"
+						language="${initParam.metadataVocabLanguage}"	
+						field="su" 
+						value="${su}" />${(not i.last) ? ',' : ''}</dds:keywordsHighlight>
+				</c:forEach>
+			</div>
+		</c:if>
+
+

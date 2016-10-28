@@ -1,0 +1,13 @@
+<c:set var="verbose" value="false" />
+<c:if test="${not empty sessionBean}">
+	<% sessionBean.releaseAllLocks(); %>
+	<c:if test="${verbose == 'true'}">
+		<c:if test="${not empty sessionBean.lockedRecords}">
+			<div class="lock-notification">
+				<em>System Notice:</em> locks to ${fn:length(sessionBean.lockedRecords)} records have been released!
+			</div>
+		</c:if>
+	</c:if>
+</c:if>
+
+

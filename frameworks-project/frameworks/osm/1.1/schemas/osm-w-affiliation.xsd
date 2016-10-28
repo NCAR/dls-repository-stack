@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id:  -->
+<xs:schema 
+targetNamespace="http://nldr.library.ucar.edu/metadata/osm" 
+xmlns="http://nldr.library.ucar.edu/metadata/osm"   
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+elementFormDefault="qualified" 
+attributeFormDefault="unqualified" 
+version="1.1">
+	<xs:annotation>
+		<xs:documentation>********************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>********************************************</xs:documentation>
+		<xs:documentation>Created: 2009-11-23</xs:documentation>
+		<xs:documentation>Author: Katy Ginger, University Corporation for Atmospheric Research (UCAR),  ginger at ucar dot edu</xs:documentation>
+		<xs:documentation>Purpose: To support item-level metadata in the NCAR library OpenSky repository and archives group. The metadata framework is organized thematically into major sections of general, classify, contributors, resources, coverage and rights so that elements similar in content appear together in the cataloging tool.</xs:documentation>
+		<xs:documentation>This particular schema is the overarching/container schema over the different themed schemas sections.</xs:documentation>
+		
+		<xs:documentation>***********************************************************</xs:documentation>
+		<xs:documentation>*****  LICENSE/COPYRIGHT INFORMATION  *****</xs:documentation>
+		<xs:documentation>***********************************************************</xs:documentation>
+		<xs:documentation>Copyright  (c) 2010 University Corporation for Atmospheric Research (UCAR) P.O. Box 3000, Boulder, CO 80307, United States of America</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>******************************************************</xs:documentation>
+		<xs:documentation>***** INCLUDED/ IMPORTED SCHEMAS  *****</xs:documentation>
+		<xs:documentation>******************************************************</xs:documentation>
+		<xs:documentation>Included schemas contain elements that are organized around a common theme like coverage, rights, technical, etc.</xs:documentation>
+	</xs:annotation>
+	<xs:include schemaLocation="categories/classify.xsd"/>
+	<xs:include schemaLocation="categories/contributors-w-affiliation.xsd"/>
+	<xs:include schemaLocation="categories/commonfields.xsd"/>
+	<xs:include schemaLocation="categories/coverage.xsd"/>
+	<xs:include schemaLocation="categories/general.xsd"/> 
+	<xs:include schemaLocation="categories/resources.xsd"/>
+	<xs:include schemaLocation="categories/rights.xsd"/>
+	
+	<xs:annotation>
+		<xs:documentation>*********************************************</xs:documentation>
+		<xs:documentation>*********** ROOT ELEMENT  ***********</xs:documentation>
+		<xs:documentation>*********************************************</xs:documentation>
+	</xs:annotation>
+	<xs:element name="record" type="recordType"/>
+	
+	<xs:annotation>
+		<xs:documentation>***************************************************</xs:documentation>
+		<xs:documentation>*****  COMPLEX TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>***************************************************</xs:documentation>
+		<xs:documentation>recordType - is root element type</xs:documentation>
+	</xs:annotation>
+
+	
+	<xs:complexType name="recordType">
+		<xs:annotation>
+			<xs:documentation>general - overarching characteristics of a resource like title, description, urlOfRecord, abstract, volume, issue, etc.</xs:documentation>
+			<xs:documentation>classify - characteristics of a resource that lend themselves to classification like resource type, language, status, collaboration, etc.</xs:documentation>
+			<xs:documentation>contributors - lists of people or organizational contributors, creators or publishers who made contributions to the resource</xs:documentation>
+		</xs:annotation>
+		<xs:all>
+			<xs:element name="general" type="generalType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="resources" type="resourcesType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="contributors" type="contributorsType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="classify" type="classifyType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="coverage" type="coverageType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="rights" type="rightsType" minOccurs="1" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+</xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

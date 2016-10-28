@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: sample.xml,v 1.2 2008/02/21 18:09:38 ginger Exp $ -->
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:DCMI="http://purl.org/dc/dcmitype/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/
+http://www.dlsciences.org/frameworks/oai_dc/2.0/schemas/oai_dc-DCvocab-nolang.xsd">
+	<dc:title>String</dc:title>
+	<dc:title>String</dc:title>
+	<dc:creator>String</dc:creator>
+	<dc:creator>String</dc:creator>
+	<dc:subject>String</dc:subject>
+	<dc:subject>String</dc:subject>
+	<dc:description>String</dc:description>
+	<dc:description>String</dc:description>
+	<dc:publisher>String</dc:publisher>
+	<dc:publisher>String</dc:publisher>
+	<dc:contributor>String</dc:contributor>
+	<dc:contributor>String</dc:contributor>
+	<dc:date>String</dc:date>
+	<dc:date>String</dc:date>
+	<dc:type>Event</dc:type>
+	<dc:type>Collection</dc:type>
+	<dc:format>String</dc:format>
+	<dc:format>String</dc:format>
+	<dc:identifier>String</dc:identifier>
+	<dc:identifier>String</dc:identifier>
+	<dc:source>String</dc:source>
+	<dc:source>String</dc:source>
+	<dc:language>String</dc:language>
+	<dc:language>String</dc:language>
+	<dc:relation>String</dc:relation>
+	<dc:relation>String</dc:relation>
+	<dc:coverage>String</dc:coverage>
+	<dc:coverage>String</dc:coverage>
+	<dc:rights>String</dc:rights>
+	<dc:rights>String</dc:rights>
+</oai_dc:dc>

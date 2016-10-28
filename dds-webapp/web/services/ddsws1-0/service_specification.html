@@ -1,0 +1,440 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+
+
+
+<title>Search Web Service Documentation: DDSWS v1.0</title>
+
+
+
+
+
+<!-- BEGIN HEADER: DO NOT EDIT! -->
+
+	<!-- CSS Stylesheet defines site global/default layout properties: -->
+
+	<link rel="stylesheet" type="text/css" href="/dlese_shared/dlese_styles_screen.css"/>
+
+	<!-- Alternate version of styles are used for printing: -->
+
+	<link rel="stylesheet" type="text/css" media="print" href="/dlese_shared/dlese_styles_print.css">
+
+
+
+	<!-- Scripting used for enhancement only, no basic layout or page functionality: -->	
+
+	<script type="text/javascript" src="/dlese_shared/dlese_script.js"></script>
+
+	<!-- Site/banner menu definitions: -->
+
+	<script type="text/javascript" src="/dlese_shared/dlese_site_menus.js"></script>
+
+<!-- END HEADER: DO NOT EDIT! -->
+
+
+
+
+
+<!-- If your site has a side menu, replace "my_side_menus.js" with the name of your _menus.js file and remove this comment
+
+<script type="text/javascript" src="/dlese_menus/my_side_menus.js"></script>
+
+-->
+
+
+
+
+
+<style type="text/css">
+
+<!--
+
+	/* Tweak the dlese_styles css to work with HTML that was imported form the old Swiki */	
+
+	TD { font-size:100%; }
+
+	H1 { margin-left: 0px; padding-left: 0px; margin-bottom: 10px; margin-top: 5px; }
+
+	H2 { 
+
+		font-size: 140%;
+
+		font-style: normal;	
+
+		margin-left: 0px; 
+
+		padding-left: 0px; 
+
+		margin-bottom: 10px; 
+
+		margin-top: 5px;	
+
+	}	
+
+	H3 { margin-left: 0px; padding-left: 0px; margin-bottom: 10px; margin-top: 5px; }
+
+	H4 { margin-left: 0px; padding-left: 0px; margin-bottom: 10px; margin-top: 5px; }
+
+	UL { 
+
+		padding-left: 7px;
+
+		padding-top: 2px;
+
+		padding-bottom: 0px;
+
+		margin-left: 16px;
+
+		margin-bottom: 0px;
+
+		margin-top: 0px;
+
+	}
+
+	LI { 
+
+		padding-top: 0px;
+
+		padding-bottom: 0px;
+
+		margin-bottom: 0px;
+
+		margin-top: 0px;
+
+	}
+
+	PRE {
+
+		font-size: 110%;	
+
+	}
+
+-->
+
+</style>
+
+
+
+</head>
+
+
+
+<body onload="dlese_pageOnLoad();" bgcolor="#ffffff" text="#000000" link="#0000cc" alink="#ff0000" vlink="#551a8b" leftmargin="8" topmargin="8">
+
+<!-- Sub-title just underneath logo -->
+
+<div class="dlese_sectionTitle" id="dlese_sectionTitle">
+
+   Search <br/> Web Service
+
+</div>
+
+
+
+<!-- BEGIN TOP CONTENT: DO NOT EDIT! -->
+
+<a name="top"></a>
+
+<map name="homeLink">
+
+	<area shape="rect" coords="0,0,2,2" href="#dleseSkipNav" alt="Skip navigation"/>
+
+	<area shape="rect" coords="2,2,90,54" href="http://www.dlese.org/" target="_top" 
+
+		alt="Digital Library for Earth System Education"/>
+
+</map>
+
+<div class="dlese_bannerDivBackground"></div>
+
+
+
+<div class="dlese_bannerDiv">
+
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+		<tr>
+
+			<td valign="top" height="105" width="118" nowrap="true"><img 
+
+				alt="Digital Library for Earth System Education" border="0" 
+
+				src="/dlese_shared/images/navigation/site_banner_inside.jpg" 
+
+				usemap="#homeLink" height="135" width="118"/></td>
+
+			<td valign="top" nowrap="true">
+
+				<table class="dlese_bannerButtonsTable" border="0" cellspacing="0" cellpadding="0">
+
+					<tr>
+
+						<td height="56" nowrap>
+
+							<div class="dlese_bannerTableSpacer">
+
+
+
+								<noscript>
+
+									<a href='http://www.dlese.org/resources/index.html' target="_top"><img 
+
+									border='0' alt='Educational Resources' 
+
+									src='/dlese_shared/images/navigation/edres_noscript.gif' 
+
+									width='86' height='32' hspace='4'/></a>	
+
+									<a href='http://www.dlese.org/library/literacy_maps/' target="_top"><img 
+
+									border='0' alt='Earth Science Literacy Maps' 
+
+									src='/dlese_shared/images/navigation/eslm_noscript.gif' 
+
+									width='97' height='32' hspace='4'/></a>
+
+									<a href='http://www.dlese.org/news_opportunities/index.html' target="_top"><img 
+
+									border='0' alt='News & Opportunities' 
+
+									src='/dlese_shared/images/navigation/news_noscript.gif' 
+
+									width='91' height='32' hspace='4'/></a>				
+
+									<a href='http://www.dlese.org/people/index.html' target="_top"><img 
+
+									border='0' alt='People & Groups' 
+
+									src='/dlese_shared/images/navigation/people_noscript.gif' 
+
+									width='76' height='32' hspace='4'/></a>					
+
+									<a href='http://www.dlese.org/libdev/index.html' target="_top"><img 
+
+									border='0' alt='For Developers' 
+
+									src='/dlese_shared/images/navigation/fordev_noscript.gif' 
+
+									width='85' height='32' hspace='4'/></a>
+
+									<a href='http://www.dlese.org/about/index.html' target="_top"><img 
+
+									border='0' alt='About DLESE' 
+
+									src='/dlese_shared/images/navigation/about_noscript.gif' 
+
+									width='62' height='32' hspace='4'/></a>	
+
+								</noscript>
+
+							</div>
+
+						</td>
+
+					</tr>
+
+
+
+				</table>
+
+			</td>
+
+			<td align="right" valign="top" nowrap>
+
+				<div class="dlese_homeEtcLinks">
+
+					<nobr><a href="http://www.dlese.org/" target="_top" class="dlese_homeLink" 
+
+						title="DLESE Home">Home</a><br/>
+
+					<a href="http://www.dlese.org/register/" target="_top" class="dlese_homeLink" 
+
+						title="Register with DLESE">Register</a><br/>
+
+					<a href="http://www.dlese.org/new_dlese/" target="_top" class="dlese_homeLink" 
+
+						title="Never been to DLESE?">New to DLESE?</a></nobr>
+
+
+
+				</div>
+
+				<div class="dlese_searchTipsGraphic">
+
+					<a href="http://www.dlese.org/resources/search_tips.html"><img alt="Search tips" 
+
+						src="/dlese_shared/images/navigation/search_tips.gif" border="0" vspace="0"/></a>
+
+				</div>
+
+			</td>
+
+		</tr>
+
+	</table>
+
+	<form id="ddsQueryForm" name="ddsQueryForm" action="http://www.dlese.org/dds/query.do" 
+
+		method="GET" class="dlese_searchForm">	
+
+		<table class="dlese_bannerSearchTable" border="0" cellpadding="0" cellspacing="0">
+
+
+
+			<tr>
+
+				<td valign="center" height="48">
+
+					<input type="hidden" name="s" value="0"/>
+
+					<input type="text" name="q" size="28" class="dlese_searchKeywords"/>
+
+				</td>
+
+				<td class="dlese_searchOverLabel" valign="center">
+
+					<div class='dlese_searchOverLabel'>
+
+						Search<br/>over:
+
+					</div>
+
+
+
+				</td>
+
+				<td class="dlese_searchOverSelect" valign="center">
+
+					<select name="over" id="dlese_searchOverSelect">
+
+						<option value="1">Educational resources</option>
+
+						<option value="2">News &amp; opportunities</option>
+
+						<option value="3">Email discussions</option>
+
+
+
+						<option value="4">Everything else</option>
+
+					</select>
+
+				</td>
+
+				<td valign="center">
+
+					<input type="image" alt="Start a new search" class="dlese_startSearch" 
+
+						src="/dlese_shared/images/navigation/search_on_gold.gif" border="0"/>
+
+				</td>
+
+			</tr>
+
+		</table>
+
+
+
+	</form>
+
+</div>
+
+<div class="dlese_bannerBottomEdge"></div>
+
+<script type="text/javascript"><!--
+
+	dlese_renderSiteNavButtons();
+
+// -->
+
+</script>
+
+<a name="dleseSkipNav"></a>
+
+<!-- END OF TOP CONTENT: DO NOT EDIT! -->
+
+
+
+
+
+<div style="padding-left:14px; padding-right:14px;">
+
+
+
+<a name="top">
+
+</a><table border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+
+<td valign="top">
+
+<script type="text/javascript">
+   setTimeout( "document.location.href = 'service_specification.jsp'", 5000 );
+</script> 
+
+<h2>Search Web Service Documentation</h2>
+
+<div style="padding-bottom:20px">
+
+	<p>This page has moved. The new page will be displayed momentarily. Please update your bookmarks.
+	<p>If you aren't automatically redirected in a few seconds, follow
+<a href="service_specification.jsp">this link to the new page</a>. </p>
+	<p>Thanks for visiting. </p>
+
+</div>
+
+</td>
+
+</tr></tbody></table>
+
+
+
+
+
+<!-- BEGIN BOTTOM CONTENT: DO NOT EDIT! -->
+
+<div id='dlese_footer' class='dlese_footerLinks'>
+
+	<hr/>
+
+
+
+	<a href="http://www.dlese.org/">DLESE HOME</a> | 
+
+	<a href="http://www.dlese.org/faq/">FAQ</a> | 
+
+	<a href="http://www.dlese.org/documents/glossary.html">GLOSSARY</a> | 	
+
+	<a href="http://www.dlese.org/sitemap.html">SITE MAP</a> |
+
+	<a href="mailto:support@dlese.org">CONTACT US</a><br />
+
+	<a href="http://www.dlese.org/"><img src="/dlese_shared/images/littlelogo.jpg" 
+
+		border="0" vspace="7" alt="Digital Library for Earth System Education" /></a>
+
+
+
+</div>
+
+
+
+<script type='text/javascript'><!--
+
+		insertOmnitureCode();
+
+	// -->
+
+</script>
+
+<!-- END BOTTOM CONTENT: DO NOT EDIT! -->
+
+
+
+
+
+</body></html>

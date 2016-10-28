@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: instName-organization-publisher-name-osm-groups-submission-en-us.xml,v 1.2 2011/07/05 19:55:24 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/instName.xsd"
+version="2.0">
+	<head>
+	<!--2011-07-01: Please note: changed the title and text from 'Institutional name' to 'Publisher Name' to match the name of the field on the OS submission form-->
+		<title>Publisher Name</title>
+		<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="Publisher Name" audience="submission" path="/record/contributors/organization/affiliation/instName" smartCheckBox="true" collapseExpand="true" deftn="The name of the entity responsible for the publication or dissemination of the resource."/>
+	</head>
+<!--not an option for manuscripts, NCAR technotes, poster, presentation, proceedings article, software-->
+	<bestPractices>
+		<practice link1="published" style1="bold">This field is required for all published books, book chapters, book forewords, encyclopedia articles, newsletters reports and technical notes.</practice> 
+		<practice>While not required, this field should be completed when the information is known for newsletter articles, interactives and manuals.</practice> 
+		<practice>If appropriate, you may use this field with articles, book reviews and images.</practice> 
+		<practice>Spell out names completely, capitalizing all proper names and all major words.</practice>
+		<practice link1="Example" style1="bold">Example: University Corporation for Atmospheric Research (UCAR)</practice>
+		<practice link1="Example" style1="bold">Example: Scripps Institution of Oceanography</practice>
+		<practice link1="Example" style1="bold">Example: U.S. Bureau of Reclamation</practice>
+		<practice link1="Example" style1="bold">Example: Universit&#0224; di Milano</practice>
+		<practice link1="Example" style1="bold">Example: The World Bank</practice>
+		<practice link1="Example" style1="bold">Example: National Institute for Environmental Studies (Japan)</practice>
+	</bestPractices>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->
+
+
+

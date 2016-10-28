@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="ccs_saved_resource">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<xpaths>
+				<xpath>/savedResource/id</xpath>
+			</xpaths> 
+		</standardField>	
+		<standardField name="title">
+			<xpaths>
+				<xpath>/savedResource/savedRecordTitle</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/savedResource/record/dc/description</xpath><!-- DC -->
+				<xpath>/savedResource/record/nsdl_dc/description</xpath><!-- NSDL DC -->
+				<xpath>/savedResource/record/itemRecord/general/description</xpath><!-- ADN -->
+			</xpaths>		
+		</standardField>
+		<standardField name="url">
+			<xpaths>
+				<xpath>/savedResource/record/dc/identifier[starts-with(.,'http://') or starts-with(.,'https://') or starts-with(.,'ftp://')]</xpath><!-- DC -->			
+				<xpath>/savedResource/record/nsdl_dc/identifier[starts-with(.,'http://') or starts-with(.,'https://') or starts-with(.,'ftp://')]</xpath><!-- NSDL DC -->
+				<xpath>/savedResource/record/itemRecord/technical/online/primaryURL</xpath><!-- ADN -->
+			</xpaths>		
+		</standardField>		
+	</standardFields>
+	
+	<!-- Relationships that this format of record defines. -->	
+	<relationships>
+		<!-- 	Relationship of the target record to this.
+		
+				The given relationship name will be attached to the target record, not this record.
+				
+				Examples:
+					target 'isAnnotatedBy' this
+					target 'isExtendedBy' this
+					target 'isMemberOf' this
+					etc.
+					
+				attributes: name=[relationshop name] -->
+				
+		<!-- Xpath where the target record's ID or URL is stored
+			 attribute type=[id|url] -->
+				
+	</relationships>
+</XMLIndexerFieldsConfig>

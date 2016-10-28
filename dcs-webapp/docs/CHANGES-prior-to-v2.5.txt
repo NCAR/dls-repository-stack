@@ -1,0 +1,104 @@
+$Id: CHANGES-prior-to-v2.5.txt,v 1.1.1.1 2007/09/26 21:52:50 ostwald Exp $
+
+Changes in version 2.5.0
+- OAI Provider functionality added
+
+- MetadataVocabOPML support added
+
+Changes in version 2.4.0
+
+- Distribution tested on MAC OS platform (several entity display issues ironed out)
+
+- Metadata fields configured (in framework_config) as "url paths" (valueType in ['url', 'uniqueUrl']) are checked for url syntax upon validation.
+
+- Compositor support - metadata editor now provides more general supports for schema element compositors ("all", "choice" and "sequence") and occurrence constraints ("maxOccurs" and "minOccurs").
+
+- Casaa Suggestor Demo - The suggestion service is integrated into DCS but is not active by default. When ADNv0.7.00 is loaded, 4th level educational content standards are supported.
+
+- Export Web Service - Export operations can now be triggered by "rest-style" web services. The service is guarded by IP, and allows records of specified status and specified collection to be exported a specified directory.  
+
+- Improved Error Handling - Eliminated a few more instances where use of the browser's back button could lead to trouble.
+
+- SchemaView Improvements - The schema viewer's interface has been improved, with better navigation and display of compositor information.
+
+- Windows compatibility - distribution versions (WAR files) are now compatible with Windows as well as Unix/MaxOS
+
+Changes in version 2.3.0
+
+Security and Access Restrictions
+- Roles and Permissions - simple Authentication and Authorization scheme
+(see RolesManager)
+- Guarded buttons
+- see notes in swiki about design of framework
+
+Collection-config
+- FinalStatusFlag - each collection has a final status flag which can be used to filter exports and also to trigger automatic actions.
+- CollectionInfo - tuples store default information that is used to populate all new records created for this collection.
+
+WorkFlowServices - any change to a record's status is broadcast to the WorkFlowServices class. This is the basic hook for implementing workflow support. (currently the workflowstatus listener merely prints a message to the log file).
+
+MetaData Editor
+- support for combo-Input elements
+- fieldInfo protocol for reading fields info
+- best practices documentation gets fleshed out
+- improved validation for dates
+
+Importing and Exporting
+- improved reporting. reports saved within system and can be viewed.
+- validation is cached in the DcsDataRecord to save time. If the lastMod date of metdata file is different from that of cash, the validation is performed.
+
+Changes in version 2.2.0b
+
+Interface changes as result of 1/15/05 walkthrough and takehome
+- make sure there are roll-overs for all interface elements/buttons
+- group buttons to resemble grouping in search/view, and put save, validate,
+exit together somehow.
+- after making a choice, the new element should be expanded (it is now collapsed) 
+- changed "new xxxx" to "add" for metadata editor controls
+- ensure "required choice" select element defaults to "--choice--" 
+- initialize top-level collapse widgets to "open" (see
+itemRecord/technical/online). This was hardwired in CollapseBeanInitializer
+since it goes against the collapse policy currently in effect, which is to close
+all level 1 nodes and open the rest
+
+Framework-related changes
+- "en" now an (editable) default value for itemRecord/general/language
+- uniqueUrl implmented for News & Opps, ADN frameworks in support of enforcing
+unique Urls
+- collection-config schema allows collection-specific settings (such as a set of
+statusFlags). collection settings are editable via settings->collections
+settings.
+- dcs_data schema (for workFlow status records) now allows for status history to
+be recorded and maintained.
+
+Record Operations
+- following single-record operations supported: create, new, copy, move, delete,
+statusChange
+- following batch (involving sets of records) operations supported: batchMove,
+batchDelete, batchStatusChange
+
+StatusHistory
+- a history of status changes for each record now maintained
+
+Concurrency Control
+- session-based locking of records before all operations that can change content
+of metadata or status.
+- mechanism to release locked records as a safeguard (available via
+"settings -> sessions")
+
+- Status (DcsDataRecords) now retains a history of status changes. Status
+history is viewable from search, view and status editing
+
+Changes in Version 2.1.1b
+
+- project directory cleaned up. Only metadata frameworks not available on the
+web are included in the WEB-INF/metadata-frameworks directory
+
+- both collections and frameworks are configured off .xml files (see
+WEB-INF/collection-config and WEB-INF/framework-config directories). Collection
+configurables include status flags.
+
+- DDS Webservice interface files are now copied from dds-project at deploy-time
+rather than existing in static form. DCS webservice interface and examples are
+located in the web/services directory
+ 

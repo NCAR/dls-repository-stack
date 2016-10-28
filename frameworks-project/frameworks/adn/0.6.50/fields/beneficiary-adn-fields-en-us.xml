@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: beneficiary-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/beneficiary.xsd">
+	<field name="Beneficiary" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/educational/audiences/audience/beneficiary">
+		<definition>a recipient of the instruction or information of the resource</definition>
+
+		<vocabLevels number="2">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="DLESE">Digital Library for Earth System Education</levelTermAndDeftn>
+					<levelTermAndDeftn term="GEM">The Gateway to Educational Materials</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="2" levelName="Beneficiary" levelDeftn="the ultimate beneficiary of the resource being described; see the allowed combination of terms below; the tool for part of the term is the phrase after the last colon"/>				
+		</vocabLevels>
+			
+		<terms>
+			<termAndDeftn vocab="DLESE:Earth system data specialists">individuals who primary responsibility is to work with, process, analyze, package or redistribute Earth data sets</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Evaluators">individuals whose determine significance, worth or condition by careful study, appraisal or assessment</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Media specialists">individuals whose specialty is understanding information skills, methods and integration and combining this with educational technologies </termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Researchers">individuals who investigate relevant topics, problems, issues or events in order to advance knowledge of a field</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Science professionals">individuals working in the scientific arena but who position is more operations oriented rather than research oriented</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Administrators">individuals who manage others, large projects or budgets within an organization  </termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Adult education students">individuals generally above the age of 18 who have returned to or are starting out in a formal academic environment</termAndDeftn>
+			<termAndDeftn vocab="GEM:Advanced placement students">individual who are taking college-level and often college-credit courses in high school</termAndDeftn>
+			<termAndDeftn vocab="GEM:African-American students">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="GEM:Asian-American students">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="GEM:At-risk students">individuals who are struggling in a school setting and may be in danger of dropping out because of social, economic or psychological factors</termAndDeftn>
+			<termAndDeftn vocab="GEM:Bilingual students">individuals fluent in multiple languages usually the dominant language of the learning situation and another language</termAndDeftn>
+			<termAndDeftn vocab="GEM:Culturally diverse classroom">a learning setting with culturally differentiated groups</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Curriculum supervisors">individuals responsible for defining or managing sets of courses constituting an academic area of specialization</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Developmentally disabled students">individuals with developmental challenges due to their social environment </termAndDeftn>
+			<termAndDeftn vocab="GEM:Disabled students">learners with any handicaps whether it be physical, emotional, developmental, economic, hearing or vision</termAndDeftn>
+			<termAndDeftn vocab="GEM:Economically disadvantaged students">individuals facing challenges due to their financial or economic situation</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Elementary school teachers">educators whose primary responsibility it is to instruct students in kindergarten through grade five</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Emotionally disabled students">individuals who are emotionally challenged</termAndDeftn>
+			<termAndDeftn vocab="GEM:English as a second language (ESL) students">individuals whose first language is a language other than English</termAndDeftn>
+			<termAndDeftn vocab="GEM:Female students">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:General public">individuals in the general population</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Gifted or honors students">individuals taking courses above grade level</termAndDeftn>
+			<termAndDeftn vocab="GEM:Hearing impaired students">individuals with no or minimal abilities to hear the spoken word</termAndDeftn>
+			<termAndDeftn vocab="GEM:Hispanic-American students">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="GEM:Learning disabled students">individuals who may have visual, auditory, spatial, conceptual, memory or behavioral deficits that benefit from alternative or multiple teaching methods in order to understand topics and concepts</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Librarians">specialists in the care and management of a library or collections of related items</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Limited English proficiency (LEP) students">individuals who have only a slight understanding of or ability to speak English</termAndDeftn>
+			<termAndDeftn vocab="GEM:Male students">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Middle school teachers">educators whose primary responsibility is to instruct students in grades six through eight.</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Minority students">individuals that are in disproportionate representation in STEM (science, technology, mathematics, engineering) disciplines; includes ethnicity, gender or socioeconomic populations</termAndDeftn>
+			<termAndDeftn vocab="GEM:Native American students">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Other educational professionals">individuals who consider themselves teachers or instructors but may not be formally associated with an institution or organization and who may teach across all grade ranges and ages (e.g. professional tutors)</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Pacific Islanders">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Parents">individuals who raise or care for offspring or other persons</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Physically disabled students">individuals with physical challenges or handicaps; does not include hearing or vision-impaired learners</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Policymakers">individuals whose primary responsibility is to develop and define plans, rules, strategies, guidelines, principles, actions or procedures for institutions or government agencies</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Remedial students">individuals taking courses that are generally deemed below grade level </termAndDeftn>
+			<termAndDeftn vocab="GEM:Rural students">individuals in school settings that are located in country or agricultural areas</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Secondary school teachers">educators whose primary responsibility is to instruct students in grades nine through twelve.</termAndDeftn>
+
+
+			<termAndDeftn vocab="GEM:Student teachers">individuals pursuing a teaching certificate and who are currently working in a classroom setting.</termAndDeftn>
+
+
+			<termAndDeftn vocab="GEM:Students">individuals who investigate topics, problems, issues or events in order to advance their own knowledge, skills or understanding; often in a structured learning environment or through self-study</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Students with multiple disabilities">individuals with more than one physical, developmental, or emotional challenge</termAndDeftn>
+			<termAndDeftn vocab="GEM:Suburban students">individuals in school settings adjacent or within commuting distance of major cities</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Supervisors">individuals who manage others or projects within an organization </termAndDeftn>
+
+
+
+			<termAndDeftn vocab="GEM:Teacher educators">individuals who train professional teachers</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Teachers">individuals whose primary responsibility or occupation is the instruction of others</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Teaching professionals">educators whose occupation is teaching or instructing</termAndDeftn>
+
+
+			<termAndDeftn vocab="GEM:University instructors">educators at the college level who teach primarily undergraduate and graduate students</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Urban students">learners within a city setting</termAndDeftn>
+			<termAndDeftn vocab="GEM:Vision impaired students">individuals whose eyesight is limited or no longer functioning</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-04-20">Choose a beneficiary term.</practice>
+				<practice status="current" originDate="2005-04-25">Use for resources that are intended for student learning like lesson plans, case studies, activities, course, curriculums and other types of learning materials.</practice>
+				<practice status="current" originDate="2006-03-03" link1="grade range" style1="bold" link2="tool for" style2="bold">Beneficiary terms should match/support the grade range field and not the tool for field.</practice>
+
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2005-04-20">Catalogers without educational or teaching experience should not use this field.</practice>
+				<practice status="current" originDate="2006-03-03">Do not use this field if it does not add additional and specific information to a resource. This value added information should help in the discovery of the resource by potential users.</practice>
+
+			</donts>
+			
+			<examples> 
+			<practice status="current" originDate="2006-03-03" link1="Earth system data specialists:" style1="bold" link2="Geomagnetic and Solar Activity Forecast Service" url2="http://www.geomag.bgs.ac.uk/gifs/forecast.html" link3="grade range" style3="bold" link4="DLESE:Graduate or professional" style4="bold">Earth system data specialists: Geomagnetic and Solar Activity Forecast Service provides data for daily local, global and solar geomagnetic activity. The grade range is DLESE:Graduate or professional.</practice>
+
+				<practice status="current" originDate="2005-04-20" link1="DataStreme Atmosphere" url1="http://www.ametsoc.org/amsedu/dstreme/" link2="audiences page" url2="http://www.dlese.org/Metadata/documents/how-tos/audiences.htm">DataStreme Atmosphere is an online, distance learning, for college-credit course intended for K-12 teachers taught by K-12 teachers. However, it is often used locally by teachers with their students. See the audiences page that shows appropriate metadata for various fields for this resource.</practice>
+
+			</examples>
+			<otherPractices>
+				<otherPractice header="A NOTE OF CAUTION!!!">
+					<practice status="current" originDate="2005-04-26">This controlled vocabulary is experimental. Terms and definitions are subject to change and may not be backwards or forwards compatible.</practice>
+				</otherPractice>
+			</otherPractices>
+
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>DLESE:Evaluators, GEM:University instructors</example>
+			<notes>
+				<note>Some controlled vocabulary terms are from GEM. Not all the GEM terms were adopted.</note>
+				<note>The GEM terms are available at: http://raven.ischool.washington.edu/about/documentation/gem-controlled-vocabularies/vocabulary-beneficiary</note>
+<!--depracated fall 2005
+				<note>The GEM terms are available at: http://geminfo.org/about/documentation/gem-controlled-vocabularies/vocabulary-beneficiary</note> -->
+				<note>GEM did not provide definitions for GEM terms. DLESE provided definitions for GEM terms.</note>
+				<note>DLESE added additional terms with definitions.</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

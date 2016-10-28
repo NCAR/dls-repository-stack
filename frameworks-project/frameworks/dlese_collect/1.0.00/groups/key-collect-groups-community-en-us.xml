@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: key-collect-groups-community-en-us.xml,v 1.4 2013/09/16 21:06:04 ginger Exp $ -->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+	<head>
+		<title>Collection</title>
+		<groups:concept id="ky" language="en-us" metaFormat="dlese_collect" metaVersion="1.0.00" text="Collections" audience="community" path="/collectionRecord/access/key" deftn="an internal identifier used by the DLESE Program Center for identifying a collection"/>
+	</head>
+	<body>
+		<outline groups:vocab="drc" type="vocab" groups:textAbbrev="DRC" url="/collection.do?keyBrief=drc" text="DLESE Reviewed Collection (DRC)"/>
+		<outline groups:vocab="adl" type="vocab" groups:textAbbrev="ADL" url="/collection.do?keyBrief=adl" text="Alexandria Digital Library (ADL)"/>
+		<outline groups:vocab="avc" type="vocab" groups:textAbbrev="AVC" url="/collection.do?keyBrief=avc" text="Atmos Visualization Collection (AVC)" groups:textFull="Atmospheric Visualization Coll (AVC)"/>
+		<outline groups:vocab="bridge" type="vocab" groups:textAbbrev="BRIDGE" url="/collection.do?keyBrief=bridge" text="BRIDGE Ocean Resources"/>
+		<outline groups:vocab="bridgenoaa" type="vocab" groups:textAbbrev="BRIDGENOAA" url="/collection.do?keyBrief=bridgenoaa" text="BRIDGE NOAA Resources"/>
+		<outline groups:vocab="bridgenoaaother" type="vocab" groups:textAbbrev="BRIDGENOAA" url="/collection.do?keyBrief=bridgenoaaother" text="BRIDGE NOAA Other Resources"/>
+		<outline groups:vocab="bridgeother" type="vocab" groups:textAbbrev="Other BRIDGE" url="/collection.do?keyBrief=bridgeother" text="BRIDGE Other Ocean Resources"/>
+		<outline groups:vocab="ccc" type="vocab" groups:textAbbrev="CCC" url="/collection.do?keyBrief=ccc" text="Climate Change Collection"/>
+		<outline groups:vocab="crs" type="vocab" groups:textAbbrev="CRS" url="/collection.do?keyBrief=crs" text="Community Annotated Collection"/>
+		<outline groups:vocab="comet" type="vocab" groups:textAbbrev="COMET" url="/collection.do?keyBrief=comet" text="Coop Pgm Op Met Edu/Training (COMET)"/>
+		<outline groups:vocab="cosee" type="vocab" groups:textAbbrev="COSEE" url="/collection.do?keyBrief=cosee" text="COSEE Resources"/>
+		<outline groups:vocab="coseeother" type="vocab" groups:textAbbrev="Other COSEE" url="/collection.do?keyBrief=coseeeother" text="COSEE Other Resources"/>
+		<outline groups:vocab="curl" type="vocab" groups:textAbbrev="CURL" url="/collection.do?keyBrief=curl" text="Curricular Resource Lib. (CURL)"/>
+		<outline groups:vocab="sercnagt" type="vocab" groups:textAbbrev="Cutting Edge" url="/collection.do?keyBrief=sercnagt" text="Cutting Edge"/>
+		<outline groups:vocab="dataclass" type="vocab" groups:textAbbrev="Data in class" url="/collection.do?keyBrief=dataclass" text="Data for the Classroom"/>
+		<outline groups:vocab="dwel" type="vocab" groups:textAbbrev="DWEL" url="/collection.do?keyBrief=dwel" text="Digital Water Ed Library (DWEL)"/>
+		<outline groups:vocab="ceis" type="vocab" groups:textAbbrev="Discover Our Earth" url="/collection.do?keyBrief=ceis" text="Discover Our Earth"/>
+		<outline groups:vocab="dcc" type="vocab" groups:textAbbrev="DCC" url="/collection.do?keyBrief=dcc" text="DLESE Community Collection (DCC)"/>
+		<outline groups:vocab="serceet" type="vocab" groups:textAbbrev="Earth Explr Toolbk" url="/collection.do?keyBrief=serceet" text="Earth Exploration Toolbook (EET)"/>
+		<outline groups:vocab="earthlabs" type="vocab" groups:textAbbrev="EarthLabs" url="/collection.do?keyBrief=earthlabs" text="EarthLabs"/>
+		<outline groups:vocab="benchmarks" type="vocab" groups:textAbbrev="Benchmarks" url="/collection.do?keyBrief=benchmarks" text="Educational Benchmarks Collection"/>
+		<outline groups:vocab="eee" type="vocab" groups:textAbbrev="EEE" url="/collection.do?keyBrief=eee" text="Earthquake Education Environment"/>
+		<!--commented out on 2013-09-16
+		<outline groups:vocab="emvc" type="vocab" groups:textAbbrev="EMVC" url="/collection.do?keyBrief=emvc" text="EMVC Geology Materials"/>
+-->
+		<outline groups:vocab="esa" type="vocab" groups:textAbbrev="ESA" url="/collection.do?keyBrief=esa" text="Environmental Science Act. (ESA21)"/>
+		<outline groups:vocab="ien" type="vocab" groups:textAbbrev="ESS Informal"  url="/collection.do?keyBrief=ien" text="ESS Informal Education Network" groups:wrap="true"/>
+		<outline groups:vocab="ienother" type="vocab" groups:textAbbrev="ESS Informal-Other"  url="/collection.do?keyBrief=ienother" text="ESS Informal - Other Resources"/>
+		<outline groups:vocab="evaltlkt" type="vocab" groups:textAbbrev="Eval Toolkit" url="/collection.do?keyBrief=evaltlkt" text="Evaluation Toolkit"/>
+		<outline groups:vocab="globe" type="vocab" groups:textAbbrev="GLOBE" url="/collection.do?keyBrief=globe" text="GLOBE Program Collection"/>
+		<outline groups:vocab="dlisr" type="vocab" groups:textAbbrev="Indigenous" url="/collection.do?keyBrief=dlisr" text="Indigenous Science Resources"/>
+		<outline groups:vocab="dlisrother" type="vocab" groups:textAbbrev="Other Indigenous" url="/collection.do?keyBrief=dlisrother" text="Indigenous Science Other Resources"/>
+		<outline groups:vocab="k12geo" type="vocab" groups:textAbbrev="K-12 Geo" url="/collection.do?keyBrief=k12geo" text="K-12 Geoscience Activities"/>
+		<outline groups:vocab="nap" type="vocab" groups:textAbbrev="NAP" url="/collection.do?keyBrief=nap" text="NAP Earth and Life Sciences"/>
+		<outline groups:vocab="edmall" type="vocab" groups:textAbbrev="Edmall" url="/collection.do?keyBrief=edmall" text="NASA ED Mall Collection"/>
+		<outline groups:vocab="mynasadata" type="vocab" groups:textAbbrev="NASA Data" url="/collection.do?keyBrief=mynasadata" text="NASA My NASA Data"/>
+		<outline groups:vocab="eserev" type="vocab" groups:textAbbrev="NASA Reviewed" url="/collection.do?keyBrief=eserev" text="NASA Reviewed Collection"/>
+		<outline groups:vocab="nasawave" type="vocab" groups:textAbbrev="NASA Wavelength" url="/collection.do?keyBrief=nasawave" text="NASA Wavelength"/>
+		<outline groups:vocab="svs" type="vocab" groups:textAbbrev="Viz Studio" url="/collection.do?keyBrief=svs" text="NASA Scientific Vis. Studio"/>
+		<outline groups:vocab="nyic" type="vocab" groups:textAbbrev="New York" url="/collection.do?keyBrief=nyic" text="New York Instructional Collection"/>
+		<!--commented out on 2013-09-16
+		<outline groups:vocab="evc" type="vocab" groups:textAbbrev="EVC" url="/collection.do?keyBrief=evc"  text="NOAA Environmental Visualizations"/>
+-->
+		<outline groups:vocab="pck" type="vocab" groups:textAbbrev="Pedagogical" url="/collection.do?keyBrief=pck" text="Pedagogically Annotated Collection"/>
+		<outline groups:vocab="thredds" type="vocab" groups:textAbbrev="Atmos. Data" url="/collection.do?keyBrief=thredds" text="Realtime Atmospheric Data"/>
+		<outline groups:vocab="sat" type="vocab" groups:textAbbrev="SAT" url="/collection.do?keyBrief=sat" text="SAT Standards Collection"/>
+		<outline groups:vocab="simple" type="vocab" groups:textAbbrev="SIMPLE" url="/collection.do?keyBrief=simple" text="SIMPLE Science"/>
+		<outline groups:vocab="simpleother" type="vocab" groups:textAbbrev="SIMPLE-Other" url="/collection.do?keyBrief=simpleother" text="SIMPLE Science Other Resources"/>
+		<outline groups:vocab="sercstrtpt" type="vocab" groups:textAbbrev="Starting Point" url="/collection.do?keyBrief=sercstrtpt" text="Starting Point"/>
+		<outline groups:vocab="swi" type="vocab" groups:textAbbrev="Stone Wall"  url="/collection.do?keyBrief=swi" text="Stone Wall Initiative"/>
+		<outline groups:vocab="tbox" type="vocab" groups:textAbbrev="TBOX" url="/collection.do?keyBrief=tbox" text="Teaching Boxes"/>
+		<outline groups:vocab="usgs" type="vocab" groups:textAbbrev="USGS Ed"  url="/collection.do?keyBrief=usgs" text="USGS Education Collection"/>
+		<outline groups:vocab="visionlearn" type="vocab" groups:textAbbrev="Visionlearning" url="/collection.do?keyBrief=visionlearn" text="Visionlearning Collection" groups:textFull="Visionlearning, Inc."/>
+
+<!--collections not displaying but arranged alphabetically by collection key-->
+
+		<outline groups:vocab="jesse" type="vocab" groups:textAbbrev="JESSE" url="/collection.do?keyBrief=jesse" text="Journal  Earth Sys Sci Ed (JESSE)" groups:display="false"/>
+		<outline groups:vocab="bridgenews" type="vocab" groups:textAbbrev="BRIDGE News" url="/collection.do?keyBrief=bridgenews" text="BRIDGE News" groups:display="false" />
+		<outline groups:vocab="collect" type="vocab" groups:textAbbrev="Collect" url="/collection.do?keyBrief=collect" text="Repository Collections" groups:display="false" />
+		<outline groups:vocab="coseenews" type="vocab" groups:textAbbrev="COSEE News" url="/collection.do?keyBrief=coseenews" text="COSEE News" groups:display="false" />
+		<outline groups:vocab="dlese" type="vocab" groups:textAbbrev="all DLESE" url="/collection.do?keyBrief=dlese" text="DLESE collection but only refers to ADN collections"  groups:display="false"/>
+		<outline groups:vocab="earthobs" type="vocab" groups:textAbbrev="Earth Obs" url="/collection.do?keyBrief=earthobs" text="NASA Earth Observatory" groups:display="false" />
+		<outline groups:vocab="matters" type="vocab" groups:textAbbrev="Matters" url="/collection.do?keyBrief=matters" text="DLESE Matters Newsletters" groups:display="false"/>
+		<outline groups:vocab="mynasastds" type="vocab" groups:textAbbrev="MY NASA Standard" url="/collection.do?keyBrief=mynasastds" text="MY NASA Standards Collection" groups:display="false"/>
+		<outline groups:vocab="nocc" type="vocab" groups:textAbbrev="News" url="/collection.do?keyBrief=nocc" text="News and Opportunities Community Collection" groups:display="false"/>
+		<outline groups:vocab="nullkey" type="vocab"  groups:textAbbrev="nullkey" text="Deaccessioned collections" groups:display="false"/>
+		<outline groups:vocab="nys" type="vocab" groups:textAbbrev="NY Standard" url="/collection.do?keyBrief=nys" text="New York Standards Collection" groups:display="false"/>
+		<outline groups:vocab="testadn" type="vocab" groups:textAbbrev="Test ADN" url="/collection.do?keyBrief=testadn" text="Test ADN Collection" groups:display="false" />
+		<outline groups:vocab="testanno" type="vocab" groups:textAbbrev="Test Anno" url="/collection.do?keyBrief=testanno" text="Test Annotation Collection" groups:display="false" />
+		<outline groups:vocab="testcollect" type="vocab" groups:textAbbrev="Test Collect" url="/collection.do?keyBrief=testcollect" text="Test Collection Collection" groups:display="false" />
+		<outline groups:vocab="testnews" type="vocab" groups:textAbbrev="Test News" url="/collection.do?keyBrief=testnews" text="Test News Collection" groups:display="false" />
+		<outline groups:vocab="testncs" type="vocab" groups:textAbbrev="Test NCS" url="/collection.do?keyBrief=testncs" text="Test NSDL_NCS Collection" groups:display="false" />
+		<outline groups:vocab="tips" type="vocab" groups:textAbbrev="Tips" url="/collection.do?keyBrief=tips" text="Tips and Comments" groups:display="false" />
+		<outline groups:vocab="visearth" type="vocab" groups:textAbbrev="Visearth" url="/collection.do?keyBrief=visearth" text="NASA Visible Earth" groups:display="false" />
+	</body>
+</opml>

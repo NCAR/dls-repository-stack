@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  $Id: type.xsd,v 1.1 2009/01/30 21:32:56 ginger Exp $--> 
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  Overview  *****</xsd:documentation>
+		<xsd:documentation>Purpose - controlled vocabulary schema for DLESE metadata frameworks</xsd:documentation>
+		<xsd:documentation>Framework - annotation metadata framework</xsd:documentation>
+		<xsd:documentation>Source - DLESE Program Center (DPC); http://www.dlese.org and NSDL; http://www.nsdl.org</xsd:documentation>
+		<xsd:documentation>DLESE - Digital Library for Earth System Education</xsd:documentation>
+		<xsd:documentation>NSDL - National Science Digital Library</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:annotation>
+		<xsd:documentation>***** History of change *****</xsd:documentation>
+		<xsd:documentation>2005-11-23: Changed 'Average scores of aggregated indices' to 'Quantitative information'</xsd:documentation>
+		<xsd:documentation>2005-11-23: Changed 'Skills' to 'Skill'</xsd:documentation>
+		<xsd:documentation>2005-11-23: Changed 'Misconceptions' to 'Misconception'</xsd:documentation>
+		<xsd:documentation>2005-11-23: Changed 'Information on challenging teaching and learning situations' to 'Challenging audience'</xsd:documentation>
+		<xsd:documentation>2005-09-30: Started with version 0.1.01 terms and added: Misconceptions, Skills, Assessment Strategy</xsd:documentation>
+		<xsd:documentation>2005-09-30: Started with version 0.1.01 terms and removed: Advice, Annotation, Change, Explanation, Question</xsd:documentation>
+		<xsd:documentation>2005-09-30: Started new version (1.0.00) of the DLESE annotation metadata framework which includes a revamp of this controlled vocabulary. See version (0.1.01) for the previous version of this vocabulary.</xsd:documentation>
+		<xsd:documentation>2003-05-07: Changed 'See also?' to 'See also'</xsd:documentation>
+		<xsd:documentation>2003-03-24: Added Educational standard as an annotation type</xsd:documentation>
+		<xsd:documentation>2003-03-20: Added Bias as an annotation type</xsd:documentation>
+		<xsd:documentation>2003-03-10: Created this controlled vocabulary schema file</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:annotation>
+		<xsd:documentation>*****  Simple Types (alpha order) *****</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:simpleType name="typeType">
+		<xsd:annotation>
+			<xsd:documentation>*****  typeType  *****</xsd:documentation>
+			<xsd:documentation>typeType - the type of annotation</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Assessment strategy"/>
+			<xsd:enumeration value="Bias"/>
+			<xsd:enumeration value="Challenging audience"/>
+			<xsd:enumeration value="Comment"/>
+			<xsd:enumeration value="Editor's summary"/>
+			<xsd:enumeration value="Educational standard"/>
+			<xsd:enumeration value="Example"/>
+			<xsd:enumeration value="Misconception"/>
+			<xsd:enumeration value="Quantitative information"/>
+			<xsd:enumeration value="Review"/>
+			<xsd:enumeration value="See also"/>
+			<xsd:enumeration value="Skill"/>
+			<xsd:enumeration value="Teaching tip"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>For definitions see: http://www.dlese.org/Metadata/annotation/1.0.00/docs/type.htm</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. </xsd:documentation>
+		
+<xsd:documentation>This schema is free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA </xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

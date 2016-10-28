@@ -1,0 +1,123 @@
+
+/* ------ CSS Styles for DDS stand-along deployment. These are not yet universally used but should eventually be... ------ */
+
+BODY, HTML, P, TD, TH, A, H1, H2, H3, H4, H5, LI {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 0px;
+	margin: 0px;
+}
+BODY, HTML, TD {
+	background-color: #FFFDFA;	
+}
+TD, TH {
+	padding: 2px;
+}
+TH {
+	background-color: #eee;	
+}
+.bgTable {
+	background-color: #aaa;
+}
+CODE, PRE, .code {
+	color: #5F2F0B;
+	font-size: 12px;
+	font-family: Courier New, Courier, monospace;
+}
+PRE {
+	padding: 6px;
+	padding-right: 20px;
+	border: 1px solid #999;
+	background-color: #F1F1F1;
+	width:92%;
+}
+P {
+	padding-top: 4px;
+	padding-bottom: 4px;	
+}
+H1, H2, H3, H4, H5 {
+	color: #000099;	
+}
+H1 {
+	font-size: 150%;
+	font-weight: bold;
+	margin-top: 0px;
+	padding-top: 7px;
+	margin-left: 0px;
+}
+H2 {
+	font-size: 130%;
+	margin-top:25px;
+	margin-bottom:4px;
+}
+H3 {
+	font-size: 120%;
+	margin-bottom:8px;
+	margin-top:12px;
+}
+H4 {
+	/* font-size: 120%;
+	color: black; */
+	margin-bottom:8px;
+	margin-top:10px;
+}
+
+OL, UL {
+	margin:2px 0px 3px 25px; 
+	padding:0px;
+}
+
+A:link { 
+	color: #006b3b;
+} 
+
+A:visited { 
+	color: #154020;
+} 
+
+A:active { 
+	color: #009070;
+}
+
+A:hover {
+	text-decoration: underline;
+}
+#titleBar {
+	padding: 10px 10px 14px 10px;
+	border-bottom: 1px solid #666;
+	background-color: #CCCEE6;	
+	font-size: 26px;
+	font-weight: normal;
+	background-repeat: repeat-x;
+	background-image: url(images/nav_gradient.png);
+	/* background-image: url(images/nav_gradient_up.png);
+	background-position: bottom; */	
+	
+	/* color: #00016F;
+	font-family: Tahoma, Geneva, sans-serif; */
+}
+#ddsLogo {
+	position:absolute;
+	top: 19px;
+	right: 5px;
+	z-index: 2;	
+}
+#ddsCustomBanner {
+	position:absolute;
+	top: 2px;
+	right: 5px;
+	z-index: 2;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+}
+
+#dlese_sectionTitle {
+	display: none;
+}
+.bodyContent, .dlese_treeMenuTableCellText {
+	padding: 10px;	
+}
+.comment {
+	color: #41AF5A;	
+}

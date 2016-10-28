@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: interactivityType-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/interactivityType.xsd">
+	<field name="Interactivity - type" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/educational/interactivityType">
+		<definition>the type of interactions supported by a resource</definition>
+
+		<vocabLevels number="2">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="LOM">Learning Object Metadata</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="2" levelName="Interactivity" levelDeftn="the type of interactions supported by a resource; see the allowed combination of terms below; the resource part of the term is the phrase after the last colon"/>
+		</vocabLevels>
+
+		<terms>
+			<termAndDeftn vocab="LOM:Active">information flows from the resource to the learner and from the learner to the resource</termAndDeftn>
+			<termAndDeftn vocab="LOM:Expositive">information flows mainly from the resource to the learner; describes information</termAndDeftn>
+			<termAndDeftn vocab="LOM:Mixed">a combination of Active and Expositive such that neither one dominates</termAndDeftn>
+			<termAndDeftn vocab="LOM:Undefined">the type of interactions supported by the resource can not be determined</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-04-22">Choose one interactivity term that best describes the overall interactivity attribute of the resource not learning styles.</practice>
+				<practice status="current" originDate="2005-04-25">Use for resources that are intended for student learning like lesson plans, case studies, activities, course, curriculums and other types of learning materials.</practice>
+				<practice status="current" originDate="2005-04-22">Expositive resources are  typically used for learning by reading.</practice>
+				<practice status="current" originDate="2005-04-22" link1="Expositive" style1="bold">Activating links to navigate web pages is not considered an information flow. Thus, most web pages are actually Expositive.</practice>
+				<practice status="current" originDate="2005-04-22">Active resources are typically used for learning by doing.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2005-04-25">Do not use this field if it does not add useful information to the overall understanding of the resource.</practice>
+				<practice status="current" originDate="2005-04-25">Do not use this field if the information is not easily determined.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2005-04-22" link1="Active" style1="bold">Active resources include simulations, questionnaires, exams and exercises.</practice>
+				<practice status="current" originDate="2005-04-25" link1="Active:" style1="bold" link2="Mountain Simulation" url2="http://www.pals.iastate.edu/simulations/Mtnsim/index.html">Active: Mountain Simulation where learners manipulate variables to create clouds and rain.</practice>
+				<practice status="current" originDate="2005-04-22" link1="Expositive" style1="bold">Expositive resources includes essays, video clips, all kinds of graphical material and web pages.</practice>
+				<practice status="current" originDate="2005-04-25" link1="Expositive:" style1="bold" link2="Melting Beneath Our Feet" url2="http://www.uaf.edu/seagrant/NewsMedia/04ASJ/05.14.04permafrost.html">Expositive: Melting Beneath Our Feet which is a radio transcript.</practice>
+			</examples>
+
+			<otherPractices>
+				<otherPractice header="Using Interactivity Level and Interactivity Type together">
+					<practice status="current" originDate="2005-04-25" link1="CanCore Guidelines Version 2.0" url1="http://www.cancore.ca/guidelines/CanCore_Guidelines_Educational_2.0.pdf" link2="table directly" url2="http://www.dlese.org/Metadata/documents/how-tos/interactivity.htm">CanCore Guidelines Version 2.0 provides a table that describes how interactivity level and type can be used in combination. See the table directly.</practice>
+				</otherPractice>
+
+				<otherPractice header="A NOTE OF CAUTION!!!">
+					<practice status="current" originDate="2005-04-26">This controlled vocabulary is experimental. Terms and definitions are subject to change and may not be backwards or forwards compatible.</practice>
+				</otherPractice>
+
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>LOM:Active</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

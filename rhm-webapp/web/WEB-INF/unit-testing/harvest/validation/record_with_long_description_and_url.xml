@@ -1,0 +1,59 @@
+<record xmlns="http://ns.nsdl.org/ncs/lar" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:lar="http://ns.nsdl.org/ncs/lar" xmlns:dct="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ns.nsdl.org/ncs/lar http://ns.nsdl.org/ncs/lar/1.00/schemas/lar.xsd">
+   <recordID>MATHCC-000-000-000-019</recordID>
+   <recordDate>2010-06-30</recordDate>
+   <identifier>http://education.ti.com/educationportal/activityexchange/Activity.do?cid=US&amp;aId=5722</identifier>
+   <title>What's My Ratio?</title>
+   <description>In this activity, students use linear measurement and calculators to investigate proportionality and determine the constant ratio between similar figures. In it, students draw a figure on centimeter graph paper, increase or decrease the size, and predict the dimensions. Then students compare the ratio of two pictures by measuring, recording their data, and discussing their findings to draw conclusions. Suggested guidelines for instruction and classroom discussion are included, as well as data collection worksheets for students, and centimeter graph paper to print. The lesson may be introduced by reading appropriate sections from "Goosebumps—Monster Blood III" (Chapters 15 and 16) by R.L. Stine, or "The Shrinking of Treehorn" by F. Heide.</description>
+   <subject>Mathematics</subject>
+   <language>en-US</language>
+   <format>application</format>
+   <format>application/pdf</format>
+   <format>text</format>
+   <format>text/html</format>
+   <educationLevel>Middle School</educationLevel>
+   <educationLevel>Grade 6</educationLevel>
+   <educationLevel>Grade 7</educationLevel>
+   <audienceRefinement>Educator</audienceRefinement>
+   <type>Instructional Material</type>
+   <type>Activity</type>
+   <type>Lesson/Lesson Plan</type>
+   <standard>
+      <alignment>
+         <id type="ASN">http://purl.org/ASN/resources/S11434CE</id>
+      </alignment>
+   </standard>
+   <standard>
+      <alignment>
+         <id type="ASN">http://purl.org/ASN/resources/S11434CF</id>
+      </alignment>
+   </standard>
+   <standard>
+      <alignment>
+         <id type="ASN">http://purl.org/ASN/resources/S1143682</id>
+      </alignment>
+   </standard>
+   <standard>
+      <alignment>
+         <id type="ASN">http://purl.org/ASN/resources/S114350E</id>
+      </alignment>
+   </standard>
+   <standard>
+      <alignment>
+         <id type="ASN">http://purl.org/ASN/resources/S114367C</id>
+      </alignment>
+   </standard>
+   <standard>
+      <alignment>
+         <id type="ASN">http://purl.org/ASN/resources/S1143510</id>
+      </alignment>
+   </standard>
+   <date type="Published">2003</date>
+   <contributor role="Publisher">Texas Instruments Incorporated</contributor>
+   <accessRestrictions>Free access</accessRestrictions>
+   <license>
+      <name URL="http://www.ti.com/corp/docs/legal/copyright.htm">License name is unknown. Consult resource.</name>
+      <property>Terms of use unknown</property>
+   </license>
+   <copyright>Copyright 1995-2010 Texas Instruments Incorporated</copyright>
+   <copyrightHolder>Copyright 1995-2010 Texas Instruments Incorporated</copyrightHolder>
+</record>

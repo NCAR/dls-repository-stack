@@ -1,0 +1,70 @@
+BODY {
+	background-color: #ffffff;
+	color:#000000;
+}
+
+BODY, TD, TH, .help-em  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+	margin: 7px;
+}
+
+H1 { 
+	font-size: 145%;
+	font-weight: bold;
+	Color : #333366;
+	margin-top: 0px;
+	text-align: center;
+} 
+
+/* box around generic jsp page messages */
+.page-message-block {
+	border:1px black solid;
+	padding:5px 5px 0px 5px;
+	margin:10px 0px 10px 0px;
+}
+
+.error-msg {
+	color:red;
+}
+
+.confirm-msg {
+	color:blue;
+}
+
+/* system name displayed in banner */
+.system-label {
+	color:#333366;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:120%; 
+	font-style:normal;
+}
+
+/* display the name of the current tool 
+	color matches dlese_admin_styles.H1
+*/
+.tool-label {
+	color:#333366;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:200%;
+	font-style:normal;
+	vertical-align:bottom;
+	white-space:nowrap;
+}
+
+.dcs-instance {
+	color:green;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	font-style:normal;
+}
+
+.logout-confirm {
+	padding:4px 6px 4px 6px;
+	background-color:#e3e4f1;
+	font-weight:bold;
+	font-style:italic
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.1.01">
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA PURPOSE  ****
+		This schema defines a vocabulary instance document for vocabulary managment in the Digital Library for Earrth System Education (DLESE).
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA EXPLANATION  ****
+		This is a ROOT ELEMENT schema for the DLESE vocabulary management schemas. 
+		This ROOT ELEMENT may call VOCABULARY schemas in building the instance document structures.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  NAMESPACES  ********    
+		The chameleon approach to namespace conventions is used.
+		Since this ROOT ELEMENT schema is called by many other schema, it does not have a target namespance. 
+		Called VOCABULARY schemas do not have target namespaces either.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  ROOT ELEMENT  *****  
+		The root element of this schema is termsRecord.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA DEVELOPMENT  *****       
+		The Venetian Blind approach is used for all vocabulary mangement schemas .
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Other CATEGORY schemas to include  ********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  VOCABULARY schemas to include  ***********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="system.xsd"/>
+	<xsd:include schemaLocation="interface.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>*****************************************    ATTRIBUTE GROUPS      *****************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  idGroup *****************************
+				id			a number/label that identifies a vocabulary term at any point in time in the vocabulary database
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:attributeGroup name="idGroup">
+		<xsd:attribute name="id" type="idType" use="required"/>
+	</xsd:attributeGroup>
+	<xsd:annotation>
+		<xsd:documentation>************************  vocabGroup *****************************
+				vocab		the complete metadata record value of a vocabulary term (e.g. DLESE:Learning materials:Lesson plan)
+				name		the leaf node of a vocabulary (e.g. Lesson plan)
+				wrap		a placeholder to indicate when text needs to be wrapped in a user interface
+				src			indicates a needed page (e.g. a JSP page)
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:attributeGroup name="vocab-nameGroup">
+		<xsd:attribute name="vocab" type="vocabType" use="required"/>
+		<xsd:attribute name="name" type="nameType" use="optional"/>
+		<xsd:attribute name="wrap" type="xsd:boolean" use="optional"/>
+		<xsd:attribute name="src" type="xsd:string" use="optional"/>
+		<xsd:attribute name="abbrv" type="xsd:string" use="optional"/>
+	</xsd:attributeGroup>
+	<xsd:annotation>
+		<xsd:documentation>*****************************************    ROOT element      *****************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="termsRecord" type="termsRecordType"/>
+	<xsd:annotation>
+		<xsd:documentation>termsRecordType is complex</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Complex Types  (alpha order) *****************************
+		
+				abbrevType					part of valueType
+				definitionsType				part of fieldType and valueType
+				fieldType						part of termsRecordType
+				termsRecordType			ROOT type
+				
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="abbrevType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  abbrevType  *****************************************************
+				An abbreviation for vocabulary term that can use in various systems and interfaces.
+				These attributes have the following types or schema associated with them.
+				
+				system 				system in which the definition or label is to be used in (e.g. dds for discovery system); see system.xsd
+				interface				the user interface system (e.g. default for the regular interface); see interface.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="system" type="systemType" use="required"/>
+				<xsd:attribute name="interface" type="interfaceType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="definitionType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  definitionType  *****************************************************
+				These attributes have the following types or schema associated with them.
+				
+				system 				system in which the definition or label is to be used in (e.g. dds for discovery system); see system.xsd
+				interface				the user interface system (e.g. default for the regular interface); see interface.xsd
+				source					the attribution of the definition; free text
+				link					text in the defintion that is to be hyperlinked; free text
+				url						the url to be hyperlinked to; free text
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="system" type="systemType" use="required"/>
+				<xsd:attribute name="interface" type="interfaceType" use="required"/>
+				<xsd:attribute name="source" type="xsd:string" use="optional"/>
+				<xsd:attribute name="link" type="xsd:string" use="optional"/>
+				<xsd:attribute name="url" type="xsd:string" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="fieldType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  fieldType  *****************************************************
+				These elements have the following types or schema associated with them.
+				
+				definition 				is complex - the definition and maybe its attribution of a term within a particular system and user interface
+				value					is complex - the term being defined, may specify a leaf node or a whole path; includes identification info from the vocabulary database
+				name					attribute - the leaf node or path of term being defined
+				idGroup				attribute - see the attribute group called idGroup above
+				language				attribute - the language of the terms and definitions
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="definition" type="definitionType" minOccurs="1" maxOccurs="unbounded"/>
+			<xsd:element name="value" type="valueType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string" use="required"/>
+		<xsd:attributeGroup ref="idGroup"/>
+		<xsd:attribute name="language" type="xsd:language" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="termsRecordType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  termsRecordType  *****************************************************
+				The root type.
+				These elements have the following types or schema associated with them.
+				
+				field 			is complex - the metadata field for which terms are being listed and defined
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="field" type="fieldType" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>
+			**********************************  Simple Types (alpha order) *************************************
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="idType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\S*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

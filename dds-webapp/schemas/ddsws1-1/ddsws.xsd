@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema  targetNamespace="http://www.dlese.org/Metadata/ddsws" xmlns="http://www.dlese.org/Metadata/ddsws"  xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:annotation>
+		<xs:documentation>**********************</xs:documentation>
+		<xs:documentation>***** HISTORY  *****</xs:documentation>
+		<xs:documentation>**********************</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>******************************************</xs:documentation>
+		<xs:documentation>***** SCHEMAS TO INCLUDE  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>*********************************************</xs:documentation>
+		<xs:documentation>***** ROOT ELEMENT DEFINED  *****</xs:documentation>
+		<xs:documentation>*********************************************</xs:documentation>
+	</xs:annotation>
+	<xs:element name="DDSWebService" type="DDSWebServiceType"/>
+
+	<xs:annotation>
+		<xs:documentation>***************************************************</xs:documentation>
+		<xs:documentation>*****  COMPLEX TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>***************************************************</xs:documentation>
+		<xs:documentation>DDSWebServiceType - is root element type</xs:documentation>
+	</xs:annotation>
+
+	<xs:complexType name="DDSWebServiceType">
+		<xs:annotation>
+			<xs:documentation>DDSWebServiceType - allow any XML elements (not plain text) to be present</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:annotation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>***** SCHEMA PUPOSE *****</xs:documentation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>Define the structure of the DDS Web Service using XML schema</xs:documentation>
+
+		<xs:documentation>*******************************</xs:documentation>
+		<xs:documentation>*****SCHEMA INTENT  *****</xs:documentation>
+		<xs:documentation>*******************************</xs:documentation>
+		<xs:documentation>Act as an overarching schema that defines the root element the DDS Web Service</xs:documentation>
+		<xs:documentation>A schema (see schemas to include) is called that defines the OPML sub-elements/attributes</xs:documentation>
+
+		<xs:documentation>******************************</xs:documentation>
+		<xs:documentation>*****  NAMESPACES  *****</xs:documentation>
+		<xs:documentation>******************************</xs:documentation>
+		<xs:documentation>This schema has a target namespaces of: http://www.dlese.org/Metadata/ddsws</xs:documentation>
+		<xs:documentation>This schema has a default namespace of: http://www.dlese.org/Metadata/ddsws</xs:documentation>
+		<xs:documentation>Namespace defaulting mechanism is used to suppress the need to qualify elements</xs:documentation>
+
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>This schema has a root element of: DDSWebService</xs:documentation>
+		<xs:documentation>See the root element defined section</xs:documentation>
+		<xs:documentation>Included schemas do not have a root element</xs:documentation>
+		
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>Tends to follow the Venetian Blind approach that defines types that can be extended</xs:documentation>
+		<xs:documentation>Created: 2006-05-16</xs:documentation>
+		<xs:documentation>Last Modified: 2006-05-16</xs:documentation>
+
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>***** SCHEMA AUTHOR  *****</xs:documentation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), Digital Library for Earth System Education (DLESE) Program Center; email: support@dlese.org or ginger@ucar.edu</xs:documentation>
+
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>*****  LICENSE INFORMATION  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>Copyright  (c) 2006 DLESE Program Center, University Corporation for Atmospheric Research (UCAR) P.O. Box 3000, Boulder, CO 80307, United States of America;  email: support@dlese.org;  website: http://www.dlese.org</xs:documentation>
+		<xs:documentation>This schema is free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</xs:documentation>		
+	</xs:annotation>
+</xs:schema>

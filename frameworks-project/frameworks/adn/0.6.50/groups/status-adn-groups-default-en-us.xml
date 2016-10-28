@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: status-adn-groups-default-en-us.xml,v 1.1 2009/01/30 21:34:41 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Status</title>
+<groups:concept language="en-us" metaFormat="adn" metaVersion="0.6.50" text="Status" audience="default" path="/itemRecord/metaMetadata/statusOf/@status" deftn="the level of acceptance of a metadata record in a repository"/>
+</head>
+<body>
+<outline groups:vocab="Accessioned" type="vocab" text="Accessioned" groups:deftn="the metadata record is accessible the catalog/library/repository"/>
+<outline groups:vocab="Deaccessioned" type="vocab" text="Deaccessioned" groups:deftn="the metadata record is not accessible in the catalog/library/repository"/>
+<outline groups:vocab="Holding" type="vocab" text="Holding" groups:deftn="the metadata record is temporarily inaccessible in the catalog/library/repository"/>
+<outline groups:vocab="Resubmitted" type="vocab" text="Resubmitted" groups:deftn="the metadata record was edited by the collection builder and it is now again at the catalog/library/repository awaiting a decision about whether it will be accessioned"/>
+<outline groups:vocab="Submitted" type="vocab" text="Submitted" groups:deftn="the metadata record is at the catalog/library/repository and is awaiting a decision about whether it will be accessioned"/>
+<outline groups:vocab="Unknown" type="vocab" text="Unknown" groups:deftn="the metadata record does not have an official categorization and should be treated as a potential record"/>
+<outline groups:vocab="Unsubmitted" type="vocab" text="Unsubmitted" groups:deftn="the metadata record exists but may be incomplete or new and the catalog/library/repository should treat it as a potential record"/>
+<outline groups:vocab="User edit" type="vocab" text="User edit" groups:deftn="a cataloger of the collection is actively working with the metadata record"/>
+<outline groups:vocab="Working" type="vocab" text="Working" groups:deftn="the metadata record is generally complete and operationally works in the catalog/library/repository but some information may still need editing or updating"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

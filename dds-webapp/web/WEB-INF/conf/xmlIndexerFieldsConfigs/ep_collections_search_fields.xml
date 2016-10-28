@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="ep_collections">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<xpaths>
+				<xpath>/ep_collection/recordID</xpath>
+			</xpaths>		
+		</standardField>	
+		<standardField name="title">
+			<xpaths>
+				<xpath>/ep_collection/name</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/ep_collection/description</xpath>
+			</xpaths>		
+		</standardField>		
+	</standardFields>		
+</XMLIndexerFieldsConfig>

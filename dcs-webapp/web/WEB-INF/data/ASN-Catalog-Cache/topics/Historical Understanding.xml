@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AsnDocuments topic="Historical Understanding">
+  <asnDocument id="http://asn.jesandco.org/resources/D1000068">
+    <title>Minnesota Graduation Standards for Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000151">
+    <title>Wisconsin Model Academic Standards for Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001D8">
+    <title>Montana Standards for Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100015F">
+    <title>Social Studies Content Standards and Benchmarks</title>
+    <topic>Historical Understanding</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000052">
+    <title>Social Studies Standard Course of Study</title>
+    <topic>Historical Understanding</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000158">
+    <title>Essential Academic Learning Requirements in Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002B1">
+    <title>History Essential Academic Learning Requirements</title>
+    <topic>Historical Understanding</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100020F">
+    <title>Illinois Learning Standards for Social Science</title>
+    <topic>Historical Understanding</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000088">
+    <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000D1">
+    <title>Social Studies Proficiency Guide</title>
+    <topic>Historical Understanding</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001D3">
+    <title>K-12 Social Studies Curriculum Framework</title>
+    <topic>Historical Understanding</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100020D">
+    <title>Nebraska Social Studies/History Standards</title>
+    <topic>Historical Understanding</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002DA">
+    <title>Alaska Content Standards History</title>
+    <topic>Historical Understanding</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2475236">
+    <title>Alaska History Performance Standards</title>
+    <topic>Historical Understanding</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000C3">
+    <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003BD">
+    <title>National Standards for History, Revised Edition, 1996</title>
+    <topic>Historical Understanding</topic>
+    <author>NCHS</author>
+    <authorName>NCHS</authorName>
+    <created>1996</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000190">
+    <title>Academic Standards: Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000AF">
+    <title>Massachusetts History and Social Science Framework</title>
+    <topic>Historical Understanding</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003EE">
+    <title>Delaware History Standards</title>
+    <topic>Historical Understanding</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001DB">
+    <title>Social Studies Curriculum Frameworks Revised 2000</title>
+    <topic>Historical Understanding</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100001A">
+    <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+    <topic>Historical Understanding</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100007D">
+    <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+    <topic>Historical Understanding</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001FC">
+    <title>West Virginia Social Studies Content Standards K-12</title>
+    <topic>Historical Understanding</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001BF">
+    <title>Learning Results for Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000050">
+    <title>Social Studies Content Standards</title>
+    <topic>Historical Understanding</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100011E">
+    <title>Maryland State Content Standards for Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001BD">
+    <title>Social Studies Content and Performance Standards</title>
+    <topic>Historical Understanding</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000165">
+    <title>Social Sciences 2001-2002</title>
+    <topic>Historical Understanding</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100004B">
+    <title>Social Studies Content Standards</title>
+    <topic>Historical Understanding</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000089">
+    <title>Social Studies Grade-Level Expectations</title>
+    <topic>Historical Understanding</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100004F">
+    <title>Social Studies Frameworks K-12</title>
+    <topic>Historical Understanding</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000046">
+    <title>Academic Standards for History</title>
+    <topic>Historical Understanding</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2385504">
+    <title>Academic Standards for History (Pre-K-3)</title>
+    <topic>Historical Understanding</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2385514">
+    <title>Academic Standards for History (Elementary)</title>
+    <topic>Historical Understanding</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2385533">
+    <title>Academic Standards for History (Secondary)</title>
+    <topic>Historical Understanding</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000145">
+    <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+    <topic>Historical Understanding</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000A0">
+    <title>Social Studies (Primary, Intermediate, High School)</title>
+    <topic>Historical Understanding</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000085">
+    <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000D7">
+    <title>New Mexico Standards for Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100008B">
+    <title>Colorado Model Content Standards for History</title>
+    <topic>Historical Understanding</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000133">
+    <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+    <topic>Historical Understanding</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000073">
+    <title>Social Studies Quality Core Curriculum K-12</title>
+    <topic>Historical Understanding</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002C7">
+    <title>Nevada Social Studies Standards History K-12 Standards</title>
+    <topic>Historical Understanding</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100017F">
+    <title>Learning Standards for Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100014F">
+    <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+    <topic>Historical Understanding</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001D5">
+    <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+    <topic>Historical Understanding</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000187">
+    <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000015">
+    <title>Social Studies Content Standards</title>
+    <topic>Historical Understanding</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000064">
+    <title>Social Studies: Ohio's Model Competency-Based Program</title>
+    <topic>Historical Understanding</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>1994</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100002B">
+    <title>Academic Content Standards Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000045">
+    <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+    <topic>Historical Understanding</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100017B">
+    <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+    <topic>Historical Understanding</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+</AsnDocuments>

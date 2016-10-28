@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>Ocean Remote Sensing: Sea Surface Temperature Imagery</title>
+<description>This site presents rapidly processed estimates of sea surface temperature for various regions along the east coast of the United States, including the Gulf Stream, Chesapeake Bay, the Gulf of Mexico and the Bahamas. The imagery includes both single pass data and composite data from multiple passes. Included at this site is a primer on the measurement of sea surface temperature. Additional links satellite links are provided. See related links for the topics.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Physical oceanography</subject>
+<subject>DLESE:Technology</subject>
+</subjects>
+</general>
+<lifecycle>
+<contributors>
+<contributor role="Contact">
+<person>
+<nameFirst>Frank</nameFirst>
+<nameLast>Monaldo</nameLast>
+<instName>Johns Hopkins University Applied Physics Laboratory</instName>
+<emailPrimary>frank_monaldo@jhuapl.edu</emailPrimary>
+</person>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-024">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-10-24" created="2000-10-24"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://fermi.jhuapl.edu/avhrr/sst.html</primaryURL>
+<requirements>
+<requirement>
+<reqType>DLESE:General:No specific technical requirements</reqType>
+</requirement>
+</requirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:Graduate or professional</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:High school</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate lower division</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate upper division</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Visual:Map</resourceType>
+<resourceType>DLESE:Visual:Remotely sensed imagery</resourceType>
+</resourceTypes>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>Copyright Johns Hopkins University Applied Physics Laboratory</description>
+</rights>
+<relations>
+<relation>
+<urlEntry kind="DC:References" url="http://fermi.jhuapl.edu/avhrr/gallery/fire/fire.html"/>
+</relation>
+<relation>
+<urlEntry kind="DC:References" url="http://fermi.jhuapl.edu/hurr/index.html"/>
+</relation>
+<relation>
+<urlEntry kind="DC:References" url="http://fermi.jhuapl.edu/avhrr/gallery/index.html"/>
+</relation>
+<relation>
+<urlEntry kind="DC:Is part of" url="http://fermi.jhuapl.edu/avhrr/index.html"/>
+</relation>
+</relations>
+<geospatialCoverages>
+<geospatialCoverage>
+<body>
+<planet>Earth</planet>
+</body>
+<geodeticDatumGlobalOrHorz>DLESE:Unknown</geodeticDatumGlobalOrHorz>
+<projection type="DLESE:Unknown"/>
+<coordinateSystem type="DLESE:Geographic latitude and longitude"/>
+<boundBox>
+<westCoord>-98</westCoord>
+<eastCoord>-45</eastCoord>
+<northCoord>55</northCoord>
+<southCoord>16</southCoord>
+<bbSrcName>Cataloger supplied</bbSrcName>
+</boundBox>
+<detGeos>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="28.0" longitude="-70.0"/>
+<longLat latitude="19.0" longitude="-70.0"/>
+<longLat latitude="19.0" longitude="-82.0"/>
+<longLat latitude="28.0" longitude="-82.0"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detPlaces>
+<place>
+<name>Bahamas</name>
+<source>Unknown</source>
+</place>
+</detPlaces>
+</detGeo>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="40.0" longitude="-74.5"/>
+<longLat latitude="36.5" longitude="-74.5"/>
+<longLat latitude="36.5" longitude="-77.5"/>
+<longLat latitude="40.0" longitude="-77.5"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detPlaces>
+<place>
+<name>Chesapeake Bay, United States</name>
+<source>Unknown</source>
+</place>
+</detPlaces>
+</detGeo>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="45.0" longitude="-55.0"/>
+<longLat latitude="20.0" longitude="-55.0"/>
+<longLat latitude="20.0" longitude="-85.0"/>
+<longLat latitude="45.0" longitude="-85.0"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detPlaces>
+<place>
+<name>Gulf Stream Region</name>
+<source>Unknown</source>
+</place>
+</detPlaces>
+</detGeo>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="44.0" longitude="-65.0"/>
+<longLat latitude="35.0" longitude="-65.0"/>
+<longLat latitude="35.0" longitude="-76.0"/>
+<longLat latitude="44.0" longitude="-76.0"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detPlaces>
+<place>
+<name>Northern Gulf Stream</name>
+<source>Unknown</source>
+</place>
+</detPlaces>
+</detGeo>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="55" longitude="-45"/>
+<longLat latitude="16" longitude="-45"/>
+<longLat latitude="16" longitude="-98"/>
+<longLat latitude="55" longitude="-98"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+</detGeo>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="31.0" longitude="-80.0"/>
+<longLat latitude="16.0" longitude="-80.0"/>
+<longLat latitude="16.0" longitude="-98.0"/>
+<longLat latitude="31.0" longitude="-98.0"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detPlaces>
+<place>
+<name>Gulf of Mexico</name>
+<source>Unknown</source>
+</place>
+</detPlaces>
+</detGeo>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="55.0" longitude="-45.0"/>
+<longLat latitude="30.0" longitude="-45.0"/>
+<longLat latitude="30.0" longitude="-80.0"/>
+<longLat latitude="55.0" longitude="-80.0"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detEvents>
+<event>
+<name>StormWatch</name>
+<source>Unknown</source>
+</event>
+</detEvents>
+</detGeo>
+</detGeos>
+</geospatialCoverage>
+</geospatialCoverages>
+<temporalCoverages>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="2000-09"/>
+<end date="2000-12"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="2000-09"/>
+<end date="2000-12"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="1996-08"/>
+<end date="2000-12"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="1996-08"/>
+<end date="2000-12"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="1997-02"/>
+<end date="2000-12"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="1997-10"/>
+<end date="2000-12"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+</temporalCoverages>
+</itemRecord>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Template for standards suggestion service
+	- for ncs_item framework only
+	- programmatically filled (standardsFiles gets "baseDir" attribute and 
+	  "fileName" child to specify a standards file -->
+<SuggestionServiceConfig  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<config>
+		<xmlFormat>ncs_item</xmlFormat>
+		<xpath>/record/educational/standards/asnID</xpath>
+		<stdSource>
+		</stdSource>
+		<plugin>edu.ucar.dls.schemedit.standards.asn.plugin.NcsItemFrameworkPlugin</plugin>
+	</config>
+
+</SuggestionServiceConfig>

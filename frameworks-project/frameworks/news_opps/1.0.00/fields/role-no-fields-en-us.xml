@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: role-no-fields-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/news-opps/1.0.00/role.xsd">
+	<field name="Role" language="en-us" metaFormat="news_opps" metaVersion="1.0.00" path="/news-oppsRecord/contributors/contributor/@role">
+		<definition>the function of a person or organization in regards to creating, providing, supporting, hosting or cataloging the news, event or opportunity</definition>
+
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="Role" levelDeftn="the function of a person or organization in regards to creating, providing, supporting, hosting or cataloging the news, event or opportunity"/>
+		</vocabLevels>
+		<terms>
+			<termAndDeftn vocab="Author">a person or organization who creates content</termAndDeftn>
+			<termAndDeftn vocab="Cataloger">a person or organization who catalogs</termAndDeftn>
+			<termAndDeftn vocab="Contact">a person or organization who can provide more information</termAndDeftn>
+			<termAndDeftn vocab="Editor">a person or organization who performs quality control on metadata records</termAndDeftn>
+			<termAndDeftn vocab="Newsfeed">the RSS channel making the content accessible</termAndDeftn>
+			<termAndDeftn vocab="Publisher">a person or organization who makes content accessible</termAndDeftn>
+			<termAndDeftn vocab="Sponsor">a person or organization who hosts or supports news, events or opportunities</termAndDeftn>
+			<termAndDeftn vocab="Validator">a person or organization who accessions metadata records into a collection</termAndDeftn>
+	</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-08-26">Determine a role for each contributor and then select the appropriate role term.</practice>
+				<practice status="current" originDate="2004-08-26" link1="contributor" style1="bold">If a person or organization fits more than a single role, complete contributor information again for each different role term needed.</practice>
+				<practice status="current" originDate="2004-08-26" link1="Cataloger" style1="bold">Use the role term Cataloger if compiling (cataloging) the information about the news, event or opportunity</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2004-08-26" link1="Editor" style1="bold" link2="Validator" style2="bold">Do not use the role terms of Editor or Validator unless you are part of a cataloging team that is creating a collection.</practice>
+			</donts>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>Publisher</example>
+			<notes>
+				<note>This field is an attribute on the contributor field.</note>
+			</notes>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

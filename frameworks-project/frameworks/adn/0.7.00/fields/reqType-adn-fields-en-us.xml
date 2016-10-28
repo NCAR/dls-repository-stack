@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: reqType-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:48 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/reqType.xsd">
+	<field name="Requirement type" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/technical/online/requirements/requirement/reqType">
+		<definition>a computer requirement necessary to access, interact or operate a component of an online resource</definition>
+
+		<vocabLevels number="3">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="DLESE">Digital Library for Earth System Education</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+
+			<levelAndDeftn level="2" levelName="Type" levelDeftn="the category of computer requirement necessary to access, interact or operate a component of a resource">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="Browser">a mechanism for viewing web documents</levelTermAndDeftn>
+					<levelTermAndDeftn term="General">nothing beyond a typical web browser</levelTermAndDeftn>
+					<levelTermAndDeftn term="Operating system">software that makes other programs and software run on a computer</levelTermAndDeftn>
+					<levelTermAndDeftn term="Other">the technical requirements for the resource requires something that is more specialized</levelTermAndDeftn>
+					<levelTermAndDeftn term="Software or plug-in">a program or software that helps other programs, namely browsers, perform additional or specialized functions and operations</levelTermAndDeftn>
+					<levelTermAndDeftn term="Unknown">the technical requirements for the resource are not known</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="3" levelName="Item" levelDeftn="the name of the type of computer requirement necessary to interact, access or operate a resource; see the allowed combination of terms below; the item part of the term is the phrase after the last colon"/>				
+		</vocabLevels>
+			
+		<terms>
+			<termAndDeftn vocab="DLESE:Browser:Internet Explorer">the Microsoft Internet Explorer browser is specifically required to make the resource work properly</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Browser:Netscape">the Netscape browser is specifically required to make the resource work properly</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:General:No specific technical requirements">the resource needs only a browser to work and no other requirements</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Operating system:Macintosh">the Macintosh operating system is needed to make the resource function</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Operating system:Microsoft Windows">Microsoft Windows is needed to make the resource function</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Operating system:PC DOS">The DOS operating system is specifically required to make the resource function</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Operating system:Unix">the Unix operating system is needed to make the resource function</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Other:More specific technical requirements">In order for the resource to work properly, a tool that is not part of the this technical requirements list is needed</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Software or plug-in:Adobe Acrobat reader">a type of viewer from Adobe that is needed to access .pdf (portable document format) files within a resource</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Software or plug-in:ArcGIS">software that is needed to interact fully with geographic data (at an industry standard level) within a resource, including visualizations, queries, analysis, integration capabilities and the ability to create and edit geographic data</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Software or plug-in:ArcView">software that is needed to interact fully with geographic data within a resource, including visualizations, queries, analysis, integration capabilities and the ability to create and edit geographic data</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Software or plug-in:Cosmoplayer">a type of viewer called Cosmo Player that is needed to access different types of media files within a resource</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Software or plug-in:Excel">a type of spreadsheet program that is needed to access .xls files within a resource</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Software or plug-in:Flash player">a type of viewer called Flash Player that is needed to access different types of media files within a resource</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Software or plug-in:Java">Java software is needed to interact fully with a resource</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Software or plug-in:NIH image">a public domain image processing and analysis program from the National Institute of Health that is needed to interact fully with a resource</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Software or plug-in:Platform emulation software">software that is required to make a system act like another system, such as making a PC act like a Mac or a Mac act like a PC</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Software or plug-in:QuickTime">a type of viewer called QuickTime that is needed to access .mov (movie) or .mpg (moving picture experts group) files within a resource</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Software or plug-in:Real player">a type of viewer called RealPlayer or RealOne that is needed to access different types of media files within a resource</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Software or plug-in:Scalable Vector Graphics (SVG) viewer">a type of viewer that can interpret scalable vector graphic format files (.svg)</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Software or plug-in:Shockwave player">a type of viewer called Shockwave that is needed to access image or movies, often animated .gif (graphics interchange format) files, within a resource</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Unknown:Technical information not easily determined">technical information about accessing, interacting or operating the resource is not known</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:To be supplied">requirement type information is currently unknown but will be supplied at a later date</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2001-01-01">Choose at least one requirement type term.</practice>
+				<practice status="current" originDate="2005-03-03">Choose the overall best and minimum requirements to interact, access or operate a resource.</practice>
+				<practice status="current" originDate="2005-05-24" link1="requirement type" style1="bold" link2="version - minimum" style2="bold" link3="version - maximum" style3="bold">If a resource requires certain versions (minimum or maximum) of browsers, viewers (plug-ins) or operating systems, complete this requirement type field and the subfields of version - minimum and/or  version - maximum.</practice>
+				<practice status="current" originDate="2005-05-24" link1="requirement" style1="bold">Repeat the overarching requirement field until the minimum (not all) requirements for interacting, accessing or operating the resource are indicated.</practice>
+				<practice status="current" originDate="2006-03-01" link1="When to use Other:More specific technical requirements" style1="bold">If the requirement type is not listed, see the section below on When to use Other:More specific technical requirements.</practice>
+
+				<practice status="current" originDate="2001-01-01" link1="version - minimum" style1="bold" link2="requirement" style2="bold">If a resource requires a particular operating system(s), please choose it from the list and complete the version - minimum field to indicate the version (Unix: Linux Redhat 9.1). Repeat the requirement field if more than one operating system is necessary or applicable.</practice>
+
+
+<!--Obsolete practices (Do NOT erase)
+					<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If the resource indicates that it will work in Internet Explorer only, select Known . Then enter Browser:Internet Explorer in the Technical Type Name field. Complete the Minimum Version Information field if the version number is 5.5 or higher.</practice>
+					<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If the resource works in both Netscape and Internet Explorer but you know that the resource will only work with specific versions of these browsers then enter two Known technical information sets. Select one to be Browser:Netscape and complete the Minimum Version Information field. Then choose Known again to add Browser:Internet Explorer . Again complete the Minimum Version Information field.</practice>
+					<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If you select Known , then General and Unknown cannot be selected.</practice>
+					<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If the resource indicates that it will work in Netscape only, select Known . Then enter Browser:Netscape in the Technical Type Name field. Complete the Minimum Version Information field if the version number is 6.x or higher.</practice>
+					<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If the resource needs Internet Explorer 5.x or higher or Netscape 5.x and higher, select Known . Then complete the Technical Type Name field and the Minimum Version Information field.</practice> -->
+<!--IE 6 and Netscape 7 are now the standard browsers-->
+<!--the concept of known does not exist in ADN or the new DCS-->
+
+<!--Obsolete practices (Do NOT erase)
+				<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">To indicate multiple operating systems, enter a Known technical information set for each operating system.</practice>
+				<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If a resource requires a particular operating system(s), please indicate it.</practice>
+				<practice status="obsolete" originDate="2001-01-01">If Known is selected, enter a Type Name and then if applicable, enter Minimum Version Information for the type name.</practice>
+				<practice status="obsolete" originDate="2001-01-01" archDate="2005-03-03">Enter at least 1 technical information set by choosing General, Unknown, Known or Other</practice>-->
+
+<!--Obsolete practices (Do NOT erase)
+				<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If a resource requires UNIX, please complete the Minimum Version Information field to say whether its Linux, Solaris or Hewlett Packard (HP).</practice>
+				<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If a resource requires Windows 2000 and MacOS 9.x, enter 2 technical information sets. Select Known and choose the Type Name to be Operating system:Microsoft Windows and then indicate Win 2000 in the Minimum Version Information field. Then select Known again and choose Operating system:Macintosh and indicate MacOS 9.1 in the Minimum Version Information field.</practice> -->
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2001-01-01">Do not indicate RAM requirements.</practice>
+
+				<practice status="current" originDate="2001-01-01" link1="Other:More specific technical requirements" style1="bold" link2="requirement - other" style2="bold">Do not choose multiple viewers, like QuickTime, Shockwave, Media Player and Real Player, just because the resource works in multiple viewers. The chances of a resource needing all these viewers at the same time is highly unlikely because some of these players do the same thing. Choose a single player or consider selecting Other:More specific technical requirements and indicate which players are needed in the requirement - other field.</practice>
+
+				<practice status="current" originDate="2005-05-24" link1="description - technical" style1="bold">Do not include subscription or membership information. Indicate subscription or membership information in the description - technical field.</practice>
+
+				<practice status="current" originDate="2005-05-24">Do not indicate browser version numbers for Internet Explorer 6.x and lower or Netscape 7.x and lower unless the resource only works in a specific browser version.</practice>
+
+				<practice status="current" originDate="2001-01-01">If the website offers a CD-ROM version of the site, do not list the technical requirements for the CD when cataloging the web version of the CD.</practice>
+
+				<practice status="current" originDate="2005-05-24">Do not exceed 1-3 different requirement types. Most resources are adequately described with 1-3 choices.</practice>
+
+<!--Obsolete practices (Do NOT erase)
+				<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">Do not exceed 8 different technical information sets. Generally, most resources have 1-3 appropriate technical information sets.</practice>
+				<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">Do not indicate browser version numbers for browser versions 4.x and lower.</practice>
+				<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">Do not include subscription and membership information. Indicate subscription and membership information in the description field.</practice>
+				<practice status="obsolete" originDate="2001-01-01" archDate="2005-03-03">Do not enter the same technical information twice. The cataloger will not create a duplicate entry</practice>
+				<practice status="obsolete" originDate="2001-01-01" archDate="2001-01-01">Do not choose multiple viewers, like QuikTime, Shockwave, Media Player and Real Player, just because the resource works in multiple viewers. This is a example to avoid. Catalogers have entered many different plug-ins like QuikTime, Shockwave, Media Player and Real Player all in one record. The chances of a resource needing 4 of these at one time is highly unlikely because some of these players do the same thing. So please before careful and for such a situation consider doing the following. Select "Other:More specific technical requirements" and saying in the Additional Information box that this site has imagery that may require one of the following viewers QuikTime, Shockwave, Media Player or Real Player. </practice> -->
+			</donts>
+			
+			<examples>
+				<practice status="current" originDate="2006-06-12" link1="Operating system:Unix" style1="bold" link2="version - minimum" style2="bold" link3="version - maximum" style3="bold">Linux Redhat 9.1 - select Operating system:Unix and complete the field of version - minimum with Redhat 9.1 and version - maximum if need be.</practice>
+			</examples>
+			
+			<otherPractices>
+				<otherPractice header="More definition information">
+					<practice status="current" originDate="2006-02-03">The following overarching categories used in this vocabulary have the following meanings.</practice>
+					<practice status="current" originDate="2006-02-03" link1="Browser" style1="bold">Browser: a mechanism for viewing web documents.</practice>
+					<practice status="current" originDate="2006-02-03" link1="General" style1="bold">General: nothing beyond a typical web browser.</practice>
+					<practice status="current" originDate="2006-02-03" link1="Operating system" style1="bold">Operating system: software that makes other programs and software run on a computer.</practice>
+					<practice status="current" originDate="2006-02-03" link1="Other" style1="bold">Other: the technical requirements for the resource requires something that is more specialized.</practice>
+					<practice status="current" originDate="2006-02-03" link1="Software or plug-in" style1="bold">Software or plug-in: a program or software that helps other programs, namely browsers, perform additional or specialized functions and operations.</practice>
+					<practice status="current" originDate="2006-02-03" link1="Unknown" style1="bold">Unknown: the technical requirements for the resource are not known.</practice>
+				</otherPractice>
+
+				<otherPractice header="When to use General:No specific technical requirements">
+
+					<practice status="current" originDate="2005-05-24" link1="General:No specific technical requirements" style1="bold" link2="version - minimum" style2="bold" link3="version - maximum" style3="bold">If the resource needs a browser that has been around for awhile like Internet Explorer 6.x and lower or Netscape 7.x and lower and does not have any other specific requirements, select General:No specific technical requirements. In this instance, do not complete the version - minimum or version - maximum fields.</practice>
+
+					<practice status="current" originDate="2005-05-24" link1="General:No specific technical requirements" style1="bold">If the resource works in both Netscape and Internet Explorer (and no browser versions are indicated) and the resource has no other technical requirements, select General:No specific technical requirements.</practice>
+
+					<practice status="current" originDate="2005-05-24" link1="General:No specific technical requirements" style1="bold" link2="Unknown:Technical information not easily determined" style2="bold" link3="Other:More specific technical requirements" style3="bold">If General:No specific technical requirements is chosen, do not choose Unknown:Technical information not easily determined or Other:More specific technical requirements.</practice>
+
+<!--Obsolete practices (Do NOT erase)
+					<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If you select General , then the choices of Unknown , Known or Other cannot be selected.</practice>
+					<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If the resource needs only a browser that has been around for awhile like Internet Explorer 4.x and lower or Netscape 4.x and lower, then select General:No specific technical requirements. For these browsers, do not complete the Minimum Version Information field.</practice>
+					<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If the resource says it will work in both Netscape and Internet Explorer without indicating a browser version and the resource has no other requirements, select General:No specific technical requirements. 
+</practice>-->
+				</otherPractice>
+				
+				<otherPractice header="When to use Unknown:Technical information not easily determined">
+					<practice status="current" originDate="2005-05-24" link1="Unknown:Technical information not easily determined" style1="bold">If technical requirements can not be readily determined, select Unknown:Technical information not easily determined.</practice>
+
+					<practice status="current" originDate="2005-05-24" link1="Unknown:Technical information not easily determined" style1="bold" link2="General:No specific technical requirements" style2="bold" link3="Other:More specific technical requirements" style3="bold">If Unknown:Technical information not easily determined is chosen, do not choose General:No specific technical requirements or Other:More specific technical requirements.</practice>
+
+<!--Obsolete practices (Do NOT erase)
+					<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If you select Unknown , then the choices of General , Known or Other cannot be selected.</practice>
+					<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If you can not readily determine the technical information about a resource, select Unknown:Technical information not easily determined.</practice> -->
+				</otherPractice>
+				
+				<otherPractice header="When to use Other:More specific technical requirements:">
+					<practice status="current" originDate="2005-05-24" link1="Other:More specific technical requirements" style1="bold" link2="requirement - other" style2="bold">If the resource needs a specific browser, operating system, or plug-in that is not part of the list of choices, select Other:More specific technical requirements, then complete the requirement - other field.</practice>
+					
+					<practice status="current" originDate="2005-05-24" link1="Other:More specific technical requirements" style1="bold" link2="Unknown:Technical information not easily determined" style2="bold" link3="General:No specific technical requirements" style3="bold">If Other:More specific technical requirements is chosen, do not choose Unknown:Technical information not easily determined or General:No specific technical requirements.</practice>
+
+<!--Obsolete practices (Do NOT erase)
+					<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If you would like to add a plug-in or piece of software that is not on the type name list, select Other:More specific technical requirements and then complete the Additional Technical Information box. If possible, indicate whether the item you are adding is an operating system, software, browser, etc.</practice>
+					<practice status="obsolete" originDate="2001-01-01" archDate="2005-05-24">If you select Other , then the choices of General and Unknown cannot be selected. </practice>-->
+
+				</otherPractice>
+
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>DLESE:Browser:Netscape, DLESE:Browser:Internet Explorer</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

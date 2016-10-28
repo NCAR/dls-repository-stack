@@ -1,0 +1,48 @@
+<style type="text/css">
+.props {
+	border-collapse:collapse;
+}
+
+.props td,  .props th {
+	padding:2px;
+	font-size:8pt;
+	border:1px #CCCCCC solid;
+}
+.props th {
+	background-color:#666666;
+	color:white;
+	font-size:8pt;
+}
+
+.control {
+	font-size:8pt;
+	font-weight:normal;
+	margin-left:20px;
+	}
+
+</style>
+
+<script type="text/javascript">
+
+Event.observe (window, "load", scopeInit);
+
+function scopeInit () {
+
+	$$(".props").each ( function (props) {
+		props.hide();
+	});
+
+	$$(".control").each ( function (control) {
+		control.observe ('mouseover', function (evnt) {
+			control.setStyle ({cursor:"pointer"});
+		});
+		control.observe ('mouseout', function (evnt) {
+			control.setStyle ({cursor:"default"});
+		});
+		control.observe ('click', function (evnt) {
+			Event.element (evnt).up().nextSiblings()[0].toggle();
+		});
+	});
+}
+
+</script>

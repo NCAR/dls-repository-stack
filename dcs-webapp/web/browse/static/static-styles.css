@@ -1,0 +1,31 @@
+/* general info common to all records */
+.record-header {
+	margin:0px 0px 15px 0px;
+}
+
+.record-title {
+	font-face:Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	font-size:1.5em;
+}
+
+.annotations-box {
+	margin:10px 0px 15px 0px;
+
+}
+
+.annotations-box .label {
+	font-face:Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	font-size:1.3em;
+	background-color:#E3E4F1;
+	border-bottom:#666666 1px solid;
+	padding:3px 0px 3px 1px;
+}
+
+
+.annotation-title {
+	font-face:Arial,Helvetica,sans-serif;
+	font-weight: bold;
+
+}

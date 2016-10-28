@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org
+http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+	<general>
+		<title>Title Goes Here</title>
+		<description>This is a great site. It has lots of information.</description>
+		<language>en</language>
+		<subjects>
+			<subject>DLESE:Physics</subject>
+			<subject>DLESE:Atmospheric science</subject>
+			<subject>DLESE:Atmospheric science</subject>
+			<subject>DLESE:Atmospheric science</subject>
+			<subject>DLESE:Atmospheric science</subject>
+			<subject>DLESE:Atmospheric science</subject>
+			<subject>DLESE:Atmospheric science</subject>
+			<subject>DLESE:Atmospheric science</subject>
+			<subject>DLESE:Biological oceanography</subject>
+			<subject>DLESE:To be supplied</subject>
+		</subjects>
+		<subjectsOther>
+			<subjectOther>DLESE:No vocabulary yet:Do not use</subjectOther>
+		</subjectsOther>
+		<keywords>
+			<keyword>Remote sensing</keyword>
+			<keyword>Data collection</keyword>
+			<keyword>Rivers</keyword>
+			<keyword src="ADEPT" url="http://alexandria.ucsb.edu/adl/" id="ACK#45">Temperature differences create pressure differences</keyword>
+			<keyword src="NASA" url="http://nasa.gov" id="JDL-123">Short terms or phrases</keyword>
+		</keywords>
+		<simplePlacesAndEvents>
+			<placeAndEvent>
+				<place>Washington, DC</place>
+				<event>Valentine's Day snowstorm</event>
+				<description>Text string</description>
+			</placeAndEvent>
+			<placeAndEvent>
+				<place>Jackson, Mississippi</place>
+			</placeAndEvent>
+			<placeAndEvent>
+				<place>Jackson, Mississippi</place>
+				<event>something</event>
+			</placeAndEvent>
+		</simplePlacesAndEvents>
+		<simpleTemporalCoverages>
+			<description>Morning and afternoon</description>
+			<description>Fall</description>
+			<description>First quarter</description>
+		</simpleTemporalCoverages>
+		<catalogEntries>
+			<catalog entry="COMET-000-000-000-123">COMET Collection</catalog>
+			<catalog entry="ISBN 1-861005-47-4">Harper Books</catalog>
+		</catalogEntries>
+		<additionalInfo>Put information not covered by other metadata here.</additionalInfo>
+	</general>
+	<lifecycle>
+		<version>String</version>
+		<description>String</description>
+		<contributors>
+			<contributor role="Author" date="2002-12-03">
+				<person>
+					<nameTitle>Ms</nameTitle>
+					<nameFirst>Kathryn</nameFirst>
+					<nameMiddle>M.</nameMiddle>
+					<nameLast>Ginger</nameLast>
+					<instName>University Corporation for Atmospheric Research (UCAR)</instName>
+					<instDept>DLESE Program Center (DPC)</instDept>
+					<emailPrimary>ginger@ucar.edu</emailPrimary>
+					<emailAlt>somebody@company.edu</emailAlt>
+					<contactID>String</contactID>
+				</person>
+			</contributor>
+			<contributor role="Publisher">
+				<organization>
+					<instName>University Corporation for Atmospheric Research (UCAR)</instName>
+					<instDept>DLESE Program Center (DPC)</instDept>
+					<instPosition>Web Group</instPosition>
+					<instUrl>http://www.ucar.edu</instUrl>
+					<instEmail>support@dlese.org</instEmail>
+					<contactID>String</contactID>
+				</organization>
+			</contributor>
+			<contributor role="Contributor">
+				<organization>
+					<instName>Forecast Systems Laboratory</instName>
+				</organization>
+			</contributor>
+		</contributors>
+	</lifecycle>
+	<metaMetadata>
+		<catalogEntries>
+			<catalog entry="DLESE-000-000-000-123">Digital Library for Earth System Education</catalog>
+		</catalogEntries>
+		<dateInfo created="2002-04-09" accessioned="2002-09-09" lastModified="2002-05-12T18:30:00Z"/>
+		<statusOf status="Accessioned">A record can only have one status. If need be, put descriptive information about status here.</statusOf>
+		<language>en</language>
+		<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+		<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research). All rights reserved.</copyright>
+		<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+		<description>String</description>
+		<contributors>
+			<contributor role="Creator" date="1967-08-13">
+				<person>
+					<nameTitle>Ms</nameTitle>
+					<nameFirst>Holly</nameFirst>
+					<nameLast>Devaul</nameLast>
+					<instName>University Corporation for Atmospheric Research (UCAR)</instName>
+					<instDept>DLESE Program Center (DPC)</instDept>
+					<emailPrimary>devaul@ucar.edu</emailPrimary>
+				</person>	
+			</contributor>
+			<contributor role="Validator" date="2002-12-04">
+				<person>
+					<nameFirst>Eddy</nameFirst>
+					<nameLast>Viscosity</nameLast>
+					<instName>DLESE Program Center (DPC)</instName>
+					<emailPrimary>support@dlese.org</emailPrimary>
+				</person>
+			</contributor>
+		</contributors>
+	</metaMetadata>
+	<technical>
+	<!-- choose either online or offline as the tag set in techincal -->
+		<online>
+			<primaryURL>http://dlese.org</primaryURL>
+			<mirrorURLs>
+				<mirrorURL>http://www.dlese.org</mirrorURL>
+			</mirrorURLs>
+			<mediums>
+				<medium>text/htm</medium>
+				<medium>application/msword</medium>
+			</mediums>
+			<size>5MB</size>
+			<duration>P1Y2M3DT10H30M</duration>
+			<description>Additional technical information goes here. This might include some information about imagery, e.g. number of pixels wide and high.</description>
+			<requirements>
+				<requirement>
+					<reqType>DLESE:General:No specific technical requirements</reqType>
+					<minimumVersion>Redhat 7.1</minimumVersion>
+				</requirement>
+				<requirement>
+					<reqType>DLESE:Unknown:Technical information not easily determined</reqType>
+					<minimumVersion>Redhat 7.1</minimumVersion>
+				</requirement>
+				<requirement>
+					<reqType>DLESE:Operating system:Unix</reqType>
+					<minimumVersion>Redhat 7.1</minimumVersion>
+				</requirement>
+				<requirement>
+					<reqType>DLESE:Browser:Netscape</reqType>
+					<minimumVersion>Netscape 4</minimumVersion>
+					<maximumVersion>Netscape 6</maximumVersion>
+				</requirement>
+			</requirements>
+			<otherRequirements>
+				<otherRequirement>
+					<otherType>Other technical requirements like Gee Wiz are required</otherType>
+					<minimumVersion>1.2</minimumVersion>
+					<maximumVersion>1.5</maximumVersion>
+				</otherRequirement>
+			</otherRequirements>
+		</online>		
+	</technical>
+	<educational>
+		<audiences>
+			<audience>
+				<toolFor>GEM:Elementary school teachers</toolFor>
+				<beneficiary>GEM:Minority students</beneficiary>
+				<gradeRange>DLESE:Primary elementary</gradeRange>
+				<typicalAgeRange>String</typicalAgeRange>
+				<instructionalGoal>String</instructionalGoal>
+				<teachingMethods>
+					<teachingMethod>GEM:Advanced organizers</teachingMethod>
+				</teachingMethods>
+				<typicalUseTime>P1Y2M3DT10H30M</typicalUseTime>
+			</audience>
+			<audience>
+				<gradeRange>DLESE:Primary elementary</gradeRange>
+			</audience>
+			<audience>
+				<gradeRange>DLESE:Primary elementary</gradeRange>
+			</audience>
+			<audience>
+				<gradeRange>DLESE:Primary elementary</gradeRange>
+			</audience>
+			<audience>
+				<toolFor>GEM:Elementary school teachers</toolFor>
+				<beneficiary>GEM:Minority students</beneficiary>
+				<gradeRange>DLESE:Primary elementary</gradeRange>
+				<typicalAgeRange>String</typicalAgeRange>
+				<instructionalGoal>String</instructionalGoal>
+				<teachingMethods>
+					<teachingMethod>GEM:Advanced organizers</teachingMethod>
+				</teachingMethods>
+				<typicalUseTime>P1Y2M3DT10H30M</typicalUseTime>
+			</audience>
+			<audience>
+				<toolFor>GEM:Middle school teachers</toolFor>
+				<beneficiary>GEM:Bilingual students</beneficiary>
+				<gradeRange>DLESE:Middle school</gradeRange>
+				<typicalAgeRange>12-14 year olds</typicalAgeRange>
+				<instructionalGoal>To teach students about the wonders of a digital library</instructionalGoal>
+				<teachingMethods>
+					<teachingMethod>DLESE:Small group learning</teachingMethod>
+				</teachingMethods>
+				<typicalUseTime>P1Y2M3DT10H30M</typicalUseTime>
+			</audience>
+			<audience>
+				<gradeRange>DLESE:Not applicable</gradeRange>
+			</audience>
+		</audiences>
+		<resourceTypes>
+			<resourceType>DLESE:Learning materials:Case study</resourceType>
+			<resourceType>DLESE:Audio:Music</resourceType>
+			<resourceType>DLESE:Audio:Music</resourceType>
+			<resourceType>DLESE:Audio:Music</resourceType>
+			<resourceType>DLESE:Audio:Music</resourceType>
+			<resourceType>DLESE:Audio:Music</resourceType>
+			<resourceType>DLESE:To be supplied</resourceType>
+		</resourceTypes>
+		<contentStandards>
+			<contentStandard>AAASbenchmarks:Common themes:Constancy and change:6-8:Physical and biological systems tend to change until they become stable and then remain that way unless their surroundings change.</contentStandard>
+			<contentStandard>AAASbenchmarks:Designed world:Energy sources and use:3-5:Moving air and water can be used to run machines.</contentStandard>
+			<contentStandard>NSES:5-8:Content Standard C Life Science Standards:Structure and function in living systems</contentStandard>
+			<contentStandard>NSES:5-8:Content Standard C Life Science Standards:Structure and function in living systems</contentStandard>
+			<contentStandard>NSES:5-8:Content Standard C Life Science Standards:Structure and function in living systems</contentStandard>
+			<contentStandard>NSES:5-8:Content Standard C Life Science Standards:Structure and function in living systems</contentStandard>
+			<contentStandard>NSES:5-8:Content Standard C Life Science Standards:Structure and function in living systems</contentStandard>
+			<contentStandard>NSES:5-8:Content Standard B Physical Science Standards:Properties and changes of properties in matter</contentStandard>
+			<contentStandard>NCGE:Human Systems:The characteristics, distributions, and complexity of Earth's cultural mosaics</contentStandard>
+			<contentStandard>NCGE:Environment and Society:How physical systems affect human systems</contentStandard>
+			<contentStandard>NCTM:3-5:Algebra:Understand patterns, relations, and functions:Describe, extend, and make generalizations about geometric and numeric patterns</contentStandard>
+			<contentStandard>NETS:Technology research tools:Students use technology tools to process data and report results</contentStandard>
+		</contentStandards>
+		<processStandards>
+			<processStandard>NCTM:Reasoning and Proof:Make and investigate mathematical conjectures</processStandard>
+		</processStandards>
+		<teachingStandards>
+			<teachingStandard>NSES:Teaching Standard E Teachers of science develop communities of science learners that reflect the intellectual rigor of scientific inquiry and the attitudes and social values conducive to science learning:Nurture collaboration among students</teachingStandard>
+			<teachingStandard>NETS:Planning and designing learning environments and experiences:Apply current research on teaching and learning with technology when planning learning environments and experiences</teachingStandard>
+		</teachingStandards>
+		<interactivityLevel>LOM:Very low</interactivityLevel>
+		<interactivityType>LOM:Active</interactivityType>
+		<description>String</description>
+	</educational>
+	<rights>
+		<cost>DLESE:No</cost>
+		<description>String</description>
+	</rights>
+	<relations>
+		<relation>
+			<idEntry kind="DC:Is part of" entry="DLESE-000-000-000-123" catalogName="Digital Library for Earth System Education" title="Optionally Referenced Title Goes Here">Put the description of the referenced resource here. This is optional.</idEntry>
+		</relation>
+		<relation>
+			<idEntry kind="DC:Is part of" entry="DLESE-000-000-000-456"></idEntry>
+		</relation>
+		<relation>
+			<urlEntry kind="DC:References" url="http://www.comet.ucar.edu"/>
+		</relation>
+		<relation>
+			<urlEntry kind="DLESE:Is associated with" url="http://www.comet.ucar.edu"/>
+		</relation>
+	</relations>
+	<geospatialCoverages>
+		<geospatialCoverage>
+			<body>
+				<planet>Earth</planet>
+			</body>
+			<geodeticDatumGlobalOrHorz>DLESE:WGS84</geodeticDatumGlobalOrHorz>
+			<projection type="DLESE:Mercator">Information about the projection goes here.</projection>
+			<coordinateSystem type="DLESE:Geographic latitude and longitude">Information about the coordinate system goes here</coordinateSystem>
+			<boundBox>
+				<westCoord>-1.0</westCoord>
+				<eastCoord>-10.0</eastCoord>
+				<northCoord>-9.00</northCoord>
+				<southCoord>-25.01</southCoord>
+				<bbSrcName>Cataloger supplied</bbSrcName>
+				<bbSrcIDandURL URL="http://www.dlese.org">None</bbSrcIDandURL>
+				<bbSrcDesc>String</bbSrcDesc>
+				<bbAccEst>String</bbAccEst>
+				<description>Extra information goes here about the boudning box goes here.</description>
+				<bbVert>
+					<geodeticDatumGlobalOrVert>DLESE:CGD28-CDN</geodeticDatumGlobalOrVert>
+					<vertBase desc="Information about the datum level">Datum level</vertBase>
+					<vertMin units="centimeters (cm)">3.1415926535897932384626433832795</vertMin>
+					<vertMax units="centimeters (cm)">3.1415926535897932384626433832795</vertMax>
+					<vertAcc>Information about veritcal accuracy goes here.</vertAcc>
+				</bbVert>
+				<bbPlaces>
+					<place>
+						<name>Bermuda Triangle</name>
+						<source>Cataloger supplied</source>
+						<IDandURL URL="http://www.dlese.org">String</IDandURL>
+						<sourceDesc>String</sourceDesc>
+					</place>
+					<place>
+						<name>String</name>
+						<source>Unknown</source>
+					</place>
+				</bbPlaces>
+				<bbEvents>
+					<event>
+						<name>Hurricane Something</name>
+						<source>String</source>
+						<IDandURL URL="http://www.dlese.org">String</IDandURL>
+						<sourceDesc>String</sourceDesc>
+					</event>
+				</bbEvents>
+			</boundBox>
+			<detGeos>
+				<detGeo>
+					<typeDetGeo>Point</typeDetGeo>
+					<geoNumPts>1</geoNumPts>
+					<geoPtOrder>None</geoPtOrder>
+					<longLats>
+						<longLat longitude="-122.13" latitude="32.87"/>
+					</longLats>
+					<detSrcName>String</detSrcName>
+					<detSrcIDandURL URL="http://www.dlese.org">String</detSrcIDandURL>
+					<detSrcDesc>String</detSrcDesc>
+					<detAccEst>String</detAccEst>
+					<description>Extra information goes here about the detailed geometry</description>
+					<detVert>
+						<geodeticDatumGlobalOrVert>DLESE:CGD28-CDN</geodeticDatumGlobalOrVert>
+						<vertBase desc="Information about the datum level">Datum level</vertBase>
+						<vertMin units="centimeters (cm)">3.14</vertMin>
+						<vertMax units="centimeters (cm)">3.14</vertMax>
+						<vertAcc>Information about veritcal accuracy goes here.</vertAcc>
+					</detVert>
+					<detPlaces>
+						<place>
+							<name>String</name>
+							<source>Cataloger supplied</source>
+							<IDandURL URL="http://www.dlese.org">String</IDandURL>
+							<sourceDesc>String</sourceDesc>
+						</place>
+						<place>
+							<name>String</name>
+							<source>Unknown</source>
+						</place>
+					</detPlaces>
+					<detEvents>
+						<event>
+							<name>String</name>
+							<source>String</source>
+							<IDandURL URL="http://www.dlese.org">String</IDandURL>
+							<sourceDesc>String</sourceDesc>
+						</event>
+					</detEvents>
+				</detGeo>
+			</detGeos>
+		</geospatialCoverage>
+	</geospatialCoverages>
+	<temporalCoverages>
+		<timeAndPeriod>
+			<timeInfo>
+				<timeAD>
+					<begin date="1920-06-15" time="08:30:00Z"/>
+					<end date="1929-08-13" time="14:20:00Z"/>
+				</timeAD>
+			</timeInfo>
+			<periods>
+				<period>
+					<name>Roaring 20's</name>
+					<source>Cataloger supplied</source>
+					<IDandURL URL="http://www.dlese.org">String</IDandURL>
+					<sourceDesc>String</sourceDesc>
+				</period>
+				<period>
+					<name>The Age of the Flapper</name>
+					<source>Cataloger supplied</source>
+				</period>
+			</periods>
+		</timeAndPeriod>
+		<timeAndPeriod>
+			<timeInfo>
+				<timeAD>
+					<begin date="1920" time="08:30:00Z"/>
+					<end date="1929" time="14:20:00Z"/>
+				</timeAD>
+			</timeInfo>
+			<periods>
+				<period>
+					<name>Roaring 20's</name>
+					<source>Cataloger supplied</source>
+					<IDandURL URL="http://www.dlese.org">String</IDandURL>
+					<sourceDesc>String</sourceDesc>
+				</period>
+				<period>
+					<name>The Age of the Flapper</name>
+					<source>From a history book</source>
+				</period>
+			</periods>
+		</timeAndPeriod>
+		<timeAndPeriod>
+			<timeInfo>
+				<timeBC>
+					<begin>-8700</begin>
+					<end>-2500</end>
+				</timeBC>
+			</timeInfo>
+		</timeAndPeriod>
+		<timeAndPeriod>
+			<timeInfo>
+				<timeRelative>
+					<begin units="Billion years ago">1350000</begin>
+					<end units="Billion years ago">975000</end>
+				</timeRelative>
+			</timeInfo>
+		</timeAndPeriod>
+		<timeAndPeriod>
+			<timeInfo>
+				<timeRelative>
+					<begin units="Days ago">30</begin>
+					<end units="Days ago">0</end>
+				</timeRelative>
+			</timeInfo>
+		</timeAndPeriod>
+	</temporalCoverages>
+	<objectsInSpace>
+		<object>
+			<rightAscension>17:57:00</rightAscension>
+			<declination>-0.93</declination>
+			<epoch>String</epoch>
+			<description>blah de blah</description>
+		</object>
+		<object>
+			<epoch>String</epoch>
+			<rightAscension>18:00:00</rightAscension>
+			<declination>1.94</declination>
+			<description>blah de blah</description>
+		</object>
+	</objectsInSpace>
+</itemRecord>

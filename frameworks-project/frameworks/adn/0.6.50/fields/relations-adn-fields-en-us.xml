@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: relations-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/non-vocab-fields.xsd">
+	<field name="Relations" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/relations">
+		<definition>a list of of relationships between the resource being described and other resources</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-04-19" link1="relation" style1="bold">Complete the required subfield of relation.</practice>
+				<practice status="current" originDate="2006-06-13">Create relationships to other resources if creating the relationship adds new or different information a user may not otherwise be aware of.</practice>
+			</dos>
+		</bestPractices>
+
+		<documentation>
+			<children>
+				<child>relation</child>
+			</children>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1 or 0</max>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>the child element</domain>
+			<example>&lt;relation&gt;</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

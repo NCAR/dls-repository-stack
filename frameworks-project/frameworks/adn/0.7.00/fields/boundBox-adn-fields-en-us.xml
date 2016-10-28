@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: boundBox-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:13 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Bounding box" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/geospatialCoverages/geospatialCoverage/boundBox">
+		<definition>a single regular polygon that is parallel to the equator that encloses the areal extent of all locations (bounding boxes, polylines, points and polygons) that are the subject or primary content of a resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-05-04" link1="place and event - simple" style1="bold">Complete geospatial information when geographic location information is integral to understanding or working with a resource. To provide place and event name information without geospatial coordinates, use the field place and event - simple.</practice>
+				<practice status="current" originDate="2005-05-04">Only a single bounding box is allowed.</practice>
+				<practice status="current" originDate="2005-05-04">Bounding boxes are represented by providing east and west longitudes and north and south latitudes.</practice>
+				<practice status="current" originDate="2005-04-28" link1="detailed geometries" style1="bold">A bounding box should cover all the sub-geographic (detailed geometries)areas within the resource.</practice>
+				<practice status="current" originDate="2005-05-04" link1="detailed geometry" style1="bold">Use detailed geometry information to complete bounding box information.</practice>
+				<practice status="current" originDate="2005-04-19" link1="coordinates (west, east, north and south)" style1="bold">Complete the required subfields of coordinates (west, east, north and south).</practice>
+				<practice status="current" originDate="2005-04-28" link1="bounding box - source name" style1="bold">Complete the required subfield of bounding box - source name.</practice>
+				<practice status="current" originDate="2005-05-04">Bounding boxes can be boxes, points or straight lines.</practice>
+				<practice status="current" originDate="2005-05-04">A bounding box can have associated place and event names.</practice>
+				<practice status="current" originDate="2005-05-04">A bounding box can have associated vertical dimensions.</practice>
+				<practice status="current" originDate="2006-03-03" link1="geospatial information: how-to" url1="http://www.dlese.org/Metadata/documents/how-tos/geospatial.htm">See geospatial information: how-to as a strategy for completing bounding box information.</practice>
+				
+			</dos>
+			
+			<examples>
+				<practice status="current" originDate="2005-04-28">Climates of Southern California, the Mediterranean, and Northern Australia, would have a bounding box of approximately -30.00 (south latitude) to 35.00 (north latitude) and from -180.00 (west longitude) to 180.00 (east longitude).</practice>
+			</examples>
+			<otherPractices>
+				<otherPractice header="Want to enter a point? Do this:">
+					<practice status="current" originDate="2005-04-28">Repeat the latitude and longitude values by making the east and west coordinates be equal and the north and south coordinates be equal.</practice>
+				</otherPractice>
+				<otherPractice header="Want to enter a line? Do this">
+					<practice status="current" originDate="2005-04-28">For a north-south line, repeat the longitude values so that the east and west coordinates are equal.</practice>
+					<practice status="current" originDate="2005-04-28">For a west-east line, repeat the latitude values so that the north and south coordinates are equal.</practice>
+				</otherPractice>
+				<otherPractice header="Mt. Hood, Oregon, United States">
+					<practice status="current" originDate="2005-04-28">West: -124.08°, East: -124.08°, North: 42.92°, South: 42.92°</practice>
+				</otherPractice>
+				<otherPractice header="Mt. St. Helens, Washington, United States">
+					<practice status="current" originDate="2005-04-28">West: -122.19°, East: -122.19°, North: 46.20°, South: 46.20°</practice>
+				</otherPractice>
+				<otherPractice header="Mt. Rainier, Washington, United States">
+					<practice status="current" originDate="2005-04-28">West: -121.76°, East: -121.76°, North: 46.85°, South: 46.85°</practice>
+				</otherPractice>
+				<otherPractice header="Mt. Vesuvius, Italy">
+					<practice status="current" originDate="2005-04-28">West: 14.43°, East: 14.43°, North: 40.81°, South: 40.81°</practice>
+				</otherPractice>
+				<otherPractice header="Mt. Etna, Sicily">
+					<practice status="current" originDate="2005-04-28">West: 15.00°, East: 15.00°, North: 37.73°, South: 37.73°</practice>
+				</otherPractice>
+				<otherPractice header="Alaska, United States">
+					<practice status="current" originDate="2005-04-28">West: 173.5°, East: -130.0°, North: 71.5°, South: 51.25°</practice>
+				</otherPractice>
+				<otherPractice header="Hawaii, United States">
+					<practice status="current" originDate="2005-04-28">West: -160.25°, East: -154.75°, North: 22.23°, South: 18.87°</practice>
+				</otherPractice>
+				<otherPractice header="Grand Canyon National Park, Arizona, United States (approximately)">
+					<practice status="current" originDate="2005-04-28">West: -114°, East: -111°, North: 37°, South: 35°</practice>
+				</otherPractice>
+				<otherPractice header="Contiguous United States (approximately)">
+					<practice status="current" originDate="2005-04-28">West: -125°, East: -67°, North: 50°, South: 24°</practice>
+				</otherPractice>
+ 				<otherPractice header="Arctic region (approximately)">
+					<practice status="current" originDate="2005-04-28">West: -180°, East: 180°, North: 90°, South: 70°</practice>
+				</otherPractice>
+				<otherPractice header="Antarctica region (approximately)">
+					<practice status="current" originDate="2005-04-28">West: -180°, East:180°, North: -61°, South: -90°</practice>
+				</otherPractice>
+				<otherPractice header="Canada (approximately)">
+					<practice status="current" originDate="2005-04-28">West: -146°, East: -48°, North: 87°, South: 42°</practice>
+				</otherPractice>
+				<otherPractice header="Mexico">
+					<practice status="current" originDate="2005-04-28">West: -118.48°, East: -85.18°, North: 34.17°, South: 13.05°</practice>
+				</otherPractice>
+				<otherPractice header="Blake Plateau, Atlantic Ocean">
+					<practice status="current" originDate="2006-03-06">West: -79.0°, East: -79.0°, North: 31.0°, South: 31.0°</practice>
+				</otherPractice>
+				<otherPractice header="Charleston Bump, Blake Plateau, Atlantic Ocean">
+					<practice status="current" originDate="2006-09-20">Use the same coordinates as for Blake Plateau. The bump is at a water depth of 220 meters.</practice>
+				</otherPractice>
+				<otherPractice header="Atlantic Ocean">
+					<practice status="current" originDate="2006-09-20">Due to the size of the ocean, create a bounding box that best represents the area of interest.</practice>
+				</otherPractice>
+				<otherPractice header="Pacific Ocean">
+					<practice status="current" originDate="2006-09-20">Due to the size of the ocean, create a bounding box that best represents the area of interest.</practice>
+				</otherPractice>
+				<otherPractice header="Indian Ocean">
+					<practice status="current" originDate="2006-09-20">Due to the size of the ocean, create a bounding box that best represents the area of interest.</practice>
+				</otherPractice>
+<!--				<otherPractice header="2004 Tsunami Region (quake)">
+					<practice status="current" originDate="2005-04-28">West: 90&#176;, East: 100&#176;, North: 20&#176;, South: 0&#176;</practice>
+				</otherPractice>
+				<otherPractice header="2004 Tsunami Region (point)">
+					<practice status="current" originDate="2005-04-28">West: 95.8&#176;, East: 95.8&#176;, North: 3.4&#176;, South: 3.4&#176;</practice>
+				</otherPractice>-->
+				<otherPractice header="Resources to help determine coordinates">
+					<practice status="current" originDate="2005-04-28">The following resources may be useful to help determine bounding boxes and points: (use caution: these tend to return points rather than boxes so be careful because the Grand Canyon for example is more than a point)</practice>
+					<practice status="current" originDate="2002-10-22" link1="http://webclient.alexandria.ucsb.edu/mw/index.jsp" url1="http://webclient.alexandria.ucsb.edu/">http://webclient.alexandria.ucsb.edu/mw/index.jsp</practice>
+					<practice status="current" originDate="2002-10-22" link1="http://www.topozone.com/" url1="http://www.topozone.com/">http://www.topozone.com/</practice>
+					<practice status="current" originDate="2002-10-22" link1="http://www.getty.edu/research/tools/vocabulary/tgn/" url1="http://www.getty.edu/research/tools/vocabulary/tgn/">http://www.getty.edu/research/tools/vocabulary/tgn/</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<children>
+				<child>westCoord</child>
+				<child>eastCoord</child>
+				<child>northCoord</child>
+				<child>southCoord</child>
+				<child>bbSrcName</child>
+				<child>bbSrcIDandURL</child>
+				<child>bbSrcDesc</child>
+				<child>bbAccEst</child>
+				<child>description</child>
+				<child>bbVert</child>
+				<child>bbPlaces</child>
+				<child>bbEvents</child>
+			</children>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>the child elements</domain>
+			<example>&lt;westCoord&gt;, &lt;eastCoord&gt;, &lt;bbPlaces&gt;</example>
+			<notes>
+				<note>Temporal and geospatial information are independent.</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

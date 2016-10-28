@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="http://ns.nsdl.org/ncs/framework_config/1.00/schemas/dcsFrameworkConfig.xsd">
+  <name>OAI_DC</name>
+  <xmlFormat>oai_dc</xmlFormat>
+  <schemaInfo>
+    <rootElementName>oai_dc:dc</rootElementName>
+    <schemaURI>http://www.dlese.org/Metadata/oai_dc/2.0/oai_dc-DCvocab-nolang.xsd</schemaURI>
+    <paths>
+      <path pathName="title" requiredByCopyRecord="false" requiredByMinimalRecord="true" defaultValue="title goes here" readOnly=" ">/oai_dc:dc/dc:title</path>
+      <path pathName="url" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="false">/oai_dc:dc/dc:identifier</path>
+      <path pathName="id" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="false">/oai_dc:dc/dc:identifier</path>
+    </paths>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>EditorRenderer</renderer>
+    <baseRenderLevel>2</baseRenderLevel>
+    <firstPage>oai_dc:dc</firstPage>
+    <rebuildOnStart>true</rebuildOnStart>
+    <fieldInfoURI>http://www.dlese.org/Metadata/oai_dc/2.0/build/fields-list.xml</fieldInfoURI>
+  </editorInfo>
+  <standAloneInfo>
+    <recordsDir>not configured here - see "dcsConfig" in web.xml and server.xml</recordsDir>
+  </standAloneInfo>
+</frameworkConfigRecord>

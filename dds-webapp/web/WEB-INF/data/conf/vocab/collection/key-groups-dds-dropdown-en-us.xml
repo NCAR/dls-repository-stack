@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groupsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/collection/key.xsd">
+	<concept name="key" system="dds" interface="dropdown" language="en-us" label="Collections">
+
+		<item vocab="drc" src="collections/drc_fnc.html">DLESE Reviewed Collection (DRC)</item>
+		<item vocab="crs" src="collections/crs_fnc.html">--- Community Review System (CRS)</item>
+		<item vocab="dwel" src="collections/dwel_fnc.html">--- Digital Water Ed Library (DWEL)</item>
+		<item vocab="eserev" noDisplay="false" src="collections/eserev_fnc.html">--- NASA ESE Reviewed Collection</item>
+		<item vocab="jesse" src="collections/jesse_fnc.html">--- Journal  Earth Sys Sci Ed (JESSE)</item>
+		<divider/>
+		<item vocab="adl" noDisplay="false" src="collections/adl_fnc.html">Alexandria Digital Library (ADL)</item>
+		<item vocab="annos" noDisplay="true"></item>
+		<item vocab="avc" src="collections/avc_fnc.html">Atmos Visualization Collection (AVC)</item>
+		<item vocab="collect" noDisplay="true"></item>
+		<item vocab="comet" noDisplay="false" src="collections/comet_fnc.html">Coop Pgm Op Met Edu/Training (COMET)</item>
+		<item vocab="curl" noDisplay="true">Curricular Resource Library (CURL)</item>
+		<item vocab="sercnagt" noDisplay="false" src="collections/sercnagt_fnc.html">Cutting Edge</item>
+		<item vocab="ceis" noDisplay="false" src="collections/ceis_fnc.html">Discover Our Earth</item>
+		<item vocab="dcc" noDisplay="false" src="collections/dcc_fnc.html">DLESE Community Collection (DCC)</item>
+		<item vocab="serceet" noDisplay="false" src="collections/serceet_fnc.html">Earth Exporation Toolbook (EET)</item>
+		<item vocab="esedl" noDisplay="true" src="collections/esedl_fnc.html">Earth Science Ed Digital Lib (ESEDL)</item>
+		<item vocab="evaltlkt" src="collections/eval_fnc.html">Evaluation Toolkit</item>
+		<item vocab="dcccatout" noDisplay="true">DLESE Community Collection (DCC)  No cataloger info</item>
+		<item vocab="dlese" noDisplay="true">DLESE collection but only refers to ADN collections</item>
+		<item vocab="dwelanno" noDisplay="true"></item>
+		<item vocab="edmall" noDisplay="false" src="collections/edmall_fnc.html">NASA ED Mall Collection</item>
+		<item vocab="eseanno" noDisplay="true"></item>
+		<item vocab="indent" noDisplay="true"></item>
+		<item vocab="newsopps" noDisplay="true">News and Opportunities</item>
+		<item vocab="nsdladn" noDisplay="true">The NSDL ADN collection (composed of DCC plus other collections)</item>
+		<item vocab="nsdlanno" noDisplay="true">The NSDL annotation collection (composed of annos and drc)</item>
+		<item vocab="nsdlcollect" noDisplay="true">The NSDL collection-level collection (composed of collect, esedl, serc)</item>
+		<item vocab="serc" noDisplay="true" src="collections/serc_fnc.html">Science Ed Resource Center (SERC)</item>
+		<item vocab="sercideas" noDisplay="true"></item>
+		<item vocab="sercstrtpt" noDisplay="false" src="collections/sercstrtpt_fnc">Starting Point</item>
+		<item vocab="sio" noDisplay="true">Scripps Institution of Oceanography (SIO)</item>
+		<item vocab="test" noDisplay="true">test ADN collection</item>
+		<item vocab="testanno" noDisplay="true">test annotation collection</item>
+		<item vocab="thredds" noDisplay="true">Thematic RT Env Data Svcs (THREDDS)</item>
+
+	</concept>
+</groupsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

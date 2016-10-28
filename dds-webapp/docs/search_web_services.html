@@ -1,0 +1,55 @@
+<html>
+<head>
+<title> Documentation for DLESE Search Web Service </title>
+	<link rel="stylesheet" type="text/css" href="/dlese_shared/dlese_styles.css" />
+	<link rel="stylesheet" type="text/css" href="/libdev/docs/docs_styles.css" />
+</head>
+<body>
+<h1> Documentation for the DLESE 
+    Search Web Service</h1>
+<h2> Version 1.1 </h2>
+<p>
+<a href="http://cvs.sourceforge.net/viewcvs.py/dlese/dds-project/docs/CHANGES-DDSWS.txt?view=markup">Changes since last release</a></p>
+<h2> Description </h2> 
+<p>The DLESE Search Web Service is used by internal and external developers to search the library holdings and access  metadata from DLESE's library repository.  The service is designed to provide rapid, distributed search and retrieval for items in the library. Developers may use the service to create a variety of custom search interfaces,  access the data in the DLESE repository, or conduct research about the library repository and it's contents. A <a href="http://www.dlese.org/dds/services/examples/ddsws/">developers toolkit and template</a> is provided to aid in the rapid development of new search interfaces and as a tool for learning the service protocol. A number of search interfaces and systems have been created using the service such as the <a href="http://search.dlese.org/fcosee/">Florida Center for Ocean Science Excellence</a> (FCOSEE) search page, the <a href="http://www.dlese.org/news_opportunities/">News and Opportunities</a> portion of the DLESE web site, and the <a href="cas.html">Contributor Acknowledgement System</a>. The service is formally described in the <a href="http://www.dlese.org/dds/services/ddsws1-0/service_specification.html">service documentation and specification</a> document. </p>
+<p>The service supports natural language textual searching over metadata and content, searching by date and field, sorting by date and field, searching by geospatial bounding box coordinates, discovery of the controlled vocabularies that are part of the library including grade ranges, subjects, resources types and content standards, checking for the existence of a URL, and other functionality. A full range of Information Retrieval features are exposed through the service 
+  such as term, field and phrase searches, term and term/field boosting,
+  term stemming, wildcard and fuzzy searches, term proximity searches,
+  and other functionality. The DLESE Search Web Service protocol is an example of a <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer" target="_blank">Representation State Transfer (REST)</a> style architecture. </p>
+<h2> Audience </h2> 
+<p> Library developers, web designers, educational designers, software engineers, and researchers.
+</p>
+<h2> How this component is used </h2>
+<p>The search web service is used  to develop discovery interfaces for educational resources, news and opportunities, collections and other content and metadata associated with the library. The service is used by both internally by developers local to the DPC as well as external developers.</p>
+<h2> Functional requirements </h2>
+<ul>
+  <li>Support distributed access to DLESE's search functionality and metadata repository.</li>
+  <li>Support the design, development and deployment of custom  interfaces that access and display DLESE resources.</li>
+  <li>Use technology that is readily available, relatively easy use, and can be developed using standard open source tools.</li>
+</ul>
+<h2> Technologies used </h2>
+<p>The service is implemented using Java 1.4, J2EE, Struts, Lucene 1.4, Tomcat 5, Dom4j, JSTL 1.1 tag libraries. Clients that access the service are implemented using application software such as Tomcat / JSP, PHP, Java or other environments that are able to communicate using  web service protocols and parse  XML data for display or data analysis purposes.
+</p>
+<h2> Development process and workflow </h2>
+<p>See the <a href="software-development-process.html">development process documentation</a>. </p>
+<h2>Dependencies on other DLESE components </h2>
+<p>The search web service is built over the <a href="dds-documentation.html">DLESE Discovery System</a> (DDS). </p>
+<h2> Testing and maintenance procedures </h2>
+<p>See the <a href="software-development-process.html#testing">development process 
+  documentation section on testing</a>. 
+</p>
+<h2> Links to additional documentation </h2>
+<ul>
+  <li>The <a href="http://www.dlese.org/dds/services/">DLESE Web Services portal</a>.</li>
+  <li>The <a href="http://www.dlese.org/dds/services/ddsws1-0/service_specification.html">Search Web Service Documentation</a>.</li>
+  <li>The <a href="http://www.dlese.org/dds/services/examples/ddsws/">JSP client template and examples</a>. </li>
+</ul>
+<p><br>
+  <i>Last updated: May, 2007 </i><br>
+  <i>Author: John Weatherley</i><br>
+</p>
+</body>
+</html>
+
+
+

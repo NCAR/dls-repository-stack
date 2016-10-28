@@ -1,0 +1,60 @@
+
+<tr valign="top" class="item-info">
+	<td colspan="2">
+		<%-- <div style="float:right;width:450px;padding:0px 0px 3px 5px;display:inline"> --%>
+		<div style="float:right;width:400px;display:inline">
+		
+	   <div align="right" style="padding:0px 0px 5px 0px;">
+		 	<%@ include file="searching_record_actions.jspf" %>
+		 </div>
+		<st:workFlowStatusNote result="${result}" sessionBean="${sessionBean}" />
+		</div>
+			<%-- FRAMEWORK_SPECIFIC INFO INSERTED HERE --%>
+			${item_info}
+			
+		<%@ include file="annotationsDisplay.jspf" %>
+			
+		<c:if test="${show_default_info}">
+			<c:if test="${not empty result.docReader.myCollectionDoc}">
+				<div class="searchResultValues"><em>Collection:</em> &nbsp; 
+					${result.docReader.myCollectionDoc.shortTitle}
+				</div>
+			</c:if>
+			
+			<div class="searchResultValues">
+				<em>Record format:</em> &nbsp; ${result.docReader.nativeFormat}
+			</div>
+
+			<div class="searchResultValues">
+				<em>File location:</em> &nbsp; ${result.docReader.docsource}
+			</div>
+		</c:if>
+		
+		<%-- Display NDR info if NDR Service is enabled, AND 
+				 if either authentication is turned off 
+				 	OR user has role of "manager" for this collection --%>
+		<c:if test="${ndrServiceEnabled && ndrServiceActive}">
+			<c:if test="${(not applicationScope['authenticationEnabled']) || 
+										sf:hasCollectionRole(sessionBean.user,'manager',result.docReader.collection)}">
+					<st:recordNdrStatus result="${result}" sessionBean="${sessionBean}" />
+			</c:if>
+		</c:if>
+		
+		<%-- Show lucene indexing to admin users (or if authentication is disabled)--%>
+		<c:if test="${(not applicationScope['authenticationEnabled']) || sessionBean.user.isAdminUser}" >
+			<div style="margin:0px 0px 3px 0px">
+				<%@ include file="../luceneEntryDisplay.jspf" %>
+			</div>
+			
+			<%-- Set up relations params for DDSWS requests --%>
+			<c:set var="relationRequestParms"><c:forEach items="${result.docReader.relatedRecordsMap}" var="relatedRecordsEntry" 
+				varStatus="i">&amp;relation=${relatedRecordsEntry.key}</c:forEach></c:set>
+			<div class="searchResultValues"><em>Web service requests:</em>
+			[ <a href='<c:url value="/services/ddsws1-1?verb=GetRecord&amp;id=${result.docReader.id}${relationRequestParms}"/>' title='GetRecord service request'>GetRecord</a> 
+			| <a href='<c:url value="/services/ddsws1-1?verb=Search&amp;q=idvalue:&quot;${result.docReader.id}&quot;${relationRequestParms}&amp;s=0&amp;n=10"/>' title='Search service request'>Search</a> ]
+			</div>
+		</c:if>
+		
+	</td>
+</tr>
+

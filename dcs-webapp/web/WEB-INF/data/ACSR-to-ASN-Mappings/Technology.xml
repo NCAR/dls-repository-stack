@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="Technology">
+  <mapping>
+    <acsrInfo id="8c13d3d7-aa5b-4622-81cb-fce9d5d64bbd">
+      <title>Information Literacy Standards for Student Learning</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Technology</subject>
+      <jurisdiction>AASL</jurisdiction>
+      <fileName>Information Literacy Standards for</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003BA">
+      <title>Information Literacy Standards for Student Learning</title>
+      <created>1998</created>
+      <topic>Technology</topic>
+      <author>AASL</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1b78013d-7aa9-4c50-9c85-9131277a65bd">
+      <title>Standards for the 21st-Century Learner</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Technology</subject>
+      <jurisdiction>AASL</jurisdiction>
+      <fileName>Standards for the 21st-Century Lear</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003B9">
+      <title>Standards for the 21st-Century Learner</title>
+      <created>2007</created>
+      <topic>Technology</topic>
+      <author>AASL</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4d02ccd7-4df8-47c7-a004-dbf036022df7">
+      <title>The Big6&amp;#8482; Skills</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Technology</subject>
+      <jurisdiction>Big6</jurisdiction>
+      <fileName>The Big6 Skills</fileName>
+      <status>In Process</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003E0">
+      <title>The Big6&amp;#8482; Skills</title>
+      <created>2006</created>
+      <topic>Technology</topic>
+      <author></author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="75d3ef78-d3ec-4b15-9ba2-68ed90948950">
+      <title>Standards for Technological Literacy: Content for the Study of Technology</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Technology</subject>
+      <jurisdiction>ITEA</jurisdiction>
+      <fileName>ITEA_STL_Standards-Benchmarks</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003E9">
+      <title>Standards for Technological Literacy: Content for the Study of Technology</title>
+      <created>2000</created>
+      <topic>Technology</topic>
+      <author>International Technology and Engineering Educators Association</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="09085ca0-1425-481b-87b5-1380288f23be">
+      <title>Educational Technology Standards &amp;amp; Expectations</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Technology</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Educational Technology Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100027C">
+      <title>Educational Technology Standards &amp;amp; Expectations</title>
+      <created>2005</created>
+      <topic>Technology</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8ebb7d59-d76c-43cb-8436-a5af635994da">
+      <title>Framework for 21st Century Learning</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Technology</subject>
+      <jurisdiction>P21</jurisdiction>
+      <fileName>Framework for 21st Century Learning</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003D2">
+      <title>Framework for 21st Century Learning</title>
+      <created>2009</created>
+      <topic>Technology</topic>
+      <author>P21</author>
+    </asnInfo>
+  </mapping>
+</mappings>

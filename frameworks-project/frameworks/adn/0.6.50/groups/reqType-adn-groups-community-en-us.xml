@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: reqType-adn-groups-community-en-us.xml,v 1.1 2009/01/30 21:34:41 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+	<head>
+		<title>Requirement type</title>
+		<groups:concept language="en-us" metaFormat="adn" metaVersion="0.6.50" text="Technical requirements" audience="community" path="/itemRecord/technical/online/requirements/requirement/reqType"/>
+	</head>
+	<body>
+		<outline groups:vocab="DLESE:Browser:Internet Explorer" type="vocab" text="Internet Explorer (IE) browser"/>
+		<outline groups:vocab="DLESE:Browser:Netscape" type="vocab" text="Netscape browser"/>
+		<outline groups:vocab="DLESE:General:No specific technical requirements" type="vocab" text="No specific technical requirements, just a browser required"/>
+		<outline groups:vocab="DLESE:Operating system:Macintosh" type="vocab" text="Macintosh operating system"/>
+		<outline groups:vocab="DLESE:Operating system:Microsoft Windows" type="vocab" text="Microsoft Windows operating system"/>
+		<outline groups:vocab="DLESE:Operating system:PC DOS" type="vocab" text="DOS operating system"/>
+		<outline groups:vocab="DLESE:Operating system:Unix" type="vocab" text="Unix operating system"/>
+		<outline groups:vocab="DLESE:Other:More specific technical requirements" type="vocab" groups:display="false" text="More specific technical requirements"/>
+		<outline groups:vocab="DLESE:Software or plug-in:Adobe Acrobat reader" type="vocab" text="Adobe Acrobat reader"/>
+		<outline groups:vocab="DLESE:Software or plug-in:ArcGIS" type="vocab" text="ArcGIS software"/>
+		<outline groups:vocab="DLESE:Software or plug-in:ArcView" type="vocab" text="ArcView software"/>
+		<outline groups:vocab="DLESE:Software or plug-in:Cosmoplayer" type="vocab" text="Cosmo  Player"/>
+		<outline groups:vocab="DLESE:Software or plug-in:Excel" type="vocab" text="Excel spreadsheet"/>
+		<outline groups:vocab="DLESE:Software or plug-in:Flash player" type="vocab" text="Flash player"/>
+		<outline groups:vocab="DLESE:Software or plug-in:Java" type="vocab" text="Java"/>
+		<outline groups:vocab="DLESE:Software or plug-in:NIH image" type="vocab" text="NIH image software"/>
+		<outline groups:vocab="DLESE:Software or plug-in:Platform emulation software" type="vocab" text="Platform emulation software"/>
+		<outline groups:vocab="DLESE:Software or plug-in:QuickTime" type="vocab" text="QuickTime plug-in"/>
+		<outline groups:vocab="DLESE:Software or plug-in:Real player" type="vocab" text="RealPlayer plug-in"/>
+		<outline groups:vocab="DLESE:Software or plug-in:Scalable Vector Graphics (SVG) viewer" type="vocab" text="Scalable Vector Graphics (SVG) viewer"/>
+		<outline groups:vocab="DLESE:Software or plug-in:Shockwave player" type="vocab" text="Shockwave player"/>
+		<outline groups:vocab="DLESE:Unknown:Technical information not easily determined" type="vocab" text="Technical information not known"/>
+		<outline groups:vocab="DLESE:To be supplied" type="vocab" groups:display="false" text="To be supplied"/>
+	</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

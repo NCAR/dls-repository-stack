@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: educationSubject-msp2-groups-cataloger-en-us-modified.xml,v 1.1 2010/05/20 23:25:00 jweather Exp $-->
+<opml xmlns="http://ns.nsdl.org/ncs/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://ns.nsdl.org/ncs/fields http://ns.nsdl.org/ncs/msp2/1.00/schemas/fields/educationalSubject.xsd"
+version="2.0">
+	<head>
+		<title>Subject - Educational Issues</title>
+		<concept language="en-us" metaFormat="msp2" metaVersion="1.00" text="Educational Issues" audience="cataloger" path="/record/general/subjects/educationalSubject" deftn="educational issues the resource addresses" collapseExpand="true" smartCheckBox="true"/>
+	</head>
+	
+	<!-- JW - Modified to change type="vocab" to type="group" for the top bunch of vocabs -->
+	<body>
+		<outline type="group" vocab="Achievement" text="Achievement"/>
+		<outline type="group" vocab="Assessment of students" text="Assessment of students"/>
+		<outline type="group" vocab="Careers" text="Careers"/>
+		<outline type="group" vocab="Classroom management" text="Classroom management"/>
+		<outline type="group" vocab="Community involvement" text="Community involvement"/>
+		<outline type="group" vocab="Competitions" text="Competitions"/>
+		<outline type="group" vocab="Cultural awareness" text="Cultural awareness"/>
+		<outline type="group" vocab="Curriculum" text="Curriculum"/>
+		<outline type="group" vocab="Educational environment" text="Educational environment"/>
+		<outline type="group" vocab="Educational research" text="Educational research"/>
+		<outline type="group" vocab="Equity" text="Equity"/>
+		<outline type="group" vocab="Inclusion" text="Inclusion"/>
+		<outline type="group" vocab="Informal education" text="Informal education"/>
+		<outline type="group" vocab="Inquiry learning" text="Inquiry learning"/>
+		<outline type="group" vocab="Instructional materials" text="Instructional materials" wrap="true"/>
+		<outline type="group" vocab="Integrating technology" text="Integrating technology"/>
+		<outline type="group" vocab="Laboratory safety" text="Laboratory safety"/>
+		<outline type="group" vocab="Learning theory" text="Learning theory"/>
+		<outline type="group" vocab="Math anxiety" text="Math anxiety"/>
+		<outline type="group" vocab="Misconceptions" text="Misconceptions"/>
+		<outline type="group" vocab="Parent involvement" text="Parent involvement"/>
+		<outline type="group" vocab="Professional development" text="Professional development"/>
+		<outline type="group" vocab="School improvement" text="School improvement"/>
+		<outline type="group" vocab="Teacher content knowledge" text="Teacher content knowledge"/>
+		<outline type="group" vocab="Teacher preparation" text="Teacher preparation"/>
+		<outline type="group" vocab="Teaching strategies" text="Teaching strategies"/>
+
+		<outline type="group" vocab="Student populations" text="Student populations" collapsible="true" wrap="true">
+			<outline type="vocab" vocab="Student populations:African-Americans" text="African-Americans"/>
+			<outline type="vocab" vocab="Student populations:Asian-Americans" text="Asian-Americans"/>
+			<outline type="vocab" vocab="Student populations:College/post-secondary developmental" text="College/post-secondary developmental"/>
+			<outline type="vocab" vocab="Student populations:Early childhood" text="Early childhood"/>
+			<outline type="vocab" vocab="Student populations:Emotionally challenged" text="Emotionally challenged"/>
+			<outline type="vocab" vocab="Student populations:English as a second language (ESL)" text="English as a second language (ESL)"/>
+			<outline type="vocab" vocab="Student populations:Gender" text="Gender"/>
+			<outline type="vocab" vocab="Student populations:Gifted and talented" text="Gifted and talented"/>
+			<outline type="vocab" vocab="Student populations:Home schoolers" text="Home schoolers"/>
+			<outline type="vocab" vocab="Student populations:Latinos" text="Latinos"/>
+			<outline type="vocab" vocab="Student populations:Low socioeconomic status" text="Low socioeconomic status"/>
+			<outline type="vocab" vocab="Student populations:Mentally challenged" text="Mentally challenged"/>
+			<outline type="vocab" vocab="Student populations:Middle school" text="Middle school"/>
+			<outline type="vocab" vocab="Student populations:Native Americans" text="Native Americans"/>
+			<outline type="vocab" vocab="Student populations:Physically challenged" text="Physically challenged"/>
+			<outline type="vocab" vocab="Student populations:Rural dweller" text="Rural dweller"/>
+			<outline type="vocab" vocab="Student populations:Underachievers" text="Underachievers"/>
+			<outline type="vocab" vocab="Student populations:Urban dweller" text="Urban dweller"/>
+		</outline>
+	</body>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

@@ -1,0 +1,52 @@
+
+/* ------ CSS Styles in the documentation pages ------ */
+
+H2 { 
+	margin-top:25px;
+	margin-bottom:4px;
+}
+H3 {
+	font-size:120%;
+	margin-bottom:8px;
+	margin-top:8px;
+}		
+PRE {
+	font-size:11px;
+	margin:10px;
+	padding:6px;
+	border: 1px solid #333;
+	background-color: #F1F1F1;
+	color: #5F2F0B;
+}
+PRE.preLt {
+	color:#666666;
+}
+PRE.preBold {
+	font-weight:bold;
+}
+
+TABLE.codeTB {
+	border-spacing:0px;
+	border-collapse:collapse;
+	margin-left:14px; 
+	margin-bottom:4px;
+}		
+TD.codeTB {	
+	padding:4px;
+	background-color:#eeeeee;
+}
+
+/* Note: the below seems to do the same thing as it's table version above */
+DIV.codeTB {	
+	padding:4px;
+	margin-left:5px; 
+	margin-bottom:4px;	
+	background-color:#eeeeee;
+	width:0px;
+	display:table;
+}
+
+.errorTxt {	
+	color:red;
+}
+

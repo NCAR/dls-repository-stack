@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.1.01">
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA PURPOSE  ****
+		This schema defines a vocabulary instance document for vocabulary managment in the Digital Library for Earrth System Education (DLESE).
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA EXPLANATION  ****
+		This is a ROOT ELEMENT schema for the DLESE vocabulary management schemas. 
+		This ROOT ELEMENT may call VOCABULARY schemas in building the instance document structure.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  NAMESPACES  ********    
+		The chameleon approach to namespace conventions is used.
+		Since this ROOT ELEMENT schema is called by many other schema, it does not have a target namespance. 
+		Called VOCABULARY schemas do not have target namespaces either.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  ROOT ELEMENT  *****  
+		The root element of this schema is groupsRecord.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA DEVELOPMENT  *****       
+		The Venetian Blind approach is used for all vocabulary mangement schemas .
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Other CATEGORY schemas to include  ********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  VOCABULARY schemas to include  ***********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="system.xsd"/>
+	<xsd:include schemaLocation="interface.xsd"/>
+	<xsd:include schemaLocation="inline.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>*****************************************    ROOT element      *****************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="groupsRecord" type="groupsRecordType"/>
+	<xsd:annotation>
+		<xsd:documentation>groupsRecordType is complex</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Complex Types  (alpha order) *****************************
+		
+				conceptType					part of groupsRecordType
+				dfntnType						part of groupType
+				groupType					part of conceptType and groupType
+				groupsRecordType			ROOT type
+				
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="conceptType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  conceptType  *****************************************************
+				These elements have the following types or schema associated with them.
+				
+				group					is complex - an interface designated grouping of individual term (items)
+				item					is complex - the individual term which includes the metadata record value and the UI label
+				name					attribute - metadata record value
+				system				attribute - the system for which the groups and items work in  (e.g. dds for Discovery)
+				interface				attribute - the interface for which the groups and items work in (e.g. default for the regular Discovery interface)
+				language				attribute - the language of the groups and items
+				label					attribute - the display label for a concept
+				abbrev					attribute - the abbreviated display label for a concept
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice minOccurs="1" maxOccurs="unbounded">
+			<xsd:element name="group" type="groupType"/>
+			<xsd:element name="item" type="itemType"/>
+			<xsd:element name="divider" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:choice>
+		<xsd:attribute name="name" type="xsd:string" use="required"/>
+		<xsd:attribute name="system" type="systemType" use="required"/>
+		<xsd:attribute name="interface" type="interfaceType" use="required"/>
+		<xsd:attribute name="language" type="xsd:language" use="required"/>
+		<xsd:attribute name="label" type="xsd:string" use="required"/>
+		<xsd:attribute name="abbrev" type="xsd:string" use="optional"/>
+	</xsd:complexType>
+	<xsd:complexType name="deftnType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  deftnType  *****************************************************
+				These elements have the following types or schema associated with them.
+				
+				source 				is simple - attribution for the definition
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="source" type="xsd:string" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="groupType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  groupType  *****************************************************
+				These elements have the following types or schema associated with them.
+				
+				deftn					is complex - definition and maybe its attribution for a particular group
+				group					is complex - an interface designated grouping of individual term (items)
+				item					is complex - the individual term which includes the metadata record value and the UI label
+				wrap					is simple - a placeholder to indicate when text needs to be wrapped in a user interface
+				label 					is boolean - the display label for a group or item
+				src						is simple - indicates a needed page (e.g. a JSP page)
+				inline					is boolean - an indication on how to display the group menu on the UI (i.e. start using drop-downs as opposed to flyout menus)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice minOccurs="1" maxOccurs="unbounded">
+			<xsd:element name="deftn" type="deftnType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="group" type="groupType"/>
+			<xsd:element name="item" type="itemType"/>
+			<xsd:element name="divider" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:choice>
+		<xsd:attribute name="label" type="xsd:string" use="required"/>
+		<xsd:attribute name="abbrev" type="xsd:string" use="optional"/>
+		<xsd:attribute name="src" type="xsd:string" use="optional"/>
+		<xsd:attribute name="wrap" type="xsd:boolean" use="optional"/>
+		<xsd:attribute name="inline" type="inlineType" use="optional"/>
+	</xsd:complexType>
+	<xsd:complexType name="groupsRecordType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  groupsRecordType  *****************************************************
+				The root type.
+				These elements have the following types or schema associated with them.
+				
+				concept 			is complex - the metadata field for which a user interface must be created over a controlled vocab
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="concept" type="conceptType" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

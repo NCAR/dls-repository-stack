@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: relation-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/non-vocab-fields.xsd">
+	<field name="Relation" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/relations/relation">
+		<definition>the establishment of a relationship between the resource being described and another resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2006-06-13">Create relationships to other resources if creating the relationship adds new or different information a user may not otherwise be aware of.</practice>
+				<practice status="current" originDate="2005-06-02" link1="record ID - library catalog number" style1="bold" link2="relation - by record ID" style2="bold">To create a relationship to a resource that is already in the library, such that the record ID - library catalog number is known, complete the subfield of relation - by record ID.</practice>
+				<practice status="current" originDate="2005-06-02" link1="relation - by URL" style1="bold">To create a relationship to a resource that is not in the library, but has a known web address, complete the subfield of relation - by URL.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2006-06-11">Do not create relationships to resources that are not publicly accessible or do not have an online presence.</practice>
+			</donts>
+		</bestPractices>
+
+		<documentation>
+			<children>
+				<child>idEntry</child>
+				<child>urlEntry</child>
+			</children>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>the child elements</domain>
+			<example>&lt;idEntry&gt;, &lt;urlEntry&gt;</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

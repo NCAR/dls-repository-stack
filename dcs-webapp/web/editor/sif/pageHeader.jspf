@@ -1,0 +1,172 @@
+<script type="text/javascript">
+
+/* 
+	Base class for the tabs that control the display (All, selected, suggested)
+*/
+
+var sifTypes = $A();
+<c:forEach var="sifType" items="${sif.sifTypes}">
+	sifTypes.push ('${sifType}');
+</c:forEach>
+
+var submitParams = {
+			command: '',
+			elementId: '${sif.elementId}',
+			sifTypes: sifTypes,
+			recId: '${sif.recId}'
+		}
+
+var ControlTab = Class.create({
+	initialize: function (name) {
+		this.name = (name ? name : 'control tab');
+		this.tab_bar = $('control-tabs');
+		this.textElement = new Element ('div');
+		this.textElement.addClassName ("nav-menu-text");
+		this.cell = this.initCell();
+		this.decorateCell();
+	},
+	getCell: function () {
+		return this.cell;
+	},
+	getText: function () {
+		return this.name;
+	},
+	isSelected: function () {
+		return false;
+	},
+	initCell: function () {
+		var cell = new Element ('td');
+		cell.addClassName ('nav-menu-item');
+		cell.insert (this.textElement);
+		this.textElement.update (this.getText());
+		return cell;
+	},
+	clickHandler: function (event) {
+		alert (this.name);
+		event.stop();
+	},
+	decorateCell: function () {
+		var cell = this.cell;
+		var text = this.textElement;
+		if (this.isSelected()) {
+			cell.addClassName ('selected');
+			text.addClassName ('current');
+		}
+		else {
+			cell.observe ('mouseover', function (event) {
+				cell.addClassName ('over');
+				text.addClassName ('over');
+			});
+			cell.observe ('mouseout', function (event) {
+				cell.removeClassName ('over');
+				text.removeClassName ('over');
+			});
+			cell.observe ('click', this.clickHandler.bindAsEventListener (this));
+		}
+	}
+
+});
+
+var FindTab = Class.create (ControlTab, {
+	initialize: function ($super) {
+		$super('Find');
+	},
+	isSelected: function () {
+		return '${sif.command}' == 'find';
+	},
+	clickHandler: function (event) {
+		event.stop();
+		params = submitParams;
+		params['command'] = 'find';
+		var url = 'sif.do?' + $H(params).toQueryString();
+		window.location = url;
+	}
+});
+	
+var CreateTab = Class.create (ControlTab, {
+	initialize: function ($super) {
+		$super('Create');
+	},
+	isSelected: function () {
+		return '${sif.command}' == 'create';
+	},
+	clickHandler: function (event) {
+		event.stop();
+		params = submitParams;
+		params['command'] = 'create';
+		var url = 'sif.do?' + $H(params).toQueryString();
+		window.location = url;
+	}
+});
+
+/*
+	page menu allows navigation among pages (find, create)
+*/
+function initializePageMenu() {
+
+	var tab_bar = $('control-tabs');
+	
+	// don't show menu if an object has just been created
+	<c:if test="${empty sif.command}">
+		$('page-menu').update("&nbsp;");
+		return;
+	</c:if>
+	
+	var navMenuTable = tab_bar.up('table');
+	var navMenuBox = tab_bar.up ('div');
+	var tabs = $A();
+	tabs.push (new FindTab());
+	tabs.push (new CreateTab());
+	
+ 	tabs.each (function (tab) {
+		tab_bar.insert (tab.getCell());
+	}); 
+}
+
+// highlight target element in metadata editor
+function highlightField () {
+	alert ("sorry - not implemented");
+}
+
+Event.observe (window, 'load', initializePageMenu);
+</script>
+
+<style type="text/css">
+.nav-menu-box {
+	width:200px;
+}
+
+.nav-menu-item {
+	width:50%;
+}
+</style>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tr valign="middle">
+		<td align="left">
+			<div class="system-label">Metadata Reference Tool</div>
+			<div class="tool-label">${sif.command == 'find' ? 'Find' : 'Create'}</div>
+		</td>
+		<td align="center" id="page-menu">
+			<div class="nav-menu-box">
+				<table class="nav-menu-table"> 
+					<tr valign="top" align="center" id="control-tabs">
+					</tr>
+				</table>
+			</div>
+		</td>
+		<td align="center" nowrap="1" width="132">
+			<img src="${contextPath}/images/${applicationScope.logo}" height="32" width="132">
+			<div class="system-label">Collection System</div>
+		</td>
+	</tr>
+	<tr><td bgcolor="#333366" height="2px" colspan="3"></td></tr>
+</table>
+
+<div>Target Record ID: ${sif.recId}</div>
+<div>Target Element: ${sif.elementPath}</div>
+<%-- <div>Command: ${sif.command}</div> --%>
+<div><input type="button" value="Highlight target element" onclick="highlightField()"/></div>
+<br/><br/>
+
+

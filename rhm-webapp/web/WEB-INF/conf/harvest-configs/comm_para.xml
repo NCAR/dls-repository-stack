@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<Ingestor>
+	<target-format>comm_para</target-format>
+	<pre-processors>
+		 <RemoveLineBreaksFromTextTransform/>
+		 <RecordSchemaValidator/>
+   		 <URINormalizer>
+   			 <uri-required>true</uri-required>
+      		 <xpaths>
+   		 		<xpath>*[name()='usageDataResourceURL'][contains(.,'http:') or contains(.,'https:') or contains(.,'ftp:') or contains(.,'www')]</xpath>
+   		 	</xpaths>
+   		 </URINormalizer>
+   		 <RequireElement>
+   		 	<xpaths>
+	   			<xpath>*[name()='usageDataSummary']/*[name()='integer']</xpath>
+	   			<xpath>*[name()='usageDataSummary']/*[name()='rating']</xpath>
+	   		</xpaths>
+   		 </RequireElement>
+   	</pre-processors>
+   	<target-format-processors>
+   		<!-- Some collections escape HTML in order to get the subscripts and superscripts,
+   		these processors actually encode them correctly. Examples collections are ChemEd and 
+   		Math DL  -->
+   		<SubscriptTransform>
+	   		<regular-expressions>
+	   			<regular-expression><![CDATA[&lt;sub&gt;(.+?)&lt;/sub&gt;]]></regular-expression>
+	   		</regular-expressions>
+   		</SubscriptTransform>
+        <SuperscriptTransform>
+	   		<regular-expressions>
+	   			<regular-expression><![CDATA[&lt;sup&gt;(.+?)&lt;/sup&gt;]]></regular-expression>
+	   		</regular-expressions>
+   		</SuperscriptTransform>
+   		<!--  End special cases for collections  -->
+   		<PrettyPrint/>
+   		<RecordSchemaValidator/> 
+   	</target-format-processors>
+</Ingestor>

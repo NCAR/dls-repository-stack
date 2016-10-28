@@ -1,0 +1,11 @@
+<%-- 	Note: formatOfRecords only defined for DleseCollectionDocReader  --%>
+
+<%-- <div align="right" style="font-size:x-small">
+	collection: ${result.docReader.collection}<BR>
+	readerType: ${result.docReader.readerType}<BR>
+	metadataPrefix: ${result.docReader.metadataPrefix}<BR>
+	<c:if test="${result.docReader.readerType == 'DleseCollectionDocReader'}" >
+		formatOfRecords: ${result.docReader.formatOfRecords}<BR>
+	</c:if>
+	nativeFormat: ${result.docReader.nativeFormat}
+</div> --%>

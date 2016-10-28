@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: dateRangeType-osm-fields-en-us.xml,v 1.8 2011/06/29 22:15:23 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/dateRangeType.xsd">
+  <field name="Date range - type" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/coverage/dateRange/@type">
+		<definition>the kind of time period being associated with the resource</definition> 
+		<prompts>
+			<prompt>AGU/AMS papers have a 6 month embargo from publication date</prompt>
+		</prompts>
+		<terms>
+			<termAndDeftn vocab="Author embargo">a period during which the author has indicated that public access is not allowed</termAndDeftn>
+			<termAndDeftn vocab="Circa">An approximate period during which a work was produced</termAndDeftn>
+			<termAndDeftn vocab="Correspondence">a period during which written and addressed messages were exchanged between two or more people</termAndDeftn>
+			<termAndDeftn vocab="Data">a period during which data from measuring devices was complied</termAndDeftn>
+			<termAndDeftn vocab="Donor embargo">a period during which a donor has indicated that public access is not allowed</termAndDeftn>
+			<termAndDeftn vocab="Interview">a period during which a recorded verbal exchange took place</termAndDeftn>
+			<termAndDeftn vocab="Meeting">a period during which people gathered for the exchange of information</termAndDeftn>
+			<termAndDeftn vocab="Natural phenomenon">a period during which an event occurred in nature</termAndDeftn>
+			<termAndDeftn vocab="Publisher embargo">a period during which a publisher has indicated that public access is not allowed</termAndDeftn>
+			
+		</terms>
+		 <bestPractices>
+			<dos>
+				<practice status="current" originDate="2010-05-31">This field is required.</practice> 
+				<practice status="current" originDate="2010-05-31">This field cannot be repeated unless a new dateRange tag set is added.</practice> 
+				<practice status="current" originDate="2010-06-30" link1="embargo" style1="bold">Use embargo when there is a need to prevent public access to a resource for a certain time period. Be sure to specify an end date for the embargo.</practice>
+				<practice status="current" originDate="2010-05-31">Consult with SHERPA/RoMEO to identify any applicable embargo periods.</practice>
+				<practice status="current" originDate="2010-05-31">Due to a UCAR special agreement, AMS and AGU each have embargoes of 6 months, regardless of what SHERPA/RoMEO indicates.</practice>
+				<practice status="current" originDate="2010-05-31">The Bulletin of the American Meteorological Society (BAMS) never has an embargo.</practice>
+				<practice status="current" originDate="2010-05-31">Due to a UCAR special agreement, Springer does not impose an embargo on UCAR/NCAR/UCP publications as long as the publication date is before 2014.</practice>
+			 </dos>
+		 </bestPractices>
+		 <documentation>
+				<obligation>required metadata if parent tag is present</obligation>
+				<min>1</min>
+				<max>1</max>
+				<XMLdataTypes>
+					<XMLdataType>string</XMLdataType>
+				</XMLdataTypes>
+				<domain>controlled vocabulary</domain>
+				<example>Author embargo, Circa</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

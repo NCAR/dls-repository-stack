@@ -1,0 +1,1677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: orgUnit.xsd,v 1.6 2013/07/24 20:40:28 ginger Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xs:annotation>
+		<xs:documentation>****************************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA PUPOSE  and INTENT  *****</xs:documentation>
+		<xs:documentation>****************************************************</xs:documentation>
+		<xs:documentation>Purpose: Controlled vocabulary for UCAR division names as currently used by the NCAR Library.</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>****************************************</xs:documentation>
+		<xs:documentation>*****  HISTORY OF CHANGE *****</xs:documentation>
+		<xs:documentation>***************************************</xs:documentation>
+		<xs:documentation>2013-07-24: for historical value that were not in the iVantage database or the People database; the values are then OpenSky assigned and begin with 'OS-'</xs:documentation>
+		<xs:documentation>2013-07-24: some values also come from the iVantage database and these are indicated; oftern these terms have a NULL or inactive value in the People database info; so no People org_id or org_level is listed (e.g. ATD, SCD, ISSE, TIIMES)</xs:documentation>
+		<xs:documentation>2013-05-06: file creation: generated from the PeopleDBOrganization-2012-12 excel spreadsheet. Includes org levels 1-9. Does not include org_level 0 or org_level NULL</xs:documentation>
+		
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>None</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  SIMPLE TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="orgUnitType">
+		<xs:annotation>
+			<xs:documentation>***** orgUnitType  *****</xs:documentation>
+			<xs:documentation>Valid values for the element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AAP">
+				<xs:annotation>
+					<xs:documentation>Aviation Applications Program</xs:documentation>
+					<xs:documentation>org_id: 1</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ACD">
+				<xs:annotation>
+					<xs:documentation>Atmospheric Chemistry Division</xs:documentation>
+					<xs:documentation>org_id: 2</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ACDAO">
+				<xs:annotation>
+					<xs:documentation>ACD Administrative Office</xs:documentation>
+					<xs:documentation>org_id: 206</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ACRESP">
+				<xs:annotation>
+					<xs:documentation>Atmospheric Composition REmote Sensing and Prediction</xs:documentation>
+					<xs:documentation>org_id: 3</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AIM">
+				<xs:annotation>
+					<xs:documentation>Atmosphere, Ionosphere, and Magnetosphere</xs:documentation>
+					<xs:documentation>org_id: 4</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AMP">
+				<xs:annotation>
+					<xs:documentation>Atmospheric Modeling and Predictability</xs:documentation>
+					<xs:documentation>org_id: 5</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="APOL">
+				<xs:annotation>
+					<xs:documentation>Analytical Photonics and Optoelectronics Laboratory</xs:documentation>
+					<xs:documentation>org_id: 177</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ARIM">
+				<xs:annotation>
+					<xs:documentation>Atmospheric Radiation Investigation and Measurements</xs:documentation>
+					<xs:documentation>org_id: 6</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ARS">
+				<xs:annotation>
+					<xs:documentation>Atmospheric Radical Studies</xs:documentation>
+					<xs:documentation>org_id: 7</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ASP">
+				<xs:annotation>
+					<xs:documentation>Advanced Study Program</xs:documentation>
+					<xs:documentation>org_id: 8</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ATD">
+				<xs:annotation>
+					<xs:documentation>Atmospheric Technology Division</xs:documentation>
+					<xs:documentation>term is from the iVantage database orgUnit data</xs:documentation>
+					<xs:documentation>the People database term is inactive; so no org_id or org_level becuase only entering People database levels of 1-9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AUDIT">
+				<xs:annotation>
+					<xs:documentation>Internal Audit</xs:documentation>
+					<xs:documentation>org_id: 171</xs:documentation>
+					<xs:documentation>org_level_id: 8</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BA">
+				<xs:annotation>
+					<xs:documentation>Budget Analysis</xs:documentation>
+					<xs:documentation>org_id: 13</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BAI">
+				<xs:annotation>
+					<xs:documentation>Biosphere Atmosphere Interactions</xs:documentation>
+					<xs:documentation>org_id: 14</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BF">
+				<xs:annotation>
+					<xs:documentation>Budget and Finance</xs:documentation>
+					<xs:documentation>org_id: 15</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BIOGEO">
+				<xs:annotation>
+					<xs:documentation>Biogeosciences</xs:documentation>
+					<xs:documentation>org_id: 16</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BIZSVCS">
+				<xs:annotation>
+					<xs:documentation>Business Services</xs:documentation>
+					<xs:documentation>org_id: 17</xs:documentation>
+					<xs:documentation>org_level_id: 8</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BLTG">
+				<xs:annotation>
+					<xs:documentation>Boundary Layer and Turbulence Group</xs:documentation>
+					<xs:documentation>org_id: 18</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BOARD">
+				<xs:annotation>
+					<xs:documentation>Board of Trustees</xs:documentation>
+					<xs:documentation>org_id: 19</xs:documentation>
+					<xs:documentation>org_level_id: 2</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BS">
+				<xs:annotation>
+					<xs:documentation>Business Services</xs:documentation>
+					<xs:documentation>org_id: 207</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CA">
+				<xs:annotation>
+					<xs:documentation>Corporate Affairs</xs:documentation>
+					<xs:documentation>org_id: 20</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CAAO">
+				<xs:annotation>
+					<xs:documentation>CA Administrative Office</xs:documentation>
+					<xs:documentation>org_id: 21</xs:documentation>
+					<xs:documentation>org_level_id: 8</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CANDH">
+				<xs:annotation>
+					<xs:documentation>Corona and Heliosphere</xs:documentation>
+					<xs:documentation>org_id: 22</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CARI">
+				<xs:annotation>
+					<xs:documentation>Community Airborne Research Instrumentation</xs:documentation>
+					<xs:documentation>org_id: 23</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CAS">
+				<xs:annotation>
+					<xs:documentation>Climate Analysis</xs:documentation>
+					<xs:documentation>org_id: 24</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CASG">
+				<xs:annotation>
+					<xs:documentation>Cheyenne Admin Support Group</xs:documentation>
+					<xs:documentation>org_id: 179</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CCB">
+				<xs:annotation>
+					<xs:documentation>Center for Capacity Building</xs:documentation>
+					<xs:documentation>org_id: 25</xs:documentation>
+					<xs:documentation>org_level_id: 8</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CCR">
+				<xs:annotation>
+					<xs:documentation>Climate Change Research</xs:documentation>
+					<xs:documentation>org_id: 27</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CDS">
+				<xs:annotation>
+					<xs:documentation>Computing, Data and Software Facility</xs:documentation>
+					<xs:documentation>org_id: 28</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CGD">
+				<xs:annotation>
+					<xs:documentation>Climate and Global Dynamics Division</xs:documentation>
+					<xs:documentation>org_id: 29</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CGDAO">
+				<xs:annotation>
+					<xs:documentation>CGD Administrative Office</xs:documentation>
+					<xs:documentation>org_id: 180</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CISL">
+				<xs:annotation>
+					<xs:documentation>Computational and Information Systems Laboratory</xs:documentation>
+					<xs:documentation>org_id: 32</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CISLAO">
+				<xs:annotation>
+					<xs:documentation>CISL Administrative Office</xs:documentation>
+					<xs:documentation>org_id: 33</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CMG">
+				<xs:annotation>
+					<xs:documentation>Computational Math Group</xs:documentation>
+					<xs:documentation>org_id: 181</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="COMET">
+				<xs:annotation>
+					<xs:documentation>Cooperative Program for Operational Meteorology Education and Training</xs:documentation>
+					<xs:documentation>org_id: 34</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="COMM">
+				<xs:annotation>
+					<xs:documentation>Communications - News Center</xs:documentation>
+					<xs:documentation>org_id: 35</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CON">
+				<xs:annotation>
+					<xs:documentation>Contracts</xs:documentation>
+					<xs:documentation>org_id: 36</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="COS">
+				<xs:annotation>
+					<xs:documentation>Cheyene Operations Section</xs:documentation>
+					<xs:documentation>org_id: 176</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="COSMIC">
+				<xs:annotation>
+					<xs:documentation>Constellation Observing System for Meteorology Ionosphere Climate</xs:documentation>
+					<xs:documentation>org_id: 37</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CPG">
+				<xs:annotation>
+					<xs:documentation>Computer Production Group</xs:documentation>
+					<xs:documentation>org_id: 38</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CPO">
+				<xs:annotation>
+					<xs:documentation>CESM Project Office</xs:documentation>
+					<xs:documentation>org_id: 39</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CPRM">
+				<xs:annotation>
+					<xs:documentation>Chemical Processes and Regional Modeling</xs:documentation>
+					<xs:documentation>org_id: 40</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CSAP">
+				<xs:annotation>
+					<xs:documentation>Climate Science &amp; Applications Program</xs:documentation>
+					<xs:documentation>org_id: 41</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CSEG">
+				<xs:annotation>
+					<xs:documentation>CESM Software Enginneering Group</xs:documentation>
+					<xs:documentation>org_id: 42</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CSG">
+				<xs:annotation>
+					<xs:documentation>Consulting Services Group</xs:documentation>
+					<xs:documentation>org_id: 43</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CSS">
+				<xs:annotation>
+					<xs:documentation>Computational Science Section</xs:documentation>
+					<xs:documentation>org_id: 44</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CTMG">
+				<xs:annotation>
+					<xs:documentation>Collaborative Technologies and Metadata Group</xs:documentation>
+					<xs:documentation>org_id: 45</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DAG">
+				<xs:annotation>
+					<xs:documentation>Data Assimilation Group</xs:documentation>
+					<xs:documentation>org_id: 46</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DARES">
+				<xs:annotation>
+					<xs:documentation>Data Assimilation Research Section</xs:documentation>
+					<xs:documentation>org_id: 47</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DASG">
+				<xs:annotation>
+					<xs:documentation>Data Analysis Services Group</xs:documentation>
+					<xs:documentation>org_id: 48</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DEVPART">
+				<xs:annotation>
+					<xs:documentation>Development &amp; Partnerships</xs:documentation>
+					<xs:documentation>org_id: 174</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DFS">
+				<xs:annotation>
+					<xs:documentation>Design and Fabrication Services</xs:documentation>
+					<xs:documentation>org_id: 49</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DLS">
+				<xs:annotation>
+					<xs:documentation>Digital Learning Sciences</xs:documentation>
+					<xs:documentation>org_id: 51</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DMG">
+				<xs:annotation>
+					<xs:documentation>Data Management Group</xs:documentation>
+					<xs:documentation>org_id: 52</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DSG">
+				<xs:annotation>
+					<xs:documentation>Distributed Systems Group</xs:documentation>
+					<xs:documentation>org_id: 53</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DSS">
+				<xs:annotation>
+					<xs:documentation>Data Support Section</xs:documentation>
+					<xs:documentation>org_id: 54</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EO">
+				<xs:annotation>
+					<xs:documentation>Education and Outreach</xs:documentation>
+					<xs:documentation>org_id: 55</xs:documentation>
+					<xs:documentation>org_level_id: 8</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EOAO">
+				<xs:annotation>
+					<xs:documentation>EO Administrative Office</xs:documentation>
+					<xs:documentation>org_id: 56</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EOL">
+				<xs:annotation>
+					<xs:documentation>Earth Observing Laboratory</xs:documentation>
+					<xs:documentation>org_id: 57</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EOLADMIN">
+				<xs:annotation>
+					<xs:documentation>EOL Administration</xs:documentation>
+					<xs:documentation>org_id: 182</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EOLAO">
+				<xs:annotation>
+					<xs:documentation>EOL Administrative Office</xs:documentation>
+					<xs:documentation>org_id: 58</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EOLFOS">
+				<xs:annotation>
+					<xs:documentation>EOL Field Operations Support</xs:documentation>
+					<xs:documentation>org_id: 183</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EOLSA">
+				<xs:annotation>
+					<xs:documentation>EOL Science Activities</xs:documentation>
+					<xs:documentation>org_id: 184</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ESMI">
+				<xs:annotation>
+					<xs:documentation>Earth System Modeling Infrastructure</xs:documentation>
+					<xs:documentation>org_id: 59</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ESS">
+				<xs:annotation>
+					<xs:documentation>Enterprise Services Section</xs:documentation>
+					<xs:documentation>org_id: 60</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ESSL">
+				<xs:annotation>
+					<xs:documentation>Earth and Sun Systems Laboratory</xs:documentation>
+					<xs:documentation>org_id: 61</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ESSLAO">
+				<xs:annotation>
+					<xs:documentation>ESSL Administrative Office</xs:documentation>
+					<xs:documentation>org_id: 62</xs:documentation>
+					<xs:documentation>org_level_id: 8</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EVENTS">
+				<xs:annotation>
+					<xs:documentation>Event Services</xs:documentation>
+					<xs:documentation>org_id: 63</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FandA">
+				<xs:annotation>
+					<xs:documentation>Finance and Administration</xs:documentation>
+					<xs:documentation>org_id: 64</xs:documentation>
+					<xs:documentation>org_level_id: 3</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FandAAO">
+				<xs:annotation>
+					<xs:documentation>FandA Administrative Office</xs:documentation>
+					<xs:documentation>org_id: 65</xs:documentation>
+					<xs:documentation>org_level_id: 8</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FMS">
+				<xs:annotation>
+					<xs:documentation>Facilities Management and Sustainability</xs:documentation>
+					<xs:documentation>org_id: 66</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FMSENG">
+				<xs:annotation>
+					<xs:documentation>FMS Engineering</xs:documentation>
+					<xs:documentation>org_id: 185</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FO">
+				<xs:annotation>
+					<xs:documentation>Flight Operations</xs:documentation>
+					<xs:documentation>org_id: 186</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FPS">
+				<xs:annotation>
+					<xs:documentation>Field Project Services</xs:documentation>
+					<xs:documentation>org_id: 67</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GA">
+				<xs:annotation>
+					<xs:documentation>General Accounting</xs:documentation>
+					<xs:documentation>org_id: 68</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GLOBE">
+				<xs:annotation>
+					<xs:documentation>Global Learning and Observations to Benefit the Environment</xs:documentation>
+					<xs:documentation>org_id: 69</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GMWACCM">
+				<xs:annotation>
+					<xs:documentation>Global Modeling and WACCM</xs:documentation>
+					<xs:documentation>org_id: 70</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GOV">
+				<xs:annotation>
+					<xs:documentation>Governance</xs:documentation>
+					<xs:documentation>org_id: 71</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GSP">
+				<xs:annotation>
+					<xs:documentation>Geophysical Statistics Program</xs:documentation>
+					<xs:documentation>org_id: 72</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GTM">
+				<xs:annotation>
+					<xs:documentation>Global Tropospheric Modeling</xs:documentation>
+					<xs:documentation>org_id: 74</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HAO">
+				<xs:annotation>
+					<xs:documentation>High Altitude Observatory</xs:documentation>
+					<xs:documentation>org_id: 75</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HAOAO">
+				<xs:annotation>
+					<xs:documentation>HAO Administration</xs:documentation>
+					<xs:documentation>org_id: 178</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HAP">
+				<xs:annotation>
+					<xs:documentation>Hydrometeorological Applications Program</xs:documentation>
+					<xs:documentation>org_id: 76</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HESS">
+				<xs:annotation>
+					<xs:documentation>Health Environment and Safety Services</xs:documentation>
+					<xs:documentation>org_id: 187</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HIRDLS">
+				<xs:annotation>
+					<xs:documentation>High Resolution Dynamics Limb Sounder</xs:documentation>
+					<xs:documentation>org_id: 77</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HR">
+				<xs:annotation>
+					<xs:documentation>Human Resources</xs:documentation>
+					<xs:documentation>org_id: 78</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HSS">
+				<xs:annotation>
+					<xs:documentation>High-end Services Section</xs:documentation>
+					<xs:documentation>org_id: 79</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IG">
+				<xs:annotation>
+					<xs:documentation>Instrumentation Group</xs:documentation>
+					<xs:documentation>org_id: 80</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IMAGe">
+				<xs:annotation>
+					<xs:documentation>Institute for Mathematics Applied to the Geosciences</xs:documentation>
+					<xs:documentation>org_id: 81</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IS">
+				<xs:annotation>
+					<xs:documentation>Instrument Support</xs:documentation>
+					<xs:documentation>org_id: 188</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ISF">
+				<xs:annotation>
+					<xs:documentation>In-Situ Sensing Facility</xs:documentation>
+					<xs:documentation>org_id: 83</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ISG">
+				<xs:annotation>
+					<xs:documentation>Information Systems</xs:documentation>
+					<xs:documentation>org_id: 84</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ISGB">
+				<xs:annotation>
+					<xs:documentation>Infrastructure Support Group Boulder</xs:documentation>
+					<xs:documentation>org_id: 189</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ISGC">
+				<xs:annotation>
+					<xs:documentation>Infrastructure Support Group Cheyenne</xs:documentation>
+					<xs:documentation>org_id: 190</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ISP">
+				<xs:annotation>
+					<xs:documentation>Integrated Science Program</xs:documentation>
+					<xs:documentation>org_id: 85</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ISSE">
+				<xs:annotation>
+					<xs:documentation>Institute for the Study of Society and Environment</xs:documentation>
+					<xs:documentation>org_id: 86</xs:documentation>
+					<xs:documentation>org_level_id: 8</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IT">
+				<xs:annotation>
+					<xs:documentation>Information Technology</xs:documentation>
+					<xs:documentation>org_id: 88</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ITENG">
+				<xs:annotation>
+					<xs:documentation>Engineering</xs:documentation>
+					<xs:documentation>org_id: 89</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ITMM">
+				<xs:annotation>
+					<xs:documentation>Multimedia Services</xs:documentation>
+					<xs:documentation>org_id: 90</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ITOPS">
+				<xs:annotation>
+					<xs:documentation>Operations</xs:documentation>
+					<xs:documentation>org_id: 91</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ITPM">
+				<xs:annotation>
+					<xs:documentation>Project Management</xs:documentation>
+					<xs:documentation>org_id: 92</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JNT">
+				<xs:annotation>
+					<xs:documentation>Joint Numerical Testbed</xs:documentation>
+					<xs:documentation>org_id: 93</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JOSS">
+				<xs:annotation>
+					<xs:documentation>Joint Office for Science Support</xs:documentation>
+					<xs:documentation>org_id: 94</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LK">
+				<xs:annotation>
+					<xs:documentation>Laboratory Kinetics</xs:documentation>
+					<xs:documentation>org_id: 95</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LOG">
+				<xs:annotation>
+					<xs:documentation>Logistics</xs:documentation>
+					<xs:documentation>org_id: 96</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LSA">
+				<xs:annotation>
+					<xs:documentation>Lower Solar Atmosphere</xs:documentation>
+					<xs:documentation>org_id: 97</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LSV">
+				<xs:annotation>
+					<xs:documentation>Long-term Solar Variability</xs:documentation>
+					<xs:documentation>org_id: 191</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MAINT">
+				<xs:annotation>
+					<xs:documentation>Maintenance and Construction</xs:documentation>
+					<xs:documentation>org_id: 192</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MandC">
+				<xs:annotation>
+					<xs:documentation>Maintenance and Construction</xs:documentation>
+					<xs:documentation>org_id: 98</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MDG">
+				<xs:annotation>
+					<xs:documentation>Mesoscale Dynamics Group</xs:documentation>
+					<xs:documentation>org_id: 99</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MLSO">
+				<xs:annotation>
+					<xs:documentation>Mauna Loa Solar Obervatory</xs:documentation>
+					<xs:documentation>org_id: 193</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MMM">
+				<xs:annotation>
+					<xs:documentation>Mesoscale and Microscale Meteorology Division</xs:documentation>
+					<xs:documentation>org_id: 101</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MMMAO">
+				<xs:annotation>
+					<xs:documentation>MMM Administrative Office</xs:documentation>
+					<xs:documentation>org_id: 194</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MOPITT">
+				<xs:annotation>
+					<xs:documentation>Measurements of Pollution in the Troposphere</xs:documentation>
+					<xs:documentation>org_id: 102</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MPG">
+				<xs:annotation>
+					<xs:documentation>Mesoscale Prediction Group</xs:documentation>
+					<xs:documentation>org_id: 103</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MSSG">
+				<xs:annotation>
+					<xs:documentation>Mass Storage Systems Group</xs:documentation>
+					<xs:documentation>org_id: 104</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NCAR">
+				<xs:annotation>
+					<xs:documentation>National Center for Atmospheric Research</xs:documentation>
+					<xs:documentation>org_id: 105</xs:documentation>
+					<xs:documentation>org_level_id: 3</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NCARADIR">
+				<xs:annotation>
+					<xs:documentation>NCAR Associate Director</xs:documentation>
+					<xs:documentation>org_id: 208</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NCARASSCDIR">
+				<xs:annotation>
+					<xs:documentation>NCAR Associate Director</xs:documentation>
+					<xs:documentation>org_id: 106</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NCARBP">
+				<xs:annotation>
+					<xs:documentation>NCAR Budget and Planning Office</xs:documentation>
+					<xs:documentation>org_id: 107</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NCARDIR">
+				<xs:annotation>
+					<xs:documentation>NCAR Directorate</xs:documentation>
+					<xs:documentation>org_id: 108</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NCAREO">
+				<xs:annotation>
+					<xs:documentation>NCAR Executive Office</xs:documentation>
+					<xs:documentation>org_id: 195</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NCAREXREL">
+				<xs:annotation>
+					<xs:documentation>NCAR External Relations Office</xs:documentation>
+					<xs:documentation>org_id: 209</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NCARLIB">
+				<xs:annotation>
+					<xs:documentation>NCAR Library</xs:documentation>
+					<xs:documentation>org_id: 109</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NCAROPS">
+				<xs:annotation>
+					<xs:documentation>NCAR Operatoins</xs:documentation>
+					<xs:documentation>org_id: 196</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NCARRESREL">
+				<xs:annotation>
+					<xs:documentation>NCAR Research Relations Office</xs:documentation>
+					<xs:documentation>org_id: 110</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NESL">
+				<xs:annotation>
+					<xs:documentation>NCAR Earth System Laboratory</xs:documentation>
+					<xs:documentation>org_id: 111</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NESLAO">
+				<xs:annotation>
+					<xs:documentation>NESLAO</xs:documentation>
+					<xs:documentation>org_id: 112</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NETS">
+				<xs:annotation>
+					<xs:documentation>Network Engineering and Telecommunications Section</xs:documentation>
+					<xs:documentation>org_id: 113</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NSAP">
+				<xs:annotation>
+					<xs:documentation>National Security Applications Program</xs:documentation>
+					<xs:documentation>org_id: 114</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NSDL">
+				<xs:annotation>
+					<xs:documentation>National Science Digital Library - Central Office</xs:documentation>
+					<xs:documentation>org_id: 115</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OGA">
+				<xs:annotation>
+					<xs:documentation>Office of Government Affairs</xs:documentation>
+					<xs:documentation>org_id: 116</xs:documentation>
+					<xs:documentation>org_level_id: 8</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OGC">
+				<xs:annotation>
+					<xs:documentation>Office of General Counsel</xs:documentation>
+					<xs:documentation>org_id: 117</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OS">
+				<xs:annotation>
+					<xs:documentation>Oceanography</xs:documentation>
+					<xs:documentation>org_id: 118</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-AAP">
+				<xs:annotation>
+					<xs:documentation>Atmospheric Analysis and Prediction Division (AAP)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-ACAD">
+				<xs:annotation>
+					<xs:documentation>Atmospheric Chemistry and Aeronomy Division (ACAD)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-ADMP">
+				<xs:annotation>
+					<xs:documentation>Acid Deposition Modeling Project (ADMP)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-AL">
+				<xs:annotation>
+					<xs:documentation>Aeronomy Laboratory</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-AQD">
+				<xs:annotation>
+					<xs:documentation>Atmospheric Quality Division (AQD)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-AQM">
+				<xs:annotation>
+					<xs:documentation>Atmospheric Quality and Modification Division (AQM)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-BF">
+				<xs:annotation>
+					<xs:documentation>Balloon Facility</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-CCOPE">
+				<xs:annotation>
+					<xs:documentation>Cooperative Convective Precipitation Experiment (CCOPE)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-CPP">
+				<xs:annotation>
+					<xs:documentation>Corporate Partners Program</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-CSD">
+				<xs:annotation>
+					<xs:documentation>Convective Storms Division</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-ERL">
+				<xs:annotation>
+					<xs:documentation>Environmental Research Laboratories (ERL)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-ESIG">
+				<xs:annotation>
+					<xs:documentation>Environmental and Societal Impacts Group (ESIG)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-FACLAB">
+				<xs:annotation>
+					<xs:documentation>Facilities Laboratory</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-FAR">
+				<xs:annotation>
+					<xs:documentation>Facilities for Atmospheric Research</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-FOF">
+				<xs:annotation>
+					<xs:documentation>Field Observing Facility (FOF)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-GARP">
+				<xs:annotation>
+					<xs:documentation>Global Atmospheric Research Program (GARP)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-GA">
+				<xs:annotation>
+					<xs:documentation>Office of Development and Government Affairs</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-GATE">
+				<xs:annotation>
+					<xs:documentation>Global Atmospheric Research Programme Atlantic Tropical Experiment (GATE)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-LAS">
+				<xs:annotation>
+					<xs:documentation>Laboratory of Atmospheric Science (LAS)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-LINE">
+				<xs:annotation>
+					<xs:documentation>Line Islands Critique</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-MONEX">
+				<xs:annotation>
+					<xs:documentation>U.S. Monex Project Office</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-MRO">
+				<xs:annotation>
+					<xs:documentation>Media Relations Office</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-NHRE">
+				<xs:annotation>
+					<xs:documentation>National Hail Research Experiment (NHRE)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-OIES">
+				<xs:annotation>
+					<xs:documentation>Office for Interdisciplinary Earth Studies (OIES)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-PFS">
+				<xs:annotation>
+					<xs:documentation>Physical Facility Services (PFS)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-PUB">
+				<xs:annotation>
+					<xs:documentation>Publications Office</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-RAP">
+				<xs:annotation>
+					<xs:documentation>Research Applications Program (RAP)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-SBF">
+				<xs:annotation>
+					<xs:documentation>Scientific Balloon Facility (SBF)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-SIP">
+				<xs:annotation>
+					<xs:documentation>Societal Impacts Program (SIP)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-TAP">
+				<xs:annotation>
+					<xs:documentation>Transportation Alternatives Program (TAP)</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OS-WRP">
+				<xs:annotation>
+					<xs:documentation>Weather Research Program. Environmental Research Laboratories</xs:documentation>
+					<xs:documentation>term does not exist in the People database or the iVantage database</xs:documentation>
+					<xs:documentation>this is an OpenSky assigned value for a historical division name</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			
+			<xs:enumeration value="OSD">
+				<xs:annotation>
+					<xs:documentation>Operations and Services Division</xs:documentation>
+					<xs:documentation>org_id: 119</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OT">
+				<xs:annotation>
+					<xs:documentation>Optical Techniques</xs:documentation>
+					<xs:documentation>org_id: 120</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PA">
+				<xs:annotation>
+					<xs:documentation>Project Accounting</xs:documentation>
+					<xs:documentation>org_id: 121</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PDG">
+				<xs:annotation>
+					<xs:documentation>Prediction Diagnostics Group</xs:documentation>
+					<xs:documentation>org_id: 122</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PMG">
+				<xs:annotation>
+					<xs:documentation>Physical Meteorology Group</xs:documentation>
+					<xs:documentation>org_id: 123</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="POP">
+				<xs:annotation>
+					<xs:documentation>Photochemical Oxidation Products</xs:documentation>
+					<xs:documentation>org_id: 124</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PPS">
+				<xs:annotation>
+					<xs:documentation>Physical Plant Services</xs:documentation>
+					<xs:documentation>org_id: 125</xs:documentation>
+					<xs:documentation>org_level_id: 8</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PROPERTY">
+				<xs:annotation>
+					<xs:documentation>Property</xs:documentation>
+					<xs:documentation>org_id: 126</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RAF">
+				<xs:annotation>
+					<xs:documentation>Research Aviation Facility</xs:documentation>
+					<xs:documentation>org_id: 127</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RAL">
+				<xs:annotation>
+					<xs:documentation>Research Applications Laboratory</xs:documentation>
+					<xs:documentation>org_id: 128</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RALAO">
+				<xs:annotation>
+					<xs:documentation>RAL Administrative Office</xs:documentation>
+					<xs:documentation>org_id: 129</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RCR">
+				<xs:annotation>
+					<xs:documentation>Regional Climate Research</xs:documentation>
+					<xs:documentation>org_id: 197</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RISC">
+				<xs:annotation>
+					<xs:documentation>Reg. Integrated Sciences Collective</xs:documentation>
+					<xs:documentation>org_id: 198</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RSF">
+				<xs:annotation>
+					<xs:documentation>Remote Sensing Facility</xs:documentation>
+					<xs:documentation>org_id: 130</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SA">
+				<xs:annotation>
+					<xs:documentation>Sponsored Agreements</xs:documentation>
+					<xs:documentation>org_id: 131</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SaSS">
+				<xs:annotation>
+					<xs:documentation>Safety and Site Services</xs:documentation>
+					<xs:documentation>org_id: 132</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SAT">
+				<xs:annotation>
+					<xs:documentation>Satellite Progams HRDLS and MOPITT</xs:documentation>
+					<xs:documentation>org_id: 199</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SCD">
+				<xs:annotation>
+					<xs:documentation>Scientific Computing Division</xs:documentation>
+					<xs:documentation>term is from the iVantage database orgUnit data</xs:documentation>
+					<xs:documentation>the People database term is inactive; so no org_id or org_level becuase only entering People database levels of 1-9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SCSG">
+				<xs:annotation>
+					<xs:documentation>Supercomputer Systems Group</xs:documentation>
+					<xs:documentation>org_id: 134</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SDA">
+				<xs:annotation>
+					<xs:documentation>Satellite Data Analysis</xs:documentation>
+					<xs:documentation>org_id: 135</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SEG">
+				<xs:annotation>
+					<xs:documentation>Security Engineering Group</xs:documentation>
+					<xs:documentation>org_id: 200</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SIG">
+				<xs:annotation>
+					<xs:documentation>Systems Infrastructure</xs:documentation>
+					<xs:documentation>org_id: 138</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SIV">
+				<xs:annotation>
+					<xs:documentation>Solar Interior and Variability</xs:documentation>
+					<xs:documentation>org_id: 139</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SMG">
+				<xs:annotation>
+					<xs:documentation>Systems Management Group</xs:documentation>
+					<xs:documentation>org_id: 140</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SNAT">
+				<xs:annotation>
+					<xs:documentation>Systems and Network Admin Team</xs:documentation>
+					<xs:documentation>org_id: 201</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SOARS">
+				<xs:annotation>
+					<xs:documentation>Significant Opportunities in Atmospheric Research and Science</xs:documentation>
+					<xs:documentation>org_id: 141</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SPACE">
+				<xs:annotation>
+					<xs:documentation>Space Planning and Project Office</xs:documentation>
+					<xs:documentation>org_id: 142</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SPARK">
+				<xs:annotation>
+					<xs:documentation>SPARK</xs:documentation>
+					<xs:documentation>org_id: 172</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SPARKAO">
+				<xs:annotation>
+					<xs:documentation>SPARK Administrative Office</xs:documentation>
+					<xs:documentation>org_id: 173</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SS">
+				<xs:annotation>
+					<xs:documentation>Site Support Services</xs:documentation>
+					<xs:documentation>org_id: 144</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SSG">
+				<xs:annotation>
+					<xs:documentation>Software Systems Group</xs:documentation>
+					<xs:documentation>org_id: 145</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="STSW">
+				<xs:annotation>
+					<xs:documentation>Solar Transients and Space Weather</xs:documentation>
+					<xs:documentation>org_id: 202</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SUSTAIN">
+				<xs:annotation>
+					<xs:documentation>Sustainability</xs:documentation>
+					<xs:documentation>org_id: 203</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TDD">
+				<xs:annotation>
+					<xs:documentation>Technology Development Division</xs:documentation>
+					<xs:documentation>org_id: 146</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TDF">
+				<xs:annotation>
+					<xs:documentation>Technology Development Facility</xs:documentation>
+					<xs:documentation>org_id: 147</xs:documentation>
+					<xs:documentation>org_level_id: 8</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TIIMES">
+				<xs:annotation>
+					<xs:documentation>The Institute for Integrative and Multidisciplinary Earth Studies</xs:documentation>
+					<xs:documentation>org_id: 148</xs:documentation>
+					<xs:documentation>org_level_id: 8</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TNT">
+				<xs:annotation>
+					<xs:documentation>Turbulence Numerics Team</xs:documentation>
+					<xs:documentation>org_id: 149</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TRANSP">
+				<xs:annotation>
+					<xs:documentation>Transportation</xs:documentation>
+					<xs:documentation>org_id: 150</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TREAS">
+				<xs:annotation>
+					<xs:documentation>Treasury Office</xs:documentation>
+					<xs:documentation>org_id: 151</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TS">
+				<xs:annotation>
+					<xs:documentation>Technical Security</xs:documentation>
+					<xs:documentation>org_id: 204</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TSS">
+				<xs:annotation>
+					<xs:documentation>Terrestrial Sciences</xs:documentation>
+					<xs:documentation>org_id: 152</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UA">
+				<xs:annotation>
+					<xs:documentation>Ultrafine Aerosols</xs:documentation>
+					<xs:documentation>org_id: 153</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UCAR">
+				<xs:annotation>
+					<xs:documentation>University Corporation For Atmospheric Research</xs:documentation>
+					<xs:documentation>org_id: 154</xs:documentation>
+					<xs:documentation>org_level_id: 2</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UCARADMIN">
+				<xs:annotation>
+					<xs:documentation>UCAR Administration</xs:documentation>
+					<xs:documentation>org_id: 156</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UCARPRES">
+				<xs:annotation>
+					<xs:documentation>Office of UCAR President</xs:documentation>
+					<xs:documentation>org_id: 157</xs:documentation>
+					<xs:documentation>org_level_id: 3</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UCP">
+				<xs:annotation>
+					<xs:documentation>UCAR Community Programs</xs:documentation>
+					<xs:documentation>org_id: 158</xs:documentation>
+					<xs:documentation>org_level_id: 3</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UCPDIR">
+				<xs:annotation>
+					<xs:documentation>UCP Directorate</xs:documentation>
+					<xs:documentation>org_id: 159</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UNIDATA">
+				<xs:annotation>
+					<xs:documentation>Unidata Program Center</xs:documentation>
+					<xs:documentation>org_id: 160</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UNIVREL">
+				<xs:annotation>
+					<xs:documentation>University Relations</xs:documentation>
+					<xs:documentation>org_id: 175</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UOP">
+				<xs:annotation>
+					<xs:documentation>UCAR Office of Programs</xs:documentation>
+					<xs:documentation>org_id: 161</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UOPDIR">
+				<xs:annotation>
+					<xs:documentation>UOP Directorate</xs:documentation>
+					<xs:documentation>org_id: 162</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="USS">
+				<xs:annotation>
+					<xs:documentation>User Services Section</xs:documentation>
+					<xs:documentation>org_id: 205</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UTLS">
+				<xs:annotation>
+					<xs:documentation>UTLS Studies</xs:documentation>
+					<xs:documentation>org_id: 163</xs:documentation>
+					<xs:documentation>org_level_id: 9</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UTLS and DA">
+				<xs:annotation>
+					<xs:documentation>UTLS and Data Analysis</xs:documentation>
+					<xs:documentation>org_id: 210</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VETS">
+				<xs:annotation>
+					<xs:documentation>Visualization and Enabling Technologies Section</xs:documentation>
+					<xs:documentation>org_id: 164</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VPFA">
+				<xs:annotation>
+					<xs:documentation>VP of FandA Office</xs:documentation>
+					<xs:documentation>org_id: 211</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VSP">
+				<xs:annotation>
+					<xs:documentation>Visiting Scientist Programs</xs:documentation>
+					<xs:documentation>org_id: 165</xs:documentation>
+					<xs:documentation>org_level_id: 4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WACCM">
+				<xs:annotation>
+					<xs:documentation>WACCM</xs:documentation>
+					<xs:documentation>org_id: 166</xs:documentation>
+					<xs:documentation>org_level_id: 6</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WEG">
+				<xs:annotation>
+					<xs:documentation>Web Engineering Group</xs:documentation>
+					<xs:documentation>org_id: 167</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WSAP">
+				<xs:annotation>
+					<xs:documentation>Weather Systems and Assessment Program</xs:documentation>
+					<xs:documentation>org_id: 168</xs:documentation>
+					<xs:documentation>org_level_id: 5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WSST">
+				<xs:annotation>
+					<xs:documentation>Workstation Support Group</xs:documentation>
+					<xs:documentation>org_id: 169</xs:documentation>
+					<xs:documentation>org_level_id: 7</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="YAA">
+				<xs:annotation>
+					<xs:documentation>YAA test</xs:documentation>
+					<xs:documentation>org_id: 170</xs:documentation>
+					<xs:documentation>org_level_id: 8</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:annotation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>Created: 2013-05-06</xs:documentation>
+
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>***** SCHEMA AUTHOR  *****</xs:documentation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger@ucar.edu</xs:documentation>
+
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>*****  COPYRIGHT and LICENSE INFORMATION  *****</xs:documentation>
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>See LICENSE AND COPYRIGHT below.</xs:documentation>
+	</xs:annotation>
+</xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

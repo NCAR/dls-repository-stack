@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.dlese.org/Metadata/dcs/framework-config/dcsFrameworkConfig.xsd">
+  <xmlFormat>assessments</xmlFormat>
+  <schemaInfo>
+    <rootElementName>assessment</rootElementName>
+    <schemaURI>http://www.dlsciences.org/frameworks/assessments/1.00/schemas/assessment.xsd</schemaURI>
+    <paths>
+      <path pathName="id" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="true">/assessment/recordID</path>
+      <path pathName="dateCreated" requiredByCopyRecord="true" requiredByMinimalRecord="true" valueType="date" readOnly="true">/assessment/date/@created</path>
+      <path pathName="title" requiredByCopyRecord="false" readOnly="false" requiredByMinimalRecord="false">/assessment/title</path>
+    </paths>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>2</baseRenderLevel>
+    <firstPage>assessment</firstPage>
+    <rebuildOnStart>true</rebuildOnStart>
+  </editorInfo>
+  <name>Assessments</name>
+</frameworkConfigRecord>

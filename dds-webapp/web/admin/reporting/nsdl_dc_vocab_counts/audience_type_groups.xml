@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: audience_type_groups.xml,v 1.1 2010/04/26 23:34:34 jweather Exp $-->
+<opml xmlns="http://ns.nsdl.org/ncs/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://ns.nsdl.org/ncs/fields http://ns.nsdl.org/ncs/ncs_item/1.02/schemas/fields/nsdlEdLevel.xsd"
+version="2.0">
+	<head>
+		<title>Audience - NSDL (Generated from DC audienceType schema)</title>
+	</head>
+	<body>
+		<outline vocab="Administrator" type="group" text="Administrator"/>
+		<outline vocab="Educator" type="group" text="Administrator"/><!--elementary, middle, secondary, other, university instructors-->
+		<outline vocab="General Public" type="group" text="General Public"/>
+		<outline vocab="Learner" type="group" text="Learner"/>
+		<outline vocab="Parent/Guardian" type="group" text="Parent/Guardian"/>
+		<outline vocab="Professional/Practitioner" type="group" text="Professional/Practitione"/>
+		<outline vocab="Researcher" type="group" text="Researcher"/>
+	</body>
+</opml>

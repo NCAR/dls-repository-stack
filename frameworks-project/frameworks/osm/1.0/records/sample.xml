@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xsi:schemaLocation="http://nldr.library.ucar.edu/metadata/osm http://nldr.library.ucar.edu/metadata/osm/1.0/schemas/osm.xsd" xmlns="http://nldr.library.ucar.edu/metadata/osm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<general>
+		<recordID>String</recordID>
+		<recordDate>1967-08-13</recordDate>
+		<urlOfRecord>ftp://0.AA</urlOfRecord>
+		<pubName type="Poster">Abstracts of Papers of the American Chemical Society</pubName>
+		<volume>String</volume>
+		<issue>String</issue>
+		<pages>String</pages>
+		<title type="Abstract">String</title>
+		<altTitle>String</altTitle>
+		<earlierTitle>String</earlierTitle>
+		<laterTitle>String</laterTitle>
+		<description>String</description>
+		<abstract>String</abstract>
+		<keyword>String</keyword>
+		<OSMsubject>Unknown</OSMsubject>
+		<LCSHsubject>Architecture--1960-1970</LCSHsubject>
+		<asset type="Has format" url="http://www.dlese.org"/>
+		<relation type="Has part" url="ftp://0.AA" title="String" description="String"> </relation>
+	</general>
+	<contributors>
+		<person role="Author">
+			<lastName>String</lastName>
+			<firstName>String</firstName>
+			<middleName>String</middleName>
+			<suffix>String</suffix>
+			<publishingName>String</publishingName>
+			<contactInfo email="String" phone="String">String</contactInfo>
+			<instName>Aeronautical Research Associates of Princeton, Inc.</instName>
+			<instDivision>Acid Deposition Modeling Project (ADMP)</instDivision>
+			<instProject>GATE: GARP Atlantic Tropical Experiment</instProject>
+		</person>
+	</contributors>
+	<classify>
+		<source>String</source>
+		<language>en</language>
+		<status>Accepted</status>
+		<classification>Refereed</classification>
+		<idNumber type="DOI"> </idNumber>
+		<collaboration>UCAR only</collaboration>
+		<NSFfunding>NSF only</NSFfunding>
+		<services>Computing</services>
+	</classify>
+	<technical>
+		<creatingApplication notes="String" name="String" version="String">String</creatingApplication>
+		<requirementsToView>String</requirementsToView>
+		<mimeType>application/ms-excel</mimeType>
+		<size>0.0</size>
+		<dimensions>String</dimensions>
+		<duration>P1Y2M3DT10H30M0S</duration>
+		<archiveDigital>string</archiveDigital>
+	</technical>
+	<coverage>
+		<date type="Created">1967-09-09</date>
+		<dateRange type="Meeting" start="1967-08-13" end="1967-08-13"> </dateRange>
+		<location downLimit="0.0" eastLimit="0" type="Artifact" westLimit="0" northLimit="0" southLimit="0" zUnits="centimeters (cm)" city="String" state="US-AK" upLimit="0.0" country="AD"> </location>
+		<description>String</description>
+	</coverage>
+	<rights>
+		<copyrightNotice url="ftp://0.AA"> </copyrightNotice>
+		<publisherTermsOfUse url="ftp://0.AA"> </publisherTermsOfUse>
+		<access notes="String">Publicly available</access>
+	</rights>
+</record>

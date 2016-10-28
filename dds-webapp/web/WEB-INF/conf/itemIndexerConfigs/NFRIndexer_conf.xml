@@ -1,0 +1,77 @@
+<!-- 
+	This file configures the NFR collections that are indexed and sychronized in the DDS repository.
+	Edit this file and replace the examples below with the desired NFR instance and 
+	configuration for collections. Choose one or more configuration option as desired (may be combined).
+	
+	DDS looks for this file in the location defined by the context parameter 'itemIndexerConfigDir'
+-->
+<NFR_Collections>
+	
+	<!-- The location of the NFR base directory to fetch records from. -->
+	<nfrBaseDir>/path/to/nfr_base_directory</nfrBaseDir><!-- Test instance -->
+
+	<!-- Allow zero records in collections (otherwise fatal error). Anything other than 'true' means no -->
+	<allowZeroRecordsInCollections>true</allowZeroRecordsInCollections>
+	
+	<!-- 	
+		Configure NFR collections that are defined in the NCS.
+		This goes out to the NCS web service to discover the collections and then
+		configures them in the DDS. Items are indexed as nsdl_dc canonical form or
+		in their native format, as indicated below.
+		
+		* ncsSearchApiBaseUrl - Base URL to the NCS instance that manages the collections in the NFR
+		* formatType - One of 'canonical_nsdl_dc' or 'native' 
+		* ncsCollectionStatus - One or more collection status to limit to (optional)
+		* searchQueryConstraint - Query to constrin to (optional) 
+	-->
+	<ncsManagedCollections>
+		<ncsSearchApiBaseUrl>http://ncs.nsdl.org/mgr/services/ddsws1-1</ncsSearchApiBaseUrl>
+		<formatType>canonical_nsdl_dc</formatType>
+		<canonicalNsdlDcRelatedFormats>
+			<relatedFormat>comm_anno</relatedFormat>
+			<relatedFormat>comm_para</relatedFormat>
+			<relatedFormat>lar</relatedFormat>			
+		</canonicalNsdlDcRelatedFormats>
+		
+		<!-- LAR collections have special processing: 
+				- For Search API instance: Set to *true* to create an NSDL DC collection for LAR with a relation connecting the LAR metadata to them.
+					The lar to nsdl_dc format converter should also be disabled (via the DDS context-param setting).
+				- For OAI instance: Set to *false* so only the true LAR collection is present (with transform to nsdl_dc available). -->
+		<makeNsdlDcCollectionForLar>false</makeNsdlDcCollectionForLar>
+		
+		<ncsCollectionStatusFilter>
+			<ncsCollectionStatus>Done</ncsCollectionStatus>
+			<!-- <ncsCollectionStatus>In Progress</ncsCollectionStatus> -->
+		</ncsCollectionStatusFilter>
+		
+		<!-- Remove collections that do not have the proper OAI status for sharing: -->
+		<!-- <searchQueryConstraint>(*:* NOT /key//record/collection/OAIvisibility:(private OR protected))</searchQueryConstraint> -->
+		
+		<!-- Filter to a sub-set of collections... -->
+		<!-- <searchQueryConstraint>
+			(/key//record/collection/setSpec:(ncs-NSDL-COLLECTION-000-003-112-062 OR ncs-NSDL-COLLECTION-000-003-112-029 OR 476082))
+		</searchQueryConstraint> -->		
+	</ncsManagedCollections>
+
+	
+	<!-- ============= Parameters used for normalizing NSDL DC records ============= -->
+
+	<!-- Perform metadata normalization using the following config (comment-out to disable): -->
+	<nsdlDcVocabSelections>http://ns.nsdl.org/ncs/ddsws/1-1/groupsNormal/vocab_selections.xml</nsdlDcVocabSelections>
+	
+	<!-- Write verbose comments into the files about what terms were normalized? -->
+	<writeVerboseComments>false</writeVerboseComments>
+	
+	<!-- ============= Optional parameters for testing purposes ============= -->
+	
+	<!-- The max number of collections DDS will suck in from NFR (remove to use default value) -->
+	<maxNumCollections>30000</maxNumCollections>
+	<!-- The max number of records DDS will suck in from NFR per collection (remove to use default value) -->
+	<maxNumRecordsPerCollection>800000</maxNumRecordsPerCollection>
+	
+	<!-- Generate dup resource URLs for testing? -->
+	<!-- <generateDupResourceUrls>true</generateDupResourceUrls> -->
+	<!-- Omit these IDs when generating dup URLs (comma-separated) -->
+	<!-- <generateDupResourceUrlsOmitIds>ID-123</generateDupResourceUrlsOmitIds> -->	
+		
+</NFR_Collections>

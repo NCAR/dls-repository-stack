@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  $Id: rating.xsd,v 1.1 2009/01/30 21:32:56 ginger Exp $--> 
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  Overview  *****</xsd:documentation>
+		<xsd:documentation>Purpose - controlled vocabulary schema for DLESE metadata frameworks</xsd:documentation>
+		<xsd:documentation>Framework - annotation metadata framework</xsd:documentation>
+		<xsd:documentation>Source - DLESE Program Center (DPC); http://www.dlese.org</xsd:documentation>
+		<xsd:documentation>DLESE - Digital Library for Earth System Education</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:annotation>
+		<xsd:documentation>***** History of change *****</xsd:documentation>
+		<xsd:documentation>2006-02-16: Added: One star, Two star, Three star, Four star, Five star</xsd:documentation>
+		<xsd:documentation>2006-02-16: Removed: Not recommended, Cautiously recommended, Recommended, Highly recommended</xsd:documentation>
+		<xsd:documentation>2005-10-14: Added: Not recommended, Cautiously recommended, Recommended, Highly recommended</xsd:documentation>
+		<xsd:documentation>2005-10-14: Removed: Poor, Fair, Good, Very good and Excellent</xsd:documentation>
+		<xsd:documentation>2005-09-30: Created this controlled vocabulary schema file</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:annotation>
+		<xsd:documentation>*****  Simple Types (alpha order) *****</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:simpleType name="ratingType">
+		<xsd:annotation>
+			<xsd:documentation>*****  ratingType  *****</xsd:documentation>
+			<xsd:documentation>ratingType - a collection defined judgment of a resource where One star is always lower/worse than Five star</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="One star"/>
+			<xsd:enumeration value="Two star"/>
+			<xsd:enumeration value="Three star"/>
+			<xsd:enumeration value="Four star"/>
+			<xsd:enumeration value="Five star"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. </xsd:documentation>
+		
+<xsd:documentation>This schema is free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA </xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

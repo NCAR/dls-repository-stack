@@ -1,0 +1,129 @@
+Change notes and version documentation for the 
+shared DLS Java Libraries (dls-libs)
+
+Note that most dls-libs changes related to a specific application such
+as DDS, DCS, etc. are noted in those project/modules's changes
+document, not here.
+
+Current version @VERSION@
+
+
+DLSLibs is developed by Digital Learning Sciences (DLS) at the
+University Corporation for Atmospheric Research (UCAR)
+with support from the National Science Foundation (NSF).
+http://dls.ucar.edu/  http://www.ucar.edu/  http://nsf.gov/
+-----------------------------------------------------------------------------
+
+Changes in v1.7.0
+
+This version combined the DDS, DCS, Harvest Manager, dlese-tools-project, and frameworks-project
+into a single repository (stack) in GitHub, and removed dependency on joai-project
+
+- Moved code base from Sourceforge dlese-tools-project to GitHub and combined with DDS, DCS, and Harvest Manager
+code bases/modules
+- Renaned 'dlese-toools-project' to 'shared-source'
+- Renamed 'DLESETools' to 'dls-libs' and 'DLESETools.jar' to 'dls-libs.jar'
+- Renamed 'dleseELFunctions.tld' to 'dlsELFunctions.tls'
+- Renamed EL uri from 'http://www.dlese.org/dpc/dds/tags/dleseELFunctions' to 'http://dls.ucar.edu/tags/dlsELFunctions'
+and changed references in the webapps JSPs
+- Renamed 'dcs-project' to 'dcs-webapp'
+- Renamed 'dds-project' to 'dds-webapp'
+- Renamed 'harvest-repository-project' to 'rhm-webapp'
+- Renamed all Java packages from org.dlese.dpc.* to edu.ucar.dls.*
+
+Changes in v1.6.5
+
+- Updated and verified libraries to run under Java 8 and Tomcat 7 (also Java 6,7 and Tomcat 6)
+
+
+Changes in v1.6.4
+
+-Updated to Lucene 3.6 libs (no API changes from 3.5)
+
+
+Changes in v1.6.3
+
+-Applied patch submitted by Timo Proescholdt, which addresses the following:
+--Fixed OutOfMemoryError errors associated with large repositories.
+--Added ability to configure new indexing handlers (instances of XmlFileIndexingWriter) via the servlet config
+--Fixed issues with threads not shutting down properly when the webapp is stopped/reloaded
+
+
+Changes in v1.6.2 (tagged 2012-02-26)
+
+-Updated to Lucene v3.5.0
+
+
+Changes in v1.6.1
+
+-Removed dependency on the Tomcat libs: The project can now be built without a Tomcat installation
+
+Changes in v1.6.0
+
+-All Lucene-related classes have been upgraded to Lucene v3.0.2. Major changes include:
+--Search results are now returned in a new ResultDocList Object instead of a ResultDoc[]
+  array. This provides for more efficient searching (does not require an additional
+  loop over results as before) and expandability (methods can be added to the ResultDocList
+  to support future fuctnionality) and better utilizes the built-in Lucene classes
+  for search than before (TopDocs, Sort, etc.)
+--Uses Lucene Sort class for sorting at search time. Replaces logic that sorted
+  results after the search (deprecated but still supported for backward-compatibility)
+
+- Final previous version was tagged in CVS with 'lucene_2_4_final_version'
+
+  
+Changes in v1.5.2
+
+-Tested and added build support for Tomcat 6, Java 6
+
+
+Changes in v1.5.1
+
+-Added a DDS toolkit package for reading/writing to a DDS repository
+
+
+Changes in v1.5.0 (tagged 3/20/2009)
+
+-With this release the license has changed from GPL to Educational Community License v1.0.
+
+
+Changes in v1.4.9 (tagged 3/20/2009)
+
+-This is the final version under GPL
+
+-New functionality for NCS, DDS, jOAI - see those projects' notes
+
+-New EL functions
+
+
+Changes in v1.4.8
+
+-upgraded to lucene v2.4.0
+
+-upgraded to dom4j v1.6.1 (still compiles with dom4j 1.4)
+
+-Added a configuration framework for specifying search fields for XML formats. 
+Standard search fields (id, url, title, description) and custom search fields 
+can be defined in a configuration file for a given XML format.
+
+-Added default search fields for all xml formats derived from the xPath to each 
+element and attribute in the XML instance document
+
+
+
+Changes in v1.4.6
+
+-Updated Discovery Services, Repository Manager and Indesing routines
+for Lucene v 2.0.0
+
+
+Changes in v1.4.5
+
+-Release corresponds with dds-project v3.3.7 and oai-project v3.0.9
+(see CHANGES.txt in those projects for details).
+
+
+Changes in v1.4.4
+
+-Updated the DLESE EL functions library TLD documentation
+and created an XSL sheet to render the functions in JavaDoc

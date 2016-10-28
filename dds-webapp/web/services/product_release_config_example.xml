@@ -1,0 +1,33 @@
+<productReleases>
+	<package id="joai">
+		<name>jOAI Software</name>
+		<description>
+			<![CDATA[ 
+			jOAI is a free Java-based OAI software application developed by DLESE 
+			that provides a simple way to harvest or provide metadata using the
+			<a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative Protocol for Metadata Harvesting</a> (OAI-PMH).
+			]]>
+		</description>
+		<release version="3.0.2">
+			<notes>Optional notes here...</notes>
+			<link>
+				<name>Download jOAI Binary</name>
+				<url>/jsp/download/download.jsp?url=/downloads/joai/v3.0.2/joai_v3.0.2.zip&amp;package=jOAI+v3.0.2+Binary</url>
+			</link>
+			<link>
+				<name>Download jOAI Source</name>
+				<url>/jsp/download/download.jsp?url=/downloads/joai/v3.0.2/joai_v3.0.2_source.zip&amp;package=jOAI+v3.0.2+Source</url>
+			</link>
+		</release>	
+		<release version="3.0.1">
+			<link>
+				<name>Download jOAI Binary</name>
+				<url>/jsp/download/download.jsp?url=/downloads/joai/v3.0.1/joai_v3.0.1.zip&amp;package=jOAI+v3.0.1+Binary</url>
+			</link>
+			<link>
+				<name>Download jOAI Source</name>
+				<url>/jsp/download/download.jsp?url=/downloads/joai/v3.0.1/joai_v3.0.1_source.zip&amp;package=jOAI+v3.0.1+Source</url>
+			</link>		
+		</release>
+	</package>
+</productReleases>

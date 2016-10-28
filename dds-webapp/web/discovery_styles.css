@@ -1,0 +1,440 @@
+/* Define the box(es) containing page content: */
+.dlese_pageContentHighBanner {
+	position: absolute; 
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	left: 0px;
+}
+
+/* VOCABULARY FLYOUT STYLES: */
+.vocabFlyout { 
+	position: absolute; 
+	background-color: #FCFCFC; 
+	font-family: arial, helvetica, sans-serif; 
+	margin: 0px; 
+	padding-top: 2px; 
+	padding-bottom: 3px; 
+	padding-left: 6px; 
+	padding-right: 3px;
+	border: 2px outset #DDDDDD; 
+	z-index: 200; 
+}
+.vocabDropdown {
+	position: relative;
+	margin-left: 10px;
+}
+.vocabButtonsDiv {
+	position: absolute; 
+	left: 0px;
+	top: 0px;
+	z-index: 1000;
+	margin: 0px;
+	padding: 0px;
+}
+.cursorPointer {
+	cursor: pointer;
+}
+.cursorHelp {
+	cursor: help;
+}
+.cursorCrosshair {
+	cursor: crosshair;
+}
+.searchForm {
+	padding: 0px; 
+	margin: 0px;
+}
+.searchTipsDiv {
+	padding-right: 10px; 
+	margin-top: 26px;
+}
+.dlese_SearchTipsImg { 
+	top: 15px; 
+	left: 5px; 
+	position: relative; 
+	margin: 0px; 
+	padding: 0px; 
+}
+.dlese_SearchTipsImgDDS { 
+	top: 9px; 
+	left: 5px; 
+	position: relative; 
+	margin: 0px; 
+	padding: 0px; 
+}
+.homeEtcLinks {
+	padding-right: 10px; 
+	margin-top: 6px; 
+	line-height: 1em;
+	font-size: 0.85em;	
+	z-index: 1000;
+}
+.homeEtcLinks A:link {
+	color: #ffffff; 
+}
+.homeEtcLinks A:visited {
+	color: #ffffff; 
+}
+.searchTable {
+	z-index: 1000;
+}
+.queryBox {
+	width: 305px; 
+	position: absolute; 
+	top: 63px; 
+	left: 125px;
+}
+.testRadio {
+	padding: 2px;
+	border: 1px solid black;
+	font-size: 0.8em;
+	position: absolute; 
+	top: 47px; 
+	left: 600px;
+	background-color: #ffffff;	
+}
+.testRadioFrontPage {
+	padding: 2px;
+	border: 1px solid black;
+	font-size: 0.8em;
+	position: absolute; 
+	top: 206px; 
+	left: 0px;
+	background-color: #ffffff;
+}
+.startSearchButton {
+	position: absolute; 
+	top: 61px; 
+	left: 604px;
+	z-index: 1000;
+	cursor: pointer;
+}
+.searchOverSelect {
+	position: absolute; 
+	top: 63px; 
+	left: 436; 
+	z-index: 2;
+}
+.vocabGradeLevelImg {
+	position: absolute; 
+	top: 91px; 
+	left: 125px; 
+	z-index: 2;
+}
+.vocabResourceTypeImg {
+	position: absolute; 
+	top: 91px; 
+	left: 222px; 
+	z-index: 2;
+}
+.vocabCollectionsImg {
+	position: absolute; 
+	top: 91px; 
+	left: 333px; 
+	z-index: 2;
+}
+.vocabGradeLevelImgFrontPage {
+	position: absolute; 
+	top: 331px; 
+	left: 47px;
+	z-index: 2;
+}
+.vocabResourceTypeImgFrontPage {
+	position: absolute; 
+	top: 331px; 
+	left: 159px; 
+	z-index: 2;
+}
+/* Flyout/dropdown DIVs: */
+.vocabFlyout {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 0.8em;
+}
+.vocabDescription { 
+	background-color: #FFF8D8;
+	font-family: arial, helvetica, sans-serif;
+	margin: 0px; 
+	padding-top: 3px; 
+	padding-bottom: 3px; 
+	padding-left: 4px; 
+	padding-right: 4px;
+	position: absolute;	
+	border: 1px outset #6F6848;
+	visibility: hidden;
+	z-index: 1000;
+	width: 300px;
+}
+.vocabLabel {
+	font-size: 0.9em;
+}
+/* "Clear all" and "Select all" links: */
+.vocabSelectClearLinksTopLevel {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 0.8em;
+	color: #000000;
+	padding-left: 1px;
+	padding-right: 1px;
+	cursor: pointer;
+}
+.vocabSelectClearLinksTopLevel:link { 
+	color: #000000;
+	text-decoration: none;
+}
+.vocabSelectClearLinksTopLevel:visited { 
+	color: #000000;
+	text-decoration: none;
+}
+.vocabSelectClearLinksTopLevel:active { 
+	color: #000077;
+	text-decoration: none;
+}
+.vocabSelectClearLinksTopLevel:hover { 
+	color: #000077;
+	text-decoration: underline;
+}
+.vocabSelectClearLinks {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 0.8em;
+	color: #000000;
+	padding-left: 1px;
+	padding-right: 1px;
+	cursor: pointer;
+	visibility: hidden;
+}
+.vocabSelectClearLinks:link { 
+	color: #000000;
+	text-decoration: underline;
+}
+.vocabSelectClearLinks:visited { 
+	color: #000000;
+	text-decoration: underline;
+}
+.vocabSelectClearLinks:active { 
+	color: #000077;
+	text-decoration: underline;
+}
+.vocabSelectClearLinks:hover { 
+	color: #000077;
+	text-decoration: underline;
+}
+/* Links that toggle vocab checkboxes: */
+.listToggleLink {
+	text-decoration: none;
+	color: #000000;
+	cursor: pointer;
+}
+.listToggleLink:link {
+	text-decoration: none;
+	color: #000000;
+}
+.listToggleLink:visited {
+	text-decoration: none;
+	color: #000000;
+}
+.listToggleLink:hover {
+	text-decoration: none;
+	color: #000099;
+}
+
+/* Front page Earth links (K-12 Corner, etc.): */
+.earthLinks {
+	font-size: 1.4em; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif;
+}
+.footerLinks {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.yourSelectionsNoscriptLabel {
+	/* So graphical browsers with scripting turned off won't see it (they'll see the graphic), but
+		text readers will: */
+	position: relative;
+	display: none;
+	z-index: 1000;
+}
+.yourSelectionsCriteria {
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	display: block;
+	visibility: visible;
+	padding-top: 0px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0px;
+	color: #0000bb;
+	height: 17px;
+	overflow: hidden;
+	z-index: 1000;
+	position: absolute; 
+	top: 117px; 
+	left: 127px;
+}
+.clearAllButton {
+	position: absolute;
+	visibility: hidden;
+	top: 91px; 
+	left: 517px;
+	z-index: 2100;
+}
+
+/* Search results list styles: */
+.pageTitle {
+	background-color: #FFFFFF;
+	color: #00008b; /* #32397E; */
+	font-family: arial, helvetica, sans-serif;
+	margin: 0px;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	padding-left: 0px; 
+	padding-right: 0px;
+	width: 100%;
+}
+.pageTitle TD {
+	background-color: #FFFFFF;
+	color: #00008b;
+	font-family: arial, helvetica, sans-serif;
+	margin: 0px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-left: 6px; 
+	padding-right: 5px;
+}
+.pageTitleNoTable {
+	background-color: #FFFFFF;
+	color: #00008b;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 6px; 
+	padding-right: 5px;
+}
+.breadcrumbBanner {
+	width: 100%;
+	border: 1px solid gray;
+}
+.breadcrumbs {
+	background-color: #F8F0E6;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 6px; 
+	padding-right: 0px;
+	margin: 0px;
+}
+.breadcrumbLink {
+	color: #000000;
+}
+.breadcrumbLink:link {
+	color: #000000;
+}
+.breadcrumbLink:visited {
+	color: #000000;
+}
+.blueBand {
+	background-color: #E8ECF4;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px; 
+	padding-right: 5px;
+}
+.pagingLink {
+	font-weight: bold;
+	text-decoration: underline;
+	margin-left: 2px;
+	margin-right: 2px;
+	cursor: pointer;
+}
+.pagingThisPage {
+	font-weight: normal;
+	text-decoration: none;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.resourceTitle {
+	text-decoration: none; 
+	color: #000000;
+	font-size: 1.05em;
+	font-weight: bold;
+	margin-bottom: 0px; 
+	padding-bottom: 0px;
+	margin-left: 2px;
+	padding: 0px;
+}
+.resourceTitle:link {
+	color: #000000;
+	text-decoration: none; 
+}
+.resourceTitle:visited {
+	color: #000000;
+	text-decoration: none; 
+}
+.resourceTitle:hover {
+	color: #000000;
+	text-decoration: none; 
+}
+.resourceURL { 
+	font-family: arial, helvetica, sans-serif; 
+	margin-bottom: 2px;
+	margin-top: 0px;
+	margin-left: 4px;
+	font-size: 0.9em;D
+}
+.searchResultDescription { 
+	font-family: arial, helvetica, sans-serif; 
+	margin-top: 4px;
+	margin-left: 6px;
+	margin-bottom: 4px;
+}
+.searchResultValues { 
+	margin-top: 0px;
+	margin-bottom: 3px;
+	margin-left: 15px;	
+	margin-right: 7px;
+	text-indent: -9px;
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 95%;
+	padding: 0px;
+} 
+.histogramHeader {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.dleseReviewedHeader {
+	font-size: 0.9em; 
+	font-weight: normal;
+}
+.navButtonsNoscript {
+	margin-top: 13px;
+}
+.vocabGrNoscript {
+	position: absolute;
+	top: 91px;
+	left: 125px;
+}
+.vocabReNoscript {
+	position: absolute;
+	top: 91px;
+	left: 222px;
+}
+.vocabKyNoscript {
+	position: absolute;
+	top: 91px;
+	left: 333px;
+}
+.vocabCsNoscript {
+	position: absolute;
+	top: 91px;
+	left: 427px;
+}
+

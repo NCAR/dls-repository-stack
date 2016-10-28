@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: topic-no-fields-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/news-opps/1.0.00/topic.xsd">
+	<field name="Topic" language="en-us" metaFormat="news_opps" metaVersion="1.0.00" path="/news-oppsRecord/topics/topic">
+		<definition>a broad subject area that the news, event or opportunity is about</definition>
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="Topic" levelDeftn="a broad subject area that the news, event or opportunity is about"/>
+		</vocabLevels>
+		<terms>
+			<termAndDeftn vocab="Earth system science">the study of processes, states, cycles and interactions among the atmosphere, biosphere, geosphere, hydrosphere and space from a global to local perspective, across time scales and using physical and chemical laws; includes Earth data, history, philosophy and policy issues related to Earth system science</termAndDeftn>
+
+			<termAndDeftn vocab="Education">the study of methods of teaching, learning and pedagogy or the provision of a structured learning environment at all educational levels, both formal and informal; may also include educational data</termAndDeftn>
+
+			<termAndDeftn vocab="Engineering">the application of science and mathematics by which properties of matter and the sources of energy in nature are made useful to people</termAndDeftn>
+
+			<termAndDeftn vocab="General interest">noteworthy information appropriate for any community members; generally is not specific to science, engineering, mathematics, technology, education or research</termAndDeftn>
+
+			<termAndDeftn vocab="General science">the study of processes, states, cycles and interactions not related to Earth system science; often includes chemistry, data, physics or biology; includes history, philosophy and policy issues related to general science</termAndDeftn>
+
+			<termAndDeftn vocab="Mathematics">the science of numbers, their operations, interrelations, combinations, generalizations and abstractions</termAndDeftn>
+
+			<termAndDeftn vocab="Research">the investigation of relevant topics, problems, issues or events in order to advance knowledge of a field</termAndDeftn>
+
+			<termAndDeftn vocab="Technology">the study or use of information processes or knowledge through technical means; often includes computer science, information science, measuring devices, image processing, tool use, interfaces</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-08-17">Choose at least one topic term.</practice>
+				<practice status="current" originDate="2005-01-31" link1="Education" style1="bold" link2="Research" style2="bold">For faculty positions (e.g. assistant professor in an atmospheric science department), check to see if both Education and Research are applicable topics.</practice>				
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2004-08-17">Don't choose more than 1-2  topics. Most items are adequately described by one to perhaps two appropriate topics.</practice>
+			</donts>
+
+			<otherPractices>
+				<otherPractice header="More information about using the General interest term">
+					<practice status="current" originDate="2004-08-17" link1="General interest" style1="bold">If the item seems to fit many topic areas, choose General interest as the topic area.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>Education</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

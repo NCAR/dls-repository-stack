@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: instName.xsd,v 1.5 2010/04/15 14:43:43 ginger Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xs:annotation>
+		<xs:documentation>****************************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA PUPOSE  and INTENT  *****</xs:documentation>
+		<xs:documentation>***************************************************</xs:documentation>
+		<xs:documentation>Purpose: Controlled vocabulary for institutional names as currently used by the NCAR Library.</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>**********************************************************</xs:documentation>
+		<xs:documentation>*****  HISTORY OF IMPORTANT CHANGES  *****</xs:documentation>
+		<xs:documentation>**********************************************************</xs:documentation>
+	<xs:documentation>2010-04-15: Added: Wiley &amp; Sons, Inc.; Observatoirs de Gen&#232;ve</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>None</xs:documentation>
+	</xs:annotation>
+	
+
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  SIMPLE TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="instNameType">
+		<xs:annotation>
+			<xs:documentation>***** instNameType  *****</xs:documentation>
+			<xs:documentation>Valid values for the element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="A. Deepak Publishing"/>
+			<xs:enumeration value="Aase Grafiske A/S"/>
+			<xs:enumeration value="Academic Press"/>
+			<xs:enumeration value="Adler and Robin Books, Inc"/>
+			<xs:enumeration value="ADS"/>
+			<xs:enumeration value="Advances in Geosciences"/>
+			<xs:enumeration value="Aeronautical Research Associates of Princeton, Inc."/>
+			<xs:enumeration value="Air Force Cambridge Research Laboratories"/>
+			<xs:enumeration value="Amer Assoc Artificial Intell"/>
+			<xs:enumeration value="American Assoc. of Petroleum Geologists"/>
+			<xs:enumeration value="American Association for Aerosol Research"/>
+			<xs:enumeration value="American Association for the Advancement of Science"/>
+			<xs:enumeration value="American chemical society"/>
+			<xs:enumeration value="American Geophysical Union"/>
+			<xs:enumeration value="American Meteorological Society"/>
+			<xs:enumeration value="American Society for Microbiology"/>
+			<xs:enumeration value="American Society for Photobiology"/>
+			<xs:enumeration value="American Society of Testing and Materials"/>
+			<xs:enumeration value="American Statistical Association"/>
+			<xs:enumeration value="Arctic Institute of North America, Washington"/>
+			<xs:enumeration value="Argonne National Laboratory"/>
+			<xs:enumeration value="Aspen Global Change Institute"/>
+			<xs:enumeration value="Astronomical Society of the Pacific"/>
+			<xs:enumeration value="Atlantic Oceanographic and Meteorological Laboratories"/>
+			<xs:enumeration value="Australian Meteorological and Oceanographical Society"/>
+			<xs:enumeration value="Berkeley Technical and Electronic Information Department"/>
+			<xs:enumeration value="Birkhauser"/>
+			<xs:enumeration value="Blackwell Publishing"/>
+			<xs:enumeration value="Blackwell Science"/>
+			<xs:enumeration value="Bureau of Meteorology"/>
+			<xs:enumeration value="Bureau of Meteorology Research Centre"/>
+			<xs:enumeration value="Butterworth Publishers"/>
+			<xs:enumeration value="California Environmental Protection Agency"/>
+			<xs:enumeration value="Cambridge University Press"/>
+			<xs:enumeration value="Canada Institute"/>
+			<xs:enumeration value="Chapman and Hall / CRC"/>
+			<xs:enumeration value="Climate Research Unit"/>
+			<xs:enumeration value="Climate Risk Solutions, Inc."/>
+			<xs:enumeration value="Clivar Project Office"/>
+			<xs:enumeration value="Colorado Associated University Press"/>
+			<xs:enumeration value="Colorado State University"/>
+			<xs:enumeration value="Computing Research Association"/>
+			<xs:enumeration value="Consiglio Nazionale Delle Ricerche (CNR)"/>
+			<xs:enumeration value="Copernicus"/>
+			<xs:enumeration value="Copernicus Publications"/>
+			<xs:enumeration value="Coral Reef Monitoring Network"/>
+			<xs:enumeration value="Cornell University"/>
+			<xs:enumeration value="COSPAR Scientific Assembly, Canada"/>
+			<xs:enumeration value="CRC Press"/>
+			<xs:enumeration value="CSIRO Publishing, Leiden"/>
+			<xs:enumeration value="CSREA Press"/>
+			<xs:enumeration value="D. Reidel Publishing Co."/>
+			<xs:enumeration value="D. Van Nostrand Company, Inc."/>
+			<xs:enumeration value="Danish Meteorlogical Institute"/>
+			<xs:enumeration value="Department of Energy"/>
+			<xs:enumeration value="Department of Ocean Development"/>
+			<xs:enumeration value="Department of Science and Technology"/>
+			<xs:enumeration value="Earthscan Publications Ltd"/>
+			<xs:enumeration value="EDP Sciences"/>
+			<xs:enumeration value="Educause"/>
+			<xs:enumeration value="Edward Elgar Publishing Ltd"/>
+			<xs:enumeration value="Elsevier Ltd."/>
+			<xs:enumeration value="Elsevier Press"/>
+			<xs:enumeration value="Elsevier Science"/>
+			<xs:enumeration value="Emory University Digital Library Publications"/>
+			<xs:enumeration value="Entec UK Limited"/>
+			<xs:enumeration value="European Centre for Medium Range Weather Forecasts (ECMWF)"/>
+			<xs:enumeration value="European Centre for Medium-Range Weather Forecasts"/>
+			<xs:enumeration value="GARP Publication series No. 23, ICSU/WMO, Geneva"/>
+			<xs:enumeration value="Gordon and Breach Publishing"/>
+			<xs:enumeration value="Gordon and Breach Science Publishers"/>
+			<xs:enumeration value="Hauser Research and Engineering Company"/>
+			<xs:enumeration value="Hawaii Institute of Geophysics"/>
+			<xs:enumeration value="Hemisphere Publishing Corporation"/>
+			<xs:enumeration value="Hungarian Meteorologial Service"/>
+			<xs:enumeration value="IAHS Press"/>
+			<xs:enumeration value="IBM"/>
+			<xs:enumeration value="ICFAI University Press"/>
+			<xs:enumeration value="ICSU/WMO"/>
+			<xs:enumeration value="IIASA"/>
+			<xs:enumeration value="IMAREST Publications"/>
+			<xs:enumeration value="Institute for Naval Oceanography"/>
+			<xs:enumeration value="Institute of Physics and IOP Publishing"/>
+			<xs:enumeration value="International CLIVAR Project Office"/>
+			<xs:enumeration value="International Geographical Union"/>
+			<xs:enumeration value="Interscience Publishers"/>
+			<xs:enumeration value="Island Press"/>
+			<xs:enumeration value="ISMG ISCU/WMO"/>
+			<xs:enumeration value="John Wiley and Sons"/>
+			<xs:enumeration value="Kennedy Space Center available from NASA Center for Airspace Information"/>
+			<xs:enumeration value="Kluwer Academic Publishers"/>
+			<xs:enumeration value="Kluwer Academic/Plenum Publishers"/>
+			<xs:enumeration value="Kluwer, Dordrecht"/>
+			<xs:enumeration value="Lawrence Livermore National Laboratory"/>
+			<xs:enumeration value="Los Alamos National Laboratory"/>
+			<xs:enumeration value="Los Alamos National Laboratory (LANL)"/>
+			<xs:enumeration value="Lulu.com"/>
+			<xs:enumeration value="Macmillan"/>
+			<xs:enumeration value="Martinus Nijhoff Publishers, Dordrecht"/>
+			<xs:enumeration value="Mathematisches Forschungsinstitut Oberwolfach"/>
+			<xs:enumeration value="McGraw-Hill"/>
+			<xs:enumeration value="Memorie S.A.It."/>
+			<xs:enumeration value="Merrill Publishing Company"/>
+			<xs:enumeration value="Meteorological Society of Japan"/>
+			<xs:enumeration value="Military Academy of Technology"/>
+			<xs:enumeration value="MIT Press"/>
+			<xs:enumeration value="Monash University"/>
+			<xs:enumeration value="NASA Conference Publication Series"/>
+			<xs:enumeration value="NASA Goddard Space Flight Center (GSFC)"/>
+			<xs:enumeration value="NASA Langley Research Center"/>
+			<xs:enumeration value="NASA-Marshall Space Flight Center"/>
+			<xs:enumeration value="National Academies Press"/>
+			<xs:enumeration value="National Aeronautics and Space Administration"/>
+			<xs:enumeration value="National Center for Atmospheric Research"/>
+			<xs:enumeration value="National Center for Atmospheric Research (NCAR)"/>
+			<xs:enumeration value="National Center for Atmospheric Research in association with Colorado Associated University Press"/>
+			<xs:enumeration value="National Center for Medium Range Weather Forecasting"/>
+			<xs:enumeration value="National Climatic Center (NCC)"/>
+			<xs:enumeration value="National Council of Science and Environment"/>
+			<xs:enumeration value="National Oceanic and Atmospheric Administration (NOAA)"/>
+			<xs:enumeration value="National Research Council"/>
+			<xs:enumeration value="National Reserach Council"/>
+			<xs:enumeration value="National Renewable Energy Laboratory"/>
+			<xs:enumeration value="National Science Foudation"/>
+			<xs:enumeration value="National Taiwan University (NTU) Department of Atmospheric Sciences 50th Anniversary book"/>
+			<xs:enumeration value="National Technical Information Service"/>
+			<xs:enumeration value="National Weather Records Center (NWRC)"/>
+			<xs:enumeration value="Nature Publishing Group"/>
+			<xs:enumeration value="New Age International Publishers"/>
+			<xs:enumeration value="New Age International, Ltd."/>
+			<xs:enumeration value="Nielsen Norman Group"/>
+			<xs:enumeration value="NOAA"/>
+			<xs:enumeration value="NOAA Office of Climate Observation"/>
+			<xs:enumeration value="NOAA/NCAR"/>
+			<xs:enumeration value="Northeast Climate Impacts Assessment"/>
+			<xs:enumeration value="Northwestern University"/>
+			<xs:enumeration value="Norwegian Institute for Air Research"/>
+			<xs:enumeration value="Observatoirs de Gen&#232;ve"/>
+			<xs:enumeration value="OceanObs'09"/>
+			<xs:enumeration value="Odile Jacob Publishing"/>
+			<xs:enumeration value="Office of Naval Research"/>
+			<xs:enumeration value="Office of Naval Research, Marine Meteorology Program"/>
+			<xs:enumeration value="Optical Society of America"/>
+			<xs:enumeration value="Oxford University Press"/>
+			<xs:enumeration value="PDPTA '97"/>
+			<xs:enumeration value="Peking University Press"/>
+			<xs:enumeration value="Pergamon Publishing"/>
+			<xs:enumeration value="Pew Center on Global Climate Change"/>
+			<xs:enumeration value="Philosophical Transactions of the Royal Society A"/>
+			<xs:enumeration value="Pineridge Press"/>
+			<xs:enumeration value="Plenum Press"/>
+			<xs:enumeration value="Praeger"/>
+			<xs:enumeration value="Praxis Publishing Ltd."/>
+			<xs:enumeration value="Raven Industries, Inc."/>
+			<xs:enumeration value="Reidel"/>
+			<xs:enumeration value="Risk Prediction Initiative"/>
+			<xs:enumeration value="Risk Prediction Initiative, Bermuda Biological Station for Research"/>
+			<xs:enumeration value="Riso National Laboratory"/>
+			<xs:enumeration value="Rough Guides"/>
+			<xs:enumeration value="Routledge"/>
+			<xs:enumeration value="Royal Netherlands Academy of Arts and Sciences,  Amsterdam"/>
+			<xs:enumeration value="SAGE Publications"/>
+			<xs:enumeration value="Scribner"/>
+			<xs:enumeration value="Scripps Institution of Oceanography"/>
+			<xs:enumeration value="Sencon Environmental Systems"/>
+			<xs:enumeration value="SIAM"/>
+			<xs:enumeration value="Sierra Club Books"/>
+			<xs:enumeration value="Simon and Schuster, Inc."/>
+			<xs:enumeration value="Society for Sedimentary Geology"/>
+			<xs:enumeration value="Society of Photo-Optical Instrumentation Engineers"/>
+			<xs:enumeration value="Solstice Publications"/>
+			<xs:enumeration value="Springer"/>
+			<xs:enumeration value="Springer Berlin/Heidelberg"/>
+			<xs:enumeration value="Springer Netherlands"/>
+			<xs:enumeration value="Springer Science and Business Media, Inc."/>
+			<xs:enumeration value="Springer-Dordrecht"/>
+			<xs:enumeration value="Springer-Praxis"/>
+			<xs:enumeration value="Springer-Verlag"/>
+			<xs:enumeration value="State University of New York at Stony Brook"/>
+			<xs:enumeration value="Taylor &amp; Francis"/>
+			<xs:enumeration value="TeraGrid"/>
+			<xs:enumeration value="Terrapub"/>
+			<xs:enumeration value="The American Astronomical Society"/>
+			<xs:enumeration value="The American Physical Society"/>
+			<xs:enumeration value="The American Society of Tropical Medicine and Hygiene"/>
+			<xs:enumeration value="The Climate Change Science Program and the Subcommittee on Global Change Research"/>
+			<xs:enumeration value="The Meteorology Press (in Chinese)"/>
+			<xs:enumeration value="The Royal Society Publishing"/>
+			<xs:enumeration value="The Science and Technology Press (in Chinese)"/>
+			<xs:enumeration value="The Society for Research and Education in Earth System Science"/>
+			<xs:enumeration value="The University of Chicago Press"/>
+			<xs:enumeration value="The World Bank"/>
+			<xs:enumeration value="Time-Life Books"/>
+			<xs:enumeration value="Tsinghua University Press"/>
+			<xs:enumeration value="Tudor Rose"/>
+			<xs:enumeration value="U.S. Air Force Flight Dynamics Laboratory"/>
+			<xs:enumeration value="U.S. Bureau of Reclamation"/>
+			<xs:enumeration value="U.S. CCSP Synthesis and Assessment Team"/>
+			<xs:enumeration value="U.S. Department of Defense (DOD)"/>
+			<xs:enumeration value="U.S. Weather Research Program (USWRP)"/>
+			<xs:enumeration value="UCAR Office of Programs (UOP)"/>
+			<xs:enumeration value="UCAR/NCAR"/>
+			<xs:enumeration value="UCLA Institute of the Environment"/>
+			<xs:enumeration value="United Nationals University Press"/>
+			<xs:enumeration value="United Nations University Press"/>
+			<xs:enumeration value="United Nations Environment Programme"/>
+			<xs:enumeration value="United States Geological Survey"/>
+			<xs:enumeration value="University Corporation for Atmospheric Research (UCAR)"/>
+			<xs:enumeration value="University Corporation for Atmospheric Research, Boulder, CO"/>
+			<xs:enumeration value="University of California at Berkeley"/>
+			<xs:enumeration value="University of Chicago, Cloud Physics Laboratory"/>
+			<xs:enumeration value="University of Colorado"/>
+			<xs:enumeration value="University of Colorado at Boulder"/>
+			<xs:enumeration value="University of Hawaii"/>
+			<xs:enumeration value="University of Illinois Press"/>
+			<xs:enumeration value="University of Maryland, College Park, MD"/>
+			<xs:enumeration value="University of Miami"/>
+			<xs:enumeration value="University of Oxford"/>
+			<xs:enumeration value="University of Stockholm, Department of meteorology/International Meteorological Institute in Stockho"/>
+			<xs:enumeration value="University of Wisconsin Sea Grant Institute"/>
+			<xs:enumeration value="University Science Books"/>
+			<xs:enumeration value="US Environmental Protection Agency"/>
+			<xs:enumeration value="US JGOFS Planning Office"/>
+			<xs:enumeration value="US Naval Postgraduate School"/>
+			<xs:enumeration value="Van Nostrand"/>
+			<xs:enumeration value="VDM Verlag"/>
+			<xs:enumeration value="Victoria University Press"/>
+			<xs:enumeration value="Vieweg &amp; Sohn, Braunshweig, F.R.G"/>
+			<xs:enumeration value="Vieweg Publishing"/>
+			<xs:enumeration value="Water Research Foundation"/>
+			<xs:enumeration value="WCRP"/>
+			<xs:enumeration value="Western Behavioral Sciences Institute"/>
+			<xs:enumeration value="Westview Press"/>
+			<xs:enumeration value="W. H. Freeman"/>
+			<xs:enumeration value="Wiley &amp; Sons, Inc."/>
+			<xs:enumeration value="Wiley InterScience"/>
+			<xs:enumeration value="Wiley Periodicals, Inc"/>
+			<xs:enumeration value="Will Print"/>
+			<xs:enumeration value="WMO/CAS/TMRP Committee on Climate Change Assessment"/>
+			<xs:enumeration value="WOCE International Project Office"/>
+			<xs:enumeration value="World Climate Research Programme"/>
+			<xs:enumeration value="World Climate Research Project"/>
+			<xs:enumeration value="World Meteorological Organization"/>
+			<xs:enumeration value="World Meteorological Organization Global Ozone Research and Monitoring Project"/>
+			<xs:enumeration value="World Scientific"/>
+			<xs:enumeration value="Yale University Press"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:annotation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>Created: 2008-09-05</xs:documentation>
+		<xs:documentation>Last Modified 2009-12-18</xs:documentation>
+
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>***** SCHEMA AUTHOR  *****</xs:documentation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger@ucar.edu</xs:documentation>
+
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>*****  COPYRIGHT and LICENSE INFORMATION  *****</xs:documentation>
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>See LICENSE AND COPYRIGHT below.</xs:documentation>
+	</xs:annotation>
+</xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

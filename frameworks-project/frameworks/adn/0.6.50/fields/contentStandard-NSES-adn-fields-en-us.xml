@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: contentStandard-NSES-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/contentStandard.xsd">
+	<field name="Content standard - science - National Science Education Standards (NSES)" id="cs" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/educational/contentStandards/contentStandard">
+		<definition>a vision of a scientifically literate populace by outlining what students need to know, understand, and be able to do to be scientifically literate at different grade levels</definition>
+<!--a level of achievement determined by a professional group to which learners are expected to aspire too-->
+		<vocabLevels number="4">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="NSES">National Science Education Standards</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="2" levelName="Grade range" levelDeftn="the set of grade levels to which the standard applies">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="K-4">kindergarten, first grade, second grade, third grade and fourth grade</levelTermAndDeftn>
+					<levelTermAndDeftn term="5-8">fifth grade, sixth grade, seventh grade and eighth grade</levelTermAndDeftn>
+					<levelTermAndDeftn term="9-12">high school grades nine, ten, eleven and twelve</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="3" levelName="Standard" levelDeftn="a named and lettered level of achievement to which learners are expected to aspire">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="Content Standard A Science as Inquiry Standards">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Content Standard B Physical Science Standards">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Content Standard C Life Science Standards">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Content Standard D Earth and Space Science Standards">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Content Standard E Science and Technology Standards">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Content Standard F Science in Personal and Social Perspectives Standards">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Content Standard G History and Nature of Science Standards">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Unifying Concepts and Processes Standards">self-explanatory</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>
+			
+			<levelAndDeftn level="4" levelName="Concept" levelDeftn="the high-level topic area addressed by the standard; see the allowed combination of terms below; the concept part of the term is the phrase after the last colon"/>
+		</vocabLevels>
+
+		<terms>
+			<termAndDeftn vocab="NSES:5-8:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" id="0i">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard A Science as Inquiry Standards:Understanding about scientific inquiry" id="0j">self-explanatory</termAndDeftn>
+		
+
+			<termAndDeftn vocab="NSES:5-8:Content Standard B Physical Science Standards:Motion and forces" id="0k">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard B Physical Science Standards:Properties and changes of properties in matter" id="0l">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard B Physical Science Standards:Transfer of energy" id="0m">self-explanatory</termAndDeftn>
+	
+
+			<termAndDeftn vocab="NSES:5-8:Content Standard C Life Science Standards:Diversity and adaptations of organisms" id="0n">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard C Life Science Standards:Population and ecosystems" id="0o">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard C Life Science Standards:Regulation and behavior" id="0p">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard C Life Science Standards:Reproduction and heredity" id="0q">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard C Life Science Standards:Structure and function in living systems" id="0r">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth in the solar system" id="0s">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth's history" id="0t">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Structure of the earth system" id="0u">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:5-8:Content Standard E Science and Technology Standards:Abilities of technological design" id="0v">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard E Science and Technology Standards:Understandings about science and technology" id="0w">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Natural hazards" id="0x">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Personal health" id="0y">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Populations, resources, and environments" id="0z">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Risks and benefits" id="000">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in society" id="001">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:History of science" id="002">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:Nature of science" id="003">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:Science as a human endeavor" id="004">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:5-8:Unifying Concepts and Processes Standards:Change, constancy, and measurement" id="005">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Unifying Concepts and Processes Standards:Evidence, models, and explanation" id="006">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Unifying Concepts and Processes Standards:Evolution and equilibrium" id="007">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Unifying Concepts and Processes Standards:Form and function" id="008">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:5-8:Unifying Concepts and Processes Standards:Systems, order, and organization" id="009">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:9-12:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" id="00a">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard A Science as Inquiry Standards:Understandings about scientific inquiry" id="00b">self-explanatory</termAndDeftn>
+	
+
+			<termAndDeftn vocab="NSES:9-12:Content Standard B Physical Science Standards:Chemical reactions" id="00c">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard B Physical Science Standards:Conservation of energy and increase in disorder" id="00d">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard B Physical Science Standards:Interactions of energy and matter" id="00e">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard B Physical Science Standards:Motions and forces" id="00f">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard B Physical Science Standards:Structure and properties of matter" id="00g">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard B Physical Science Standards:Structure of atoms" id="00h">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:9-12:Content Standard C Life Science Standards:Behavior of organisms" id="00i">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard C Life Science Standards:Biological evolution" id="00j">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard C Life Science Standards:Interdependence of organisms" id="00k">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard C Life Science Standards:Matter, energy, and organization in living systems" id="00l">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard C Life Science Standards:Molecular basis of heredity" id="00m">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard C Life Science Standards:The cell" id="00n">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Energy in the earth system" id="00o">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Geochemical cycles" id="00p">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Origin and evolution of the earth system" id="00q">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Origin and evolution of the universe" id="00r">self-explanatory</termAndDeftn>
+		
+
+			<termAndDeftn vocab="NSES:9-12:Content Standard E Science and Technology Standards:Abilities of technological design" id="00s">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard E Science and Technology Standards:Understandings about science and technology" id="00t">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Environmental quality" id="00u">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural and human-induced hazards" id="00v">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural resources" id="00w">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Personal and community health" id="00x">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Population growth" id="00y">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in local, national, and global challenges" id="00z">self-explanatory</termAndDeftn>
+		
+
+			<termAndDeftn vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Historical perspectives" id="010">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Nature of scientific knowledge" id="011">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Science as a human endeavor" id="012">self-explanatory</termAndDeftn>
+
+	
+			<termAndDeftn vocab="NSES:9-12:Unifying Concepts and Processes Standards:Change, constancy, and measurement" id="013">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Unifying Concepts and Processes Standards:Evidence, models, and explanation" id="014">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Unifying Concepts and Processes Standards:Evolution and equilibrium" id="015">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Unifying Concepts and Processes Standards:Form and function" id="016">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:9-12:Unifying Concepts and Processes Standards:Systems, order, and organization" id="017">self-explanatory</termAndDeftn>
+
+	
+			<termAndDeftn vocab="NSES:K-4:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" id="018">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Content Standard A Science as Inquiry Standards:Understanding about scientific inquiry" id="019">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NSES:K-4:Content Standard B Physical Science Standards:Light, heat, electricity, and magnetism" id="01a">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Content Standard B Physical Science Standards:Position and motion of objects" id="01b">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Content Standard B Physical Science Standards:Properties of objects and materials" id="01c">self-explanatory</termAndDeftn>
+
+	
+			<termAndDeftn vocab="NSES:K-4:Content Standard C Life Science Standards:Characteristics of organisms" id="01d">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Content Standard C Life Science Standards:Life cycles of organisms" id="01e">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Content Standard C Life Science Standards:Organisms and environments" id="01f">self-explanatory</termAndDeftn>
+
+	
+			<termAndDeftn vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Changes in earth and sky" id="01g">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Objects in the sky" id="01h">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Properties of earth materials" id="01i">self-explanatory</termAndDeftn>
+
+		
+			<termAndDeftn vocab="NSES:K-4:Content Standard E Science and Technology Standards:Abilities of technological design" id="01j">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Content Standard E Science and Technology Standards:Abilities to distinguish between natural objects and objects made by humans" id="01k">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Content Standard E Science and Technology Standards:Understanding about science and technology" id="01l">self-explanatory</termAndDeftn>
+
+		
+			<termAndDeftn vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Changes in environments" id="01m">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Characteristics and changes in populations" id="01n">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Personal health" id="01o">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in local challenges" id="01p">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Types of resources" id="01q">self-explanatory</termAndDeftn>
+
+		
+			<termAndDeftn vocab="NSES:K-4:Content Standard G History and Nature of Science Standards:Science as a human endeavor" id="01r">self-explanatory</termAndDeftn>
+
+		
+			<termAndDeftn vocab="NSES:K-4:Unifying Concepts and Processes Standards:Change, constancy, and measurement" id="01s">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Unifying Concepts and Processes Standards:Evidence, models, and explanation" id="01t">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Unifying Concepts and Processes Standards:Evolution and equilibrium" id="01u">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Unifying Concepts and Processes Standards:Form and function" id="01v">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NSES:K-4:Unifying Concepts and Processes Standards:Systems, order, and organization" id="01w">self-explanatory</termAndDeftn>
+
+
+		</terms>
+
+		<bestPractices>
+			<dos>
+<!--				<practice status="hide" originDate="2002-10-22" archDate="2005-04-25">Choosing an educational standard and associating it with a resource signifies that the content of the resource supports student learning and attainment of the specific ability noted. This can be through many different mechanisms and resource types, including access to background, text-based material. Some standards available for cataloging are general in nature, hence the resource need not address the entire scope of the standard to be eligible for these data.</practice> -->
+<!--				<practice status="hide" originDate="2002-10-22" archDate="2005-04-25">Additional, more detailed information on the specific concepts included in each standard is available for each grade level grouping, K-4, 5-8, and 9-12 (courtesy SRI International) to assist in making appropriate choices.</practice>-->
+				<practice status="current" originDate="2005-04-25">Choosing a standard signifies that the content of the resource supports student learning and attainment of the abilities articulated in the standard.</practice>
+
+
+<!--				<practice status="hide" originDate="2002-10-22" archDate="2005-04-25">Use standards only with materials where student learning occurs.</practice>-->
+				<practice status="current" originDate="2005-04-25">Use standards with materials intended for student learning.</practice>
+
+
+<!--				<practice status="hide" originDate="2002-10-22" archDate="2005-04-25">When standards are identified by the resource creator and presented in the resource, all catalogers should include these data in the record, or select those that are in keeping with the abovementioned criteria</practice>-->
+				<practice status="current" originDate="2005-04-25">Catalogers with experience and familiarity with standards may evaluate the standards identified by resource creators in the resource for appropriateness and completeness.</practice>
+
+				<practice status="current" originDate="2005-04-25">If catalogers do not have experience and familiarity with standards but the resource has standards associated with, catalogers may include the standards indicated by the resource creator.</practice>
+
+
+<!--				<practice status="hide" originDate="2002-10-22" archDate="2005-04-25">Catalogers are expected to have experience and familiarity with the standards they choose to include in a record. If you do not, please refrain from using this field or consult a colleague before entering such data.</practice>-->
+				<practice status="current" originDate="2005-04-25">Catalogers with experience and familiarity with standards may evaluate a resource to identify appropriate standards.</practice>
+
+				<practice status="current" originDate="2005-04-25">Use standards sparingly with reference materials, portal resources or other resources where student interaction with the resource is low or passive.</practice>
+
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2005-04-25">Catalogers who do not have experience and familiarity with standards, should not complete this field.</practice>
+
+<!--				<practice status="hide" originDate="2002-10-22" archDate="2005-04-25">If you are not familiar with the use of educational standards and if the resource does not explicitly contain this information, please refrain from using this field. </practice>-->
+<!--				<practice status="hide" originDate="2002-10-22">Do not create a compiled list of standards addressed by a collection of diverse resources. For example, if the URL being cataloged is an overarching site that provides access to a collection of lesson plans, create a record for each lesson plan and associate the standards directly with the individual lesson plan, rather than combining them all into one long list.</practice>-->
+				<practice status="current" originDate="2005-04-25">Do not create a compiled list of standards addressed by a collection of resources. For example, do not create a long list of standards for an overarching resource that includes individual lesson plans, activities or modules that support individual standards. Describe each lesson plan, activity or module, etc. individually and associate the standards directly.</practice>
+
+				<practice status="current" originDate="2005-04-25">Do not choose every standard for a resource. Most resources only support a few standards really well.</practice>
+			</donts>
+
+			<otherPractices>
+				<otherPractice header="The resource has existing standards. Do this:">
+					<practice status="current" originDate="2005-04-25">When standards are identified by the resource creator and presented in the resource, capture this information when it meets the other criteria described by these best practices.</practice>
+				</otherPractice>
+
+				<otherPractice header="Does an entire resource need to support the standard?">
+					<practice status="current" originDate="2005-04-25">A resource need not cover the entire scope of a standard for the association to be made but the resource content should clearly fall within the bounds of the standard. Some of the standards are broad in scope. Therefore, it is not expected that single resources, like lesson plans, activities or modules, support the entirety of a standard.</practice>
+				</otherPractice>
+
+				<otherPractice header="Examples for science standards (NSES)">
+					<practice status="current" originDate="2002-10-22" link1="NSES:9-12:Content Standard A:Science as Inquiry Standards:Abilities necessary to do scientific inquiry" style1="bold" link2="Stratospheric Ozone" url2="http://www.ccpo.odu.edu/SEES/ozone/ozone.htm">NSES:9-12:Content Standard A:Science as Inquiry Standards:Abilities necessary to do scientific inquiry is supported in Stratospheric Ozone.</practice>
+					<practice status="current" originDate="2006-03-07" link1="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth in the solar system" style1="bold" link2="Global Sun Temperature" url2="http://www.k12science.org/curriculum/tempproj3/en/">NSES:5-8:Content Standard D Earth and Space Science Standards:Earth in the solar system is supported in the Global Sun Temperature project.</practice>
+				</otherPractice>
+
+				<otherPractice header="Examples for geography (NCGE)">
+					<practice status="current" originDate="2006-03-06" link1="NCGE:Physical Systems:The physical processes that shape the patterns of Earth's surface" style1="bold" link2="Introduction to Waves" url2="http://www.nationalgeographic.com/xpeditions/lessons/07/gk2/wavesintro.html">NCGE:Physical Systems:The physical processes that shape the patterns of Earth's surface is supported in Introduction to Waves.</practice>
+					<practice status="current" originDate="2002-10-22" link1="NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information" style1="bold" link2="Exploring Earthquakes in Space and Time Through the Internet and a Geographic Information System" url2="http://rockyweb.cr.usgs.gov/public/outreach/quakegis/main.html">NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information is supported in Exploring Earthquakes in Space and Time Through the Internet and a Geographic Information System.</practice>
+				</otherPractice>
+
+				<otherPractice header="NCGE standards? Do this:">
+					<practice status="current" originDate="2006-03-07">The National Council for Geographic Education standards are designed to emphasize the knowledge skills of a geographically informed person.</practice>
+					<practice status="current" originDate="2006-03-07">Choose appropriate geography standards from the list.</practice>
+				</otherPractice>
+
+				<otherPractice header="NSES standards? Do this:">
+					<practice status="current" originDate="2005-04-25">The National Science Education Standards (NSES) are designed to emphasize interacting with the science content, the processes of science, inquiry and decision-making skills.</practice>
+					<practice status="current" originDate="2006-03-07">Choose appropriate science standards from the list.</practice>
+				</otherPractice>
+
+				<otherPractice header="NSES Grades K-4 specific information">
+					<practice status="current" originDate="2002-06-30" link1="fourth level of the standard" url1="http://pals.sri.com/standards/nsesK-4text.html">See the fourth level of the standard which includes specific abilities.</practice>
+				</otherPractice>
+				<otherPractice header="NSES Grades 5-8 specific information">
+					<practice status="current" originDate="2002-06-30" link1="fourth level of the standard" url1="http://pals.sri.com/pals/standards/nses5-8text.html">See the fourth level of the standard which includes specific abilities.</practice>
+				</otherPractice>
+				<otherPractice header="NSES Grades 9-12 specific information">
+					<practice status="current" originDate="2002-06-30" link1="fourth level of the standard" url1="http://pals.sri.com/pals/standards/nses9-12text.html">See the fourth level of the standard which includes specific abilities.</practice>
+				</otherPractice>
+
+				<otherPractice header="Other standards? Do this:">
+<!--					<practice status="obsolete" originDate="2002-10-22" archDate="2005-04-25">Use the separate field of Science Standards to add National Science Education Standards.</practice>-->
+	
+					<practice status="current" originDate="2002-10-22" link1="description - educational" style1="bold">If the resource indicates other standards such as the Benchmarks for Science Literacy (by the American Association for the Advancement of Science (AAAS), the Principles and Standards for School Mathematics by the National Council of Teachers of Mathematics (NCTM) or the National Educational Technology Standards by International Society for Technology in Education (ISTE) etc., enter this information in the description - educational field, citing the authorizing body and source for the standard.</practice>
+				</otherPractice>
+
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>NSES:K-4:Content Standard D Earth and Space Science Standards:Properties of earth materials</example>
+			<notes>
+				<note/>
+			</notes>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

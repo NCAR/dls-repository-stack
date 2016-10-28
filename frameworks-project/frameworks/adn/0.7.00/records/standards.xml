@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org
+
+http://www.dlese.org/Metadata/adn-item/0.7.00/record.xsd">
+
+	<general>
+
+		<title>Title Goes Here</title>
+
+		<description>This is a great site. It has lots of information.</description>
+
+		<language>en</language>
+
+		<subjects>
+
+			<subject>DLESE:Physics</subject>
+
+			<subject>DLESE:Atmospheric science</subject>
+
+		</subjects>
+
+	</general>
+
+	<lifecycle>
+
+		<contributors>
+
+			<contributor role="Author" date="2002-12-03">
+
+				<person>
+
+					<nameFirst>Kathryn</nameFirst>
+
+					<nameLast>Ginger</nameLast>
+
+					<instName>University Corporation for Atmospheric Research (UCAR)</instName>
+
+					<emailPrimary>somebody@company.com</emailPrimary>
+
+				</person>
+
+			</contributor>
+
+		</contributors>
+
+	</lifecycle>
+
+	<metaMetadata>
+
+		<catalogEntries>
+
+			<catalog entry="DLESE-000-000-000-123">Digital Library for Earth System Education</catalog>
+
+		</catalogEntries>
+
+		<dateInfo created="2002-04-09" accessioned="2002-09-09" lastModified="2002-05-12T18:30:00Z"/>
+
+		<statusOf status="Accessioned">A record can only have one status. If need be, put descriptive information about status here.</statusOf>
+
+		<language>en</language>
+
+		<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+
+		<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research). All rights reserved.</copyright>
+
+		<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">The Digital Library for Earth System Education (DLESE) may modifiy and redistribute metadata to work in DLESE systems and services.</termsOfUse>
+
+		<contributors>
+
+			<contributor role="Creator" date="1999-08-13">
+
+				<person>
+
+					<nameTitle>Ms</nameTitle>
+
+					<nameFirst>Holly</nameFirst>
+
+					<nameLast>Devaul</nameLast>
+
+					<instName>University Corporation for Atmospheric Research (UCAR)</instName>
+
+					<instDept>DLESE Program Center (DPC)</instDept>
+
+					<emailPrimary>person@ucar.edu</emailPrimary>
+
+				</person>	
+
+			</contributor>
+
+			<contributor role="Validator" date="2002-12-04">
+
+				<person>
+
+					<nameFirst>Eddy</nameFirst>
+
+					<nameLast>Viscosity</nameLast>
+
+					<instName>DLESE Program Center (DPC)</instName>
+
+					<emailPrimary>Unknown</emailPrimary>
+
+				</person>
+
+			</contributor>
+
+		</contributors>
+
+	</metaMetadata>
+
+	<technical>
+
+	<!-- choose either online or offline as the tag set in techincal -->
+
+		<online>
+
+			<primaryURL>http://the-url-of-the-resource</primaryURL>
+
+			<requirements>
+
+				<requirement>
+
+					<reqType>DLESE:Browser:Netscape</reqType>
+
+				</requirement>
+
+			</requirements>
+
+		</online>		
+
+	</technical>
+
+	<educational>
+
+		<audiences>
+
+			<audience>
+
+				<gradeRange>DLESE:Primary elementary</gradeRange>
+
+			</audience>
+
+		</audiences>
+
+		<resourceTypes>
+
+			<resourceType>DLESE:Learning materials:Case study</resourceType>
+
+		</resourceTypes>
+
+		<contentStandards>
+
+			<contentStandard>NSES:5-8:Content Standard C Life Science Standards:Structure and function in living systems:All organisms are composed of cells--the fundamental unit of life. Most organisms are single cells; other organisms, including humans, are multicellular.</contentStandard>
+
+			<contentStandard>NSES:5-8:Content Standard B Physical Science Standards:Properties and changes of properties in matter:Chemical elements do not break down during normal laboratory reactions involving such treatments as heating, exposure to electric current, or reaction with acids. There are more than 100 known elements that combine in a multitude of ways to produce compounds, which account for the living and nonliving substances that we encounter.</contentStandard>
+
+		</contentStandards>
+
+	</educational>
+
+	<rights>
+
+		<cost>DLESE:No</cost>
+
+		<description>For educational use. Please credit  XYZ organization.</description>
+
+	</rights>
+
+</itemRecord>
+

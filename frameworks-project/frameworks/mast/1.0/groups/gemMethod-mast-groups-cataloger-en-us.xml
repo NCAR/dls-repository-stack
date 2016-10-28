@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: gemMethod-mast-groups-cataloger-en-us.xml,v 1.7 2009/07/30 16:11:56 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/GEMmethod.xsd">
+
+	<head>
+		<title>GEM Instructional (Teaching) Method</title>
+		<concept language="en-us" metaFormat="mast" metaVersion="1.0" text="GEM Instructional (Teaching) Method" audience="cataloger" path="/record/educational/instructionalMethods/gemMethod" deftn="A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support."/>
+	</head>
+	<body><!--37 terms are in this vocab-->
+		<outline vocab="Advanced organizers" type="vocab" text="Advanced organizers"/>
+		<outline vocab="Brainstorming" type="vocab" text="Brainstorming"/>
+		<outline vocab="Computer assisted instruction" type="vocab" text="Computer assisted instruction"/>
+		<outline vocab="Computer simulations" type="vocab" text="Computer simulations"/>
+		<outline vocab="Contingency management" type="vocab" text="Contingency management"/>
+		<outline vocab="Cooperative learning" type="vocab" text="Cooperative learning"/>
+		<outline vocab="Demonstrations" type="vocab" text="Demonstrations"/>
+		<outline vocab="Dialog journals" type="vocab" text="Dialog journals"/>
+		<outline vocab="Discovery learning" type="vocab" text="Discovery learning"/>
+		<outline vocab="Discussions" type="vocab" text="Discussions" wrap="true"/>
+		<outline vocab="Dramatic play drills" type="vocab" text="Dramatic play drills"/>
+		<outline vocab="Experiential learning" type="vocab" text="Experiential learning"/>
+		<outline vocab="Guided design" type="vocab" text="Guided design"/>
+		<outline vocab="Hands-on learning" type="vocab" text="Hands-on learning"/>
+		<outline vocab="Integrated instruction" type="vocab" text="Integrated instruction"/>
+		<outline vocab="Interdisciplinary" type="vocab" text="Interdisciplinary"/>
+		<outline vocab="Lab procedures" type="vocab" text="Lab procedures"/>
+		<outline vocab="Learning modules" type="vocab" text="Learning modules"/>
+		<outline vocab="Lecture" type="vocab" text="Lecture" wrap="true"/>
+		<outline vocab="Montessori method" type="vocab" text="Montessori method"/>
+		<outline vocab="Multimedia instruction" type="vocab" text="Multimedia instruction"/>
+		<outline vocab="Multiple activities" type="vocab" text="Multiple activities"/>
+		<outline vocab="Museum education" type="vocab" text="Museum education"/>
+		<outline vocab="Peer tutoring" type="vocab" text="Peer tutoring"/>
+		<outline vocab="Programmed instruction" type="vocab" text="Programmed instruction"/>
+		<outline vocab="Project-based learning" type="vocab" text="Project-based learning"/>
+		<outline vocab="Questioning techniques" type="vocab" text="Questioning techniques"/>
+		<outline vocab="Role playing" type="vocab" text="Role playing" wrap="true"/>
+		<outline vocab="Self-directed groups" type="vocab" text="Self-directed groups"/>
+		<outline vocab="Self-paced learning modules" type="vocab" text="Self-paced learning modules"/>
+		<outline vocab="Simulations and games" type="vocab" text="Simulations and games"/>
+		<outline vocab="Teaching guides" type="vocab" text="Teaching guides"/>
+		<outline vocab="Team teaching" type="vocab" text="Team teaching"/>
+		<outline vocab="Thematic approach" type="vocab" text="Thematic approach"/>
+		<outline vocab="Tutorial programs" type="vocab" text="Tutorial programs"/>
+		<outline vocab="Visual instruction" type="vocab" text="Visual instruction"/>
+		<outline vocab="Whole language approach" type="vocab" text="Whole language approach"/>
+	</body>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

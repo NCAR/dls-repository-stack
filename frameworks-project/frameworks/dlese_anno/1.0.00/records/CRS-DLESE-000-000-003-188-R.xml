@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotationRecord xmlns="http://www.dlese.org/Metadata/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/annotation http://www.dlese.org/Metadata/annotation/1.0.00/annotation.xsd">
+    <service>
+        <name>CRS (Community Review System)</name>
+        <recordID>CRS-DLESE-000-000-003-188-R</recordID>
+        <pathway>CRS (Community Review System)</pathway>
+        <date created="2004-08-18" modified="2004-11-06"/>
+    </service>
+
+    <itemID>DLESE-000-000-003-188</itemID>
+
+	<annotation>
+		<title>Review for &apos;The Drowning of New York&apos;</title>
+		<type>Review</type>
+		<format>Text</format>
+		<status>In progress</status>
+		<content>
+			<url>http://crs.dlese.org/submit/reviews/?id=DLESE-000-000-003-188</url>
+		</content>
+		<contributors>
+			<contributor role="Author" date="2004-08-18" share="false">
+	                <organization>
+	                    <instName>Columbia University</instName>
+	                    <instDept>Lamont-Doherty Earth Observatory</instDept>
+	                    <instPosition>CRS (Community Review System) Editor</instPosition>
+	                    <url>http://crs.dlese.org</url>
+	                    <email>crs-editor@dlese.org</email>
+	                </organization>
+			</contributor>
+		</contributors>
+	</annotation>
+</annotationRecord>

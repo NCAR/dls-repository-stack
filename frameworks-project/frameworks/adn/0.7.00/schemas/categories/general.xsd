@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.7.00">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Overview  **************************************************************
+				This is an ADN item-level CATEGORY schema.
+				Tags defined: general
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Other CATEGORY schemas to include  ********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="commonfields.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  VOCABULARY schemas to include  ***********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="../vocabs/defaults.xsd"/>
+	<xsd:include schemaLocation="../vocabs/subjectDLESE.xsd"/>
+	<xsd:include schemaLocation="../vocabs/subjectOtherDLESE.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  ROOT element  **********************************************
+							There is no root element for this schema.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Complex Types  (alpha order) *****************************
+	
+				generalType  					is part of ADNmetdataType in record.xsd
+				keywordType		 			is part of keywordsType 
+				keywordsType		 		is part of generalType 
+				placeAndEventType 			is part of simplePlacesAndEventType 
+				simplePlacesAndEvents	is part of generalType 
+				simpleTemporalCoverages	is part of generalType 
+				subjects			 			is part of generalType 
+				subjectsOtherType			is part of generalType
+				
+				Note: 
+				Subject is required and uses and validates against controlled vocabulary terms that reside at the DLESE Program Center (DPC). 
+				SubjectOther is optional and uses and validates against controlled vocabulary terms that reside at the DPC.
+				Keywords is optional and may be free text or use, but not validate, against controlled vocabulary terms that reside in the community.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="generalType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  generalType  ***************************************************
+				These elements have the following types or schema associated with them.
+				title							is a global string; see commonfields.xsd
+				description					is a global string; see commonfields.xsd
+				language						is global; complex; see commonfields.xsd
+				subjects						is complex, see subject.xsd
+				subjectsOther				is complex, see various vocab schema
+				keywords						is a complex
+				simplePlacesAndEvents	is a complex
+				simpleTemporalCoverages	is a complex
+				catalogEntries				is a complex; see commonfields.xsd; not a ref since it is not global
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element ref="title" minOccurs="1" maxOccurs="1"/>
+			<xsd:element ref="description" minOccurs="1" maxOccurs="1"/>
+			<xsd:element ref="language" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="subjects" type="subjectsType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="subjectsOther" type="subjectsOtherType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="keywords" type="keywordsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="simplePlacesAndEvents" type="simplePlacesAndEventsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="simpleTemporalCoverages" type="simpleTemporalCoveragesType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="catalogEntries" type="catalogEntriesType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="additionalInfo" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="keywordType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  keywordType*************************************************
+				These elements have the following types or schema associated with them.
+				keyword				is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="stringTextType">
+				<xsd:attribute name="src" type="xsd:string" use="optional"/>
+				<xsd:attribute name="url" type="xsd:string" use="optional"/>
+				<xsd:attribute name="id" type="xsd:string" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="keywordsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  keywordsType *************************************************
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="keyword" type="keywordType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="placeAndEventType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  placeAndEventType  *******************************************
+				These elements have the following types or schema associated with them.
+				description				is a global string; see commonfields.xsd
+				
+				event have places so place is required
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="place" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="event" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="description" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="simplePlacesAndEventsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  simplePlacesAndEventsType  **********************************************
+				These elements have the following types or schema associated with them.
+				placeAndEvent		is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="placeAndEvent" type="placeAndEventType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="simpleTemporalCoveragesType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  simpleTemporalCoveragesType  **********************************************
+				These elements have the following types or schema associated with them.
+				description		is a global string; see commonfields.xsd
+				
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="description" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="subjectsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  subjectsType *************************************************
+				These elements have the following types or schema associated with them.
+				subject					is simple type
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="subject" type="union.subjectType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="subjectsOtherType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  subjectsOtherType *************************************************
+				These elements have the following types or schema associated with them.
+				subjectOther					is simple type
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="subjectOther" type="union.subjectOtherType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>
+			**********************************  Simple Types (alpha order) *************************************
+			These simple types are composed of union or member types.
+			
+			union.subjectType				see subjectDLESE.xsd
+			union.subjectOtherType			see subjectOtherDLESE.xsd 
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="union.subjectType">
+		<xsd:union memberTypes="DLESEsubjectType suppliedType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.subjectOtherType">
+		<xsd:union memberTypes="DLESEsubjectOtherType"/>
+	</xsd:simpleType>
+</xsd:schema>

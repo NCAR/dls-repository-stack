@@ -1,0 +1,115 @@
+<%-- 
+Used by all batch operations
+Provide a listing of the records to be operated on and controls for modifying
+the list.
+
+Only show record list items when the number of items is less than the
+maxRecordsToList 
+--%>
+
+<c:choose>
+	<c:when test="${bof.recordList.size < bof.maxRecordsToList}">
+
+<script type="text/javascript">
+
+function selectAll (evnt) {
+	$('rec-list').select (".rec-check-box").each (function (box) {
+		box.checked = true;
+		});
+}
+
+function clearAll (evnt) {
+	$('rec-list').select (".rec-check-box").each (function (box) {
+		box.checked = false;
+		});
+}
+
+function doRemoveItems (form) {
+	var boxes = $('rec-list').select (".rec-check-box").size();
+	var checked = $('rec-list').select (".rec-check-box").findAll (function (box) {
+		return box.checked;
+		}).size();
+	// alert (checked + "/" + boxes + " are checked");
+	if (checked == boxes)
+		alert ("You cannot remove all the listed items. Please de-select one or more items and continue.");
+	else {
+		form.command.value="removeRecords";
+		form.submit();
+	}
+}
+
+</script>
+
+	<c:set var="batchRecordList" value="${bof.recordList}" />
+	<%-- <h4>There are ${fn:length(batchRecordList.hits)} records</h4> --%>
+
+	<table id="rec-list" width="100%" cellspacing="1" cellpadding="2" bgcolor="#666666">
+		<tr  bgcolor='#CCCEE6'>
+			<th>ID</th>
+			<th>Metadata<br>Format</th>
+			<th>Status</th>
+			<th>Last Touch</th>
+		</tr>
+		
+	<c:forEach var="result" items="${batchRecordList.hits}" varStatus="i" >
+	<c:catch var="err">
+		<c:set var="docReader" value="${result.docReader}" />
+		<c:set var="docMap" value="${result.docMap}" />
+		
+		<tr class='admin_blue1'>
+			<td>
+				<c:if test="${not bof.recordList.isEmpty}"><input 
+					type="checkbox" class="rec-check-box" name="rmId" value="${docMap['idvalue']}" />
+				</c:if>
+				${docReader.id}</td>
+			<td align="center">${docReader.nativeFormat}</td>
+			<td align="center">
+				${sf:getStatusLabel(docMap['dcsstatus'], docReader.collection, sessionBean)}
+			</td>
+			<td align="center"><fmt:formatDate value="${f:luceneDate(docMap['dcslastTouchDate'])}" 
+							pattern="yyyy-MM-dd h:mm a" /></td>
+		</tr>
+		<c:choose>
+			<c:when test="${docReader.readerType == 'DleseCollectionDocReader'}">
+				<c:set var="title" value="${docReader.shortTitle}" />
+			</c:when>
+			<c:otherwise><c:set var="title" value="${docReader.title}"/></c:otherwise>
+		</c:choose>
+		<c:if test="${not empty title || not empty docMap['dcsstatusNote']}">
+			<tr bgcolor="#ffffff">
+				<td colspan="4">
+					<div style="margin-left:15px;font-size:90%">
+					  <c:if test="${not empty title}">
+						<div><em>Title:</em> &nbsp;${title}</div>
+					  </c:if>
+					  <c:if test="${not empty docMap['dcsstatusNote']}">
+						<div><em>Status Note:</em> &nbsp;${docMap['dcsstatusNote']}</div>
+					  </c:if>
+				  </div>
+				</td>
+			</tr>
+		</c:if>
+	</c:catch>
+	</c:forEach>
+	</table><br />
+	<c:if test="${not empty err}"><p>The title and status for some records could not be listed</p></c:if>
+	<c:if test="${not bof.recordList.isEmpty}">
+		<input type="button" value="Select All" 
+			onclick="selectAll()"/>
+		<input type="button" value="Clear All" 
+			onclick="clearAll()"/>
+		<input type="button" value="Remove selected items from list" 
+			onclick="doRemoveItems (this.form)"/>
+	</c:if>
+				
+	</c:when>
+	<c:otherwise>
+		<dl>
+			<dt><b>Note:</b></dt>
+			<dd>Due to the large number of records to be updated, the list of records will not be displayed
+			a maximum of ${bof.maxRecordsToList} can be displayed).</dd>
+			<dd>Clicking on <span class="doc-em">submit</span> will update all 
+			${bof.recordList.size} Records</dd>
+		</dl>
+	</c:otherwise>
+</c:choose>			

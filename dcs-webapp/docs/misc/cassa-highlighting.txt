@@ -1,0 +1,21 @@
+back to *DCS/CASAA demonstrator*
+
+Goal: modify the editing display to check for "suggested" standards and then highlight and expose them.
+
+1 - make a stub method in FormBean to mock up the results of a "getSuggestions" call to the CASAA service. For now, this takes the form of a list of standards, represented as the full text of the vocab items.
+- The *schema for 4th level NSES content standards>http://dev.dlese.org:7080/Metadata/adn-item/0.7.00/vocabs/standardsNSEScontent.xsd*
+- the method in SchemEditForm is <b>getSuggestedContentStandards()</b> - this returns a list of standards
+- now we work with the rendering tag (<b>cassaContentStandardMulitBox</b>)
+
+2 - we may need to implement a new scheme for creating ids that are used by CollapseBean and javascript, to support exposing of standards lists (to expose suggested standards).
+
+The challenge is to calculate the "anscestors" of a particular standard, and then set the display state for each to OPEN. The way we currently encode the variable used to track the display state works for xpaths, since we can convert from xpath to display variable and back again, but the way we encode displaystates for the standards hierarchy cannot currently be transformed BACK into a form from which we can calculate the standards nodes ...
+
+Specificially, we use <b>SchemEditUtils.pairToId</b> to create an id for a standards node. This method:
+- takes the xpath and fieldLabel as params, and 
+- simply joins the two components with a "/", and then
+- converts the resulting string to a javascript-palletable ID
+
+Problems:
+# the fieldLabel needs to preserve the exact form of the vocab item (now we loose the colons)
+# we need to separate the two components so they can be extracted (now since we use a slash to join them, we can't be sure which slash is the divider, unless we KNOW that slashes are NEVER used in vocab items)

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ns.nsdl.org/ncs/framework_config/1.00/schemas/dcsFrameworkConfig.xsd">
+  <xmlFormat>dlese_collect</xmlFormat>
+  <schemaInfo>
+    <rootElementName>collectionRecord</rootElementName>
+    <schemaURI>http://ns.nsdl.org/ncs/dlese_collect/1.0.00/schemas/collection.xsd</schemaURI>
+    <paths>
+      <path pathName="id" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="false">/collectionRecord/metaMetadata/catalogEntries/catalog/@entry</path>
+      <path pathName="dateCreated" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="true" valueType="date">/collectionRecord/approval/collectionStatuses/collectionStatus/@date</path>
+      <path pathName="description" requiredByCopyRecord="true" requiredByMinimalRecord="true">/collectionRecord/general/description</path>
+      <path pathName="policyUrl" requiredByCopyRecord="true" requiredByMinimalRecord="true">/collectionRecord/general/policies/policy/@url</path>
+      <path pathName="policyType" requiredByCopyRecord="true" requiredByMinimalRecord="true">/collectionRecord/general/policies/policy/@type</path>
+      <path pathName="fullTitle" requiredByCopyRecord="true" requiredByMinimalRecord="true">/collectionRecord/general/fullTitle</path>
+      <path pathName="shortTitle" requiredByCopyRecord="true" requiredByMinimalRecord="true">/collectionRecord/general/shortTitle</path>
+      <path pathName="collectionKey" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="false">/collectionRecord/access/key</path>
+      <path pathName="accessionStatus" requiredByCopyRecord="true" requiredByMinimalRecord="true">/collectionRecord/approval/collectionStatuses/collectionStatus/@state</path>
+      <path pathName="formatOfRecords" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="false">/collectionRecord/access/key/@libraryFormat</path>
+      <path pathName="url" valueType="url">/collectionRecord/access/collectionLocation</path>
+    </paths>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>3</baseRenderLevel>
+    <firstPage>general</firstPage>
+    <rebuildOnStart>true</rebuildOnStart>
+    <editorPages>
+      <editorPage pageLabel="General">general</editorPage>
+      <editorPage pageLabel="Lifecycle">lifecycle</editorPage>
+      <editorPage pageLabel="Approval">approval</editorPage>
+      <editorPage pageLabel="Access">access</editorPage>
+      <editorPage pageLabel="Meta MetaData">metaMetadata</editorPage>
+      <editorPage pageLabel="NSDL">NSDL</editorPage>
+      <editorPage pageLabel="Relations">relations</editorPage>
+    </editorPages>
+    <fieldInfoURI>http://ns.nsdl.org/ncs/dlese_collect/1.0.00/build/fields-list.xml</fieldInfoURI>
+  </editorInfo>
+  <name>Collection</name>
+</frameworkConfigRecord>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: key-collect-fields-en-us.xml,v 1.4 2013/09/16 21:06:04 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/collection/1.0.00/key.xsd">
+	<field name="Key" id="ky" language="en-us" metaFormat="dlese_collect" metaVersion="1.0.00" path="/collectionRecord/access/key">
+		<definition>an internal identifier used by the DLESE Program Center for identifying a collection</definition>
+
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="Key" levelDeftn="an internal identifier used by the DLESE Program Center for identifying a collection"/>
+		</vocabLevels>
+		<terms>
+			<termAndDeftn vocab="adl" id="006">Alexandria Digital Library (ADL)</termAndDeftn>
+			<termAndDeftn vocab="avc" id="01">Atmospheric Visualization Collection (AVC)</termAndDeftn>
+			<termAndDeftn vocab="benchmarks" id="01u">Educational Benchmarks Collection</termAndDeftn>
+			<termAndDeftn vocab="bridge" id="017">BRIDGE Ocean Resources</termAndDeftn>
+			<termAndDeftn vocab="bridgenews" id="01a">BRIDGE News</termAndDeftn>
+			<termAndDeftn vocab="bridgenoaa" id="022">BRIDGE NOAA Resources</termAndDeftn>
+			<termAndDeftn vocab="bridgenoaaother" id="023">BRIDGE NOAA Other Resources</termAndDeftn>
+			<termAndDeftn vocab="bridgeother" id="018">BRIDGE Other Ocean Resources</termAndDeftn>
+			<termAndDeftn vocab="ccc" id="00v">Climate Change Collection (CCC)</termAndDeftn>
+			<termAndDeftn vocab="ceis" id="03">Discover Our Earth</termAndDeftn>
+			<termAndDeftn vocab="collect" id="04">Repository Collections</termAndDeftn>
+			<termAndDeftn vocab="comet" id="05">Cooperative Program for Operational Meteorology, Education and Training (COMET)</termAndDeftn>
+			<termAndDeftn vocab="cosee" id="01b">COSEE Resources</termAndDeftn>
+			<termAndDeftn vocab="coseenews" id="01c">COSEE News</termAndDeftn>
+			<termAndDeftn vocab="coseeother" id="01d">COSEE Other Resources</termAndDeftn>
+			<termAndDeftn vocab="crs" id="06">Community Annotated Collection</termAndDeftn>
+			<termAndDeftn vocab="curl" id="08">Curricular Resource Library (CURL)</termAndDeftn>
+			<termAndDeftn vocab="dataclass" id="021">Data for the Classroom</termAndDeftn>
+			<termAndDeftn vocab="dcc" id="09">DLESE Community Collection (DCC)</termAndDeftn>
+			<termAndDeftn vocab="dlese" id="0b">The DLESE Library</termAndDeftn>
+			<termAndDeftn vocab="dlisr" id="019">Indigenous Science Resources</termAndDeftn>
+			<termAndDeftn vocab="dlisrother" id="01i">Indigenous Science Other Resources</termAndDeftn>
+			<termAndDeftn vocab="drc" id="0c">DLESE Reviewed Collection (DRC)</termAndDeftn>
+			<termAndDeftn vocab="dwel" id="0e">Digital Water Education Library (DWEL)</termAndDeftn>
+			<termAndDeftn vocab="earthlabs" id="02x">EarthLabs</termAndDeftn>
+			<termAndDeftn vocab="earthobs" id="00g">NASA Earth Observatory</termAndDeftn>
+			<termAndDeftn vocab="edmall" id="0g">NASA Edmall Collection</termAndDeftn>
+			<termAndDeftn vocab="eee" id="016">Earthquake Education Environment (E3)</termAndDeftn>
+<!--commented out on 2013-09-16
+			<termAndDeftn vocab="emvc" id="00r">EMVC Geology Materials</termAndDeftn>
+-->
+			<termAndDeftn vocab="esa" id="01o">Environmental Science Activities for the 21st Century (ESA21)</termAndDeftn>
+<!--commented out on 2013-09-16
+			<termAndDeftn vocab="evc" id="01p">NOAA Environmental Visualizations</termAndDeftn>
+-->
+			<termAndDeftn vocab="eserev" id="008">NASA Reviewed Collection</termAndDeftn>
+			<termAndDeftn vocab="evaltlkt" id="0i">Evaluation Toolkit</termAndDeftn>
+			<termAndDeftn vocab="globe" id="00o">GLOBE Collection</termAndDeftn>
+			<termAndDeftn vocab="ien" id="01q">ESS Informal Education Network</termAndDeftn>
+			<termAndDeftn vocab="ienother" id="01v">ESS Informal Education Network - Other Resources</termAndDeftn>
+			<termAndDeftn vocab="jesse" id="0j">Journal for Earth System Science Education (JESSE)</termAndDeftn>
+			<termAndDeftn vocab="k12geo" id="01w">K-12 Geoscience Activities Collection</termAndDeftn>
+			<termAndDeftn vocab="matters" id="01m">DLESE Matters Newsletters</termAndDeftn>
+			<termAndDeftn vocab="mynasadata" id="01e">MY NASA DATA</termAndDeftn>
+			<termAndDeftn vocab="mynasastds" id="01r">MY NASA Standards</termAndDeftn>
+			<termAndDeftn vocab="nap" id="00s">National Academy Press (NAP)</termAndDeftn>
+			<termAndDeftn vocab="nasawave" id="02y">NASA Wavelength</termAndDeftn>
+			<termAndDeftn vocab="nocc" id="00x">News and Opportunities Community Collection (NOCC)</termAndDeftn>
+			<termAndDeftn vocab="nullkey" id="00y">Null Collection</termAndDeftn>
+			<termAndDeftn vocab="nyic" id="01f">New York Instructional Collection</termAndDeftn>
+			<termAndDeftn vocab="nys" id="01k">New York Standards</termAndDeftn>
+			<termAndDeftn vocab="pck" id="01j">Pedagogically Annotated Collection</termAndDeftn>
+			<termAndDeftn vocab="sat" id="01x">SAT Standards Collection</termAndDeftn>
+			<termAndDeftn vocab="serceet" id="0r">Earth Exploration Toolbook (EET)</termAndDeftn>
+			<termAndDeftn vocab="sercnagt" id="0o">Cutting Edge Collection</termAndDeftn>
+			<termAndDeftn vocab="sercstrtpt" id="0t">Starting Point Collection</termAndDeftn>
+			<termAndDeftn vocab="simple" id="01g">SIMPLE Science Resources</termAndDeftn>
+			<termAndDeftn vocab="simpleother" id="01z">SIMPLE Science Other Resources</termAndDeftn>
+			<termAndDeftn vocab="svs" id="00h">NASA Scientific Visualization Studio</termAndDeftn>
+			<termAndDeftn vocab="swi" id="01s">Stone Wall Initiative</termAndDeftn>
+			<termAndDeftn vocab="tbox" id="01l">Teaching Boxes</termAndDeftn>
+			<termAndDeftn vocab="testadn" id="00z">Test ADN Collection</termAndDeftn>
+			<termAndDeftn vocab="testanno" id="00a">Test Annotation Collection</termAndDeftn>
+			<termAndDeftn vocab="testcollect" id="010">Test Collection Collection</termAndDeftn>
+			<termAndDeftn vocab="testnews" id="011">Test News Collection</termAndDeftn>
+			<termAndDeftn vocab="testncs" id="020">Test NSDL_NCS Collection</termAndDeftn>
+			<termAndDeftn vocab="thredds" id="01n">Thematic Realtime Environmental Distributed Data Services</termAndDeftn>
+			<termAndDeftn vocab="tips" id="024">Tips and Comments</termAndDeftn>
+			<termAndDeftn vocab="usgs" id="01t">United States Geological Survey (USGS) Education Collection</termAndDeftn>
+			<termAndDeftn vocab="visearth" id="00i">NASA Visible Earth</termAndDeftn>
+			<termAndDeftn vocab="visionlearn" id="00p">Visionlearning</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-12-07">Use a unique key that has not been used.</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2005-12-07">Do not use spaces, dashes, underscores, special characters or capital letters.</practice>			
+			</donts>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>dcc, ceis</example>
+		</documentation>
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

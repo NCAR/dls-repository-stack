@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: instDivision.xsd,v 1.18 2014/08/08 17:31:06 flanagan91 Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xs:annotation>
+		<xs:documentation>****************************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA PUPOSE  and INTENT  *****</xs:documentation>
+		<xs:documentation>****************************************************</xs:documentation>
+		<xs:documentation>Purpose: Controlled vocabulary for UCAR division names as currently used by the NCAR Library.</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>****************************************</xs:documentation>
+		<xs:documentation>*****  HISTORY OF CHANGE *****</xs:documentation>
+		<xs:documentation>***************************************</xs:documentation>
+		<xs:documentation>2014-08-08 (jennp and flanagan) added: "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE)","University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE):Atmospheric Composition Remote Sensing and Prediction (ACRESP)","University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE):Measurements of Pollution in the Troposphere (MOPITT)","University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE):Optical Techniques (OT)","University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE):UTLS Studies (UTLS)"; deleted POP and OT;</xs:documentation>
+		<xs:documentation>2014-08-06 (jennp and flanagan) added: "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Terrestrial Sciences (TSS):Integrated Assessment Modeling (IAM)"; "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Technology Development Division (TDD):Application Scalability and Performance Group (ASAP)"; "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Community in Situ Measurements (COMMINSITU)";"University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Community in Situ Measurements (COMMINSITU):in Situ Observations (INSITUOBS)";"University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Community in Situ Measurements (COMMINSITU):Engineering Group (ENG)"; added "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Chemistry Modeling (CHEMMOD)"; added "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Chemistry Modeling (CHEMMOD):Global Chemistry Modeling (GCM)" and "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Chemistry Modeling (CHEMMOD):Regional and Process Modeling (RPM)"; "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Regional Climate Research (RCR)"; removed "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):WACCM (WACCM)" </xs:documentation>
+		<xs:documentation>2013-11-20 (jennp and flanagan) "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):CCSM Software Enginneering Group (CSEG)" changed to "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):CESM Software Engineering Group (CSEG)" AND "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):HAO Administrative Office (HAOAO)" changed to "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):HAO Administration (HAOAO)" AND "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):CCSM Project Office (CPO)" changed to "University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):CESM Project Office (CPO)"</xs:documentation>
+		<xs:documentation>2013-11-05 (jennp): added: University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):HAO Administrative Office (HAOAO); University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Long-term Solar Variability (LSV); University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Mauna Loa Solar Observatory (MLSO); University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Solar Transients and Space Weather (STSW)</xs:documentation>
+		<xs:documentation>2013-07-29 (kmaull) : removed University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Enterprise Services Section (ESS):Infrastructure Support Group (INFRSG)</xs:documentation>
+		<xs:documentation>2012-07-20: added University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Spark</xs:documentation>
+		<xs:documentation>2012-07-20: added: University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO), University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA):Communications - News Center (COMM), University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Spark:Significant Opportunities in Atmospheric Research and Science (SOARS), University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Spark:UCAR Science Education, University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Spark:Administrative Office (SPARKAO), University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Directorate (NCARDIR)</xs:documentation>
+		<xs:documentation>2012-07-20: removed: High Altitude Observatory (HAO), Communications, Communications Services Dept., SOARS Program Office, LEARN: Atmospheric Science Explorers, University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA):Education and Outreach (EO), University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA):Education and Outreach (EO):EO Administrative Office (EOAO), University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA):Education and Outreach (EO):Significant Opportunities in Atmospheric, University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Director's Office (NCARDIR)</xs:documentation>
+		<xs:documentation>2012-04-22: Removed: Advanced Study Program (ASP), Atmospheric Chemistry Division (ACD), Climate and Global Dynamics Division (CGD), Communications - News Center (Comm), Computational and Information Systems Laboratory (CISL), Earth Observing Laboratory (EOL), Education and Outreach (EO), High Altitude Observatory, Human Resources (HR), Institute for Mathematics Applied to the Geosciences (IMAGe), Mesoscale and Microscale Meteorology Division (MMM), NCAR Library, Office of Government Affairs (OGA), Research Applications Laboratory (RAL), Research Aviation Facility (RAF), Safety and Site Services (SaSS), Unidata Program Center (Unidata)</xs:documentation>
+		<xs:documentation>2011-12-13: Added: NCAR:CISL:IMAGe:Computational Mathematics Group (CMG) and NCAR:CISL:IMAGe:Regional Integrated Science Collective (RISC)</xs:documentation>
+		<xs:documentation>2010-10-02: Removed: Significant Opportunities in Atmospheric Research and Science (SOARS) because have University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA):Education and Outreach (EO):Significant Opportunities in Atmospheric Research and Science (SOARS)</xs:documentation>
+		<xs:documentation>2010-09-17: Added historical divisions of The Institute for Integrative and Multidisciplinary Earth Studies (TIIMES) and Institute for the Study of Society and Environment (ISSE)</xs:documentation>
+		<xs:documentation>2010-07-01: Consider adding the IMAGe groups of: Computational Mathematics Group (CMG) and Regional Integrated Sciences Collective (RISC); they were not part of the original set of accept divisions.</xs:documentation>
+	</xs:annotation>
+	<xs:annotation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>None</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  SIMPLE TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="instDivisionCurrentType">
+		<xs:annotation>
+			<xs:documentation>***** instDivisionCurrentType  *****</xs:documentation>
+			<xs:documentation>Valid values for the element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA):CA Administrative Office (CAAO)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA):Communications - News Center (COMM)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA):Governance (GOV)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA):Office of Government Affairs (OGA)"/>
+
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Budget and Finance (BF)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Budget and Finance (BF):Budget Analysis (BA)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Budget and Finance (BF):General Accounting (GA)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Budget and Finance (BF):Project Accounting (PA)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Budget and Finance (BF):Property (PROPERTY)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Business Services (BIZSVCS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Business Services (BIZSVCS):Contracts (CON)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Business Services (BIZSVCS):Space Planning and Project Office (SPACE)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Business Services (BIZSVCS):Sponsored Agreements (SA)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Facilities Management and Sustainability (FMS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):FandA Administrative Office (FandAAO)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Human Resources (HR)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Information Technology (IT)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Information Technology (IT):Engineering (ITENG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Information Technology (IT):Multimedia Services (ITMM)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Information Technology (IT):Operations (ITOPS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Information Technology (IT):Project Management (ITPM)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Office of General Counsel (OGC)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Safety and Site Services (SaSS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Safety and Site Services (SaSS):Event Services (EVENTS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Safety and Site Services (SaSS):Logistics (LOG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Safety and Site Services (SaSS):Site Support Services (SS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Safety and Site Services (SaSS):Transportation (TRANSP)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Treasury Office (TREAS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):CISL Administrative Office (CISLAO)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Institute for Mathematics Applied to the Geosciences (IMAGe)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Institute for Mathematics Applied to the Geosciences (IMAGe):Computational Mathematics Group (CMG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Institute for Mathematics Applied to the Geosciences (IMAGe):Data Assimilation Research Section (DARES)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Institute for Mathematics Applied to the Geosciences (IMAGe):Geophysical Statistics Program (GSP)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Institute for Mathematics Applied to the Geosciences (IMAGe):Regional Integrated Science Collective (RISC)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Institute for Mathematics Applied to the Geosciences (IMAGe):Turbulence Numerics Team (TNT)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Data Support Section (DSS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Enterprise Services Section (ESS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Enterprise Services Section (ESS):Computer Production Group (CPG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Enterprise Services Section (ESS):Distributed Systems Group (DSG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Enterprise Services Section (ESS):Web Engineering Group (WEG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Enterprise Services Section (ESS):Workstation Support Group (WSST)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):High-end Services Section (HSS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):High-end Services Section (HSS):Consulting Services Group (CSG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):High-end Services Section (HSS):Data Analysis Services Group (DASG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):High-end Services Section (HSS):Mass Storage Systems Group (MSSG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):High-end Services Section (HSS):Supercomputer Systems Group (SCSG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Network Engineering and Telecommunications Section (NETS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Technology Development Division (TDD)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Technology Development Division (TDD):Application Scalability and Performance Group (ASAP)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Technology Development Division (TDD):Computational Science Section (CSS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Technology Development Division (TDD):Earth System Modeling Infrastructure (ESMI)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Technology Development Division (TDD):Visualization and Enabling Technologies Section (VETS)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Computing, Data and Software Facility (CDS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Computing, Data and Software Facility (CDS):Collaborative Technologies and Metadata Group (CTMG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Computing, Data and Software Facility (CDS):Data Management Group (DMG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Computing, Data and Software Facility (CDS):Software Systems Group (SSG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Computing, Data and Software Facility (CDS):Systems Infrastructure (SIG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Design and Fabrication Services (DFS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):EOL Administrative Office (EOLAO)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Field Project Services (FPS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):In-Situ Sensing Facility (ISF)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Remote Sensing Facility (RSF)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Research Aviation Facility (RAF)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Technology Development Facility (TDF)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Advanced Study Program (ASP)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Atmosphere, Ionosphere, and Magnetosphere (AIM)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Corona and Heliosphere (CANDH)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):HAO Administration (HAOAO)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Instrumentation Group (IG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Lower Solar Atmosphere (LSA)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Long-term Solar Variability (LSV)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Mauna Loa Solar Observatory (MLSO)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Solar Transients and Space Weather (STSW)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Solar Interior and Variability (SIV)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Integrated Science Program (ISP)"/>			
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Associate Director (NCARASSCDIR)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Budget and Planning Office (NCARBP)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Directorate (NCARDIR)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Atmospheric Composition REmote Sensing and Prediction (ACRESP)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Atmospheric Radiation Investigation and Measurements (ARIM)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Atmospheric Radical Studies (ARS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Biogeosciences (BIOGEO)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Biosphere Atmosphere Interactions (BAI)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Chemical Processes and Regional Modeling (CPRM)"></xs:enumeration>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Chemistry Modeling (CHEMMOD)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Chemistry Modeling (CHEMMOD):Global Chemistry Modeling (GCM)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Chemistry Modeling (CHEMMOD):Regional and Process Modeling (RPM)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Community Airborne Research Instrumentation (CARI)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Community in Situ Measurements (COMMINSITU)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Community in Situ Measurements (COMMINSITU):in Situ Observations (INSITUOBS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Community in Situ Measurements (COMMINSITU):Engineering Group (ENG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE):Atmospheric Composition Remote Sensing and Prediction (ACRESP)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE):Measurements of Pollution in the Troposphere (MOPITT)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE):Optical Techniques (OT)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE):UTLS Studies (UTLS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Global Modeling and WACCM (GMWACCM)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Global Tropospheric Modeling (GTM)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):High Resolution Dynamics Limb Sounder (HIRDLS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Laboratory Kinetics (LK)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Measurements of Pollution in the Troposphere (MOPITT)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite Data Analysis (SDA)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):UTLS Studies (UTLS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Ultrafine Aerosols (UA)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Atmospheric Modeling and Prediction (AMP)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):CESM Project Office (CPO)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):CESM Software Engineering Group (CSEG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Climate Analysis (CAS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Climate Change Research (CCR)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Information Systems (ISG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Oceanography (OS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Terrestrial Sciences (TSS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Terrestrial Sciences (TSS):Integrated Assessment Modeling (IAM)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Boundary Layer and Turbulence Group (BLTG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Data Assimilation Group (DAG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Mesoscale Dynamics Group (MDG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Mesoscale Prediction Group (MPG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Physical Meteorology Group (PMG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Prediction Diagnostics Group (PDG)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Regional Climate Research (RCR)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Systems Management Group (SMG)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):NESLAO (NESLAO)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Library (NCARLIB)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Research Relations Office (NCARRESREL)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):Aviation Applications Program (AAP)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):Climate Science &amp; Applications Program (CSAP)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):Hydrometeorological Applications Program (HAP)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):Joint Numerical Testbed (JNT)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):National Security Applications Program (NSAP)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):RAL Administrative Office (RALAO)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):Weather Systems and Assessment Program (WSAP)"/>
+			
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):Office of UCAR President (UCARPRES)"/>
+
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP)"/> 
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Constellation Observing System for Meteorology Ionosphere Climate (COSMIC)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Cooperative Program for Operational Meteorology Education and Training (COMET)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Digital Learning Sciences (DLS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Global Learning and Obsersvations to Benefit the Environment (GLOBE)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Joint Office for Science Support (JOSS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):National Science Digital Library (NSDL)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Spark"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Spark:Administrative Office (SPARKAO)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Spark:Significant Opportunities in Atmospheric Research and Science (SOARS)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Spark:UCAR Science Education"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Unidata Program Center (UNIDATA)"/>
+			<xs:enumeration value="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Visiting Scientist Programs (VSP)"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="instDivisionHistoricalType">
+		<xs:annotation>
+			<xs:documentation>***** instDivisionHistoricalType  *****</xs:documentation>
+			<xs:documentation>Valid values for the element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Acid Deposition Modeling Project (ADMP)"/>
+			<xs:enumeration value="Aeronomy Laboratory"/>
+			<xs:enumeration value="Atmospheric Analysis and Prediction Division (AAP)"/>
+			<xs:enumeration value="Atmospheric Chemistry and Aeronomy Division (ACAD)"/>
+			<xs:enumeration value="Atmospheric Quality Division (AQD)"/>
+			<xs:enumeration value="Atmospheric Quality and Modification Division (AQM)"/>
+			<xs:enumeration value="Atmospheric Technology Division (ATD)"/>
+			<xs:enumeration value="Balloon Facility"/>
+			<xs:enumeration value="Convective Storms Division"/>
+			<xs:enumeration value="Cooperative Convective Precipitation Experiment (CCOPE)"/>
+			<xs:enumeration value="Corporate Partners Program"/>
+			<xs:enumeration value="Environmental Research Laboratories (ERL)"/>
+			<xs:enumeration value="Environmental and Societal Impacts Group (ESIG)"/>
+			<xs:enumeration value="Facilities for Atmospheric Research"/>
+			<xs:enumeration value="Facilities Laboratory"/>
+			<xs:enumeration value="Field Observing Facility (FOF)"/>
+			<xs:enumeration value="Global Atmospheric Research Program (GARP)"/>
+			<xs:enumeration value="Global Atmospheric Research Programme Atlantic Tropical Experiment (GATE)"/>
+			<xs:enumeration value="The Institute for Integrative and Multidisciplinary Earth Studies (TIIMES)"/>
+			<xs:enumeration value="Institute for the Study of Society and Environment (ISSE)"/>
+			<xs:enumeration value="Laboratory of Atmospheric Science (LAS)"/>
+			<xs:enumeration value="Line Islands Critique"/>
+			<xs:enumeration value="Media Relations Office"/>
+			<xs:enumeration value="National Hail Research Experiment (NHRE)"/>
+			<xs:enumeration value="Office of Development and Government Affairs"/>
+			<xs:enumeration value="Office for Interdisciplinary Earth Studies (OIES)"/>
+			<xs:enumeration value="Physical Facility Services (PFS)"/>
+			<xs:enumeration value="Publications Office"/>
+			<xs:enumeration value="Research Applications Program (RAP)"/>
+			<xs:enumeration value="Scientific Balloon Facility (SBF)"/>
+			<xs:enumeration value="Scientific Computing Division (SCD)"/>
+			<xs:enumeration value="Societal Impacts Program (SIP)"/>
+			<xs:enumeration value="Transportation Alternatives Program (TAP)"/>
+			<xs:enumeration value="U.S. Monex Project Office"/>
+			<xs:enumeration value="Weather Research Program. Environmental Research Laboratories"/>	
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:annotation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>Created: 2008-09-03</xs:documentation>
+
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>***** SCHEMA AUTHOR  *****</xs:documentation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger@ucar.edu</xs:documentation>
+
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>*****  COPYRIGHT and LICENSE INFORMATION  *****</xs:documentation>
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>See LICENSE AND COPYRIGHT below.</xs:documentation>
+	</xs:annotation>
+</xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

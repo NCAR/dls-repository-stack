@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.dlese.org/Metadata/dcs/framework-config/dcsFrameworkConfig.xsd">
+  <xmlFormat>lar</xmlFormat>
+  <schemaInfo>
+    <rootElementName>record</rootElementName>
+    <schemaURI>http://ns.nsdl.org/ncs/lar/1.00/schemas/lar.xsd</schemaURI>
+    <paths>
+      <path pathName="id" readOnly="true" requiredByCopyRecord="true" requiredByMinimalRecord="true">/record/recordID</path>
+      <path pathName="recordDate" valueType="date" readOnly="true" requiredByMinimalRecord="true" requiredByCopyRecord="true">/record/recordDate</path>
+      <path pathName="description" readOnly="false" requiredByMinimalRecord="true" requiredByCopyRecord="true">/record/description</path>
+      <path pathName="title" readOnly="false" requiredByMinimalRecord="true" requiredByCopyRecord="true">/record/title</path>
+      <path pathName="standard" inputHelper="lar/standard-widget.jsp">/record/standard</path>
+      <path pathName="alignment" inputHelper="lar/alignment-widget.jsp">/record/standard/alignment</path>
+      <path pathName="idtype" inputHelper="lar/idType-widget.jsp">/record/standard/alignment/id/@type</path>
+    </paths>
+  </schemaInfo>
+  <name>lar</name>
+  <editorInfo>
+    <renderer>LarEditorRenderer</renderer>
+    <firstPage>record</firstPage>
+    <rebuildOnStart>true</rebuildOnStart>
+    <baseRenderLevel>3</baseRenderLevel>
+    <vocabLayoutURI>http://ns.nsdl.org/ncs/lar/1.00/build/groups-list.xml</vocabLayoutURI>
+    <fieldInfoURI>http://ns.nsdl.org/ncs/lar/1.00/build/fields-list.xml</fieldInfoURI>
+  </editorInfo>
+</frameworkConfigRecord>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: format-anno-fields-en-us.xml,v 1.1 2009/01/30 21:32:40 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/annotation/1.0.00/format.xsd">
+	<field name="Format" language="en-us" metaFormat="dlese_anno" metaVersion="1.0.00" path="/annotationRecord/annotation/format">
+		<definition>the format of the content of annotation</definition>
+
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="Format" levelDeftn="the format of the content of annotation"/>
+		</vocabLevels>
+		<terms>
+			<termAndDeftn vocab="Audio">the content of the annotation is primarily sound to be heard</termAndDeftn>
+			<termAndDeftn vocab="Graphical">the content of the annotation is primarily an image or graphic to view or overlay</termAndDeftn>
+			<termAndDeftn vocab="Text">the content of the annotation is primarily text to be read</termAndDeftn>
+			<termAndDeftn vocab="Video">the content of the annotation is primarily sound and pictures</termAndDeftn>
+	</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-10-05">Choose a format from the term list.</practice>
+				<practice status="current" originDate="2006-09-21" link1="Text" style1="bold">Use this field when the format of the annotation is something other than Text.</practice>
+				<practice status="current" originDate="2006-09-21">Only a single format is allowed. Choose the format that best presents the annotation.</practice>
+			</dos>
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>Text</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

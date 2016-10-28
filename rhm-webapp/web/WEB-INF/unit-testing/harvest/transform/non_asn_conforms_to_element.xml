@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<nsdl_dc:nsdl_dc xmlns:nsdl_dc="http://ns.nsdl.org/nsdl_dc_v1.02/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ieee="http://www.ieee.org/xsd/LOMv1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.02.000" xsi:schemaLocation="http://ns.nsdl.org/nsdl_dc_v1.02/ http://ns.nsdl.org/schemas/nsdl_dc/nsdl_dc_v1.02.xsd">
+  <dc:identifier>urn:www.khanacademy.org:node_slug:e/decimals_on_the_number_line_1</dc:identifier>
+  <dc:identifier xsi:type="dct:URI">http://www.khanacademy.org/exercise/decimals_on_the_number_line_1</dc:identifier>
+  <dct:conformsTo xsi:type="dct:URI">http://corestandards.org/Math/Content/4/NF/C/6</dct:conformsTo><!-- http://asn.jesandco.org/resources/S11434AA -->
+  <dct:conformsTo>CCSS.ELA-Literacy.RI.7.10</dct:conformsTo><!-- http://asn.jesandco.org/resources/S2364824 -->
+  <dct:conformsTo>Analyze functions using different representations</dct:conformsTo><!-- http://asn.jesandco.org/resources/S1143583 -->
+  <dc:type>exercise</dc:type>
+  <dct:created>2011-12-23T16:37:32Z</dct:created>
+  <dc:title>Decimals on the number line 1</dc:title>
+  <dc:creator>Matt Wahl</dc:creator>
+  <dct:conformsTo xsi:type="dct:URI">http://bogus.urk/Math/Content/4/NF/C/6</dct:conformsTo>
+  <dct:conformsTo>CCSS.ELA-LiteracdfsdfsdfdRI.7.10</dct:conformsTo>
+  <dct:conformsTo xsi:type="dct:URI">http://asn.jesandco.org/resources/S11434BB</dct:conformsTo>
+  <dct:conformsTo xsi:type="dct:URI">http://purl.org/ASN/resources/S114358F</dct:conformsTo>
+</nsdl_dc:nsdl_dc>

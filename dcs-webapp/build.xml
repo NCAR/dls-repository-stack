@@ -1,0 +1,765 @@
+<!--
+     General purpose build script for web applications and web services,
+     including enhanced support for deploying directly to a Tomcat 4
+     based server.
+
+     This build script assumes that the source code of your web application
+     is organized into the following subdirectories underneath the source
+     code directory from which you execute the build script:
+
+        docs                 Static documentation files to be copied to
+                             the "docs" subdirectory of your distribution.
+
+        src                  Java source code (and associated resource files)cas
+                             subdirectory of your web applicaiton.
+
+        web                  Static HTML, JSP, and other content (such as
+                             image files), including the WEB-INF subdirectory
+                             and its configuration file contents.
+
+-->
+
+
+<!-- A "project" describes a set of targets that may be requested
+     when Ant is executed.  The "default" attribute defines the
+     target which is executed if no specific target is requested,
+     and the "basedir" attribute defines the current working directory
+     from which Ant executes the requested task.  This is normally
+     set to the current working directory.
+-->
+
+<project name="DCS Webapp" default="compile" basedir=".">
+
+
+    <!-- ===================== Property Definitions =========================== -->
+
+
+    <!--
+
+      Each of the following properties are used in the build script.
+      Values for these properties are set by the first place they are
+      defined, from the following list:
+
+      * Definitions on the "ant" command line (ant -Dfoo=bar compile).
+
+      * Definitions from a "build.properties" file in the top level
+        source directory of this application.
+
+      * Definitions from a "build.properties" file in the developer's
+        home directory.
+
+      * Default definitions in this build.xml file.
+
+      You will note below that property values can be composed based on the
+      contents of previously defined properties.  This is a powerful technique
+      that helps you minimize the number of changes required when your development
+      environment is modified.  Note that property composition is allowed within
+      "build.properties" files as well as in the "build.xml" script.
+
+    -->
+
+    <!-- DCS-specific properties should be placed in one of these files (only one should be used): -->
+    <property file="../dcs.properties"/>
+
+    <property file="${user.home}/build.properties"/>
+    <property file="build.properties"/>
+
+    <!-- Global, common properties may be placed here: -->
+    <property file="../site.properties"/>
+    <!-- ==================== File and Directory Names ======================== -->
+
+
+    <!--
+
+      These properties generally define file and directory names (or paths) that
+      affect where the build process stores its outputs.
+
+      app.name             Base name of this application, used to
+                           construct filenames and directories.
+                           Defaults to "suggest".
+
+      app.path             Context path to which this application should be
+                           deployed (defaults to "/" plus the value of the
+                           "app.name" property).
+
+      app.version          Version number of this iteration of the application.
+
+      build.home           The directory into which the "prepare" and
+                           "compile" targets will generate their output.
+                           Defaults to "build".
+
+      catalina.home        The directory in which you have installed
+                           a binary distribution of Tomcat 5.x.  This will
+                           be used by the "deploy" target.
+
+      dist.home            The name of the base directory in which
+                           distribution files are created.
+                           Defaults to "dist".
+
+    -->
+
+    <property name="app.name" value="schemedit"/>
+    <property name="app.path" value="/${app.name}"/>
+    <property name="app.version" value="2.10.0"/>
+    <property name="build.home" value="${basedir}/build"/>
+    <property name="catalina.base" value="${catalina.home}"/>
+    <property name="dist.home" value="${basedir}/dist"/>
+    <property name="docs.home" value="${basedir}/docs"/>
+    <property name="src.home" value="${basedir}/src"/>
+    <property name="web.home" value="${basedir}/web"/>
+    <property name="deploy.context.name" value="${app.name}"/>
+
+    <property name="tomcat.deploy.home" value="${catalina.base}/webapps/${deploy.context.name}"/>
+    <property name="war.deploy.home" value="${tomcat.deploy.home}"/>
+    <property name="ncs.dist.home" value="${war.deploy.home}"/>
+
+    <property name="javadoc.home" value="${tomcat.deploy.home}/docs/javadoc"/>
+
+
+    <!--  ==================== Compilation Control Options ==================== -->
+
+    <!--
+      These properties control option settings on the Javac compiler when it
+      is invoked using the <javac> task.
+
+      compile.debug        Should compilation include the debug option?
+      compile.deprecation  Should compilation include the deprecation option?
+      compile.optimize     Should compilation include the optimize option?
+
+    -->
+
+    <property name="compile.debug" value="true"/>
+    <property name="compile.deprecation" value="false"/>
+    <property name="compile.optimize" value="true"/>
+
+    <!-- ==================== Compilation Classpath =========================== -->
+
+    <!--
+
+      Construct the classpath needed for compilation
+
+    -->
+
+    <path id="compile.classpath">
+
+        <!-- 	Include dependent jars used in the build that are
+                also needed for deployment and distribution -
+                assumes all the needed jars have already been
+                copied into the build area -->
+
+        <fileset dir="${build.home}/WEB-INF/lib">
+            <include name="*.jar"/>
+        </fileset>
+
+        <!--  Include dependent jars used in the build that are
+                 also needed for deployment and distribution -->
+        <fileset dir="web/WEB-INF/lib">
+            <include name="*.jar"/>
+        </fileset>
+
+        <!-- Include all elements that Tomcat exposes to applications -->
+        <pathelement location="${catalina.home}/common/classes"/>
+
+        <fileset dir="${catalina.home}/common/lib">
+            <include name="*.jar"/>
+        </fileset>
+
+        <!-- this is where the jython classes are -->
+        <pathelement location="${build.home}/WEB-INF/classes"/>
+
+    </path>
+
+    <!-- ==================== Config Parameters FilterSet ====================================== -->
+
+    <!-- Default config properties (overidden by properties.files) -->
+    <property name="instance.name" value="DCS"/>
+    <property name="logo.file" value="DLS-logo.png"/>
+    <property name="cataloging.info" value=""/>
+    <property name="cataloging.info.label" value="Cataloging Info"/>
+    <property name="instance.help" value=""/>
+    <property name="instance.help.label" value="Instance-specific Help"/>
+    <property name="authentication.enabled" value="false"/>
+    <property name="dcs.config.dir" value="WEB-INF/dcs-config"/>
+
+    <property name="repository.data.dir" value="WEB-INF/data/repository_data"/>
+    <property name="records.dir" value="WEB-INF/data/ncs_sample_records"/>
+    <property name="export.base.dir" value="WEB-INF/data/exported"/>
+    <property name="mui.loader.file" value="WEB-INF/data/NoMetadataUI.xml"/>
+    <property name="auto.export.start.time" value="disabled"/>
+    <property name="oai.pmh.enabled" value="true"/>
+    <property name="debug" value="false"/>
+
+    <!-- ndr defaults -->
+    <property name="ndr.service.enabled" value="false"/>
+    <property name="ndr.api.base.url" value=""/>
+    <property name="ndr.private.key" value=""/>
+    <property name="ncs.agent.handle" value=""/>
+    <property name="ndr.content.proxy" value=""/>
+    <property name="ndr.permissions" value=""/>
+    <property name="ndr.master.collection" value=""/>
+    <property name="ndr.master.agent" value=""/>
+    <property name="mime.types.mapping" value="WEB-INF/data/mime-mappings.xml"/>
+    <property name="google.maps.key" value=""/>
+
+
+    <property name="asn.standards.library" value=""/>
+    <property name="standards.service.config" value=""/>
+    <property name="cat.service.props" value=""/>
+    <property name="sif.refid.config" value="WEB-INF/sifRefId-config"/>
+
+    <property name="allow.dlese.collect.items" value="false"/>
+    <property name="allow.provided.collection.keys" value="false"/>
+
+    <property name="nldr.props" value=""/>
+
+    <!-- filterset to do token replacement on config file -->
+    <filterset id="configFilterSet">
+        <filter token="INSTANCE_NAME" value="${instance.name}"/>
+        <filter token="LOGO_FILE" value="${logo.file}"/>
+        <filter token="CATALOGING_INFO" value="${cataloging.info}"/>
+        <filter token="CATALOGING_INFO_LABEL" value="${cataloging.info.label}"/>
+        <filter token="INSTANCE_HELP" value="${instance.help}"/>
+        <filter token="INSTANCE_HELP_LABEL" value="${instance.help.label}"/>
+        <filter token="VERSION" value="${app.version}"/>
+        <filter token="AUTHENTICATION_ENABLED" value="${authentication.enabled}"/>
+        <filter token="DCS_CONFIG_DIR" value="${dcs.config.dir}"/>
+
+        <filter token="REPOSITORY_DATA_DIR" value="${repository.data.dir}"/>
+
+        <filter token="RECORDS_DIR" value="${records.dir}"/>
+        <filter token="EXPORT_BASE_DIR" value="${export.base.dir}"/>
+        <filter token="MUI_LOADER_FILE" value="${mui.loader.file}"/>
+        <filter token="AUTO_EXPORT_START_TIME" value="${auto.export.start.time}"/>
+        <filter token="OAI_PMH_ENABLED" value="${oai.pmh.enabled}"/>
+
+        <filter token="NDR_SERVICE_ENABLED" value="${ndr.service.enabled}"/>
+        <filter token="NDR_API_BASE_URL" value="${ndr.api.base.url}"/>
+        <filter token="NDR_PRIVATE_KEY" value="${ndr.private.key}"/>
+        <filter token="NCS_AGENT_HANDLE" value="${ncs.agent.handle}"/>
+        <filter token="NDR_CONTENT_PROXY" value="${ndr.content.proxy}"/>
+        <filter token="NDR_MASTER_AGENT" value="${ndr.master.agent}"/>
+        <filter token="NDR_MASTER_COLLECTION" value="${ndr.master.collection}"/>
+        <filter token="MIME_TYPES_MAPPING" value="${mime.types.mapping}"/>
+        <filter token="GOOGLE_MAPS_KEY" value="${google.maps.key}"/>
+
+        <filter token="DEBUG" value="${debug}"/>
+        <filter token="CAT_SERVICE_PROPS" value="${cat.service.props}"/>
+        <filter token="STANDARDS_SERVICE_CONFIG" value="${standards.service.config}"/>
+        <filter token="ASN_STANDARDS_LIBRARY" value="${asn.standards.library}"/>
+        <filter token="SIF_REFID_CONFIG" value="${sif.refid.config}"/>
+
+        <filter token="ALLOW_DLESE_COLLECT_ITEMS" value="${allow.dlese.collect.items}"/>
+        <filter token="ALLOW_PROVIDED_COLLECTION_KEYS" value="${allow.provided.collection.keys}"/>
+
+        <filter token="NLDR_PROPERTIES" value="${nldr.props}"/>
+    </filterset>
+
+    <!-- ==================== Deploy Config Target ====================================== -->
+
+    <target name="deploy-context-descriptor" description="make substitutions in web.xml and deploy to app">
+        <copy file="web/WEB-INF/web.xml"
+              todir="${tomcat.deploy.home}/WEB-INF"
+              overwrite="true">
+            <filterset refid="configFilterSet"/>
+        </copy>
+    </target>
+
+    <!-- ==================== Test Target ====================================== -->
+
+    <!--
+
+      A target to play around with (to verify properties, etc)
+
+    -->
+
+    <target name="test" description="Sandbox area">
+        <echo>catalina.base: ${catalina.base}</echo>
+        <echo>catalina.home: ${catalina.home}</echo>
+        <echo>tomcat.deploy.home: ${tomcat.deploy.home}</echo>
+    </target>
+
+
+    <!-- ==================== All Target ====================================== -->
+
+    <!--
+
+      The "all" target is a shortcut for running the "clean" target followed
+      by the "compile" target, to force a complete recompile.
+
+    -->
+
+    <target name="all" depends="clean,compile"
+            description="Clean build and dist directories, then compile"/>
+
+
+    <!-- ==================== Clean Target ==================================== -->
+
+    <!--
+
+      The "clean" target deletes any previous "build" and "dist" directory,
+      so that you can be ensured the application can be built from scratch.
+
+    -->
+    <target name="clean"
+            description="Delete the build directory here and in shared-source">
+
+        <delete dir="${build.home}"/>
+
+        <ant antfile="../shared-source/build.xml" inheritAll="false" target="clean"/>
+
+    </target>
+
+
+    <!-- ==================== deploy-clean Target ====================================
+
+      The "deploy-clean" target deletes any previous "deploy" directories in your
+      local Tomcat area.
+
+    -->
+
+    <target name="deploy-clean" depends="clean-tomcat-work"
+            description="Delete the Tomcat deploy directory">
+        <delete dir="${tomcat.deploy.home}"/>
+    </target>
+
+    <!-- ==================== Deploy JSP Target ====================================
+
+ Deploy jsps, js, html, css and images, etc. directly to Tomcat for convenience
+
+ -->
+    <target name="deploy-jsp"
+            description="Deploy only jsp, js, html, css, xml and image files to Tomcat">
+
+        <copy file="web/WEB-INF/web.xml" preservelastmodified="true"
+              todir="${tomcat.deploy.home}/WEB-INF">
+            <filterset refid="configFilterSet"/>
+        </copy>
+
+        <copy todir="${tomcat.deploy.home}" preservelastmodified="true">
+            <fileset dir="web">
+                <include name="**/*.jsp"/>
+                <include name="**/*.jspf"/>
+                <include name="**/*.html"/>
+                <include name="**/*.gif"/>
+                <include name="**/*.jpeg"/>
+                <include name="**/*.jpg"/>
+                <include name="**/*.png"/>
+                <include name="**/*.css"/>
+                <include name="**/*.js"/>
+                <include name="**/*.xml"/>
+                <include name="**/*.xsl"/>
+                <include name="**/*.tag"/>
+                <exclude name="WEB-INF/web.xml"/>
+            </fileset>
+            <filterset>
+                <filter token="VERSION" value="${app.version}"/>
+                <filter token="BLANK" value=""/>
+            </filterset>
+        </copy>
+
+        <loadfile
+                property="dcs.service.jsp"
+                srcFile="web/services/dcs_services.jsp"
+                failonerror="false"/>
+
+        <!-- remove the existing web services portal page to force insertion of dcs.service.jsp -->
+        <property name="webservice.portal.page" value="${tomcat.deploy.home}/services/index.jsp"/>
+        <echo>deleting portal page at: ${webservice.portal.page}</echo>
+        <delete file="${webservice.portal.page}"/>
+
+        <antcall target="deploy-dds-helpers"/>
+
+
+    </target>
+
+
+    <!-- ==================== clean-tomcat-work Target ====================================
+
+        Deletes the Tomcat work files for all localhost and Standalone applications.
+        These files are generated and are thus expendable.
+
+    -->
+
+    <target name="clean-tomcat-work"
+            description="Delete the Tomcat work directory">
+        <delete dir="${catalina.base}/work/Catalina/localhost"/>
+        <delete dir="${catalina.base}/work/Standalone"/>
+
+    </target>
+
+
+    <!-- ==================== Compile Target ================================== -->
+
+    <!--
+
+      The "compile" target transforms source files (from your "src" directory)
+      into object files in the appropriate location in the build directory.
+      This example assumes that you will be including your classes in an
+      unpacked directory hierarchy under "/WEB-INF/classes".
+
+    -->
+
+    <target name="compile" depends="prepare"
+            description="Compile Java sources">
+
+        <!-- Compile Java classes as necessary -->
+        <echo>build home: ${build.home}</echo>
+        <!-- Copy associated resource files -->
+        <copy todir="${build.home}/WEB-INF/classes">
+            <fileset dir="src" includes="**/*.properties"/>
+            <fileset dir="src" includes="**/*.xml"/>
+        </copy>
+
+        <!-- Jar up the resource files -->
+        <jar destfile="${build.home}/WEB-INF/lib/${app.name}.jar"
+             basedir="${build.home}/WEB-INF/classes"/>
+
+
+        <!-- Compile and build dls-libs.jar to the build area -->
+        <ant antfile="../shared-source/build.xml" inheritAll="false" target="jar">
+            <property name="jar.lib.dir" value="${build.home}/WEB-INF/lib"/>
+        </ant>
+
+        <javac srcdir="${src.home}" includeantruntime="false"
+               destdir="${build.home}/WEB-INF/classes"
+               debug="${compile.debug}"
+               deprecation="${compile.deprecation}"
+               optimize="${compile.optimize}">
+            <classpath refid="compile.classpath"/>
+        </javac>
+
+    </target>
+
+    <!-- ==================== Deploy Target ===================================
+
+      The "deploy" target copies the contents of the build directory into a
+      location required by our servlet container, and picks up any external
+      dependencies along the way.  After restarting the servlet container, you
+      can now test your web application.
+
+    -->
+
+    <target name="deploy" depends="compile"
+            description="Deploy application to servlet container">
+
+        <!-- Copy the contents of the build directory -->
+        <mkdir dir="${tomcat.deploy.home}"/>
+
+
+        <!-- Local build will have security auth turned on -->
+        <copy todir="${tomcat.deploy.home}/WEB-INF"
+              file="${build.home}/WEB-INF/web.xml" overwrite="true">
+            <filterset refid="configFilterSet"/>
+        </copy>
+
+
+        <copy todir="${tomcat.deploy.home}">
+            <fileset dir="${build.home}"
+                     excludes="WEB-INF/classes-junit/, WEB-INF/web.xml"/>
+        </copy>
+
+        <antcall target="deploy-dds-helpers"/>
+
+    </target>
+
+    <!-- ==================== Deploy DDS helpers Target ================================== -->
+
+    <!--
+        Deploys selected jsp and config files from dds-webapp
+
+        - xmlIndexing Config files
+        - web service JSP files
+        - OAI JSP files
+    -->
+
+    <target name="deploy-dds-helpers" depends="deploy-oai-jsp">
+
+        <!-- grab xml indexing configuration from dds project -->
+        <property name="dds.repository.conf"
+                  value="../dds-webapp/web/WEB-INF/conf"/>
+        <property name="deploy.repository.conf"
+                  value="${tomcat.deploy.home}/WEB-INF/conf/repository_config"/>
+
+        <echo>copying repository config to ${deploy.repository.conf}/repository_config</echo>
+        <copy todir="${deploy.repository.conf}" failonerror="false">
+            <fileset dir="${dds.repository.conf}"/>
+        </copy>
+
+        <!-- dds-webapp deploy-jsp target to suck in web services stuff -->
+        <ant antfile="../dds-webapp/build.xml" inheritAll="false" target="deploy-jsp">
+            <property name="deploy.context.name" value="${deploy.context.name}"/>
+            <property name="deploy.web-files.dir" value="services"/>
+            <property name="dcs.anchor.link" value=" &lt;a href='#dcs'>DCS RepositoryService&lt;/a>, and"/>
+            <property name="dcs.service.jsp" value="${dcs.service.jsp}"/>
+
+            <!-- this flag disables dlese-shared deploy-jsp -->
+            <property name="am.making.war.file" value="true"/>
+        </ant>
+
+        <ant antfile="../dds-webapp/build.xml" inheritAll="false" target="deploy-jsp">
+            <property name="deploy.context.name" value="${deploy.context.name}"/>
+            <property name="deploy.web-files.dir" value="analytics"/>
+
+            <!-- this flag disables dlese-shared deploy-jsp -->
+            <property name="am.making.war.file" value="true"/>
+        </ant>
+
+    </target>
+
+
+    <!-- Deploy OAI-PMH JSPs etc. directly to web context (from dds-webapp, was previously part of the joai-project) -->
+    <target name="deploy-oai-jsp" description="Deploy OAI jsps and other files to Tomcat">
+
+        <!-- **************** OAI-PMH related files **************** -->
+
+        <!-- Grab the web/oai-requests files from dds-webapp and put them in web/services -->
+        <property name="oai.requests" value="../dds-webapp/web/services/oai2-0/oai_requests"/>
+        <property name="oai.service" value="${tomcat.deploy.home}/services/oai2-0/oai_requests"/>
+
+        <!-- Make sure the oai service area is set up... -->
+        <mkdir dir="${oai.service}"/>
+
+        <copy todir="${oai.service}">
+            <fileset dir="${oai.requests}">
+                <include name="**/*.jsp"/>
+            </fileset>
+            <filterset>
+                <filter token="VERSION" value="${app.version}"/>
+            </filterset>
+        </copy>
+
+    </target>
+
+
+    <!-- ==================== Javadoc Target ================================== -->
+
+    <!--
+
+      The "javadoc" target creates Javadoc API documentation for the Java
+      classes included in your application.  Normally, this is only required
+      when preparing a distribution release, but is available as a separate
+      target in case the developer wants to create Javadocs independently.
+
+    -->
+
+    <target name="javadoc"
+            description="Create DLS Libs Javadoc API documentation">
+
+        <!-- Generate the DLS Librs Javadoc -->
+        <ant antfile="../shared-source/build.xml" inheritAll="false" target="javadoc"/>
+
+    </target>
+
+    <!-- ==================== Deploy MetadataUI Target ================================== -->
+    <!--
+        Copy the metadata UI (vocabulary) files to a default location that is used if no config
+        is provided in the DDS Context definition in server.xml
+    -->
+    <target name="deploy-metadata-ui" description="Deploy the metadata UI files to /WEB-INF/ default location">
+        <copy todir="${tomcat.deploy.home}/WEB-INF/metadata-ui-project" failonerror="false">
+            <fileset dir="../metadata-ui-project/frameworks/"/>
+        </copy>
+    </target>
+
+
+    <!-- ==================== Prepare Target ================================== -->
+
+    <!--
+
+      The "prepare" target is used to create the "build" destination directory,
+      and copy the static contents of your web application to it.  If you need
+      to copy static files from external dependencies, you can customize the
+      contents of this task.
+
+      Normally, this task is executed indirectly when needed.
+
+    -->
+
+    <target name="prepare">
+        <!-- Create build directories as needed -->
+        <mkdir dir="${build.home}"/>
+        <mkdir dir="${build.home}/WEB-INF"/>
+        <mkdir dir="${build.home}/WEB-INF/classes"/>
+
+        <!-- Copy in the web dir -->
+        <copy todir="${build.home}">
+            <fileset dir="web">
+                <include name="**/*.jsp"/>
+                <include name="**/*.html"/>
+                <include name="**/*.txt"/>
+            </fileset>
+
+            <!-- Remove the BLANK tag in the jsps (fixes bug in JEdit if XML
+              declaration is the first thing in the file -->
+            <filterset>
+                <filter token="BLANK" value=""/>
+                <filter token="VERSION" value="${app.version}"/>
+            </filterset>
+        </copy>
+
+        <copy todir="${build.home}">
+            <fileset dir="web">
+                <exclude name="**/*.jsp"/>
+                <exclude name="**/*.html"/>
+                <exclude name="**/*.txt"/>
+            </fileset>
+        </copy>
+
+        <!-- Copy in the docs dir, excluding binaries -->
+        <mkdir dir="${build.home}/docs"/>
+        <copy todir="${build.home}/docs">
+            <fileset dir="docs">
+                <exclude name="**/*.doc"/>
+                <exclude name="**/*.pdf"/>
+            </fileset>
+            <filterset>
+                <filter token="VERSION" value="${app.version}"/>
+            </filterset>
+        </copy>
+
+        <!-- copy binaries without filter -->
+        <mkdir dir="${build.home}/docs"/>
+        <copy todir="${build.home}/docs">
+            <fileset dir="docs">
+                <include name="**/*.doc"/>
+                <include name="**/*.pdf"/>
+            </fileset>
+        </copy>
+
+        <!-- Copy over the build.xml file -->
+        <copy file="build.xml" tofile="${build.home}/docs/build.txt"/>
+
+        <!-- Copy static files from external dependencies as needed -->
+
+    </target>
+
+    <!-- ==================== Dist Target ===================================== -->
+
+    <!--
+
+      The "dist" target creates a binary distribution of your application
+      in a directory structure ready to be archived in a tar.gz or zip file.
+      Note that this target depends on two others:
+
+      * "compile" so that the entire web application (including external
+        dependencies) will have been assembled
+
+      * "javadoc" so that the application Javadocs will have been created
+
+    -->
+
+    <!-- add clean depends -->
+    <target name="dist" depends="compile"
+            description="Create and package binary distribution">
+
+        <property name="dcs.name" value="dcs-${app.version}"/>
+        <property name="dcs.dist.home" value="${dist.home}/${dcs.name}"/>
+
+        <!-- Copy documentation subdirectories -->
+        <delete dir="${dcs.dist.home}"/>
+        <mkdir dir="${dcs.dist.home}"/>
+        <copy todir="${dcs.dist.home}">
+            <fileset dir="${docs.home}">
+                <include name="War-Install*.txt"/>
+            </fileset>
+        </copy>
+
+        <!-- Create application JAR file -->
+        <jar jarfile="${dcs.dist.home}/${dcs.name}.war"
+             basedir="${build.home}"/>
+
+        <!-- Zip the dist directory distribution -->
+        <property name="zip.name" value="${dcs.name}.zip"/>
+
+        <zip destfile="${basedir}/../${zip.name}">
+            <zipfileset dir="${dcs.dist.home}"/>
+        </zip>
+
+        <move file="${basedir}/../${zip.name}" tofile="${dist.home}/${zip.name}"/>
+
+    </target>
+
+    <!-- =============================== WAR =================================== -->
+
+    <!--
+        The "war" target creates an application war file suitable for deployment
+            requires property "war.deploy.home", which can default to the tomcat
+            deploy directory.
+    -->
+    <target name="war"
+            depends=""
+            description="Creates a WAR file that can be used for application deployment">
+
+        <!--
+            Basic approach: Simply override the deploy target to deploy to the war
+            staging dir instead of tomcat webapps, then jar up the deployed app
+            into a war file
+        -->
+        <echo>Creating war file for deployment</echo>
+
+        <property name="war.deploy.staging.dir"
+                  value="${war.deploy.home}/${deploy.context.name}"/>
+
+        <mkdir dir="${war.deploy.home}"/>
+
+        <ant target="clean">
+            <property name="tomcat.deploy.home"
+                      value="${war.deploy.staging.dir}"/>
+        </ant>
+
+        <ant target="deploy-clean">
+            <property name="tomcat.deploy.home"
+                      value="${war.deploy.staging.dir}"/>
+        </ant>
+
+        <ant target="deploy">
+            <property name="tomcat.deploy.home"
+                      value="${war.deploy.staging.dir}"/>
+        </ant>
+
+        <!-- Create the application WAR file -->
+        <jar jarfile="${war.deploy.home}/${deploy.context.name}.war"
+             basedir="${war.deploy.staging.dir}"/>
+
+    </target>
+
+    <!-- =============================== NCS-Dist =================================== -->
+
+    <!--
+        The "ncs-dist" target creates distribution package for the ncs including
+        - war file
+        - install instructions
+        - context descriptor template (for configuration)
+        - license files
+
+    -->
+
+    <target name="ncs-dist" depends="war"
+            description="Create and package binary NCS distribution">
+
+        <property name="ncs.name" value="ncs_v${app.version}"/>
+        <property name="ncs.dist.dir" value="${ncs.dist.home}/${ncs.name}"/>
+        <property name="docs.dir" value="${war.deploy.home}/${deploy.context.name}/docs"/>
+
+        <!-- Copy documentation subdirectories -->
+        <delete dir="${ncs.dist.dir}"/>
+        <mkdir dir="${ncs.dist.dir}"/>
+
+        <copy file="${war.deploy.home}/${deploy.context.name}.war"
+              tofile="${ncs.dist.dir}/ncs.war">
+        </copy>
+
+        <copy todir="${ncs.dist.dir}">
+            <fileset dir="${docs.dir}">
+                <include name="INSTALL_INSTRUCTIONS.txt"/>
+                <include name="CHANGES.txt"/>
+                <include name="license/**/*.*"/>
+                <include name="UPDATING_to_2.9.txt"/>
+            </fileset>
+        </copy>
+        <copy todir="${ncs.dist.dir}"
+              file="${docs.dir}/templates/context_descriptor_template.xml"/>
+    </target>
+
+
+</project>

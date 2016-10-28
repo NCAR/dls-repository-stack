@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- alphabetical listing of framework groups filenames -->
+<metadataGroupsInfo>
+	<files>
+		<file>oai_dc/2.0/groups/contributor-oai-dc-groups-default-en-us.xml</file>
+		<file>oai_dc/2.0/groups/type-oai-dc-groups-default-en-us.xml</file>
+		<file>oai_dc/2.0/groups/title-oai-dc-groups-default-en-us.xml</file>
+	</files>
+</metadataGroupsInfo>

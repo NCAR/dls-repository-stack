@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: teachingMethod-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/teachingMethod.xsd">
+	<field name="Teaching method" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/educational/audiences/audience/teachingMethods/teachingMethod">
+		<definition attribution="GEM">ways of presenting instructional materials or conducting instructional activities</definition>
+
+
+<!--Think about adding Distance learning to the adn framework-->
+
+
+		<vocabLevels number="2">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="DLESE">Digital Library for Earth System Education</levelTermAndDeftn>
+					<levelTermAndDeftn term="GEM">The Gateway to Educational Materials</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="2" levelName="Teaching method" levelDeftn="ways of presenting instructional materials or conducting instructional activities; see the allowed combination of terms below; the grade range part of the term is the phrase after the last colon"/>				
+		</vocabLevels>
+			
+		<terms>
+			<termAndDeftn vocab="DLESE:Distance learning">learning situation in which the instructor and learners are not co-located such that issues of geographical separation may need to be addressed</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Large group learning">learning situation in which 10 or more students work together to reach consensus on a project, goal or activity</termAndDeftn>
+			
+			<termAndDeftn vocab="DLESE:Small group learning">learning situation in which 3-5 students work closely together or interdependently to accomplish tasks, goals or produce outcomes</termAndDeftn>
+			
+			<termAndDeftn vocab="GEM:Advanced organizers">learning situation in which students build upon prior knowledge and organize their thoughts before learning new topics and concepts.</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Brainstorming">activity or technique to encourage the creative generation of ideas, usually a group process, in which group members contribute suggestions in a spontaneous, noncritical manner</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Computer assisted instruction">interactive instructional technique in which a computer is used to present instructional material, monitor learning, and select additional instructional material in accordance with individual learner needs</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Computer simulations">computer based representation of real situations or systems</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Contingency management">systematic arrangement of reinforcing events in order to strengthen or weaken specific behavior</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Cooperative learning">learning situation in which students work together in small groups and receive rewards or recognition based on their group's performance</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Demonstrations">teaching method in which explanations are given by example or experiment</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Dialog journals">logs or notebooks used by more than one person or group for exchanging experiences, ideas, or reflections</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Discovery learning">learning situation in which the principal content of what is to be learned is not given but must be independently discovered by the learner</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Discussions">oral, and sometimes written, exchange of opinions - usually to analyze, clarify, or reach conclusions about issues, questions, or problems</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Dramatic play drills">learning situation where students assume a role or identity for the purpose of understanding the learning topics and concepts; each student assumes each role in turn throughout the activity, not just a single role (similar to GEM:Role playing)</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Experiential learning">learning by doing -- includes knowledge and skills acquired outside of book\lecture learning situations through work, play, and other life experiences</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Guided design">reasoning-centered instructional method developed by Charles E. Wales and Robert A. Stager that uses small-group techniques and a prepared outline of decision making steps to guide students through the process of resolving open-ended problems</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Hands-on learning">learning by doing - includes knowledge and skills acquired by performing real-life activities or tasks</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Integrated instruction">interdisciplinary teaching approach that presents subject matter as in-depth themes or topics and integrates knowledge from different disciplines (similarly to GEM:Thematic approach)</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Interdisciplinary">participation or cooperation of two or more disciplines</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Lab procedures">a sequence of steps to teach through experimentation a concept or topic</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Lecture">teaching method in which information is presented orally to a class with a minimal amount of class participation</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Montessori method">child-centered approach to teaching, developed by Maria Montessori and most often used in the early childhood years, that features a wide range of graded, self-motivational techniques and materials specially designed to provide sensory motor pathways to higher learning</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Multimedia instruction">the integration of more than one medium in a presentation or module of instruction</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Multiple activities">learning situation where the learning concept is presented or demonstrated through multiple activities; often used with complex concepts</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Museum education">(1) those changes brought about in the individual through ideas suggested or communicated by museum materials and their arrangement. (2) the formal or informal educational program carried on by museums.</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Peer tutoring">instruction provided by a learner, or small group of learners, by direct interaction with a peer with appropriate training or experience</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Programmed instruction">instruction in which learners progress at their own rate using workbooks, textbooks, or electromechanical devices that provide information in discrete steps, test learning at each step and provide immediate feedback about achievement</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Project-based learning">learning situations with many learning goals and outcomes that evolve while students are working through new topics, concepts and their interrelationships</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Questioning techniques">methods used for constructing and presenting questions in order to promote effective discussions and learning or to elicit information</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Role playing">the deliberate acting out of a role (possibly a role that one would not normally occupy), as part of group therapy or learning session directed towards understanding that role or the situations with which the role's occupants have to cope</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Self-directed groups">groups with a passive leader or without a specified leader in which all members mutually agree on group goals and procedures</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Self-paced learning">referring to materials, learning, courses, etc. where the student is free to learn at his own rate. That is, the speed of presentation of learning materials is not decided by a teacher, a machine, or other students in a group, (e.g. independent learning)</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Simulations and games">the use of role playing by the actors during the operation of a comparatively complex symbolic model of an actual of hypothetical social process; usually includes gaming and may be all-man, man-computer, or all-computer operations</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Team teaching">an arrangement whereby a group of teachers cooperate so that their classes have contact with more than one of those teachers during a given learning session or period</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Thematic approach">teaching approach that organizes subject matter around unifying themes</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Tutorial programs">programs, established by educational institutions, to tutor selected students</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Visual instruction">instruction with a great variety of illustrative materials such as visual slides, films, models, and specimens may be utilized as aids in pupil understanding or appreciation; not to be confused by sight saving</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Whole language approach">method of integrating language arts across the curriculum that uses the real literature of various age groups and subject fields to promote literacy (i.e., reading, writing, speaking, listening, as well as thinking, skills). </termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-04-20">Catalogers who have experience in educational systems and familiarity with various teaching methods may use this field.</practice>
+
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2005-04-20">Catalogers without educational or teaching experience should not use this field.</practice>
+
+			</donts>
+			
+			<examples>
+				<practice status="current" originDate="2005-04-20" link1="Multimedia instruction" style1="bold" link2="Introduction to Geophysical Exploration" url2="http://galitzin.mines.edu/INTROGP/index.jsp">A Multimedia instruction example is Introduction to Geophysical Exploration where students explore four major concepts of geophysics through computer simulations, notes and quizzes. The students also run computer models based on measurements and interact with the instructor as if he/she were a client they are working with on the job.</practice>
+
+				<practice status="current" originDate="2005-04-20" link1="DataStreme Atmosphere" url1="http://www.ametsoc.org/amsedu/dstreme/" link2="audiences page" url2="http://www.dlese.org/Metadata/documents/how-tos/audiences.htm">DataStreme Atmosphere is an online, distance learning, for college-credit course intended for K-12 teachers taught by K-12 teachers. However, it is often used locally by teachers with their students. See the audiences page that shows appropriate metadata for various fields for this resource.</practice>
+
+			</examples>
+
+			<otherPractices>
+				<otherPractice header="A NOTE OF CAUTION!!!">
+					<practice status="current" originDate="2005-04-26">This controlled vocabulary is experimental. Terms and definitions are subject to change and may not be backwards or forwards compatible.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>DLESE:Large group learning, GEM:Simulations and games</example>
+			<notes>
+				<note>Controlled vocabulary terms are from GEM but not all the GEM terms have been adopted (e.g. learning modules).</note>
+				<note>The GEM terms are available at: http://www.thegateway.org/about/documentation/gem-controlled-vocabularies/vocabulary-teaching-methods (now: http://64.119.44.148/about/documentation/gem-controlled-vocabularies/vocabulary-teaching-methods)</note>
+				<note>GEM provides definitions for most terms. GEM used the following sources for definitions:</note>
+				<note>DOE: A Dictionary of Education, Totowa, N.J.: Barnes &amp; Noble Books, 1982, c1981.</note>
+				<note>DOE3: Dictionary of education, 3d edition; New York, McGraw-Hill, 1973.</note>
+				<note>ERIC: Thesaurus of ERIC Descriptors, 13th edition; Phoenix, AZ, Oryx Press, 1995.</note>
+				<note>DLESE added additional terms. DLESE wrote definitions for these terms.</note>
+				<note>Any terms that GEM did not have a definition at the time of adoption, DLESE wrote a definition.</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

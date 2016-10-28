@@ -1,0 +1,20 @@
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="http://ns.nsdl.org/ncs/framework_config/1.00/schemas/dcsFrameworkConfig.xsd">
+  <xmlFormat>webcat</xmlFormat>
+  <schemaInfo>
+    <rootElementName>record</rootElementName>
+    <schemaURI>http://www.dls.ucar.edu/people/ostwald/Metadata/webcat/webcat-record.xsd</schemaURI>
+    <paths>
+      <path pathName="id" readOnly="true" requiredByMinimalRecord="true" 
+	  requiredByCopyRecord="true">/record/recordID</path>
+      <path pathName="url">/record/url</path>
+    </paths>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>2</baseRenderLevel>
+    <rebuildOnStart>true</rebuildOnStart>
+    <firstPage></firstPage>
+  </editorInfo>
+  <name>webcat</name>
+</frameworkConfigRecord>

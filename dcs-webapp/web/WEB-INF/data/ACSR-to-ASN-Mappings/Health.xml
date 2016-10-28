@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="Health">
+  <mapping>
+    <acsrInfo id="79bec117-86d7-4120-a2c0-8a54cf3fe954">
+      <title>Illinois Standards for Physical Development and Health</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Health</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Physical Development and Health</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000EC">
+      <title>Illinois Standards for Physical Development and Health</title>
+      <created>1997</created>
+      <topic>Health</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="671c325a-cbf0-40ea-a210-378f99d5a040">
+      <title>Program of Studies for Science and Health Education</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Health</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Program of Studies Science and Heal</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001A0">
+      <title>Program of Studies for Science and Health Education</title>
+      <created>1998</created>
+      <topic>Science</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6d73634c-ec04-4cfb-9b56-018774b0169f">
+      <title>K-8 Grade Level Content Expectations for Health Education</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Health</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>K-8 Grade Level Content Expectation</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000282">
+      <title>K-8 Grade Level Content Expectations for Health Education</title>
+      <created>2007</created>
+      <topic>Health</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="36d5a075-5ee3-4adc-b733-5e54fcd3fdd8">
+      <title>Michigan Merit Curriculum Credit Guidelines for Health Education v.1.07</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Health</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Michigan Merit Health v.1.07</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000394">
+      <title>Michigan Merit Curriculum Credit Guidelines for Health Education v.1.07</title>
+      <created>2007</created>
+      <topic>Health</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="775aec16-e501-4ef1-878d-a68de187a200">
+      <title>Mississippi Physical Education and Health</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Health</subject>
+      <jurisdiction>MS</jurisdiction>
+      <fileName>Physical Education and Health</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100021B">
+      <title>Mississippi Physical Education and Health</title>
+      <created>2001</created>
+      <topic>Health</topic>
+      <author>Mississippi</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="734b30d8-f4a6-4e15-b003-13b94011ffdf">
+      <title>Chapter 115. Texas Essential Knowledge and Skills (TEKS) for Health Education</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Health</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>Chapter 115. TEKS for Health Educat</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000218">
+      <title>Chapter 115. Texas Essential Knowledge and Skills (TEKS) for Health Education</title>
+      <created>1997</created>
+      <topic>Health</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+</mappings>

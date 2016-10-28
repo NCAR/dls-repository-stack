@@ -1,0 +1,55 @@
+
+/* ------ CSS Styles for the DLESE JavaScript search page ------ */
+
+/* ------ Body tag styles set with no margins on the sides so that the edges are flush ----- */
+BODY { 
+	margin-right:0px;
+	margin-left:0px;
+}
+
+/* ------ Style used to highlight the user's search text ------ */
+.textHighlight { 
+	font-weight: bold; 
+	color: #444444; 
+}
+
+/* ------ Style used to define the standard table used throughout ------ */
+TABLE.stdTable {
+	width:100%;
+	border-spacing:0px;
+	border-collapse:collapse;
+}
+
+TD.stdTable {
+	padding:4px;
+}
+
+/* ------ Style used to define the colors in the search results ------ */
+
+/* The background color behind the resources's title */
+TR.resourceTitle {
+	background-color:#eeeeee;
+}
+
+/* The background color for the resource's description */
+TR.resourceBody {
+	background-color:#ffffff;
+}
+
+
+/* ------ Style used to define the thin line used throughout ------ */
+TABLE.thinLine {
+	width:100%;
+}
+
+TD.thinLine {	
+	background-color:#999999;
+	height:1px;
+}
+
+/*  The class 'dleseTmpl' is attached to all elements
+	that otherwise do not have class assignment, which includes instances 
+	of the <a>, <p>, <form> and <li> elements. You may use this class
+	to define custom rendering for these elements, if desired. */
+dleseTmpl { }
+

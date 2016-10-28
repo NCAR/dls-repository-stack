@@ -1,0 +1,73 @@
+<c:if test="${not empty sef.resultDoc}">
+<%-- <h3>Record Summary</h3> --%>
+	<c:set var="docReader" value="${sef.resultDoc.docReader}" />
+	<!-- Record Summary -->
+	<table><tr><td>
+		<c:choose>
+			<c:when test="${docReader.readerType == 'ItemDocReader'}">
+				<div class="browse-item-title">
+					<a href='${docReader.url}' 
+						title="view resource in new window"
+						target="_blank" style="text-decoration: none; color: #000000">
+					${docReader.title}</a>
+				</div>
+				<div class="searchResultValues">
+					<a href='${docReader.url}' target="_blank"
+						title="view resource in new window">${docReader.url}</a>
+				</div>
+			</c:when>
+			<c:when test="${docReader.readerType == 'NewsOppsDocReader'}">
+				<div class="browse-item-title">
+					<a href='${docReader.announcementUrl}' 
+						title="view resource in new window"
+						target="_blank" style="text-decoration: none; color: #000000">
+					${docReader.title}</a>
+				</div>
+				
+				<c:if test="${not empty docReader.announcementUrl}">
+					<div class="searchResultValues">
+					<a href='${docReader.announcementUrl}' target="_blank"
+						title="view resource in new window">${docReader.announcementUrl}</a><br>
+					</div>
+				</c:if>	
+			</c:when>
+			<c:when test="${docReader.readerType == 'DleseAnnoDocReader'}">
+				<c:if test="${not empty docReader.title}">
+					<div class="browse-item-title">${docReader.title}</div>
+					<c:if test="${not empty docReader.url}"><br>		 
+						<a href="${docReader.url}" target="_blank">${docReader.url}</a>										
+					</c:if>
+				</c:if>
+				<c:if test="${empty docReader.title}">
+					<div class="browse-item-title">Annotation</div>
+					<c:if test="${not empty docReader.url}"></div>		 
+						<a href="${docReader.url}" target="_blank">${docReader.url}</a>					
+					</c:if>
+				</c:if>
+				<%-- We don't want to show annotated doc, since this comes from indexer and value from edited
+				record may be different from indexed record. --%>
+<%-- 				<c:if test="${not empty docReader.annotatedItemResultDoc}">	
+					<div class="searchResultValues"><em>Annotated resource:</em>
+						&nbsp;<a href='display.do?fullview=${docReader.itemId}' 
+						title="see full view of annotated record">${docReader.itemId}</a></div>		
+				</c:if> --%>
+			</c:when>
+			<c:when test="${docReader.readerType == 'DleseCollectionDocReader'}">
+				<div class="browse-item-title">
+					${docReader.shortTitle}
+				</div>
+				<c:if test="${not empty docReader.collectionUrl}">
+					<a href='${docReader.collectionUrl}' target="_blank">${docReader.collectionUrl}</a> 
+					(collection URL)<br>			
+				</c:if>
+			</c:when>
+		</c:choose>
+		<div class="searchResultValues"><em>Collection:</em> 
+				&nbsp;${docReader.myCollectionDoc.shortTitle}</div>
+		<div class="searchResultValues"><em>Record format:</em> 
+			${docReader.nativeFormat}</div>
+		<div class="searchResultValues"><em>File location:</em> 
+			${docReader.docsource}</div>			
+		</td></tr></table>
+	<%-- <hr/> --%>
+</c:if>

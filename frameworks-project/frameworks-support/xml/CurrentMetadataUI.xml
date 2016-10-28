@@ -1,0 +1,16 @@
+<!--List of the fields and groups files-->
+<!--Fields files contain metadata field definitions, terms (and definitions) and cataloging best practices-->
+<!--Groups files contain audience-based groupings and layout of controlled vocabulary terms-->
+<!--Resides at: http://www.dlese.org/Metadata/CurrentMetadataUI.xml-->
+<metadataInfoLists>
+	<files>
+		<groups>adn-item/0.6.50/build/groups-list.xml</groups>
+		<groups>annotation/1.0.00/build/groups-list.xml</groups>
+		<groups>collection/1.0.00/build/groups-list.xml</groups>
+		<groups>news-opps/1.0.00/build/groups-list.xml</groups>
+		<fields>adn-item/0.6.50/build/fields-list.xml</fields>
+		<fields>annotation/1.0.00/build/fields-list.xml</fields>
+		<fields>collection/1.0.00/build/fields-list.xml</fields>
+		<fields>news-opps/1.0.00/build/fields-list.xml</fields>
+	</files>
+</metadataInfoLists>

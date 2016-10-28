@@ -1,0 +1,22 @@
+<%-- Includes and declarations for the metadata editor pages
+--%>
+<%-- <!DOCTYPE html> --%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<%@ page language="java"%><%@ page isELIgnored ="false"
+%><%@ taglib uri="/WEB-INF/tlds/struts-bean.tld" prefix="bean" 
+%><%@ taglib uri="/WEB-INF/tlds/struts-html.tld" prefix="html" 
+%><%@ taglib uri="/WEB-INF/tlds/struts-logic.tld" prefix="logic" 
+%><%@ taglib uri="/WEB-INF/tlds/taglibs-application.tld" prefix="app" 
+%><%@ taglib uri="/WEB-INF/tlds/response.tld" prefix="res" %>
+<%@ taglib uri="/WEB-INF/tlds/schemedit-functions.tld" prefix="sf" 
+%><%@ taglib tagdir="/WEB-INF/tags" prefix="st" 
+%><%@ taglib tagdir="/WEB-INF/tags/std" prefix="std" 
+%><%@ taglib tagdir="/WEB-INF/tags/msp2" prefix="msp2" 
+%><%@ taglib tagdir="/WEB-INF/tags/lar" prefix="lar" 
+%><%@ taglib tagdir="/WEB-INF/tags/math_path" prefix="math_path" 
+%><%@ taglib tagdir="/WEB-INF/tags/res_qual" prefix="res_qual"
+%><%@ taglib tagdir="/WEB-INF/tags/vocabLayout" prefix="vl" 
+%><%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" 
+%><%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" 
+%><%@ taglib prefix="f" uri="http://dls.ucar.edu/tags/dlsELFunctions"
+%><%@ page contentType="text/html; charset=UTF-8"%>

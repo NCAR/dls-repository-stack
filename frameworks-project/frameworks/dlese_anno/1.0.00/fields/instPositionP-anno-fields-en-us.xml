@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: instPositionP-anno-fields-en-us.xml,v 1.1 2009/01/30 21:32:40 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/annotation/1.0.00/non-vocab-fields.xsd">
+	<field name="Position - individual contributor" language="en-us" metaFormat="dlese_anno" metaVersion="1.0.00" path="/annotationRecord/annotation/contributors/contributor/person/instPosition">
+		<definition>a professional or functional position of a person within an organization</definition>
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-09-15">Use a word or short phrase to identify the job position.</practice>
+				<practice status="current" originDate="2004-09-17">Capitalize first words (Outreach coordinator).</practice>
+				<practice status="current" originDate="2004-09-17">Spell out acronyms (e.g. WCM is Warning Coordination Meteorologist).</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2004-09-15">Do not use the name of a person.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2004-10-26">Outreach coordinator</practice>
+				<practice status="current" originDate="2004-10-26">Warning Coordination Meteorologist</practice>
+				<practice status="current" originDate="2004-10-26">DLESE (Digital Library for Earth System education) collections committee chair</practice>
+				<practice status="current" originDate="2004-10-26">Librarian</practice>
+				<practice status="current" originDate="2004-10-26">Instructional designer</practice>
+			</examples>			
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>Outreach coordinator, Librarian</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /annotationRecord/annotation/contributors/contributor/organization/instPosition</note>
+			</notes>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

@@ -1,0 +1,24 @@
+<collectionRecord xmlns="http://collection.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://collection.dlese.org http://www.dlese.org/Metadata/collection/1.0.00/collection.xsd">
+<!--
+	This record describes a collection within the DDS respository. It contains only the necessary elements for the DDS system.
+-->
+	  <general>
+		<fullTitle>Example Metadata Collection</fullTitle>
+		<description>This example metadata collection contains sample records in the OAI DC metadata framework.</description>
+	  </general>
+	  <approval>
+		<collectionStatuses>
+		  <collectionStatus date="2010-10-05T13:23:45Z" state="Accessioned"/>
+		</collectionStatuses>
+	  </approval>
+	  <access>
+	  	<!-- Element key defines the unique collectionKey, Attribute libraryformat defines the XMLFormat for records in the collection. -->
+		<key libraryFormat="oai_dc" static="false" redistribute="false">testoaidc</key>
+	  </access>
+	  <metaMetadata>
+		<catalogEntries>
+		  <!-- Catalog/@entry defines the unique ID for the collection record. -->
+		  <catalog entry="EXAMPLE-COLLECTION-001"/>
+		</catalogEntries>
+	  </metaMetadata>	  
+</collectionRecord>

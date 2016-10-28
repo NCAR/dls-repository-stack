@@ -1,0 +1,364 @@
+<script type=text/javascript>
+
+var searchWidget = null;
+
+var SearchMenu = Class.create( {
+	initialize: function (element, widget) {
+		this.widget = widget;
+		this.element = $(element);
+		["term", "id", "url"].each (function (choice) {
+			this.addChoice (choice);
+			}.bind(this));
+	},
+	
+	addChoice: function (choice) {
+		var ch = new Element ("div").update(choice)
+		ch.addClassName ("menu-choice");
+		this.element.insert (ch);
+							 
+		ch.observe ('mouseover', function (e) {
+			ch.addClassName ("over");
+		});
+		ch.observe ('mouseout', function (e) {
+			ch.removeClassName ("over");
+		});
+		ch.observe ('click', function (e) {
+			this.widget.setSearchMode (choice);
+		}.bind(this));
+	}
+});
+
+var SearchWidget = Class.create( {
+
+	initialize: function () {
+		this.name = "searchWidget";
+		this.searchMode = "text"
+		this.widget = $("search-widget");
+		this.clearButton = this.widget.down("img#search-clear");
+
+		this.trigger = this.widget.down("img#search-trigger");
+		this.input = this.widget.down("input#searchString");
+		this.menu = this.widget.down("div#search-menu");
+		new SearchMenu (this.menu, this);
+
+ 		this.hideSearchMenu();
+		this.searchBoxChange();
+		this.input.observe ('keyup', this.searchBoxChange.bind(this));
+	},
+
+	setSearchMode: function (mode) {
+		this.searchMode = mode;
+		alert ("Mode set to" + this.searchMode)
+	},
+	
+	hideSearchMenu: function (event) {
+		if (event) {
+			event.stop();
+		}
+		this.menu.hide();
+		document.stopObserving ('click', boundHideSearchMenu);
+		this.trigger.observe ('click', this.showSearchMenu.bind(this));
+	},
+	showSearchMenu: function (event) {
+		if (event) event.stop();
+		this.menu.show();
+		document.observe ('click', boundHideSearchMenu);
+		this.trigger.stopObserving ('click', this.showSearchMenu.bind(this));
+	},
+
+ 	clearSearchBox: function (event) {
+		if (event) event.stop();
+		this.clearButton.stopObserving ('click', this.clearSearchBox.bind(this));
+		this.input.value="";
+		// this.clearButton.update("&nbsp;");
+		this.clearButton.src = '../images/search/search-clear-blank.png';
+	},
+
+	searchBoxChange: function (event) {
+		if (event) event.stop()
+		if (this.input.value == "") {
+			this.clearButton.stopObserving ('click', this.clearSearchBox.bind(this));
+			this.input.value="";
+			// this.clearButton.update("&nbsp;");
+			this.clearButton.src = '../images/search/search-clear-blank.png';
+		}
+		else {
+			// this.clearButton.update("X");
+			this.clearButton.src = '../images/search/search-clear.png';
+			this.clearButton.observe ('click', this.clearSearchBox.bind(this));
+		}
+	}, 
+	
+	bfx: function (event) {
+		this.hideSearchMenu(event).bindAsEventListener(this);
+	}
+});
+
+function boundHideSearchMenu () {
+	searchWidget.hideSearchMenu();
+}
+
+function pageInit (event) {
+	searchWidget = new SearchWidget();
+}
+
+Event.observe (window, 'load', pageInit);
+</script>
+
+<style type="text/css">
+#search-widget {
+  	position:relative;
+	top:0px;
+	left:0px;
+/* 	top:100px;
+	left:300px; */
+	padding:0px 2px 2px 2px;
+	display:inline-block;
+	z-index:2;
+	/*border:thin red dotted;
+	 background-color:red; */
+}
+
+.menu-choice {
+	padding:1px 0px 1px 10px;
+}
+
+.menu-choice.over{
+	color:#ccccff;
+	background-color:#330099;
+	cursor:pointer;
+}
+
+#search-trigger {
+	display:inline;
+}
+
+#search-clear {
+	display:inline;
+}
+
+#search-box {
+	z-index:2;
+	display:inline-block;
+	border:1px black solid;
+	padding:0px 2px 0px 2px;
+}
+
+#search-go {
+	position:relative;
+	top:-1px;
+	margin:0px 0px 0px 20px;
+	padding:0px;
+	
+}
+
+img.search-icon {
+	position:relative;
+	margin:0px 0px 0px 0px;
+	padding:0px;
+	display:inline;
+	top:3px;
+	/* border:thin blue solid; */
+}
+
+#searchString {
+	position:relative;
+	top:-1px;
+	border:None;
+	/* background-color:#999999; */
+	height:20px;
+	padding-top:2px;
+	margin-bottom:1px;
+}
+
+#search-menu {
+	position:absolute;
+	top:22px;
+	left:20px;
+	width:75px;
+	padding:5px;
+	/* height:100px; */
+	background-color:#ccccff;
+	border:#9999ff 1px solid;
+}
+</style>
+
+<html:form styleId="queryForm" action="/browse/query" method="GET">
+		<input type="hidden" name="q" value=""/>
+		<input type="hidden" name="s" value="0"/>
+	<table cellspacing="4">
+	  <tr valign="bottom">
+ 			<td colspan="2">
+				<table cellspacing="0" cellpadding="0" width="100%">
+					<tr>
+						<td class="input-label"  style="white-space:nowrap">
+							<label for="search-box">Search for:</label>
+						</td>
+						<td style="white-space:nowrap">
+							<html:radio property="searchMode" value="raw" styleId="raw_id"/> <label for="raw_id">term</label>
+							<html:radio property="searchMode" value="id" styleId="id_id"/> <label for="id_id">id</label>
+							<html:radio property="searchMode" value="url" styleId="url_id" /> <label for="url_id">url</label>
+						</td>
+						<td align="right">
+							<input type="button" value="Clear search form" class="clearbutton" 
+							 onClick="clearAllSelections();"/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<%-- <html:text property="q" styleId="searchString" size="60"/> --%>
+							<div id="search-widget">
+								<div id="search-box">
+									<img id="search-trigger" class="search-icon" alt="search-icon" src="../images/search/search-icon.png"/>
+									<input id="searchString" size="60" type="text" name="q" value="" />
+									<img id="search-clear" class="search-icon" src="../images/search/search-clear.png"/>
+								</div>
+								<%-- <input type="button" id="search-go" name="search-go" value="go" /> --%>
+								<div id="search-menu" style="display:none">
+									search
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+				
+
+			</td> 
+			
+			<td align="center">
+				<html:submit value="  Go  "/>
+			</td>
+	  </tr>
+
+	  <tr valign=top>			
+		<td align="left" valign="top" nowrap="1">
+			<div>
+				<a 	href="javascript:toggleVisibility('collection');" 
+					title="Click to show/hide" 
+					class="vocabHeading"><img src='../images/btnExpand.gif' 
+					alt="Click to show/hide" border="0" hspace="5" width="11" hight="11" />Collection</a>
+			</div>
+		
+			<div id="collection" style=" width:100%;display:none">
+				<div style="margin-left:${indentAmount}px">
+				<table style="width:100%;"><tr><td>
+				
+				<c:choose>
+					<c:when test="${empty sessionBean.collectionLabelValues}"><i>no collections</i></c:when>
+					<c:otherwise>
+						<c:forEach var="labelValueBean" items="${sessionBean.collectionLabelValues}" varStatus="i">
+							<input type="checkbox" id="${labelValueBean.value}_scs_id" name="scs" 
+							value="${labelValueBean.value}"
+							<c:if test="${sf:arrayContains(queryForm.scs, labelValueBean.value)}">checked</c:if> /><label 
+							for="${labelValueBean.value}_scs_id">${labelValueBean.label}</label><br/>				
+						</c:forEach>
+					</c:otherwise>
+				</c:choose>				
+				</td></tr></table></div></div>
+			<%-- last editors --%>
+			<div>
+				<a 	href="javascript:toggleVisibility('editor');" 
+					title="Click to show/hide" 
+					class="vocabHeading"><img src='../images/btnExpand.gif' 
+					alt="Click to show/hide" border="0" hspace="5" width="11" hight="11" />Last Editor</a>
+			</div>
+			<div id="editor" style=" width:100%;display:none">
+				<div style="margin-left:${indentAmount}px">
+				<table style="width:100%;"><tr><td>			
+				<c:choose>
+					<c:when test="${empty sessionBean.editors}"><i>no editors</i></c:when>
+					<c:otherwise>
+						<c:forEach var="editor" items="${sessionBean.editors}" varStatus="i">
+							<c:set var="editor_label" value="${sf:getFullName (editor, userManager)}" />
+							<input type="checkbox" id="${editor}_editor_id" name="ses" 
+							value="${editor}"
+							<c:if test="${sf:arrayContains(queryForm.ses, editor)}">checked</c:if> /><label 
+							for="${editor}_editor_id">${editor_label}</label><br/>				
+						</c:forEach>
+					</c:otherwise>
+				</c:choose>
+				</td></tr></table></div></div>	
+		</td>
+		<td align="left" valign="top" nowrap="1">
+		<%-- metadata format --%>
+			<div>
+				<a 	href="javascript:toggleVisibility('format');" 
+					title="Click to show/hide" 
+					class="vocabHeading"><img src='../images/btnExpand.gif' 
+					alt="Click to show/hide" border="0" hspace="5" width="11" hight="11" />Metadata Format</a>
+			</div>
+			<div id="format" style=" width:100%;display:none">
+				<div style="margin-left:${indentAmount}px">
+				<table style="width:100%;"><tr><td>			
+				<c:choose>
+					<c:when test="${empty sessionBean.indexedFormats}"><i>no formats</i></c:when>
+					<c:otherwise>
+						<c:forEach var="fmt" items="${sessionBean.indexedFormats}" varStatus="i">
+							<c:set var="fmt_label" value="${fmt.label}" />
+							<input type="checkbox" id="${fmt.value}_fmt_id" name="sfmts" 
+							value="${fmt.value}"
+							<c:if test="${sf:arrayContains(queryForm.sfmts, fmt.value)}">checked</c:if> /><label 
+							for="${fmt.value}_fmt_id">${fmt_label}</label><br/>				
+						</c:forEach>
+					</c:otherwise>
+				</c:choose>
+				</td></tr></table></div></div>	
+			
+			<%-- validity --%>
+			<div>
+				<a 	href="javascript:toggleVisibility('validity');" 
+					title="Click to show/hide" 
+					class="vocabHeading"><img src='../images/btnExpand.gif' 
+					alt="Click to show/hide" border="0" hspace="5" width="11" hight="11" />Validity</a>
+			</div>
+			<div id="validity" style=" width:100%;display:none">
+				<div style="margin-left:${indentAmount}px">
+				<table style="width:100%;"><tr><td>
+					<input type="radio" id="valid_all_id" name="vld"
+							value=""
+							<c:if test="${empty queryForm.vld}">checked</c:if> /><label 
+							for="valid_all_id">all</label><br/>
+					<input type="radio" id="valid_id" name="vld" 
+							value="valid"
+							<c:if test="${queryForm.vld == 'valid'}">checked</c:if> /><label 
+							for="valid_id">valid records</label><br/>				
+					<input type="radio" id="notvalid_id" name="vld" 
+						value="notvalid"
+						<c:if test="${queryForm.vld == 'notvalid'}">checked</c:if> /><label 
+						for="notvalid_id">non-valid records</label><br/>	
+				</td></tr></table></div></div>	
+			
+			<%-- status --%>
+			<div>
+				<a 	href="javascript:toggleVisibility('status');" 
+					title="Click to show/hide" 
+					class="vocabHeading"><img src='../images/btnExpand.gif' 
+					alt="Click to show/hide" border="0" hspace="5" width="11" hight="11" />Status</a>
+			</div>
+			<div id="status" style=" width:100%;display:none">
+				<div style="margin-left:${indentAmount}px">
+				<table style="width:100%;"><tr><td>			
+				<c:choose>
+					<c:when test="${empty sessionBean.statuses}"><i>no statuses</i></c:when>
+					<c:otherwise>
+						<c:forEach var="entry" items="${sessionBean.statuses}" varStatus="i">
+							<input type="checkbox" id="${entry.key}_status_id" name="sss" 
+								value="${entry.key}"
+								<c:if test="${sf:arrayContains(queryForm.sss, entry.key)}">checked</c:if> /><label 
+								for="${entry.key}_status_id" >${entry.key}</label><br/>
+						</c:forEach>
+					</c:otherwise>
+				</c:choose>
+				</td></tr></table></div></div>	
+		</td>
+		<td align="center" nowrap="true">
+			<div class="input-label">Results per page</div>
+			<html:select name="queryForm" property="resultsPerPage"
+				onchange="doSetNumPagingRecords(this.form.resultsPerPage.value)">
+			<html:options property="resultsPerPageOptions" />
+			</html:select>
+		</td>
+	 </tr>		
+
+	 </table>
+ </html:form>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: person-osm-fields-en-us.xml,v 1.6 2012/06/06 00:29:42 julianneblomer Exp $ --> 
+<!-- I need to update this file -->
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/non-vocab-fields.xsd">
+  <field name="Person" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/contributors/person">
+		<definition>an entity responsible for making contributions to the content of the resource</definition> 
+
+		 <bestPractices>
+			
+			<otherPractices>
+				<otherPractice header="Adding a Person">
+					<practice status="current" originDate="2011-11-21" link1="Role" style1="bold">Role: choose the person's role (most often author or editor).</practice>
+					<practice status="current" originDate="2011-11-21" link1="Order" style1="bold">Order: corresponds to the order the person appears in on the resource (it doesn't matter if you enter them in as the last person so long as their order = 1). If order is different on the resource and its landing page, go with the resource.</practice>
+					<practice status="current" originDate="2011-11-21" link1="UCARid" style1="bold">UCARid: this is optional. Do not erase if it was already entered. Using the "Affiliation Helper" will automatically enter it.</practice>
+					<practice status="current" originDate="2011-11-21" link1="contactInfo" style1="bold">ContactInfo: this is optional. Do not erase if it was already entered.</practice>
+					<practice status="current" originDate="2011-11-21" link1="instDivision" style1="bold" link2="instName" style2="bold" link3="instProject" style3="bold" link4="notesToCurator" style4="bold">Affiliation: this is only for UCAR persons. Using the "Affiliation Helper" will autofill this field. Make sure you include the instDivision as well as the instName--do your best to obtain this information. Only use the instProject for Archives records. If you're Q/A'ing a record which includes UCAR affiliation information when the resource itself does not cite the person as UCAR-affiliated at the time of publication, check with the author or administrator who submitted the record. If you can confirm their UCAR affiliation, leave the affiliation information, mark the record as UCAR authorship under Classify:collaboration, and enter a Rights:notesToCurator "UCAR affiliation and collaboration confirmed." If you cannot confirm the UCAR affiliation, leave the affiliation information but switch the Classify:collaboration to "Unspecified."</practice>
+				</otherPractice>
+				
+				
+				<otherPractice header="Entering Names">
+					<practice status="current" originDate="2011-11-21">For names of non-UCAR persons, enter as much information as the resource gives you. For people who work at UCAR, do your best to find their complete name.</practice>
+					<practice status="current" originDate="2011-11-21">If entering an initial for a name, don't put a period after it--this will happen automatically. If the initials are hyphenated, do put periods (i.e. H.-Y.).</practice>
+					<practice status="current" originDate="2011-11-21">Do not enter titles or honorifics, such as Dr., Mrs., etc.</practice>
+					<practice status="current" originDate="2011-11-21" link1="publishingName" style1="bold">If there is a discrepancy between the name on the resource and the UCAR people database, defer to the UCAR people database (for example, if the resource says 'Bill Doe' and the database says 'William Doe', use William Doe). Then use the full name on the resource as the publishingName (in this case, 'Bill Doe').</practice>
+				</otherPractice>
+				
+				
+				<otherPractice header="Correct These UCAR Names:">
+					<practice status="current" originDate="2011-11-21" link1="Bette Otto-Bliesner" style1="bold">Incorrect: Bette Otto-bliesner Correct: Bette Otto-Bliesner</practice>
+					<practice status="current" originDate="2011-11-21" link1="Hanli Liu" style1="bold">Incorrect: Han-Li Liu Correct: Hanli Liu</practice>
+					<practice status="current" originDate="2011-11-21" link1="Laura L. Pan" style1="bold">Incorrect: Laura Pan Correct: Laura L. Pan</practice>
+					<practice status="current" originDate="2011-11-21" link1="Shu-peng Ho" style1="bold">Incorrect: Ben Ho; Shu Peng Ho; Shu-Peng Ho Correct: Shu-peng Ho</practice>
+					<practice status="current" originDate="2011-11-21" link1="Stanley C. Solomon" style1="bold">Incorrect: Stanley Solomon; S. Solomon Correct: Stanley C. Solomon</practice>
+					<practice status="current" originDate="2011-11-21" link1="Ying-Hwa Kuo" style1="bold">Incorrect: Bill Kuo; Ying Hwa Kuo Correct: Ying-Hwa Kuo</practice>
+				</otherPractice>
+				
+			</otherPractices>
+		 </bestPractices>
+		 <documentation>
+				<obligation>optional</obligation>
+				<min>0</min>
+				<max>unbounded</max>
+				<XMLdataTypes>
+					<XMLdataType>string</XMLdataType>
+				</XMLdataTypes>
+				<domain>free text</domain>
+				<example>xxx</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2012 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

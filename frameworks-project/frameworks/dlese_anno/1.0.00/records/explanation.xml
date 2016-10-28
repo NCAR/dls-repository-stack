@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  $Id: explanation.xml,v 1.1 2009/01/30 21:32:40 ginger Exp $--> 
+
+<annotationRecord xmlns="http://www.dlese.org/Metadata/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/annotation http://www.dlese.org/Metadata/annotation/1.0.00/annotation.xsd">
+
+	<service>
+
+		<name>the name of the annotation service or the metadata creators; required metadata</name>
+
+		<!--pathway should be used by approved groups who are eligible to make resources part of the DLESE Reviewed Collection; should only be used by approval from the DLESE Program Center-->
+
+		<pathway>CRS (Community Review System)</pathway>
+
+		<recordID>the catalog record number for the metadata record such as ABC-123; required metadata</recordID>
+
+		<!--metadata creation and modification dates; creation date is required metadata-->
+
+		<date created="1967-08-13" modified="1967-08-13"/>
+
+	</service>
+
+
+	<itemID>the catalog record number of the item being annotation; should be an id number in DLESE like CURL-035; required metadata</itemID>
+
+
+	<annotation>
+
+		<title>the title of the annotation; optional metadata</title>
+
+		<!--type is the type of annotation and comes from a controlled vocabulary; required metadata-->
+
+		<type>Assessment strategy</type>
+
+		<!--format is the format of the annotation like text, audio etc. and comes from a controlled vocabulary; optional metadata-->
+
+		<format>Audio</format>
+
+		<!--status is the status of the annotation like completed, in progress, etc. and comes from a controlled vocabulary; optional metadata-->
+
+		<status>Completed</status>
+
+		<!--content provides access to the annotation via a url or providing the text directly; ratings of resources is also allowed; all 3 fields may be present but at least one of them is required metadata-->
+
+		<content>
+
+			<!--rating is a collection defined judgement of a resource (One star, Two star, Three star, Four star, Five star); note that one star is always lower/worse than five star and collection builders must provide defintions for the meaning of the terms if this field is used; optional metadata-->
+
+			<rating>Three star</rating>
+
+			<description>the text or direct content of the annotation; something like: This resource have a very good procedure but the equipement set-up diagram needs to be labelled.</description>
+
+			<url>a url to the content of the annotation or to more information related to the annotation</url>
+
+		</content>
+
+		<!--context is a URL within a resource being annotated (not the primary URL) to which the annotation applies; optional metadata-->
+
+		<context>http://to.somepage.inthe/resource</context>
+
+		<contributors>
+
+		<!--a person or organization making the annotation (contributors is required)-->
+
+			<contributor role="Author" date="1967-08-13" share="true">
+
+				<person>
+
+					<nameTitle>Dr</nameTitle>
+
+					<nameFirst>xx</nameFirst>
+
+					<nameMiddle>xx</nameMiddle>
+
+					<nameLast>xx</nameLast>
+
+					<instName>No institutional affiliation</instName>
+
+					<instDept>xx</instDept>
+
+					<instPosition>xx</instPosition>
+
+					<email>xx</email>
+
+					<emailAlt>xx</emailAlt>
+
+				</person>
+
+			</contributor>
+
+			<contributor role="Author" date="2005-10-04" share="true">
+
+				<organization>
+
+					<instName>ABC Inc.</instName>
+
+					<instDept>Geoscien Department</instDept>
+
+					<instPosition>Outreach Coordinator</instPosition>
+
+					<email>outreach@abc.org</email>
+
+					<url>http://www.abc.org</url>
+
+				</organization>
+
+			</contributor>
+
+		</contributors>
+
+	</annotation>
+
+
+	<moreInfo>
+
+		<beginXML>
+
+			<a>A section for providing more information in the form of single OR multiple XML documents.</a>
+
+			<aa>Plain text is not allowed.</aa>
+
+			<b>The child element of moreInfo must be XML not plain text.</b>
+
+			<bb>The XML documents can be schema-based.</bb>
+
+			<c>
+
+				<d>more stuff gets put here</d>
+
+			</c>
+
+		</beginXML>
+
+		<annotationRecord xmlns="http://www.dlese.org/Metadata/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 		xsi:schemaLocation="http://www.dlese.org/Metadata/annotation http://www.dlese.org/Metadata/annotation/1.0.00/annotation.xsd">
+
+		    <service>
+
+		        <name>CRS (Community Review System)</name>
+
+		        <recordID>CRS-DLESE-000-000-003-188-R</recordID>
+
+		        <pathway>CRS (Community Review System)</pathway>
+
+		        <date created="2004-08-18" modified="2004-11-06"/>
+
+		    </service>
+
+		    <itemID>DLESE-000-000-003-188</itemID>
+
+			<annotation>
+
+				<title>Review for &apos;The Drowning of New York&apos;</title>
+
+				<type>Review</type>
+
+				<format>Text</format>
+
+				<status>In progress</status>
+
+				<content>
+
+					<url>http://crs.dlese.org/submit/reviews/?id=DLESE-000-000-003-188</url>
+
+				</content>
+
+				<contributors>
+
+					<contributor role="Author" date="2004-08-18" share="false">
+
+			                <organization>
+
+			                    <instName>Columbia University</instName>
+
+			                    <instDept>Lamont-Doherty Earth Observatory</instDept>
+
+			                    <instPosition>CRS (Community Review System) Editor</instPosition>
+
+			                    <url>http://crs.dlese.org</url>
+
+			                    <email>crs-editor@dlese.org</email>
+
+			                </organization>
+
+					</contributor>
+
+				</contributors>
+
+			</annotation>
+
+		</annotationRecord>		
+
+	</moreInfo>
+
+</annotationRecord>
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: titleType.xsd,v 1.15 2013/08/09 19:04:43 kmaull-ucar Exp $-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.00">
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA PUPOSE  and INTENT  *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>Purpose: Controlled vocabulary for the type of item being cataloged.</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>**********************************************************</xs:documentation>
+		<xs:documentation>*****  HISTORY OF IMPORTANT CHANGES  *****</xs:documentation>
+		<xs:documentation>**********************************************************</xs:documentation>
+		<xs:documentation>2013-08-09: Removed Correspondence because the term was unused. All previously affected records had changed titleType to Archives</xs:documentation>
+		<xs:documentation>2013-08-08: Removed Notes because the term was unused. All previously affected records had changed titleType to Archives</xs:documentation>
+		<xs:documentation>2012-11-29: Added Archives and Thesis/dissertation</xs:documentation>
+		<xs:documentation>2011-12-16: Removed abstract because abstracts are really summaries of posters, presentations or articles and therefore are not a primary resource type that OpenSky expects to hold. And if the abstract never turns into a poster, presentation or article, OS probably does not want it.</xs:documentation>
+		<xs:documentation>2011-09-19: Removed Comment because most of these are more like articles in refereed journals</xs:documentation>
+		<xs:documentation>2011-05-02: Removed Proceedings</xs:documentation>
+		<xs:documentation>2011-03-31: Added Metadata profile</xs:documentation>
+		<xs:documentation>2010-10-15: Added Transcript</xs:documentation>
+		<xs:documentation>2010-06-22: Removed Preprint</xs:documentation>
+		<xs:documentation>2010-06-15: Removed Event/occurrence</xs:documentation>
+		<xs:documentation>2010-06-08: Removed Dataset</xs:documentation>
+		<xs:documentation>2010-04-08: Added Book review, Comment, Manual</xs:documentation>
+		<xs:documentation>2010-03-01: Added Book chapter and Manuscript.</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>None</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  SIMPLE TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="titleTypeType">
+		<xs:annotation>
+			<xs:documentation>***** titleTypeType  *****</xs:documentation>
+			<xs:documentation>Valid values for the element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Animation/moving image"/>
+			<xs:enumeration value="Archives"/>
+			<xs:enumeration value="Article"/><!--use for reviews and not book reviews, preprints-->
+			<xs:enumeration value="Artifact/physical object"/>
+			<xs:enumeration value="Bibliography/index"/>
+			<xs:enumeration value="Blog/forum/email list"/>
+			<xs:enumeration value="Book chapter"/>
+			<xs:enumeration value="Book review"/> <!-- use for book reviews only; use article for other reviews -->
+			<xs:enumeration value="Book/monograph"/>
+			<xs:enumeration value="Collection"/>
+			<xs:enumeration value="Encyclopedia"/>
+			<xs:enumeration value="Image"/>
+			<xs:enumeration value="Interactive resource"/>
+			<xs:enumeration value="Journal/magazine/periodical"/>
+			<xs:enumeration value="Manual"/><!--use for operations manuals-->
+			<xs:enumeration value="Manuscript"/>
+			<xs:enumeration value="Metadata profile"/>
+			<xs:enumeration value="Newsletter"/>
+			<xs:enumeration value="Poster"/>
+			<xs:enumeration value="Presentation/webcast"/>
+			<xs:enumeration value="Report"/>
+			<xs:enumeration value="Software"/>
+			<xs:enumeration value="Sound"/>
+			<xs:enumeration value="Thesis/dissertation"/>
+			<xs:enumeration value="Transcript"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:annotation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>Created: 2009-12-16</xs:documentation>
+		<xs:documentation>Last Modified 2009-12-16</xs:documentation>
+
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>***** SCHEMA AUTHOR  *****</xs:documentation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger@ucar.edu</xs:documentation>
+
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>*****  COPYRIGHT and LICENSE INFORMATION  *****</xs:documentation>
+		<xs:documentation>****************************************************************</xs:documentation>
+		<xs:documentation>See LICENSE AND COPYRIGHT below.</xs:documentation>
+	</xs:annotation>
+</xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

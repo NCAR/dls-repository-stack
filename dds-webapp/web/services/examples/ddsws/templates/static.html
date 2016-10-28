@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<SCRIPT TYPE="text/javascript">
+	<!--	
+	
+	/* 
+	To deploy the template or other JSP page to a static server such
+	as Apache, follow these three steps: 
+		1. Install the dynamic JSP/template (index.jsp) on a publically 
+		available Tomcat server. 
+		2. Place this Javascript client HTML page (static.html) on your 
+		static server. You may rename this file as desired.
+		3. Edit the baseUrl in this HTML page to point to the URL for the 
+		JSP page running on Tomcat.	
+	*/
+	
+	/* 
+	Important: When you save or copy this HTML page to another location, 
+	you must edit the baseUrl variable below and set it to 
+	the absolute, global URL to your JSP template or page, for example:
+	var baseUrl = "http://www.mydomain.org/templates/index.jsp"
+	*/	
+	var baseUrl = "index.jsp";
+	
+	
+	
+	/* ------ Do not edit below this line ------ */
+	
+	/* The query string sent to this page */
+	var queryString = window.location.search.substring(1);
+	if(queryString != null && queryString.length > 0)
+		var jsUrl = baseUrl + "?" + queryString + "&rt=jswl";
+	else
+		var jsUrl = baseUrl + "?rt=jswl"; 
+
+	document.write( "\<SCRIPT LANGUAGE='JAVASCRIPT' SRC='" + jsUrl + "' \>\</SCRIPT\>" );
+	
+	-->
+</SCRIPT>
+
+
+
+

@@ -1,0 +1,2004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AsnDocuments topic="Math">
+  <asnDocument id="http://asn.jesandco.org/resources/D10000F8">
+    <title>Marco Polo Discovers Mississippi Mathematics Framework</title>
+    <topic>Math</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000263">
+    <title>2007 Mississippi Mathematics Framework Revised</title>
+    <topic>Math</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2510283">
+    <title>MS Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000025">
+    <title>Minnesota Graduation Standards for Math</title>
+    <topic>Math</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100003E">
+    <title>Minnesota Academic Standards Mathematics K-12</title>
+    <topic>Math</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100036B">
+    <title>Minnesota Academic Standards Mathematics K-12</title>
+    <topic>Math</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001AF">
+    <title>Mathematics Grade-Level Expectations</title>
+    <topic>Math</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100036F">
+    <title>Version 2.0 Mathematics Course Level Expectations, April 2008</title>
+    <topic>Math</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100036E">
+    <title>Version 2.0 Mathematics Grade Level Expectations, April 2008</title>
+    <topic>Math</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2477265">
+    <title>MO Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100023F">
+    <title>NAEP 2005 Math Framework</title>
+    <topic>Math</topic>
+    <author>NAEP</author>
+    <authorName>NAEP</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100036A">
+    <title>Mathematics Framework for the 2007 NAEP</title>
+    <topic>Math</topic>
+    <author>NAEP</author>
+    <authorName>NAEP</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100004E">
+    <title>Wisconsin Model Academic Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100022E">
+    <title>Wisconsin Proficiency Score Standards</title>
+    <topic>Math</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2432713">
+    <title>WI Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100015D">
+    <title>Montana Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100032D">
+    <title>Mathematics Grade Level Expectations</title>
+    <topic>Math</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003DB">
+    <title>Montana K-12 Mathematics Content Standards</title>
+    <topic>Math</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2497456">
+    <title>Montana Common Core Standards for Mathematical Practices and Mathematics Content</title>
+    <topic>Math</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100022D">
+    <title>North Dakota Mathematics Content Standards</title>
+    <topic>Math</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2549259">
+    <title>North Dakota Mathematics Content Standards</title>
+    <topic>Math</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000A3">
+    <title>Mathematics Standard Course of Study</title>
+    <topic>Math</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001C3">
+    <title>Standard Course of Study and Grade Level Indicator</title>
+    <topic>Math</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003DF">
+    <title>North Carolina Essential Standards for Math K-12</title>
+    <topic>Math</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2419760">
+    <title>NC Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001CE">
+    <title>Essential Academic Learning Requirements in Mathematics</title>
+    <topic>Math</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100017D">
+    <title>Essential Academic Learning Requirements in Mathematics</title>
+    <topic>Math</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000340">
+    <title>Washington State K-12 Mathematics Standards</title>
+    <topic>Math</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2412541">
+    <title>Washington Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100007B">
+    <title>The Rhode Island Mathematics Framework K-12</title>
+    <topic>Math</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000337">
+    <title>Mathematics Grade-Level Expectations</title>
+    <topic>Math</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2463399">
+    <title>RI Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001EB">
+    <title>Illinois Learning Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>1997</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000D4">
+    <title>Mathematics Performance Descriptors</title>
+    <topic>Math</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2417540">
+    <title>New Illinois State Learning Standards Incorporating the Common Core Math</title>
+    <topic>Math</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100001B">
+    <title>New Jersey Core Curriculum Content Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000164">
+    <title>New Jersey Core Curriculum Content Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100033C">
+    <title>New Jersey Core Curriculum Content Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2501119">
+    <title>New Jersey Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000038">
+    <title>Indiana's Academic Standards 2000 in Mathematics</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000345">
+    <title>Indiana's Core Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003C0">
+    <title>Indiana's Academic Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571075">
+    <title>Process Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571084">
+    <title>Indiana Academic Standards for Mathematics: Kindergarten</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571113">
+    <title>Indiana Academic Standards for Mathematics: Grade 1</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571140">
+    <title>Indiana Academic Standards for Mathematics: Grade 2</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571176">
+    <title>Indiana Academic Standards for Mathematics: Grade 3</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571213">
+    <title>Indiana Academic Standards for Mathematics: Grade 4</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571336">
+    <title>Indiana Academic Standards for Mathematics: Grade 5</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571391">
+    <title>Indiana Academic Standards for Mathematics: Grade 6</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571472">
+    <title>Indiana Academic Standards for Mathematics: Grade 7</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571641">
+    <title>Indiana Academic Standards for Mathematics: Grade 8</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571676">
+    <title>Indiana Academic Standards for Mathematics: Algebra I</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571722">
+    <title>Indiana Academic Standards for Mathematics: Algebra II</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571763">
+    <title>Indiana Academic Standards for Mathematics: Calculus</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2571819">
+    <title>Indiana Academic Standards for Mathematics: Finite</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2572050">
+    <title>Indiana Academic Standards for Mathematics: Geometry</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2572101">
+    <title>Indiana Academic Standards for Mathematics: Pre-Calculus</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2572131">
+    <title>Indiana Academic Standards for Mathematics: Probability and Statistics</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2572166">
+    <title>Indiana Academic Standards for Mathematics: Trigonometry</title>
+    <topic>Math</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001E0">
+    <title>K-12 Mathematics Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100026D">
+    <title>K-12 Mathematics New Hampshire Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2522215">
+    <title>NH Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100020C">
+    <title>Nebraska K-12 Mathematics Standards</title>
+    <topic>Math</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100022A">
+    <title>Nebraska Mathematics Standards</title>
+    <topic>Math</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003DC">
+    <title>Nebraska Mathematics Standards</title>
+    <topic>Math</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001F0">
+    <title>Mathematics Content Standards</title>
+    <topic>Math</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000223">
+    <title>Math Performance Standards (Grade Level Expectations) For Grades K-10</title>
+    <topic>Math</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000253">
+    <title>Alaska Content Standards Mathematics</title>
+    <topic>Math</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2564196">
+    <title>Alaska Mathematics Standards</title>
+    <topic>Math</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100010C">
+    <title>Idaho State Achievement Standards K-12 in Mathematics</title>
+    <topic>Math</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000266">
+    <title>Idaho Content Standards - Mathematics</title>
+    <topic>Math</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2374222">
+    <title>Idaho Content Standards - Algebra I</title>
+    <topic>Math</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2374257">
+    <title>Idaho Content Standards - Algebra II</title>
+    <topic>Math</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2374291">
+    <title>Idaho Content Standards - Pre-Calculus</title>
+    <topic>Math</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2374350">
+    <title>Idaho Content Standards - Technical Math</title>
+    <topic>Math</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2374460">
+    <title>Idaho Content Standards - Geometry</title>
+    <topic>Math</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2374530">
+    <title>Idaho Content Standards - Mathematics of Personal Finance</title>
+    <topic>Math</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2375137">
+    <title>Idaho Extended Content Standards - Math</title>
+    <topic>Math</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2429664">
+    <title>ID Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100003F">
+    <title>Alabama Course of Study: Mathematics</title>
+    <topic>Math</topic>
+    <author>AL</author>
+    <authorName>Alabama</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2504960">
+    <title>Alabama Course of Study: Mathematics</title>
+    <topic>Math</topic>
+    <author>AL</author>
+    <authorName>Alabama</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000274">
+    <title>Math Core Content Standards and Benchmarks Corresponding to the Iowa Tests</title>
+    <topic>Math</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000278">
+    <title>Math Model Core Curriculum for Iowa High Schools</title>
+    <topic>Math</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100034D">
+    <title>Mathematics Grade Level Indicators</title>
+    <topic>Math</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003D7">
+    <title>Iowa Core Curriculum K-12 Mathematics</title>
+    <topic>Math</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2539928">
+    <title>Iowa Core Mathematics</title>
+    <topic>Math</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000179">
+    <title>Academic Standards: Mathematics</title>
+    <topic>Math</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100016E">
+    <title>Academic Content Standards - Mathematics</title>
+    <topic>Math</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000355">
+    <title>Arizona Mathematics Standard Articulated by Grade Level</title>
+    <topic>Math</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2469732">
+    <title>Arizona’s College and Career Ready Standards – Mathematics</title>
+    <topic>Math</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000051">
+    <title>Massachusetts Mathematics Curriculum Framework: Achieving Mathematical Power</title>
+    <topic>Math</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000F4">
+    <title>Massachusetts Mathematics Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001AE">
+    <title>Supplement to the Massachusetts Mathematics Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2544906">
+    <title>Massachusetts Curriculum Framework for Mathematics</title>
+    <topic>Math</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000205">
+    <title>Delaware Mathematics Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000260">
+    <title>Delaware Math Grade-Level Expectations</title>
+    <topic>Math</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100037C">
+    <title>Mathematics Standards and GLEs 9-12</title>
+    <topic>Math</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100037B">
+    <title>Mathematics Standards and GLEs K-8</title>
+    <topic>Math</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2547470">
+    <title>DE Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100035D">
+    <title>District of Columbia Mathematics Standards</title>
+    <topic>Math</topic>
+    <author>DC</author>
+    <authorName>District of Columbia</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2421551">
+    <title>DC Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>DC</author>
+    <authorName>District of Columbia</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000196">
+    <title>New Standards</title>
+    <topic>Math</topic>
+    <author>NCEE</author>
+    <authorName>NCEE</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000097">
+    <title>Arkansas State Mathematics Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000222">
+    <title>Mathematics Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2560516">
+    <title>K-8 Mathematics Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2561802">
+    <title>Mathematical Applications and Algorithms Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2561866">
+    <title>Advanced Topics and Modeling in Mathematics Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562238">
+    <title>Pre-Calculus Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562325">
+    <title>Linear Systems and Statistics Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562366">
+    <title>Calculus Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562397">
+    <title>Bridge to Algebra II Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562596">
+    <title>Geometry A Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2563057">
+    <title>Geometry B Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2563095">
+    <title>Geometry Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2563152">
+    <title>Algebra A Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2563517">
+    <title>Algebra B Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2563567">
+    <title>Algebra I Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2563806">
+    <title>Algebra II Curriuculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2564153">
+    <title>Algebra III Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000DD">
+    <title>Mathematics Content Standards with Working Draft Benchmarks</title>
+    <topic>Math</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000220">
+    <title>Michigan Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000181">
+    <title>Mathematics Grade Level Expectations</title>
+    <topic>Math</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000283">
+    <title>High School Content Expectations Mathematics</title>
+    <topic>Math</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100027D">
+    <title>Mathematics Grade Level Content Expectations v.12.05</title>
+    <topic>Math</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2480843">
+    <title>MI Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100000A">
+    <title>Principles and Standards for School Mathematics</title>
+    <topic>Math</topic>
+    <author>NCTM</author>
+    <authorName>NCTM</authorName>
+    <created>2000</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000F9">
+    <title>West Virginia's Mathematics Instructional Goals and Objectives</title>
+    <topic>Math</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000082">
+    <title>Mathematics Content Standards and Objectives for West Virginia Schools</title>
+    <topic>Math</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100023B">
+    <title>21st Century Mathematics Content Standards and Objectives for West Virginia Schools</title>
+    <topic>Math</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2551144">
+    <title>21st Century Mathematics Content Standards And Objectives for West Virginia Schools</title>
+    <topic>Math</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2013</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2592578">
+    <title>21st Century Mathematics Content Standards and Objectives for West Virginia Schools</title>
+    <topic>Math</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2592579">
+    <title>Next Generation Content Standards and Objectives for Mathematics in West Virginia Schools</title>
+    <topic>Math</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000139">
+    <title>Learning Results for Mathematics</title>
+    <topic>Math</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100026B">
+    <title>2007 Mathematics Grade Level Expectations for Grades 3-8</title>
+    <topic>Math</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000388">
+    <title>Mathematics Learning Results: Parameters for Essential Instruction</title>
+    <topic>Math</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003B6">
+    <title>Maine Federal, State, and Local Accountability Standards - Mathematics</title>
+    <topic>Math</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2479054">
+    <title>ME Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000057">
+    <title>Mathematics Content Standards</title>
+    <topic>Math</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000273">
+    <title>Hawaii Content and Performance Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2445666">
+    <title>HI Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000099">
+    <title>Maryland State Content Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000366">
+    <title>Maryland Mathematics Core Learning Goals</title>
+    <topic>Math</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2001</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000055">
+    <title>Maryland State Curriculum - Mathematics</title>
+    <topic>Math</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2004</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100009D">
+    <title>Mathematics Content and Performance Standards</title>
+    <topic>Math</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000230">
+    <title>Wyoming Mathematics Content and Performance Standards</title>
+    <topic>Math</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000381">
+    <title>Wyoming Mathematics Content and Performance Standards</title>
+    <topic>Math</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2425444">
+    <title>Wyoming Mathematics Content and Performance Standards</title>
+    <topic>Math</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100033A">
+    <title>Mathematics Content Standards For Kindergarten through Grade 8</title>
+    <topic>Math</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000143">
+    <title>Mathematics Grade-Level Standards &amp; K-2 Foundations</title>
+    <topic>Math</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000373">
+    <title>Oregon High School Math Standards, Oregon Standards Newspaper 2008-2009</title>
+    <topic>Math</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003D1">
+    <title>State of Oregon 2009 High School Mathematics Academic Content Standards</title>
+    <topic>Math</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2496454">
+    <title>OR Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001B6">
+    <title>Mathematics Framework</title>
+    <topic>Math</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100019C">
+    <title>Louisiana Mathematics Grade-Level Expectations</title>
+    <topic>Math</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000269">
+    <title>Louisiana Content Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2427241">
+    <title>LA Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100000B">
+    <title>Mathematics Curriculum Standards</title>
+    <topic>Math</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001B3">
+    <title>Kansas Curricular Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000279">
+    <title>Kansas Extended Mathematics Standards</title>
+    <topic>Math</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2556162">
+    <title>Kansas College and Career Ready Standards For Mathematics</title>
+    <topic>Math</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100018D">
+    <title>Mathematics Curriculum Standards: Grade Level Accomplishments</title>
+    <topic>Math</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000032">
+    <title>2001 Tennessee Mathematics Curriculum Standards</title>
+    <topic>Math</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000231">
+    <title>Tennessee Mathematics Courses 9 - 12</title>
+    <topic>Math</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000339">
+    <title>Tennessee Mathematics Standards</title>
+    <topic>Math</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2525793">
+    <title>TN Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2563872">
+    <title>Advanced Algebra and Trigonometry</title>
+    <topic>Math</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2563985">
+    <title>Bridge Math</title>
+    <topic>Math</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2564290">
+    <title>Calculus</title>
+    <topic>Math</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2564363">
+    <title>Discrete Math</title>
+    <topic>Math</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2564423">
+    <title>Precalculus</title>
+    <topic>Math</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2564552">
+    <title>Senior Finite Math</title>
+    <topic>Math</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2564622">
+    <title>Statistics</title>
+    <topic>Math</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000FC">
+    <title>Academic Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2381965">
+    <title>Academic Standards for Mathematics (Pre-K-3)</title>
+    <topic>Math</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2381985">
+    <title>Academic Standards for Mathematics (Elementary)</title>
+    <topic>Math</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2382884">
+    <title>Academic Standards for Mathematics (Secondary)</title>
+    <topic>Math</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2563472">
+    <title>PA Core - Mathematics, Grades PreK-12</title>
+    <topic>Math</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100011F">
+    <title>Mathematics Content Standards for California Public Schools, Kindergarten Through Grade Twelve</title>
+    <topic>Math</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2513639">
+    <title>CA Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001A7">
+    <title>Program of Study Mathematics (Primary, Intermediate, High School)</title>
+    <topic>Math</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100022C">
+    <title>Student Performance Level Descriptions - Mathematics</title>
+    <topic>Math</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100024B">
+    <title>Core Content for Mathematics</title>
+    <topic>Math</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100024C">
+    <title>Program of Study Mathematics</title>
+    <topic>Math</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2443567">
+    <title>Kentucky Core Academic Standards - Mathematics</title>
+    <topic>Math</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001A4">
+    <title>Chapter 111. Texas Essential Knowledge and Skills for Mathematics</title>
+    <topic>Math</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000247">
+    <title>Chapter 111. Texas Essential Knowledge and Skills for Mathematics, Amended 2006</title>
+    <topic>Math</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2486388">
+    <title>Texas Essential Knowledge and Skills for Mathematics</title>
+    <topic>Math</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000044">
+    <title>New Mexico Content Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2397474">
+    <title>Mathematics Content Standards with Benchmarks and Performance Standards</title>
+    <topic>Math</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2554019">
+    <title>NM Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003FB">
+    <title>Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>CCSS</author>
+    <authorName>CCSS</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000256">
+    <title>Colorado Model Content Standards Mathematics, Amended 9-15-05</title>
+    <topic>Math</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001BC">
+    <title>Colorado Model Content Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003F3">
+    <title>Colorado Academic Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2553729">
+    <title>Colorado Academic Standards in Mathematics</title>
+    <topic>Math</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100018F">
+    <title>Vermont's Framework of Standards and Learning Opportunities: Science, Mathematics, and Technology</title>
+    <topic>Math</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100022F">
+    <title>Grade Expectations for Vermont's Framework of Standards and Learning Opportunities</title>
+    <topic>Math</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2472998">
+    <title>VT Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001DD">
+    <title>Georgia Quality Core Curriculum Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000031">
+    <title>Georgia Mathematics Performance Standards</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100029F">
+    <title>Georgia Mathematics Performance Standards</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003AB">
+    <title>Georgia Mathematics Performance Standards K-5, Sept. 11, 2008</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2411386">
+    <title>Mathematics Common Core Georgia Performance Standards</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2412089">
+    <title>Georgia Advanced Mathematical Decision Making Standards</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2412090">
+    <title>Georgia Mathematics of Finance Standards</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2412091">
+    <title>Georgia Mathematics of Industry &amp; Government Standards</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2412092">
+    <title>Georgia Multivariable Calculus Standards</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2412093">
+    <title>Georgia History of Mathematics Standards</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2575300">
+    <title>Georgia Performance Standards in Mathematics Statistical Reasoning</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2575323">
+    <title>Common Core Georgia Performance Standards Calculus</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2575333">
+    <title>Common Core Georgia Performance Standards Advanced Mathematical Topics</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2575351">
+    <title>Common Core Georgia Performance Standards Engineering Calculus</title>
+    <topic>Math</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000A5">
+    <title>Nevada Mathematics Content Standards for Kindergarten and Grades 1 through 8 and 12</title>
+    <topic>Math</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000261">
+    <title>Nevada Mathematics Standards</title>
+    <topic>Math</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2475435">
+    <title>Nevada Academic Content Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000224">
+    <title>Elementary Science, Intermediate Science, Living Environment, Earth Science, Chemistry, and Physics Core Curriculum</title>
+    <topic>Math</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001F9">
+    <title>Mathematics Resource Guide with Core Curriculum</title>
+    <topic>Math</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000221">
+    <title>Mathematics Core Curriculum</title>
+    <topic>Math</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2378542">
+    <title>Learning Standards for Mathematics, Science, and Technology - Standards 1 &amp; 2</title>
+    <topic>Math</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1996</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2378661">
+    <title>Learning Standards for Mathematics, Science, and Technology - Standards 6 &amp; 7</title>
+    <topic>Math</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1996</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2488576">
+    <title>New York State P-12 Common Core Learning Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000142">
+    <title>Mathematics Standards of Learning for Virginia Public Schools</title>
+    <topic>Math</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100012C">
+    <title>Mathematics Standards of Learning for Virginia Public Schools</title>
+    <topic>Math</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003C5">
+    <title>Mathematics Standards of Learning for Virginia Public Schools</title>
+    <topic>Math</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100011D">
+    <title>Sunshine State Standards Grade Level Expectations: Mathematics</title>
+    <topic>Math</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100029B">
+    <title>Mathematics Next Generation Sunshine State Standards</title>
+    <topic>Math</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2457645">
+    <title>FL Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>2010</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2570486">
+    <title>Mathematics Florida Standards (MAFS)</title>
+    <topic>Math</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100006E">
+    <title>Mathematics Core Curriculum</title>
+    <topic>Math</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002A0">
+    <title>Utah Mathematics Core Curriculum</title>
+    <topic>Math</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2524004">
+    <title>Utah Core Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001B4">
+    <title>Mathematics Curriculum Standards</title>
+    <topic>Math</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100029D">
+    <title>South Carolina Academic Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2433620">
+    <title>SC Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000E7">
+    <title>Mathematics Standards</title>
+    <topic>Math</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100019D">
+    <title>South Dakota Mathematics Content Standards</title>
+    <topic>Math</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2439385">
+    <title>Common Core State Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100014A">
+    <title>Mathematics: Ohio's Model Competency-Based Program</title>
+    <topic>Math</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>1994</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100017A">
+    <title>Academic Content Standards K-12 Mathematics</title>
+    <topic>Math</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000351">
+    <title>Early Learning Content Standards - Mathematics</title>
+    <topic>Math</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2491791">
+    <title>Ohio's New Learning Standards: Mathematics</title>
+    <topic>Math</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100014E">
+    <title>Priority Academic Student Skills for Mathematics</title>
+    <topic>Math</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003D4">
+    <title>Priority Academic Student Skills - Math Revised 2009</title>
+    <topic>Math</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001B1">
+    <title>Priority Academic Student Skills (PASS) for Mathematics</title>
+    <topic>Math</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2493580">
+    <title>Oklahoma Academic Standards-Mathematics</title>
+    <topic>Math</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2010</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100007A">
+    <title>The Connecticut Mathematics Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+    <topic>Math</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100021F">
+    <title>2005 Connecticut Mathematics Curriculum Framework</title>
+    <topic>Math</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000344">
+    <title>PreK-8 Math Framework Standards and Grade-Level Expectations</title>
+    <topic>Math</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2423578">
+    <title>Connecticut Core Standards for Mathematics</title>
+    <topic>Math</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+</AsnDocuments>

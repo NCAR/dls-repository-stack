@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- 
+	This config contains path for both v0.1 and v1.0 versions of the framework
+-->
+
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="comm_para">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<!-- No ID path configured: Let it be set using the NSDL handle/file name -->
+			<!-- <xpaths>
+				<xpath>/commParadata/recordId</xpath>
+			</xpaths> -->		
+		</standardField>	
+		<standardField name="url">
+			<xpaths>
+				<xpath>/commParadata/usageDataReferenceURL</xpath>
+				<xpath>/commParadata/url</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="title">
+			<xpaths>
+				<xpath>/commParadata/paradataTitle</xpath>
+				<xpath>/commParadata/title</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/commParadata/paradataDescription</xpath>
+				<xpath>/commParadata/description</xpath>
+			</xpaths>		
+		</standardField>		
+	</standardFields>
+	
+	<!-- Relationships that this format of record defines. -->	
+	<relationships>
+		<!-- 	Relationship of the target record to this.
+		
+				The given relationship name will be attached to the target record, not this record.
+				
+				Examples:
+					target 'isAnnotatedBy' this
+					target 'isExtendedBy' this
+					target 'isMemberOf' this
+					etc.
+					
+				attributes: name=[relationshop name] -->
+		<relationship name="paradataProvidedBy">
+			<!-- Xpath where the target record's ID or URL is stored
+				 attribute type=[id|url] -->
+			<xpaths>
+				<xpath type="url">/commParadata/usageDataResourceURL[starts-with(.,'http://') or starts-with(.,'https://') or starts-with(.,'ftp://')]</xpath>
+			</xpaths>
+			<xpaths>
+				<xpath type="id">/commParadata/paradataProvidedForId</xpath>
+			</xpaths>			
+		</relationship>		
+	</relationships>
+</XMLIndexerFieldsConfig>

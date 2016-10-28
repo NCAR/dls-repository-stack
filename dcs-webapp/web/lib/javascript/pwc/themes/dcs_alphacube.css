@@ -1,0 +1,152 @@
+.overlay_dcs_alphacube {
+	background-color: #cccccc;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+
+.dcs_alphacube_nw {
+  background: transparent url(dcs_alphacube/left-top.png) no-repeat 0 0;			
+  width:10px;
+  height:25px;
+}
+
+.dcs_alphacube_n {
+  background: transparent url(dcs_alphacube/top-middle.png) repeat-x 0 0;			
+  height:25px;
+}
+
+.dcs_alphacube_ne {
+  background: transparent url(dcs_alphacube/right-top.png) no-repeat 0 0;			
+  width:10px;	  
+  height:25px;
+}
+
+.dcs_alphacube_w {
+  background: transparent url(dcs_alphacube/frame-left.png) repeat-y top left;			
+  width:7px;
+}
+
+.dcs_alphacube_e {
+  background: transparent url(dcs_alphacube/frame-right.png) repeat-y top right;			
+  width:7px;	  
+}
+
+.dcs_alphacube_sw {
+  background: transparent url(dcs_alphacube/bottom-left-c.png) no-repeat 0 0;			
+  width:7px;
+  height:7px;
+}
+
+.dcs_alphacube_s {
+  background: transparent url(dcs_alphacube/bottom-middle.png) repeat-x 0 0;			
+  height:7px;
+}
+
+.dcs_alphacube_se, .dcs_alphacube_sizer  {
+  background: transparent url(dcs_alphacube/bottom-right-c.png) no-repeat 0 0;			
+  width:7px;
+  height:7px;
+}
+
+.dcs_alphacube_sizer {
+	cursor:se-resize;	
+}
+
+.dcs_alphacube_close {
+	width: 23px;
+	height: 23px;
+	background: transparent url(dcs_alphacube/button-close-focus.gif) no-repeat 0 0;			
+	position:absolute;
+	top:5px;
+	right:11px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+.dcs_alphacube_minimize {
+	width: 23px;
+	height: 23px;
+	background: transparent url(dcs_alphacube/button-min-focus.gif) no-repeat 0 0;			
+	position:absolute;
+	top:5px;
+	right:55px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+.dcs_alphacube_maximize {
+	width: 23px;
+	height: 23px;
+	background: transparent url(dcs_alphacube/button-max-focus.gif) no-repeat 0 0;			
+	position:absolute;
+	top:5px;
+	right:33px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+.dcs_alphacube_title {
+	float:left;
+	height:14px;
+	font-size:14px;
+	text-align:center;
+	margin-top:1px;
+	width:100%;
+	color:#000000;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.dcs_alphacube_content {
+	overflow:auto;
+	color: #000;
+	font-family: Tahoma, Arial, sans-serif;
+  font: 12px arial;
+	background:#FDFDFD;
+}
+
+/* For alert/confirm dialog */
+.dcs_alphacube_window {
+	border:1px solid #F00;	
+	background: #FFF;
+	padding:20px;
+	margin-left:auto;
+	margin-right:auto;
+	width:400px;
+}
+
+.dcs_alphacube_message {
+  font: 12px arial;
+	text-align:center;
+	width:100%;
+	padding-bottom:10px;
+}
+
+.dcs_alphacube_buttons {
+	text-align:center;
+	width:100%;
+}
+
+.dcs_alphacube_buttons input {
+	width:20%;
+	margin:10px;
+}
+
+.dcs_alphacube_progress {
+	float:left;
+	margin:auto;
+	text-align:center;
+	width:100%;
+	height:16px;
+	background: #FFF url('alert/progress.gif') no-repeat center center
+}
+
+.dcs_alphacube_wired_frame {
+	background: #FFF;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;	
+}
+
+

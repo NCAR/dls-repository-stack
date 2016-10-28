@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  $Id: pathway.xsd,v 1.1 2009/01/30 21:32:56 ginger Exp $--> 
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  Overview  *****</xsd:documentation>
+		<xsd:documentation>Purpose - controlled vocabulary schema for DLESE metadata frameworks</xsd:documentation>
+		<xsd:documentation>Framework - annotation metadata framework</xsd:documentation>
+		<xsd:documentation>Source - DLESE Program Center (DPC); http://www.dlese.org</xsd:documentation>
+		<xsd:documentation>DLESE - Digital Library for Earth System Education</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:annotation>
+		<xsd:documentation>***** History of change *****</xsd:documentation>
+		<xsd:documentation>2006-07-14: Added MY NASA DATA as a pathway</xsd:documentation>
+		<xsd:documentation>2003-07-14: Added NASA ESEEREV as a pathway</xsd:documentation>
+		<xsd:documentation>2003-03-10: Created this controlled vocabulary schema file</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:annotation>
+		<xsd:documentation>*****  Simple Types (alpha order) *****</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:simpleType name="pathwayType">
+		<xsd:annotation>
+			<xsd:documentation>*****  pathwayType  *****</xsd:documentation>
+			<xsd:documentation>pathwayType - the name of the group approving resources for the DLESE Reviewed Collection (DRC); should only be used in consultation with the DLESE Program Center</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="CRS (Community Review System)"></xsd:enumeration>
+			<xsd:enumeration value="DWEL (Digital Water Education Library)"></xsd:enumeration>
+			<xsd:enumeration value="ESEEREV (NASA Earth Science Enterprise Education Review System)"></xsd:enumeration>
+			<xsd:enumeration value="JESSE (Journal of Earth System Science Education)"></xsd:enumeration>
+			<xsd:enumeration value="MY NASA DATA (Mentoring and inquirY using NASA Data on Atmospheric and earth science for Teachers and Amateurs)"></xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. </xsd:documentation>
+		
+<xsd:documentation>This schema is free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA </xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

@@ -1,0 +1,14 @@
+<c:if test="${fn:contains(instanceName,'CCS')}">
+<%-- special kludge for the CCS, where we want to search for titles containing colons - only
+colons are stop-chars to the index. so here we just strip the colons from the search string --%>
+<span style="padding:0px 20px 0px 20px;">
+	<input type="button" value=" ! " title="strip pesky colons from search box" 
+						id="search_box_widget" />
+</span>
+<script type="text/javascript">
+$('search_box_widget').observe ('click', function (widget) {
+	var input = $('searchString');
+	input.value = input.value.gsub(":"," ");
+});
+</script>
+</c:if>

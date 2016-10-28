@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.nsdl.org/ncs" xsi:schemaLocation="http://ns.nsdl.org/ncs http://ns.nsdl.org/ncs/ncs_item/1.02/schemas/ncs-item.xsd">
+  <general>
+    <recordID>NCS-SMPL-000-000-000-003</recordID>
+
+    <url>http://ravenel.si.edu/botany/ing/ingForm.cfm</url>
+    <title>Index Nominum Genericorum (ING)</title>
+    <description>The Index Nominum Genericorum (ING) is a compilation of generic names published for all organisms covered by the International Code of Botanical Nomenclature (ICBN). It is intended to bring all generic names of plants together in a single list to reveal homonymy between groups and to present bibliographic citations and information about the typification and nomenclatural status of generic names. The data may be searched by keyword or phrase, and by generic name, by name or basionym for type, by author, or by family. Search results include related taxonomic terms and bibliographic information. A distributed search is also offered, in which search on a generic name will yield results from ING, IPNI, Index Nominum Algarum, MOST, and Index Fungorum, displayed on a single page.</description>
+    <subject>Biological science</subject>
+    <subject>Botany</subject>
+    <subject>Taxonomy</subject>
+
+    <languages>
+      <ISOcode>eng</ISOcode>
+    </languages>
+  </general>
+  <educational>
+    <educationLevels>
+      <nsdlEdLevel>Higher Education</nsdlEdLevel>
+      <nsdlEdLevel>Undergraduate (Lower Division)</nsdlEdLevel>
+
+      <nsdlEdLevel>Undergraduate (Upper Division)</nsdlEdLevel>
+      <nsdlEdLevel>Graduate/Professional</nsdlEdLevel>
+    </educationLevels>
+    <types>
+      <nsdlType>Dataset</nsdlType>
+      <nsdlType>Database</nsdlType>
+      <nsdlType>Reference Material</nsdlType>
+
+      <nsdlType>Nonfiction Reference</nsdlType>
+      <nsdlType>Tool</nsdlType>
+      <nsdlType>Search Engine</nsdlType>
+      <dcmiType>Collection</dcmiType>
+      <dcmiType>Dataset</dcmiType>
+      <dcmiType>Service</dcmiType>
+
+      <dcmiType>Text</dcmiType>
+    </types>
+    <audiences>
+      <nsdlAudience>Educator</nsdlAudience>
+      <nsdlAudience>Learner</nsdlAudience>
+      <nsdlAudience>Professional/Practitioner</nsdlAudience>
+      <nsdlAudience>Researcher</nsdlAudience>
+
+    </audiences>
+  </educational>
+  <contributions>
+    <creators>
+      <creator>Ellen Farr, Editor</creator>
+      <creator>Gea Zijlstra, Editor</creator>
+    </creators>
+    <publishers>
+
+      <publisher>Department of Botany, Smithsonian National Museum of Natural History</publisher>
+    </publishers>
+  </contributions>
+  <technical>
+    <mimeTypes>
+      <mimeType>text/html</mimeType>
+    </mimeTypes>
+  </technical>
+
+  <rights>
+    <accessRights>
+      <meansOfAccess>Free access</meansOfAccess>
+    </accessRights>
+    <rights>Copyright Smithsonian Institution</rights>
+  </rights>
+</record>
+

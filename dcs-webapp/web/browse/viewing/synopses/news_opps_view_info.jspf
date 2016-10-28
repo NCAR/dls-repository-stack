@@ -1,0 +1,11 @@
+
+		<div class="browse-item-title">${viewForm.docReader.title}</div>
+		
+		<c:if test="${not empty viewForm.docReader.announcementUrl}">
+			<div class="searchResultValues">
+			<a href='${viewForm.docReader.announcementUrl}' target="_blank"
+				title="view resource in new window">${sf:truncate(viewForm.docReader.announcementUrl, urlTruncateLen)}</a><br>
+			</div>
+		</c:if>	
+
+

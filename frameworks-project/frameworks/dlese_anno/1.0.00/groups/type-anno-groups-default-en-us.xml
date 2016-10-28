@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: type-anno-groups-default-en-us.xml,v 1.1 2009/01/30 21:32:40 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Type</title>
+<groups:concept language="en-us" metaFormat="dlese_anno" metaVersion="1.0.00" text="Type" audience="default" path="/annotationRecord/annotation/type" deftn="the kind of annotation"/>
+</head>
+<body>
+<outline groups:vocab="Assessment strategy" type="vocab" text="Assessment strategy" groups:deftn="information intended to help educators deploy effective strategies to assess learning"/>
+<outline groups:vocab="Bias" type="vocab" text="Bias" groups:deftn="an indication that resource content may have: (1) factual (e.g. not just scientific) errors, (2) conflicts with generally accepted scientific thought, (3) a self-promoting emphasis or (4) a political, social or religious agenda"/>
+<outline groups:vocab="Challenging audience" type="vocab" text="Challenging audience" groups:deftn="information about the effectiveness of a resource with a specific audience"/>
+<outline groups:vocab="Comment" type="vocab" text="Comment" groups:deftn="a remark, explanation, advice, opinion, attitude, fact, proposed change, question or additional resource information"/>
+<outline groups:vocab="Editor's summary" type="vocab" text="Editor's summary" groups:deftn="a summary of evaluative information (qualitative or quantitative) that may describe the strengths, weaknesses, pedagogical effectiveness, best uses for or general characteristics of a resource"/>
+<outline groups:vocab="Educational standard" type="vocab" text="Educational standard" groups:deftn="an indication that the resource meets, supports or aligns with an educational standard, that is, a level of achievement determined by a professional group to which learners are expected to aspire too"/>
+<outline groups:vocab="Example" type="vocab" text="Example" groups:deftn="a description or link to another resource that illustrates the resource content in a demonstrative way"/>
+<outline groups:vocab="Misconception" type="vocab" text="Misconception" groups:deftn="information intended to help educators anticipate, detect and overcome common student misconceptions"/>
+<outline groups:vocab="Quantitative information" type="vocab" text="Quantitative information" groups:deftn="numerical information about a resource"/>
+<outline groups:vocab="Review" type="vocab" text="Review" groups:deftn="a formal or informal evaluation of a resource"/>
+<outline groups:vocab="See also" type="vocab" text="See also" groups:deftn="a reference to another resource"/>
+<outline groups:vocab="Skill" type="vocab" text="Skill" groups:deftn="information intended to help educators foster a student skill needed for optimal resource use"/>
+<outline groups:vocab="Teaching tip" type="vocab" text="Teaching tip" groups:deftn="information for using or modifying the resource within teaching or learning environments"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

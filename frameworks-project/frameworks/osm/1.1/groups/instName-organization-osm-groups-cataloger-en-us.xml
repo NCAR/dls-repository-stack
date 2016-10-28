@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: instName-organization-osm-groups-cataloger-en-us.xml,v 1.114 2013/12/13 21:39:29 jennphil Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/instName.xsd"
+version="2.0">
+	<head>
+		<title>Institutional name</title>
+		<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="Institutional name" audience="cataloger" path="/record/contributors/organization/affiliation/instName" collapseExpand="true" smartCheckBox="true"/>
+	</head>
+	<body>
+		<outline vocab="University Corporation for Atmospheric Research" type="vocab" text="UCAR"/>
+		<outline type="group" text="A" collapsible="true">
+			<outline vocab="A. Deepak Publishing" type="vocab" text="A. Deepak Publishing"/>
+			<outline vocab="A.I. Voeikov Main Geophysical Observatory" type="vocab" text="A.I. Voeikov Main Geophysical Observatory"/>
+			<outline vocab="Abdus Salam International Centre for Theoretical Physics" type="vocab" text="Abdus Salam International Centre for Theoretical Physics"/>
+			<outline vocab="Academic Press" type="vocab" text="Academic Press"/>
+			<outline vocab="Academy Publisher" type="vocab" text="Academy Publisher"/>
+			<outline vocab="Acoustical Society of America" type="vocab" text="Acoustical Society of America"/>
+			<outline vocab="Aeronautical Research Associates of Princeton" type="vocab" text="Aeronautical Research Associates of Princeton"/>
+			<outline vocab="Air &amp; Waste Management Association" type="vocab" text="Air &amp; Waste Management Association"/>
+			<outline vocab="Air Quality Design, Inc." type="vocab" text="Air Quality Design, Inc."/>
+			<outline vocab="Air Traffic Control Association Institute" type="vocab" text="Air Traffic Control Association Institute"/>
+			<outline vocab="Akita University" type="vocab" text="Akita University"/>
+			<outline vocab="American Association for Aerosol Research" type="vocab" text="American Association for Aerosol Research"/>
+			<outline vocab="American Association for the Advancement of Science" type="vocab" text="American Association for the Advancement of Science"/>
+			<outline vocab="American Association for Artificial Intelligence" type="vocab" text="American Association for Artificial Intelligence"/>
+			<outline vocab="American Association for Cancer Research" type="vocab" text="American Association for Cancer Research"/>
+			<outline vocab="American Association of Geographers" type="vocab" text="American Association of Geographers"/>
+			<outline vocab="American Association of Petroleum Geologists" type="vocab" text="American Association of Petroleum Geologists"/>
+			<outline vocab="American Astronomical Society" type="vocab" text="American Astronomical Society"/>
+			<outline vocab="American Chemical Society" type="vocab" text="American Chemical Society"/>
+			<outline vocab="American Geophysical Union" type="vocab" text="American Geophysical Union"/>
+			<outline vocab="American Institute of Aeronautics and Astronautics" type="vocab" text="American Institute of Aeronautics and Astronautics (AIAA)"/>
+			<outline vocab="American Institute of Physics" type="vocab" text="American Institute of Physics"/>
+			<outline vocab="American Library Association" type="vocab" text="American Library Association"/>
+			<outline vocab="American Mathematical Society" type="vocab" text="American Mathematical Society"/>
+			<outline vocab="American Meteorological Society" type="vocab" text="American Meteorological Society"/>
+			<outline vocab="American Physical Society" type="vocab" text="American Physical Society"/>
+			<outline vocab="American Phytopathological Society" type="vocab" text="American Phytopathological Society" wrap="true"/>
+			<outline vocab="American Public Health Association" type="vocab" text="American Public Health Association"/>
+			<outline vocab="American Society of Agronomy" type="vocab" text="American Society of Agronomy"/>
+			<outline vocab="American Society of Civil Engineers" type="vocab" text="American Society of Civil Engineers"/>
+			<outline vocab="American Society of Mechanical Engineers" type="vocab" text="American Society of Mechanical Engineers"/>
+			<outline vocab="American Society for Information Science and Technology" type="vocab" text="American Society for Information Science and Technology"/>
+			<outline vocab="American Society for Microbiology" type="vocab" text="American Society for Microbiology"/>
+			<outline vocab="American Society for Photobiology" type="vocab" text="American Society for Photobiology"/>
+			<outline vocab="American Society for Testing and Materials" type="vocab" text="American Society for Testing and Materials"/>
+			<outline vocab="American Society of Tropical Medicine and Hygiene" type="vocab" text="American Society of Tropical Medicine and Hygiene"/>
+			<outline vocab="American Statistical Association" type="vocab" text="American Statistical Association"/>
+			<outline vocab="American Water Resources Association" type="vocab" text="American Water Resources Association"/>
+			<outline vocab="Andrija Mohorovi&#0269;i&#0263; Geophysical Institute" type="vocab" text="Andrija Mohorovi&#0269;i&#0263; Geophysical Institute"/>
+			<outline vocab="Annual Reviews, Inc." type="vocab" text="Annual Reviews, Inc."/>
+			<outline vocab="Arctic Institute of North America" type="vocab" text="Arctic Institute of North America"/>
+			<outline vocab="Arctic Monitoring and Assessment Programme" type="vocab" text="Arctic Monitoring and Assessment Programme"/>
+			<outline vocab="Argonne National Laboratory" type="vocab" text="Argonne National Laboratory"/>
+			<outline vocab="ARIANET Srl" type="vocab" text="ARIANET Srl"/>
+			<outline vocab="Arizona State University" type="vocab" text="Arizona State University"/>
+			<outline vocab="Asgard-Verlag" type="vocab" text="Asgard-Verlag"/>
+			<outline vocab="Aspen Global Change Institute" type="vocab" text="Aspen Global Change Institute"/>
+			<outline vocab="Associa&#0231;&#0227;o para o Desenvolvimento da Aerodin&#0226;mica Industrial" type="vocab" text="Associa&#0231;&#0227;o para o Desenvolvimento da Aerodin&#0226;mica Industrial"/>
+			<outline vocab="Association for Computing Machinery" type="vocab" text="Association for Computing Machinery"/>
+			<outline vocab="Association for the Advancement of Artificial Intelligence" type="vocab" text="Association for the Advancement of Artificial Intelligence (AAAI)"/>
+			<outline vocab="Astronomical Society of Japan" type="vocab" text="Astronomical Society of Japan"/>
+			<outline vocab="Astronomical Society of the Pacific" type="vocab" text="Astronomical Society of the Pacific"/>
+			<outline vocab="Atlantic Oceanographic and Meteorological Laboratories" type="vocab" text="Atlantic Oceanographic and Meteorological Laboratories"/>
+			<outline vocab="Atmospheric and Environmental Research, Inc." type="vocab" text="Atmospheric and Environmental Research, Inc."/>
+			<outline vocab="Atmospheric Science Librarians International" type="vocab" text="Atmospheric Science Librarians International (ASLI)"/>
+			<outline vocab="Australia Department of Defence" type="vocab" text="Australia Department of Defence"/>
+			<outline vocab="Australian Meteorological and Oceanographic Society" type="vocab" text="Australian Meteorological and Oceanographic Society"/>
+		</outline><!--end group A-->
+
+		<outline type="group" text="B-C" collapsible="true">
+			<outline vocab="Beckman Coulter, Inc." type="vocab" text="Beckman Coulter, Inc."/>
+			<outline vocab="Birkh&#228;user Verlag" type="vocab" text="Birkh&#228;user Verlag"/>
+			<outline vocab="Blackwell Publishing Ltd." type="vocab" text="Blackwell Publishing Ltd. (valid after 7/2001)"/>
+			<outline vocab="Blackwell Science" type="vocab" text="Blackwell Science (valid before 7/2001)"/>
+			<outline vocab="Bodeker Scientific" type="vocab" text="Bodeker Scientific"/>
+			<outline vocab="Boeing Aerospace Company" type="vocab" text="Boeing Aerospace Company"/>
+			<outline vocab="Boise State University" type="vocab" text="Boise State University"/>
+			<outline vocab="Boreal Environment Research Publishing Board" type="vocab" text="Boreal Environment Research Publishing Board"/>
+			<outline vocab="Boston University" type="vocab" text="Boston University"/>
+			<outline vocab="British Antarctic Survey" type="vocab" text="British Antarctic Survey"/>
+			<outline vocab="Broad Reach Engineering Company" type="vocab" text="Broad Reach Engineering Company"/>
+			<outline vocab="Brown University" type="vocab" text="Brown University"/>
+			<outline vocab="Bureau of Meteorology Research Centre (Melbourne, Australia)" type="vocab" text="Bureau of Meteorology Research Centre (Melbourne, Australia)"/>
+			<outline vocab="Butterworths" type="vocab" text="Butterworths"/>
+			<outline vocab="C.A.B. International" type="vocab" text="C.A.B. International"/>
+			<outline vocab="California Digital Library" type="vocab" text="California Digital Library"/>
+			<outline vocab="California Environmental Protection Agency" type="vocab" text="California Environmental Protection Agency"/>
+			<outline vocab="California Institute of Technology" type="vocab" text="California Institute of Technology"/>
+			<outline vocab="California State Coastal Conservancy" type="vocab" text="California State Coastal Conservancy"/>
+			<outline vocab="Cambridge University Press" type="vocab" text="Cambridge University Press"/>
+			<outline vocab="Canadian Meteorological and Oceanographic Society" type="vocab" text="Canadian Meteorological and Oceanographic Society"/>
+			<outline vocab="Carnegie-Mellon University" type="vocab" text="Carnegie-Mellon University"/>
+			<outline vocab="Castle House Publications" type="vocab" text="Castle House Publications"/>
+			<outline vocab="Center for Ocean-Land-Atmosphere Studies" type="vocab" text="Center for Ocean-Land-Atmosphere Studies"/>
+			<outline vocab="Center for Severe Weather Research" type="vocab" text="Center for Severe Weather Research"/>
+			<outline vocab="Centers for Disease Control and Prevention (U.S.)" type="vocab" text="Centers for Disease Control and Prevention (U.S.)"/>
+			<outline vocab="Central Weather Bureau (Taiwan)" type="vocab" text="Central Weather Bureau (Taiwan)" wrap="true"/>
+			<outline vocab="Centre for Australian Weather and Climate Research" type="vocab" text="Centre for Australian Weather and Climate Research"/>
+			<outline vocab="Centre for Development of Advanced Computing" type="vocab" text="Centre for Development of Advanced Computing"/>
+			<outline vocab="Centre for Ecology and Hydrology (Great Britain)" type="vocab" text="Centre for Ecology and Hydrology (Great Britain)"/>
+			<outline vocab="Centre national de la recherche scientifique (France)" type="vocab" text="Centre national de la recherche scientifique (France)"/>
+			<outline vocab="Chapman &#38; Hall/CRC Press" type="vocab" text="Chapman &#38; Hall/CRC Press"/>
+			<outline vocab="Charles Scribner's Sons" type="vocab" text="Charles Scribner's Sons"/>
+			<outline vocab="China National Knowledge Infrastructure" type="vocab" text="China National Knowledge Infrastructure"/>
+			<outline vocab="Chinese Academy of Sciences" type="vocab" text="Chinese Academy of Sciences"/>
+			<outline vocab="Chinese Geoscience Union" type="vocab" text="Chinese Geoscience Union"/>
+			<outline vocab="Chinese University of Hong Kong" type="vocab" text="Chinese University of Hong Kong"/>
+			<outline vocab="University of Colorado, Boulder. Cooperative Institute for Research in Environmental Sciences" type="vocab" text="CIRES"/>
+			<outline vocab="Clarendon Laboratory" type="vocab" text="Clarendon Laboratory"/>
+			<outline vocab="Climate Central" type="vocab" text="Climate Central"/>
+			<outline vocab="Climate Variability and Predictability Programme" type="vocab" text="Climate Variability and Predictability Programme (Clivar Proj Off)"/>
+			<outline vocab="Cochin University of Science and Technology" type="vocab" text="Cochin University of Science and Technology"/>
+			<outline vocab="Colorado Associated University Press" type="vocab" text="Colorado Associated University Press"/>
+			<outline vocab="Colorado School of Mines" type="vocab" text="Colorado School of Mines"/>
+			<outline vocab="Colorado State University" type="vocab" text="Colorado State University"/>
+			<outline vocab="Columbia University" type="vocab" text="Columbia University"/>
+			<outline vocab="Columbia University. Lamont-Doherty Earth Observatory" type="vocab" text="Columbia University. Lamont-Doherty Earth Observatory"/>
+			<outline vocab="Commissariat &#0224; l'&#0233;nergie atomique, Saclay" type="vocab" text="Commissariat &#0224; l'&#0233;nergie atomique, Saclay"/>
+			<outline vocab="Committee on Strategic Guidance for NSF's Support of the Atmospheric Sciences" type="vocab" text="Committee on Strategic Guidance for NSF’s Support of the Atmospheric Sciences"/>
+			<outline vocab="Computing Research Association" type="vocab" text="Computing Research Association"/>
+			<outline vocab="Consiglio nazionale delle ricerche (Italy)" type="vocab" text="Consiglio nazionale delle ricerche (Italy)"/>
+			<outline vocab="Cooperative Institute for Mesoscale Meteorological Studies" type="vocab" text="Cooperative Institute for Mesoscale Meteorological Studies"/>
+			<outline vocab="Cooperative Research Centre for Southern Hemisphere Meteorology (Australia)" type="vocab" text="Cooperative Research Centre for Southern Hemisphere Meteorology (Australia)"/>
+			<outline vocab="Copernicus Publications" type="vocab" text="Copernicus Publications"/>
+			<outline vocab="Cornell University" type="vocab" text="Cornell University"/>
+			<outline vocab="CRC Press" type="vocab" text="CRC Press"/>
+			<outline vocab="CSIRO Publishing" type="vocab" text="CSIRO Publishing"/>
+			<outline vocab="CSREA Press" type="vocab" text="CSREA Press"/>
+		</outline><!--end group BC-->
+		
+		<outline type="group" text="D-H" collapsible="true">
+			<outline vocab="D. Reidel Publishing Company" type="vocab" text="D. Reidel Publishing Company"/>
+			<outline vocab="D. Van Nostrand Company" type="vocab" text="D. Van Nostrand Company"/>
+			<outline vocab="Danmarks meteorologiske institut" type="vocab" text="Danmarks meteorologiske institut (Danish Met Inst)"/>
+			<outline vocab="Dartmouth College" type="vocab" text="Dartmouth College"/>
+			<outline vocab="Desert Research Institute" type="vocab" text="Desert Research Institute"/>
+			<outline vocab="Deutsche Forschungs- und Versuchsanstalt f&#0252;r Luft- und Raumfahrt. Institut f&#0252;r Physik der Atmosph&#0228;re" type="vocab" text="DFVLR, Institut f&#0252;r Physik der Atmosph&#0228;re"/>
+			<outline vocab="Deutscher Wetterdienst" type="vocab" text="Deutscher Wetterdienst"/>
+			<outline vocab="Digital Curation Centre" type="vocab" text="Digital Curation Centre"/>
+			<outline vocab="Dover Publications, Inc." type="vocab" text="Dover Publications, Inc."/>
+			<outline vocab="Drought Research Initiative" type="vocab" text="Drought Research Initiative"/>
+			<outline vocab="Duke University" type="vocab" text="Duke University"/>
+			<outline vocab="Earth System Research Laboratory" type="vocab" text="Earth System Research Laboratory"/>
+			<outline vocab="Earthscan Publications Ltd." type="vocab" text="Earthscan Publications Ltd."/>
+			<outline vocab="Ecological Society of America" type="vocab" text="Ecological Society of America"/>
+			<outline vocab="EDP Sciences" type="vocab" text="EDP Sciences"/>
+			<outline vocab="EDUCAUSE" type="vocab" text="EDUCAUSE"/>
+			<outline vocab="Edward Elgar Publishing" type="vocab" text="Edward Elgar Publishing"/>
+			<outline vocab="Elsevier Ltd." type="vocab" text="Elsevier Ltd."/>
+			<outline vocab="Emerald Group Publishing" type="vocab" text="Emerald Group Publishing"/>
+			<outline vocab="Emergency Management Australia" type="vocab" text="Emergency Management Australia"/>
+			<outline vocab="Emory University" type="vocab" text="Emory University"/>
+			<outline vocab="Entec UK Limited" type="vocab" text="Entec UK Limited"/>
+			<outline vocab="EnviroComp Institute" type="vocab" text="EnviroComp Institute"/>
+			<outline vocab="Environment Canada" type="vocab" text="Environment Canada"/>
+			<outline vocab="European Centre for Medium Range Weather Forecasts" type="vocab" text="European Centre for Medium Range Weather Forecasts"/>
+			<outline vocab="European Committee on Computational Methods in Applied Sciences" type="vocab" text="European Committee on Computational Methods in Applied Sciences"/>
+			<outline vocab="European Geophysical Society" type="vocab" text="European Geophysical Society (prior to 2003)"/>
+			<outline vocab="European Geosciences Union" type="vocab" text="European Geosciences Union"/>
+			<outline vocab="European Mechanics Society" type="vocab" text="European Mechanics Society"/>
+			<outline vocab="European Meteorological Society" type="vocab" text="European Meteorological Society"/>
+			<outline vocab="European Union of Geosciences" type="vocab" text="European Union of Geosciences (prior to 2003)"/>
+			<outline vocab="Florida State University" type="vocab" text="Florida State University" wrap="true"/>
+			<outline vocab="Forskningscenter Ris&#0248;" type="vocab" text="Forskningscenter Ris&#0248;"/>
+			<outline vocab="Freie Universit&#0228;t Berlin" type="vocab" text="Freie Universit&#0228;t Berlin"/>
+			<outline vocab="Friedr. Vieweg &amp; Sohn" type="vocab" text="Friedr. Vieweg &amp; Sohn"/>
+			<outline vocab="Future Science Ltd." type="vocab" text="Future Science Ltd."/>
+			<outline vocab="Geophysical Fluid Dynamics Laboratory (U.S.)" type="vocab" text="Geophysical Fluid Dynamics Laboratory (U.S.)"/>
+			<outline vocab="George C. Marshall Space Flight Center" type="vocab" text="George C. Marshall Space Flight Center"/>
+			<outline vocab="George Mason University" type="vocab" text="George Mason University"/>
+			<outline vocab="Georgetown University" type="vocab" text="Georgetown University"/>
+			<outline vocab="Georgia Institute of Technology" type="vocab" text="Georgia Institute of Technology"/>
+			<outline vocab="Deutsche Forschungsgemeinschaft" type="vocab" text="German Research Association"/>
+			<outline vocab="Global Coral Reef Monitoring Network" type="vocab" text="Global Coral Reef Monitoring Network"/>
+			<outline vocab="Global Energy and Water Cycle Experiment" type="vocab" text="Global Energy and Water Cycle Experiment"/>
+			<outline vocab="Global Ozone Research and Monitoring Project" type="vocab" text="Global Ozone Research and Monitoring Project"/>
+			<outline vocab="Goddard Space Flight Center" type="vocab" text="Goddard Space Flight Center"/>
+			<outline vocab="Gordon and Breach Science Publishers" type="vocab" text="Gordon and Breach Science Publishers"/>
+			<outline vocab="G&#246;teborgs universitet" type="vocab" text="G&#246;teborgs universitet (Univ. of Gothenburg (Sweden))"/>
+			<outline vocab="Great Britain Meteorological Office" type="vocab" text="Great Britain Meteorological Office"/>
+			<outline vocab="Hadley Centre for Climate Prediction and Research" type="vocab" text="Hadley Centre for Climate Prediction and Research"/>
+			<outline vocab="Harvard University" type="vocab" text="Harvard University"/>
+			<outline vocab="Hauser Research and Engineering Company" type="vocab" text="Hauser Research and Engineering Company"/>
+			<outline vocab="Hawaii Institute of Geophysics" type="vocab" text="Hawaii Institute of Geophysics (1950-1995)"/>
+			<outline vocab="Hawaii Institute of Geophysics and Planetology" type="vocab" text="Hawaii Institute of Geophysics and Planetology (1995 onwards)"/>
+			<outline vocab="Health and Climate Foundation" type="vocab" text="Health and Climate Foundation"/>
+			<outline vocab="Hebrew University of Jerusalem" type="vocab" text="Hebrew University of Jerusalem"/>
+			<outline vocab="Helsingin yliopisto" type="vocab" text="Helsingin yliopisto (Univ. of Helsinki)"/>
+			<outline vocab="Hemisphere Publishing Corporation" type="vocab" text="Hemisphere Publishing Corporation"/>
+			<outline vocab="Hindawi Publishing Corporation" type="vocab" text="Hindawi Publishing Corporation"/>
+			<outline vocab="HistoryMakers" type="vocab" text="HistoryMakers"/>
+			<outline vocab="Holt, Rinehart, and Winston, inc." type="vocab" text="Holt, Rinehart, and Winston, inc."/>
+			<outline vocab="Hungarian Meteorological Service" type="vocab" text="Hungarian Meteorological Service"/>
+		</outline><!--end group D-H-->
+		
+		<outline type="group" text="I-L" collapsible="true">
+			<outline vocab="International Business Machines Corporation" type="vocab" text="IBM"/>
+			<outline vocab="Integrated Land Ecosystem-Atmosphere Processes Study" type="vocab" text="iLEAPS"/>
+			<outline vocab="ICFAI University Press" type="vocab" text="ICFAI University Press"/>
+			<outline vocab="Imperial College Press" type="vocab" text="Imperial College Press"/>
+			<outline vocab="Indiana University, Bloomington" type="vocab" text="Indiana University, Bloomington"/>
+			<outline vocab="Indiana University, Bloomington. Pervasive Technology Institute" type="vocab" text="Indiana University, Bloomington. Pervasive Technology Institute"/>
+			<outline vocab="Indo-US Science &amp; Technology Forum" type="vocab" text="Indo-US Science &amp; Technology Forum"/>
+			<outline vocab="Institut Pierre-Simon Laplace" type="vocab" text="Institut Pierre-Simon Laplace"/>
+			<outline vocab="Institute Computational Fluid Dynamics" type="vocab" text="Institute Computational Fluid Dynamics"/>
+			<outline vocab="Institute of Electrical and Electronics Engineers" type="vocab" text="Institute of Electrical and Electronics Engineers"/>
+			<outline vocab="Institute of Global Environment and Society" type="vocab" text="Institute of Global Environment and Society"/>
+			<outline vocab="Institute of Marine Engineering, Science and Technology" type="vocab" text="Institute of Marine Engineering, Science and Technology (IMarEST)"/>
+			<outline vocab="Institute of Mathematical Statistics" type="vocab" text="Institute of Mathematical Statistics"/>
+			<outline vocab="Institute of Navigation" type="vocab" text="Institute of Navigation"/>
+			<outline vocab="Institute of Physics Publishing" type="vocab" text="Institute of Physics Publishing"/>
+			<outline vocab="Intergovernmental Oceanographic Commission" type="vocab" text="Intergovernmental Oceanographic Commission"/>
+			<outline vocab="International Association for Computational Mechanics" type="vocab" text="Int'nl Assn for Computational Mechanics"/>
+			<outline vocab="International Association for Urban Climate" type="vocab" text="Int'nl Assn for Urban Climate"/>
+			<outline vocab="International Association of Hydraulic Engineering and Research" type="vocab" text="Int'nl Assn of Hydraulic Engineering and Research (valid 2000-2010)"/>
+			<outline vocab="International Association of Hydrological Sciences" type="vocab" text="Int'nl Assn of Hydrological Sciences"/>
+			<outline vocab="International Association of Meteorology and Atmospheric Sciences" type="vocab" text="Int'nl Assn of Meteorology and Atmospheric Sciences"/>
+			<outline vocab="International Association of Volcanology and Chemistry of the Earth's Interior" type="vocab" text="Int'nl Assn of Volcanology and Chemistry of the Earth's Interior" wrap="true"/>
+			<outline vocab="International Commission for Acoustics" type="vocab" text="Int'nl Commission for Acoustics"/>
+			<outline vocab="International Commission on Atmospheric Electricity" type="vocab" text="Int'nl Commission on Atmospheric Electricity"/>
+			<outline vocab="International Conference on Numerical Methods for Fluid Dynamics" type="vocab" text="Int'nl Conference on Numerical Methods for Fluid Dynamics"/>
+			<outline vocab="International Council for Science" type="vocab" text="Int'nl Council for Science"/>
+			<outline vocab="International Geographical Union" type="vocab" text="Int'nl Geographical Union"/>
+			<outline vocab="International Glaciological Society" type="vocab" text="Int'nl Glaciological Society"/>
+			<outline vocab="International GNSS Service" type="vocab" text="Int'nl GNSS Service"/>
+			<outline vocab="International Institute for Applied Systems Analysis" type="vocab" text="Int'nl Inst for Applied Systems Analysis (IIASA)"/>
+			<outline vocab="International Pacific Research Center" type="vocab" text="Int'nl Pacific Research Center"/>
+			<outline vocab="International Research Committee on Disasters" type="vocab" text="Int'nl Research Committee on Disasters"/>
+			<outline vocab="International Society of Exposure Science" type="vocab" text="Int'nl Soc of Exposure Science"/>
+			<outline vocab="International Society for Environmental Epidemiol" type="vocab" text="Int'nl Soc for Environmental Epidemiol"/>
+			<outline vocab="International Society for Photogrammetry and Remote Sensing" type="vocab" text="Int'nl Soc for Photogrammetry and Remote Sensing (ISPRS)"/>
+			<outline vocab="International Society for Reef Studies" type="vocab" text="Int'nl Society for Reef Studies"/>
+			<outline vocab="International START Secretariat" type="vocab" text="Int'nl START Secretariat"/>
+			<outline vocab="International Test and Evaluation Association" type="vocab" text="Int'nl Test and Evaluation Association (ITEA)"/>
+			<outline vocab="International Union of Geodesy and Geophysics" type="vocab" text="Int'nl Union of Geodesy and Geophysics"/>
+			<outline vocab="Inter-Research" type="vocab" text="Inter-Research"/>
+			<outline vocab="Interscience Publishers" type="vocab" text="Interscience Publishers"/>
+			<outline vocab="Iowa State University" type="vocab" text="Iowa State University"/>
+			<outline vocab="Island Press" type="vocab" text="Island Press"/>
+			<outline vocab="ITS America" type="vocab" text="ITS America"/>
+			<outline vocab="IWA Publishing" type="vocab" text="IWA Publishing" wrap="true"/>
+			<outline vocab="Japan Marine Science and Technology Center" type="vocab" text="Japan Marine Science and Technology Center"/>
+			<outline vocab="Japan Meteorological Agency" type="vocab" text="Japan Meteorological Agency"/>
+			<outline vocab="Jet Propulsion Laboratory" type="vocab" text="Jet Propulsion Laboratory"/>
+			<outline vocab="John Wiley &#38; Sons" type="vocab" text="John Wiley &#38; Sons"/>
+			<outline vocab="Johns Hopkins University" type="vocab" text="Johns Hopkins University"/>
+			<outline vocab="Joint Center for Satellite Data Assimilation" type="vocab" text="Joint Center for Satellite Data Assimilation"/>
+			<outline vocab="Kluwer Academic/Plenum Publishers" type="vocab" text="Kluwer Academic/Plenum Publishers"/>
+			<outline vocab="Koninklijk Nederlands Meteorologisch Instituut" type="vocab" text="Koninklijk Nederlands Meteorologisch Instituut (Royal Netherlands Met Inst)"/>
+			<outline vocab="Korea Meteorological Administration" type="vocab" text="Korea Meteorological Administration"/>
+			<outline vocab="Kuopion yliopisto" type="vocab" text="Kuopion yliopisto (Univ of Kuopio)"/>
+			<outline vocab="Lake Forest College" type="vocab" text="Lake Forest College"/>
+			<outline vocab="Langley Research Center" type="vocab" text="Langley Research Center"/>
+			<outline vocab="Lavoisier" type="vocab" text="Lavoisier"/>
+			<outline vocab="Lawrence Berkeley National Laboratory" type="vocab" text="Lawrence Berkeley National Laboratory"/>
+			<outline vocab="Lawrence Livermore National Laboratory" type="vocab" text="Lawrence Livermore National Laboratory"/>
+			<outline vocab="Linux Clusters Institute" type="vocab" text="Linux Clusters Institute"/>
+			<outline vocab="Longman Scientific &amp; Technical" type="vocab" text="Longman Scientific &amp; Technical"/>
+			<outline vocab="Los Alamos National Laboratory" type="vocab" text="Los Alamos National Laboratory"/>
+			<outline vocab="Lulu.com" type="vocab" text="Lulu.com"/>
+			<outline vocab="Lunar and Planetary Institute" type="vocab" text="Lunar and Planetary Institute"/>
+		</outline><!--end I-L grouping-->
+		
+		<outline type="group" text="M-N" collapsible="true">
+			<outline vocab="Macmillan Publishers" type="vocab" text="Macmillan Publishers"/>
+			<outline vocab="Macquarie University" type="vocab" text="Macquarie University"/>
+			<outline vocab="Marine Technology Society" type="vocab" text="Marine Technology Society"/>
+			<outline vocab="Martinus Nijhoff Publishers" type="vocab" text="Martinus Nijhoff Publishers"/>
+			<outline vocab="Mary Ann Liebert, Inc." type="vocab" text="Mary Ann Liebert, Inc."/>
+			<outline vocab="Massachusetts Institute of Technology" type="vocab" text="Massachusetts Institute of Technology"/>
+			<outline vocab="Mathematisches Forschungsinstitut Oberwolfach" type="vocab" text="Mathematisches Forschungsinstitut Oberwolfach"/>
+			<outline vocab="Max-Planck-Institut f&#252;r Chemie (Otto-Hahn-Institut)" type="vocab" text="Max-Planck-Institut f&#252;r Chemie (Otto-Hahn-Institut)"/>
+			<outline vocab="Max-Planck-Institut f&#252;r Meteorologie" type="vocab" text="Max-Planck-Institut f&#252;r Meteorologie"/>
+			<outline vocab="Max-Planck-Institut f&#252;r Sonnensystemforschung" type="vocab" text="Max-Planck-Institut f&#252;r Sonnensystemforschung"/>
+			<outline vocab="McFarland &amp; Company, Inc., Publishers" type="vocab" text="McFarland &amp; Company, Inc., Publishers"/>
+			<outline vocab="McGill University" type="vocab" text="McGill University"/>
+			<outline vocab="McGraw-Hill Companies" type="vocab" text="McGraw-Hill Companies"/>
+			<outline vocab="Merrill Publishing Company" type="vocab" text="Merrill Publishing Company"/>
+			<outline vocab="M&#0233;t&#0233;o-France" type="vocab" text="M&#0233;t&#0233;o-France"/>
+			<outline vocab="Meteorological Research Institute (Japan)" type="vocab" text="Meteorological Research Institute (Japan)"/>
+			<outline vocab="Meteorological Service of Canada" type="vocab" text="Meteorological Service of Canada"/>
+			<outline vocab="Meteorological Society of Japan" type="vocab" text="Meteorological Society of Japan"/>
+			<outline vocab="M.I.T. Press" type="vocab" text="M.I.T. Press"/>
+			<outline vocab="Michigan State University" type="vocab" text="Michigan State University"/>
+			<outline vocab="Molina Center for Energy and the Environment" type="vocab" text="Molina Center for Energy and the Environment"/>
+			<outline vocab="Monash University" type="vocab" text="Monash University"/>
+			<outline vocab="Multi-Science Publishing" type="vocab" text="Multi-Science Publishing" wrap="true"/>
+			<outline vocab="National Aeronautics and Space Administration" type="vocab" text="NASA"/>
+			<outline vocab="National Center for Atmospheric Research" type="vocab" text="NCAR"/>
+			<outline vocab="North Atlantic Treaty Organization. Committee on the Challenges of Modern Society" type="vocab" text="NATO/CCMS"/>
+			<outline vocab="NATO Advanced Study Institute" type="vocab" text="NATO Advanced Study Institute"/>
+			<outline vocab="National Academies" type="vocab" text="National Academies"/>
+			<outline vocab="National Academies Press" type="vocab" text="National Academies Press"/>
+			<outline vocab="National Academy of Sciences" type="vocab" text="National Academy of Sciences"/>
+			<outline vocab="National Centers for Environmental Prediction" type="vocab" text="National Centers for Environmental Prediction (NCEP)"/>
+			<outline vocab="National Centre for Antarctic &amp; Ocean Research (India)" type="vocab" text="National Centre for Antarctic &amp; Ocean Research (India)"/>
+			<outline vocab="National Climatic Data Center" type="vocab" text="National Climatic Data Center"/>
+			<outline vocab="National Council of Science and Environment" type="vocab" text="National Council of Science and Environment"/>
+			<outline vocab="National Institute for Environmental Studies (Japan)" type="vocab" text="National Institute for Environmental Studies (Japan)"/>
+			<outline vocab="National Institute of Water and Atmospheric Research (New Zealand)" type="vocab" text="National Inst. of Water and Atmos. Research (New Zealand)"/>
+			<outline vocab="National Oceanography Centre, Southampton" type="vocab" text="National Oceanography Centre, Southampton"/>
+			<outline vocab="National Research Council Canada" type="vocab" text="National Research Council Canada"  wrap="true"/>
+			<outline vocab="National Research Council (U.S.)" type="vocab" text="National Research Council (U.S.)"/>
+			<outline vocab="National Research Council (U.S.). Committee for a Workshop on Weather Forecasting Accuracy for FAA Air Traffic Control" type="vocab" text="National Research Council (U.S.). Committee for a Workshop on Weather Forecasting Accuracy for FAA Air Traffic Control"/>
+			<outline vocab="National Research Council (U.S.). Committee on Analysis of Global Change Assessments" type="vocab" text="National Research Council (U.S.). Committee on Analysis of Global Change Assessments"/>
+			<outline vocab="National Research Council (U.S.). Committee on Climate Data Records from NOAA Operational Satellites" type="vocab" text="National Research Council (U.S.). Committee on Climate Data Records from NOAA Operational Satellites"/>
+			<outline vocab="National Research Council (U.S.). Committee on Estimating and Communicating Uncertainty in Weather and Climate Forecasts" type="vocab" text="National Research Council (U.S.). Committee on Estimating and Communicating Uncertainty in Weather and Climate Forecasts"/>
+			<outline vocab="National Research Council (U.S.). Committee on Grand Challenges in Environmental Sciences" type="vocab" text="National Research Council (U.S.). Committee on Grand Challenges in Environmental Sciences"/>
+			<outline vocab="National Research Council (U.S.). Global Energy and Water Cycle Experiment (GEWEX) Panel" type="vocab" text="National Research Council (U.S.). Global Energy and Water Cycle Experiment (GEWEX) Panel"/>
+			<outline vocab="National Research Council (U.S.). Panel on Coastal Meteorology" type="vocab" text="National Research Council (U.S.). Panel on Coastal Meteorology"/>
+			<outline vocab="National Research Council (U.S.). Transportation Research Board" type="vocab" text="National Research Council (U.S.). Transportation Research Board"/>
+			<outline vocab="National Science Council (U.S.)" type="vocab" text="National Science Council (U.S.)"/>
+			<outline vocab="National Science Foundation" type="vocab" text="National Science Foundation (NSF)"/>
+			<outline vocab="National Severe Storms Laboratory" type="vocab" text="National Severe Storms Laboratory"/>
+			<outline vocab="National Snow and Ice Data Center" type="vocab" text="National Snow and Ice Data Center"/>
+			<outline vocab="National Space Organization (Taiwan)" type="vocab" text="National Space Organization (Taiwan)"/>
+			<outline vocab="National Taiwan University" type="vocab" text="National Taiwan University"/>
+			<outline vocab="National Weather Association (U.S.)" type="vocab" text="National Weather Association (U.S.)"/>
+			<outline vocab="Natural Resources Institute Limited" type="vocab" text="Natural Resources Institute Limited"/>
+			<outline vocab="Nature Publishing Group" type="vocab" text="Nature Publishing Group"/>
+			<outline vocab="New Age International (P) Ltd." type="vocab" text="New Age International (P) Ltd."/>
+			<outline vocab="New Mexico Institute of Mining and Technology" type="vocab" text="New Mexico Institute of Mining and Technology"/>
+			<outline vocab="New Mexico State University" type="vocab" text="New Mexico State University"/>
+			<outline vocab="New York University" type="vocab" text="New York University"/>
+			<outline vocab="Nielsen Norman Group" type="vocab" text="Nielsen Norman Group"/>
+			<outline vocab="National Oceanic and Atmospheric Administration" type="vocab" text="NOAA"/>
+			<outline vocab="NOAA Office of Climate Observation" type="vocab" text="NOAA Office of Climate Observation"/>
+			<outline vocab="Norske meteorologiske institutt" type="vocab" text="Norske meteorologiske institutt (Norway)"/>
+			<outline vocab="Norsk institutt for luftforskning" type="vocab" text="Norsk institutt for luftforskning (Norwegian Inst for Air Resrch)"/>
+			<outline vocab="North Carolina State University" type="vocab" text="North Carolina State University"/>
+			<outline vocab="Northeast Climate Impacts Assessment" type="vocab" text="Northeast Climate Impacts Assessment"/>
+			<outline vocab="Northeast States for Coordinated Air Use Management" type="vocab" text="Northeast States for Coordinated Air Use Management"/>
+			<outline vocab="NorthWest Research Associates, Inc." type="vocab" text="NorthWest Research Associates, Inc."/>
+			<outline vocab="Nova Science Publishers" type="vocab" text="Nova Science Publishers"/>
+		</outline><!--end M-N grouping-->
+		
+		<outline type="group" text="O-R" collapsible="true">
+			<outline vocab="Oak Ridge National Laboratory" type="vocab" text="Oak Ridge National Laboratory"/>
+			<outline vocab="Oakland University" type="vocab" text="Oakland University"/>
+			<outline vocab="Observatoire de Genève" type="vocab" text="Observatoire de Genève"/>
+			<outline vocab="Oceanography Society" type="vocab" text="Oceanography Society"/>
+			<outline vocab="Odile Jacob" type="vocab" text="Odile Jacob"/>
+			<outline vocab="Old Dominion University" type="vocab" text="Old Dominion University"/>
+			<outline vocab="Optical Society of America" type="vocab" text="Optical Society of America"/>
+			<outline vocab="Oregon State University" type="vocab" text="Oregon State University"/>
+			<outline vocab="Organisation scientifique et technique internationale du vol &#0224; voile" type="vocab" text="Organisation scientifique et technique internationale du vol &#0224; voile"/>
+			<outline vocab="Oxford University Press" type="vocab" text="Oxford University Press"/>
+			<outline vocab="P.P. Shirshov Institute of Oceanology" type="vocab" text="P.P. Shirshov Institute of Oceanology"/>
+			<outline vocab="Pacific Northwest National Laboratory" type="vocab" text="Pacific Northwest National Laboratory"/>
+			<outline vocab="Pacific Northwest Research Station (Portland, Or.)" type="vocab" text="Pacific Northwest Research Station (Portland, Or.)"/>
+			<outline vocab="Peking University Press" type="vocab" text="Peking University Press"/>
+			<outline vocab="Pennsylvania State University" type="vocab" text="Pennsylvania State University"/>
+			<outline vocab="Pergamon" type="vocab" text="Pergamon"/>
+			<outline vocab="Perot Systems Corporation" type="vocab" text="Perot Systems Corporation"/>
+			<outline vocab="Pew Center on Global Climate Change" type="vocab" text="Pew Center on Global Climate Change"/>
+			<outline vocab="Physikalisch-Metorologisches Observatorium Davos/World Radiation Center" type="vocab" text="Physikalisch-Metorologisches Observatorium Davos/World Radiation Center"/>
+			<outline vocab="Pineapple Research Institute of Hawaii" type="vocab" text="Pineapple Research Institute of Hawaii" wrap="true"/>
+			<outline vocab="Pineridge Press" type="vocab" text="Pineridge Press"/>
+			<outline vocab="Potsdam-Institut f&#0252;r Klimafolgenforschung" type="vocab" text="Potsdam-Institut f&#0252;r Klimafolgenforschung"/>
+			<outline vocab="Praeger" type="vocab" text="Praeger"/>
+			<outline vocab="Praxis Publishing" type="vocab" text="Praxis Publishing"/>
+			<outline vocab="Prentice-Hall, Inc." type="vocab" text="Prentice-Hall, Inc."/>
+			<outline vocab="Princeton University" type="vocab" text="Princeton University"/>
+			<outline vocab="Programma nazionale di ricerche in Antartide (Italy)" type="vocab" text="Programma nazionale di ricerche in Antartide (Italy)"/>
+			<outline vocab="Public Library of Science" type="vocab" text="Public Library of Science"/>
+			<outline vocab="Purdue University" type="vocab" text="Purdue University"/>
+			<outline vocab="Raven Industries, Inc." type="vocab" text="Raven Industries, Inc."/>
+			<outline vocab="Reed Business Information" type="vocab" text="Reed Business Information"/>
+			<outline vocab="Remote Sensing Systems" type="vocab" text="Remote Sensing Systems"/>
+			<outline vocab="Resources for the Future" type="vocab" text="Resources for the Future"/>
+			<outline vocab="Rough Guides, Ltd." type="vocab" text="Rough Guides, Ltd."/>
+			<outline vocab="Routledge" type="vocab" text="Routledge"/>
+			<outline vocab="Royal Aeronautical Society" type="vocab" text="Royal Aeronautical Society"/>
+			<outline vocab="Royal Meteorological Society (Great Britain)" type="vocab" text="Royal Meteorological Society (Great Britain)"/>
+			<outline vocab="Royal Netherlands Academy of Arts and Sciences" type="vocab" text="Royal Netherlands Academy of Arts and Sciences"/>
+			<outline vocab="Royal Society of Chemistry (Great Britain)" type="vocab" text="Royal Society of Chemistry (Great Britain)"/>
+			<outline vocab="Royal Society Publishing" type="vocab" text="Royal Society Publishing"/>
+			<outline vocab="Royal Swedish Academy of Sciences" type="vocab" text="Royal Swedish Academy of Sciences"/>
+			<outline vocab="Russian Academy of Sciences" type="vocab" text="Russian Academy of Sciences"/>
+			<outline vocab="Rutgers University" type="vocab" text="Rutgers University"/>
+		</outline> <!--end O-R grouping-->
+
+		<outline type="group" text="S-T" collapsible="true">
+			<outline vocab="Sage Publications, Inc." type="vocab" text="Sage Publications, Inc."/>
+			<outline vocab="Sampling Publishing" type="vocab" text="Sampling Publishing"/>
+			<outline vocab="Sandia National Laboratories" type="vocab" text="Sandia National Laboratories"/>
+			<outline vocab="Science Applications International Corporation" type="vocab" text="Science Applications International Corporation"/>
+			<outline vocab="Science Systems and Applications, Inc." type="vocab" text="Science Systems and Applications, Inc."/>
+			<outline vocab="Scripps Institution of Oceanography" type="vocab" text="Scripps Institution of Oceanography"/>
+			<outline vocab="SEPM (Society for Sedimentary Geology)" type="vocab" text="SEPM (Society for Sedimentary Geology)"/>
+			<outline vocab="Secretariat of the Antarctic Treaty" type="vocab" text="Secretariat of the Antarctic Treaty"/>
+			<outline vocab="Secretariat of the Pacific Community" type="vocab" text="Secretariat of the Pacific Community"/>
+			<outline vocab="Servizio Meteorologico dell'Aeronautica Militare" type="vocab" text="Servizio Meteorologico dell'Aeronautica Militare"/>
+			<outline vocab="Sierra Club Books" type="vocab" text="Sierra Club Books"/>
+			<outline vocab="Simon and Schuster, Inc." type="vocab" text="Simon and Schuster, Inc."/>
+			<outline vocab="Societ&#224; astronomica italiana" type="vocab" text="Societ&#224; astronomica italiana"/>
+			<outline vocab="Societ&#224; italiana di fisica" type="vocab" text="Societ&#224; italiana di fisica"/>
+			<outline vocab="Soci&#0233;t&#0233; m&#0233;t&#0233;orologique de France" type="vocab" text="Soci&#0233;t&#0233; m&#0233;t&#0233;orologique de France"/>
+			<outline vocab="Society of American Foresters" type="vocab" text="Society of American Foresters"/>
+			<outline vocab="Society of Automotive Engineers" type="vocab" text="Society of Automotive Engineers"/>
+			<outline vocab="Society for Industrial and Applied Mathematics" type="vocab" text="Society for Industrial and Applied Mathematics"/>
+			<outline vocab="Soil and Water Conservation Society (U.S.)" type="vocab" text="Soil and Water Conservation Society (U.S.)"/>
+			<outline vocab="Solstice Publications" type="vocab" text="Solstice Publications"/>
+			<outline vocab="South African Weather Service" type="vocab" text="South African Weather Service"/>
+			<outline vocab="SPIE" type="vocab" text="SPIE"/>
+			<outline vocab="Springer" type="vocab" text="Springer" wrap="true"/>
+			<outline vocab="Springer-Verlag" type="vocab" text="Springer-Verlag (2004 and earlier only)"/>
+			<outline vocab="Stanford University" type="vocab" text="Stanford University"/>
+			<outline vocab="State University of New York at Albany" type="vocab" text="State University of New York at Albany"/>
+			<outline vocab="State University of New York at Stony Brook" type="vocab" text="State University of New York at Stony Brook"/>
+			<outline vocab="STG Incorporated" type="vocab" text="STG Incorporated"/>
+			<outline vocab="Stockholms universitet" type="vocab" text="Stockholms universitet (Univ of Stockholm)"/>
+			<outline vocab="Taylor &amp; Francis" type="vocab" text="Taylor &amp; Francis"/>
+			<outline vocab="Tel-Aviv University" type="vocab" text="Tel-Aviv University"/>
+			<outline vocab="TeraGrid" type="vocab" text="TeraGrid"/>
+			<outline vocab="TERRAPUB (Terra Scientific Publishing Company)" type="vocab" text="TERRAPUB (Terra Scientific Publishing Company)"/>
+			<outline vocab="Texas A &#38; M University" type="vocab" text="Texas A &#38; M University"/>
+			<outline vocab="Time-Life Books" type="vocab" text="Time-Life Books"/>
+			<outline vocab="National Research Council (U.S.). Transportation Research Board" type="vocab" text="Transportation Research Board"/>
+			<outline vocab="Tsinghua University Press" type="vocab" text="Tsinghua University Press"/>
+			<outline vocab="Tudor Rose" type="vocab" text="Tudor Rose"/>
+		</outline> <!--end S-T group-->
+		
+		<outline type="group" text="U" collapsible="true">
+			<outline vocab="UK Office for Library and Information Networking" type="vocab" text="UK Office for Library and Information Networking"/>
+			<outline vocab="UKIP Media &amp; Events Ltd." type="vocab" text="UKIP Media &amp; Events Ltd."/>
+			<outline vocab="U.S. Air Force Cambridge Research Laboratories" type="vocab" text="U.S. Air Force Cambridge Research Laboratories"/>
+			<outline vocab="U.S. Air Force Flight Dynamics Laboratory" type="vocab" text="U.S. Air Force Flight Dynamics Laboratory"/>
+			<outline vocab="U.S. Air Force. Office of Scientific Research" type="vocab" text="U.S. Air Force. Office of Scientific Research (AFOSR)"/>
+			<outline vocab="U.S. Army Research Office" type="vocab" text="U.S. Army Research Office"/>
+			<outline vocab="U.S. Bureau of Reclamation" type="vocab" text="U.S. Bureau of Reclamation"/>
+			<outline vocab="U.S. Climate Change Science Program" type="vocab" text="U.S. Climate Change Science Program"/>
+			<outline vocab="U.S. Climate Diagnostics Center" type="vocab" text="U.S. Climate Diagnostics Center"/>
+			<outline vocab="U.S. Department of Defense" type="vocab" text="U.S. Department of Defense"/>
+			<outline vocab="U.S. Department of Energy" type="vocab" text="U.S. Department of Energy"/>
+			<outline vocab="U.S. Department of Energy. Office of Scientific and Technical Information" type="vocab" text="U.S. Department of Energy. Office of Scientific and Technical Information"/>
+			<outline vocab="U.S. Environmental Protection Agency" type="vocab" text="U.S. Environmental Protection Agency"/>
+			<outline vocab="U.S. Forest Service" type="vocab" text="U.S. Forest Service"/>
+			<outline vocab="U.S. Geological Survey" type="vocab" text="U.S. Geological Survey"/>
+			<outline vocab="U.S. Global Change Research Program" type="vocab" text="U.S. Global Change Research Program"/>
+			<outline vocab="U.S. Joint Global Ocean Flux Study" type="vocab" text="U.S. Joint Global Ocean Flux Study"/>
+			<outline vocab="U.S. National Technical Information Service" type="vocab" text="U.S. National Technical Information Service"/>
+			<outline vocab="U.S. National Weather Service" type="vocab" text="U.S. National Weather Service"/>
+			<outline vocab="U.S. Naval Postgraduate School" type="vocab" text="U.S. Naval Postgraduate School"/>
+			<outline vocab="U.S. Naval Research Laboratory" type="vocab" text="U.S. Naval Research Laboratory"/>
+			<outline vocab="U.S. Office of Naval Research" type="vocab" text="U.S. Office of Naval Research"/>
+			<outline vocab="U.S. Weather Research Program" type="vocab" text="U.S. Weather Research Program (USWRP)"/>
+			<outline vocab="United States Antarctic Program" type="vocab" text="United States Antarctic Program"/>
+			<outline vocab="United Nations University Press" type="vocab" text="United Nations University Press"/>
+			<outline vocab="United Nations Environment Programme" type="vocab" text="United Nations Environment Programme"/>
+			<outline vocab="United Nations Human Settlements Programme" type="vocab" text="United Nations Human Settlements Programme"/>
+			<outline vocab="Universidad Complutense de Madrid" type="vocab" text="Universidad Complutense de Madrid"/>
+			<outline vocab="Universidad de Buenos Aires" type="vocab" text="Universidad de Buenos Aires"/>
+			<outline vocab="Universidad Nacional Aut&#0243;noma de M&#0233;xico" type="vocab" text="Universidad Nacional Aut&#0243;noma de M&#0233;xico"/>
+			<outline vocab="Universidade de S&#0227;o Paulo" type="vocab" text="Universidade de S&#0227;o Paulo"/>
+			<outline vocab="Universidade de Lisboa" type="vocab" text="Universidade de Lisboa (Lisbon)"/>
+			<outline vocab="Universit&#0224; degli studi dell'Aquila" type="vocab" text="Universit&#0224; degli studi dell'Aquila"/>
+			<outline vocab="Universit&#0224; di Milano" type="vocab" text="Universit&#0224; di Milano"/>
+			<outline vocab="Universitat de les Illes Balears" type="vocab" text="Universitat de les Illes Balears"/>
+			<outline vocab="Universit&#0228;t Bern" type="vocab" text="Universit&#0228;t Bern"/>
+			<outline vocab="Universit&#0228;t Graz" type="vocab" text="Universit&#0228;t Graz"/>
+			<outline vocab="Universit&#0228;t Hamburg" type="vocab" text="Universit&#0228;t Hamburg"/>
+			<outline vocab="Universit&#0228;t Heidelberg" type="vocab" text="Universit&#0228;t Heidelberg"/>
+			<outline vocab="Universit&#0228;t Innsbruck" type="vocab" text="Universit&#0228;t Innsbruck"/>
+			<outline vocab="Universit&#0228;t Wien" type="vocab" text="Universit&#0228;t Wien (Vienna)"/>
+			<outline vocab="Universit&#0233; de Gen&#0232;ve" type="vocab" text="Universit&#0233; de Gen&#0232;ve"/>
+			<outline vocab="Universit&#0233; de Nice-Sophia Antipolis" type="vocab" text="Universit&#0233; de Nice-Sophia Antipolis"/>
+			<outline vocab="Universit&#0233; Pierre et Marie Curie" type="vocab" text="Universit&#0233; Pierre et Marie Curie"/>
+			<outline vocab="Universitetet i Bergen" type="vocab" text="Universitetet i Bergen (Norway))"/>
+			<outline vocab="Universitetet i Oslo" type="vocab" text="Universitetet i Oslo (Norway)"/>
+			<outline vocab="University of Alaska Fairbanks" type="vocab" text="University of Alaska Fairbanks"/>
+			<outline vocab="University of Arizona" type="vocab" text="University of Arizona"/>
+			<outline vocab="University of Bristol" type="vocab" text="University of Bristol"/>
+			<outline vocab="University of British Columbia" type="vocab" text="University of British Columbia"/>
+			<outline vocab="University of Calgary" type="vocab" text="University of Calgary"/>
+			<outline vocab="University of California, Berkeley" type="vocab" text="University of California, Berkeley"/>
+			<outline vocab="University of California, Davis" type="vocab" text="University of California, Davis"/>
+			<outline vocab="University of California, Irvine" type="vocab" text="University of California, Irvine"/>
+			<outline vocab="University of California, Los Angeles" type="vocab" text="University of California, Los Angeles"/>
+			<outline vocab="University of California, Los Angeles. Institute of the Environment" type="vocab" text="University of California, Los Angeles. Institute of the Environment"/>
+			<outline vocab="University of California, San Diego" type="vocab" text="University of California, San Diego"/>
+			<outline vocab="University of California, Santa Barbara" type="vocab" text="University of California, Santa Barbara"/>
+			<outline vocab="University of California, Santa Cruz" type="vocab" text="University of California, Santa Cruz"/>
+			<outline vocab="University of Cambridge" type="vocab" text="University of Cambridge"/>
+			<outline vocab="University of Chicago" type="vocab" text="University of Chicago"/>
+			<outline vocab="University of Chicago Press" type="vocab" text="University of Chicago Press"/>
+			<outline vocab="University of Chicago. Cloud Physics Laboratory" type="vocab" text="University of Chicago. Cloud Physics Laboratory"/>
+			<outline vocab="University of Colorado, Boulder" type="vocab" text="University of Colorado, Boulder" wrap="true"/>
+			<outline vocab="University of Colorado, Colorado Springs" type="vocab" text="University of Colorado, Colorado Springs"/>
+			<outline vocab="University of Colorado, Denver" type="vocab" text="University of Colorado, Denver"/>
+			<outline vocab="University of Connecticut" type="vocab" text="University of Connecticut"/>
+			<outline vocab="University of Delaware" type="vocab" text="University of Delaware"/>
+			<outline vocab="University of East Anglia" type="vocab" text="University of East Anglia"/>
+			<outline vocab="University of East Anglia. Climatic Research Unit" type="vocab" text="University of East Anglia. Climatic Research Unit"/>
+			<outline vocab="University of Edinburgh" type="vocab" text="University of Edinburgh"/>
+			<outline vocab="University of Florida" type="vocab" text="University of Florida"/>
+			<outline vocab="University of Georgia" type="vocab" text="University of Georgia"/>
+			<outline vocab="University of Hawaii at Manoa" type="vocab" text="University of Hawaii at Manoa"/>
+			<outline vocab="University of Hawaii. Institute of Astronomy" type="vocab" text="University of Hawaii. Institute of Astronomy"/>
+			<outline vocab="University of Hong Kong" type="vocab" text="University of Hong Kong"/>
+			<outline vocab="University of Houston. Law Center" type="vocab" text="University of Houston. Law Center"/>
+			<outline vocab="University of Illinois Press" type="vocab" text="University of Illinois Press"/>
+			<outline vocab="University of Illinois at Urbana-Champaign" type="vocab" text="University of Illinois at Urbana-Champaign"/>
+			<outline vocab="University of Iowa" type="vocab" text="University of Iowa"/>
+			<outline vocab="University of Louisiana at Monroe" type="vocab" text="University of Louisiana at Monroe"/>
+			<outline vocab="University of Maine at Orono" type="vocab" text="University of Maine at Orono"/>
+			<outline vocab="University of Maryland, College Park" type="vocab" text="University of Maryland, College Park"/>
+			<outline vocab="University of Massachusetts Dartmouth" type="vocab" text="University of Massachusetts Dartmouth"/>
+			<outline vocab="University of Miami" type="vocab" text="University of Miami"/>
+			<outline vocab="University of Michigan" type="vocab" text="University of Michigan"/>
+			<outline vocab="University of Missouri--Columbia" type="vocab" text="University of Missouri--Columbia"/>
+			<outline vocab="University of Missouri--Kansas City" type="vocab" text="University of Missouri--Kansas City"/>
+			<outline vocab="University of New Hampshire" type="vocab" text="University of New Hampshire"/>
+			<outline vocab="University of New Mexico" type="vocab" text="University of New Mexico"/>
+			<outline vocab="University of North Carolina at Asheville" type="vocab" text="University of North Carolina at Asheville"/>
+			<outline vocab="University of North Carolina at Chapel Hill" type="vocab" text="University of North Carolina at Chapel Hill"/>
+			<outline vocab="University of North Dakota" type="vocab" text="University of North Dakota"/>
+			<outline vocab="University of Northern Colorado" type="vocab" text="University of Northern Colorado"/>
+			<outline vocab="University of Oklahoma" type="vocab" text="University of Oklahoma"/>
+			<outline vocab="University of Oxford" type="vocab" text="University of Oxford"/>
+			<outline vocab="University of Oxford. Clarendon Laboratory" type="vocab" text="University of Oxford. Clarendon Laboratory"/>
+			<outline vocab="University of Reading" type="vocab" text="University of Reading"/>
+			<outline vocab="University of Rhode Island" type="vocab" text="University of Rhode Island"/>
+			<outline vocab="University of South Florida" type="vocab" text="University of South Florida"/>
+			<outline vocab="University of Southern California" type="vocab" text="University of Southern California"/>
+			<outline vocab="University Science Books" type="vocab" text="University Science Books"/>
+			<outline vocab="University of Tasmania" type="vocab" text="University of Tasmania"/>
+			<outline vocab="University of Texas at Arlington" type="vocab" text="University of Texas at Arlington"/>
+			<outline vocab="University of Texas at Austin" type="vocab" text="University of Texas at Austin"/>
+			<outline vocab="University of Texas at Dallas" type="vocab" text="University of Texas at Dallas"/>
+			<outline vocab="University of Texas at Houston" type="vocab" text="University of Texas at Houston"/>
+			<outline vocab="University of Texas Health Science Center at Houston" type="vocab" text="University of Texas Health Science Center at Houston"/>
+			<outline vocab="University of Texas Health Science Center at San Antonio" type="vocab" text="University of Texas Health Science Center at San Antonio"/>
+			<outline vocab="University of Tokyo" type="vocab" text="University of Tokyo"/>
+			<outline vocab="University of Toronto" type="vocab" text="University of Toronto"/>
+			<outline vocab="University of Utah" type="vocab" text="University of Utah"/>
+			<outline vocab="University of Victoria" type="vocab" text="University of Victoria"/>
+			<outline vocab="University of Virginia" type="vocab" text="University of Virginia"/>
+			<outline vocab="University of Warwick" type="vocab" text="University of Warwick"/>
+			<outline vocab="University of Washington" type="vocab" text="University of Washington"/>
+			<outline vocab="University of Waterloo" type="vocab" text="University of Waterloo"/>
+			<outline vocab="University of Western Ontario" type="vocab" text="University of Western Ontario"/>
+			<outline vocab="University of Wisconsin--Madison" type="vocab" text="University of Wisconsin--Madison"/>
+			<outline vocab="University of Wisconsin Sea Grant Institute" type="vocab" text="University of Wisconsin Sea Grant Institute"/>
+			<outline vocab="University of Wyoming" type="vocab" text="University of Wyoming"/>
+			<outline vocab="University of York" type="vocab" text="University of York"/>
+			<outline vocab="Uniwersytet Warszawski" type="vocab" text="Uniwersytet Warszawski (Warsaw)"/>
+			<outline vocab="Uppsala universitet" type="vocab" text="Uppsala universitet (Sweden))"/>
+			<outline vocab="Utah State University" type="vocab" text="Utah State University"/>
+		</outline> <!--end U group-->
+		
+		<outline type="group" text="V,W,X,Y,Z" collapsible="true">
+			<outline vocab="VDM Verlag" type="vocab" text="VDM Verlag"/>
+			<outline vocab="Vaisala" type="vocab" text="Vaisala"/>
+			<outline vocab="Veridian" type="vocab" text="Veridian"/>
+			<outline vocab="Victoria University Press" type="vocab" text="Victoria University Press"/>
+			<outline vocab="Vintage Press" type="vocab" text="Vintage Press"/>
+			<outline vocab="Vrije Universiteit te Amsterdam" type="vocab" text="Vrije Universiteit te Amsterdam"/>
+			<outline vocab="Washington State University" type="vocab" text="Washington State University"/>
+			<outline vocab="Water Research Foundation" type="vocab" text="Water Research Foundation"/>
+			<outline vocab="Weather Modification Association" type="vocab" text="Weather Modification Association"/>
+			<outline vocab="West Virginia University" type="vocab" text="West Virginia University"/>
+			<outline vocab="Western Behavioral Sciences Institute" type="vocab" text="Western Behavioral Sciences Institute"/>
+			<outline vocab="Westview Press" type="vocab" text="Westview Press"/>
+			<outline vocab="W.H. Freeman and Company" type="vocab" text="W.H. Freeman and Company"/>
+			<outline vocab="Wichita State University" type="vocab" text="Wichita State University"/>
+			<outline vocab="Woodrow Wilson International Center for Scholars" type="vocab" text="Woodrow Wilson International Center for Scholars"/>
+			<outline vocab="Woods Hole Oceanographic Institution" type="vocab" text="Woods Hole Oceanographic Institution" wrap="true"/>
+			<outline vocab="World Bank" type="vocab" text="World Bank"/>
+			<outline vocab="World Book, Inc." type="vocab" text="World Book, Inc."/>
+			<outline vocab="World Climate Research Programme" type="vocab" text="World Climate Research Programme (WCRP)"/>
+			<outline vocab="World Meteorological Organization" type="vocab" text="World Meteorological Organization"/>
+			<outline vocab="WOCE International Project Office" type="vocab" text="World Ocean Ciruclation Experiment (WOCE) International Project Office (in NOAA)"/>
+			<outline vocab="World Scientific" type="vocab" text="World Scientific"/>
+			<outline vocab="Yale University" type="vocab" text="Yale University"/>			
+			<outline vocab="Yale University Press" type="vocab" text="Yale University Press"/>			
+			<outline vocab="Yonsei University" type="vocab" text="Yonsei University"/>			
+		</outline><!--end V-Z-->
+
+<!--display equal false values-->
+		<outline vocab="Kluwer Academic Publishers" type="vocab" text="Kluwer Academic Publishers" display="false"/>
+		<outline vocab="Los Alamos National Laboratory" type="vocab" text="Los Alamos National Laboratory" display="false"/>
+		<outline vocab="National Weather Records Center" type="vocab" text="National Weather Records Center" display="false"/><!--NWRC was the name of National Climatic Center (NCC) before 1970-->
+		<outline vocab="National Climatic Center" type="vocab" text="National Climatic Center" display="false"/><!--NCC was the name of National Climatic Data Center (NCDC) before 1983-->
+		<outline vocab="Plenum Press" type="vocab" text="Plenum Press" display="false"/><!--use Kluwer Academic/Plenum Publishers above instead-->
+		<outline vocab="Macmillan Company" type="vocab" text="Macmillan Company" display="false"/><!-- not to be confused with London based Macmillan Publishers-->
+		<outline vocab="Macmillan Publishing Company" type="vocab" text="Macmillan Publishing Company" display="false"/><!-- not to be confused with London based Macmillan Publishers-->
+		<outline vocab="Macmillan Reference USA" type="vocab" text="Macmillan Reference USA" display="false"/><!-- a divsion of Gale-->
+
+	</body>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->
+
+
+

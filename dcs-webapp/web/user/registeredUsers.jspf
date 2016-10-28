@@ -1,0 +1,25 @@
+<div id="registered-users-header"  class="toggling-header">
+	<%-- Registered Users <input class="record-action-button" type="button" value="show / hide" id="registered-users-control"/> --%>
+	<%-- <a href="#" onclick="toggleRegisteredUsers()">Registered Users</a> --%>
+</div>
+
+<div id="registered-users">
+<%-- <div><b>Note:</b> usernames must be unique</div> --%>
+	<table class="user-listing-table">
+		<tr>
+			<th><div>user name</div></th>
+			<th><div>full name</div></th>
+			<th><div>email</div></th>
+		</tr>
+
+	<c:forEach var="user" items="${userForm.users}">
+		<tr class="${user.username == userForm.dupUsername ? 'dup' : ''}">
+			<td>${user.username}
+			</td>
+			<td>${user.fullName}</td>
+			<td>${user.email}</td>
+		</tr>
+	</c:forEach>
+	</table>
+</div>
+

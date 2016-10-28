@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: audience-no-groups-default-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Audience</title>
+<groups:concept language="en-us" metaFormat="news_opps" metaVersion="1.0.00" text="Audience" audience="default" path="/news-oppsRecord/audiences/audience" deftn="the intended consumer of the information in the news, event or opportunity"/>
+</head>
+<body>
+<outline groups:vocab="Developer" type="vocab" text="Developer" groups:deftn="anyone who designs, produces, implements, maintains or tests learning resources, software, collections, tools or data sources"/>
+<outline groups:vocab="Educator" type="vocab" text="Educator" groups:deftn="anyone who provides learning opportunities in a structured environment at any educational level, both formal and informal"/>
+<outline groups:vocab="General public" type="vocab" text="General public" groups:deftn="anyone in the general population who has an interest in or might participate in the news, event or opportunity"/>
+<outline groups:vocab="Information specialist" type="vocab" text="Information specialist" groups:deftn="anyone who catalogs, manages, or acts as a resource about a particular collection of objects"/>
+<outline groups:vocab="Manager" type="vocab" text="Manager" groups:deftn="anyone who supervises individuals, large projects or budgets within an organization"/>
+<outline groups:vocab="Researcher" type="vocab" text="Researcher" groups:deftn="anyone who investigates topics, problems, issues or events in order to advance knowledge of a field"/>
+<outline groups:vocab="Student" type="vocab" text="Student" groups:deftn="anyone who investigates topics, problems, issues or events in order to advance their own knowledge, skills or understanding; often in a structured learning environment or through self-study"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

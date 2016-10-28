@@ -1,0 +1,517 @@
+ <!--  
+	Ant build file for the Repository Harvest Manager (RHM) software.
+	
+	Instructions for building this software:   
+	
+	Project dependencies:
+	 - (none)
+		
+	Prior to using this build file you must install Ant on your local system.
+	For information about installing and using Ant, go to http://ant.apache.org/
+
+	To build the software and deploy it into Tomcat, set up the properties shown  
+	below and then execute the 'deploy' target (type 'ant deploy' in a command-line 
+	environment). Detant builails on the other ant targets can be displayed by typing 
+	'ant -projecthelp'.
+	 
+	Prior to using this Ant build file, you must define the following property(s).
+	The property(s) may be passed into ant at the command line or placed in a 
+	file named build.properties in your home directory or the project's root directory.
+	  
+	  Required ant properties that must be defined: 		
+	  
+	  catalina.home  	# The base direcory of your development Tomcat 5.5.x or 6.x installation 
+	  
+	  
+	  Optional ant properties that may be defined:
+	  
+	  app.context.name  # (Optional) The Tomcat context directory into which the software 
+	                    # will be deployed.	
+ 
+	  
+	  For example, on Windows plattforms your build.properties file might look like:
+	  
+	  catalina.home = K:/username/dev/tomcat-5.5.17
+	  
+	  On UNIX plattforms your build.properties file might look like:
+	  
+	  catalina.home = /home/username/dev/tomcat-5.5.17
+	  
+	  
+
+	Overview of Ant build files: 
+	 
+	A "project" describes a set of targets that may be requested 
+	when Ant is executed.  The "default" attribute defines the 
+	target which is executed if no specific target is requested, 
+	and the "basedir" attribute defines the current working directory 
+	from which Ant executes the requested task.  This is normally 
+	set to the current working directory. 
+	 
+	Example commands at the your shell prompt: 
+	> ant 
+	# This executes the default target, in this case "compile" 
+	 
+	> ant deploy 
+	# This executes the "deploy" target. Since the deploy target 
+	# is dependent on the compile target, ant will be sure the  
+	# compile target is executed (if needed) before executing deploy. 
+--> 
+ 
+ 
+<project name="RHM Webapp" default="compile" basedir=".">
+ 
+<!-- ===================== Property Definitions ===========================  
+ 
+	Each of the following properties are used in the build script. 
+	Values for these properties are set by the first place they are 
+	defined, from the following list: 
+	* Definitions on the "ant" command line (ant -Dcatalina.home=xyz compile) 
+	* Definitions from a "build.properties" file in the developer's 
+	home directory 
+	* Definitions from a "build.properties" file in the top level 
+	source directory 
+	* Default definitions in this build.xml file 
+	 
+	You will note below that property values can be composed based on the 
+	contents of previously defined properties.  This is a powerful technique 
+	that helps you minimize the number of changes required when your development 
+	environment is modified.  Note that property composition is allowed within 
+	"build.properties" files as well as in the "build.xml" script. 
+ 
+--> 
+
+  <!-- Search for properties defined in this order: -->
+  <property file="../hm.properties"/>
+  <property file="../build.properties"/>   
+  <property file="${user.home}/build.properties"/> 
+  <property file="build.properties"/>    
+ 
+  <!-- 	The catalina.home property below points to a common installation of Tomcat. 
+    		In general you should define the catalina.home property to point to your 
+			own development installation of Tomcat --> 
+ 
+  <property name="app.name" 			value="Harvest Repository Manager"/>
+  <property name="app.version" 			value="2.6"/>
+  <property name="app.context.name"		value="hm"/>
+  <property name="deploy.context.name"	value="${app.context.name}"/>   
+  <property name="build.home"    		value="build"/>
+  <property name="build.lib"    		value="web/WEB-INF/lib"/>  
+  <property name="junit.test.dir"     	value="test"/>
+  <property name="catalina.base"     	value="${catalina.home}"/>  
+  <property name="tomcat.deploy.home"	value="${catalina.base}/webapps/${deploy.context.name}"/> 
+  <property name="war.deploy.home"   	value="war-distribution"/>
+  
+  <property name="javadoc.deploy.home"	value="${tomcat.deploy.home}/docs/javadoc"/>
+  <property name="dls.libs.location"	value="../shared-source"/>
+ 
+<!--  ==================== Compilation Control Options ==================== - 
+ 
+  These properties control option settings on the Javac compiler when it 
+  is invoked using the <javac> task. 
+ 
+  compile.debug        Should compilation include the debug option? 
+ 
+  compile.deprecation  Should compilation include the deprecation option? 
+ 
+  compile.optimize     Should compilation include the optimize option? 
+ 
+--> 
+ 
+  <property name="compile.debug"       value="true"/> 
+  <property name="compile.deprecation" value="false"/> 
+  <property name="compile.optimize"    value="true"/> 
+ 
+	    
+<!-- ==================== Compilation Classpath ===========================  
+ 
+  Rather than relying on the CLASSPATH environment variable, Ant includes 
+  features that makes it easy to dynamically construct the classpath you 
+  need for each compilation.  The example below constructs the compile 
+  classpath to include the servlet.jar file, as well as the other components 
+  that Tomcat makes available to web applications automatically, plus anything 
+  that you explicitly added. 
+ 
+--> 
+ 
+  <path id="compile.classpath"> 
+
+  	<!-- 	Include dependent jars used in the build that are
+			also needed for deployment and distribution -->
+    <fileset dir="${build.lib}"> 
+      <include name="*.jar"/> 
+    </fileset> 
+	
+  
+	<!-- 	Include dependent jars used in the build that arn't
+			needed for deployment and distribution -->
+    <fileset dir="build_lib"> 
+      <include name="*.jar"/> 
+    </fileset>  
+	
+	
+	<!-- 	Include the class dir and junit class dir so they are avail to 
+			each other for compiling --> 
+    <pathelement location="${build.home}/WEB-INF/classes"/>  
+    <pathelement location="${build.home}/WEB-INF/classes-junit"/>     
+    <!-- <pathelement location="${build.home}/WEB-INF/lib/${app.context.name}.jar"/> -->
+  
+    <!-- Include all elements that Tomcat exposes to applications --> 
+    <pathelement location="${catalina.home}/common/classes"/> 
+
+    <pathelement location="${catalina.home}/classes"/>	
+ 
+  </path> 
+ 
+ 
+ 
+<!-- ==================== All Target ======================================  
+ 
+  The "all" target is a shortcut for running the "clean" target followed 
+  by the "compile" target, to force a complete recompile. 
+ 
+--> 
+ 
+  <target name="all" depends="clean,compile" 
+   description="Clean build dir, then compile"/> 
+ 
+ 
+ 
+<!-- ==================== Clean Target ====================================  
+ 
+  The "clean" target deletes any previous "build" directory, 
+  so that you can be ensured the application can be built from scratch. 
+ 
+--> 
+ 
+  <target name="clean" 
+   description="Delete the build directory"> 
+    
+	<delete dir="${build.home}"/> 	
+  </target> 
+
+  
+ 
+  <target name="cleanall" depends="clean"
+  	description="Clean the build and junit test directories"> 
+    
+	<delete dir="${junit.test.home}"/> 	
+  </target>
+  
+  
+<!-- ==================== deploy-clean Target ====================================  
+ 
+  The "deploy-clean" target deletes any previous "deploy" directories in your
+  local Tomcat area.
+
+--> 
+ 
+  <target name="deploy-clean" 
+   description="Delete the Tomcat deploy directory"> 
+    
+    <delete dir="${tomcat.deploy.home}"/>
+  
+  </target>  
+  
+<!-- ==================== clean-tomcat-work Target ====================================  
+
+	Deletes the Tomcat work files for all localhost and Standalone applications.
+	These files are generated and are thus expendable.
+
+-->
+  
+    <target name="clean-tomcat-work" 
+   description="Delete the Tomcat work directory"> 
+    
+    <delete dir="${catalina.base}/work/localhost"/>
+	<delete dir="${catalina.base}/work/Standalone"/>
+  
+  </target>
+	
+<!-- ==================== Compile Target ==================================  
+ 
+  The "compile" target transforms source files (from your "src" directory) 
+  into object files in the appropriate location in the build directory. 
+  This example assumes that you will be including your classes in an 
+  unpacked directory hierarchy under "/WEB-INF/classes". 
+ 
+--> 
+ 
+  <target name="compile" depends="prepare" 
+   description="Compile Java sources"> 
+
+   
+	<echo>Compiling Harvest Repository Manager Java libraries</echo>
+   
+    <!-- Compile Java classes as necessary -->
+    <mkdir    dir="${build.home}/WEB-INF/classes"/>
+    <javac srcdir="src"
+          destdir="${build.home}/WEB-INF/classes"
+           debug="${compile.debug}"
+     deprecation="${compile.deprecation}"
+        optimize="${compile.optimize}">
+        <classpath refid="compile.classpath"/>
+    </javac>
+	
+    <!-- Copy associated resource files -->
+    <copy  todir="${build.home}/WEB-INF/classes">
+    	<fileset dir="src" includes="**/*.properties"/>
+		<fileset dir="src" includes="**/*.xml"/>
+    </copy>
+	
+    <!-- Copy tld's -->
+	<!--<mkdir    dir="${build.home}/WEB-INF/classes/META-INF"/>	-->
+	<!--<copy  todir="${build.home}/WEB-INF/classes/META-INF">-->
+		<!--<fileset dir="src/META-INF" />-->
+	<!--</copy>   -->
+   
+    <!-- Copy associated resource files --> 
+    <copy  todir="${build.home}/WEB-INF/classes"> 
+    	<fileset dir="src" includes="**/*.properties"/> 
+    </copy>	
+		
+  </target> 
+ 
+<!-- ==================== Run JUnit Tests ==================================  
+ 
+  Use this target to run the JUnit tests for the application and generate a report. 
+ 
+--> 
+ 
+  <target name="junit" depends="compile" if="junit.test.dir"
+   description="Run JUnit tests"> 
+   
+    <!-- make a clean directory for expendable test files -->
+    <delete dir="${junit.test.dir}"/>
+    <mkdir    dir="${junit.test.dir}"/> 
+   
+   <junit printsummary="withOutAndErr" haltonfailure="yes" haltonerror="yes"> 
+      <!-- Make the junit test directory location available via a System prop -->
+	  <sysproperty key="junit.test.dir" value="${basedir}/${junit.test.dir}"/>
+      <classpath refid="compile.classpath"/>
+      <formatter type="plain" usefile="false"/>
+      <test name="edu.ucar.dls.junit.AllUnitTests"/>
+    </junit>
+    
+  </target> 
+ 
+ 
+<!-- ==================== Deploy Target ===================================  
+ 
+  The "deploy" target copies the contents of the build directory into a 
+  location required by our servlet container, and picks up any external 
+  dependencies along the way.  After restarting the servlet container, you 
+  can now test your web application. 
+ 
+--> 
+ 
+  <target name="deploy" depends="compile, remove-obsolete-files" 
+   description="Deploy application to servlet container"> 
+   		
+		<!-- Copy the contents of the build directory --> 
+   		<mkdir     dir="${tomcat.deploy.home}"/> 
+
+		<!-- Local build will have security auth turned on -->
+		<copy todir="${tomcat.deploy.home}/WEB-INF" 
+			file="${build.home}/WEB-INF/web.xml"> 
+		  <filterset>
+			<filter token="DIST-COMMENT-OPEN" value=""/>
+			<filter token="DIST-COMMENT-CLOSE" value=""/>
+		  </filterset>
+		</copy> 		  
+		
+		
+		<copy todir="${tomcat.deploy.home}"> 
+		  <fileset 	dir="${build.home}" 
+				excludes="WEB-INF/classes-junit/"/>
+		</copy> 
+				
+  </target> 
+
+	<!-- 	Removes old JAR libraries and other files from the deployment area that may 
+			have conflicts with newer libraries, etc. -->
+	<target name="remove-obsolete-files"  
+		description="Removes files that are no longer needed in the deployment area">
+		
+		<!-- Nothing to do... -->
+	</target>
+  
+ 	<!-- Deploy jsps, js, html, css, properties, and images, etc. directly to Tomcat for convenience -->
+	<target name="deploy-jsp"
+		description="Deploy only jsp, js, html, css, xml and image files to Tomcat">
+		
+		<copy todir="${tomcat.deploy.home}" preservelastmodified="true"> 
+		  <fileset dir="web"> 
+			<include name="**/*.gif" />  
+			<include name="**/*.jpeg" />  
+			<include name="**/*.jpg" />  
+			<include name="**/*.css" />  
+			<include name="**/*.js" />
+			<include name="**/*.xsl" />
+		  </fileset>
+		</copy>
+		
+		<copy    todir="${tomcat.deploy.home}">
+		  <fileset dir="web">
+			<include name="**/*.jsp"/>
+			<include name="**/*.html"/>
+			<include name="**/*.txt"/>
+			<include name="**/*.xml"/>
+		  </fileset> 
+		  <filterset>
+			<filter token="VERSION" value="${app.version}"/>
+		  </filterset>
+		 </copy>
+
+		<!-- Copy associated resource bundles files --> 
+		<copy  todir="${tomcat.deploy.home}/WEB-INF/classes"> 
+			<fileset dir="src" includes="**/*.properties"/> 
+		</copy>  		 
+		 
+	</target>   
+  
+ 
+ 
+
+	<!-- Create an application war file suitable for deployment -->
+	<target name="war" 
+		description="Creates a WAR file that can be used for internal application deployment">
+		
+		<!-- 
+			Basic approach: Simply override the deploy target to deploy to the war staging dir 
+			instead of tomcat webapps, then jar up the deployed app into a war file 
+		-->
+		<echo>Creating war file for deployment</echo>
+		
+		<property name="war.deploy.staging.dir" value="${war.deploy.home}/${deploy.context.name}"/> 
+		
+		<delete dir="${war.deploy.home}"/>
+		<mkdir dir="${war.deploy.home}"/>
+		
+		<ant target="clean">
+			<property name="tomcat.deploy.home" value="${war.deploy.staging.dir}"/>
+		</ant>
+		<ant target="deploy-clean">
+			<property name="tomcat.deploy.home" value="${war.deploy.staging.dir}"/>
+		</ant>
+		<!-- <ant target="javadoc">
+			<property name="javadoc.deploy.home" value="${war.deploy.staging.dir}/docs/javadoc"/>
+		</ant> -->	
+		<ant target="deploy">
+			<property name="tomcat.deploy.home" value="${war.deploy.staging.dir}"/>
+			<property name="am.making.war.file" value="true"/>
+		</ant>
+	   
+		
+		<!-- Create the application WAR file --> 
+		<jar jarfile="${war.deploy.home}/${deploy.context.name}.war" 
+			 basedir="${war.deploy.staging.dir}"/>		 
+	</target>  
+  
+
+	<!-- Generate Javadoc for this application -->
+	<target name="javadoc" description="Generate Javadoc this application">
+		
+		<property name="javadoc.home" value="${javadoc.deploy.home}/${app.context.name}"/>
+		
+		<echo message="Building ${app.name} javadoc to ${javadoc.home}"/>
+		<mkdir          dir="${javadoc.home}"/>
+		<javadoc sourcepath="src"
+					destdir="${javadoc.home}"
+			   packagenames="*"
+			   windowtitle="${app.name} API Documentation v${app.version}"
+			   doctitle="${app.name}, v${app.version}"
+			   header="&lt;b&gt;${app.name} &lt;br&gt;v${app.version}&lt;/b&gt;"
+			   overview="src/overview.html">
+		  <link href="http://java.sun.com/j2se/1.5/docs/api/"/>
+		  <link href="http://java.sun.com/j2ee/sdk_1.3/techdocs/api/"/>
+		  <link href="http://jakarta.apache.org/lucene/docs/api/"/>
+		  <link href="http://struts.apache.org/struts-doc-1.2.7/api/"/>
+		  <link href="http://www.dom4j.org/apidocs/"/>	  
+		  <classpath refid="compile.classpath"/>
+		</javadoc>
+		
+		<!-- Copy supporting files and documentation -->
+		<copy file="src/META-INF/ELFunctions.tld" tofile="${javadoc.home}/ELFunctions.xml" overwrite="yes"/>
+		<copy file="src/META-INF/ELFunctions.xsl" tofile="${javadoc.home}/ELFunctions.xsl" overwrite="yes"/>
+		
+	</target>
+
+	<!-- Generate Javadoc for the DLS Libs library -->
+	<target name="javadoc-dls-libs" description="Create Javadoc documentation for DLS library (optional)">
+
+		<available file="${dls.libs.location}" property="dls.libs.is.present"/>
+		<fail unless="dls.libs.is.present"
+				message="The directory ${dls.libs.location} must be present. Checkout from http://sourceforge.net/cvs/?group_id=198325" />
+	
+		<!-- Build the DLS Libs docs -->
+		<ant antfile="${dls.libs.location}/build.xml" inheritAll="false" target="javadoc">
+			<property name="javadoc.home" value="${javadoc.deploy.home}/DLSLibs"/>
+		</ant>   
+	</target> 
+
+	
+	<!-- Generate the DLSLibs library -->
+	<target name="compile-dls-libs" description="Generate a fresh dls-libs.jar for this application (optional)">
+		
+		<available file="${dls.libs.location}" property="dls.libs.is.present"/>
+		<fail unless="dls.libs.is.present"
+				message="The directory ${dls.libs.location} must be present. Checkout from http://sourceforge.net/cvs/?group_id=198325" />
+	
+		<!-- Compile and build dls-libs.jar to this apps lib directory -->
+		<ant antfile="${dls.libs.location}/build.xml" inheritAll="false" target="clean"/>
+
+		<ant antfile="${dls.libs.location}/build.xml" inheritAll="false" target="jar">
+			<property name="compile.deprecation" value="${compile.deprecation}" />
+			<property name="jar.lib.dir" value="${basedir}/${build.lib}"/>
+		</ant>	 
+	</target>
+	
+  
+<!-- ==================== Prepare Target ==================================  
+ 
+  The "prepare" target is used to create the "build" destination directory, 
+  and copy the static contents of your web application to it.  If you need 
+  to copy static files from external dependencies, you can customize the 
+  contents of this task. 
+ 
+  Normally, this task is executed indirectly when needed. 
+ 
+--> 
+ 
+  <target name="prepare"
+  description="Prepare the build area by copying in the web and docs dirs."> 
+    <mkdir  dir="${build.home}"/> 
+	
+    <!-- Copy in the web dir --> 
+	<copy todir="${build.home}"> 
+      <fileset dir="web">
+	  	<include name="**/*.jsp"/>
+		<include name="**/*.html"/>
+		<include name="**/*.txt"/>
+		<include name="**/*.xml"/>
+	  </fileset>
+	  <filterset>
+      	<filter token="VERSION" value="${app.version}"/>
+	  </filterset>
+    </copy> 
+
+	<copy todir="${build.home}"> 
+      <fileset dir="web">
+	  	<exclude name="**/*.jsp"/>
+		<exclude name="**/*.html"/>
+		<exclude name="**/*.txt"/>
+	  </fileset> 
+    </copy> 
+	
+	<!-- Copy over the build.xml file -->
+	<copy file="build.xml" tofile="${build.home}/docs/build.txt" /> 
+	
+    <!-- Copy external dependencies as required --> 
+
+    <!-- Copy static files from external dependencies as needed --> 
+ 
+  </target>   
+</project> 
+ 
+ 

@@ -1,0 +1,51 @@
+<!-- 
+	This example file is used to configure how to normalize NSDL DC records in a DDS repository, and 
+	to generate reports in DDS of vocabularies that need normalization.
+	
+	This file defines which vocab groups files to use in normalization of NSDL metadata for the NSDL Search API, 
+	which is performed by class NFRIndexer, and in the vocab reports in the DDS admin reporting area.
+	
+	This file should be pointed to by NFRIndexer_conf.xml, and in the DDS context-parameter 'nsdlDcVocabsConfig'
+	
+	The elements are as follows:
+	
+	<url> - Url to the groups file that defines the acceptable vocabs for this field
+	<toXpath> - The XPath to the field that will have the normalzed vocabs inserted
+	<fromXpaths> - The XPath to one or more fields from which existing vocabs will be mapped according to the vocabs files
+	<keepExistingValues> - (optional) Set to true to keep existing values that are found. Set to false
+				to keep only those vocab values that are devined in the given vocab file. Default is false
+	<field> - The DDS search field from which values are derived
+	
+	For search field specifier <field>:
+		/text//xxx - Indicates to treat the vocab string as text. Items will be counted if all terms in the vocab are present as a phrase (in the same order) 
+				in one or more of the given fields for that record. Capitalization is ignored.
+		/key//xxx - Indicates to treat the vocab string as a single token. Items will be counted only if they match exactly, 
+				including spaces, capitalization, and other characters, in one or more of the given fields for that record.
+-->
+
+<groupsFiles>
+
+	<groupsFile>
+		<url>http://ns.nsdl.org/ncs/ddsws/1-1/groupsNormal/nsdlType-groups.xml</url>
+		<!-- <url>file:///C:/cygwin/home/jweather/devel/projects/dds-project/web/WEB-INF/conf/nsdlDcNormalizationConfigs/nsdlType-groups.xml</url> -->
+		<toXpath>/nsdl_dc:nsdl_dc/dc:type</toXpath>
+		<fromXpaths>
+			<fromXpath>/nsdl_dc:nsdl_dc/dc:type</fromXpath>
+		</fromXpaths>
+		<field>/key//nsdl_dc/type</field>
+	</groupsFile>
+	
+	<groupsFile>
+		<url>http://ns.nsdl.org/ncs/ddsws/1-1/groupsNormal/all-subject-groups.xml</url>
+		<!-- <url>file:///C:/cygwin/home/jweather/devel/projects/dds-project/web/WEB-INF/conf/nsdlDcNormalizationConfigs/all-subject-groups.xml</url> -->
+		<toXpath>/nsdl_dc:nsdl_dc/dc:subject</toXpath>
+		<fromXpaths>
+			<fromXpath>/nsdl_dc:nsdl_dc/dc:subject</fromXpath>
+		</fromXpaths>
+		<field>/key//nsdl_dc/subject</field>
+		<keepExistingValues>true</keepExistingValues>
+	</groupsFile>
+
+</groupsFiles>
+
+

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AsnDocuments topic="Physical Education">
+  <asnDocument id="http://asn.jesandco.org/resources/D2503947">
+    <title>Mississippi Physical Education Framework</title>
+    <topic>Physical Education</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2013</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2581210">
+    <title>Mississippi Physical Education Framework</title>
+    <topic>Physical Education</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2583438">
+    <title>Physical Education Grade Level Expectations</title>
+    <topic>Physical Education</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2402429">
+    <title>Wisconsin Standards for Physical Education</title>
+    <topic>Physical Education</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2438730">
+    <title>North Dakota Physical Education Content Standards</title>
+    <topic>Physical Education</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2388219">
+    <title>North Carolina Arts Essential Standards for Physical Education</title>
+    <topic>Physical Education</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2581693">
+    <title>Rhode Island Physical Education Framework</title>
+    <topic>Physical Education</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2003</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2509546">
+    <title>Indiana Physical Education Standards</title>
+    <topic>Physical Education</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2516680">
+    <title>K-12 Physical Education New Hampshire Curriculum Guidelines</title>
+    <topic>Physical Education</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2603463">
+    <title>Nebraska Physical Education Essential Learnings</title>
+    <topic>Physical Education</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2472504">
+    <title>Alaska Physical Education Standards</title>
+    <topic>Physical Education</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2373968">
+    <title>Idaho Content Standards - Physical Education</title>
+    <topic>Physical Education</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2500761">
+    <title>Alabama Course of Study: Physical Education</title>
+    <topic>Physical Education</topic>
+    <author>AL</author>
+    <authorName>Alabama</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2467199">
+    <title>Arizona Physical Education Standards</title>
+    <topic>Physical Education</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2509318">
+    <title>Delaware Physical Education Standards</title>
+    <topic>Physical Education</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2416873">
+    <title>District of Columbia Physical Education Standards</title>
+    <topic>Physical Education</topic>
+    <author>DC</author>
+    <authorName>District of Columbia</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2585316">
+    <title>Physical Education and Leisure Grades 9-12</title>
+    <topic>Physical Education</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2585349">
+    <title>Personal Fitness for Life Grades 9-12</title>
+    <topic>Physical Education</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2585371">
+    <title>Recreational Sports and Activities Grades 9-12</title>
+    <topic>Physical Education</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003D5">
+    <title>Physical Education Content Standards and Benchmarks</title>
+    <topic>Physical Education</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003E1">
+    <title>Physical Education K-8 Grade Level Content Expectations v.03.08</title>
+    <topic>Physical Education</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2561465">
+    <title>21st Century Physical Education 5-12 Content Standards and Objectives for West Virginia Schools</title>
+    <topic>Physical Education</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2448225">
+    <title>Hawaii Content and Performance Standards for Physical Education</title>
+    <topic>Physical Education</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2441223">
+    <title>Maryland State Curriculum - Physical Education</title>
+    <topic>Physical Education</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2400244">
+    <title>Wyoming Physical Education Content and Performance Standards</title>
+    <topic>Physical Education</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2491483">
+    <title>Oregon Physical Education Academic Content Standards</title>
+    <topic>Physical Education</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2001</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2404555">
+    <title>Louisiana Physical Education Content Standards</title>
+    <topic>Physical Education</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2429030">
+    <title>Louisiana Physical Education Grade-Level Expectations</title>
+    <topic>Physical Education</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2567600">
+    <title>Kansas Model Curriculum Standards for Physical Education</title>
+    <topic>Physical Education</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2587256">
+    <title>Physical Education (PreK)</title>
+    <topic>Physical Education</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2587376">
+    <title>Physical Education (K-2)</title>
+    <topic>Physical Education</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2587489">
+    <title>Physical Education (3-5)</title>
+    <topic>Physical Education</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2587586">
+    <title>Physical Education (6-8)</title>
+    <topic>Physical Education</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2587642">
+    <title>Physical Education (9-12)</title>
+    <topic>Physical Education</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2400206">
+    <title>Physical Education Model Content Standards for California Public Schools, Kindergarten Through Grade Twelve</title>
+    <topic>Physical Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2486543">
+    <title>Texas Essential Knowledge and Skills for Physical Education</title>
+    <topic>Physical Education</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>1998</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000372">
+    <title>Physical Education Standards with Benchmarks and Performance Standards</title>
+    <topic>Physical Education</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2393135">
+    <title>Physical Education K-4 Content Standards with Benchmarks and Performance Standards</title>
+    <topic>Physical Education</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2393136">
+    <title>Physical Education 5-8 Content Standards with Benchmarks and Performance Standards</title>
+    <topic>Physical Education</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2393137">
+    <title>Physical Education 9-12 Content Standards with Benchmarks and Performance Standards</title>
+    <topic>Physical Education</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2585338">
+    <title>Grade Expectations for Vermont's Framework of Standards and Learning Opportunities</title>
+    <topic>Physical Education</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2004</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2408435">
+    <title>Georgia Performance Standards for Physical Education</title>
+    <topic>Physical Education</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2499264">
+    <title>Nevada Physical Education Content Standards</title>
+    <topic>Physical Education</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2607038">
+    <title>Nevada Academic Content Standards for Physical Education</title>
+    <topic>Physical Education</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2456617">
+    <title>Physical Education Standards of Learning for Virginia Public Schools</title>
+    <topic>Physical Education</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2455274">
+    <title>Physical Education Next Generation Sunshine State Standards</title>
+    <topic>Physical Education</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2534931">
+    <title>Physical Education Next Generation Sunshine State Standards</title>
+    <topic>Physical Education</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2520175">
+    <title>Utah Physical Education</title>
+    <topic>Physical Education</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2520479">
+    <title>Utah Secondary Physical Education Core Curriculum</title>
+    <topic>Physical Education</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2398930">
+    <title>South Carolina Academic Standards for Physical Education</title>
+    <topic>Physical Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2435604">
+    <title>South Dakota Physical Education Content Standards</title>
+    <topic>Physical Education</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>2000</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2603776">
+    <title>South Dakota Standards and Grade-level Outcomes for K-12 Physical Education</title>
+    <topic>Physical Education</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2465188">
+    <title>Ohio's Physical Education Academic Content Standards K-12</title>
+    <topic>Physical Education</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+</AsnDocuments>

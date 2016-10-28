@@ -1,0 +1,144 @@
+/* stylesheet for ADN Editor */
+
+h1, h2, h3, h4 {font-family:arial,helvetica}
+
+
+.optional {
+	color:#666666;
+}
+
+/* now use the surrounding box for level, and the field boxes just to set alignments, etc */
+
+.level-1, .level-2, .level-3, .level-4, .level-5, .level-6 {
+	vertical-align:top;
+	padding:5px;
+	border-width:thin;
+	border-style:solid;
+	margin-left:30px;
+}
+
+.level-1 {
+	margin-left:0px;
+	border-color:red;
+}
+
+.level-2 {
+	border-color:purple;
+}
+
+.level-3 {
+	border-color:blue;
+}
+
+.level-4 {
+	border-color:green;
+}
+
+.level-5 {
+	border-color:orange;
+}
+
+.level-6 {
+	border-color:yellow;
+}
+
+.header {
+	vertical-align:top;
+	text-align:left;
+	width:100px;
+}
+
+.label {
+	font-size:10pt;
+	font-family: verdana, helvetica;
+}
+
+.nav-menu-item, .nav-menu-item-selected {
+	font-size:9pt;
+	font-family: verdana, helvetica;
+}
+
+.nav-menu-item-selected {
+	background-color:#ffffcc;
+}
+
+.extra-element-label {
+	font-size:10pt;
+	font-family: verdana, helvetica;
+	font-style:italic;
+}
+
+
+.field {
+	font-size:10pt;
+	font-family: verdana, helvetica;
+	background-color:yellow;
+}
+	
+.label-box {	
+	vertical-align:top;
+	text-align:right;
+	width:150px;
+	border:gray thin dashed;
+}
+
+.field-box {
+	margin-left:5px;
+	border:gray thin dashed;
+}
+
+.optional-label {
+	font-size:10pt;
+	font-family: verdana, helvetica;
+	color:grey;
+}
+
+.multibox-label {
+	font-size:10pt;
+	font-family: verdana, helvetica;
+}
+
+.required, .required-label {
+	font-size:10pt;
+	font-family: verdana, helvetica;
+	color:red;
+	font-weight:bold;
+	font-style:italic;
+}
+
+
+/* .element-label {
+	font-size:11pt;
+	font-family: verdana, helvetica;
+	font-weight:bold;
+	text-transform: capitalize;
+} */
+
+.element-label {
+	font-size:10pt;
+	font-family: verdana, helvetica;
+	text-align:left;
+}
+
+.form-row {
+	vertical-align:top;
+}
+
+.action-button {
+	font-size:9pt;
+	font-family: verdana, helvetica;
+	color:blue;
+	font-weight:bold;
+	font-style:italic;
+}
+
+.error-msg {
+	font-size:10pt;
+	font-family: verdana, helvetica;
+	color:red;
+}
+
+.debug-info {
+	font-size:x-small;
+	font-family: verdana, helvetica;
+}

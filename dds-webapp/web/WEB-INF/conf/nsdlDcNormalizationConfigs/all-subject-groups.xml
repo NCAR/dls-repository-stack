@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+This is an example groups file used by NFRIndexer to normalize NSDL DC vocabs.
+
+The file defines what vocabs are valid and how to map alternate vocabs to the core ones.
+
+-->
+<opml xmlns="http://ns.nsdl.org/ncs/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://ns.nsdl.org/ncs/fields http://ns.nsdl.org/ncs/ncs_item/1.02/schemas/fields/non-vocab-fields.xsd"
+version="2.0">
+	<head>
+		<title>Subjects - Disciplinary</title>
+		<concept metaVersion="1.02" path="/nsdl_dc:nsdl_dc/dc:subject" audience="search" language="en" text="Subjects - Disciplinary" metaFormat="nsdl_dc"/>
+	</head>
+	<body>
+		
+		<!-- 	The top-level type="group" outline defines a core vocab that is allowed for this field.
+				In this example, vocab="Computing and Information" is the core vocab to use.
+				The atribte text="Computing and Information" should match this verbatim.
+				An optional 'attribution' attribute may be included to indicate the attrubite that 
+				should be written in the normalized XML, for example attribution="nsdl_dc:NSDLType"
+				All vocab terms defined within will be mapped to this vocab and re-written in the ndsl_dc record.
+		
+				Nesting: It is possible to nest <outlines> within outlines to define sub-cagegories withing a given 
+				vocab group. All sub-categores will be mapped to all groups above them.
+				
+				Other attributes may exists: This documentation describes only those used by DDS in the normalization process.
+				-->
+		<outline type="group" text="Computing and Information" vocab="Computing and Information" deftn="computer programming, network security, software and hardware">
+			
+			<!-- Each type="vocab" term is mapped to the vocab term listed above in the group (vocab="term")  -->
+			<outline vocab="Algorithm" type="vocab" text="x"/>
+			<outline vocab="Algorithms" type="vocab" text="x"/>
+			<outline vocab="Apple Computer" type="vocab" text="x"/>
+			<outline vocab="Articial Intelligence" type="vocab" text="x"/>
+			<outline vocab="C++" type="vocab" text="x"/>
+			<outline vocab="Computer" type="vocab" text="x"/>
+			<outline vocab="Computer program" type="vocab" text="x"/>
+			<outline vocab="Computing" type="vocab" text="x"/>
+			<outline vocab="Computing and Information" type="vocab" text="x"/>
+			<outline vocab="Information" type="vocab" text="x" />	
+			<outline vocab="Internet" type="vocab" text="x"/>
+			<outline vocab="Network Security" type="vocab" text="x"/>
+			<outline vocab="Networks" type="vocab" text="x"/>
+			<outline vocab="Open" type="vocab" text="x"/>
+			<outline vocab="Operating Systems" type="vocab" text="x"/>
+			<outline vocab="Platform" type="vocab" text="x"/>
+			<outline vocab="Programming" type="vocab" text="x"/>
+			<outline vocab="Security" type="vocab" text="x"/>
+			<outline vocab="Software" type="vocab" text="x"/>
+			<outline vocab="Sustainable IT" type="vocab" text="x"/>
+			<outline vocab="Sustainable ICT" type="vocab" text="x"/>
+			<outline vocab="Web" type="vocab" text="x"/>
+		</outline>
+		
+		<!-- An empty outline of type="group" may be used to pass through a single vocab unchanged. The vocab and text attributes must match exactly.  -->
+		<outline type="group" vocab="Seasons" text="Seasons" deftn="Seasons of weather"/>
+		
+	</body>
+</opml>

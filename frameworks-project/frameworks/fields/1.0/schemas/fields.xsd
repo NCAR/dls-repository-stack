@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: fields.xsd,v 1.2 2009/08/25 22:10:29 ginger Exp $ -->
+<xsd:schema targetNamespace="http://www.dlsciences.org/frameworks/fields" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.dlsciences.org/frameworks/fields" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA PURPOSE  ****</xsd:documentation>
+		<xsd:documentation>Defines fields metadata framework in the Digital Library for Earth System Education (DLESE). This framework structure the documentation of the other metadata frameworks including definitions, controlled vocabularies (terms and definitions) and cataloging best practices</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA EXPLANATION  ****</xsd:documentation>
+		<xsd:documentation>This is a ROOT ELEMENT schema.</xsd:documentation>
+		<xsd:documentation>ROOT ELEMENT may call VOCABULARY schemas in building the instance document structures.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  NAMESPACES  ******** </xsd:documentation>
+		<xsd:documentation>The chameleon approach to namespace conventions is used.</xsd:documentation>
+		<xsd:documentation>Since this ROOT ELEMENT schema is called by many other schema, it does not have a target namespace.</xsd:documentation>
+		<xsd:documentation>Called VOCABULARY schemas do not have target namespaces either.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  ROOT ELEMENT  ***** </xsd:documentation>
+		<xsd:documentation>The root element of this schema is fieldRecord.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA DEVELOPMENT  *****</xsd:documentation>
+		<xsd:documentation>The Venetian Blind approach is used for these schemas.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  SIMPLE and COMPLEX TYPES  *****</xsd:documentation>
+		<xsd:documentation>Complex types are listed and defined first. </xsd:documentation>
+		<xsd:documentation>Simple types are listed near the bottom of the file</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****</xsd:documentation>
+		<xsd:documentation>
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. </xsd:documentation>
+		<xsd:documentation>These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>******  OTHER schemas to include  ******************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="categories/attributes.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>******  VOCABULARY schemas to include  ******************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="vocabs/XMLdataType.xsd"/>
+	<xsd:include schemaLocation="vocabs/obligation.xsd"/>
+	<xsd:include schemaLocation="vocabs/unbounded.xsd"/>
+
+	<xsd:annotation>
+		<xsd:documentation>******    ROOT element      ******************</xsd:documentation>
+		<xsd:documentation>metadataFieldInfoType is complex</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="metadataFieldInfo" type="metadataFieldInfoType"/>
+
+	<xsd:annotation>
+		<xsd:documentation>******  Complex Types  (alpha order) ******************</xsd:documentation>
+		<xsd:documentation>attributesType is part of documentationType</xsd:documentation>
+		<xsd:documentation>bestPracticesType - part of fieldType</xsd:documentation>
+		<xsd:documentation>childrenType is part of documentationType</xsd:documentation>
+		<xsd:documentation>definitionType - part of fieldType</xsd:documentation>
+		<xsd:documentation>documentationType - part of fieldType</xsd:documentation>
+		<xsd:documentation>dontsType - part of bestPracticesType</xsd:documentation>
+		<xsd:documentation>dosType - part of bestPracticesType</xsd:documentation>
+		<xsd:documentation>examplesType - part of bestPracticesType</xsd:documentation>
+		<xsd:documentation>fieldType - part of metadataFieldInfoType</xsd:documentation>
+		<xsd:documentation>levelAndDeftnType - part of vocabLevelsType</xsd:documentation>
+		<xsd:documentation>levelTermAndDeftnType - part of levelTermsAndDeftnsType</xsd:documentation>
+		<xsd:documentation>levelTermsAndDeftnsType - part of levelAndDeftnType</xsd:documentation>
+		<xsd:documentation>metadataFieldInfoType - ROOT type</xsd:documentation>
+		<xsd:documentation>notesType is part of documentationType</xsd:documentation>
+		<xsd:documentation>otherPracticesType - part of BestPracticesType</xsd:documentation>
+		<xsd:documentation>otherPracticeType - part of otherPracticesType</xsd:documentation>
+		<xsd:documentation>practiceType - part of dosType, dontsType, examplesType and otherPracticeType</xsd:documentation>
+		<xsd:documentation>promptsType - part of fieldType</xsd:documentation>
+		<xsd:documentation>vocabLevelsType - part of fieldType</xsd:documentation>
+		<xsd:documentation>termAndDeftn - part of termsType</xsd:documentation>
+		<xsd:documentation>termsType - part of fieldType</xsd:documentation>
+		<xsd:documentation>XMLdataTypesType - part of documentaitonType</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:complexType name="attributesType">
+		<xsd:annotation>
+			<xsd:documentation>******  attributesType  ******************</xsd:documentation>
+			<xsd:documentation>attribute is the XML attribute name of attributes of the element being described</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="attribute" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="bestPracticesType">
+		<xsd:annotation>
+			<xsd:documentation>******  bestPracticesType  ******************</xsd:documentation>
+			<xsd:documentation>bestPracticesType is the cataloging best practices for the metadata field</xsd:documentation>
+			<xsd:documentation>dos is complex - Actions a cataloger should do when cataloging the metadata field</xsd:documentation>
+			<xsd:documentation>donts is complex - Actions a cataloger should not do when cataloging the metadata field</xsd:documentation>
+			<xsd:documentation>examples is complex - Usually links to resources that demonstrate the cataloging best practice or the appropriate use of  controlled vocabulary terms</xsd:documentation>
+			<xsd:documentation>otherPractices is complex - Other cataloging best practices that fall outside the realm of things to do, things to avoid and examples</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="dos" type="dosType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="donts" type="dontsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="examples" type="examplesType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="otherPractices" type="otherPracticesType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="childrenType">
+		<xsd:annotation>
+			<xsd:documentation>******  childrenType  ******************</xsd:documentation>
+			<xsd:documentation>child means the XML name of immediate child or children of the element being described</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="child" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="definitionType">
+		<xsd:annotation>
+			<xsd:documentation>******  definitionType  ******************</xsd:documentation>
+			<xsd:documentation>definitionType is the official interface independent definition of a metadata field. It may include attribution and url information.</xsd:documentation>
+			<xsd:documentation>attributionGroup - is an attribute - see attributes.xsd</xsd:documentation>
+			<xsd:documentation>url-linkGroup - is an attribute - see attributes.xsd</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attributeGroup ref="attributionGroup"/>
+				<xsd:attributeGroup ref="url-linkGroup"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="documentationType">
+		<xsd:annotation>
+			<xsd:documentation>*****  documentationType  *****************</xsd:documentation>
+			<xsd:documentation>attributes - documents the XML attributes (not children) of the element</xsd:documentation>
+			<xsd:documentation>children - documents the XML child elements (not attributes) of the element</xsd:documentation>
+			<xsd:documentation>min - the minimum number of times the field must occur</xsd:documentation>
+			<xsd:documentation>max - the maximum number of times the field must occur</xsd:documentation>
+			<xsd:documentation>XMLdataTypes - the type of XML data the element holds</xsd:documentation>
+			<xsd:documentation>domain - the range of acceptable values for the field</xsd:documentation>
+			<xsd:documentation>default - the value the XML element has if no data is entered or it is the only acceptable value; complete content for this field only if there is a default; otherwise assume no default values</xsd:documentation>
+			<xsd:documentation>example - is an example of the content of the field</xsd:documentation>
+			<xsd:documentation>other - indicates the tag appears someplace else in the framework; use only if this is true</xsd:documentation>
+			<xsd:documentation>notes - provide interpretation or technical informaation for understanding the field</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="attributes" type="attributesType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="children" type="childrenType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="obligation" type="obligationType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="min" type="union.min-maxType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="max" type="union.min-maxType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="XMLdataTypes" type="XMLdataTypesType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="domain" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="default" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="example" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="other" type="xsd:boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="notes" type="notesType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="dontsType">
+		<xsd:annotation>
+			<xsd:documentation>******  dontsType  ******************</xsd:documentation>
+			<xsd:documentation>dontsType - the actions a cataloger should not do when cataloging the metadata field</xsd:documentation>
+			<xsd:documentation>practice is complex - the individual action a cataloger should not do when cataloging the metadata field</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="practice" type="practiceType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="dosType">
+		<xsd:annotation>
+			<xsd:documentation>******  dosType  ******************</xsd:documentation>
+			<xsd:documentation>dosType - the actions a cataloger should do when cataloging the metadata field</xsd:documentation>
+			<xsd:documentation>practice is complex - the individual action a cataloger should do when cataloging the metadata field</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="practice" type="practiceType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="examplesType">
+		<xsd:annotation>
+			<xsd:documentation>******  examplesType  ******************</xsd:documentation>
+			<xsd:documentation>examplesType - links to resources that demonstrate the cataloging best practice or the appropriate use of a controlled vocabulary terms</xsd:documentation>
+			<xsd:documentation>practice is complex - the individual example for cataloging the metadata field</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="practice" type="practiceType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="fieldType">
+		<xsd:annotation>
+			<xsd:documentation>******  fieldType  ******************</xsd:documentation>
+			<xsd:documentation>fieldType - basic information about the metadata field including a common name, xpath, metadata framework, metadata framework version, language of this description and an id number associated to the metadata field</xsd:documentation>
+			<xsd:documentation>definition is complex - the official interface independent definition of a metadata field</xsd:documentation>
+			<xsd:documentation>prompts is complex - a list of instructions to the user as to how to complete a metadata field</xsd:documentation>
+			<xsd:documentation>vocabLevels is complex - if the metadata field being described has a controlled vocabulary, this indicates the number of levels within the vocabulary</xsd:documentation>
+			<xsd:documentation>terms is complex - if the metadata field being described has a controlled vocabulary, this encompasses the terms and definitions within the vocabulary</xsd:documentation>
+			<xsd:documentation>bestPractices is complex - the cataloging best practices for the metadata field or attribute</xsd:documentation>
+			<xsd:documentation>documentation is complex - the technical documentation for the metadata field or attribute</xsd:documentation>
+			<xsd:documentation>nameGroup is an attribute - see attributes.xsd</xsd:documentation>
+			<xsd:documentation>idGroup is an attribute - see attributes.xsd</xsd:documentation>
+			<xsd:documentation>languageGroup is an attribute - see attributes.xsd</xsd:documentation>
+			<xsd:documentation>path is an attribute - see attributes.xsd</xsd:documentation>
+			<xsd:documentation>format-version are attributes - see attributes.xsd</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="definition" type="definitionType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="prompts" type="promptsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="vocabLevels" type="vocabLevelsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="terms" type="termsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bestPractices" type="bestPracticesType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="documentation" type="documentationType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="nameGroup"/>
+		<xsd:attributeGroup ref="idGroup"/>
+		<xsd:attributeGroup ref="format-versionGroup"/>
+		<xsd:attributeGroup ref="languageGroup"/>
+		<xsd:attributeGroup ref="xpathGroup"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="metadataFieldInfoType">
+		<xsd:annotation>
+			<xsd:documentation>******  metadataFieldInfoType  ******************</xsd:documentation>
+			<xsd:documentation>metadataFieldInfoType is the root type.</xsd:documentation>
+			<xsd:documentation>field is complex - the metadata field or attribute being defined</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="field" type="fieldType" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="levelAndDeftnType">
+		<xsd:annotation>
+			<xsd:documentation>******  levelAndDeftnType  ******************</xsd:documentation>
+			<xsd:documentation>Uses colon separated lists to define hierarchal controlled vocabularies. Each colon separated phrase is called a level within a controlled vocabulary.</xsd:documentation>
+			<xsd:documentation>As an example: For the DLESE controlled vocabulary of resource type (DLESE:Audio:Sound), there are 3 vocabulary levels</xsd:documentation>
+			<xsd:documentation>Level 1 of the resource type controlled vocabulary would have a level name of Responsible party. That is the group responsible for the developing or maintaining the vocabulary. The acceptable level 1 terms are 'DLESE' for the resource type controlled vocabulary.</xsd:documentation>
+			<xsd:documentation>Level 2 of the resource type controlled vocabulary would have a level name of Type. That is the type or format of the resource. The acceptable level 2 terms are 'Learning materials,' 'Audio,' 'Data' etc. for the resource type controlled vocabulary.</xsd:documentation>
+			<xsd:documentation>Level 3 of the resource type controlled vocabulary would have a level name of Resource. That is what is the object itself called. For the resource type controlled vocabulary, this would be the leaf node of the colon separated list. The actual controlled vocabulary schema controls the acceptable combination of terms across all levels. For the resource type controlled vocabulary, a value of  'DLESE:Learning materials:Classroom activity' is acceptable but a value of 'DLESE:Audio:Classroom activity' is not acceptable.</xsd:documentation>
+			<xsd:documentation>levelAndDeftnType is complex - the name and definition of a particular controlled vocabulary level; this may or may not be different than the accepted phrase that can be used directly in the controlled vocabulary. See the documentation notes above</xsd:documentation>
+			<xsd:documentation>levelTermsAndDeftns is complex - a list of the phrases that are acceptable values for a particular vocabulary level; please read the documentation above</xsd:documentation>
+			<xsd:documentation>level is a simple attribute - indicates numerically the vocabulary level being described. All levels should be begin with the number 1.</xsd:documentation>
+			<xsd:documentation>levelName is a simple attribute - a generic name for a level (hierarchal level) within a controlled vocabulary</xsd:documentation>
+			<xsd:documentation>attributionGroup is simple - see attributes.xsd</xsd:documentation>
+			<xsd:documentation>url-linkGroup is simple - see attributes.xsd</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="levelTermsAndDeftns" type="levelTermsAndDeftnsType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="attributionGroup"/>
+		<xsd:attributeGroup ref="url-linkGroup"/>
+		<xsd:attribute name="level" type="xsd:decimal" use="required"/>
+		<xsd:attribute name="levelName" type="xsd:string" use="required"/>
+		<xsd:attribute name="levelDeftn" type="xsd:string" use="optional"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="levelTermAndDeftnType">
+		<xsd:annotation>
+			<xsd:documentation>******  levelTermAndDeftnType  ******************</xsd:documentation>
+			<xsd:documentation>levelTermAndDeftnType is complex - the interface independent definition of a vocabulary level; also includes attribution, term value of the level and url and link information</xsd:documentation>
+			<xsd:documentation>term is a simple attribute - the value or phrase for a level (hierarchal level) within a controlled vocabulary. For the DLESE controlled vocabulary of resource type, this would be the values of 'DLESE,' 'Learning materials,' 'Audio,' 'Data' etc. as seen in 'DLESE:Audio:Audio book'</xsd:documentation>
+			<xsd:documentation>attributionGroup is simple - see attributes.xsd</xsd:documentation>
+			<xsd:documentation>url-linkGroup is simple - see attributes.xsd</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attributeGroup ref="attributionGroup"/>
+				<xsd:attributeGroup ref="url-linkGroup"/>
+				<xsd:attribute name="term" type="xsd:string" use="required"/>
+				<xsd:attribute name="id" type="idType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent> 
+	</xsd:complexType>
+
+	<xsd:complexType name="levelTermsAndDeftnsType">
+		<xsd:annotation>
+			<xsd:documentation>******  levelTermsAndDeftnsType  ******************</xsd:documentation>
+			<xsd:documentation>levelTermsAndDeftnsType is complex -  a list of the terms or phrases that are acceptable values for a particular vocabulary level; please read the documentation in levelAndDeftnType</xsd:documentation>
+			<xsd:documentation>levelTermAndDeftn is complex - the interface independent definition of a vocabulary level; also includes attribution, term value of the level and url and link information</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="levelTermAndDeftn" type="levelTermAndDeftnType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="notesType">
+		<xsd:annotation>
+			<xsd:documentation>******  notesType  ******************</xsd:documentation>
+			<xsd:documentation>note - provides interpretation or technical for understanding the field including other occurrences</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="note" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="otherPracticesType">
+		<xsd:annotation>
+			<xsd:documentation>******  otherPracticesType  ******************</xsd:documentation>
+			<xsd:documentation>otherPracticesType is complex - other cataloging best practices that fall outside the realm of things to do, things to avoid and examples</xsd:documentation>
+			<xsd:documentation>otherPractice is complex - the other cataloging best practices that should be used when cataloging the metadata field</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="otherPractice" type="otherPracticeType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="otherPracticeType">
+		<xsd:annotation>
+			<xsd:documentation>******  otherPracticeType  ******************</xsd:documentation>
+			<xsd:documentation>otherPracticeType is complex -  other cataloging best practices that fall outside the realm of things to do, things to avoid and examples</xsd:documentation>
+			<xsd:documentation>practice is complex - the other cataloging best practices that should be used when cataloging the metadata field</xsd:documentation>
+			<xsd:documentation>header is a free text attribute - the label for a set of additional cataloging best practices</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="practice" type="practiceType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="header" type="xsd:string" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="practiceType">
+		<xsd:annotation>
+			<xsd:documentation>******  practiceType  ******************</xsd:documentation>
+			<xsd:documentation>practiceType is the individual action a cataloger should do when cataloging the metadata field</xsd:documentation>
+			<xsd:documentation>statusGroup is an attribute - see attributes.xsd</xsd:documentation>
+			<xsd:documentation>url-linkGroup is an attribute - see attributes.xsd</xsd:documentation>
+			<xsd:documentation>dateGroup is an attribute - see attributes.xsd</xsd:documentation>
+			<xsd:documentation>style1-4 is a free text attribute - the type of text emphasis (e.g. bold, italic etc.) to be applied to certain text</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attributeGroup ref="statusGroup"/>
+				<xsd:attributeGroup ref="url-linkGroup"/>
+				<xsd:attributeGroup ref="dateGroup"/>
+				<xsd:attribute name="style1" type="xsd:string" use="optional"/>
+				<xsd:attribute name="style2" type="xsd:string" use="optional"/>
+				<xsd:attribute name="style3" type="xsd:string" use="optional"/>
+				<xsd:attribute name="style4" type="xsd:string" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="promptsType">
+		<xsd:annotation>
+			<xsd:documentation>******  promptsType  ******************</xsd:documentation>
+			<xsd:documentation>prompt - an instruction to the user as to how to complete a metadata field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="prompt" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="vocabLevelsType">
+		<xsd:annotation>
+			<xsd:documentation>******  vocabLevelsType  ******************</xsd:documentation>
+			<xsd:documentation>vocabLevelsType indicates the number of levels within a metadata field controlled vocabulary and provides the level number and definition </xsd:documentation>
+			<xsd:documentation>levelAndDeftn is complex - the name and definition of a particular controlled vocabulary level; this may or may not be different than the accepted term or phrase that can be used directly in the controlled vocabulary. See the documentation notes under levelAndDeftnType.</xsd:documentation>
+			<xsd:documentation>number - attribute - The number of levels within a metadata field controlled vocabulary; this is defined by the number of colon separated phrases</xsd:documentation>
+			<xsd:documentation>When counting levels, begin with the number 1. For example, the term 'DLESE:Learning materials:Classroom activity' has 3 vocabulary levels</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="levelAndDeftn" type="levelAndDeftnType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="number" type="xsd:positiveInteger"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="termAndDeftnType">
+		<xsd:annotation>
+			<xsd:documentation>******  termAndDeftnType  ******************</xsd:documentation>
+			<xsd:documentation>termAndDeftnType is the term and definition for each controlled vocabulary item; currently the whole path (hierarchy) is indicated; leaf nodes may also be indicated; indicates the identification number from the manager database; can also indicate attribution</xsd:documentation>
+			<xsd:documentation>vocab-vocabLeafGroup	is an attribute - see attributes.xsd</xsd:documentation>
+			<xsd:documentation>idGroup is an attribute - see attributes.xsd</xsd:documentation>
+			<xsd:documentation>attributionGroup is an attribute - see attributes.xsd</xsd:documentation>
+			<xsd:documentation>vocab - the metadata controlled vocabulary term (e.g. DLESE:Learning materials:Lesson plan)</xsd:documentation>
+			<xsd:documentation>vocabLeaf - the leaf node of the metadata controlled vocabulary term (e.g. Lesson plan)</xsd:documentation>
+			<xsd:documentation>the vocabLeaf attribute may be needed if these files use just leafs</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+<!--				<xsd:attributeGroup ref="vocab-vocabLeafGroup"/> removed 2006-08-08 for validation under SPY 2006-->
+				<xsd:attribute name="vocab" type="vocabType" use="required"/>
+				<xsd:attribute name="vocabLeaf" type="vocabLeafType" use="optional"/>
+				<xsd:attributeGroup ref="idGroup"/>
+				<xsd:attributeGroup ref="attributionGroup"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="termsType">
+		<xsd:annotation>
+			<xsd:documentation>******  termsType  ******************</xsd:documentation>
+			<xsd:documentation>termsType is terms and definitions for those metadata fields with controlled vocabularies</xsd:documentation>
+			<xsd:documentation>termAndDeftn is complex - the term and definition for each controlled vocabulary item</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="termAndDeftn" type="termAndDeftnType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="XMLdataTypesType">
+		<xsd:annotation>
+			<xsd:documentation>******  XMLdataTypesType  ******************</xsd:documentation>
+			<xsd:documentation>XMLdataType is simple, the XML data type; see XMLdataTypesType.xsd</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="XMLdataType" type="XMLdataTypeType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:documentation>******  Simple Types  (alpha order) ******************</xsd:documentation>
+		<xsd:documentation>union.maxType is part of documentationType</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="union.min-maxType">
+		<xsd:union memberTypes="xsd:nonNegativeInteger unboundedType"></xsd:union>
+	</xsd:simpleType>
+</xsd:schema>

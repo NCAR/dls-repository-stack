@@ -1,0 +1,39 @@
+.json-object, .json-value {
+	margin-left:20px;
+}
+
+.json-header {
+	margin-top: 5px;
+	font-size:.8em;
+	color:blue;
+	font-weight:bold;
+}
+
+.json-object {
+	margin-top: 5px;
+}
+
+.key {
+	font-weight:bold;
+}
+
+h3 {
+	margin: 0px;
+}
+
+.prompt {
+	text-align: left;
+	font-family:arial;
+	font-size:.7em;
+	font-weight:bold;
+}
+
+#trigger1 {
+	margin: 10px 0px 10px 40px;
+}
+
+#debug {
+	border:thin black solid;
+	background-color:#dadae0;
+	padding:10px;
+}

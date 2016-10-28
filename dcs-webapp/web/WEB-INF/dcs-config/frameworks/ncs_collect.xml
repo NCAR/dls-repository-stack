@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frameworkConfigRecord 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="http://ns.nsdl.org/ncs/framework_config/1.00/schemas/dcsFrameworkConfig.xsd">
+  <xmlFormat>ncs_collect</xmlFormat>
+  <schemaInfo>
+	<rootElementName>record</rootElementName>
+    <schemaURI>http://ns.nsdl.org/ncs/ncs_collect/1.02/schemas/ncs-collect.xsd</schemaURI>
+    <paths>
+      <path pathName="id" requiredByCopyRecord="true" 
+	  		requiredByMinimalRecord="true" readOnly="true">/record/general/recordID</path>
+	  <path pathName="url" requiredByCopyRecord="true" 
+	  		requiredByMinimalRecord="true" readOnly="false" valueType="uniqueUrl">/record/general/url</path>
+	  <path pathName="dateCreated" requiredByCopyRecord="true" 
+	  		requiredByMinimalRecord="true" readOnly="false" valueType="utcDate">/record/collection/dateTime</path>
+	  <path pathName="title" requiredByCopyRecord="true" 
+	  		requiredByMinimalRecord="true" readOnly="false">/record/general/title</path>
+	  <path pathName="description" requiredByCopyRecord="true" 
+	  		requiredByMinimalRecord="true" readOnly="false">/record/general/description</path>
+	<path pathName="box" inputHelper="bounding_box/ncs_item_box_widget.html">/record/coverages/box</path>
+			
+	  <path pathName="brandURL" requiredByCopyRecord="true" defaultValue="">/record/collection/brandURL</path>
+	  <path pathName="dateTime" requiredByCopyRecord="true" valueType="utcDate">/record/collection/dateTime</path>
+	  <path pathName="imageHeight" requiredByCopyRecord="true" defaultValue="">/record/collection/imageHeight</path>
+	  <path pathName="imageWidth" requiredByCopyRecord="true" defaultValue="">/record/collection/imageWidth</path>
+	  <path pathName="altText" requiredByCopyRecord="true" defaultValue="">/record/collection/altText</path>
+	  <path pathName="OAIvisibility" requiredByCopyRecord="true" defaultValue="">/record/collection/OAIvisibility</path>
+	  <path pathName="pathway" requiredByCopyRecord="true" defaultValue="">/record/collection/pathway</path>
+	  
+	  <!-- <path pathName="ingest" requiredByCopyRecord="true">/record/collection/ingest</path> -->
+	  <path pathName="oai.set" requiredByCopyRecord="true">/record/collection/ingest/oai/set</path> -->
+
+	  </paths>
+    <nameSpaceInfo/>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>3</baseRenderLevel>
+    <firstPage>general</firstPage>
+    <editorPages>
+      <editorPage pageLabel="General">general</editorPage>
+      <editorPage pageLabel="Educational">educational</editorPage>
+      <editorPage pageLabel="Collection Info">collection</editorPage>
+      <editorPage pageLabel="Contributor Info">contributions</editorPage>
+      <editorPage pageLabel="Rights">rights</editorPage>
+      <editorPage pageLabel="Relations">relations</editorPage>
+      <editorPage pageLabel="Technical">technical</editorPage>
+      <editorPage pageLabel="Dates">dates</editorPage>
+      <editorPage pageLabel="Coverages">coverages</editorPage>
+    </editorPages>
+    <rebuildOnStart>true</rebuildOnStart>
+	<fieldInfoURI>http://ns.nsdl.org/ncs/ncs_collect/1.02/build/fields-list.xml</fieldInfoURI>
+    <discussionURL/>
+  </editorInfo>
+  <standAloneInfo>
+    <recordsDir>not configured here - see "dcsConfig" in web.xml and server.xml</recordsDir>
+  </standAloneInfo>
+</frameworkConfigRecord>

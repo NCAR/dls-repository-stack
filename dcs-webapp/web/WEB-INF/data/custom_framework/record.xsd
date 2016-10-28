@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  $Id: record.xsd,v 1.1 2009/02/25 22:17:19 ostwald Exp $-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.dlese.org/Metadata/annotation" targetNamespace="http://www.dlese.org/Metadata/annotation" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:element name="record" type="myRecordType"/>
+	<xsd:complexType name="myRecordType">
+		<xsd:all>
+			<xsd:element name="title" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="type" type="xsd:string"/>
+			<xsd:element name="format" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="description" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="url" type="xsd:string"/>
+		</xsd:all>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: gemType-mast-groups-cataloger-en-us.xml,v 1.8 2009/07/30 16:11:56 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/GEMtype.xsd">
+
+	<head>
+		<title>GEM Resource Type</title>
+		<concept language="en-us" metaFormat="mast" metaVersion="1.0" text="GEM Resource Type" audience="cataloger" path="/record/educational/types/gemType" deftn="The nature or genre of the content of the resource."/>
+	</head>
+	<body>
+	
+	<outline type="group" text="Learning materials" deftn="materials prepared for use by students or teachers in the classroom, field or other learning environment.">
+		<outline vocab="Activity" type="vocab" text="Activity"/>
+		<outline vocab="Course" type="vocab" text="Course"/>
+		<outline vocab="Curriculum" type="vocab" text="Curriculum"/>
+		<outline vocab="Curriculum support" type="vocab" text="Curriculum support"/>
+		<outline vocab="Educator's guide" type="vocab" text="Educator's guide"/>
+		<outline vocab="Lesson plan" type="vocab" text="Lesson plan"/>
+		<outline vocab="Project" type="vocab" text="Project"/>
+		<outline vocab="Study guide" type="vocab" text="Study guide"/>
+		<outline vocab="Test" type="vocab" text="Test"/>
+		<outline vocab="Unit of instruction" type="vocab" text="Unit of instruction"/>
+	</outline>	
+
+		
+	<outline type="group" text="Text" wrap="true" deftn="Resources whose content contain primarily words for reading.">	
+		<outline vocab="Literature" type="vocab" text="Literature"/>
+		<outline vocab="Primary source" type="vocab" text="Primary source"/>
+		<outline vocab="Reference" type="vocab" text="Reference" />
+		<outline vocab="Research study" type="vocab" text="Research study"/>
+		<outline vocab="Secondary source" type="vocab" text="Secondary source"/>
+		<outline vocab="Serial" type="vocab" text="Serial"/>
+	</outline>
+	
+	
+	<outline type="group" text="Other materials" wrap="true" deftn="Resources that may be physical objects, services, events or other generally non-textual or learning materials.">	
+		<outline vocab="Artifact" type="vocab" text="Artifact"/>
+		<outline vocab="Best practice" type="vocab" text="Best practice"/>
+		<outline vocab="Catalog record" type="vocab" text="Catalog record"/>
+		<outline vocab="Collection" type="vocab" text="Collection"/>
+		<outline vocab="Community" type="vocab" text="Community" />
+		<outline vocab="Data set" type="vocab" text="Data set"/>
+		<outline vocab="Environment" type="vocab" text="Environment"/>
+		<outline vocab="Event" type="vocab" text="Event"/>
+		<outline vocab="Form" type="vocab" text="Form"/>
+		<outline vocab="Image set" type="vocab" text="Image set"/>
+		<outline vocab="Realia" type="vocab" text="Realia"/>
+		<outline vocab="Service" type="vocab" text="Service"/>
+		<outline vocab="Story" type="vocab" text="Story"/>
+		<outline vocab="Tool" type="vocab" text="Tool"/>
+	</outline>
+
+	</body>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

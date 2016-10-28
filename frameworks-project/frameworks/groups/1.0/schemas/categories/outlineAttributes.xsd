@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: outlineAttributes.xsd,v 1.1 2008/02/20 16:48:36 ginger Exp $ -->
+<xs:schema targetNamespace="http://www.dlsciences.org/frameworks/groups" xmlns="http://www.dlsciences.org/frameworks/groups" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xs:annotation>
+		<xs:documentation>**********************</xs:documentation>
+		<xs:documentation>***** HISTORY  *****</xs:documentation>
+		<xs:documentation>**********************</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>textAbbrev - text to use in the abbreviated or bread crumbs portion of a user interface</xs:documentation>
+		<xs:documentation>textBrief - text to use in the brief display user interface</xs:documentation>
+		<xs:documentation>textFull - text to use in the full description user interface</xs:documentation>
+		<xs:documentation>deftn - the definition of a metadata element or controlled vocabulary term</xs:documentation>
+		<xs:documentation>collapsible - an indication of whether a grouping should be minimized or not initially</xs:documentation>
+		<xs:documentation>wrap - an indication to send text onto the next line or not</xs:documentation>
+		<xs:documentation>display - an indication of whether the item should be seen an a user interface</xs:documentation>
+		<xs:documentation>id - a number assigned to a metadata field or controlled vocabulary term in order to shorten the length of search queries</xs:documentation>
+		<xs:documentation>vocab - a controlled vocabulary term that is valid for the metadata field the OPML file is about</xs:documentation>
+		<xs:documentation>attribution - an indication of the source of a definition</xs:documentation>
+	</xs:annotation>
+
+
+	<xs:attributeGroup name="outlineAttributes">
+		<xs:attribute name="textAbbrev" type="xs:string" use="optional"/>
+		<xs:attribute name="textBrief" type="xs:string" use="optional"/>
+		<xs:attribute name="textFull" type="xs:string" use="optional"/>
+		<xs:attribute name="deftn" type="xs:string" use="optional"/>
+		<xs:attribute name="collapsible" type="xs:boolean" use="optional" default="true"/>
+		<xs:attribute name="wrap" type="xs:boolean" use="optional" default="false"/>
+		<xs:attribute name="display" type="xs:boolean" use="optional" default="true"/>
+		<xs:attribute name="id" type="xs:string" use="optional"/>
+		<xs:attribute name="vocab" type="xs:string" use="optional"/>
+		<xs:attribute name="attribution" type="xs:string" use="optional"/>
+	</xs:attributeGroup>
+
+	<xs:annotation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>***** SCHEMA PUPOSE *****</xs:documentation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>Define a list of groups-specific attributes for the OPML outline element</xs:documentation>
+
+		<xs:documentation>*******************************</xs:documentation>
+		<xs:documentation>*****SCHEMA INTENT  *****</xs:documentation>
+		<xs:documentation>*******************************</xs:documentation>
+		<xs:documentation>Intended to be called by an overarching schema that creates an OPML 2.0 document</xs:documentation>
+		<xs:documentation>The overarching schema defines the root element called opml</xs:documentation>
+
+		<xs:documentation>******************************</xs:documentation>
+		<xs:documentation>*****  NAMESPACES  *****</xs:documentation>
+		<xs:documentation>******************************</xs:documentation>
+		<xs:documentation>No extra namespaces are used in this schema</xs:documentation>
+		<xs:documentation>The W3C schema is in the xs namespace</xs:documentation>	
+		<xs:documentation>The overarching schema used to create the OPML document may use a namespace</xs:documentation>
+
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>This schema does not contain a root element</xs:documentation>
+		<xs:documentation>The overarching schema needs to define the root element and call this schema to create OPML</xs:documentation>
+
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>Tends to follow the Venetian Blind approach that defines types that can be extended</xs:documentation>
+		<xs:documentation>Created: 2006-04-20</xs:documentation>
+		<xs:documentation>Last Modified 2006-04-21</xs:documentation>
+
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>***** SCHEMA AUTHOR  *****</xs:documentation>
+		<xs:documentation>**********************************</xs:documentation>
+		<xs:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR)</xs:documentation>
+
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>*****  LICENSE INFORMATION  *****</xs:documentation>
+		<xs:documentation>*******************************************</xs:documentation>
+		<xs:documentation>Copyright  (c) 2008 Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR) P.O. Box 3000, Boulder, CO 80307, United States of America</xs:documentation>
+		<xs:documentation>This schema is free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</xs:documentation>
+
+		<xs:documentation>******************************************************</xs:documentation>
+		<xs:documentation>*****  OTHER COPYRIGHT INFORMATION  *****</xs:documentation>
+		<xs:documentation>******************************************************</xs:documentation>
+		
+		<xs:documentation>Parts of this page are copied and developed from Dave Winer's OPML specification found at: http://www.opml.org/spec2. Per the request of that document, its copyright notice is included here and applies to information in this directory and corresponding subdirectories:
+
+&#169; Copyright 2000 UserLand Software, Inc. All Rights Reserved.
+&#169; Copyright 2006 Scripting News, Inc. All Rights Reserved.
+
+UserLand Software, Inc. and Scripting News, Inc. are refererred to in the following as "the Companies."
+
+This document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and these paragraphs are included on all such copies and derivative works. 
+
+This document may not be modified in any way, such as by removing the copyright notice or references to the Companies or other organizations. Further, while these copyright restrictions apply to the written OPML specification, no claim of ownership is made by the Companies to the format it describes. Any party may, for commercial or non-commercial purposes, implement this format without royalty or license fee to the Companies. The limited permissions granted herein are perpetual and will not be revoked by the Companies or their successors or assigns.
+
+This document and the information contained herein is provided on an "AS IS" basis and THE COMPANIES DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.</xs:documentation>
+	</xs:annotation>
+</xs:schema>

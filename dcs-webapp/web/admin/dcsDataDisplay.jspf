@@ -1,0 +1,66 @@
+<%-- DCS data Display --%>
+<c:set var="docMap" value="${result.docMap}" />
+<c:if test="${not empty docMap['dcsstatus']}">
+<div style="border:2px solid #E8ECF4;padding:3px;">
+	<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2">
+				<div class="searchResultValues"><b><font color="#333333">Workflow Status</font></b></div>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap>
+				<div class="searchResultValues">
+					<em>Last Touch:</em>
+				</div>
+			</td>
+			<td>
+				<div class="searchResultValues">
+					<fmt:formatDate value="${f:luceneDate(docMap['dcslastTouchDate'])}" 
+							pattern="yyyy-MM-dd h:mm a"/>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap>
+				<div class="searchResultValues">
+					<em>Last Editor:</em>
+				</div>
+			</td>
+			<td>
+				<div class="searchResultValues">
+					${docMap['dcslastEditor']}
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap>
+				<div class="searchResultValues">
+					<em>Status:</em>
+				</div>
+			</td>
+			<td>
+				<div class="searchResultValues">
+					${docMap['dcsstatus']}
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap>
+				<div class="searchResultValues">
+					<em>Status Note:</em><br />
+					
+				</div>
+			</td>
+			<td>
+				<div class="searchResultValues">
+					${docMap['dcsstatusNote']}
+				</div>
+			</td>
+		</tr>
+	</table>
+	</div>
+</c:if>
+
+
+<%-- end Dcs Data --%>

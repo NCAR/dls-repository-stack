@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: description-rights-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:30 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Description - copyright" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/rights/description">
+		<definition>information on copyright or conditions of use for a resource in a learning or educational setting</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2001-01-01">Search the resource for an explicit copyright statement to enter into this field. It may be as simple as "Copyright, 2000", or it may be a more lengthy text statement.</practice>
+
+				<practice status="current" originDate="2001-01-01">Indicate copyright restrictions or lack thereof and/or whether the resource is free and clear for general use.</practice>
+
+				<practice status="current" originDate="2001-01-01">If the copyright statement is extremely long, edit it to convey the most pertinent information and then include a statement saying please see the resource directly to obtain the latest information.</practice>
+
+				<practice status="current" originDate="2001-01-01">If the copyright statement is difficult to understand or is not very readable, edit it to convey the most pertinent information and then include a statement saying please see the resource directly to obtain the latest information.</practice>
+
+<!--				<practice status="obsolete" originDate="2001-01-01" archDate="2005-03-01">If the copyright statement is extremely long, edit it to fit the 1024 character limit. </practice>-->
+
+				<practice status="current" originDate="2005-03-18">Encode the copyright symbol as string composed of: an ampersand, the pound sign, the number 169 followed by a semicolon with no spaces between all the symbols and number.</practice>
+
+				<practice status="current" originDate="2006-03-08">Website URLs with more information may be included but they will not be hyperlinked in library displays.</practice>
+			</dos>
+
+
+			<donts>
+<!--				<practice status="obsolete" originDate="2001-01-01" archDate="2006-03-08">Do not include the URL that links to the copyright information because this URL may change and invalidate the data.</practice>
+				<practice status="hide" originDate="2005-03-18" archDate="2006-03-08">Do not use the copyright symbol &#169;.</practice>
+				<practice status="obsolete" originDate="2001-01-01" archDate="2005-03-01">Do not exceed the maximum character count of 1024 (this includes white space). The input box does not indicate when the 1024 character limit is reached. If your input goes beyond the limit, only the first 1024 characters are saved in the catalog record. Since we don't have an effective method for counting characters at the moment, we suggest using a word processing program to count characters</practice> -->
+
+				<practice status="current" originDate="2001-01-01">Do not put quotes around copyright information.</practice>
+
+
+			</donts>
+
+			<examples>
+				<practice status="current" originDate="2001-01-01">May be used in an educational setting as long as credit to NASA is given.</practice>
+			</examples>
+
+			<otherPractices>
+				<otherPractice header="No Copyright? Do this:">
+					<practice status="current" originDate="2001-01-01">If this field cannot be readily determined, enter the statement "Copyright and other restrictions information is unknown" as the content for this field (excluding the quotes).</practice>
+				</otherPractice>
+
+				<otherPractice header="Want to use &amp;, ', &quot;, &gt;, &lt;? Do this:">
+					<practice status="current" originDate="2006-03-08">Enter characters like the ampersand apostrophe, double quote, less than and greater than sign by using their respective html references of &amp;, &apos;, &quot;, &lt; and &gt;.</practice>
+				</otherPractice>
+
+				<otherPractice header="Want to use other special characters like ©, é, ñ or ê? Do this:">
+					<practice status="current" originDate="2005-10-05" link1="entity references" url1="http://www.w3schools.com/tags/ref_entities.asp">Enter special characters and symbols using their entity references numbers. For the copyright symbol this means entering an ampersand symbol followed by the pound sign followed by the number 169 followed by a semicolon.</practice>
+				</otherPractice>
+			</otherPractices>
+
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>May be used in an educational setting as long as credit to NASA is given.</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/educational/description</note>
+				<note>Other XPATH: /itemRecord/general/description</note>
+				<note>Other XPATH: /itemRecord/general/simplePlacesAndEvents/placeAndEvent/description</note>
+				<note>Other XPATH: /itemRecord/general/simpleTemporalCoverages/description</note>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/description</note>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/boundBox/description</note>
+				<note>Other XPATH: /itemRecord/lifecycle/description</note>
+				<note>Other XPATH: /itemRecord/metaMetadata/description</note>
+				<note>Other XPATH: /itemRecord/objectsInSpace/object/description</note>
+				<note>Other XPATH: /itemRecord/technical/online/description</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

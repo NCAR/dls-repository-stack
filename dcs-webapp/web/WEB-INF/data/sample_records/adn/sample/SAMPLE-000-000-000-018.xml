@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>Global Lab Curriculum</title>
+<description>Global Lab: An Integrated Science Program is a full-year, interdisciplinary, introductory science course for grades 8-10, developed with support from the National Science Foundation and piloted over five years in 300 schools in 30 countries. Global Lab introduces students to science as inquiry, engaging them in collaborative scientific investigations. Students choose a local &quot;study site&quot; as the context for authentic, hands-on, integrated science explorations. Throughout the Global Lab course, students analyze their study site from biological, physical, chemical, and geographic perspectives. Students create qualitative descriptions, take quantitative measurements, analyze remotely-sensed images, and work with physical and biological models. The curriculum meets National Science Education Standards and major benchmarks. Study areas are: the interaction of matter and energy; biogeochemical cycles; biomes and biodiversity; and Earth as a system. Global Lab consists of a curriculum guide and five units: becoming a Global Community, Investigating Our Earth: Land, Investigating Our Earth: Water, Investigating Our Earth: Air, and Extended Investigations Each unit includes a Teacher's Guide, an optional student book, and low-cost instruments and supplies designed specifically for that unit. There appears to be an annual subscription required in order to view this site.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Biology</subject>
+<subject>DLESE:Ecology</subject>
+<subject>DLESE:Environmental science</subject>
+</subjects>
+</general>
+<lifecycle>
+<contributors>
+<contributor role="Publisher">
+<organization>
+<instName>Kendall/Hunt Publishing Company</instName>
+<instEmail>avincent@kendallhunt.com</instEmail>
+<instUrl>http://www.kendallhunt.com</instUrl>
+</organization>
+</contributor>
+<contributor role="Author">
+<organization>
+<instName>TERC</instName>
+<instEmail>communications@terc.edu</instEmail>
+<instUrl>http://www.terc.edu/</instUrl>
+</organization>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-018">DLESE Program Center Catalog Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-10-24" created="2000-10-24"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://globallab.terc.edu/home.html</primaryURL>
+<mediums>
+<medium>text/html</medium>
+</mediums>
+<requirements>
+<requirement>
+<reqType>DLESE:General:No specific technical requirements</reqType>
+</requirement>
+</requirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:High school</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Middle school</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Learning materials:Curriculum</resourceType>
+<resourceType>DLESE:Learning materials:Field activity</resourceType>
+<resourceType>DLESE:Learning materials:Lesson plan</resourceType>
+</resourceTypes>
+</educational>
+<rights>
+<cost>DLESE:Yes</cost>
+<description>Text and illustrations copyright 2000 by Kendall/Hunt Publishing Company. All rights reserved.</description>
+</rights>
+</itemRecord>

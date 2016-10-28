@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: title-anno-fields-en-us.xml,v 1.1 2009/01/30 21:32:40 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/annotation/1.0.00/non-vocab-fields.xsd">
+	<field name="Title" language="en-us" metaFormat="dlese_anno" metaVersion="1.0.00" path="/annotationRecord/annotation/title">
+		<definition>the name of the annotation</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2006-07-26" link1="URL" style1="bold">Be sure to use title when the content of the annotation is on its own unique web page. The value of title should then be the title displayed on the web page and not in a browser's title bar. This applies when using the URL field.</practice>
+				<practice status="current" originDate="2006-07-26" link1="rating" style1="bold" link2="description" style2="bold">If the content of the annotation is not on its own unique web page (i.e. the rating or description field is being used), an appropriate value of title is 'Annotation for X' where X is the title of the resource being annotated.</practice>
+				<practice status="current" originDate="2005-04-12">Make titles short and concise for easy reading.</practice>
+				<practice status="current" originDate="2005-04-12">If a title is long, edit if necessary.</practice>
+				<practice status="current" originDate="2005-04-12">Capitalize words of the title excluding prepositions, articles and pronouns.</practice>
+				<practice status="current" originDate="2005-04-12">If a title has an acronym, use the acronym.</practice>
+			</dos>
+			
+			<donts>
+				<practice status="current" originDate="2005-04-12">Avoid the use of subtitles.</practice>
+				<practice status="current" originDate="2005-04-12">Do not include subpage names in title. This makes title too long.</practice>
+				<practice status="current" originDate="2005-04-12">Do not include phrases like "by Joe Smith" in title.</practice>
+				<practice status="current" originDate="2005-04-12">Do not include phrases like "Welcome to the " in title.</practice>
+			</donts>
+
+			<examples>
+				<practice status="current" originDate="2005-04-12">A title for an annotation that is the content of an annotation: Teaching Tip for Down the Drain or Editor's Summary for Down the Drain.</practice>
+				<practice status="current" originDate="2006-02-16">A title for an annotation that is supportive or contextual material: How to Teach with Data: Describing and Analyzing Graphs.</practice>
+			</examples>
+
+			<otherPractices>
+				<otherPractice header="No title for the resource being annotated? Do this:">
+					<practice status="current" originDate="2005-04-12">If an appropriate title for the resource being annotated cannot be determined, title can be left blank or create a title to describe the overall content.</practice>
+				</otherPractice>
+				<otherPractice header="Want to use special characters like ©, é, ñ or ê? Do this:">
+					<practice status="current" originDate="2005-10-05" link1="entity references" url1="http://www.w3schools.com/tags/ref_entities.asp">Enter special characters and symbols using their entity references numbers. For the copyright symbol this means entering an ampersand symbol followed by the pound sign followed by the number 169 followed by a semicolon.</practice>
+				</otherPractice>
+			</otherPractices>
+			
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>Teaching Tip for Down the Drain</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

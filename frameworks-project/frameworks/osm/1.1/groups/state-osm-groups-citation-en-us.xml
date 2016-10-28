@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: state-osm-groups-citation-en-us.xml,v 1.1 2013/02/28 22:47:36 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/state.xsd"
+version="2.0">
+	<head>
+		<title>State/prov</title>
+		<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="State" audience="citation" path="/record/coverage/location/@state" collapseExpand="true" deftn="The major divisional unit of a nation in which an event occurred or a publisher is located."/>
+	</head>
+	<body>
+		<outline text="AL" type="vocab" vocab="US-AL"/>
+		<outline text="AK" type="vocab" vocab="US-AK"/>
+		<outline text="American Samoa" type="vocab" vocab="US-AS"/>
+		<outline text="AZ" type="vocab" vocab="US-AZ"/>
+		<outline text="AR" type="vocab" vocab="US-AR"/>
+		<outline text="CA" type="vocab" vocab="US-CA"/>
+		<outline text="CO" type="vocab" vocab="US-CO"/>
+		<outline text="CT" type="vocab" vocab="US-CT"/>
+		<outline text="DE" type="vocab" vocab="US-DE"/>
+		<outline text="DC" type="vocab" vocab="US-DC"/>
+		<outline text="FL" type="vocab" vocab="US-FL"/>
+		<outline text="GA" type="vocab" vocab="US-GA"/>
+		<outline text="Guam" type="vocab" vocab="US-GU"/>
+		<outline text="HI" type="vocab" vocab="US-HI"/>
+		<outline text="ID" type="vocab" vocab="US-ID"/>
+		<outline text="IL" type="vocab" vocab="US-IL"/>
+		<outline text="IN" type="vocab" vocab="US-IN"/>
+		<outline text="IA" type="vocab" vocab="US-IA"/>
+		<outline text="KS" type="vocab" vocab="US-KS"/>
+		<outline text="KY" type="vocab" vocab="US-KY"/>
+		<outline text="LA" type="vocab" vocab="US-LA"/>
+		<outline text="ME" type="vocab" vocab="US-ME"/>
+		<outline text="MD" type="vocab" vocab="US-MD"/>
+		<outline text="MA" type="vocab" vocab="US-MA"/>
+		<outline text="MI" type="vocab" vocab="US-MI"/>
+		<outline text="MN" type="vocab" vocab="US-MN"/>
+		<outline text="MS" type="vocab" vocab="US-MS"/>
+		<outline text="MO" type="vocab" vocab="US-MO"/>
+		<outline text="MT" type="vocab" vocab="US-MT"/>
+		<outline text="NE" type="vocab" vocab="US-NE"/>
+		<outline text="NV" type="vocab" vocab="US-NV"/>
+		<outline text="NH" type="vocab" vocab="US-NH"/>
+		<outline text="NJ" type="vocab" vocab="US-NJ"/>
+		<outline text="NM" type="vocab" vocab="US-NM"/>
+		<outline text="NY" type="vocab" vocab="US-NY"/>
+		<outline text="NC" type="vocab" vocab="US-NC"/>
+		<outline text="ND" type="vocab" vocab="US-ND"/>
+		<outline text="Northern Mariana Islands" type="vocab" vocab="US-MP"/>
+		<outline text="OH" type="vocab" vocab="US-OH"/>
+		<outline text="OK" type="vocab" vocab="US-OK"/>
+		<outline text="OR" type="vocab" vocab="US-OR"/>
+		<outline text="PA" type="vocab" vocab="US-PA"/>
+		<outline text="Puerto Rico" type="vocab" vocab="US-PR"/>
+		<outline text="RI" type="vocab" vocab="US-RI"/>
+		<outline text="SC" type="vocab" vocab="US-SC"/>
+		<outline text="SD" type="vocab" vocab="US-SD"/>
+		<outline text="TN" type="vocab" vocab="US-TN"/>
+		<outline text="TX" type="vocab" vocab="US-TX"/>
+		<outline text="U.S. Minor Outlying Islands" type="vocab" vocab="US-UM"/>
+		<outline text="U.S. Virgin Islands" type="vocab" vocab="US-VI"/>
+		<outline text="UT" type="vocab" vocab="US-UT"/>
+		<outline text="VA" type="vocab" vocab="US-VA"/>
+		<outline text="VT" type="vocab" vocab="US-VT"/>
+		<outline text="WA" type="vocab" vocab="US-WA"/>
+		<outline text="WV" type="vocab" vocab="US-WV"/>
+		<outline text="WI" type="vocab" vocab="US-WI"/>
+		<outline text="WY" type="vocab" vocab="US-WY"/>
+		<outline text="U.S. Armed Forces" type="vocab" vocab="US-AA"/>
+		<outline text="U.S. Armed Forces" type="vocab" vocab="US-AE"/>
+		<outline text="U.S. Armed Forces" type="vocab" vocab="US-AP"/>
+	</body>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->
+
+
+

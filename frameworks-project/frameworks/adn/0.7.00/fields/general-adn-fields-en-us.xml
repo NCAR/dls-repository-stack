@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: general-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:44 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="General" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/general">
+		<definition>the primary characteristics about a resource including title, description, keywords, subject areas and language</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-04-18" link1="title - resource" style1="bold" link2="description - resource" style2="bold" link3="subject - list" style3="bold" link4="language - of the resource" style4="bold">Complete the required subfields of title - resource, description - resource, subject - list and language - of the resource.</practice>
+				<practice status="current" originDate="2006-07-07">Describe resources that are used or described in the context of physical properties and affects on the Earth system.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2006-07-07">Avoid describing resources that do not relate their content to physical properties or affects on the Earth system.</practice>
+				<practice status="current" originDate="2006-07-07">For example, do not catalog a resources about sea turtles unless it includes Earth system properties like habitat, water salinity or ocean currents, etc.</practice>
+			</donts>
+		</bestPractices>
+
+		<documentation>
+			<children>
+				<child>title</child>
+				<child>description</child>
+				<child>language</child>
+				<child>subjects</child>
+				<child>keywords</child>
+				<child>simplePlacesAndEvents</child>
+				<child>simpleTemporalCoverages</child>
+				<child>catalogEntries</child>
+				<child>additionalInfo</child>
+			</children>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>the child elements</domain>
+			<example>&lt;title&gt;, &lt;description&gt;, etc.</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

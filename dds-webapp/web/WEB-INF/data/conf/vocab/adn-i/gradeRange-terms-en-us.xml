@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<termsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/adn-i/gradeRange.xsd">
+	<field name="gradeRange" id="gr" language="en-us">
+		<definition system="meta" interface="default">The appropriate grade range or context for users of the resource</definition>
+		<definition system="dcs" interface="default">The appropriate grade range or context for users of the resource</definition>
+		<definition system="dds" interface="default"></definition>
+
+
+		<value vocab="DLESE:General public" id="00" abbrv="General">
+			<definition system="meta" interface="default">Learners in the general population; use for resources in which no grade-level specificity is indicated</definition>
+			<definition system="dcs" interface="default">Learners in the general population; use for resources in which no grade-level specificity is indicated</definition>
+			<definition system="dds" interface="default">Learners in the general population. No grade level specified.</definition>
+			<abbrev>General</abbrev>
+		</value>
+
+
+		<value vocab="DLESE:Graduate or professional" id="01" abbrv="Grad-Prof">
+			<definition system="meta" interface="default">Learners who have completed an undergraduate degree or learners pursuing personal, professional or organizational goals</definition>
+			<definition system="dcs" interface="default">Learners who have completed an undergraduate degree or learners pursuing personal, professional or organizational goals</definition>
+			<definition system="dds" interface="default">Learners having an undergraduate degree or those pursuing personal, professional or organizational goals.</definition>
+			<abbrev>Grad-Prof</abbrev>
+		</value>
+
+
+		<value vocab="DLESE:High school" id="02" abbrv="9-12">
+			<definition system="meta" interface="default">Generally learners in grades 9-12</definition>
+			<definition system="dcs" interface="default">Generally learners in grades 9-12</definition>
+			<definition system="dds" interface="default"></definition>
+			<abbrev>9-12</abbrev>
+
+		</value>
+
+
+		<value vocab="DLESE:Informal education" id="03" abbrv="Informal">
+			<definition system="meta" interface="default">Learners in museum settings, community continuing education programs, community technology centers, park naturalists settings, nature centers or home schooling</definition>
+			<definition system="dcs" interface="default">Learners in museum settings, community continuing education programs, community technology centers, park naturalists settings, nature centers or home schooling</definition>
+			<definition system="dds" interface="default"></definition>
+			<abbrev>Informal</abbrev>
+		</value>
+
+
+		<value vocab="DLESE:Intermediate elementary" id="04" abbrv="3-5">
+			<definition system="meta" interface="default">Generally learners in grades 3-5</definition>
+			<definition system="dcs" interface="default">Generally learners in grades 3-5</definition>
+			<definition system="dds" interface="default"></definition>
+			<abbrev>3-5</abbrev>
+		</value>
+
+		<value vocab="DLESE:Middle school" id="05" abbrv="6-8">
+			<definition system="meta" interface="default">Generally learners in grades 6-8</definition>
+			<definition system="dcs" interface="default">Generally learners in grades 6-8</definition>
+			<definition system="dds" interface="default"></definition>
+			<abbrev>6-8</abbrev>
+		</value>
+
+		<value vocab="DLESE:Not applicable" id="06">
+			<definition system="meta" interface="default">Does not apply</definition>
+			<definition system="dcs" interface="default">Does not apply</definition>
+			<definition system="dds" interface="default"></definition>
+			<abbrev></abbrev>
+		</value>
+
+		<value vocab="DLESE:Primary elementary" id="07" abbrv="K-2">
+			<definition system="meta" interface="default">Generally learners in grades K-2</definition>
+			<definition system="dcs" interface="default">Generally learners in grades K-2</definition>
+			<definition system="dds" interface="default">Learners in grades K-2</definition>
+			<abbrev>K-2</abbrev>
+		</value>
+
+		<value vocab="DLESE:To be supplied" id="08">
+			<definition system="meta" interface="default">Not immediately known, therefore will be supplied at a future date</definition>
+			<definition system="dcs" interface="default">Not immediately known, therefore will be supplied at a future date</definition>
+			<definition system="dds" interface="default"></definition>
+			<abbrev></abbrev>
+		</value>
+
+		<value vocab="DLESE:Undergraduate lower division" id="09" abbrv="13-14">
+			<definition system="meta" interface="default">Generally learners in the first two years of a baccalaureate degree or completing an introductory course</definition>
+			<definition system="dcs" interface="default">Generally learners in the first two years of a baccalaureate degree or completing an introductory course</definition>
+			<definition system="dds" interface="default"></definition>
+			<abbrev>13-14</abbrev>
+		</value>
+
+		<value vocab="DLESE:Undergraduate upper division" id="0a" abbrv="15-16">
+			<definition system="meta" interface="default">Generally learners in the last two years of a baccalaureate degree or completing an advanced course</definition>
+			<definition system="dcs" interface="default">Generally learners in the last two years of a baccalaureate degree or completing an advanced course</definition>
+			<definition system="dds" interface="default"></definition>
+			<abbrev>15-16</abbrev>
+		</value>
+
+	</field>
+</termsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

@@ -1,0 +1,20 @@
+<%@ include file="scopes-include.jspf" %>
+<%-- Application --%>
+<div class="props-wrapper">
+	<h3>Application Scope Variables  <span class="control"> [ hide/show ]</span></h3>
+	<table class="props" width="100%">
+	<tr>
+		<th>key</th>
+		<th>value</th>
+	</tr>
+	
+	<c:forEach var="attr" items="${applicationScope}" >
+	<c:if test="${attr.key != 'org.apache.catalina.jsp_classpath'}">
+		<tr valign="top">
+			<td width="30%">${attr.key}</td>
+			<td>${attr.value}</td>
+		</tr>
+	</c:if>
+	</c:forEach>
+	</table>
+</div>

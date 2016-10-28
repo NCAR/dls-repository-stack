@@ -1,0 +1,119 @@
+/* ------ Style used to define the thin line used throughout ------ */
+TABLE.thinLine {
+	border-spacing:0px;
+	border-collapse:collapse;
+}
+
+TD.thinLine {	
+	padding:0;
+}
+
+/* ------ Styles used for the checkbox menus ------ */
+A.cb:link {
+	color: #333333; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 9pt; 	
+}
+A.cb:visited {
+	color: #333333; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 9pt; 	
+}	
+A.cb:active {
+	color: #333333; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 9pt; 	
+}	
+.cbItems {
+	font-size: 9pt; 
+}
+
+/* ------ Styles used in the DLESE logo ------ */
+A.logo:link {
+	color: #000000; 
+	text-decoration: none; 
+	font-size:8pt; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-weight: normal; 	
+}
+A.logo:visited {
+	color: #000000; 
+	text-decoration: none; 
+	font-size:8pt; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-weight: normal; 	
+}	
+A.logo:active {
+	color: #000000; 
+	text-decoration: none; 
+	font-size:8pt; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-weight: normal;	
+}	
+
+/*  ------ Style for the 'clear selections' button  ------ */
+.clearbutton {
+	font-size: 9px;
+	position: center;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	color: #333366; 
+	height: 18px; 
+	background-color: #eeeeee;
+}	
+
+/* ------ The link for the resources that appears black (no underline, etc) ------  */
+A.blacklnk:link {
+	color: #000000; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 105%; 	
+}
+
+A.blacklnk:visited {
+	color: #000000; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 105%; 	
+}
+
+/*  ------ The collection title name, when no link is available  ------ */
+.collectionTitle {
+	color: #000000; 
+	font-weight: bold;
+	font-size: 11pt; 	
+}
+
+/* ------ Style used for the annotation links and display ------ */
+A.annos:link {
+	color: #333366; 
+}
+A.annos:visited {
+	color: #333366; 
+}	
+A.annos:active {
+	color: #333366; 
+}
+UL.annos{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* ------ Styles used in the full descripion ------ */
+.description { 
+	padding-left: 10px; 	
+	padding-right: 14px; 		
+	padding-bottom: 8px; 
+}
+.edTop { 
+	font-weight: bold;
+	color: #333333; 
+	padding-left: 4px; 	
+	padding-top: 10px; 		
+} 
+.edEn { 
+	padding-left: 12px; 	
+}

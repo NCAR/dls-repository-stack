@@ -1,0 +1,25 @@
+/* DDS print styles */
+.breadcrumbs {
+	position: absolute;
+	top: 6px;
+	left: 7;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #747474;
+	border-left: 1px solid #747474;
+}
+.yourSelectionsCriteria {
+	position: absolute;
+	top: 6px;
+	left: 33%;
+	width: 66%;
+	text-align: right;
+	z-index: 1001;
+	overflow: visible;
+	background-color: black;
+}
+.dlese_sectionTitle, .dlese_clearAllButton, .dlese_vocabButtons, .vocabCsNoscript,
+	.vocabKyNoscript, .vocabReNoscript, .vocabGrNoscript, .breadcrumbBanner, .pagingLink, .pagingThisPage {
+	display: none;
+}

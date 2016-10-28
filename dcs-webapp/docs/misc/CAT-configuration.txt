@@ -1,0 +1,9 @@
+7 - Configure the ContentAlignment Tool (CAT)
+CAT is a service that suggests ASN (Achievement Standards Network)
+Education standards that may be supported by a particular resource. It uses
+natural language process techniques to process the resource content (the content
+of the web resource pointed to by a the resourceURL) to determine potentially
+relevant standards from the current ASN Standards Document. The
+suggested standards may then be accepted or rejected by the cataloger.
+
+To configure ... 

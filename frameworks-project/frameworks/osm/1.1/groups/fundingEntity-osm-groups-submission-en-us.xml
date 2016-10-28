@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: fundingEntity-osm-groups-submission-en-us.xml,v 1.1 2011/06/22 15:39:46 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/fundingEntity.xsd"
+version="2.0">
+	<head>
+		<title>Funder's Name</title>
+		<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="Funder's Name" audience="submission" path="/record/classify/fundingEntity" deftn="The name of the funding agency or organization that contributed fiscally to the creation of the resource."/>
+	</head>
+	<body>
+		<outline type="vocab" vocab="IBM Shared University Research Program" text="IBM Shared University Research Program"/>
+		<outline type="vocab" vocab="National Aeronautics and Space Administration (NASA)" text="National Aeronautics and Space Administration (NASA)"/>
+		<outline type="vocab" vocab="National Oceanic and Atmospheric Administration (NOAA)" text="National Oceanic and Atmospheric Administration (NOAA)"/>
+		<outline type="vocab" vocab="National Science Foundation (NSF)" text="National Science Foundation (NSF)"/>
+		<outline type="vocab" vocab="Office of Naval Research (ONR)" text="Office of Naval Research (ONR)"/>
+		<outline type="vocab" vocab="U.S. Department of Defense (DOD)" text="U.S. Department of Defense (DOD)"/>
+		<outline type="vocab" vocab="U.S. Department of Education" text="U.S. Department of Education"/>
+		<outline type="vocab" vocab="U.S. Department of Energy (DOE)" text="U.S. Department of Energy (DOE)"/>
+		<outline type="vocab" vocab="World Meteorological Organization (WMO)" text="World Meteorological Organization (WMO)"/>
+	</body>
+	 <bestPractices>
+		 <practice>This field is optional.</practice>
+		<practice>If a funder's name is provided, then the Grant Number field must also be completed.</practice>
+		<practice>This is a type ahead field that will offer suggestions. If the funder's name, is not on the type ahead list, just type in the funder's name.</practice>
+		<practice>To add an additional funder's name, click on "ADD a grant".</practice>
+		<practice>To delete a funder's name, click on the red X.</practice>
+		<practice >Review acknowledgments and other supplementary sections for information.</practice>
+	 </bestPractices>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

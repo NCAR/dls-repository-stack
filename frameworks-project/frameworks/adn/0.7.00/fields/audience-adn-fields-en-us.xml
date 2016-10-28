@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: audience-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:13 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Audience" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/educational/audiences/audience">
+		<definition>specific audience and educational characteristics addressed by a resource that include grade range, typical age range, instructional goal, teaching methods, use time, who the resource should be used by and who benefits from it.</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-04-20" link1="grade range" style1="bold">Complete the subfield of grade range. It is a required field in order to make a complete metadata record.</practice>
+				<practice status="current" originDate="2005-04-20" link1="tool for, beneficiary, age range, instructional goal, teaching methods" style1="bold" link2="use time" style2="bold">If desired, complete the other subfields of tool for, beneficiary, age range, instructional goal, teaching methods and use time.</practice>
+			</dos>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<children>
+				<child>gradeRange</child>
+				<child>toolFor</child>
+				<child>beneficiary</child>
+				<child>typicalAgeRange</child>
+				<child>instructionalGoal</child>
+				<child>teachingMethods</child>
+				<child>typicalUseTime</child>
+			</children>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>the child elements</domain>
+			<example>&lt;gradeRange&gt;, &lt;toolFor&gt;, &lt;beneficiary&gt;</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

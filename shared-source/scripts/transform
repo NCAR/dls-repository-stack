@@ -1,0 +1,92 @@
+#!/bin/csh
+
+# This script transforms a directory of xml files or a single xml file using an xsl stylesheet. 
+# Parameters are read from a java properties file or from the command line.
+#
+# Uses the default XSLT processor (currently XSLT 1.0 compliant)
+#
+# This script assumes the following environmental variables have been set:
+#
+# JAVA_HOME = The base directory of a Java j2sdk v1.4 or later
+# 
+# DLS_LIBS_HOME = The home directory of the dls-libs.jar and xercesImpl-x.x.x.jar.
+#
+# Author: John Weatherley
+
+
+### Define the path the Java JVM or SDK:
+#set JAVA_HOME = /path/to/java/jvm/
+
+### Define the path to the directory where dls-libs.jar and xercesImpl-x.x.x.jar are located:
+#set DLS_LIBS_HOME = /path/to/required/jar/files/lib/
+
+# Use the default TransformerFactory rather than setting it here...
+set props = ""
+
+set CP = ""
+
+if($?DLS_LIBS_HOME == 0) then
+	echo "DLS_LIBS_HOME is not set"
+	exit 1
+endif			
+
+if($?JAVA_HOME == 0) then
+	echo "JAVA_HOME is not set"
+	exit 1
+endif
+
+# Construct the classpath
+foreach file ($DLS_LIBS_HOME/*.jar)
+	set CP = $CP$file\:
+end
+
+echo "Using classpath: $CP"
+#echo "Using properties: $props"
+echo ""
+
+if( $#argv == 1 ) then
+	if( $argv[1] != "-h" && $argv[1] != "--help" ) then
+		$JAVA_HOME/bin/java $props -cp $CP org.dlese.dpc.commands.RunXSLTransform $argv[1]
+		exit 0
+	endif
+else if( $#argv == 3 ) then
+	$JAVA_HOME/bin/java $props -cp $CP org.dlese.dpc.commands.RunXSLTransform $argv[1] $argv[2] $argv[3] null false false
+	exit 0
+else if( $#argv == 4 ) then
+	$JAVA_HOME/bin/java $props -cp $CP org.dlese.dpc.commands.RunXSLTransform $argv[1] $argv[2] $argv[3] $argv[4] false false
+	exit 0
+else if( $#argv == 5 ) then
+	$JAVA_HOME/bin/java $props -cp $CP org.dlese.dpc.commands.RunXSLTransform $argv[1] $argv[2] $argv[3] $argv[4] $argv[5] false
+	exit 0
+else if( $#argv == 6 ) then
+	$JAVA_HOME/bin/java $props -cp $CP org.dlese.dpc.commands.RunXSLTransform $argv[1] $argv[2] $argv[3] $argv[4] $argv[5] $argv[6]
+	exit 0
+endif
+
+# If we've gotten this far, send usage msg:
+echo "USAGE: transform props_file.properties"
+echo "         where:"
+echo "                props_file.properties = a java properties file that contains:"
+echo "                  xslFile = the stylsheet used for the transform"
+echo "                  inputDir = the input xml file or directory containing xml files"
+echo "                  outputDir = the directory where the output files will be placed"
+echo "                  modifiedSinceDate = a date in UTCdatetime format (YYYY-MM-DDThh:mm:ssZ) that indicates"
+echo "                                      the transform should be performed only if a given input file has"
+echo "                                      been modified since that date, or the string 'null' to transform regardless"
+echo "                  validateInputFiles [true|FALSE] = optional parameter indicating whether to validate input file(s)"
+echo "                  validateOutputFiles [true|FALSE] = optional parameter indicating whether to validate output file(s)"
+echo ""                    
+echo "          --- or ---"
+echo ""
+echo "USAGE: transform stylesheet.xsl input output_dir [ modifiedSinceDate [true|FALSE] [true|FALSE] ]"
+echo "         where:"
+echo "                stylesheet.xsl = the stylsheet used for the transform"
+echo "                input = the input xml file or directory containing xml files"
+echo "                output_dir = the directory where the output files will be placed"
+echo "                modifiedSinceDate = optional parameter in UTCdatetime format (YYYY-MM-DDThh:mm:ssZ) that indicates"
+echo "                                    the transform should be performed only if a given input file has been modified"
+echo "                                    since that date, or the string 'null' to transform regardless"
+echo "                [true|FALSE] = optional parameter indicating whether to validate input file(s)"
+echo "                [true|FALSE] = optional parameter indicating whether to validate output file(s)"
+echo ""
+exit 1

@@ -1,0 +1,31 @@
+<productReleases>
+	<package id="dcs">
+		<name>Digital Collection System</name>
+		<description>
+			<![CDATA[ 
+			The Digital Collection System (DCS) can be used to generate and manage metadata 
+			collections based on XML schemas. The DCS is web-based, supporting distributed 
+			collections management with protection against concurrent editing and a roles-based
+			permissions scheme. The DCS is currently used as the collection management tool for DLESE.
+			
+			<br/><br/>
+
+			The NCore version of the DCS (NCS) offers the ability to manage Digital Collections directly 
+			in the NSDL Data Repository (NDR).  The NCS is currently used by the NSDL to 
+			manage digital collections in the NDR.
+						
+			<br/><br/>
+			
+			The software runs in a servlet container such as <a href="http://tomcat.apache.org/" target="_blank">Apache Tomcat</a>
+			and can be installed on Windows, Linux, Mac OS or UNIX systems.
+			]]>
+		</description>
+		<release>
+			<link>
+				<name>Download from SourceForge</name>
+				<url>http://sourceforge.net/project/showfiles.php?group_id=198325&amp;package_id=269885</url>
+			</link>
+		</release>	
+	</package>
+</productReleases>
+

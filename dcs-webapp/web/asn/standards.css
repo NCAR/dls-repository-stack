@@ -1,0 +1,129 @@
+input.filter {
+	width:100%;
+	background-color:#ffffe7;
+}
+
+#doc-table {
+	border-collapse:collapse;
+	background:white;
+	border:#333366 1px solid;
+	margin:7px 0px 7px 0px;
+}
+
+#doc-table th {
+	/* border:#333366 solid 1px; */
+	background-color:#CCCEE6;
+	padding:5px;
+}
+
+#doc-table tr {
+	border:#333366 solid 1px;
+}
+
+#doc-table td {
+	padding:2px;
+}
+
+#doc-table td.author {
+	/* width:130px; */
+}
+
+#doc-table td.status {
+	white-space:nowrap;
+	text-align:center;
+}
+
+#doc-table td.created {
+	/* width:80px; */
+	text-align:center;
+}
+
+#doc-table td.title{
+	/* width:80%; */
+}
+
+ul.collapsible-button {
+	/* list-style-image:transparent url('/images/opened.gif') no-repeat 0 0; */
+	list-style-image:url('../images/closed.gif');
+	margin:0px;
+	padding-left:20px;
+	color:green;
+}
+
+ul.collapsible-button.collapsible-button-open {
+	list-style-image:url('../images/opened.gif');
+}
+
+ul#filters-button {
+	/* list-style-image:transparent url('/images/opened.gif') no-repeat 0 0; */
+	list-style-image:url('../images/closed.gif');
+	margin:0px;
+	padding-left:20px;
+}
+
+ul#filters-button.filters-button-open {
+	list-style-image:url('../images/opened.gif');
+}
+
+ul#filters-button li {
+	font-weight:normal;
+}
+
+#key {
+	border-collapse:collapse;
+	background:white;
+}
+
+#key tr {
+	border:#333366 1px solid;
+}
+
+#key th {
+	border:white 1px solid;
+	border-bottom-color:#333366;
+	align:left;
+}
+
+#key td {
+	padding:1px;
+}
+
+#doc-table tr.registered-doc,
+#key tr.registered-doc{
+	/* background:green; */
+	background-color:#E3E4F1;
+	font-weight:normal;
+	font-style:normal;
+}
+
+#doc-table tr.std-doc-item,
+#key tr.std-doc-item {
+	opacity:.6;
+	font-style:italic;
+}
+
+#doc-table tr.selected-doc {
+	border:black 2px solid;
+	opacity:1.0;
+}
+
+#doc-table tr.selected-doc td{
+	font-style:normal;
+}
+
+#doc-table tr.extra-doc, 
+#key tr.extra-doc {
+	background:#FFFFCC;
+/* 	border-style:dashed;
+	border-width:2px; */
+	/* border:#333366 dotted 2px; */
+}
+
+.command-button {
+	border:#333366 solid 1px;
+	background-color:#E3E4F1;
+	padding: 2px 4px 2px 4px;
+	margin: 5px;
+	font-weight:normal;
+	font-size:12px;
+}

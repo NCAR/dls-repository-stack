@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: idNumberType-osm-fields-en-us.xml,v 1.6 2012/02/17 17:09:10 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/idNumberType.xsd">
+  <field name="ID number type" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/classify/idNumber/@type">
+		<definition>the type and/or source of the resource identifier</definition> 
+
+		<terms>
+			<termAndDeftn vocab="arXiv">identifier assigned to resources in the arXiv.org repository of preprints for mathematics, physics, computer science, quantitative biology and statistics</termAndDeftn>
+			<termAndDeftn vocab="CALL">a unique identifier used to identify a specific copy and relative location of an item within a library's collection</termAndDeftn>
+			<termAndDeftn vocab="Citation/Article">a unique reference label to ensure the persistent and actionable identification of resources</termAndDeftn>
+			<termAndDeftn vocab="DOI">Digital Object Identifier: a set of unique code used by publishers and other disseminators of digital content to ensure the persistent and actionable identification and interoperable exchange of that content</termAndDeftn>
+			<termAndDeftn vocab="EPRINTS">a unique identifier used to ensure the persistent and actionable identification of resources held within a digital repository</termAndDeftn>
+			<termAndDeftn vocab="ISBN">International Standard Book Number: a unique, standardized 10- or 13-digit number assigned to a specific edition of a book or other monographic publication</termAndDeftn>
+			<termAndDeftn vocab="ISSN">International Standard Serial Number: a unique, standardized 8-digit number assigned to a specific serial title</termAndDeftn>
+			<termAndDeftn vocab="REPORT">identifier used to reference a published report; particularly those published by government entities and other agencies</termAndDeftn>
+			<termAndDeftn vocab="SRef-ID">a unique URL used by the SRef database to ensure the persistent and actionable identification of the resources it references</termAndDeftn>
+			<termAndDeftn vocab="WMO">report identification numbers assigned by the World Meteorological Organization</termAndDeftn>
+			<termAndDeftn vocab="WOS">identifier used to reference works indexed by the Web of Science</termAndDeftn>
+			
+		</terms>
+		 <bestPractices>
+			<dos>
+				<practice status="current" originDate="2010-05-31">This is a required field.</practice> 
+				<practice status="current" originDate="2010-05-31">This field can only be repeated if an entirely new id number entry is made.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="arXiv" style1="bold">arXiv identifiers employ the following format: arXiv:0706.001v1. The 'v' is utilized to indicate versions of a given resource, and may or may not be present in the identifier. arXiv identifiers should begin with 'arXiv:'.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="Call" style1="bold">Call numbers have a variety of formats, and utilize both letters and Arabic numerals.  Do not preface call numbers with 'Call' or any other text or symbols.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="Citation/Article" style1="bold">Citation/Article numbers have a variety of formats, and often take the place of page numbers. In such cases, do not enter page numbers, rather catalog the citation/article number. Enter the number exactly as it is found on the publication or in the citation. Do not preface citation/article numbers with any text, abbreviation, or symbol.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="DOI" style1="bold">DOI names have two components; the prefix and the suffix. These are separated by a forward slash. The two components together form a DOI (e.g. 10.1000/123456). Enter DOIs exactly as they appear on the publication or in the citation. Do not preface DOIs with any text, abbreviation, or symbol.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="EPRINTS" style1="bold">EPRINTS identifiers are associated with an e-prints or online repository service. Each service has its own structure and format.  Enter e-prints identifiers exactly as they appear on the publication or in the citation. Include prefixes that help to identify the associated service, but do not include generic prefixes such as 'no.' and '#'.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="ISBNs" style1="bold">ISBNs have either 10 or 13 digits, separated by dashes. They include no letters, but should be prefaced by 'ISBN.'</practice> 
+				<practice status="current" originDate="2010-05-31" link1="ISSNs" style1="bold">ISSNs have 8 digits, separated by dashes. They include no letters, but should be prefaced by 'ISSN.'</practice> 
+				<practice status="current" originDate="2010-05-31" link1="Reports" style1="bold">Reports often use a mix of numbers and letters, including NCAR Technical Note numbers (e.g. NCAR/TN-481+STR).</practice> 
+				<practice status="current" originDate="2010-05-31" link1="SRef" style1="bold">SRef identifies resources associated with the scientific reference linking system SRef.  SRef-IDs will include a numerical prefix, an abbreviation indicating the publication name, and a suffix, each separated by forward slashes (e.g. 1680-7324/acp/2006-6-957). Precede the identifier with 'SRef :'.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="WMO" style1="bold">WMO identifiers have the general form of A1bwnnn or A1bwnnnnn. When this field. Precede the identifier with the prefix 'WMO'.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="WOS" style1="bold">WOS identifiers include both Roman numerals and letters (e.g. 694EE).  When known, enter the WOS ID exactly as it appears on the publication or in the citation or bibliographic record. Precede the identifier with 'WOS'.</practice> 
+			 </dos>
+			 <examples>
+				<practice status="current" originDate="2010-05-31" link1="DOI" style1="bold">DOI: 10.1175/BAMS-87-3-343</practice>
+				<practice status="current" originDate="2010-05-31" link1="DOI" style1="bold">DOI: 10.5194/acp-10-169-2010</practice>
+				<practice status="current" originDate="2010-05-31" link1="Citation/Article" style1="bold">Citation/Article: 2010arXiv1003.4638G</practice>
+				<practice status="current" originDate="2010-05-31" link1="Citation/Article" style1="bold">Citation/Article: 2009AGUFMSM31A1517W</practice>
+				<practice status="current" originDate="2010-05-31" link1="ISBN" style1="bold">ISBN 85-359-0277-5</practice>
+				<practice status="current" originDate="2010-05-31" link1="ISBN" style1="bold">ISBN 978-0-306-40615-3</practice>
+				<practice status="current" originDate="2010-05-31" link1="WMO" style1="bold">WMO: WMO TD-No. 1485</practice>
+				<practice status="current" originDate="2010-05-31" link1="SREF" style1="bold">SREF: 1607-7962/gra/EGU05-A-05634</practice>
+				<practice status="current" originDate="2010-05-31" link1="EPrint" style1="bold">EPrint: arXiv:1008.3382</practice>				
+			</examples>
+		 </bestPractices>
+		 <documentation>
+				<obligation>required metadata if parent tag is present</obligation>
+				<min>1</min>
+				<max>1</max>
+				<XMLdataTypes>
+					<XMLdataType>string</XMLdataType>
+				</XMLdataTypes>
+				<domain>controlled vocabulary</domain>
+				<example>REPORT</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

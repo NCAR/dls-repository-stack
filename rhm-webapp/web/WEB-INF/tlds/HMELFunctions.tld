@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="HMELFunctions.xsl"?>
+<taglib 	xmlns="http://java.sun.com/xml/ns/j2ee"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+			version="2.0">
+
+	<description>
+		The Expression Language (EL) function library implements functions
+		for use in JSP pages.
+	</description>
+	<display-name>Harvest Repository Manager EL Function Library</display-name>
+	<tlib-version>1.0</tlib-version>
+	<short-name>hmfuncs</short-name>
+	<uri>http://dls.ucar.edu/tags/HMELFuncts</uri>
+
+	<function>
+		<description>
+		  Extract the HarvestManager collection ID from a UUID 
+		</description>	
+		<name>idFromUuid</name>
+		<function-class>edu.ucar.dls.harvestmanager.HarvestManager</function-class>
+		<function-signature>
+		  java.lang.String getIdFromUuid(java.lang.String)
+		</function-signature>
+		<example>
+		  ${hmfuncs:idFromUuid(uuid)}
+		</example>		
+	</function>
+
+	<function>
+		<description>
+		  Extract the HarvestManager UUID creation Date from a UUID. 
+		</description>	
+		<name>dateFromUuid</name>
+		<function-class>edu.ucar.dls.harvestmanager.HarvestManager</function-class>
+		<function-signature>
+		  java.util.Date getUuidCreationDate(java.lang.String)
+		</function-signature>
+		<example>
+		  ${hmfuncs:dateFromUuid(uuid)}
+		</example>		
+	</function>
+
+	<function>
+		<description>
+		  Gets a Date Object from the timestamp sent in the harvest ingest notification. 
+		</description>	
+		<name>dateFromTimestamp</name>
+		<function-class>edu.ucar.dls.harvestmanager.HarvestManagerUtils</function-class>
+		<function-signature>
+		  java.util.Date getDateFromTimestamp(java.lang.String)
+		</function-signature>
+		<example>
+		  ${hmfuncs:dateFromTimestamp(timeStamp)}
+		</example>		
+	</function>		
+
+	<function>
+		<description>
+		  Gets a UTC timstamp String that is exactly one month before the time of calling this method.
+		</description>	
+		<name>oneMonthAgoTimestamp</name>
+		<function-class>edu.ucar.dls.harvestmanager.HarvestManagerUtils</function-class>
+		<function-signature>
+		  java.lang.String getOneMonthAgoTimestamp()
+		</function-signature>
+		<example>
+		  ${hmfuncs:oneMonthAgoTimestamp()}
+		</example>		
+	</function>	
+
+	<function>
+		<description>
+		  Returns true if the given harvest trigger Date is more than three days old, otherwise false.
+		</description>	
+		<name>isHarvestStale</name>
+		<function-class>edu.ucar.dls.harvestmanager.HarvestManagerUtils</function-class>
+		<function-signature>
+		  boolean isHarvestStale(java.util.Date)
+		</function-signature>
+		<example>
+		  ${hmfuncs:isHarvestStale(harvestTriggerDate)}
+		</example>		
+	</function>
+	
+</taglib>
+

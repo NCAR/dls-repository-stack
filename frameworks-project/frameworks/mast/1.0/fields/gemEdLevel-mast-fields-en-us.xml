@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: gemEdLevel-mast-fields-en-us.xml,v 1.7 2009/07/30 15:27:17 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/GEMedLevel.xsd">
+  <field name="GEM Education Level" metaFormat="mast" metaVersion="1.0" language="en-us" path="/record/educational/audiences/gemEdLevel">
+		<definition attribution="GEM 2.0 Element Descriptions at http://www.thegateway.org/about/documentation/metadataElements">A general statement describing the education or training context. Alternatively, a more specific statement of the location of the audience in terms of its progression through an education or training context.</definition> 
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="GEM Education Level" levelDeftn="A general statement describing the education or training context."/>
+		</vocabLevels>
+
+		<terms><!--From: http://www.thegateway.org/about/documentation/gem-controlled-vocabularies/vocabulary-grade-->
+			<termAndDeftn vocab="Preschool education" attribution="GEM">Learners in preschool.</termAndDeftn> 
+			<termAndDeftn vocab="Kindergarten" attribution="GEM">Learners in kindergarten.</termAndDeftn> 
+			<termAndDeftn vocab="1" attribution="GEM">Learners in grade 1.</termAndDeftn> 
+			<termAndDeftn vocab="2" attribution="GEM">Learners in grade 2.</termAndDeftn> 
+			<termAndDeftn vocab="3" attribution="GEM">Learners in grade 3.</termAndDeftn> 
+			<termAndDeftn vocab="4" attribution="GEM">Learners in grade 4.</termAndDeftn> 
+			<termAndDeftn vocab="5" attribution="GEM">Learners in grade 5.</termAndDeftn> 
+			<termAndDeftn vocab="6" attribution="GEM">Learners in grade 6.</termAndDeftn> 
+			<termAndDeftn vocab="7" attribution="GEM">Learners in grade 7.</termAndDeftn> 
+			<termAndDeftn vocab="8" attribution="GEM">Learners in grade 8.</termAndDeftn> 
+			<termAndDeftn vocab="9" attribution="GEM">Learners in grade 9.</termAndDeftn> 
+			<termAndDeftn vocab="10" attribution="GEM">Learners in grade 10.</termAndDeftn> 
+			<termAndDeftn vocab="11" attribution="GEM">Learners in grade 11.</termAndDeftn> 
+			<termAndDeftn vocab="12" attribution="GEM">Learners in grade 12.</termAndDeftn> 
+			<termAndDeftn vocab="Community college" attribution="UCAR">Learners general at two-year university institutions.</termAndDeftn> 
+			<termAndDeftn vocab="Higher education" attribution="UCAR">Learners at university institutions.</termAndDeftn> 
+			<termAndDeftn vocab="Vocational education" attribution="UCAR">Learners in a vocational setting or institution.</termAndDeftn> 
+			<termAndDeftn vocab="Adult/continuing education" attribution="UCAR">Learners in a lifelong learning or adult educational setting.</termAndDeftn> 
+			<termAndDeftn vocab="All" attribution="UCAR">Learners at all educational levels.</termAndDeftn> 
+			<termAndDeftn vocab="Unspecified" attribution="UCAR">Non-learner specific; more general public.</termAndDeftn> 
+		</terms>
+
+		<bestPractices>
+			<dos>
+				
+				<practice status="current" originDate="2008-10-20">Information about the education or training level of the audience for a resource is frequently explicitly stated by the creator of the resource. For example, the resource might be intended for students in the 5th grade (US) or for the vocational sector (AU).</practice> <!--source:GEM-->
+				
+				<practice status="current" originDate="2008-10-20">Unless such a level is explicitly stated, the cataloger should be reluctant to infer such statements from the body of the resource unless qualified to do so.</practice>
+
+
+			</dos>
+			<otherPractices>
+				<otherPractice header="Attribution of Term Definitions">
+					<practice status="current" originDate="2008-05-22" link1="GEM metadata documentation" url1="http://www.thegateway.org/about/documentation/gem-controlled-vocabularies/vocabulary-grade">The definitions of the terms for the controlled vocabulary are from the Gateway to 21st Century Skills: GEM metadata documentation.</practice>
+					<practice status="current" originDate="2008-05-22">Any definitions not provided in the GEM metadata documentation are definitions created by the University Corporation for Atmospheric Research (UCAR).</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+	</field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

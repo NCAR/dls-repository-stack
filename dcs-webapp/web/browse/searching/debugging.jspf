@@ -1,0 +1,9 @@
+<div style="border:blue thin solid;padding:5px">
+
+<h4>debugging</h4>
+<div>nonPaigingParams: ${queryForm.nonPaigingParams}</div>
+<div>sessionBean.searchParams: ${sessionBean.searchParams}</div>
+<div>queryForm.sortWidgetParams: ${queryForm.sortWidgetParams}</div>
+<div>Q: ${queryForm.q}</div>
+<div>Qe: ${queryForm.qe}</div>
+</div>

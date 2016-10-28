@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.dlese.org/Metadata/dcs/framework-config/dcsFrameworkConfig.xsd">
+  <xmlFormat>concepts</xmlFormat>
+  <schemaInfo>
+    <rootElementName>concept</rootElementName>
+    <schemaURI>http://www.dlsciences.org/frameworks/concepts/1.0/schemas/concepts.xsd</schemaURI>
+    <paths>
+      <path pathName="id" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="true">/concept/recordID</path>
+      <path pathName="shortTitle" requiredByCopyRecord="false" readOnly="false" requiredByMinimalRecord="false">/concept/shortTitle</path>
+      <path pathName="url" requiredByCopyRecord="false">/concept/contents/content/url</path>
+    </paths>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>2</baseRenderLevel>
+    <firstPage>concept</firstPage>
+    <rebuildOnStart>true</rebuildOnStart>
+  </editorInfo>
+  <name>Concepts</name>
+</frameworkConfigRecord>

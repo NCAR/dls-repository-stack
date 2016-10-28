@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: roleM-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:48 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/role-metaMetadata.xsd">
+	<field name="Role - resource cataloger" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/metaMetadata/contributors/contributor/@role">
+		<definition>the role of a person or organization in describing the resource with metadata</definition>
+
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="Role" levelDeftn="the role of a person or organization in describing the resource"/>
+		</vocabLevels>
+		<terms>
+			<termAndDeftn vocab="Creator">a person or organization who creates metadata content</termAndDeftn>
+			<termAndDeftn vocab="Editor">a person or organization who performs quality control over metadata</termAndDeftn>
+			<termAndDeftn vocab="Validator">a person or organization who approves metadata content</termAndDeftn>
+	</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-10-05">Choose a single role from the term list.</practice>
+			</dos>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>Creator, Editor</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/lifecycle/contributors/contributor/@role</note>
+			</notes>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

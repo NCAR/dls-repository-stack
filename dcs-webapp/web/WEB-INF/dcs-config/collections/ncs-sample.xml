@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<collectionConfigRecord xmlns="http://dcs.dlese.org/collection-config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dcs.dlese.org/collection-config http://www.dlese.org/Metadata/dcs/collection-config/dcsCollectionConfig.xsd">
+  <collectionId>ncs-sample</collectionId>
+  <xmlFormat>ncs_item</xmlFormat>
+  <idPrefix>NCS-SMPL</idPrefix>
+  <statusFlags finalStatusLabel="Done">
+    <statusFlag>
+      <status>In Progress</status>
+      <description>The metadata record is undergoing cataloging.</description>
+    </statusFlag>
+    <statusFlag>
+      <status>Holding</status>
+      <description>The metadata record has a problem.</description>
+    </statusFlag>
+  </statusFlags>
+  <authority>dcs</authority>
+  <ndrInfo/>
+</collectionConfigRecord>

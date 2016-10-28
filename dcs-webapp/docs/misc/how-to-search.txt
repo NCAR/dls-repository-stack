@@ -1,0 +1,32 @@
+How to search by URL in the DCS (9/27/2007):
+
+At the top of the "Search" page there is a text input box with three
+radio buttons above, labeled "term", "id", and "url". Select the url
+button and enter the url you wish to search for into the text input box.
+Then hit the "Go" button.
+
+All records having the url you entered as the "primaryUrl" AND
+satisfying any other selections you have made in the search form will be
+retrieved. To see what other selections you have made, you can open the
+individual selection headers, such as "Collection", or you can look
+below the search form (but above the result list) for the text following
+"Your selections".
+
+The url search described above probably isn't very useful, since it will
+only retrieve results that exactly match the provided url. You can also
+use "wildcards" to make your searches more flexible. The wildcard
+character is the asterisk ("*"), which will match any combinations of
+characters.
+
+Important Note: wildcards may not be used as the first character of a search
+
+Wildcard example:
+In the DCC collection, with the "url" button selected and no other
+search selections, type "h*wetmaap*" (without the quotations) into the
+text input box and hit the "go" button. This search will find all
+records having "wetmaap" anywhere in the primaryURL field.
+
+(Note: the "h" in "h*wetmaap*" is required since the first character
+can't be a wild card. So really, you've found all the records beginning
+with the letter "h" and then containing "wetmaap" in the primaryUrl field).
+

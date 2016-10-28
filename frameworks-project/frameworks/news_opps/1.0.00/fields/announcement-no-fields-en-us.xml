@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: announcement-no-fields-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/news-opps/1.0.00/announcement.xsd">
+	<field name="Announcement type" language="en-us" metaFormat="news_opps" metaVersion="1.0.00" path="/news-oppsRecord/announcements/announcement">
+		<definition>the type of news, event or opportunity</definition>
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="Announcement type" levelDeftn="the type of news, event or opportunity"/>
+		</vocabLevels>
+		<terms>
+			<termAndDeftn vocab="Award, recognition or scholarship">items in which money or honor (acknowledgement) is bestowed for work done or for pursuing professional development or educational endeavors (includes honorarium and stipends)</termAndDeftn>
+
+			<termAndDeftn vocab="Call for participation">items that include call for papers, call for input, testing, feedback, formative evaluations or collaborations</termAndDeftn>
+
+			<termAndDeftn vocab="Careers">information about working, studying or participating in the geoscience community</termAndDeftn>
+
+			<termAndDeftn vocab="Conference">meetings of broad appeal that may include general audiences or specific Earth science communities and tend to be sponsored events</termAndDeftn>
+
+			<termAndDeftn vocab="Grant or proposal">items in which funding is proposed, requested, called for or granted through a formal process in order to accomplish or establish a product, service or project</termAndDeftn>
+
+			<termAndDeftn vocab="Job">any employment position for which participants receive remuneration (pay for work done but not a stipend or honorarium) including positions like postdocs, internships, fellowships, assistantships or research associates</termAndDeftn>
+
+			<termAndDeftn vocab="Learning or research opportunity">opportunities in which individual learning or research is the primary focus such as field projects, courses, mentoring, tutoring, exchanges or college credit opportunities</termAndDeftn>
+
+			<termAndDeftn vocab="News">general information or announcements that are of interest and which may not fit other categories</termAndDeftn>
+
+			<termAndDeftn vocab="Workshop">short-term meetings or interactions that tend to have well-defined outcomes like training opportunities, professional development or skills development</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-08-20">Choose at least one announcement type term.</practice>
+				<practice status="obsolete" originDate="2004-08-20" archDate="2005-01-31" style1="bold and italic" link1="Calendar">Select the term Calendar to have an item appear on the DLESE web calendar.</practice>
+				<practice status="current" originDate="2004-08-20" link1="News" style1="bold">Select the term News if no announcement type seems to fit.</practice>
+				<practice status="current" originDate="2005-02-04" link1="Grant or proposal" style1="bold" link2="News" style2="bold">If a site contains general information about a particular announcement type, select the announcement type and select news. For example, a grant writing center has announcement types of both Grant or proposal and News.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2004-08-20">Do not choose more than 2 or 3 terms. Most items are adequately described with 2-3 terms.</practice>
+			</donts>
+		</bestPractices>
+		
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>Conference</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

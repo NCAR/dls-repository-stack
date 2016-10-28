@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Repository Analytics Help</title>
+<style>
+	
+	BODY, HTML, P, TD, TH, A, H1, H2, H3, H4, H5, LI{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		padding: 0px;
+		margin: 0px;
+	}
+	H1, H2, H3, H4, H5 {
+	color: #000099;	
+	}
+	H2 {
+		font-size: 130%;
+		margin-top:25px;
+		margin-bottom:4px;
+	}
+	BODY{margin:10px}
+	.label {font-style:italic}
+	li {margin-bottom:5px;}
+	.close {float:right}
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js"></script>
+<script>
+document.observe("dom:loaded", function() {
+		$$('.close').each(function(link){
+			link.observe('click', function(){window.close()});
+	    });
+})
+</script>
+</head>
+<body>
+
+<h2 style="display:inline">Repository Analytics Help</h2>
+<a href="#" class="close">Close</a>
+
+<p>Repository analytics is a GUI representation of what is currently being served by the index 
+throughout history. The line graph shows how many records contained a particular facet value  
+for each month that is within the date range selected. All Januaries are expressed by the year instead of month
+name. By default the graph shows a cumulative Collection record count, meaning its a graph of total
+records counts for all collections. What data field is graphed and other useful options that can alter the graph can be found by 
+clicking on the options button above the line graph. These options are described in detail below.
+</p>
+<h2>Options</h2>
+<ul>
+	<li>
+	     <label>Dates:</label> Date ranges that you want included in the graph. Default start date is the earliest date 
+	     a snapshot of the data was taken. Through date is the last month that a snapshot was taken. If the range is extended either way, 0's will be shown
+	     for those months. Current month's data is updated once daily until the last day of the month. From then on the data for that month
+	     never changes.
+	</li>
+	<li>
+	     <label>Data Type:</label> The type of data that you want the graph to show. Selecting a different data type will change the options that
+	        can be selected. This list includes all facets and their values that have ever been indexed
+	</li>
+	<li>
+	     <label>Cumulative:</label> Whether or not to tally all selected option counts as a total value being represented by one graph line or
+	          to keep each selection option as a separate line in the graph. If Cumulative is set to True the line shown is represented by the text
+	          "All" in the legend and in the hover over box for each data point. 
+	</li>
+	<li>
+	     <label>Collections:</label> Which collections to include the data from. This list will show all collections that have been in the system since
+	           data snapshots were turned on, even if the collection no longer exist going forward. Note this filter option is not available
+	           when the data type is Collection since in that case collections are the options. Due to browser restraints for URL length there is a max amount of
+	           collections you can individually select and if too many are selected the browser will throw an error.
+	</li>
+	<li>
+		<label>Options:</label> Which values of the data type do you want graphed and or totaled. 
+		This list depends on which data type is selected. All means all values
+		   that have ever been found in the repository since snapshots started. 
+	</li>
+	<li>
+		<label>Line Labels:</label> Turns on and off the option name labels that appear after the last data element for each graphed line. These labels may or may
+		    not cause a horizontal scroll bar to appear depending on the max option value length. These are extremely useful when exporting the graph to a downloadable
+		    file.
+	</li>
+	<li>
+		<label>Download:</label> Links for exporting the graph to an external file for downloading. These images will match the graph shown in the page including legends. Since
+		  hover overs are not present when exporting, sometimes its useful to include line labels when exporting to downloadable file.
+	</li>
+</ul>
+
+<h2>Legends</h2>
+<p>The Option legend will show for all graphs. If cumulative is set to True the text "All"
+  is shown next to the the matching colored circle. Otherwise there will be a row for each selected option next to its
+  corresponding color on the graph. For cumulative graphs if options are individually selected a list will be shown of what
+  is contained within all.
+  <br/><br/>
+  The Collection legend will show up for all data types except for Collection since collections are the options in that case.
+  This legend shows the text "All" if All collections is selected, and a list of all selected collections if collections are individually selected.
+</p>  
+
+<h2>Interactive Features</h2>
+<p>
+Hovering over a data point will cause a help text box to appear in the center of graph showing the data type value it belongs to, record count and month it occurred.
+<br/>
+Hovering over any option text or color circle in the Options legend will cause the entire graph line for that option to be
+twice as thick to be distinguishable from the rest of the lines. This can be very useful when option graph lines lay on top of each other.
+</p>
+
+<h2>Special Notes</h2>
+<p>
+The Record Count axis automatically re-scales depending on what the range of the data points is. Therefore 
+graphing two things that don't share a similar record count range will result in a graph that isn't very
+useful. 
+</p>
+<br/>
+<a href="#" class="close">Close</a>
+</body>
+</html>

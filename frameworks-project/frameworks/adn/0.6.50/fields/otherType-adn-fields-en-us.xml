@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: otherType-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/non-vocab-fields.xsd">
+	<field name="Requirement type - other" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/technical/online/otherRequirements/otherRequirement/otherType">
+		<definition>a computer requirement (not part of the controlled vocabulary list) necessary to access, interact or operate a component of an online resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2006-03-01" link1="requirement type" style1="bold">Use this field if the requirement needed is not part of the controlled vocabulary of the requirement type field.</practice>
+				<practice status="current" originDate="2006-03-01" link1="Other:More specific technical requirements" style1="bold" link2="requirement type" style2="bold">Use this field if the value of Other:More specific technical requirements is used in the requirement type field.</practice>
+				<practice status="current" originDate="2005-03-03">Include the best overall and minimum requirements to interact, access or operate a resource.</practice>
+				<practice status="current" originDate="2005-05-24" link1="requirement type - other" style1="bold" link2="version - minimum - other" style2="bold" link3="version - maximum - other" style3="bold">If a resource requires certain versions (minimum or maximum) of browsers, viewers (plug-ins) or operating systems, complete the this requirement type - other field and the subfields of version - minimum - other and/or version - maximum - other.</practice>
+				<practice status="current" originDate="2005-05-24" link1="requirement - other" style1="bold">Repeat the overarching requirement - other field until the minimum (not all) requirements for interacting, accessing or operating the resource are indicated.</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2001-01-01">Do not indicate RAM requirements.</practice>
+
+				<practice status="current" originDate="2006-09-18" link1="requirement type" style1="bold">Do not include multiple viewers or browsers that are part of the controlled vocabulary in the requirement type field.</practice>
+
+				<practice status="current" originDate="2005-05-24" link1="description - technical" style1="bold">Do not include subscription or membership information. Indicate subscription or membership information in the description - technical field.</practice>
+
+				<practice status="current" originDate="2006-09-18" link1="requirement type" style1="bold">Do not use for the Internet Explorer or Netscape browsers. Use the requirement type field instead.</practice>
+
+				<practice status="current" originDate="2001-01-01">If the website offers a CD-ROM version of the site, do not list the technical requirements for the CD when cataloging the web version of the CD.</practice>
+
+				<practice status="current" originDate="2005-05-24">Do not exceed 1-3 different other requirement types. Most resources are adequately described with 1-3 choices.</practice>
+
+			</donts>
+			<examples>
+				<practice status="current" originDate="2006-03-01">Authorware</practice>
+				<practice status="current" originDate="2006-03-01">iTunes</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>Authorware, iTunes</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

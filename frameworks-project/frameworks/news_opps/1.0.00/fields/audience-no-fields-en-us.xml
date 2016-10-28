@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: audience-no-fields-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/news-opps/1.0.00/audience.xsd">
+	<field name="Audience" language="en-us" metaFormat="news_opps" metaVersion="1.0.00" path="/news-oppsRecord/audiences/audience">
+		<definition>the intended consumer of the information in the news, event or opportunity</definition>
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="Audience" levelDeftn="the intended consumers of the information in the news, event or opportunity"/>
+		</vocabLevels>
+		<terms>
+			<termAndDeftn vocab="Developer">anyone who designs, produces, implements, maintains or tests learning resources, software, collections, tools or data sources</termAndDeftn>
+
+			<termAndDeftn vocab="Educator">anyone who provides learning opportunities in a structured environment at any educational level, both formal and informal</termAndDeftn>
+
+			<termAndDeftn vocab="General public">anyone in the general population who has an interest in or might participate in the news, event or opportunity</termAndDeftn>
+
+			<termAndDeftn vocab="Information specialist">anyone who catalogs, manages, or acts as a resource about a particular collection of objects</termAndDeftn>
+
+			<termAndDeftn vocab="Manager">anyone who supervises individuals, large projects or budgets within an organization</termAndDeftn>
+
+			<termAndDeftn vocab="Researcher">anyone who investigates topics, problems, issues or events in order to advance knowledge of a field</termAndDeftn>
+
+			<termAndDeftn vocab="Student">anyone who investigates topics, problems, issues or events in order to advance their own knowledge, skills or understanding; often in a structured learning environment or through self-study</termAndDeftn>
+
+	</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-08-20">Choose at least one audience term.</practice>
+				<practice status="current" originDate="2004-08-31" link1="Information specialist" style1="bold">Use the term Information specialist for librarians or library media specialists.</practice>
+				<practice status="current" originDate="2005-01-31" link1="Educator" style1="bold" link2="Researcher" style2="bold">For faculty positions (e.g. assistant professor in an atmospheric science department), check to see if both the Educator and Researcher terms are applicable audiences.</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2005-01-31" link1="Student" style1="bold">For jobs that say a PhD must be completed by the start date, do not include Student as an audience term.</practice>
+				<practice status="current" originDate="2004-08-20">Do not choose more than 1-2  audience terms. Most items really only address one to perhaps two appropriate audiences.</practice>
+
+			</donts>
+
+			<otherPractices>
+				<otherPractice header="More information about using the General public term">
+					<practice status="current" originDate="2004-08-20" link1="General public" style1="bold">If the item seems to be appropriate for many audiences (more than 3), choose the General public audience term.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>Developer</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

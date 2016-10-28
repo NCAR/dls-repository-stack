@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:DCMI="http://purl.org/dc/dcmitype/" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:annotation>
+		<xsd:documentation>************************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA PUPOSE  and INTENT  *****</xsd:documentation>
+		<xsd:documentation>************************************************</xsd:documentation>
+		<xsd:documentation>To define the values appropriate for the Dublin Core type element by making a schema that combines the Dublin Core schema, that has the suggest DCMI type controlled vocabulary, and the XML datatype of string.</xsd:documentation>
+		<xsd:documentation>By including the Dublin Core schema with the controlled vocabulary, cataloging tools that create an interface based directly on a schema can display the suggested controlled vocabulary (because it is in a schema that gets imported into this schema) but still allow free text data as values. This is accomplished by creating a union type between the Dublin Core schema and the XML string datatype.</xsd:documentation>
+
+		<xsd:documentation>********************************</xsd:documentation>
+		<xsd:documentation>*****  ROOT ELEMENT *****</xsd:documentation>
+		<xsd:documentation>********************************</xsd:documentation>
+		<xsd:documentation>This schema does not have a root element.</xsd:documentation>
+		<xsd:documentation>To use this schema, create another wrapper or container schema that calls this schema. Then the calling schema can access the elements in this schema.</xsd:documentation>
+		<xsd:documentation>Included schemas do not have a root element either.</xsd:documentation>
+
+		<xsd:documentation>******************************</xsd:documentation>
+		<xsd:documentation>*****  NAMESPACES  *****</xsd:documentation>
+		<xsd:documentation>******************************</xsd:documentation>
+		<xsd:documentation>This schema does not a target namespace.</xsd:documentation>
+		<xsd:documentation>This schema does not a default namespace.</xsd:documentation>
+		<xsd:documentation>The schema also has a namespace called DCMI to work with the imported schemas.</xsd:documentation>
+	</xsd:annotation>	
+	
+	<xsd:annotation>
+		<xsd:documentation>****************************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMAS TO INCLUDE or IMPORT *****</xsd:documentation>
+		<xsd:documentation>****************************************************</xsd:documentation>
+		<xsd:documentation>dcmitype.xsd - the Dublin Core schema that provides the suggested list of values for the DC type element</xsd:documentation>
+	</xsd:annotation>
+	<xsd:import namespace="http://purl.org/dc/dcmitype/" schemaLocation="http://dublincore.org/schemas/xmls/qdc/2006/01/06/dcmitype.xsd"/>
+	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
+
+	<xsd:annotation>
+		<xsd:documentation>***************************************************</xsd:documentation>
+		<xsd:documentation>*****  SIMPLE TYPES (alpha order)   *****</xsd:documentation>
+		<xsd:documentation>***************************************************</xsd:documentation>
+		<xsd:documentation>union.typeVocabType - the list of terms suggested by Dublin Core for use in the element of type</xsd:documentation>	
+	</xsd:annotation>
+
+	<xsd:simpleType name="union.typeVocabType">
+		<xsd:union memberTypes="DCMI:DCMIType xsd:string" /> 
+	</xsd:simpleType>
+
+	<xsd:annotation>
+		<xsd:documentation>************************************************</xsd:documentation>
+		<xsd:documentation>*****  COMPLEX TYPES (alpha order)   *****</xsd:documentation>
+		<xsd:documentation>************************************************</xsd:documentation>
+		<xsd:documentation>union.typeVocabType - the list of terms suggested by Dublin Core for use in the element of type</xsd:documentation>	
+	</xsd:annotation>
+
+	<xsd:complexType name="elementTypeType">
+		<xsd:simpleContent>
+			<xsd:extension base="union.typeVocabType">
+				<xsd:attribute ref="xml:lang" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA DEVELOPMENT  *****</xsd:documentation>
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>Created: 2006-10-03</xsd:documentation>
+		<xsd:documentation>Last Modified 2006-10-05</xsd:documentation>
+
+		<xsd:documentation>**********************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA AUTHOR  *****</xsd:documentation>
+		<xsd:documentation>**********************************</xsd:documentation>
+		<xsd:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger@ucar.edu</xsd:documentation>
+
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>*****  LICENSE INFORMATION  *****</xsd:documentation>
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>Copyright  (c) 2006 University Corporation for Atmospheric Research (UCAR) P.O. Box 3000, Boulder, CO 80307, United States of America</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: union-vocabs.xsd,v 1.7 2012/02/17 16:52:16 ginger Exp $ -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:annotation>
+		<xsd:documentation>************************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA PUPOSE  and INTENT  *****</xsd:documentation>
+		<xsd:documentation>************************************************</xsd:documentation>
+		<xsd:documentation>Provide access to the controlled vocabularis for the XML instance document that manages metadata framework documentation</xsd:documentation>
+		<xsd:documentation>The metadataFieldInfo instance document tracks metadata field names, metadata field definitions, vocabulary terms, field id numbers, term id numbers, cataloging best  practices and information about each metadata field (min, max, obligation, domain, XML datatype, other occurrence and examples)</xsd:documentation>
+		<xsd:documentation>See the fields.xsd schemas (included as part of this schema) for further schema explanations</xsd:documentation>
+
+		<xsd:documentation>******************************</xsd:documentation>
+		<xsd:documentation>*****  NAMESPACES  *****</xsd:documentation>
+		<xsd:documentation>******************************</xsd:documentation>
+		<xsd:documentation>This schema does not have a target namespace</xsd:documentation>
+		<xsd:documentation>This schema does not have a default namespace</xsd:documentation>
+
+		<xsd:documentation>********************************</xsd:documentation>
+		<xsd:documentation>*****  ROOT ELEMENT *****</xsd:documentation>
+		<xsd:documentation>********************************</xsd:documentation>
+		<xsd:documentation>This schema does not have a root element. See fields.xsd for the root element.</xsd:documentation>
+
+		<xsd:documentation>******************************</xsd:documentation>
+		<xsd:documentation>*****  HISTORY  *****</xsd:documentation>
+		<xsd:documentation>******************************</xsd:documentation>
+		<xsd:documentation>2011-05-23: removed zUnits since that schema has been removed</xsd:documentation>
+
+		<xsd:documentation>****************************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMAS TO INCLUDE or IMPORT *****</xsd:documentation>
+		<xsd:documentation>****************************************************</xsd:documentation>
+		<xsd:documentation></xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="../vocabs/classification.xsd"/>
+	<xsd:include schemaLocation="../vocabs/collaboration.xsd"/>
+	<xsd:include schemaLocation="../vocabs/dateRangeType.xsd"/>
+	<xsd:include schemaLocation="../vocabs/dateType.xsd"/>
+	<xsd:include schemaLocation="../vocabs/fundingSource.xsd"/>
+	<xsd:include schemaLocation="../vocabs/fundingEntity.xsd"/>
+	<xsd:include schemaLocation="../vocabs/holder.xsd"/>
+	<xsd:include schemaLocation="../vocabs/idNumberType.xsd"/>
+	<xsd:include schemaLocation="../vocabs/instDivision.xsd"/>
+	<xsd:include schemaLocation="../vocabs/instName.xsd"/>
+	<xsd:include schemaLocation="../vocabs/instProject.xsd"/>
+	<xsd:include schemaLocation="../vocabs/language.xsd"/>
+	<xsd:include schemaLocation="../vocabs/LCSHsubject.xsd"/>
+	<xsd:include schemaLocation="../vocabs/locationType.xsd"/>
+	<xsd:include schemaLocation="../vocabs/mimeType.xsd"/>
+	<xsd:include schemaLocation="../vocabs/NCARbookPubName.xsd"/>
+	<xsd:include schemaLocation="../vocabs/NCARlibrary.xsd"/>
+	<xsd:include schemaLocation="../vocabs/OSMsubject.xsd"/>
+	<xsd:include schemaLocation="../vocabs/pubName.xsd"/>
+	<xsd:include schemaLocation="../vocabs/pubNameType.xsd"/>
+	<xsd:include schemaLocation="../vocabs/relationType.xsd"/>
+	<xsd:include schemaLocation="../vocabs/rightsType.xsd"/>
+	<xsd:include schemaLocation="../vocabs/role.xsd"/>
+	<xsd:include schemaLocation="../vocabs/services.xsd"/>
+	<xsd:include schemaLocation="../vocabs/state-countries.xsd"/>
+	<xsd:include schemaLocation="../vocabs/titleType.xsd"/>
+	<xsd:include schemaLocation="../vocabs/version.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>***************************************************</xsd:documentation>
+		<xsd:documentation>*****  SIMPLE TYPES (alpha order)   *****</xsd:documentation>
+		<xsd:documentation>***************************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="stringTextType">
+		<xsd:annotation>
+			<xsd:documentation>Use this patterned string to ensure that a null tag is not valid string content.</xsd:documentation>
+			<xsd:documentation>Note: that xsd:string allows content to be null even if the element is required.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value=".[\S\s]*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:annotation>
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA DEVELOPMENT  *****</xsd:documentation>
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>Created: 2008-05-14</xsd:documentation>
+
+		<xsd:documentation>**********************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA AUTHOR  *****</xsd:documentation>
+		<xsd:documentation>**********************************</xsd:documentation>
+		<xsd:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger at ucar dot edu</xsd:documentation>
+
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>*****  LICENSE INFORMATION  *****</xsd:documentation>
+		<xsd:documentation>*******************************************</xsd:documentation>
+		<xsd:documentation>See below</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

@@ -1,0 +1,74 @@
+<div style="margin:0px 0px 0px 216px">
+	[ <span id="benchmarks-collapse-all" style="color:#333366;font-weight:bold" 
+					class="benchmarks-expander">collapse all</span> |
+	<span id="benchmarks-expand-all" style="color:#333366;font-weight:bold" 
+				class="benchmarks-expander">expand all</span> ]
+</div>
+	
+<%-- <div align="center">
+<input type="button" value="debugging" id="debug-button" />
+<div id="debug-me"></div>
+</div>
+ --%>
+<script type="text/javascript">
+
+if ($('debug-button')) {
+	$('debug-button').observe ('click', debugMe);
+}
+
+function msg (s) {
+	$('debug-me').insert (new Element('div').update(s));
+	}
+
+function debugMe() {
+	var target = $('debug-me');
+	msg ('debugMe: there are ' + document.forms.length + ' forms');
+	for (var i=0;i<document.forms.length;i++) {
+		var form = document.forms[i];
+		msg (form.name);
+	}
+}
+
+var BenchmarkExpander = Class.create({
+	_execute: function (parentid, exOrCo) {
+		$(parentid).select ('a[href^="javascript:toggleDisplayState"]').each(
+			function(a){
+				var elem = a.href.match(/javascript:toggleDisplayState\('(.+)'\);/)[1];
+				if( (exOrCo=='expand' && !$(elem).visible()) || (exOrCo=='collapse' && $(elem).visible()))
+					toggleDisplayState( elem );
+			});
+	},
+	
+	expandAll: function(parentid) {
+		this._execute(parentid, 'expand');
+	},
+	collapseAll: function(parentid) {
+		this._execute(parentid, 'collapse');
+	}
+});
+
+var benchmarkExpander = new BenchmarkExpander();
+
+var collapser = $("benchmarks-collapse-all");
+collapser.observe ('mouseover', function (evnt) {
+	collapser.setStyle ({cursor:'pointer', textDecoration:'underline'});
+});
+collapser.observe ('mouseout', function (evnt) {
+	collapser.setStyle ({cursor:'normal', textDecoration:'none'});
+});
+collapser.observe ('click', function (evnt) {
+	benchmarkExpander.collapseAll("selected-benchmarks");
+});
+
+var expander = $("benchmarks-expand-all");
+expander.observe ('mouseover', function (evnt) {
+	expander.setStyle ({cursor:'pointer', textDecoration:'underline'});
+});
+expander.observe ('mouseout', function (evnt) {
+	expander.setStyle ({cursor:'normal', textDecoration:'none'});
+});
+expander.observe ('click', function (evnt) {
+	benchmarkExpander.expandAll("selected-benchmarks");
+});
+	
+</script>

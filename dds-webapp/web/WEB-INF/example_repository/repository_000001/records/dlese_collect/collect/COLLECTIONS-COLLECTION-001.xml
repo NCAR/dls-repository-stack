@@ -1,0 +1,28 @@
+<collectionRecord xmlns="http://collection.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://collection.dlese.org http://www.dlese.org/Metadata/collection/1.0.00/collection.xsd">
+<!--
+	This record defines the master collection of collections in a DDS repository.
+	The master collection must be format 'dlese_collect' and collectionKey 'collect' 
+	(collectionkey 'collect' is reserved for the master collection).
+
+	This record contains only the necessary elements for the DDS system.
+-->
+	  <general>
+		<fullTitle>Repository Collections</fullTitle>
+		<description>This master collection contains the individual collections that reside in the DDS repository.</description>
+	  </general>
+	  <approval>
+		<collectionStatuses>
+		  <collectionStatus date="2010-10-05T13:23:45Z" state="Accessioned"/>
+		</collectionStatuses>
+	  </approval>
+	  <access>
+	  	<!-- The master DDS collection *must* be libraryformat='dlese_collect' and key 'collect' -->
+		<key libraryFormat="dlese_collect" static="true" redistribute="false">collect</key>
+	  </access>
+	  <metaMetadata>
+		<catalogEntries>
+		  <!-- Catalog/@entry defines the unique ID for the collection record. -->
+		  <catalog entry="COLLECTIONS-COLLECTION-001"/>
+		</catalogEntries>
+	  </metaMetadata>	  
+</collectionRecord>

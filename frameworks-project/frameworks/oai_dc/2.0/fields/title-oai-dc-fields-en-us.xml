@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: title-oai-dc-fields-en-us.xml,v 1.1 2008/02/20 16:55:29 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/oai_dc/2.0/schemas/fields/non-vocab-fields.xsd">
+	<field name="Title" language="en-us" metaFormat="oai_dc" metaVersion="2.0" path="/oai_dc:dc/dc:title">
+		<definition attribution="Dublin Core Metadata Element Set, Version 1.1: Reference Description at http://dublincore.org/documents/dces/">a name given to the resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-12-20">Enter a name by which the resource is formally known.</practice>
+				<practice status="current" originDate="2006-10-05">Specify subtitles but do not use the word subtitle; rather separate a subtitle from a title with a colon.</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2006-07-17">Do not include individual page or paragraph headings in title.</practice>
+				<practice status="current" originDate="2001-01-01">Do not include fact sheet numbers, course numbers or other alphanumeric referencing information unless it is necessary for comprehending the title or content, such as K-12 or necessary resource version information.</practice>
+				<practice status="current" originDate="2001-01-01">Do not use phrases like "by Joe Smith" in title.</practice>
+				<practice status="current" originDate="2001-01-01">Do not include phrases like "Welcome to the". Such phrases can be omitted.</practice>
+			</donts>
+
+			<examples>
+				<practice status="current" originDate="2006-10-05">Title: Remote Sensing Using Satellites.</practice>
+				<practice status="current" originDate="2006-10-05">Title and subtitle:Clouds: How Condensation Happens.</practice>
+				<practice status="current" originDate="2006-10-05" link1="Mountain Simulation: Assignment" url1="http://www.pals.iastate.edu/simulations/Mtnsim/index.html">Title enhancement by cataloger: Mountain Simulation: Assignment (title provided or enhanced by cataloger).</practice>
+			</examples>
+
+			<otherPractices>
+				<otherPractice header="No title? Do this:">
+					<practice status="current" originDate="2006-10-05">If the creator or publisher does not display a title on screen for the user, create a title to describe the overall content of the resource.</practice>
+
+					<practice status="current" originDate="2006-10-05">When a title is created or enhanced by a cataloger, indicate this by including the phrase "(title provided or enhanced by cataloger)" in the title field. See examples.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>Remote Sensing Using Satellites</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--LICENSE INFORMATION: Copyright 2006 University Corporation for Atmospheric Research (UCAR) P.O. Box 3000, Boulder, CO 80307, United States of America email: support@dlese.org -->

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+   <title>Example custom DLESE search page</title>
+   
+   <!-- The suggested CSS styles -->
+   <LINK REL="stylesheet" TYPE="text/css" 
+      HREF="@DDS_SERVER_BASE_URL@/services/jshtml1-1/suggested_styles.css">
+
+   <!-- Optional CSS styles are used here to set the font to Arial throughout the page 
+        and the font size to 10pt in the service output -->   
+   <style type="text/css">
+      BODY { font-family: Arial, sans-serif; }
+      TD { font-size:10pt; }
+   </style>
+		
+</head>
+<body>
+
+<h2 style="margin-left:4">Search DLESE</h2>
+
+<!-- The serviceURL for this provider -->
+<SCRIPT TYPE="text/javascript"
+   SRC="@DDS_SERVER_BASE_URL@/services/jshtml1-1/javascript_search_service.js"></SCRIPT>
+
+<!-- Inline script that includes required and optional service commands -->   
+<SCRIPT TYPE="text/javascript">
+  <!--
+   ShowElement("searchBox");
+   ShowElement("gradeLevelsMenu");
+   ShowElement("subjectsMenu");
+   ShowElement("resourceTypesMenu");
+   RenderPage();		
+  -->
+</SCRIPT>
+
+<!-- A message that is displayed only when JavaScript is disabled in the browser -->
+<NOSCRIPT>
+   This page requires that JavaScript be turned on. 
+   Please activate JavaScript in your browser.
+</NOSCRIPT> 
+
+</body>
+</html>

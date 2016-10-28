@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: relation-mast-fields-en-us.xml,v 1.5 2009/07/30 15:27:17 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/non-vocab-fields.xsd">
+  <field name="Relation" metaFormat="mast" metaVersion="1.0" language="en-us" path="/record/general/relation">
+		<definition attribution="Dublin Core Metadata Element Set, Version 1.1: Reference Description at http://dublincore.org/documents/dces/">A reference to a related resource.</definition> 
+		<bestPractices>
+			<dos>	
+				<practice status="current" originDate="2008-10-20">A resource may relate to another resource in a variety of ways that can be described by using more than one Relation element. For example, the same resource can be a part of a larger resource while simultaneously containing a smaller resource within itself; it can be a more recent version of one resource and be superceded by another. A resource can be a different version of another resource, or contain the same intellectual content as another resource, but be in a different format.</practice>	<!--source = CDP-->
+				<practice status="current" originDate="2008-10-20">Include sufficient information in the Relation element to enable users to identify, cite, and either locate or link to the related resource.</practice>	<!--source = CDP-->
+				<practice status="current" originDate="2008-10-20">Use separate Relation elements to enter multiple relations or clearly separate each entry by a semicolon and a space within an element.</practice>	<!--source = CDP-->
+				<practice status="current" originDate="2008-10-20">Since the relation element identifies important related resources, wherever possible, identify that resource using a URI that can be resolved, thus providing a machine-addressable link.</practice>	<!--source=GEM-->
+			</dos>
+		</bestPractices>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

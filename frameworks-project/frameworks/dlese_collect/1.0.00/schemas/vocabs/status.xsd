@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  OVERVIEW  *****</xsd:documentation>
+		<xsd:documentation>Purpose - controlled vocabulary schema for DLESE metadata frameworks</xsd:documentation>
+		<xsd:documentation>Framework - collection metadata framework</xsd:documentation>
+		<xsd:documentation>Source: DLESE Program Center (DPC); http://www.dlese.org</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:annotation>
+		<xsd:documentation>******************** History of Change  *************************</xsd:documentation>
+		<xsd:documentation>2003-07-07: Added term: Done</xsd:documentation>
+		<xsd:documentation>2003-02-12: Added terms: Resubmitted and User edit</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:annotation>
+		<xsd:documentation>*****  statusVocabType  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="statusType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Accessioned"/>
+			<xsd:enumeration value="Deaccessioned"/>
+			<xsd:enumeration value="Done"/>
+			<xsd:enumeration value="Holding"/>
+			<xsd:enumeration value="Resubmitted"/>
+			<xsd:enumeration value="Submitted"/>
+			<xsd:enumeration value="Unknown"/>
+			<xsd:enumeration value="Unsubmitted"/>
+			<xsd:enumeration value="User edit"/>
+			<xsd:enumeration value="Working"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

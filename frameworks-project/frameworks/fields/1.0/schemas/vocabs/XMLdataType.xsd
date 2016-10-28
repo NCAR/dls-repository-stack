@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: XMLdataType.xsd,v 1.1 2008/02/20 16:44:45 ginger Exp $ -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  SCHEMA PURPOSE  *****</xsd:documentation>
+		<xsd:documentation>Controlled vocabulary schema for the fields metadata documentation framework</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  HISTORY *****</xsd:documentation>
+		<xsd:documentation>2004-08-26: Created this file</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="XMLdataTypeType">
+		<xsd:annotation>
+			<xsd:documentation>*****  XMLdataTypeType  *****</xsd:documentation>
+			<xsd:documentation>string - a finite-length sequence of UCS characters</xsd:documentation>
+			<xsd:documentation>anyURI - a standard Internet URI</xsd:documentation>
+			<xsd:documentation>NOTATION - declare links to external non-XML content (e.g. binary image data) and associate such content with the external application that handles it</xsd:documentation>
+			<xsd:documentation>QName - a legal QName string (name with qualifier), as defined in Namespaces in XML; that is the concatenation of two NCName strings (a namespace prefix and a local name), separated by the namespace delimiter (:) character; an example is xsd:string</xsd:documentation>
+			<xsd:documentation>boolean - a two state true or false flag</xsd:documentation>
+			<xsd:documentation>hexBinary - binary data encoded as a series of pairs of hexadecimal digits</xsd:documentation>
+			<xsd:documentation>base64Binary - base64 encoded binary data</xsd:documentation>
+			<xsd:documentation>decimal - a decimal number of arbitrary precision (any number of significant digits); (e.g. -10.5)</xsd:documentation>
+			<xsd:documentation>float - a 32-bity single precision IEEE 754-1985 floating point number</xsd:documentation>
+			<xsd:documentation>double - a 64-bit double precision IEEE 754-1985 floating point number</xsd:documentation>
+			<xsd:documentation>duration - a duration of time (e.g. PT10H10M15S)</xsd:documentation>
+			<xsd:documentation>dateTime - a specific instance in time, using the Gregorian calendar (e.g. 2004-08-20T18:00:00Z)</xsd:documentation>
+			<xsd:documentation>date - a specific Gregorian calendar date (e.g. 1976-07-04)</xsd:documentation>
+			<xsd:documentation>time - an instance of time that recurs every day (e.g. 08:30:00Z)</xsd:documentation>
+			<xsd:documentation>gYearMonth - a Gregorian calendar year and month (e.g. 1954-01)</xsd:documentation>
+			<xsd:documentation>gYear - a Gregorian calendar year (e.g. 1954)</xsd:documentation>
+			<xsd:documentation>gMonthDay - a Gregorian calendar month and day (e.g. --07-04 for uly 4th)</xsd:documentation>
+			<xsd:documentation>gMonth - a Gregorian calendar month (e.g. --11-- for November)</xsd:documentation>
+			<xsd:documentation>gDay - a Gregorian calendar data, a single day within a month (e.g. 23)</xsd:documentation>
+			<xsd:documentation>normalizedString - a string where each whitespace character (tab, carriage return or newline) is replaced with a space character</xsd:documentation>
+			<xsd:documentation>token - a string where all whitespace characters are converted to single spaces; plus leading and trailing spaces are removed and multiple consecutive spaces are replaced with a single space character</xsd:documentation>
+			<xsd:documentation>language - a natural language identifier string (e.g. en-US for United States English)</xsd:documentation>
+			<xsd:documentation>Name - any legal XML 1.0 name</xsd:documentation>
+			<xsd:documentation>NCName - a legal XML 1.0, non-colonizd (:) name as defined in Namespaces in XML (e.g.</xsd:documentation>
+			<xsd:documentation>ID - a unique value that identifies the associated element</xsd:documentation>
+			<xsd:documentation>IDREF - a reference to another element via its ID attribute value</xsd:documentation>
+			<xsd:documentation>IDREFS - a list of comprised IDREF values</xsd:documentation>
+			<xsd:documentation>NMTOKEN - a string comprised of any legal XML name characters but without the initial character restrictions of an XML name</xsd:documentation>
+			<xsd:documentation>NMTOKENS -  a list comprised of NMTOKEN values</xsd:documentation>
+			<xsd:documentation>ENTITY - a string that is a legal NCName and refers to the name of an unparsed entity that is declared in a DTD</xsd:documentation>
+			<xsd:documentation>ENTITIES - a list comprised of ENTITY values</xsd:documentation>
+			<xsd:documentation>integer - any integer number (e.g. 1 or -1)</xsd:documentation>
+			<xsd:documentation>negativeInteger - any integer number with a value less than zero</xsd:documentation>
+			<xsd:documentation>positiveInteger - any integer number with a value greater than zero</xsd:documentation>
+			<xsd:documentation>nonNegativeInteger - any integer number with a value greater than or equal to zero (0, value)</xsd:documentation>
+			<xsd:documentation>nonPositiveInteger - an integer number with a value less than or equal to zero (value, 0)</xsd:documentation>
+			<xsd:documentation>byte - an 8-bit signed integer number</xsd:documentation>
+			<xsd:documentation>short - a 16-bit signed integer number</xsd:documentation>
+			<xsd:documentation>int - a 32-bit signed integer number</xsd:documentation>
+			<xsd:documentation>long - a 64-bit signed integer number</xsd:documentation>
+			<xsd:documentation>unsignedByte - a non-negative 8-bit integer number</xsd:documentation>
+			<xsd:documentation>unsignedShort - a non-negative 16-bit integer number</xsd:documentation>
+			<xsd:documentation>unsignedInt - a non-negative 32-bit integer number</xsd:documentation>
+			<xsd:documentation>unsignedLong - a non-negative 64-bit integer number</xsd:documentation>
+			<xsd:documentation>complex - a datatype composed of other XML elements and/or attributes</xsd:documentation>
+			<xsd:documentation>mixed - a datatype composed of other XML element and attributes and strings</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="string"/>
+			<xsd:enumeration value="anyURI"/>
+			<xsd:enumeration value="NOTATION"/>
+			<xsd:enumeration value="QName"/>
+			<xsd:enumeration value="boolean"/>
+			<xsd:enumeration value="hexBinary"/>
+			<xsd:enumeration value="base64Binary"/>
+			<xsd:enumeration value="decimal"/>
+			<xsd:enumeration value="float"/>
+			<xsd:enumeration value="double"/>
+			<xsd:enumeration value="duration"/>
+			<xsd:enumeration value="dateTime"/>
+			<xsd:enumeration value="date"/>
+			<xsd:enumeration value="time"/>
+			<xsd:enumeration value="gYear"/>
+			<xsd:enumeration value="gYearMonth"/>
+			<xsd:enumeration value="gMonth"/>
+			<xsd:enumeration value="gMonthDay"/>
+			<xsd:enumeration value="gDay"/>
+			<xsd:enumeration value="normalizedString"/>
+			<xsd:enumeration value="token"/>
+			<xsd:enumeration value="language"/>
+			<xsd:enumeration value="Name"/>
+			<xsd:enumeration value="NCName"/>
+			<xsd:enumeration value="ID"/>
+			<xsd:enumeration value="IDREF"/>
+			<xsd:enumeration value="IDREFS"/>
+			<xsd:enumeration value="NMTOKEN"/>
+			<xsd:enumeration value="NMTOKENS"/>
+			<xsd:enumeration value="ENTITY"/>
+			<xsd:enumeration value="ENTITIES"/>
+			<xsd:enumeration value="integer"/>
+			<xsd:enumeration value="negativeInteger"/>
+			<xsd:enumeration value="positiveInteger"/>
+			<xsd:enumeration value="nonNegativeInteger"/>
+			<xsd:enumeration value="nonPositiveInteger"/>
+			<xsd:enumeration value="byte"/>
+			<xsd:enumeration value="short"/>
+			<xsd:enumeration value="int"/>
+			<xsd:enumeration value="long"/>
+			<xsd:enumeration value="unsignedByte"/>
+			<xsd:enumeration value="unsignedShort"/>
+			<xsd:enumeration value="unsignedInt"/>
+			<xsd:enumeration value="unsignedLong"/>
+			<xsd:enumeration value="complex"/>
+			<xsd:enumeration value="mixed"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>***** LICENSE INFORMATION *****</xsd:documentation>
+		<xsd:documentation>Copyright 2008 Digital Learning Sciences
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org</xsd:documentation>
+		<xsd:documentation>These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

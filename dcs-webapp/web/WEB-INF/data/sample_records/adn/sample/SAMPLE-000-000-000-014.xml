@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+	<general>
+		<title>Idealized ENSO Simulation</title>
+		<description>Four visualizations of ENSO (El Nino - Southern Oscillation) are presented. They capture the large-scale, wave-like motion that the tropical Pacific Ocean undergoes during a El-Nino Southern Oscillation (ENSO) event. The four visualizations are 1) sea-level anomaly and ocean temperature anomaly, 2) sea-level anomaly and ocean temperature anomaly and thermocline depth anomaly, 3) the TOGA TAO anomalous SST (sea surface temperature) and 20C isotherm depth (thermocline) anomalous depth, and 4) the National Center for Environmental Prediction (NCEP) ocean analysis anomalous SST and 20C isotherm (thermocline) anomalous depth.</description>
+		<language>en</language>
+		<subjects>
+			<subject>DLESE:Physical oceanography</subject>
+		</subjects>
+		<keywords>
+			<keyword>Ocean temperature</keyword>
+			<keyword>Thermocline depth anomaly</keyword>
+			<keyword>Sea level anomaly</keyword>
+		</keywords>
+	</general>
+	<lifecycle>
+		<contributors>
+			<contributor date="1998-09-15" role="Author">
+				<person>
+					<nameFirst>Joseph</nameFirst>
+					<nameLast>Barsugli</nameLast>
+					<instName>Cooperative Institute for Research in Environmental Sciences (CIRES)</instName>
+					<emailPrimary>jbarsugli@cdc.noaa.gov</emailPrimary>
+				</person>
+			</contributor>
+			<contributor date="1998-09-15" role="Publisher">
+				<organization>
+					<instName>National Oceanographic and Atmospheric Administration (NOAA), Cooperative Institute for Research in Environmental Sciences (CIRES), Climate Diagnostics Center</instName>
+					<instEmail>webmaster@cdc.noaa.gov</instEmail>
+				</organization>
+			</contributor>
+		</contributors>
+	</lifecycle>
+	<metaMetadata>
+		<catalogEntries>
+			<catalog entry="SAMPLE-000-000-000-014">DLESE Program Center Catalog Record Number</catalog>
+		</catalogEntries>
+		<dateInfo accessioned="2000-10-24" created="2000-10-24"/>
+		<statusOf status="Accessioned"/>
+		<language>en</language>
+		<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+		<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+		<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+		
+	</metaMetadata>
+	<technical>
+		<online>
+			<primaryURL>http://www.cdc.noaa.gov/%7ejjb/anim.html</primaryURL>
+			<mediums>
+				<medium>text/html</medium>
+				<medium>image/gif</medium>
+			</mediums>
+			<requirements>
+				<requirement>
+					<reqType>DLESE:General:No specific technical requirements</reqType>
+				</requirement>
+			</requirements>
+		</online>
+	</technical>
+	<educational>
+		<audiences>
+			<audience>
+				<gradeRange>DLESE:Graduate or professional</gradeRange>
+			</audience>
+			<audience>
+				<gradeRange>DLESE:High school</gradeRange>
+			</audience>
+			<audience>
+				<gradeRange>DLESE:Undergraduate lower division</gradeRange>
+			</audience>
+			<audience>
+				<gradeRange>DLESE:Undergraduate upper division</gradeRange>
+			</audience>
+		</audiences>
+		<resourceTypes>
+			<resourceType>DLESE:Visual:Scientific visualization</resourceType>
+		</resourceTypes>
+		<interactivityLevel>LOM:Low</interactivityLevel>
+	</educational>
+	<rights>
+		<cost>DLESE:No</cost>
+		<description>These World Wide Web pages are provided as a public service by the National Oceanographic and Atmospheric Administration (NOAA) - Cooperative Institute for Research in Environmental Sciences (CIRES), Climate Diagnostics Center. Secondary Use of Site Contents: In general, information presented on pages served from www.cdc.noaa.gov is considered public information and may be distributed or copied. Figures generated via our Web site are in the public domain, and may be downloaded freely. We appreciate acknowledgement of the NOAA-CIRES Climate Diagnostics Center in your use of any of our Web products. This may be done by including text such as: Image provided by the NOAA-CIRES Climate Diagnostics Center, Boulder, Colorado, USA, from their Web site at http://www.cdc.noaa.gov/.</description>
+	</rights>
+	<geospatialCoverages>
+		<geospatialCoverage>
+			<body>
+				<planet>Earth</planet>
+			</body>
+			<geodeticDatumGlobalOrHorz>DLESE:Unknown</geodeticDatumGlobalOrHorz>
+			<projection type="DLESE:Unknown"/>
+			<coordinateSystem type="DLESE:Geographic latitude and longitude"/>
+			<boundBox>
+				<westCoord>140</westCoord>
+				<eastCoord>-150</eastCoord>
+				<northCoord>30</northCoord>
+				<southCoord>-30</southCoord>
+				<bbSrcName>Cataloger supplied</bbSrcName>
+				<bbPlaces>
+					<place>
+						<name>Tropical Pacific Ocean</name>
+						<source>Unknown</source>
+					</place>
+					<place>
+						<name>El Nino - Southern Oscillation</name>
+						<source>Unknown</source>
+					</place>
+				</bbPlaces>
+			</boundBox>
+		</geospatialCoverage>
+	</geospatialCoverages>
+	<temporalCoverages>
+		<timeAndPeriod>
+			<timeInfo>
+				<timeAD>
+					<begin date="1996-01"/>
+					<end date="1998-01"/>
+				</timeAD>
+			</timeInfo>
+		</timeAndPeriod>
+		<timeAndPeriod>
+			<timeInfo>
+				<timeAD>
+					<begin date="1996-01"/>
+					<end date="1998-01"/>
+				</timeAD>
+			</timeInfo>
+		</timeAndPeriod>
+	</temporalCoverages>
+</itemRecord>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: idNumberType-osm-groups-cataloger-en-us.xml,v 1.5 2012/06/11 18:51:55 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/idNumberType.xsd"
+version="2.0">
+	<head>
+		<title>ID number type</title>
+		<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="ID number type" audience="cataloger" path="/record/classify/idNumber/@type" deftn="the type and/or source of the resource identifier"/>
+	</head>
+	<body>
+		<outline type="vocab" vocab="arXiv" text="arXiv"/>
+		<outline type="vocab" vocab="CALL" text="Call"/>
+		<outline type="vocab" vocab="CISL" text="CISL"/>
+		<outline type="vocab" vocab="Citation/Article" text="Citation/Article"/>
+		<outline type="vocab" vocab="DOI" text="DOI"/>
+		<outline type="vocab" vocab="EPRINTS" text="EPRINTS"/>
+		<outline type="vocab" vocab="ISBN" text="ISBN"/>
+		<outline type="vocab" vocab="ISSN" text="ISSN"/>
+		<outline type="vocab" vocab="REPORT" text="REPORT"/>
+		<outline type="vocab" vocab="SRef-ID" text="SRef-ID"/>
+		<outline type="vocab" vocab="WMO" text="WMO"/>
+		<outline type="vocab" vocab="WOS" text="WOS"/>
+	</body>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

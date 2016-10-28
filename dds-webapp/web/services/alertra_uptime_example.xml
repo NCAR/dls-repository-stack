@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- 
+	This is an example (for testing purposes) of the XML 
+	provided by Alertra for DLESE's uptime stats. 
+	The live version of this data can be found at:
+	http://uptime.alertra.com/uptime.xml?pin=038546&abrv=DDS
+ -->
+<alertra version="1.0">
+	<devicestats>
+		
+		<name>DDS</name>
+		<url>http://www.dlese.org/dds/index.jsp?q=alertra</url>
+		
+		<year>2006</year>
+		<month>January</month>
+		<outages>0</outages>
+		<downseconds>0</downseconds>
+		<upseconds>1792361</upseconds>
+		
+		<year>2005</year>
+		<month>December</month>
+		<outages>1</outages>
+		<downseconds>360</downseconds>
+		<upseconds>2555999</upseconds>
+		
+		<year>2005</year>
+		<month>November</month>
+		<outages>2</outages>
+		<downseconds>1787</downseconds>
+		<upseconds>2680213</upseconds>
+		
+	</devicestats>
+</alertra>

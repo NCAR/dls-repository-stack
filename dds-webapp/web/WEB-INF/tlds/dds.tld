@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" 
+  "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>DDS Tags</shortname>
+	<info>Developed by the DLESE Program Center</info>
+
+	<tag>   
+		<name>obfuscateEmailAddress</name>
+		<tagclass>edu.ucar.dls.dds.tags.ObfuscateEmailAddressTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>Encrypt an email address using rot13 and javascript</info>	
+	</tag>
+	
+	<tag>   
+		<name>setKeywordsHighlight</name>
+		<tagclass>edu.ucar.dls.dds.tags.SetKeywordsHighlightTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>
+			Instantiate a KeywordsHighlight object, passing it the string of keywords to highlight
+			and the css class to use for highlighted text or a color to be applied (use
+			either cssClassName OR highlightColor but not both).
+		</info>
+		<attribute>
+			<name>keywords</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>highlightColor</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>cssClassName</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>			
+	</tag>
+	
+	<tag>   
+		<name>keywordsHighlight</name>
+		<tagclass>edu.ucar.dls.dds.tags.KeywordsHighlightTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>Perform keyword highlighting on the body text of the tag</info>
+		<attribute>
+			<name>truncateString</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>maxStringLength</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>minStringLength</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>addWbr</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>		
+	</tag>
+		
+	<tag>   
+		<name>event</name>
+		<tagclass>edu.ucar.dls.dds.tags.DDSRequestEventHandlerTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>Generic request handler tag for DDS events</info>
+		<attribute>
+			<name>className</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>action</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>		
+	</tag>	
+	
+	<tag>   
+		<name>viewRecord</name>
+		<tagclass>edu.ucar.dls.dds.tags.DDSViewRecordTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>View a field within the current resource record</info>
+		<attribute>
+			<name>field</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>	
+		<attribute>
+			<name>fieldTitle</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>	
+		<attribute>
+			<name>fieldType</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>	
+	</tag>		
+
+</taglib>

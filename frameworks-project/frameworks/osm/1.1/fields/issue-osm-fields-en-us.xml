@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: issue-osm-fields-en-us.xml,v 1.2 2011/06/27 18:47:19 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/non-vocab-fields.xsd">
+  <field name="Issue" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/general/issue">
+		<definition>a lower-order division of a work that may or may not reoccur on a regular basis; successive issues are typically grouped into volumes</definition> 
+
+		 <bestPractices>
+			<dos>
+				<practice status="current" originDate="2010-05-31">This field is optional.</practice> 
+				<practice status="current" originDate="2010-05-31">This field cannot be repeated.</practice> 
+				<practice status="current" originDate="2010-05-31">Enter the number only, using digits, Roman numerals and/or letters as appropriate.</practice>
+				<practice status="current" originDate="2010-05-31">Completed this field, as appropriate, for journal articles, journals, periodicals, and newsletters.</practice> 
+			 </dos>
+			 <donts>
+				 <practice status="current" originDate="2010-05-31">Do not preface or follow the text with a number sign or any abbreviations.</practice> 
+				 <practice status="current" originDate="2010-05-31">Do not use issue for images, animation, email or other resource types where it does not apply or where the work is not divided into major and minor divisions.</practice> 
+			 </donts>
+			 <examples>
+				<practice status="current" originDate="2010-05-31">To express isuse 4, just enter the number '4'.</practice>
+			</examples>
+		 </bestPractices>
+		 <documentation>
+				<obligation>optional</obligation>
+				<min>0</min>
+				<max>1</max>
+				<XMLdataTypes>
+					<XMLdataType>string</XMLdataType>
+				</XMLdataTypes>
+				<domain>free text</domain>
+				<example>4</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

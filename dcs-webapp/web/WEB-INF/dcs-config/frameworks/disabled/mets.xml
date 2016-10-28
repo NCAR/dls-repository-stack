@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.dls.ucar.edu/people/ostwald/Metadata/framework-config/dcsFrameworkConfig.xsd">
+  <xmlFormat>mets</xmlFormat>
+  <schemaInfo>
+    <schemaURI>http://www.loc.gov/standards/mets/mets.xsd</schemaURI>
+    <rootElementName>this:mets</rootElementName>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>3</baseRenderLevel>
+    <rebuildOnStart>true</rebuildOnStart>
+    <fieldInfoURI>http://www.dls.ucar.edu/people/ostwald/Metadata/mets/1.7/build/fields-list.xml</fieldInfoURI>
+    <firstPage>this:metsHdr</firstPage>
+	<editorPages>
+      <editorPage pageLabel="Header">this:metsHdr</editorPage>
+      <editorPage pageLabel="Description">this:dmdSec</editorPage>
+      <editorPage pageLabel="Admin">this:amdSec</editorPage>
+      <editorPage pageLabel="Content File">this:fileSec</editorPage>
+      <editorPage pageLabel="Structural Map">this:structMap</editorPage>
+      <editorPage pageLabel="StructMap Linking">this:structLink</editorPage>
+      <editorPage pageLabel="Behavior">this:behaviorSec</editorPage>
+	</editorPages>
+  </editorInfo>
+</frameworkConfigRecord>

@@ -1,0 +1,18 @@
+<%-- Top Navigation Menu --%>
+
+<%-- breadcrumbs --%>
+
+<st:breadcrumbs>
+
+	<%-- <a href="javascript:guardedExit('${contextPath}/browse/query.do?scs=0${sef.collection}&q')">${sef.setInfo.name}</a> --%>
+	${sef.setInfo.name}
+	<st:breadcrumbArrow />
+
+	<span class="current">${sef.recId}</span>
+
+</st:breadcrumbs>
+
+<%@ include file="navMenu.jspf" %>
+
+
+

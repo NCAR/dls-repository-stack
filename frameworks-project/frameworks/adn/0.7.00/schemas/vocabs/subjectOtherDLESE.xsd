@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.7.00">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Schema Overview  **************************************************************
+			Definition: 			Controlled vocabulary schema for DLESE metadata frameworks
+			Framework use: 	ADN-I (item) 
+			Source org:			????
+			Source values:		http://www.dlesecommunity.carleton.edu/ess_vocab/
+			Source last update:	Unknown
+			DPC last update:		2003-02-12
+			Notes: 				
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************** History of Change ****************************
+2003-02-12: Since this is not a an approved vocabulary yet; replace it with DLESE:No vocabulary yet:Do not use</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="DLESEsubjectOtherType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  DLESEsubjectOtherType************************************
+				Lists the values that will appear in the metadata record
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="DLESE:No vocabulary yet:Do not use"/>
+			<!--			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:States of Matter"/>
+
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Processes that Alter States of Matter:Condensation"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Processes that Alter States of Matter:Chemical fractionation"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Processes that Alter States of Matter:Phase transformations"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Processes that Alter States of Matter:Melting"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Processes that Alter States of Matter:Crystallization"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Processes that Alter States of Matter:Dehydration"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Processes that Alter States of Matter:Metamorphism"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Processes that Alter States of Matter:Weathering"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Processes that Alter States of Matter:Solution"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Processes that Alter States of Matter:Precipitate"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Inorganic chemistry"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Crystallography"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Analytical chemistry"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Organic chemistry"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Biochemistry"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Physical chemistry"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Thermodynamics"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Entropy"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Enthalpy"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Intensive parameter"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Extensive parameter"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Pressure"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Temperature"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:First law of thermodynamics"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Second law of thermodynamics"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Gibbs free energy"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Heat capacity"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Calorimetry"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Fugacity"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Phase equilibria"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Exothermic reactions"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Endothermic reactions"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Adiabatic reactions"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Reversible reactions"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Irreversible reactions"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Kinetics"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Chemistry topics:Statistical mechanics"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Mechanical Transfer of Heat and Mass:Convection"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Mechanical Transfer of Heat and Mass:Conduction"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Heat Source:Radioactive decay"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Heat Source:Kinetic energy or friction"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Electro-Magnetic Properties:Magnetic field"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Electro-Magnetic Properties:Electrical conductivity"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Gravitational:Accretion"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Gravitational:Impact"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Gravitational:Orbital and precession "/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Gravitational:Kepler's laws planetary motion"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Gravitational:Tides"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Gravitational:Isostasy or bouyancy"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Mechanics:Kinematics"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Mechanics:Momentum"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Mechanics:Oscillations or vibrations"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Mechanics:Translation"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Mechanics:Rotation"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Mechanics:Rigid body dynamics"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Mechanics:Fluid dynamics"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Dynamic Properties and Processes:Viscosity"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Dynamic Properties and Processes:Rheology"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Dynamic Properties and Processes:Diffusion"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Dynamic Properties and Processes:Infiltration"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Dynamic Properties and Processes:Principle of relativity"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Waves:Transverse"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Waves:Longitudinal"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Waves:Standing"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Waves:Sound"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Waves:Refraction"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Waves:Reflection"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Waves:Diffraction"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Waves:Scattering"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Waves:Interference"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Optics"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Quantum Mechanics:Quantum theory"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Quantum Mechanics:Schrodinger equation"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Physics topics:Quantum Mechanics:Uncertainty principle"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Biology topics:Cellular biology"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Biology topics:Botany"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Biology topics:Zoology"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Biology topics:Ecology"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Biology topics:Genetics"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Biology topics:Anatomy or physiology"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Biology topics:Taxonomy"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Biology topics:Evolution"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Biology topics:Adaptation"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Biology topics:Adaptive radiation"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Biology topics:Mutation"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Biology topics:Natural selection"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Topics:Arithmetic"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Topics:Algebra"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Topics:Geometry"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Topics:Trigonometry"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Topics:Differential calculus"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Topics:Integral calculus"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Topics:Tensor"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Topics:Non-linear systems"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Topics:Chaos"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Topics:Fractals"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Quantitative Skills:Computation"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Quantitative Skills:Estimation"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Quantitative Skills:Quantities"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Quantitative Skills:Measurement"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Quantitative Skills:Error and uncertainty"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Quantitative Skills:Probability"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Quantitative Skills:Statistics"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Quantitative Skills:Representation:Graphs"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Quantitative Skills:Representation:Tables"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Quantitative Skills:Representation:Formulae"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Quantitative Skills:Representation:Schematics"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Quantitative Skills:Representation:Modeling or visualization"/>
+			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:Mathematics topics or skills:Quantitative Skills:Representation:Equations as language "/>  -->
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DLESEsubjectOtherLeafType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  DLESEsubjectOtherLeafType************************************
+				Lists leaf values
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Do not use"/>
+			<!--			<xsd:enumeration value="DLESE:General Science Topics, Processes and Concepts:States of Matter"/>
+
+			<xsd:enumeration value="Condensation"/>
+			<xsd:enumeration value="Chemical fractionation"/>
+			<xsd:enumeration value="Phase transformations"/>
+			<xsd:enumeration value="Melting"/>
+			<xsd:enumeration value="Crystallization"/>
+			<xsd:enumeration value="Dehydration"/>
+			<xsd:enumeration value="Metamorphism"/>
+			<xsd:enumeration value="Weathering"/>
+			<xsd:enumeration value="Solution"/>
+			<xsd:enumeration value="Precipitate"/>
+			<xsd:enumeration value="Inorganic chemistry"/>
+			<xsd:enumeration value="Crystallography"/>
+			<xsd:enumeration value="Analytical chemistry"/>
+			<xsd:enumeration value="Organic chemistry"/>
+			<xsd:enumeration value="Biochemistry"/>
+			<xsd:enumeration value="Physical chemistry"/>
+			<xsd:enumeration value="Thermodynamics"/>
+			<xsd:enumeration value="Entropy"/>
+			<xsd:enumeration value="Enthalpy"/>
+			<xsd:enumeration value="Intensive parameter"/>
+			<xsd:enumeration value="Extensive parameter"/>
+			<xsd:enumeration value="Pressure"/>
+			<xsd:enumeration value="Temperature"/>
+			<xsd:enumeration value="First law of thermodynamics"/>
+			<xsd:enumeration value="Second law of thermodynamics"/>
+			<xsd:enumeration value="Gibbs free energy"/>
+			<xsd:enumeration value="Heat capacity"/>
+			<xsd:enumeration value="Calorimetry"/>
+			<xsd:enumeration value="Fugacity"/>
+			<xsd:enumeration value="Phase equilibria"/>
+			<xsd:enumeration value="Exothermic reactions"/>
+			<xsd:enumeration value="Endothermic reactions"/>
+			<xsd:enumeration value="Adiabatic reactions"/>
+			<xsd:enumeration value="Reversible reactions"/>
+			<xsd:enumeration value="Irreversible reactions"/>
+			<xsd:enumeration value="Kinetics"/>
+			<xsd:enumeration value="Statistical mechanics"/>
+			<xsd:enumeration value="Convection"/>
+			<xsd:enumeration value="Conduction"/>
+			<xsd:enumeration value="Radioactive decay"/>
+			<xsd:enumeration value="Kinetic energy or friction"/>
+			<xsd:enumeration value="Magnetic field"/>
+			<xsd:enumeration value="Electrical conductivity"/>
+			<xsd:enumeration value="Accretion"/>
+			<xsd:enumeration value="Impact"/>
+			<xsd:enumeration value="Orbital and precession "/>
+			<xsd:enumeration value="Kepler's laws planetary motion"/>
+			<xsd:enumeration value="Tides"/>
+			<xsd:enumeration value="Isostasy or bouyancy"/>
+			<xsd:enumeration value="Kinematics"/>
+			<xsd:enumeration value="Momentum"/>
+			<xsd:enumeration value="Oscillations or vibrations"/>
+			<xsd:enumeration value="Translation"/>
+			<xsd:enumeration value="Rotation"/>
+			<xsd:enumeration value="Rigid body dynamics"/>
+			<xsd:enumeration value="Fluid dynamics"/>
+			<xsd:enumeration value="Viscosity"/>
+			<xsd:enumeration value="Rheology"/>
+			<xsd:enumeration value="Diffusion"/>
+			<xsd:enumeration value="Infiltration"/>
+			<xsd:enumeration value="Principle of relativity"/>
+			<xsd:enumeration value="Transverse"/>
+			<xsd:enumeration value="Longitudinal"/>
+			<xsd:enumeration value="Standing"/>
+			<xsd:enumeration value="Sound"/>
+			<xsd:enumeration value="Refraction"/>
+			<xsd:enumeration value="Reflection"/>
+			<xsd:enumeration value="Diffraction"/>
+			<xsd:enumeration value="Scattering"/>
+			<xsd:enumeration value="Interference"/>
+			<xsd:enumeration value="Optics"/>
+			<xsd:enumeration value="Quantum theory"/>
+			<xsd:enumeration value="Schrodinger equation"/>
+			<xsd:enumeration value="Uncertainty principle"/>
+			<xsd:enumeration value="Cellular biology"/>
+			<xsd:enumeration value="Botany"/>
+			<xsd:enumeration value="Biology topics:Zoology"/>
+			<xsd:enumeration value="Ecology"/>
+			<xsd:enumeration value="Genetics"/>
+			<xsd:enumeration value="Anatomy or physiology"/>
+			<xsd:enumeration value="Taxonomy"/>
+			<xsd:enumeration value="Evolution"/>
+			<xsd:enumeration value="Adaptation"/>
+			<xsd:enumeration value="Adaptive radiation"/>
+			<xsd:enumeration value="Mutation"/>
+			<xsd:enumeration value="Natural selection"/>
+			<xsd:enumeration value="Arithmetic"/>
+			<xsd:enumeration value="Algebra"/>
+			<xsd:enumeration value="Geometry"/>
+			<xsd:enumeration value="Trigonometry"/>
+			<xsd:enumeration value="Differential calculus"/>
+			<xsd:enumeration value="Integral calculus"/>
+			<xsd:enumeration value="Tensor"/>
+			<xsd:enumeration value="Non-linear systems"/>
+			<xsd:enumeration value="Chaos"/>
+			<xsd:enumeration value="Fractals"/>
+			<xsd:enumeration value="Computation"/>
+			<xsd:enumeration value="Estimation"/>
+			<xsd:enumeration value="Quantities"/>
+			<xsd:enumeration value="Measurement"/>
+			<xsd:enumeration value="Error and uncertainty"/>
+			<xsd:enumeration value="Probability"/>
+			<xsd:enumeration value="Statistics"/>
+			<xsd:enumeration value="Representation:Graphs"/>
+			<xsd:enumeration value="Representation:Tables"/>
+			<xsd:enumeration value="Formulae"/>
+			<xsd:enumeration value="Schematics"/>
+			<xsd:enumeration value="Modeling or visualization"/>
+			<xsd:enumeration value="Equations as language "/>  -->
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

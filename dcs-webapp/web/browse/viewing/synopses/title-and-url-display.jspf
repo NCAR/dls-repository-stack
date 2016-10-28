@@ -1,0 +1,11 @@
+<%-- generic display of title and url (which must be set by including page) --%>
+<c:if test="${not empty title}">
+	<div class="browse-item-title">${title}</a></div>
+</c:if>
+
+<c:if test="${not empty url}">
+	<div class="searchResultValues">
+		<a href='${url}' target="_blank"
+			title="view resource in new window">${sf:truncate(url, param.urlTruncateLen)}</a>
+	</div>
+</c:if>

@@ -1,0 +1,107 @@
+<!-- 
+	This file configures the NR collections that are indexed and sychronized in the DDS repository.
+	Edit this file and replace the examples below with the desired NR instance and 
+	configuration for collections. Choose one or more configuration option as desired (may be combined).
+
+	Used by NRIndexer and NRIndexer3 classes.
+	
+	DDS looks for this file in the location defined by the context parameter 'itemIndexerConfigDir'
+-->
+<NR_Collections>
+
+    <!-- DB settings (Note Tables:  metadata, resource, session) -->
+    <dbUsername>[username]</dbUsername>
+    <dbPassword>[password]</dbPassword>
+    <dbUrl>jdbc:mysql://[host.name.org]:3306/ingest</dbUrl>
+    <dbDriver>com.mysql.jdbc.Driver</dbDriver><!-- Not needed? -->
+
+    <!-- Allow zero records in collections (otherwise fatal error). Anything other than 'true' means no -->
+    <allowZeroRecordsInCollections>true</allowZeroRecordsInCollections>
+
+    <!-- Should collections be allowed to submit more than one (duplicate) record per resource URL?
+    Set this to false to filter out without failing (default is true).
+    Note that some collections (SMILE, NASA Wavelength, ...) catalog more than one record per resource URL,
+    each records containing different descriptions and metadata details to emphasise different aspects of the resource,
+    but this can cause the indexer to fail because it loops too much when creating relations between NSDL_DC and LAR records. -->
+    <allowDuplicatURLsInCollections>true</allowDuplicatURLsInCollections>
+
+    <!--
+        Configure NR collections that are defined in the NCS.
+        This goes out to the NCS web service to discover the collections and then
+        configures them in the DDS. Items are indexed as nsdl_dc canonical form or
+        in their native format, as indicated below.
+
+        * ncsSearchApiBaseUrl - Base URL to the NCS instance that manages the collections in the NR
+        * formatType - One of 'canonical_nsdl_dc' or 'native'
+        * ncsCollectionStatus - One or more collection status to limit to (optional)
+        * searchQueryConstraint - Query to constrin to (optional)
+    -->
+    <ncsManagedCollections>
+        <ncsSearchApiBaseUrl>http://ncs.nsdldev.org/mgr/services/ddsws1-1</ncsSearchApiBaseUrl>
+        <formatType>canonical_nsdl_dc</formatType>
+        <canonicalNsdlDcRelatedFormats>
+            <relatedFormat>comm_anno</relatedFormat>
+            <relatedFormat>comm_para</relatedFormat>
+            <!-- LAR collections have special processing: They are indexed as NSDL DC with a relation connecting the LAR metadata to it -->
+            <relatedFormat>lar</relatedFormat>
+        </canonicalNsdlDcRelatedFormats>
+
+        <!-- LAR collections have special processing:
+            - For Search API instance (option 1): Set to *true* and include <relatedFormat>lar</relatedFormat> above
+                to create both LAR and NSDL DC collections for LAR collections, with a relation connecting the LAR metadata to
+                the NSDL DC records (larMetadataProvidedBy relation). The lar to nsdl_dc format converter should also be disabled
+                via the DDS context-param setting).
+            - For Search API instance (option 2): Set to *false* and comment out <relatedFormat>lar</relatedFormat> above to create
+                only NSDL DC collections for LAR collections.
+            - For OAI instance: Set to *false* and include <relatedFormat>lar</relatedFormat> above
+                so only the true LAR collection is present (with transform to nsdl_dc available for dissimination). -->
+        <makeNsdlDcCollectionForLar>true</makeNsdlDcCollectionForLar>
+
+
+        <ncsCollectionStatusFilter>
+            <ncsCollectionStatus>Done</ncsCollectionStatus>
+            <ncsCollectionStatus>In Progress</ncsCollectionStatus>
+        </ncsCollectionStatusFilter>
+
+        <!-- Remove collections that do not have the proper OAI status for sharing: -->
+        <!-- <searchQueryConstraint>(*:* NOT /key//record/collection/OAIvisibility:(private OR protected))</searchQueryConstraint> -->
+
+        <!-- <searchQueryConstraint>
+            (/key//record/collection/setSpec:(ncs-NSDL-COLLECTION-000-003-112-062 OR ncs-NSDL-COLLECTION-000-003-112-015 OR 439869 OR 475995))
+        </searchQueryConstraint> -->
+
+        <!-- Collection 928276 is TeachEngineering LAR -->
+        <!-- <searchQueryConstraint>
+            (/key//record/collection/setSpec:(928276))
+        </searchQueryConstraint> -->
+
+        <!-- <searchQueryConstraint>
+            (/key//record/collection/setSpec:(1477460))
+        </searchQueryConstraint> -->
+
+        <searchQueryConstraint>
+            (/key//record/collection/setSpec:(ncs-NSDL-COLLECTION-000-003-112-029 OR 439869-CompadreOff OR 475995))
+        </searchQueryConstraint>
+    </ncsManagedCollections>
+
+
+    <!-- ============= Parameters used for normalizing NSDL DC records ============= -->
+
+    <!-- <nsdlDcVocabSelections>http://localhost/vocab_groups_files/vocab_selections.xml</nsdlDcVocabSelections> -->
+    <!-- <nsdlDcVocabSelections>http://ns.nsdl.org/ncs/ddsws/1-1/groupsNormal/vocab_selections.xml</nsdlDcVocabSelections> -->
+    <nsdlDcVocabSelections>
+        file:///C:/cygwin/home/jweather/devel/nsdl_dc_groups_vocabs/groupsNormal/vocab_selections.xml
+    </nsdlDcVocabSelections>
+    <writeVerboseComments>false</writeVerboseComments>
+
+    <!-- ============= Optional parameters for testing purposes ============= -->
+
+    <!-- The max number of collections DDS will suck in from NDR (remove to use default value) -->
+    <maxNumCollections>400</maxNumCollections>
+    <!-- The max number of records DDS will suck in from NDR per collection (remove to use default value) -->
+    <maxNumRecordsPerCollection>10</maxNumRecordsPerCollection>
+
+    <!-- Generate dup resource URLs for testing? -->
+    <generateDupResourceUrls>false</generateDupResourceUrls>
+
+</NR_Collections>

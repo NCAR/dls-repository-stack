@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="smile_item">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<xpaths>
+				<xpath>
+					/smileItem/activityBasics/recordID
+				</xpath>
+			</xpaths>		
+		</standardField>	
+		<standardField name="url">
+			<xpaths>
+				<xpath>/smileItem/activityBasics/url</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="title">
+			<xpaths>
+				<xpath>/smileItem/activityBasics/title</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/smileItem/activityBasics/description</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="geoBBNorth">
+			<xpaths>
+				<xpath>/smileItem/placeAndTime/place/geographicalCoordinates/northCoord</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="geoBBSouth">
+			<xpaths>
+				<xpath>/smileItem/placeAndTime/place/geographicalCoordinates/southCoord</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="geoBBEast">
+			<xpaths>
+				<xpath>/smileItem/placeAndTime/place/geographicalCoordinates/eastCoord</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="geoBBWest">
+			<xpaths>
+				<xpath>/smileItem/placeAndTime/place/geographicalCoordinates/westCoord</xpath>
+			</xpaths>		
+		</standardField>	
+	</standardFields>		
+</XMLIndexerFieldsConfig>

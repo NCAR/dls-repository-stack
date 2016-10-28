@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: title-osm-fields-en-us.xml,v 1.8 2012/11/29 16:36:11 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/non-vocab-fields.xsd">
+  <field name="Title" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/general/title">
+		<definition>a phrase or groups of words, usually appearing on or in the resource, that names the work therein for purposes of identification and reference</definition> 
+		 <bestPractices>
+			<dos>
+				<practice status="current" originDate="2010-05-31">This is a required, free text field.</practice> 
+				<practice status="current" originDate="2010-05-31">This field cannot be repeated.</practice> 
+				<practice status="current" originDate="2011-06-23">When processing a record, take the title and do a search across all collections to see if there are any duplicates of the record in other collections.</practice> 
+				<practice status="current" originDate="2010-09-17">Separate the title and the subtitle with a colon.</practice>
+				<practice status="current" originDate="2010-09-17">Capitalize the first word of a title and the first word of subtitles (e.g. An introduction to DART: A community facility for ensemble data assimilation).</practice>
+				<practice status="current" originDate="2010-09-17">Capitalize other words only as appropriate (e.g. Earth).  Proper nouns, chemical abbreviations, instrument or model abbreviations and the titles of conferences should also be capitalized.</practice>
+				<practice status="current" originDate="2010-09-17">If the title indicates that the resource is a “part” of a larger whole, capitalize the P and use either Roman or Arabic numerals, as indicated within the title of the resource itself (e.g. The art of painting: Part 3)</practice>
+				 <practice status="current" originDate="2010-05-31" link1="title" style1="bold" link2="pubName" style2="bold">When referring to entire books, the title and pubName fields should be completed with the same values.</practice> 
+				<practice status="current" originDate="2012-11-29" link1="Thesis/dissertation" style1="bold" link2="title" style2="bold">When using Thesis/dissertation, append the degree name to the title. See examples below.</practice>
+			 </dos>
+			 <donts>
+				<practice status="current" originDate="2010-05-31">Do not end the title with any form of punctuation, unless it is part of the title itself.</practice> 
+				 <practice status="current" originDate="2010-05-31">Do not enter names of serial or periodic publications; that is do not enter the name of a journal.</practice> 
+			 </donts>
+			 <examples>
+				<practice status="current" originDate="2010-05-31">The computational future for climate and Earth system models: On the path to petaflop and beyond</practice>
+					 <practice status="current" originDate="2012-11-29" link1="Thesis/dissertation" style1="bold">Thesis/dissertation - Masters: The saline flow into the Atlantic. M.S. thesis</practice>
+					 <practice status="current" originDate="2012-11-29" link1="Thesis/dissertation" style1="bold">Thesis/dissertation - PhD: The saline flow into the Atlantic. Ph.D. dissertation</practice>
+			</examples>
+			<otherPractices>
+				<otherPractice header="Special Characters to Encode? Do This:">
+					<practice status="current" originDate="2011-06-10" link1="numeric entity encodings" url1="http://theorem.ca/~mvcorks/code/charsets/auto.html">All special characters like subscripts, superscripts, copyright and other symbols must be entity encoded numerically. See the numeric entity encodings.</practice>
+				</otherPractice>
+			</otherPractices>
+		 </bestPractices>
+		 <documentation>
+				<obligation>required</obligation>
+				<min>1</min>
+				<max>1</max>
+				<XMLdataTypes>
+					<XMLdataType>string</XMLdataType>
+				</XMLdataTypes>
+				<domain>free text</domain>
+				<example>War and Peace</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

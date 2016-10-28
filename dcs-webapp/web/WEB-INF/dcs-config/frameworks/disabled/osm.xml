@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.dlese.org/Metadata/dcs/framework-config/dcsFrameworkConfig.xsd">
+  <xmlFormat>osm</xmlFormat>
+  <schemaInfo>
+    <rootElementName>record</rootElementName>
+    <schemaURI>http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/osm.xsd</schemaURI>
+    <paths>
+      <path pathName="id" readOnly="true" requiredByCopyRecord="true" requiredByMinimalRecord="true">/record/general/recordID</path>
+      <path pathName="url" valueType="uniqueUrl" readOnly="true">/record/general/urlOfRecord</path>
+      <path pathName="recordDate" readOnly="true" requiredByCopyRecord="true" requiredByMinimalRecord="true" valueType="date">/record/general/recordDate</path>
+      <path pathName="primary_asset_order" valueType="ordered">/record/resources/primaryAsset/@order_OFF</path>
+      <path pathName="other_asset_order" valueType="ordered">/record/resources/otherAsset/@order_OFF</path>
+      <path pathName="contributors_order" valueType="ordered">/record/contributors/*/@order_OFF</path>
+      <path pathName="asset_url" valueType="uniqueValue" inputHelper="osm/assetWidget.jsp">/record/resources/primaryAsset/@url</path>
+      <path pathName="primaryAsset_size" readOnly="true">/record/resources/primaryAsset/size</path>
+      <path pathName="primaryAsset_mineType" readOnly="true">/record/resources/primaryAsset/mimeType</path>
+      <path pathName="relation_mimeType" readOnly="false">/record/resources/relation/@mimeType</path>
+      <path pathName="pubName" maxLen="100" valueType="type_ahead">/record/general/pubName</path>
+      <path pathName="submission_type" readOnly="true">/record/general/title/@submission</path>
+      <path pathName="person_affiliation" inputHelper="osm/affiliationWidget.jsp">/record/contributors/person/affiliation</path>
+      <path pathName="title" inputHelper="osm/similar-title-widget.jsp">/record/general/title</path>
+    </paths>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>OsmEditorRenderer</renderer>
+    <baseRenderLevel>3</baseRenderLevel>
+    <rebuildOnStart>true</rebuildOnStart>
+    <firstPage>general</firstPage>
+    <editorPages>
+      <editorPage pageLabel="General">general</editorPage>
+      <editorPage pageLabel="Assets &amp; Relations">resources</editorPage>
+      <editorPage pageLabel="Contributors">contributors</editorPage>
+      <editorPage pageLabel="Classify">classify</editorPage>
+      <editorPage pageLabel="Coverage">coverage</editorPage>
+      <editorPage pageLabel="Rights">rights</editorPage>
+    </editorPages>
+    <fieldInfoURI>http://nldr.library.ucar.edu/metadata/osm/1.1/build/fields-list.xml</fieldInfoURI>
+    <vocabLayoutURI>http://nldr.library.ucar.edu/metadata/osm/1.1/build/groups-list.xml</vocabLayoutURI>
+  </editorInfo>
+  <name>osm</name>
+</frameworkConfigRecord>

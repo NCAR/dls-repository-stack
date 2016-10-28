@@ -1,0 +1,63 @@
+<nsdl_dc:nsdl_dc xmlns:nsdl_dc="http://ns.nsdl.org/nsdl_dc_v1.02/" xmlns:dct="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ieee="http://www.ieee.org/xsd/LOMv1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.02.010" xsi:schemaLocation="http://ns.nsdl.org/nsdl_dc_v1.02/ http://ns.nsdl.org/schemas/nsdl_dc/nsdl_dc_v1.02.xsd">
+<dc:title>Metropolitan East Coast Assessment Educators Pack</dc:title>
+<dc:subject>Atmospheric science</dc:subject>
+<dc:subject>Biology</dc:subject>
+<dc:subject>Climatology</dc:subject>
+<dc:subject>Ecology</dc:subject>
+<dc:subject>Environmental science</dc:subject>
+<dc:subject>Physical geography</dc:subject>
+<dc:subject>Geology</dc:subject>
+<dc:subject>Biological oceanography</dc:subject>
+<dc:subject>Physical oceanography</dc:subject>
+<dc:subject>Technology</dc:subject>
+<dc:subject>GIS</dc:subject>
+<dc:subject>Computer modeling</dc:subject>
+<dc:subject>image processing</dc:subject>
+<dc:subject>Regional Geography</dc:subject>
+<dc:subject>Climate Change</dc:subject>
+<dc:subject>Atmosphere</dc:subject>
+<dc:subject>Climate</dc:subject>
+<dc:subject>Topography/Physical Geography</dc:subject>
+<dc:subject>History and philosophy of science</dc:subject>
+<dc:subject>Remote Sensing (Active and Passive)</dc:subject>
+<dc:subject>Mathematics</dc:subject>
+<dc:subject>Technology</dc:subject>
+<dc:subject>Ecosystems and Environmental Change</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">Science</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">Earth science</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">Physical sciences</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">Meteorology</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">Geology</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">Geography</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">Oceanography</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">Biology</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">Ecology</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">History of science</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">Mathematics</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">Astronomy</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">Space sciences</dc:subject>
+<dc:subject xsi:type="nsdl_dc:GEM">Technology</dc:subject>
+<dc:date xsi:type="dct:W3CDTF">2000</dc:date>
+<dc:description>This product contains geographic information system (GIS) software, data sets and lesson plans designed for educators who are interested in using GIS technology to explore global climate change issues. The package is available on a free, PC-compatible CD (request from the Web site provided); it includes a free GIS software program called ArcExplorer by ESRI and comes with a user manual to help get you started. Also provided are two lesson plans that use ArcExplorer to view the data and produce a series of maps to study climate change predictions in the MEC region.</dc:description>
+<dc:format xsi:type="dct:IMT">text/html</dc:format>
+<dc:format>Adobe Acrobat reader</dc:format>
+<dc:format>Platform emulation software</dc:format>
+<dc:format>Microsoft Windows</dc:format>
+<dc:type>Software</dc:type>
+<dc:type xsi:type="dct:DCMIType">Dataset</dc:type>
+<dc:type xsi:type="dct:DCMIType">InteractiveResource</dc:type>
+<dc:type xsi:type="dct:DCMIType">Software</dc:type>
+<dc:type xsi:type="nsdl_dc:NSDLType">Instructional Material</dc:type>
+<dc:type xsi:type="nsdl_dc:NSDLType">Activity</dc:type>
+<dc:type xsi:type="nsdl_dc:NSDLType">Reference Material</dc:type>
+<dc:type xsi:type="nsdl_dc:NSDLType">Specimen</dc:type>
+<dc:type>Tool</dc:type>
+<dc:type xsi:type="nsdl_dc:NSDLType">Software</dc:type>
+<dc:type xsi:type="nsdl_dc:NSDLType">Dataset</dc:type>
+<dc:type xsi:type="nsdl_dc:NSDLType">Remotely Sensed Data</dc:type>
+<dc:identifier>http://metroeast_climate.ciesin.columbia.edu/edumod.html</dc:identifier>
+<dc:language>en</dc:language>
+<dc:rights>This product is free and clear for general use.</dc:rights>
+<dct:educationLevel xsi:type="nsdl_dc:NSDLEdLevel">Middle School</dct:educationLevel>
+<dct:educationLevel xsi:type="nsdl_dc:NSDLEdLevel">High School</dct:educationLevel>
+</nsdl_dc:nsdl_dc>

@@ -1,0 +1,11 @@
+<!--
+	Listing of *-list.xml files, each of which is a list of metadata UI 
+	files representing term field definitions (fields) and/or audience-based 
+	groupings (groups)
+-->
+<metadataInfoLists>
+	<files>
+<!-- 		<groups>collection/1.0.00/build/groups-list.xml</groups>
+		<fields>collection/1.0.00/build/fields-list.xml</fields> -->
+	</files>
+</metadataInfoLists>

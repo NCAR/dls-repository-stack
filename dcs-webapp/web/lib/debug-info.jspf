@@ -1,0 +1,82 @@
+<style type="text/css">
+#debug-info {
+	border:2px purple solid;
+	padding:10px;
+}
+
+.debug-header {
+	font-size:120%;
+	font-weight:bold;
+}
+
+#debug-info table {
+	border-collapse:collapse;
+}
+
+#debug-info table td {
+	border:thin purple solid;
+	padding:5px 10px 5px 10px;
+}
+
+#debug-info table td.selected {
+	background-color:yellow;
+}
+</style>
+
+<div id="debug-info">
+<div class="debug-header">Debug Info</div>
+<table>
+	<tr>
+		<td><div class="debug-subheader" id="app-control">Application Contents</div></td>
+		<td><div class="debug-subheader" id="session-control">Session Contents</div></td>
+		<td><div class="debug-subheader" id="request-control">Request Contents</div></td>
+	</tr>
+</table>
+
+<div id="app-contents" style="display:none">
+<c:forEach var="att" items="${applicationScope}">
+	<div><b>${att.key}:</b> <pre>${att.value}</pre></div>
+</c:forEach>
+</div>
+
+<div id="session-contents" style="display:none">
+<c:forEach var="att" items="${sessionScope}">
+	<div><b>${att.key}:</b> ${att.value}</div>
+</c:forEach>
+</div>
+
+<div id="request-contents" style="display:none">
+<c:forEach var="att" items="${requestScope}">
+	<div><b>${att.key}</b>: ${att.value}</div>
+</c:forEach>
+</div>
+</div>
+
+<script type="text/javascript">
+
+var items = ['app', 'session', 'request']
+
+items.each (function (item) {
+	var control = $(item+'-control');
+	var contents = $(item+'-contents');
+	control.observe ('mouseover', function (evnt) { control.setStyle ({cursor:'pointer'}) })
+	control.observe ('click', function (evnt) { 
+		items.each (function (myitem) {
+				var mycontrol = $(myitem+'-control');
+				var mycontents = $(myitem+'-contents');
+				if (mycontrol == control) {
+					mycontents.toggle();
+					if (mycontents.visible())
+						mycontrol.up ('td').addClassName ("selected");
+					else
+						mycontrol.up ('td').removeClassName ("selected");
+				}
+				else {
+					mycontents.hide();
+					mycontrol.up('td').removeClassName ("selected");
+				}
+			});
+	});
+});
+
+</script>

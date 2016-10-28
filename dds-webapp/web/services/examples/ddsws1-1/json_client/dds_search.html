@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--
+    This page implements a search client for a DDS or DCS repository using HTML and JavaScript with JSONP.
+
+    Choose either the JQuery or Prototype JS implementation via the script tags below (JQuery is default).
+
+    Uses the JSONP output from the DDS Search API (DDSWS). See DDSWS service documentation:
+        http://www.dlese.org/dds/services/ddsws1-1/service_specification.jsp
+
+    All XML formats can be searched and viewed with this client, with some additional
+    display features provided for the following formats: oai_dc, nsdl_dc, msp2, ncs_item, adn, dlese_anno,
+    dlese_collect, news_opps, concepts.
+
+    The page also displays the collections, XML formats, search fields, search terms and service information
+    from the repository.
+
+    Requires:
+        dds_search_jquery_implementation.js - The JQuery JavaScript portion of the implementation
+
+            - or -
+
+        dds_search_prototypejs_implementation.js - The Prototype JS JavaScript portion of the implementation
+
+
+    To install:
+        - Save this HTML file, dds_search_jquery_implementation.js, jquery-1.12.1.min.js or dds_search_prototypejs_implementation.js
+        and spinner.gif into a single directory.
+            -- To save this HTML file, choose 'Save As' from the 'File' menu in your browser.
+            -- To save the JavaScript files, open a URL to each file in your browser, then choose 'Save'
+            or 'Save As'.
+            -- To save the spinner.gif open the link to ./spinner.gif in your browser, then choose 'Save' or 'Save As'
+        - Edit the configuration options in the <script> section below to modify certain output and behaviors, as desired.
+        - Edit the CSS styles below to modify the way the page looks (colors, fonts, sizes, etc.), as desired.
+
+    Digital Learning Sciences (DLS)
+    University Corporation for Atmospheric Research (UCAR)
+    P.O. Box 3000
+    Boulder, Colorado 80307 USA
+    http://dls.ucar.edu/
+
+    This client may be copied and modified, free and with no warranty.
+-->
+
+<html>
+<head>
+    <title>Search the repository</title>
+
+    <!-- Choose either JQuery implementation or Prototype JS implementation (and comment out the other): -->
+
+    <!-- JQuery implementation of this client: -->
+    <script type='text/javascript' src='jquery-1.12.1.min.js'></script>
+    <script type='text/javascript' src='dds_search_jquery_implementation.js'></script>
+
+
+    <!-- Prototype JS implementation of this client (http://www.prototypejs.org/):
+
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js'></script>
+        <script type='text/javascript' src='dds_search_prototypejs_implementation.js'></script>
+
+    -->
+
+
+    <!-- Configuration options: -->
+    <script type='text/javascript'>
+        // --------- Begin configuration options ---------
+
+        // Set the baseUrl to the desired DDSWS service end point (Some known public DDS repositories listed below):
+
+        // UCARConnect DDS end point:
+        var baseUrl = 'http://uc.dls.ucar.edu/search-api';
+
+        // DLESE DDS repository:
+        //var baseUrl = 'http://www.dlese.org/dds/services/ddsws1-1';
+
+        // DLESE Catalog System repository:
+        //var baseUrl = 'http://dcs.dlese.org/schemedit/services/ddsws1-1';
+
+        // Localhost for a local DDS installation:
+        //var baseUrl = 'http://localhost/dds/services/ddsws1-1';
+
+
+        // ----- Configuration options for some basic things -----
+
+        // Filter the search to selected collections only (for values, see 'searchKey' shown in the ListCollections response) (comment-out to search all records):
+        //var collections = ['3111902','dcs-UCAR-COLLECTION-000-003-112-220'];
+
+        // Filter the search to only those records that match this query (comment-out to search all records):
+        //var virtualCollectionFilter = 'video OR videos'; // Virtual collection of videos
+        //var virtualCollectionFilter = 'ky:bio AND dcsstatus:_|-final-bio-|_';
+
+        // Filter the search to these XML formats only (for values, see 'xmlFormat' shown in the ListXmlFormats response) (comment-out to search all records):
+        //var xmlFormats = ['nsdl_dc','adn'];
+
+        // Sort the search results by a specific search field (must contain a single token), otherwise default sort is by search relevancy
+        //var sortAscendingBy = '/key//itemRecord/general/title';
+        //var sortDescendingBy = '/key//itemRecord/general/title';
+
+        // Expand the query to support word stemming and boost if terms appear in the title?
+        var expandAndBoostSearch = true;
+
+        // Highlight keywords in search results?
+        var highlightKeywords = true;
+
+        // Omit the collection records from search (filters them out from search)?
+        var omitCollectionRecords = true;
+
+        // Display collection name in search results?
+        var displayCollectionName = true;
+
+        // Display record ID in search results?
+        var displayId = false;
+
+
+        // Also: To configure Smart Links (map a link to a query), see the Smart Link examples below in the HTML markup
+
+        // ----- More options to aid developers (optional) -----
+
+        // Display links for the full record metadata to open as a tree?
+        var displayFullRecordMetadata = true;
+
+        // Show API calls and other developer information links on the page?
+        var showDeveloperInfo = false;
+
+        // Show JSON brackets in full record metadata and developer output (JQuery implementation)?
+        showJsonBrackets = false;
+
+
+        // --------- End configuration options ---------
+    </script>
+
+    <style type="text/css">
+
+        /* Styles for the HTML output of this client */
+        body, html, p, h1, h2, h3, h4, a, td, li, ul {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            outline: none;
+        }
+
+        form {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #smartLinks {
+            font-size: 80%;
+            margin-top: 6px;
+        }
+
+        .smartLinkLabel {
+            font-weight: bold;
+            font-size: 110%;
+            color: #666;
+        }
+
+        .record {
+            padding-bottom: 20px;
+        }
+
+        .recordTitle {
+            color: #0000FF;
+        }
+
+        .recordTitle A {
+            /* text-decoration: none;
+            font-weight: bold;
+            color: black; */
+        }
+
+        .recordUrl {
+            font-size: 100%;
+            color: #008000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .recordDesc {
+            padding-top: 4px;
+            font-size: 90%;
+        }
+
+        .subContent {
+            padding: 6px 0px 0px 0px;
+            font-size: 90%;
+        }
+
+        .subContent A:link, .subContent A:visited {
+            color: inherit;
+            /*text-decoration: none;*/
+        }
+
+        .subContent A:hover {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        .recordSource {
+            color: #888;
+        }
+
+        .queryText {
+            color: #888;
+            font-weight: bold;
+        }
+
+        .keyword {
+            font-weight: bold;
+        }
+
+        .pager, .resultsDisp {
+            border-top: 1px solid #888;
+            margin: 8px 4px 4px 0px;
+            padding-top: 3px;
+            font-size: 80%;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .pager {
+            white-space: nowrap;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            font-size: 90%;
+            font-weight: normal;
+            text-align: left;
+        }
+
+        .pager A {
+            padding: 2px 3px 2px 3px;
+            border: 1px solid #FFFDFA;
+        }
+
+        .pager A:hover {
+            background-color: #eee;
+            border: 1px solid #ddd;
+        }
+
+        #loadMsg {
+            background-image: url(spinner.gif);
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-left: 6px;
+            color: #888;
+            padding: 0px 0px 0px 20px;
+            background-repeat: no-repeat;
+            height: 16px;
+            width: 30px;
+        }
+
+        /* Used for keyword highlight */
+        EM {
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        #showDeveloperInfo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 70%;
+            background-color: #eee;
+            padding: 5px;
+            border: solid 1px #888;
+        }
+
+        /* -- Styles for developer-related display elements (optional) -- */
+        .jsonContainer {
+            margin: 5px 40px 10px 18px;
+            padding: 5px 5px 5px 0px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+
+        .jsonOpener {
+            font-size: 80%;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .openerTxt {
+            color: green;
+            padding: 0px 2px 2px 2px;
+            text-decoration: none;
+        }
+
+        .openerTxt:hover {
+            background-color: #eee;
+        }
+
+        .openerLnk {
+            font-family: monospace;
+            font-size: 9px;
+            text-decoration: none;
+            color: #777;
+            padding: 0px 3px 0px 3px;
+            border: 1px solid white;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            position: relative;
+            top: -2px;
+        }
+
+        .openerLnk:hover {
+            color: #444;
+        }
+
+        .json-object, .json-value {
+            padding-left: 20px;
+            font-size: 95%;
+        }
+
+        .json-object .key {
+            font-weight: bold;
+            font-size: 100%;
+        }
+
+        .json-value .key {
+            font-weight: bold;
+        }
+
+        #serviceResponse {
+            margin-top: 15px;
+        }
+
+        /* -- Styles JSON output JQuery implementation -- */
+        pre {
+            padding: 5px;
+            margin: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .json-key {
+            color: black;
+            font-weight: bold;
+        }
+
+        .json-string {
+            color: black;
+            font-weight: normal;
+        }
+
+        .json-number {
+            color: darkorange;
+        }
+
+        .json-boolean {
+            color: blue;
+        }
+
+        .json-null {
+            color: magenta;
+        }
+
+    </style>
+</head>
+<body>
+<noscript>
+    <p style="color:red">JavaScript is required to use this search page. Please enable JavaScript in your browser.</p>
+</noscript>
+
+<h3>Search the repository</h3>
+
+<form action="" id="searchForm">
+    <input size="55" type="text" name="q" id="searchFormQuery"/>
+    <input type="submit" value="Search"/>
+</form>
+
+<!-- Smart Links map a query to a link in the UI. To create a Smart Link, define an <a> tag with the following attributes:
+        class="smartLink" - (required) Indicate this is a Smart Link by setting the class to "smartLink".
+        query="{Lucene query}" - (required) Define the Lucene query that will be executed when the user clicks on the link.
+                    Matching results will be displayed.
+        boost="{terms,phrases}" - (optional) Define a comma-separated list of terms or phrases that change the order of the results
+                    by boosting records that contain them (does not changes the matching results, just the order).
+        altLabel="{alternate label}" - (optional) Indicate an alternate label displayed at the top of the search results.
+                    If no altLabel is indicated, the content of the <a> tag is used as the label.
+        Define additional attributes as needed.
+-->
+<div id="smartLinks">
+    Smart links:
+    <a class="smartLink" query="*:*" altLabel="All Resources" title="Find all resources in the repository">All
+        resources</a>
+    | <a class="smartLink" query="(assessments OR assessment)" boost="assessments"
+         title="Find assessments">Assessments</a>
+    | <a class="smartLink" query="(video OR animation OR videos OR animations)" boost="video,animation"
+         altLabel="Videos and Animations" title="Find videos and Animations">Videos and animations</a>
+</div>
+
+<!-- A loading message to provide feedback to the user. -->
+<div id="loadMsg" style="display:none;">Loading</div>
+
+<!-- The search results are inserted in this div by the JavaScript -->
+<div id="searchResults"></div>
+
+
+<!-- ----- Optional: Show useful information for developers (set var showDeveloperInfo=true): ----- -->
+
+<!-- The developer service responses are inserted in this div by the JavaScript -->
+<div id="serviceResponse" class="jsonContainer" style="display:none"></div>
+
+<div id="showDeveloperInfo" style="display:none;">
+    <b>Developer info:</b>
+    <div>
+        <a href="" id="devRequestUrl" style="display:none">Web service request and response for this page</a>
+    </div>
+    <div style="margin-top:2px">
+        <a href="http://www.dlese.org/dds/services/ddsws1-1/service_specification.jsp">Web service documentation
+            reference</a>
+    </div>
+    <div id="quickLinks" style="margin-top:5px;">
+        Web service data:
+        <div style="padding-left:20px">
+            <a href="?action=ListCollections">List collections</a><br/>
+            <a href="?action=ListXmlFormats">List XML formats</a><br/>
+            <a href="?action=ListFields">List search fields</a><br/>
+            <a href="?action=ServiceInfo">Service info</a><br/>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+

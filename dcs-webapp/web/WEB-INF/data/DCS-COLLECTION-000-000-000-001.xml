@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collectionRecord xmlns="http://collection.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://collection.dlese.org http://www.dlese.org/Metadata/collection/1.0.00/collection.xsd">
+	<general>
+		<fullTitle>DCS Collection Records</fullTitle>
+		<shortTitle>Master Collection Record</shortTitle>
+		<description>This is the collection record for the collection of collections stored in this instance of the DCS.</description>
+		<language>en</language>
+		<subjects>
+			
+		<subject>DLESE:Other</subject></subjects>
+		<gradeRanges>
+			
+		<gradeRange>DLESE:General public</gradeRange></gradeRanges>
+		<cost>DLESE:No</cost>
+		<policies>
+			<policy type="Collection scope" url="http://www.dlese.org/documents/policy/CollectionsScope_final.html" name="DLESE Collections Scope and Policy Statement">The policy describes the goals, collection policy, collection criteria, terms of use, quality assurance and the persistence plan of the collection.</policy>
+		</policies>
+	</general>
+	<lifecycle>
+		<contributors>
+			<contributor role="Contact" date="2004">
+				<organization>
+					<instName>DLESE Program Center</instName>
+					<instEmail>support@dlese.org</instEmail>
+				</organization>
+			</contributor>
+			<contributor role="Responsible party" date="2004">
+				<organization>
+					<instName>DLESE Program Center</instName>
+					<instEmail>support@dlese.org</instEmail>
+				</organization>
+			</contributor>
+		</contributors>
+	</lifecycle>
+	<approval>
+		<collectionStatuses>
+			<collectionStatus state="Submitted" date="2003-11-08"/>
+			<collectionStatus state="Accessioned" date="2004-09-21"/>
+		</collectionStatuses>
+		<contributors>
+			<contributor role="Documentation approver" date="2004-09-21">
+				<person>
+					<nameTitle>Ms</nameTitle>
+					<nameFirst>Katy</nameFirst>
+					<nameLast>Ginger</nameLast>
+					<instName>University Corporation for Atmospheric Research (UCAR)</instName>
+					<instDept>DLESE Program Center (DPC)</instDept>
+					<emailPrimary>ginger@ucar.edu</emailPrimary>
+				</person>
+			</contributor>
+			<contributor role="Technical approver" date="2004-09-21">
+				<person>
+					<nameTitle>Ms</nameTitle>
+					<nameFirst>Katy</nameFirst>
+					<nameLast>Ginger</nameLast>
+					<instName>University Corporation for Atmospheric Research (UCAR)</instName>
+					<instDept>DLESE Program Center (DPC)</instDept>
+					<emailPrimary>ginger@ucar.edu</emailPrimary>
+				</person>
+			</contributor>
+		</contributors>
+	</approval>
+	<access>
+		<key libraryFormat="dlese_collect" static="false" redistribute="true">collect</key>
+		<drc>false</drc>
+		
+	</access>
+	<metaMetadata>
+		<catalogEntries>
+			<catalog entry="DCS-COLLECTION-000-000-000-001">Digital Library for Earth System Education (DLESE) Collection Record Collection</catalog>
+		</catalogEntries>
+		<dateInfo created="2005-04-01"/>
+		<statusOf status="Done"/>
+		<language>en-us</language>
+		<scheme>Digital Library for Earth System Education (DLESE) Collection Metadata</scheme>
+		<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research). All rights reserved.</copyright>
+		<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+		<contributors>
+			<contributor role="Creator" date="2004-09-21">
+				<person>
+					<nameTitle>Ms</nameTitle>
+					<nameFirst>Katy</nameFirst>
+					<nameLast>Ginger</nameLast>
+					<instName>University Corporation for Atmospheric Research (UCAR)</instName>
+					<instDept>DLESE Program Center (DPC)</instDept>
+					<emailPrimary>ginger@ucar.edu</emailPrimary>
+				</person>
+			</contributor>
+		</contributors>
+	</metaMetadata>
+</collectionRecord>

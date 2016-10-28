@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AsnDocuments topic="Social Studies">
+  <asnDocument id="http://asn.jesandco.org/resources/D10002BD">
+    <title>Mississippi Social Studies Framework and Guide</title>
+    <topic>Social Studies</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2502965">
+    <title>Mississippi Social Studies Framework</title>
+    <topic>Social Studies</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002B8">
+    <title>Minnesota Academic Standards in Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002CF">
+    <title>Social Studies Grade-Level Expectations</title>
+    <topic>Social Studies</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003AE">
+    <title>Social Studies Grade Level Expectations (K-8)</title>
+    <topic>Social Studies</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2585748">
+    <title>Social Studies Course Level Expectations (9-12)</title>
+    <topic>Social Studies</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002A2">
+    <title>Montana Standards for Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2000</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002A7">
+    <title>Social Studies Content Standards and Benchmarks</title>
+    <topic>Social Studies</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100034A">
+    <title>North Dakota Social Studies Content Standards</title>
+    <topic>Social Studies</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002A4">
+    <title>North Carolina Social Studies Standard Course of Study</title>
+    <topic>Social Studies</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2362834">
+    <title>North Carolina Social Studies Essential Standards</title>
+    <topic>Social Studies</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2423340">
+    <title>North Carolina Social Studies Elective - The Cold War</title>
+    <topic>Social Studies</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2423393">
+    <title>North Carolina Social Studies Elective - Twentieth Century Civil Liberties and Civil Rights</title>
+    <topic>Social Studies</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2423440">
+    <title>North Carolina Social Studies Elective - Turning Points in American History</title>
+    <topic>Social Studies</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2423461">
+    <title>North Carolina Social Studies Elective - Psychology</title>
+    <topic>Social Studies</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2423504">
+    <title>North Carolina Social Studies Elective - Sociology</title>
+    <topic>Social Studies</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2423542">
+    <title>North Carolina Social Studies Elective - 21st Century Geography</title>
+    <topic>Social Studies</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2425367">
+    <title>North Carolina Social Studies Elective - World Humanities</title>
+    <topic>Social Studies</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2425403">
+    <title>North Carolina Social Studies Elective - American Humanities</title>
+    <topic>Social Studies</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002B4">
+    <title>Social Studies Skills: Essential Academic Learning Requirements</title>
+    <topic>Social Studies</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000385">
+    <title>Washington State K-12 Social Studies Grade Level Expectations</title>
+    <topic>Social Studies</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100038F">
+    <title>Grade Span Expectations (GSEs) for Civics &amp; Government and Historical Perspectives/Rhode Island History</title>
+    <topic>Social Studies</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003C2">
+    <title>Social Science Performance Descriptors</title>
+    <topic>Social Studies</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002B6">
+    <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003DE">
+    <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2594345">
+    <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100028A">
+    <title>Indiana's Academic Standards Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000349">
+    <title>Indiana's Academic Standards Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000348">
+    <title>Indiana's Core Standards for Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002B7">
+    <title>K-12 Social Studies New Hampshire Curriculum Framework</title>
+    <topic>Social Studies</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002BA">
+    <title>Nebraska Social Studies/History Standards</title>
+    <topic>Social Studies</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100029A">
+    <title>Idaho Content Standards Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2373131">
+    <title>Idaho Content Standards - Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000297">
+    <title>Alabama Course of Study: Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>AL</author>
+    <authorName>Alabama</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003E3">
+    <title>Iowa Core Curriculum K-12 Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2472209">
+    <title>Arizona Academic Content Standards Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002BC">
+    <title>Massachusetts History and Social Science Curriculum Framework</title>
+    <topic>Social Studies</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2003</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000298">
+    <title>Social Studies Grade Level Expectations</title>
+    <topic>Social Studies</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2509533">
+    <title>Delaware Personal Finance Standards</title>
+    <topic>Social Studies</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100035F">
+    <title>District of Columbia Social Studies Standards</title>
+    <topic>Social Studies</topic>
+    <author>DC</author>
+    <authorName>District of Columbia</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002A6">
+    <title>Social Studies Curriculum Frameworks Revised 2000</title>
+    <topic>Social Studies</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000341">
+    <title>Arkansas Social Studies Curriculum Framework</title>
+    <topic>Social Studies</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002CE">
+    <title>Social Studies Grade Level Content Expectations (K-8)</title>
+    <topic>Social Studies</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002CD">
+    <title>Social Studies High School Content Expectations</title>
+    <topic>Social Studies</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2596842">
+    <title>Social Studies High School Content Expectations</title>
+    <topic>Social Studies</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002AF">
+    <title>21st Century Social Studies Content Standards and Objectives for West Virginia Schools</title>
+    <topic>Social Studies</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002AA">
+    <title>Social Studies Learning Results: Parameters for Essential Instruction</title>
+    <topic>Social Studies</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100029C">
+    <title>Hawaii Content and Performance Standards for Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002D0">
+    <title>Voluntary State Curriculum - Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002AD">
+    <title>Wyoming Social Studies Content and Performance Standards</title>
+    <topic>Social Studies</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000384">
+    <title>Wyoming Social Studies Content and Performance Standards</title>
+    <topic>Social Studies</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000374">
+    <title>Social Science Content Standards, Oregon Standards Newspaper 2008-2009</title>
+    <topic>Social Studies</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002AC">
+    <title>Oregon Social Sciences Content Standards</title>
+    <topic>Social Studies</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2378214">
+    <title>Oregon Social Sciences Academic Content Standards</title>
+    <topic>Social Studies</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100034C">
+    <title>Social Studies Grade-Level Expectations</title>
+    <topic>Social Studies</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002B0">
+    <title>Louisiana Content Standards for Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002D2">
+    <title>Kansas Curricular Standards for History and Government, Economics and Geography</title>
+    <topic>Social Studies</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2553992">
+    <title>Kansas College and Career Ready Standards for History, Government, and Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002D3">
+    <title>Social Studies Curriculum Standards</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2579126">
+    <title>Tennessee Social Studies Standards: Kindergarten</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2579162">
+    <title>Tennessee Social Studies Standards: First Grade</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2579211">
+    <title>Tennessee Social Studies Standards: Second Grade</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2579257">
+    <title>Tennessee Social Studies Standards: Third Grade</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2579334">
+    <title>Tennessee Social Studies Standards: Fourth Grade</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2579410">
+    <title>Tennessee Social Studies Standards: Fifth Grade</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2579490">
+    <title>Tennessee Social Studies Standards: Sixth Grade</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2579571">
+    <title>Tennessee Social Studies Standards: Seventh Grade</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2579656">
+    <title>Tennessee Social Studies Standards: Eighth Grade</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2579765">
+    <title>African American History</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2579824">
+    <title>Ancient History</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2579897">
+    <title>Contemporary Issues</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2579933">
+    <title>Economics</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2580002">
+    <title>Psychology</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2580096">
+    <title>Sociology</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2580148">
+    <title>United States Government and Civics</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2580224">
+    <title>United States History and Geography</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2580345">
+    <title>World Geography</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2580389">
+    <title>World History and Geography</title>
+    <topic>Social Studies</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002A5">
+    <title>History-Social Science Content Standards for California Public Schools, Kindergarten Through Grade Twelve</title>
+    <topic>Social Studies</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>1998</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002CB">
+    <title>Core Content for Social Studies Assessment</title>
+    <topic>Social Studies</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002CC">
+    <title>Program of Studies Social Studies Revised 2006</title>
+    <topic>Social Studies</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2585749">
+    <title>Kentucky Core Academic Standards - Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002B5">
+    <title>Chapter 113. Texas Essential Knowledge and Skills for Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2488325">
+    <title>Texas Essential Knowledge and Skills for Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002A9">
+    <title>Social Studies Content Standards, Benchmarks, and Performance Standards</title>
+    <topic>Social Studies</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003F5">
+    <title>Colorado Academic Standards for Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002BF">
+    <title>Grade Expectations for Vermont's Framework of Standards and Learning Opportunities</title>
+    <topic>Social Studies</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2004</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000299">
+    <title>Performance Standards for Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003AC">
+    <title>Georgia Performance Standards - Psychology</title>
+    <topic>Social Studies</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003AD">
+    <title>Georgia Performance Standards - Sociology Standards</title>
+    <topic>Social Studies</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100038E">
+    <title>Nevada Social Studies Standards</title>
+    <topic>Social Studies</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002AB">
+    <title>Learning Standards for Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1996</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2575628">
+    <title>New York State K-8 Social Studies Framework</title>
+    <topic>Social Studies</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2577277">
+    <title>New York State 9-12 Social Studies Framework</title>
+    <topic>Social Studies</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002C8">
+    <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+    <topic>Social Studies</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003C3">
+    <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+    <topic>Social Studies</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002A3">
+    <title>Sunshine State Standards: Social Studies with Grade Level Expectations</title>
+    <topic>Social Studies</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000389">
+    <title>Social Studies Next Generation Sunshine State Standards</title>
+    <topic>Social Studies</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002C9">
+    <title>Elementary Core Curriculum Social Studies 3-6</title>
+    <topic>Social Studies</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002CA">
+    <title>Utah Secondary Core Curriculum Social Studies 7-12</title>
+    <topic>Social Studies</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2002</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003AF">
+    <title>Utah Social Studies Core Curriculum Elementary Grades 3-6</title>
+    <topic>Social Studies</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2521826">
+    <title>Social Studies Core Curriculum Elementary Grades K-2</title>
+    <topic>Social Studies</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002B9">
+    <title>South Carolina Social Studies Academic Standards</title>
+    <topic>Social Studies</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002AE">
+    <title>South Dakota Social Studies Content Standards</title>
+    <topic>Social Studies</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002BE">
+    <title>Academic Content Standards Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000353">
+    <title>Early Learning Content Standards - Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2462866">
+    <title>Ohio's New Learning Standards: K-8 Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2463176">
+    <title>Ohio’s New Learning Standards: High School Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003D3">
+    <title>Priority Academic Student Skills - Social Studies Revised 2009</title>
+    <topic>Social Studies</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002BB">
+    <title>Priority Academic Student Skills Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2376952">
+    <title>Oklahoma C3 Standards for Social Studies</title>
+    <topic>Social Studies</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002A8">
+    <title>Connecticut Social Studies Curriculum Framework</title>
+    <topic>Social Studies</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>1998</created>
+    <status>Published</status>
+  </asnDocument>
+</AsnDocuments>

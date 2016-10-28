@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+This is an example file that is used to group NSDL pathways collections into a single collection 
+for the purpose of reporting in the DDS vocab report area.
+
+-->
+<opml xmlns="http://ns.nsdl.org/ncs/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://ns.nsdl.org/ncs/fields http://ns.nsdl.org/ncs/ncs_item/1.02/schemas/fields/non-vocab-fields.xsd"
+version="2.0">
+	<head>
+		<title>Pathway collections</title>
+		<concept metaVersion="1.02" path="/nsdl_dc:nsdl_dc/dc:subject" audience="search" language="en" text="Pathways" metaFormat="nsdl_dc"/>
+	</head>
+	<body>
+		<outline text="DLESE" type="group"><!-- The name to group collections under -->
+			<outline vocab="AVC" type="vocab" text="Atmospheric Visualization Collection (AVC)"/><!-- A collection key that defines a collection to group -->
+			<outline vocab="2954993" type="vocab" text="Bridge-NOAA Collection"/>
+			<outline vocab="2667291" type="vocab" text="Bridge: Sea Grant Ocean Sciences Resources Center"/>
+			<outline vocab="1539788" type="vocab" text="Centers for Ocean Sciences Education Excellence (COSEE)"/>
+			<outline vocab="2954992" type="vocab" text="Choosing and Using DLESE"/>
+			<outline vocab="3111902" type="vocab" text="COMET Program Collection"/>
+			<outline vocab="475993" type="vocab" text="Curricular Resource Library (cURL): Earth and Environmental Sciences"/>
+			<outline vocab="1539789" type="vocab" text="Digital Library of Indigenous Science Resources (DLISR )"/>
+			<outline vocab="380599" type="vocab" text="Digital Water Education Library (DWEL)"/>
+			<outline vocab="2955038" type="vocab" text="DLESE Collections"/>
+			<outline vocab="2954994" type="vocab" text="DLESE News and Opportunities"/>
+			<outline vocab="dlese.org" type="vocab" text="DLESE Community Collection"/>
+			<outline vocab="2827374" type="vocab" text="Earth System Science Informal Education Network (ESSIEN)"/>
+			<outline vocab="2918931" type="vocab" text="Earthquake Education Environment (E3)"/>
+			<outline vocab="476082" type="vocab" text="Educational Multimedia Visualization Center (EMVC)"/>
+			<outline vocab="2634352" type="vocab" text="Environmental Science Activities for the 21st Century"/>
+			<outline vocab="475995" type="vocab" text="GLOBE Teacher's Guide"/>
+			<outline vocab="2634351" type="vocab" text="MY NASA DATA: Mentoring and Inquiry using NASA Data on Atmospheric and Earth Science for Teachers and Amateurs"/>
+			<outline vocab="2802835" type="vocab" text="NASA Earth and Space Science Education Collection"/>
+			<outline vocab="2802786" type="vocab" text="NASA Earth Science Reviewed Collection"/>
+			<outline vocab="1539790" type="vocab" text="New York State Earth Science Instructional Collection"/>
+			<outline vocab="2634331" type="vocab" text="NOAA Environmental Visualization Program"/>
+			<outline vocab="456144" type="vocab" text="Scientific Visualization Studio"/>
+			<outline vocab="2827371" type="vocab" text="Simplified Image Management and Processing Learning Environment for Science (SIMPLE Science)"/>
+			<outline vocab="441521" type="vocab" text="Visionlearning"/>
+		</outline>
+		<outline text="Engingeering" type="group">
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-963" type="vocab" text="ACM Women in Computing"/>
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-964" type="vocab" text="Advances in Engineering Education: A Journal of Engineering Education Applications"/>
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-965" type="vocab" text="Broadening Participation in Computing (BPC)"/>
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-966" type="vocab" text="Center for Sustainable Engineering (CSE)"/>
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-991" type="vocab" text="Community Assessment of Renewable Energy and Sustainability (CARES)"/>
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-112-015" type="vocab" text="Educational Digital Library for the Center for Scalable and Integrated Nanomanufacturing (SINAM)"/>
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-992" type="vocab" text="Engineering and Business for Sustainability (EBS)"/>
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-967" type="vocab" text="International Journal of Engineering Education"/>
+			<outline vocab="needs" type="vocab" text="NEEDS: National Engineering Education System - Engineering Pathway"/>
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-968" type="vocab" text="Pr2ove-It"/>
+			<outline vocab="928276" type="vocab" text="TeachEngineering: Resources for K-12"/>
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-969" type="vocab" text="Tomorrow's Professor Mailing List"/>
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-970" type="vocab" text="VaNTH-ERC for Bioengineering Educational Technologies"/>
+		</outline>
+		<outline text="Math" type="group">
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-978" type="vocab" text="Connected Curriculum Project (CCP)"/>
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-979" type="vocab" text="Demos With Positive Impact"/>
+			<outline vocab="1477460" type="vocab" text="MathDL: Loci"/>
+			<outline vocab="MathDL" type="vocab" text="MathDL: MAA Writing Awards"/>
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-981" type="vocab" text="National Curve Bank"/>
+			<outline vocab="ncs-NSDL-COLLECTION-000-003-111-980" type="vocab" text="Virtual Laboratories in Probability and Statistics"/>
+		</outline>
+		<outline text="Teach the Earth" type="group">
+			<outline vocab="380601" type="vocab" text="On the Cutting Edge: Professional Development for Geoscience Faculty"/>
+			<outline vocab="380602" type="vocab" text="Starting Point: Teaching Entry Level Geoscience"/>
+			<outline vocab="2669651" type="vocab" text="Teach the Earth"/>
+		</outline>
+	</body>
+</opml>

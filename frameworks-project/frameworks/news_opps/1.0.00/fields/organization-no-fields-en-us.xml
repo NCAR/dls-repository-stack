@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: organization-no-fields-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/news-opps/1.0.00/non-vocab-fields.xsd">
+	<field name="Organization" language="en-us" metaFormat="news_opps" metaVersion="1.0.00" path="/news-oppsRecord/contributors/contributor/organization">
+		<definition>information about an institution, namely the name and email address if known but may also include department, position and URL</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-09-16" link1="name" style1="bold" link2="email" style2="bold">Complete at least the subfields of name and email</practice>
+			</dos>
+		</bestPractices>
+
+		<documentation>
+			<children>
+				<child>instName</child>
+				<child>instDept</child>
+				<child>instPosition</child>
+				<child>url</child>
+				<child>email</child>
+				<child>contanctID</child>
+			</children>
+			<obligation>choice</obligation>
+			<min>1 or 0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>the child elements</domain>
+			<example>&lt;instName&gt;, &lt;email&gt;</example>
+			<notes>
+				<note>Organization is part of a choice. That is, a child element of either organization or person is required as part of the contributor element.</note>
+				<note>The required fields for organization are instName (Organization name - (when describing an organization)).</note>
+			</notes>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

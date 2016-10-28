@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: coverage.xsd,v 1.9 2010/02/03 22:35:58 ginger Exp $-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+elementFormDefault="qualified" 
+attributeFormDefault="unqualified" 
+version="1.00">	
+	<xs:annotation>
+		<xs:documentation>********************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>********************************************</xs:documentation>
+		<xs:documentation>Created: 2009-11-24</xs:documentation>
+		<xs:documentation>Author: Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger@ucar.edu</xs:documentation>
+		<xs:documentation>Purpose: provide geospatial and temporal inforamtion about a resource like placename, latitude, longitude, dates of coverage.</xs:documentation>
+	</xs:annotation>
+		
+	<xs:annotation>
+		<xs:documentation>******************************************************</xs:documentation>
+		<xs:documentation>***** INCLUDED/ IMPORTED SCHEMAS  *****</xs:documentation>
+		<xs:documentation>******************************************************</xs:documentation>
+	</xs:annotation>
+	<xs:include schemaLocation="commonfields.xsd"/>
+	<xs:include schemaLocation="../vocabs/dateType.xsd"/>
+	<xs:include schemaLocation="../vocabs/dateRangeType.xsd"/>
+	<xs:include schemaLocation="../vocabs/locationType.xsd"/>
+	<xs:include schemaLocation="../vocabs/zUnits.xsd"/>
+	<xs:include schemaLocation="../vocabs/state-countries.xsd"/>
+
+	<xs:annotation>
+		<xs:documentation>*********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>*********************************</xs:documentation>
+		<xs:documentation>None.</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>***************************************************</xs:documentation>
+		<xs:documentation>*****  COMPLEX TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>***************************************************</xs:documentation>
+		<xs:documentation>coverageType - part of recordType</xs:documentation>
+		<xs:documentation>dateType - part of coverageType</xs:documentation>
+		<xs:documentation>locationType - part of coverageType</xs:documentation>
+	</xs:annotation>
+
+	<xs:complexType name="coverageType">
+		<xs:annotation>
+			<xs:documentation>*****  coverageType  ******</xs:documentation>
+			<xs:documentation>Use the choice compositor so that the elements may appear in any order.</xs:documentation>
+			<xs:documentation>coverage - the extent or scope of the content of a resource either temporally of spatially</xs:documentation>
+			<xs:documentation>date - a time period (as represented by calendar dates) that the intellectual content of the resource covers </xs:documentation>
+			<xs:documentation>location - the placename and geospatial information (as represented by a bounding box of four latitude-longitude pairs) of the content of a resource</xs:documentation>
+			<xs:documentation>description - any temporal or spatial characteristics of the intellectual content of a resource that are not covered by other metadata fields</xs:documentation>
+		</xs:annotation>	
+		<xs:sequence>
+			<xs:element name="date" type="dateType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dateRange" type="dateRangeType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="location" type="locationType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="dateType">
+		<xs:annotation>
+			<xs:documentation>*****  dateType  ******</xs:documentation>
+			<xs:documentation>Use the base of xs:string so that in the Digital Collections System (DCS) no data entry box appears for date but data entry boxes will appear for start and end attributes.</xs:documentation>
+		</xs:annotation>	
+		<xs:simpleContent>
+			<xs:extension base="union.dateType">
+				<xs:attribute name="type" type="dateTypeType" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="dateRangeType">
+		<xs:annotation>
+			<xs:documentation>*****  dateRangeType  ******</xs:documentation>
+			<xs:documentation>Use the base of xs:string so that in the Digital Collections System (DCS) no data entry box appears for date but data entry boxes will appear for start and end attributes.</xs:documentation>
+			<xs:documentation>start - the beginging date period or the single date date that pertains to the content of a resource</xs:documentation>
+			<xs:documentation>end - the ending date period that pertains to the content of a resource</xs:documentation>
+		</xs:annotation>	
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="type" type="dateRangeTypeType" use="required"/>
+				<xs:attribute name="start" type="union.dateType" use="required"/>
+				<xs:attribute name="end" type="union.dateType" use="optional"/> 
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="locationType">
+		<xs:annotation>
+			<xs:documentation>*****  locationType  ******</xs:documentation>
+			<xs:documentation>generally uses the Dublin Core element names to make the XSLT crosswalk straightforward. For the limits, a capital L  or U is used but this is easy to remove in the XSLT by lowercasing it; i.e. changing the name of the element is not involved just lowercasing it.</xs:documentation>
+			<xs:documentation>Use the base of stringTextType so that in the Digital Collections System (DCS) an data entry box appears for location and for the attributes listed.</xs:documentation>
+			<xs:documentation>northLimit - the northern most latitude, in decimal degrees, of a bounding box</xs:documentation>
+			<xs:documentation>southLimit - the southern most latitude, in decimal degrees, of a bounding box</xs:documentation>
+			<xs:documentation>westLimit - the western most longitude, in decimal degrees, of a bounding box</xs:documentation>
+			<xs:documentation>eastLimit - the eastern most longitude, in decimal degrees, of a bounding box</xs:documentation>
+			<xs:documentation>upLimit - the uppermost level of a bounding box</xs:documentation>
+			<xs:documentation>downLimit - the lowermost level of a bounding box</xs:documentation>
+			<xs:documentation>zUnits - the units of measurement for the upLimit and downLimit elements</xs:documentation>	
+		</xs:annotation>	
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="type" type="locationTypeType" use="required"/> 
+				<xs:attribute name="city" type="xs:string" use="required"/> 
+				<xs:attribute name="state" type="union.stateType" use="optional"/> 
+				<xs:attribute name="country" type="countriesType" use="required"/> 
+				<xs:attribute name="northLimit" type="latitudeType" use="optional"/> 		
+				<xs:attribute name="southLimit" type="latitudeType" use="optional"/> 		
+				<xs:attribute name="westLimit" type="longitudeType" use="optional"/> 
+				<xs:attribute name="eastLimit" type="longitudeType" use="optional"/> 
+				<xs:attribute name="upLimit" type="xs:decimal" use="optional"/>
+				<xs:attribute name="downLimit" type="xs:decimal" use="optional"/>
+				<xs:attribute name="zUnits" type="union.zUnitsType" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  SIMPLE TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation></xs:documentation>
+	</xs:annotation>
+
+	<xs:simpleType name="union.zUnitsType">
+		<xs:annotation>
+			<xs:documentation>***** union.zUnitsType  *****</xs:documentation>
+			<xs:documentation>A controlled vocabulary of units for altitude or depth that also allows free text entry.</xs:documentation>
+			</xs:annotation> 
+		<xs:union memberTypes="zUnitsType xs:string"/>
+	</xs:simpleType>
+
+	<xs:simpleType name="union.stateType">
+		<xs:annotation>
+			<xs:documentation>***** union.stateType  *****</xs:documentation>
+			<xs:documentation>A controlled vocabulary of US, Canadian and Mexican states and provinces.</xs:documentation>
+			</xs:annotation> 
+		<xs:union memberTypes="usType canadaType mexicoType"/>
+	</xs:simpleType>
+
+	<xs:simpleType name="latitudeType">
+		<xs:annotation>
+			<xs:documentation>*****  latitudeType  *****</xs:documentation>
+			<xs:documentation>The pattern element is added to ensure that a null tag set is *not* interpreted as a value of zero. A pattern of ([+-][0-9]{2}(\.[0-9]{2})) is too strict a requirement because it forces 9.2 to be 09.20 A pattern of -?\d{1,2}\.\d{1,2} is also too strict in that is requires a decimal. Decimal degrees is assumed.</xs:documentation> 
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="-90.00"/> 
+			<xs:maxInclusive value="90.00"/> 
+			<xs:totalDigits value="4"/> 
+			<xs:fractionDigits value="2"/> 
+			<xs:pattern value="-?\d{0,2}\.?\d{1,2}"/> 
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="longitudeType">
+		<xs:annotation>
+			<xs:documentation>*****  longitudeType  *****</xs:documentation>
+			<xs:documentation>The pattern element is added to ensure that a null tag set is *not* interpreted as a value of zero. A pattern of ([+-][0-9]{3}(\.[0-9]{2})) is too strict a requirement because it forces 9.2 to be 009.20 A pattern of -?1?\d{1,2}\.\d{1,2} is also too strict in that it requires a decimal to be present. Decimal degrees is assumed.</xs:documentation> 
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="-180.00"/> 
+			<xs:maxInclusive value="180.00"/> 
+			<xs:totalDigits value="5"/> 
+			<xs:fractionDigits value="2"/> 
+			<xs:pattern value="-?\d{0,3}\.?\d{1,2}"/> 
+		</xs:restriction>
+	</xs:simpleType></xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

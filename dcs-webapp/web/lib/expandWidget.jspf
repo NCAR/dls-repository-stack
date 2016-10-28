@@ -1,0 +1,7 @@
+<%-- <h4>${id}</h4 --%>
+<c:if test="${sef.collapseBean.displayState == 'block'}">
+	<img id="${id}_img" src="../images/opened.gif" border="0" hspace="3" height="12" width="12" />
+</c:if>
+<c:if test="${sef.collapseBean.displayState != 'block'}">
+	<img id="${id}_img" src="../images/closed.gif" border="0" hspace="3" height="12" width="12" />
+</c:if>

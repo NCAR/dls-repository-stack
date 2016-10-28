@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="library_dc">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<xpaths>
+				<xpath>/record/recordID</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="url">
+			<xpaths>
+				<xpath>/record/URL</xpath>
+			</xpaths>		
+		</standardField>		
+		<standardField name="title">
+			<xpaths>
+				<xpath>/record/title</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/record/description</xpath>
+			</xpaths>		
+		</standardField>		
+	</standardFields>
+	<customFields>
+		<!-- customField attributes: name, store, [type OR analyzer] -->
+		<customField name="libDcIssue" store="yes" type="key">
+			<xpaths>
+				<xpath>/record/issue</xpath>
+			</xpaths>
+		</customField>
+		<customField name="libDcCreatorContributor" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/creator</xpath>
+				<xpath>/record/contributor</xpath>
+			</xpaths>
+		</customField>	
+		<customField name="libDcDate" store="yes" type="key">
+			<xpaths>
+				<xpath>/record/date</xpath>
+			</xpaths>
+		</customField>	
+	</customFields>
+</XMLIndexerFieldsConfig>

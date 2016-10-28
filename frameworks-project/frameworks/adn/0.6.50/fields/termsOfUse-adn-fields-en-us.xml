@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: termsOfUse-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/non-vocab-fields.xsd">
+	<field name="Terms of use" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/metaMetadata/termsOfUse">
+		<definition>information about how the metadata may be used</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2006-02-28">Include information that describes restrictions on use.</practice>
+				<practice status="current" originDate="2006-02-28" link1="URL - terms of use" style1="bold">If the metadata terms of use are lengthy, provide a URL to a webpage that describes them by completing the URL - terms of use subfield.</practice>
+				<practice status="current" originDate="2006-02-28" link1="Terms of Use Policy" url1="http://www.dlese.org/documents/policy/terms_use_full.html">If the terms of use is compatible with the Digital Library for Earth System Education (DLESE) Terms of Use Policy, then enter the following: Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2006-02-28">Do not put too many restrictions on the metadata such that it can not be used in library applications and services.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2006-02-28">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</practice>
+				<practice status="current" originDate="2006-02-28">The metadata has no restrictions for educational use but is not meant for commercial applications or services.</practice>
+			</examples>
+		</bestPractices>
+
+
+		<documentation>
+			<obligation>required</obligation>
+			<attributes>
+				<attribute>URI</attribute>
+			</attributes>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>the attribute and free text</domain>
+			<example>The metadata has no restrictions for educational use but is not meant for commercial applications or services.</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

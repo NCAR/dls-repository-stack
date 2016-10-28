@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: place-name-bb-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:48 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Name - place - bounding box" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/geospatialCoverages/geospatialCoverage/boundBox/bbPlaces/place/name">
+		<definition>the name of a location, place or feature that is covered by a bounding box</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-05-03">For place names, the name should be the equivalent of the bounding box or detailed geometry.</practice>
+				<practice status="current" originDate="2005-05-03">Detailed geometries tend to be well suited to place names while bounding boxes that encompass multiple detailed geometries are not.</practice>
+				<practice status="current" originDate="2005-05-03">Use recognized political administrative areas like countries, states, provinces, or counties.</practice>
+				<practice status="current" originDate="2005-06-01">Use recognized well-defined geographic areas like contiguous United States, Aleutian Islands, Arctic Ocean, Arctic region, Alaskan Peninsula or national parks.</practice>
+				<practice status="current" originDate="2005-06-01">Use recognized well-defined geographic features like mountain peaks, rivers or lakes and parts (peaks and trenches) of oceans.</practice>
+				<practice status="current" originDate="2005-05-03">If entering a location within the United States, include the state and the words United States as part of the location name and spell them out.</practice>
+				<practice status="current" originDate="2005-05-03">Names should contain words or phrases indicating the type of place or feature. For example use Mississippi River, United States - not just Mississippi; use New York City, New York, United States - not just New York.</practice>
+				<practice status="current" originDate="2005-05-03">Capitalize proper nouns and the first word of the name.</practice>
+				<practice status="current" originDate="2005-06-01">When entering a national park that spans more than one state, use the park name followed by the country name like Dinosaur National Monument, United States.</practice>
+				<practice status="current" originDate="2005-06-01">To enter multiple states, national parks or monuments etc. that are contiguous, enter separate geospatial coordinates for each area and then add the appropriate name to the correct coordinates.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2005-05-03">Do not put multiples entries within the same field.</practice>
+				<practice status="current" originDate="2005-06-01" link1="description - resource" style1="bold" link2="keywords" style2="bold">Avoid using political administrative areas that are not formally recognized like Mid-Atlantic region, East Coast, Northern California because this will decrease searching ability. Enter such names in the fields of description - resource or keywords.</practice>
+				<practice status="current" originDate="2005-06-02" link1="description - resource" style1="bold">Avoid using geographic areas or features that are not formally recognized or undergo constant physical change like Ross Ice Shelf, tundra, Western Pacific Ocean. Use such names in the description - resource field. However, if the resource specifically provides coordinates for such locations, such place names may be used. To indicate when the coordinates apply, be sure to enter temporal date information as well.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2005-05-03">Arctic Ocean.</practice>
+				<practice status="current" originDate="2005-05-03">Arctic region.</practice>
+				<practice status="current" originDate="2006-09-20">Charleston Bump, Blake Plateau, Atlantic Ocean.</practice>
+				<practice status="current" originDate="2005-05-03">Grand Canyon National Park, Arizona, United States.</practice>
+				<practice status="current" originDate="2005-06-01">Dinosaur National Monument, United States</practice>
+				<practice status="current" originDate="2005-05-03">Toledo, Ohio, United States.</practice>
+				<practice status="current" originDate="2005-05-03">Gold Dust Peak, Eagle County, Colorado, United States.</practice>
+				<practice status="current" originDate="2005-05-03">Mississippi River, United States.</practice>
+				<practice status="current" originDate="2005-05-03">New York City, New York, United States.</practice>
+			</examples>
+			<otherPractices>
+				<otherPractice header="Want to use &amp;, ', &quot;, &gt;, &lt;? Do this:">
+					<practice status="current" originDate="2006-03-08">Enter characters like the ampersand apostrophe, double quote, less than and greater than sign by using their respective html references of &amp;, &apos;, &quot;, &lt; and &gt;.</practice>
+				</otherPractice>
+				<otherPractice header="Want to use other special characters like ©, é, ñ or ê? Do this:">
+					<practice status="current" originDate="2005-10-05" link1="entity references" url1="http://www.w3schools.com/tags/ref_entities.asp">Enter special characters and symbols using their entity references numbers. For the copyright symbol this means entering an ampersand symbol followed by the pound sign followed by the number 169 followed by a semicolon.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>Gold Dust Peak, Eagle County, Colorado, United States</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/detPlaces/place/name</note>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/boundBox/bbEvents/event/name</note>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/detEvents/event/name</note>
+				<note>Other XPATH: /itemRecord/temporalCoverages/timeAndPeriod/periods/period/name</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

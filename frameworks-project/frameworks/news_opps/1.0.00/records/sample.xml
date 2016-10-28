@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<news-oppsRecord xmlns="http://newsopps.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://newsopps.dlese.org
+
+http://www.dlese.org/Metadata/news-opps/1.0.00/news-opps.xsd">
+
+	<recordID>NEWS-OPPS-000-000-000-123</recordID>
+
+	<language meta="en" resource="en"/>
+
+	<title>A Sample Workshop</title>
+
+	<description>This is a workshop to improve skills on blah on blah</description>
+
+	<announcementURL>http://some.url.org</announcementURL>
+
+	<announcements>
+
+		<announcement>Conference</announcement>
+
+		<announcement>Workshop</announcement>
+
+	</announcements>
+
+	<topics>
+
+		<topic>Earth system science</topic>
+
+		<topic>Technology</topic>
+
+	</topics>
+
+	<keywords>
+
+		<keyword>soil</keyword>
+
+		<keyword>bugs</keyword>
+
+	</keywords>
+
+	<audiences>
+
+		<audience>Developer</audience>
+
+		<audience>Information specialist</audience>
+
+	</audiences>
+
+	<diversities>
+
+		<diversity>Accessibility</diversity>
+
+		<diversity>Learning strategy</diversity>
+
+	</diversities>
+
+	<locations>
+
+		<location city="Montreal">CA-QC</location>
+
+		<location city="Chicago">US-IL</location>
+
+		<location city="Rome">IT</location>
+
+	</locations>
+
+	<archiveDate>2005-06-30</archiveDate>
+
+	<postDate>2004-03-02</postDate>
+
+	<recordCreationDate>2004-02-28</recordCreationDate>
+
+	<otherDates>
+
+		<otherDate type="eventStart">2004-03-01</otherDate>
+
+		<otherDate type="eventStop">2004-04-30</otherDate>
+
+		<otherDate type="due" descr="Letter of intent">2004-03-12</otherDate>
+
+		<otherDate type="due" descr="Proposal">2004-04-15</otherDate>
+
+		<otherDate type="applyBy">2004-05-10</otherDate>
+
+	</otherDates>
+
+	<contributors>
+
+		<contributor role="Author">
+
+			<person>
+
+				<nameFirst>Jane</nameFirst>
+
+				<nameLast>Doe</nameLast>
+
+				<instName>ABC Corporation</instName>
+
+				<email>doe@abc.com</email>
+
+			</person>
+
+		</contributor>
+
+		<contributor role="Cataloger" share="false" date="2004-02-28">
+
+			<organization>
+
+				<instName>(AGU) American Geophsyical Union</instName>
+
+				<instDept>xx</instDept>
+
+				<instPosition>xx</instPosition>
+
+				<url>xx</url>
+
+				<email>xx</email>
+
+				<contactID>xx</contactID>
+
+			</organization>
+
+		</contributor>
+
+		<contributor role="Editor" share="false" date="2004-03-01">
+
+			<organization>
+
+				<instName>(UCAR) University Corporation for Atmospheric Research</instName>
+
+				<instDept>DLESE Program Center</instDept>
+
+				<instPosition>Web Editor</instPosition>
+
+				<url>http://dlese.org</url>
+
+				<email>support@dlese.org</email>
+
+			</organization>
+
+		</contributor>
+
+		<contributor role="Sponsor" share="true">
+
+			<organization>
+
+				<instName>(NSF) National Science Foundation</instName>
+
+			</organization>
+
+		</contributor>
+
+	</contributors>
+
+</news-oppsRecord>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: nameTitle-no-fields-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/news-opps/1.0.00/nameTitle.xsd">
+	<field name="Name title" language="en-us" metaFormat="news_opps" metaVersion="1.0.00" path="/news-oppsRecord/contributors/contributor/person/nameTitle">
+		<definition>the form of address for an individual</definition>
+
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="Name title" levelDeftn="the form of address for an individual"/>
+		</vocabLevels>
+		<terms>
+			<termAndDeftn vocab="Dr">Self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Miss">Self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Mr">Self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Mrs">Self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Ms">Self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Prof">Self-explanatory</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-08-17">Choose a form of address from the term list.</practice>
+			</dos>
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>Dr, Prof, Mr</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

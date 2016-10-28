@@ -1,0 +1,1236 @@
+<!DOCTYPE web-app
+		PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+		"http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<!-- $Id $ -->
+
+<web-app>
+
+	<display-name>Digital Collection System</display-name>
+	<description>
+		This a web application to support creation and editing of XML files
+		based on an XML Schema.
+	</description>
+
+	<!--
+    Context params used in the DCS application.
+
+    Context params can be overridded in server.xml by
+    providing an alternate definition for them such as:
+    <Context ...>
+        <Parameter override="false" name="paramName" value="paramValue" />
+    </Context>
+
+    Note: context params are accessed globally from within
+    servlets and jsp pages via:
+    String value = getServletContext().getInitParameter("name");
+-->
+
+	<context-param>
+		<param-name>instanceName</param-name>
+		<param-value>@INSTANCE_NAME@</param-value>
+		<description>
+			A name that can identify a particular instance of the DCS.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>logo</param-name>
+		<param-value>@LOGO_FILE@</param-value>
+		<description>
+			Image file name (actual image must be stored in /images directory)
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>instanceHelp</param-name>
+		<param-value>@INSTANCE_HELP@</param-value>
+		<description>
+			Url to an instance-specific help file. When this param is specified,
+			a link appears on the "Help" menu.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>instanceHelpLabel</param-name>
+		<param-value>@INSTANCE_HELP_LABEL@</param-value>
+		<description>
+			Label for instanceHelp link (defaults to "instance help")
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>catalogingInfo</param-name>
+		<param-value>@CATALOGING_INFO@</param-value>
+		<description>
+			URL pointing to a web page maintained by collection-builder and containing info for
+			users of the specific instance.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>catalogingInfoLabel</param-name>
+		<param-value>@CATALOGING_INFO_LABEL@</param-value>
+		<description>
+			URL pointing to a web page maintained by collection-builder and containing info for
+			users of the specific instance.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>authenticationEnabled</param-name>
+		<param-value>@AUTHENTICATION_ENABLED@</param-value>
+		<description>
+			Supply any value BUT "true" here to disable the authorization system. Note: when
+			authentication is NOT enabled there will be no login and no support for roles and permissions.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>collBaseDir</param-name>
+		<param-value>@RECORDS_DIR@</param-value>
+		<description>
+			The directory under which the metadata files are
+			located. Path should be absolute or relative to the servlet context.
+			All metadata files must reside in sub-directores by format
+			and collection, for example:
+			collBaseDir + /adn/dcc/DLESE-000-000-000-001.xml.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>exportBaseDir</param-name>
+		<param-value>@EXPORT_BASE_DIR@</param-value>
+		<description>Export operations must write to a path within this directory</description>
+	</context-param>
+
+	<context-param>
+		<param-name>autoExportStartTime</param-name>
+		<param-value>disabled</param-value>
+		<description>
+			The time of day to run the autoExporter in H:mm, for example 0:35 or 23:35.
+			The autoExporter will run once a day at this time, beginning the day following
+			when DCS is started.
+			A value of 0 or "disabled" turns off automatic export
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>defaultSearchFieldName</param-name>
+		<param-value>default</param-value>
+		<description>
+			The default search field used by the query parser in the Search API and elsewhere when no search field is explicilty specified.
+			This is normally set to 'default' but can be overridden to specify a custom field if desired.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>vocabConfigDir</param-name>
+		<param-value>WEB-INF/</param-value>
+		<description>This param is never used but must be defined for DDSServlet's sake</description>
+	</context-param>
+
+	<context-param>
+		<param-name>readOnlyMode</param-name>
+		<param-value>false</param-value>
+		<description>Parameter controlling whether app is in read-only mode</description>
+	</context-param>
+
+	<!-- ***************** collections of collectionRecords ****************** -->
+
+	<!-- To configure collection of collectionRecords to be assigned a metadataHandle
+       create a context-param with name beginning with 'collectionOfCollectionRecords'
+       NOTE: if there are more than one such collection, the param names must be different.
+       The param-value has two parts, separated by a '|':
+       part 1 - the collectionKey (e.g., "dcc")
+       part 2 - the baseUrl to a handleService (e.g., http://nsdldev.org/hrs/service)
+       -->
+	<!--  	<context-param>
+           <param-name>collectionOfCollectionRecords</param-name>
+           <param-value>_somesetspec_|_some_service_baseUrl</param-value>
+         </context-param> -->
+
+	<!-- Virtual Page Config - currently used only for LAR framework, virtualPageConfig
+		is a URI that points to a config file defining a virtual structure for metadata
+		editor pages
+	-->
+	<context-param>
+		<param-name>virtualPageConfig</param-name>
+		<param-value>http://ns.nsdl.org/ncs/lar/1.00/docs/virtualPageConfig.xml</param-value>
+		<description>URI defining virtual structure for flat schemas (currently used
+			only for LAR framework</description>
+	</context-param>
+
+	<context-param>
+		<param-name>adnResolverBaseUrl</param-name>
+		<param-value></param-value>
+		<description>Base URL for ASN Resolver Service that helps index asnIds</description>
+	</context-param>
+
+
+	<context-param>
+		<param-name>mimeTypesMapping</param-name>
+		<param-value>WEB-INF/data/mime-mappings.xml</param-value>
+		<description>Path to an XML file containing mime-mappings. Used by ndr.toolkit package
+			to upload binary content.
+		</description>
+	</context-param>
+
+	<!-- 
+	 	The following parameters specify the locations of files that the system
+		uses. For persistent data, these locations should be outside of the TOMCAT/webapps
+		directory so that application updates don't stomp data.
+	-->
+
+	<context-param>
+		<param-name>dcsConfig</param-name>
+		<param-value>@DCS_CONFIG_DIR@</param-value>
+		<description>
+			Location of configuration files used by the dcs
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>repositoryConfigDir</param-name>
+		<param-value>WEB-INF/conf/repository_config</param-value>
+		<description>
+			The directory where the RepositoryManager config files reside,
+			such as the config for default search fields, field boosting
+			level, synonyms and other application configuration properties,
+			XMLIndexerFieldsConfig global config, etc.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>itemIndexerConfigDir</param-name>
+		<param-value>WEB-INF/conf/repository_config/itemIndexerConfigs</param-value>
+		<description>
+			The directory ItemIndexer configurations reside (the NDR indexer (NDRIndexer) and others).
+			For a long-term operational deployment, this should be configured to point to a
+			local directory outside of Tomcat.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>repositoryData</param-name>
+		<param-value>@REPOSITORY_DATA_DIR@</param-value>
+		<description>
+			The directory where the collection manager config is stored
+			For a long-term operational deployment, this should be configured to point to a
+			local directory outside of Tomcat.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>repositoryAnalyticsData</param-name>
+		<param-value>WEB-INF/data/repository_analytics</param-value>
+		<description>
+			Path that is used for the data analytics tool to pull data from. This path is also used by
+			the repository manager to dump monthly summary reports of the repositories so they can be viewed
+			in repository analytics.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>maxNumFilesToIndex</param-name>
+		<param-value>500</param-value>
+		<description> required by OAI?
+			The maximum number of files to index per block.
+			For Mac OSX, this may need to be set as low as 25 to
+			prevent 'too many open files' errors. For Linux
+			and Windows, this can be set to 500.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>suppressSetCollectionsVocabDisplay</param-name>
+		<param-value>true</param-value>
+		<description>Suppresses metadata vocab manipulation that causes display
+			groups nodes to be displayed in metadata editor interfaces.
+			DO NOT CHANGE THIS PARAMETER!</description>
+	</context-param>
+
+	<context-param>
+		<param-name>contributorOutXform</param-name>
+		<param-value>WEB-INF/xsl_files/cataloger-out.xsl</param-value>
+		<description>Style sheet that removes contributor information from dlese metadata files when they
+			are exported. Transforms are not performed if the param-value does not resolve to an existing file.
+		</description>
+	</context-param>
+
+	<!-- StandardsSuggestionService configuration -->
+	<context-param>
+		<param-name>catServiceProperties</param-name>
+		<param-value></param-value>
+		<description>Location of properties file containing cat service connection params
+		</description>
+	</context-param>
+
+	<!-- StandardsSuggestionService configuration -->
+	<context-param>
+		<param-name>asnStandardsLibrary</param-name>
+		<param-value>@ASN_STANDARDS_LIBRARY@</param-value>
+		<description>Location of the cache for asn standards docs
+		</description>
+	</context-param>
+
+	<!-- StandardsSuggestionService configuration -->
+	<context-param>
+		<param-name>standardsServiceConfig</param-name>
+		<param-value>@STANDARDS_SERVICE_CONFIG@</param-value>
+		<description>Location of an (optional) file for configuring Standards Suggestion Services
+		</description>
+	</context-param>
+
+	<!-- StandardsSuggestionService configuration -->
+	<context-param>
+		<param-name>asnStandardsDocument</param-name>
+		<param-value></param-value>
+		<description>Location of an (optional) file containing an AsnStandards document as XML
+			used by the standards suggestion service for ncs_item framework only
+		</description>
+	</context-param>
+
+	<!-- StandardsSuggestionService configuration -->
+	<!-- 	<context-param>
+            <param-name>catServiceIsActive</param-name>
+            <param-value>false</param-value>
+            <description>CAT suggestion service is enabled by default
+            </description>
+        </context-param> -->
+
+	<context-param>
+		<param-name>sifRefIdConfig</param-name>
+		<param-value>WEB-INF/sifRefId-config</param-value>
+		<description>Directory containing config fields for the SIF frameworks (optional)
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>allowDleseCollectItems</param-name>
+		<param-value>false</param-value>
+		<description>Supply "true" as a value to enable use
+			of dlese_collect as an item framework ("false" by default).
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>allowProvidedCollectionKeys</param-name>
+		<param-value>@ALLOW_DLESE_COLLECT_ITEMS@</param-value>
+		<description>Supply "true" as a value to enable the ability
+			to specify a collection key at collection creation time.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>googleMapsKey</param-name>
+		<param-value>@GOOGLE_MAPS_KEY@</param-value>
+		<description>Key freely obtainable from http://code.google.com/apis/maps/signup.html
+		</description>
+	</context-param>
+
+	<!-- Values displayed in the response to the Search API ServiceInfo request -->
+	<context-param>
+		<param-name>ddswsAdminEmail</param-name>
+		<param-value></param-value>
+		<description>
+			Contact e-mail displayed in the Search API ServiceInfo response,
+			for example j.doe@example.org
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>ddswsServiceName</param-name>
+		<param-value>Digital Collection System Repository Search API</param-value>
+		<description>
+			The service name displayed in the Search API ServiceInfo response.
+			Configure this to provide a specific title for your repository, for example
+			"XXX library repository search API"
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>ddswsDescription</param-name>
+		<param-value>The Digital Collection System Web service is a RESTful search API for items that reside in the repository.</param-value>
+		<description>
+			Service description displayed in the Search API ServiceInfo response.
+			Configure this to provide a specific description for your repository, for example
+			"The XXX library repository contains resources about..."
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>nldrProperties</param-name>
+		<param-value>@NLDR_PROPERTIES@</param-value>
+		<description>
+			Configuration for NLDR-specific properties
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>DDS_UUID</param-name>
+		<param-value>dcs_dds_uuid</param-value>
+		<description>
+			When multiple DDS/DCS instances are deployed in a single Tomcat/container, each must set a unique DDS_UUID String
+			value to prevent temp file name clashes. The String should contain alpha-numeric values dashes and underscores
+			only.
+		</description>
+	</context-param>
+
+
+	<!-- 
+	 	The following parameters shouldn't have to be changed at all. Some may not even
+		have an effect on the system (they are left over from the DDS)
+	-->
+	<context-param>
+		<param-name>enableNewSets</param-name>
+		<param-value>false</param-value>
+		<description>
+			Are new sets that are created in the Collection Manager enabled? [true | false]
+
+			Could be removed from DCS?
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>annotationPathwaysSchemaUrl</param-name>
+		<param-value>http://www.dlese.org/Metadata/annotation/current/vocabs/pathway.xsd</param-value>
+		<description>
+			The URL of the schema that defines the accepted pathways to the DRC.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>collectionKeySchemaUrl</param-name>
+		<param-value>http://www.dlese.org/Metadata/collection/current/vocabs/key.xsd</param-value>
+		<description>
+			The URL of the collection keys schema that defines the valid keys for collections.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>metadataFormatSchemaUrl</param-name>
+		<param-value>http://www.dlese.org/Metadata/collection/current/vocabs/itemFormat.xsd</param-value>
+		<description>
+			The URL of the collection keys schema that defines the valid keys for collections.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>indexingStartTime</param-name>
+		<param-value>disabled</param-value>
+		<description>
+			The time of day to run the indexer in H:mm, for example 0:35 or 23:35.
+			The indexer will run once a day at this time, beginning the day following
+			when DDS is started.
+			A value of "disabled" turns off automatic indexing, which is the default since there is
+			really no need for this feature in the DCS
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>queryLogFile</param-name>
+		<param-value>WEB-INF/logs/clf_extended.log</param-value>
+		<description>The file used to log user querries</description>
+	</context-param>
+
+	<context-param>
+		<param-name>dbURL</param-name>
+		<param-value>id_mapper_not_used</param-value>
+		<description>
+			The URL to the IDmapper database. An example config to a real DB looks like:
+			'jdbc:mysql://quake:3306/DLESE_Systems?user=steves&amp;password=xxx'.
+			This value is set to 'id_mapper_not_used' to run DDS without using the ID mapper
+			database.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>debug</param-name>
+		<param-value>false</param-value>
+		<description>
+			Indicates whether or not debugging messages will
+			be output to standard out. Must be [true | false].
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>ddsWebServicesBaseUrl</param-name>
+		<param-value>http://www.dlese.org/dds/services/ddsws1-0</param-value>
+		<description>
+			The base URL for the DDS Web Services (i.e., UrlCheck and GetRecord). To form a full request,
+			query string including a verb (e.g., GetRecord) and any parameters must be appended.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>recordDataSource</param-name>
+		<param-value>dcs</param-value>
+		<description>
+			A value of "dcs" will suppress the re-indexing process at startup time
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>repositoryEventListener - A plugin that listens for repository events</param-name>
+		<param-value></param-value>
+		<description>
+			To configure an repository event listener, specify an context-param
+			that has a unique param-name that begins with the string
+			'repositoryeventlistener'. The param-value must be of the form
+			[fully qualified Java class] to specify a listener. The Java class
+			must implement RepositoryEventListener (in package
+			edu.ucar.dls.schemedit.repository) and be placed in the class path
+			for this servlet.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>doResourceDeDuplication</param-name>
+		<param-value>false</param-value>
+		<description>
+			True to have the indexer perform resource de-duplication, combining
+			all records that catalog a given resource URL into a sinlge document
+			in the index, false to create separate index entries for all
+			records [true | false ]. (previous param-name was filterDups)
+		</description>
+	</context-param>
+
+
+
+	<!-- ***************** Params used by MetadataVocab ****************** -->
+	<context-param>
+		<param-name>metadataGroupsLoaderFile</param-name>
+		<param-value>WEB-INF/data/NoMetadataUI.xml</param-value>
+		<description>Location of the MetadataVocab loader (lists of groups lists)</description>
+	</context-param>
+	<context-param>
+		<param-name>metadataVocabInstanceAttributeName</param-name>
+		<param-value>MetadataVocab</param-value>
+		<description>Application context attribute name that the MetadataVocab instance is stored as</description>
+	</context-param>
+	<context-param>
+		<param-name>metadataVocabAudience</param-name>
+		<param-value>cataloger</param-value>
+		<description>User interface audience</description>
+	</context-param>
+	<context-param>
+		<param-name>metadataVocabLanguage</param-name>
+		<param-value>en-us</param-value>
+		<description>User interface language</description>
+	</context-param>
+
+	<!-- ***************** Params used by the Java XML converters ****************** -->
+
+	<context-param>
+		<param-name>adn-to-oai-dc-xsl</param-name>
+		<param-value>adn-v0.6.50-to-oai_dc.xsl</param-value>
+	</context-param>
+	<context-param>
+		<param-name>adn-to-nsdl-dc-xsl</param-name>
+		<param-value>adn-v0.6.50-to-nsdl_dc-v1.02-asn-identifiers.xsl</param-value>
+	</context-param>
+	<context-param>
+		<param-name>namespace-out-xsl</param-name>
+		<param-value>namespace-out.xsl</param-value>
+	</context-param>
+
+	<!-- transforms between nsc-item and -collect to nsdl-dc -->
+	<context-param>
+		<param-name>ncs-item-to-nsdl-dc-xsl</param-name>
+		<param-value>ncs-item-v1.02-to-nsdl-dc-v1.02.020.xsl</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>ncs-collect-to-nsdl-dc-xsl</param-name>
+		<param-value>ncs-collect-v1.02-to-nsdl-dc-v1.02.020.xsl</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>nsdl-dc-to-ncs-item-xsl</param-name>
+		<param-value>nsdl-dc-v1.02.020-to-ncs-item-v1.02.xsl</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>nsdl-dc-to-ncs-collect-xsl</param-name>
+		<param-value>nsdl-dc-v1.02.020-to-ncs-collect-v1.02.xsl</param-value>
+	</context-param>
+
+	<!-- transforming between DIFFERENT VERSIONS OF NSDL-DC -->
+	<context-param>
+		<param-name>nsdl-dc-v1.02-to-nsdl-dc-v1.03-xsl</param-name>
+		<param-value>nsdl_dc-v1.02-to-nsdl_dc-v1.03.xsl</param-value>
+	</context-param>
+
+	<!-- used in Experimental transform from library_dc to nsdl_dc -->
+	<context-param>
+		<param-name>library_dc-v1.1-to-oai_dc-xsl</param-name>
+		<param-value>library_dc-v1.1-to-oai_dc.xsl</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>osm_collect-to-dlese_collect-xls</param-name>
+		<param-value>osm_collect-v1.0-to-dlese_collect-v1.0.00.xsl</param-value>
+	</context-param>
+
+
+	<!-- ***************** XML format converters ****************** -->
+
+	<!-- To configure a format converter that uses an XSL stylesheet, the param-name
+    must begin with the string 'xslconverter' and must be unique. The param-value
+    must be of the form 'xslfile.xsl|[from format]\[to format]'.
+    The XSL file must be placed in the directory WEB-INF/xsl_files/. -->
+	<context-param>
+		<param-name>xslconverter - DLESE IMS to ADN converter</param-name>
+		<param-value>dlese-ims-to-adn-v0.6.50-all.xsl|dlese_ims|adn</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - ADN to briefmeta converter</param-name>
+		<param-value>adn-v0.6.50-to-briefmeta-v0.1.01.xsl|adn|briefmeta</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - news_opps to oai_dc converter</param-name>
+		<param-value>news_opps-v1.0.00-to-oai_dc.xsl|news_opps|oai_dc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - Converts from dlese_collect to dlese_collect localized</param-name>
+		<param-value>remove-namespaces-and-localize.xsl|dlese_collect|dlese_collect-localized</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - Converts from adn to adn localized</param-name>
+		<param-value>remove-namespaces-and-localize.xsl|adn|adn-localized</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - Converts from dlese_anno to dlese_anno localized</param-name>
+		<param-value>remove-namespaces-and-localize.xsl|dlese_anno|dlese_anno-localized</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - Converts from news_opps to news_opps localized</param-name>
+		<param-value>remove-namespaces-and-localize.xsl|news_opps|news_opps-localized</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>xslconverter - Converts from dlese_collect to nsdl_dc</param-name>
+		<param-value>dlese_collect-v1.0.00-to-nsdl_dc-1.02.xsl|dlese_collect|nsdl_dc</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>xslconverter - Converts from dlese_anno to oai_dc</param-name>
+		<param-value>dlese_anno-v1.0.00-to-oai_dc.xsl|dlese_anno|oai_dc</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>xslconverter - Converts from dlese_anno to nsdl_dc</param-name>
+		<param-value>dlese_anno-1.0.00-to-nsdl_dc-1.02.xsl|dlese_anno|nsdl_dc</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>xslconverter - Converts from library_dc to oai_dc</param-name>
+		<param-value>library_dc-v1.1-to-oai_dc.xsl|library_dc|oai_dc</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>xslconverter - Converts from mast to oai_dc</param-name>
+		<param-value>mast-v1.00-to-oai_dc-v2.0.xsl|mast|oai_dc</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>xslconverter - Converts from msp2 to nsdl_dc</param-name>
+		<param-value>msp2-v1.00-to-nsdl_dc-v1.02.020.xsl|msp2|nsdl_dc</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>xslconverter - Converts from ncs_collect to dlese_collect</param-name>
+		<param-value>ncs-collect-v1.02-to-dlese_collection-v1.0.00.xsl|ncs_collect|dlese_collect</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>xslconverter - Converts from smile_item to nsdl_dc</param-name>
+		<param-value>smile-v0.1.4-to-nsdl_dc-v1.02.020.xsl|smile_item|nsdl_dc</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>xslconverter - Converts from comm_core to nsdl_dc</param-name>
+		<param-value>comm_core-v1.00-to-nsdl_dc-v1.02.020.xsl|comm_core|nsdl_dc</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>xslconverter - Converts from math_path to nsdl_dc</param-name>
+		<param-value>mathpath-v1.00-to-nsdl_dc-v1.02.020.xsl|math_path|nsdl_dc</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>xslconverter - Converts from lar to nsdl_dc</param-name>
+		<param-value>lar-v1.00-to-nsdl_dc-v1.02.020.xsl|lar|nsdl_dc</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>xslconverter - lar to oai_dc converter</param-name>
+		<param-value>lar-v100-to-oai_dc.xsl|lar|oai_dc</param-value>
+	</context-param>
+
+	<!-- 	Set up the OAI data provider baseURL. Note: To change the baseURL,
+		this value must also be changed below in the XMLPostProcessingFilter filter-mapping 
+		and action servlet-mapping and in the struts-config.xml file for the OAI 
+		data provider path. -->
+	<context-param>
+		<param-name>dataProviderBaseUrlPathEnding</param-name>
+		<param-value>services/oai2-0</param-value>
+		<description>
+			The last portion of the OAI data provider's Base URL, for example
+			'provider' or 'OAI2-0'.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>oaiPmhEnabled</param-name>
+		<param-value>true</param-value>
+		<description>
+			Set to true to enable OAI provider.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>oaiBaseUrlOverride</param-name>
+		<param-value>[determine-from-client]</param-value>
+		<description>
+			This parameter defines the OAI Base URL that is returned in OAI-PMH responses.
+			Use '[determine-from-client]' to have the baseURL determined
+			automatically using the URL supplied by the client (default).
+			If set, this value overrides the entire baseURL, including the value set for
+			dataProviderBaseUrlPathEnding. Use this setting for proxy configurations
+			to ensure the proper baseUrl is returned.
+		</description>
+	</context-param>
+
+	<!-- To configure a format converter that uses a Java class, the param-name must begin with
+    the string 'javaconverter' and must be unique. The param-value
+    must be of the form '[fully qualified Java class]|[from format]\[to format]'.
+    The Java class must implement XMLFormatConverter (in package edu.ucar.dls.xml)
+    and be placed in the class path for this servlet -->
+	<context-param>
+		<param-name>javaconverter - Converts from adn to the NSDL DC format</param-name>
+		<param-value>edu.ucar.dls.xml.ADNToNSDLDCFormatConverter|adn|nsdl_dc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>javaconverter - Converts from adn to the OAI DC format</param-name>
+		<param-value>edu.ucar.dls.xml.ADNToOAIDCFormatConverter|adn|oai_dc</param-value>
+	</context-param>
+
+	<!-- NCS java converters -->
+	<context-param>
+		<param-name>javaconverter - Converts from ncs_item to nsdl_dc</param-name>
+		<param-value>edu.ucar.dls.xml.NCS_ITEMToNSDL_DCFormatConverter|ncs_item|nsdl_dc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>javaconverter - Converts from ncs_collect to nsdl_dc</param-name>
+		<param-value>edu.ucar.dls.xml.NCS_COLLECTToNSDL_DCFormatConverter|ncs_collect|nsdl_dc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>javaconverter - Converts from nsdl_dc to ncs_item</param-name>
+		<param-value>edu.ucar.dls.xml.NSDL_DCToNCS_ITEMFormatConverter|nsdl_dc|ncs_item</param-value>
+	</context-param>
+	<context-param>
+		<param-name>javaconverter - Converts from nsdl_dc to ncs_collect</param-name>
+		<param-value>edu.ucar.dls.xml.NSDL_DCToNCS_COLLECTFormatConverter|nsdl_dc|ncs_collect</param-value>
+	</context-param>
+
+	<!-- Experimental converter - used for alliance project -->
+	<context-param>
+		<param-name>javaconverter - Converts from libarary_dc to nsdl_dc</param-name>
+		<param-value>edu.ucar.dls.xml.LIBRARY_DCToNSDL_DCFormatConverter|library_dc|nsdl_dc</param-value>
+	</context-param>
+
+	<!-- ASN Standards plugins -->
+	<context-param>
+		<param-name>catServicePlugin - msp2 CAT Standards Service plugin</param-name>
+		<param-value>msp2|edu.ucar.dls.schemedit.standards.asn.plugin.Msp2FrameworkPlugin</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>catServicePlugin - math_path CAT Standards Service plugin</param-name>
+		<param-value>math_path|edu.ucar.dls.schemedit.standards.asn.plugin.MathPathFrameworkPlugin</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>catServicePlugin - comm_anno CAT Standards Service plugin</param-name>
+		<param-value>comm_anno|edu.ucar.dls.schemedit.standards.asn.plugin.NcsAnnoFrameworkPlugin</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>catServicePlugin - ncs_item CAT Standards Service plugin</param-name>
+		<param-value>ncs_item|edu.ucar.dls.schemedit.standards.asn.plugin.NcsItemFrameworkPlugin</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>catServicePlugin - eng_path CAT Standards Service plugin</param-name>
+		<param-value>eng_path|edu.ucar.dls.schemedit.standards.asn.plugin.EngPathFrameworkPlugin</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>catServicePlugin - res_qual CAT Standards Service plugin</param-name>
+		<param-value>res_qual|edu.ucar.dls.schemedit.standards.asn.plugin.ResQualFrameworkPlugin</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>catServicePlugin - adn CAT Standards Service plugin</param-name>
+		<param-value>adn|edu.ucar.dls.schemedit.standards.adn.AdnFrameworkPlugin</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>catServicePlugin - cow_item CAT Standards Service plugin</param-name>
+		<param-value>cow_item|edu.ucar.dls.schemedit.standards.asn.plugin.NcsAnnoFrameworkPlugin</param-value>
+	</context-param>
+
+	<!-- DcsDataFileIndexingPlugin -->
+	<context-param>
+		<param-name>fileindexingplugin - An indexing plugin that indexes meta-metadata about items in the repository</param-name>
+		<param-value>edu.ucar.dls.schemedit.dcs.DcsDataFileIndexingPlugin</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>primaryContentPathOnServer</param-name>
+		<param-value></param-value>
+		<description>
+			Path to primary path - used by PrimaryContentServlet and Upload
+		</description>
+	</context-param>
+
+	<!-- 	Send pages through the XMLPostProcessingFilter, which performs XML validation iff
+		the there is a parameter rt=validate. This filter also performs gzip compression
+		of all responses regardless of whether they are validated. -->
+	<filter>
+		<filter-name>XMLPostProcessingFilter</filter-name>
+		<filter-class>edu.ucar.dls.webapps.servlets.filters.XMLPostProcessingFilter</filter-class>
+	</filter>
+
+
+	<filter>
+		<filter-name>RecordValidationFilter</filter-name>
+		<filter-class>edu.ucar.dls.schemedit.input.RecordValidationFilter</filter-class>
+	</filter>
+
+
+	<!-- 	Send pages through a gzip filter to compress the response sent to the browser. -->
+	<filter>
+		<filter-name>GzipFilter</filter-name>
+		<filter-class>edu.ucar.dls.webapps.servlets.filters.GzipFilter</filter-class>
+	</filter>
+
+	<filter>
+		<filter-name>passThroughFilter</filter-name>
+		<filter-class>
+			edu.ucar.dls.schemedit.security.access.PassThroughFilter
+		</filter-class>
+	</filter>
+
+	<filter>
+		<filter-name>webServicesFilter</filter-name>
+		<filter-class>
+			edu.ucar.dls.schemedit.security.access.WebServicesFilter
+		</filter-class>
+	</filter>
+
+
+	<filter>
+		<filter-name>authorizationFilter</filter-name>
+		<filter-class>
+			edu.ucar.dls.schemedit.security.access.AuthorizationFilter
+		</filter-class>
+		<init-param>
+			<param-name>onError</param-name>
+			<param-value>/auth/logon.jsp</param-value>
+		</init-param>
+	</filter>
+
+	<!-- Configure all pages to filter. Note that the filters do not handle 404
+		errors, so pages that may return 404 should be excluded. -->
+
+	<filter-mapping>
+		<filter-name>webServicesFilter</filter-name>
+		<url-pattern>/services/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>passThroughFilter</filter-name>
+		<url-pattern>*.js</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>passThroughFilter</filter-name>
+		<url-pattern>*.css</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>passThroughFilter</filter-name>
+		<url-pattern>*.gif</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>passThroughFilter</filter-name>
+		<url-pattern>*.jpg</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>passThroughFilter</filter-name>
+		<url-pattern>*.png</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>authorizationFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>XMLPostProcessingFilter</filter-name>
+		<url-pattern>/services/oai2-0</url-pattern>
+	</filter-mapping>
+
+	<!-- Configure all pages to be gzipped. Note that the gzip filter does not handle 404
+    errors, so pages that may return 404 cannot be included such as the view_record.jsp page
+    or things such as *.jsp -->
+	<!-- Experimental -->
+	<filter-mapping>
+		<filter-name>GzipFilter</filter-name>
+		<url-pattern>/editor/edit.do</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>GzipFilter</filter-name>
+		<url-pattern>/browse/query.do</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>GzipFilter</filter-name>
+		<url-pattern>/browse/view.do</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>GzipFilter</filter-name>
+		<url-pattern>/collections/view.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>GzipFilter</filter-name>
+		<url-pattern>/view_resource.do</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>GzipFilter</filter-name>
+		<url-pattern>/query.do</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>GzipFilter</filter-name>
+		<url-pattern>/index.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>RecordValidationFilter</filter-name>
+		<url-pattern>/browse/display.do</url-pattern>
+	</filter-mapping>
+	<!-- 	<filter-mapping>
+            <filter-name>XMLPostProcessingFilter</filter-name>
+            <url-pattern>/browse/display.do</url-pattern>
+        </filter-mapping> -->
+	<filter-mapping>
+		<filter-name>XMLPostProcessingFilter</filter-name>
+		<url-pattern>/services/ddsws1-0</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>XMLPostProcessingFilter</filter-name>
+		<url-pattern>/services/ddsws1-1</url-pattern>
+	</filter-mapping>
+
+	<listener>
+		<listener-class>edu.ucar.dls.schemedit.SessionRegistry</listener-class>
+	</listener>
+
+
+	<!-- MetadataVocabServlet places a MetadataVocabOPML instance into the application scope -->
+	<servlet>
+		<servlet-name>MetadataVocabServlet</servlet-name>
+		<description>Initializes a MetadataVocabOPML instance</description>
+		<servlet-class>edu.ucar.dls.vocab.MetadataVocabServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+
+	<!-- NDRServlet supports interaction with NDR
+		notes: 
+			- NdrRepositoryWriterPlugin must also be registered with 
+			  SchemEditServlet to enable writing to NDR
+	-->
+	<servlet>
+		<servlet-name>NDRServlet</servlet-name>
+		<description>Initializes a NDRServlet instance</description>
+		<servlet-class>edu.ucar.dls.ndr.NDRServlet</servlet-class>
+		<load-on-startup>6</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>DDSServlet</servlet-name>
+		<description>Initializes the discovery system</description>
+		<servlet-class>edu.ucar.dls.dds.DDSServlet</servlet-class>
+		<init-param>
+			<param-name>analysisType</param-name>
+			<param-value>2</param-value>
+			<description>
+				The analyzer type used for indexing and queries.
+				Value must be in integer.
+			</description>
+		</init-param>
+		<init-param>
+			<param-name>defaultField</param-name>
+			<param-value>default</param-value>
+			<description>The default field name for documents in the index</description>
+		</init-param>
+		<init-param>
+			<param-name>ddsContext</param-name>
+			<param-value>dcs-webapp</param-value>
+			<description>
+				A string that indicates the context in which DDS is running.
+				Possible values:
+				dds-webapp, dcs-webapp
+			</description>
+		</init-param>
+
+		<!-- To configure an indexing plugin, specify an init-param that has a unique 
+		param-name that begins with the string 'fileindexingplugin'. The param-value 
+		must be of the form '[fully qualified Java class]|[xmlFormat]', or 
+		[fully qualified Java class] to specify a plugin to use for all XML formats. 
+		The Java class must implement FileIndexingPlugin (in package edu.ucar.dls.index.writer)
+		and be placed in the class path for this servlet -->
+		<init-param>
+			<param-name>fileindexingplugin - An indexing plugin that indexes meta-metadata about items in the repository</param-name>
+			<param-value>edu.ucar.dls.schemedit.dcs.DcsDataFileIndexingPlugin</param-value>
+		</init-param>
+
+		<load-on-startup>3</load-on-startup>
+	</servlet>
+
+	<!-- 	=========== The OAIProviderServlet servlet initializes and manages the repository. =========== -->
+	<servlet>
+		<servlet-name>OAIProviderServlet</servlet-name>
+		<servlet-class>edu.ucar.dls.oai.provider.OAIProviderServlet</servlet-class>
+
+		<!-- ***************** Default XMLFormat schema and namespace definitions ****************** 
+			The <param-name> must start with the String 'xmlformatinfo' and must be unique.
+			The <param-value> is of the form: [metadataPrefix]|[schema]|[namespace]
+			These values are used by default but may be changed by the user in the web-based UI
+			for the OAI app.
+		-->
+		<init-param>
+			<param-name>xmlformatinfo - oai_dc schema and namespace</param-name>
+			<param-value>oai_dc|http://www.openarchives.org/OAI/2.0/oai_dc.xsd|http://www.openarchives.org/OAI/2.0/oai_dc/</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - nsdl_dc schema and namespace</param-name>
+			<param-value>nsdl_dc|http://ns.nsdl.org/schemas/nsdl_dc/nsdl_dc_v1.02.xsd|http://ns.nsdl.org/nsdl_dc_v1.02/</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - adn schema and namespace</param-name>
+			<param-value>adn|http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd|http://adn.dlese.org</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - news_opps schema and namespace</param-name>
+			<param-value>news_opps|http://www.dlese.org/Metadata/news-opps/1.0.00/news-opps.xsd|http://newsopps.dlese.org</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - dlese_anno schema and namespace</param-name>
+			<param-value>dlese_anno|http://www.dlese.org/Metadata/annotation/1.0.00/annotation.xsd|http://www.dlese.org/Metadata/annotation</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - dlese_collect schema and namespace</param-name>
+			<param-value>dlese_collect|http://www.dlese.org/Metadata/collection/1.0.00/collection.xsd|http://collection.dlese.org</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - briefmeta schema and namespace</param-name>
+			<param-value>briefmeta|http://www.dlese.org/Metadata/briefmeta/0.1.01/brief-record.xsd|http://www.dlese.org/Metadata/briefmeta</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - msp2 schema and namespace</param-name>
+			<param-value>msp2|http://ns.nsdl.org/ncs/msp2/1.00/schemas/record.xsd|http://ns.nsdl.org/ncs/msp2</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - comm_anno schema and namespace</param-name>
+			<param-value>comm_anno|http://ns.nsdl.org/ncs/comm_anno/1.00/schemas/comm_anno.xsd|http://ns.nsdl.org/ncs/comm_anno</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - ncs_collect schema and namespace</param-name>
+			<param-value>ncs_collect|http://ns.nsdl.org/ncs/ncs_collect/1.02/schemas/ncs-collect.xsd|http://ns.nsdl.org/ncs</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - comm_para schema and namespace</param-name>
+			<param-value>comm_para|http://ns.nsdl.org/ncs/comm_para/1.00/schemas/comm_para.xsd|http://ns.nsdl.org/ncs/comm_para</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - eng_path schema and namespace</param-name>
+			<param-value>eng_path|http://ns.nsdl.org/ncs/eng_path/1.00/schemas/record.xsd|http://ns.nsdl.org/ncs/eng_path</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - math_path schema and namespace</param-name>
+			<param-value>math_path|http://ns.nsdl.org/ncs/math_path/1.00/schemas/record.xsd|http://ns.nsdl.org/ncs/math_path</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - dif schema and namespace</param-name>
+			<param-value>dif|http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/dif_v9.4.xsd|http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - assessments schema and namespace</param-name>
+			<param-value>assessments|http://www.dlsciences.org/frameworks/assessments/1.00/schemas/assessments.xsd|http://www.dlsciences.org/frameworks/assessments</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - ccs_org_config schema and namespace</param-name>
+			<param-value>ccs_org_config|http://www.dlsciences.org/frameworks/ccs_org_config/1.00/schemas/ccs_org_config.xsd|http://www.dlsciences.org/frameworks/ccs_org_config</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - concepts schema and namespace</param-name>
+			<param-value>concepts|http://www.dlsciences.org/frameworks/concepts/1.0/schemas/concepts.xsd|http://www.dlsciences.org/frameworks/concepts</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - teach schema and namespace</param-name>
+			<param-value>teach|http://www.dlsciences.org/frameworks/teach/1.00/schemas/teach.xsd|http://www.dlsciences.org/frameworks/teach</param-value>
+		</init-param>
+		<init-param>
+			<param-name>xmlformatinfo - comm_core schema and namespace</param-name>
+			<param-value>comm_core|http://ns.nsdl.org/ncs/comm_core/1.00/schemas/record.xsd|http://ns.nsdl.org/ncs/msp2</param-value>
+		</init-param>
+
+		<load-on-startup>7</load-on-startup>
+	</servlet>
+
+
+	<!-- DDSServlet definition and init params -->
+	<servlet>
+		<servlet-name>SetupServlet</servlet-name>
+		<description>Initializes the DCS system</description>
+		<servlet-class>edu.ucar.dls.schemedit.SetupServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>SchemEditServlet</servlet-name>
+		<servlet-class>edu.ucar.dls.schemedit.SchemEditServlet</servlet-class>
+
+		<!-- To configure an repositorywriter plugin, specify an init-param that has a unique 
+		param-name that begins with the string 'repositorywriterplugin'. The param-value 
+		must be of the form '[fully qualified Java class]. 
+		The Java class must implement RepositoryWriterPlugin 
+		(in package edu.ucar.dls.schemedit.repository) and be placed in the class path
+		for this servlet -->
+		<init-param>
+			<param-name>repositorywriterplugin - A plugin that writes to a NSDL repository</param-name>
+			<param-value>edu.ucar.dls.schemedit.repository.NsdlRepositoryWriterPlugin</param-value>
+		</init-param>
+
+		<load-on-startup>5</load-on-startup>
+
+	</servlet>
+
+	<servlet>
+		<servlet-name>SchemaViewerServlet</servlet-name>
+		<servlet-class>edu.ucar.dls.xml.schema.SchemaViewerServlet</servlet-class>
+		<load-on-startup>7</load-on-startup>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>PrimaryContentServlet</servlet-name>
+		<description>Supports primary content download</description>
+		<servlet-class>edu.ucar.dls.schemedit.ccs.PrimaryContentServlet</servlet-class>
+		<load-on-startup>7</load-on-startup>
+	</servlet>
+
+	<!-- Standard Action Servlet Configuration (with debugging) -->
+	<servlet>
+		<servlet-name>action</servlet-name>
+		<servlet-class>edu.ucar.dls.schemedit.ActionServlet</servlet-class>
+		<init-param>
+			<param-name>application</param-name>
+			<param-value>ApplicationResources</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>configFactory</param-name>
+			<param-value>edu.ucar.dls.schemedit.struts.MyModuleConfigFactory</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/struts-config.xml</param-value>
+		</init-param>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>0</param-value>
+		</init-param>
+		<init-param>
+			<param-name>detail</param-name>
+			<param-value>2</param-value>
+		</init-param>
+		<init-param>
+			<param-name>validate</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<load-on-startup>8</load-on-startup>
+	</servlet>
+
+	<!-- Handle services -->
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>/services/ddsws1-0</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>/services/ddsws1-1</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>/services/dcsws1-0</url-pattern>
+	</servlet-mapping>
+
+	<!-- ODLP/OAI servlet Mapping-->
+	<!-- Standard Action Servlet Mapping -->
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>/services/oai2-0</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>OAIProviderServlet</servlet-name>
+		<url-pattern>/OAIProviderServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Standard Action Servlet Mapping -->
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>PrimaryContentServlet</servlet-name>
+		<url-pattern>/content/*</url-pattern>
+	</servlet-mapping>
+
+	<session-config>
+		<session-timeout>120</session-timeout>
+	</session-config>
+
+	<!-- The Usual Welcome File List -->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- Define pages to display errors -->
+	<error-page>
+		<error-code>400</error-code>
+		<location>/WEB-INF/error_pages/error_page_400.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/error_pages/error_page_404.jsp</location>
+	</error-page>
+	<error-page> <!-- UNAUTHORIZED -->
+		<!-- Custom 401 works in TC 5.0 but not 5.5.12 -->
+		<error-code>401</error-code>
+		<location>/WEB-INF/error_pages/error_page_401.jsp</location>
+	</error-page>
+	<error-page> <!-- ACCESS DENIED -->
+		<!-- Custom 401 works in TC 5.0 but not 5.5.12 -->
+		<error-code>403</error-code>
+		<location>/WEB-INF/error_pages/error_page_401.jsp</location>
+	</error-page>
+
+	<!-- 505 and throwable error pages commented out for development only!! -->
+	<error-page>
+		<error-code>500</error-code>
+		<location>/WEB-INF/error_pages/error_page_500.jsp</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/WEB-INF/error_pages/error_page_500.jsp</location>
+	</error-page>
+
+
+</web-app>

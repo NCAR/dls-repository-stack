@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="concepts">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<xpaths>
+				<xpath>/concept/recordID</xpath>
+			</xpaths>		
+		</standardField>		
+		<standardField name="title">
+			<xpaths>
+				<xpath>/concept/shortTitle</xpath>
+				<xpath>/concept/longTitle</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/concept//contents//content//text</xpath>
+			</xpaths>		
+		</standardField>		
+	</standardFields>
+	
+	<customFields>
+		<customField facetCategory="CCSAssetUrl"> 
+			<xpaths>
+				<!-- Index protected asset urls found in the concepts record -->
+				<xpath>/concept/contents/content/url[(starts-with(.,'http://ccs.dls.ucar.edu/home/protected/'))]</xpath>
+
+			</xpaths>		
+		</customField>
+	</customFields>	
+	
+</XMLIndexerFieldsConfig>

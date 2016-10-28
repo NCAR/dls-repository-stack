@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: abstract-osm-groups-submission-en-us.xml,v 1.2 2011/06/15 19:11:28 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/non-vocab-fields.xsd"
+version="2.0">
+	<head>
+		<title>Abstract</title>
+		<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="Abstract" audience="submission" path="/record/general/abstract" deftn="A brief, objective representation of the essential content of a book, article, speech, report, dissertation, patent, standard, or other work, presenting the main points in the same order as the original but having no independent literary value."/>
+	</head>
+	<bestPractices>
+		<practice>If a formal abstract is available, cut and paste or type it directly into this field.</practice>
+		<practice>If no abstract is available, enter keywords in the keywords field to aid in the discovery of the resource.</practice>
+		<practice>If no abstract is available, consider writing a description in this field to aid in the discovery of the resource.</practice>
+	</bestPractices>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

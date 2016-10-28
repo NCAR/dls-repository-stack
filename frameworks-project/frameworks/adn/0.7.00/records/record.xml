@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org
+
+http://www.dlese.org/Metadata/adn-item/0.7.00/record.xsd">
+
+	<general>
+
+		<title>Title Goes Here</title>
+
+		<description>This is a great site. It has lots of information.</description>
+
+		<language>en</language>
+
+		<subjects>
+
+			<subject>DLESE:Physics</subject>
+
+			<subject>DLESE:Atmospheric science</subject>
+
+			<subject>DLESE:Biological oceanography</subject>
+
+			<subject>DLESE:Other</subject>
+
+		</subjects>
+
+		<subjectsOther>
+
+			<subjectOther>DLESE:No vocabulary yet:Do not use</subjectOther>
+
+		</subjectsOther>
+
+		<keywords>
+
+			<keyword>Remote sensing</keyword>
+
+			<keyword>Data collection</keyword>
+
+			<keyword>Rivers</keyword>
+
+			<keyword src="NASA" url="http://url.to.nasa" id="JDL-123">Short terms or phrases</keyword>
+
+		</keywords>
+
+		<simplePlacesAndEvents>
+
+			<placeAndEvent>
+
+				<place>Washington, DC</place>
+
+				<event>Valentine's Day snowstorm</event>
+
+				<description>Text string</description>
+
+			</placeAndEvent>
+
+			<placeAndEvent>
+
+				<place>Jackson, Mississippi</place>
+
+			</placeAndEvent>
+
+			<placeAndEvent>
+
+				<place>Jackson, Mississippi</place>
+
+				<event>something</event>
+
+			</placeAndEvent>
+
+		</simplePlacesAndEvents>
+
+		<simpleTemporalCoverages>
+
+			<description>Morning and afternoon</description>
+
+			<description>Fall</description>
+
+			<description>First quarter</description>
+
+		</simpleTemporalCoverages>
+
+		<catalogEntries>
+
+			<catalog entry="COMET-000-000-000-123">COMET Collection</catalog>
+
+			<catalog entry="ISBN 1-861005-47-4">Harper Books</catalog>
+
+		</catalogEntries>
+
+		<additionalInfo>Put information not covered by other metadata here.</additionalInfo>
+
+	</general>
+
+	<lifecycle>
+
+		<version>String</version>
+
+		<description>String</description>
+
+		<contributors>
+
+			<contributor role="Author" date="2002-12-03">
+
+				<person>
+
+					<nameTitle>Ms</nameTitle>
+
+					<nameFirst>Kathryn</nameFirst>
+
+					<nameMiddle>M.</nameMiddle>
+
+					<nameLast>Ginger</nameLast>
+
+					<instName>University Corporation for Atmospheric Research (UCAR)</instName>
+
+					<instDept>DLESE Program Center (DPC)</instDept>
+
+					<emailPrimary>somebody@company.com</emailPrimary>
+
+					<emailAlt>somebody@company.edu</emailAlt>
+
+					<contactID>For DLESE Program Center use only</contactID>
+
+				</person>
+
+			</contributor>
+
+			<contributor role="Author" date="2002-12-07">
+
+				<organization>
+
+					<instName>University Corporation for Atmospheric Research (UCAR)</instName>
+
+					<instDept>DLESE Program Center (DPC)</instDept>
+
+					<instPosition>DPC Instructional Designer</instPosition>
+
+					<instUrl>http://some.url.goes.here</instUrl>
+
+					<instEmail>info@ucar.edu</instEmail>
+
+					<contactID>For DLESE Program Center use only</contactID>
+
+				</organization>
+
+			</contributor>
+
+			<contributor role="Contributor">
+
+				<organization>
+
+					<instName>Forecast Systems Laboratory</instName>
+
+				</organization>
+
+			</contributor>
+
+			<contributor role="Principal Investigator" date="2002-09-17">
+
+				<person>
+
+					<nameFirst>Jane</nameFirst>
+
+					<nameLast>Doe</nameLast>
+
+					<instName>University of Kansas</instName>
+
+					<emailPrimary>doe@ku.edu</emailPrimary>
+
+				</person>
+
+			</contributor>
+
+		</contributors>
+
+	</lifecycle>
+
+	<metaMetadata>
+
+		<catalogEntries>
+
+			<catalog entry="DLESE-000-000-000-123">Digital Library for Earth System Education</catalog>
+
+		</catalogEntries>
+
+		<dateInfo created="2002-04-09" accessioned="2002-09-09" lastModified="2002-05-12T18:30:00Z"/>
+
+		<statusOf status="Accessioned">A record can only have one status. If need be, put descriptive information about status here.</statusOf>
+
+		<language>en</language>
+
+		<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+
+		<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research). All rights reserved.</copyright>
+
+		<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">The Digital Library for Earth System Education (DLESE) may modifiy and redistribute metadata to work in DLESE systems and services.</termsOfUse>
+
+		<description>String</description>
+
+		<contributors>
+
+			<contributor role="Creator" date="2003-05-09">
+
+				<person>
+
+					<nameTitle>Ms</nameTitle>
+
+					<nameFirst>Holly</nameFirst>
+
+					<nameLast>Devaul</nameLast>
+
+					<instName>University Corporation for Atmospheric Research (UCAR)</instName>
+
+					<instDept>DLESE Program Center (DPC)</instDept>
+
+					<emailPrimary>person@ucar.edu</emailPrimary>
+
+				</person>	
+
+			</contributor>
+
+			<contributor role="Validator" date="2003-05-31">
+
+				<person>
+
+					<nameFirst>Eddy</nameFirst>
+
+					<nameLast>Viscosity</nameLast>
+
+					<instName>DLESE Program Center (DPC)</instName>
+
+					<emailPrimary>Unknown</emailPrimary>
+
+				</person>
+
+			</contributor>
+
+		</contributors>
+
+	</metaMetadata>
+
+	<technical>
+
+	<!-- choose either online or offline as the tag set in techincal -->
+
+		<online>
+
+			<primaryURL>http://the-url-of-the-resource</primaryURL>
+
+			<mirrorURLs>
+
+				<mirrorURL>http:this.is-a.mirror</mirrorURL>
+
+				<mirrorURL>http://this.is-also.a-mirror</mirrorURL>
+
+			</mirrorURLs>
+
+			<mediums>
+
+				<medium>text/htm</medium>
+
+				<medium>application/msword</medium>
+
+			</mediums>
+
+			<size>5MB</size>
+
+			<duration>P1Y2M3DT10H30M</duration>
+
+			<description>Additional technical information goes here. This might include some information about imagery, e.g. number of pixels wide and high.</description>
+
+			<requirements>
+
+				<requirement>
+
+					<reqType>DLESE:Operating system:Unix</reqType>
+
+					<minimumVersion>String</minimumVersion>
+
+					<maximumVersion>String</maximumVersion>
+
+				</requirement>
+
+				<requirement>
+
+					<reqType>DLESE:Browser:Netscape</reqType>
+
+					<minimumVersion>String</minimumVersion>
+
+					<maximumVersion>String</maximumVersion>
+
+				</requirement>
+
+			</requirements>
+
+			<otherRequirements>
+
+				<otherRequirement>
+
+					<otherType>something technical</otherType>
+
+					<minimumVersion>String</minimumVersion>
+
+					<maximumVersion>String</maximumVersion>
+
+				</otherRequirement>
+
+				<otherRequirement>
+
+					<otherType>More technical info goes here</otherType>
+
+				</otherRequirement>
+
+			</otherRequirements>
+
+		</online>		
+
+	</technical>
+
+	<educational>
+
+		<audiences>
+
+			<audience>
+
+				<toolFor>GEM:Elementary school teachers</toolFor>
+
+				<beneficiary>GEM:Minority students</beneficiary>
+
+				<gradeRange>DLESE:Primary elementary</gradeRange>
+
+				<typicalAgeRange>String</typicalAgeRange>
+
+				<instructionalGoal>String</instructionalGoal>
+
+				<teachingMethods>
+
+					<teachingMethod>GEM:Advanced organizers</teachingMethod>
+
+				</teachingMethods>
+
+				<typicalUseTime>P1Y2M3DT10H30M</typicalUseTime>
+
+			</audience>
+
+			<audience>
+
+				<toolFor>GEM:Middle school teachers</toolFor>
+
+				<beneficiary>GEM:Bilingual students</beneficiary>
+
+				<gradeRange>DLESE:Middle school</gradeRange>
+
+				<typicalAgeRange>String</typicalAgeRange>
+
+				<instructionalGoal>String</instructionalGoal>
+
+				<teachingMethods>
+
+					<teachingMethod>DLESE:Small group learning</teachingMethod>
+
+				</teachingMethods>
+
+				<typicalUseTime>P1Y2M3DT10H30M</typicalUseTime>
+
+			</audience>
+
+		</audiences>
+
+		<resourceTypes>
+
+			<resourceType>DLESE:Learning materials:Case study</resourceType>
+
+			<resourceType>DLESE:To be supplied</resourceType>
+
+		</resourceTypes>
+
+		<contentStandards>
+
+			<contentStandard>AAASbenchmarks:Common themes:Constancy and change:6-8:Physical and biological systems tend to change until they become stable and then remain that way unless their surroundings change.</contentStandard>
+
+			<contentStandard>AAASbenchmarks:Designed world:Energy sources and use:3-5:Moving air and water can be used to run machines.</contentStandard>
+
+			<contentStandard>NSES:5-8:Content Standard B Physical Science Standards:Properties and changes of properties in matter</contentStandard>
+
+			<contentStandard>NCGE:Human Systems:The characteristics, distributions, and complexity of Earth's cultural mosaics</contentStandard>
+
+			<contentStandard>NCGE:Environment and Society:How physical systems affect human systems</contentStandard>
+
+			<contentStandard>NCTM:3-5:Algebra:Understand patterns, relations, and functions:Describe, extend, and make generalizations about geometric and numeric patterns</contentStandard>
+
+			<contentStandard>NETS:Technology research tools:Students use technology tools to process data and report results</contentStandard>
+
+		</contentStandards>
+
+		<processStandards>
+
+			<processStandard>NCTM:Reasoning and Proof:Make and investigate mathematical conjectures</processStandard>
+
+		</processStandards>
+
+		<teachingStandards>
+
+			<teachingStandard>NSES:TEACHING STANDARD E Teachers of science develop communities of science learners that reflect the intellectual rigor of scientific inquiry and the attitudes and social values conducive to science learning:Nurture collaboration among students</teachingStandard>
+
+			<teachingStandard>NETS:Planning and designing learning environments and experiences:Apply current research on teaching and learning with technology when planning learning environments and experiences</teachingStandard>
+
+		</teachingStandards>
+
+		<interactivityLevel>LOM:Very low</interactivityLevel>
+
+		<interactivityType>LOM:Active</interactivityType>
+
+		<description>String</description>
+
+	</educational>
+
+	<rights>
+
+		<cost>DLESE:No</cost>
+
+		<description>For educational use only</description>
+
+	</rights>
+
+	<relations>
+
+		<relation>
+
+			<idEntry kind="DC:Is part of" entry="DLESE-000-000-000-123" catalogName="Digital Library for Earth System Education" title="Optionally Referenced Title Goes Here">Put the description of the referenced resource here. This is optional.</idEntry>
+
+		</relation>
+
+		<relation>
+
+			<idEntry kind="DC:Is part of" entry="DLESE-000-000-000-456"></idEntry>
+
+		</relation>
+
+		<relation>
+
+			<urlEntry kind="DC:References" url="http://put-the.referenced.url-here"/>
+
+		</relation>
+
+		<relation>
+
+			<urlEntry kind="DLESE:Is associated with" url="http://put-the.referenced.url-here"/>
+
+		</relation>
+
+	</relations>
+
+	<geospatialCoverages>
+
+		<geospatialCoverage>
+
+			<body>
+
+				<planet>Earth</planet>
+
+			</body>
+
+			<geodeticDatumGlobalOrHorz>DLESE:WGS84</geodeticDatumGlobalOrHorz>
+
+			<projection type="DLESE:Mercator">Information about the projection goes here.</projection>
+
+			<coordinateSystem type="DLESE:Geographic latitude and longitude">Information about the coordinate system goes here</coordinateSystem>
+
+			<boundBox>
+
+				<westCoord>-124.58</westCoord>
+
+				<eastCoord>-102.0</eastCoord>
+
+				<northCoord>46.33</northCoord>
+
+				<southCoord>37.0</southCoord>
+
+				<bbSrcName>Cataloger supplied</bbSrcName>
+
+				<bbSrcIDandURL URL="String">None</bbSrcIDandURL>
+
+				<bbSrcDesc>String</bbSrcDesc>
+
+				<bbAccEst>String</bbAccEst>
+
+				<description>Extra information goes here about the bounding box goes here.</description>
+
+				<bbVert>
+
+					<geodeticDatumGlobalOrVert>DLESE:CGD28-CDN</geodeticDatumGlobalOrVert>
+
+					<vertBase>Datum level</vertBase>
+
+					<vertMin units="centimeters (cm)">10</vertMin>
+
+					<vertMax units="centimeters (cm)">300</vertMax>
+
+					<vertAcc>Information about veritcal accuracy goes here (e.g. The measurement is accurate to the nearest meter).</vertAcc>
+
+				</bbVert>
+
+				<bbPlaces>
+
+					<place>
+
+						<name>If appropriate enter a name (e.g. Great Plains, United States). Generally bounding boxes encompassing detailed geometries do not have place names while detailed geometries and bounding boxes not encompassing detailed geometries do have place names</name>
+
+						<source>Cataloger supplied</source>
+
+						<IDandURL URL="String">String</IDandURL>
+
+						<sourceDesc>String</sourceDesc>
+
+					</place>
+
+				</bbPlaces>
+
+				<bbEvents>
+
+					<event>
+
+						<name>If appropriate enter a name (e.g. Hurricane Fran). Generally bounding boxes encompassing detailed geometries do not to have event names while detailed geometries and bounding boxes not encompassing detailed geometries have event names.</name>
+
+						<source>String</source>
+
+						<IDandURL URL="String">String</IDandURL>
+
+						<sourceDesc>String</sourceDesc>
+
+					</event>
+
+				</bbEvents>
+
+			</boundBox>
+
+			<detGeos>
+
+				<detGeo>
+
+					<typeDetGeo>Bounding box</typeDetGeo>
+
+					<geoNumPts>4</geoNumPts>
+
+					<geoPtOrder>Inside</geoPtOrder>
+
+					<longLats>
+
+						<longLat longitude="-124.58" latitude="46.33"/>
+
+						<longLat longitude="-124.58" latitude="42.0"/>
+
+						<longLat longitude="-116.58" latitude="42.0"/>
+
+						<longLat longitude="-116.58" latitude="46.33"/>
+
+					</longLats>
+
+					<detSrcName>Cataloger supplied</detSrcName>
+
+					<detPlaces>
+
+						<place>
+
+							<name>Oregon</name>
+
+							<source>Cataloger supplied</source>
+
+						</place>
+
+					</detPlaces>
+
+				</detGeo>
+
+				<detGeo>
+
+					<typeDetGeo>Bounding box</typeDetGeo>
+
+					<geoNumPts>4</geoNumPts>
+
+					<geoPtOrder>Inside</geoPtOrder>
+
+					<longLats>
+
+						<longLat longitude="-109" latitude="41"/>
+
+						<longLat longitude="-109" latitude="37"/>
+
+						<longLat longitude="-102" latitude="37"/>
+
+						<longLat longitude="-102" latitude="41"/>
+
+					</longLats>
+
+					<detSrcName>Cataloger supplied</detSrcName>
+
+					<detPlaces>
+
+						<place>
+
+							<name>Colorado</name>
+
+							<source>Cataloger supplied</source>
+
+						</place>
+
+					</detPlaces>
+
+				</detGeo>
+
+				<detGeo>
+
+					<typeDetGeo>Point</typeDetGeo>
+
+					<geoNumPts>1</geoNumPts>
+
+					<geoPtOrder>None</geoPtOrder>
+
+					<longLats>
+
+						<longLat longitude="-121.69" latitude="45.37"/>
+
+					</longLats>
+
+					<detSrcName>Alexandria Digital Library (ADL) Gazetteer</detSrcName>
+
+					<detVert>
+
+						<geodeticDatumGlobalOrVert>DLESE:WGS84</geodeticDatumGlobalOrVert>
+
+						<vertBase>Datum level</vertBase>
+
+						<vertMin units="feet (ft)">11240</vertMin>
+
+						<vertMax units="feet (ft)">11240</vertMax>
+
+						<vertAcc>Unknown</vertAcc>
+
+					</detVert>
+
+					<detPlaces>
+
+						<place>
+
+							<name>Mt Hood, Oregon, United States</name>
+
+							<source>Alexandria Digital Library (ADL) Gazetteer</source>
+
+							<IDandURL URL="http://fat-albert.alexandria.ucsb.edu:8827/gazetteer/">adlgaz-1-10998-27</IDandURL>
+
+							<sourceDesc>A gazetteer service provided byu ADL</sourceDesc>
+
+						</place>
+
+					</detPlaces>
+
+					<detEvents>
+
+						<event>
+
+							<name>Mt. Hood eruption</name>
+
+							<source>Cataloger supplied</source>
+
+						</event>
+
+					</detEvents>
+
+				</detGeo>
+
+			</detGeos>
+
+		</geospatialCoverage>
+
+		<geospatialCoverage>
+
+			<body>
+
+				<planet>Mars</planet>
+
+			</body>
+
+			<geodeticDatumGlobalOrHorz>DLESE:Unknown</geodeticDatumGlobalOrHorz>
+
+			<projection type="DLESE:Unknown"></projection>
+
+			<coordinateSystem type="DLESE:Geographic latitude and longitude"></coordinateSystem>
+
+			<boundBox>
+
+				<westCoord>30.0</westCoord>
+
+				<eastCoord>30.0</eastCoord>
+
+				<northCoord>30.0</northCoord>
+
+				<southCoord>30.0</southCoord>
+
+				<bbSrcName>Cataloger supplied</bbSrcName>
+
+			</boundBox>
+
+		</geospatialCoverage>
+
+		<geospatialCoverage>
+
+			<body>
+
+				<otherPlanetaryBody>Saturn's moon</otherPlanetaryBody>
+
+			</body>
+
+			<geodeticDatumGlobalOrHorz>DLESE:Unknown</geodeticDatumGlobalOrHorz>
+
+			<projection type="DLESE:Unknown"></projection>
+
+			<coordinateSystem type="DLESE:Geographic latitude and longitude"></coordinateSystem>
+
+			<boundBox>
+
+				<westCoord>30.0</westCoord>
+
+				<eastCoord>30.0</eastCoord>
+
+				<northCoord>30.0</northCoord>
+
+				<southCoord>30.0</southCoord>
+
+				<bbSrcName>Cataloger supplied</bbSrcName>
+
+			</boundBox>
+
+		</geospatialCoverage>
+
+	</geospatialCoverages>
+
+	<temporalCoverages>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeAD>
+
+					<begin date="1920-06-15" time="08:30:00Z"/>
+
+					<end date="1929-08-13" time="14:20:00Z"/>
+
+				</timeAD>
+
+			</timeInfo>
+
+			<periods>
+
+				<period>
+
+					<name>Roaring 20's</name>
+
+					<source>Cataloger supplied</source>
+
+				</period>
+
+				<period>
+
+					<name>The Age of the Flapper</name>
+
+					<source>Cataloger supplied</source>
+
+				</period>
+
+				<period>
+
+					<name>Pre-depression era</name>
+
+					<source>U.S. History: A Look at the 1920's</source>
+
+					<IDandURL URL="http://theURL.tothe.site">ID number of the item being used</IDandURL>
+
+					<sourceDesc>This is a gazetteer for United States history that is sponsored by XXXXX.</sourceDesc>
+
+				</period>
+
+			</periods>
+
+		</timeAndPeriod>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeAD>
+
+					<begin date="1920-06-15"/>
+
+					<end date="Present"/>
+
+				</timeAD>
+
+			</timeInfo>
+
+		</timeAndPeriod>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeAD>
+
+					<begin date="1920"/>
+
+					<end date="1929"/>
+
+				</timeAD>
+
+			</timeInfo>
+
+		</timeAndPeriod>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeBC>
+
+					<begin>-8700</begin>
+
+					<end>-2500</end>
+
+				</timeBC>
+
+			</timeInfo>
+
+		</timeAndPeriod>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeRelative>
+
+					<begin units="Billion years ago">13.5</begin>
+
+					<end units="Billion years ago">9.75</end>
+
+				</timeRelative>
+
+			</timeInfo>
+
+		</timeAndPeriod>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeRelative>
+
+					<begin units="Years forward">200</begin>
+
+					<end units="Years forward">1000</end>
+
+				</timeRelative>
+
+			</timeInfo>
+
+		</timeAndPeriod>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeRelative>
+
+					<begin units="Days ago">30</begin>
+
+					<end units="Days ago">0</end>
+
+				</timeRelative>
+
+			</timeInfo>
+
+		</timeAndPeriod>
+
+	</temporalCoverages>
+
+	<objectsInSpace>
+
+		<object>
+
+			<rightAscension>24</rightAscension>
+
+			<declination>30.0</declination>
+
+			<epoch>epoch1950.0</epoch>
+
+			<description>A nebula</description>
+
+		</object>
+
+		<object>
+
+			<epoch>epoch2000.0</epoch>
+
+			<rightAscension>18</rightAscension>
+
+			<declination>-63.5</declination>
+
+		</object>
+
+	</objectsInSpace>
+
+</itemRecord>
+

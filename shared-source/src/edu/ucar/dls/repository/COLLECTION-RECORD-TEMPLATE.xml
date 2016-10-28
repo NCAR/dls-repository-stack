@@ -1,0 +1,21 @@
+<collectionRecord xmlns="http://collection.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://collection.dlese.org http://www.dlese.org/Metadata/collection/1.0.00/collection.xsd">
+<!-- This record describes a collection within the DDS respository. Note that this record may not be fully schema valid. -->
+	  <general>
+		<fullTitle>@TITLE@</fullTitle>
+		<description>@DESCRIPTION@</description>
+	  </general>
+	  <approval>
+		<collectionStatuses>
+		  <collectionStatus date="@ACCESSION_DATE@" state="Accessioned"/>
+		</collectionStatuses>
+	  </approval>
+	  <access>
+		<key libraryFormat="@FORMAT@" static="true" redistribute="false">@KEY@</key>
+	  </access>
+	  <metaMetadata>
+		<catalogEntries>
+		  <catalog entry="@ID@"/>
+		</catalogEntries>
+	  </metaMetadata>
+	  <additionalMetadata>@ADDITIONAL_METADATA@</additionalMetadata>
+</collectionRecord>

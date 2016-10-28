@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: toolFor-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/toolFor.xsd">
+	<field name="Tool for" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/educational/audiences/audience/toolFor">
+		<definition attribution="GEM">an intermediary that mediates between the ultimate beneficiary of the resource and resource itself--usually some form of teacher or trainer that uses the resource as a tool.</definition>
+
+		<vocabLevels number="2">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="DLESE">Digital Library for Earth System Education</levelTermAndDeftn>
+					<levelTermAndDeftn term="GEM">The Gateway to Educational Materials</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="2" levelName="Tool for" levelDeftn="an intermediary that mediates between the ultimate beneficiary of the resource and resource itself; see the allowed combination of terms below; the tool for part of the term is the phrase after the last colon"/>				
+		</vocabLevels>
+			
+		<terms>
+			<termAndDeftn vocab="DLESE:Earth system data specialists">individuals whose primary responsibility is to work with, process, analyze, package or redistribute Earth data sets</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Evaluators">individuals who determine significance, worth or condition by careful study, appraisal or assessment</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Media specialists">individuals whose specialty is understanding information skills, methods and integration and combining this with educational technologies </termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Researchers">individuals who investigate relevant topics, problems, issues or events in order to advance knowledge of a field</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Science professionals">individuals working in the scientific arena but whose position is more operations oriented rather than research oriented</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Administrators">individuals who manage others, large projects or budgets within an organization  </termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Curriculum supervisors">individuals responsible for defining or managing sets of courses constituting an academic area of specialization</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Elementary school teachers">educators whose primary responsibility it is to instruct students in kindergarten through grade five.</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:General public">individuals in the general population</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Librarians">specialists in the care and management of a library or collections of related items</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Middle school teachers">educators whose primary responsibility is to instruct students in grades six through eight</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Other educational professionals">individuals who consider themselves teachers or instructors but may not be formally associated with an institution or organization and who may teach across all grade ranges and ages (e.g. professional tutors)</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Parents">individuals who raise or care for offspring or other persons</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Policymakers">individuals whose primary responsibility is to develop and define plans, rules, strategies, guidelines, principles, actions or procedures for institutions or government agencies</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Secondary school teachers">educators whose primary responsibility is to instruct students in grades nine through twelve</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Student teachers">individuals pursuing a teaching certificate and who are currently working in a classroom setting</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Students">individuals who investigate topics, problems, issues or events in order to advance their own knowledge, skills or understanding; often in a structured learning environment or through self-study</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Supervisors">individuals who manage others or projects within an organization </termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Teacher educators">individuals who train professional teachers</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Teachers">individuals whose primary responsibility or occupation is the instruction of others</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Teaching professionals">educators whose occupation is teaching or instructing</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:Technology coordinators">individuals responsible for the upkeep, management and maintenance of computers, media devices or other technology related items used in educational settings</termAndDeftn>
+
+			<termAndDeftn vocab="GEM:University instructors">educators at the college level who teach primarily undergraduate and graduate students</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-04-20">Choose at least one tool for term.</practice>
+				<practice status="current" originDate="2005-04-25">Use for resources that are intended for student learning like lesson plans, case studies, activities, course, curriculums and other types of learning materials.</practice>
+
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2005-04-20">Catalogers without educational or teaching experience should not use this field.</practice>
+
+			</donts>
+			
+			<examples>
+				<practice status="current" originDate="2005-04-20" link1="DataStreme Atmosphere" url1="http://www.ametsoc.org/amsedu/dstreme/" link2="audiences page" url2="http://www.dlese.org/Metadata/documents/how-tos/audiences.htm">DataStreme Atmosphere is an online, distance learning, for college-credit course intended for K-12 teachers taught by K-12 teachers. However, it is often used locally by teachers with their students. See the audiences page that shows appropriate metadata for various fields for this resource.</practice>
+			</examples>
+			
+			<otherPractices>
+				<otherPractice header="A NOTE OF CAUTION!!!">
+					<practice status="current" originDate="2005-04-26">This controlled vocabulary is experimental. Terms and definitions are subject to change and may not be backwards or forwards compatible.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>DLESE:Evaluators, GEM:University instructors</example>
+			<notes>
+				<note>Controlled vocabulary terms are from GEM but not all the GEM terms were adopted.</note>
+				<note>The GEM terms are available at: http://www.thegateway.org/about/documentation/gem-controlled-vocabularies/vocabulary-mediator (now: http://64.119.44.148/about/documentation/gem-controlled-vocabularies/vocabulary-mediator)</note>
+				<note>GEM did not provide definitions for GEM terms. DLESE provided all definitions for GEM terms.</note>
+				<note>DLESE added additional terms and supplied definitions for added terms.</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

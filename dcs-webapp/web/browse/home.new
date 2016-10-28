@@ -1,0 +1,123 @@
+<%-- $Id: home.new,v 1.1 2011/07/05 23:03:28 ostwald Exp $ --%>
+<%@ include file="/JSTLTagLibIncludes.jsp" %>
+<%@ page import="edu.ucar.dls.repository.*" %>
+<c:set var="contextPath"><%@ include file="/ContextPath.jsp" %></c:set>
+<jsp:useBean id="sessionBean" class="edu.ucar.dls.schemedit.SessionBean" scope="session"/>
+
+<html:html>
+
+<head>
+<title><st:pageTitle title="Home" /></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<%@ include file="/baseHTMLIncludes.jsp" %>
+<%-- <%@ include file="/lib/dcstable/dcsTableIncludes.jsp" %> --%>
+<link rel='stylesheet' type='text/css' href='${contextPath}/lib/dcstable/dcs-table-styles.css'>
+<script type="text/javascript" src="${contextPath}/lib/dcstable/utils.js"></script>
+<script type="text/javascript" src="${contextPath}/browse/new_dcsTable.js"></script>
+<script type="text/javascript" src="${contextPath}/browse/new_dcsTableFilter.js"></script>
+
+<script type="text/javascript">
+
+document.observe ("dom:loaded", dcsTableInit);
+
+function dcsTableInit () {
+	log ("initializing");
+	// initialize global vars that are declared in javascript file
+	
+	var sets = new Hash();
+	
+	<c:forEach var="row" items="${browseForm.dcsTableBean.dcsTableRows}">
+		sets.set ('${row.props.setSpec}', {
+			'setSpec' : '${row.props.setSpec}',
+			'format': '${row.props.format}',
+			'name' : '${row.props.name}',
+			'numFiles' : '${row.props.numFiles}',
+			'numNotValid' : '${row.props.numNotValid}',
+			'authority' : '${row.props.authority}'
+		});
+	</c:forEach>
+
+	
+	var columns = $A();
+	<c:forEach var="col" items="${browseForm.dcsTableBean.columns}">
+		columns.push ({
+			'headerText' : '${col.headerText}',
+			'cellText' : '${col.cellText}', 
+			'sortBy' : '${col.sortBy}',
+			'sortOrder' : '${col.sortOrder}',
+			'onclick' : '${col.onclick}'
+		});
+	</c:forEach>
+
+	
+	var dcsTable = new DcsTable ('dcs-table', sets, columns, '${contextPath}');
+	var columns = ['name', 'format'];
+	var filterSpec = {
+		'column':'${sessionBean.collectionFilter.label}', 
+		'value':'${sessionBean.collectionFilter.value}'
+	};
+	
+	log ('filterSpec column: ' + filterSpec['column'] + ' value: ' + filterSpec['value']);
+	
+	filterWidget = new TableFilter ('table-filter', dcsTable, columns, filterSpec);
+	return;
+}
+
+</script>
+
+</head>
+
+<body>
+<%@ include file="/locked_record_status.jspf" %>
+
+<st:pageHeader currentTool="home" toolLabel="Home" />
+
+<table width="100%" border="0" align="center">
+  <tr> 
+    <td> 
+  
+	<%@ include file="messages.jspf" %>
+	
+	<st:framework-registry-warnings 
+		baseUrl="${contextPath}/browse/home.do" />
+	
+	<st:collectionFilterTableWithContents>
+		<p style="margin:3px 0px 3px 0px">Access a collection or create records. 
+					To access a collection, click on the collection name. 
+					To create a new record, click on <i>create</i> for the appropriate collection.
+		</p>
+	</st:collectionFilterTableWithContents>
+	
+	<%--  COLLECTIONS TABLE  --%>
+	<c:set var="dcsTableBean" value="${browseForm.dcsTableBean}" />
+	<table id="dcs-table">
+		<tr class="header-row">
+			<c:forEach var="col" items="${dcsTableBean.columns}">
+			<td><c:choose>
+				<c:when test="${empty col.sortBy}">${col.headerText}</c:when>
+				<c:otherwise>
+					<a href="#">${col.headerText}</a>
+				</c:otherwise>
+			</c:choose></td>
+			</c:forEach>
+		</tr>
+		<c:forEach var="row" items="${dcsTableBean.dcsTableRows}">
+ 		<tr id="${row.props.setSpec}" class="dcs-table-row">
+			<c:forEach var="cell" items="${row.cells}">
+			<td><c:choose>
+					<c:when test="${empty cell.onclick}">${cell.label}</c:when>
+					<c:otherwise><a href="#">${cell.label}</a></c:otherwise>
+				</c:choose>
+			</td> 
+			</c:forEach>
+		</tr>
+		</c:forEach>
+	</table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html:html>
+

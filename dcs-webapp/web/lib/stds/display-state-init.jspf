@@ -1,0 +1,107 @@
+<%-- Initialize DisplayState (javascript) structure using information from FormBean, and
+Specifically from the SuggestionServiceHelper bean.
+	Called from standards_MultiBox.tag
+--%>
+
+<script type="text/javascript">
+
+/* utility to create an array from a comma delimited string */
+function toArray (commaDelimited) {
+	return $A(commaDelimited.split(',')).map (function (s) { return s.strip() });
+}
+
+/* initialize serviceHelper display attributes from params if possible (necessary for cases such as
+   validation, where the normal means of updating the helper (i.e., Action.updateDisplayControls()) is not
+	 called. (as alternative, could we call 'updateDisplayControls' for each sef request?) */
+<c:if test="${not empty param.displayContent}">
+	<jsp:setProperty name="serviceHelper" property="displayContent" value="${param.displayContent}"/>
+</c:if>
+<c:if test="${not empty param.displayMode}">
+	<jsp:setProperty name="serviceHelper" property="displayMode" value="${param.displayMode}"/>
+</c:if>
+
+DisplayState.xmlFormat = "${sef.xmlFormat}";
+DisplayState.pathArg = '${pathArg}';
+DisplayState.hash = '${sef.hash}';
+DisplayState.currentDocKey = "${serviceHelper.currentDoc}";
+log ("init: currentDocKey is " + DisplayState.currentDocKey);
+DisplayState.displayMode = '${serviceHelper.displayMode}';
+DisplayState.displayContent = '${serviceHelper.displayContent}';
+
+DisplayState.serviceIsActive = '${serviceHelper.serviceIsActive}' == 'true';
+DisplayState.suggestionsPresent = '${not empty serviceHelper.suggestedStandards}' == 'true';
+DisplayState.gradeRangeOptions = $A();
+// log ("display-state-init: gradeRangeOptions");
+<c:forEach var="gr" items="${serviceHelper.gradeRangeOptions}" varStatus="i">
+	DisplayState.gradeRangeOptions.push ({label:"${gr.label}", value: "${gr.value}"});
+	// log ("\t label: ${gr.label}  value: ${gr.value}");
+</c:forEach>
+
+
+DisplayState.startGrade = "${serviceHelper.derivedCATStartGrade}",
+DisplayState.endGrade = "${serviceHelper.derivedCATEndGrade}",
+
+DisplayState.resourceUrl = "${serviceHelper.recordUrl}",
+	
+// optional fields
+DisplayState.optionalFields = $A();
+<c:forEach var="field" items="${serviceHelper.optionalCatUIFields}" varStatus="i">
+	DisplayState.optionalFields.push ("${field}");
+</c:forEach>
+	
+DisplayState.hasOptionalField = function (field2find) {
+	var hasField = DisplayState.optionalFields.find ( function (field) {
+			return (field == field2find);
+		}) || false;
+	return hasField;
+	}
+	
+DisplayState.hasSubjects = ("${not empty serviceHelper.recordSubjects}" == "true");
+
+// AVAILABLE DOCS - standards docs from which user can select
+<c:if test="${fn:length(serviceHelper.availableDocs) > 1}">
+	var availableDocs = new StdDocList("availableDocs");
+	var docInfo;
+	<c:forEach var="doc" items="${serviceHelper.availableDocs}" varStatus="i">
+		docInfo = {
+			key:"${doc.key}", 
+			author:"${doc.author}", 
+			authorName:"${doc.authorName}",
+			topic: "${doc.topic}", 
+			created:"${doc.created}",
+			title:"${doc.title}"
+			}
+		availableDocs.add (docInfo);
+	</c:forEach>
+
+	DisplayState.availableDocs = availableDocs;
+	// DisplayState.availableDocs.report ();
+</c:if>
+
+/* 
+	No CAT DOCS - standards docs that aren't loaded in CAT
+	NOTE: don't bother when CAT service is not active
+*/
+var noCatDocs = new StdDocList("noCatDocs");
+<c:if test="${DisplayState.serviceIsActive && not empty serviceHelper.noCatDocs}">
+	var docInfo;
+	<c:forEach var="doc" items="${serviceHelper.noCatDocs}" varStatus="i">
+		docInfo = {
+			key:"${doc.key}", 
+			author:"${doc.author}", 
+			topic: "${doc.topic}", 
+			created:"${doc.created}",
+			title:"${doc.title}"
+			}
+		noCatDocs.add (docInfo);
+	</c:forEach>
+
+	DisplayState.noCatDocs = noCatDocs;
+	// DisplayState.availableDocs.report ();
+</c:if>	
+
+DisplayState.resQualTarget = null;
+DisplayState.larTarget = $('lar-asn-standards-target');
+
+// log ("DisplayState.serviceIsActive: " + DisplayState.serviceIsActive)
+</script>

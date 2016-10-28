@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: country-osm-fields-en-us.xml,v 1.4 2011/07/05 19:55:24 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/non-vocab-fields.xsd">
+  <field name="Country" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/coverage/location/@country">
+		<definition>the nation in which a meeting or correspondence occurred or a publisher is located</definition> 
+
+		 <bestPractices>
+			<dos>
+				<practice status="current" originDate="2010-05-31">This field is required.</practice> 
+				<practice status="current" originDate="2010-05-31">To enter more than one country, add another location tag set.</practice> 
+				<practice status="current" originDate="2010-05-31">Use the provided controlled vocabulary.</practice> 
+				<practice status="current" originDate="2010-05-31">If new country information needs to be added, contact the OpenSky administrator.</practice> 
+			 </dos>
+			 <donts>
+				 <practice status="current" originDate="2010-05-31">Do not include state/province or city information.</practice> 
+			 </donts>
+			 <examples>
+				<practice status="current" originDate="2010-05-31">Washington DC United States: Enter US (for United States) for country.</practice>
+			</examples>
+		 </bestPractices>
+		 <documentation>
+				<obligation>required metadata if parent tag is present</obligation>
+				<min>1</min>
+				<max>1</max>
+				<XMLdataTypes>
+					<XMLdataType>string</XMLdataType>
+				</XMLdataTypes>
+				<domain>controlled vocabulary</domain>
+				<example>US (for United States), AR (for Argentina)</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.7.00">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Overview  **************************************************************
+				This is an ADN item-level CATEGORY schema.
+				Tags defined: lifecycle
+				
+				Enforced required metadata, lifecycle.contributors, as required per metadata mtg. Feb. 1, 2003
+
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Other CATEGORY Schemas to Include  ********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="commonfields.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  VOCABULARY Schemas to Include  ***********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="../vocabs/roleLifecycle.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  ROOT Element  **********************************************
+							There is no root element for this schema.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Other Elements  **********************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Complex Types  (alpha order) *****************************
+	
+				contributorLifecyleType  			is part of lifecycleType
+				contributorsLifecyleType  			is part of lifecycleType
+				lifecycleType  						is part of ADNmetdataType in record.xsd
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="contributorLifecycleType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  contributorLifecyleType  ***************************************************
+				These elements have the following types or schema associated with them.
+				role							is a simple type attribute; see roleMetaMetadata.xsd
+				date						is a simple type attribute; see commonfields.xsd; should be known so required; but may only be known to the year
+				organization					is complex; see commonfields.xsd
+				person						is complex; see commonfields.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="person" type="personType" maxOccurs="1"/>
+			<xsd:element name="organization" type="organizationType" maxOccurs="1"/>
+		</xsd:choice>
+		<xsd:attribute name="role" type="roleLifecycleType" use="required"/>
+		<xsd:attribute name="date" type="union.dateType"/>
+	</xsd:complexType>
+	<xsd:complexType name="contributorsLifecycleType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  contributorsLifecyleType  ***************************************************
+				These elements have the following types or schema associated with them.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="contributor" type="contributorLifecycleType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="lifecycleType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  lifecycleType  ***************************************************
+				These elements have the following types or schema associated with them.
+				version					is simple; see commonfields.xsd
+				description				in a global string; see commonfields.xsd
+				contributors				is complex
+		
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="version" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="description" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="contributors" type="contributorsLifecycleType" minOccurs="1" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

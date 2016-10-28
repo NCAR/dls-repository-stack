@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--some frameworks are listed twice; once with their DLESE URL info and again with info for local use within the CVS frameworks-project-->
+<!--this file is used by checkFieldsFile.sh script in the CVS project of frameworks-project -->
+<!--this file is used by generate-default-groups.py script in the CVS project of frameworks-project -->
+<!--add your own frameworks as needed if working outside the CVS frameworks-project-->
+
+<!-- uri attribute specifies a schema. It can be either: 
+- a  file path relative to the project directory ("frameworks-project"), OR
+- a absolute URI (http://....) to a schema on the web
+-->
+
+<frameworks>
+	<framework 
+		name="mast" dir="mast/1.0" 
+		uri="frameworks/mast/1.0/schemas/mast-dc-gem.xsd" 
+		rootElement="record"/>
+
+<!--	
+	<framework 
+		name="simple_dc" dir="simple_dc/1.1" 
+		uri="frameworks/simple_dc/1.1/schemas/simple_dc-DCvocab-nolang.xsd" 
+		rootElement="simple_dc:dc"/>
+		
+	<framework 
+		name="oai_dc" dir="oai_dc/2.0" 
+		uri="frameworks/oai_dc/2.0/schemas/oai_dc-DCvocab-nolang.xsd" 
+		rootElement="oai_dc:dc" />
+-->
+
+<!--
+	<framework 
+		name="adn" dir="adn-item/0.6.50" 
+		uri="http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd" /> 
+		rootElement="itemRecord"/>
+
+	<framework 
+		name="adn" dir="adn/0.6.50" 
+		uri="frameworks/adn/0.6.50/schemas/record.xsd" rootElement="itemRecord"/>
+		rootElement="itemRecord"/>
+
+
+	<framework 
+		name="dlese_anno" dir="annotation/0.1.01"
+		 uri="http://www.dlese.org/Metadata/annotation/0.1.01/annotation.xsd" /> 
+		rootElement="annotationRecord"/>
+	
+	<framework 
+		name="annotation" dir="annotation/0.1.01" 
+		uri="frameworks/annotation/0.1.01/schemas/annotation.xsd" 
+		rootElement="annotationRecord"/>
+
+
+	<framework 
+		name="dlese_anno" dir="annotation/1.0.00" 
+		uri="http://www.dlese.org/Metadata/annotation/1.0.00/annotation.xsd" /> 
+		rootElement="annotationRecord"/>
+	
+	<framework 
+		name="annotation" dir="annotation/1.0.00" 
+		uri="frameworks/annotation/1.0.00/schemas/annotation.xsd" 
+		rootElement="annotationRecord"/>
+
+
+	<framework 
+		name="news_opps" dir="news-opps/1.0.00" 
+		uri="http://www.dlese.org/Metadata/news-opps/1.0.00/news-opps.xsd" /> 
+		rootElement="news-oppsRecord"/>
+
+	<framework 
+		name="news_opps" dir="news-opps/1.0.00" 
+		uri="frameworks/news-opps/1.0.00/schemas/news-opps.xsd" 
+		rootElement="news-oppsRecord"/>
+
+
+	<framework 
+		name="dlese_collect" dir="collection/1.0.00" 
+		uri="http://www.dlese.org/Metadata/collection/1.0.00/collection.xsd" /> 
+		rootElement="collectionRecord"/>
+
+	<framework 
+		name="collection" dir="collection/1.0.00" 
+		uri="frameworks/collection/1.0.00/schemas/collection.xsd" 
+		rootElement="collectionRecord"/>
+
+
+	<framework 
+		name="adn" dir="adn-item/0.7.00" 
+		uri="http://www.dlese.org/Metadata/adn-item/0.7.00/record.xsd" /> 
+		rootElement="itemRecord"/>
+	
+	<framework 
+		name="adn" dir="adn/0.7.00" 
+		uri="frameworks/adn/0.7.00/schemas/record.xsd" 
+		rootElement="itemRecord"/>
+-->
+</frameworks>

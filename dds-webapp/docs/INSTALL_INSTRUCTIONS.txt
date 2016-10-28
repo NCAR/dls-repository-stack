@@ -1,0 +1,44 @@
+
+=== Installation instructions for the Digital Discovery System (DDS) ===
+
+DDS runs in a Tomcat servlet container and can be installed on 
+Windows, Linux, Mac OS or UNIX systems. 
+
+These instructions assume familiarity with Java Servlets, Java Server Pages (JSP), 
+the Tomcat servlet container and related technologies.
+
+
+To install DDS from a WAR file, do the following:
+  
+1. Obtain the dds.war file from the distribution.
+
+2. Install Java 6 or above and Tomcat 6.x or 7.x
+
+3. Place the dds.war file in the ${tomcat}/webapps directory.
+
+4. Edit the file ${tomcat}/conf/tomcat-users.xml in your Tomcat installation and
+add the role 'dds_admin' and at least one user assigned to that role. This
+restricts access to the Collection Manager and other admin pages in DDS.
+		
+	For example:
+	
+	<tomcat-users>
+		<role rolename="dds_admin"/>
+		... additional roles not shown ...
+		
+		<user username="jdoe" password="mypassword" roles="dds_admin"/>
+		... additional users not shown...
+	</tomcat-users>
+	
+5. Start/restart Tomcat to unpack the war files and install the DDS Web application.
+
+6. See the deployment descriptor file ${tomcat}/webapps/dds/WEB-INF/web.xml for additional,
+optional configuration options. Note that for a long-term operational deployment,
+the context parameters 'indexLocation', 'collBaseDir' and 'repositoryData' should be
+configured to point to local file directories OUTSIDE of tomcat.
+These directories should be backed at regular intervals if repository 
+data preservation is desired. A DDS repository may be restored using
+a backup copy of these directories.
+
+7. To configure the data source used for DDS, read the instructions provided in the DDS 
+Web interface or the file CONFIGURE_DATA_SOURCES.txt.

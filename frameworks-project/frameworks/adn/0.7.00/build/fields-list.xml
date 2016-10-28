@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- alphabetical listing of framework fields filenames -->
+<!-- alphabetical listing of framework fields field names -->
+<metadataFieldsInfo>
+	<files>
+		<file>adn-item/0.7.00/fields/accessInformation-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/additionalInfo-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/typicalAgeRange-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/audience-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/audiences-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/begin-AD-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/begin-BC-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/begin-relative-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/begin-units-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/beneficiary-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/body-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/otherPlanetaryBody-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/boundBox-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/bbAccEst-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/bbEvents-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/bbPlaces-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/bbSrcIDandURL-URL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/bbSrcDesc-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/bbSrcIDandURL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/bbSrcName-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/bbVert-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/catalogEntries-general-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/catalogEntries-metadata-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/catalogEntry-general-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/catalogEntry-metadata-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/catalogName-idEntry-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/catalogName-urlEntry-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/contactIDMP-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/contactIDLP-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/contactIDMO-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/contactIDLO-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/contentStandard-NCGE-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/contentStandards-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/contentStandard-NCTM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/contentStandard-NSES-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/contributorsM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/contributorsL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/contributorM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/contributorL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/coordinate-east-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/coordinate-north-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/coordinate-south-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/coordinate-west-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/coordinateSystem-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/type-coordinateSystem-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/copyright-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/cost-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/date-begin-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/dateContribM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/dateContribL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/date-end-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/dateInfo-accessioned-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/dateInfo-created-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/dateInfo-deaccessioned-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/dateInfo-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/dateInfo-lastModified-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/geodeticDatumGlobalOrHorz-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/geodeticDatumGlobalOrVert-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/geodeticDatumGlobalOrVert-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/declination-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instDeptMP-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instDeptLP-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instDeptMO-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instDeptLO-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/description-metaMetadata-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/description-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/description-rights-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/description-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/description-educational-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/description-offline-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/description-general-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/description-lifecycle-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/description-simple-geo-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/description-simple-time-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/description-object-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/description-technical-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertBase-desc-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertBase-desc-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/detGeos-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/detGeo-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/detAccEst-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/detEvents-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/detPlaces-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/geoNumPts-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/geoPtOrder-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/detSrcIDandURL-URL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/detSrcDesc-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/detSrcIDandURL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/detSrcName-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/typeDetGeo-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/detVert-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/duration-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/educational-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/emailAltM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/emailAltL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instEmailMO-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instEmailLO-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/emailPrimaryMP-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/emailPrimaryLP-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/end-AD-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/end-BC-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/end-relative-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/end-units-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/epoch-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/event-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/event-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/event-simple-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/general-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/geospatialCoverage-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/geospatialCoverages-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/gradeRange-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instructionalGoal-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/interactivityLevel-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/interactivityType-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/itemRecord-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/keyword-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/keywords-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/kind-idEntry-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/kind-urlEntry-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/languageM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/languageG-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/latitude-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/lifecycle-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/longitude-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/longLat-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/longLats-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/medium-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/mediums-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/metaMetadata-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/event-name-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/event-name-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/nameFirstM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/nameFirstL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/nameLastM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/nameLastL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/nameMiddleM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/nameMiddleL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/period-name-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/place-name-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/place-name-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/nameTitleM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/nameTitleL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/object-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/objectType-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/objectTypes-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/objectsInSpace-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/offline-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/online-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/organizationM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/organizationL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instNameMP-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instNameLP-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instNameMO-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instNameLO-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/period-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/periods-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/personM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/personL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/placeAndEvent-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/simplePlacesAndEvents-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/place-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/place-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/place-simple-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/planet-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instPositionMO-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instPositionLO-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/processStandard-NCTM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/processStandards-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/projection-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/type-projection-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/entryR-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/entryM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/entryG-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/relation-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/urlEntry-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/idEntry-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/relations-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/requirement-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/requirements-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/otherRequirement-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/otherRequirements-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/reqType-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/otherType-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/resourceType-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/resourceTypes-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/rightAscension-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/rights-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/roleM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/roleL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/scheme-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/size-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/event-source-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/event-source-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/period-source-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/place-source-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/place-source-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/event-IDandURL-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/event-IDandURL-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/keyword-id-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/period-IDandURL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/place-IDandURL-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/place-IDandURL-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/event-sourceDesc-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/event-sourceDesc-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/keyword-src-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/period-sourceDesc-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/place-sourceDesc-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/place-sourceDesc-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/status-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/statusOf-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/subject-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/subjects-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/subjectOther-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/subjectsOther-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/teachingMethod-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/teachingMethods-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/teachingStandards-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/teachingStandard-NSES-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/teachingStandard-NETS-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/technical-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/temporalCoverages-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/simpleTemporalCoverages-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/termsOfUse-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/time-AD-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/time-BC-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/time-begin-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/time-end-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/timeInfo-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/time-relative-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/timeAndPeriod-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/title-idEntry-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/title-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/title-urlEntry-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/toolFor-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/url-urlEntry-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/mirrorURL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/mirrorURLs-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/event-IDandURL-URL-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/event-IDandURL-URL-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/keyword-url-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/period-IDandURL-URL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/place-IDandURL-URL-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/place-IDandURL-URL-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instUrlM-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/instUrlL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/primaryURL-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/URI-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/typicalUseTime-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/maxVersion-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/maxVersion-other-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/minVersion-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/minVersion-other-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/version-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertAcc-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertAcc-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertBase-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertBase-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertMax-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertMax-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertMax-units-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertMax-units-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertMin-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertMin-det-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertMin-units-bb-adn-fields-en-us.xml</file>
+		<file>adn-item/0.7.00/fields/vertMin-units-det-adn-fields-en-us.xml</file>
+	</files>
+	<fields>
+		<field>Access information</field>
+		<field>Additional information</field>
+		<field>Age range</field>
+		<field>Audience</field>
+		<field>Audience - list</field>
+		<field>Begin - AD</field>
+		<field>Begin - BC</field>
+		<field>Begin - relative</field>
+		<field>Begin units</field>
+		<field>Beneficiary</field>
+		<field>Body</field>
+		<field>Body - other planetary</field>
+		<field>Bounding box</field>
+		<field>Bounding box - accuracy estimation</field>
+		<field>Bounding box - events list</field>
+		<field>Bounding box - places list</field>
+		<field>Bounding box - source URL</field>
+		<field>Bounding box - source description</field>
+		<field>Bounding box - source id</field>
+		<field>Bounding box - source name</field>
+		<field>Bounding box - vertical info</field>
+		<field>Catalog entry - list - other</field>
+		<field>Catalog entry - list - repository</field>
+		<field>Catalog entry - other</field>
+		<field>Catalog entry - repository</field>
+		<field>Catalog name - record id relation</field>
+		<field>Catalog name - url relation</field>
+		<field>Contact ID - individual resource cataloger</field>
+		<field>Contact ID - individual resource creator</field>
+		<field>Contact ID - organizational resource cataloger</field>
+		<field>Contact ID - organizational resource creator</field>
+		<field>Content standard - geography - National Council for Geographic Education (NCGE)</field>
+		<field>Content standard - list</field>
+		<field>Content standard - math</field>
+		<field>Content standard - science - National Science Education Standards (NSES)</field>
+		<field>Contributor - list - resource catalogers</field>
+		<field>Contributor - list - resource creators</field>
+		<field>Contributor - resource cataloger</field>
+		<field>Contributor - resource creator</field>
+		<field>Coordinate - east</field>
+		<field>Coordinate - north</field>
+		<field>Coordinate - south</field>
+		<field>Coordinate - west</field>
+		<field>Coordinate system</field>
+		<field>Coordinate system - type</field>
+		<field>Copyright</field>
+		<field>Cost</field>
+		<field>Date - begin</field>
+		<field>Date - contribution - resource cataloger</field>
+		<field>Date - contribution - resource creator</field>
+		<field>Date - end</field>
+		<field>Date accessioned</field>
+		<field>Date created</field>
+		<field>Date deaccessioned</field>
+		<field>Date information</field>
+		<field>Date modified</field>
+		<field>Datum - global or horizontal</field>
+		<field>Datum - global or vertical - bounding box</field>
+		<field>Datum - global or vertical - detailed geometry</field>
+		<field>Declination</field>
+		<field>Department - individual resource cataloger</field>
+		<field>Department - individual resource creator</field>
+		<field>Department - organizational resource cataloger</field>
+		<field>Department - organizational resource creator</field>
+		<field>Description - about cataloging</field>
+		<field>Description - bounding box</field>
+		<field>Description - copyright</field>
+		<field>Description - detailed geometry</field>
+		<field>Description - educational</field>
+		<field>Description - offline resource</field>
+		<field>Description - resource</field>
+		<field>Description - resource creation</field>
+		<field>Description - simple places and events</field>
+		<field>Description - simple temporal</field>
+		<field>Description - space object</field>
+		<field>Description - technical</field>
+		<field>Description - vertical base level - bounding box</field>
+		<field>Description - vertical base level - detailed geometry</field>
+		<field>Detailed geometries</field>
+		<field>Detailed geometry</field>
+		<field>Detailed geometry - accuracy estimation</field>
+		<field>Detailed geometry - events list</field>
+		<field>Detailed geometry - places list</field>
+		<field>Detailed geometry - point number</field>
+		<field>Detailed geometry - point order</field>
+		<field>Detailed geometry - source URL</field>
+		<field>Detailed geometry - source description</field>
+		<field>Detailed geometry - source id</field>
+		<field>Detailed geometry - source name</field>
+		<field>Detailed geometry - type</field>
+		<field>Detailed geometry - vertical info</field>
+		<field>Duration</field>
+		<field>Educational</field>
+		<field>Email - alternate - resource cataloger</field>
+		<field>Email - alternate - resource creator</field>
+		<field>Email - institutional - resource cataloger</field>
+		<field>Email - institutional - resource creator</field>
+		<field>Email - primary - resource cataloger</field>
+		<field>Email - primary - resource creator</field>
+		<field>End - AD</field>
+		<field>End - BC</field>
+		<field>End - relative</field>
+		<field>End units</field>
+		<field>Epoch</field>
+		<field>Event info - bounding box</field>
+		<field>Event info - detailed geometry</field>
+		<field>Event info - simple</field>
+		<field>General</field>
+		<field>Geospatial coverage</field>
+		<field>Geospatial coverages</field>
+		<field>Grade range</field>
+		<field>Instructional goal</field>
+		<field>Interactivity - level</field>
+		<field>Interactivity - type</field>
+		<field>Item record</field>
+		<field>Keyword</field>
+		<field>Keyword - list</field>
+		<field>Kind - record id</field>
+		<field>Kind - url</field>
+		<field>Language - of the metadata</field>
+		<field>Language - of the resource</field>
+		<field>Latitude</field>
+		<field>Lifecycle</field>
+		<field>Longitude</field>
+		<field>Longitude and latitude</field>
+		<field>Longitude and latitude - list</field>
+		<field>Medium</field>
+		<field>Medium - list</field>
+		<field>MetaMetadata</field>
+		<field>Name - event - bounding box</field>
+		<field>Name - event - detailed geometry</field>
+		<field>Name - first - resource cataloger</field>
+		<field>Name - first - resource creator</field>
+		<field>Name - last - resource cataloger</field>
+		<field>Name - last - resource creator</field>
+		<field>Name - middle - resource cataloger</field>
+		<field>Name - middle - resource creator</field>
+		<field>Name - period</field>
+		<field>Name - place - bounding box</field>
+		<field>Name - place - detailed geometry</field>
+		<field>Name - title - resource cataloger</field>
+		<field>Name - title - resource creator</field>
+		<field>Object</field>
+		<field>Object type</field>
+		<field>Object type - list</field>
+		<field>Objects in space</field>
+		<field>Offline</field>
+		<field>Online</field>
+		<field>Organization - resource cataloger</field>
+		<field>Organization - resource creator</field>
+		<field>Organization name - individual resource cataloger</field>
+		<field>Organization name - individual resource creator</field>
+		<field>Organization name - organizational resource cataloger</field>
+		<field>Organization name - organizational resource creator</field>
+		<field>Period</field>
+		<field>Periods</field>
+		<field>Person - resource cataloger</field>
+		<field>Person - resource creator</field>
+		<field>Place and event - simple</field>
+		<field>Place and event - simple - list</field>
+		<field>Place info - bounding box</field>
+		<field>Place info - detailed geometry</field>
+		<field>Place info - simple</field>
+		<field>Planet</field>
+		<field>Position - organizational resource cataloger</field>
+		<field>Position - organizational resource creator</field>
+		<field>Process standard</field>
+		<field>Process standard - list</field>
+		<field>Projection information</field>
+		<field>Projection type</field>
+		<field>Record ID - creating a relation</field>
+		<field>Record ID - library catalog number</field>
+		<field>Record ID - other catalog number</field>
+		<field>Relation</field>
+		<field>Relation - by URL</field>
+		<field>Relation - by record ID</field>
+		<field>Relations</field>
+		<field>Requirement</field>
+		<field>Requirement - list</field>
+		<field>Requirement - other</field>
+		<field>Requirement - other - list</field>
+		<field>Requirement type</field>
+		<field>Requirement type - other</field>
+		<field>Resource type</field>
+		<field>Resource type - list</field>
+		<field>Right ascension</field>
+		<field>Rights</field>
+		<field>Role - resource cataloger</field>
+		<field>Role - resource creator</field>
+		<field>Scheme</field>
+		<field>Size</field>
+		<field>Source - event - bounding box</field>
+		<field>Source - event - detailed geometry</field>
+		<field>Source - period</field>
+		<field>Source - place - bounding box</field>
+		<field>Source - place - detailed geometry</field>
+		<field>Source id - event - bounding box</field>
+		<field>Source id - event - detailed geometry</field>
+		<field>Source id - keyword</field>
+		<field>Source id - period</field>
+		<field>Source id - place - bounding box</field>
+		<field>Source id - place - detailed geometry</field>
+		<field>Source info - event - bounding box</field>
+		<field>Source info - event - detailed geometry</field>
+		<field>Source info - keyword</field>
+		<field>Source info - period</field>
+		<field>Source info - place - bounding box</field>
+		<field>Source info - place - detailed geometry</field>
+		<field>Status</field>
+		<field>Status information</field>
+		<field>Subject</field>
+		<field>Subject - list</field>
+		<field>Subject other</field>
+		<field>Subject other - list</field>
+		<field>Teaching method</field>
+		<field>Teaching method - list</field>
+		<field>Teaching standard - list</field>
+		<field>Teaching standard - science - National Science Education Standards (NSES)</field>
+		<field>Teaching standard - technology - National Educational Technology Standards (NETS)</field>
+		<field>Technical</field>
+		<field>Temporal coverages</field>
+		<field>Temporal coverages - simple</field>
+		<field>Terms of use</field>
+		<field>Time - AD</field>
+		<field>Time - BC</field>
+		<field>Time - begin</field>
+		<field>Time - end</field>
+		<field>Time - info</field>
+		<field>Time - relative</field>
+		<field>Time and period</field>
+		<field>Title - record id relation</field>
+		<field>Title - resource</field>
+		<field>Title - url relation</field>
+		<field>Tool for</field>
+		<field>URL - creating a relation</field>
+		<field>URL - mirror</field>
+		<field>URL - mirror list</field>
+		<field>URL - of source - event - bounding box</field>
+		<field>URL - of source - event - detailed geometry</field>
+		<field>URL - of source - keyword</field>
+		<field>URL - of source - period</field>
+		<field>URL - of source - place - detailed geometry</field>
+		<field>URL - of source - place- bounding box</field>
+		<field>URL - organization - resource cataloger</field>
+		<field>URL - organization - resource creator</field>
+		<field>URL - primary</field>
+		<field>URL - terms of use</field>
+		<field>Use time</field>
+		<field>Version - maximum</field>
+		<field>Version - maximum - other</field>
+		<field>Version - minimum</field>
+		<field>Version - minimum - other</field>
+		<field>Version - resource</field>
+		<field>Vertical accuracy - bounding box</field>
+		<field>Vertical accuracy - detailed geometry</field>
+		<field>Vertical base level - bounding box</field>
+		<field>Vertical base level - detailed geometry</field>
+		<field>Vertical maximum - bounding box</field>
+		<field>Vertical maximum - detailed geometry</field>
+		<field>Vertical maximum units - bounding box</field>
+		<field>Vertical maximum units - detailed geometry</field>
+		<field>Vertical minimum - bounding box</field>
+		<field>Vertical minimum - detailed geometry</field>
+		<field>Vertical minimum units - bounding box</field>
+		<field>Vertical minimum units - detailed geometry</field>
+	</fields>
+</metadataFieldsInfo>

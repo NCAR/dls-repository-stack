@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: kind-idEntry-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:46 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/kind.xsd">
+	<field name="Kind - record id" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/relations/relation/idEntry/@kind">
+		<definition>the type of relationship between the resource being described and a related resource</definition>
+		<vocabLevels number="2">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="DC">Dublin Core Metadata Initiative</levelTermAndDeftn>
+					<levelTermAndDeftn term="DLESE">Digital Library for Earth System Education</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+
+			<levelAndDeftn level="2" levelName="Kind" levelDeftn="the type of relationship between the resource being described and a related resource; see the allowed combination of terms below; the phrase after the final colon is the kind of relationship"/>
+		</vocabLevels>
+
+<!--definitions adopted from http://dublincore.org/documents/2000/07/11/dcmes-qualifiers/#relation-->
+<!--and http://dublincore.org/documents/dcmi-terms/-->
+		<terms>
+			<termAndDeftn vocab="DC:Conforms to" attribution="Dublin Core Metadata Initiative">a reference to an established standard to which the resource conforms (supports)</termAndDeftn>
+
+			<termAndDeftn vocab="DC:Has format" attribution="Dublin Core Metadata Initiative">the described resource pre-existed the referenced resource, which is essentially the same intellectual content presented in another format</termAndDeftn>
+
+			<termAndDeftn vocab="DC:Has part" attribution="Dublin Core Metadata Initiative">the described resource includes the referenced resource either physically or logically</termAndDeftn>
+
+			<termAndDeftn vocab="DC:Has version" attribution="Dublin Core Metadata Initiative">the described resource has a version, edition, or adaptation, namely, the referenced resource</termAndDeftn>
+
+			<termAndDeftn vocab="DC:Is format of" attribution="Dublin Core Metadata Initiative">the described resource is the same intellectual content of the referenced resource, but presented in another format</termAndDeftn>
+
+			<termAndDeftn vocab="DC:Is part of" attribution="Dublin Core Metadata Initiative">the described resource is a physical or logical part of the referenced resource (needs to be more than just a hyperlink with more information)</termAndDeftn>
+
+			<termAndDeftn vocab="DC:Is referenced by" attribution="Dublin Core Metadata Initiative">the described resource is referenced, cited, or otherwise pointed to by the referenced resource (e.g. the resource being cataloged is linked to in the referenced resource)</termAndDeftn>
+
+			<termAndDeftn vocab="DC:Is replaced by" attribution="Dublin Core Metadata Initiative">the described resource is supplanted, displaced, or superseded by the referenced resource</termAndDeftn>
+
+			<termAndDeftn vocab="DC:Is required by" attribution="Dublin Core Metadata Initiative">the described resource is required by the referenced resource, either physically or logically</termAndDeftn>
+
+			<termAndDeftn vocab="DC:Is version of" attribution="Dublin Core Metadata Initiative">the described resource is a version, edition, or adaptation of the referenced resource. Changes in version imply substantive changes in content rather than differences in format.</termAndDeftn>
+
+			<termAndDeftn vocab="DC:References" attribution="Dublin Core Metadata Initiative">the described resource references, cites, or otherwise points to the referenced resource (e.g. the resource being cataloged links to the related resource). The described resource does not require the related resource.</termAndDeftn>
+
+			<termAndDeftn vocab="DC:Replaces" attribution="Dublin Core Metadata Initiative">the described resource supplants, displaces, or supersedes the referenced resource</termAndDeftn>
+
+			<termAndDeftn vocab="DC:Requires" attribution="Dublin Core Metadata Initiative">the described resource requires the referenced resource to support its function, delivery, or coherence of content</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Has thumbnail">the described resource has a thumbnail image that illustrates it</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Is associated with">the described resource is connected to the referenced resource; it may or may not point to the related resource and it does not require, conform to, have format of it, nor is it a basis for or part of the related resource (e.g. two different classroom activities use the same visualization but in different ways)</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Is based on">the described resource has a significant amount of its intellectual thought, creative ideas, questions or images based on a related resource</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Is basis for">the described resource provides the foundation of intellectual thought, creative ideas, questions or images for a related resource</termAndDeftn>
+		</terms>
+		
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2001-10-06">Create meaningful relationships. That is, will creating the relationship between the resource being described and another resource enhance the use or discovery of both resources?</practice>
+				<practice status="current" originDate="2005-06-02">Create a relationship to a resource that is already in the library.</practice>
+				<practice status="current" originDate="2006-02-03" link1="record ID - creating a relation" style1="bold">Complete the field of record ID - creating a relation.</practice>
+
+				<practice status="current" originDate="2006-07-17" link1="Is format of" style1="bold">Use to create a relationship between resources that have the same intellectual content, same language but a different file format (e.g. jpg versus gif, html versus pdf). Use the term Is format of to express the relationship.</practice>
+
+				<practice status="current" originDate="2006-07-17" link1="Is version of" style1="bold">Use to create a relationship between resources that have the same intellectual content but different languages. Use the term Is version of to express the relationship.</practice>
+
+				<practice status="current" originDate="2006-07-17" link1="Is version of" style1="bold">Use to create a relationship between resources that generally have the same intellectual content but really are different versions in time. Use the term Is version of to express the relationship.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2006-02-03">Do not use this field to create a relationship to a resource that is not in the library.</practice>
+				<practice status="current" originDate="2001-10-06">Do not create relationships just for the sake of making a relationship.</practice>
+				<practice status="current" originDate="2006-07-17" link1="URL - mirror" style1="bold">Do not make a relationship when two resources have same intellectual content, same language and same file format but different computer server domains (i.e. the www.some.org part), use the URL - mirror field instead.</practice>
+
+				<practice status="current" originDate="2006-09-17">Do not make a relationship when two resources have same intellectual content, same language, same file format and same computer server domains (i.e. the www.some.org part) but different filenames (e.g. index.html versus welcome.html).</practice>
+
+			</donts>
+			<examples>
+				<practice status="current" originDate="2006-02-03" link1="DLESE:Is based on" style1="bold" link2="Mauna Loa, Hawaii: Carbon Dioxide Concentration Graph" url2="http://cdiac.esd.ornl.gov/trends/co2/graphics/mlo144e.pdf" link3="record ID - library catalog number" style3="bold" link4="record ID - creating a relation" style4="bold">DLESE:Is based on: The Mauna Loa, Hawaii: Carbon Dioxide Concentration Graph is a diagram of a dataset already cataloged in DLESE. By selecting the kind term, DLESE:Is based, the diagram is connected to the dataset. Complete the connection by entering the record ID - library catalog number (e.g. DWEL-000-000-000-123) of the dataset in the record ID - creating a relation (entry) field.</practice>
+
+				<practice status="current" originDate="2006-02-03" link1="DC:Is part of" style1="bold" link2="The Nine Planets: Saturn" url2="http://www.seds.org/nineplanets/nineplanets/saturn.html" link3="The Nine Planets: A Multimedia Tour of the Solar System" url3="http://www.seds.org/billa/tnp/index.html" link4="record ID - library catalog number" style4="bold">DC:Is part of: The Nine Planets: Saturn which is part of The Nine Planets: A Multimedia Tour of the Solar System. Complete the connection by entering the record ID - library catalog number (e.g. IPS-000-C-345) of the Solar System in the record ID - creating a relation (entry) field.</practice>
+				
+				<practice status="current" originDate="2006-02-03" link1="DC:References" style1="bold" link2="The Evaluation Report for Remote Sensing Using Satellites" url2="http://it.coe.uga.edu/~treeves/RSUSeval/index.html" link3="Remote Sensing Using Satellites" url3="http://it.coe.uga.edu/~treeves/RSUSeval/index.html" link4="record ID - library catalog number" style4="bold">DC:References: The Evaluation Report for Remote Sensing Using Satellites cites and links to the resource Remote Sensing Using Satellites. Complete the connection by entering the record ID - library catalog number (e.g. DLESE-000-000-000-036) of the Remote Sensing Using Satellites resource in the record ID - creating a relation (entry) field.</practice>
+
+				<practice status="current" originDate="2006-07-17" link1="DC:Is version of" style1="bold" link2="English version" url2="http://www.nineplanets.org/" link3="Dutch version" url3="http://www.infoster.be/negepl/">DC:Is version of: The Nine Planets is a site with the same content in multiple languages (e.g. English version and Dutch version).</practice>
+
+				<practice status="current" originDate="2006-07-17" link1="DC:Is format of" style1="bold" link2="html" url2="http://pubs.usgs.gov/gip/dynamic/dynamic.html" link3="pdf" url3="http://pubs.usgs.gov/gip/dynamic/dynamic.pdf">DC:Is format of: The resource, This Dynamic Earth: the Story of Plate Tectonics, is available in html and pdf formats.</practice>
+			</examples>
+		</bestPractices>
+
+<!--Obsolete practices (Do NOT erase)
+				<practice status="obsolete" originDate="2001-10-06" archDate="2006-09-18">Do not make relationships between anchor links in a resource or between anchor links of different resources.</practice>
+				<practice status="obsolete" originDate="2006-07-17" archDate="2006-09-18"  link1="URL - mirror" style1="bold">Do not make a relationship when two resources have same intellectual content, same language, same file format and same computer server domains (i.e. the www.some.org part) but different filenames (e.g. index.html versus welcome.html), use the URL - mirror field instead.</practice>
+				<practice status="obsolete" originDate="2001-10-06" link1="Mauna Loa, Hawaii: Carbon Dioxide Concentration Graph" url1="http://cdiac.esd.ornl.gov/trends/co2/graphics/mlo144e.pdf">For example, the Mauna Loa, Hawaii: Carbon Dioxide Concentration Graph is a diagram of a dataset. The dataset is also cataloged. So the Mauna Loa record uses relation to say the diagram (graph) "IsBasedOn" the following dataset by using the DLESE ID of the dataset catalog record.</practice>
+				<practice status="obsolete" originDate="2001-10-06" link1="The Nine Planets: Saturn" url1="http://www.seds.org/nineplanets/nineplanets/saturn.html" link2="he Nine Planets: A Multimedia Tour of the Solar System" url2="http://www.seds.org/billa/tnp/index.html">Another example is The Nine Planets: Saturn which "IsPartOf " The Nine Planets: A Multimedia Tour of the Solar System </practice>
+				<practice status="obsolete" originDate="2001-10-06" link1="Global Land Vegetation" url1="http://www.ccpo.odu.edu/SEES/veget/veget.htm" link2="Oceanography" url2="http://www.ccpo.odu.edu/SEES/ocean/ocean.htm">The four NASA modules that comprise the Studying Earth's Environment from Space (SEES) are good examples of "References". Within each of the four modules, the other SEES modules are hyperlinked. For example, Global Land Vegetation references Oceanography.</practice>
+ -->
+
+
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>DC:Is format of, DLESE:Has thumbnail</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/relations/relation/urlEntry/@kind</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

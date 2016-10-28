@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: instDivision-person-osm-groups-submission-en-us.xml,v 1.21 2014/10/07 14:46:01 flanagan91 Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/instDivision.xsd"
+version="2.0">
+<head>
+	<title>Institutional division</title>
+	<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="Institutional division" audience="submission" path="/record/contributors/person/affiliation/instDivision" deftn="a division within an institution or organization that the person is affiliated with" collapseExpand="true" smartCheckBox="true"/>
+</head>
+<body>
+	<outline type="group" text="UCAR" collapsible="true">
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):Office of UCAR President (UCARPRES)" type="vocab" text="UCARPRES"/>
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA)" type="group" text="Corporate Affairs (CA)">
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA):Communications - News Center (COMM)" type="vocab" text="COMM"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA):Office of Government Affairs (OGA)" type="vocab" text="OGA"/>
+		</outline><!--end corporate affairs-->
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):Finance and Administration (FandA):Information Technology (IT):Multimedia Services (ITMM)" type="vocab" text="Multimedia Services (MMS)"/>
+	</outline><!--end UCAR-->
+
+	<outline vocab="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP)" type="group" text="UCP" collapsible="true">
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Constellation Observing System for Meteorology Ionosphere Climate (COSMIC)" type="vocab" text="COSMIC"/>
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Cooperative Program for Operational Meteorology Education and Training (COMET)" type="vocab" text="COMET"/>
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Digital Learning Sciences (DLS)" type="vocab" text="DLS"/>
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Global Learning and Obsersvations to Benefit the Environment (GLOBE)" type="vocab" text="GLOBE"/>
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Joint Office for Science Support (JOSS)" type="vocab" text="JOSS"/>
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):National Science Digital Library (NSDL)" type="vocab" text="NSDL"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Spark" type="group" text="SPARK" collapsible="true">
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Spark:Administrative Office (SPARKAO)" type="vocab" text="Spark Admin Off"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Spark:Significant Opportunities in Atmospheric Research and Science (SOARS)" type="vocab" text="SOARS"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Spark:UCAR Science Education" type="vocab" text="Science Edu"/>
+			</outline><!--end SPARK-->
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Unidata Program Center (UNIDATA)" type="vocab" text="Unidata"/>
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):UCAR Community Programs (UCP):Visiting Scientist Programs (VSP)" type="vocab" text="VSP"/>
+	</outline><!--end UCP-->
+
+	<outline type="group" vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR)" text="NCAR" collapsible="true">
+		<outline type="group" vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL)" text="CISL" collapsible="true">
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Institute for Mathematics Applied to the Geosciences (IMAGe)" type="group" text="IMAGe">
+					<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Institute for Mathematics Applied to the Geosciences (IMAGe):Computational Mathematics Group (CMG)" type="vocab" text="Comp Math Grp (CMG)"/>
+					<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Institute for Mathematics Applied to the Geosciences (IMAGe):Data Assimilation Research Section (DARES)" type="vocab" text="Data Assim Res Sect (DARES)"/>
+					<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Institute for Mathematics Applied to the Geosciences (IMAGe):Geophysical Statistics Program (GSP)" type="vocab" text="Geo Stats Prog (GSP)"/>
+					<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Institute for Mathematics Applied to the Geosciences (IMAGe):Regional Integrated Science Collective (RISC)" type="vocab" text="Reg Integ Sci Coll (RISC)"/>
+					<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Institute for Mathematics Applied to the Geosciences (IMAGe):Turbulence Numerics Team (TNT)" type="vocab" text="Turbulence Num (TNT)"/>
+			</outline><!--end IMAGe-->
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD)" type="group" text="OSD">
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Data Support Section (DSS)" type="vocab" text="DSS"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Enterprise Services Section (ESS)" type="vocab" text="ESS"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Enterprise Services Section (ESS):Computer Production Group (CPG)" type="vocab" text="CPG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Enterprise Services Section (ESS):Distributed Systems Group (DSG)" type="vocab" text="DSG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Enterprise Services Section (ESS):Web Engineering Group (WEG)" type="vocab" text="WEG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):High-end Services Section (HSS)" type="vocab" text="HSS"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):High-end Services Section (HSS):Consulting Services Group (CSG)" type="vocab" text="CSG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):High-end Services Section (HSS):Data Analysis Services Group (DASG)" type="vocab" text="DASG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):High-end Services Section (HSS):Mass Storage Systems Group (MSSG)" type="vocab" text="MSSG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):High-end Services Section (HSS):Supercomputer Systems Group (SCSG)" type="vocab" text="SCSG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Network Engineering and Telecommunications Section (NETS)" type="vocab" text="NETS"/>
+			</outline><!--end OSD-->
+			
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Technology Development Division (TDD)" type="group" text="TDD">
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Technology Development Division (TDD):Computational Science Section (CSS)" type="vocab" text="CSS"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Technology Development Division (TDD):Earth System Modeling Infrastructure (ESMI)" type="vocab" text="ESMI"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Technology Development Division (TDD):Visualization and Enabling Technologies Section (VETS)" type="vocab" text="VETS"/>
+			</outline><!--end TDD-->
+		</outline><!--end CISL-->
+
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL)" type="group" text="EOL" collapsible="true" wrap="true">
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Computing, Data and Software Facility (CDS)" type="group" text="CDS">
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Computing, Data and Software Facility (CDS):Collaborative Technologies and Metadata Group (CTMG)" type="vocab" text="CTMG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Computing, Data and Software Facility (CDS):Data Management Group (DMG)" type="vocab" text="DMG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Computing, Data and Software Facility (CDS):Software Systems Group (SSG)" type="vocab" text="SSG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Computing, Data and Software Facility (CDS):Systems Infrastructure (SIG)" type="vocab" text="SIG"/>
+			</outline><!--end CDS-->
+			
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Design and Fabrication Services (DFS)" type="vocab" text="DFS"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Field Project Services (FPS)" type="vocab" text="FPS"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):In-Situ Sensing Facility (ISF)" type="vocab" text="ISF"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Remote Sensing Facility (RSF)" type="vocab" text="RSF"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Research Aviation Facility (RAF)" type="vocab" text="RAF"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):Technology Development Facility (TDF)" type="vocab" text="TDF"/>
+		</outline><!--end EOL-->
+
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Advanced Study Program (ASP)" type="vocab" text="ASP"/>
+
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO)" type="group" text="HAO" collapsible="true">
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Atmosphere, Ionosphere, and Magnetosphere (AIM)" type="vocab" text="AIM"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Corona and Heliosphere (CANDH)" type="vocab" text="CANDH"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):HAO Administration (HAOAO)" type="vocab" text="HAO Admin"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Instrumentation Group (IG)" type="vocab" text="IG"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Lower Solar Atmosphere (LSA)" type="vocab" text="LSA"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Long-term Solar Variability (LSV)" type="vocab" text="Long-term Solar Var"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Mauna Loa Solar Observatory (MLSO)" type="vocab" text="Mauna Loa Observ"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Solar Interior and Variability (SIV)" type="vocab" text="SIV"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):High Altitude Observatory (HAO):Solar Transients and Space Weather (STSW)" type="vocab" text="Solar Trans and Space Weath"/>
+		</outline><!--end HAO-->
+
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Integrated Science Program (ISP)" type="vocab" text="ISP"/>
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Associate Director (NCARASSCDIR)" type="vocab" text="NCARDIR"/>
+
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL)" type="group" text="NESL" collapsible="true" wrap="true">
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD)" type="group" text="ACD" collapsible="true">
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Atmospheric Composition REmote Sensing and Prediction (ACRESP)" type="vocab" text="ACRESP"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Atmospheric Radiation Investigation and Measurements (ARIM)" type="vocab" text="ARIM"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Atmospheric Radical Studies (ARS)" type="vocab" text="ARS"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Biogeosciences (BIOGEO)" type="vocab" text="BIOGEO"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Biosphere Atmosphere Interactions (BAI)" type="vocab" text="BAI"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Community Airborne Research Instrumentation (CARI)" type="vocab" text="CARI"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Global Modeling and WACCM (GMWACCM)" type="vocab" text="GMWACCM"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Global Tropospheric Modeling (GTM)" type="vocab" text="GTM"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):High Resolution Dynamics Limb Sounder (HIRDLS)" type="vocab" text="HIRDLS"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Laboratory Kinetics (LK)" type="vocab" text="LK"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Measurements of Pollution in the Troposphere (MOPITT)" type="vocab" text="MOPITT"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite Data Analysis (SDA)" type="vocab" text="SDA"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Ultrafine Aerosols (UA)" type="vocab" text="UA"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Community in Situ Measurements (COMMINSITU)" type="group" collapsible="true" text="COMMINSITU">
+					<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Community in Situ Measurements (COMMINSITU):in Situ Observations (INSITUOBS)" type="vocab" text="INSITUOBS"/>
+					<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Community in Situ Measurements (COMMINSITU):Engineering Group (ENG)" type="vocab" text="ENG"/>
+				</outline>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Chemistry Modeling (CHEMMOD)" type="group" collapsible="true" text="CHEMMOD" >
+					<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Chemistry Modeling (CHEMMOD):Global Chemistry Modeling (GCM)" type="vocab" text="GCM" />
+					<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Chemistry Modeling (CHEMMOD):Regional and Process Modeling (RPM)" type="vocab" text="RPM" /> 
+				</outline>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE)" type="group" collapsible="true" text="SATREMOTE" >
+					<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE):Atmospheric Composition Remote Sensing and Prediction (ACRESP)" type="vocab" text="ACRESP" />
+					<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE):Measurements of Pollution in the Troposphere (MOPITT)" type="vocab" text="MOPITT" />
+					<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE):Optical Techniques (OT)" type="vocab" text="Optical Techniques" />
+					<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Satellite and Remote Sensing (SATREMOTE):UTLS Studies (UTLS)" type="vocab" text="UTLS Studies" />
+				</outline>		
+			</outline><!--end ACD-->
+	
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD)" type="group" text="CGD" collapsible="true" wrap="true">
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Atmospheric Modeling and Prediction (AMP)" type="vocab" text="AMP"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):CESM Project Office (CPO)" type="vocab" text="CPO"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):CESM Software Engineering Group (CSEG)" type="vocab" text="CSEG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Climate Analysis (CAS)" type="vocab" text="CAS"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Climate Change Research (CCR)" type="vocab" text="CCR"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Information Systems (ISG)" type="vocab" text="ISG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Oceanography (OS)" type="vocab" text="OS"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Climate and Global Dynamics Division (CGD):Terrestrial Sciences (TSS)" type="vocab" text="TSS"/>
+			</outline><!--end CGD-->
+	
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM)" type="group" text="MMM" collapsible="true">
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Boundary Layer and Turbulence Group (BLTG)" type="vocab" text="BLTG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Data Assimilation Group (DAG)" type="vocab" text="DAG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Mesoscale Dynamics Group (MDG)" type="vocab" text="MDG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Mesoscale Prediction Group (MPG)" type="vocab" text="MPG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Physical Meteorology Group (PMG)" type="vocab" text="PMG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Prediction Diagnostics Group (PDG)" type="vocab" text="PDG"/>
+				<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Systems Management Group (SMG)" type="vocab" text="SMG"/>
+			</outline><!--end MMM-->
+		</outline><!--end NESL-->
+		
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Library (NCARLIB)" type="vocab" text="NCARLIB"/>
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Research Relations Office (NCARRESREL)" type="vocab" text="NCARRESREL"/>
+
+		<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL)" type="group" text="RAL" collapsible="true">
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):Aviation Applications Program (AAP)" type="vocab" text="AAP"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):Climate Science &amp; Applications Program (CSAP)" type="vocab" text="CSAP"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):Hydrometeorological Applications Program (HAP)" type="vocab" text="HAP"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):Joint Numerical Testbed (JNT)" type="vocab" text="JNT"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):National Security Applications Program (NSAP)" type="vocab" text="NSAP"/>
+			<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):Weather Systems and Assessment Program (WSAP)" type="vocab" text="WSAP"/>
+		</outline><!--end RAL-->
+	</outline><!--end NCAR-->
+
+<!--current division suppressions-->
+<!--
+<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):Chemical Processes and Regional Modeling (CPRM)" type="vocab" text="CPRM"/>		
+<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Atmospheric Chemistry Division (ACD):UTLS Studies (UTLS)" type="vocab" text="UTLS"/>		
+<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):CISL Administrative Office (CISLAO)" type="vocab" text="CISL Administrative Office (CISLAO)"/>
+<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):Operations and Services Division (OSD):Enterprise Services Section (ESS):Workstation Support Group (WSST)" type="vocab" text="Workstation Support Group (WSST)"/>
+<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Earth Observing Laboratory (EOL):EOL Administrative Office (EOLAO)" type="vocab" text="EOL Administrative Office (EOLAO)"/>
+<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Budget and Planning Office (NCARBP)" type="vocab" text="NCAR Budget and Planning Office (NCARBP)"/>
+<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Directorate (NCARDIR)" type="vocab" text="NCAR Director's Office"/>
+<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):NESLAO (NESLAO)" type="vocab" text="NESLAO (NESLAO)"/>
+<outline vocab="University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Research Applications Laboratory (RAL):RAL Administrative Office (RALAO)" type="vocab" text="RAL Administrative Office (RALAO)"/>
+<outline vocab="University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA):CA Administrative Office (CAAO)" type="vocab" text="CA Administrative Office (CAAO)"/>
+<outline vocab="University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA):Governance (GOV)" type="vocab" text="Governance (GOV)"/>
+-->
+
+
+
+
+<!--historical division suppressions-->
+<!--
+	<outline type="group" text="Historical Divisions" collapsible="true">
+	<outline vocab="Acid Deposition Modeling Project (ADMP)" type="vocab" text="Acid Deposition Modeling Project (ADMP)"/>
+	<outline vocab="Aeronomy Laboratory" type="vocab" text="Aeronomy Laboratory"/>
+	<outline vocab="Atmospheric Analysis and Prediction Division (AAP)" type="vocab" text="Atmospheric Analysis and Prediction Division (AAP)"/>
+	<outline vocab="Atmospheric Chemistry and Aeronomy Division (ACAD)" type="vocab" text="Atmospheric Chemistry and Aeronomy Division (ACAD)"/>
+	<outline vocab="Atmospheric Quality Division (AQD)" type="vocab" text="Atmospheric Quality Division (AQD)"/>
+	<outline vocab="Atmospheric Quality and Modification Division (AQM)" type="vocab" text="Atmospheric Quality and Modification Division (AQM)"/>
+	<outline vocab="Atmospheric Technology Division (ATD)" type="vocab" text="Atmospheric Technology Division (ATD)"/>
+	<outline vocab="Balloon Facility" type="vocab" text="Balloon Facility"/>
+	<outline vocab="Convective Storms Division" type="vocab" text="Convective Storms Division"/>
+	<outline vocab="Cooperative Convective Precipitation Experiment (CCOPE)" type="vocab" text="Cooperative Convective Precipitation Experiment (CCOPE)"/>
+	<outline vocab="Corporate Partners Program" type="vocab" text="Corporate Partners Program"/>
+	<outline vocab="Earth Observing Laboratory (EOL)" type="vocab" text="Earth Observing Laboratory (EOL)"/>
+	<outline vocab="Environmental Research Laboratories (ERL)" type="vocab" text="Environmental Research Laboratories (ERL)"/>
+	<outline vocab="Environmental and Societal Impacts Group (ESIG)" type="vocab" text="Environmental and Societal Impacts Group (ESIG)"/>
+	<outline vocab="Facilities for Atmospheric Research" type="vocab" text="Facilities for Atmospheric Research"/>
+	<outline vocab="Facilities Laboratory" type="vocab" text="Facilities Laboratory"/>
+	<outline vocab="Field Observing Facility (FOF)" type="vocab" text="Field Observing Facility (FOF)"/>
+	<outline vocab="Global Atmospheric Research Program (GARP)" type="vocab" text="Global Atmospheric Research Program (GARP)"/>
+	<outline vocab="Global Atmospheric Research Programme Atlantic Tropical Experiment (GATE)" type="vocab" text="Global Atmospheric Research Programme Atlantic Tropical Experiment (GATE)"/>
+	<outline vocab="Laboratory of Atmospheric Science (LAS)" type="vocab" text="Laboratory of Atmospheric Science (LAS)"/>
+	<outline vocab="Line Islands Critique" type="vocab" text="Line Islands Critique"/>
+	<outline vocab="Media Relations Office" type="vocab" text="Media Relations Office"/>
+	<outline vocab="National Hail Research Experiment (NHRE)" type="vocab" text="National Hail Research Experiment (NHRE)"/>
+	<outline vocab="Office of Development and Government Affairs" type="vocab" text="Office of Development and Government Affairs"/>
+	<outline vocab="Office for Interdisciplinary Earth Studies (OIES)" type="vocab" text="Office for Interdisciplinary Earth Studies (OIES)"/>
+	<outline vocab="Physical Facility Services (PFS)" type="vocab" text="Physical Facility Services (PFS)"/>
+	<outline vocab="Publications Office" type="vocab" text="Publications Office"/>
+	<outline vocab="Research Applications Program (RAP)" type="vocab" text="Research Applications Program (RAP)"/>
+	<outline vocab="Scientific Balloon Facility (SBF)" type="vocab" text="Scientific Balloon Facility (SBF)"/>
+	<outline vocab="Scientific Computing Division (SCD)" type="vocab" text="Scientific Computing Division (SCD)"/>
+	<outline vocab="Societal Impacts Program (SIP)" type="vocab" text="Societal Impacts Program (SIP)"/>
+	<outline vocab="Transportation Alternatives Program (TAP)" type="vocab" text="Transportation Alternatives Program (TAP)"/>
+	<outline vocab="U.S. Monex Project Office" type="vocab" text="U.S. Monex Project Office"/>
+	<outline vocab="Weather Research Program. Environmental Research Laboratories" type="vocab" text="Weather Research Program. Environmental Research Laboratories"/>
+	</outline>
+-->
+
+
+</body>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

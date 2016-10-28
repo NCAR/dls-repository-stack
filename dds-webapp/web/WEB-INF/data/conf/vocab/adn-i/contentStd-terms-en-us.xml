@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<termsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/adn-i/contentStd.xsd">
+	<field name="contentStandard" id="cs" language="en-us">
+		<definition system="meta" interface="default">A level of achievement determined by a professional group to which learners are expected to aspire</definition>
+		<definition system="dcs" interface="default">A level of achievement determined by a professional group to which learners are expected to aspire</definition>
+		<definition system="dds" interface="default">String</definition>
+
+		<value vocab="NCGE:Environment and Society:How human actions modify the physical environment" id="00">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:Environment and Society:How physical systems affect human systems" id="01">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:Environment and Society:The changes that occur in the meaning, use, distribution, and importance of resources" id="02">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:Human Systems:How forces of cooperation and conflict among people influence the division and control of Earth's surface" id="03">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:Human Systems:The characteristics, distribution, and migration of human populations on Earth's surface" id="04">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:Human Systems:The characteristics, distributions, and complexity of Earth's cultural mosaics" id="05">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:Human Systems:The patterns and networks of economic interdependence on Earth's surface" id="06">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:Human Systems:The process, patterns, and functions of human settlement" id="07">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:Physical Systems:The characteristics and spatial distribution of ecosystems on Earth's surface" id="08">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:Physical Systems:The physical processes that shape the patterns of Earth's surface" id="09">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:Places and Regions:How culture and experience influence people's perception of places and regions" id="0a">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+
+		<value vocab="NCGE:Places and Regions:That people create regions to interpret Earth's complexity" id="0b">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:Places and Regions:The physical and human characteristics of places" id="0c">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:The Uses of Geography:How to apply geography to interpret the past" id="0d">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:The Uses of Geography:How to apply geography to interpret the present and plan for the future" id="0e">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:The World in Spatial Terms:How to analyze the spatial organization of people, places, and environments on Earth's surface" id="0f">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information" id="0g">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NCGE:The World in Spatial Terms:How to use mental maps to organize information about people, places, and environments" id="0h">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" id="0i">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard A Science as Inquiry Standards:Understanding about scientific inquiry" id="0j">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard B Physical Science Standards:Motion and forces" id="0k">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard B Physical Science Standards:Properties and changes of properties in matter" id="0l">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+
+		<value vocab="NSES:5-8:Content Standard B Physical Science Standards:Transfer of energy" id="0m">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard C Life Science Standards:Diversity and adaptations of organisms" id="0n">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard C Life Science Standards:Population and ecosystems" id="0o">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard C Life Science Standards:Regulation and behavior" id="0p">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard C Life Science Standards:Reproduction and heredity" id="0q">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard C Life Science Standards:Structure and function in living systems" id="0r">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth in the solar system" id="0s">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth's history" id="0t">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Structure of the earth system" id="0u">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard E Science and Technology Standards:Abilities of technological design" id="0v">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard E Science and Technology Standards:Understandings about science and technology" id="0w">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Natural hazards" id="0x">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Personal health" id="0y">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Populations, resources, and environments" id="0z">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Risks and benefits" id="000">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in society" id="001">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:History of science" id="002">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:Nature of science" id="003">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:Science as a human endeavor" id="004">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Unifying Concepts and Processes Standards:Change, constancy, and measurement" id="005">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Unifying Concepts and Processes Standards:Evidence, models, and explanation" id="006">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Unifying Concepts and Processes Standards:Evolution and equilibrium" id="007">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Unifying Concepts and Processes Standards:Form and function" id="008">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:5-8:Unifying Concepts and Processes Standards:Systems, order, and organization" id="009">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" id="00a">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard A Science as Inquiry Standards:Understandings about scientific inquiry" id="00b">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard B Physical Science Standards:Chemical reactions" id="00c">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard B Physical Science Standards:Conservation of energy and increase in disorder" id="00d">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard B Physical Science Standards:Interactions of energy and matter" id="00e">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard B Physical Science Standards:Motions and forces" id="00f">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard B Physical Science Standards:Structure and properties of matter" id="00g">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard B Physical Science Standards:Structure of atoms" id="00h">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard C Life Science Standards:Behavior of organisms" id="00i">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard C Life Science Standards:Biological evolution" id="00j">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard C Life Science Standards:Interdependence of organisms" id="00k">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard C Life Science Standards:Matter, energy, and organization in living systems" id="00l">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard C Life Science Standards:Molecular basis of heredity" id="00m">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard C Life Science Standards:The cell" id="00n">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Energy in the earth system" id="00o">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Geochemical cycles" id="00p">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Origin and evolution of the earth system" id="00q">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Origin and evolution of the universe" id="00r">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard E Science and Technology Standards:Abilities of technological design" id="00s">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard E Science and Technology Standards:Understandings about science and technology" id="00t">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Environmental quality" id="00u">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural and human-induced hazards" id="00v">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural resources" id="00w">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Personal and community health" id="00x">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Population growth" id="00y">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in local, national, and global challenges" id="00z">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Historical perspectives" id="010">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Nature of scientific knowledge" id="011">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Science as a human endeavor" id="012">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Unifying Concepts and Processes Standards:Change, constancy, and measurement" id="013">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Unifying Concepts and Processes Standards:Evidence, models, and explanation" id="014">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Unifying Concepts and Processes Standards:Evolution and equilibrium" id="015">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Unifying Concepts and Processes Standards:Form and function" id="016">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:9-12:Unifying Concepts and Processes Standards:Systems, order, and organization" id="017">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" id="018">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard A Science as Inquiry Standards:Understanding about scientific inquiry" id="019">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard B Physical Science Standards:Light, heat, electricity, and magnetism" id="01a">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard B Physical Science Standards:Position and motion of objects" id="01b">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard B Physical Science Standards:Properties of objects and materials" id="01c">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard C Life Science Standards:Characteristics of organisms" id="01d">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard C Life Science Standards:Life cycles of organisms" id="01e">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard C Life Science Standards:Organisms and environments" id="01f">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Changes in earth and sky" id="01g">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Objects in the sky" id="01h">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Properties of earth materials" id="01i">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard E Science and Technology Standards:Abilities of technological design" id="01j">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard E Science and Technology Standards:Abilities to distinguish between natural objects and objects made by humans" id="01k">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard E Science and Technology Standards:Understanding about science and technology" id="01l">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Changes in environments" id="01m">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Characteristics and changes in populations" id="01n">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Personal health" id="01o">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in local challenges" id="01p">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Types of resources" id="01q">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Content Standard G History and Nature of Science Standards:Science as a human endeavor" id="01r">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Unifying Concepts and Processes Standards:Change, constancy, and measurement" id="01s">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Unifying Concepts and Processes Standards:Evidence, models, and explanation" id="01t">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Unifying Concepts and Processes Standards:Evolution and equilibrium" id="01u">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Unifying Concepts and Processes Standards:Form and function" id="01v">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+		<value vocab="NSES:K-4:Unifying Concepts and Processes Standards:Systems, order, and organization" id="01w">
+			<definition system="meta" interface="default">Self-explanatory</definition>
+		</value>
+		
+	</field>
+</termsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

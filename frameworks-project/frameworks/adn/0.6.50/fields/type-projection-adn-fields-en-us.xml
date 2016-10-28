@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: type-projection-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/type-projection.xsd">
+	<field name="Projection type" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/geospatialCoverages/geospatialCoverage/projection/@type">
+		<definition>the systematic presentation (think 2-D map) of objects on the Earth or the celestial sphere using coordinate lines on a flat surface</definition>
+
+		<vocabLevels number="2">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="DLESE">Digital Library for Earth System Education</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+
+			<levelAndDeftn level="2" levelName="Type" levelDeftn="the systematic presentation (think 2-D map) of objects on the Earth or the celestial sphere using coordinate lines on a flat surface; see the allowed combination of terms below; the type part of the term is the phrase after the last colon"/>
+		</vocabLevels>
+
+		<terms>
+			<termAndDeftn vocab="DLESE:Albers conical equal area">a projection with two standard parallels and the pole as a point</termAndDeftn>
+			<termAndDeftn vocab="DLESE:Does not apply">projection type information does not apply</termAndDeftn>
+			<termAndDeftn vocab="DLESE:Lambert azimuthal equal area">a projection type where distortion is zero at a center latitude and longitude and increases radially away from the center point</termAndDeftn>
+			<termAndDeftn vocab="DLESE:Lambert conformal conic">a projection type with two standard parallels and the latitude and longitude of the projection center</termAndDeftn>
+			<termAndDeftn vocab="DLESE:Mercator">a cylindrical projection where the meridians and parallels are all straight lines and Earth's equator is the tangency point</termAndDeftn>
+			<termAndDeftn vocab="DLESE:Other">the projection type is known but not part of this vocabulary</termAndDeftn>
+			<termAndDeftn vocab="DLESE:Polar stereographic">projection type were the perspective is a plane tangent to the North or South poles; meridians are equally spaced and parallels are unequally spaced circles centered around a pole</termAndDeftn>
+			<termAndDeftn vocab="DLESE:Space oblique Mercator">a projection type that provides continuous conformal mapping of a swath sensed by an artificial satellite, such as Landsat </termAndDeftn>
+			<termAndDeftn vocab="DLESE:Transverse Mercator">a cylindrical projection where the meridians and parallels are all straight lines and a meridian (not Earth's equator) is the tangency point</termAndDeftn>
+			<termAndDeftn vocab="DLESE:Unknown">projection type information applies but the projection type is not known</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-04-27">Projection type information applies to visuals but not raw or gridded data until the data is represented on a 2-D map.</practice>
+				<practice status="current" originDate="2005-04-27">Different projections represent different parts of the Earth better.</practice>
+				<practice status="current" originDate="2005-04-28" link1="Unknown" style1="bold" link2=" Does not apply" style2="bold">Be careful in the application of the terms Unknown and Does not apply; remember Unknown means project type information applies but is unknown while does not apply means projection type information does not apply because no two dimensional map is involved.</practice>
+				<practice status="current" originDate="2005-04-27" link1="DLESE:Other" style1="bold" link2="projection information" style2="bold">If projection type information applies but is not part of the list of terms, choose the term DLESE:Other and provide projection type information as content in the projection information field.</practice>
+				<practice status="current" originDate="2005-04-27" link1="DLESE:Unknown" style1="bold">If projection type information applies but cannot be determined, choose the term DLESE:Unknown.</practice>
+				<practice status="current" originDate="2005-04-27" link1="projection types" url1="http://www.3dsoftware.com/Cartography/USGS/MapProjections/Overview/">An overview of different projection types from a software company.</practice>
+				<practice status="current" originDate="2005-04-27" link1="projection types" url1="http://members.shaw.ca/quadibloc/maps/mapint.htm">Another overview of different projection types</practice>
+			</dos>
+			
+			<donts>
+				<practice status="current" originDate="2005-04-28" link1="Unknown" style1="bold" link2="Does not apply" style2="bold">Do not use the terms Unknown and Does not apply interchangeably. They have different meanings.</practice>
+			</donts>
+
+			<examples>
+				<practice status="current" originDate="2005-04-27" link1="Albers conical equal area" url1="http://members.shaw.ca/quadibloc/maps/mco0303.htm">Albers conical equal area example</practice>
+
+<!--other: Lambert azimuthal equal area - http://members.shaw.ca/quadibloc/maps/maz0204.htm-->
+				<practice status="current" originDate="2005-04-27" link1="Lambert azimuthal equal area" url1="http://www.3dsoftware.com/Cartography/USGS/MapProjections/Azimuthal/LambertAzimuthal/">Lambert azimuthal equal area example</practice>
+
+				<practice status="current" originDate="2006-06-11" link1="Lambert conformal conic" url1="http://gmt.soest.hawaii.edu/gmt/doc/html/GMT_Docs/node73.html">Lambert conformal conic example</practice>
+
+<!--other: Mercator -  http://members.shaw.ca/quadibloc/maps/mcy0101.htm-->
+				<practice status="current" originDate="2005-04-27" link1="Mercator" url1="http://www.3dsoftware.com/Cartography/USGS/MapProjections/Cylindrical/Mercator/">Mercator example</practice>
+
+				<practice status="current" originDate="2005-04-27" link1="Polar stereographic" url1="http://www.3dsoftware.com/Cartography/USGS/MapProjections/Azimuthal/Stereographic/">Polar stereographic example and uses.</practice>
+
+<!--other: Space oblique Mercator - http://gmt.soest.hawaii.edu/gmt/doc/html/GMT_Docs/node84.html-->
+				<practice status="current" originDate="2005-04-27" link1="Space oblique Mercator" url1="http://www.3dsoftware.com/Cartography/USGS/MapProjections/Misc/SpaceObliqueMercator/">Space oblique Mercator example</practice>
+
+<!--other: Transverse Mercator - http://gmt.soest.hawaii.edu/gmt/doc/html/GMT_Docs/node82.html-->
+				<practice status="current" originDate="2005-04-27" link1="Transverse Mercator" url1="http://www.3dsoftware.com/Cartography/USGS/MapProjections/Cylindrical/TransverseMercator/">Transverse Mercator example</practice>
+
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>DLESE:Mercator, DLESE:Other</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/projection/@type</note>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/coordinateSystem/@type</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

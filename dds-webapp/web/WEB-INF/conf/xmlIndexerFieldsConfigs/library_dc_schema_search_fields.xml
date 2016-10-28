@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig schema="http://www.dlsciences.org/frameworks/library_dc/1.0/schemas/library_dc.xsd">
+	<customFields>
+		<!-- customField attributes: name, store, [type OR analyzer] -->
+		<customField name="libDcRights" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/rights</xpath>
+			</xpaths>
+		</customField>
+	</customFields>
+</XMLIndexerFieldsConfig>

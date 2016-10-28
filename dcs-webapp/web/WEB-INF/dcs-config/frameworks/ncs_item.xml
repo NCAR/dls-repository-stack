@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ns.nsdl.org/ncs/framework_config/1.00/schemas/dcsFrameworkConfig.xsd">
+  <xmlFormat>ncs_item</xmlFormat>
+  <schemaInfo>
+    <rootElementName>record</rootElementName>
+    <schemaURI>http://ns.nsdl.org/ncs/ncs_item/1.02/schemas/ncs-item.xsd</schemaURI>
+    <paths>
+      <path pathName="id" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="true">/record/general/recordID</path>
+      <path pathName="url" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="false" valueType="uniqueUrl">/record/general/url</path>
+      <path pathName="title" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="false">/record/general/title</path>
+      <path pathName="description" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="false">/record/general/description</path>
+      <path pathName="box" inputHelper="bounding_box/ncs_item_box_widget.html">/record/coverages/box</path>
+    </paths>
+    <nameSpaceInfo/>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>3</baseRenderLevel>
+    <firstPage>general</firstPage>
+    <editorPages>
+      <editorPage pageLabel="General">general</editorPage>
+      <editorPage pageLabel="Educational">educational</editorPage>
+      <editorPage pageLabel="Contributor Info">contributions</editorPage>
+      <editorPage pageLabel="Rights">rights</editorPage>
+      <editorPage pageLabel="Relations">relations</editorPage>
+      <editorPage pageLabel="Technical">technical</editorPage>
+      <editorPage pageLabel="Dates">dates</editorPage>
+      <editorPage pageLabel="Coverages">coverages</editorPage>
+    </editorPages>
+    <rebuildOnStart>true</rebuildOnStart>
+    <fieldInfoURI>http://ns.nsdl.org/ncs/ncs_item/1.02/build/fields-list.xml</fieldInfoURI>
+    <vocabLayoutURI>http://ns.nsdl.org/ncs/ncs_item/1.02/build/groups-list.xml</vocabLayoutURI>
+  </editorInfo>
+  <standAloneInfo>
+    <recordsDir>not configured here - see "dcsConfig" in web.xml and server.xml</recordsDir>
+  </standAloneInfo>
+</frameworkConfigRecord>

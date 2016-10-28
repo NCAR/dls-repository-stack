@@ -1,0 +1,237 @@
+/*
+ *  License and Copyright:
+ *
+ *  The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may
+ *  not use this file except in compliance with the License. You should have received a copy of the License
+ *  along with this software; if not, you may obtain a copy of the License at
+ *  http://www.opensource.org/licenses/ecl1.php.
+ *
+ *  Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND,
+ *  either express or implied. See the License for the specific language governing rights and limitations
+ *  under the License.
+ *
+ *  Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR).
+ *  All rights reserved.
+ */
+package edu.ucar.dls.schemedit.action;
+
+import edu.ucar.dls.repository.*;
+import edu.ucar.dls.index.*;
+import edu.ucar.dls.schemedit.*;
+import edu.ucar.dls.schemedit.dcs.*;
+import edu.ucar.dls.schemedit.config.ErrorLog;
+import edu.ucar.dls.schemedit.action.form.*;
+import edu.ucar.dls.schemedit.security.user.User;
+import edu.ucar.dls.index.reader.*;
+import edu.ucar.dls.xml.*;
+import edu.ucar.dls.xml.schema.*;
+import org.apache.lucene.search.*;
+import edu.ucar.dls.oai.*;
+import edu.ucar.dls.webapps.tools.GeneralServletTools;
+
+import java.util.*;
+import java.io.*;
+import java.util.Hashtable;
+import java.util.Locale;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.net.URLEncoder;
+
+import org.apache.struts.action.Action;
+import org.apache.struts.action.ActionError;
+import org.apache.struts.action.ActionErrors;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionServlet;
+import org.apache.struts.util.MessageResources;
+
+/**
+ *  A Struts Action for handling query requests for browsing a collection in the
+ *  DCS. This class works in conjunction with the {@link edu.ucar.dls.schemedit.action.form.DCSBrowseForm}
+ *  Struts form bean class.
+ *
+ * @author    Jonathan Ostwald
+ */
+public final class DCSBrowseAction extends DCSAction {
+
+	private static boolean debug = true;
+
+	SimpleLuceneIndex index;
+
+	// --------------------------------------------------------- Public Methods
+
+	/**
+	 *  Processes the specified HTTP request and creates the corresponding HTTP
+	 *  response by forwarding to a JSP that will create it. A {@link
+	 *  edu.ucar.dls.index.SimpleLuceneIndex} must be available to this class via
+	 *  a ServletContext attribute under the key "index." Returns an {@link
+	 *  org.apache.struts.action.ActionForward} instance that maps to the Struts
+	 *  forwarding name "browse.collection," which must be configured in
+	 *  struts-config.xml to forward to the JSP page that will handle the request.
+	 *
+	 * @param  mapping               The ActionMapping used to select this instance
+	 * @param  request               The HTTP request we are processing
+	 * @param  response              The HTTP response we are creating
+	 * @param  form                  The ActionForm for the given page
+	 * @return                       The ActionForward instance describing where
+	 *      and how control should be forwarded
+	 * @exception  IOException       if an input/output error occurs
+	 * @exception  ServletException  if a servlet exception occurs
+	 */
+	public ActionForward execute(
+	                             ActionMapping mapping,
+	                             ActionForm form,
+	                             HttpServletRequest request,
+	                             HttpServletResponse response)
+		 throws IOException, ServletException {
+		/*
+		 *  Design note:
+		 *  Only one instance of this class gets created for the app and shared by
+		 *  all threads. To be thread-safe, use only local variables, not instance
+		 *  variables (the JVM will handle these properly using the stack). Pass
+		 *  all variables via method signatures rather than instance vars.
+		 */
+		ActionErrors errors = initializeFromContext(mapping, request);
+		if (!errors.isEmpty()) {
+			saveErrors(request, errors);
+			return (mapping.findForward("error.page"));
+		}
+		DCSBrowseForm browseForm = (DCSBrowseForm) form;
+
+		browseForm.setRequest(request);
+		ServletContext servletContext = servlet.getServletContext();
+
+		browseForm.setContextURL(GeneralServletTools.getContextUrl(request));
+
+		/* clearing search params effectively forgets the state of the search page.
+		   this line commented out so search is remembered ... */
+		// this.sessionBean.clearSearchParams();
+
+		index = repositoryManager.getIndex();
+		if (index == null) {
+			throw new ServletException("The attribute \"index\" could not be found in the Servlet Context.");
+		}
+		browseForm.setNumDocs(index.getNumDocs());
+
+		// SchemEditUtils.showRoleInfo (sessionUser, mapping);
+
+		SchemEditUtils.showRequestParameters(request);
+		User sessionUser = this.getSessionUser(request);
+		try {
+			List sets = repositoryService.getAuthorizedSets(sessionUser, this.requiredRole);
+
+			String command = request.getParameter("command");
+			if (command != null && command.length() > 0) {
+				if (command.equals("clearFrameworkMessages")) {
+					frameworkRegistry.clearLoadErrors();
+					frameworkRegistry.clearLoadWarnings();
+				}
+			}
+
+			browseForm.setSets(sets);
+			browseForm.setUserRoles(this.getUserRolesMap(sessionUser, sets));
+
+		} catch (NullPointerException e) {
+			prtln("DCSBrowseAction caught exception.");
+			e.printStackTrace();
+			return mapping.findForward("browse.home");
+		} catch (Throwable e) {
+			prtln("DCSBrowseAction caught exception: " + e);
+			return mapping.findForward("browse.home");
+		}
+
+		errors.add(indexCheck(form, request));
+		// errors.add (getFrameworkRegistryErrors(form, request));
+		if (!errors.isEmpty())
+			saveErrors(request, errors);
+
+		return mapping.findForward("browse.home");
+	}
+
+
+	/**
+	 *  Return mapping from collectionKey to permission for authorized sets. Used
+	 *  to display the sessionUser's role for each collection in the collections
+	 *  table.
+	 *
+	 * @param  user      NOT YET DOCUMENTED
+	 * @param  setInfos  NOT YET DOCUMENTED
+	 * @return           The userRolesMap value
+	 */
+	private Map getUserRolesMap(User user, List setInfos) {
+
+		HashMap map = new HashMap();
+		for (Iterator i = setInfos.iterator(); i.hasNext(); ) {
+			SetInfo setInfo = (SetInfo) i.next();
+			String collection = setInfo.getSetSpec();
+			if (user == null)
+				map.put(collection, "<i>roles disabled</i>");
+			else
+				map.put(collection, user.getRole(collection));
+		}
+		return map;
+	}
+
+
+	private ActionErrors indexCheck(ActionForm form, HttpServletRequest request) {
+		DCSBrowseForm browseForm = (DCSBrowseForm) form;
+		ActionErrors errors = new ActionErrors();
+
+		List sets = browseForm.getSets();
+		for (Iterator i = sets.iterator(); i.hasNext(); ) {
+			DcsSetInfo set = (DcsSetInfo) i.next();
+			int numIndexed = set.getNumIndexedInt() + set.getNumIndexingErrorsInt();
+			int numFiles = set.getNumFilesInt();
+			// prtln ("indexCheck for " + set.getName() + " numIndexed + numErrors = " + numIndexed + ", numFiles = " + numFiles);
+			if (numIndexed != numFiles) {
+				errors.add("indexErrors", new ActionError("generic.error", set.getName()));
+			}
+		}
+		return errors;
+	}
+
+
+	/* 	private ActionErrors getFrameworkRegistryErrors ( ActionForm form, HttpServletRequest request) {
+		DCSBrowseForm browseForm = (DCSBrowseForm) form;
+		ActionErrors errors = new ActionErrors ();
+
+		ErrorLog errorLog = browseForm.getFrameworkLoadErrors ();
+		if (errorLog != null && !errorLog.isEmpty()) {
+			for (Iterator i=errorLog.getEntries().iterator();i.hasNext();) {
+				ErrorLog.LogEntry entry = (ErrorLog.LogEntry) i.next();
+				String name = entry.getName();
+				String msg = entry.getMsg();
+					errors.add ("frameworkMessages",
+						new ActionError ("generic.error", name + ": " + msg));
+			}
+		}
+		prtln ("frameworkRegistryErrors returning " + errors.size() + " messages");
+		return errors;
+	} */
+	// -------------- Debug ------------------
+
+
+	/**
+	 *  Sets the debug attribute of the DCSBrowseAction class
+	 *
+	 * @param  isDebugOutput  The new debug value
+	 */
+	public static void setDebug(boolean isDebugOutput) {
+		debug = isDebugOutput;
+	}
+
+
+
+	/**
+	 *  Print a line to standard out.
+	 *
+	 * @param  s  The String to print.
+	 */
+	private void prtln(String s) {
+		if (debug) {
+			System.out.println("DCSBrowseAction: " + s);
+		}
+	}
+}
+

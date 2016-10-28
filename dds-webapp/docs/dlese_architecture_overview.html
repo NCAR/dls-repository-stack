@@ -1,0 +1,280 @@
+<html>
+<head>
+<title>DLESE Architecture Overview</title>
+	<link rel="stylesheet" type="text/css" href="/dlese_shared/dlese_styles.css" />
+	<link rel="stylesheet" type="text/css" href="/libdev/docs/docs_styles.css" />
+</head>
+<body>
+<h1> DLESE 
+    Architecture Overview </h1>
+<h2> Version 2.5</h2>
+<p>This architecture describes  the DLESE library v2.5 architecture </p>
+<h2> Description </h2> 
+<p>This page provides a summary of the overall architecture of the DLESE  library v2.5, released in May 2007. Each of the major components of the library is described in brief and links are provided that lead to more detailed information. The diagram here shows the flow of library resources  from record import, quality assurance, indexing to search and the numbered items, corresponding to the major components of the library, are described and summarized below. <br>
+</p>
+<p><img src="dlese_architecture_overview.gif" width="795" height="650"> </p>
+<h3>1. Collection accessioning </h3>
+<ul>
+  <li>Collections are accessioned into the library, following the collection accessioning process. A collection-level metadata editor is used  to create new collection-level metadata records and edit existing records. This is currently done using XML Spy, and will eventually be managed  using the DLESE Collection System (DCS) tool (see below).
+      <ul>
+        <li>Collection builders submit collection information via a simple web form at http://www.dlese.org. </li>
+        <li>Data are reviewed for accuracy and policy adherence and then DPC staff create/edit collection-level metadata in the XML editor. </li>
+        <li>Collection-level metadata is immediately available to the Collection Manager, and the collection begins the QA process. Records for the collection are ingested into a preaccession portion of the library for inspection by library QA staff and collection builders only and not yet made publically available.</li>
+        <li>Once a collection is approved, its metadata is brought to the library and enabled using the Collection Manager to become publically available to users and the search APIs. </li>
+      </ul>
+  </li>
+  <li>Assumptions and policies
+      <ul>
+        <li>Inclusion of collection is authorized by Collection Approval Committee. </li>
+      </ul>
+  </li>
+</ul>
+<h3>2. DCS used for internal collection building and QA</h3>
+<ul>
+  <li>The DLESE Collection System (DCS)  is used  to create new library records and perform QA over the existing library catalog. Specific collections that are managed using the DCS include the DLESE Community Collection (DCC), the DWEL collection, community news and opportunities postings, and various annotation collections.
+    <ul>
+      <li>Allows creating and editing of individual records. </li>
+        <li>Provides search and discovery tools to support certain QA tasks over the collection.</li>
+        <li>QA administrator can include/exclude records from discovery in the library by changing their status via the DCS UI.
+            <ul>
+              <li>Only records with the proper status get exported to the metadata store (#5)</li>
+            </ul>
+        </li>
+    </ul>
+  </li>
+  <li>Assumptions and policies
+      <ul>
+        <li>All resources will have a URL at this time. Off-line resources are not yet supported. DLESE Scope statement indicates that on-line resources are favored for the collection. </li>
+      </ul>
+  </li>
+</ul>
+
+<h3>3. OAI harvester - Import external collections and annotation metadata</h3>
+<ul>
+  <li>Records from external collection builders are imported in XML format using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) as well as other means such as e-mail and ftp. External collection builders may or may not be using an instance of the DCS to catalog. </li>
+  <li>Configuration is handled by DPC staff in the <a href="oai-documentation.html">DLESE OAI harvester</a> application's administration UI.
+      <ul>
+        <li>Configuration options  include: name of harvested collection, OAI BASE_URL and set (optional) of the collection, location where files will be stored after harvesting, harvest interval. </li>
+      </ul>
+  </li>
+  <li>External collections are currently being harvested via OAI in ADN format (DWEL, AVC, SERC collections, COMET, NASA, others) and annotation format (CRS).</li>
+  <li>Assumptions and policies
+      <ul>
+        <li>Collection builder has performed a preliminary check for record validity. Collection builders who have installed the DLESE OAI software v2.0 or greater will be able to use the software to perform this basic validation prior to serving. </li>
+      </ul>
+  </li>
+</ul>
+
+<h3>4. Normalize and validate data</h3>
+
+<p>Prior to arriving in the Metadata store (#5), records are normalized, validated and checked for integrity. This pre-processing step includes transformation of records to ADN from  other formats, additional metadata clean-up, schema validation, checking for improper characters in XML, and generation of appropriate annotation metadata.
+  
+</p>
+<ul>
+  <li>Records that arrive in non-ADN format are transformed and normalized to ADN after they are harvested and stored to a global metadata store (#5) that is accessible to other processes. </li>
+  <li>Records that arrive in ADN format are stored directly in the global metadata store (#5) after passing schema validation and other integrity checks.
+    <ul>
+        <li>ADN records are also checked for duplicate fields (not caught by schema validation) and cleaned up if necessary. </li>
+    </ul>
+  </li>
+  <li>Report is generated listing files that could not be transformed or validated and the reason for the error.
+      <ul>
+        <li>Check for parsing character encoding errors.</li>
+        <li>Check for validation errors in both input and output XML. </li>
+        <li>Clean up metadata if necessary (delete duplicate vocab entries, etc.)</li>
+        <li>Resource availability is checked using the IDMapper service. </li>
+        <li>Report is available for viewing or for use in other processes. </li>
+      </ul>
+  </li>
+  <li>Assumptions and policies
+      <ul>
+        <li>DPC staff  inform and provide support to collection builders whose records have failed to transform or validate successfully.</li>
+      </ul>
+  </li>
+</ul>
+
+<h3>5. Metadata store</h3>
+<p>The XML metadata store holds the metadata for all items in the library.</p>
+<ul><li>Formats include:
+      <ul>
+        <li>ADN</li>
+        <li>Collection metadata </li>
+        <li>News and Opportunities </li>
+        <li>Annotation metadata</li>
+        <li>Others as needed </li>
+      </ul>
+  </li>
+  <li>Collection records are saved to the data store via the Collection-level metadata editor (#1) </li>
+  <li>Assumptions and policies
+      <ul>
+        <li>All data has been normalized, validated and has passed basic integrity checks. </li>
+      </ul>
+  </li>
+</ul>
+
+<h3>6. Resource centered data </h3>
+<p>Prior to and during the indexing process, records are grouped based on a resouce-centric model. This is done by identifying all collections, records, annotations, content in the resource, and content standards that relate to a given resource. This relationship data is then used by the index to create a single index entry for each resource that combines and exposes all these into one searchable item.</p>
+<ul>
+  <li>The Resource-to-ID mapper service is used in this step to perform these primary functions:
+      <ul>
+        <li>Identify records within a single collection that have the same primary URL, which is a quality error.
+          <ul>
+              <li>Provides policy enforcement over external collections. </li>
+          </ul>
+        </li>
+        <li>Map each unique resource  to all records that exist for the resource across collections.
+            <ul>
+              <li>Report of URLs and associated IDs available to other processes, such as index. </li>
+            </ul>
+        </li>
+        <li>Link checker verifies URLs within each record for correctness and HTTP errors.
+            <ul>
+              <li>Report on link problems generated detailing bad links over time and e-mailed to DPC staff. </li>
+              <li>Report available to other processes, such as the DDS. </li>
+            </ul>
+        </li>
+        <li>Store the content of the resource so it may be accessed by the index.</li>
+      </ul>
+  </li>
+  <li>The basic task:
+      <ul>
+        <li>Associate all records that seem to describe the same resource. This task involves:
+          <ul>
+              <li>Checking the similarity of the URLs themselves </li>
+              <li>Hashing algorithm is used for content similarity checks</li>
+          </ul>
+        </li>
+      </ul>
+  </li>
+  <li>Assumptions and Policies
+  </li>
+  <ul>
+    <ul>
+      <li>Duplicate URL's within a collection are not allowed and will not be accessioned. No formal policy for external collections states this, but this had been the policy for DLESE Broad thus far.</li>
+    </ul>
+  </ul>
+</ul>
+
+<h3>7. Search index</h3>
+
+<ul>
+  <li>An  index of library records is generated on a nightly basis.
+    <ul>
+      <li> The index and searching components of the library are built using <a href="http://lucene.apache.org/">Lucene</a>.    
+      </li>
+    </ul>
+  </li>
+  <ul>
+    <li>A resource-centric index is  generated from the metadata store, the content of the resources and from information about the relationships among the records that identified in step 6.
+      <ul>
+            <li>Index contains entries for the educational resources, news and opportunities, annotations, collections, and other records associated with the library.</li>
+      </ul>
+    </li>
+      <li>Searches performed over the index  use  a rich Information Retrieval search query language referred to here as the DLESE Query Language (DQL).
+        <ul>
+          <li> This query language is the result of the standard Lucene query   language operating over the specific DLESE fields created in the index.</li>
+        </ul>
+      </li>
+      <li>When searched, the index  returns a list of results ordered by rank. Rank may be controlled by the searcher by applying weights to individual fields. For example if the search term exists in the title of the record this may be assigned more weight than if the term exists only in the description field. The public Search APIs implement a default boosting to provide higher weight for users searches that match terms in the title and description fields of the resources over other parts of the indexed text. </li>
+  </ul>
+  <li>Assumptions and policies
+      <ul>
+        <li>Date and accession information in an item level record is not used or amended by DLESE. Accessioning dates and status as they pertain to DLESE are maintained in a separate database maintained by the DPC. </li>
+      </ul>
+  </li>
+</ul>
+
+<h3>8. Collection manager</h3>
+
+<ul>
+  <li>A collection management system provides an interface for DPC staff to inspect the collections and perform basic administrative functions, such as:
+    <ul>
+      <li>Enable or disable collections from being discoverable in the DDS and search web service. </li>
+        <li>Issue unlimited search queries over the collection(s).
+          <ul>
+            <li>Search  and inspect errors that were found in the resources during steps #4 and #6.</li>
+            <li>Search and display those resources that have duplicate records.</li>
+            <li>Search and display resources that have been annotated.</li>
+          </ul>
+        </li>
+        <li>Perform a visual spot check and QA of a collection&rsquo;s item level metadata. </li>
+    </ul>
+  </li>
+  <li>Assumptions and policies
+      <ul>
+        <li>A collection-level record exists for each discoverable collection. </li>
+      </ul>
+  </li>
+</ul>
+
+<h3>9. Search APIs</h3>
+<p>The library repository search is exposed through two  public APIs: The <a href="search_web_services.html">DLESE Search Web Service</a> and the the <a href="javascript_search_service.html">JavaScript search service</a>. These APIs are used to create user interfaces and other view applications  to access the library, and to conduct research related to the content in the library. </p>
+<ul>
+        <li>The records returned via these services are ordered with the most relevant resources at the top. Relevancy is weighed so that resources that contain the search terms in their title, are cataloged multiple times, meet a higher review standard or contain matching terms in their description are given the highest rank.</li>
+        <li>Clients that use the service APIs can control what is searched and returned and can set custom parameters for the relevancy ranking of the search results. </li>
+        <li>Results are returned one resource per entry, which may contain metadata from multiple resources, collections and annotations.
+          <ul>
+              <li>If multiple records exist for a resource, these are combined and returned in a response entry for the resources </li>
+              <li>Of the duplicates, the  record with the highest rank based on the user's query will be the one displayed in the brief description.</li>
+          </ul>
+  </li>
+</ul>
+  <ul>
+    <li>The <a href="search_web_services.html">DLESE Search Web Service</a> (DDSWS) provides a REST Web service interface to DLESE's metadata and search functionality.
+        <ul>
+          <li>The service is used by internal and external developers to provide search interfaces to the library. </li>
+          <li>Developers may use the service to create a variety of custom search interfaces, access the data in the DLESE repository, or conduct research about the library repository and it's contents</li>
+        </ul>
+    </li>
+    <li>The <a href="javascript_search_service.html">JavaScript search service</a> provides a JavaScript interface to DLESE's search functionality. This service and framework allows DLESE search to be inserted into a web page using simply HTML, JavaScript and CSS, making custom DLESE search widely accessible for use by web page developers. Use cases for the service include educational design, custom search pages for targeted audiences and other applications where the dynamic content of the library may be useful. </li>
+  </ul>
+  <li>Assumptions and policies
+      <ul>
+        <li>Extra weight will be applied to reviewed items when ranking, if possible. There is no policy to support this at this time. </li>
+        <li>Only one entry will be displayed for resources that have multiple records from separate collections associated with it. </li>
+        <li>Branding information identifying the contributing collection will be visible with each record returned. </li>
+        <li>Annotation information will be linked from results. </li>
+        <li>In keeping with DLESE privacy policy, contact information for record creators will not be displayed in service responses. </li>
+      </ul>
+  </li>
+  <h3>12. DSV - Library search and browse interface </h3>
+  <p>Users who visit the library at www.dlese.org interact with the DLESE Search View (DSV) application. The DSV is a client application built using the DLESE Search Web Service and provides the primary  user interface for searching and browsing the resources, collections, and annotations in the library.</p>
+  <h3>12. Search clients</h3>
+<ul>
+  <li>In addition to the DSV, a variety of additional search clients are built using  DLESE's <a href="search_web_services.html">Search Web Service</a> and <a href="javascript_search_service.html">JavaScript Search Service</a> to provide custom, contextualized user interfaces   over the library collections, or are used for data analysis or research purposes. Clients that access the search web service are implemented using application software such as Tomcat / JSP, PHP, Java or other environments that are able to communicate using  web service protocols and parse  XML data for display or data analysis purposes. Clients that access the JavaScript service are implemented  using HTML, JavaScript and CSS and are available for access using standard web browsers.
+Some example clients:  
+    <ul>
+      <li>The <a href="http://www.globe.gov/tctg/tgchapter.jsp?sectionId=1">GLOBE project</a> uses the search web service to provide access to DLESE resources from within the Teacher's Guide portion of their site. </li>
+      <li>The <a href="http://www.cosee.net/">Center for Ocean Science Education Excellence</a> (COSEE) uses the search web service to provide a custom search interface for their web site visitors. </li>
+      <li>The news and opportunities portion of the DLESE web site uses the search web service to provide a search interface for community-related news and opportunities.</li>
+      <li>The Creator Acknowledgement System (CAS) provides a search interface that uses the search web service to display resources in the library that are attributed to an individual or institution. The CAS also uses the web service internally to determine which resources are new to the library and who needs to be e-mailed to notify them that their resources have been included in the library. </li>
+      <li>Several other clients have been built that use the service such as the Strand Map Service, the Idea Keeper, and a number of additional search pages for DLESE partners. </li>
+    </ul>
+  </li>
+</ul>
+<h3>13. OAI data provider - Export via Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)</h3>
+
+<ul>
+  <li>External partners wishing to gain full access to the DLESE data store may harvest records using the OAI-PMH in all available DLESE formats. </li>
+  <li>Dublin Core format made available for export to external OAI-complient repositories. The qualified NSDL Dublin Core format is made available for the NSDL. </li>
+  <li>Assumptions and policies
+      <ul>
+        <li>Records from external collections will only be made available for those collections who wish DLESE to proxy their data. </li>
+        <li>IP and privacy policies for each collection apply to harvested metadata.
+            <ul>
+              <li>In keeping with DLESE privacy policy, contact information for record creators will not distributed. </li>
+            </ul>
+        </li>
+        <li>Will all items in data store be harvestable via OAI or only those discoverable in DLESE .. Policy decision needed here.</li>
+      </ul>
+  </li>
+</ul>
+<p><br>
+  <i>Last updated: May, 2007</i><br>
+  <i>Author: John Weatherley</i><br>
+</p>
+</body>
+</html>
+
+
+

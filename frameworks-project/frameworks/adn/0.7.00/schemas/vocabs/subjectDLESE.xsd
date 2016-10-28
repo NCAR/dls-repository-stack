@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.7.00">
+	<xsd:annotation>
+		<xsd:documentation>
+
+		**********************************************************************  Schema Overview  **************************************************************
+			Definition: 			Controlled vocabulary schema for DLESE metadata frameworks
+			Framework use: 		ADN-I (item)
+			Source org:			DLESE Program Center (DPC); http://www.dlese.org
+			Source values:		DPC
+			Source last update:	2003-05-27
+			DPC last update:		2003-05-27
+			Notes: 				Maintained at the DPC. Developed by the DLESE community at the 2000 AGU meeting.
+
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Changes  ******************************
+			2003-05-27: Changed term 'None of the above' to 'Other'
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Complex Types  ******************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types  *************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="DLESEsubjectType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  DLESEsubjectType  *****************************************
+				Lists the values that will appear in the metadata record.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="DLESE:Agricultural science"/>
+			<xsd:enumeration value="DLESE:Atmospheric science"/>
+			<xsd:enumeration value="DLESE:Biological oceanography"/>
+			<xsd:enumeration value="DLESE:Biology"/>
+			<xsd:enumeration value="DLESE:Chemical oceanography"/>
+			<xsd:enumeration value="DLESE:Chemistry"/>
+			<xsd:enumeration value="DLESE:Climatology"/>
+			<xsd:enumeration value="DLESE:Cryology"/>
+			<xsd:enumeration value="DLESE:Ecology"/>
+			<xsd:enumeration value="DLESE:Educational theory and practice"/>
+			<xsd:enumeration value="DLESE:Environmental science"/>
+			<xsd:enumeration value="DLESE:Forestry"/>
+			<xsd:enumeration value="DLESE:Geochemistry"/>
+			<xsd:enumeration value="DLESE:Geologic time"/>
+			<xsd:enumeration value="DLESE:Geology"/>
+			<xsd:enumeration value="DLESE:Geophysics"/>
+			<xsd:enumeration value="DLESE:History and philosophy of science"/>
+			<xsd:enumeration value="DLESE:Human geography"/>
+			<xsd:enumeration value="DLESE:Hydrology"/>
+			<xsd:enumeration value="DLESE:Mathematics"/>
+			<xsd:enumeration value="DLESE:Mineralogy or petrology"/>
+			<xsd:enumeration value="DLESE:Natural hazards"/>
+			<xsd:enumeration value="DLESE:Other"/>
+			<xsd:enumeration value="DLESE:Paleontology"/>
+			<xsd:enumeration value="DLESE:Physical geography"/>
+			<xsd:enumeration value="DLESE:Physical oceanography"/>
+			<xsd:enumeration value="DLESE:Physics"/>
+			<xsd:enumeration value="DLESE:Policy issues"/>
+			<xsd:enumeration value="DLESE:Soil science"/>
+			<xsd:enumeration value="DLESE:Space science"/>
+			<xsd:enumeration value="DLESE:Structural geology"/>
+			<xsd:enumeration value="DLESE:Technology"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DLESEsubjectLeafType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  DLESEsubjectLeafType  *****************************************
+				Lists the values that will appear in the metadata record.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Agricultural science"/>
+			<xsd:enumeration value="Atmospheric science"/>
+			<xsd:enumeration value="Biological oceanography"/>
+			<xsd:enumeration value="Biology"/>
+			<xsd:enumeration value="Chemical oceanography"/>
+			<xsd:enumeration value="Chemistry"/>
+			<xsd:enumeration value="Climatology"/>
+			<xsd:enumeration value="Cryology"/>
+			<xsd:enumeration value="Ecology"/>
+			<xsd:enumeration value="Educational theory and practice"/>
+			<xsd:enumeration value="Environmental science"/>
+			<xsd:enumeration value="Forestry"/>
+			<xsd:enumeration value="Geochemistry"/>
+			<xsd:enumeration value="Geologic time"/>
+			<xsd:enumeration value="Geology"/>
+			<xsd:enumeration value="Geophysics"/>
+			<xsd:enumeration value="History and philosophy of science"/>
+			<xsd:enumeration value="Human geography"/>
+			<xsd:enumeration value="Hydrology"/>
+			<xsd:enumeration value="Mathematics"/>
+			<xsd:enumeration value="Mineralogy or petrology"/>
+			<xsd:enumeration value="Natural hazards"/>
+			<xsd:enumeration value="Other"/>
+			<xsd:enumeration value="Paleontology"/>
+			<xsd:enumeration value="Physical geography"/>
+			<xsd:enumeration value="Physical oceanography"/>
+			<xsd:enumeration value="Physics"/>
+			<xsd:enumeration value="Policy issues"/>
+			<xsd:enumeration value="Soil science"/>
+			<xsd:enumeration value="Space science"/>
+			<xsd:enumeration value="Structural geology"/>
+			<xsd:enumeration value="Technology"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

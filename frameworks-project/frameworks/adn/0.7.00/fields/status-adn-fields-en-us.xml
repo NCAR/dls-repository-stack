@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: status-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:48 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/status.xsd">
+	<field name="Status" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/metaMetadata/statusOf/@status">
+		<definition>the level of acceptance of a metadata record in a repository</definition>
+
+		<vocabLevels number="1">
+
+			<levelAndDeftn level="1" levelName="Status" levelDeftn="the level of acceptance of a metadata record in a repository; see the allowed combination of terms below"/>
+		</vocabLevels>
+
+		<terms>
+			<termAndDeftn vocab="Accessioned">the metadata record is accessible the catalog/library/repository</termAndDeftn>
+			<termAndDeftn vocab="Deaccessioned">the metadata record is not accessible in the catalog/library/repository</termAndDeftn>
+			<termAndDeftn vocab="Holding">the metadata record is temporarily inaccessible in the catalog/library/repository</termAndDeftn>
+			<termAndDeftn vocab="Resubmitted">the metadata record was edited by the collection builder and it is now again at the catalog/library/repository awaiting a decision about whether it will be accessioned</termAndDeftn>
+			<termAndDeftn vocab="Submitted">the metadata record is at the catalog/library/repository and is awaiting a decision about whether it will be accessioned</termAndDeftn>
+			<termAndDeftn vocab="Unknown">the metadata record does not have an official categorization and should be treated as a potential record</termAndDeftn>
+			<termAndDeftn vocab="Unsubmitted">the metadata record exists but may be incomplete or new and the catalog/library/repository should treat it as a potential record</termAndDeftn>
+			<termAndDeftn vocab="User edit">a cataloger of the collection is actively working with the metadata record</termAndDeftn>
+			<termAndDeftn vocab="Working">the metadata record is generally complete and operationally works in the catalog/library/repository but some information may still need editing or updating</termAndDeftn>
+		</terms>
+
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2006-02-28">A metadata record can only have one status. So use a single status term.</practice>
+				<practice status="current" originDate="2006-09-20">Choose the status that best describes the cataloging state of the metadata record.</practice>
+				<practice status="current" originDate="2006-09-20">If using a DLESE cataloging tool, this field should probably not be edited without consulting DLESE or the primary collection builder.</practice>
+				<practice status="current" originDate="2006-09-21" link1="Holding" style1="bold" link2="Deaccessioned" style2="bold" link3="status information" style3="bold">If a status of Holding or Deaccessioned is used, be sure to provide a reason in the status information field.</practice>
+			</dos>
+			<examples>
+				<practice status="current" originDate="2006-09-21" link1="Holding:" style1="bold">Holding: The resource is placed into holding because its URL is broke</practice>
+				<practice status="current" originDate="2006-09-21" link1="Deaccessioned:" style1="bold">Deaccessioned: The resource is deaccessioned because the its server is permanently offline.</practice>
+				<practice status="current" originDate="2006-09-21" link1="Accessioned:" style1="bold">Accessioned: The resource is accessioned because it meets accessioning polices and metadata best practices.</practice>
+			</examples>
+		</bestPractices>
+
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>Accessioned</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

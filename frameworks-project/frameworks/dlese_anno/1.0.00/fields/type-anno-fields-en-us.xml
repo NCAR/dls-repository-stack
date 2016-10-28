@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: type-anno-fields-en-us.xml,v 1.1 2009/01/30 21:32:40 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/annotation/1.0.00/type.xsd">
+	<field name="Type" language="en-us" metaFormat="dlese_anno" metaVersion="1.0.00" path="/annotationRecord/annotation/type">
+		<definition>the kind of annotation</definition>
+
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="Type" levelDeftn="the kind of annotation"/>
+		</vocabLevels>
+
+		<terms>
+			<termAndDeftn vocab="Assessment strategy">information intended to help educators deploy effective strategies to assess learning</termAndDeftn>
+			<termAndDeftn vocab="Bias">an indication that resource content may have: (1) factual (e.g. not just scientific) errors, (2) conflicts with generally accepted scientific thought, (3) a self-promoting emphasis or (4) a political, social or religious agenda</termAndDeftn>
+			<termAndDeftn vocab="Challenging audience">information about the effectiveness of a resource with a specific audience</termAndDeftn>
+			<termAndDeftn vocab="Comment">a remark, explanation, advice, opinion, attitude, fact, proposed change, question or additional resource information</termAndDeftn>
+			<termAndDeftn vocab="Editor's summary">a summary of evaluative information (qualitative or quantitative) that may describe the strengths, weaknesses, pedagogical effectiveness, best uses for or general characteristics of a resource</termAndDeftn>
+			<termAndDeftn vocab="Educational standard">an indication that the resource meets, supports or aligns with an educational standard, that is, a level of achievement determined by a professional group to which learners are expected to aspire too</termAndDeftn>
+			<termAndDeftn vocab="Example">a description or link to another resource that illustrates the resource content in a demonstrative way</termAndDeftn>
+			<termAndDeftn vocab="Misconception">information intended to help educators anticipate, detect and overcome common student misconceptions</termAndDeftn>
+			<termAndDeftn vocab="Quantitative information">numerical information about a resource</termAndDeftn>
+			<termAndDeftn vocab="Review">a formal or informal evaluation of a resource</termAndDeftn>
+			<termAndDeftn vocab="See also">a reference to another resource</termAndDeftn>
+			<termAndDeftn vocab="Skill">information intended to help educators foster a student skill needed for optimal resource use</termAndDeftn>
+			<termAndDeftn vocab="Teaching tip">information for using or modifying the resource within teaching or learning environments</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-04-14">Choose an annotation type term.</practice>
+				<practice status="current" originDate="2005-04-14">If multiple annotations need to be associated with a resource, make multiple annotation metadata records.</practice>
+				<practice status="current" originDate="2006-09-21" link1="Review" style1="bold">When providing a rating, use the annotation type of Review.</practice>
+			</dos>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>Teaching tip, Review, Comment</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

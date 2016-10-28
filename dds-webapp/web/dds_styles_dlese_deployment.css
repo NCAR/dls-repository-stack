@@ -1,0 +1,55 @@
+
+/* ------ CSS Styles for DDS pages when deployed at DLESE  ------ */
+
+CODE, PRE {
+	color: #5F2F0B;
+	font-size: 12px;
+	font-family: Courier New, Courier, monospace;
+}
+PRE {
+	padding: 6px;
+	padding-right:20px;
+	border: 1px solid #333;
+	background-color: #F1F1F1;
+	width: 92%;
+}
+OL, UL {
+	margin:2px 0px 3px 35px; 
+	padding:0px;
+}
+P {
+	padding-top: 4px;
+	padding-bottom: 4px;	
+}
+.dlese_treeMenuTableCellText {
+	padding-left: 10px;
+}
+.dlese_treeMenuTableCellText H1, h2, h3, h4 {
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-bottom: 10px; 
+	margin-top: 5px;
+}
+.bgTable {
+	background-color: #aaa;
+}
+.bgTable TH {
+	background-color: #eee;
+}
+.bgTable TD {
+	background-color: #fff;
+}
+#ddsLogo {
+	position: absolute; 
+	top: 110px; 
+	right: 5px; 
+	z-index: 2;
+}
+#ddsCustomBanner {
+	position:absolute;
+	top: 145px;
+	right: 5px;
+	z-index: 2;
+	font-weight: bold;
+	color: #333;
+}

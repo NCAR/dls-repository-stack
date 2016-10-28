@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: detGeo-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/non-vocab-fields.xsd">
+	<field name="Detailed geometry" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo">
+		<definition>a specific geographic footprint (bounding box, polyline, point or polygon) for a single area on Earth's surface (or other planetary body) that is the subject or primary content of a resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-05-04" link1="description - simple places and events" style1="bold">Complete geospatial information when geographic location information is integral to understanding or working with a resource. To provide place and event name information without geospatial coordinates, use the description - simple places and events metadata field.</practice>
+
+				<practice status="current" originDate="2005-04-19" link1="detailed geometry - type, detailed geometry - point number, detailed geometry - point order, detailed geometry - source name" style1="bold" link2="longitude and latitude  - list" style2="bold" >Complete the required subfields of detailed geometry - type, detailed geometry - point number, detailed geometry - point order, detailed geometry - source name and longitude and latitude  - list.</practice>
+
+				<practice status="current" originDate="2005-05-04">Each detailed geometry can have associated place and event names.</practice>
+
+				<practice status="current" originDate="2005-05-04">Each detailed geometry can have associated vertical dimensions.</practice>
+
+				<practice status="current" originDate="2005-05-04">A detailed geometry can be a polyline, bounding box, point or polygon.</practice>
+
+				<practice status="current" originDate="2005-05-04">Multiple detailed geometries are allowed.</practice>
+
+				<practice status="current" originDate="2005-05-04" link1="bounding box" style1="bold">Use detailed geometry information to complete the bounding box fields. The use of detailed geometries requires that an overarching bounding box be provided as well.</practice>
+
+				<practice status="current" originDate="2005-06-01" link1="detailed geometry" style1="bold">To make detailed geometries that include contiguous states, national parks or monuments, enter multiple detailed geometry sets, one for each area and then add the appropriate name to the correct coordinates.</practice>
+
+				<practice status="current" originDate="2006-03-08" link1="bounding box" style1="bold">To obtain coordinates for common or often described areas, see the bounding box field for a list of such coordinates.</practice>
+
+<!--can't gaurantee so don't display as a best practice-->
+<!--				<practice status="hide" originDate="2005-05-10" link1="detailed geometry field" style1="bold" link2="name - period" style2="bold">If a detailed geometry needs to correspond to a particular period name, complete the detailed geometry field and the name - period field in the same order.</practice>-->
+			</dos>
+			<donts>
+				<practice status="current" originDate="2005-05-04">If the resource mentions an area in passing, do not create geospatial information about it.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2005-05-04">Use a polygon to represent the Valles Caldera in New Mexico, United States.</practice>
+				<practice status="current" originDate="2005-05-04">Us multiple polygons to represent the state of California, one polygon for the continental area and another for the Channel Islands.</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<children>
+				<child>typeDetGeo</child>
+				<child>geoNumPts</child>
+				<child>geoPtOrder</child>
+				<child>longLats</child>
+				<child>detSrcName</child>
+				<child>detSrcIDandURL</child>
+				<child>detSrcDesc</child>
+				<child>detAccEst</child>
+				<child>description</child>
+				<child>detVert</child>
+				<child>detPlaces</child>
+				<child>detEvents</child>
+			</children>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>the child elements</domain>
+			<example>&lt;typeDetGeo&gt;, &lt;geoNumPts&gt;, etc.</example>
+			<notes>
+				<note>Detailed geometry information can and should be used to derive overarching bounding box information.</note>
+				<note>Temporal and geospatial information are independent.</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

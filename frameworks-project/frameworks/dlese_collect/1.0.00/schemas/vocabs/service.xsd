@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  OVERVIEW  *****</xsd:documentation>
+		<xsd:documentation>Purpose - controlled vocabulary schema for DLESE metadata frameworks</xsd:documentation>
+		<xsd:documentation>Framework - collection metadata framework</xsd:documentation>
+		<xsd:documentation>Source: DLESE Program Center (DPC); http://www.dlese.org</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  History  *****</xsd:documentation>
+		<xsd:documentation>2006-01-11: Add term: None, Cataloging, Quality Assurance, Hosted scope statement, Permanent metadata responsibility</xsd:documentation>
+		<xsd:documentation>2006-01-10: Initial file creation</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  serviceType  *****</xsd:documentation>
+		<xsd:documentation>Cataloging - DLESE staff are performing some or all primary metadata cataloging</xsd:documentation>
+		<xsd:documentation>External DCS - collection is using the DLESE Collection System (DCS) on their local computer</xsd:documentation>
+		<xsd:documentation>Hosted DCS - collection is using the DLESE Collections System (DCS) on a DLESE computer</xsd:documentation>
+		<xsd:documentation>Hosted scope statement - the collection scope statement is being hosted on a DLESE computer</xsd:documentation>
+		<xsd:documentation>Javascript search - collection is using Javascript search</xsd:documentation>
+		<xsd:documentation>Metadata crosswalk - semantic and/or programmatic support is being used to transform a collection's native metadata format to another metadata format</xsd:documentation>
+		<xsd:documentation>None - collection may have received some general collection support but did not use DCS, OAI, metadata crosswalk, NSDL support, cataloging or quality assurance services; most likely the collection is not available via web services either</xsd:documentation>
+		<xsd:documentation>NSDL collection help - support for collection building within the National Science Digital Library (NSDL) is being provided; does not include support for direct submission of metadata to NSDL</xsd:documentation>
+		<xsd:documentation>NSDL submission - support for collection building and the submission of metadata records to the National Science Digital Library (NSDL) is being provided</xsd:documentation>
+		<xsd:documentation>OAI - the DLESE OAI software is being used</xsd:documentation>
+		<xsd:documentation>Permanent metadata responsibility - metadata upkeep responsibilities have been turned over to DLESE</xsd:documentation>
+		<xsd:documentation>Quality assurance - DLESE staff are performing some or all primary metadata quality assurance</xsd:documentation>
+		<xsd:documentation>RSS - DLESE RSS feeds are being used</xsd:documentation>
+		<xsd:documentation>User interface components - a website associated with the collection is using DLESE user interface components</xsd:documentation>
+		<xsd:documentation>Web service - DLESE web services are being used</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="serviceType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Cataloging"/>
+			<xsd:enumeration value="External DCS"/>
+			<xsd:enumeration value="Hosted DCS"/>
+			<xsd:enumeration value="Hosted scope statement"/>
+			<xsd:enumeration value="Javascript search"/>
+			<xsd:enumeration value="Metadata crosswalk"/>
+			<xsd:enumeration value="None"/>
+			<xsd:enumeration value="NSDL collection help"/>
+			<xsd:enumeration value="NSDL submission"/>
+			<xsd:enumeration value="OAI"/>
+			<xsd:enumeration value="Permanent metadata responsibility"/>
+			<xsd:enumeration value="Quality assurance"/>
+			<xsd:enumeration value="RSS"/>
+			<xsd:enumeration value="User interface components"/>
+			<xsd:enumeration value="Web service"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

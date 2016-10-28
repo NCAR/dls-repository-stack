@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="World History">
+  <mapping>
+    <acsrInfo id="6910fd71-039c-4fb4-8927-fb6739b295dd">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>World History Revised 2000</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100000F">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <created>2000</created>
+      <topic>World History</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="19668422-317e-46cc-bc7b-6ccab98c009b">
+      <title>Academic Standards: Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>World History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100012A">
+      <title>Academic Standards: Social Studies</title>
+      <created>2000</created>
+      <topic>World History</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="79d3ce0c-0d84-4dec-9f99-e8e3fd3d141b">
+      <title>Social Studies Strand 2 - World History</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Strand 2 - World History</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000288">
+      <title>Social Studies Strand 2 - World History</title>
+      <created>2006</created>
+      <topic>World History</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="efa2e49e-ca1d-4ac8-9752-45b6d93073bd">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>CA</jurisdiction>
+      <fileName>Social Science World History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000183">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <created>1998</created>
+      <topic>World History</topic>
+      <author>California</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="739bb817-5fc5-461b-86f4-c6dfcc7ad056">
+      <title>Colorado Model Content Standards for History</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Content Standards World History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000080">
+      <title>Colorado Model Content Standards for History</title>
+      <created>1995</created>
+      <topic>World History</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1c128706-5e7a-49df-9ba7-b2821f5789c7">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>Social Studies World History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100008E">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <created>1998</created>
+      <topic>World History</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9832cc0a-4c12-48ea-9e26-158ba07f39b5">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Sunshine State Standards World Hist</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001D7">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <created>1999</created>
+      <topic>World History</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="aaee09fd-dfcd-43eb-91e1-2e57c7f63ef6">
+      <title>Social Studies Quality Core Curriculum K-12</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>QCC World History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100018E">
+      <title>Social Studies Quality Core Curriculum K-12</title>
+      <created>1999</created>
+      <topic>World History</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e6da1807-e014-4257-bf3a-be54a4f8c449">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Achievement Standards World History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000A4">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <created>2001</created>
+      <topic>World History</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0c1ba963-419f-4f02-bfaf-8d99141c1803">
+      <title>Illinois Learning Standards for Social Science</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Learning Standards World History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000F5">
+      <title>Illinois Learning Standards for Social Science</title>
+      <created>1997</created>
+      <topic>World History</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2130eb75-b868-41a3-88ed-0b6019ac933a">
+      <title>Social Studies Proficiency Guide</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>World History Proficiency Guide</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001EE">
+      <title>Social Studies Proficiency Guide</title>
+      <created>1996</created>
+      <topic>World History</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="31bf4320-8e25-4aeb-9a63-9f5f96e93a90">
+      <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Curricular Standards World History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000CF">
+      <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+      <created>1999</created>
+      <topic>World History</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ec6ee867-43cc-4338-8478-aa5693a12195">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Social Studies World History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000E1">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <created>1998</created>
+      <topic>World History</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f5db6c25-6db4-40fc-a98e-f50dd746b751">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>World History Content Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000001">
+      <title>Social Studies Content Standards</title>
+      <created>1997</created>
+      <topic>World History</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="21b3a9a3-0b6f-405b-a683-9055978ab07e">
+      <title>Social Studies Grade-Level Expectations</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>World History Grade-Level Expectati</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000FB">
+      <title>Social Studies Grade-Level Expectations</title>
+      <created>2003</created>
+      <topic>World History</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d6ba2b42-0b35-4a51-aeaf-313162e7313b">
+      <title>Massachusetts History and Social Science Framework</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>History and Social Science Framewor</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000194">
+      <title>Massachusetts History and Social Science Framework</title>
+      <created>2003</created>
+      <topic>World History</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="66a4acf2-5e57-4bd2-87a4-a7357681230d">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000DA">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>World History</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a7708a04-bc3f-48e0-b140-ad32942ea65e">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Graduation Standards for Social Stu</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000B1">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <created>1998</created>
+      <topic>World History</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b5c46015-4573-4d7b-a1af-4138f9e5c6dd">
+      <title>Social Studies Standard Course of Study</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Social Studies Standard Course of S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001B2">
+      <title>Social Studies Standard Course of Study</title>
+      <created>1996</created>
+      <topic>World History</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7695d86e-f323-4738-9f19-5d08c8f568d2">
+      <title>Nebraska Social Studies/History Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Social Studies History Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000148">
+      <title>Nebraska Social Studies/History Standards</title>
+      <created>1998</created>
+      <topic>World History</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="917324f9-b41f-4b3e-97bf-eb517468f37e">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Social Studies Curriculum Fram</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000020">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <created>1995</created>
+      <topic>World History</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cf0038d1-9a09-4a26-9f6f-5a521ec1c9b5">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000178">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <created>1996</created>
+      <topic>World History</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="daac4b41-973d-4b83-9076-16d7003e3bb8">
+      <title>New Mexico Standards for Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Standards for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001DC">
+      <title>New Mexico Standards for Social Studies</title>
+      <created>2001</created>
+      <topic>World History</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c7e70717-2835-46cd-b74d-3792b5d8ea07">
+      <title>World History</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>World History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001A1">
+      <title>World History</title>
+      <created>1996</created>
+      <topic>World History</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a80ec8cf-8584-4b32-acbc-bb45d3e4a7d0">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <localAdoptionDate>1994</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Social Studies: Ohio's Model Compet</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100009E">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <created>1994</created>
+      <topic>World History</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fc50c88f-e4e4-420a-9783-650da91bd7ec">
+      <title>Academic Content Standards Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Academic Content Standards Social S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000154">
+      <title>Academic Content Standards Social Studies</title>
+      <created>2002</created>
+      <topic>World History</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="337b00d8-1e36-49d1-ae38-b0f73e1bcb20">
+      <title>Priority Academic Student Skills for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000BB">
+      <title>Priority Academic Student Skills for Social Studies</title>
+      <created>2000</created>
+      <topic>World History</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="81a40233-43a3-4e3d-af63-0efcd900f39d">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001FA">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <created>2002</created>
+      <topic>World History</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9ee3fef2-cdf8-45f8-97c7-c2fd77bb1a16">
+      <title>Social Sciences 2001-2002</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Social Sciences 2001-2002</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000079">
+      <title>Social Sciences 2001-2002</title>
+      <created>2001</created>
+      <topic>World History</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d67263de-288a-4b37-8fbd-01363655e42e">
+      <title>Academic Standards for History</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>PA</jurisdiction>
+      <fileName>Academic Standards for History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000200">
+      <title>Academic Standards for History</title>
+      <created>2003</created>
+      <topic>World History</topic>
+      <author>Pennsylvania</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c8e42081-679b-4804-9e7f-db4bca3702ac">
+      <title>Social Studies Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Social Studies Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000048">
+      <title>Social Studies Standards</title>
+      <created>1997</created>
+      <topic>World History</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="75937345-d13f-427d-85f0-894a6ee88396">
+      <title>Social Studies Frameworks K-12</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Social Studies Frameworks K-12</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000EA">
+      <title>Social Studies Frameworks K-12</title>
+      <created>1996</created>
+      <topic>World History</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e3506284-26c7-4ba1-89c7-b3be94afb745">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>Chapter 113. TEKS for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000091">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <created>1997</created>
+      <topic>World History</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="23856eb8-bf9e-4dce-afa9-4ec285ecfb07">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000161">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>1995</created>
+      <topic>World History</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ec804f98-e5ff-4c31-90f3-57ed51388200">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000174">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>2001</created>
+      <topic>World History</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c0754783-a0ea-4877-96e4-90c2c69a6f0b">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Vermont's Framework of Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000FE">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <created>2000</created>
+      <topic>World History</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d8b71dc2-6f1e-4ff1-84eb-8bbbc8ede5bd">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia's Social Studies Inst</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000EE">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <created>2000</created>
+      <topic>World History</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9ff7e741-5615-48d5-8294-6fcf1a405b60">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia Social Studies Conten</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000132">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <created>2004</created>
+      <topic>World History</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5c7aabc4-0ac8-4e83-86c1-8eea95d94ac8">
+      <title>Social Studies Content and Performance Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>World History</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Social Studies Content and Performa</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000F7">
+      <title>Social Studies Content and Performance Standards</title>
+      <created>1999</created>
+      <topic>World History</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+</mappings>

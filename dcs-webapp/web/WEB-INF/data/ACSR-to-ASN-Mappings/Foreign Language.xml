@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="Foreign Language">
+  <mapping>
+    <acsrInfo id="95732351-f95a-4da0-998e-2b180df993ea">
+      <title>Michigan World Language Standards and Benchmarks v.8.07</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Foreign Language</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>World Language Standards v.8.07</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000395">
+      <title>Michigan World Language Standards and Benchmarks v.8.07</title>
+      <created>2007</created>
+      <topic>Foreign Language</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+</mappings>

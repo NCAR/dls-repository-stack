@@ -1,0 +1,412 @@
+/* stylesheet for Metadata Editor 
+
+dlese_blue: E8ECF4 (from dlese_styles)
+admin_blue1: e3e4f1 (from dlese_admin_styles)
+
+*/
+
+/* make all text areas full width */
+.fullwidth { 
+	width:100%; 
+}
+
+/* used for field values in "view" modes. this will cause verylong
+values to wrap even if there isn't a space, but we have to set a width.
+NOTE: even setting the width doesn't completely fix things for IE, since
+it still thinks the page is wide (see where it puts buttons on view )*/
+.static-value {
+	word-wrap:break-word;
+	width:600px;
+	/* border:yellow thin solid; */
+}
+
+p.compressed {
+	margin:0px 0px 3px 0px;
+}
+
+/* buttons on editor pages */
+.editor-action-button {}
+
+.editor-action-button.disabled {
+	color:gray;
+}
+
+/*  navMenu styles
+	NOTE: these are also defined in "styles", but they are only
+	used in obsolete pages. 
+	- web/editor/collection_config/collection-config-index.jsp
+	- web/editor/framework_config/framework-config-index.jsp
+	- web/lib/generic-editor-index.jsp
+	
+	So i'm redefining them here,
+	and the the obsolte pages will be eliminated.
+*/
+/* navMenu styles */
+
+/* the box that surrounds the entire navMenu */
+.nav-menu-box {
+	/* match table header row color from collection manager #CCCEE6*/
+	background-color:#CCCEE6;
+	padding:4px;
+	border:1px black solid;
+	width:100%;
+}
+
+.nav-menu-table {
+	border-collapse:collapse;
+	width:100%;
+}
+
+/* nav-menu-item formats the cells of the page navigation bar */
+.nav-menu-item {
+	background-color:#E8ECF4;			/* dlese_blue */
+	border:1px black solid;
+	padding:3px 0px 3px 0px;
+}
+
+.nav-menu-item.selected {
+	background-color:#ffffcc;
+	/* border:2px black outset; */
+	border:1px black solid;
+}
+
+.nav-menu-item.over {
+	background-color:white;
+	cursor:pointer;
+	/* border:2px black inset; */
+}
+
+/* nav-menu-text formats the text content of the nav-menu-item cells */
+.nav-menu-text {
+	text-align:center;
+	font-size:85%;
+	font-weight:normal;
+
+}
+
+/* can't use "selected" here because IE applies nav-menu-item.selected */
+.nav-menu-item.selected .nav-menu-text {
+	font-weight:bold;
+	font-size:100%;
+}
+
+.nav-menu-text.over {
+	/* text-decoration:underline; */
+}
+
+.editor-buttons {}
+
+.input-helper {
+	/* margin-left:250px; */
+	/* font-style:italic; */
+	padding:3px;
+}
+
+/* --- end navMenu styles ------------*/
+
+/* colored borders for debugging 
+.level-0 {border-color:black;}
+.level-1 {border-color:red;}
+.level-2 {border-color:purple;}
+.level-3 {border-color:blue;}
+.level-4 {border-color:green;}
+.level-5 {border-color:orange;}
+.level-6 {border-color:yellow;}  
+*/
+
+h1, h2, h3, h4 {font-family:arial,helvetica; }
+
+/* now use the surrounding box for level, and the field boxes just to set alignments, etc */
+
+.level-0, .level-1, .level-2, .level-3, .level-4, .level-5, .level-6, .level-7, .level-8 {
+	vertical-align:top;
+	padding:0px;
+	margin-left:50px;
+	margin-bottom:0px;
+	border-left:#E8ECF4 solid 1px; 	/* dlese_blue */
+	border-top:white solid 1px; 
+	border-right:white solid 1px; 
+	border-bottom:white solid 1px;
+}
+
+.level-0 {
+	margin-left:0px;
+}
+
+/* the following format the rows (implemented as TABLES) of the editor
+	NOTE: each of these labels corresponds to the renderer method that uses them, and the
+			naming of each of the labels could be improved ...
+		- input-field-table - formats elements having an input element
+		- no-input-field-table - a label without an input element (e.g., complex node labels)
+
+*/
+.input-field-table, .no-input-field-table {
+	padding:1px;
+	margin:0px;
+	border:0px white solid;
+}
+.input-field-table { width:100%; }
+
+/* Each row of the metadata editor is top-aligned */
+.form-row {
+	vertical-align:top;
+}
+
+
+
+/* styles the top-level elements */
+.main-element-label,
+.main-element-label A {
+	font-size:120%;
+	font-family: Verdana, Arial, Helvetica;
+	text-align:left;
+	background-color:white;
+	font-weight:bold;
+	text-transform:capitalize;
+	white-space: nowrap;
+	color:black;
+}
+
+/* styles the table cells holding all element labels */
+.label-cell {
+	padding:2px;
+	vertical-align:top;
+	text-align:right;
+	width:120px;
+	background-color:#E8ECF4;   	/* dlese_blue */
+	white-space: nowrap;
+}
+
+.label-cell.flash,
+.main-element-label.flash{
+/* 	background-color:#333366;*/ /* dark blue */
+	/* border:yellow solid 2px; */ 
+	border:#333366 solid 2px;
+}
+
+.label-cell.flash a:link {
+	/* color:white; */
+}
+
+/* just a container used Complex type labels - no formatting */
+.label-box {
+	/* border:red 2px solid; */
+}
+
+/* a container for the field input */
+.input-cell {
+	vertical-align:top;
+	margin-left:5px;
+}
+  
+/* ----------------------------------------*/
+
+/* vocabHeading used in collapsable vocab lists */
+A.vocabHeading:link {
+	color: #000000; 
+	text-decoration: none; 
+	font-weight: bold;
+}
+A.vocabHeading:visited {
+	color: #000000; 
+	text-decoration: none; 
+	font-weight: bold;
+}	
+A.vocabHeading:active {
+	color: #000000; 
+	text-decoration: none; 
+	font-weight: bold;
+}	
+
+.field-label, .field-label A {
+	font-size:100%;
+	font-family: verdana, helvetica;
+	white-space: nowrap;
+	color:black;
+}
+
+.field-label.required, 
+.field-label.required A {
+	color:red;
+	font-style:italic;
+}
+
+.field-label .required-choice {
+	color:red;
+	font-style:italic;
+	font-weight:bold;
+}
+
+.field-label .optional-choice {
+	color:black;
+	font-style:italic;
+	font-weight:normal;
+}
+
+.field-prompt {
+	color:green;
+	font-style:italic;
+	font-weight:normal;
+	margin:0px 0px 3px 5px;
+}
+
+.action-box {
+	margin-left:5px;
+}
+
+
+.action-button, .action-button A:link {
+	font-size:xx-small;
+	font-family: arial, helvetica;
+	color:blue;
+	font-weight:normal;
+	font-style:normal;
+	background-color:#ffffcc;
+	text-decoration:none;
+	white-space: nowrap;
+	padding:0px 1px 0px 1px;
+}
+
+.action-button A:hover {
+	text-decoration:underline;
+}
+
+/* header for framework_conf editor */
+.framework-name {
+	font-family:arial,helvetica;
+	Color : #333366;
+	text-align:left;
+	font-size:150%;
+	font-weight:bold;
+}
+
+/* classes for debugging*/
+.element-debug-info, .label-debug-info {
+	font-size:xx-small;
+	font-weight:normal;
+	font-family: verdana, helvetica;
+	font-style:normal;
+	color:purple;
+}
+
+.label-debug-info {
+	color:green;
+}
+
+#debug-info {
+	position:absolute;
+	top:2px;
+	left:250;
+	background-color:#d5d5bf;
+	height:50px;
+	/* width:40%; */
+	border:thin grey solid;
+	display:none;
+}
+
+#to-top-icon {
+	position:absolute;
+	top:2px;
+	left:2px;
+	display:none;
+	z-index:10;
+}
+
+img.collapse-widget {
+	 border:none;
+	 padding:3px 3px 0px 0px;
+	 width:12px;
+	 hight:12;
+	 float:left;
+}
+
+/* Vocab Layout rules */
+<style type="text/css">
+
+.vocab-layout-table {
+	border-collapse:collapse;
+	/* border:black solid 1px; */
+	width:100%;
+	}
+	
+/* Keep table columns aligned to top */
+Table.vocab-layout-table td {
+	vertical-align:top;
+}
+
+/* checkbox and label */
+.selectable-header-label {
+	margin:0px;
+	padding: 0px 0px 0px 18px;
+   	text-indent: -21px ; 
+	background-color:white;
+}
+
+/* extra padding on left to account for widget */
+.selectable-header-label.collapsible{
+	padding: 0px 0px 0px 35px;
+	background-color:white;
+}
+
+.selectable-collapsible-wrapper {
+
+}
+
+/* account for checkbox */
+.leaf-wrapper {
+    padding-left: 35px ;
+    text-indent: -21px ;
+	/* background-color:pink; */
+}
+
+/* padded to align with text for collapsible headers */
+.plain-header {
+	margin:0px;
+	padding:0px 0px 0px 17px;
+}
+
+.sublist-wrapper {
+	padding:0px 0px 0px 17px;
+	/* background-color:blue; */
+}
+	
+.typegroup {
+	font-weight:bold;
+}
+
+.typevocab {
+	
+}
+
+ul.autoform-radiobuttons {
+	list-style: none;
+}
+
+/* horizontally formatted radio buttons */
+ul.autoform-radiobuttons.horizontal li{
+    text-align: left;
+    float: left;
+    list-style: none;
+    padding: 0px 10px 5px 0px;
+}
+
+#type-ahead-value-container {
+	position:absolute;
+	top:100px;
+	left:100px;
+	height:auto;
+	padding:5px;
+	overflow:auto;
+	z-index:10;
+	border:black 1px outset;
+	background-color:white;
+}
+
+.vocab-type-ahead-term {
+}
+
+.vocab-type-ahead-term.vocab-type-ahead-term-over {
+	cursor:pointer;
+	background-color:#E8ECF4;
+}
+

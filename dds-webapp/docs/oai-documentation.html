@@ -1,0 +1,125 @@
+<html>
+<head>
+<title> Documentation for the DLESE OAI Software </title>
+
+	<link rel="stylesheet" type="text/css" href="/dlese_shared/dlese_styles.css" />
+	<link rel="stylesheet" type="text/css" href="/libdev/docs/docs_styles.css" />
+
+</head>
+<body>
+<h1> Documentation for the DLESE 
+    OAI software</h1>
+<h2> Version 2.0.9 </h2>
+<p>OAI v2.0.9 is part of DLESE v2.3</p>
+<h2> Description </h2>
+<p>The <a href="http://www.dlese.org/oai/index.jsp">DLESE OAI software</a> includes a data provider that supports the <a href="http://www.openarchives.org">Open 
+    Archives Initiative</a> <a href="http://www.openarchives.org/OAI/openarchivesprotocol.html">Protocol 
+    for Metadata Harvesting</a> (OAI-PMH) v2.0 and a harvester that supports OAI-PMH 
+  v2.0 and v1.1. The data provider serves metadata from XML files stored on a 
+  file system. Likewise, the harvester saves downloaded metadata to XML files 
+  on the local file system. In addition to standard OAI protocol support, the 
+  data provider includes a search web service similar to the <a href="http://oai.dlib.vt.edu/odl/">Open 
+    Digital Library</a> (ODL) search specification (odlsearch1), which supports 
+  keyword and fielded searching over the metadata repository. </p>
+<p>The software includes a number of feature that are designed to help support 
+  the activities of collection builders. These include the ability to validate 
+  individual or entire sets of metadata files in the repository, the ability to 
+  search over the full text in the metadata, and to search by metadata format 
+  and set. The harvester supports individual harvests or incremental harvests, 
+  and provides feedback to users about the progress of the the data transfer both 
+  during and after the harvest.</p>
+<p>Some of the features that are supported include sets, resumptionTokens, deletions, 
+  date granularity down to the second, gzip compression of data transferred over 
+  the Internet, and extendable plug-and-play metadata format conversion (supports 
+  XSLT or Java classes written for a specific format conversion). Reports are 
+  available to users that detail any errors found in the metadata records, and 
+  show the harvesting activity that has taken place in the data provider.</p>
+<p>The OAI software is designed using the Model-View-Controller architecture. 
+  See the <a href="oai-MVC-design.ppt">OAI architecture diagram</a> for details.</p>
+<p>The <a href="javadoc">DLESE Java library Javadoc</a> is available 
+  as a reference.</p>
+<p></p>
+<h2> Audience </h2>
+<p>Collection builders and library administrators, DLESE collaborators needing an 
+  out-of-the-box OAI solution. 
+</p>
+<h2> How this component is used </h2>
+<p>For collection builders:</p>
+<ul>
+  <li>Add one or more sets of metadata files from a local repository to be served 
+    via OAI.</li>
+  <li>Search for individual records in the repository by keyword, set and/or metadata 
+    format. </li>
+  <li>View and validate individual records in the repository.</li>
+  <li>Harvest metadata from other OAI data providers.</li>
+</ul>
+<h2> Functional requirements </h2>
+<ul>
+  <li>Support the OAI-PMH v2.0 for both data providing and harvesting.</li>
+  <li>Provide and harvest metadata directly to/from files on disk.</li>
+  <li>Ability to transform ADN to the nsdl_dc and oai_dc formats for data providing.</li>
+  <li>Ability to serve multiple sets.</li>
+  <li>Perform schema validation of records.</li>
+  <li>Support deletions.</li>
+  <li>Support the ability to serve very large sets using resumptionTokens.</li>
+  <li>Ability to serve any schema-based metadata format.</li>
+  <li>Ability to serve the DLESE-IMS DTD-based format.</li>
+  <li>Distributed as an easy to install and use out-of-the-box OAI solution for 
+    use by DLESE partners and others in the OAI and open source communities.</li>
+</ul>
+<h2> Technologies used </h2>
+<p>Java, J2EE, Struts, Lucene, Tomcat, Dom4j, JSTL tag libraries. 
+</p>
+<h2> Development process and workflow </h2>
+<p>See the <a href="software-development-process.html">development 
+    process documentation</a> for details on how the software is developed and 
+  deployed.</p>
+<h3>Release deployment process</h3>
+<p>The DLESE OAI software is made available to the DLESE, OAI and open source 
+  communities as an out-of-the-box OAI solution. The DLESE OAI software is released 
+  under the <a href="http://www.dlese.org/oai/LICENSE.txt">GPL open source licence.</a> 
+  Individuals can download the software from the <a href="http://sourceforge.net/project/showfiles.php?group_id=23991">DLESE 
+    SourceForge</a> portal. Two zipped archives are made available for download: 
+  one contains a binary Java WAR file that can be deployed directly into a servlet 
+  container such as Tomcat for rapid deployment. The other contains a source code 
+  distribution that can be built and deployed using Ant.</p>
+<p>The software is deployed in three steps:</p>
+<ol>
+  <li>The binary and source distributions are built with ant using the 'dist' 
+    target (see <a href="software-development-process.html">development 
+      process documentation</a> for details).</li>
+  <li>The source and binary distributions are uploaded to the <a href="http://sourceforge.net/project/showfiles.php?group_id=23991">DLESE 
+      SourceForge</a> portal.</li>
+  <li>Instructions and change notes are uploaded to the <a href="http://sourceforge.net/project/showfiles.php?group_id=23991">DLESE 
+      SourceForge</a> portal, and updated on the metadata web page as necessary.<br>
+  </li>
+</ol>
+<h2> Testing and maintenance procedures </h2>
+<p>See the <a href="software-development-process.html#testing">development 
+  process documentation section on testing</a>. 
+</p>
+<h2> Future development anticipated </h2>
+<p>There are a number of anticipated updates to be made that will improve the workflow 
+  for ingesting records to the DLESE metadata repository and exporting from it. 
+  These involve automating some tasks that are now manual and improving upon current 
+  functionality that exists in the tool. Updates to be made may include: Sets can 
+  appear as more than one set; ability to harvest multiple repositories at once; 
+  ability to perform a &quot;fresh&quot; harvest by first deleting any previously 
+  harvested records, then harvesting the new ones from scratch; address some usability 
+  issues in the data provider administration page; ability to change the indexing 
+  interval on-the-fly. </p>
+<h2> Links to additional documentation </h2>
+<ul><li>The <a href="http://www.dlese.org/oai/docs/index.html">official DLESE OAI 
+      software documentation</a>.</li>
+  <li>The <a href="http://www.dlese.org/libdev/interop/oai/index.html">DLESE OAI 
+      website.</a></li>
+</ul>
+<p> <i>Contact: <a href="mailto:support@dlese.org">support@dlese.org</a></i><br>
+  <i>Last updated: June 17, 2005</i><br>
+  <i>Author: John Weatherley</i><br>
+</p>
+</body>
+</html>
+
+
+

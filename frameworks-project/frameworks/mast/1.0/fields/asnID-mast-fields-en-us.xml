@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- $Id: asnID-mast-fields-en-us.xml,v 1.5 2009/07/30 15:27:17 ginger Exp $ --> 
+
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/non-vocab-fields.xsd">
+  <field name="AsnID" metaFormat="mast" metaVersion="1.0" language="en-us" path="/record/educational/standards/asnID">
+		<definition attribution="Digital Learning Sciences at the University Corporation for Atmospheric Research">The ASN identifier for the standard identified as mapped to the resource.</definition> 
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2008-07-15" link1="Achievement Standards Network" url1="http://www.jesandco.org/asn/viewer/">Standards information must be entered using unique URL identifiers of the Achievement Standards Network (ASN). This looks like: http://purl.org/ASN/resources/D100027B</practice>
+
+				<practice status="current" originDate="2008-05-06">An interactive table assists with creating the unique URL identifiers of ASN.</practice>
+
+				<practice status="current" originDate="2008-05-06">An interactive table assists with creating the unique URL identifiers of ASN.</practice>
+
+				<practice status="current" originDate="2008-05-06" link1="Browse" style1="bold" link2="Selected" style2="bold" link3="Suggest" style3="bold">The table has 3 different modes: Browse, Selected and Suggest. Read the appropriate sections below to learn how each works.</practice>
+
+				<practice status="current" originDate="2008-07-15">If no standards have been associated with the resource, the interactive table opens in browse mode with the National Science Education Standards shown.</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2008-07-15">Do not make standards associations just for the sake of making an association.</practice>
+			</donts>
+
+			<otherPractices>
+				<otherPractice header="Browse Mode">
+					<practice status="current" originDate="2009-07-15">This mode lets you examine standards documents in a tree form.</practice>
+					<practice status="current" originDate="2009-07-15">Use the triangular open/close trigger to open the standards more fully.</practice>
+					<practice status="current" originDate="2009-07-15">You may select standards in this mode by clicking on any checkbox.</practice>
+					<practice status="current" originDate="2009-07-15">To browse different sets of standards (national or state), select the appropriate topic and author (the state) at the top of the table in the section labeled Select Standards Document.</practice>
+				</otherPractice>
+			
+
+				<otherPractice header="Selected Mode">
+					<practice status="current" originDate="2009-07-15">This mode lets you examine all standards that have been associated with a resource.</practice>
+					<practice status="current" originDate="2009-07-15">You may de-select (but not select) standards in this mode by clicking on any checkbox.</practice>
+					<practice status="current" originDate="2009-07-15">By default, the the Select mode shows the standards for the topic and author listed at the top of the table in the section labeled Select Standards Document.</practice>
+					<practice status="current" originDate="2009-07-15">To see other standards that have been associated (selected) with the resource, click on the triangular open/close trigger next to the see Selected Standards from other Standards Documents (which is under any current list of selected standards).</practice>
+				</otherPractice>
+
+				<otherPractice header="Suggest Mode">
+					<practice status="current" originDate="2009-07-15">This mode lets you examine standards that may be a potential match for the content of the resource.</practice>
+					<practice status="current" originDate="2009-07-15">Standards are suggested for the resource based on several criteria.</practice>
+					<practice status="current" originDate="2009-07-15" link1="Criteria 1:" style1="bold">Criteria 1: select the topic and author (a set of state or national standards) listed at the top of the table in the section labeled Select Standards Document.</practice>
+					<practice status="current" originDate="2009-07-15" link1="Criteria 2:" style1="bold">Criteria 2: Decide if you would like standards suggestions to use information from the metadata record. This includes grade ranges, keywords, description and the URL. Enable or disable these as appropriate in the Suggestion Criteria section of the table.</practice>
+					<practice status="current" originDate="2009-07-15" link1="Criteria 3:" style1="bold">Criteria 3: The content of the resource is read in order to suggest appropriate standards. This criteria is enabled automatically and cannot be changed.</practice>
+					<practice status="current" originDate="2009-07-15" link1="Pleas note:" style1="bold">Please note: that standards suggestions really are just suggestions. Some of them will be good matches for the resource but many may be inappropriate.</practice>
+					<practice status="current" originDate="2009-07-15">No suggestions are accepted until they are checkmarked. Please be sure to have a person experienced with standards alignment make the final decisions on whether a suggested standard is appropriate for the resource.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+	  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

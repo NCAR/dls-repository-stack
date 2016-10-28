@@ -1,0 +1,18 @@
+	<%-- ####### Display messages, if present ####### --%>
+	<logic:messagesPresent> 		
+	<table width="100%" bgcolor="#000000" cellspacing="1" cellpadding="8">
+	  <tr bgcolor="#efefef"> 
+		<td>
+			<b>Messages:</b>
+			<ul>
+				<html:messages id="msg" property="message"> 
+					<li class="confirm-msg"><bean:write name="msg"/></li>									
+				</html:messages>
+				<html:messages id="msg" property="error"> 
+					<li class="error-msg">Error: <bean:write name="msg"/></li>									
+				</html:messages>
+			</ul>
+		</td>
+	  </tr>
+	</table>
+	</logic:messagesPresent>	

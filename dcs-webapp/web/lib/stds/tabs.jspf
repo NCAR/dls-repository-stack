@@ -1,0 +1,46 @@
+<%-- provide controls for display of standards when standards manager is used --%>
+
+<%-- EXPERIMENTAL MODE --%>
+<%-- <div class="stds-ui-label">Display Mode</div> --%>
+
+
+<div class="nav-menu-box">
+<c:set var="showServiceControls" value="${serviceHelper.serviceIsActive}" />
+<table class="nav-menu-table"> 
+	<%-- control tabs implemented by stds-support.js --%>
+	<tr valign="top" align="center" id="control-tabs"></tr>
+</table>
+
+<%-- 
+	<!-- MoreLikeThis & UpdateDisplay (both under "selected" tab) - DISABLED 1/8/09 -->
+
+  	<c:if test="${showServiceControls && 
+				  serviceHelper.displayContent == 'selected'}">
+		<div style="margin-top:2px;" align="center">
+		<nobr>
+				<input id="more-like-this-button" type="button" class="reset-button" value="More like this"/>
+			&nbsp;&nbsp;
+				<input type="button" class="reset-button" value="Update display"
+					onclick="showSelectedStandards ('${pathArg}');" />
+		</nobr>
+		</div>
+		<script type="text/javascript">
+			$('more-like-this-button').observe ('click', doMoreLikeThis);
+		</script>
+	</c:if>
+--%>
+	
+<%-- 
+	<!-- update tree display  - DISABLED -->
+	<c:if test="${showServiceControls && 
+				  serviceHelper.displayMode == 'tree'}">
+		<div style="margin-top:2px;" align="center">
+		<nobr>
+			<input type="button" class="reset-button" value="Update display"
+				onclick="addStandards ('${pathArg}');" />
+		</nobr>
+		</div> 
+	</c:if> 
+--%>
+</div>
+

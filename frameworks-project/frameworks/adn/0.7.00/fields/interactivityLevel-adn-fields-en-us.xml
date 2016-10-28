@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: interactivityLevel-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:46 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/interactivityLevel.xsd">
+	<field name="Interactivity - level" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/educational/interactivityLevel">
+		<definition attribution="influenced by CanCore Guidelines Version 2.0">the level of interaction between a resource and end user; that is the degree to which the learner can influence the behavior of the resource</definition>
+
+		<vocabLevels number="2">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="LOM">Learning Object Metadata</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="2" levelName="Interactivity" levelDeftn="the level of interaction between a resource and end user; see the allowed combination of terms below; the resource part of the term is the phrase after the last colon"/>
+		</vocabLevels>
+
+		<terms>
+			<termAndDeftn vocab="LOM:Very high">learner interactions determine various paths through a resource; learner actions result in different and undetermined outcomes from learner to learner based on the actions chosen</termAndDeftn>
+			<termAndDeftn vocab="LOM:High">learner interactions determine various paths through a resource; learner actions result in different but known outcomes from learner to learner</termAndDeftn>
+			<termAndDeftn vocab="LOM:Medium">learner interactions determine various paths through a resource; students observe and answer questions but all learners arrive at generally the same outcome</termAndDeftn>
+			<termAndDeftn vocab="LOM:Low">generally a single path takes a learner through a resource; no learner interactions occur rather generally observations</termAndDeftn>
+			<termAndDeftn vocab="LOM:Very low">the resource is not intended to be interactive</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-04-22">Choose one interactivity level term that best describes the overall interactivity of the resource.</practice>
+				<practice status="current" originDate="2005-04-25">Use for resources that are intended for student learning like lesson plans, case studies, activities, course, curriculums and other types of learning materials.</practice>
+			</dos>
+			
+			<donts>
+				<practice status="current" originDate="2005-04-25">Do not use this field if it does not add useful information to the overall understanding of the resource.</practice>
+				<practice status="current" originDate="2005-04-25">Do not use this field if the information is not easily determined, that is it could have multiple interactivity levels.</practice>
+			</donts>
+			
+			<examples>
+				<practice status="current" originDate="2005-04-25" link1="Very high" style1="bold" link2="Mountain Simulation" url2="http://www.pals.iastate.edu/simulations/Mtnsim/index.html">Very high interactivity is demonstrated by Mountain Simulation where learners manipulate variables to create clouds and rain.</practice>
+
+				<practice status="current" originDate="2005-04-25" link1="High" style1="bold" link2="Hurricane Strike" url2="http://meted.ucar.edu/hurrican/strike/index.htm">High interactivity is demonstrated by Hurricane Strike.</practice>
+
+				<practice status="current" originDate="2005-04-25" link1="Medium" style1="bold" link2="Remote Sensing Using Satellites" url2="http://comet.ucar.edu/nsflab/web/index.htm">Medium interactivity is demonstrated by Remote Sensing Using Satellites.</practice>
+
+				<practice status="current" originDate="2005-04-25" link1="Low" style1="bold" link2="Make a Barometer" url2="http://www.miamisci.org/hurricane/barometer.html">Low interactivity is demonstrated by Make a Barometer.</practice>
+
+				<practice status="current" originDate="2005-04-25" link1="Very low" style1="bold" link2="Evaluation Report for Remote Sensing Using Satellites" url2="http://it.coe.uga.edu/~treeves/RSUSeval/index.html">Very low interactivity is demonstrated by Evaluation Report for Remote Sensing Using Satellites. This resource is not intended to be interactive.</practice>
+			</examples>
+			
+			<otherPractices>
+				<otherPractice header="Using Interactivity Level and Interactivity Type together">
+					<practice status="current" originDate="2005-04-25" link1="CanCore Guidelines Version 2.0" url1="http://www.cancore.ca/guidelines/CanCore_Guidelines_Educational_2.0.pdf" link2="table directly" url2="http://www.dlese.org/Metadata/documents/how-tos/interactivity.htm">CanCore Guidelines Version 2.0 provides a table that describes how interactivity level and type can be used in combination. See the table directly.</practice>
+				</otherPractice>
+
+				<otherPractice header="A NOTE OF CAUTION!!!">
+					<practice status="current" originDate="2005-04-26">This controlled vocabulary is experimental. Terms and definitions are subject to change and may not be backwards or forwards compatible.</practice>
+				</otherPractice>
+
+			</otherPractices>
+			
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>LOM:Medium</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

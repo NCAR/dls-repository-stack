@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabTerm >
+	<recordID>PUB-NAME-000-000-000-001</recordID><!--required, non-repeating, id number field-->
+	<recordDate>2010-07-04</recordDate><!--required, non-repeating, date field-->
+	<recordCreator>String</recordCreator>
+	<recordsAffected>1</recordsAffected>
+	<fullName>The Astrophysical Journal</fullName><!--required, non-repeating, free-text field; formal name of the publication-->
+	<altName id="String"> </altName>
+	<abbreviation>The Astrophys. Jour.</abbreviation><!--optional, non-repeating, free-text field; publication abbreviation for use in citations-->
+	<type>journal</type><!--do not use this field for instName or eventName; required, non-repeating, controlled vocab field; kind of publication-->
+	<altName id="PUB-NAME-000-000-000-006">Astrophysical Journal</altName><!--optional, repeating, free-text field with an optional id number attribute; an alternate name for the publication; use the id attribute if the alternate name has been cataloged as it's own metadata record as well.-->
+		<sourceInfo>
+		 <dateVerified></dateVerified>
+		 <authority id="x">LOC or NCAR Librarya</authority>
+		 <url>http://to.publisher.website/index.html"</url>
+		 <description></description>
+		<notes>String</notes>
+	</sourceInfo>
+	<validDates start="1967-08-13" end="1967-08-13">String</validDates><!--optional, non-repeating, empty content field with the both attributes as optional but are dates; dates for which this name is valid-->
+	<otherNotes>String</otherNotes>
+</vocabTerm>

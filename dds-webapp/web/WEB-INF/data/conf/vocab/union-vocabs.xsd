@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.vocabs.dlese" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.vocabs.dlese" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.1.01">
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA PURPOSE  *************
+		Defines the union vocab types for the instance documents for vocabulary managment in the Digital Library for Earrth System Education (DLESE).
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  NAMESPACES  ********    
+		The chameleon approach to namespace conventions is used. 
+		That is overarching schemas have target namespaces and called schemas do not.
+		Called VOCABULARY schemas (like this one) do not have target namespaces.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  ROOT ELEMENT schema to Include  ********
+		This schema does not containt the root element of the instance document. See xxxx.xsd for the root element.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***************  VOCABULARY schemas to include  from ADN item-level ***********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/beneficiaryDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/beneficiaryGEM.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/coordinateDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/costDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/defaults.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/geodeticDatumGlobalOrHorzDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/geodeticDatumGlobalOrVertDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/geoPtOrder.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/gradeRangeDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/interactivityLevelLOM.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/interactivityTypeLOM.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/kindDC.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/kindDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/nameTitle.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/objectTypeDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/planet.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/projectionDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/requirementTypeDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/resourceTypeDC.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/resourceTypeDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/roleLifecycle.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/roleMetaMetadata.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsAAASbenchmarksContentCommon.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsAAASbenchmarksContentDesigned.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsAAASbenchmarksContentHabits.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsAAASbenchmarksContentHistorical.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsAAASbenchmarksContentHuman.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsAAASbenchmarksContentLiving.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsAAASbenchmarksContentMath.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsAAASbenchmarksContentPhysical.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsAAASbenchmarksContentScience.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsAAASbenchmarksContentTechnology.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsNCGE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsNCTMcontent.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsNCTMprocess.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsNETScontent.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsNETSteaching.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsNSEScontent.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/standardsNSESteaching.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/status.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/subjectDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/subjectOtherDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/teachingMethodDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/teachingMethodGEM.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/timeUnits.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/toolForDLESE.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/toolForGEM.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/typeDetGeo.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/vertBase.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/verticalUnits.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>***************  VOCABULARY schemas to include from Collection-level ***********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/0.1.01/vocabs/DLESEpolicyType.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/0.1.01/vocabs/key.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/collection/0.1.01/vocabs/policyType.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>***************  VOCABULARY schemas to include from annotation item-level ***********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/annotation/0.1.01/vocabs/type.xsd"/>
+	<xsd:include schemaLocation="http://www.dlese.org/Metadata/annotation/0.1.01/vocabs/pathway.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  Other Elements  **********************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Complex Types  (alpha order) *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>******************************    Simple Types (alpha order)  ********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="stringTextType">
+		<xsd:annotation>
+			<xsd:documentation>
+					Use this patterned string to ensure that a null tag is not valid string content.
+					Note: that xsd:string allows content to be null even if the element is required.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value=".[\S\s]*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>
+			**********************************  Union Types (alpha order) *************************************
+			These simple types are composed of union or member types.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="union.beneficiaryType">
+		<xsd:union memberTypes="DLESEbeneficiaryType GEMbeneficiaryType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.beneficiaryLeafType">
+		<xsd:union memberTypes="DLESEbeneficiaryLeafType GEMbeneficiaryLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.contentStandardType">
+		<xsd:union memberTypes="NCGEgeographyContentStandardsType NCTMmathContentStandardsType NSESscienceContentStandardsType AAAScontentCommonType AAAScontentDesignedType AAAScontentHabitsType AAAScontentHistoricalType AAAScontentHumanType AAAScontentLivingType AAAScontentMathType AAAScontentPhysicalType AAAScontentScienceType AAAScontentTechnologyType NETStechnologyContentStandardsType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.contentStandardLeafType">
+		<xsd:union memberTypes="NCGEgeographyContentStandardsLeafType NCTMmathContentStandardsLeafType NSESscienceContentStandardsLeafType AAAScontentCommonLeafType AAAScontentDesignedLeafType AAAScontentHabitsLeafType AAAScontentHistoricalLeafType AAAScontentHumanLeafType AAAScontentLivingLeafType AAAScontentMathLeafType AAAScontentPhysicalLeafType AAAScontentScienceLeafType AAAScontentTechnologyLeafType NETStechnologyContentStandardsLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.coordinateSystemType">
+		<xsd:union memberTypes="DLESEcoordinateType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.coordinateSystemLeafType">
+		<xsd:union memberTypes="DLESEcoordinateLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.costType">
+		<xsd:union memberTypes="DLESEcostType suppliedType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.costLeafType">
+		<xsd:union memberTypes="DLESEcostLeafType suppliedLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.defaultsType">
+		<xsd:union memberTypes="missingType notapplicableType unknownType suppliedType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.defaultsLeafType">
+		<xsd:union memberTypes="missingLeafType notapplicableLeafType unknownLeafType suppliedLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.geodeticDatumGlobalOrHorzType">
+		<xsd:union memberTypes="DLESEgeodeticDatumGlobalOrHorzType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.geodeticDatumGlobalOrHorzLeafType">
+		<xsd:union memberTypes="DLESEgeodeticDatumGlobalOrHorzLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.geodeticDatumGlobalOrVertType">
+		<xsd:union memberTypes="DLESEgeodeticDatumGlobalOrVertType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.geodeticDatumGlobalOrVertLeafType">
+		<xsd:union memberTypes="DLESEgeodeticDatumGlobalOrVertLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.gradeRangeType">
+		<xsd:union memberTypes="DLESEgradeRangeType suppliedType notapplicableType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.gradeRangeLeafType">
+		<xsd:union memberTypes="DLESEgradeRangeLeafType suppliedLeafType notapplicableLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.interactivityLevelType">
+		<xsd:union memberTypes="LOMinteractivityLevelType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.interactivityLevelLeafType">
+		<xsd:union memberTypes="LOMinteractivityLevelLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.interactivityTypeType">
+		<xsd:union memberTypes="LOMinteractivityTypeType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.interactivityTypeLeafType">
+		<xsd:union memberTypes="LOMinteractivityTypeLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.kindType">
+		<xsd:union memberTypes="DLESEkindType DCkindType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.kindLeafType">
+		<xsd:union memberTypes="DLESEkindLeafType DCkindLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.objectTypeType">
+		<xsd:union memberTypes="DLESEobjectTypeType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.objectTypeLeafType">
+		<xsd:union memberTypes="DLESEobjectTypeLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.processStandardType">
+		<xsd:union memberTypes="NCTMmathProcessStandardsType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.processStandardLeafType">
+		<xsd:union memberTypes="NCTMmathProcessStandardsLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.projectionType">
+		<xsd:union memberTypes="DLESEprojectionTypesType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.projectionLeafType">
+		<xsd:union memberTypes="DLESEprojectionTypesLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.resourceTypeType">
+		<xsd:union memberTypes="DLESEresourceTypeType suppliedType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.resourceTypeLeafType">
+		<xsd:union memberTypes="DLESEresourceTypeLeafType suppliedLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.reqTypeType">
+		<xsd:union memberTypes="DLESEreqTypeType suppliedType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.reqTypeLeafType">
+		<xsd:union memberTypes="DLESEreqTypeLeafType suppliedLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.subjectType">
+		<xsd:union memberTypes="DLESEsubjectType suppliedType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.subjectLeafType">
+		<xsd:union memberTypes="DLESEsubjectLeafType suppliedLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.teachingStandardType">
+		<xsd:union memberTypes="NSESscienceTeachingStandardsType NETStechnologyTeachingStandardsType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.teachingStandardLeafType">
+		<xsd:union memberTypes="NSESscienceTeachingStandardsLeafType NETStechnologyTeachingStandardsLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.teachingMethodType">
+		<xsd:union memberTypes="DLESEteachingMethodType GEMteachingMethodType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.teachingMethodLeafType">
+		<xsd:union memberTypes="DLESEteachingMethodLeafType GEMteachingMethodLeafType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.toolForType">
+		<xsd:union memberTypes="DLESEtoolForType GEMtoolForType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.toolForLeafType">
+		<xsd:union memberTypes="DLESEtoolForLeafType GEMtoolForLeafType"/>
+	</xsd:simpleType>
+</xsd:schema>

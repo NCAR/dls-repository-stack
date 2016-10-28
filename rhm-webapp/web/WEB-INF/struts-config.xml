@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+  
+  <!DOCTYPE struts-config PUBLIC  
+          "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"  
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+  <struts-config> 
+    
+	<!-- ========== Form Bean Definitions =================================== -->
+    
+	<form-beans> 
+		<form-bean 	
+			name="hmf"  
+			type="edu.ucar.dls.harvestmanager.action.form.HarvestManagerForm"/>
+		<form-bean 	
+			name="triggerBean"  
+			type="edu.ucar.dls.harvestmanager.action.form.HarvestManagerForm"/>
+		<form-bean 	
+			name="refreshNcsBean"  
+			type="edu.ucar.dls.harvestmanager.action.form.HarvestManagerForm"/>  	
+		
+		<form-bean 	
+			name="metadataSearchBean"  
+			type="edu.ucar.dls.harvestmanager.action.form.MetadataSearchForm"/> 		
+	</form-beans>
+    
+	
+	<!-- ========== Global Forward Definitions ============================== -->
+    <global-forwards> 
+		<forward name="harvest.manager.default" path="/index.jsp" />
+    </global-forwards>
+    
+	
+	<!-- ========== Action Mapping Definitions ============================== -->
+    <action-mappings>
+	
+		<!-- Harvest Repository Manager (invoked at path /harvestmanager.do) -->
+		<action	path="/log_results" 
+				type="edu.ucar.dls.harvestmanager.action.HarvestManagerAction" 
+				scope="request"
+				name="hmf"
+				validate="false">  
+			<forward name="log.results.success" path="/log_results_success.jsp"/>
+			<forward name="log.results.fail" path="/log_results_fail.jsp"/>
+		</action>
+		
+		<action	path="/admin/trigger_harvest" 
+				type="edu.ucar.dls.harvestmanager.action.HarvestManagerAction" 
+				scope="request"
+				name="triggerBean"
+				validate="false">  
+			<forward name="trigger.action.result" path="/collection_details.jsp"/>
+		</action>
+		
+		<action	path="/admin/reharvest_collections" 
+				type="edu.ucar.dls.harvestmanager.action.ReharvestCollectionsAction" 
+				scope="request"
+				validate="false">  
+			<forward name="success" path="/admin/reharvest_collections.jsp"/>
+		</action>
+		<action	path="/admin/script_runner" 
+				type="edu.ucar.dls.harvestmanager.action.ScriptRunnerAction" 
+				scope="request"
+				validate="false">  
+			<forward name="success" path="/admin/script_runner.jsp"/>
+		</action>
+		
+		<action	path="/admin/refresh_from_ncs" 
+				type="edu.ucar.dls.harvestmanager.action.HarvestManagerAction" 
+				scope="request"
+				name="refreshNcsBean"
+				validate="false">  
+			<forward name="refresh.ncs.collDetails" path="/collection_details.jsp"/>
+			<forward name="refresh.ncs.collOverview" path="/collections.jsp"/>
+		</action>				
+    	
+    	
+    	<action
+			path="/MetadataSearch"
+			type="edu.ucar.dls.harvestmanager.action.MetadataSearchAction"
+			name="metadataSearchBean"
+			validate="false"
+			input="/checkbox.jsp"
+			>	
+ 
+			<forward name="success" path="/metadata_db_view.jsp"/>
+		</action>
+		
+		<action
+			path="/admin/runReport"
+			type="edu.ucar.dls.harvestmanager.action.RunReportAction"
+			validate="false"
+			scope="request"
+			parameter="report"
+			>	
+ 
+		</action>
+	</action-mappings>
+	
+	<!-- ============================================= Controller Definition  -->
+	<controller inputForward="true" />
+	
+	<!-- Resource bundle -->
+	<message-resources null="false" parameter="ApplicationResources"/>
+
+	
+	<!-- ====================== Plug Ins Configuration ======================   -->
+	
+	<!-- 
+	   Add multiple validator resource files by setting the pathnames property 
+	   with a comma delimitted list of resource files to load. 
+	-->
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+		<set-property property="stopOnFirstError" value="true" />
+	</plug-in>	
+	
+  </struts-config>

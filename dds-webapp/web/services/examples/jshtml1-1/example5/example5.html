@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Extreme Weather! - search DLESE resources</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	
+	<!-- Include the suggested_styles.css -->
+	<LINK REL="stylesheet" TYPE="text/css" HREF="@DDS_SERVER_BASE_URL@/services/jshtml1-1/suggested_styles.css">
+	
+	<style type="text/css">
+		<!--
+		/* All of the text in the DLESE search is within a TD element */
+		TD { 
+			font-family: Arial, Helvetica, sans-serif; 
+			font-size: 10pt; 
+		} 
+		BODY { 
+			margin-top:4px;
+			font-family: Arial, Helvetica, sans-serif; 
+			font-size: 10pt; 
+		}	
+		A:link {
+			color: #69261E; 
+			text-decoration: underline; 
+			font-weight: bold;
+			font-size: 10pt; 	
+		}
+		A:visited {
+			color: #C89C97; 
+			text-decoration: underline; 
+			font-weight: bold;
+			font-size: 10pt; 	
+		}
+		A:active {
+			color: #69261E; 
+			text-decoration: underline; 
+			font-size: 10pt; 	
+		}
+
+		/* The background color behind the resources's title */
+		TR.resourceTitle {
+			background-color:#FFF4F3;
+		}
+
+		/* The background color behind the resources's title */
+		.standardMargin {
+			margin-left:5px;
+		}		
+		
+		-->
+	</style>	
+</head>
+
+<body>
+<p> 
+  <a href="index.html" title="To Extreme weather home" alt="To Extreme weather home"><img src="images/bannerNaturalEvents.jpg" width="800" height="108" border="0"></a></p>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td vAlign=top>
+		<div class="standardMargin">
+			<nobr><a href="index.html">Extreme weather home</a> | <a href="../index.html#examples">Back to the Examples</a></nobr>
+			<br><br>
+		
+			<b>View resources about:</b><br>
+			<a href='JavaScript:SmartLink("meteorology","Meteorology")'>Meteorology</a><br>
+			<a href='JavaScript:SmartLink("\"Weather\"","Weather")'>Weather</a><br>
+			<a href='JavaScript:SmartLink("hurricane OR storm OR blizzard OR hail OR thunder OR lightning","Natural events")'>Natural events</a><br>
+		</div>
+	</td>
+	</tr>
+	<tr>
+    <td vAlign=top>
+
+			    
+		<br>
+        <div class="standardMargin">
+			<strong>Search over educational resources:</strong> 
+		</div>
+
+	<!-- Reference the serviceURL and insert commands -->
+	<SCRIPT TYPE="text/javascript" SRC="@DDS_SERVER_BASE_URL@/services/jshtml1-1/javascript_search_service.js"></SCRIPT>
+	<SCRIPT TYPE="text/javascript">
+		<!--	
+		
+		ShowElement("gradeLevelsMenu");
+		
+		CustomMenuItem("Topics","Hurricanes", "hurricanes");
+		CustomMenuItem("Topics","Tornadoes", "tornado");
+		CustomMenuItem("Topics","Tsunamis", "tsunamis");
+		CustomMenuItem("Topics","Floods", "floods");
+		CustomMenuItem("Topics","Drought", "drought");	
+		
+		ShowElement("searchBox");
+		ShowElement("searchWithinSmartLinkResults");
+		
+		// This limits the search scope of the entire page to subject Atmospheric Scienct (su:01)
+		SearchConstraint("su:01");
+		
+		ShowElement("gradeLevelSR");
+		ShowElement("resourceTypeSR");
+		ShowElement("subjectSR");	
+		
+		RenderPage();	
+		
+		-->
+	</SCRIPT>
+  
+	</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+
+</html>

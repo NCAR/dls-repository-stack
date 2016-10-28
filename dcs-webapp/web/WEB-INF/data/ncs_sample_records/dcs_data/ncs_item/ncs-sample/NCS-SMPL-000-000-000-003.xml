@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<dcsDataRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.dlese.org/Metadata/dcs/dcs-data/dcs-data.xsd">
+  <recordID>NCS-SMPL-000-000-000-003</recordID>
+  <isValid/>
+  <statusEntries>
+    <statusEntry>
+      <status>Unknown</status>
+      <statusNote></statusNote>
+      <editor>Unknown</editor>
+      <changeDate>2008-03-05T12:18:58Z</changeDate>
+    </statusEntry>
+    <statusEntry>
+      <status>New</status>
+      <statusNote>Added to Collection</statusNote>
+      <editor>Unknown</editor>
+      <changeDate>2008-03-05T12:20:31Z</changeDate>
+    </statusEntry>
+    <statusEntry>
+      <status>_|-final-ncs-sample-|_</status>
+      <statusNote>This record has been QA'd</statusNote>
+      <editor>Unknown</editor>
+      <changeDate>2008-03-05T12:21:40Z</changeDate>
+    </statusEntry>
+  </statusEntries>
+  <lastTouchDate>2008-03-05T12:21:40Z</lastTouchDate>
+  <ndrHandle/>
+  <validationReport></validationReport>
+  <ndrInfo>
+    <syncError></syncError>
+  </ndrInfo>
+</dcsDataRecord>

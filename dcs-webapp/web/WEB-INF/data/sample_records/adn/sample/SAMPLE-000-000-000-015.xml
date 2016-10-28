@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>Exploring Earthquakes in Space and Time Through the Internet and a Geographic Information System</title>
+<description>This site contains an exercise in which students are asked to examine the frequency and distribution of earthquake epicenters and compare these epicenters to the distribution of plate boundaries and cities. Students download earthquake epicenters for the last several days and for an entire year from the Internet, and map the information using ArcView geographic information system (GIS), and analyze the patterns that become evident. The module presents background information on earthquakes and GIS, and includes step-by-step instructions for using the technological tools. It can be adapted to a wide range of grade levels and may be presented as an introductory GIS exercise. It may be completed without a GIS by using a paper base map, but requires access to the World Wide Web. This module has been classroom tested, and was peer reviewed during June 1997.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Geophysics</subject>
+<subject>DLESE:Human geography</subject>
+<subject>DLESE:Technology</subject>
+</subjects>
+</general>
+<lifecycle>
+<contributors>
+<contributor date="1997-06-06" role="Author">
+<person>
+<nameFirst>Joseph</nameFirst>
+<nameMiddle>J.</nameMiddle>
+<nameLast>Kerski</nameLast>
+<instName>United States Geological Survey (USGS)</instName>
+<emailPrimary>jjkerski@usgs.gov</emailPrimary>
+</person>
+</contributor>
+<contributor role="Publisher">
+<organization>
+<instName>The Virtual Geography Department Project</instName>
+<instUrl>http://www.colorado.edu/geography/virtdept/contents.html</instUrl>
+</organization>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-015">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-11-27" created="2000-11-27"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://rockyweb.cr.usgs.gov/public/outreach/quakegis/main.html</primaryURL>
+<mediums>
+<medium>text/html</medium>
+<medium>text/plain</medium>
+</mediums>
+<requirements>
+<requirement>
+<reqType>DLESE:Software or plug-in:ArcView</reqType>
+</requirement>
+<requirement>
+<reqType>DLESE:Other:More specific technical requirements</reqType>
+</requirement>
+</requirements>
+<otherRequirements>
+<otherRequirement>
+<otherType>WinZip or equivalent</otherType>
+</otherRequirement>
+</otherRequirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:High school</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Middle school</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Learning materials:Assessment</resourceType>
+<resourceType>DLESE:Learning materials:Classroom activity</resourceType>
+<resourceType>DLESE:Learning materials:Computer activity</resourceType>
+<resourceType>DLESE:Text:Glossary</resourceType>
+</resourceTypes>
+<contentStandards>
+<contentStandard>NSES:9-12:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry</contentStandard>
+<contentStandard>NSES:9-12:Content Standard A Science as Inquiry Standards:Understandings about scientific inquiry</contentStandard>
+<contentStandard>NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in local, national, and global challenges</contentStandard>
+<contentStandard>NSES:9-12:Content Standard G History and Nature of Science Standards:Science as a human endeavor</contentStandard>
+<contentStandard>NSES:9-12:Content Standard G History and Nature of Science Standards:Nature of scientific knowledge</contentStandard>
+<contentStandard>NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information</contentStandard>
+<contentStandard>NCGE:The World in Spatial Terms:How to analyze the spatial organization of people, places, and environments on Earth's surface</contentStandard>
+<contentStandard>NCGE:Physical Systems:The physical processes that shape the patterns of Earth's surface</contentStandard>
+<contentStandard>NCGE:Human Systems:The characteristics, distribution, and migration of human populations on Earth's surface</contentStandard>
+</contentStandards>
+<interactivityLevel>LOM:High</interactivityLevel>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>Copyright and Other Restrictions Information is Unknown</description>
+</rights>
+<relations>
+<relation>
+<urlEntry kind="DC:Is part of" url="http://www.colorado.edu/geography/virtdept/contents.html"/>
+</relation>
+</relations>
+</itemRecord>

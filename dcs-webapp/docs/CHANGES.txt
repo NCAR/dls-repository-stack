@@ -1,0 +1,285 @@
+Release notes and version documentation for the 
+Digital Collection System (DCS)
+
+DCS is developed by Digital Learning Sciences (DLS) at the
+University Corporation for Atmospheric Research (UCAR)
+with support from the National Science Foundation (NSF).
+http://dls.ucar.edu/  http://www.ucar.edu/  http://nsf.gov/
+
+
+Changes in 2.10.0
+
+- This version combines the DCS, DDS, Harvest Manager, Java libraries, and frameworks-project
+into a single repository (stack) in GitHub. It removed dependency on joai-project,
+and renamed top-level directories to better match their identity.
+-- Renamed all Java packages from org.dlese.dpc.* to edu.ucar.dls.*
+
+- This file describes release changes for the DCS webapp. See the top-level README docs for global change notes.
+
+
+Changes in 2.9.8
+
+- Updated and verified to run under Java 8 and Tomcat 7 (also Java 6,7). Does NOT run under Tomcat 6 (search page broken)
+- Fixed issue with temporaty file clashes when running multiple instances of DCS/DDS in a single Tomcat container
+(set unique contextParam DDS_UUID for each instance)
+
+Changes in 2.9.7
+
+- UCARConnect and DLS branding
+- Standards Selector works around ADN standards implementation
+
+Changes in 2.9.6 (released to SourceForge 7/15/2014)
+- Added repository analytics tool from the dds, along with the UI for it
+
+Changes in 2.9.5 (released to SourceForge 6/18/2014)
+- AssetManager - input helper to support uploading of files. Implementation
+is currently compatible with CCS only.
+- Passwords encrypted using SHA-1 Base64
+- ASN Standards cache can be rebuilt from admin configuration page
+
+Changes in 2.9.4 (released to SourceForge 7/31/2013)
+- Fixed bug causing status update dates to be set to begining of epoch (e.g., 1969)
+- Schemas having scheme of "https" can now be processed
+
+Changes in 2.9.3 (released to SourceForge 9/26/2012)
+- OSM Affiliation helper now handles external orgs (instName), even if it isn't in the controlled vocab.
+- cow_item framework (which defines attributes for asn element) supports asn standards service
+- NLDR tools page contains tool to update affected records for vocabs frameworks
+-Added the ability to configure the default search field used by the query parser in the Search API and elsewhere 
+when no search field is explicilty specified. This is normally set to 'default' but can now be overridden to 
+specify a custom field if desired.
+
+Changes in 2.9.2.3
+- Debugged support for repeating substitution groups
+- Union date type values now parsed wrt local time zone
+
+Changes in 2.9.2.1
+- Comm_anno standards can be cataloged with alignment and alignmentComment
+
+Changes in 2.9.2
+
+Updated to Lucene 3.6 libs (no API changes from 3.5)
+
+Changes in 2.9.1 (released to SourceForge 4/3/2012) 
+
+Custom support for LAR framework: virtualPageLists and LAR standards selection
+
+ASN Standards changes
+- IDs changed from purl-form (http://purl.org/ASN/resources/S1136B91) to new form: http://asn.jesandco.org/resources/S114341B
+- ASN Document Catalog now cached using new ASN Webservices (http://asn.jesandco.org/content/asn-web-services-overview)
+- ASN standards updated to accomodate comm-core-specific ASN fields ("comments" and "statementNotation")
+- Increases token length for indexing URLs
+
+The concept of collectionOfCollectionRecords is introduced. This long name denotes a collection containing
+collection-level metadata records (as opposed to the normal item-level metadata). collectionOfCollectionRecords
+are configured as context params, and are associated with metadataHandles, which are stored in the DcsDataRecord
+for the individual collection-level records. This association between record and metadataHandle is established
+in the WorkFlowServices class, which obtains a handle from a handleService and writes it to the DcsDataRecord
+when the status of the metadataRecord is set to Done.
+
+NLDR-specific functionality
+- dcsosmIsRevision field requires presense of /record/general/title/@submission
+- nldr export performs export on all osm records (even if they haven't changed) so that embargoes are managed correctly.
+
+Changes in 2.9.0 (released to SourceForge 7/12/2011) 
+
+Underlying DDS Development
+- the DDS system that provides repository and indexing functionality has seen a
+lot of development, and has a slightly different configuration. See "UPDATING_to_2.9.txt"
+for Required configuration changes. And don't forget to reindex once you start
+back up after updating configurations.
+
+ASN Standards Management
+- Streamlined ASN Standards Service configuration (see "UPDATING_to_2.9.txt" for Required configuration changes)
+- ASN Standards Management UI - allows you to edit the set of ASN Standards Documents that are shown to 
+catalogers in the metadata editor.
+- ASN Standards Service fetches ASN docs on-demand and caches them locally for effeciency.
+
+Customized displays for controlled vocabularies
+- Out-of-schema values for controlled vocabs displayed in metadata editor (accomodates cases where invalid
+values are contained in records deposited in NCS repository by external apps, such as recommenders or submission
+forms)
+- Asynchronous display of vocabLayout fields (i.e., fields governed by a "groups", or "vocabLayout" file). This
+is useful if you have a fancy inputHelper and don't want to refresh the page unnecessarily.
+
+Repository Level
+- Repository Web Services (PutRecord and DeleteRecord) updated to support blocking and syncing with NDR
+- Custom export scheme for NLDR in which master osm_collect records are mirrored as dlese_collect records
+
+- new schemaPath value type: type_ahead available for single-select fields governed by controlled vocab. To activate
+the type_ahead functionality, create (or modify) a schema path in the framework configuration to have a value
+of "type_ahead" for the "valueType" attribute.
+
+
+Changes in version 2.8.2
+- SmartCheckBoxes - hierarchical controlled vocabs in the metadata-editor can be configured
+(via the groups file) to automatically check and uncheck anscestors and descendants as appropriate to
+support best practices for cataloging to hierarchy.
+- Fields and groups files can now be specified by absolute path in listing files.
+- Status can now be changed from within editor
+- Searching over status_notes, record creator supported
+- Redesigned item controls for search results
+- Redesigned nav menu for metadata editor
+- Configurable "instanceHelp" link that appears in "Help" menu on each page
+- Elements can be ordered by a specified attribute (via framework config).
+- CollectionCreation allows specification of collectionKey when so configured, and 
+  no longer requires both short and long Titles
+- "uniqueValue" schemaPaths in framework config define paths that are checked by editor to ensure
+  dup values do not occur in any other record in the collection of the record being edited.
+- NSDL Collections write ncs:nativeFormat property to collection MDP whether collection is 
+  oai-ingested or ncs-managed
+- UpdateStatus web service allows the status (label, note, editor) to be updated over the web. Updates
+  are written to the NDR when the modified record is part of a collection that is registered with the NDR.
+- Errors and warnings produced during framework load are displayed on home page and frameworks settings pages. the
+warnings disappear when user clicks "okay" button.
+
+Changes in version 2.8.0
+- CAT service interface now recognizes vocabs as GradeRanges (e.g., "High School" -> 9-12)
+- NOTE: CAT Service interface refactor now requires modification of framework plugin paths in service configuration file.
+- Field Prompts defined in the "fields files" are displayed in the metadata editor.
+- Implemented collapsible tag at top level of groups files
+- Fix CAT UI bug by making it Thread-safe
+- Fixed Search field bug that precluded using index fields as part of "raw" search
+- Fixed bug where statuses containing blank spaces were not properly handled
+- Fixed pager bug that added extra (blank) page in some conditions
+- Implemented Copy/Move functionality (single and batch).
+- Batch operations now only available when recordBatch is result of search over SINGLE COLLECTION
+- Added support for Ldap and Ucar/ucas authentication
+- Added ListFields and ListTerms web service requests to service explorer
+- Limit manipulation of list of records to operated upon for batch ops
+- revamped search to better support lucene query syntax and preserve search state
+- implemented Res_qual suggestion helper
+- added xls converter from ncs_collect to dlese_collect
+- metadata-editor guarded exits implemented using ajax
+
+ToDo:
+- Eliminate dependence on DLESE Schemas
+
+Changes in version 2.7.11
+- updated NDR UI to accomodate handles produced by local NDR installations (which don't have a "2200/" prefix)
+- all javascript code now loads ndrGlobals, which contains a "log" function that replaces all calls to 
+	"console.log", etc. This log function traps errors produced when console.log is not defined.
+- CAT UI now accomodates "subject" field when this is exposed by frameworks.
+- changed default logo to 'eduPak'
+- fixed xpath sorting to account for indexing to support smile inputHelpers, which can add many elements at 
+	one to a document.
+- fixed search bug where the paging didn't work for search strings containing more than one word
+
+Changes in version 2.7.10
+- user data is now managed as individual files (old-style users.xml is automatically converted at system startup)
+- framework-specific validation for "special fields" - i.e., those that
+information beyond that contained in the schema
+- information about the current user can be automatically inserted in newly
+created metadata records. This is configured in the framework-configuration
+- collection names now xml-escaped to allow collection names to contain special
+chars
+- best practices link labels are configurable in the framework-configuration.
+- vocabLayout scheme now supports selectable, collapsible groups as well as improved
+column formating.
+- default MuiLoaderFile is now an empty version (causing the MUI to load
+nothing) by default. NCS admins are encouraged to use the "vocabLayout"
+scheme rather than the MUI to customize layout of controlled vocab fields.
+- framework config schema version is now v_0-0-8. New elements include "userInfo", "bestPracticesLabel", and
+a combo input for the "renderer" element.
+
+Changes in version 2.7.9
+- Key for google maps api, used by bounding box inputHelper, is now configured in the context descriptor,
+and inputHelpers call "gmapBoundingBox.jsp", which has replaced "gmapBoundingBox.html"
+- Eliminated remaining hardcoded references to "xsd" as schema namespace prefix
+- Added a small "wedge" icon to the collection name "Home", "Manage Collections", and 
+"Collections Settings" pages to indicate which collections are written to NDR.
+- Added library_dc to oai_dc transform.
+- NdrToolkit jar added, making NdrToolkit functionality available
+- Prototyped "upload to NDR" input widget that writes a uploaded file to the NDR and returns the URL
+  to that content in the NDR.
+- fixed controller bug which accessed session information in a non-thread-safe manner.
+- added catalogingInfoLabel property allowing label of catalogingInfo link to be configurable
+- fixed best practices bug in "create_collection" page
+- Improved error handling with MetaExtract service. User can now submit URLs that MetaExtract cannot
+handle, and the system simply builds a blank record.
+- fixed "user edit" bugs (form autofill, validation forwarding, disallowed "guest" user to edit user info)
+- added support for msp2 framework (framework config, xpath indexing, jsp search and view synopses)
+- fixed pager bug in which sometimes the paging links in search view became corrupt
+- updated suggestion criteria controls
+- filter empty elements from MetaExtract responses 
+
+Changes in version 2.7.8
+- fixed XSL transform bug affecting transforms from dlese_collect, dlese_anno to nsdl_dc
+- fixed uniqueURL bug introduced with xml field indexing
+- changed NDR configuration to require ndrApiBaseUrl param (ndrServer param is no longer used)
+- added progress indicator for threaded operations (validate and ndrSync). there are still some
+other operations that could benefit from progress indicator.
+- smile's bounding box tool now configured for ncs_item and ncs_collect (but this line is commented out in the 
+respective framework configuration files)
+
+Changes in version 2.7.7
+- Stemming now supported in search queries
+- "inputHelper" mechanism implemented (beta) to allow 3rd party extensions to metadata editor for
+  configured fields (Smile's geo-footprint tool being the first example)
+- fixed combo-union input mechanism to properly recognize schema namespace
+- added templates and examples in support of NCS User's Guide (coming soon)
+- removed the existing conditional configuration scheme.
+- project now under Educational Community License version 1.0
+
+Changes in version 2.7.6
+- Educational Standards Suggestion support allows suggestion from mulitple ASN Documents via CAT service
+- Standards suggestion can be enabled or disabled on a per-collection basis.
+- Field layout in metadata editor now handled by VocabLayout (rather than MUI)
+- Dependencies between MUI and collection creation removed.
+- Added "Application Configuration" page to display initialization parameters
+
+Changes in version 2.7.5
+- Refactored search pages (improving dynamic layout around status box)
+- NSDL logo is now default
+- Refactored search and view pages
+- Added paging links to search page
+- Updated prototype calls to remove "getElementsByClassName" (thanks to Dan Bluestein)
+- MetadataEditor now supports xsd:any tag
+- xpath-based indexing of all metadata fields (thanks to John Weatherley see DDS documentation)
+- fixed metadata editor bug that caused selections of controlled values containing "'" to be dropped
+- standards suggester can now be quick-configured for ncs-item framework (handles any asn standards
+  document, but more work needed to display those with unwieldly hierarchies)
+
+Changes in version 2.7.4
+- Search web service can output in JSON (rather than XML)
+- Improved coverage of schema model
+- Updated javascript for Prototype v1.6
+
+Changes in version 2.7.2
+- Javascript DcsTable package used to drive most tables in UI
+- CAT Service now supports "more like this" functionality
+- Experimental support for SIF metadata frameworks
+
+Changes in version 2.7.1
+- Several CSS changes (may require a "force reload" to replace cached version of CSS)
+- Improved support for schema constructs such as attributeGroups and recursive choices
+- Generalized scheme for supporting educational standards suggestion services (e.g., CAT REST)
+- Implemented button on "NDR admin" page to temporarily turn on and off interaction with NDR (useful
+when the NDR is unresponsive).
+
+Changes in version 2.7.0
+- Interaction with NDR finalized
+- NSDL Collection management support (including support for ncs_collect framework, Recomender Services)
+
+Changes in version 2.6.1
+- Login and Logout pages now under /auth for easy apache SSL configuration for secure logon
+- NDR supported with RepositoryWriter and RepositoryWriterPlugin
+- NDR menu contains manager, browser and explorer, but is not present if NDR is not enabled
+- WAR target creates war file suitable for dropping into tomcat
+- build.xml file parameterized to support custom configuration without separate app descriptor
+- batch exporter configurable to export all collections each day at specified time
+- dlese_collect now supported as a metadata item format (enabling management of collection records)
+
+Changes in version 2.6.0
+- Roles and Permissions
+- Support for Multi-namespace schemas
+- Many new frameworks supported
+- Preliminary integration with NDR-API (see ndr-project)
+- Refactored MetadataEditor functionality
+- Refactored jsp page structure
+- No longer dependent on vocab-ui-project
+
+
+For Changes prior to version 2.5 see <a href="Changes-prior-to-v2.5.txt">Changes-prior-to-v2.5.txt</a>
+Versions 2.5 and earlier are mained in sourceForge (http://dlese.cvs.sourceforge.net/dlese/). This file
+documents changes made since migrating the schemedit-project to SVN.

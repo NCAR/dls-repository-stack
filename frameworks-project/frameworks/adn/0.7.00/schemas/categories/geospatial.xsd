@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.7.00">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Overview  **************************************************************
+				This is an ADN item-level CATEGORY schema.
+				Tags defined: geospatialCoverages
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Other CATEGORY Schemas to Include  ********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="commonfields.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  VOCABULARY Schemas to Include  ***********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="../vocabs/coordinateDLESE.xsd"/>
+	<xsd:include schemaLocation="../vocabs/geodeticDatumGlobalOrHorzDLESE.xsd"/>
+	<xsd:include schemaLocation="../vocabs/geodeticDatumGlobalOrVertDLESE.xsd"/>
+	<xsd:include schemaLocation="../vocabs/geoPtOrder.xsd"/>
+	<xsd:include schemaLocation="../vocabs/planet.xsd"/>
+	<xsd:include schemaLocation="../vocabs/projectionDLESE.xsd"/>
+	<xsd:include schemaLocation="../vocabs/typeDetGeo.xsd"/>
+	<xsd:include schemaLocation="../vocabs/vertBase.xsd"/>
+	<xsd:include schemaLocation="../vocabs/verticalUnits.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  ROOT Element  **********************************************
+							There is no root element for this schema.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Other Elements  **********************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Complex Types  (alpha order) *****************************
+	
+				bodyType  	  				is part of geospatialCoverageType			
+				boundBoxType				is part of geospatialCoverageType
+				coordinateSystemType		is part of geospatialCoverageType
+				detGeoType 					is part of detGeosType
+				detGeosType 				is part of geospatialCoverageType
+				eventsType  					is part of bbEvents and detailedEvents under boundBoxType and detGeoType
+				geospatialCoverageType  	is part of geospatialCoveragesType
+				geospatialCoveragesType 	is part of ADNmetdataType in record.xsd 
+				placeOrEventType			is part of placesType and eventsType
+				placesType  					is part of bbPlaces and detailedPlaces under boundBoxType and detGeoType
+				projectionType 				is part of geospatialCoverageType
+				vertType  						is part of boundBoxType.bbVert and detGeoType.detVert
+				vertMinMaxType  			is part of boundBoxType and detGeoType
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="bodyType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  bodyType  ***************************************************
+				These elements have the following types or schema associated with them.
+				planet						is a simple type; see planet.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="planet" type="planetType" maxOccurs="1"/>
+			<xsd:element name="otherPlanetaryBody" type="stringTextType" maxOccurs="1"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="boundBoxType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  boundBoxType  ***************************************************
+				These elements have the following types or schema associated with them.
+				westCoord				is a simple type with a patterned decimal
+				eastCoord				is a simple type with a patterned decimal
+				northCoord				is a simple type with a patterned decimal
+				southCoord				is a simple type with a patterned decimal
+				bbSrcName				is simple; see commonfields.xsd
+				bbSrcIDandURL			is complex; see commonfields.xsd
+				bbSrcDesc				is simple; see commonfields.xsd
+				bbAccEst				is simple; see commonfields.xsd
+				description				is a global; see commonfields.xsd
+				bbVert					is complex; no vocab; just child elements
+				bbPlaces				is complex; no vocab; just child elements
+				bbEvents				is complex; no vocab; just child elements
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="westCoord" type="longitudeType" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="eastCoord" type="longitudeType" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="northCoord" type="latitudeType" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="southCoord" type="latitudeType" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="bbSrcName" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="bbSrcIDandURL" type="IDandURLType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbSrcDesc" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbAccEst" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="description" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbVert" type="vertType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbPlaces" type="placesType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbEvents" type="eventsType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="coordinateSystemType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  coordinateSystemType  *************************************************
+				These elements have the following types or schema associated with them.
+				type				is a an attribute with a controlled vocab; see coordinateDLESE.xsd
+				
+				The content of the element is a string with information about the coordinate system.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="type" type="union.coordinateSystemType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="detGeoType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  detGeoType ***************************************************
+				These elements have the following types or schema associated with them.
+				typeDetGeo				is a simple; see typeDetGeo.xsd
+				geoNumPts				is simple
+				geoPtOrder				is a simple; see geoPtOrder.xsd
+				longLat					is complex
+				detSrcName				is simple; see commonfields.xsd
+				detSrcIDandURL			is a complex; see commonfields.xsd
+				detSrcDesc				is simple; see commonfields.xsd
+				detAccEst				is simple; see commonfields.xsd
+				description				is a global; see commonfields.xsd
+				detVert					is complex; no vocab; just child elements
+				detPlaces				is complex; no vocab; just child elements
+				detEvents				is complex; no vocab; just child elements
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="typeDetGeo" type="typeDetGeoType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="geoNumPts" type="xsd:positiveInteger" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="geoPtOrder" type="geoPtOrderType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="longLats" type="longLatsType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="detSrcName" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="detSrcIDandURL" type="IDandURLType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="detSrcDesc" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="detAccEst" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="description" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="detVert" type="vertType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="detPlaces" type="placesType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="detEvents" type="eventsType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="detGeosType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  detGeosType  *************************************************
+				These elements have the following types or schema associated with them.
+				detGeo				is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="detGeo" type="detGeoType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="eventsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  eventsType  *************************************************
+				These elements have the following types or schema associated with them.
+				event				is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="event" type="placeOrEventType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="geospatialCoverageType">
+		<xsd:annotation>
+			<xsd:documentation>
+				*************************************** geospatialCoverageType  *************************************************
+				These elements have the following types or schema associated with them.
+				body							is complex
+				geodeticDatumGlobalOrHorz		is a simple type; see geodeticDatumGlobalorHorz.xsd; Unknown and Other part of formal vocab so no use default.xsd
+				projection						is complex with an attribute that has a controlled vocab
+				coordinateSystem				is complex with an attribute that has a controlled vocab
+				boundBox						is complex
+				detGeo							is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="body" type="bodyType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="geodeticDatumGlobalOrHorz" type="union.geodeticDatumGlobalOrHorzType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="projection" type="projectionType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="coordinateSystem" type="coordinateSystemType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="boundBox" type="boundBoxType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="detGeos" type="detGeosType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="geospatialCoveragesType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  geospatialCoveragesType  *************************************************
+				These elements have the following types or schema associated with them.
+				geogspatialCoverage				is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="geospatialCoverage" type="geospatialCoverageType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="longLatType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  longLatType*************************************************
+				These elements have the following types or schema associated with them.
+				longitude				is a simple type
+				latitude					is a simple type
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="longitude" type="longitudeType" use="required"/>
+				<xsd:attribute name="latitude" type="latitudeType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="longLatsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  longLatsType*************************************************
+				These elements have the following types or schema associated with them.
+				longLat				is a simple type
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="longLat" type="longLatType" minOccurs="1" maxOccurs="unbounded" nillable="true"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="placeOrEventType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  placeOrEventType  ********************************************
+				These elements have the following types or schema associated with them.
+				name				is a global; see commonfields.xsd
+				source				is a global; see commonfields.xsd
+				IDandURL			is complex; see commonfields.xsd
+				sourceDesc			is a global; see commonfields.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element ref="name" minOccurs="1" maxOccurs="1"/>
+			<xsd:element ref="source" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="IDandURL" type="IDandURLType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="sourceDesc" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="placesType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  placesType  ************************************************
+				These elements have the following types or schema associated with them.
+				place					is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="place" type="placeOrEventType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="projectionType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  projectionType  *************************************************
+				These elements have the following types or schema associated with them.
+				type				is a an attribute of simple type
+				
+				Uknown and Other are part of formal vocab so no use default.xsd
+				Otherwise the content of the element is a string with information about the projection.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="type" type="union.projectionType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="vertBaseInfoType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  vertBaseInfoType  *************************************************
+				These elements have the following types or schema associated with them.
+				vertBaseType	see vertBase.xsd
+				desc				information about the vertical base level; often describes the datum used
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="vertBaseType">
+				<xsd:attribute name="desc" type="xsd:string" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="vertType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  vertType  ***************************************************
+				These elements have the following types or schema associated with them.
+				geodeticDatumGlobalOrVert		is a simpl; see geodeticDatumGlobalOrVert.xsd; Unknown and Other part of formal vocab so no use default.xsd 
+				vertBase						is a simple type; see vertBase.xsd 
+				vertMin							is complex; a decimal with a controlled vocab attribute in verticalUnits.xsd
+				vertMax							is complex; a decimal with a controlled vocab attribute in verticalUnits.xsd
+				vertAcc							is complex; non-empty string; see commonfields.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="geodeticDatumGlobalOrVert" type="union.geodeticDatumGlobalOrVertType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="vertBase" type="vertBaseInfoType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="vertMin" type="vertMinMaxType" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="vertMax" type="vertMinMaxType" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="vertAcc" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="vertMinMaxType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  vertMinMaxType  *************************************************
+				These elements have the following types or schema associated with them.
+				units				is a an attribute with a controlled vocab; see verticalUnits.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="units" type="verticalUnitsType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************
+
+				latitudeType									is a patterned decimal
+				longitudeType								is a patterned decimal
+				longLatType									is a patterned string
+
+				union.geodeticDatumGlobalOrHorzType		see geodeticDatumGlobalOrHorzDLESE.xsd;Unknown and Other part of formal vocab so no use default.xsd
+				union.geodeticDatumGlobalOrVertType		see geodeticDatumGlobalOrVertDLESE.xsd;Unknown and Other part of formal vocab so no use default.xsd
+				union.projectionType						see projectionDLESE.xsd
+				union.coordinateSystemType				see coordinateDLESE.xsd
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="latitudeType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  latitudeType  ***********************************************
+				The pattern element is added to ensure that a null tag set is *not* interpreted as a value of zero.
+				A pattern of ([+-][0-9]{2}(\.[0-9]{2})) is too strict a requirement because it forces 9.2 to be 09.20
+				A pattern of  -?\d{1,2}\.\d{1,2} is also too strict in that is requires a decimal.
+				Decimal degrees is assumed.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:decimal">
+			<xsd:minInclusive value="-90.00"/>
+			<xsd:maxInclusive value="90.00"/>
+			<xsd:totalDigits value="4"/>
+			<xsd:fractionDigits value="2"/>
+			<xsd:pattern value="-?\d{0,2}\.?\d{1,2}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="longitudeType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  longitudeType  ***********************************************
+				The pattern element is added to ensure that a null tag set is *not* interpreted as a value of zero.
+				A pattern of ([+-][0-9]{3}(\.[0-9]{2})) is too strict a requirement because it forces 9.2 to be 009.20
+				A pattern of -?1?\d{1,2}\.\d{1,2} is also too strict in that it requires a decimal to be present.
+				Decimal degrees is assumed.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:decimal">
+			<xsd:minInclusive value="-180.00"/>
+			<xsd:maxInclusive value="180.00"/>
+			<xsd:totalDigits value="5"/>
+			<xsd:fractionDigits value="2"/>
+			<xsd:pattern value="-?\d{0,3}\.?\d{1,2}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.geodeticDatumGlobalOrHorzType">
+		<xsd:annotation>
+			<xsd:documentation>
+				**************************  union.geodeticDatumGlobalOrHorzType  ******************************
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:union memberTypes="DLESEgeodeticDatumGlobalOrHorzType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.geodeticDatumGlobalOrVertType">
+		<xsd:annotation>
+			<xsd:documentation>
+				**************************  union.geodeticDatumGlobalOrVertType  ******************************
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:union memberTypes="DLESEgeodeticDatumGlobalOrVertType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.coordinateSystemType">
+		<xsd:annotation>
+			<xsd:documentation>
+				**************************  union.coordinateSystemType  ******************************
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:union memberTypes="DLESEcoordinateType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.projectionType">
+		<xsd:annotation>
+			<xsd:documentation>
+				**************************  union.projectionType  ******************************
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:union memberTypes="DLESEprojectionTypesType"/>
+	</xsd:simpleType>
+</xsd:schema>

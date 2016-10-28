@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  OVERVIEW  *************************</xsd:documentation>
+		<xsd:documentation>Framework: Collection VOCABULARY schema</xsd:documentation>
+		<xsd:documentation>Source: DLESE Program Center (DPC); http://www.dlese.org</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  History of Changes  *************************</xsd:documentation>
+		<xsd:documentation>2013-09-10: Added earthlabs and nasawave</xsd:documentation>
+		<xsd:documentation>2007-10-05: Added tips</xsd:documentation>
+		<xsd:documentation>2007-10-04: Added dcr</xsd:documentation>
+		<xsd:documentation>2007-08-23: Added bridgenoaa, bridgenoaaother</xsd:documentation>
+		<xsd:documentation>2007-03-28: Added dataclass</xsd:documentation>
+		<xsd:documentation>2007-03-28: Deleted sercundergrad</xsd:documentation>
+		<xsd:documentation>2006-12-18: Added k12geo, benchmarks, simpleother, ienother, sat, sercundergrad, testncs</xsd:documentation>
+		<xsd:documentation>2006-12-18: Removed utesc</xsd:documentation>
+		<xsd:documentation>2006-08-15: Added usgs, ien, mynasastds</xsd:documentation>
+		<xsd:documentation>2006-08-03: Added swi</xsd:documentation>
+		<xsd:documentation>2006-06-13: Added evc</xsd:documentation>
+		<xsd:documentation>2006-05-16: Added esa</xsd:documentation>
+		<xsd:documentation>2006-04-17: Added thredds</xsd:documentation>
+		<xsd:documentation>2006-02-22: Added matters and tbox</xsd:documentation>
+		<xsd:documentation>2006-02-09: Added nys</xsd:documentation>
+		<xsd:documentation>2006-02-01: Added dlisrother, pck</xsd:documentation>
+		<xsd:documentation>2005-11-15: Added utesc </xsd:documentation>
+		<xsd:documentation>2005-11-01: Added nyic for the New York Instructional Collection</xsd:documentation>
+		<xsd:documentation>2005-10-28: Deleted: adept, esa, essec, serc, newltr, service, person, glossary, faq, testobjects, testnsdldc, testoaidc</xsd:documentation>
+		<xsd:documentation>2005-10-28: Added mynasadata (MY NASA DATA Collection)</xsd:documentation>
+		<xsd:documentation>2005-10-28: Added cosee; coseeother, coseenews (VIMS Cosee Resource Collection, COSEE News Collection, COSEE Other Resources Collection)</xsd:documentation>
+		<xsd:documentation>2005-10-28: Added bridgenews (VIMS Bridge News and Opportunities collection</xsd:documentation>
+		<xsd:documentation>2005-10-28: Added simple (SIMPLE Science from the Center for Image Processing in Education (CIPE))</xsd:documentation>
+		<xsd:documentation>2005-09-02: Added dlisr (Digital Library for Indigenous Science Resources from Tapestry Institute)</xsd:documentation>
+		<xsd:documentation>2005-08-08: Added bridge; bridgeother (Bridge Resource Collection) and (Bridge Other ResourcesCollection)</xsd:documentation>
+		<xsd:documentation>2005-06-08: Added eee (Electronic Encyclopedia of Earthquakes)</xsd:documentation>
+		<xsd:documentation>2004-11-30: Removed newstest becuase have testnews now</xsd:documentation>
+		<xsd:documentation>2004-11-30: Added newsltr as another news and opportunities collection</xsd:documentation>
+		<xsd:documentation>2004-11-29: (per John W. request for Naomi at NSDL) Added testoaidc and testnsdldc</xsd:documentation>
+		<xsd:documentation>2004-10-19: Removed test</xsd:documentation>
+		<xsd:documentation>2004-10-19: Added testnews, testcollect, testobjects, testadn</xsd:documentation>
+		<xsd:documentation>2004-09-22: Removed sio, thredds because they are unused</xsd:documentation>
+		<xsd:documentation>2004-09-22: Added ccc, nocc, esa as new collection keys</xsd:documentation>
+		<xsd:documentation>2004-09-22: Added nullkey because for collections that are not accessioned we remove item records but the collection record remains and need to complete the required metadata field of key so use nullkey</xsd:documentation>
+		<xsd:documentation>2004-09-22: Removed newsopps and added nocc because the formal collection name is News and Opps Community Collection (nocc)</xsd:documentation>
+		<xsd:documentation>2004-09-22: Removed crstips because crstips became part of crs</xsd:documentation>
+		<xsd:documentation>2004-09-22: Removed sbquake, ags, indent, napother because the collections were not accessioned</xsd:documentation>
+		<xsd:documentation>2004-05-05: Added sbquake, emvc, ags (all adept subcollections)</xsd:documentation>
+		<xsd:documentation>2004-01-26: Removed dwelanno, eseanno because annotation records are no longer needed for DRC adn collections</xsd:documentation>
+		<xsd:documentation>2004-01-26: Added globe, visonlearn, nap, napother, adept</xsd:documentation>
+		<xsd:documentation>2003-11-10: Added crstips</xsd:documentation>
+		<xsd:documentation>2003-11-08: Added faq, glossary, person, service</xsd:documentation>
+		<xsd:documentation>2003-11-08: Removed dcccatout, nsdl, nsdlcollect, nsdlanno, annos, sercideas</xsd:documentation>
+		<xsd:documentation>2003-07-22: Added nsdl, nsdlcollect, nsdlanno; removed crsres, jesseres; drcres, broad</xsd:documentation>
+		<xsd:documentation>2003-05-01: Added evaltlkt, test and dcccatout</xsd:documentation>
+		<xsd:documentation>2003-04-29: Removed all dashes from keys. Only lettered characters with no spaces are allowed.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  keyType  *************************</xsd:documentation>
+		<xsd:documentation>Lists the values that will appear in the metadata record for collection keys. This represents an internal identification number by the DPC (often a directory name) which can be used to configure how the collection is represented in various DLESE systems</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="keyType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="adl"/>
+			<xsd:enumeration value="avc"/>
+			<xsd:enumeration value="benchmarks"/>
+			<xsd:enumeration value="bridge"/>
+			<xsd:enumeration value="bridgenews"/>
+			<xsd:enumeration value="bridgenoaa"/>
+			<xsd:enumeration value="bridgenoaaother"/>
+			<xsd:enumeration value="bridgeother"/>
+			<xsd:enumeration value="ccc"/>
+			<xsd:enumeration value="ceis"/>
+			<xsd:enumeration value="collect"/>
+			<xsd:enumeration value="comet"/>
+			<xsd:enumeration value="cosee"/>
+			<xsd:enumeration value="coseenews"/>
+			<xsd:enumeration value="coseeother"/>
+			<xsd:enumeration value="crs"/>
+			<xsd:enumeration value="curl"/>
+			<xsd:enumeration value="dataclass"/>
+			<xsd:enumeration value="dcc"/>
+			<xsd:enumeration value="dcr"/>
+			<xsd:enumeration value="dlese"/>
+			<xsd:enumeration value="dlisr"/>
+			<xsd:enumeration value="dlisrother"/>
+			<xsd:enumeration value="drc"/>
+			<xsd:enumeration value="dwel"/>
+			<xsd:enumeration value="earthlabs"/>
+			<xsd:enumeration value="earthobs"/>
+			<xsd:enumeration value="edmall"/>
+			<xsd:enumeration value="eee"/>
+			<xsd:enumeration value="emvc"/>
+			<xsd:enumeration value="esa"/>
+			<xsd:enumeration value="eserev"/>
+			<xsd:enumeration value="evaltlkt"/>
+			<xsd:enumeration value="evc"/>
+			<xsd:enumeration value="globe"/>
+			<xsd:enumeration value="ien"/>
+			<xsd:enumeration value="ienother"/>
+			<xsd:enumeration value="jesse"/>
+			<xsd:enumeration value="k12geo"/>
+			<xsd:enumeration value="matters"/>
+			<xsd:enumeration value="mynasadata"/>
+			<xsd:enumeration value="mynasastds"/>
+			<xsd:enumeration value="nap"/>
+			<xsd:enumeration value="nasawave"/>
+			<xsd:enumeration value="nocc"/>
+			<xsd:enumeration value="nullkey"/>
+			<xsd:enumeration value="nyic"/>
+			<xsd:enumeration value="nys"/>
+			<xsd:enumeration value="pck"/>
+			<xsd:enumeration value="sat"/>
+			<xsd:enumeration value="serceet"/>
+			<xsd:enumeration value="sercnagt"/>
+			<xsd:enumeration value="sercstrtpt"/>
+			<xsd:enumeration value="simple"/>
+			<xsd:enumeration value="simpleother"/>
+			<xsd:enumeration value="svs"/>
+			<xsd:enumeration value="swi"/>
+			<xsd:enumeration value="tbox"/>
+			<xsd:enumeration value="testadn"/>
+			<xsd:enumeration value="testanno"/>
+			<xsd:enumeration value="testcollect"/>
+			<xsd:enumeration value="testnews"/>
+			<xsd:enumeration value="testncs"/>
+			<xsd:enumeration value="thredds"/>
+			<xsd:enumeration value="tips"/>
+			<xsd:enumeration value="usgs"/>
+			<xsd:enumeration value="visearth"/>
+			<xsd:enumeration value="visionlearn"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*****  keyFulllType  *************************</xsd:documentation>
+		<xsd:documentation>Spells out the collection key acronyms</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="keyFullType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="(adl) Alexandria Digital Library"/>
+			<xsd:enumeration value="(avc) Atmospheric Visualization Collection"/>
+			<xsd:enumeration value="(benchmarks) Educational Benchmark Collection"/>
+			<xsd:enumeration value="(bridge) Bridge Resource Collection"/>
+			<xsd:enumeration value="(bridgenews) Bridge News Collection"/>
+			<xsd:enumeration value="(bridgenoaa) Bridge NOAA Resources"/>
+			<xsd:enumeration value="(bridgenoaaother) Bridge NOAA Other Resources"/>
+			<xsd:enumeration value="(bridgeother) Bridge Other Resources Collection"/>
+			<xsd:enumeration value="(ccc) Climate Change Collection"/>
+			<xsd:enumeration value="(ceis) Cornell Earth Information System Project: Discover Our Earth"/>
+			<xsd:enumeration value="(collect) Digital Library for Earth System Education"/>
+			<xsd:enumeration value="(comet) Cooperative Program for Operational Meteorology, Education and Training"/>
+			<xsd:enumeration value="(cosee) COSEE Resource Collection"/>
+			<xsd:enumeration value="(coseenews) COSEE News Collection"/>
+			<xsd:enumeration value="(coseeother) COSEE Other Resources Collection"/>
+			<xsd:enumeration value="(crs) Community Reviewed Collection"/>
+			<xsd:enumeration value="(curl) Curricular Resource Library"/>
+			<xsd:enumeration value="(dataclass) Data for the Classroom"/>
+			<xsd:enumeration value="(dcc) Digital Library for Earth System Education Community Collection"/>
+			<xsd:enumeration value="(dcr) Digital Library for Earth System Education Collection Records"/>
+			<xsd:enumeration value="(dlese) All Digital Library for Earth System Education"/>
+			<xsd:enumeration value="(dlisr) Digital Library for Indigenous Science Resources"/>
+			<xsd:enumeration value="(dlisrother) Other Indigenous Science Resources"/>
+			<xsd:enumeration value="(drc) Digital Library for Earth System Education Reviewed Collection"/>
+			<xsd:enumeration value="(dwel) Digital Water Education Library"/>
+			<xsd:enumeration value="(earthobs) NASA Earth Observatory"/>
+			<xsd:enumeration value="(edmall) NASA ED Mall"/>
+			<xsd:enumeration value="(eee) Earthquake Education Environment (E3)"/>
+			<xsd:enumeration value="(emvc) EMVC Geology Materials"/>
+			<xsd:enumeration value="(esa) Environmental Science Activities for the 21st Century"/>
+			<xsd:enumeration value="(eserev) NASA Earth Science Education Reviewed Collection"/>
+			<xsd:enumeration value="(evaltlkt) Evaluation Toolkit"/>
+			<xsd:enumeration value="(evc) Environmental Visualization Collection"/>
+			<xsd:enumeration value="(globe) Global Observations to Benefit the Environment"/>
+			<xsd:enumeration value="(ien) Informal Educators Network"/>
+			<xsd:enumeration value="(ienother) Informal Ed. Network - Other Resources"/>
+			<xsd:enumeration value="(jesse) Journal for Earth System Science Education"/>
+			<xsd:enumeration value="(k12geo) Univ. of Texas Inst. of Geophysics K-12 Geoscience Collection"/>
+			<xsd:enumeration value="(kitty) Test Collection"/>
+			<xsd:enumeration value="(matters) DLESE Matters Newsletters"/>
+			<xsd:enumeration value="(mynasadata) NASA MY NASA DATA Collection"/>
+			<xsd:enumeration value="(mynasastds) NASA MY NASA Standards Collection"/>
+			<xsd:enumeration value="(nap) National Academy Press (in DLESE scope)"/>
+			<xsd:enumeration value="(nocc) News and Opportunities Community Collection"/>
+			<xsd:enumeration value="(nullkey) For deaccessioned collection records"/>
+			<xsd:enumeration value="(nyic) New York Instructional Collection"/>
+			<xsd:enumeration value="(nys) New York Earth Sci. Standards"/>
+			<xsd:enumeration value="(pck) Pedagogical Content Knowledge"/>
+			<xsd:enumeration value="(sat) SAT Standards Collection"/>
+			<xsd:enumeration value="(serceet) Science Education Resource Center-Earth Exploration Toolbook"/>
+			<xsd:enumeration value="(sercnagt) Science Education Resource Center-National Association of Geoscience Teachers"/>
+			<xsd:enumeration value="(sercstrtpt) Science Education Resource Center-Starting Point"/>
+			<xsd:enumeration value="(simple) SIMPLE Science"/>
+			<xsd:enumeration value="(simpleother) SIMPLE Science Other Resources"/>
+			<xsd:enumeration value="(svs) NASA Scientific Visualization Studio"/>
+			<xsd:enumeration value="(swi) Stone Wall Initiative"/>
+			<xsd:enumeration value="(tbox) Teaching Boxes"/>
+			<xsd:enumeration value="(testadn) Test ADN Collection"/>
+			<xsd:enumeration value="(testanno) Test Annotation Collection"/>
+			<xsd:enumeration value="(testcollect) Test Collection Collection"/>
+			<xsd:enumeration value="(testnews) Test News Collection"/>
+			<xsd:enumeration value="(testncs) Test NSDL_NCS Collection"/>
+			<xsd:enumeration value="(thredds) Thematic Realtime Environmental Distributed Data Services"/>
+			<xsd:enumeration value="(tips) Tips and Comments"/>
+			<xsd:enumeration value="(usgs) United States Geological Survey Education Collection"/>
+			<xsd:enumeration value="(visearth) NASA Visible Earth"/>
+			<xsd:enumeration value="(visionlearn) VisionLearning"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+<!--		<xsd:enumeration value="(adept) Alexandira Digital Earth Prototype"/>
+			<xsd:enumeration value="(essec) NASA Earth and Space Science Education Collections"/>
+			<xsd:enumeration value="(faq) Frequently Asked Questions"/>
+			<xsd:enumeration value="(glossary) Glossary"/>
+			<xsd:enumeration value="(person) Persons described in objects item-level records"/>
+			<xsd:enumeration value="(serc) Science Education Resource Center"/>
+			<xsd:enumeration value="(service) Services described in objects item-level records"/>
+			<xsd:enumeration value="(sio) Scripps Institution of Oceanography"/>
+			<xsd:enumeration value="(testnsdldc) Test NSDL DC Collection"/>
+			<xsd:enumeration value="(testoaidc) Test OAI DC Collection"/>
+			<xsd:enumeration value="(testobjects) Test Objects Collection"/>-->
+	<xsd:annotation>
+	<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2007 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. </xsd:documentation>
+		<xsd:documentation>
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free oftware Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA </xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

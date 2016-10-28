@@ -1,0 +1,63 @@
+.toggling-header img {
+	margin:0px 5px 0px 0px;
+}
+
+.toggling-header a {
+	font-weight:bold;
+}
+
+div.search-control {
+	background-color:#CCCEE6;
+	padding:2px 0px 2px 4px;
+}
+
+.directory-search-header {
+	margin-top:12px;
+}
+
+div.search-control-label {
+	font-size:85%;
+}
+
+
+/* used for registered users and directory searches on edit-user.jsp */
+.sub-header {
+	background-color:#CCCEE6;
+	width:100%;
+	padding:3px 0px 3px 3px;
+	/* margin:5px 0px 5px 0px; 
+	height:25px;*/
+	font-size: 120%;
+	font-weight:bold;
+	color: #333366; 
+	margin:0px 0px 10px 0px;
+}
+
+/* user-listing-table - used for registered users, directory search results */
+table.user-listing-table {
+	width:100%;
+	border-collapse:collapse;
+	background-color:#666666;
+}
+
+table.user-listing-table td,
+table.user-listing-table th {
+	border:1px solid #666666;
+	padding:3px;
+	background-color:white;
+}
+
+table.user-listing-table tr.dup td {
+	background-color:#FFFFCC;
+}
+
+table.user-listing-table th {
+	background-color:#E3E4F1;
+}
+
+table.user-listing-table th div {
+	font-size:85%;
+}
+
+/* ----------- */
+

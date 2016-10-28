@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groupsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/adn-i/resourceType.xsd">
+	<concept name="resourceType" system="dds" interface="default" language="en-us" label="Type of resource" abbrev="Resource type">
+			<group label="For the classroom" inline="indent" abbrev="Classroom">
+			<deftn>For the classroom means resources for use in a learning environment</deftn>
+			<item vocab="DLESE:Learning materials:Classroom activity">Classroom activity</item>
+			<item vocab="DLESE:Learning materials:Computer activity">Computer activity</item>
+			<item vocab="DLESE:Learning materials:Field activity">Field activity</item>
+			<item vocab="DLESE:Learning materials:Lab activity">Lab activity</item>
+			<item vocab="DLESE:Learning materials:Assessment">Assessment / Evaluation</item>
+			<item vocab="DLESE:Learning materials:Case study" wrap="true"/>
+			<item vocab="DLESE:Learning materials:Course"/>
+			<item vocab="DLESE:Learning materials:Curriculum" />
+			<item vocab="DLESE:Learning materials:Virtual field trip">Field trip - virtual</item>
+			<item vocab="DLESE:Learning materials:Field trip guide">Guide for field trip</item>
+			<item vocab="DLESE:Learning materials:Instructor guide">Guide for instructor</item>
+			<item vocab="DLESE:Learning materials:Lesson plan" wrap="true"/>
+			<item vocab="DLESE:Learning materials:Module or unit" >Module / Unit</item>
+			<item vocab="DLESE:Learning materials:Presentation or demonstration">Presentation / Demo</item>
+			<item vocab="DLESE:Learning materials:Problem set"/>
+			<item vocab="DLESE:Learning materials:Project"/>
+			<item vocab="DLESE:Learning materials:Syllabus"/>
+			<item vocab="DLESE:Learning materials:Tutorial"/>
+			<divider/>
+		</group>
+		<group label="Visual" inline="drop">
+			<deftn>Visual is </deftn>
+			<item vocab="DLESE:Visual:Artistic illustration">Illustration - artistic</item>
+			<item vocab="DLESE:Visual:Scientific illustration">Illustration - scientific</item>
+			<item vocab="DLESE:Visual:Remotely sensed imagery">Imagery - remotely sensed</item>
+			<item vocab="DLESE:Visual:Map" wrap="true"/>
+			<item vocab="DLESE:Visual:Photograph"/>
+			<item vocab="DLESE:Visual:Video"/>
+			<item vocab="DLESE:Visual:Scientific visualization">Visualization - scientific</item>
+			<item vocab="DLESE:Visual:Visual webcast">Webcast</item>
+		</group>
+		<group label="Text" inline="drop">
+			<deftn>Text is ...</deftn>
+			<item vocab="DLESE:Text:Glossary"/>
+			<item vocab="DLESE:Text:Index or bibliography">Index / Bibliography</item>
+			<item vocab="DLESE:Text:Reference">Ref. material</item>
+			<divider/>
+			<item vocab="DLESE:Text:Book"/>
+			<item vocab="DLESE:Text:Journal article"/>
+			<item vocab="DLESE:Text:Periodical" wrap="true"/>
+			<divider/>
+			<item vocab="DLESE:Text:Abstract or summary">Abstract / Summary</item>
+			<item vocab="DLESE:Text:Proceedings"/>
+			<item vocab="DLESE:Text:Proposal"/>
+			<item vocab="DLESE:Text:Report"/>
+			<item vocab="DLESE:Text:Thesis"/>
+			<divider/>
+			<item vocab="DLESE:Text:Policy or procedure">Policy / Procedure</item>
+		</group>
+		<group label="Audio" inline="drop">
+			<deftn>Audio is....</deftn>
+			<item vocab="DLESE:Audio:Audio book">Book</item>
+			<item vocab="DLESE:Audio:Lecture"/>
+			<item vocab="DLESE:Audio:Music"/>
+			<item vocab="DLESE:Audio:Oral history" wrap="true"/>
+			<item vocab="DLESE:Audio:Radio broadcast"/>
+			<item vocab="DLESE:Audio:Sound"/>
+			<item vocab="DLESE:Audio:Audio webcast">Webcast</item>
+		</group>
+		<group label="Portal" inline="drop">
+			<deftn>Portal is</deftn>
+			<item vocab="DLESE:Portal:Commercial portal">Commerical</item>
+			<item vocab="DLESE:Portal:Educational portal">Educational</item>
+			<item vocab="DLESE:Portal:Government portal">Government</item>
+			<item vocab="DLESE:Portal:Nonprofit portal">Non-profit</item>
+		</group>
+		<group label="Services" inline="drop">
+			<deftn>Services are</deftn>
+			<item vocab="DLESE:Service:Ask an expert"/>
+			<item vocab="DLESE:Service:Clearinghouse"/>
+			<item vocab="DLESE:Service:Forum or discussion" wrap="true">Discussion / Forum</item>
+			<item vocab="DLESE:Service:Listserv">Email lists</item>
+			<item vocab="DLESE:Service:Message board"/>
+			<item vocab="DLESE:Service:Search engine"/>
+		</group>
+		<group label="Dataset" inline="drop">
+			<deftn>Dataset is ....</deftn>
+			<item vocab="DLESE:Data:In situ dataset">In-situ</item>
+			<item vocab="DLESE:Data:Modeled dataset">Modeled</item>
+			<item vocab="DLESE:Data:Remotely sensed dataset">Remotely sensed</item>
+		</group>
+		<group label="Tools" inline="drop">
+			<deftn>Tools are</deftn>
+			<item vocab="DLESE:Tool:Calculation or conversion tool">Calculation / Conversion</item>
+			<item vocab="DLESE:Tool:Code"/>
+			<item vocab="DLESE:Tool:Software"/>
+		</group>
+		<item vocab="DLESE:Offline:Physical object" noDisplay="true"/>
+		<item vocab="DLESE:To be supplied" noDisplay="true"/>	</concept>
+</groupsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

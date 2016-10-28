@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<XMLIndexerFieldsConfigIndex>
+	<configurationFiles>
+		<!-- list of relative or absolute URLs to individual config XML files for each format -->
+		<configurationFile>xmlIndexerFieldsConfigs/library_dc_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/library_dc_schema_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/adn_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/ncs_item_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/ncs_collect_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/concepts_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/oai_dc_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/nsdl_dc_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/mast_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/mast_demo_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/smile_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/cow_item_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/msp2_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/teach_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/res_qual_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/osm_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/osm_next_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/ncam_afa_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/comm_core_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/eng_path_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/math_path_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/dlese_anno_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/nsdl_anno_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/comm_anno_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/proj_prof_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/ep_collections_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/assessments_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/comm_paradata_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/comm_paradata_new_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/vocabs_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/ccs_org_config_search_fields.xml</configurationFile>
+		<configurationFile>xmlIndexerFieldsConfigs/ccs_saved_resource_search_fields.xml</configurationFile>	
+		<configurationFile>xmlIndexerFieldsConfigs/lar_search_fields.xml</configurationFile>	
+		<configurationFile>xmlIndexerFieldsConfigs/playlist_search_fields.xml</configurationFile>	
+	</configurationFiles>		
+</XMLIndexerFieldsConfigIndex>

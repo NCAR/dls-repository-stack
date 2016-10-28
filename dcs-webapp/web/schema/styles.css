@@ -1,0 +1,111 @@
+/* stylesheet for metis demo database */
+
+body {
+	font-family:arial,helvetica;
+}
+
+pre {
+	font-size:100%;
+}
+
+/*
+	global link styles
+*/
+
+
+A:link { 
+	Color : #333366
+} 
+
+A:active {
+	Color : #333366;
+	
+} 
+
+A:visited { 
+	Color : #333366
+} 
+
+.nav-link {
+
+}
+
+.nav-link a {
+	font-size:80%;
+	/* color:#009900; */
+	color:blue;
+}
+
+.nav-link a:hover, label:hover {
+	background-color:#e5e8e8;
+}
+
+h1, h2, h3 {
+	font-family:arial,helvetica;
+	color:#333366;
+}
+
+h1 {
+	font-size:150%;
+	margin-bottom: 5px;
+}
+
+h3 {
+	margin-bottom: 10px;
+}
+
+.info-box {
+	margin-bottom:10px;
+}
+
+.collapsible-heading {
+	font-weight:bold;
+	font-size:14px;
+	color:#333366;
+	text-decoration:none;
+}
+
+.plain, .selectable, .schema-info, .schema-prop, .attr-name, .attr-value {
+	font-size:80%;
+}
+
+.schema-prop {
+	margin:0px 0px 0px 30px;
+}
+
+.schema-info, .selectable {
+	margin:3px 0px 0px 0px;
+}
+
+.attr-name {
+	text-align:right;
+	margin:1px 0px 0px 10px;
+}
+
+.attr-value {
+	text-align:left;
+	margin:1px 0px 0px 8px;
+}
+
+.control {
+	margin:0px 0px 3px 30px;
+	font-size:80%;
+}
+
+.breadcrumbs {
+	background-color:#cccccc;
+	padding:3px;
+	font-weight:bold;
+	font-size:120%;
+	color:black;
+	margin:15px 0px 15px 0px;
+}
+
+.breadcrumbs a {
+	color:#009900;
+	text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+	color:white;
+}

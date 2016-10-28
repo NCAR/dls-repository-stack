@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: kind-urlEntry-adn-groups-community-en-us.xml,v 1.1 2009/01/29 22:30:06 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+	<head>
+		<title>Kind - url</title>
+		<groups:concept language="en-us" metaFormat="adn" metaVersion="0.7.00" text="Relationship between resources" audience="community"  textAbbrev="Relation" path="/itemRecord/relations/relation/urlEntry/@kind"/>
+	</head>
+	<body>
+		<outline groups:vocab="DC:Requires" type="vocab" text="requires "/>
+		<outline groups:vocab="DC:Conforms to" type="vocab" text="conforms to "/>
+		<outline groups:vocab="DC:Has format" type="vocab" text="preceded and is essentially equal to "/>
+		<outline groups:vocab="DC:Has part" type="vocab" text="contains "/>
+		<outline groups:vocab="DC:Has version" type="vocab" text="is one version. Another version or adaptation is: "/>
+		<outline groups:vocab="DC:Is format of" type="vocab" text="is equal to but has a different form than "/>
+		<outline groups:vocab="DC:Is part of" type="vocab" text="is part of "/>
+		<outline groups:vocab="DC:Is referenced by" type="vocab" text="is referenced by "/>
+		<outline groups:vocab="DC:Is replaced by" type="vocab" text="is replaced by "/>
+		<outline groups:vocab="DC:Is required by" type="vocab" text="is required by "/>
+		<outline groups:vocab="DC:Is version of" type="vocab" text="is a version of "/>
+		<outline groups:vocab="DC:References" type="vocab" text="references "/>
+		<outline groups:vocab="DC:Replaces" type="vocab" text="replaces "/>
+		<outline groups:vocab="DLESE:Has thumbnail" type="vocab" text="has a thumbnail image at "/>
+		<outline groups:vocab="DLESE:Is associated with" type="vocab" text="is contextually associated with or described by "/>
+		<outline groups:vocab="DLESE:Is based on" type="vocab" text="is based on "/>
+		<outline groups:vocab="DLESE:Is basis for" type="vocab" text="is the basis for "/>
+	</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

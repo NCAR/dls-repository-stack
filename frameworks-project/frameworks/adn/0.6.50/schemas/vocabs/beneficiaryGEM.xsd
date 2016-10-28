@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.6.50">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Overview  **************************************************************
+			Definition: 			Controlled vocabulary schema for DLESE metadata frameworks
+			Framework use: 		ADN-I (item)
+			Source org:			Gateway to Educational Materials (GEM); http://www.geminfo.org/
+			Vocab values:		http://geminfo.org/Workbench/Metadata/Vocab_Audience.html
+			Vocab last update:	1999-09-23
+			DPC last update:		2003-01-16
+			Notes:				GEM vocab adapted to meet DLESE needs (terms, capitalization, punctuation)
+			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************** History of changes  *********************
+		2003-01-16: Used GEM vocab terms adapted to meet capitalization and punctuation needs of DLESE
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="GEMbeneficiaryType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  GEMbeneficiaryType  ***************************************
+				Lists the values that appear in the metadata record
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="GEM:Administrators"/>
+			<xsd:enumeration value="GEM:Adult education students"/>
+			<xsd:enumeration value="GEM:Advanced placement students"/>
+			<xsd:enumeration value="GEM:African-American students"/>
+			<xsd:enumeration value="GEM:Asian-American students"/>
+			<xsd:enumeration value="GEM:At-risk students"/>
+			<xsd:enumeration value="GEM:Bilingual students"/>
+			<xsd:enumeration value="GEM:University instructors"/>
+			<xsd:enumeration value="GEM:Culturally diverse classroom"/>
+			<xsd:enumeration value="GEM:Curriculum supervisors"/>
+			<xsd:enumeration value="GEM:Developmentally disabled students"/>
+			<xsd:enumeration value="GEM:Disabled students"/>
+			<xsd:enumeration value="GEM:Economically disadvantaged students"/>
+			<xsd:enumeration value="GEM:Elementary school teachers"/>
+			<xsd:enumeration value="GEM:Emotionally disabled students"/>
+			<xsd:enumeration value="GEM:English as a second language (ESL) students"/>
+			<xsd:enumeration value="GEM:Female students"/>
+			<xsd:enumeration value="GEM:General public"/>
+			<xsd:enumeration value="GEM:Gifted or honors students"/>
+			<xsd:enumeration value="GEM:Hearing impaired students"/>
+			<xsd:enumeration value="GEM:Hispanic-American students"/>
+			<xsd:enumeration value="GEM:Learning disabled students"/>
+			<xsd:enumeration value="GEM:Librarians"/>
+			<xsd:enumeration value="GEM:Limited English proficiency (LEP) students"/>
+			<xsd:enumeration value="GEM:Male students"/>
+			<xsd:enumeration value="GEM:Middle school teachers"/>
+			<xsd:enumeration value="GEM:Minority students"/>
+			<xsd:enumeration value="GEM:Native American students"/>
+			<xsd:enumeration value="GEM:Other educational professionals"/>
+			<xsd:enumeration value="GEM:Pacific Islanders"/>
+			<xsd:enumeration value="GEM:Parents"/>
+			<xsd:enumeration value="GEM:Physically disabled students"/>
+			<xsd:enumeration value="GEM:Policymakers"/>
+			<xsd:enumeration value="GEM:Remedial students"/>
+			<xsd:enumeration value="GEM:Rural students"/>
+			<xsd:enumeration value="GEM:Secondary school teachers"/>
+			<xsd:enumeration value="GEM:Students"/>
+			<xsd:enumeration value="GEM:Students with multiple disabilities"/>
+			<xsd:enumeration value="GEM:Student teachers"/>
+			<xsd:enumeration value="GEM:Suburban students"/>
+			<xsd:enumeration value="GEM:Supervisors"/>
+			<xsd:enumeration value="GEM:Teachers"/>
+			<xsd:enumeration value="GEM:Teacher educators"/>
+			<xsd:enumeration value="GEM:Teaching professionals"/>
+			<xsd:enumeration value="GEM:Urban students"/>
+			<xsd:enumeration value="GEM:Vision impaired students"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="GEMbeneficiaryLeafType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  GEMbeneficiaryLeafType  ***************************************
+				Lists leaf values.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Administrators"/>
+			<xsd:enumeration value="Adult education students"/>
+			<xsd:enumeration value="Advanced placement students"/>
+			<xsd:enumeration value="African-American students"/>
+			<xsd:enumeration value="Asian-American students"/>
+			<xsd:enumeration value="At-risk students"/>
+			<xsd:enumeration value="Bilingual students"/>
+			<xsd:enumeration value="University instructors"/>
+			<xsd:enumeration value="Culturally diverse classroom"/>
+			<xsd:enumeration value="Curriculum supervisors"/>
+			<xsd:enumeration value="Developmentally disabled students"/>
+			<xsd:enumeration value="Disabled students"/>
+			<xsd:enumeration value="Economically disadvantaged students"/>
+			<xsd:enumeration value="Elementary school teachers"/>
+			<xsd:enumeration value="Emotionally disabled students"/>
+			<xsd:enumeration value="English as a second language (ESL) students"/>
+			<xsd:enumeration value="Female students"/>
+			<xsd:enumeration value="General public"/>
+			<xsd:enumeration value="Gifted or honors students"/>
+			<xsd:enumeration value="Hearing impaired students"/>
+			<xsd:enumeration value="Hispanic-American students"/>
+			<xsd:enumeration value="Learning disabled students"/>
+			<xsd:enumeration value="Librarians"/>
+			<xsd:enumeration value="Limited English proficiency (LEP) students"/>
+			<xsd:enumeration value="Male students"/>
+			<xsd:enumeration value="Middle school teachers"/>
+			<xsd:enumeration value="Minority students"/>
+			<xsd:enumeration value="Native American students"/>
+			<xsd:enumeration value="Other educational professionals"/>
+			<xsd:enumeration value="Pacific Islanders"/>
+			<xsd:enumeration value="Parents"/>
+			<xsd:enumeration value="Physically disabled students"/>
+			<xsd:enumeration value="Policymakers"/>
+			<xsd:enumeration value="Remedial students"/>
+			<xsd:enumeration value="Rural students"/>
+			<xsd:enumeration value="Secondary school teachers"/>
+			<xsd:enumeration value="Students"/>
+			<xsd:enumeration value="Students with multiple disabilities"/>
+			<xsd:enumeration value="Student teachers"/>
+			<xsd:enumeration value="Suburban students"/>
+			<xsd:enumeration value="Supervisors"/>
+			<xsd:enumeration value="Teachers"/>
+			<xsd:enumeration value="Teacher educators"/>
+			<xsd:enumeration value="Teaching professionals"/>
+			<xsd:enumeration value="Urban students"/>
+			<xsd:enumeration value="Vision impaired students"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

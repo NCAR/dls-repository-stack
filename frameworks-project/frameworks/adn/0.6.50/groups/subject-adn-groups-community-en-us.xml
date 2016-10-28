@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: subject-adn-groups-community-en-us.xml,v 1.1 2009/01/30 21:34:41 ginger Exp $ -->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+	<head>
+		<title>Subject</title>
+		<groups:concept id="su" language="en-us" metaFormat="adn" metaVersion="0.6.50" text="Subject" audience="community" path="/itemRecord/general/subjects/subject"/>
+	</head>
+	<body>
+		<outline groups:vocab="DLESE:Agricultural science" type="vocab" text="Agricultural science"/>
+		<outline groups:vocab="DLESE:Atmospheric science" type="vocab" text="Atmospheric science"/>
+		<outline groups:vocab="DLESE:Biology" type="vocab" text="Biology"/>
+		<outline groups:vocab="DLESE:Chemistry" type="vocab" text="Chemistry"/>
+		<outline groups:vocab="DLESE:Climatology" type="vocab" text="Climatology"/>
+		<outline groups:vocab="DLESE:Cryology" type="vocab" text="Cryology"/>
+		<outline groups:vocab="DLESE:Ecology" type="vocab" text="Ecology"/>
+		<outline groups:vocab="DLESE:Educational theory and practice" type="vocab" text="Educational theory and practice"/>
+		<outline groups:vocab="DLESE:Environmental science" type="vocab" text="Environmental science"/>
+		<outline groups:vocab="DLESE:Forestry" type="vocab" text="Forestry"/>
+
+		<outline text="Geographical Sciences" type="group" groups:deftn="The study of human and physical geography">
+			<outline groups:vocab="DLESE:Human geography" type="vocab" text="Human geography"/>
+			<outline groups:vocab="DLESE:Physical geography" type="vocab" text="Physical geography"/>
+		</outline>
+		
+		<outline text="Geological Sciences" type="group" groups:deftn="The study of geochemistry, geology, geophysics, mineralogy, paleontology and structural geology">
+			<outline groups:vocab="DLESE:Geochemistry" type="vocab" text="Geochemistry"/>
+			<outline groups:vocab="DLESE:Geologic time" type="vocab" text="Geologic time"/>
+			<outline groups:vocab="DLESE:Geology" type="vocab" text="Geology"/>
+			<outline groups:vocab="DLESE:Geophysics" type="vocab" text="Geophysics"/>
+			<outline groups:vocab="DLESE:Mineralogy or petrology" type="vocab" text="Mineralogy or petrology"/> 
+			<outline groups:vocab="DLESE:Paleontology" type="vocab" text="Paleontology"/>
+			<outline groups:vocab="DLESE:Structural geology" type="vocab" text="Structural geology"/>
+		</outline>
+
+		<outline groups:vocab="DLESE:History and philosophy of science" type="vocab" text="History and philosophy of science"/>
+		<outline groups:vocab="DLESE:Hydrology" type="vocab" text="Hydrology"/>
+		<outline groups:vocab="DLESE:Mathematics" type="vocab" text="Mathematics"/>
+		<outline groups:vocab="DLESE:Natural hazards" type="vocab" text="Natural hazards"/>
+
+		<outline text="Ocean Sciences" type="group" groups:deftn="The study of biological, chemical and physical oceanography">
+			<outline groups:vocab="DLESE:Biological oceanography" type="vocab" text="Biological oceanography"/>
+			<outline groups:vocab="DLESE:Chemical oceanography" type="vocab" text="Chemical oceanography"/>
+			<outline groups:vocab="DLESE:Physical oceanography" type="vocab" text="Physical oceanography"/>
+		</outline>
+
+		<outline groups:vocab="DLESE:Physics" type="vocab" text="Physics"/>
+		<outline groups:vocab="DLESE:Policy issues" type="vocab" text="Policy issues"/>
+		<outline groups:vocab="DLESE:Soil science" type="vocab" text="Soil science"/>
+		<outline groups:vocab="DLESE:Space science" type="vocab" text="Space science"/>
+		<outline groups:vocab="DLESE:Technology" type="vocab" text="Technology" />
+		<outline groups:vocab="DLESE:Other" type="vocab" text="Other" groups:display="false"/>
+		<outline groups:vocab="DLESE:To be supplied" type="vocab" text="To be supplied" groups:display="false"/>
+	</body>
+</opml>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

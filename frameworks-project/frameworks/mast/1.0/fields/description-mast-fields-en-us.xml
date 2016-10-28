@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- $Id: description-mast-fields-en-us.xml,v 1.5 2009/07/30 15:27:17 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/non-vocab-fields.xsd">
+  <field name="Description" metaFormat="mast" metaVersion="1.0" language="en-us" path="/record/general/description">
+		<definition attribution="Dublin Core Metadata Element Set, Version 1.1: Reference Description at http://dublincore.org/documents/dces/">An account of the resource.</definition> 
+		
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2008-10-20">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</practice>	<!--source: DC-CDP-->
+				<practice status="current" originDate="2008-10-20">Use complete sentences in a voice that does not imply the user is at the resource's website but rather is reading a library description. For example, edit "The figure below shows the relationship between x, y and z." to read "A figure is provided that depicts the relationship between x, y and z." </practice><!--source:DLESE-->
+				<practice status="current" originDate="2008-10-20">Enter descriptive text, remarks, and comments about the digital object. This information can be taken from the object or provided by the contributing institution.</practice> <!--source:CDP-->
+				<practice status="current" originDate="2008-10-20">Enter here specialized information not included in other elements, for example, description, technique, and distinguishing features if observable in the digital object and inscriptions. E.g. Image captured circa 1917 using glass plate negatives, of a family travelling in a Ford Model T near Eldorado Canyon, Colorado.</practice><!--source:CDP-->
+			</dos>
+
+			<donts>		
+				<practice status="current" originDate="2008-10-20">Do not make the description a list of keywords. Craft lists of keywords and concepts into sentences by summarizing related ideas to avoid repetitive text.</practice><!--source:DLESE-->
+				<practice status="current" originDate="2008-10-20">Generally, do not include information that is handled elsewhere in the metadata (e.g. resource creators or resource types). Some redundancy of terms is acceptable, but a description that relies solely upon this does not serve as an enhancement to search.</practice><!--source:DLESE-->
+				<practice status="current" originDate="2009-10-20">Do not use the ampersand symbol, rather, spell out the word 'and.' </practice>
+<!--source:DLESE-->
+			</donts>
+		</bestPractices>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+
+<!DOCTYPE lar [
+<!ENTITY common_nsdl_dc_normalization SYSTEM "common_nsdl_dc_normalization.xml">
+]>
+
+<Ingestor>
+	<target-format>nsdl_dc</target-format>
+	<populate-resource-handles>true</populate-resource-handles>
+	<pre-processors>
+		 <RemoveLineBreaksFromTextTransform/>
+		 <RecordSchemaValidator/>   		 
+   		 <URINormalizer>
+   		 	 <workspace-uri>true</workspace-uri>
+   		 	 <uri-required>true</uri-required>
+      		 <xpaths>
+				<xpath>*[name()='identifier'][contains(.,'http:') or contains(.,'https:') or contains(.,'ftp:') or contains(.,'www')]</xpath>
+   		 	</xpaths>
+   		 </URINormalizer>
+   		   		
+   		<!--  End special cases for collections  -->
+   	</pre-processors>
+   	
+   	<native-format-processors>
+   		<!-- Post native format processors are processors that are used to convert
+   		the native format into something that is seen publicly but not stuff that we
+   		want to be passed into the target format processing. So the processors above
+   		in native-format-processors check everything and prepare the document for target
+   		processing. This only affects the document in native_xml. This block only appears
+   		here because only native lar do we view publicly
+   		-->
+   		<SubscriptTransform>
+	   		<regular-expressions>
+	   			<regular-expression><![CDATA[&lt;sub&gt;(.+?)&lt;/sub&gt;]]></regular-expression>
+	   		</regular-expressions>
+   		</SubscriptTransform>
+        <SuperscriptTransform>
+	   		<regular-expressions>
+	   			<regular-expression><![CDATA[&lt;sup&gt;(.+?)&lt;/sup&gt;]]></regular-expression>
+	   		</regular-expressions>
+   		</SuperscriptTransform>
+   		
+   		<!-- The block was taken out of the indexer for normalization via request from john -->
+   		
+   		<!-- The new recordID is the our metadata handle and it must be on top to validate -->
+   		<AddElement>
+  			<location>top</location>
+  			<replace>true</replace>
+   			<element-xml><![CDATA[<recordID xmlns="http://ns.nsdl.org/ncs/lar">$metadata_handle</recordID>]]></element-xml>
+   		</AddElement>
+   		<!-- Order matters here, otherwise it won't pass schema validation -->
+   		<!-- <AddElement>
+  			<location>bottom</location>
+  			<replace>true</replace>
+   			<element-xml><![CDATA[<metadataTerms holder="University Corporation for Atmospheric Research (UCAR)" URL="http://nsdl.org/help/terms-of-use" xmlns="http://ns.nsdl.org/ncs/lar">The National Science Digital Library (NSDL), located at the University Corporation for Atmospheric Research (UCAR), provides these metadata terms: These data and metadata may not be reproduced, duplicated, copied, sold, or otherwise exploited for any commercial purpose that is not expressly permitted by NSDL.</metadataTerms>]]></element-xml>
+   		</AddElement>-->
+   		<AddElement>
+  			<location>bottom</location>
+  			<replace>true</replace>
+   			<element-xml><![CDATA[<partnerID xmlns="http://ns.nsdl.org/ncs/lar">$partner_id</partnerID>]]></element-xml>
+   		</AddElement>
+   		<AddElement>
+  			<location>bottom</location>
+  			<replace>true</replace>
+   			<element-xml><![CDATA[<resourceHandle xmlns="http://ns.nsdl.org/ncs/lar">hdl:$resource_handle</resourceHandle>]]></element-xml>
+   		</AddElement>
+   		<AddElement>
+  			<location>bottom</location>
+  			<replace>true</replace>
+   			<element-xml><![CDATA[<metadataHandle xmlns="http://ns.nsdl.org/ncs/lar">hdl:$metadata_handle</metadataHandle>]]></element-xml>
+   		</AddElement>
+   		
+ 		<AddComment>
+ 			 <comment>UCARConnect has normalized this metadata record for use across its systems and services.</comment>
+ 		</AddComment>
+ 		<!-- End taken from the indexer -->
+ 		
+ 		<!-- Finally pretty print the documents and validate the schema  -->
+   		<PrettyPrint/>
+ 		<RecordSchemaValidator/> 
+   	</native-format-processors>
+   	
+   	<target-format-processors>
+		<!-- First we convert lar to nsdl_dc, then we call all the common normalization -->
+		<XSLTransform>
+   		 	<uri>http://ns.nsdl.org/xsl_harvest_ingest_2_0/lar-v1.00-to-nsdl_dc-v1.02.020.xsl</uri>
+   		</XSLTransform>
+      	
+ 		&common_nsdl_dc_normalization;
+   	</target-format-processors>
+</Ingestor>

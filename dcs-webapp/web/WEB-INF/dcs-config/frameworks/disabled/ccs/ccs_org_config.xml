@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.dlese.org/Metadata/dcs/framework-config/dcsFrameworkConfig.xsd">
+  <xmlFormat>ccs_org_config</xmlFormat>
+  <schemaInfo>
+    <rootElementName>orgConfig</rootElementName>
+    <schemaURI>http://www.dlsciences.org/frameworks/ccs_org_config/1.00/schemas/ccs_org_config.xsd</schemaURI>
+    <paths>
+      <path pathName="id" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="true">/orgConfig/recordID</path>
+      <path pathName="dateCreated" requiredByCopyRecord="true" requiredByMinimalRecord="true" valueType="date" readOnly="true">/orgConfig/date/@created</path>
+    </paths>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>2</baseRenderLevel>
+    <firstPage>orgConfig</firstPage>
+    <rebuildOnStart>true</rebuildOnStart>
+  </editorInfo>
+  <name>CCS Organization Configuration</name>
+</frameworkConfigRecord>

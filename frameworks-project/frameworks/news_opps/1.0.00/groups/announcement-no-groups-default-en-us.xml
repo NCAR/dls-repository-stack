@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: announcement-no-groups-default-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Announcement type</title>
+<groups:concept language="en-us" metaFormat="news_opps" metaVersion="1.0.00" text="Announcement type" audience="default" path="/news-oppsRecord/announcements/announcement" deftn="the type of news, event or opportunity"/>
+</head>
+<body>
+<outline groups:vocab="Award, recognition or scholarship" type="vocab" text="Award, recognition or scholarship" groups:deftn="items in which money or honor (acknowledgement) is bestowed for work done or for pursuing professional development or educational endeavors (includes honorarium and stipends)"/>
+<outline groups:vocab="Call for participation" type="vocab" text="Call for participation" groups:deftn="items that include call for papers, call for input, testing, feedback, formative evaluations or collaborations"/>
+<outline groups:vocab="Careers" type="vocab" text="Careers" groups:deftn="information about working, studying or participating in the geoscience community"/>
+<outline groups:vocab="Conference" type="vocab" text="Conference" groups:deftn="meetings of broad appeal that may include general audiences or specific Earth science communities and tend to be sponsored events"/>
+<outline groups:vocab="Grant or proposal" type="vocab" text="Grant or proposal" groups:deftn="items in which funding is proposed, requested, called for or granted through a formal process in order to accomplish or establish a product, service or project"/>
+<outline groups:vocab="Job" type="vocab" text="Job" groups:deftn="any employment position for which participants receive remuneration (pay for work done but not a stipend or honorarium) including positions like postdocs, internships, fellowships, assistantships or research associates"/>
+<outline groups:vocab="Learning or research opportunity" type="vocab" text="Learning or research opportunity" groups:deftn="opportunities in which individual learning or research is the primary focus such as field projects, courses, mentoring, tutoring, exchanges or college credit opportunities"/>
+<outline groups:vocab="News" type="vocab" text="News" groups:deftn="general information or announcements that are of interest and which may not fit other categories"/>
+<outline groups:vocab="Workshop" type="vocab" text="Workshop" groups:deftn="short-term meetings or interactions that tend to have well-defined outcomes like training opportunities, professional development or skills development"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

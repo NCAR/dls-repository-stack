@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: contentStandard-NCTM-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:13 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/contentStandard.xsd">
+	<field name="Content standard - math" id="cs" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/educational/contentStandards/contentStandard">
+		<definition attribution="National Council of Teachers of Mathematics at http://www.nctm.org/about/pdfs/mathed/pssm_faq.pdf">identifies and describes the mathematical knowledge, understanding, and skills that students should acquire</definition>
+		<vocabLevels number="5">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="NCTM">National Council of Teachers of Mathematics</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			<levelAndDeftn level="2" levelName="Grade range" levelDeftn="the set of grade levels to which the standard applies">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="Pre-K-2">pre-kindergarten, kindergarten, first grade, second grade</levelTermAndDeftn>
+					<levelTermAndDeftn term="3-5">third grade, fourth grade and fifth grade</levelTermAndDeftn>
+					<levelTermAndDeftn term="6-8">sixth grade, seventh grade and eighth grade</levelTermAndDeftn>
+					<levelTermAndDeftn term="9-12">high school grades nine, ten, eleven and twelve</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			<levelAndDeftn level="3" levelName="Topic" levelDeftn="the major conceptual mathematical content area">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="Number and operations">arithmetic manipulations</levelTermAndDeftn>
+					<levelTermAndDeftn term="Algebra">properties and relationships between entities that are represented in symbolic form</levelTermAndDeftn>
+					<levelTermAndDeftn term="Geometry">properties and relationships of points, lines, angles, surfaces and solids</levelTermAndDeftn>
+					<levelTermAndDeftn term="Measurement">the assignment of a numerical value to an attribute of an object</levelTermAndDeftn>
+					<levelTermAndDeftn term="Data analysis and probability">numerical or statistical information that can be used to make decisions</levelTermAndDeftn>
+					<levelTermAndDeftn term="Problem solving">methods and abilities to use mathematical reasoning to arrive at unknown solutions</levelTermAndDeftn>
+					<levelTermAndDeftn term="Reasoning and proof">the ability to make a hypothesis and apply mathematical logic (inductive reasoning) to arrive at conclusions</levelTermAndDeftn>
+					<levelTermAndDeftn term="Communication">the ability to express and share mathematical concepts</levelTermAndDeftn>
+					<levelTermAndDeftn term="Connections">the ability to recognize common themes across different mathematical concepts or other subjects</levelTermAndDeftn>
+					<levelTermAndDeftn term="Representation">the ability to illustrate mathematical concepts</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			<levelAndDeftn level="4" levelName="Major themes" levelDeftn="ideas and skills within topical areas">
+				<levelTermsAndDeftns>
+<!--Number and operations-->
+					<levelTermAndDeftn term="Understand numbers, ways of representing numbers, relationships among numbers, and number systems"/>
+					<levelTermAndDeftn term="Understand meanings of operations and how they relate to one another"/>
+					<levelTermAndDeftn term="Compute fluently and make reasonable estimates"/>
+
+<!--Algebra-->
+					<levelTermAndDeftn term="Understand patterns, relations, and functions"/>
+					<levelTermAndDeftn term="Represent and analyze mathematical situations and structures using algebraic symbols"/>
+					<levelTermAndDeftn term="Use mathematical models to represent and understand quantitative relationships"/>
+					<levelTermAndDeftn term="Analyze change in various contexts"/>
+
+<!--Geometry-->
+					<levelTermAndDeftn term="Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships"/>
+					<levelTermAndDeftn term="Specify locations and describe spatial relationships using coordinate geometry and other representational systems"/>
+					<levelTermAndDeftn term="Apply transformations and use symmetry to analyze mathematical situations"/>
+					<levelTermAndDeftn term="Use visualization, spatial reasoning, and geometric modeling to solve problems"/>
+					
+					
+<!--Measurement-->
+					<levelTermAndDeftn term="Understand measurable attributes of objects and the units, systems, and processes of measurement"/>
+					<levelTermAndDeftn term="Apply appropriate techniques, tools, and formulas to determine measurements"/>
+					
+<!--Data analysis and probability-->
+					<levelTermAndDeftn term="Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them"/>
+					<levelTermAndDeftn term="Select and use appropriate statistical methods to analyze data"/>
+					<levelTermAndDeftn term="Develop and evaluate inferences and predictions that are based on data"/>
+					<levelTermAndDeftn term="Understand and apply basic concepts of probability"/>
+
+<!--Problem solving-->
+					<levelTermAndDeftn term="Build new mathematical knowledge through problem solving"/>
+					<levelTermAndDeftn term="Solve problems that arise in mathematics and in other contexts"/>
+					<levelTermAndDeftn term="Apply and adapt a variety of appropriate strategies to solve problems"/>
+					<levelTermAndDeftn term="Monitor and reflect on the process of mathematical problem solving"/>
+
+<!--Reasoning and proof-->
+					<levelTermAndDeftn term="Recognize reasoning and proof as fundamental aspects of mathematics"/>
+					<levelTermAndDeftn term="Make and investigate mathematical conjectures"/>
+					<levelTermAndDeftn term="Develop and evaluate mathematical arguments and proofs"/>
+					<levelTermAndDeftn term="Select and use various types of reasoning and methods of proof"/>
+
+<!--Communication-->
+					<levelTermAndDeftn term="Organize and consolidate their mathematical thinking through communication"/>
+					<levelTermAndDeftn term="Communicate their mathematical thinking coherently and clearly to peers, teachers, and others"/>
+					<levelTermAndDeftn term="Analyze and evaluate the mathematical thinking and strategies of others"/>
+					<levelTermAndDeftn term="Use the language of mathematics to express mathematical ideas precisely"/>
+					
+<!--Connections-->
+					<levelTermAndDeftn term="Recognize and use connections among mathematical ideas"/>
+					<levelTermAndDeftn term="Understand how mathematical ideas interconnect and build on one another to produce a coherent whole"/>
+					<levelTermAndDeftn term="Recognize and apply mathematics in contexts outside of mathematics"/>
+					
+<!--Representation-->
+					<levelTermAndDeftn term="Create and use representations to organize, record, and communicate mathematical ideas"/>
+					<levelTermAndDeftn term="Select, apply, and translate among mathematical representations to solve problems"/>
+					<levelTermAndDeftn term="Use representations to model and interpret physical, social, and mathematical phenomena"/>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			<levelAndDeftn level="5" levelName="Abilities" levelDeftn="identifies and describes the mathematical knowledge, understanding, and skills that students should acquire; see the allowed combination of terms below; the abilities part of the term is the phrase after the last colon"/>
+		</vocabLevels>
+		<terms>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Count with understanding and recognize 'how many' in sets of objects" id="01x">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Use multiple models to develop initial understandings of place value and the base-ten number system" id="01y">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Develop understanding of the relative position and magnitude of whole numbers and of ordinal and cardinal numbers and their connections" id="01z">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Develop a sense of whole numbers and represent and use them in flexible ways, including relating, composing, and decomposing numbers" id="020">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Connect number words and numerals to the quantities they represent, using various physical models and representations" id="021">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Understand and represent commonly used fractions, such as 1/4, 1/3, and 1/2" id="022">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Number and operations:Understand meanings of operations and how they relate to one another:Understand various meanings of addition and subtraction of whole numbers and the relationship between the two operations" id="023">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Number and operations:Understand meanings of operations and how they relate to one another:Understand the effects of adding and subtracting whole numbers" id="024">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Number and operations:Understand meanings of operations and how they relate to one another:Understand situations that entail multiplication and division, such as equal groupings of objects and sharing equally" id="025">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Number and operations:Compute fluently and make reasonable estimates:Develop and use strategies for whole-number computations, with a focus on addition and subtraction" id="026">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Number and operations:Compute fluently and make reasonable estimates:Develop fluency with basic number combinations for addition and subtraction" id="027">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Number and operations:Compute fluently and make reasonable estimates:Use a variety of methods and tools to compute, including objects, mental computation, estimation, paper and pencil, and calculators" id="028">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Algebra:Understand patterns, relations, and functions:Sort, classify, and order objects by size, number, and other properties" id="029">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Algebra:Understand patterns, relations, and functions:Recognize, describe, and extend patterns such as sequences of sounds and shapes or simple numeric patterns and translate from one representation to another" id="02a">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Algebra:Understand patterns, relations, and functions:Analyze how both repeating and growing patterns are generated" id="02b">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Illustrate general principles and properties of operations, such as commutativity, using specific numbers" id="02c">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Use concrete, pictorial, and verbal representations to develop an understanding of invented and conventional symbolic notations" id="02d">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Algebra:Use mathematical models to represent and understand quantitative relationships:Model situations that involve the addition and subtraction of whole numbers, using objects, pictures, and symbols" id="02e">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Algebra:Analyze change in various contexts:Describe qualitative change, such as a student's growing taller" id="02f">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Algebra:Analyze change in various contexts:Describe quantitative change, such as a student's growing two inches in one year" id="02g">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Recognize, name, build, draw, compare, and sort two- and three-dimensional shapes" id="02h">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Describe attributes and parts of two- and three-dimensional shapes" id="02i">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Investigate and predict the results of putting together and taking apart two- and three-dimensional shapes" id="02j">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Describe, name, and interpret relative positions in space and apply ideas about relative position" id="02k">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Describe, name, and interpret direction and distance in navigating space and apply ideas about direction and distance" id="02l">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Find and name locations with simple relationships such as 'near to' and in coordinate systems such as maps" id="02m">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Recognize and apply slides, flips, and turns" id="02n">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Recognize and create shapes that have symmetry" id="02o">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Create mental images of geometric shapes using spatial memory and spatial visualization" id="02p">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Recognize and represent shapes from different perspectives" id="02q">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Relate ideas in geometry to ideas in number and measurement" id="02r">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Recognize geometric shapes and structures in the environment and specify their location" id="02s">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Recognize the attributes of length, volume, weight, area, and time" id="02t">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Compare and order objects according to these attributes" id="02u">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand how to measure using nonstandard and standard units" id="02v">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Select an appropriate unit and tool for the attribute being measured" id="02w">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Measure with multiple copies of units of the same size, such as paper clips laid end to end" id="02x">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Use repetition of a single unit to measure something larger than the unit, for instance, measuring the length of a room with a single meterstick" id="02y">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Use tools to measure" id="02z">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Develop common referents for measures to make comparisons and estimates" id="030">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Pose questions and gather data about themselves and their surroundings" id="031">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Sort and classify objects according to their attributes and organize data about the objects" id="032">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Represent data using concrete objects, pictures, and graphs" id="033">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Describe parts of the data and the set of data as a whole to determine what the data show" id="034">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Discuss events related to students' experiences as likely or unlikely" id="035">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Data analysis and probability:Understand and apply basic concepts of probability" id="036">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Problem solving:Build new mathematical knowledge through problem solving" id="037">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Problem solving:Solve problems that arise in mathematics and in other contexts" id="038">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Problem solving:Apply and adapt a variety of appropriate strategies to solve problems" id="039">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Problem solving:Monitor and reflect on the process of mathematical problem solving" id="03a">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Reasoning and proof:Recognize reasoning and proof as fundamental aspects of mathematics" id="03b">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Reasoning and proof:Make and investigate mathematical conjectures" id="03c">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Reasoning and proof:Develop and evaluate mathematical arguments and proofs" id="03d">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Reasoning and proof:Select and use various types of reasoning and methods of proof" id="03e">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Communication:Organize and consolidate their mathematical thinking through communication" id="03f">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Communication:Communicate their mathematical thinking coherently and clearly to peers, teachers, and others" id="03g">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Communication:Analyze and evaluate the mathematical thinking and strategies of others" id="03h">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Connections:Recognize and use connections among mathematical ideas" id="03i">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Connections:Understand how mathematical ideas interconnect and build on one another to produce a coherent whole" id="03j">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Connections:Recognize and apply mathematics in contexts outside of mathematics" id="03k">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Representation:Create and use representations to organize, record, and communicate mathematical ideas" id="03l">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Representation:Select, apply, and translate among mathematical representations to solve problems" id="03m">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Pre-K-2:Representation:Use representations to model and interpret physical, social, and mathematical phenomena" id="03n">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Understand the place-value structure of the base-ten number system and be able to represent and compare whole numbers and decimals" id="03o">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Recognize equivalent representations for the same number and generate them by decomposing and composing numbers" id="03p">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Develop understanding of fractions as parts of unit wholes, as parts of a collection, as locations on number lines, and as divisions of whole numbers" id="03q">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Use models, benchmarks, and equivalent forms to judge the size of fractions" id="03r">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Recognize and generate equivalent forms of commonly used fractions, decimals, and percents" id="03s">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Explore numbers less than 0 by extending the number line and through familiar applications" id="03t">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Describe classes of numbers according to characteristics such as the nature of their factors" id="03u">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Understand meanings of operations and how they relate to one another:Understand various meanings of multiplication and division" id="03v">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Understand meanings of operations and how they relate to one another:Understand the effects of multiplying and dividing whole numbers" id="03w">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Understand meanings of operations and how they relate to one another:Identify and use relationships between operations, such as division as the inverse of multiplication, to solve problems" id="03x">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Understand meanings of operations and how they relate to one another:Understand and use properties of operations, such as the distributivity of multiplication over addition" id="03y">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Compute fluently and make reasonable estimates:Develop fluency with basic number combinations for multiplication and division and use these combinations to mentally compute related problems, such as 30 x 50" id="03z">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Compute fluently and make reasonable estimates:Develop fluency in adding, subtracting, multiplying, and dividing whole numbers" id="040">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Compute fluently and make reasonable estimates:Develop and use strategies to estimate the results of whole-number computations and to judge the reasonableness of such results" id="041">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Compute fluently and make reasonable estimates:Develop and use strategies to estimate computations involving fractions and decimals in situations relevant to students' experience" id="042">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Compute fluently and make reasonable estimates:Use visual models, benchmarks, and equivalent forms to add and subtract commonly used fractions and decimals" id="043">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Number and operations:Compute fluently and make reasonable estimates:Select appropriate methods and tools for computing with whole numbers from among mental computation, estimation, calculators, and paper and pencil according to the context and nature of the computation and use the selected method or tools" id="044">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Algebra:Understand patterns, relations, and functions:Describe, extend, and make generalizations about geometric and numeric patterns" id="045">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Algebra:Understand patterns, relations, and functions:Represent and analyze patterns and functions, using words, tables, and graphs" id="046">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Identify such properties as commutativity, associativity, and distributivity and use them to compute with whole numbers" id="047">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Represent the idea of a variable as an unknown quantity using a letter or a symbol" id="048">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Express mathematical relationships using equations" id="049">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Algebra:Use mathematical models to represent and understand quantitative relationships:Model problem situations with objects and use representations such as graphs, tables, and equations to draw conclusions" id="04a">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Algebra:Analyze change in various contexts:Investigate how a change in one variable relates to a change in a second variable" id="04b">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Algebra:Analyze change in various contexts:Identify and describe situations with constant or varying rates of change and compare them" id="04c">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about:Identify, compare, and analyze attributes of two- and three-dimensional shapes and develop vocabulary to describe the attributes" id="04d">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about:Classify two- and three-dimensional shapes according to their properties and develop definitions of classes of shapes such as triangles and pyramids" id="04e">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about:Investigate, describe, and reason about the results of subdividing, combining, and transforming shapes" id="04f">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about:Explore congruence and similarity" id="04g">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about:Make and test conjectures about geometric properties and relationships and develop logical arguments to justify conclusions" id="04h">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Describe location and movement using common language and geometric vocabulary" id="04i">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Make and use coordinate systems to specify locations and to describe paths" id="04j">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Find the distance between points along horizontal and vertical lines of a coordinate system" id="04k">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Predict and describe the results of sliding, flipping, and turning two-dimensional shapes" id="04l">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Describe a motion or a series of motions that will show that two shapes are congruent" id="04m">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Identify and describe line and rotational symmetry in two- and three-dimensional shapes and designs" id="04n">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Build and draw geometric objects" id="04o">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Create and describe mental images of objects, patterns, and paths" id="04p">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Identify and build a three-dimensional object from two-dimensional representations of that object" id="04q">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Identify and draw a two-dimensional representation of a three-dimensional object" id="04r">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use geometric models to solve problems in other areas of mathematics, such as number and measurement" id="04s">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Recognize geometric ideas and relationships and apply them to other disciplines and to problems that arise in the classroom or in everyday life" id="04t">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand such attributes as length, area, weight, volume, and size of angle and select the appropriate type of unit for measuring each attribute" id="04u">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand the need for measuring with standard units and become familiar with standard units in the customary and metric systems" id="04v">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Carry out simple unit conversions, such as from centimeters to meters, within a system of measurement" id="04w">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand that measurements are approximations and how differences in units affect precision" id="04x">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Explore what happens to measurements of a two-dimensional shape such as its perimeter and area when the shape is changed in some way" id="04y">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Develop strategies for estimating the perimeters, areas, and volumes of irregular shapes" id="04z">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Select and apply appropriate standard units and tools to measure length, area, volume, weight, time, temperature, and the size of angles" id="050">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Select and use benchmarks to estimate measurements" id="051">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Develop, understand, and use formulas to find the area of rectangles and related triangles and parallelograms" id="052">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Develop strategies to determine the surface areas and volumes of rectangular solids" id="053">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Design investigations to address a question and consider how data-collection methods affect the nature of the data set" id="054">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Collect data using observations, surveys, and experiments" id="055">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Represent data using tables and graphs such as line plots, bar graphs, and line graphs" id="056">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Recognize the differences in representing categorical and numerical data" id="057">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Describe the shape and important features of a set of data and compare related data sets, with an emphasis on how the data are distributed" id="058">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Use measures of center, focusing on the median, and understand what each does and does not indicate about the data set" id="059">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Compare different representations of the same data and evaluate how well each representation shows important aspects of the data" id="05a">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Propose and justify conclusions and predictions that are based on data and design studies to further investigate the conclusions or predictions" id="05b">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Data analysis and probability:Understand and apply basic concepts of probability:Describe events as likely or unlikely and discuss the degree of likelihood using such words as certain, equally likely, and impossible" id="05c">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Data analysis and probability:Understand and apply basic concepts of probability:Predict the probability of outcomes of simple experiments and test the predictions" id="05d">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Data analysis and probability:Understand and apply basic concepts of probability:Understand that the measure of the likelihood of an event can be represented by a number from 0 to 1" id="05e">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Problem solving:Build new mathematical knowledge through problem solving" id="05f">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Problem solving:Solve problems that arise in mathematics and in other contexts" id="05g">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Problem solving:Apply and adapt a variety of appropriate strategies to solve problems" id="05h">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Problem solving:Monitor and reflect on the process of mathematical problem solving" id="05i">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Reasoning and proof:Recognize reasoning and proof as fundamental aspects of mathematics" id="05j">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Reasoning and proof:Make and investigate mathematical conjectures" id="05k">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Reasoning and proof:Develop and evaluate mathematical arguments and proofs" id="05l">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Reasoning and proof:Select and use various types of reasoning and methods of proof" id="05m">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Communication:Organize and consolidate their mathematical thinking through communication" id="05n">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Communication:Communicate their mathematical thinking coherently and clearly to peers, teachers, and others" id="05o">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Communication:Analyze and evaluate the mathematical thinking and strategies of others" id="05p">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Communication:Use the language of mathematics to express mathematical ideas precisely" id="05q">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Connections:Recognize and use connections among mathematical ideas" id="05r">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Connections:Understand how mathematical ideas interconnect and build on one another to produce a coherent whole" id="05s">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Connections:Recognize and apply mathematics in contexts outside of mathematics" id="05t">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Representation:Create and use representations to organize, record, and communicate mathematical ideas" id="05u">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Representation:Select, apply, and translate among mathematical representations to solve problems" id="05v">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:3-5:Representation:Use representations to model and interpret physical, social, and mathematical phenomena" id="05w">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Work flexibly with fractions, decimals, and percents to solve problems" id="05x">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Compare and order fractions, decimals, and percents efficiently and find their approximate locations on a number line" id="05y">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Develop meaning for percents greater than 100 and less than 1" id="05z">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Understand and use ratios and proportions to represent quantitative relationships" id="060">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Develop an understanding of large numbers and recognize and appropriately use exponential, scientific, and calculator notation" id="061">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Use factors, multiples, prime factorization, and relatively prime numbers to solve problems" id="062">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Develop meaning for integers and represent and compare quantities with them" id="063">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Understand meanings of operations and how they relate to one another:Understand the meaning and effects of arithmetic operations with fractions, decimals, and integers" id="064">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Understand meanings of operations and how they relate to one another:Use the associative and commutative properties of addition and multiplication and the distributive property of multiplication over addition to simplify computations with integers, fractions, and decimals" id="065">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Understand meanings of operations and how they relate to one another:Understand and use the inverse relationships of addition and subtraction, multiplication and division, and squaring and finding square roots to simplify computations and solve problems" id="066">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Compute fluently and make reasonable estimates:Select appropriate methods and tools for computing with fractions and decimals from among mental computation, estimation, calculators or computers, and paper and pencil, depending on the situation, and apply the selected methods" id="067">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Compute fluently and make reasonable estimates:Develop and analyze algorithms for computing with fractions, decimals, and integers and develop fluency in their use" id="068">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Compute fluently and make reasonable estimates:Develop and use strategies to estimate the results of rational-number computations and judge the reasonableness of the results" id="069">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Number and operations:Compute fluently and make reasonable estimates:Develop, analyze, and explain methods for solving problems involving proportions, such as scaling and finding equivalent ratios" id="06a">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Algebra:Understand patterns, relations, and functions:Represent, analyze, and generalize a variety of patterns with tables, graphs, words, and, when possible, symbolic rules" id="06b">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Algebra:Understand patterns, relations, and functions:Relate and compare different forms of representation for a relationship" id="06c">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Algebra:Understand patterns, relations, and functions:Identify functions as linear or nonlinear and contrast their properties from tables, graphs, or equations" id="06d">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Develop an initial conceptual understanding of different uses of variables" id="06e">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Explore relationships between symbolic expressions and graphs of lines, paying particular attention to the meaning of intercept and slope" id="06f">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Use symbolic algebra to represent situations and to solve problems, especially those that involve linear relationships" id="06g">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Recognize and generate equivalent forms for simple algebraic expressions and solve linear equations" id="06h">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Algebra:Use mathematical models to represent and understand quantitative relationships:Model and solve contextualized problems using various representations, such as graphs, tables, and equations" id="06i">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Algebra:Analyze change in various contexts:Use graphs to analyze the nature of changes in quantities in linear relationships" id="06j">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Precisely describe, classify, and understand relationships among types of two- and three-dimensional objects using their defining properties" id="06k">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Understand relationships among the angles, side lengths, perimeters, areas, and volumes of similar objects" id="06l">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Create and critique inductive and deductive arguments concerning geometric ideas and relationships, such as congruence, similarity, and the Pythagorean relationship" id="06m">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Use coordinate geometry to represent and examine the properties of geometric shapes" id="06n">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Use coordinate geometry to examine special geometric shapes, such as regular polygons or those with pairs of parallel or perpendicular sides" id="06o">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Describe sizes, positions, and orientations of shapes under informal transformations such as flips, turns, slides, and scaling" id="06p">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Examine the congruence, similarity, and line or rotational symmetry of objects using transformations" id="06q">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Draw geometric objects with specified properties, such as side lengths or angle measures" id="06r">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use two-dimensional representations of three-dimensional objects to visualize and solve problems such as those involving surface area and volume" id="06s">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use visual tools such as networks to represent and solve problems" id="06t">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use geometric models to represent and explain numerical and algebraic relationships" id="06u">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Recognize and apply geometric ideas and relationships in areas outside the mathematics classroom, such as art, science, and everyday life" id="06v">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand both metric and customary systems of measurement" id="06w">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand relationships among units and convert from one unit to another within the same system" id="06x">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand, select, and use units of appropriate size and type to measure angles, perimeter, area, surface area, and volume" id="06y">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Use common benchmarks to select appropriate methods for estimating measurements" id="06z">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Select and apply techniques and tools to accurately find length, area, volume, and angle measures to appropriate levels of precision" id="070">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Develop and use formulas to determine the circumference of circles and the area of triangles, parallelograms, trapezoids, and circles and develop strategies to find the area of more-complex shapes" id="071">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Develop strategies to determine the surface area and volume of selected prisms, pyramids, and cylinders" id="072">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Solve problems involving scale factors, using ratio and proportion" id="073">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Solve simple problems involving rates and derived measurements for such attributes as velocity and density" id="074">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Formulate questions, design studies, and collect data about a characteristic shared by two populations or different characteristics within one population" id="075">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Select, create, and use appropriate graphical representations of data, including histograms, box plots, and scatterplots" id="076">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Find, use, and interpret measures of center and spread, including mean and interquartile range" id="077">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Discuss and understand the correspondence between data sets and their graphical representations, especially histograms, stem-and-leaf plots, box plots, and scatterplots" id="078">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Use observations about differences between two or more samples to make conjectures about the populations from which the samples were taken" id="079">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Make conjectures about possible relationships between two characteristics of a sample on the basis of scatterplots of the data and approximate lines of fit" id="07a">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Use conjectures to formulate new questions and plan new studies to answer them" id="07b">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Data analysis and probability:Understand and apply basic concepts of probability:Understand and use appropriate terminology to describe complementary and mutually exclusive events" id="07c">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Data analysis and probability:Understand and apply basic concepts of probability:Use proportionality and a basic understanding of probability to make and test conjectures about the results of experiments and simulations" id="07d">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Data analysis and probability:Understand and apply basic concepts of probability:Compute probabilities for simple compound events, using such methods as organized lists, tree diagrams, and area models" id="07e">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Problem solving:Build new mathematical knowledge through problem solving" id="07f">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Problem solving:Solve problems that arise in mathematics and in other contexts" id="07g">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Problem solving:Apply and adapt a variety of appropriate strategies to solve problems" id="07h">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Problem solving:Monitor and reflect on the process of mathematical problem solving" id="07i">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Reasoning and proof:Recognize reasoning and proof as fundamental aspects of mathematics" id="07j">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Reasoning and proof:Make and investigate mathematical conjectures" id="07k">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Reasoning and proof:Develop and evaluate mathematical arguments and proofs" id="07l">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Reasoning and proof:Select and use various types of reasoning and methods of proof" id="07m">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Communication:Organize and consolidate their mathematical thinking through communication" id="07n">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Communication:Communicate their mathematical thinking coherently and clearly to peers, teachers, and others" id="07o">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Communication:Analyze and evaluate the mathematical thinking and strategies of others" id="07p">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Communication:Use the language of mathematics to express mathematical ideas precisely" id="07q">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Connections:Recognize and use connections among mathematical ideas" id="07r">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Connections:Understand how mathematical ideas interconnect and build on one another to produce a coherent whole" id="07s">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Connections:Recognize and apply mathematics in contexts outside of mathematics" id="07t">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Representation:Create and use representations to organize, record, and communicate mathematical ideas" id="07u">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Representation:Select, apply, and translate among mathematical representations to solve problems" id="07v">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:6-8:Representation:Use representations to model and interpret physical, social, and mathematical phenomena" id="07w">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NCTM:9-12:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Understand numbers:Develop a deeper understanding of very large and very small numbers and of various representations of them" id="07x">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Compare and contrast the properties of numbers and number systems, including the rational and real numbers, and understand complex numbers as solutions to quadratic equations that do not have real solutions" id="07y">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Understand vectors and matrices as systems that have some of the properties of the real-number system" id="07z">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Use number-theory arguments to justify relationships involving whole numbers" id="080">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Number and operations:Understand meanings of operations and how they relate to one another:Judge the effects of such operations as multiplication, division, and computing powers and roots on the magnitudes of quantities" id="081">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Number and operations:Understand meanings of operations and how they relate to one another:Develop an understanding of properties of, and representations for, the addition and multiplication of vectors and matrices" id="082">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Number and operations:Understand meanings of operations and how they relate to one another:Develop an understanding of permutations and combinations as counting techniques" id="083">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Number and operations:Compute fluently and make reasonable estimates:Develop fluency in operations with real numbers, vectors, and matrices, using mental computation or paper-and-pencil calculations for simple cases and technology for more-complicated cases" id="084">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Number and operations:Compute fluently and make reasonable estimates:Judge the reasonableness of numerical computations and their results" id="085">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Understand patterns, relations, and functions:Generalize patterns using explicitly defined and recursively defined functions" id="086">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Understand patterns, relations, and functions:Understand relations and functions and select, convert flexibly among, and use various representations for them" id="087">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Understand patterns, relations, and functions:Analyze functions of one variable by investigating rates of change, intercepts, zeros, asymptotes, and local and global behavior" id="088">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Understand patterns, relations, and functions:Understand and perform transformations such as arithmetically combining, composing, and inverting commonly used functions, using technology to perform such operations on more-complicated symbolic expressions" id="089">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Understand patterns, relations, and functions:Understand and compare the properties of classes of functions, including exponential, polynomial, rational, logarithmic, and periodic functions" id="08a">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Understand patterns, relations, and functions:Interpret representations of functions of two variables" id="08b">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Understand the meaning of equivalent forms of expressions, equations, inequalities, and relations" id="08c">self-explanatory</termAndDeftn>
+			<!--In the next benchmark the m-dash symbol between 'fluency' and 'mentally' was changed to a comma in order to validate the schema file. This does not really change the meaning of the standard-->
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Write equivalent forms of equations, inequalities, and systems of equations and solve them with fluency, mentally or with paper and pencil in simple cases and using technology in all cases" id="08d">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Use symbolic algebra to represent and explain mathematical relationships" id="08e">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Use a variety of symbolic representations, including recursive and parametric equations, for functions and relations" id="08f">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Judge the meaning, utility, and reasonableness of the results of symbol manipulations, including those carried out by technology" id="08g">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Use mathematical models to represent and understand quantitative relationships:Identify essential quantitative relationships in a situation and determine the class or classes of functions that might model the relationships" id="08h">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Use mathematical models to represent and understand quantitative relationships:Use symbolic expressions, including iterative and recursive forms, to represent relationships arising from various contexts" id="08i">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Use mathematical models to represent and understand quantitative relationships:Draw reasonable conclusions about a situation being modeled" id="08j">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Algebra:Analyze change in various contexts:Approximate and interpret rates of change from graphical and numerical data" id="08k">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Analyze properties and determine attributes of two- and three-dimensional objects" id="08l">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Explore relationships (including congruence and similarity) among classes of two- and three-dimensional geometric objects, make and test conjectures about them, and solve problems involving them" id="08m">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Establish the validity of geometric conjectures using deduction, prove theorems, and critique arguments made by others" id="08n">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Geometry:Analyze characteristics:Use trigonometric relationships to determine lengths and angle measures" id="08o">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Use Cartesian coordinates and other coordinate systems, such as navigational, polar, or spherical systems, to analyze geometric situations" id="08p">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Investigate conjectures and solve problems involving two- and three-dimensional objects represented with Cartesian coordinates" id="08q">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Understand and represent translations, reflections, rotations, and dilations of objects in the plane by using sketches, coordinates, vectors, function notation, and matrices" id="08r">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Use various representations to help understand the effects of simple transformations and their compositions" id="08s">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Draw and construct representations of two- and three-dimensional geometric objects using a variety of tools" id="08t">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Visualize three-dimensional objects and spaces from different perspectives and analyze their cross sections" id="08u">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use vertex-edge graphs to model and solve problems" id="08v">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use geometric models to gain insights into, and answer questions in, other areas of mathematics" id="08w">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use geometric ideas to solve problems in, and gain insights into, other disciplines and other areas of interest such as art and architecture" id="08x">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Make decisions about units and scales that are appropriate for problem situations involving measurement" id="08y">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Analyze precision, accuracy, and approximate error in measurement situations" id="08z">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Understand and use formulas for the area, surface area, and volume of geometric figures, including cones, spheres, and cylinders" id="090">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Apply informal concepts of successive approximation, upper and lower bounds, and limit in measurement situations" id="091">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Use unit analysis to check measurement computations" id="092">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Understand the differences among various kinds of studies and which types of inferences can legitimately be drawn from each" id="093">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Know the characteristics of well-designed studies, including the role of randomization in surveys and experiments" id="094">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Understand the meaning of measurement data and categorical data, of univariate and bivariate data, and of the term variable" id="095">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Understand histograms, parallel box plots, and scatterplots and use them to display data" id="096">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Compute basic statistics and understand the distinction between a statistic and a parameter" id="097">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Select and use appropriate statistical methods to analyze data:For univariate measurement data, be able to display the distribution, describe its shape, and select and calculate summary statistics" id="098">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Select and use appropriate statistical methods to analyze data:For bivariate measurement data, be able to display a scatterplot, describe its shape, and determine regression coefficients, regression equations, and correlation coefficients using technological tools" id="099">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Display and discuss bivariate data where at least one variable is categorical" id="09a">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Recognize how linear transformations of univariate data affect shape, center, and spread" id="09b">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Identify trends in bivariate data and find functions that model the data or transform the data so that they can be modeled" id="09c">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Use simulations to explore the variability of sample statistics from a known population and to construct sampling distributions" id="09d">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Understand how sample statistics reflect the values of population parameters and use sampling distributions as the basis for informal inference" id="09e">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Evaluate published reports that are based on data by examining the design of the study, the appropriateness of the data analysis, and the validity of conclusions" id="09f">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Understand how basic statistical techniques are used to monitor process characteristics in the workplace" id="09g">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Understand and apply basic concepts of probability:Understand the concepts of sample space and probability distribution and construct sample spaces and distributions in simple cases" id="09h">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Understand and apply basic concepts of probability:Use simulations to construct empirical probability distributions" id="09i">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Understand and apply basic concepts of probability:Compute and interpret the expected value of random variables in simple cases" id="09j">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Understand and apply basic concepts of probability:Understand the concepts of conditional probability and independent events" id="09k">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Data analysis and probability:Understand and apply basic concepts of probability:Understand how to compute the probability of a compound event" id="09l">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Problem solving:Build new mathematical knowledge through problem solving" id="09m">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Problem solving:Solve problems that arise in mathematics and in other contexts" id="09n">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Problem solving:Apply and adapt a variety of appropriate strategies to solve problems" id="09o">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Problem solving:Monitor and reflect on the process of mathematical problem solving" id="09p">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Reasoning and proof:Recognize reasoning and proof as fundamental aspects of mathematics" id="09q">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Reasoning and proof:Make and investigate mathematical conjectures" id="09r">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Reasoning and proof:Develop and evaluate mathematical arguments and proofs" id="09s">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Reasoning and proof:Select and use various types of reasoning and methods of proof" id="09t">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Communication:Organize and consolidate their mathematical thinking through communication" id="09u">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Communication:Communicate their mathematical thinking coherently and clearly to peers, teachers, and others" id="09v">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Communication:Analyze and evaluate the mathematical thinking and strategies of others" id="09w">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Communication:Use the language of mathematics to express mathematical ideas precisely" id="09x">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Connection:Recognize and use connections among mathematical ideas" id="09y">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Connection:Understand how mathematical ideas interconnect and build on one another to produce a coherent whole" id="09z">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Connection:Recognize and apply mathematics in contexts outside of mathematics" id="0a0">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Representation:Create and use representations to organize, record, and communicate mathematical ideas" id="0a1">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Representation:Select, apply, and translate among mathematical representations to solve problems" id="0a2">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:9-12:Representation:Use representations to model and interpret physical, social, and mathematical phenomena" id="0a3">self-explanatory</termAndDeftn>
+		</terms>
+		
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-04-25">Choosing a standard signifies that the content of the resource supports student learning and attainment of the abilities articulated in the standard.</practice>
+
+				<practice status="current" originDate="2005-04-25">Use standards with materials intended for student learning.</practice>
+
+				<practice status="current" originDate="2005-04-25">Catalogers with experience and familiarity with standards may evaluate the standards identified by resource creators in the resource for appropriateness and completeness.</practice>
+
+				<practice status="current" originDate="2005-04-25">If catalogers do not have experience and familiarity with standards but the resource has standards associated with, catalogers may include the standards indicated by the resource creator.</practice>
+
+
+				<practice status="current" originDate="2005-04-25">Catalogers with experience and familiarity with standards may evaluate a resource to identify appropriate standards.</practice>
+
+				<practice status="current" originDate="2005-04-25">Use standards sparingly with reference materials, portal resources or other resources where student interaction with the resource is low or passive.</practice>
+
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2005-04-25">Catalogers who do not have experience and familiarity with standards, should not complete this field.</practice>
+
+				<practice status="current" originDate="2005-04-25">Do not create a compiled list of standards addressed by a collection of resources. For example, do not create a long list of standards for an overarching resource that includes individual lesson plans, activities or modules that support individual standards. Describe each lesson plan, activity or module, etc. individually and associate the standards directly.</practice>
+
+				<practice status="current" originDate="2005-04-25">Do not choose every standard for a resource. Most resources only support a few standards really well.</practice>
+			</donts>
+
+			<otherPractices>
+				<otherPractice header="The resource has existing standards. Do this:">
+					<practice status="current" originDate="2005-04-25">When standards are identified by the resource creator and presented in the resource, capture this information when it meets the other criteria described by these best practices.</practice>
+				</otherPractice>
+
+				<otherPractice header="Does an entire resource need to support the standard?">
+					<practice status="current" originDate="2005-04-25">A resource need not cover the entire scope of a standard for the association to be made but the resource content should clearly fall within the bounds of the standard. Some of the standards are broad in scope. Therefore, it is not expected that single resources, like lesson plans, activities or modules, support the entirety of a standard.</practice>
+				</otherPractice>
+
+				<otherPractice header="Examples for science standards (NSES)">
+					<practice status="current" originDate="2002-10-22" link1="NSES:9-12:Content Standard A:Science as Inquiry Standards:Abilities necessary to do scientific inquiry" style1="bold" link2="Stratospheric Ozone" url2="http://www.ccpo.odu.edu/SEES/ozone/ozone.htm">NSES:9-12:Content Standard A:Science as Inquiry Standards:Abilities necessary to do scientific inquiry is supported in Stratospheric Ozone.</practice>
+					<practice status="current" originDate="2006-03-07" link1="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth in the solar system" style1="bold" link2="Global Sun Temperature" url2="http://www.k12science.org/curriculum/tempproj3/en/">NSES:5-8:Content Standard D Earth and Space Science Standards:Earth in the solar system is supported in the Global Sun Temperature project.</practice>
+				</otherPractice>
+
+				<otherPractice header="Examples for geography (NCGE)">
+					<practice status="current" originDate="2006-03-06" link1="NCGE:Physical Systems:The physical processes that shape the patterns of Earth's surface" style1="bold" link2="Introduction to Waves" url2="http://www.nationalgeographic.com/xpeditions/lessons/07/gk2/wavesintro.html">NCGE:Physical Systems:The physical processes that shape the patterns of Earth's surface is supported in Introduction to Waves.</practice>
+					<practice status="current" originDate="2002-10-22" link1="NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information" style1="bold" link2="Exploring Earthquakes in Space and Time Through the Internet and a Geographic Information System" url2="http://rockyweb.cr.usgs.gov/public/outreach/quakegis/main.html">NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information is supported in Exploring Earthquakes in Space and Time Through the Internet and a Geographic Information System.</practice>
+				</otherPractice>
+
+				<otherPractice header="NCGE standards? Do this:">
+					<practice status="current" originDate="2006-03-07">The National Council for Geographic Education standards are designed to emphasize the knowledge skills of a geographically informed person.</practice>
+					<practice status="current" originDate="2006-03-07">Choose appropriate geography standards from the list.</practice>
+				</otherPractice>
+
+				<otherPractice header="NSES standards? Do this:">
+					<practice status="current" originDate="2005-04-25">The National Science Education Standards (NSES) are designed to emphasize interacting with the science content, the processes of science, inquiry and decision-making skills.</practice>
+					<practice status="current" originDate="2006-03-07">Choose appropriate science standards from the list.</practice>
+				</otherPractice>
+
+				<otherPractice header="NSES Grades K-4 specific information">
+					<practice status="current" originDate="2002-06-30" link1="fourth level of the standard" url1="http://pals.sri.com/standards/nsesK-4text.html">See the fourth level of the standard which includes specific abilities.</practice>
+				</otherPractice>
+				<otherPractice header="NSES Grades 5-8 specific information">
+					<practice status="current" originDate="2002-06-30" link1="fourth level of the standard" url1="http://pals.sri.com/pals/standards/nses5-8text.html">See the fourth level of the standard which includes specific abilities.</practice>
+				</otherPractice>
+				<otherPractice header="NSES Grades 9-12 specific information">
+					<practice status="current" originDate="2002-06-30" link1="fourth level of the standard" url1="http://pals.sri.com/pals/standards/nses9-12text.html">See the fourth level of the standard which includes specific abilities.</practice>
+				</otherPractice>
+
+				<otherPractice header="Other standards? Do this:">	
+					<practice status="current" originDate="2002-10-22" link1="description - educational" style1="bold">If the resource indicates other standards such as the Benchmarks for Science Literacy (by the American Association for the Advancement of Science (AAAS) or the National Educational Technology Standards by International Society for Technology in Education (ISTE) etc., enter this information in the description - educational field, citing the authorizing body and source for the standard.</practice>
+				</otherPractice>
+
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>NCTM:9-12:Representation:Select, apply, and translate among mathematical representations to solve problems</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

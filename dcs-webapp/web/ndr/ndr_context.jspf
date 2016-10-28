@@ -1,0 +1,7 @@
+<%-- display ndr info (used at top of pages) --%>
+<div style="margin-top:10px" align="right">
+	<span class="dcs-table-row" style="font-size:85%;padding:3px 5px 3px 5px">NDR Host: 
+		<b>${ndrForm.ndrApiBaseUrl}</b> | 
+	NCS Agent: <b>${ndrForm.appAgentIdentity}</b></span>
+</div>
+

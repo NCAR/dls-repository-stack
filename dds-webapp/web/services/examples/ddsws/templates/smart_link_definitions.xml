@@ -1,0 +1,126 @@
+<!-- 
+	This configuration file defines the smart links and custom menues used
+	in your search page.
+	
+	This example file defines custom smart links for meteorology and 
+	and polar research and a custom menu for searching within domains. 
+	These example smart links and menu should be visible when you install 
+	the page by default. You may use these as examples to build your own 
+	smart links and smart menus, or comment them out to remove them.
+	
+	To create a menu or a set of smart links, follow these two steps:
+	
+	1. First, create a 'menu' element under the 'root' element. The 'menu' element
+	has four attributes:
+		a. The 'smartLinkLabel' attribute is optional. If present, the 
+		items in the menu will be rendered as clickable smart links in the UI, 
+		and the smart links title will be labeled with the value provided.
+		b. The 'menuLabel' is optional. If present, the items in the menu
+		will be rendered as a checkbox menu in the UI, and the menu will
+		be titled with the value provided.
+		c. The 'selectionsLabel' is optional. The text here is used in the UI
+		to indicate the category of menu items that were selected 
+		when the user performs a search or clicks a smart link.
+		d. The 'id' attribute is required. This must be a number from
+		1 to 20 and each menu must have a unique 'id' attribute.		
+		
+	2. Create one or more 'menuItem' elements in under the 'menu' element.
+		a. The 'id' attribute is required. This may be any combination of letters
+		or numbers. Each menuItem within a given menu must have a unique 'id' attribute.
+		b. The 'label' element is required. This is the text used to display
+		this item in the menu or set of smart links.
+		c. The 'queryMapping' element is required. The value specified
+		here must be a valid query to the search web service. For 
+		information about formatting the query, see
+		http://www.dlese.org/dds/services/ddsws1-1/service_specification.jsp#availableSearchFields
+		
+	3. After editing this file you must reload the menus by passing the 
+		parameter reload=true to the page. To do this, use the button
+		provided in the instructions page or simply type '?reload=true' 
+		after index.jsp in the URL for your page in your browser.
+	
+	
+	Additional information:
+	
+	Each menu element defines a new menu, and multiple menus may be defined. 
+	The presence or absence of the 'menuLabel' and 'smartLinkLabel' menu 
+	attributes determines whether or not to display the menu as a checkbox 
+	menu or smart links. Note that it is also to define both for your
+	menu, although this may create confusion for your users. 
+	The 'selectionsLabel' attribute is used as the text that gets displayed 
+	to echo what the user has selected from a given menu in the UI.
+	
+	For each menuItem element, the label element is used as the text displayed
+	for that item within the menu and the queryMapping element is used to define 
+	the Lucene query that searches are limited to when selecting the menuItem.
+	See the section 'Available search fields' in the Web service documentation for examples:
+	http://www.dlese.org/dds/services/ddsws1-1/service_specification.jsp#availableSearchFields
+	
+	Important: To work properly, each menu element's id attribute must be unique, and 
+	each menuItem element's id attribute must also be unique within the given
+	menu.
+	
+	Note that quotes " must be converted to their entity referece value &quot;
+-->
+<root>
+	<menu smartLinkLabel="Meteorology" selectionsLabel="Meteorology" id="1">
+		<menuItem id="1">
+			<label>Forecasting</label>
+			<queryMapping>
+				( forecasting OR titlestems:forecasting ) AND su:01
+			</queryMapping>
+		</menuItem>			
+		<menuItem id="2">
+			<label>Modeling</label>
+			<queryMapping>
+				(weather AND (modeling OR models)) AND ( titlestems:(weather OR model) OR titlestems:(weather AND model) OR ky:0*) AND su:01
+			</queryMapping>
+		</menuItem>		
+		<menuItem id="3">
+			<label>Remote sensing</label>
+			<queryMapping>
+				( &quot;remote sensing&quot; OR title:(&quot;remote sensing&quot;) OR description:(&quot;remote sensing&quot;) ) AND (re:09 OR ky:0*) AND su:01
+			</queryMapping>
+		</menuItem>
+	</menu>
+	<menu smartLinkLabel="Polar research" selectionsLabel="Polar research" id="2">
+		<menuItem id="1">
+			<label>People and history</label>
+			<queryMapping>
+				(polar OR arctic OR antarctic) AND stems:(history OR culture OR &quot;polar exploration&quot; OR &quot;arctic exploration&quot; OR &quot;antarctic exploration&quot; OR archaeology) AND !&quot;natural history&quot; AND !&quot;earth history&quot; AND !ky:00h AND !mars AND ( ky:0* OR titlestems:(history OR culture OR exploration OR people) OR stems:(history OR culture OR exploration OR people) )
+			</queryMapping>
+		</menuItem>
+		<menuItem id="2">
+			<label>Polar ecology</label>
+			<queryMapping>
+				(polar OR arctic OR antarctic) AND stems:(ecology OR ecosystem) AND (ky:0* OR titlestems:(ecosystem OR arctic OR antarctic OR antarctica OR ecology))
+			</queryMapping>
+		</menuItem>	
+		<menuItem id="3">
+			<label>Ice</label>
+			<queryMapping>
+				( (polar OR arctic OR antarctic) AND stems:(ice OR glacier OR glaciology OR snow OR &quot;sea ice&quot;) AND (ky:0* OR titlestems:(ice OR glacier OR snow) ) ) AND !ky:00h 			
+			</queryMapping>
+		</menuItem>				
+	</menu>
+	<menu menuLabel="EXAMPLE CUSTOM QUALIFIER: DOMAIN" selectionsLabel="Domain" id="3">
+		<menuItem id="1">
+			<label>NASA (nasa.gov)</label>
+			<queryMapping>
+				url:http*nasa.gov*			
+ 			</queryMapping>
+		</menuItem>	
+		<menuItem id="2">
+			<label>NOAA (noaa.gov)</label>
+			<queryMapping>
+				url:http*noaa.gov*
+			</queryMapping>
+		</menuItem>
+		<menuItem id="3">
+			<label>Education (.edu)</label>
+			<queryMapping>
+				url:http*.edu*			
+ 			</queryMapping>
+		</menuItem>				
+	</menu>	
+</root>

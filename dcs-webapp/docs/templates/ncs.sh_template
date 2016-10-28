@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# init script for starting the ncs tomcat
+# 	- supply values for 
+#		- JAVA_HOME, 
+#		- TC (your tomcat installation), and 
+#		- NCS_CONF (the the value of the "ncsConf" parameter you defined in your 
+#		  NCS Context Descriptor.
+#   -it is recommended that this file be located in $TC/bin directory.
+
+JAVA_HOME=""
+TC=""
+NCS_CONF=""
+
+#------ no edits below here are necessary (unless you want to change the JVM memory settings
+
+# pass necessary parameter for Authentication
+JAVA_OPTS="-Djava.security.auth.login.config==$NCS_CONF/auth/ncslogin.config"
+CATALINA_OPTS="-Xmx512m -XX:MaxPermSize=128m -Xms256m"
+
+export JAVA_HOME
+export JAVA_OPTS
+export CATALINA_OPTS
+
+case $1 in 
+        start)
+                $TC/bin/catalina.sh start
+                ;;
+        stop)
+                $TC/bin/catalina.sh stop
+                ;;
+        *)
+                echo "Usage: $0 (start|stop)"
+                exit 1
+esac
+
+exit 0
+

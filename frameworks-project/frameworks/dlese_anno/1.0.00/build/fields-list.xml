@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- alphabetical listing of framework fields filenames -->
+<!-- alphabetical listing of framework fields field names -->
+<metadataFieldsInfo>
+	<files>
+		<file>annotation/1.0.00/fields/annotation-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/annotationRecord-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/content-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/context-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/contributor-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/contributors-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/dateContrib-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/created-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/modified-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/dateService-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/instDeptP-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/instDeptO-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/description-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/emailAlt-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/emailP-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/emailO-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/format-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/itemID-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/recordID-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/moreInfo-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/nameFirst-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/nameLast-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/nameMiddle-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/name-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/nameTitle-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/organization-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/instNameP-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/instNameO-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/pathway-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/person-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/instPositionP-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/instPositionO-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/rating-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/role-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/service-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/share-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/status-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/title-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/type-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/url-anno-fields-en-us.xml</file>
+		<file>annotation/1.0.00/fields/urlContrib-anno-fields-en-us.xml</file>
+	</files>
+	<fields>
+		<field>Annotation</field>
+		<field>Annotation record</field>
+		<field>Content</field>
+		<field>Context</field>
+		<field>Contributor</field>
+		<field>Contributor list</field>
+		<field>Date - contribution</field>
+		<field>Date - created</field>
+		<field>Date - modified</field>
+		<field>Date - service</field>
+		<field>Department - individual contributor</field>
+		<field>Department - organizational contributor</field>
+		<field>Description</field>
+		<field>Email - alternate</field>
+		<field>Email - individual contributor</field>
+		<field>Email - organizational contributor</field>
+		<field>Format</field>
+		<field>ID - item - resource being annotated</field>
+		<field>ID - record - library catalog number</field>
+		<field>Info</field>
+		<field>Name - first</field>
+		<field>Name - last</field>
+		<field>Name - middle</field>
+		<field>Name - service</field>
+		<field>Name - title - contributor</field>
+		<field>Organization</field>
+		<field>Organization name - individual contributor</field>
+		<field>Organization name - organizational contributor</field>
+		<field>Pathway</field>
+		<field>Person</field>
+		<field>Position - individual contributor</field>
+		<field>Position - organizational contributor</field>
+		<field>Rating</field>
+		<field>Role</field>
+		<field>Service</field>
+		<field>Share</field>
+		<field>Status</field>
+		<field>Title</field>
+		<field>Type</field>
+		<field>Url - annotation content</field>
+		<field>Url - organization</field>
+	</fields>
+</metadataFieldsInfo>

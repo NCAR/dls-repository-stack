@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="US History">
+  <mapping>
+    <acsrInfo id="351833fb-a12f-45ef-ade1-c07af7b446a8">
+      <title>Academic Standards: Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>US History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000075">
+      <title>Academic Standards: Social Studies</title>
+      <created>2000</created>
+      <topic>U.S. History</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="72d5f53e-2a6e-4a79-bc1d-1a8106029548">
+      <title>Social Studies Strand 1 - American History</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Strand 1 - American History</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000289">
+      <title>Social Studies Strand 1 - American History</title>
+      <created>2006</created>
+      <topic>U.S. History</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c6db2135-512c-4542-98dc-f90f3f9c1ada">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>CA</jurisdiction>
+      <fileName>Social Science US History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000008">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <created>1998</created>
+      <topic>U.S. History</topic>
+      <author>California</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3d1ba1b9-5022-4029-8379-93ef911c4b93">
+      <title>Colorado Model Content Standards for History</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Model Content Standards US History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000103">
+      <title>Colorado Model Content Standards for History</title>
+      <created>1995</created>
+      <topic>U.S. History</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6bbf7f00-fedd-40f6-9dd5-cb86eab91697">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>Social Studies US History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000063">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <created>1998</created>
+      <topic>U.S. History</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b46f5566-7e6f-4f4a-a494-5b541570f35b">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Sunshine State Standards US Hist</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000144">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <created>1999</created>
+      <topic>U.S. History</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bd2d8b2a-97ea-4f56-b0bc-c2b31910326b">
+      <title>Social Studies Quality Core Curriculum, K-12</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>QCC US History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000078">
+      <title>Social Studies Quality Core Curriculum, K-12</title>
+      <created>1999</created>
+      <topic>U.S. History</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4b30f0a4-88ab-46b8-bda0-fe26c39a6398">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Achievement Standards US History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000012">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <created>2001</created>
+      <topic>U.S. History</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6b4085ac-6cf2-41bf-8879-0f31cacd9dff">
+      <title>Illinois Learning Standards for Social Science</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Learning Standards US History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001FB">
+      <title>Illinois Learning Standards for Social Science</title>
+      <created>1997</created>
+      <topic>U.S. History</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d13c5915-f961-49fd-a628-891a8e972957">
+      <title>Social Studies Proficiency Guide</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>US History Proficiency Guide</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000E8">
+      <title>Social Studies Proficiency Guide</title>
+      <created>1996</created>
+      <topic>U.S. History</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f345a7ee-b15f-4c9b-9cc4-ae63fe1d6859">
+      <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Curricular Standards US History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000B5">
+      <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+      <created>1999</created>
+      <topic>U.S. History</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="14c328a5-4493-4304-bf9e-6eda1f58c95a">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Social Studies US History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100012F">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <created>1998</created>
+      <topic>U.S. History</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="882dc078-e469-49e4-a80c-6f72b978d5c6">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>US History Content Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000130">
+      <title>Social Studies Content Standards</title>
+      <created>1997</created>
+      <topic>U.S. History</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fcfd50f2-1104-485f-b61b-fb364e290552">
+      <title>Social Studies Grade-Level Expectations</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>US History Grade-Level Expectations</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100000E">
+      <title>Social Studies Grade-Level Expectations</title>
+      <created>2003</created>
+      <topic>U.S. History</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dae5688f-1140-42a2-9a66-a2913743d59e">
+      <title>Massachusetts History and Social Science Framework</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>History and Social Science Framewor</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000D6">
+      <title>Massachusetts History and Social Science Framework</title>
+      <created>2003</created>
+      <topic>U.S. History</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="220a6588-d569-483d-9f4c-8c1e14aa64be">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000F2">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>U.S. History</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6798b1d1-edbc-4326-b490-1896db781227">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Graduation Standards for Social Stu</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001E1">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <created>1998</created>
+      <topic>U.S. History</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3c1630f1-db07-4394-ae7c-caccf8260c57">
+      <title>Montana Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Montana Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000061">
+      <title>Montana Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>U.S. History</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4b15e35c-1623-45bd-b74c-4dc7da123f9a">
+      <title>Social Studies Standard Course of Study</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Social Studies Standard Course of S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000160">
+      <title>Social Studies Standard Course of Study</title>
+      <created>1996</created>
+      <topic>U.S. History</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="507588f6-2c2f-4ad5-9f3a-59e552399767">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Social Studies Content Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000177">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <created>2000</created>
+      <topic>U.S. History</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e6815d26-5e93-4b58-a857-9b7d2962a404">
+      <title>Nebraska Social Studies/History Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Social Studies History Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000C9">
+      <title>Nebraska Social Studies/History Standards</title>
+      <created>1998</created>
+      <topic>U.S. History</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8c7d797d-f174-4e39-ac41-c81d4a7bd58f">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Social Studies Curriculum Fram</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000083">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <created>1995</created>
+      <topic>U.S. History</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="36493a8a-0482-4369-aae3-4857fe3239e1">
+      <title>New Mexico Standards for Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Standards for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000185">
+      <title>New Mexico Standards for Social Studies</title>
+      <created>2001</created>
+      <topic>U.S. History</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="057d383e-b454-4a8b-8c73-3f4433319087">
+      <title>History of the United States and New York</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>History of the United States and Ne</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001AD">
+      <title>History of the United States and New York</title>
+      <created>1996</created>
+      <topic>U.S. History</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8d30dafb-9e79-4302-98e9-e8ecb6353a6f">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <localAdoptionDate>1994</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Social Studies: Ohio's Model Compet</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100001D">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <created>1994</created>
+      <topic>U.S. History</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="037f57b5-2a59-4830-aadb-f7ffeb071c28">
+      <title>Academic Content Standards Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Academic Content Standards Social S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000005">
+      <title>Academic Content Standards Social Studies</title>
+      <created>2002</created>
+      <topic>U.S. History</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="04b53be9-e11c-41c5-8a8b-6d9be87cb43e">
+      <title>Priority Academic Student Skills for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100012B">
+      <title>Priority Academic Student Skills for Social Studies</title>
+      <created>2000</created>
+      <topic>U.S. History</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="965df1f6-182e-4aba-8765-e029e19b3d86">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100005C">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <created>2002</created>
+      <topic>U.S. History</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="70d4dd4d-7bf4-4699-939c-00a040555967">
+      <title>Social Sciences 2001-2002</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Social Sciences 2001-2002</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001FE">
+      <title>Social Sciences 2001-2002</title>
+      <created>2001</created>
+      <topic>U.S. History</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="66387e13-5905-4eaf-9eff-952610f6230f">
+      <title>Academic Standards for History</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>PA</jurisdiction>
+      <fileName>Academic Standards for History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000106">
+      <title>Academic Standards for History</title>
+      <created>2003</created>
+      <topic>U.S. History</topic>
+      <author>Pennsylvania</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4f0d298b-4c63-4c92-ac7d-b399f5e7809d">
+      <title>Social Studies Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Social Studies Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000090">
+      <title>Social Studies Standards</title>
+      <created>1997</created>
+      <topic>U.S. History</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d7fe2e10-13fb-463b-bc0e-283b59473c33">
+      <title>Social Studies Frameworks K-12</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Social Studies Frameworks K-12</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001C8">
+      <title>Social Studies Frameworks K-12</title>
+      <created>1996</created>
+      <topic>U.S. History</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="17021c6d-b687-4049-91b9-82dfb20b0d81">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>Chapter 113. TEKS for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000118">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <created>1997</created>
+      <topic>U.S. History</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3a623fa9-53f7-49c4-831a-2caabafcca1e">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100018C">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>1995</created>
+      <topic>U.S. History</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a397909f-3070-40ee-a85d-5906d990d632">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000176">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>2001</created>
+      <topic>U.S. History</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="973d2a36-0f38-45ee-8f17-93fcca9524aa">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Vermont's Framework of Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000104">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <created>2000</created>
+      <topic>U.S. History</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6981925c-6064-4b29-9cdb-373bee1986b5">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia's Social Studies Inst</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100019F">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <created>2000</created>
+      <topic>U.S. History</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bfcc79e2-8037-409f-98fa-7ce97a1d3c97">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia Social Studies Conten</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000110">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <created>2004</created>
+      <topic>U.S. History</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a2c31710-c08a-4cf7-8866-86e64aaeac04">
+      <title>Social Studies Content and Performance Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>US History</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Social Studies Content and Performa</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000122">
+      <title>Social Studies Content and Performance Standards</title>
+      <created>1999</created>
+      <topic>U.S. History</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+</mappings>

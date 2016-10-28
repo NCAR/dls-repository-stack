@@ -1,0 +1,34 @@
+	<c:set var="okay_link" value="${contextPath}/browse/home.do" />
+	<logic:messagesPresent>
+	<%-- ####### Display messages, if present ####### --%>
+
+	<table width="100%" bgcolor="#000000" cellspacing="1" cellpadding="8">
+	  <tr bgcolor="ffffff"> 
+		<td>
+			<b>Messages:</b>
+			<ul>
+				<html:messages id="msg" property="message"> 
+					<li><bean:write name="msg"/></li>									
+				</html:messages>
+				<html:messages id="msg" property="error"> 
+					<li><font color=red>Error: <bean:write name="msg"/></font></li>									
+				</html:messages>
+				<logic:messagesPresent property="indexErrors">
+					<c:set var="okay_link" value="${contextPath}/manage/collections.do" />
+					<p><font color=red><b>ALERT: The following collections must be reindexed before they can be accessed:</b></font></p>
+					<ul>
+						<html:messages id="msg" property="indexErrors">
+							<li><font color=red><bean:write name="msg"/></font></li>									
+						</html:messages>
+					</ul>
+				<p><font color=red>To reindex, go to the "Manage -> Manage Collections" page by clicking the "OK" link below. If
+				you do not have sufficent privileges to access the page, please alert the system administrator.</font></p>
+				</logic:messagesPresent>
+				
+			</ul>
+			<blockquote>[ <a href="${okay_link}">OK</a> ]</blockquote>
+		</td>
+	  </tr>
+	</table><br><br>
+	</logic:messagesPresent>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frameworkConfigRecord 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="http://www.dlese.org/Metadata/dcs/framework-config/dcsFrameworkConfig.xsd">
+  <xmlFormat>marc</xmlFormat>
+  <schemaInfo>
+    <schemaURI>http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd</schemaURI>
+    <paths>
+      <path pathName="id" requiredByCopyRecord="true" requiredByMinimalRecord="true" 
+	  	readOnly="true">/collection/@id</path>
+	  <path pathName="ind1" requiredByCopyRecord="true" requiredByMinimalRecord="true" 
+	  	readOnly="false" defaultValue=" " maxLen="1">/collection/record/datafield/@ind1</path>
+	  <path pathName="ind2" requiredByCopyRecord="true" requiredByMinimalRecord="true" 
+	  	readOnly="false" defaultValue=" " maxLen="1">/collection/record/datafield/@ind2</path>
+	  <path pathName="dataTag" requiredByCopyRecord="true" requiredByMinimalRecord="true" 
+	  	readOnly="false" defaultValue="  " maxLen="3">/collection/record/controlfield/@tag</path>
+	  <path pathName="controlTag" requiredByCopyRecord="true" requiredByMinimalRecord="true" 
+	  	readOnly="false" defaultValue="  " maxLen="3">/collection/record/datafield/@tag</path>
+	  <path pathName="controlTag" requiredByCopyRecord="true" requiredByMinimalRecord="true" 
+	  	readOnly="false" defaultValue="  " maxLen="1">/collection/record/datafield/subfield/@code</path>
+    </paths>
+    <rootElementName>collection</rootElementName>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>2</baseRenderLevel>
+	<rebuildOnStart>true</rebuildOnStart>
+    <fieldInfoURI />
+    <discussionURL/>
+  </editorInfo>
+  <standAloneInfo />
+</frameworkConfigRecord>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://adn.dlese.org" xmlns="http://adn.dlese.org" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.6.50">
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA EXPLANATION  ****
+		This is the MAIN schema for the ADEPT/DLESE/NASA (ADN) object-level metadata framework. 
+		This MAIN schema calls other CATEGORY schemas to create the metadata framework structure. 
+		CATEGORY schemas may call other CATEGORY schemas or VOCABULARY schemas in building the metadata structure.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  NAMESPACES  ********    
+		The chameleon approach to namespace conventions is used in the CATEGORY and VOCABULARY schemas.
+		Only this MAIN schema has a target namespace, http://adn.dlese.org. 
+		The CATEGORY and VOCABULARY schemas do not have target namespaces (allows for plug-n-play components and vocabularies).
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  ROOT ELEMENT  *****  The root element of this schema is itemRecord.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA DEVELOPMENT  *****       
+		The Venetian Blind approach is used for this MAIN schema and all other CATEGORY and VOCABULARY schemas.
+		Elements within all schemas are used for fields (quantities) of the ADN metadata framework.
+		When elements have controlled vocabularies that are hierarchal, the vocabularies appear in the element as a colon separated text string.
+		Attributes are used when additional information is required for the content of an element or if two pieces of information are required. 
+		For example, time would be an element and date would be the attribute or latitude and longitude would both be attributes.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  USE OF COMMONFIELDS.XSD SCHEMA  ****     
+		A COMMONFIELDS (commonfields.xsd) schema is used when metadata fields (elements or attributes) appear in more than one CATEGORY schema. 
+		For example, title is used in the CATEGORY schema of general.xsd and relation.xsd. Therefore, title is defined in the commonfields.xsd schema.		
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** DEFINING COMPLEX and SIMPLE TYPES  *******    
+		Since the metadata framework uses Venetian Blind schema development, most metadata fields are defined as complex or simple types.
+		This improves re-use for other frameworks developed at the DLESE Program Center (DPC) or within the DLESE community.
+		As such, each schema has a complex and simple type section. Built-in simple types are defined when an elment is defined. 
+		Derived simple types are used when a metadata field appears more than once in a CATEGORY schema or if restrictions are needed on element content. 
+		For example, vertBase is used twice in the geospatial.xsd, so a simple type is defined . For another example, latitude is a simple decimal
+		but needs to be restricted to -90.00 to +90.00, so a simple type is defined.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Other CATEGORY schemas to include  ********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="categories/commonfields.xsd"/>
+	<xsd:include schemaLocation="categories/educational.xsd"/>
+	<xsd:include schemaLocation="categories/general.xsd"/>
+	<xsd:include schemaLocation="categories/geospatial.xsd"/>
+	<xsd:include schemaLocation="categories/lifecycle.xsd"/>
+	<xsd:include schemaLocation="categories/metaMetadata.xsd"/>
+	<xsd:include schemaLocation="categories/relations.xsd"/>
+	<xsd:include schemaLocation="categories/rights.xsd"/>
+	<xsd:include schemaLocation="categories/space.xsd"/>
+	<xsd:include schemaLocation="categories/technical.xsd"/>
+	<xsd:include schemaLocation="categories/temporal.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  VOCABULARY schemas to include  ***********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  ROOT element  **********************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="itemRecord" type="ADNmetadataType"/>
+	<xsd:annotation>
+		<xsd:documentation>ADNmetadataType is complex</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Other Elements  **********************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Complex Types  (alpha order) *****************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="ADNmetadataType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  ADNmetadataType  *****************************************************
+				
+				These elements have the following types or schema associated with them.
+				general 					is complex; see general.xsd
+				lifecycle				is complex; see lifecycle.xsd; okay not being required per (2002-10-26) but changed back to required on 2003-02-01
+				metaMetadata			is complex: see metaMetadata.xsd
+				technical				is complex; see technical.xsd
+				educational				is complex; see educational.xsd
+				rights					is complex; see rights.xsd
+				relations				is complex; see relations.xsd
+				geospatialCoverages	is complex; see geospatial.xsd
+				temporalCoverages		is complex; see temporal.xsd
+				objectsInSpace			is complex; see space.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="general" type="generalType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="lifecycle" type="lifecycleType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="metaMetadata" type="metaMetadataType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="technical" type="technicalType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="educational" type="educationalType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="rights" type="rightsType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="relations" type="relationsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="geospatialCoverages" type="geospatialCoveragesType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="temporalCoverages" type="temporalCoveragesType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="objectsInSpace" type="objectsInSpaceType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

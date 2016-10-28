@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: languageG-adn-groups-default-en-us.xml,v 1.1 2009/01/29 22:30:06 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Language - of the resource</title>
+<groups:concept language="en-us" metaFormat="adn" metaVersion="0.7.00" text="Language - of the resource" audience="default" path="/itemRecord/general/language" deftn="the language of the resource expressed generally as a two-letter abbreviation"/>
+</head>
+<body>
+<outline groups:vocab="en" type="vocab" text="en" groups:deftn="English"/>
+<outline groups:vocab="en-us" type="vocab" text="en-us" groups:deftn="U.S. English"/>
+<outline groups:vocab="fr" type="vocab" text="fr" groups:deftn="French"/>
+<outline groups:vocab="es" type="vocab" text="es" groups:deftn="Spanish"/>
+<outline groups:vocab="ru" type="vocab" text="ru" groups:deftn="Russian"/>
+<outline groups:vocab="de" type="vocab" text="de" groups:deftn="German"/>
+<outline groups:vocab="ja" type="vocab" text="ja" groups:deftn="Japanese"/>
+<outline groups:vocab="zh" type="vocab" text="zh" groups:deftn="Chinese"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

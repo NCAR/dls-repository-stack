@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: pubNameType-osm-fields-en-us.xml,v 1.7 2011/06/24 15:01:57 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/pubNameType.xsd">
+  <field name="Publication type" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/general/pubName/@type">
+		<definition>the type of publication</definition> 
+
+		<terms>
+			<termAndDeftn vocab="Abstract" attribution="Online Dictionary for Library and Information Science (OLDIS)">a brief, objective representation of the essential content of a book, article, speech, report, dissertation, patent, standard, or other work, presenting the main points in the same order as the original but having no independent literary value</termAndDeftn>
+
+			<termAndDeftn vocab="Blog/forum/email list"  attribution="Online Dictionary for Library and Information Science (OLDIS)">Blog: a web page that provides frequent, continuing publication of web links and/or comments on a specific topic (broad or narrow in scope), often in the form of short entries arranged in an orderly fashion, usually chronological.</termAndDeftn>
+
+			<termAndDeftn vocab="Blog/forum/email list"  attribution="Online Dictionary for Library and Information Science (OLDIS)">Forum/email list: an email discussion forum that allows individuals to subscribe and automatically receive messages posted to the list by other subscribers. Participants may also post their own messages and replies for distribution to the other subscribers to the list.</termAndDeftn>
+
+			<termAndDeftn vocab="Book/monograph">Book: a written work or composition that has been published and bound as a single volume</termAndDeftn>
+			<termAndDeftn vocab="Book/monograph">Monograph: a relatively short book or treatise on a single subject, that is complete in one volume, detailed and scholarly but not extensive in scope, and usually written by a specialist in the field</termAndDeftn>
+
+			<termAndDeftn vocab="Encyclopedia">a book or numbered set of books containing authoritative summary information about a variety of topics in the form of short essays, usually arranged alphabetically or classified in some manner</termAndDeftn>
+
+			<termAndDeftn vocab="Index">an alphabetically arranged list of headings treated in a work (e.g. names, places, or subjects) and with references to point the user to the location within the resource pertaining to the heading</termAndDeftn>
+
+			<termAndDeftn vocab="Journal/magazine/periodical">Journal: a periodical devoted to disseminating original research and commentary on current developments in a specific discipline, subdiscipline, or field of study, usually published in quarterly, bimonthly, or monthly issues, and sold by subscription</termAndDeftn>
+
+			<termAndDeftn vocab="Journal/magazine/periodical" attribution="Online Dictionary for Library and Information Science (OLDIS)">Magazine: a popular interest periodical usually containing articles on a variety of topics, written by various authors in a nonscholarly style. Most magazines are heavily illustrated, and contain advertising.</termAndDeftn>
+
+			<termAndDeftn vocab="Journal/magazine/periodical">Periodical: a serial publication with its own distinctive title, containing a mix of articles, editorial, reviews, columns, short stories, poems, or other short works written by more than one contributor, generally published at regular stated intervals of less than a year, without prior decision as to when the final issue will appear</termAndDeftn>
+
+			<termAndDeftn vocab="Newsletter">a serial publication consisting of no more than a few pages, devoted to news, announcements, and current information that is of interest primarily to a specialized group of subscribers or members of an association or organization who receive it as part of their membership or affiliation</termAndDeftn>
+
+			<termAndDeftn vocab="Poster">a visual medium created to publicize a forthcoming event or communicate scholarly or scientific work, with or without illustration</termAndDeftn>
+
+			<termAndDeftn vocab="Proceedings">a self-contained prose composition on a fairly narrow topic or subject, written by one or more authors and published as part of the record of a conference, congress, symposium, or other meeting sponsored by a society or association</termAndDeftn>
+
+			<termAndDeftn vocab="Professional development/learning resource">Professional development: a learning experience primarily for enhancing job functions or skills</termAndDeftn>
+
+			<termAndDeftn vocab="Professional development/learning resource">Learning resource: materials designed to respond to input from a human being, usually in the form of commands, data and/or actions</termAndDeftn>
+
+			<termAndDeftn vocab="Report">a record of research findings, research still in progress, or other technical findings, usually bearing a report number and sometimes a grant number assigned by the funding agency</termAndDeftn>
+		</terms>
+		 <bestPractices>
+			<dos>
+				<practice status="current" originDate="2010-05-31">This is a required field.</practice> 
+				<practice status="current" originDate="2010-05-31">This field cannot be repeated.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="publication name" style1="bold">Read the best practices associated with publication name in order to complete this field.</practice> 
+			 </dos>
+		 </bestPractices>
+		 <documentation>
+				<obligation>required metadata if parent tag is present</obligation>
+				<min>1</min>
+				<max>1</max>
+				<XMLdataTypes>
+					<XMLdataType>string</XMLdataType>
+				</XMLdataTypes>
+				<domain>controlled vocabulary</domain>
+				<example>Blog/forum/email list</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

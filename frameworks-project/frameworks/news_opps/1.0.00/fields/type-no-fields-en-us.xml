@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: type-no-fields-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/news-opps/1.0.00/dateType.xsd">
+	<field name="Date - type" language="en-us" metaFormat="news_opps" metaVersion="1.0.00" path="/news-oppsRecord/otherDates/otherDate/@type">
+		<definition>a description for the kind of date</definition>
+
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="Date - type" levelDeftn="a description for the kind of date"/>
+		</vocabLevels>
+
+		<terms>
+			<termAndDeftn vocab="applyBy">the date to an application for the news, event or opportunity is due</termAndDeftn>
+			<termAndDeftn vocab="due">the date when the news, event or opportunity is due</termAndDeftn>
+			<termAndDeftn vocab="eventStart">the date the news, event or opportunity begins</termAndDeftn>
+			<termAndDeftn vocab="eventStop">the date the news, event or opportunity ends</termAndDeftn>
+			<termAndDeftn vocab="recordModified">the date the news, event or opportunity is modified</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-12-02" link1="event start" style1="bold" link2="event stop" style2="bold">If entering an event start date, also enter an event stop date, if possible and immediately after the event start date.</practice>
+				<practice status="current" originDate="2004-09-14" link1="applyBy" style1="bold" link2="due" style2="bold">Typically, the term applyBy is used for applications while the term due is used for proposals.</practice>
+				<practice status="current" originDate="2004-12-02">To indicate an ongoing item (like a monthly meeting), enter an event start date without an event stop date. Be sure to enter a date description of 'monthly meeting' so the date information can be clearly understood.</practice>
+				<practice status="current" originDate="2005-01-31" link1="due" style1="bold" link2="applyBy" style2="bold" link3="date description" style3="bold">To indicate multiple proposal deadlines, enter and data, choose the date type as due or applyBy and complete a date description so the date information can be clearly understood.</practice>
+				<practice status="current" originDate="2004-12-02" link1="location " style1="bold" link2="date description" style2="bold">If an event occurs in multiple locations on multiple dates, enter the appropriate locations in the location field. Then enter appropriate sets of date information. For each date, add a date description that corresponds to the location name.</practice>
+				<practice status="current" originDate="2004-09-14">Be sure the event stop date is after the event start date; otherwise the event stop information will not be displayed.</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2004-12-02">Generally, do not enter more than one event start date or event stop date unless doing complicated proposal deadlines or multiple workshops.</practice>
+				
+			</donts>
+			<otherPractices>
+				<otherPractice header="Have complicated date information? Do this">
+					<practice status="current" originDate="2005-01-31">The following is an example of multiple dates for an NSF announcement. For a research science and science curriculum funding announcement, the research science might have a due date of 2005-07-31 while the science curriculum might have a due date of 2005-08-31. So enter the dates separately. Select due dates as the type of date and then complete different date descriptions. For this case, the date descriptions can be research science track and science curriculum track.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>due, eventStart, eventStop</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

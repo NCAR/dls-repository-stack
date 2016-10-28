@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: end-relative-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:38 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="End - relative" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/temporalCoverages/timeAndPeriod/timeInfo/timeRelative/end">
+		<definition>a decimal number indicating the end time of interest</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-05-02" >Choose an appropriate numerical value.</practice>
+				<practice status="current" originDate="2005-05-02" link1="units" style1="bold">Complete the required units subfield.</practice>
+				<practice status="current" originDate="2005-05-02">Choose the same units for both the beginning and ending values.</practice>
+				<practice status="current" originDate="2005-05-10">Use when expressing dates that are millions or billions of years ago.</practice>
+				<practice status="current" originDate="2005-05-10">Use when expressing dates that are relative or shift on a daily, monthly or yearly basis (often occurs with real-time data sites like a weather forecasting models)</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2005-05-02">Do not enter time relative information or units if the units cannot be determined.</practice>
+				<practice status="current" originDate="2005-05-02">Do not mix units between the beginning and ending values.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2005-05-10">Jurassic: 205 Billion years ago to 140 Billion years ago.</practice>
+
+				<practice status="current" originDate="2005-05-02" link1="begin - relative field" style1="bold" link2="end - relative" style2="bold" link3="Days ago" style3="bold">To specify a time period for a website that always has 30 days of data accessible, complete the begin - relative field with the number 30 and the end - relative field with the number 0 and specify the units as Days ago.</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<attributes>
+				<attribute>units</attribute>
+			</attributes>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>decimal</XMLdataType>
+			</XMLdataTypes>
+			<domain>numerical decimals</domain>
+			<example>135.50</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/temporalCoverages/timeAndPeriod/timeInfo/timeAD/end</note>
+				<note>Other XPATH: /itemRecord/temporalCoverages/timeAndPeriod/timeInfo/timeBC/end</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

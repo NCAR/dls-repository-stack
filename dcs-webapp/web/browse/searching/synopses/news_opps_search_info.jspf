@@ -1,0 +1,43 @@
+
+
+<div class="browse-item-title">${result.docReader.title}</div>
+
+<c:if test="${not empty result.docReader.announcementUrl}">
+	<div class="searchResultValues">
+	<a href='${result.docReader.announcementUrl}' target="_blank"
+		title='view resource in a new window'>${sf:truncate(result.docReader.announcementUrl, urlTruncateLen)}</a><br>
+	<%-- <a href='${result.docReader.announcementUrl}' target="_blank">${empty result.docReader.announcementUrlLabel ? result.docReader.announcementUrl : result.docReader.announcementUrlLabel}</a><br> --%>
+	</div>
+</c:if>	
+
+<c:if test="${not empty result.docReader.description}">
+	<div class="searchResultValues"><em>Description:</em> &nbsp;
+		<dds:keywordsHighlight>${result.docReader.description}</dds:keywordsHighlight>
+	</div>
+</c:if>
+		
+<c:if test="${not empty result.docReader.announcements}">
+	<div class="searchResultValues"><em>Announcement type:</em> &nbsp;
+		<c:forEach items="${result.docReader.announcements}" varStatus="status" var="value"> 
+			<dds:keywordsHighlight>${value}${(not status.last) ? ',' : ''}</dds:keywordsHighlight>
+		</c:forEach>
+	</div>
+</c:if>
+
+<c:if test="${not empty result.docReader.topics}">
+	<div class="searchResultValues"><em>Topics:</em> &nbsp;
+		<c:forEach items="${result.docReader.topics}" varStatus="status" var="value"> 
+			<dds:keywordsHighlight>${value}${(not status.last) ? ',' : ''}</dds:keywordsHighlight>
+		</c:forEach>
+	</div>
+</c:if>
+
+<c:if test="${not empty result.docReader.audiences}">
+	<div class="searchResultValues"><em>Audience:</em> &nbsp;
+		<c:forEach items="${result.docReader.audiences}" varStatus="status" var="value"> 
+			<dds:keywordsHighlight>${value}${(not status.last) ? ',' : ''}</dds:keywordsHighlight>
+		</c:forEach>
+	</div>
+</c:if>
+
+

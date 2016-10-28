@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: reqType-adn-groups-default-en-us.xml,v 1.1 2009/01/29 22:30:07 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Requirement type</title>
+<groups:concept language="en-us" metaFormat="adn" metaVersion="0.7.00" text="Requirement type" audience="default" path="/itemRecord/technical/online/requirements/requirement/reqType" deftn="a computer requirement necessary to access, interact or operate a component of an online resource"/>
+</head>
+<body>
+<outline groups:vocab="DLESE:Browser:Internet Explorer" type="vocab" text="Internet Explorer" groups:deftn="the Microsoft Internet Explorer browser is specifically required to make the resource work properly"/>
+<outline groups:vocab="DLESE:Browser:Netscape" type="vocab" text="Netscape" groups:deftn="the Netscape browser is specifically required to make the resource work properly"/>
+<outline groups:vocab="DLESE:General:No specific technical requirements" type="vocab" text="No specific technical requirements" groups:deftn="the resource needs only a browser to work and no other requirements"/>
+<outline groups:vocab="DLESE:Operating system:Macintosh" type="vocab" text="Macintosh" groups:deftn="the Macintosh operating system is needed to make the resource function"/>
+<outline groups:vocab="DLESE:Operating system:Microsoft Windows" type="vocab" text="Microsoft Windows" groups:deftn="Microsoft Windows is needed to make the resource function"/>
+<outline groups:vocab="DLESE:Operating system:PC DOS" type="vocab" text="PC DOS" groups:deftn="The DOS operating system is specifically required to make the resource function"/>
+<outline groups:vocab="DLESE:Operating system:Unix" type="vocab" text="Unix" groups:deftn="the Unix operating system is needed to make the resource function"/>
+<outline groups:vocab="DLESE:Other:More specific technical requirements" type="vocab" text="More specific technical requirements" groups:deftn="In order for the resource to work properly, a tool that is not part of the this technical requirements list is needed"/>
+<outline groups:vocab="DLESE:Software or plug-in:Adobe Acrobat reader" type="vocab" text="Adobe Acrobat reader" groups:deftn="a type of viewer from Adobe that is needed to access .pdf (portable document format) files within a resource"/>
+<outline groups:vocab="DLESE:Software or plug-in:ArcGIS" type="vocab" text="ArcGIS" groups:deftn="software that is needed to interact fully with geographic data (at an industry standard level) within a resource, including visualizations, queries, analysis, integration capabilities and the ability to create and edit geographic data"/>
+<outline groups:vocab="DLESE:Software or plug-in:ArcView" type="vocab" text="ArcView" groups:deftn="software that is needed to interact fully with geographic data within a resource, including visualizations, queries, analysis, integration capabilities and the ability to create and edit geographic data"/>
+<outline groups:vocab="DLESE:Software or plug-in:Cosmoplayer" type="vocab" text="Cosmoplayer" groups:deftn="a type of viewer called Cosmo Player that is needed to access different types of media files within a resource"/>
+<outline groups:vocab="DLESE:Software or plug-in:Excel" type="vocab" text="Excel" groups:deftn="a type of spreadsheet program that is needed to access .xls files within a resource"/>
+<outline groups:vocab="DLESE:Software or plug-in:Flash player" type="vocab" text="Flash player" groups:deftn="a type of viewer called Flash Player that is needed to access different types of media files within a resource"/>
+<outline groups:vocab="DLESE:Software or plug-in:Java" type="vocab" text="Java" groups:deftn="Java software is needed to interact fully with a resource"/>
+<outline groups:vocab="DLESE:Software or plug-in:NIH image" type="vocab" text="NIH image" groups:deftn="a public domain image processing and analysis program from the National Institute of Health that is needed to interact fully with a resource"/>
+<outline groups:vocab="DLESE:Software or plug-in:Platform emulation software" type="vocab" text="Platform emulation software" groups:deftn="software that is required to make a system act like another system, such as making a PC act like a Mac or a Mac act like a PC"/>
+<outline groups:vocab="DLESE:Software or plug-in:QuickTime" type="vocab" text="QuickTime" groups:deftn="a type of viewer called QuickTime that is needed to access .mov (movie) or .mpg (moving picture experts group) files within a resource"/>
+<outline groups:vocab="DLESE:Software or plug-in:Real player" type="vocab" text="Real player" groups:deftn="a type of viewer called RealPlayer or RealOne that is needed to access different types of media files within a resource"/>
+<outline groups:vocab="DLESE:Software or plug-in:Scalable Vector Graphics (SVG) viewer" type="vocab" text="Scalable Vector Graphics (SVG) viewer" groups:deftn="a type of viewer that can interpret scalable vector graphic format files (.svg)"/>
+<outline groups:vocab="DLESE:Software or plug-in:Shockwave player" type="vocab" text="Shockwave player" groups:deftn="a type of viewer called Shockwave that is needed to access image or movies, often animated .gif (graphics interchange format) files, within a resource"/>
+<outline groups:vocab="DLESE:Unknown:Technical information not easily determined" type="vocab" text="Technical information not easily determined" groups:deftn="technical information about accessing, interacting or operating the resource is not known"/>
+<outline groups:vocab="DLESE:To be supplied" type="vocab" text="To be supplied" groups:deftn="requirement type information is currently unknown but will be supplied at a later date"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

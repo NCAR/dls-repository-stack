@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<news-oppsRecord xmlns="http://newsopps.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://newsopps.dlese.org
+
+http://www.dlese.org/Metadata/news-opps/1.0.00/news-opps.xsd">
+
+	<recordID>DLESE-NEWS-000-000-000-123</recordID>
+
+	<language meta="en-us" resource="en"/>
+
+	<title>Put a title here</title>
+
+	<description>Put a description here.</description>
+
+	<announcementURL>http://some.url.org</announcementURL>
+
+	<announcements>
+
+		<announcement>News</announcement>
+
+	</announcements>
+
+	<topics>
+
+		<topic>General interest</topic>
+
+	</topics>
+
+	<audiences>
+
+		<audience>General public</audience>
+
+	</audiences>
+
+	<archiveDate>2005-06-30</archiveDate>
+
+	<postDate>2004-02-28</postDate>
+
+	<recordCreationDate>2004-02-28</recordCreationDate>
+
+	<contributors>
+
+		<contributor role="Publisher">
+
+			<organization>
+
+				<instName>Put the name used in the RSS channel section here</instName>
+
+			</organization>
+
+		</contributor>
+
+	</contributors>
+
+</news-oppsRecord>
+

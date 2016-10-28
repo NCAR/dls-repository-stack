@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Jonathan Ostwald (UCAR) -->
+<xsd:schema xmlns="http://dcs.dlsciences.org/collection-config" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://dcs.dlsciences.org/collection-config" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.0.4">
+	<xsd:element name="collectionConfigRecord" type="collectionConfigType">
+		<xsd:annotation>
+			<xsd:documentation>schema for Collection configuration files used by the DCS. Instance docs (collection configuration files) are named by their collection id (e.g., dcc)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="collectionConfigType">
+		<xsd:all>
+			<xsd:element name="collectionId" type="xsd:string"/>
+			<xsd:element name="xmlFormat" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>required format key for the framework (e.g., adn, news_opps)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="statusFlags" type="statusFlagsType">
+				<xsd:annotation>
+					<xsd:documentation>a list of status flags from which users select when they assign a status to a record within the collection</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="tuples" type="tuplesType" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>a list of name/value pairs to store information about this collection that is inserted into item records</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="exportDirectory" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The directory to which records are written when the  export command is executed on the collection</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="authority" type="authorityType">
+				<xsd:annotation>
+					<xsd:documentation>The authoritative source of records for this collection (dcs | ndr)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="ndrInfo" type="ndrInfoType" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Information required to manage NDR collections</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="statusFlagsType">
+		<xsd:sequence>
+			<xsd:element name="statusFlag" type="statusFlagType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="finalStatusLabel" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tuplesType">
+		<xsd:sequence>
+			<xsd:element name="tuple" type="tupleType" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tupleType">
+		<xsd:all>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="value" type="xsd:string" minOccurs="0"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="statusFlagType">
+		<xsd:all>
+			<xsd:element name="status" type="xsd:string"/>
+			<xsd:element name="description" type="xsd:string" minOccurs="0"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="ndrInfoType">
+		<xsd:sequence>
+			<xsd:element name="metadataProvider" type="ndrServiceType"/>
+			<xsd:element name="aggregator" type="ndrServiceType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="authorityType">
+		<xsd:annotation>
+			<xsd:documentation>
+				permissible values for authority element (dcs | ndr)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="dcs"/>
+			<xsd:enumeration value="ndr"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="ndrServiceType">
+		<xsd:sequence>
+				<xsd:element name="handle" type="xsd:string" />
+				<xsd:element name="serviceDescription" type="serviceDescType" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="serviceDescType">
+		<xsd:sequence>
+			<xsd:element name="title" type="xsd:string"/>
+			<xsd:element name="description" type="xsd:string"/>
+			<xsd:element name="identifier" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

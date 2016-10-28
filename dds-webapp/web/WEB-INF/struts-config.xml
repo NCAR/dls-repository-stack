@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE struts-config PUBLIC
+		"-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+		"http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<!-- ========== Form Bean Definitions =================================== -->
+
+	<form-beans>
+		<form-bean
+				name="adminForm"
+				type="edu.ucar.dls.dds.action.form.DDSAdminForm"/>
+		<form-bean
+				name="queryForm"
+				type="edu.ucar.dls.dds.action.form.DDSAdminQueryForm"/>
+		<form-bean
+				name="mf"
+				type="edu.ucar.dls.dds.action.form.DDSManageCollectionsForm"/>
+		<form-bean
+				name="result"
+				type="edu.ucar.dls.dds.action.form.DDSAdminQueryForm"/>
+		<form-bean
+				name="reportForm"
+				type="edu.ucar.dls.dds.action.form.DDSAdminQueryForm"/>
+		<form-bean
+				name="rf"
+				type="edu.ucar.dls.repository.action.form.RepositoryForm"/>
+		<form-bean
+				name="raf"
+				type="edu.ucar.dls.repository.action.form.RepositoryAdminForm"/>
+		<form-bean
+				name="rmf"
+				type="edu.ucar.dls.repository.action.form.RepositoryMaintenanceForm"/>
+		<form-bean
+				name="rdf"
+				type="edu.ucar.dls.repository.action.form.RepositoryDetailsForm"/>
+		<form-bean
+				name="rsf"
+				type="edu.ucar.dls.repository.action.form.RepositoryAnalyticsForm"/>
+		<form-bean
+				name="ddsQueryForm"
+				type="edu.ucar.dls.dds.action.form.DDSQueryForm"/>
+		<form-bean
+				name="ddsViewResourceForm"
+				type="edu.ucar.dls.dds.action.form.DDSViewResourceForm"/>
+		<form-bean
+				name="histogramForm"
+				type="edu.ucar.dls.dds.action.form.HistogramForm"/>
+		<form-bean
+				name="noscriptForm"
+				type="edu.ucar.dls.dds.action.form.NoscriptForm"/>
+		<form-bean
+				name="collectionForm"
+				type="edu.ucar.dls.dds.action.form.DDSViewCollectionForm"/>
+		<form-bean
+				name="spoofHtmlForm"
+				type="edu.ucar.dls.dds.action.form.SpoofHtmlForm"/>
+		<form-bean
+				name="df"
+				type="edu.ucar.dls.services.dds.action.form.DDSServicesForm"/>
+		<form-bean
+				name="df11"
+				type="edu.ucar.dls.services.dds.action.form.DDSServicesForm_1_1"/>
+		<form-bean
+				name="ddsusf"
+				type="edu.ucar.dls.services.dds.action.form.DDSRepositoryUpdateServiceForm"/>
+		<form-bean
+				name="jsformv11"
+				type="edu.ucar.dls.services.dds.action.form.JSHTMLForm_1_1"/>
+		<form-bean
+				name="rssForm"
+				type="edu.ucar.dls.services.dds.action.form.DDSRSS20Form"/>
+		<form-bean
+				name="drf"
+				type="edu.ucar.dls.dds.action.form.DDSReportingForm"/>
+		<form-bean
+				name="def"
+				type="edu.ucar.dls.dds.action.form.DDSEditRecordForm"/>
+		<form-bean
+				name="exampleVocabsForm"
+				type="edu.ucar.dls.dds.action.form.VocabForm"/>
+		<form-bean
+				name="vocabAdminForm"
+				type="edu.ucar.dls.vocab.action.form.VocabAdminForm"/>
+		<!-- OAI settings beans (shared with joai-project) -->
+		<form-bean
+				name="repositoryInfoForm"
+				type="edu.ucar.dls.repository.action.form.RepositoryInfoForm" />
+	</form-beans>
+
+	<!-- ========== Global Forward Definitions ============================== -->
+	<global-forwards>
+		<forward name="welcome_reporting" path="/admin/reporting/report.do"/>
+		<forward name="update.repository.info" path="/admin/dp_metadata/repository_info_form.jsp" />
+	</global-forwards>
+
+
+	<!-- ========== Action Mapping Definitions ============================== -->
+	<action-mappings>
+
+		<!-- The admin pages -->
+		<!-- <action	path="/admin/admin" 
+				type="edu.ucar.dls.dds.action.DDSAdminAction"
+				scope="request"
+				name="adminForm"
+				validate="false">  
+			<forward name="admin.index" path="/admin/index.jsp"/>
+		</action>  -->
+
+		<!-- ADMIN vocabulary management and display pages -->
+		<action	path="/admin/vocab"
+				   type="edu.ucar.dls.vocab.action.VocabAdminAction"
+				   scope="request"
+				   name="vocabAdminForm"
+				   validate="true"
+				   input="/admin/vocabs.jsp">
+			<forward name="display.vocab.settings" path="/admin/vocabs.jsp"/>
+		</action>
+
+		<action	path="/admin/admin"
+				   type="edu.ucar.dls.repository.action.RepositoryAdminAction"
+				   scope="session"
+				   name="raf"
+				   validate="true"
+				   input="/admin/edit_collections_settings.jsp">
+			<forward name="display.repository.settings" path="/admin/display_collections_settings.jsp"/>
+			<forward name="edit.repository.settings" path="/admin/edit_collections_settings.jsp"/>
+		</action>
+
+
+		<action	path="/admin/maintenance"
+				   type="edu.ucar.dls.repository.action.RepositoryMaintenanceAction"
+				   scope="request"
+				   name="rmf"
+				   validate="true"
+				   input="/admin/repository_maintenance.jsp">
+			<forward name="display.repository.maintenance" path="/admin/repository_maintenance.jsp"/>
+
+		</action>
+
+		<action	path="/admin/repository_details"
+				   type="edu.ucar.dls.repository.action.RepositoryDetailsAction"
+				   scope="request"
+				   name="rdf"
+				   validate="true"
+				   input="/admin/repository_details.jsp">
+			<forward name="display.repository.details" path="/admin/repository_details.jsp"/>
+
+		</action>
+
+		<action	path="/repository_analytics"
+				   type="edu.ucar.dls.repository.action.RepositoryAnalyticsAction"
+				   scope="request"
+				   name="rsf"
+				   validate="true"
+				   input="/repository_analytics.jsp">
+			<forward name="display.repository.analytics" path="/repository_analytics.jsp"/>
+
+		</action>
+
+		<action	path="/svg_transcoder"
+				   type="edu.ucar.dls.repository.action.SVGTranscoder"
+				   scope="request"
+				   validate="true">
+		</action>
+
+		<!-- ADMIN keyword search and display pages -->
+		<action	path="/admin/query"
+				   type="edu.ucar.dls.dds.action.DDSAdminQueryAction"
+				   scope="session"
+				   name="queryForm"
+				   validate="true"
+				   input="/admin/search.jsp">
+			<forward name="simple.query" path="/admin/search.jsp"/>
+			<forward name="weblog.query" path="/admin/search.jsp"/>
+		</action>
+
+		<!-- Manage collections area (not currently used) -->
+		<action	path="/admin/manage"
+				   type="edu.ucar.dls.dds.action.DDSManageCollectionsAction"
+				   scope="session"
+				   name="mf"
+				   validate="true"
+				   input="/admin/manage/edit_record_status.jsp">
+			<forward name="edit.record.status" path="/admin/manage/edit_record_status.jsp"/>
+		</action>
+
+		<action	path="/admin/display"
+				   type="edu.ucar.dls.dds.action.DDSAdminQueryAction"
+				   scope="session"
+				   name="result"
+				   validate="true"
+				   input="/admin/full_view.jsp">
+			<forward name="data.display" path="/admin/display.jsp"/>
+			<forward name="fullview.display" path="/admin/full_view.jsp"/>
+		</action>
+
+		<!-- DDS keyword search and display pages -->
+		<action	path="/query"
+				   type="edu.ucar.dls.dds.action.DDSQueryAction"
+				   scope="request"
+				   name="ddsQueryForm"
+				   validate="false"
+				   input="/search_results.jsp">
+			<forward name="simple.query" path="/search_results.jsp"/>
+			<forward name="whats.new.query" path="/search_results_whats_new.jsp"/>
+			<forward name="site.query1" path="/search_results.jsp"/>
+			<forward name="site.query2" path="/search_results.jsp"/>
+			<forward name="site.query3" path="/search_results.jsp"/>
+			<!-- DDS v3.2 and earlier (now redirected same way as simple.query): 
+			forward name="site.query1" path="/site_queryNO.jsp"/>
+			<forward name="site.query2" path="/site_queryEM.jsp"/>
+			<forward name="site.query3" path="/site_querySO.jsp"/  -->
+		</action>
+
+		<!-- DDS view resource info. -->
+		<action	path="/view_resource"
+				   type="edu.ucar.dls.dds.action.DDSViewResourceAction"
+				   scope="request"
+				   name="ddsViewResourceForm"
+				   validate="true"
+				   input="/view_resouce.jsp">
+			<forward name="dsv.redirect" path="/dsv_redirect.jsp" />
+			<!-- DDS v3.2 and earlier: 
+			<forward name="view.resource.description" path="/description_full.jsp"/>
+			<forward name="view.resource.description.all" path="/description_all_collections.jsp"/>
+			<forward name="view.resource.reviews" path="/reviews.jsp"/>
+			<forward name="write.resource.review" path="/write_review.jsp"/>
+			<forward name="error" path="/error.jsp"/>
+			-->
+		</action>
+
+		<!-- DDS histogram views -->
+		<action	path="/histogram"
+				   type="edu.ucar.dls.dds.action.HistogramAction"
+				   scope="request"
+				   name="histogramForm"
+				   validate="true"
+				   input="/histogram_search.jsp">
+			<forward name="display" path="/histogram_search.jsp"/>
+			<forward name="summary" path="/histogram_summary.jsp"/>
+			<forward name="summary.csv" path="/histogram_summary_csv.jsp"/>
+			<forward name="error" path="/error.jsp"/>
+		</action>
+
+		<!-- Noscript search pages (like V1 "power search" page) -->
+		<action	path="/noscript"
+				   type="edu.ucar.dls.dds.action.DDSViewResourceAction"
+				   scope="request"
+				   name="ddsViewResourceForm"
+				   validate="true"
+				   input="/search_results.jsp">
+			<forward name="dsv.redirect" path="/dsv_redirect.jsp" />
+			<!--  DDS v3.2 and earlier: 
+			forward name="showVocab_gr" path="/noscript_vocab_grade_range.jsp"/>
+			<forward name="showVocab_re" path="/noscript_vocab_resource_type.jsp"/>
+			<forward name="showVocab_cs" path="/noscript_vocab_standards.jsp"/>
+			<forward name="showVocab_ky" path="/noscript_vocab_collections.jsp"/>
+			<forward name="error" path="/error.jsp"/ -->
+		</action>
+
+		<!-- Collection description views -->
+		<action	path="/collection"
+				   type="edu.ucar.dls.dds.action.DDSViewCollectionAction"
+				   scope="request"
+				   name="collectionForm"
+				   validate="true"
+				   input="/description_collection.jsp">
+			<forward name="view.collection.description" path="/description_collection.jsp"/>
+			<forward name="view.collection.description.brief" path="/description_collection_brief.jsp"/>
+			<forward name="error" path="/error.jsp"/>
+		</action>
+
+		<!--  Reports pages -->
+		<action	path="/admin/report"
+				   type="edu.ucar.dls.dds.action.DDSAdminQueryAction"
+				   scope="request"
+				   name="reportForm"
+				   validate="true"
+				   input="/admin/search.jsp">
+			<forward name="report.query" path="/admin/reports.jsp"/>
+			<forward name="weblogreport.query" path="/admin/reports.jsp"/>
+		</action>
+
+		<!-- The DDS web service v1.0 -->
+		<action	path="/services/ddsws1-0"
+				   type="edu.ucar.dls.services.dds.action.DDSServicesAction"
+				   name="df"
+				   scope="request"
+				   validate="false">
+			<forward name="ddsservices.UrlCheck" path="/services/ddsws1-0/UrlCheck.jsp"/>
+			<forward name="ddsservices.GetRecord" path="/services/ddsws1-0/GetRecord.jsp"/>
+			<forward name="ddsservices.Search" path="/services/ddsws1-0/Search.jsp"/>
+			<forward name="ddsservices.ListXmlFormats" path="/services/ddsws1-0/ListXmlFormats.jsp"/>
+			<forward name="ddsservices.ListCollections" path="/services/ddsws1-0/ListCollections.jsp"/>
+			<forward name="ddsservices.ListVocabEntries" path="/services/ddsws1-0/ListVocabEntries.jsp"/>
+			<forward name="ddsservices.ServiceInfo" path="/services/ddsws1-0/ServiceInfo.jsp"/>
+			<forward name="ddsservices.error" path="/services/ddsws1-0/errors.jsp"/>
+			<forward name="ddsservices.disabled" path="/services/ddsws1-0/disabled.jsp"/>
+		</action>
+
+		<!-- The DDS web service v1.1 -->
+		<action	path="/services/ddsws1-1"
+				   type="edu.ucar.dls.services.dds.action.DDSServicesAction_1_1"
+				   name="df11"
+				   scope="request"
+				   validate="false">
+			<forward name="ddsservices.UrlCheck" path="/services/ddsws1-1/UrlCheck.jsp"/>
+			<forward name="ddsservices.GetRecord" path="/services/ddsws1-1/GetRecord.jsp"/>
+			<forward name="ddsservices.Search" path="/services/ddsws1-1/Search.jsp"/>
+			<forward name="ddsservices.ListXmlFormats" path="/services/ddsws1-1/ListXmlFormats.jsp"/>
+			<forward name="ddsservices.ListCollections" path="/services/ddsws1-1/ListCollections.jsp"/>
+			<forward name="ddsservices.ListVocabEntries" path="/services/ddsws1-1/ListVocabEntries.jsp"/>
+			<forward name="ddsservices.ListFields" path="/services/ddsws1-1/ListFields.jsp"/>
+			<forward name="ddsservices.ListTerms" path="/services/ddsws1-1/ListTerms.jsp"/>
+			<forward name="ddsservices.ServiceInfo" path="/services/ddsws1-1/ServiceInfo.jsp"/>
+			<forward name="ddsservices.RepositorySummary" path="/services/ddsws1-1/RepositorySummary.jsp"/>
+			<forward name="ddsservices.error" path="/services/ddsws1-1/errors.jsp"/>
+			<forward name="ddsservices.disabled" path="/services/ddsws1-1/disabled.jsp"/>
+		</action>
+
+		<!-- DDS repository update web service v1.1 -->
+		<action	path="/services/ddsupdatews1-1"
+				   type="edu.ucar.dls.services.dds.action.DDSRepositoryUpdateServiceAction"
+				   name="ddsusf"
+				   scope="request"
+				   validate="false">
+			<forward name="ddsupdateservice.PutRecord" path="/services/ddsupdatews1-1/PutRecord.jsp"/>
+			<forward name="ddsupdateservice.DeleteRecord" path="/services/ddsupdatews1-1/DeleteRecord.jsp"/>
+			<forward name="ddsupdateservice.PutCollection" path="/services/ddsupdatews1-1/PutCollection.jsp"/>
+			<forward name="ddsupdateservice.DeleteCollection" path="/services/ddsupdatews1-1/DeleteCollection.jsp"/>
+			<forward name="ddsupdateservice.error" path="/services/ddsupdatews1-1/errors.jsp"/>
+		</action>
+
+		<!-- The OAI-PMH data provider (Note: These JSPs are imported from joai-project) -->
+		<action	path="/services/oai2-0"
+				   type="edu.ucar.dls.repository.action.RepositoryAction"
+				   name="rf"
+				   scope="request"
+				   validate="false">
+			<forward name="oaipmh.Identify" path="/services/oai2-0/oai_requests/Identify.jsp"/>
+			<forward name="oaipmh.ListSets" path="/services/oai2-0/oai_requests/ListSets.jsp"/>
+			<forward name="oaipmh.ListIdentifiers" path="/services/oai2-0/oai_requests/ListIdentifiers.jsp"/>
+			<forward name="oaipmh.ListMetadataFormats" path="/services/oai2-0/oai_requests/ListMetadataFormats.jsp"/>
+			<forward name="oaipmh.ListRecords" path="/services/oai2-0/oai_requests/ListRecords.jsp"/>
+			<forward name="oaipmh.GetRecord" path="/services/oai2-0/oai_requests/GetRecord.jsp"/>
+			<forward name="oaipmh.error" path="/services/oai2-0/oai_requests/errors.jsp"/>
+			<forward name="oaipmh.disabled" path="/services/oai2-0/oai_requests/disabled.jsp"/>
+			<forward name="error.500" path="/WEB-INF/error_pages/error_page_500.jsp"/>
+		</action>
+
+		<!-- The JavaScript search service v1.1 -->
+		<action	path="/services/jshtml1-1"
+				   type="edu.ucar.dls.services.dds.action.JSHTMLAction_1_1"
+				   name="jsformv11"
+				   scope="request"
+				   validate="false">
+			<forward name="jshtml.default" path="/services/jshtml1-1/default.jsp"/>
+			<forward name="jshtml.error" path="/services/jshtml1-1/error.jsp"/>
+		</action>
+
+		<!-- RSS 2.0 -->
+		<action	path="/services/rss2-0"
+				   type="edu.ucar.dls.services.dds.action.DDSRSS20Action"
+				   name="rssForm"
+				   scope="request"
+				   validate="false">
+			<forward name="rss20.response" path="/services/rss2-0/search_results_rss.jsp"/>
+			<forward name="rss20.error" path="/services/rss2-0/search_results_rss.jsp"/>
+		</action>
+
+		<!-- DDS reporting -->
+		<action	path="/admin/reporting/report"
+				   type="edu.ucar.dls.dds.action.DDSReportingAction"
+				   name="drf"
+				   scope="request"
+				   validate="false">
+			<forward name="ddsreporting.termcount" path="/admin/reporting/TermCount.jsp"/>
+			<forward name="ddsreporting.termcount.csv" path="/admin/reporting/TermCountCsv.jsp"/>
+			<forward name="ddsreporting.viewstems" path="/admin/reporting/ViewStems.jsp"/>
+			<forward name="ddsreporting.listfields" path="/admin/reporting/ListFields.jsp"/>
+			<forward name="ddsreporting.index" path="/admin/reporting/index_page.jsp"/>
+			<forward name="ddsreporting.putrecord" path="/admin/reporting/PutRecord.jsp"/>
+			<forward name="ddsreporting.viewdupids" path="/admin/reporting/DupIds.jsp"/>
+			<forward name="ddsreporting.viewidmapper" path="/admin/reporting/ViewIDMapperReport.jsp"/>
+		</action>
+
+		<!-- DDS edit records -->
+		<action	path="/admin/editing"
+				   type="edu.ucar.dls.dds.action.DDSEditRecordAction"
+				   name="def"
+				   scope="session"
+				   validate="false">
+			<forward name="ddseditrecord.index" path="/admin/editing/EditRecord.jsp"/>
+		</action>
+
+		<action path="/admin/examples/vocabs"
+				type="edu.ucar.dls.dds.action.VocabAction"
+				name="exampleVocabsForm"
+				scope="request"
+				validate="false"
+				input="/admin/examples/vocabs_example.jsp">
+			<forward name="display" path="/admin/examples/vocabs_display.jsp"/>
+			<forward name="render.fcosee" path="/admin/examples/vocabs_fcosee.jsp"/>
+		</action>
+
+
+		<!-- *************** OAI-PMH admin pages (shared with joai-project)  *************** -->
+
+		<!-- View/edit the OAI-PMH data provider's metadata and other coniguration -->
+		<action	path="/admin/data-provider-info"
+				   type="edu.ucar.dls.repository.action.RepositoryAdminAction"
+				   scope="request"
+				   name="raf"
+				   validate="true"
+				   input="edit.repository.settings">
+			<forward name="display.repository.settings" path="/admin/dp_metadata/repository_administration.jsp"/>
+			<forward name="edit.repository.settings" path="/admin/dp_metadata/edit_response_length_settings.jsp"/>
+		</action>
+
+		<!-- Input for editing OAI-PMH repository info (name, description, e-mail etc) -->
+		<action path="/admin/repository_info-view" forward="/admin/dp_metadata/repository_info_form.jsp" />
+		<action path="/admin/update_repository_info" forward="/admin/data-provider-info.do" />
+		<action path="/admin/repository_info-validate"
+				type="org.apache.struts.actions.ForwardAction"
+				name="repositoryInfoForm"
+				scope="request"
+				parameter="/admin/data-provider-info.do"
+				validate="true"
+				input="input" >
+			<forward name="input" path="/admin/repository_info-view.do" />
+		</action>
+
+
+	</action-mappings>
+
+	<controller inputForward="true" debug="4"/>
+
+	<!-- Resource bundle -->
+	<message-resources null="false" parameter="ApplicationResources"/>
+
+	<!--
+	   Add multiple validator resource files by setting the pathnames property
+	   with a comma delimitted list of resource files to load.
+	-->
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+		<set-property property="stopOnFirstError" value="true" />
+	</plug-in>
+
+</struts-config>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: announcement-no-groups-community-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $ -->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+	<head>
+		<title>Announcement type</title>
+		<groups:concept language="en-us" metaFormat="news_opps" metaVersion="1.0.00" text="Announcement type" audience="community" path="/news-oppsRecord/announcements/announcement" deftn="the type of news, event or opportunity"/>
+	</head>
+	<body>
+		<outline groups:vocab="News" type="vocab" text="News"/>
+		<outline groups:vocab="Grant or proposal" type="vocab" text="Grant or proposal"/>
+		<outline groups:vocab="Job" type="vocab" text="Job"/>
+		<outline groups:vocab="Careers" type="vocab" text="Careers"/>
+		<outline groups:vocab="Conference" type="vocab" text="Conference"/>
+		<outline groups:vocab="Workshop" type="vocab" text="Workshop"/>
+		<outline groups:vocab="Learning or research opportunity" type="vocab" text="Learning or research opportunity"/>
+		<outline groups:vocab="Award, recognition or scholarship" type="vocab" text="Award, recognition or scholarship"/>
+		<outline groups:vocab="Call for participation" type="vocab" text="Call for participation"/>
+	</body>
+</opml>

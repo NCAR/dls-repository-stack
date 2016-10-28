@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: contentStandard-NSES-adn-groups-default-en-us.xml,v 1.1 2009/01/30 21:34:41 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Content standard - science - National Science Education Standards (NSES)</title>
+<groups:concept id="cs" language="en-us" metaFormat="adn" metaVersion="0.6.50" text="Content standard - science - National Science Education Standards (NSES)" audience="default" path="/itemRecord/educational/contentStandards/contentStandard" deftn="a vision of a scientifically literate populace by outlining what students need to know, understand, and be able to do to be scientifically literate at different grade levels"/>
+</head>
+<body>
+<outline groups:vocab="NSES:5-8:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" type="vocab" groups:id="0i" text="Abilities necessary to do scientific inquiry"/>
+<outline groups:vocab="NSES:5-8:Content Standard A Science as Inquiry Standards:Understanding about scientific inquiry" type="vocab" groups:id="0j" text="Understanding about scientific inquiry"/>
+<outline groups:vocab="NSES:5-8:Content Standard B Physical Science Standards:Motion and forces" type="vocab" groups:id="0k" text="Motion and forces"/>
+<outline groups:vocab="NSES:5-8:Content Standard B Physical Science Standards:Properties and changes of properties in matter" type="vocab" groups:id="0l" text="Properties and changes of properties in matter"/>
+<outline groups:vocab="NSES:5-8:Content Standard B Physical Science Standards:Transfer of energy" type="vocab" groups:id="0m" text="Transfer of energy"/>
+<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Diversity and adaptations of organisms" type="vocab" groups:id="0n" text="Diversity and adaptations of organisms"/>
+<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Population and ecosystems" type="vocab" groups:id="0o" text="Population and ecosystems"/>
+<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Regulation and behavior" type="vocab" groups:id="0p" text="Regulation and behavior"/>
+<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Reproduction and heredity" type="vocab" groups:id="0q" text="Reproduction and heredity"/>
+<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Structure and function in living systems" type="vocab" groups:id="0r" text="Structure and function in living systems"/>
+<outline groups:vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth in the solar system" type="vocab" groups:id="0s" text="Earth in the solar system"/>
+<outline groups:vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth's history" type="vocab" groups:id="0t" text="Earth's history"/>
+<outline groups:vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Structure of the earth system" type="vocab" groups:id="0u" text="Structure of the earth system"/>
+<outline groups:vocab="NSES:5-8:Content Standard E Science and Technology Standards:Abilities of technological design" type="vocab" groups:id="0v" text="Abilities of technological design"/>
+<outline groups:vocab="NSES:5-8:Content Standard E Science and Technology Standards:Understandings about science and technology" type="vocab" groups:id="0w" text="Understandings about science and technology"/>
+<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Natural hazards" type="vocab" groups:id="0x" text="Natural hazards"/>
+<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Personal health" type="vocab" groups:id="0y" text="Personal health"/>
+<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Populations, resources, and environments" type="vocab" groups:id="0z" text="Populations, resources, and environments"/>
+<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Risks and benefits" type="vocab" groups:id="000" text="Risks and benefits"/>
+<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in society" type="vocab" groups:id="001" text="Science and technology in society"/>
+<outline groups:vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:History of science" type="vocab" groups:id="002" text="History of science"/>
+<outline groups:vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:Nature of science" type="vocab" groups:id="003" text="Nature of science"/>
+<outline groups:vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:Science as a human endeavor" type="vocab" groups:id="004" text="Science as a human endeavor"/>
+<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Change, constancy, and measurement" type="vocab" groups:id="005" text="Change, constancy, and measurement"/>
+<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Evidence, models, and explanation" type="vocab" groups:id="006" text="Evidence, models, and explanation"/>
+<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Evolution and equilibrium" type="vocab" groups:id="007" text="Evolution and equilibrium"/>
+<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Form and function" type="vocab" groups:id="008" text="Form and function"/>
+<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Systems, order, and organization" type="vocab" groups:id="009" text="Systems, order, and organization"/>
+<outline groups:vocab="NSES:9-12:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" type="vocab" groups:id="00a" text="Abilities necessary to do scientific inquiry"/>
+<outline groups:vocab="NSES:9-12:Content Standard A Science as Inquiry Standards:Understandings about scientific inquiry" type="vocab" groups:id="00b" text="Understandings about scientific inquiry"/>
+<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Chemical reactions" type="vocab" groups:id="00c" text="Chemical reactions"/>
+<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Conservation of energy and increase in disorder" type="vocab" groups:id="00d" text="Conservation of energy and increase in disorder"/>
+<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Interactions of energy and matter" type="vocab" groups:id="00e" text="Interactions of energy and matter"/>
+<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Motions and forces" type="vocab" groups:id="00f" text="Motions and forces"/>
+<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Structure and properties of matter" type="vocab" groups:id="00g" text="Structure and properties of matter"/>
+<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Structure of atoms" type="vocab" groups:id="00h" text="Structure of atoms"/>
+<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Behavior of organisms" type="vocab" groups:id="00i" text="Behavior of organisms"/>
+<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Biological evolution" type="vocab" groups:id="00j" text="Biological evolution"/>
+<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Interdependence of organisms" type="vocab" groups:id="00k" text="Interdependence of organisms"/>
+<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Matter, energy, and organization in living systems" type="vocab" groups:id="00l" text="Matter, energy, and organization in living systems"/>
+<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Molecular basis of heredity" type="vocab" groups:id="00m" text="Molecular basis of heredity"/>
+<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:The cell" type="vocab" groups:id="00n" text="The cell"/>
+<outline groups:vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Energy in the earth system" type="vocab" groups:id="00o" text="Energy in the earth system"/>
+<outline groups:vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Geochemical cycles" type="vocab" groups:id="00p" text="Geochemical cycles"/>
+<outline groups:vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Origin and evolution of the earth system" type="vocab" groups:id="00q" text="Origin and evolution of the earth system"/>
+<outline groups:vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Origin and evolution of the universe" type="vocab" groups:id="00r" text="Origin and evolution of the universe"/>
+<outline groups:vocab="NSES:9-12:Content Standard E Science and Technology Standards:Abilities of technological design" type="vocab" groups:id="00s" text="Abilities of technological design"/>
+<outline groups:vocab="NSES:9-12:Content Standard E Science and Technology Standards:Understandings about science and technology" type="vocab" groups:id="00t" text="Understandings about science and technology"/>
+<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Environmental quality" type="vocab" groups:id="00u" text="Environmental quality"/>
+<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural and human-induced hazards" type="vocab" groups:id="00v" text="Natural and human-induced hazards"/>
+<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural resources" type="vocab" groups:id="00w" text="Natural resources"/>
+<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Personal and community health" type="vocab" groups:id="00x" text="Personal and community health"/>
+<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Population growth" type="vocab" groups:id="00y" text="Population growth"/>
+<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in local, national, and global challenges" type="vocab" groups:id="00z" text="Science and technology in local, national, and global challenges"/>
+<outline groups:vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Historical perspectives" type="vocab" groups:id="010" text="Historical perspectives"/>
+<outline groups:vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Nature of scientific knowledge" type="vocab" groups:id="011" text="Nature of scientific knowledge"/>
+<outline groups:vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Science as a human endeavor" type="vocab" groups:id="012" text="Science as a human endeavor"/>
+<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Change, constancy, and measurement" type="vocab" groups:id="013" text="Change, constancy, and measurement"/>
+<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Evidence, models, and explanation" type="vocab" groups:id="014" text="Evidence, models, and explanation"/>
+<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Evolution and equilibrium" type="vocab" groups:id="015" text="Evolution and equilibrium"/>
+<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Form and function" type="vocab" groups:id="016" text="Form and function"/>
+<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Systems, order, and organization" type="vocab" groups:id="017" text="Systems, order, and organization"/>
+<outline groups:vocab="NSES:K-4:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" type="vocab" groups:id="018" text="Abilities necessary to do scientific inquiry"/>
+<outline groups:vocab="NSES:K-4:Content Standard A Science as Inquiry Standards:Understanding about scientific inquiry" type="vocab" groups:id="019" text="Understanding about scientific inquiry"/>
+<outline groups:vocab="NSES:K-4:Content Standard B Physical Science Standards:Light, heat, electricity, and magnetism" type="vocab" groups:id="01a" text="Light, heat, electricity, and magnetism"/>
+<outline groups:vocab="NSES:K-4:Content Standard B Physical Science Standards:Position and motion of objects" type="vocab" groups:id="01b" text="Position and motion of objects"/>
+<outline groups:vocab="NSES:K-4:Content Standard B Physical Science Standards:Properties of objects and materials" type="vocab" groups:id="01c" text="Properties of objects and materials"/>
+<outline groups:vocab="NSES:K-4:Content Standard C Life Science Standards:Characteristics of organisms" type="vocab" groups:id="01d" text="Characteristics of organisms"/>
+<outline groups:vocab="NSES:K-4:Content Standard C Life Science Standards:Life cycles of organisms" type="vocab" groups:id="01e" text="Life cycles of organisms"/>
+<outline groups:vocab="NSES:K-4:Content Standard C Life Science Standards:Organisms and environments" type="vocab" groups:id="01f" text="Organisms and environments"/>
+<outline groups:vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Changes in earth and sky" type="vocab" groups:id="01g" text="Changes in earth and sky"/>
+<outline groups:vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Objects in the sky" type="vocab" groups:id="01h" text="Objects in the sky"/>
+<outline groups:vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Properties of earth materials" type="vocab" groups:id="01i" text="Properties of earth materials"/>
+<outline groups:vocab="NSES:K-4:Content Standard E Science and Technology Standards:Abilities of technological design" type="vocab" groups:id="01j" text="Abilities of technological design"/>
+<outline groups:vocab="NSES:K-4:Content Standard E Science and Technology Standards:Abilities to distinguish between natural objects and objects made by humans" type="vocab" groups:id="01k" text="Abilities to distinguish between natural objects and objects made by humans"/>
+<outline groups:vocab="NSES:K-4:Content Standard E Science and Technology Standards:Understanding about science and technology" type="vocab" groups:id="01l" text="Understanding about science and technology"/>
+<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Changes in environments" type="vocab" groups:id="01m" text="Changes in environments"/>
+<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Characteristics and changes in populations" type="vocab" groups:id="01n" text="Characteristics and changes in populations"/>
+<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Personal health" type="vocab" groups:id="01o" text="Personal health"/>
+<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in local challenges" type="vocab" groups:id="01p" text="Science and technology in local challenges"/>
+<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Types of resources" type="vocab" groups:id="01q" text="Types of resources"/>
+<outline groups:vocab="NSES:K-4:Content Standard G History and Nature of Science Standards:Science as a human endeavor" type="vocab" groups:id="01r" text="Science as a human endeavor"/>
+<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Change, constancy, and measurement" type="vocab" groups:id="01s" text="Change, constancy, and measurement"/>
+<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Evidence, models, and explanation" type="vocab" groups:id="01t" text="Evidence, models, and explanation"/>
+<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Evolution and equilibrium" type="vocab" groups:id="01u" text="Evolution and equilibrium"/>
+<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Form and function" type="vocab" groups:id="01v" text="Form and function"/>
+<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Systems, order, and organization" type="vocab" groups:id="01w" text="Systems, order, and organization"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

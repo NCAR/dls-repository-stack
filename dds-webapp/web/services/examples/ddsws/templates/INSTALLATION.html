@@ -1,0 +1,163 @@
+<html>
+
+<head>
+	<title>DLESE Search Template: Installation and Customization</title>
+	<link rel='stylesheet' type='text/css' href='styles.css'>
+</head>
+<body style="margin-left:15px; margin-top:15px; margin-right:15px; margin-bottom:15px">
+	
+	<h2>DLESE Search Template: Installation and Customization</h2>
+	
+	<p/>
+	<a href="index.jsp">This template</a> provides a functional, customizable search page that searches for 
+	educational resources in the 
+	<a href="http://www.dlese.org/" target="_blank">Digital Library for Earth System Education</a> (DLESE).
+	This is client version @DDSWS_CLIENT_VERSION@.
+	
+	<h3>What can I do with this search page template?</h3>
+	
+	<p/>
+	Some examples of how you might customize this search page include:
+	<ul>
+		<li>Tailor the HTML in the page to match the graphics, colors and design of your web site. 
+			<ul><li>
+				To do this: Edit the <a href="index.jsp">index.jsp</a> and <a href="styles.css">styles.css</a> 
+				files as needed to insert your text, colors and graphics and define what menus and other 
+				elements you would like to display in your page. You may also edit the files found
+				in the 'includes' directory.
+			</li></ul>
+		</li>
+		<li>Create a set of smart links that display DLESE resources about particular topics or
+		categories that are of interest to your web site visitors. 
+			<ul><li>
+				To do this: Edit the smart links that are defined in the file 
+				<a href="smart_link_definitions.xml">smart_link_definitions.xml</a>.
+			</li></ul>
+		</li>
+		<li>Create a custom menu that allows your visitors to qualify their
+		search using the categories, topics or other criteria you define. 
+			<ul><li>
+				To do this: Edit the menus that are defined in the file 
+				<a href="smart_link_definitions.xml">smart_link_definitions.xml</a>.
+			</li></ul>
+		</li>		
+		<li>Customize the search logic to search over a particular subject area, such as geology, biology or
+		atmospheric science or any other category of interest to your web site visitors.
+			<ul><li>
+				To do this: Edit the variable 'searchBoostingAndConstraints' near the top of the file <a href="index.jsp">index.jsp</a>.
+			</li></ul>
+		</li>
+	</ul>
+	
+	<p/>
+	See below for detailed instructions about customizing this page.
+	
+	<h3>How to customize and use this template:</h3>
+	
+	<p/>
+	1. Download the web service template and examples from
+	<a href="http://sourceforge.net/project/showfiles.php?group_id=23991&package_id=123037">DLESE's download page</a>
+	on SourceForge.
+	
+	<p/>
+	2. Follow the instructions provided with the download to install the examples
+	and template and necessary software. You will need Java 1.4 or later and 
+	Apache Tomcat 5.0 or later.
+	
+	<p/>
+	3. Locate the template files that were unpacked from the WAR file during 
+	installation in step 2. In Tomcat, these will be located in the directory
+	webapps/search/templates. The files in this directory make 
+	up the template as a whole.
+	
+	<p/>
+	4. Edit the file <a href="index.jsp">index.jsp</a> to add your own HTML content, graphics 
+	and other customizations. This page controls all the information that is displayed on your
+	page. You may, for example, edit the page to remove one or more of the checkbox menus or
+	change the order in which they appear on the page. 
+	At the top of this page, several variables
+	may be edited to control certain behaviors of the page - see the descriptions of 
+	the variables provided next to them in the page. At a minimum, the variable 'clientName'
+	should be edited to provide a unique client name for your page.
+	
+	<p/>
+	You may also move, rename or duplicate the index.jsp file as desired. 
+	If you move this file to another directory, be sure to edit the tags that 
+	include relative paths to the other files
+	that are referenced by this file, such as the tag 
+	<nobr><code>&lt;%@ include file=&quot;includes/smart_links.jsp&quot; %&gt;</code>,</nobr> and change the 
+	variable 'urlToMyDir' to reflect the new path.
+	
+	<p/>
+	5. Edit the file <a href="styles.css">styles.css</a> to modify the CSS that defines the colors 
+	and fonts used in the template. 
+	
+	<p/>
+	6. Edit the file <a href="smart_link_definitions.xml">smart_link_definitions.xml</a> to define your own
+	smart links and custom menu(s) and the associated search queries 
+	that define them. Additional instructions are provided in that file.
+	For help in defining the search queries associated with your menus, see the section 
+	<a href="http://www.dlese.org/dds/services/ddsws1-1/service_specification.jsp#availableSearchFields">Available search fields</a>
+	in the web service documentation.
+	
+	<p/>After editing the smart links configuration, click the button below to reload 
+	the menus and other custom variables in your page. This button sends the 
+	parameter reload=true to the page - you can also do this by simply typing 
+	<nobr>'?reload=true'</nobr> after index.jsp in the URL to your page in your browser:
+	<form action="index.jsp" style="margin-top:4px; margin-bottom:0px;">
+		<input type="hidden" name="reload" value="true">
+		<input type="submit" value="Reload page settings">		
+	</form>	
+	
+	<p/>
+	7. To deploy this template to a static server such as Apache, follow 
+	these three steps: a. Install the dynamic JSP/template (<a href="index.jsp">index.jsp</a>) 
+	on a publicly available Tomcat server. b. Place the JavaScript 
+	client HTML page (<a href="static.html">static.html</a>) on your static server - you can name
+	this file whatever you like. c. Edit the 
+	baseUrl in the HTML page to point to the URL for the JSP page 
+	running on Tomcat.
+
+	<p/>
+	Important: Are your images broken? The images and CSS in this template use an absolute URL that is saved
+	the first time the page is loaded in a browser. If you change contexts, for example
+	from viewing the page using a local URL like http://localhost:8080/search/templates/index.jsp
+	to a public, global one like http://www.mydomain.org/search/templates/index.jsp, you 
+	must reset this URL by submitting reload=true to the page. To 
+	do this, first pull up the this template in your browser using the public, global URL
+	and then reload the page using the button provided above or simply add 
+	<nobr>'?reload=true'</nobr> after index.jsp in the URL to the page in your browser. 
+	This will ensure that the URLs to the images and CSS used in the page are 
+	referenced properly for access using your public, global URL.
+	
+	<p/>
+	You may edit or modify any of the other files found in the 
+	templates directory as desired. Of special interest are the
+	JSP file templates inside the 'includes'
+	directory. These files are responsible for rendering specific portions 
+	of the search page, such as the 
+	check box menus. Notes are included within each 
+	file explaining their function within the template and how 
+	the files work together.
+	
+	<p/>
+	You may also rename the templates directory and copy the directory 
+	to create as many search page contexts as you desire.
+	
+	<p/>
+	This template is provided by 
+	<a href="http://www.dlese.org/" target="_blank">DLESE</a>
+	free and with no warranty. This template may be freely copied and 
+	modified.
+	
+	<p/>If you choose to use DLESE search in your web site we ask that
+	you provide proper attribution to DLESE, such as &quot;Resource discovery 
+	provided by the Digital Library for Earth System Education&quot;, and 
+	include a link to our home page, which is http://www.dlese.org
+	
+	<p/>
+	For additional support, please e-mail: <a href="mailto:support@dlese.org">support@dlese.org</a>
+	
+</body>
+</html>
+

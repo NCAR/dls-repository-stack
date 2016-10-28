@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="Reading">
+  <mapping>
+    <acsrInfo id="85f6e5a6-5ceb-446d-b67f-f14cb5995302">
+      <title>Reading Core Content Standards and Benchmarks Corresponding to the Iowa Tests</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Reading</subject>
+      <jurisdiction>IA</jurisdiction>
+      <fileName>Reading Core Content Corresponding</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000276">
+      <title>Reading Core Content Standards and Benchmarks Corresponding to the Iowa Tests</title>
+      <created>2005</created>
+      <topic></topic>
+      <author>Iowa</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6d92fc4e-cca9-4b88-93ed-f6037f29142e">
+      <title>Literacy Grade Level Indicators</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Reading</subject>
+      <jurisdiction>IA</jurisdiction>
+      <fileName>Literacy Grade Level Indicators</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100034F">
+      <title>Literacy Grade Level Indicators</title>
+      <created>2008</created>
+      <topic></topic>
+      <author>Iowa</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="825f0345-c11b-4449-a8d1-d96aa03c77e5">
+      <title>Reading Grade Level Expectations</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Reading</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Reading Grade Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100032E">
+      <title>Reading Grade Level Expectations</title>
+      <created>2007</created>
+      <topic></topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+</mappings>

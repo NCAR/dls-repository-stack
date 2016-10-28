@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- alphabetical listing of framework fields filenames -->
+<!-- alphabetical listing of framework fields field names -->
+<metadataFieldsInfo>
+	<files>
+		<file>mast/1.0/fields/asnID-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/audience-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/audiences-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/cataloging-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/catalogings-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/contributions-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/contributor-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/contributors-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/coverage-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/creator-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/creators-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/dcmiType-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/date-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/description-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/duration-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/educational-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/essentialResource-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/essentials-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/format-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/gemEdLevel-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/gemMethod-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/gemType-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/gemSubject-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/general-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/instructionalMethods-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/language-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/otherMethod-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/otherSubject-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/otherType-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/publisher-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/publishers-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/record-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/recordID-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/relation-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/rights-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/source-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/standard-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/standards-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/subjects-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/title-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/types-mast-fields-en-us.xml</file>
+		<file>mast/1.0/fields/url-mast-fields-en-us.xml</file>
+	</files>
+	<fields>
+		<field>AsnID</field>
+		<field>Audience</field>
+		<field>Audiences</field>
+		<field>Cataloging</field>
+		<field>Cataloging Agency List</field>
+		<field>Contributions</field>
+		<field>Contributor</field>
+		<field>Contributors</field>
+		<field>Coverage</field>
+		<field>Creator</field>
+		<field>Creators</field>
+		<field>DCMI Resource Type</field>
+		<field>Date</field>
+		<field>Description</field>
+		<field>Duration</field>
+		<field>Educational</field>
+		<field>EssentialResource</field>
+		<field>Essentials</field>
+		<field>Format</field>
+		<field>GEM Education Level</field>
+		<field>GEM Instructional (Teaching) Method</field>
+		<field>GEM Resource Type</field>
+		<field>GEM Subject</field>
+		<field>General</field>
+		<field>InstructionalMethods</field>
+		<field>Language</field>
+		<field>OtherMethod</field>
+		<field>OtherSubject</field>
+		<field>OtherType</field>
+		<field>Publisher</field>
+		<field>Publishers</field>
+		<field>Record</field>
+		<field>RecordID</field>
+		<field>Relation</field>
+		<field>Rights</field>
+		<field>Source</field>
+		<field>Standard</field>
+		<field>Standards</field>
+		<field>Subjects</field>
+		<field>Title</field>
+		<field>Types</field>
+		<field>URL</field>
+	</fields>
+</metadataFieldsInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

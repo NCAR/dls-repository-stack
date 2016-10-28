@@ -1,0 +1,54 @@
+
+<%-- <tr valign="top"> 
+	<td  width="60%"> 
+		<c:if test="${not empty record.title}">
+			<div class="browse-item-title">${record.title}</div>
+			<c:if test="${not empty record.url}"><br>		 
+				<a href="${record.url}" target="_blank"
+					title='view resource in a new window'>${sf:truncate(record.url, urlTruncateLen)}</a>															
+			</c:if>
+		</c:if>
+		<c:if test="${empty record.title}">
+			<div class="browse-item-title">Annotation</div>
+			<logic:notEmpty name="result" property="docReader.url"></div>		 
+				<a href="${record.url}" 
+					title='view resource in a new window' target="_blank">${sf:truncate(record.url, urlTruncateLen)}</a>					
+			</logic:notEmpty>
+		</c:if>
+	</td>
+</tr>
+ --%>
+
+<c:if test="${not empty record.myCollectionDoc}">
+	<div class="searchResultValues"><em>Collection:</em> &nbsp;${record.myCollectionDoc.shortTitle}</div>
+</c:if>
+<div class="searchResultValues"><em>Record format:</em> &nbsp;${record.nativeFormat}</div>
+<c:if test="${not empty record.description}">
+	<div class="searchResultValues"><em>Description:</em> &nbsp;${record.description}</div>
+</c:if>	
+<div class="searchResultValues"><em>Type:</em> &nbsp;${record.type}</div>				
+
+
+<c:if test="${not empty record.status}">
+	<div class="searchResultValues"><em>Annotation status:</em>
+		${record.status}
+	</div>
+</c:if>
+
+<div class="searchResultValues"><em>File location:</em> ${record.docsource}</div>
+
+
+<c:if test="${not empty srForm.annotatedItem}">
+	<c:set var="annotated" value="${srForm.annotatedItem}"/>
+	<div class="annotations-box">
+		<div class="label">Annotated Resource</div>
+			<div class="annotation-title">${annotated.title}</div>
+			<div class="searchResultValues2">${annotated.id}</div>
+			<c:if test="${not empty annotated.url}">
+				<div class="searchResultValues2"><a href="${annotated.url}">${annotated.url}</a></div>
+			</c:if>
+	</div>
+</c:if>
+<c:if test="${empty srForm.annotatedItem}">
+ <i>No annotated item found</i>
+</c:if>

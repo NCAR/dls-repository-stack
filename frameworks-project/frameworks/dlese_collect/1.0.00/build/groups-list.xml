@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- alphabetical listing of framework groups filenames -->
+<metadataGroupsInfo>
+	<files>
+		<file>collection/1.0.00/groups/fullTitle-collect-groups-default-en-us.xml</file>
+		<file>collection/1.0.00/groups/gradeRange-collect-groups-default-en-us.xml</file>
+		<file>collection/1.0.00/groups/key-collect-groups-default-en-us.xml</file>
+		<file>collection/1.0.00/groups/subject-collect-groups-default-en-us.xml</file>
+		<file>collection/1.0.00/groups/gradeRange-collect-groups-community-en-us.xml</file>
+		<file>collection/1.0.00/groups/key-collect-groups-community-en-us.xml</file>
+		<file>collection/1.0.00/groups/subject-collect-groups-community-en-us.xml</file>
+	</files>
+</metadataGroupsInfo>

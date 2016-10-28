@@ -1,0 +1,34 @@
+		<c:if test="${not empty viewForm.docReader.title}">
+			<div class="browse-item-title">${viewForm.docReader.title}</div>
+		</c:if>
+		
+		<c:if test="${not empty viewForm.docReader.url}">
+			<div class="searchResultValues">
+			<a href="${viewForm.docReader.url}"
+					title='view resource in a new window'
+					target="_blank">${sf:truncate(viewForm.docReader.url, urlTruncateLen)}</a>
+			</div>
+		</c:if>
+		
+		<c:if test="${not empty viewForm.docReader.rating}">
+			<div class="searchResultValues"><em>Rating:</em>
+				<%-- ${viewForm.docReader.rating} --%>
+				<c:forEach begin="1" end="${viewForm.docReader.rating}">
+					<img src="${contextPath}/images/star.gif"/>
+				</c:forEach>
+			</div>
+		</c:if>
+		
+		<c:if test="${not empty viewForm.docReader.type}">
+			<div class="searchResultValues"><em>Type:</em> &nbsp;
+				${viewForm.docReader.type}
+			</div>	
+		</c:if>			
+				
+		<c:if test="${not empty viewForm.docReader.status}">
+			<div class="searchResultValues"><em>Annotation status:</em>  &nbsp;
+				${viewForm.docReader.status}
+			</div>
+		</c:if>
+
+

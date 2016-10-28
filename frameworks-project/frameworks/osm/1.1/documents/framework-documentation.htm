@@ -1,0 +1,4612 @@
+<title>OSM Metadata Framework Documentation Version 1.1 OpenSky Metadata Repository</title><h1>OSM Metadata Documentation: version 1.1</h1><p>This metadata framework documentation provides:</p><ul><li>Cataloging best practices</li><li>A description of each metadata field including occurrences, obligation, data types, terms and definitions</li><li>Bolded items represent controlled vocabulary terms or the name of individual metadata fields</ul><p>The table below organizes the metadata fields in alphabetical order across and then down:</p><table width="75%" border="1" cellpadding="3" cellspacing="0">
+<tr>
+<td><a href="#1">Abstract</a></td>
+<td><a href="#2">Addendum</a></td>
+<td><a href="#3">Archive digital</a></td>
+</tr>
+<tr>
+<td><a href="#4">City</a></td>
+<td><a href="#5">Classification</a></td>
+<td><a href="#6">Collaboration</a></td>
+</tr>
+<tr>
+<td><a href="#7">Contact information</a></td>
+<td><a href="#8">Contact information email</a></td>
+<td><a href="#9">Contact information phone</a></td>
+</tr>
+<tr>
+<td><a href="#10">Copyright notice</a></td>
+<td><a href="#11">Copyright notice - holder</a></td>
+<td><a href="#12">Copyright notice code number</a></td>
+</tr>
+<tr>
+<td><a href="#13">Copyright notice type</a></td>
+<td><a href="#14">Copyright notice url</a></td>
+<td><a href="#15">Country</a></td>
+</tr>
+<tr>
+<td><a href="#16">Creating application</a></td>
+<td><a href="#17">Creating application name</a></td>
+<td><a href="#18">Creating application notes</a></td>
+</tr>
+<tr>
+<td><a href="#19">Creating application version</a></td>
+<td><a href="#20">Date</a></td>
+<td><a href="#21">Date - type</a></td>
+</tr>
+<tr>
+<td><a href="#22">Date range</a></td>
+<td><a href="#23">Date range - type</a></td>
+<td><a href="#24">Date range start</a></td>
+</tr>
+<tr>
+<td><a href="#25">Description</a></td>
+<td><a href="#26">Dimensions</a></td>
+<td><a href="#27">Duration</a></td>
+</tr>
+<tr>
+<td><a href="#28">Edition</a></td>
+<td><a href="#29">First name</a></td>
+<td><a href="#30">Funding entity</a></td>
+</tr>
+<tr>
+<td><a href="#31">Funding source</a></td>
+<td><a href="#32">Grant number</a></td>
+<td><a href="#33">ID number</a></td>
+</tr>
+<tr>
+<td><a href="#34">ID number type</a></td>
+<td><a href="#35">Institution name</a></td>
+<td><a href="#36">Institution project</a></td>
+</tr>
+<tr>
+<td><a href="#37">Institutional division - organization</a></td>
+<td><a href="#38">Institutional division - perons</a></td>
+<td><a href="#39">Issue</a></td>
+</tr>
+<tr>
+<td><a href="#40">Keyword</a></td>
+<td><a href="#41">LCSH subject</a></td>
+<td><a href="#42">Language</a></td>
+</tr>
+<tr>
+<td><a href="#43">Last name</a></td>
+<td><a href="#44">Location</a></td>
+<td><a href="#45">Location city</a></td>
+</tr>
+<tr>
+<td><a href="#46">Location country</a></td>
+<td><a href="#47">Location down limit</a></td>
+<td><a href="#48">Location east limit</a></td>
+</tr>
+<tr>
+<td><a href="#49">Location north limit</a></td>
+<td><a href="#50">Location south limit</a></td>
+<td><a href="#51">Location state</a></td>
+</tr>
+<tr>
+<td><a href="#52">Location type</a></td>
+<td><a href="#53">Location up limit</a></td>
+<td><a href="#54">Location west limit</a></td>
+</tr>
+<tr>
+<td><a href="#55">Location z units</a></td>
+<td><a href="#56">Middle name</a></td>
+<td><a href="#57">Mime type</a></td>
+</tr>
+<tr>
+<td><a href="#58">NCAR library</a></td>
+<td><a href="#59">NSF funding</a></td>
+<td><a href="#60">Non NSF funding</a></td>
+</tr>
+<tr>
+<td><a href="#61">Notes to curator</a></td>
+<td><a href="#62">OSM subject</a></td>
+<td><a href="#63">Pages</a></td>
+</tr>
+<tr>
+<td><a href="#64">Person</a></td>
+<td><a href="#65">Person PUBS id</a></td>
+<td><a href="#66">Person UCAR id</a></td>
+</tr>
+<tr>
+<td><a href="#67">Person order</a></td>
+<td><a href="#68">Primary asset 1</a></td>
+<td><a href="#69">Primary asset order</a></td>
+</tr>
+<tr>
+<td><a href="#70">Primary asset type</a></td>
+<td><a href="#71">Primary asset url</a></td>
+<td><a href="#72">Publication name</a></td>
+</tr>
+<tr>
+<td><a href="#73">Publication type</a></td>
+<td><a href="#74">Publishing name</a></td>
+<td><a href="#75">Record ID</a></td>
+</tr>
+<tr>
+<td><a href="#76">Record date</a></td>
+<td><a href="#77">Requirements to view</a></td>
+<td><a href="#78">Role - organization</a></td>
+</tr>
+<tr>
+<td><a href="#79">Role - person</a></td>
+<td><a href="#80">Second middle name</a></td>
+<td><a href="#81">Services</a></td>
+</tr>
+<tr>
+<td><a href="#82">Size</a></td>
+<td><a href="#83">Source</a></td>
+<td><a href="#84">State or province</a></td>
+</tr>
+<tr>
+<td><a href="#85">Status</a></td>
+<td><a href="#86">Suffix</a></td>
+<td><a href="#87">Title</a></td>
+</tr>
+<tr>
+<td><a href="#88">Title - alternative</a></td>
+<td><a href="#89">Title - earlier</a></td>
+<td><a href="#90">Title - later</a></td>
+</tr>
+<tr>
+<td><a href="#91">Title - type</a></td>
+<td><a href="#92">URL of record</a></td>
+<td><a href="#93">Version - other asset</a></td>
+</tr>
+<tr>
+<td><a href="#94">Version - primary asset</a></td>
+<td><a href="#95">Volume</a></td>
+<td><a href="#96">xxx</a></td>
+</tr>
+</table>
+<a name="1"></a><html>
+<body>
+<h3>Abstract</h3>
+<p>
+<strong>xpath</strong> - /record/general/abstract<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a brief account or explanation of of the content of a resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - about war and peace<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="2"></a><html>
+<body>
+<h3>Addendum</h3>
+<p>
+<strong>xpath</strong> - /record/rights/addendum<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - additional rights information that enhances or is in addition to the copyright notice<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="3"></a><html>
+<body>
+<h3>Archive digital</h3>
+<p>
+<strong>xpath</strong> - /record/resources/archiveDigital<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - NSF only<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="4"></a><html>
+<body>
+<h3>City</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/location /@city<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - A large and heavily populated urban area that may include several independent administrative districts.<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - Chicago, New York<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>To enter more than one city, add another location tag set.</li>
+<li>Complete state/province and country too.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not include state/provincece or country information in the city field.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>Washingtion DC United States: Enter Washington for the city.</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="5"></a><html>
+<body>
+<h3>Classification</h3>
+<p>
+<strong>xpath</strong> - /record/classify/classification<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - an indication as to whether the resource is refereed or non-refereed<br>
+<strong>Obligation</strong> - required<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Refereed<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Classification</strong> - an indication as to whether the resource is refereed or non-refereed</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Refereed</strong> - an indication that  a given resource was subjected to a process of critical evaluation by one or more experts on the subject, responsible for determining if the subject of the article falls within the scope of the publication and for evaluating originality, quality of research, clarity of presentation, etc.</li>
+<li>
+<strong>Non-refereed</strong> - an indication that a given resource was not subjected to a process of critical evaluation by one or more experts on the subject, responsible for determining if the subject of the article falls within the scope of the publication and for evaluating originality, quality of research, clarity of presentation, etc.</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="6"></a><html>
+<body>
+<h3>Collaboration</h3>
+<p>
+<strong>xpath</strong> - /record/classify/collaboration<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the type or extent of the relationships between the entities responsible for the intellectual content of the resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - UCAR only<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Collaboration</strong> - the type or extent of the relationships between the entities responsible for the intellectual content of the resource</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>No UCAR Authors</strong> - at the time of its creation, no contributors to the intellectual content of a given resource were UCAR employees</li>
+<li>
+<strong>UCAR only</strong> - all contributors to the intellectual content of a given resource were, at the time of creation, UCAR employees</li>
+<li>
+<strong>UCAR and University</strong> - the intellectual content of a given resource was contributed by UCAR employees and representatives from a university</li>
+<li>
+<strong>UCAR and Other</strong> - the intellectual content of a given resource was contributed by UCAR employees and representatives from another, non-university institution.</li>
+<li>
+<strong>UCAR, University and Other</strong> - the intellectual content of a given resource was contributed by UCAR employees, representatives from a university, and representatives form another, non-university institution</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+<li>While this field is optional, complete it if collaboration information is known.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not complete this field if is does not apply or collaboration information is sketchy or unknown.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li><strong></strong><strong></strong><strong></strong><strong>UCAR, University and Other</strong>: COMET modules use UCAR, university and other govenment lab personnel to write the content.</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="7"></a><html>
+<body>
+<h3>Contact information</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/contactInfo<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - phone or email information for a person<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="8"></a><html>
+<body>
+<h3>Contact information email</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/contactInfoEmail<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the Internet contact address of a person<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx@xxx.xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="9"></a><html>
+<body>
+<h3>Contact information phone</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/contactInfoPhone<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the phone nubmer of a person<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="10"></a><html>
+<body>
+<h3>Copyright notice</h3>
+<p>
+<strong>xpath</strong> - /record/rights/copyrightNotice<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a statement outlining the ways in which and circumstances under which a resource may be accessed and used<br>
+<strong>Obligation</strong> - required<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="11"></a><html>
+<body>
+<h3>Copyright notice - holder</h3>
+<p>
+<strong>xpath</strong> - /record/rights/copyrightNotice/@holder<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the entity providing the copyright notice<br>
+<strong>Obligation</strong> - required<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Public domain<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Copyright notice - holder</strong> - the entity providing the copyright notice</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Author</strong> - individual or entity responsible for the creation of a textual work</li>
+<li>
+<strong>Producer</strong> - individual or entity responsible for the creation of a non-textual work</li>
+<li>
+<strong>Public domain</strong> - content that is not owned or controlled by any entity</li>
+<li>
+<strong>Publisher</strong> - individual or entity responsible for the publication and/or dissemenation of a textual work</li>
+<li>
+<strong>UCAR</strong> - the University Corporation for Atmospheric Research (UCAR) is the entity responsible for the work and controls its rights</li>
+<li>
+<strong>Unknown</strong> - the individual or entity responsible for the work is unidentified</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+<li><strong></strong><strong></strong><strong></strong>When in doubt, choose <strong>Unknown</strong>.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li><strong></strong>Do not use the term <strong>Producer</strong> with textual works, use <strong>Author</strong> or <strong>Publisher</strong> instead.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="12"></a><html>
+<body>
+<h3>Copyright notice code number</h3>
+<p>
+<strong>xpath</strong> - /record/rights/copyrightNoticeCodeNumber<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a number that identifies the copyright notice to use from the copyrightNotices.xml file<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - 12345<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="13"></a><html>
+<body>
+<h3>Copyright notice type</h3>
+<p>
+<strong>xpath</strong> - /record/rights/copyrightNoticeType<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the type of license or agreement of the copyright notice<br>
+<strong>Obligation</strong> - required<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Public domain<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Copyright notice type</strong> - the type of license or agreement of the copyright notice</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Public domain</strong> - xxx</li>
+<li>
+<strong>REPORT</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="14"></a><html>
+<body>
+<h3>Copyright notice url</h3>
+<p>
+<strong>xpath</strong> - /record/rights/copyrightNoticeUrl<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the web location of the copyright notice<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - http://www.ncar.edu<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="15"></a><html>
+<body>
+<h3>Country</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/location /@country<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - A nation.<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - US (for United States), AR (for Argentina)<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>To enter more than one country, add another location tag set.</li>
+<li>If appropriate, complete a state/province and city too.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not include state/provincece or city information in the country field.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>Washingtion DC United States: Enter US (for United States) for country.</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="16"></a><html>
+<body>
+<h3>Creating application</h3>
+<p>
+<strong>xpath</strong> - /record/resources/creatingApplication<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - NSF only<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="17"></a><html>
+<body>
+<h3>Creating application name</h3>
+<p>
+<strong>xpath</strong> - /record/resources/creatingApplicationName<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - John<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="18"></a><html>
+<body>
+<h3>Creating application notes</h3>
+<p>
+<strong>xpath</strong> - /record/resources/creatingApplicationNotes<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - NSF only<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="19"></a><html>
+<body>
+<h3>Creating application version</h3>
+<p>
+<strong>xpath</strong> - /record/resources/creatingApplicationVersion<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - NSF only<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="20"></a><html>
+<body>
+<h3>Date</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/date<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a time period relevant to the intellectual content of the resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="21"></a><html>
+<body>
+<h3>Date - type</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/date/@type<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - describes a given date's relevance to the resource<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Published<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Date type</strong> - describes a given date's relevance to the resource</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Accepted</strong> - date on which a work was selected for publication</li>
+<li>
+<strong>Created</strong> - date on which a resource was produced</li>
+<li>
+<strong>Digitized</strong> - date on which an analog or physical resource was transferred into or replicated by an electronic format</li>
+<li>
+<strong>Fiscal</strong> - date pertaining to the budgetary calendar of a given institution</li>
+<li>
+<strong>In press</strong> - date on which a work was in the process of being published</li>
+<li>
+<strong>Modified</strong> - date on which a resource was altered from its previous state</li>
+<li>
+<strong>Published</strong> - date on which a given resource formally appeared in print</li>
+<li>
+<strong>Reviewer assigned</strong> - date on which an individual was assigned to formally appraise a resource</li>
+<li>
+<strong>Submitted</strong> - date on which a work was sent to a publisher for consideration</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field can only be repeated if an entirely new date entry is made.</li>
+<li><strong></strong><strong></strong><strong></strong>Use the term <strong>Created</strong> for works that exist but are not published.</li>
+<li><strong></strong><strong></strong><strong></strong>Ues the term <strong>Fiscal</strong> to represent UCAR's fiscal year which begins October 1 and ends September 30th every year.</li>
+<li>Use to this field especially for resources within the publishing lifecycle.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li><strong></strong><strong></strong><strong></strong>Do not use this field to represent a embargo time periods. Use the field of <strong>dateRange</strong> instead.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li><strong></strong><strong></strong><strong></strong><strong>Created</strong>: the group of SOARS papers were created and digitized but they were not published in a journal.</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="22"></a><html>
+<body>
+<h3>Date range</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/dateRange<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - Use the base of xs:string so that in the Digital Collections System (DCS) no data entry box appears for date but data entry boxes will appear for start and end attributes.<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="23"></a><html>
+<body>
+<h3>Date range - type</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/dateRange/@type<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Author embargo<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Date range - type</strong> - xxx</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Author embargo</strong> - the beginning and end dates for which an author has indicated that a work cannot be made publicly accessible</li>
+<li>
+<strong>Correspondence</strong> - the beginning and end dates that correspond to letters, memoranda, notes, postcards, email, and other written and addressed messages exchanged between two or more people</li>
+<li>
+<strong>Data</strong> - the beginning and end dates that correspond to information from measuring devices like in-situ observations, models, remote sensing or other instruments</li>
+<li>
+<strong>Donor embargo</strong> - the beginning and end dates for which a donor has indicated that a work cannot be made publicly accessible</li>
+<li>
+<strong>Interview</strong> - the beginning and end dates that correspond to a recorded verbal exchange</li>
+<li>
+<strong>Meeting</strong> - the beginning and end dates that correspond to the purposeful gathering of people for the exchange of information</li>
+<li>
+<strong>Natural phenomenon</strong> - the beginning and end dates that correspond to an event that occured in nature</li>
+<li>
+<strong>Publisher embargo</strong> - the beginning and end dates for which a publisher has indicated that a work cannot be made publicly accessible</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+<li>Use the embargo choices when there is a need to prevent public access to a resource for a certain time period.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="24"></a><html>
+<body>
+<h3>Date range start</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/dateRangeStart<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="25"></a><html>
+<body>
+<h3>Description</h3>
+<p>
+<strong>xpath</strong> - /record/general/description<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - an account or explanation of of the content of a resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="26"></a><html>
+<body>
+<h3>Dimensions</h3>
+<p>
+<strong>xpath</strong> - /record/resources/dimensions<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - 5<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="27"></a><html>
+<body>
+<h3>Duration</h3>
+<p>
+<strong>xpath</strong> - /record/resources/duration<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - 10<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="28"></a><html>
+<body>
+<h3>Edition</h3>
+<p>
+<strong>xpath</strong> - /record/general/edition<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - another version or issue of a published work<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - Num. 4<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="29"></a><html>
+<body>
+<h3>First name</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/firstName<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the first or common name of a person<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - john<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="30"></a><html>
+<body>
+<h3>Funding entity</h3>
+<p>
+<strong>xpath</strong> - /record/classify/fundingEntity<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - The name of the entity that provides fiscal support for a program, project, or other research endeavor.<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled<br>
+<strong>Domain example</strong> - National Aeronautics and Space Administration (NASA)<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is non NSF funding</strong> - The name of the entity that provides fiscal support for a program, project, or other research endeavor.</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>National Aeronautics and Space Administration (NASA)</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="31"></a><html>
+<body>
+<h3>Funding source</h3>
+<p>
+<strong>xpath</strong> - /record/classify/fundingSource<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - An indication of whether NSF or another group fiscally supports a program, project, or other research endeavor.<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - NSF only<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Funding source</strong> - An indication of whether NSF or another group fiscally supports a program, project, or other research endeavor.</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>NSF only</strong> - Indicates that the National Science Foundation (NSF) provided all funding for a resource, project, or initiative.</li>
+<li>
+<strong>NSF and other</strong> - Indicates that the National Science Foundation (NSF) and an entity or entities other than the NSF provided funding for a resource, project, or initiative.</li>
+<li>
+<strong>Other only</strong> - Indicates that an entity other than the National Science Foundation (NSF) provided all funding for a resource, project, or initiative.</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+<li><strong></strong><strong></strong><strong></strong>Enter grant number in the <strong>Funding entity</strong> field.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="32"></a><html>
+<body>
+<h3>Grant number</h3>
+<p>
+<strong>xpath</strong> - /record/classify/fundingEntity/@grantNumber<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - An identifier, usually numeric, assigned to a specific fiscal award.<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - NSF-DUE-123456<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is non NSF funding</strong> - An identifier, usually numeric, assigned to a specific fiscal award.</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This field is optional.</li>
+<li><strong></strong><strong></strong><strong></strong>To repeat this field, add another <strong>Funding entity</strong> tag set.</li>
+<li>It is okay to include leading abbrevation like DUE-### or NOAA-###.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>NSF-DUE-123456</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="33"></a><html>
+<body>
+<h3>ID number</h3>
+<p>
+<strong>xpath</strong> - /record/classify/idNumber<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> -  number that, as part of a well-defined scheme or convention, may be reliably referenced to recall or cite a resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="34"></a><html>
+<body>
+<h3>ID number type</h3>
+<p>
+<strong>xpath</strong> - /record/classify/idNumber/@type<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the type and/or source of a resource identifier<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - REPORT<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is ID number type</strong> - the type and/or source of a resource identifier</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>arXiv</strong> - identifier for entries in the arXiv.org repository of preprints for mathematics, physics, computer science, quantitative biology and statistics</li>
+<li>
+<strong>CALL</strong> - a unique identifier used to identify a specific copy and relative location of an item within a library&rsquo;s collection</li>
+<li>
+<strong>Citation/Article</strong> - a unique reference label to ensure the persistent and actionable identification of resources</li>
+<li>
+<strong>DOI</strong> - Digital Object Identifier: a set of unique code used by publishers and other disseminators of digital content to ensure the persistent and actionable identification and interoperable exchange of that content</li>
+<li>
+<strong>EPRINTS</strong> - a unique identifier used to ensure the persistent and actionable identification of resources held within a digital repository</li>
+<li>
+<strong>ISBN</strong> - International Standard Book Number: a unique, standardized 10-digit number assigned to specific edition of a book or other monographic publication</li>
+<li>
+<strong>ISSN</strong> - International Standard Serial Number: a unique, standardized eight-digit standard number assigned to a specific serial title.</li>
+<li>
+<strong>PUBID</strong> - identification number for entries in the UCAR publications database</li>
+<li>
+<strong>REPORT</strong> - identifier used to reference a published report; particularly those published by government entities and other agencies</li>
+<li>
+<strong>SRef-ID</strong> - a unique URL used by the SRef database to ensure the persistent and actionable identification of the resources it references</li>
+<li>
+<strong>WMO</strong> - report identification numbers assigned by the World Meteorological Organization</li>
+<li>
+<strong>WOS</strong> - identifier used to reference works indexed by the Web of Science</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field can only be repeated if an entirely new id number entry is made.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="35"></a><html>
+<body>
+<h3>Institution name</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/instName<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the institution or organization that the person is affiliated with<br>
+<strong>Obligation</strong> - required<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - MIT Press<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Person</strong> - the institution or organization that the person is affiliated with</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="36"></a><html>
+<body>
+<h3>Institution project</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/instProject<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a project within an institution or organization that the person is affiliated with<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Developmental Testbed Center<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Institution project</strong> - a project within an institution or organization that the person is affiliated with</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Developmental Testbed Center</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="37"></a><html>
+<body>
+<h3>Institutional division - organization</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/organization/instDivision<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a division of an organization<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA)<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Institutional division</strong> - a division of an organization</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an required field.</li>
+<li>This field cannot be repeated.</li>
+<li>Use only for UCAR divisions.</li>
+<li>Select values from the current list of UCAR divisions first.</li>
+<li>If you can not find the desired UCAR division on the current list, use the historical list.</li>
+<li>If you can not find the desired UCAR division on the current or historical lists, please contact OpenSky.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not use this field for non-UCAR divisions.</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="38"></a><html>
+<body>
+<h3>Institutional division - perons</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/person/instDivision<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a division within an institution or organization that the person is affiliated with<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - University Corporation For Atmospheric Research (UCAR):Corporate Affairs (CA)<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Institutional division</strong> - a division within an institution or organization that the person is affiliated with</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+<li>Use only for UCAR divisions.</li>
+<li>Select values from the current list of UCAR divisions first.</li>
+<li>If you can not find the desired UCAR division on the current list, use the historical list.</li>
+<li>If you can not find the desired UCAR division on the current or historical lists, please contact OpenSky.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not use this field for non-UCAR divisions.</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="39"></a><html>
+<body>
+<h3>Issue</h3>
+<p>
+<strong>xpath</strong> - /record/general/issue<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a lower-order division of a work that may or may reoccur on a regular basis<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - Num. 4<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="40"></a><html>
+<body>
+<h3>Keyword</h3>
+<p>
+<strong>xpath</strong> - /record/general/keyword<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - A significant word or phrase that may not be covered in a title, abstract, content or text of a resource and can be used as a search term to retrieve all records containing it. <br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - rain for when a title says liquid precipitation<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+<li>Use words that may not appear in titles, abstracts, content or text but would be helpful in discovering the resource.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>A title has the phrase 'liquid precipitation' so good keyword would be 'rain'.</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="41"></a><html>
+<body>
+<h3>LCSH subject</h3>
+<p>
+<strong>xpath</strong> - /record/general/LCSHsubject<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - keywords from the Library of Congress Subject Headings (LCSH)<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Architecture--1960-1970<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is LCSH subject</strong> - keywords from the Library of Congress Subject Headings (LCSH)</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Architecture--1960-1970</strong> - xxx</li>
+<li>
+<strong>Architecture--Colorado--Boulder</strong> - xxx</li>
+<li>
+<strong>Architecture--Modern--20th century--Archival resources</strong> - xxx</li>
+<li>
+<strong>I.M. Pei &amp; Associates</strong> - xxx</li>
+<li>
+<strong>National Center for Atmospheric Research (U.S.) Mesa Laboratory</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="42"></a><html>
+<body>
+<h3>Language</h3>
+<p>
+<strong>xpath</strong> - /record/classify/language<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the primary human language or languages of the resource content<br>
+<strong>Obligation</strong> - required<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - en<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Language</strong> - the primary human language or languages of the resource content</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>en</strong> - xxx</li>
+<li>
+<strong>es</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="43"></a><html>
+<body>
+<h3>Last name</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/lastName<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the last or family name of a person<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - smith<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="44"></a><html>
+<body>
+<h3>Location</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/location<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the placename and geospatial information (as represented by a bounding box of four latitude-longitude pairs) of the content of a resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="45"></a><html>
+<body>
+<h3>Location city</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/locationCity<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - Denver<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="46"></a><html>
+<body>
+<h3>Location country</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/locationCountry<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - DM<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Location country</strong> - xxx</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>DM</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="47"></a><html>
+<body>
+<h3>Location down limit</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/locationDownLimit<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the lowermost level of a bounding box<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="48"></a><html>
+<body>
+<h3>Location east limit</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/locationEastLimit<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the eastern most longitude, in decimal degrees, of a bounding box<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="49"></a><html>
+<body>
+<h3>Location north limit</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/locationNorthLimit<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the northern most latitude, in decimal degrees, of a bounding box<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="50"></a><html>
+<body>
+<h3>Location south limit</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/locationSouthLimit<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the southern most latitude, in decimal degrees, of a bounding box<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="51"></a><html>
+<body>
+<h3>Location state</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/locationState<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a controlled vocabulary of US, Canadian and Mexican states and provinces<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - US-CO<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Location state</strong> - a controlled vocabulary of US, Canadian and Mexican states and provinces</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>US-CO</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="52"></a><html>
+<body>
+<h3>Location type</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/locationType<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Artifact<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Location type</strong> - xxx</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Artifact</strong> - xxx</li>
+<li>
+<strong>Correspondence</strong> - xxx</li>
+<li>
+<strong>Meeting</strong> - xxx</li>
+<li>
+<strong>Natural phenomenon</strong> - xxx</li>
+<li>
+<strong>Publisher</strong> - xxx</li>
+<li>
+<strong>Site</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="53"></a><html>
+<body>
+<h3>Location up limit</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/locationUpLimit<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the uppermost level of a bounding box<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="54"></a><html>
+<body>
+<h3>Location west limit</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/locationWestLimit<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the western most longitude, in decimal degrees, of a bounding box<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="55"></a><html>
+<body>
+<h3>Location z units</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/locationZUnits<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the units of measurement for the upLimit and downLimit elements<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - inches (in)<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Location z units</strong> - the units of measurement for the upLimit and downLimit elements</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>inches (in)</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="56"></a><html>
+<body>
+<h3>Middle name</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/middleName<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the first middle name of a person<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - john<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="57"></a><html>
+<body>
+<h3>Mime type</h3>
+<p>
+<strong>xpath</strong> - /record/resources/mimeType<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the Internet format of the asset<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		mimeTypeType<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - application/ms-excel<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Mime type type</strong> - the Internet format of the asset</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>application/ms-excel</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="58"></a><html>
+<body>
+<h3>NCAR library</h3>
+<p>
+<strong>xpath</strong> - /record/classify/NCARlibrary<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the physical building location of the item in the NCARl library<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Mesa (ML)<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is NCAR library</strong> - the physical building location of the item in the NCARl library</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Center Green (CG)</strong> - xxx</li>
+<li>
+<strong>Foothills (FL)</strong> - xxx</li>
+<li>
+<strong>Mesa (ML)</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="59"></a><html>
+<body>
+<h3>NSF funding</h3>
+<p>
+<strong>xpath</strong> - /record/classify/NSFfunding<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - an indication as to whether NSF funding or monies contributed to the resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - NSF only<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is NSF funding</strong> - whether NSF funding contributed to the resource</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>NSF only</strong> - indicates that the National Science Foundation (NSF) provided all funding for a resource, project, or initiative</li>
+<li>
+<strong>NSF and other</strong> - indicates that the National Science Foundation (NSF) and an entity or entities other than the NSF provided funding for a resource, project, or initiative</li>
+<li>
+<strong>Other only</strong> - indicates that an entity other than the National Science Foundation (NSF) provided all funding for a resource, project, or initiative</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+<li>Repeat this field when more than one NSF grant number needs to be included.</li>
+<li>When an NSF grant number is known, complete the grant number field.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="60"></a><html>
+<body>
+<h3>Non NSF funding</h3>
+<p>
+<strong>xpath</strong> - /record/classify/nonNSFfunding/<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - an indication of what non NSF funding is being used in the creation of the resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled<br>
+<strong>Domain example</strong> - National Aeronautics and Space Administration (NASA)<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is non NSF funding</strong> - an indication of what non NSF funding is being used in the creation of the resource</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>National Aeronautics and Space Administration (NASA)</strong> - xxx</li>
+<li>
+<strong>National Oceanic and Atmospheric Administration (NOAA)</strong> - xxx</li>
+<li>
+<strong>U.S. Department of Defense (DOD)</strong> - xxx</li>
+<li>
+<strong>U.S. Department of Education (DOE)</strong> - xxx</li>
+<li>
+<strong>World Meteorological Organization (WMO)</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="61"></a><html>
+<body>
+<h3>Notes to curator</h3>
+<p>
+<strong>xpath</strong> - /record/rights/notesToCurator<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - information that is not directly part of intellectual property right per se but provides information on the curation of the resoruce<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="62"></a><html>
+<body>
+<h3>OSM subject</h3>
+<p>
+<strong>xpath</strong> - /record/general/OSMsubject<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - keywords from the OSM controlled vocabulary<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is OSM subject</strong> - keywords from the OSM controlled vocabulary</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>xxx</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="63"></a><html>
+<body>
+<h3>Pages</h3>
+<p>
+<strong>xpath</strong> - /record/general/pages<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - an indication of the relevant pages covered by the resource or the total number of pages of a work<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - 50<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="64"></a><html>
+<body>
+<h3>Person</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/person<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - an entity responsible for making contributions to the content of the resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="65"></a><html>
+<body>
+<h3>Person PUBS id</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/personPUBSid<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the PUBS database identifcation number for a person<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		nonNegativeInteger<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - 1234<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="66"></a><html>
+<body>
+<h3>Person UCAR id</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/personUCARid<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the UCAR people database identification number for a person<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		nonNegativeInteger<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - 1234<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="67"></a><html>
+<body>
+<h3>Person order</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/personOrder<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - an integer number idicating a desired sequence for persons associated with the resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - 2<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="68"></a><html>
+<body>
+<h3>Primary asset 1</h3>
+<p>
+<strong>xpath</strong> - /record/resources/primaryAsset<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a resource within the NLDR that represents the item being cataloged or is associated with the item being cataloged<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="69"></a><html>
+<body>
+<h3>Primary asset order</h3>
+<p>
+<strong>xpath</strong> - /record/resources/primaryAssetOrder<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a numerical number indicating the order the assets should be listed in<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		nonNegativeInteger<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - 2<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="70"></a><html>
+<body>
+<h3>Primary asset type</h3>
+<p>
+<strong>xpath</strong> - /record/resources/primaryAssetType<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a description and other characteristics about the actual or related items held in the NLDR<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Is published<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Primary asset type</strong> - a description and other characteristics about the actual or related items held in the NLDR</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Is published</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="71"></a><html>
+<body>
+<h3>Primary asset url</h3>
+<p>
+<strong>xpath</strong> - /record/resources/primaryAssetType<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the web address of the assest in the NLDR repository<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - http://www2.ucar.edu<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="72"></a><html>
+<body>
+<h3>Publication name</h3>
+<p>
+<strong>xpath</strong> - /record/general/pubName<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the name of the publication in which a published work appears<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - 10th AMS Conference on Polar Meteorology and Oceanography<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Publication name</strong> - the name of the publication in which a published work appears</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>10th AMS Conference on Polar Meteorology and Oceanography</strong> - xxx</li>
+<li>
+<strong>10th Annual Conference on Atmospheric Transport and Dispersion Modeling</strong> - xxx</li>
+<li>
+<strong>10th Atmospheric Radiation Measurement Science Team Meeting</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="73"></a><html>
+<body>
+<h3>Publication type</h3>
+<p>
+<strong>xpath</strong> - /record/general/pubNameType<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the type of publication in which a published work appears<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Blog/forum/email list<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Publication type</strong> - the type of publication in which a published work appears</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Blog/forum/email list</strong> - xxx</li>
+<li>
+<strong>Book/monograph</strong> - xxx</li>
+<li>
+<strong>Encyclopedia</strong> - xxx</li>
+<li>
+<strong>Index</strong> - xxx</li>
+<li>
+<strong>Journal/magazine/periodical</strong> - xxx</li>
+<li>
+<strong>Newsletter</strong> - xxx</li>
+<li>
+<strong>Poster</strong> - xxx</li>
+<li>
+<strong>Proceedings</strong> - xxx</li>
+<li>
+<strong>Professional development/learning resource</strong> - xxx</li>
+<li>
+<strong>Report</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="74"></a><html>
+<body>
+<h3>Publishing name</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/publishingName<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a name under which the peron creates published works<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - jr<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="75"></a><html>
+<body>
+<h3>Record ID</h3>
+<p>
+<strong>xpath</strong> - /record/general/recordID<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the library identification number of the resource being cataloged<br>
+<strong>Obligation</strong> - required<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - <br>
+<strong>Domain example</strong> - TST-OSM_NEXT-000-000-000-00<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>Use unique text strings.</li>
+<li>DLS cataloging tools use automatic means to generate record ID numbers.</li>
+<li></li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not repeat record ID numbers within a collection.</li>
+<li>Generally avoid spaces, apostrophes, quotes, slashes, less than or greater than signs, question marks, equal signs or URLs as part of record ID numbers.</li>
+<li>Do not use just numbers; rather include a text label with a string of numbers.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="76"></a><html>
+<body>
+<h3>Record date</h3>
+<p>
+<strong>xpath</strong> - /record/general/recordDate<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the creation date of the object's metadata record<br>
+<strong>Obligation</strong> - required<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		date<br>
+<strong>Domain</strong> - yyyy-mm-dd<br>
+<strong>Domain example</strong> - 2010-04-29<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="77"></a><html>
+<body>
+<h3>Requirements to view</h3>
+<p>
+<strong>xpath</strong> - /record/resources/requirementsToView<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - NSF only<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="78"></a><html>
+<body>
+<h3>Role - organization</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/organization/@role<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - The function of a entity in terms of their contribution to the creation of the resource.<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Editor<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Role - organization</strong> - The function of the entity in terms of their contribution to the creation of the resource.</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Author</strong> - Entity responsible for the creation of a work.</li>
+<li>
+<strong>Contributor</strong> - Entity responsible for creationg some peices of a work.</li>
+<li>
+<strong>Editor</strong> - Entity who assembles or refines a work for publication.</li>
+<li>
+<strong>Interviewee</strong> - A person being asked questions by another person in a question and answer format.</li>
+<li>
+<strong>Interviewer</strong> - A person who is asking questions of another person in a question and answer format.</li>
+<li>
+<strong>Meeting sponsor</strong> - Entity that provided funding for an event to occur.</li>
+<li>
+<strong>Publisher</strong> - Entity responsible for the publication and/or dissemenation of a textual work.</li>
+<li>
+<strong>Submitter</strong> - Entity that submitted the work to the OpenSky repository.</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="79"></a><html>
+<body>
+<h3>Role - person</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/person/@role<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - The function of a entity in terms of their contribution to the creation of the resource.<br>
+<strong>Obligation</strong> - required metadata if parent tag is present<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Editor<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Role - person</strong> - The function of the person in terms of their contribution to the creation of the resource.</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Author</strong> - Entity responsible for the creation of a work.</li>
+<li>
+<strong>Contributor</strong> - Entity responsible for creationg some peices of a work.</li>
+<li>
+<strong>Editor</strong> - Entity who assembles or refines a work for publication.</li>
+<li>
+<strong>Interviewee</strong> - A person being asked questions by another person in a question and answer format.</li>
+<li>
+<strong>Interviewer</strong> - A person who is asking questions of another person in a question and answer format.</li>
+<li>
+<strong>Meeting sponsor</strong> - Entity that provided funding for an event to occur.</li>
+<li>
+<strong>Publisher</strong> - Entity responsible for the publication and/or dissemenation of a textual work.</li>
+<li>
+<strong>Submitter</strong> - Entity that submitted the work to the OpenSky repository.</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="80"></a><html>
+<body>
+<h3>Second middle name</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/secondMiddleName<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the second middle name of a person<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - john<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="81"></a><html>
+<body>
+<h3>Services</h3>
+<p>
+<strong>xpath</strong> - /record/classify/services<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - instruments, facilities, collaborations, datasets or other UCAR entities that were used in the creation of the resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Computing<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Services</strong> - instruments, facilities, collaborations, datasets or other UCAR entities that were used in the creation of the resource</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Computing</strong> - xxx</li>
+<li>
+<strong>Data archiving</strong> - xxx</li>
+<li>
+<strong>Dataset or model</strong> - xxx</li>
+<li>
+<strong>Education and outreach</strong> - xxx</li>
+<li>
+<strong>Facilities</strong> - xxx</li>
+<li>
+<strong>Instrument</strong> - xxx</li>
+<li>
+<strong>Library or archive</strong> - xxx</li>
+<li>
+<strong>Scientific collaboration</strong> - xxx</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="82"></a><html>
+<body>
+<h3>Size</h3>
+<p>
+<strong>xpath</strong> - /record/resources/size<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		negativeInteger<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - 10<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="83"></a><html>
+<body>
+<h3>Source</h3>
+<p>
+<strong>xpath</strong> - /record/classify/source<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a related resource from which the described resource is derived<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - xxx<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="84"></a><html>
+<body>
+<h3>State or province</h3>
+<p>
+<strong>xpath</strong> - /record/coverage/location /@state<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - A major divisional unit of a nation.<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - US-CO (for Colorado, United States), ES-GR (for Granada, Spain)<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>To enter more than one state, add another location tag set.</li>
+<li>Complete country too.</li>
+<li>If appropriate, complete city too.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not include city or country information in the state field.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>Washingtion DC United States: Enter US-DC (for District of Columbia) for the state.</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="85"></a><html>
+<body>
+<h3>Status</h3>
+<p>
+<strong>xpath</strong> - /record/classify/status<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - an indication of the standing of resource within the publishing lifecycle<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Published<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Status</strong> - an indication of the standing of resource within the publishing lifecycle</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Accepted</strong> - a work has been selected for publication</li>
+<li>
+<strong>In press</strong> - a work is in the process of being published</li>
+<li>
+<strong>Published</strong> - a work has formally appeared in print</li>
+<li>
+<strong>Submitted</strong> - a work has been sent to a publisher for consideration, but that has not yet been accepted</li>
+<li>
+<strong>Unpublished</strong> - a work has not formally appeared in print, either because the author(s) could not find a publisher or because it was never intended for publication</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+<li>While this field is optional, complete it for written works or works in a publishing lifecycle.</li>
+<li><strong></strong><strong></strong>For images, posters, manuscripts and photographs, it may be appropriate to use the terms <strong>Published</strong> and <strong>Unpublished</strong>.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not use this field for works for which it does not make sense like presentation, notes, interactive resource, forum, email list, blog or artifact.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li><strong></strong><strong></strong><strong></strong><strong>Unpublished</strong>: SOARS papers</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="86"></a><html>
+<body>
+<h3>Suffix</h3>
+<p>
+<strong>xpath</strong> - /record/contributors/suffix<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a family name suffix that distinguishes between similarily named family members<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - jr<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="87"></a><html>
+<body>
+<h3>Title</h3>
+<p>
+<strong>xpath</strong> - /record/general/title<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a word, phrase, sentence, single character, or sequence of characters usually appearing on or in an item, naming the work(s) contained in it, for purposes of identification and reference<br>
+<strong>Obligation</strong> - required<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - War and Peace<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is a required field free text field.</li>
+<li>This field cannot be repeated.</li>
+<li>Capitalize the first word of a title and the first word of the subtitle (subtitle), if there is one.  Capitalize other words only as appropriate (eg &ndash; &ldquo;Earth&rdquo;).</li>
+<li>Proper nouns, chemical abbreviations, instrument or model abbreviations, or titles of conferences should also be capitalized.</li>
+<li>Separate the main title and the subtitle by a colon.</li>
+<li>Do not end the title with a period.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not enter the title or name of a publication; that is do no enter the name of a journal. However, book titles and book publication names are the same.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>The computational future for climate and Earth system models: On the path to petaflop and beyond</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="88"></a><html>
+<body>
+<h3>Title - alternative</h3>
+<p>
+<strong>xpath</strong> - /record/general/altTitle<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - an alternative name given to a resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - Vol. 4<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="89"></a><html>
+<body>
+<h3>Title - earlier</h3>
+<p>
+<strong>xpath</strong> - /record/general/earlierTitle<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a previous alternative name given to a resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - War and Peace<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="90"></a><html>
+<body>
+<h3>Title - later</h3>
+<p>
+<strong>xpath</strong> - /record/general/laterTitle<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a later name given to a resource that is different than the current cataloged name<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - War and Peace<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="91"></a><html>
+<body>
+<h3>Title - type</h3>
+<p>
+<strong>xpath</strong> - /record/general/title/@type<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - the genre of a given work&rsquo;s intellectual content<br>
+<strong>Obligation</strong> - required<br>
+<strong>Minimum occurrences</strong> - 1<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Article<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Type - title</strong> - the genre of a given work&rsquo;s intellectual content</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Abstract</strong> - a brief, objective representation of the essential content of a book, article, speech, report, dissertation, patent, standard, or other work, presenting the main points in the same order as the original but having no independent literary value. [Online Dictionary for Library and Information Science (OLDIS)]</li>
+<li>
+<strong>Animation/moving image</strong> - a medium of expression consisting of a series of related images, which create the illusion of movement when viewed in rapid succession</li>
+<li>
+<strong>Article</strong> - a self-contained prose composition on a fairly narrow topic or subject, written by one or more authors and published or submitted for publication under a separate title in a collection or periodical containing other works of the same form</li>
+<li>
+<strong>Artifact/physical object</strong> - an object made or modified by the work of one or more persons (replicas excluded) or a natural object</li>
+<li>
+<strong>Bibliography/index</strong> - a systematic list or enumeration of written works by a specific author or on a given subject, or that share one or more common characteristics (language, form, period, place of publication, etc.)</li>
+<li>
+<strong>Blog/forum/email list</strong> - Blog: a web page that provides frequent continuing publication of web links and/or comments on a specific topic or subject (broad or narrow in scope), often in the form of short entries arranged in reverse chronological order, the most recently added piece of information appearing first [Online Dictionary for Library and Information Science (OLDIS)]</li>
+<li>
+<strong>Blog/forum/email list</strong> - Forum/email list: an email discussion forum that allows individuals to subscribe and automatically receive messages posted to the list by other subscribers. Participants may also post their own messages and replies for distribution to the other subscribers to the list [Online Dictionary for Library and Information Science (OLDIS)]</li>
+<li>
+<strong>Book chapter</strong> - one of two or more major divisions of a book or other work, each complete in itself but related in theme or structure to the division preceding and/or following it</li>
+<li>
+<strong>Book review</strong> - an evaluative account of a book, usually written by a qualified person for publication in a newspaper, magazine, or journal</li>
+<li>
+<strong>Book/monograph</strong> - Book: a written work or composition that has been published and bound as a single volume</li>
+<li>
+<strong>Book/monograph</strong> - Monograph: A relatively short book or treatise on a single subject, that is complete in one volume, detailed and scholarly but not extensive in scope, and usually written by a specialist in the field</li>
+<li>
+<strong>Collection</strong> - a group of related items that have something in common like a shared topic, intended audience, genre or institution that has sponsored their creation, or shared provenance</li>
+<li>
+<strong>Comment</strong> - a substantive article, letter, or editorial that challenges, refutes, supports or expands upon a previously published work [Online Dictionary for Library and Information Science (OLDIS)]</li>
+<li>
+<strong>Correspondence</strong> - letters, memoranda, notes, postcards, email, and other written and addressed messages exchanged between two or more people, usually archived with the personal papers of the correspondents [Online Dictionary for Library and Information Science (OLDIS)]</li>
+<li>
+<strong>Encyclopedia</strong> - a book or numbered set of books containing authoritative summary information about a variety of topics in the form of short essays, usually arranged alphabetically or classified in some manner</li>
+<li>
+<strong>Image</strong> - a single visual representation</li>
+<li>
+<strong>Interactive resource</strong> - materials designed to respond to input from a human being, usually in the form of commands, data and/or actions</li>
+<li>
+<strong>Journal/magazine/periodical</strong> - Journal: a periodical devoted to disseminating original research and commentary on current developments in a specific discipline, subdiscipline, or field of study, usually published in quarterly, bimonthly, or monthly issues, and sold by subscription</li>
+<li>
+<strong>Journal/magazine/periodical</strong> - Magazine: a popular interest periodical usually containing articles on a variety of topics, written by various authors in a nonscholarly style. Most magazines are heavily illustrated, and contain advertising [Online Dictionary for Library and Information Science (OLDIS)]</li>
+<li>
+<strong>Journal/magazine/periodical</strong> - Periodical: a serial publication with its own distinctive title, containing a mix of articles, editorial, reviews, columns, short stories, poems, or other short works written by more than one contributor, generally published at regular stated intervals of less than a year, without prior decision as to when the final issue will appear</li>
+<li>
+<strong>Manual</strong> - a book used as a reference in the operation of a task, computer program, procedure, job or other function</li>
+<li>
+<strong>Manuscript</strong> - a written and, traditionally, unpublished work or composition</li>
+<li>
+<strong>Newsletter</strong> - a serial publication consisting of no more than a few pages, devoted to news, announcements, and current information that is of interest primarily to a specialized group of subscribers or members of an association or organization who receive it as part of their membership or affiliation</li>
+<li>
+<strong>Notes</strong> - brief explanations or descriptions that usually supplement the understanding of a work, subject, or object</li>
+<li>
+<strong>Poster</strong> - a visual medium created to publicize a forthcoming event, or communicate scholarly or scientific work, with or without illustration</li>
+<li>
+<strong>Presentation/webcast</strong> - a broadcast, podcast, or formal representation of ideas communicated in person or via the internet</li>
+<li>
+<strong>Proceedings</strong> - the published record of a conference, congress, symposium, or other meeting sponsored by a society or association</li>
+<li>
+<strong>Report</strong> - a record of research findings, research still in progress, or other technical findings, usually bearing a report number and sometimes a grant number assigned by the funding agency</li>
+<li>
+<strong>Software</strong> - a computer program, application, or model that must be run on a computer server</li>
+<li>
+<strong>Sound</strong> - recorded auditory material that can be heard by the human ear</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an required field.</li>
+<li>This field cannot be repeated.</li>
+<li>Use the provided definitions to determine the type of object</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Use For Examples</strong></em>
+</p>
+<ul>
+<li><strong></strong><strong></strong><strong></strong><strong>Animation/moving image</strong>: use for clips, interviews, lectures, movies</li>
+<li><strong></strong><strong></strong><strong></strong><strong>Article</strong>: use for reviews genral articles, preprints, encyclopedia entries; do not use for book reveiw, use book reveiw instead</li>
+<li><strong></strong><strong></strong><strong></strong><strong>Artifact/physical object</strong>: use for physical specimens like ice cores, rock samples</li>
+<li><strong></strong><strong></strong><strong></strong><strong>Blog/forum/email list</strong>: use for message board, chat, weblog</li>
+<li><strong></strong><strong></strong><strong></strong><strong>Book/monograph</strong>: use for a citation for a whole book</li>
+<li><strong></strong><strong></strong><strong></strong><strong>Book review</strong>: use for book reveiw only; use article for other reviews</li>
+<li><strong></strong><strong></strong><strong></strong><strong>Comment</strong>: use for comments, book forwards, comments on, replys, reply to comments</li>
+<li><strong></strong><strong></strong><strong></strong><strong>Encyclopedia</strong>: use for when referring to the entire encyclopedia </li>
+<li><strong></strong><strong></strong><strong></strong><strong>Image</strong>: use for photos, maps, </li>
+<li><strong></strong><strong></strong><strong></strong><strong>Interactive resource</strong>: use for COMET modules, Web Weather for Kids</li>
+<li><strong></strong><strong></strong><strong></strong><strong>Manual</strong>: use for operations manuals, user guides</li>
+<li><strong></strong><strong></strong><strong></strong><strong>Manuscript</strong>: use for thesis, dissertation</li>
+<li><strong></strong><strong></strong><strong></strong><strong>Report</strong>: use for NCAR technical note</li>
+<li><strong></strong><strong></strong><strong></strong><strong>Notes</strong>: use for descriptive technical notes or summaries</li>
+<li><strong></strong><strong></strong><strong></strong><strong>Software</strong>: use for computer models like the WRF</li>
+<li><strong></strong><strong></strong><strong></strong><strong>Sound</strong>: use for voices, music, and natural world and  mechanical tones</li>
+<li><strong></strong><strong></strong><strong></strong><strong>xxx</strong></li>
+<li><strong></strong><strong></strong><strong></strong><strong>xxx</strong></li>
+<li><strong></strong><strong></strong><strong></strong><strong>xxx</strong></li>
+</ul>
+<p>
+<em><strong>Non-peer Reviewed Items</strong></em>
+</p>
+<ul>
+<li>Abstract</li>
+<li>Books/monograph</li>
+<li>Book chapter</li>
+<li>Journals are often, but not always, peer-reviewed</li>
+<li>Magazine: except Science Magazine </li>
+<li>Newsletter</li>
+<li>Poster</li>
+<li>Preprint</li>
+<li>Proceedings: some proceedings are peer-reviewed while others are not</li>
+<li>Report</li>
+<li>xx</li>
+<li>xxx</li>
+<li>xx</li>
+<li>xxx</li>
+</ul>
+<p>
+<em><strong>Peer Reviewed Items</strong></em>
+</p>
+<ul>
+<li>Journals are often, but not always, peer-reviewed</li>
+<li><strong></strong><strong></strong><strong></strong>Magazine: <strong>Science Magazine</strong> </li>
+<li>Proceedings: some proceedings are peer-reviewed while others are not</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="92"></a><html>
+<body>
+<h3>URL of record</h3>
+<p>
+<strong>xpath</strong> - /record/general/urlOfRecord<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a viewable or citeable URL for information about the resource<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		anyURI<br>
+<strong>Domain</strong> - <br>
+<strong>Domain example</strong> - http://www2.ucar.edu<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="93"></a><html>
+<body>
+<h3>Version - other asset</h3>
+<p>
+<strong>xpath</strong> - /record/resources/otherAsset/version<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - indicates an asset's stage within the publishing process<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Publisher's final<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Version</strong> - indicates an asset's stage within the publishing process</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Postprint</strong> - a draft of a scholarly paper that has not yet been peer-reviewed or published</li>
+<li>
+<strong>Preprint</strong> - a draft of a scholarly paper that has been submitted and accepted for publication and that has undergone the peer-review process, with all resulting revisions being incorporated</li>
+<li>
+<strong>Publisher's final</strong> - the official version of record, bearing all revisions resulting from the peer-review process as well as all editing and formatting done by the publisher</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not use for items that don't undergo peer review such as book covers, newletters, non-reviewed magazine articles.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="94"></a><html>
+<body>
+<h3>Version - primary asset</h3>
+<p>
+<strong>xpath</strong> - /record/resources/primaryAsset/version<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - indicates an asset's stage within the publishing process<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - Publisher's final<br>
+</p>
+<h4>Controlled vocabulary information</h4>
+<ul>
+<li>
+<strong>Number of levels</strong> - 1</li>
+<li>
+<strong>Level 1 is Version</strong> - indicates an asset's stage within the publishing process</li>
+</ul>
+<h4>Term and definitions</h4>
+<ul>
+<li>
+<strong>Postprint</strong> - a draft of a scholarly paper that has not yet been peer-reviewed or published</li>
+<li>
+<strong>Preprint</strong> - a draft of a scholarly paper that has been submitted and accepted for publication and that has undergone the peer-review process, with all resulting revisions being incorporated</li>
+<li>
+<strong>Publisher's final</strong> - the official version of record, bearing all revisions resulting from the peer-review process as well as all editing and formatting done by the publisher</li>
+</ul>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not use for items that don't undergo peer review such as book covers, newletters, non-reviewed magazine articles.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="95"></a><html>
+<body>
+<h3>Volume</h3>
+<p>
+<strong>xpath</strong> - /record/general/volume<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - a high-order divsion of a work<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - 1<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - free text<br>
+<strong>Domain example</strong> - Vol. 4<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field cannot be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><a name="96"></a><html>
+<body>
+<h3>xxx</h3>
+<p>
+<strong>xpath</strong> - /record/xx/xx<br>
+<strong>Framework version</strong> - 1.1<br>
+</p>
+<p>
+<strong>Definition</strong> - xxx<br>
+<strong>Obligation</strong> - optional<br>
+<strong>Minimum occurrences</strong> - 0<br>
+<strong>Maximum occurrences</strong> - unbounded<br>
+<strong>Data types</strong> - 
+		string<br>
+<strong>Domain</strong> - controlled vocabulary<br>
+<strong>Domain example</strong> - NSF only<br>
+</p>
+<h4>Cataloging best practices</h4>
+<p>
+<em><strong>Things to do</strong></em>
+</p>
+<ul>
+<li>This is an optional field.</li>
+<li>This field can be repeated.</li>
+</ul>
+<p>
+<em><strong>Things to avoid</strong></em>
+</p>
+<ul>
+<li>Do not xxx.</li>
+</ul>
+<p>
+<em><strong>Examples</strong></em>
+</p>
+<ul>
+<li>xxx</li>
+</ul>
+</body>
+</html>
+<p><b><a href="#top">top</a></b></p><h6> Last updated: 2010-08-16<br>Maintained by: <a href=" http://nsdl.org/about/contactus/">National Science Digital Library</a></h6>

@@ -1,0 +1,26 @@
+<!ELEMENT concept (group* | item*)+>
+<!ATTLIST concept
+	name		CDATA	#REQUIRED
+	system		CDATA	#REQUIRED
+	language	CDATA	#REQUIRED
+	interface	CDATA	#REQUIRED
+	label		CDATA	#REQUIRED
+>
+
+<!ELEMENT definition (#PCDATA)>
+
+<!ELEMENT group (definition, (group* | item*)+ )>
+<!ATTLIST group
+	label	CDATA	#REQUIRED
+	type	CDATA	#IMPLIED
+	wrap	CDATA	#IMPLIED
+>
+
+<!ELEMENT item (#PCDATA)>
+<!ATTLIST item
+	name		CDATA	#REQUIRED
+	noDisplay	CDATA	#IMPLIED
+	wrap		CDATA	#IMPLIED
+> 
+
+

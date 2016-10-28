@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="Career Education">
+  <mapping>
+    <acsrInfo id="8125a9fd-7a34-4efd-be95-d914f2265acd">
+      <title>California Career Technical Education Model Curriculum Standards</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Career Education</subject>
+      <jurisdiction>CA</jurisdiction>
+      <fileName>Career Technical Education</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000257">
+      <title>California Career Technical Education Model Curriculum Standards</title>
+      <created>2005</created>
+      <topic>Career Education</topic>
+      <author>California</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cef7c455-81b6-45b9-bfa6-6b43b8336439">
+      <title>Educational Leadership Policy Standards: ISLLC 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Career Education</subject>
+      <jurisdiction>ISLLC</jurisdiction>
+      <fileName>Educational Leadership Policy Stand</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003FD">
+      <title>Educational Leadership Policy Standards: ISLLC 2008</title>
+      <created>2008</created>
+      <topic>Career Education</topic>
+      <author>ISLLC</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4b1f7090-fd10-4068-b502-bf523b35f596">
+      <title>Kentucky Teacher Standards</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Career Education</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Kentucky Teacher Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003FE">
+      <title>Kentucky Teacher Standards</title>
+      <created>2008</created>
+      <topic>Career Education</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+</mappings>

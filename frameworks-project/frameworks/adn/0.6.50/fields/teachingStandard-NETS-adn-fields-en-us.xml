@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: teachingStandard-NETS-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/teachingStandard.xsd">
+	<field name="Teaching standard - technology - National Educational Technology Standards (NETS)" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/educational/teachingStandards/teachingStandard">
+		<definition attribution="International Society for Technology in Education- National Educational Technology Standards (ISTE-NETS); http://cnets.iste.org/teachers/t_stands.html">the fundamental concepts, knowledge, skills, and attitudes for applying technology in educational settings</definition>
+
+		<vocabLevels number="3">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="NETS">National Educational Technology Standards</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="2" levelName="Standard" levelDeftn="the fundamental concepts, knowledge, skills, and attitudes for applying technology in educational settings">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="Technology operations and concepts">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Planning and designing learning environments and experiences">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Teaching, learning, and the curriculum">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Assessment and evaluation">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Productivity and professional practice">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Social, ethical, legal, and human issues">self-explanatory</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>
+			
+			<levelAndDeftn level="3" levelName="Concept" levelDeftn="the high-level topic area addressed by the standard; see the allowed combination of terms below; the concept part of the term is the phrase after the last colon"/>
+		</vocabLevels>
+
+
+		<terms>
+			<termAndDeftn vocab="NETS:Technology operations and concepts:Demonstrate introductory knowledge, skills, and understanding of concepts related to technology">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Technology operations and concepts:Demonstrate continual growth in technology knowledge and skills to stay abreast of current and emerging technologies">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NETS:Planning and designing learning environments and experiences:Design developmentally appropriate learning opportunities that apply technology-enhanced instructional strategies to support the diverse needs of learners">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Planning and designing learning environments and experiences:Apply current research on teaching and learning with technology when planning learning environments and experiences">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Planning and designing learning environments and experiences:Identify and locate technology resources and evaluate them for accuracy and suitability">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Planning and designing learning environments and experiences:Plan for the management of technology resources within the context of learning activities">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Planning and designing learning environments and experiences:Plan strategies to manage student learning in a technology-enhanced environment">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NETS:Teaching, learning, and the curriculum:Facilitate technology-enhanced experiences that address content standards and student technology standards">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Teaching, learning, and the curriculum:Use technology to support learner-centered strategies that address the diverse needs of students">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Teaching, learning, and the curriculum:Apply technology to develop students' higher order skills and creativity">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Teaching, learning, and the curriculum:Manage student learning activities in a technology-enhanced environment">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NETS:Assessment and evaluation:Apply technology in assessing student learning of subject matter using a variety of assessment techniques">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Assessment and evaluation:Use technology resources to collect and analyze data, interpret results, and communicate findings to improve instructional practice and maximize student learning">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Assessment and evaluation:Apply multiple methods of evaluation to determine students' appropriate use of technology resources for learning, communication, and productivity">self-explanatory</termAndDeftn>
+
+
+			<termAndDeftn vocab="NETS:Productivity and professional practice:Use technology resources to engage in ongoing professional development and lifelong learning">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Productivity and professional practice:Continually evaluate and reflect on professional practice to make informed decisions regarding the use of technology in support of student learning">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Productivity and professional practice:Apply technology to increase productivity">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Productivity and professional practice:Use technology to communicate and collaborate with peers, parents, and the larger community in order to nurture student learning">self-explanatory</termAndDeftn>
+	
+	
+			<termAndDeftn vocab="NETS:Social, ethical, legal, and human issues:Model and teach legal and ethical practice related to technology use">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Social, ethical, legal, and human issues:Apply technology resources to enable and empower learners with diverse backgrounds, characteristics, and abilities">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Social, ethical, legal, and human issues:Identify and use technology resources that affirm diversity">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Social, ethical, legal, and human issues:Promote safe and healthy use of technology resources">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NETS:Social, ethical, legal, and human issues:Facilitate equitable access to technology resources for all students">self-explanatory</termAndDeftn>
+		</terms>
+
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2006-02-24">Choosing a standard signifies that the content of the resource supports concepts, knowledge, skills, and attitudes for applying technology in educational settings.</practice>
+
+				<practice status="current" originDate="2006-02-24">Catalogers with experience and familiarity with teaching and the educational setting may associate these standards with resources.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2006-09-20">Do not choose too many standards. Most resources can only adequately address 3-4 standards.</practice>
+			</donts>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>NETS:Teaching, learning, and the curriculum:Manage student learning activities in a technology-enhanced environment</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

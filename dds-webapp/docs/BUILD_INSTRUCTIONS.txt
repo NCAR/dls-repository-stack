@@ -1,0 +1,92 @@
+  
+=== Build instructions for the Digital Discovery System (DDS) ===
+
+To install a pre-built version of DDS from a WAR file, see INSTALL_INSTRUCTIONS.txt.
+If you wish to build the software from source, please follow the instructions
+here.
+
+These instructions assume familiarity with the Apache Ant build tool,
+Java, CVS, and Tomcat.
+
+The following are required to build and run the software from source:
+-Java 6 or above
+-Ant build tool (http://ant.apache.org/)
+-A CVS client of your choice
+
+Optional:
+-Tomcat version 6.x or 7.x (http://tomcat.apache.org/) (needed to deploy directly to Tomcat)
+
+
+Build instructions:
+
+1. Obtain the required source code modules from CVS:
+
+	* dds-webapp - The DDS webapp context files, libraries and JSPs
+	* dlese-tools-project - The Java source code
+	* joai-project - Dependent code used to pull in OAI functionality	
+	* frameworks-project - Dependent metadata vocabulary configuration files
+	
+	Each of the modules may be obtained from the DLS anonymous 
+	CVS repository (sourceforge project dlsciences) here: 
+	http://sourceforge.net/scm/?type=cvs&group_id=198325
+	
+	The modules are tagged with DDS release versions,
+	for example 'dds_v3_3_14'. To obtain a specific version, 
+	checkout all modules using the desired version tag.
+	Supply no tag to obtain the latest development (HEAD) version.
+
+2. Obtain and install Ant, Java, and optionally Tomcat (see above).
+
+3. Place the required source code module directories into 
+a single directory where you will be building the software.
+
+4. Build or deploy the software
+
+  --- Option 1: Generate a WAR file ---
+
+* Execute the Ant 'war' target. You should see a number of messages 
+in your terminal. Once complete you should see a message like:
+    [echo] WAR file was created configured for data source 'fileSystem'
+	BUILD SUCCESSFUL
+    Total time: 1 minute 22 seconds
+    
+* If error messages appear, address the issues described and re-try 
+until successful.
+    
+* The generated WAR file will have been saved to dds-webapp/war-distribution/dds.war
+
+* Place the WAR file into the webapps directory of your Tomcat instance and start/restart
+to launch the application in the container.
+
+
+  --- Option 2: Deploy directly to a local Tomcat ---
+
+* Create a file named build.properties in your home directory
+(alternatively this may be placed in the dds-webapp directory).
+
+* Edit the build.properties file to include the Ant properties that
+are required for the build. These are listed at the top of the build.xml 
+file at the root level of the dds-webapp.
+
+* Execute the Ant 'deploy' target. You should see a number of messages 
+in your terminal. Once complete you should see a message like:
+    BUILD SUCCESSFUL
+    Total time: 56 seconds
+	
+* If error messages appear, address the issues described and re-deploy
+until successful.
+
+* The software will be built into a directory named "dds" inside your
+Tomcat webapps directory in the same manner as if it had been deployed
+from a WAR file.
+
+* Start/restart your tomcat instance to launch the application in the container
+
+
+-- Additional notes ---
+
+* See the build.xml file inside the dds-webapp for additional
+Ant targets that may be of interest.
+
+* Follow the additional instructions for starting/stopping Tomcat and configuring DDS 
+that are described in INSTALL_INSTRUCTIONS.txt and CONFIGURE_DATA_SOURCES.txt

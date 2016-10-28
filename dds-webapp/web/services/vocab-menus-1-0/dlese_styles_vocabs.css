@@ -1,0 +1,176 @@
+/* DLESE controlled vocabulary styles */
+
+/* Indented hierarchical display of OPML groupings: */
+.dlese_vocabs_tab_indented {
+	margin-left: -8px; 
+	padding-left: 0px;
+}
+.dlese_vocabs_tab_indented UL {
+	list-style-type: none; 
+	margin-left: 14px; 
+	padding-left: 0px;
+}
+.dlese_vocabs_tab_indented LI {
+	margin-left: 0px; 
+	padding-left: 0px;
+}
+/* dHTML flyout/dropdown TABLEs: */
+.dlese_vocabButtonsDiv { /* main holder of all vocab buttons */
+	position: absolute; 
+	left: 0px;
+	top: 0px;
+	z-index: 10000;
+	margin: 0px;
+	padding: 0px;
+}
+.dlese_vocabFlyout { /* top-level flyout for a vocab */
+	position: absolute; 
+	font-family: arial, helvetica, sans-serif; 
+	border: 2px outset #DDDDDD; 
+	z-index: 9999999;
+	font-size: 0.8em;
+	padding: 0px;
+	margin: 0px;
+	background-color: #ffffff;
+}
+.dlese_vocabFlyout TABLE, .dlese_vocabFlyout TD, .dlese_vocabDropdown {
+	margin: 0px;
+	padding: 0px;
+}
+/* Indent the top-level flyout layers: */
+.dlese_vocabFlyoutIndent {	
+	width: 3px;
+}
+/* Drop-down tables expand inside their flyout containers: */
+.dlese_vocabDropdown, .dlese_vocabDropdown TABLE {
+	margin-left: 2px;
+	padding-left: 2px;
+}
+/* Colored line used as vertical and horizontal separators: */
+.dlese_vocabsDividerLines {
+	background-color: #999999;
+}
+/* Tooltip/popup text when mouse hovers over a vocab label: */
+.dlese_vocabDescription { 
+	background-color: #FFF8D8;
+	font-family: arial, helvetica, sans-serif;
+	margin: 0px; 
+	padding-top: 3px; 
+	padding-bottom: 3px; 
+	padding-left: 4px; 
+	padding-right: 4px;
+	position: absolute;	
+	border: 1px outset #6F6848;
+	display: none;
+	z-index: 10000;
+	width: 310px;
+}
+/* DIV that holds image buttons: */
+.dlese_vocabButtons {
+	display: block;
+}
+/* "Clear all" and "Select all" links: */
+.dlese_vocabSelectClearLinksTopLevel {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 0.8em;
+	color: #000000;
+	padding-left: 1px;
+	padding-right: 1px;
+	cursor: pointer;
+}
+.dlese_vocabSelectClearLinksTopLevel:link { 
+	color: #000000;
+	text-decoration: none;
+}
+.dlese_vocabSelectClearLinksTopLevel:visited { 
+	color: #000000;
+	text-decoration: none;
+}
+.dlese_vocabSelectClearLinksTopLevel:hover { 
+	color: #000000;
+	text-decoration: underline;
+}
+.dlese_vocabSelectClearLinksTopLevel:active { 
+	color: #000000;
+	text-decoration: underline;
+}
+.dlese_vocabSelectClearLinks {
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 0.8em;
+	color: #000000;
+	padding-left: 1px;
+	padding-right: 1px;
+	cursor: pointer;
+	visibility: hidden;
+}
+.dlese_vocabSelectClearLinks:link { 
+	color: #000000;
+	text-decoration: underline;
+}
+.dlese_vocabSelectClearLinks:visited { 
+	color: #000000;
+	text-decoration: underline;
+}
+.dlese_vocabSelectClearLinks:hover { 
+	color: #000000;
+	text-decoration: underline;
+}
+.dlese_vocabSelectClearLinks:active { 
+	color: #000000;
+	text-decoration: underline;
+}
+/* Links that toggle vocab checkboxes: */
+.dlese_listToggleLink {
+	text-decoration: none;
+	color: #000000;
+	cursor: pointer;
+}
+.dlese_listToggleLink:link {
+	text-decoration: none;
+	color: #000000;
+}
+.dlese_listToggleLink:visited {
+	text-decoration: none;
+	color: #000000;
+}
+.dlese_listToggleLink:hover {
+	text-decoration: none;
+	color: #000000;
+}
+.dlese_listToggleLink:active {
+	text-decoration: none;
+	color: #000000;
+}
+.dlese_yourSelectionsNoscriptLabel {
+	/* So graphical browsers with scripting turned off won't see it (they'll see the graphic), but
+		text readers will: */
+	position: relative;
+	display: none;
+	z-index: 1000;
+}
+.dlese_yourSelectionsCriteria {
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	display: block;
+	visibility: visible;
+	padding-top: 0px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0px;
+	color: #0000bb;
+	height: 17px;
+	overflow: hidden;
+	z-index: 100;
+	position: absolute; 
+	top: 117px; 
+	left: 127px;
+}
+.dlese_clearAllButton {
+	position: absolute;
+	visibility: hidden;
+	top: 91px; 
+	left: 517px;
+	z-index: 2100;
+}
+

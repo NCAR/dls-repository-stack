@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  OVERVIEW  *****</xsd:documentation>
+		<xsd:documentation>Purpose - controlled vocabulary schema for DLESE metadata frameworks</xsd:documentation>
+		<xsd:documentation>Framework - collection metadata framework</xsd:documentation>
+		<xsd:documentation>Source: DLESE Program Center (DPC); http://www.dlese.org</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  History  *****</xsd:documentation>
+		<xsd:documentation>2006-01-11: Added terms: HostingMetadata and ConsultationOnly</xsd:documentation>
+		<xsd:documentation>2006-01-11: Removed term: ServicesOnly</xsd:documentation>
+		<xsd:documentation>2006-01-09: Added terms: Potential, ServicesOnly and Withdrawn</xsd:documentation>
+		<xsd:documentation>2005-07-19: Added term: Rejected to explain those collections that do not complete the accessioning process or are not accepted to be in the library.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  stateType  *****</xsd:documentation>
+		<xsd:documentation>Accessioned means accessioning criteria have been met;DLESE is receiving valid item metadata; both collection and item metadata is accessible in DLESE</xsd:documentation>
+		<xsd:documentation>Approved means technical and documentation requirements have been met; collection metadata is accessible in DLESE; item metadata may not have arrived yet</xsd:documentation>
+		<xsd:documentation>ConsultationOnly means the collection has not submitted metadata to DLESE nor will it become a DLESE collection. Rather the collection is using DLESE systems, services and receiving collection building support</xsd:documentation>
+		<xsd:documentation>Deaccesssioned means item and collection level metadata is no longer accessible because something in the collection falls within the Deaccessioning Policy</xsd:documentation>
+		<xsd:documentation>Holding means the collection is temporarily unavailable but will likely be available again soon. Reapproval is not required</xsd:documentation>
+		<xsd:documentation>HostingMetadata means the collection has submitted metadata to DLESE but the collection is not appropriate for accessioning (probably out of scope); however DLESE is making the metadata available to webservices, OAI, NSDL etc. The metadata is also updated on a regular basis and the collection is receiving collection building support.</xsd:documentation>
+		<xsd:documentation>Pending means the technical and documentation requirements have not been met but there is active engagement with the collection builder in order to move the collection along</xsd:documentation>
+		<xsd:documentation>Potential means the initial collection building information has been provide to or discussed with a collection builder via a phone, email or RT ticket. This is more than just gathering a name a conference. Active collection building may not be occurring yet.</xsd:documentation>
+		<xsd:documentation>Rejected means the collection is not accepted for accessioning. The collection may not have followed through with the accessioning process or it may have been placed on a Pending status and then did not complete the accessioning processing in a reasonable time period.</xsd:documentation>
+		<xsd:documentation>Submitted means metadata records have been submitted to DLESE. Need to determine if the collection meets the requirements of accessioning. Active engagement with the collection builder is occurring.</xsd:documentation>
+		<xsd:documentation>Withdrawn means either the collection builder or DLESE has decided to stop any further work on the collection. </xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="stateType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Accessioned"/>
+			<xsd:enumeration value="Approved"/>
+			<xsd:enumeration value="ConsultationOnly"/>
+			<xsd:enumeration value="Deaccessioned"/>
+			<xsd:enumeration value="Holding"/>
+			<xsd:enumeration value="Pending"/>
+			<xsd:enumeration value="Potential"/>
+			<xsd:enumeration value="Rejected"/>
+			<xsd:enumeration value="HostingMetadata"/>
+			<xsd:enumeration value="Submitted"/>
+			<xsd:enumeration value="Withdrawn"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

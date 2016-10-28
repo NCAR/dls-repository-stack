@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: geodeticDatumGlobalOrVert-det-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:45 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/geodeticDatumGlobalOrVert.xsd">
+	<field name="Datum - global or vertical - detailed geometry" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/detVert/geodeticDatumGlobalOrVert">
+		<definition>a base reference in a coordinate system; the initial point of origin and orientation of an ellipsoid that models the Earth in the region of interest</definition>
+
+		<vocabLevels number="2">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="DLESE">Digital Library for Earth System Education</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+
+			<levelAndDeftn level="2" levelName="Datum" levelDeftn="a base reference in a coordinate system; the initial point of origin and orientation of an ellipsoid that models the Earth in the region of interest; see the allowed combination of terms below; the datum part of the term is the phrase after the last colon"/>
+		</vocabLevels>
+
+		<terms>
+			<termAndDeftn vocab="DLESE:CGD28-CDN">a vertical datum used in Canada</termAndDeftn>
+			<termAndDeftn vocab="DLESE:IGLD55">a vertical datum</termAndDeftn>
+			<termAndDeftn vocab="DLESE:IGLD88">a vertical datum</termAndDeftn>
+			<termAndDeftn vocab="DLESE:NAVD29-USA">a vertical datum used in North America, established 1929</termAndDeftn>
+			<termAndDeftn vocab="DLESE:NAVD88">a vertical datum used in North America, established 1988</termAndDeftn>
+			<termAndDeftn vocab="DLESE:Other">the vertical datum is known but not part of this controlled vocabulary</termAndDeftn>
+			<termAndDeftn vocab="DLESE:PZ-90">Russian analog to WGS84; a global geodetic system</termAndDeftn>
+			<termAndDeftn vocab="DLESE:Sea level">a vertical datum</termAndDeftn>
+			<termAndDeftn vocab="DLESE:WGS72">a global geodetic system</termAndDeftn>
+			<termAndDeftn vocab="DLESE:WGS84">a global geodetic system</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-04-27">Datums apply to coordinate systems.</practice>
+				<practice status="current" originDate="2005-04-27">Choose an appropriate datum.</practice>
+				<practice status="current" originDate="2005-04-27" link1="DLESE:Unknown" style1="bold">If the datum is unknown, choose the term DLESE:Unknown.</practice>
+				<practice status="current" originDate="2006-03-07" link1="DLESE:Other" style1="bold" link2="description - vertical base level - detailed geometry" style2="bold">If the datum is known, but not part of the controlled vocabulary list, choose the term DLESE:Other and complete the field of description - vertical base level - detailed geometry.</practice>
+			</dos>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>DLESE:Sea level, DLESE:WGS84, DLESE:Other</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/boundBox/bbVert/geodeticDatumGlobalOrVert</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

@@ -1,0 +1,198 @@
+Harvest Repository Manager software. Current version @VERSION@
+
+The Harvest Repository Manager web application harvests records from standard or static OAI-PMH repositories and Learning Registry
+sources into a MySQL database, and sends e-mail to notify collection staff about the status of ongoing harvests.
+Harvest Repository Manager is configured via a set of collection records managed in a Digital Collection System (DCS).
+
+The Harvest Repository MySQL database, made up of collections of metadata, is used by the Digital Discovery System (DDS) to
+create a search API and OAI-PMH feed from the harvested sources.
+
+The Harvest Repository Manager application has been used for the NSDL and UCARConnect repositories.
+
+See the UCAR Wiki for more detailed documentation about the Harvest Repository Manager application and MySql database schemas.
+--------------------------------------------------------------------------------------
+
+This file contains the history of changes and versions for the software
+
+v2.6
+
+- This version combines the Harvest Manager, DCS, DDS, Java libraries, and frameworks-project
+into a single repository (stack) in GitHub, and renamed top-level directories to better match their identity.
+
+- This file describes release changes for the RHM webapp. See the top-level README docs for global change notes.
+
+- Migrated to combined dls-repository-stack repository on GitHub (with DDS and DCS)
+
+- Renamed the webapp to 'Repository Harvest Manager (RHM)'
+
+- Updated to run in Tomcat 7 (as well as Tomcat 6)
+-- The fix for Tomcat 7: Removed the EL TLD definition from inside the classes (META-INF) dir to the WEB-INF/tld directory
+
+
+v2.5
+
+- Daily harvests that are automatically triggered via timer task now harvest all repositories that are due to be harvested
+on the given day. Previously the harvester spread the harvests evenly across each month rather than
+harvesting immediately.
+
+
+v2.4 (2016-02-08)
+
+- Turned off automatic monthly re-processing of collections (to pull in changes in the harvest configs). This is now configurable via contextParam.
+Re-processing can be done manually via the Web UI.
+- Added View Context display to the collections page.
+- Added link to view records in the collections page.
+
+
+v2.3
+
+- Migrated the code base from subversion to GitHub (https://github.com/NCAR/harvest-repository-project)
+- Renamed the application from 'Harvest Manager' to 'Harvest Repository Manager'
+
+v2.2 (2015-11-03)
+
+- Renamed the SQL database schema 'nsdl_repository' to 'hm_repository'
+- Updated the DB schema and table documentation on the UCAR wiki:
+https://wiki.ucar.edu/display/nsdlto/Installation+and+Dev+Setup
+
+
+v2.1 (2015-09-16)
+
+- Implemented support for harvesting a Static OAI-PMH Repository XML feed (see http://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm).
+-- Use the same configuration as you would for a standard OAI-PMH repository (sets are not supported in the OAI-PMH Static Repository spec
+and will be ignored).
+-- The baseURL that is indicated must return a valid OAI-PMH Static Repository document (schema
+http://www.openarchives.org/OAI/2.0/static-repository.xsd) (or a standard OAI-PMH response).
+
+- Simplified the Collection Harvest Overview UI and colidated all the action buttons into one area.
+
+- Updated to run with Java 8, Tomcat 6.
+
+
+v2.0
+
+- Implemented an integrated harvester that harvests collections to a MySQL database
+- New Harvest Manager that incorporates harvesting, ingesting and maintenance of harvests into the same JAVA code base.
+This harvest uses config files to determine the type of plugin processors to use for different formats being
+ingested. This lets customization happend with edits to the base code.
+- Contains the following tools and enhancements plus others
+-- Harvested Records tool for viewing records after they have been ingested.
+-- Custom harvester that enables records from the Learning Registry to be ingested
+-- Reprocess collection harvester  that enables an admin to re-process a collection that is currently in the DB
+   back through the processors even though the source OAI is no longer running.
+-- Better reporting structure and emails so admins can quickly toubleshoot issues and view the status of a harvest
+-- New historical file structure that keeps records before and after processors are ran for ease of troubleshooting bad
+   harvests
+
+
+
+v1.9 (released 11/29/2011)
+
+- Deployed to operational NSDL platform on 11/29/2011 running on Rackspace using the 
+file-based NFR Harvest Ingest Process
+
+- Added display of timestamp on harvest log entries and removed the log ID
+
+- Removed final dependencies to NDR and updated the XPath to fetch the Collection Handle from the 
+NCS colleciton record XPath head/additionalMetadata/collection_info/metadataHandle 
+(was previously  head/additionalMetadata/ndr_info/metadataProviderHandle).
+
+- Added <collectionSetSpec>@SET_SPEC@</collectionSetSpec> to the trigger file, which indicates the
+setSpec we assign to the resulting collection that corresponds to the harvested records.
+
+- Added Collection setSpec to the e-mail notification message
+
+
+v1.8 (final NDR-mode version tagged in ucar svn 10/10/2011)
+
+- Removed dependence on Tomcat for the build process (servlet/jsp libs imported into the project).
+
+- Moved svn project from nsdl to ucar 10/10/2011. Still operating with NDR-based ingest process.
+
+
+v1.7 (released to production at harvest.ndsl.org November 26, 2010) 
+
+- Harvest now uses the attribute @metadataPrefix from the NCS collection record 
+(XPath /collection/ingest/oai/@metadataPrefix) instead of @format to determine the 
+metadataPrefix to request in the harvest.
+
+- Collections and details pages in the UI now use @libraryFormat (XPath /collection/ingest/oai/@libraryFormat)
+instead of @format when displaying the format that is being harvested
+
+
+v1.6 (released to production at harvest.ndsl.org June 18, 2010) 
+
+- Added query constraint to fetch only those collection records 
+that are in the NCS "NSDL Collection Records" collection (ky:1201216476279).
+This ensures no NAB collections are included.
+
+
+v1.5 (released to production at harvest.ndsl.org March 6, 2010) 
+
+- Added additional support for harvesting native formats.
+New setting are fetched from NCS and passed on to harvest ingest in the trigger file.
+New settings: 
+  * transformLocation - Global URL to a transform file that converts the native format to nsdl_dclocation of 
+  * xPath - XPath to the URL inside the record
+  * urlRequired - True/false value indicates whether the record must have a URL and if so, it will be enforced by ingest
+  
+- Added additional display for native formats in the UI.
+
+
+v1.4 (released to production at harvest.ndsl.org Dec 17, 2009)
+
+-Implemented a validation service in the OAI Explorer interface.
+
+-Added OAI Explorer to the top level of the UI for validating data providers
+that are not yet configured in the collections.
+
+
+v1.3 (released to production at harvest.ndsl.org Nov 2, 2009)
+
+-Collections table columns are now sortable
+
+-Staff now notified by e-mail if a harvest is stale (> three days old)
+
+
+v1.2 (released to production at harvest.ndsl.org Sept 17, 2008)
+
+-Added ability for the ingest process to update the harvest status if
+a status had previously been recorded for the given harvest. 
+New e-mail is sent with the updated status.
+
+
+v1.1 (released to production at harvest.ndsl.org July 18, 2008)
+
+-Added ability to manually perform incremental harvests
+-Display harvest as failed (timout) if no status is recieved from the ingest process in
+more than 3 days
+-Display 'Completed On' date/time using the date the status was logged instead
+of the ingest timestamp, which is earlier than when it actually completes
+-Display date of last successful harvest in the harvest overview page for the collection
+
+
+v1.0 (released to production at harvest.ndsl.org June 12, 2008)
+
+-Implemented all required fuctionality to replace CRS, including:
+--Manage harvests
+---Use the DDSWS search web service to access the harvest collection records managed 
+in the NCore Collection System (ncs_collect format)
+---Trigger the ingest process to perform harvests at regular intervals (once
+every xx months), or manually by NSDL collections administrators via the Web-based UI 
+---Receive and log harvest status notifications from the harvest ingest processes
+---E-mail collections staff to report the final status of each harvest
+---Restrict all administrative functions, such as performing manual harvests,
+using http basic authorization
+
+--Display harvest information and reports in the Web-based UI
+---List all harvest collections and info about their status
+---Provide simple search for collections
+---Show the harvest schedule and history of harvests for each collection
+---Show detailed information about each harvest including ingest
+logs, access to the harvested files, final status of harvest
+---Provide tools to issue OAI requests and explore the data providers for each collection
+
+
+v0.1
+
+-created the project

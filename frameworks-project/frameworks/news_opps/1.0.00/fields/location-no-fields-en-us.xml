@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: location-no-fields-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/news-opps/1.0.00/location.xsd">
+	<field name="Location" language="en-us" metaFormat="news_opps" metaVersion="1.0.00" path="/news-oppsRecord/locations/location">
+		<definition>the US or Mexican state, Canadian province or world country (and possibly the city within the country or state) in which the event, news, or opportunity occurs</definition>
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="Location" levelDeftn="the US or Mexican state, Canadian province or world country (and possibly the city within the country or state) in which the event, news, or opportunity occurs"/>
+		</vocabLevels>
+		<terms>
+			<termAndDeftn vocab="AD">Andorra</termAndDeftn>
+			<termAndDeftn vocab="AE">United Arab Emirates</termAndDeftn>
+			<termAndDeftn vocab="AF">Afghanistan</termAndDeftn>
+			<termAndDeftn vocab="AG">Antigua and Barbuda</termAndDeftn>
+			<termAndDeftn vocab="AI">Anguilla</termAndDeftn>
+			<termAndDeftn vocab="AL">Albania</termAndDeftn>
+			<termAndDeftn vocab="AM">Armenia</termAndDeftn>
+			<termAndDeftn vocab="AN">Netherlands Antilles</termAndDeftn>
+			<termAndDeftn vocab="AO">Angola</termAndDeftn>
+			<termAndDeftn vocab="AQ">Antarctica</termAndDeftn>
+			<termAndDeftn vocab="AR">Argentina</termAndDeftn>
+			<termAndDeftn vocab="AS">American Samoa</termAndDeftn>
+			<termAndDeftn vocab="AT">Austria</termAndDeftn>
+			<termAndDeftn vocab="AU">Australia</termAndDeftn>
+			<termAndDeftn vocab="AW">Aruba</termAndDeftn>
+			<termAndDeftn vocab="AX">Åland Islands</termAndDeftn>
+			<termAndDeftn vocab="AZ">Azerbaijan</termAndDeftn>
+
+			<termAndDeftn vocab="BA">Bosnia and Hercegovenia</termAndDeftn>
+			<termAndDeftn vocab="BB">Barbados</termAndDeftn>
+			<termAndDeftn vocab="BD">Bangladesh</termAndDeftn>
+			<termAndDeftn vocab="BE">Belgium</termAndDeftn>
+			<termAndDeftn vocab="BF">Burkina Faso</termAndDeftn>
+			<termAndDeftn vocab="BG">Bulgaria</termAndDeftn>
+			<termAndDeftn vocab="BH">Bahrain</termAndDeftn>
+			<termAndDeftn vocab="BI">Burundi</termAndDeftn>
+			<termAndDeftn vocab="BJ">Benin</termAndDeftn>
+			<termAndDeftn vocab="BM">Bermuda</termAndDeftn>
+			<termAndDeftn vocab="BN">Brunei Darussalam</termAndDeftn>
+			<termAndDeftn vocab="BO">Bolivia</termAndDeftn>
+			<termAndDeftn vocab="BR">Brazil</termAndDeftn>
+			<termAndDeftn vocab="BS">Bahamas</termAndDeftn>
+			<termAndDeftn vocab="BT">Bhutan</termAndDeftn>
+			<termAndDeftn vocab="BV">Bouvet Island</termAndDeftn>
+			<termAndDeftn vocab="BW">Botswana</termAndDeftn>
+			<termAndDeftn vocab="BY">Belarus</termAndDeftn>
+			<termAndDeftn vocab="BZ">Belize</termAndDeftn>
+			<termAndDeftn vocab="CA">Canada</termAndDeftn>
+
+			<termAndDeftn vocab="CA-AB">Alberta, Canada</termAndDeftn>
+			<termAndDeftn vocab="CA-BC">British Columbia, Canada</termAndDeftn>
+			<termAndDeftn vocab="CA-MB">Manitoba, Canada</termAndDeftn>
+			<termAndDeftn vocab="CA-NB">New Brunswick, Canada</termAndDeftn>
+			<termAndDeftn vocab="CA-NL">Newfoundland and Labrador, Canada</termAndDeftn>
+			<termAndDeftn vocab="CA-NS">Nova Scotia, Canada</termAndDeftn>
+			<termAndDeftn vocab="CA-NT">Northwest Territories, Canada</termAndDeftn>
+			<termAndDeftn vocab="CA-NU">Nunavut, Canada</termAndDeftn>
+			<termAndDeftn vocab="CA-ON">Ontario, Canada</termAndDeftn>
+			<termAndDeftn vocab="CA-PE">Prince Edward Island, Canada</termAndDeftn>
+			<termAndDeftn vocab="CA-QC">Québec, Canada</termAndDeftn>
+			<termAndDeftn vocab="CA-SK">Saskatchewan, Canada</termAndDeftn>
+			<termAndDeftn vocab="CA-YT">Yukon Territory, Canada</termAndDeftn>
+
+			<termAndDeftn vocab="CC">Cocos (Keeling) Islands</termAndDeftn>
+			<termAndDeftn vocab="CD">The Democratic Republic of the Congo (Zaire)</termAndDeftn>
+			<termAndDeftn vocab="CF">Central African Republic</termAndDeftn>
+			<termAndDeftn vocab="CG">Congo</termAndDeftn>
+			<termAndDeftn vocab="CH">Switzerland</termAndDeftn>
+			<termAndDeftn vocab="CI">Côte d'Ivoire (Ivory Coast)</termAndDeftn>
+			<termAndDeftn vocab="CK">Cook Islands</termAndDeftn>
+			<termAndDeftn vocab="CL">Chile</termAndDeftn>
+			<termAndDeftn vocab="CM">Cameroon</termAndDeftn>
+			<termAndDeftn vocab="CN">China</termAndDeftn>
+			<termAndDeftn vocab="CO">Colombia</termAndDeftn>
+			<termAndDeftn vocab="CR">Costa Rica</termAndDeftn>
+			<termAndDeftn vocab="CS">Serbia and Montenegro</termAndDeftn>
+			<termAndDeftn vocab="CU">Cuba</termAndDeftn>
+			<termAndDeftn vocab="CV">Cape Verde Islands</termAndDeftn>
+			<termAndDeftn vocab="CX">Christmas Island</termAndDeftn>
+			<termAndDeftn vocab="CY">Cyprus</termAndDeftn>
+			<termAndDeftn vocab="CZ">Czech Republic</termAndDeftn>
+
+			<termAndDeftn vocab="DE">Germany</termAndDeftn>
+			<termAndDeftn vocab="DJ">Djibouti</termAndDeftn>
+			<termAndDeftn vocab="DK">Denmark</termAndDeftn>
+			<termAndDeftn vocab="DM">Dominica</termAndDeftn>
+			<termAndDeftn vocab="DO">Dominican Republic</termAndDeftn>
+			<termAndDeftn vocab="DZ">Algeria</termAndDeftn>
+
+			<termAndDeftn vocab="EC">Ecuador</termAndDeftn>
+			<termAndDeftn vocab="EE">Estonia</termAndDeftn>
+			<termAndDeftn vocab="EG">Egypt</termAndDeftn>
+			<termAndDeftn vocab="EH">Western Sahara</termAndDeftn>
+			<termAndDeftn vocab="ER">Eretria</termAndDeftn>
+			<termAndDeftn vocab="ES">Spain</termAndDeftn>
+			<termAndDeftn vocab="ET">Ethiopia</termAndDeftn>
+
+			<termAndDeftn vocab="FI">Finland</termAndDeftn>
+			<termAndDeftn vocab="FJ">Fiji</termAndDeftn>
+			<termAndDeftn vocab="FK">Falkland Islands</termAndDeftn>
+			<termAndDeftn vocab="FM">Federated States of Micronesia</termAndDeftn>
+			<termAndDeftn vocab="FO">Faroe Islands</termAndDeftn>
+			<termAndDeftn vocab="FR">France</termAndDeftn>
+
+			<termAndDeftn vocab="GA">Gabon</termAndDeftn>
+			<termAndDeftn vocab="GB">United Kingdom</termAndDeftn>
+			<termAndDeftn vocab="GD">Grenada</termAndDeftn>
+			<termAndDeftn vocab="GE">Georgia</termAndDeftn>
+			<termAndDeftn vocab="GF">French Guiana</termAndDeftn>
+			<termAndDeftn vocab="GH">Ghana</termAndDeftn>
+			<termAndDeftn vocab="GI">Gibraltar</termAndDeftn>
+			<termAndDeftn vocab="GL">Greenland</termAndDeftn>
+			<termAndDeftn vocab="GM">Gambia</termAndDeftn>
+			<termAndDeftn vocab="GN">Guinea</termAndDeftn>
+			<termAndDeftn vocab="GP">Guadeloupe</termAndDeftn>
+			<termAndDeftn vocab="GQ">Equatorial Guinea</termAndDeftn>
+			<termAndDeftn vocab="GR">Greece</termAndDeftn>
+			<termAndDeftn vocab="GS">South Georgia and the South Sandwich Islands</termAndDeftn>
+			<termAndDeftn vocab="GT">Guatemala</termAndDeftn>
+			<termAndDeftn vocab="GU">Guam</termAndDeftn>
+			<termAndDeftn vocab="GW">Guinea-Bissau</termAndDeftn>
+			<termAndDeftn vocab="GY">Guyana</termAndDeftn>
+
+			<termAndDeftn vocab="HK">Hong Kong</termAndDeftn>
+			<termAndDeftn vocab="HM">Heard Island and McDonald Islands</termAndDeftn>
+			<termAndDeftn vocab="HN">Honduras</termAndDeftn>
+			<termAndDeftn vocab="HR">Croatia</termAndDeftn>
+			<termAndDeftn vocab="HT">Haiti</termAndDeftn>
+			<termAndDeftn vocab="HU">Hungary</termAndDeftn>
+
+			<termAndDeftn vocab="ID">Indonesia</termAndDeftn>
+			<termAndDeftn vocab="IE">Ireland (does not include Northern Ireland)</termAndDeftn>
+			<termAndDeftn vocab="IL">Israel</termAndDeftn>
+			<termAndDeftn vocab="IN">India</termAndDeftn>
+			<termAndDeftn vocab="IO">British Indian Ocean Territory</termAndDeftn>
+			<termAndDeftn vocab="IQ">Iraq</termAndDeftn>
+			<termAndDeftn vocab="IR">Iran</termAndDeftn>
+			<termAndDeftn vocab="IS">Iceland</termAndDeftn>
+			<termAndDeftn vocab="IT">Italy (includes Sicily and Sardinia)</termAndDeftn>
+
+			<termAndDeftn vocab="JM">Jamaica</termAndDeftn>
+			<termAndDeftn vocab="JO">Jordan</termAndDeftn>
+			<termAndDeftn vocab="JP">Japan</termAndDeftn>
+			<termAndDeftn vocab="JT">Johnston Island</termAndDeftn>
+
+			<termAndDeftn vocab="KE">Kenya</termAndDeftn>
+			<termAndDeftn vocab="KG">Kyrgyzstan</termAndDeftn>
+			<termAndDeftn vocab="KH">Cambodia</termAndDeftn>
+			<termAndDeftn vocab="KI">Kiribati</termAndDeftn>
+			<termAndDeftn vocab="KM">Comoros</termAndDeftn>
+			<termAndDeftn vocab="KN">Saint Kitts and Nevis</termAndDeftn>
+			<termAndDeftn vocab="KP">Democratic People's Republic of Korea (North Korea)</termAndDeftn>
+			<termAndDeftn vocab="KR">Republic of Korea (South Korea)</termAndDeftn>
+			<termAndDeftn vocab="KW">Kuwait</termAndDeftn>
+			<termAndDeftn vocab="KY">Cayman Islands</termAndDeftn>
+			<termAndDeftn vocab="KZ">Kazakhstan</termAndDeftn>
+
+			<termAndDeftn vocab="LA">Lao People's Democratic Republic (Laos)</termAndDeftn>
+			<termAndDeftn vocab="LB">Lebanon</termAndDeftn>
+			<termAndDeftn vocab="LC">Saint Lucia</termAndDeftn>
+			<termAndDeftn vocab="LI">Liechtenstein</termAndDeftn>
+			<termAndDeftn vocab="LK">Sri Lanka</termAndDeftn>
+			<termAndDeftn vocab="LR">Liberia</termAndDeftn>
+			<termAndDeftn vocab="LS">Lesotho</termAndDeftn>
+			<termAndDeftn vocab="LT">Lithuania</termAndDeftn>
+			<termAndDeftn vocab="LU">Luxembourg</termAndDeftn>
+			<termAndDeftn vocab="LV">Latvia</termAndDeftn>
+			<termAndDeftn vocab="LY">Libya (Libyan Arab Jamahiriya)</termAndDeftn>
+
+			<termAndDeftn vocab="MA">Morocco</termAndDeftn>
+			<termAndDeftn vocab="MC">Monaco</termAndDeftn>
+			<termAndDeftn vocab="MD">Moldova</termAndDeftn>
+			<termAndDeftn vocab="MG">Madagascar</termAndDeftn>
+			<termAndDeftn vocab="MH">Marshall Islands</termAndDeftn>
+			<termAndDeftn vocab="MI">Midway Islands</termAndDeftn>
+			<termAndDeftn vocab="MK">Macedonia</termAndDeftn>
+			<termAndDeftn vocab="ML">Mali</termAndDeftn>
+			<termAndDeftn vocab="MM">Myanmar</termAndDeftn>
+			<termAndDeftn vocab="MN">Mongolia</termAndDeftn>
+			<termAndDeftn vocab="MO">Macao</termAndDeftn>
+			<termAndDeftn vocab="MP">Northern Mariana Islands</termAndDeftn>
+			<termAndDeftn vocab="MQ">Martinique</termAndDeftn>
+			<termAndDeftn vocab="MR">Mauritania</termAndDeftn>
+			<termAndDeftn vocab="MS">Montserrat</termAndDeftn>
+			<termAndDeftn vocab="MT">Malta</termAndDeftn>
+			<termAndDeftn vocab="MU">Mauritius</termAndDeftn>
+			<termAndDeftn vocab="MV">Maldives</termAndDeftn>
+			<termAndDeftn vocab="MW">Malawi</termAndDeftn>
+			<termAndDeftn vocab="MX">Mexico</termAndDeftn>
+
+			<termAndDeftn vocab="MX-AG">Aguascalientes, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-BA">Baja California North, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-BJ">Baja California South, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-CE">Campeche, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-CH">Chihuahua, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-CI">Chiapas, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-CL">Colima, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-CU">Coahuila, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-DF">Distrito Federal Mexico, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-DO">Durango, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-GR">Guerrero, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-GU">Guanajuato, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-HL">Hidalgo, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-JL">Jalisco, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-MC">Michoacan, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-MR">Morelos, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-MX">Mexico State, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-NA">Nayarit, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-NL">Nuevo Leon, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-OA">Oaxaca, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-PE">Puebla, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-QR">Quintana Roo, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-QU">Queretaro, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-SI">Sinaloa, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-SL">San Luis Potosi, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-SO">Sonora, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-TA">Tamaulipas, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-TB">Tabasco, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-TL">Tlaxcala, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-VC">Veracruz, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-YU">Yucatan, Mexico</termAndDeftn>
+			<termAndDeftn vocab="MX-ZA">Zacatecas, Mexico</termAndDeftn>
+
+			<termAndDeftn vocab="MY">Malaysia</termAndDeftn>
+			<termAndDeftn vocab="MZ">Mozambique</termAndDeftn>
+
+			<termAndDeftn vocab="NA">Namibia</termAndDeftn>
+			<termAndDeftn vocab="NC">New Caledonia</termAndDeftn>
+			<termAndDeftn vocab="NE">Niger</termAndDeftn>
+			<termAndDeftn vocab="NF">Norfolk Island</termAndDeftn>
+			<termAndDeftn vocab="NG">Nigeria</termAndDeftn>
+			<termAndDeftn vocab="NI">Nicaragua</termAndDeftn>
+			<termAndDeftn vocab="NL">Netherlands (Holland)</termAndDeftn>
+			<termAndDeftn vocab="NO">Norway</termAndDeftn>
+			<termAndDeftn vocab="NP">Nepal</termAndDeftn>
+			<termAndDeftn vocab="NR">Nauru</termAndDeftn>
+			<termAndDeftn vocab="NU">Niue</termAndDeftn>
+			<termAndDeftn vocab="NZ">New Zealand</termAndDeftn>
+
+			<termAndDeftn vocab="OM">Oman</termAndDeftn>
+
+			<termAndDeftn vocab="PA">Panama</termAndDeftn>
+			<termAndDeftn vocab="PE">Peru</termAndDeftn>
+			<termAndDeftn vocab="PF">French Polynesia</termAndDeftn>
+			<termAndDeftn vocab="PG">Papua New Guinea</termAndDeftn>
+			<termAndDeftn vocab="PH">Philippines</termAndDeftn>
+			<termAndDeftn vocab="PK">Pakistan</termAndDeftn>
+			<termAndDeftn vocab="PL">Poland</termAndDeftn>
+			<termAndDeftn vocab="PM">Saint Pierre and Miquelon</termAndDeftn>
+			<termAndDeftn vocab="PN">Pitcairn</termAndDeftn>
+			<termAndDeftn vocab="PR">Puerto Rico</termAndDeftn>
+			<termAndDeftn vocab="PS">Palestinian Territory, Occupied</termAndDeftn>
+			<termAndDeftn vocab="PT">Portugal</termAndDeftn>
+			<termAndDeftn vocab="PW">Palau</termAndDeftn>
+			<termAndDeftn vocab="PY">Paraguay</termAndDeftn>
+
+			<termAndDeftn vocab="QA">Qatar</termAndDeftn>
+
+			<termAndDeftn vocab="RE">Réunion</termAndDeftn>
+			<termAndDeftn vocab="RO">Romania</termAndDeftn>
+			<termAndDeftn vocab="RU">Russian Federation</termAndDeftn>
+			<termAndDeftn vocab="RW">Rwanda</termAndDeftn>
+
+			<termAndDeftn vocab="SA">Saudi Arabia</termAndDeftn>
+			<termAndDeftn vocab="SB">Solomon Islands</termAndDeftn>
+			<termAndDeftn vocab="SC">Seychelles</termAndDeftn>
+			<termAndDeftn vocab="SD">Sudan</termAndDeftn>
+			<termAndDeftn vocab="SE">Sweden</termAndDeftn>
+			<termAndDeftn vocab="SG">Singapore</termAndDeftn>
+			<termAndDeftn vocab="SH">Saint Helena</termAndDeftn>
+			<termAndDeftn vocab="SI">Slovenia</termAndDeftn>
+			<termAndDeftn vocab="SJ">Svalbard and Jan Mayen</termAndDeftn>
+			<termAndDeftn vocab="SK">Slovakia</termAndDeftn>
+			<termAndDeftn vocab="SL">Sierra Leone</termAndDeftn>
+			<termAndDeftn vocab="SM">San Marino</termAndDeftn>
+			<termAndDeftn vocab="SN">Senegal</termAndDeftn>
+			<termAndDeftn vocab="SO">Somalia</termAndDeftn>
+			<termAndDeftn vocab="SR">Suriname</termAndDeftn>
+			<termAndDeftn vocab="ST">Sao Tome and Principe</termAndDeftn>
+			<termAndDeftn vocab="SV">El Salvador</termAndDeftn>
+			<termAndDeftn vocab="SY">Syria (Syrian Arab Republic)</termAndDeftn>
+			<termAndDeftn vocab="SZ">Swaziland</termAndDeftn>
+
+			<termAndDeftn vocab="TC">Turks and Caicos Islands</termAndDeftn>
+			<termAndDeftn vocab="TD">Chad</termAndDeftn>
+			<termAndDeftn vocab="TF">French Southern Territories</termAndDeftn>
+			<termAndDeftn vocab="TG">Togo</termAndDeftn>
+			<termAndDeftn vocab="TH">Thailand</termAndDeftn>
+			<termAndDeftn vocab="TJ">Tajikistan</termAndDeftn>
+			<termAndDeftn vocab="TK">Tokelau</termAndDeftn>
+			<termAndDeftn vocab="TL">Timor-Leste</termAndDeftn>
+			<termAndDeftn vocab="TM">Turkmenistan</termAndDeftn>
+			<termAndDeftn vocab="TN">Tunisia</termAndDeftn>
+			<termAndDeftn vocab="TO">Tonga</termAndDeftn>
+			<termAndDeftn vocab="TR">Turkey</termAndDeftn>
+			<termAndDeftn vocab="TT">Trinidad and Tobago</termAndDeftn>
+			<termAndDeftn vocab="TV">Tuvalu</termAndDeftn>
+			<termAndDeftn vocab="TW">Taiwan, Republic of China</termAndDeftn>
+			<termAndDeftn vocab="TZ">Tanzania, United Republic of</termAndDeftn>
+
+			<termAndDeftn vocab="UA">Ukraine</termAndDeftn>
+			<termAndDeftn vocab="UG">Uganda</termAndDeftn>
+			<termAndDeftn vocab="UM">United States Minor Outlying Islands</termAndDeftn>
+			<termAndDeftn vocab="US">United States of America</termAndDeftn>
+
+			<termAndDeftn vocab="US-AK">Alaska, United States</termAndDeftn>
+			<termAndDeftn vocab="US-AL">Alabama, United States</termAndDeftn>
+			<termAndDeftn vocab="US-AR">Arkansas, United States</termAndDeftn>
+			<termAndDeftn vocab="US-AZ">Arizona, United States</termAndDeftn>
+			<termAndDeftn vocab="US-CA">California, United States</termAndDeftn>
+			<termAndDeftn vocab="US-CO">Colorado, United States</termAndDeftn>
+			<termAndDeftn vocab="US-CT">Connecticut, United States</termAndDeftn>
+			<termAndDeftn vocab="US-DC">District of Columbia, United States</termAndDeftn>
+			<termAndDeftn vocab="US-DE">Delaware, United States</termAndDeftn>
+			<termAndDeftn vocab="US-FL">Florida, United States</termAndDeftn>
+			<termAndDeftn vocab="US-GA">Georgia, United States</termAndDeftn>
+			<termAndDeftn vocab="US-HI">Hawaii, United States</termAndDeftn>
+			<termAndDeftn vocab="US-IA">Iowa, United States</termAndDeftn>
+			<termAndDeftn vocab="US-ID">Idaho, United States</termAndDeftn>
+			<termAndDeftn vocab="US-IL">Illinois, United States</termAndDeftn>
+			<termAndDeftn vocab="US-IN">Indiana, United States</termAndDeftn>
+			<termAndDeftn vocab="US-KS">Kansas, United States</termAndDeftn>
+			<termAndDeftn vocab="US-KY">Kentucky, United States</termAndDeftn>
+			<termAndDeftn vocab="US-LA">Louisiana, United States</termAndDeftn>
+			<termAndDeftn vocab="US-MA">Massachusetts, United States</termAndDeftn>
+			<termAndDeftn vocab="US-MD">Maryland, United States</termAndDeftn>
+			<termAndDeftn vocab="US-ME">Maine, United States</termAndDeftn>
+			<termAndDeftn vocab="US-MI">Michigan, United States</termAndDeftn>
+			<termAndDeftn vocab="US-MN">Minnesota, United States</termAndDeftn>
+			<termAndDeftn vocab="US-MO">Missouri, United States</termAndDeftn>
+			<termAndDeftn vocab="US-MS">Mississippi, United States</termAndDeftn>
+			<termAndDeftn vocab="US-MT">Montana, United States</termAndDeftn>
+			<termAndDeftn vocab="US-NC">North Carolina, United States</termAndDeftn>
+			<termAndDeftn vocab="US-ND">North Dakota, Unites States</termAndDeftn>
+			<termAndDeftn vocab="US-NE">Nebraska, United States</termAndDeftn>
+			<termAndDeftn vocab="US-NH">New Hampshire, United States</termAndDeftn>
+			<termAndDeftn vocab="US-NJ">New Jersey, United States</termAndDeftn>
+			<termAndDeftn vocab="US-NM">New Mexico, United States</termAndDeftn>
+			<termAndDeftn vocab="US-NV">Nevada, United States</termAndDeftn>
+			<termAndDeftn vocab="US-NY">New York, United States</termAndDeftn>
+			<termAndDeftn vocab="US-OH">Ohio, United States</termAndDeftn>
+			<termAndDeftn vocab="US-OK">Oklahoma, United States</termAndDeftn>
+			<termAndDeftn vocab="US-OR">Oregon, United States</termAndDeftn>
+			<termAndDeftn vocab="US-PA">Pennsylvania, United States</termAndDeftn>
+			<termAndDeftn vocab="US-RI">Rhode Island, United States</termAndDeftn>
+			<termAndDeftn vocab="US-SC">South Carolina, United States</termAndDeftn>
+			<termAndDeftn vocab="US-SD">South Dakota, United States</termAndDeftn>
+			<termAndDeftn vocab="US-TN">Tennessee, United States</termAndDeftn>
+			<termAndDeftn vocab="US-TX">Texas, United States</termAndDeftn>
+			<termAndDeftn vocab="US-UT">Utah, United States</termAndDeftn>
+			<termAndDeftn vocab="US-VA">Virginia, United States</termAndDeftn>
+			<termAndDeftn vocab="US-VT">Vermont, United States</termAndDeftn>
+			<termAndDeftn vocab="US-WA">Washington, United States</termAndDeftn>
+			<termAndDeftn vocab="US-WI">Wisconsin, United States</termAndDeftn>
+			<termAndDeftn vocab="US-WV">West Virginia, United States</termAndDeftn>
+			<termAndDeftn vocab="US-WY">Wyoming, United States</termAndDeftn>
+
+			<termAndDeftn vocab="UY">Uruguay</termAndDeftn>
+			<termAndDeftn vocab="UZ">Uzbekistan</termAndDeftn>
+
+			<termAndDeftn vocab="VA">Vatican City</termAndDeftn>
+			<termAndDeftn vocab="VC">Saint Vincent and the Grenadines</termAndDeftn>
+			<termAndDeftn vocab="VE">Venezuela</termAndDeftn>
+			<termAndDeftn vocab="VG">Virgin Islands, British</termAndDeftn>
+			<termAndDeftn vocab="VI">Virgin Islands, U.S.</termAndDeftn>
+			<termAndDeftn vocab="VN">Vietnam</termAndDeftn>
+			<termAndDeftn vocab="VU">Vanuatu</termAndDeftn>
+
+			<termAndDeftn vocab="WF">Wallis and Futuna</termAndDeftn>
+			<termAndDeftn vocab="WK">Wake Island</termAndDeftn>
+			<termAndDeftn vocab="WS">Samoa</termAndDeftn>
+
+			<termAndDeftn vocab="XX">Unknown</termAndDeftn>
+
+			<termAndDeftn vocab="YE">Yemen</termAndDeftn>
+			<termAndDeftn vocab="YT">Mayotte</termAndDeftn>
+
+			<termAndDeftn vocab="ZA">South Africa</termAndDeftn>
+			<termAndDeftn vocab="ZM">Zambia</termAndDeftn>
+			<termAndDeftn vocab="ZW">Zimbabwe</termAndDeftn>
+
+
+
+		</terms>
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-09-01">Select at least one location term.</practice>
+				<practice status="current" originDate="2004-10-26">If the US or Mexican state or Canadian province is known, use the US-, CA- or MX- abbreviations that include state and province information (e.g. US-AK, MX-VC or CA-BC).</practice>
+				<practice status="current" originDate="2004-10-26">If the US or Mexican state or Canadian province is unknown, use the singular US, CA or MX abbreviations that do not include state and province information (e.g. US, MX or CA).</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2004-10-26" link1="city field" style1="bold">Do not enter city information. Use the city field instead.</practice>
+			</donts>
+			<otherPractices>
+				<otherPractice header="Multiple locations? Do this.">
+					<practice status="current" originDate="2004-09-01">For each different location, make a separate entry.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<attributes>
+				<attribute>city</attribute>
+			</attributes>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>two-letter country codes that are capitalized from ISO-3166; two-letter country code of US and the two letter state abbreviation from the US Postal Service and the US Internal Revenue Service (IRS)</domain>
+			<example>US-AK for Alaska, United States; RU for Russian Federation</example>
+			<notes>
+				<note>The URL for ISO-3166 is: http://www.iso.ch/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1.html</note>
+				<note>The URL for the US Postal Service identifiers is: http://www.fact-index.com/u/us/us_postal_abbreviations.html</note>
+				<note> The URL for the US Internal Revenue Service identifiers is: http://www.irs.gov/irm/part9/ch09s04.html</note>
+			</notes>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: contentStandard-NCGE+NSES-adn-groups-cataloger-en-us.xml,v 1.1 2009/01/30 21:34:41 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+	<head>
+		<title>Content standards - NSES + NCGE</title>
+		<groups:concept id="cs" language="en-us" metaFormat="adn" metaVersion="0.6.50" text="Geography Standards" audience="cataloger" path="/itemRecord/educational/contentStandards/contentStandard" deftn="educational content standards for science and geography"/>
+	</head>
+	<body>
+		<outline text="National Science Education Standards (NSES)" type="group" groups:textAbbrev="NSES" groups:collapsible="false" groups:deftn="NSES represents the National Science Education Standards">
+<!--K-4-->			
+			<outline text="K-4" type="group" groups:deftn="Pertains to content for kindergarten through 4th grade">
+
+<!--Unifying concepts-->
+				<outline text="Unifying concepts and processes" type="group" groups:collapsible="false" groups:deftn="Empahsizes conceptual and procedural schemes that unify science disciplines">
+					<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Change, constancy, and measurement" type="vocab" text="Change, constancy, and measurement"/>
+					<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Evidence, models, and explanation"  type="vocab" text="Evidence, models, and explanation"/>
+					<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Evolution and equilibrium" type="vocab" text="Evolution and equilibrium"/>
+					<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Form and function" type="vocab" text="Form and function"/>
+					<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Systems, order, and organization" type="vocab" text="Systems, order, and organization"/>
+				</outline>
+
+<!--K-4: Std A -->			
+				<outline text="A - Science as inquiry" type="group" groups:collapsible="false" groups:deftn="The combination of the processes of science, scientific knowledge and reasoning to understand science">
+					<outline groups:vocab="NSES:K-4:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" type="vocab" text="Abilities necessary to do scientific inquiry"/>
+					<outline groups:vocab="NSES:K-4:Content Standard A Science as Inquiry Standards:Understanding about scientific inquiry" type="vocab" text="Understanding about scientific inquiry"/>
+				</outline>
+
+<!--K-4: Std B -->
+				<outline text="B - Physical science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of physical science">
+					<outline groups:vocab="NSES:K-4:Content Standard B Physical Science Standards:Light, heat, electricity, and magnetism" type="vocab" text="Light, heat, electricity, and magnetism"/>
+					<outline groups:vocab="NSES:K-4:Content Standard B Physical Science Standards:Position and motion of objects" type="vocab" text="Position and motion of objects"/>
+					<outline groups:vocab="NSES:K-4:Content Standard B Physical Science Standards:Properties of objects and materials" type="vocab" text="Properties of objects and materials"/>
+				</outline>
+
+<!--K-4: Std C -->
+				<outline text="C - Life science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of life science">
+					<outline groups:vocab="NSES:K-4:Content Standard C Life Science Standards:Characteristics of organisms" type="vocab" text="Characteristics of organisms"/>
+					<outline groups:vocab="NSES:K-4:Content Standard C Life Science Standards:Life cycles of organisms" type="vocab" text="Life cycles of organisms"/>
+					<outline groups:vocab="NSES:K-4:Content Standard C Life Science Standards:Organisms and environments" type="vocab" text="Organisms and environments"/>
+				</outline>
+
+<!--K-4: Std D -->
+				<outline text="D - Earth and space science" groups:collapsible="false" type="group" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of Earth and space science">
+					<outline groups:vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Changes in earth and sky" type="vocab" text="Changes in earth and sky"/>
+					<outline groups:vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Objects in the sky" type="vocab" text="Objects in the sky"/>
+					<outline groups:vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Properties of earth materials" type="vocab" text="Properties of earth materials"/>
+				</outline>
+				
+<!--K-4: Std E -->
+				<outline text="E - Science and technology" groups:collapsible="false" type="group" groups:deftn="Establish connections between the natural and designed worlds and provide opportunities to develop decision-making abilities">
+					<outline groups:vocab="NSES:K-4:Content Standard E Science and Technology Standards:Abilities of technological design" type="vocab" text="Abilities of technological design"/>
+					<outline groups:vocab="NSES:K-4:Content Standard E Science and Technology Standards:Abilities to distinguish between natural objects and objects made by humans" type="vocab" text="Abilities to distinguish between natural objects and objects made by humans" groups:textFull="Abilities to distinguish between natural objects and objects made by humans"/>
+					<outline groups:vocab="NSES:K-4:Content Standard E Science and Technology Standards:Understanding about science and technology" type="vocab" text="Understanding about sci. / tech." groups:textFull="Understanding about science and technology"/>
+				</outline>				
+
+<!--K-4: Std F -->
+				<outline text="F - Science in personal / social perspectives" groups:collapsible="false" type="group" groups:deftn="Develop decision-making skills in relation to personal social issues">
+					<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Changes in environments" type="vocab" text="Changes in environments"/>
+					<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Characteristics and changes in populations" text="Characteristics / changes in populations" type="vocab" groups:textFull="Characteristics and changes in populations"/>
+					<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Personal health" type="vocab" text="Personal health"/>
+					<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in local challenges" type="vocab" text="Sci. / tech. in local challenges" groups:textFull="Science and technology in local challenges"/>
+					<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Types of resources" type="vocab" text="Types of resources"/>
+				</outline>
+				
+<!--K-4: Std G-->
+				<outline text="G - History and nature of science" groups:collapsible="false" type="group" groups:deftn="Emphasizes the clarification of different aspects of scientific inquiry, the human aspects of science, and the role that science has played in the development of various cultures">
+					<outline groups:vocab="NSES:K-4:Content Standard G History and Nature of Science Standards:Science as a human endeavor" type="vocab" text="Science as a human endeavor"/>
+				</outline>				
+			</outline>
+
+<!--5-8: Unifying -->
+			<outline text="5-8" type="group" groups:deftn="Pertains to content for 5th through 8th grade">
+				<outline text="Unifying concepts and processes" type="group" groups:collapsible="false" groups:deftn="Empahsizes conceptual and procedural schemes that unify science disciplines">
+					<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Change, constancy, and measurement" type="vocab" text="Change, constancy, and measurement"/>
+					<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Evidence, models, and explanation" type="vocab" text="Evidence, models, and explanation"/>
+					<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Evolution and equilibrium" type="vocab" text="Evolution and equilibrium"/>
+					<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Form and function" type="vocab" text="Form and function"/>
+					<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Systems, order, and organization" type="vocab" text="Systems, order, and organization"/>
+				</outline>
+				
+<!--5-8: Std A -->
+				<outline text="A - Science as inquiry" type="group" groups:collapsible="false" groups:deftn="The combination of the processes of science, scientific knowledge and reasoning to understand science">
+					<outline groups:vocab="NSES:5-8:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" type="vocab" text="Abilities necessary to do scientific inquiry"/>
+					<outline groups:vocab="NSES:5-8:Content Standard A Science as Inquiry Standards:Understanding about scientific inquiry" type="vocab" text="Understanding about scientific inquiry"/>
+				</outline>
+				
+<!--5-8: Std B -->
+				<outline text="B - Physical science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of physical science">
+					<outline groups:vocab="NSES:5-8:Content Standard B Physical Science Standards:Motion and forces" type="vocab" text="Motion and forces"/>
+					<outline groups:vocab="NSES:5-8:Content Standard B Physical Science Standards:Properties and changes of properties in matter" type="vocab" text="Properties and changes of properties in matter"/>
+					<outline groups:vocab="NSES:5-8:Content Standard B Physical Science Standards:Transfer of energy" type="vocab" text="Transfer of energy"/>
+				</outline>				
+				
+<!--5-8: Std C -->	
+				<outline text="C - Life science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of life science">
+					<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Diversity and adaptations of organisms" type="vocab" text="Diversity and adaptations of organisms"/>
+					<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Population and ecosystems" type="vocab" text="Population and ecosystems"/>
+					<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Regulation and behavior" type="vocab" text="Regulation and behavior"/>
+					<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Reproduction and heredity" type="vocab" text="Reproduction and heredity"/>
+					<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Structure and function in living systems" type="vocab" text="Structure and function in living systems"/>
+				</outline>
+
+<!--5-8: Std D -->
+				<outline text="D - Earth and space science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of Earth and space science"> 
+					<outline groups:vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth in the solar system" type="vocab" text="Earth in the solar system"/>
+					<outline groups:vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth's history" type="vocab" text="Earth's history"/>
+					<outline groups:vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Structure of the earth system" type="vocab" text="Structure of the earth system"/>
+				</outline>
+
+<!--5-8: Std E -->
+				<outline text="E - Science and technology" type="group" groups:collapsible="false" groups:deftn="Establish connections between the natural and designed worlds and provide opportunities to develop decision-making abilities">
+					<outline groups:vocab="NSES:5-8:Content Standard E Science and Technology Standards:Abilities of technological design" type="vocab" text="Abilities of technological design"/>
+					<outline groups:vocab="NSES:5-8:Content Standard E Science and Technology Standards:Understandings about science and technology" type="vocab"  text="Understandings about sci. / tech." groups:textFull="Understandings about science and technology"/>
+				</outline>							
+
+<!--5-8: Std F -->
+				<outline text="F - Science in personal / social perspectives" type="group" groups:collapsible="false" groups:deftn="Develop decision-making skills in relation to personal social issues">
+					<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Natural hazards" type="vocab" text="Natural hazards"/>
+					<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Personal health" type="vocab" text="Personal health"/>
+					<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Populations, resources, and environments" type="vocab" text="Populations, resources, environments" groups:textFull="Populations, resources, and environments"/>
+					<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Risks and benefits" type="vocab" text="Risks and benefits"/>
+					<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in society" type="vocab" text="Sci. / tech. in society" groups:textFull="Science and technology in society"/>
+				</outline>
+
+<!--5-8: Std G -->
+				<outline text="G - History and nature of science" type="group" groups:collapsible="false" groups:deftn="Emphasizes the clarification of different aspects of scientific inquiry, the human aspects of science, and the role that science has played in the development of various cultures">
+					<outline groups:vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:History of science" type="vocab" text="History of science"/>
+					<outline groups:vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:Nature of science" type="vocab" text="Nature of science"/>
+					<outline groups:vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:Science as a human endeavor" type="vocab" text="Science as a human endeavor"/>
+				</outline>
+			</outline>
+
+<!--9-12: Unifying-->
+			<outline text="9-12" type="group" groups:deftn="Pertains to content for 9th through 12th grade">
+				<outline text="Unifying concepts and processes" type="group" groups:collapsible="false" groups:deftn="Empahsizes conceptual and procedural schemes that unify science disciplines">
+					<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Change, constancy, and measurement" type="vocab" text="Change, constancy, and measurement"/>
+					<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Evidence, models, and explanation" type="vocab" text="Evidence, models, and explanation"/>
+					<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Evolution and equilibrium" type="vocab" text="Evolution and equilibrium"/>
+					<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Form and function" type="vocab" text="Form and function"/>
+					<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Systems, order, and organization" type="vocab" text="Systems, order, and organization"/>
+				</outline>
+
+<!--9-12: Std A -->
+				<outline text="A - Science as inquiry" type="group" groups:collapsible="false" groups:deftn="The combination of the processes of science, scientific knowledge and reasoning to understand science">
+					<outline groups:vocab="NSES:9-12:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" type="vocab" text="Abilities necessary to do scientific inquiry"/>
+					<outline groups:vocab="NSES:9-12:Content Standard A Science as Inquiry Standards:Understandings about scientific inquiry" type="vocab" text="Understandings about scientific inquiry"/>
+				</outline>
+
+<!--9-12: Std B -->
+				<outline text="B - Physical science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of physical science">
+					<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Chemical reactions" type="vocab" text="Chemical reactions"/>
+					<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Conservation of energy and increase in disorder" type="vocab" text="Conservation of energy and increase in disorder"/>
+					<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Interactions of energy and matter" type="vocab" text="Interactions of energy and matter"/>
+					<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Motions and forces" type="vocab" text="Motions and forces"/>
+					<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Structure and properties of matter" type="vocab" text="Structure and properties of matter"/>
+					<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Structure of atoms" type="vocab" text="Structure of atoms"/>
+				</outline>				
+
+<!--9-12: Std C -->
+				<outline text="C - Life science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of life science">
+					<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Behavior of organisms" type="vocab" text="Behavior of organisms"/>
+					<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Biological evolution" type="vocab" text="Biological evolution"/>
+					<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Interdependence of organisms" type="vocab" text="Interdependence of organisms"/>
+					<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Matter, energy, and organization in living systems" type="vocab" text="Matter, energy, and organization in living systems"/>
+					<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Molecular basis of heredity" type="vocab" text="Molecular basis of heredity"/>
+					<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:The cell" type="vocab" text="The cell"/>
+				</outline>
+
+<!--9-12: Std D-->
+				<outline text="D - Earth and space science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of Earth and space science">
+					<outline groups:vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Energy in the earth system" type="vocab" text="Energy in the earth system"/>
+					<outline groups:vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Geochemical cycles" type="vocab" text="Geochemical cycles"/>
+					<outline groups:vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Origin and evolution of the earth system" type="vocab" text="Origin and evolution of the earth system"/>
+					<outline groups:vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Origin and evolution of the universe" type="vocab" text="Origin and evolution of the universe"/>
+				</outline>
+
+<!--9-12: Std E-->
+				<outline text="E - Science and technology" type="group" groups:collapsible="false" groups:deftn="Establish connections between the natural and designed worlds and provide opportunities to develop decision-making abilities">
+					<outline groups:vocab="NSES:9-12:Content Standard E Science and Technology Standards:Abilities of technological design" type="vocab" text="Abilities of technological design"/>
+					<outline groups:vocab="NSES:9-12:Content Standard E Science and Technology Standards:Understandings about science and technology" type="vocab" text="Understandings about science and technology"/>
+				</outline>
+
+<!--9-12: Std F -->
+				<outline text="F - Science in personal / social perspectives" type="group" groups:collapsible="false" groups:deftn="Develop decision-making skills in relation to personal social issues">
+					<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Environmental quality" type="vocab" text="Environmental quality"/>
+					<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural and human-induced hazards" type="vocab" text="Natural and human-induced hazards"/>
+					<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural resources" type="vocab" text="Natural resources"/>
+					<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Personal and community health" type="vocab" text="Personal and community health"/>
+					<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Population growth" type="vocab" text="Population growth"/>
+					<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in local, national, and global challenges" type="vocab" text="Sci. / tech. in local, national, and global challenges" groups:textFull="Science and technology in local, national, and global challenges"/>
+				</outline>
+
+<!--9-12: Std G -->
+				<outline text="G - History and nature of science" type="group" groups:collapsible="false" groups:deftn="Emphasizes the clarification of different aspects of scientific inquiry, the human aspects of science, and the role that science has played in the development of various cultures">
+					<outline groups:vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Historical perspectives" type="vocab" text="Historical perspectives"/>
+					<outline groups:vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Nature of scientific knowledge" type="vocab" text="Nature of scientific knowledge"/>
+					<outline groups:vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Science as a human endeavor" type="vocab" text="Science as a human endeavor"/>
+				</outline>
+			</outline>
+		</outline>	
+
+		<outline text="National Geography Standards" type="group" groups:collapsible="false" groups:deftn="National Geography Standards published by the National Council for Geographic Education (NCGE)">
+			<outline text="Environment and society" type="group">
+				<outline groups:vocab="NCGE:Environment and Society:How human actions modify the physical environment" type="vocab" text="How human actions modify the physical env." groups:textFull="How human actions modify the physical environment"/>
+				<outline groups:vocab="NCGE:Environment and Society:How physical systems affect human systems" type="vocab" text="How physical systems affect human systems"/>
+				<outline groups:vocab="NCGE:Environment and Society:The changes that occur in the meaning, use, distribution, and importance of resources" type="vocab" text="The changes that occur in the meaning, use, distribution, and importance of resources" groups:textFull="The changes that occur in the meaning, use, distribution, and importance of resources"/>
+			</outline>
+		
+			<outline text="Human systems" type="group">
+				<outline groups:vocab="NCGE:Human Systems:How forces of cooperation and conflict among people influence the division and control of Earth's surface" type="vocab" text="How forces of cooperation and conflict among people influence the division and control of Earth's surface" groups:textFull="How forces of cooperation and conflict among people influence the division and control of Earth's surface"/>
+				<outline groups:vocab="NCGE:Human Systems:The characteristics, distribution, and migration of human populations on Earth's surface" type="vocab" text="The characteristics, distribution, and migration of human populations on Earth's surface" groups:textFull="The characteristics, distribution, and migration of human populations on Earth's surface"/>
+				<outline groups:vocab="NCGE:Human Systems:The characteristics, distributions, and complexity of Earth's cultural mosaics" type="vocab" text="The characteristics, distributions, and complexity of Earth's cultural mosaics" groups:textFull="The characteristics, distributions, and complexity of Earth's cultural mosaics"/>
+				<outline groups:vocab="NCGE:Human Systems:The patterns and networks of economic interdependence on Earth's surface" type="vocab" text="The patterns and networks of economic interdependence on Earth's surface" groups:textFull="The patterns and networks of economic interdependence on Earth's surface"/>
+				<outline groups:vocab="NCGE:Human Systems:The process, patterns, and functions of human settlement" type="vocab" text="The process, patterns, and functions of human settlement"/>
+			</outline>
+
+			<outline text="Physical systems" type="group">
+				<outline groups:vocab="NCGE:Physical Systems:The characteristics and spatial distribution of ecosystems on Earth's surface" type="vocab" text="The characteristics and spatial distribution of ecosystems on Earth's surface" groups:textFull="The characteristics and spatial distribution of ecosystems on Earth's surface"/>
+				<outline groups:vocab="NCGE:Physical Systems:The physical processes that shape the patterns of Earth's surface" type="vocab" text="The physical processes that shape the patterns of Earth's surface" groups:textFull="The physical processes that shape the patterns of Earth's surface"/>
+			</outline>
+
+			<outline text="Places and regions" type="group">
+				<outline groups:vocab="NCGE:Places and Regions:How culture and experience influence people's perception of places and regions" type="vocab" text="How culture and experience influence people's perception of places and regions" groups:textFull="How culture and experience influence people's perception of places and regions"/>
+				<outline groups:vocab="NCGE:Places and Regions:That people create regions to interpret Earth's complexity" type="vocab" text="That people create regions to interpret Earth's complexity"/>
+				<outline groups:vocab="NCGE:Places and Regions:The physical and human characteristics of places" type="vocab" text="The physical and human characteristics of places"/>
+			</outline>
+		
+			<outline text="The uses of geography" type="group">
+				<outline groups:vocab="NCGE:The Uses of Geography:How to apply geography to interpret the past" type="vocab" text="How to apply geography to interpret the past"/>
+				<outline groups:vocab="NCGE:The Uses of Geography:How to apply geography to interpret the present and plan for the future" type="vocab" text="How to apply geography to interpret the present and plan for the future" groups:textFull="How to apply geography to interpret the present and plan for the future"/>
+			</outline>
+		
+			<outline text="The world in spatial terms" type="group">
+				<outline groups:vocab="NCGE:The World in Spatial Terms:How to analyze the spatial organization of people, places, and environments on Earth's surface" type="vocab" text="How to analyze the spatial organization of people, places, and environments on Earth's surface" groups:textFull="How to analyze the spatial organization of people, places, and environments on Earth's surface"/>
+				<outline groups:vocab="NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information" type="vocab" text="How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information" groups:textFull="How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information"/>
+				<outline groups:vocab="NCGE:The World in Spatial Terms:How to use mental maps to organize information about people, places, and environments" type="vocab" text="How to use mental maps to organize information about people, places, and environments" groups:textFull="How to use mental maps to organize information about people, places, and environments"/>
+			</outline>
+		</outline>
+	</body>
+</opml>	
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

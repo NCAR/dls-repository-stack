@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: news-opps.xsd,v 1.1 2009/01/30 21:49:33 ginger Exp $ -->
+<xsd:schema targetNamespace="http://newsopps.dlese.org" xmlns="http://newsopps.dlese.org" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA EXPLANATION  ****</xsd:documentation>
+		<xsd:documentation>This is the MAIN schema for the News and Opportunities metadata framework. This MAIN schema calls other VOCABULARY schemas to create the metadata framework structure.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  NAMESPACES  ********</xsd:documentation>
+		<xsd:documentation>The chameleon approach to namespace conventions is used in the VOCABULARY schemas. Only this MAIN schema has a target namespace. The VOCABULARY schemas do not have target namespaces (allows for plug-n-play components and vocabularies).</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  ROOT ELEMENT  *****</xsd:documentation>
+		<xsd:documentation>The root element of this schema is news-oppsRecord.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***  SCHEMA DEVELOPMENT  *****</xsd:documentation>
+		<xsd:documentation>The Venetian Blind approach is used for this MAIN schema and all VOCABULARY schemas. Elements within all schemas are used for fields (quantities) of the metadata framework. When elements have controlled vocabularies that are hierarchal, the vocabularies appear in the element as a colon separated text string. Attributes are used when additional information is required for the content of an element or if two pieces of information are required.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** DEFINING COMPLEX and SIMPLE TYPES  *******</xsd:documentation>
+		<xsd:documentation>Since the metadata framework uses Venetian Blind schema development, most metadata fields are defined as complex or simple types. This improves re-use for other frameworks developed at the DLESE Program Center (DPC) or within the DLESE community. As such, each schema has a complex and simple type section. Built-in simple types are defined when an elment is defined. Derived simple types are used when a metadata field appears more than once or if restrictions are needed on element content. </xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 2004 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org.</xsd:documentation>
+		<xsd:documentation>These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***** History of Changes  *************************</xsd:documentation>
+		<xsd:documentation>2004-11-30: Added required elements archiveDate and recordCreationDate; DLESE discovery needs these dates</xsd:documentation>
+		<xsd:documentation>2004-11-30: Changed dates and date to otherDates and otherDate respectively</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  VOCABULARY schemas to include  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="vocabs/announcement.xsd"/>
+	<xsd:include schemaLocation="vocabs/audience.xsd"/>
+	<xsd:include schemaLocation="vocabs/diversity.xsd"/>
+	<xsd:include schemaLocation="vocabs/location.xsd"/>
+	<xsd:include schemaLocation="vocabs/nameTitle.xsd"/>
+	<xsd:include schemaLocation="vocabs/organizations.xsd"/>
+	<xsd:include schemaLocation="vocabs/role.xsd"/>
+	<xsd:include schemaLocation="vocabs/topic.xsd"/>
+	<xsd:include schemaLocation="vocabs/typeOfDate.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>*****  ROOT element  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="news-oppsRecord" type="news-oppsType"/>
+	<xsd:annotation>
+		<xsd:documentation>news-oppsType is complex</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  Complex Types  (alpha order) *************************</xsd:documentation>
+		<xsd:documentation>announcementsType is complex and part of new-oppsRecordType</xsd:documentation>
+		<xsd:documentation>audiencesType is complex and part of new-oppsRecordType</xsd:documentation>
+		<xsd:documentation>contributorType is complex and part of contributorsTypeType</xsd:documentation>
+		<xsd:documentation>contributorsType is complex and part of new-oppsRecordType</xsd:documentation>
+		<xsd:documentation>diversitiesType is complex and part of new-oppsRecordType</xsd:documentation>
+		<xsd:documentation>keywordsTypeis complex and part of new-oppsRecordType</xsd:documentation>
+		<xsd:documentation>locationType is complex and part of locationsType</xsd:documentation>
+		<xsd:documentation>locationsType is complex and part of new-oppsRecordType</xsd:documentation>
+		<xsd:documentation>news-oppsType is complex and is the root type</xsd:documentation>
+		<xsd:documentation>organizationType is complex and part of contributorType</xsd:documentation>
+		<xsd:documentation>otherDateType is complex and part of otherDatesType</xsd:documentation>
+		<xsd:documentation>otherDatesType is complex and part of new-oppsRecordType</xsd:documentation>
+		<xsd:documentation>personType is complex and part of contributorType</xsd:documentation>
+		<xsd:documentation>sourceType is complex and part of contributorType</xsd:documentation>
+		<xsd:documentation>topicsType is complex and part of new-oppsRecordType</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="announcementsType">
+		<xsd:annotation>
+			<xsd:documentation>*****  announcementsType  *************************</xsd:documentation>
+			<xsd:documentation>announcementsType is a list of announcement types that categorize the news, event or opportunity</xsd:documentation>
+			<xsd:documentation>announcement is simple; see announcement.xsd; the type of news, event or opportunity being cataloged</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="announcement" type="announcementType" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="audiencesType">
+		<xsd:annotation>
+			<xsd:documentation>*****  audiencesType  *************************</xsd:documentation>
+			<xsd:documentation>audiencesType is a list of appropriate users for the event, news or opportunity</xsd:documentation>
+			<xsd:documentation>audience is simple; see audience.xsd; the user that would benefit most from the cataloged event, news or opportunity</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="audience" type="audienceType" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="contributorType">
+		<xsd:annotation>
+			<xsd:documentation>*****  contributorType  *************************</xsd:documentation>
+			<xsd:documentation>contributorType is either an organization or person providing information about or cataloging the event, news or opportunity</xsd:documentation>
+			<xsd:documentation>organization is complex - the information about an institution</xsd:documentation>
+			<xsd:documentation>person is complex - the information about a person</xsd:documentation>
+			<xsd:documentation>source is complex - the RSS channel and its URL that an item came from</xsd:documentation>
+			<xsd:documentation>role is simple; see role.xsd; the function performed by the contributor</xsd:documentation>
+			<xsd:documentation>share is boolean - indication if contributor information can be displayed</xsd:documentation>
+			<xsd:documentation>date is simple - the date of the contributor's contribution</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="organization" type="organizationType"/>
+			<xsd:element name="person" type="personType"/>
+			<xsd:element name="source" type="sourceType"/>
+		</xsd:choice>
+		<xsd:attribute name="role" type="roleType" use="required"/>
+		<xsd:attribute name="share" type="xsd:boolean" use="optional" default="false"/>
+		<xsd:attribute name="date" type="union.dateType" use="optional"/>
+	</xsd:complexType>
+	<xsd:complexType name="contributorsType">
+		<xsd:annotation>
+			<xsd:documentation>*****  contributorsType  *************************</xsd:documentation>
+			<xsd:documentation>contributorsType is a list of organizations or persons providing information about or cataloging the event, news or opportunity</xsd:documentation>
+			<xsd:documentation>contributor is complex - either an organization or person providing information about or cataloging the event, news or opportunity</xsd:documentation>
+			<xsd:documentation>allow minOccurs on contributor to be zero because if cataloger information is the only contributor information provided a metadata record could become invalid when the DLESE Privacy Policy of suppressing cataloger information is enacted; the possibility of creating an invalid record is prevented by allowing minOccurs to be zero</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="contributor" type="contributorType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="diversitiesType">
+		<xsd:annotation>
+			<xsd:documentation>*****  diversitiesType  *************************</xsd:documentation>
+			<xsd:documentation>diversitiesType is a list indicating diversity issues addressed by the event, news or opportunity</xsd:documentation>
+			<xsd:documentation>diversity is simple; see diversity.xsd;  - a diversity issue addressed by the event, news or opportunity</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="diversity" type="diversityType" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="keywordsType">
+		<xsd:annotation>
+			<xsd:documentation>*****  keywordsType  *************************</xsd:documentation>
+			<xsd:documentation>keywordsType is a list of words or phrases, not used in the description field, that further describe the event, news or opportunity </xsd:documentation>
+			<xsd:documentation>keyword is simple - a word or phrase, not used in the description field, that further describe the event, news or opportunity</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="keyword" type="stringTextType" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="languageType">
+		<xsd:annotation>
+			<xsd:documentation>*****  languageType  *************************</xsd:documentation>
+			<xsd:documentation>languageType indicates the language of the metadata record and the language of the cataloged resource</xsd:documentation>
+			<xsd:documentation>meta is built-in - the language of the metadata</xsd:documentation>
+			<xsd:documentation>resource is built-in - the language of the resource being cataloged</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="meta" type="xsd:language" use="required"/>
+				<xsd:attribute name="resource" type="xsd:language" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="locationType">
+		<xsd:annotation>
+			<xsd:documentation>*****  locationType  *************************</xsd:documentation>
+			<xsd:documentation>locationType is a US state or country (and possibily a city) in which the event, news or opportunity occurs</xsd:documentation>
+			<xsd:documentation>union.placesType is simple; see location.xsd - is a US state, Canadian province, Mexican state or a country (and possibily a city) in which the event, news or opportunity occurs</xsd:documentation>
+			<xsd:documentation>city is a string - the city in which the event, news or opportunity occurs</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="union.placesType">
+				<xsd:attribute name="city" type="stringTextType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="locationsType">
+		<xsd:annotation>
+			<xsd:documentation>*****  locationsType  *************************</xsd:documentation>
+			<xsd:documentation>locationsType is a listing of US states or countries (and possibily cities) in which the event, news or opportunity occurs</xsd:documentation>
+			<xsd:documentation>location is simple - a US state or country (and possibily a city) in which the event, news or opportunity occurs</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="location" type="locationType" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="news-oppsType">
+		<xsd:annotation>
+			<xsd:documentation>*****  news-oppsType  *************************</xsd:documentation>
+			<xsd:documentation>news-oppsType is the event, news or opportunity resource being cataloged (described)</xsd:documentation>
+			<xsd:documentation>recordID is simple - the catalog record number</xsd:documentation>
+			<xsd:documentation>language is complex - indicates the language of the metadata record and the language of the cataloged resource</xsd:documentation>
+			<xsd:documentation>title is simple - the name of the item being cataloged</xsd:documentation>
+			<xsd:documentation>description is simple - a narrative about the item being cataloged</xsd:documentation>
+			<xsd:documentation>diversities is complex - a list indicating diversity issues addressed by the event, news or opportunity</xsd:documentation>
+			<xsd:documentation>announcementURL is complex - the URL at which the news, event or opportunity is located and fully described</xsd:documentation>
+			<xsd:documentation>announcements is complex - a list of announcement types that categorize the news, event or opportunity</xsd:documentation>
+			<xsd:documentation>topics is complex - a list of categorizations for the event, news or opportunity by broad discipline areas</xsd:documentation>
+			<xsd:documentation>keywords is complex - a list of words or phrases, not used in the description field, that further describe the event, news or opportunity</xsd:documentation>
+			<xsd:documentation>audiences is complex - a list of appropriate users for the event, news or opportunity</xsd:documentation>
+			<xsd:documentation>locations is complex - a listing of US states or countries (and possibily cities) in which the event, news or opportunity occurs</xsd:documentation>
+			<xsd:documentation>archiveDate is simple - the date at which the news, event or opportunity should be archived (no longer be available)</xsd:documentation>
+			<xsd:documentation>postDate is simple - the date at which the news, event or opportunity should be published, accessible or visible</xsd:documentation>
+			<xsd:documentation>recordCreationDate is simple - the date the metadata record about the news, event or opportunity is created</xsd:documentation>
+			<xsd:documentation>otherDates is complex - a list of dates associated with some aspect of the cataloged item or metadata record</xsd:documentation>
+			<xsd:documentation>contributors is complex - a list of organizations or persons providing information about or cataloging the event, news or opportunity</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="recordID" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="language" type="languageType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="title" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="description" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="announcementURL" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="announcements" type="announcementsType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="topics" type="topicsType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="keywords" type="keywordsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="audiences" type="audiencesType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="diversities" type="diversitiesType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="locations" type="locationsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="archiveDate" type="union.dateType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="postDate" type="union.dateType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordCreationDate" type="union.dateType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="otherDates" type="otherDatesType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="contributors" type="contributorsType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="organizationType">
+		<xsd:annotation>
+			<xsd:documentation>*****  organizationType  *************************</xsd:documentation>
+			<xsd:documentation>organizationType is information about an institution</xsd:documentation>
+			<xsd:documentation>instName is simple - an organization's name</xsd:documentation>
+			<xsd:documentation>instDept is simple - an organization's department name</xsd:documentation>
+			<xsd:documentation>instPosition is simple - an aribitrary job position in the organization (e.g. librarian)</xsd:documentation>
+			<xsd:documentation>url is simple - the organization's web address</xsd:documentation>
+			<xsd:documentation>email is simple - the organization's email address</xsd:documentation>
+			<xsd:documentation>contactID is simple - not used - an internal DPC tracking number to the contributor</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="instName" type="union.instNameType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="instDept" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="instPosition" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="url" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="email" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="contactID" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="otherDateType">
+		<xsd:annotation>
+			<xsd:documentation>*****  otherDateType  *************************</xsd:documentation>
+			<xsd:documentation>otherDateType is a date associated with some aspect of the cataloged item or metadata record</xsd:documentation>
+			<xsd:documentation>type is simple; see typeOfDate.xsd - a description for the kind of date</xsd:documentation>
+			<xsd:documentation>time is built-in - the time in UTC - the time of the date</xsd:documentation>
+			<xsd:documentation>descr is simple - description of the date type (e.g. for a date type of 'due', the description may be 'Proposal deadline'</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="union.dateType">
+				<xsd:attribute name="type" type="typeOfDateType" use="required"/>
+				<xsd:attribute name="descr" type="stringTextType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="otherDatesType">
+		<xsd:annotation>
+			<xsd:documentation>*****  otherDatesType  *************************</xsd:documentation>
+			<xsd:documentation>otherDatesType is a list of dates associated with some aspect of the cataloged item or metadata record</xsd:documentation>
+			<xsd:documentation>ohterDate is complex - a date associated with some aspect of the cataloged item or metadata record</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="otherDate" type="otherDateType" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="personType">
+		<xsd:annotation>
+			<xsd:documentation>*****  personType  *************************</xsd:documentation>
+			<xsd:documentation>personType is information about a person</xsd:documentation>
+			<xsd:documentation>nameTitle is simple; see nameTitle.xsd; the salutation of a person contributor</xsd:documentation>
+			<xsd:documentation>nameFirst is built-in - the first name of a person contributor</xsd:documentation>
+			<xsd:documentation>nameMiddle is built-in - the middle name of a person contributor</xsd:documentation>
+			<xsd:documentation>nameLast is built-in - the last name of a person contributor</xsd:documentation>
+			<xsd:documentation>instName is simple - an organization's name</xsd:documentation>
+			<xsd:documentation>instDept is simple - an organization's department name</xsd:documentation>
+			<xsd:documentation>instPosition is simple - an aribitrary job position in the organization (e.g. librarian)</xsd:documentation>
+			<xsd:documentation>email is simple - the main email address for a person contributor</xsd:documentation>
+			<xsd:documentation>emailAlt is simple - the alternate email address for a person contributor</xsd:documentation>
+			<xsd:documentation>contactID is simple - not used - an internal DPC tracking number to the contributor</xsd:documentation>
+			<xsd:documentation>nameFirst and nameLast are xsd:string which allow null values and not stringTextType which does not allow null values. This is in case a person goes only by a single name or some other differenct naming convention other than first and last name.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="nameTitle" type="nameTitleType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="nameFirst" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="nameMiddle" type="stringTextType" minOccurs="0"/>
+			<xsd:element name="nameLast" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="instName" type="union.instNameType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="instDept" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="instPosition" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="email" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="emailAlt" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="contactID" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="sourceType">
+		<xsd:annotation>
+			<xsd:documentation>*****  sourceType  *************************</xsd:documentation>
+			<xsd:documentation>sourceType indicates the RSS channel and its URL from which the news item came</xsd:documentation>
+			<xsd:documentation>url is simple - the URL that links to the XMLization of the RSS channel</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="stringTextType">
+				<xsd:attribute name="url" type="stringTextType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="topicsType">
+		<xsd:annotation>
+			<xsd:documentation>*****  topicsType  *************************</xsd:documentation>
+			<xsd:documentation>topicsType is a list of categorizations for the event, news or opportunity by broad discipline areas</xsd:documentation>
+			<xsd:documentation>topic is simple; see topic.xsd; a categorization of the event, news or opportunity by a broad discipline area</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="topic" type="topicType" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  Simple Types (alpha order) *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="stringTextType">
+		<xsd:annotation>
+			<xsd:documentation>*****  stringTextType  *************************</xsd:documentation>
+			<xsd:documentation>Use this patterned string to ensure that a null tag is not valid string content. This pattern allows leading blank characters and carriage returns. Note: that xsd:string allows content to be null even if the element is required. The really restrictive version of this is .[\S\s]*</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\s*.[\S\s]*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.dateType">
+		<xsd:annotation>
+			<xsd:documentation>*****  union.dateType  *************************</xsd:documentation>
+		</xsd:annotation>
+		<xsd:union memberTypes="xsd:date xsd:gYearMonth xsd:gYear xsd:dateTime"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.instNameType">
+		<xsd:annotation>
+			<xsd:documentation>*****  union.instNameType  *************************</xsd:documentation>
+		</xsd:annotation>
+		<xsd:union memberTypes="instNameType stringTextType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.placesType">
+		<xsd:annotation>
+			<xsd:documentation>*****  union.placesType  *************************</xsd:documentation>
+		</xsd:annotation>
+		<xsd:union memberTypes="countriesType usType mexicoType canadaType"/>
+	</xsd:simpleType>
+</xsd:schema>

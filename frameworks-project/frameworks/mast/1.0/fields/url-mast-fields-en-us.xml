@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: url-mast-fields-en-us.xml,v 1.4 2009/07/30 15:27:17 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/non-vocab-fields.xsd">
+  <field name="URL" metaFormat="mast" metaVersion="1.0" language="en-us" path="/record/general/url">
+		<definition attribution="Digital Learning Sciences at the University Corporation for Atmospheric Research">A uniform resource locator (URL) or Internet webpage of the item being described.</definition> 
+
+		<bestPractices>
+				<dos>
+				<practice status="current" originDate="2008-10-20">Begin URLs with an appropriate Internet scheme like http://, ftp://, https://, etc. </practice><!--source:DLESE-->
+				<practice status="current" originDate="2008-10-20">If anchor links go to separate and different animations or images on a page, the anchor links may be cataloged as separate resources if appropriate.</practice>	<!--source:DLESE-->
+			</dos>
+		</bestPractices>	
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

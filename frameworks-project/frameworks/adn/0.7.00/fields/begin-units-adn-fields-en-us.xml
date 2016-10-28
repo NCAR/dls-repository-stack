@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: begin-units-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:13 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/units-time.xsd">
+	<field name="Begin units" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/temporalCoverages/timeAndPeriod/timeInfo/timeRelative/begin/@units">
+		<definition>units of time</definition>
+
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="Units" levelDeftn="units of time; see the allowed terms below"/>
+		</vocabLevels>
+
+		<terms>
+			<termAndDeftn vocab="Billion years ago">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Billion years forward">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Days ago">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Days forward">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Hours ago">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Hours forward">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Hundred years ago">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Hundred years forward">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Million years ago">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Million years forward">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Minutes ago">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Minutes forward">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Thousand years ago">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Thousand years forward">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Years ago">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="Years forward">self-explanatory</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-05-02">Choose the appropriate units.</practice>
+				<practice status="current" originDate="2005-05-02">Choose the same units for both the beginning and ending values.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2005-05-02">Do not enter time relative information or units if the units cannot be determined.</practice>
+				<practice status="current" originDate="2005-05-02">Do not mix units between the beginning and ending values.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2005-05-02" link1="begin - relative" style1="bold" link2="end - relative" style2="bold" link3="Days ago" style3="bold">To specify a time period for a website that always has 30 days of data accessible, complete the begin - relative field with the number 30 and the end - relative field with the number 0 and specify the units as Days ago.</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>Days ago, Billion years ago</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/boundBox/bbVert/vertMax/@units</note>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/boundBox/bbVert/vertMin/@units</note>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/detVert/vertMax/@units</note>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/detVert/vertMin/@units</note>
+				<note>Other XPATH: /itemRecord/temporalCoverages/timeAndPeriod/timeInfo/timeRelative/end/@units</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

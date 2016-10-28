@@ -1,0 +1,1964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AsnDocuments topic="English">
+  <asnDocument id="http://asn.jesandco.org/resources/D100003A">
+    <title>Marco Polo Discovers Mississippi Language Arts Framework</title>
+    <topic>English</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000246">
+    <title>Mississippi Language Arts Framework</title>
+    <topic>English</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2510987">
+    <title>MS Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001A2">
+    <title>Minnesota Graduation Standards for English</title>
+    <topic>English</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000084">
+    <title>Minnesota Academic Standards Language Arts K-12</title>
+    <topic>English</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2452880">
+    <title>Minnesota K-12 Academic Standards in English Language Arts</title>
+    <topic>English</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100009C">
+    <title>Framework for Curriculum Development in Communication Arts K-12</title>
+    <topic>English</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000370">
+    <title>Version 2.0 Grade-Level Expectations Communication Arts, October 2008</title>
+    <topic>English</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000019">
+    <title>Communication Arts Grade-Level Expectations</title>
+    <topic>English</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2477969">
+    <title>MO Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001CC">
+    <title>Wisconsin Model Academic Standards for English Language Arts</title>
+    <topic>English</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2431628">
+    <title>WI Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000DE">
+    <title>Montana Communication Arts Standards</title>
+    <topic>English</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003E2">
+    <title>Montana Standards for Communication Arts</title>
+    <topic>English</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2010</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100032E">
+    <title>Reading Grade Level Expectations</title>
+    <topic>English</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2498160">
+    <title>Montana Common Core Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000249">
+    <title>North Dakota English Language Arts Content Standards</title>
+    <topic>English</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2549963">
+    <title>North Dakota English Language Arts and Literacy Content Standards</title>
+    <topic>English</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001A3">
+    <title>English Language Arts Standard Course of Study</title>
+    <topic>English</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100024A">
+    <title>English Language Arts Standard Course of Study and Grade Level Competencies</title>
+    <topic>English</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2420464">
+    <title>NC Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001CD">
+    <title>Essential Academic Learning Requirements in Reading; Essential Academic Learning Requirements in Writing; Essential Academic Learning Requirements in Communications</title>
+    <topic>English</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000077">
+    <title>Reading K-10 Grade Level Expectations</title>
+    <topic>English</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003DD">
+    <title>Communication K-10 Grade Level Expectations</title>
+    <topic>English</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000252">
+    <title>Writing K-10 Grade Level Expectations</title>
+    <topic>English</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2413245">
+    <title>Washington Common Core State Standards for English Language Arts</title>
+    <topic>English</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000033">
+    <title>The Rhode Island English Language Arts Framework</title>
+    <topic>English</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000342">
+    <title>Reading Grade Level Expectations and Grade Span Expectations</title>
+    <topic>English</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000343">
+    <title>Written and Oral Communication Grade Level Expectations</title>
+    <topic>English</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2464103">
+    <title>RI Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100010A">
+    <title>Illinois Learning Standards for English Language Arts</title>
+    <topic>English</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>1997</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100014D">
+    <title>English Language Arts Performance Descriptors</title>
+    <topic>English</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2418244">
+    <title>New Illinois State Learning Standards Incorporating the Common Core English Language Arts</title>
+    <topic>English</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001F6">
+    <title>New Jersey Core Curriculum Content Standards for Language Arts Literacy</title>
+    <topic>English</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000127">
+    <title>New Jersey Core Curriculum Content Standards for Language Arts Literacy</title>
+    <topic>English</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000237">
+    <title>New Jersey Core Curriculum Content Standards for Language Arts Literacy</title>
+    <topic>English</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100037D">
+    <title>9-12 Language Arts Literacy Core Curriculum Content Standards, January 2008</title>
+    <topic>English</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2501823">
+    <title>New Jersey Common Core State Standards for English Language Arts and Literacy</title>
+    <topic>English</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003BB">
+    <title>NCTE-IRA Standards for the English Language Arts</title>
+    <topic>English</topic>
+    <author>NCTE-IRA</author>
+    <authorName>NCTE-IRA</authorName>
+    <created>1996</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000B9">
+    <title>Indiana's Academic Standards 2000 in English/Language Arts</title>
+    <topic>English</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100023E">
+    <title>Indiana's Academic Standards English/Language Arts</title>
+    <topic>English</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000347">
+    <title>Indiana's Core Standards for English/Language Arts</title>
+    <topic>English</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569955">
+    <title>Indiana Academic Standards English/Language Arts: Grades K-5</title>
+    <topic>English</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2570724">
+    <title>Indiana Academic Standards English/Language Arts: Grades 6-12</title>
+    <topic>English</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2572204">
+    <title>Indiana Academic Standards Content Area Literacy: History/Social Studies</title>
+    <topic>English</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2572273">
+    <title>Indiana Academic Standards Content Area Literacy: Science/Technical Subjects</title>
+    <topic>English</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000120">
+    <title>K-12 English Language Arts Curriculum Framework</title>
+    <topic>English</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000250">
+    <title>K-12 Reading New Hampshire Curriculum Framework</title>
+    <topic>English</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000251">
+    <title>K-12 Written and Oral Communication New Hampshire Curriculum Framework</title>
+    <topic>English</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2522919">
+    <title>NH Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000113">
+    <title>Nebraska Reading/Writing Standards</title>
+    <topic>English</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000162">
+    <title>Nebraska Reading/Writing Standards</title>
+    <topic>English</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003B2">
+    <title>Nebraska Language Arts Standards</title>
+    <topic>English</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2599836">
+    <title>Nebraska English Language Arts Standards</title>
+    <topic>English</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000071">
+    <title>English Language Arts Content Standards</title>
+    <topic>English</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000232">
+    <title>Alaska Content Standards English/Language Arts</title>
+    <topic>English</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000233">
+    <title>Reading Performance Standards (Grade Level Expectations) For Grades K-10</title>
+    <topic>English</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2477224">
+    <title>Writing Performance Standards (Grade Level Expectations) For Grades K-10</title>
+    <topic>English</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2566355">
+    <title>Alaska English/Language Arts Standards</title>
+    <topic>English</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001F1">
+    <title>Idaho State Achievement Standards K-12 in English Language Arts</title>
+    <topic>English</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100004A">
+    <title>Idaho Language Arts/Communication Achievement Standards</title>
+    <topic>English</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100023A">
+    <title>Idaho Content Standards - Language Arts</title>
+    <topic>English</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2375669">
+    <title>Idaho Extended Content Standards - Language Arts</title>
+    <topic>English</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2376501">
+    <title>English Language Development Standards</title>
+    <topic>English</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2430368">
+    <title>ID Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2566729">
+    <title>Hand Writing Standards for Idaho K-6</title>
+    <topic>English</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000014">
+    <title>Alabama Course of Study: English Language Arts</title>
+    <topic>English</topic>
+    <author>AL</author>
+    <authorName>Alabama</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000028">
+    <title>Alabama Course of Study: English Language Arts Addendum: Reading</title>
+    <topic>English</topic>
+    <author>AL</author>
+    <authorName>Alabama</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000333">
+    <title>Alabama Course of Study: English Language Arts</title>
+    <topic>English</topic>
+    <author>AL</author>
+    <authorName>Alabama</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2505664">
+    <title>Alabama Course of Study: English Language Arts</title>
+    <topic>English</topic>
+    <author>AL</author>
+    <authorName>Alabama</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000276">
+    <title>Reading Core Content Standards and Benchmarks Corresponding to the Iowa Tests</title>
+    <topic>English</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100034F">
+    <title>Literacy Grade Level Indicators</title>
+    <topic>English</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2542213">
+    <title>Iowa Core Literacy</title>
+    <topic>English</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000030">
+    <title>Academic Standards: Language Arts</title>
+    <topic>English</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100037E">
+    <title>Standard 3: Listening/Speaking, Adopted 7.8.96</title>
+    <topic>English</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100037F">
+    <title>Standard 4: Viewing/Presenting, Adopted 7.8.96</title>
+    <topic>English</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000FD">
+    <title>Academic Content Standards - Language Arts: Reading</title>
+    <topic>English</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100001E">
+    <title>Academic Content Standards - Language Arts: Writing</title>
+    <topic>English</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2468647">
+    <title>Arizona’s College and Career Ready Standards – English Language Arts/Literacy</title>
+    <topic>English</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2531803">
+    <title>Arizona Early Learning Standards</title>
+    <topic>English</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000017">
+    <title>Massachusetts Curriculum Framework: English Language Arts</title>
+    <topic>English</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100011C">
+    <title>Massachusetts English Language Arts Curriculum Framework</title>
+    <topic>English</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000D5">
+    <title>Supplement to the Massachusetts English Language Arts Curriculum Framework</title>
+    <topic>English</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2545935">
+    <title>Massachusetts Curriculum Framework for English Language Arts and Literacy</title>
+    <topic>English</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000011">
+    <title>State of Delaware English Language Arts Curriculum Framework</title>
+    <topic>English</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000296">
+    <title>Delaware English Standards and Grade Level Expectations</title>
+    <topic>English</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2548174">
+    <title>DE Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100035C">
+    <title>District of Columbia Reading/English Language Arts Standards</title>
+    <topic>English</topic>
+    <author>DC</author>
+    <authorName>District of Columbia</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2422255">
+    <title>DC Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>DC</author>
+    <authorName>District of Columbia</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001D4">
+    <title>New Standards</title>
+    <topic>English</topic>
+    <author>NCEE</author>
+    <authorName>NCEE</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000AC">
+    <title>Primary Literacy Standards for Kindergarten Through Grade Three</title>
+    <topic>English</topic>
+    <author>NCEE</author>
+    <authorName>NCEE</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100002A">
+    <title>Arkansas State Language Arts Frameworks</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100037A">
+    <title>Grades 9-12 English Language Arts Curriculum Framework, Amended 2006</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000105">
+    <title>K-12 English Language Arts Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2364040">
+    <title>Strategic Reading English Language Arts Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2364081">
+    <title>Critical Reading English Language Arts Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2558938">
+    <title>K-12 English Language Arts Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2560313">
+    <title>Creative Writing Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2560333">
+    <title>Debate I Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2560381">
+    <title>Debate II Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2560409">
+    <title>Debate III Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2560435">
+    <title>Dramatic Literature Curricular Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2560457">
+    <title>English Language Arts (ELA) Drama Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2560476">
+    <title>Forensics I Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2561274">
+    <title>Forensics II Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2561982">
+    <title>Forensics III Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562045">
+    <title>Journalism I Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562089">
+    <title>Journalism II Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562120">
+    <title>Journalism III Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562151">
+    <title>Journalism IV Curriculum Framework</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562184">
+    <title>Oral Communication - One Year 1 Credit</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562223">
+    <title>Oral Communication - One Semester</title>
+    <topic>English</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000189">
+    <title>English Language Arts Content Standards with Working Draft Benchmarks</title>
+    <topic>English</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000124">
+    <title>English Language Arts Grade Level Expectations v.12.05</title>
+    <topic>English</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003D6">
+    <title>English Language Proficiency Standards for K-12 Schools</title>
+    <topic>English</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2004</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100027F">
+    <title>High School English Language Arts Content Standards and Expectations</title>
+    <topic>English</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2481547">
+    <title>MI Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000C0">
+    <title>West Virginia's Reading and Language Arts Instructional Goals and Objectives</title>
+    <topic>English</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001C2">
+    <title>Reading and English Language Arts Content Standards and Objectives for West Virginia Schools</title>
+    <topic>English</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000293">
+    <title>21st Century Reading and English Language Arts Content Standards and Objectives for West Virginia Schools</title>
+    <topic>English</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2551923">
+    <title>Next Generation Content Standards and Objectives for English Language Arts in West Virginia Schools</title>
+    <topic>English</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2011</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2560112">
+    <title>Early Learning Standards Framework Content Standards and Learning Criteria for West Virginia Pre-Kindergarten</title>
+    <topic>English</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2592580">
+    <title>Next Generation Content Standards and Objectives for English Language Arts in West Virginia Schools</title>
+    <topic>English</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000BD">
+    <title>Learning Results for English Language Arts</title>
+    <topic>English</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000387">
+    <title>English Language Arts Learning Results: Parameters for Essential Instruction</title>
+    <topic>English</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100028B">
+    <title>2007 Reading Grade Level Expectations for Grades 3-8</title>
+    <topic>English</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003B5">
+    <title>Maine Federal, State, and Local Accountability Standards - English Language Arts</title>
+    <topic>English</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2479758">
+    <title>ME Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001E8">
+    <title>Language Arts Content Standards</title>
+    <topic>English</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000244">
+    <title>Hawaii Content and Performance Standards for Language Arts</title>
+    <topic>English</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2446370">
+    <title>HI Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100017C">
+    <title>Maryland State Content Standards for Language Arts</title>
+    <topic>English</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000367">
+    <title>Maryland English Core Learning Goals</title>
+    <topic>English</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2004</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100005B">
+    <title>Maryland State Curriculum - Reading/English Language Arts</title>
+    <topic>English</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2447670">
+    <title>Maryland State Curriculum for English Grades 9-12</title>
+    <topic>English</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100008C">
+    <title>Language Arts Content Standards</title>
+    <topic>English</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100006A">
+    <title>Language Arts Content and Performance Standards</title>
+    <topic>English</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000383">
+    <title>Wyoming Language Arts Content and Performance Standards</title>
+    <topic>English</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2426148">
+    <title>Wyoming Language Arts Content and Performance Standards</title>
+    <topic>English</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001ED">
+    <title>English Content Standards 2001-2002</title>
+    <topic>English</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000377">
+    <title>English Language Arts Content Standards K-3, Oregon Standards Newspaper 2008-2009</title>
+    <topic>English</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000378">
+    <title>English Language Arts Content Standards 4-HS, Oregon Standards Newspaper 2008-2009</title>
+    <topic>English</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100024E">
+    <title>English/Language Arts Grade-level Standards</title>
+    <topic>English</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2495369">
+    <title>OR Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000A1">
+    <title>English Language Arts Content Standards</title>
+    <topic>English</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000BC">
+    <title>Louisiana English Language Arts (ELA) Grade-Level Expectations</title>
+    <topic>English</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100023C">
+    <title>Louisiana Content Standards for English Language Arts</title>
+    <topic>English</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100028C">
+    <title>Louisiana Content Standards for English Language Arts</title>
+    <topic>English</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2427945">
+    <title>LA Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000163">
+    <title>Kansas Curriculum for Reading and Writing</title>
+    <topic>English</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100006F">
+    <title>Kansas Curricular Standards for Reading and Writing</title>
+    <topic>English</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000245">
+    <title>Kansas Curricular Standards for Reading and Writing</title>
+    <topic>English</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2556866">
+    <title>Kansas College and Career Ready Standards for English Language Arts and Literacy</title>
+    <topic>English</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001C7">
+    <title>Curriculum Framework English Language Arts</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000206">
+    <title>English/Language Arts Curriculum Standards</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100033B">
+    <title>Tennessee English Language Arts Standards</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2378754">
+    <title>Tennessee English Language Arts Standards - Grade 3</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2378830">
+    <title>Tennessee English Language Arts Standards - Content Area Reading</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2378942">
+    <title>Tennessee English Language Arts Standards - Speech</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2378991">
+    <title>Tennessee English Language Arts Standards - Competency English</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2379003">
+    <title>Tennessee English Language Arts Standards - Creative Writing</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2379011">
+    <title>Tennessee English Language Arts Standards - Journalism</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2379048">
+    <title>Tennessee English Language Arts Standards - English I</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2379148">
+    <title>Tennessee English Language Arts Standards - English II</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2379149">
+    <title>Tennessee English Language Arts Standards - English III</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2379150">
+    <title>Tennessee English Language Arts Standards - English IV</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2379358">
+    <title>Tennessee English Language Arts Standards - Grade 8</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2379375">
+    <title>Tennessee English Language Arts Standards - Grade 7</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2379392">
+    <title>Tennessee English Language Arts Standards - Grade 6</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2379409">
+    <title>Tennessee English Language Arts Standards - Grade 5</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2379426">
+    <title>Tennessee English Language Arts Standards - Grade 4</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2526497">
+    <title>TN Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001AA">
+    <title>Academic Standards for Reading, Writing, Speaking and Listening</title>
+    <topic>English</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2383393">
+    <title>Academic Standards for Reading Writing Speaking and Listening (Pre-K-3)</title>
+    <topic>English</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2383817">
+    <title>Academic Standards for Reading, Writing, Speaking, and Listening (Elementary)</title>
+    <topic>English</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2383827">
+    <title>Academic Standards for Reading Writing Speaking and Listening (Secondary)</title>
+    <topic>English</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2529702">
+    <title>PA Core - Reading for Science and Technical Subjects 6-12</title>
+    <topic>English</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2529738">
+    <title>PA Core - Reading for History and Social Studies 6-12</title>
+    <topic>English</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562464">
+    <title>PA Core - Writing for History and Social Studies 6-12</title>
+    <topic>English</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562497">
+    <title>PA Core - Writing for Science and Technical Subjects 6-12</title>
+    <topic>English</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562530">
+    <title>PA Core - English Language Arts, Grades PreK-5</title>
+    <topic>English</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2562969">
+    <title>PA Core - English Language Arts, Grades 6-12</title>
+    <topic>English</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000AD">
+    <title>English-Language Arts Content Standards for California Public Schools, Kindergarten Through Grade Twelve</title>
+    <topic>English</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2515047">
+    <title>CA Common Core State Standards: English Language Arts and Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001B0">
+    <title>Program of Studies - Primary English/Language Arts</title>
+    <topic>English</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000291">
+    <title>Core Content for Reading and Writing</title>
+    <topic>English</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000292">
+    <title>Program of Study English/Language Arts (Reading, Writing and Speaking, Listening and Observing)</title>
+    <topic>English</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2444271">
+    <title>Kentucky Core Academic Standards - English Language Arts</title>
+    <topic>English</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001B5">
+    <title>Chapter 110. Texas Essential Knowledge and Skills (TEKS) for English Language Arts and Reading</title>
+    <topic>English</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100036C">
+    <title>Texas Essential Knowledge and Skills for English Language Arts and Reading, Amended 2010</title>
+    <topic>English</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2533928">
+    <title>Texas College and Career Readiness Standards</title>
+    <topic>English</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000111">
+    <title>New Mexico Curriculum Framework Language Arts</title>
+    <topic>English</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2396076">
+    <title>Language Arts 9-12 Content Standards with Benchmarks and Performance Standards</title>
+    <topic>English</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2396077">
+    <title>Language Arts 5-8 Content Standards with Benchmarks and Performance Standards</title>
+    <topic>English</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2396078">
+    <title>Language Arts K-4 Content Standards with Benchmarks and Performance Standards</title>
+    <topic>English</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2554723">
+    <title>NM Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003FC">
+    <title>Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>CCSS</author>
+    <authorName>CCSS</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000234">
+    <title>Colorado Model Content Standards for Reading and Writing</title>
+    <topic>English</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000AA">
+    <title>Colorado Model Content Standards for Reading and Writing &amp; Suggested Grade Level Expectations</title>
+    <topic>English</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003F4">
+    <title>Colorado Academic Standards for Reading, Writing and Communicating</title>
+    <topic>English</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2551566">
+    <title>Colorado Academic Standards in Reading, Writing, and Communicating</title>
+    <topic>English</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001A8">
+    <title>Vermont's Framework of Standards and Learning Opportunities: Communication Standards</title>
+    <topic>English</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000294">
+    <title>Reading and Writing Grade Expectations for Vermont's Framework of Standards and Learning Opportunities</title>
+    <topic>English</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2473702">
+    <title>VT Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000CC">
+    <title>Georgia Quality Core Curriculum Standards for English Language Arts</title>
+    <topic>English</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001DF">
+    <title>Georgia English/Language Arts Performance Standards</title>
+    <topic>English</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2410270">
+    <title>English Language Arts Common Core Georgia Performance Standards</title>
+    <topic>English</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000197">
+    <title>Nevada English Language Arts Contents Standards for Kindergarten and Grades 1, 2, 3, 4, 5, 6, 7, 8, and 12</title>
+    <topic>English</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000330">
+    <title>Nevada English Language Arts Standards</title>
+    <topic>English</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2476139">
+    <title>Nevada Academic Content Standards for English Language Arts</title>
+    <topic>English</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000013">
+    <title>English Language Resource Guide with Core Curriculum</title>
+    <topic>English</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100016A">
+    <title>Learning Standards for English Language Arts</title>
+    <topic>English</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1996</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000242">
+    <title>English Language Arts Core Curriculum</title>
+    <topic>English</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2489281">
+    <title>New York State P-12 Common Core Learning Standards for English Language Arts &amp; Literacy</title>
+    <topic>English</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100020E">
+    <title>English Standards of Learning for Virginia Public Schools</title>
+    <topic>English</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000204">
+    <title>English Standards of Learning for Virginia Public Schools</title>
+    <topic>English</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003EF">
+    <title>English Standards of Learning for Virginia Public Schools</title>
+    <topic>English</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000243">
+    <title>Sunshine State Standards: Language Arts</title>
+    <topic>English</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000167">
+    <title>Sunshine State Standards Grade Level Expectations: Language Arts</title>
+    <topic>English</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100028E">
+    <title>Reading/Language Arts Next Generation Sunshine State Standards</title>
+    <topic>English</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2458349">
+    <title>FL Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>2010</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2572342">
+    <title>Language Arts Florida Standards (LAFS)</title>
+    <topic>English</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000DB">
+    <title>Elementary Language Arts Core Curriculum</title>
+    <topic>English</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000248">
+    <title>Secondary Language Arts Core Curriculum</title>
+    <topic>English</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2524708">
+    <title>Utah Core Standards for English Language Arts</title>
+    <topic>English</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100004D">
+    <title>Reading/English Language Arts Curriculum Standards</title>
+    <topic>English</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001F4">
+    <title>English Language Arts Curriculum Standards</title>
+    <topic>English</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100028F">
+    <title>South Carolina Academic Standards for English Language Arts</title>
+    <topic>English</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000379">
+    <title>South Carolina Academic Standards for English Language Arts</title>
+    <topic>English</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2434324">
+    <title>SC Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000016">
+    <title>Communication/Language Arts Standards</title>
+    <topic>English</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000108">
+    <title>Communication Arts Content Standards</title>
+    <topic>English</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100024D">
+    <title>South Dakota Reading Content Standards</title>
+    <topic>English</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100028D">
+    <title>South Dakota Writing/Listening, Viewing and Speaking Standards</title>
+    <topic>English</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2440089">
+    <title>Common Core State Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100015A">
+    <title>Academic Content Standards K-12 English Language Arts</title>
+    <topic>English</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000350">
+    <title>Early Learning Content Standards - English Language Arts</title>
+    <topic>English</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2492495">
+    <title>Ohio's New Learning Standards: English Language Standards</title>
+    <topic>English</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100006B">
+    <title>Priority Academic Student Skills for Language Arts</title>
+    <topic>English</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000203">
+    <title>Priority Academic Student Skills (PASS) for English</title>
+    <topic>English</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2002</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2494284">
+    <title>Oklahoma Academic Standards-English Language Arts</title>
+    <topic>English</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2010</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001EA">
+    <title>The Connecticut Language Arts Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+    <topic>English</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000239">
+    <title>Connecticut English Language Arts Curriculum Framework</title>
+    <topic>English</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003B1">
+    <title>PreK-8 English Language Arts Curriculum Standards</title>
+    <topic>English</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>2010</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2424282">
+    <title>Connecticut Core Standards for English Language Arts &amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+    <topic>English</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+</AsnDocuments>

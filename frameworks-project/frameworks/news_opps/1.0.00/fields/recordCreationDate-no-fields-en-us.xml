@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: recordCreationDate-no-fields-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/news-opps/1.0.00/non-vocab-fields.xsd">
+	<field name="Date - record creation" language="en-us" metaFormat="news_opps" metaVersion="1.0.00" path="/news-oppsRecord/recordCreationDate">
+		<definition>a date, and possibly time, for the creation of the metadata record for the news, event or opportunity</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-09-03">Enter a date.</practice>
+				<practice status="current" originDate="2004-09-03">Use a date format of YYYY-MM-DD, e.g. 2004-12-27.</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2004-09-03">Do not enter days of the week.</practice>
+				<practice status="current" originDate="2004-09-03">Do not enter just months or days.</practice>
+			</donts>
+
+			<examples>
+				<practice status="current" originDate="2004-10-15">Year: 2004.</practice>
+				<practice status="current" originDate="2004-10-15">Year and month: 2004-12.</practice>
+				<practice status="current" originDate="2004-10-15">Year, month and day: 2004-12-27.</practice>
+				<practice status="current" originDate="2004-10-15">Year, month, day and time: 2004-12-27T18:00:00Z.</practice>
+			</examples>
+
+			<otherPractices>
+				<otherPractice header="Want to enter a time? Do this.">
+					<practice status="current" originDate="2004-09-03">Use time only on those dates in which the year, month and day are known.</practice>
+				<practice status="current" originDate="2004-09-03" link1="convert from local to Universal Coordinated Time (UTC)" url1="http://dlese.org/Metadata/documents/how-tos/time-conversion.htm">Enter time in Universal Coordinated Time (UTC). If help is needed to determine UTC, please see how to convert from local to Universal Coordinated Time (UTC).</practice>
+				<practice status="current" originDate="2004-09-03">Add the time component in the following format Thh:mm:ssZ. This looks like: 2004-12-27T18:00:00Z for December 27, 2004 at 5pm if entering a time for Boulder Colorado. Notice the capital letter T to signal that time is being entered and the ending Z to indicate Universal Coordinated Time (UTC or Zulu).</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>date</XMLdataType>
+				<XMLdataType>gYearMonth</XMLdataType>
+				<XMLdataType>gYear</XMLdataType>
+				<XMLdataType>dateTime</XMLdataType>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>numerical date format</domain>
+			<example>2004-10-15, 2004-10, 2004, 2004-05-22T08:00:00Z</example>
+			<notes>
+				<note>If using the DLESE Collection System (DCS), the record creation date is automatically assigned. This date cannot be edited. The date that is assigned is the date of the first file save of the metadata record.</note>
+			</notes>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

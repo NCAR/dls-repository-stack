@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- 
+	This is an example (for testing purposes) of the XML 
+	provided by Alertra for DLESE's up status. 
+	The live version of this data can be found at:
+	http://uptime.alertra.com/status.xml?pin=038546
+ -->
+<alertra version="1.0">
+	<devicelist pin="038546">
+		
+		<device status="U">
+			<name>DDS</name>
+			<method>HTTP/S</method>
+			<since>20020314 13:31:20</since>
+			<interval>5</interval>
+		</device>
+		
+	</devicelist>
+</alertra>
+
+

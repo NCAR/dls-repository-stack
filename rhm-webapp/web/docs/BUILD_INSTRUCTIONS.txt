@@ -1,0 +1,66 @@
+Instructions for building the Harvest Repository Manager software v@VERSION@ from source.
+
+Quick instructions: 
+--------------------------------------------
+
+This software may be built using Ant. If you are already using Ant
+and Tomcat 6, building the software is a three step process:
+1. Obtain the harvest-repository-project module (https://github.com/NCAR/harvest-repository-project)
+2. Set the ant property 'catalina.home' to point to your Tomcat installation.
+3. From the harvest-repository-project directory, execute the ant 'deploy' target.
+
+This will build the software and place it in a directory named 'harvest_manager'
+inside your Tomcat webapps directory.
+
+
+Detailed instructions:
+--------------------------------------------
+
+To build the Harvest Repository Manager software from source you must have the following:
+  
+1. harvest-repository-project - the Harvest Repository Manager software source code directory
+2. Tomcat version 6.x (available at http://tomcat.apache.org/)
+3. Ant (available at http://ant.apache.org/)
+4. Java 8
+
+
+Build instructions:
+
+These instructions assume you will be working in a UNIX command-line environment.
+The software can also be built on Windows but specific instructions are not 
+provided here.
+
+1. Obtain the harvest-repository-project source directory (see above).
+
+2. Obtain and install all the required tools (Java, Ant, Tomcat).
+
+3. Place the harvest-repository-project directory into a single directory.
+For example:
+ # cd ~/my_build_area
+ # ls 
+   harvest-repository-project
+	  
+4. cd into the harvest-repository-project directory.
+  # cd harvest-repository-project
+
+5. Create a file named build.properties in the my_build_area directory 
+(alternatively this can be placed in your home directory).
+
+6. Edit the build.properties file and set the poperty catalina.home to
+point to your intallation of Tomcat, for example:
+catalina.home = /home/username/dev/apache-tomcat-5.5.12
+
+See the build.xml file located in harvest-repository-project for information on the 
+properties settings.
+
+7. Execute the Ant deploy command.
+  # ant deploy
+You should see a number of messages in your terminal. Once complete
+you should see a message like:
+    BUILD SUCCESSFUL
+    Total time: 36 seconds
+
+8. The software will be built into a directory named harvest_manager inside your
+Tomcat webapps directory. After (re)starting Tomcat you will be able to
+access the software at the URL http://localhost:8080/harvest_manager/
+(substitute localhost with your domain name if appropriate).

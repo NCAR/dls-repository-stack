@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: begin-units-adn-groups-default-en-us.xml,v 1.1 2009/01/29 22:30:05 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Begin units</title>
+<groups:concept language="en-us" metaFormat="adn" metaVersion="0.7.00" text="Begin units" audience="default" path="/itemRecord/temporalCoverages/timeAndPeriod/timeInfo/timeRelative/begin/@units" deftn="units of time"/>
+</head>
+<body>
+<outline groups:vocab="Billion years ago" type="vocab" text="Billion years ago"/>
+<outline groups:vocab="Billion years forward" type="vocab" text="Billion years forward"/>
+<outline groups:vocab="Days ago" type="vocab" text="Days ago"/>
+<outline groups:vocab="Days forward" type="vocab" text="Days forward"/>
+<outline groups:vocab="Hours ago" type="vocab" text="Hours ago"/>
+<outline groups:vocab="Hours forward" type="vocab" text="Hours forward"/>
+<outline groups:vocab="Hundred years ago" type="vocab" text="Hundred years ago"/>
+<outline groups:vocab="Hundred years forward" type="vocab" text="Hundred years forward"/>
+<outline groups:vocab="Million years ago" type="vocab" text="Million years ago"/>
+<outline groups:vocab="Million years forward" type="vocab" text="Million years forward"/>
+<outline groups:vocab="Minutes ago" type="vocab" text="Minutes ago"/>
+<outline groups:vocab="Minutes forward" type="vocab" text="Minutes forward"/>
+<outline groups:vocab="Thousand years ago" type="vocab" text="Thousand years ago"/>
+<outline groups:vocab="Thousand years forward" type="vocab" text="Thousand years forward"/>
+<outline groups:vocab="Years ago" type="vocab" text="Years ago"/>
+<outline groups:vocab="Years forward" type="vocab" text="Years forward"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

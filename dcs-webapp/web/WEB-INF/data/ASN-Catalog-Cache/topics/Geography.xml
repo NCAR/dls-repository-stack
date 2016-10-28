@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AsnDocuments topic="Geography">
+  <asnDocument id="http://asn.jesandco.org/resources/D10000AE">
+    <title>Minnesota Graduation Standards for Social Studies</title>
+    <topic>Geography</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000173">
+    <title>Wisconsin Model Academic Standards for Social Studies</title>
+    <topic>Geography</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000029">
+    <title>Montana Standards for Social Studies</title>
+    <topic>Geography</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000192">
+    <title>Social Studies Content Standards and Benchmarks</title>
+    <topic>Geography</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000188">
+    <title>Social Studies Standard Course of Study</title>
+    <topic>Geography</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000153">
+    <title>Essential Academic Learning Requirements in Social Studies</title>
+    <topic>Geography</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002B3">
+    <title>Geography Essential Academic Learning Requirements</title>
+    <topic>Geography</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569939">
+    <title>Grade Span Expectations for Geography</title>
+    <topic>Geography</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001E2">
+    <title>Illinois Learning Standards for Social Science</title>
+    <topic>Geography</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000117">
+    <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+    <topic>Geography</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000207">
+    <title>Social Studies Proficiency Guide</title>
+    <topic>Geography</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569940">
+    <title>Indiana Academic Standards for Social Studies: World Geography</title>
+    <topic>Geography</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569947">
+    <title>Indiana Academic Standards for Social Studies: Geography &amp; History of the World</title>
+    <topic>Geography</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001A9">
+    <title>K-12 Social Studies Curriculum Framework</title>
+    <topic>Geography</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001C0">
+    <title>Nebraska Social Studies/History Standards</title>
+    <topic>Geography</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000284">
+    <title>Alaska Content Standards Geography</title>
+    <topic>Geography</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000043">
+    <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+    <topic>Geography</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000054">
+    <title>Academic Standards: Social Studies</title>
+    <topic>Geography</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000286">
+    <title>Social Studies Strand 4 - Geography</title>
+    <topic>Geography</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000126">
+    <title>Massachusetts History and Social Science Framework</title>
+    <topic>Geography</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003EB">
+    <title>Delaware Geography Standards</title>
+    <topic>Geography</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000076">
+    <title>Social Studies Curriculum Frameworks Revised 2000</title>
+    <topic>Geography</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100013F">
+    <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+    <topic>Geography</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000DC">
+    <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+    <topic>Geography</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000191">
+    <title>West Virginia Social Studies Content Standards K-12</title>
+    <topic>Geography</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100002D">
+    <title>Learning Results for Social Studies</title>
+    <topic>Geography</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001CB">
+    <title>Social Studies Content Standards</title>
+    <topic>Geography</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100005F">
+    <title>Maryland State Content Standards for Social Studies</title>
+    <topic>Geography</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000E4">
+    <title>Social Studies Content and Performance Standards</title>
+    <topic>Geography</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000FF">
+    <title>Social Sciences 2001-2002</title>
+    <topic>Geography</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000B3">
+    <title>Social Studies Content Standards</title>
+    <topic>Geography</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100002E">
+    <title>Social Studies Grade-Level Expectations</title>
+    <topic>Geography</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001C6">
+    <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+    <topic>Geography</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001EF">
+    <title>Social Studies Frameworks K-12</title>
+    <topic>Geography</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001A5">
+    <title>Academic Standards for Geography</title>
+    <topic>Geography</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2385459">
+    <title>Academic Standards for Geography (Pre-K-3)</title>
+    <topic>Geography</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2385476">
+    <title>Academic Standards for Geography (Elementary)</title>
+    <topic>Geography</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2385492">
+    <title>Academic Standards for Geography (Secondary)</title>
+    <topic>Geography</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000134">
+    <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+    <topic>Geography</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100026F">
+    <title>Geography for Life: The National Geography Standards</title>
+    <topic>Geography</topic>
+    <author>NGES</author>
+    <authorName>NGES</authorName>
+    <created>1994</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000018">
+    <title>Social Studies (Primary, Intermediate, High School)</title>
+    <topic>Geography</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000A9">
+    <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+    <topic>Geography</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100015C">
+    <title>New Mexico Standards for Social Studies</title>
+    <topic>Geography</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000135">
+    <title>Colorado Model Content Standards for Geography</title>
+    <topic>Geography</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001E3">
+    <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+    <topic>Geography</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000140">
+    <title>Social Studies Quality Core Curriculum K-12</title>
+    <topic>Geography</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002C4">
+    <title>Nevada Social Studies Standards Geography K-12 Standards</title>
+    <topic>Geography</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000002">
+    <title>Geography</title>
+    <topic>Geography</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000B0">
+    <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+    <topic>Geography</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000D0">
+    <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+    <topic>Geography</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000006">
+    <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+    <topic>Geography</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000C7">
+    <title>Social Studies Standards</title>
+    <topic>Geography</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000A8">
+    <title>Social Studies: Ohio's Model Competency-Based Program</title>
+    <topic>Geography</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>1994</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000155">
+    <title>Academic Content Standards Social Studies</title>
+    <topic>Geography</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000066">
+    <title>Priority Academic Student Skills for Social Studies</title>
+    <topic>Geography</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100011A">
+    <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+    <topic>Geography</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100007E">
+    <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+    <topic>Geography</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+</AsnDocuments>

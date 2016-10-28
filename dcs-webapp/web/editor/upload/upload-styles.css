@@ -1,0 +1,270 @@
+
+/* -- The file upload buttons (render in an iframe) -- */
+
+/* note - absolutely positioned, and invisible */
+#fileInputDiv {
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	width:150px; 
+	overflow:hidden;  
+	z-index:2;
+	-moz-opacity:0.0; 
+	opacity: 0.00;
+	background-color:red;
+}
+
+/* placed below the fileInput div */
+#uploadButtonDiv {
+	position:absolute; 
+	top:0px; 
+	left:0px;
+	min-width:140px;
+	height:28px; 
+	z-index:1;
+	/* border:thin blue solid; */
+}
+
+#visible-upload-button {
+	width:130px;
+	height:20px;	
+	padding:5px 3px 0px 3px;
+	white-space:nowrap;
+}
+
+#visible-upload-button.ui-button.over {
+	background-color:#f7f7e5;	
+}
+
+#fileUploadedBox {
+	border: 1px solid black; 
+	background-color: #CCCEE6; 
+	padding: 3px; 
+	margin-top:2px;
+}
+		
+.saveBoxHeading {
+	color: #555555;
+	font-size: 12px;
+	font-weight:bold;
+	font-style: normal;
+	margin-bottom: 2px;
+	margin-top: 0px;
+}
+
+.upload-msg {
+	color:green;
+	padding-top:2px;
+	font-size:10px;
+}
+
+.small_text {
+	font-size:10px;
+	margin-top:3px;
+}
+
+.small-ui-label {
+	padding:0 5px 0 3px;
+	color:#666666;
+	font-size:90%;
+}
+
+.tool-blurb {
+	margin:5px 0px;
+	font-style:italic;
+}
+
+#upload-tool h4 {
+	/* color:green; */
+	margin:0px 0px 2px;
+}
+
+#upload-tool #selected-file {
+	display:inline-block;
+	border:#CCCCCC 2px solid;
+	/* background-color:#f7f7e5; */  /* light yellow */
+	background-color:#EAEAFB;   /* light blue */
+	padding:5px;
+	text-align:center;
+}
+
+#upload-toolOFF .tool-blurb {
+	display:block;
+	padding-bottom:10px;
+}
+
+#file-selected-info {
+	padding:5px;
+	position:relative;
+}
+
+#file-selected-info .header {
+	overflow:hidden;
+	padding-bottom:10px;
+}
+
+
+/* WEBLINK-TOOL */
+#weblink-tool {
+	margin:20px;
+}
+
+#weblink-tool .msg{
+	padding-top:5px;
+	color:red;
+	max-width:485px;
+}
+
+
+.emphasis {
+	/* font-weight:bold; */
+	font-style:italic;
+}
+
+/* RENAME-DELETE-TOOL */
+#delete-rename-tool {
+	position:relative;
+	margin:20px;
+	/* border:thick black solid; */
+}
+
+#delete-rename-tool .message {
+ 	position:absolute;
+	top:-20px;
+	right:0px;
+	padding:1px 2px;
+	border:thin solid orange;
+	background-color:#ebebd1;
+}
+
+#dr-refresh {
+	position:absolute;
+	top:-20px;
+	left:0px;
+	padding:2px 3px;
+}
+
+#dr-refresh i.fa-refresh {
+	color:#666666;
+}
+
+#dr-refresh i.fa-refresh.fa-spin {
+	color:green;
+}
+
+#dr-refresh i.fa-refresh.over {
+	color:blue;
+	cursor:pointer;
+}
+
+#orphanList {
+	overflow-y:auto;
+	height:250px;
+	border:thin #CCCCCC solid;
+	margin:0px;
+	padding:0px;
+	clear:both;
+}
+
+li.orphan {
+	position:relative;
+	list-style-type: None;
+	border-bottom:thin grey solid;
+	/* padding:2px 0px 2px 4px; */
+}
+
+li.orphan.highlight {
+	background-color:#f7f7e5;
+	/* border:thick green solid; */
+	
+}
+
+/* .orphan .filename:hover {
+	background-color:#ebebd1;
+	cursor:pointer;
+} */
+
+.orphan .filename.focus {
+	/* background-color:red; */
+	background-color:#FAFAFA;
+	cursor:normal;
+	padding:5px;
+	margin:2px;
+	border:thin green solid;
+	font-size:110%;
+}
+
+.orphan .filename {
+	display:inline-block;
+	left:-2px;
+	/* padding:3px 0px 3px 5px; */
+}
+
+
+.orphan .collection {
+	/* float:right; */
+	position:absolute;
+	right:30px;
+	top:8px;
+	font-size:90%;
+}
+
+/* STACKED ICONS */
+.am-stacked-icon.fa-stack .fa-square-o {
+	color:transparent;
+	top:1px;
+}
+
+.am-stacked-icon.fa-stack {
+	font-size:1.2em;
+}
+
+.am-stacked-icon.fa-stack.over * {
+	color:green;
+	cursor:pointer;
+}
+
+.fa.text-danger {
+	color:red;
+}
+
+.am-stacked-icon.fa-stack.over .fa.text-danger {
+	color:red;
+}
+
+/* ORPHAN ICONS */
+/* li.orphan .fa-stack .fa-square-o,
+li.select_item .fa-stack .fa-square-o {
+	color:transparent;
+	top:1px;
+}
+
+li.orphan .fa-stack {
+	font-size:1.2em;
+}
+
+li.orphan .fa-stack.over *,
+li.select_item .fa-stack.over * {
+	color:green;
+	cursor:pointer;
+} */
+
+#delete-asset-button {
+	float:right;
+	margin:0px 20px 5px 0px;
+	/* height:25px; */
+	padding:4px 4px;
+}
+
+.orphan .asset-link {
+	float:none;
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+
+
+/* .orphan .asset-link img {
+	width:18px;
+} */
+

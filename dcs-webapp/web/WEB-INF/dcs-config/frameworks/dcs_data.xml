@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frameworkConfigRecord 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="http://ns.nsdl.org/ncs/framework_config/1.00/schemas/dcsFrameworkConfig.xsd">
+  <xmlFormat>dcs_data</xmlFormat>
+  <schemaInfo>
+    <rootElementName>dcsDataRecord</rootElementName>
+    <schemaURI>http://ns.nsdl.org/ncs/dcs_data/1.00/schemas/dcs-data.xsd</schemaURI>
+    <paths>
+      <path readOnly="true" pathName="id">/dcsDataRecord/recordID</path>
+    </paths>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>EditorRenderer</renderer>
+    <baseRenderLevel>2</baseRenderLevel>
+    <firstPage>dcsDataRecord</firstPage>
+    <rebuildOnStart>true</rebuildOnStart>
+    <discussionURL/>
+  </editorInfo>
+  <name>DcsData</name>
+</frameworkConfigRecord>

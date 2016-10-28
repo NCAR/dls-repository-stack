@@ -1,0 +1,637 @@
+/* --- Sortable tables --- */
+
+.sortedAsc, .sortedDesc, .sortedNone {
+	padding-left: 16px;
+	padding-right: 12px;
+	width: 0%;
+	background-image: url(images/arrow_up_gray_bluebg.gif);
+	background-repeat: no-repeat;
+	background-position: 4px 50%;
+	cursor:pointer;
+}
+.sortedAsc {
+	background-image: url(images/arrow_down_gray_bluebg.gif);
+}
+.sortedNone {
+	background-image: none;
+}
+
+
+/* --- Tabs --- */
+
+ul.tabs_cs {
+	list-style:none;
+	margin:0;
+	padding:0;
+	clear:both;
+	height:35px;
+}
+
+ul.tabs_cs td {
+	padding-top:0px;
+	height:35px;
+	width:90px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 12px;
+	border: 1px solid #CFCFCF;
+	border-bottom: 0px;	
+}
+
+ul.tabs_cs li {
+	float:left;
+	margin-right:4px;
+}
+
+ul.tabs_cs a {
+	display:block;
+	height:35px;
+	width:90px;
+	padding:0px;
+	background-color:#E1EEFC;
+	/* background-image: url(images/tab-light.gif);
+	background-repeat: no-repeat; */	
+	color:black;
+	text-decoration: none;
+	outline: none;
+}
+
+ul.tabs_cs a:visited {
+	text-decoration: none;
+}
+
+ul.tabs_cs a:hover {
+	background-color:#BFD6EC;	
+}
+
+ul.tabs_cs a.active {
+	background-color:#8EB0CF;
+	/* background-image: url(images/tab-dark.gif);
+	background-repeat: no-repeat; */
+}
+
+.tabDiv {
+	padding-top:10px;
+	padding-bottom: 10px;	
+}
+
+.contentDiv {
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+#contentSection, #oaiContentArea {
+	border: 1px solid #8EB0CF;
+	border-top: 8px solid #8EB0CF;
+	padding: 0px;
+	margin: 0px;
+	display: block;	
+	background: white;
+	position:relative;
+	z-index: 4;
+}
+
+/* Shadow effect */
+#sh1 { 
+	background-image: url(images/shadow_gradient_6x1.gif);
+	background-repeat: repeat-x;
+	height: 6px;
+	width: 100%;
+}
+
+#mainContent {
+	margin: 8px;
+	width: 774px;
+}
+
+#collectionsTable {
+	padding: 8px;
+	border: 1px solid #8EB0CF;
+	background-color: white;
+}
+
+#topTable {
+	background-color: black;	
+}
+
+#bottomNav {
+	padding-top: 30px;
+}
+
+.loadingMsg {
+	font-weight: bold;
+	margin-top: 15px;
+	margin-left: 6px;
+	color: #888;
+	padding-left: 20px;
+	background-image: url(images/spinner.gif);
+	background-repeat: no-repeat;
+	padding-bottom: 20px;		
+}
+
+#actionMessage {
+	width:550px;
+	margin-left: 100px;
+	background-color:white; 
+	border: 1px solid gray;
+	margin-top:20px; 
+	margin-bottom:20px; 
+	text-align:center;
+}
+
+#actionMessage tr td {
+	padding:20px; 
+	padding-top:60px; 
+	padding-bottom:60px;
+}
+
+.adminWidgets {
+	padding:4px;
+	padding-right: 6px;
+	padding-left: 6px;
+	background-color: #eeeeee; 
+	border: 1px solid #cccccc;
+}
+
+#dirListTable tr td {
+	padding:2px;
+	padding-left:4px;
+	padding-right:4px;
+}
+
+.dirListDateTd, .dirListSizeTd {
+	white-space:nowrap;
+}
+
+.paramValue {
+	padding-top:2px;
+	font-size: 8pt;
+	white-space: nowrap;
+	color: #444444;
+}
+
+#noCollMsgRow td {
+	color: #444;	
+}
+
+.errMsg {
+	color:#DFBE3B;
+	font-weight: bold;
+}
+	
+FORM {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;	
+}
+
+.actionBtn {
+	width:26em;
+	margin-bottom:.4em;
+	font-size:1.2em;
+}
+
+/* The A tag */
+A { 
+	text-decoration: underline; 
+} 
+
+A:link { 
+	/* Color: #3f4c02 */ 
+} 
+
+A:active {
+	/* Color: #3f4c02; */
+	text-decoration: none;
+} 
+
+A:visited { 
+	/* Color: #3f4c02; */
+	text-decoration: underline; 
+}
+
+A.collTitleLnk:link, A.collTitleLnk:hover, A.collTitleLnk:visited, A.collTitleLnk:active {
+	color: #0000FF;
+}
+A.collTitleLnk:hover {
+	/* text-decoration: underline;  */
+}
+.headrow {
+	font-weight:bold;
+	background-color: #BFD6EC;
+	vertical-align: middle;
+}
+
+.bodyrow {
+	background-color: #E1EEFC;	
+}
+
+.overLnk{
+	background-color: #EFF7FF;
+}
+
+.bodyrowLogs td {
+	font-size:11px;	
+}
+
+
+/* A class 'buttonLnk' to make a button out of an anchor link */
+A.buttonLnk:link, A.buttonLnk:hover, A.buttonLnk:visited, A.buttonLnk:active {
+	text-decoration: none;
+	color: #06185A;
+	font-size: 12px;
+	border: 1px solid;
+	border-color: #FFFFFF #808080 #808080 #FFFFFF;
+	background: #DFDFDF;
+	padding: 1px;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+A.buttonLnk:hover {
+	background: #EFEFEF;
+}
+
+
+/* A pseudo class 'boldlink' for the A tag */
+A.boldlink:link, A.boldlink:hover, A.boldlink:visited, A.boldlink:active {
+	color: #153453;
+	text-decoration: underline; 
+	font-weight: bold;
+}
+
+/* A pseudo class 'boldlink' for the A tag */
+A.boldlink:hover {
+	/* text-decoration: none; */
+}
+
+.admin_blue1 {
+	background: #e3e4f1;		
+}
+
+.MenuText { 
+	font-size: 12px; 
+	text-decoration:none; 
+} 
+
+.MenuTopText { 
+	font-weight: bold; 
+	font-size: 12px; 
+	text-decoration: none; 
+} 
+
+.MenuPos { 
+	position: absolute; 
+	top: 40px; 
+	left: 0px; 
+	z-index: 2; 
+	visibility: hidden; 
+} 
+
+.LogoPos {
+	position: absolute;
+	top: 4px;
+	left: 6px;
+}
+
+.NSOffset { 
+	position: relative; 
+	top: 2px; 
+	left: 0px; 
+	padding: 0px; 
+	margin: 0px; 
+} 
+
+.MenuEntry { 
+	position: relative; 
+	z-index: 0; 
+	left: 0px; 
+	padding: 0px; 
+	margin: 0px; 
+} 
+
+.reportDiv {
+	padding:6px;
+}
+.menuLnk {
+	padding:1px;
+}
+
+.content { 
+	position: absolute; 
+	left: 170px; 
+	top: 50px; 
+	background-color: #ffffff; 
+	padding-left: 8px; 
+	padding-right: 4px; 
+	padding-bottom: 4px; 
+	padding-top: 4px; 
+	margin-top: 0px; 
+	margin-left: 0px; 
+	border: 2px ridge #FDE6B9; 
+} 
+
+.selectArial {
+	font-size: 10pt;
+}
+
+
+/*comment*/ 
+
+body {
+	margin: 0px;
+	background-color: #FFFDFA;
+	color : #06185A; 
+	/*background-image : url(images/bg.jpg);
+  background-repeat: repeat-y;
+*/
+
+} 
+
+body, html, H1, H2, H3, H4, p, li, ol, ul, td, a {
+	Font-Family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;	
+}
+
+H1 { 
+	Font-Size : 14pt;
+	Color : #153453; 
+} 
+
+H2 { 
+	Font-Size : 12pt ; 
+	Font-Style : Italic ; 
+	Color : #153453; 
+} 
+
+H3 { 
+	Font-Size : 12pt ; 
+	Font-weight : bold; 
+	Color : #153453; 
+}
+CODE {
+	color: #815259;	
+}
+
+.oaiH3 {
+	Font-Size: 11pt;
+	padding:0px;
+	margin:0px;
+	margin-top:12px;
+	margin-bottom:2px;	
+}
+
+.titletext {  
+	font-size: 16pt; 
+	font-style: normal; 
+	font-weight: bold; 
+	color: #006666
+}
+
+.subtitle  {
+	Font-Size : 12pt ;
+	Font-Style : Italic ;
+	Color : #006666 ;
+	font-weight: bold ;
+}
+
+p { 
+	List-Style-Type : Decimal ; 
+	Font-Size: 10pt; 
+	Color: #06185A ; 
+} 
+
+TD { 
+	font-size: 10pt; 
+} 
+
+OL { 
+	List-Style-Type : Decimal ; 
+	Font-Size : 10pt ; 
+	Color : #06185A 
+} 
+
+UL { 
+	List-Style-Type : Disc ; 
+	Font-Size : 10pt 
+} 
+
+LI { 
+	Font-Size : 10pt ; 
+	Color : #06185A 
+} 
+
+
+#menu{
+	background-color : #BFD6EC;
+	vertical-align: top;
+}
+
+#bottom{
+	left:30%;
+	background-image : url(images/ucar_footer.gif);
+	position: absolute;
+}
+
+table#form {
+    background-color:#000000;
+    border: 0;
+}
+
+#editrow{
+	background-color: #f3d98d;
+	vertical-align: middle;	
+}
+
+/* Table: basic compact */
+
+.compactTable {
+	padding:0px; 
+	margin:0px; 
+	border:none;
+}
+.compactTable tr td {
+	padding-right:4px;
+}
+
+.smallButton {
+	font-size:11px;
+	padding:2px;
+	background-color:#C4DDF3;
+	border:solid 1px;
+	border-color:#999 #bbb #bbb #999;
+	cursor:pointer;
+	text-align:center;
+}
+
+.closeBx {
+	background-image: url(images/close.gif);
+	background-repeat: no-repeat;
+	height: 14px; 
+	width: 15px;
+	cursor: pointer;
+}
+
+.boxNote {
+    color:grey;
+    margin-top:7px;
+    font-size: 0.8em;
+}
+
+/* ----- CSS for the OAI response XSL transformer -------*/
+
+td.value {
+	vertical-align: top;
+	padding-left: 1em;
+	padding: 4px;
+}
+td.key {
+	background-color: #BFD6EC;
+	padding: 4px;
+	text-align: right;
+	/* border: 1px solid #c0c0c0; */
+	white-space: nowrap;
+	font-weight: bold;
+	vertical-align: top;
+}
+.dcdata td.key {
+	background-color: #ffffe0;
+}
+.oaiRecord, .oaiRecordTitle {
+	background-color: #f0f0ff;
+	border-style: solid;
+	border-color: #d0d0d0;
+}
+h2.oaiRecordTitle {
+	background-color: #e0e0ff;
+	font-size: medium;
+	font-weight: bold;
+	padding: 10px;
+	border-width: 2px 2px 0px 2px;
+	margin: 0px;
+}
+.oaiRecord {
+	margin-bottom: 3em;
+	border-width: 2px;
+	padding: 10px;
+}
+
+.results {
+	margin-bottom: 1.5em;
+}
+p.intro {
+	font-size: 80%;
+}
+
+/* XML style */
+.xmlSource {
+	font-size: 70%;
+	border: solid #c0c0a0 1px;
+	background-color: #ffffe0;
+	padding: 2em 2em 2em 0em;
+}
+.xmlBlock {
+	padding-left: 2em;
+}
+.xmlTagName {
+	color: #800000;
+	font-weight: bold;
+}
+.xmlAttrName {
+	font-weight: bold;
+}
+.xmlAttrValue {
+	color: #0000c0;
+}
+
+
+/* ------ Added to show the collections drop down on the metadata view db page ------ */
+A.vocabHeading:link {
+	color: #333366; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 9pt; 	
+}
+A.vocabHeading:visited {
+	color: #333366; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 9pt; 	
+}	
+A.vocabHeading:active {
+	color: #333366; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 9pt; 	
+}
+
+A.checkboxMenuItem, A.checkboxMenuItem label {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+A.checkboxMenuItem {
+	padding: 1px 6px 1px 1px;	
+}
+A.checkboxMenuItem:hover, A.checkboxMenuItem:hover label, A.checkboxMenuItem:hover input {
+	background-color: #FFE7A0;
+	text-decoration: none;	
+}
+.clearbutton {
+    background-color: #EEEEEE;
+    color: #333366;
+    cursor: pointer;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 9px;
+    height: 16px;
+}
+
+div.metadata_result {
+		line-height: 18px;
+		padding: 8px;
+		font-family: arial,helvetica,sans-serif;
+    	font-size: 0.95em;
+		text-indent: -9px;
+
+		margin-left: 9px;
+	}
+div.metadata_result label {
+	   font-style: italic
+	}
+
+
+span.metadata_header_title{
+		font-size: 1.2em;
+		font-weight: bold; 
+
+		
+	}
+div.metadata_header
+{
+	background:#E1EEFC;
+	padding:5px;
+	font-family: arial,helvetica,sans-serif;
+
+	
+}
+
+div#selectedCollections {
+	margin-left:5px; 
+	width:610px;
+}
+
+div#selectedCollections label {
+	font-weight: bold;
+}
+
+div#results {
+	margin-top:2px; 
+	border: 1px solid; 
+	border-color: gray;
+    padding:5px; 
+	width:610px
+	}
+/* ----- end CSS for the OAI response XSL transformer -------*/
+
+.reprocess_date {
+		font-size: 10px;
+}

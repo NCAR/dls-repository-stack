@@ -1,0 +1,1740 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0.00" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:simpleType name="austriaType">
+        <xsd:restriction base="xsd:token">
+<!--
+           <xsd:enumeration value="AT-Kaer">
+                <xsd:annotation>
+                    <xsd:documentation>Kaernten, Austria</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+
+<!--
+            <xsd:enumeration value="AT-Nied">
+                <xsd:annotation>
+                    <xsd:documentation>Niederoesterreich, Austria</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+<!--
+            <xsd:enumeration value="AT-Ober">
+                <xsd:annotation>
+                    <xsd:documentation>Oberoesterreich, Austria</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->      
+<!--
+		  <xsd:enumeration value="AT-Wein">
+                <xsd:annotation>
+                    <xsd:documentation>Wein, Austria</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="chinaType">
+        <xsd:restriction base="xsd:token">
+<!--
+            <xsd:enumeration value="CN-Hong">
+                <xsd:annotation>
+                    <xsd:documentation>Hong Kong, China</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+<!--
+            <xsd:enumeration value="CN-Inne">
+                <xsd:annotation>
+                    <xsd:documentation>Inner Mongolia, China</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+<!-- part of Guandong province            
+            <xsd:enumeration value="CN-Maca">
+                <xsd:annotation>
+                    <xsd:documentation>Macau, China</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+<!--
+            <xsd:enumeration value="CN-Tibe">
+                <xsd:annotation>
+                    <xsd:documentation>Tibet, China</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="spainType">
+        <xsd:restriction base="xsd:token">
+<!--
+            <xsd:enumeration value="ES-Alba">
+                <xsd:annotation>
+                    <xsd:documentation>Albacate, Spain</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="ES-La C">
+                <xsd:annotation>
+                    <xsd:documentation>La Coruna, Spain</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="ES-Leri">
+                <xsd:annotation>
+                    <xsd:documentation>Lerida, Spain</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="ES-Oren">
+                <xsd:annotation>
+                    <xsd:documentation>Orense, Spain</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="unitedKingdomType">
+        <xsd:restriction base="xsd:token">
+<!--
+            <xsd:enumeration value="GB-Berk">
+                <xsd:annotation>
+                    <xsd:documentation>Berkshire, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Bord">
+                <xsd:annotation>
+                    <xsd:documentation>Borders, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Cent">
+                <xsd:annotation>
+                    <xsd:documentation>Central, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Clev">
+                <xsd:annotation>
+                    <xsd:documentation>Cleveland, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Clwy">
+                <xsd:annotation>
+                    <xsd:documentation>Clwyd, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Cots">
+                <xsd:annotation>
+                    <xsd:documentation>Cotswolds, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Coun">
+                <xsd:annotation>
+                    <xsd:documentation>County Tyrone, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Dyfe">
+                <xsd:annotation>
+                    <xsd:documentation>Dyfed, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Gram">
+                <xsd:annotation>
+                    <xsd:documentation>Grampian, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Gwen">
+                <xsd:annotation>
+                    <xsd:documentation>Gwent, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Gwyn">
+                <xsd:annotation>
+                    <xsd:documentation>Gwynedd County, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Here">
+                <xsd:annotation>
+                    <xsd:documentation>Herefordshire, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-High">
+                <xsd:annotation>
+                    <xsd:documentation>Highlands and Islands, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Humb">
+                <xsd:annotation>
+                    <xsd:documentation>Humberside, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Lake">
+                <xsd:annotation>
+                    <xsd:documentation>Lake District, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Loth">
+                <xsd:annotation>
+                    <xsd:documentation>Lothian, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Mers">
+                <xsd:annotation>
+                    <xsd:documentation>Merseyside, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Mid">
+                <xsd:annotation>
+                    <xsd:documentation>Mid Glamorgan, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Stra">
+                <xsd:annotation>
+                    <xsd:documentation>Strathclyde, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Tays">
+                <xsd:annotation>
+                    <xsd:documentation>Tayside, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-Tyne">
+                <xsd:annotation>
+                    <xsd:documentation>Tyne and Wear, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="GB-York">
+                <xsd:annotation>
+                    <xsd:documentation>Yorkshire, United Kingdom</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="irelandType">
+        <xsd:restriction base="xsd:token">
+<!--
+            <xsd:enumeration value="IE-Conn">
+                <xsd:annotation>
+                    <xsd:documentation>Connemara, Ireland</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IE-Shan">
+                <xsd:annotation>
+                    <xsd:documentation>Shannon, Ireland</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="indiaType">
+        <xsd:restriction base="xsd:token">
+<!--
+            <xsd:enumeration value="IN-Agra">
+                <xsd:annotation>
+                    <xsd:documentation>Agra District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Ahme">
+                <xsd:annotation>
+                    <xsd:documentation>Ahmednagar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Aiza">
+                <xsd:annotation>
+                    <xsd:documentation>Aizawl District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Ajme">
+                <xsd:annotation>
+                    <xsd:documentation>Ajmer District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Akol">
+                <xsd:annotation>
+                    <xsd:documentation>Akola District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Alap">
+                <xsd:annotation>
+                    <xsd:documentation>Alappuzha District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Alig">
+                <xsd:annotation>
+                    <xsd:documentation>Aligarh District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Alla">
+                <xsd:annotation>
+                    <xsd:documentation>Allahabad District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Almo">
+                <xsd:annotation>
+                    <xsd:documentation>Almora District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Alwa">
+                <xsd:annotation>
+                    <xsd:documentation>Alwar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Amar">
+                <xsd:annotation>
+                    <xsd:documentation>Amaravati District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Amba">
+                <xsd:annotation>
+                    <xsd:documentation>Ambala District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Amri">
+                <xsd:annotation>
+                    <xsd:documentation>Amritsar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bagh">
+                <xsd:annotation>
+                    <xsd:documentation>Baghpat District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bala">
+                <xsd:annotation>
+                    <xsd:documentation>Balasore District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Balr">
+                <xsd:annotation>
+                    <xsd:documentation>Balram Pur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bang">
+                <xsd:annotation>
+                    <xsd:documentation>Bangalore Urban District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bank">
+                <xsd:annotation>
+                    <xsd:documentation>Bankura District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bara">
+                <xsd:annotation>
+                    <xsd:documentation>Baran District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bard">
+                <xsd:annotation>
+                    <xsd:documentation>Barddhaman District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bare">
+                <xsd:annotation>
+                    <xsd:documentation>Bareilly District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Belg">
+                <xsd:annotation>
+                    <xsd:documentation>Belgaum District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bell">
+                <xsd:annotation>
+                    <xsd:documentation>Bellary District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bhar">
+                <xsd:annotation>
+                    <xsd:documentation>Bharuch District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bhav">
+                <xsd:annotation>
+                    <xsd:documentation>Bhavnagar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bhil">
+                <xsd:annotation>
+                    <xsd:documentation>Bhilwara District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bhop">
+                <xsd:annotation>
+                    <xsd:documentation>Bhopal District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bija">
+                <xsd:annotation>
+                    <xsd:documentation>Bijapur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bijn">
+                <xsd:annotation>
+                    <xsd:documentation>Bijnor District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bika">
+                <xsd:annotation>
+                    <xsd:documentation>Bikaner District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Boka">
+                <xsd:annotation>
+                    <xsd:documentation>Bokaro District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Bund">
+                <xsd:annotation>
+                    <xsd:documentation>Bundi District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Calc">
+                <xsd:annotation>
+                    <xsd:documentation>Calcutta District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Chen">
+                <xsd:annotation>
+                    <xsd:documentation>Chennai District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Chid">
+                <xsd:annotation>
+                    <xsd:documentation>Chidambaranar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Chit">
+                <xsd:annotation>
+                    <xsd:documentation>Chittoor District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Chur">
+                <xsd:annotation>
+                    <xsd:documentation>Churachandpur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Coim">
+                <xsd:annotation>
+                    <xsd:documentation>Coimbatore District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Cutt">
+                <xsd:annotation>
+                    <xsd:documentation>Cuttack District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Dadr">
+                <xsd:annotation>
+                    <xsd:documentation>Dadra District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Daks">
+                <xsd:annotation>
+                    <xsd:documentation>Dakshina Kannada District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Darj">
+                <xsd:annotation>
+                    <xsd:documentation>Darjiling District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Dehr">
+                <xsd:annotation>
+                    <xsd:documentation>Dehradun District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Dewa">
+                <xsd:annotation>
+                    <xsd:documentation>Dewas District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Dhan">
+                <xsd:annotation>
+                    <xsd:documentation>Dhanbad District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Dhar">
+                <xsd:annotation>
+                    <xsd:documentation>Dharwad District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Dind">
+                <xsd:annotation>
+                    <xsd:documentation>Dindigul, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Dung">
+                <xsd:annotation>
+                    <xsd:documentation>Dungarpur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-East">
+                <xsd:annotation>
+                    <xsd:documentation>East Sikkim District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Erna">
+                <xsd:annotation>
+                    <xsd:documentation>Ernakulum District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Faiz">
+                <xsd:annotation>
+                    <xsd:documentation>Faizabad District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Fari">
+                <xsd:annotation>
+                    <xsd:documentation>Faridabad District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Fate">
+                <xsd:annotation>
+                    <xsd:documentation>Fatehgarh Sahib District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Gand">
+                <xsd:annotation>
+                    <xsd:documentation>Gandhinagar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Ganj">
+                <xsd:annotation>
+                    <xsd:documentation>Ganjam District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Gaut">
+                <xsd:annotation>
+                    <xsd:documentation>Gautam Budh Nagar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Gaya">
+                <xsd:annotation>
+                    <xsd:documentation>Gaya District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Ghaz">
+                <xsd:annotation>
+                    <xsd:documentation>Ghaziabad District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Gora">
+                <xsd:annotation>
+                    <xsd:documentation>Gorakhpur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Grea">
+                <xsd:annotation>
+                    <xsd:documentation>Greater Mumbai District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Gulb">
+                <xsd:annotation>
+                    <xsd:documentation>Gulbarga District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Gunt">
+                <xsd:annotation>
+                    <xsd:documentation>Guntur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Gurg">
+                <xsd:annotation>
+                    <xsd:documentation>Gurgaon District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Gwal">
+                <xsd:annotation>
+                    <xsd:documentation>Gwalior District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Haor">
+                <xsd:annotation>
+                    <xsd:documentation>Haora District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Hari">
+                <xsd:annotation>
+                    <xsd:documentation>Haridwar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Haza">
+                <xsd:annotation>
+                    <xsd:documentation>Hazaribag District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Hisa">
+                <xsd:annotation>
+                    <xsd:documentation>Hisar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Hugl">
+                <xsd:annotation>
+                    <xsd:documentation>Hugli District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Iduk">
+                <xsd:annotation>
+                    <xsd:documentation>Idukki District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Imph">
+                <xsd:annotation>
+                    <xsd:documentation>Imphal District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Indo">
+                <xsd:annotation>
+                    <xsd:documentation>Indore District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Jaba">
+                <xsd:annotation>
+                    <xsd:documentation>Jabalpur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Jaip">
+                <xsd:annotation>
+                    <xsd:documentation>Jaipur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Jais">
+                <xsd:annotation>
+                    <xsd:documentation>Jaisalmer District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Jala">
+                <xsd:annotation>
+                    <xsd:documentation>Jalandhar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Jamn">
+                <xsd:annotation>
+                    <xsd:documentation>Jamnagar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Jhar">
+                <xsd:annotation>
+                    <xsd:documentation>Jharsuguda District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Jhun">
+                <xsd:annotation>
+                    <xsd:documentation>Jhunjhunun District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Jind">
+                <xsd:annotation>
+                    <xsd:documentation>Jind District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Jodh">
+                <xsd:annotation>
+                    <xsd:documentation>Jodhpur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Juna">
+                <xsd:annotation>
+                    <xsd:documentation>Junagadh District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Jyot">
+                <xsd:annotation>
+                    <xsd:documentation>Jyotiba Phule Nagar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kach">
+                <xsd:annotation>
+                    <xsd:documentation>Kachchh District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kala">
+                <xsd:annotation>
+                    <xsd:documentation>Kalahandi District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kama">
+                <xsd:annotation>
+                    <xsd:documentation>Kamarajar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kamr">
+                <xsd:annotation>
+                    <xsd:documentation>Kamrup District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kang">
+                <xsd:annotation>
+                    <xsd:documentation>Kangra District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kann">
+                <xsd:annotation>
+                    <xsd:documentation>Kannur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kanp">
+                <xsd:annotation>
+                    <xsd:documentation>Kanpur Dehat District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kapu">
+                <xsd:annotation>
+                    <xsd:documentation>Kapurthala District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Karu">
+                <xsd:annotation>
+                    <xsd:documentation>Karur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kham">
+                <xsd:annotation>
+                    <xsd:documentation>Khammam District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Khed">
+                <xsd:annotation>
+                    <xsd:documentation>Kheda District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Khur">
+                <xsd:annotation>
+                    <xsd:documentation>Khurda District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kolh">
+                <xsd:annotation>
+                    <xsd:documentation>Kolhapur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Koll">
+                <xsd:annotation>
+                    <xsd:documentation>Kollam District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kota">
+                <xsd:annotation>
+                    <xsd:documentation>Kota District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kott">
+                <xsd:annotation>
+                    <xsd:documentation>Kottayam District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kozh">
+                <xsd:annotation>
+                    <xsd:documentation>Kozhikode District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kris">
+                <xsd:annotation>
+                    <xsd:documentation>Krishna District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kull">
+                <xsd:annotation>
+                    <xsd:documentation>Kullu District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Kush">
+                <xsd:annotation>
+                    <xsd:documentation>Kushinagar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Lada">
+                <xsd:annotation>
+                    <xsd:documentation>Ladakh District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Laks">
+                <xsd:annotation>
+                    <xsd:documentation>Lakshadweep Islands, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Lowe">
+                <xsd:annotation>
+                    <xsd:documentation>Lower Subansiri District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Luck">
+                <xsd:annotation>
+                    <xsd:documentation>Lucknow District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Ludh">
+                <xsd:annotation>
+                    <xsd:documentation>Ludhiana District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Madu">
+                <xsd:annotation>
+                    <xsd:documentation>Madurai District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Mahe">
+                <xsd:annotation>
+                    <xsd:documentation>Mahesena District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Mala">
+                <xsd:annotation>
+                    <xsd:documentation>Malappuram District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Mand">
+                <xsd:annotation>
+                    <xsd:documentation>Mandya District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Math">
+                <xsd:annotation>
+                    <xsd:documentation>Mathura District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Meda">
+                <xsd:annotation>
+                    <xsd:documentation>Medak District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Medi">
+                <xsd:annotation>
+                    <xsd:documentation>Medinipur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Meer">
+                <xsd:annotation>
+                    <xsd:documentation>Meerut District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Mora">
+                <xsd:annotation>
+                    <xsd:documentation>Moradabad District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Nagp">
+                <xsd:annotation>
+                    <xsd:documentation>Nagpur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Nain">
+                <xsd:annotation>
+                    <xsd:documentation>Nainital District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Nash">
+                <xsd:annotation>
+                    <xsd:documentation>Nashik District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Nell">
+                <xsd:annotation>
+                    <xsd:documentation>Nellore District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Nilg">
+                <xsd:annotation>
+                    <xsd:documentation>Nilgiri District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Pani">
+                <xsd:annotation>
+                    <xsd:documentation>Panipat District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Path">
+                <xsd:annotation>
+                    <xsd:documentation>Pathanamthitta District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Pati">
+                <xsd:annotation>
+                    <xsd:documentation>Patiala District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Patn">
+                <xsd:annotation>
+                    <xsd:documentation>Patna District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Paur">
+                <xsd:annotation>
+                    <xsd:documentation>Pauri Garhwal District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Peri">
+                <xsd:annotation>
+                    <xsd:documentation>Periyar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Pith">
+                <xsd:annotation>
+                    <xsd:documentation>Pithora Garh District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Prak">
+                <xsd:annotation>
+                    <xsd:documentation>Prakasam District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Pune">
+                <xsd:annotation>
+                    <xsd:documentation>Pune District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Purb">
+                <xsd:annotation>
+                    <xsd:documentation>Purbi Singhbhum District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Puri">
+                <xsd:annotation>
+                    <xsd:documentation>Puri District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Puru">
+                <xsd:annotation>
+                    <xsd:documentation>Puruliya District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Raig">
+                <xsd:annotation>
+                    <xsd:documentation>Raigad District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Raip">
+                <xsd:annotation>
+                    <xsd:documentation>Raipur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Rajk">
+                <xsd:annotation>
+                    <xsd:documentation>Rajkot District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Rajn">
+                <xsd:annotation>
+                    <xsd:documentation>Rajnandgaon District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Rama">
+                <xsd:annotation>
+                    <xsd:documentation>Ramanathapuram District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Ranc">
+                <xsd:annotation>
+                    <xsd:documentation>Ranchi District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Rang">
+                <xsd:annotation>
+                    <xsd:documentation>Rangareddy District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Ratn">
+                <xsd:annotation>
+                    <xsd:documentation>Ratnagiri District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Roht">
+                <xsd:annotation>
+                    <xsd:documentation>Rohtak District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Rupn">
+                <xsd:annotation>
+                    <xsd:documentation>Rupnagar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Saha">
+                <xsd:annotation>
+                    <xsd:documentation>Saharanpur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Sale">
+                <xsd:annotation>
+                    <xsd:documentation>Salem District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Sang">
+                <xsd:annotation>
+                    <xsd:documentation>Sangli District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Sata">
+                <xsd:annotation>
+                    <xsd:documentation>Satara District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Satn">
+                <xsd:annotation>
+                    <xsd:documentation>Satna District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Sawa">
+                <xsd:annotation>
+                    <xsd:documentation>Sawai Madhopur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Sidh">
+                <xsd:annotation>
+                    <xsd:documentation>Sidhi District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Sirs">
+                <xsd:annotation>
+                    <xsd:documentation>Sirsa District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Sola">
+                <xsd:annotation>
+                    <xsd:documentation>Solapur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Soni">
+                <xsd:annotation>
+                    <xsd:documentation>Sonitpur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Srin">
+                <xsd:annotation>
+                    <xsd:documentation>Srinagar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Sura">
+                <xsd:annotation>
+                    <xsd:documentation>Surat District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Sure">
+                <xsd:annotation>
+                    <xsd:documentation>Surendranagar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Tehr">
+                <xsd:annotation>
+                    <xsd:documentation>Tehri Garhwal District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Than">
+                <xsd:annotation>
+                    <xsd:documentation>Thanjavur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Thir">
+                <xsd:annotation>
+                    <xsd:documentation>Thiruvannamalai, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Thri">
+                <xsd:annotation>
+                    <xsd:documentation>Thrissur District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Tiru">
+                <xsd:annotation>
+                    <xsd:documentation>Tirunelveli, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Udha">
+                <xsd:annotation>
+                    <xsd:documentation>Udham Singh Nagar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Vado">
+                <xsd:annotation>
+                    <xsd:documentation>Vadodara District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Vals">
+                <xsd:annotation>
+                    <xsd:documentation>Valsad District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Vara">
+                <xsd:annotation>
+                    <xsd:documentation>Varanasi District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Vilu">
+                <xsd:annotation>
+                    <xsd:documentation>Viluppuram District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Vish">
+                <xsd:annotation>
+                    <xsd:documentation>Vishakhapatnam District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Wara">
+                <xsd:annotation>
+                    <xsd:documentation>Warangal District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Waya">
+                <xsd:annotation>
+                    <xsd:documentation>Wayanad District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="IN-Yamu">
+                <xsd:annotation>
+                    <xsd:documentation>Yamunanagar District, India</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            -->
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="italyType">
+        <xsd:restriction base="xsd:token">
+<!--
+            <xsd:enumeration value="IT-FO">
+                <xsd:annotation>
+                    <xsd:documentation>Forl??, Italy</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="japanType">
+        <xsd:restriction base="xsd:token">
+            <xsd:enumeration value="JP-01">
+                <xsd:annotation>
+                    <xsd:documentation>Hokkaido, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-02">
+                <xsd:annotation>
+                    <xsd:documentation>Aomori, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-03">
+                <xsd:annotation>
+                    <xsd:documentation>Iwate, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-04">
+                <xsd:annotation>
+                    <xsd:documentation>Miyagi, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-05">
+                <xsd:annotation>
+                    <xsd:documentation>Akita, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-06">
+                <xsd:annotation>
+                    <xsd:documentation>Yamagata, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-07">
+                <xsd:annotation>
+                    <xsd:documentation>Fukushima, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-08">
+                <xsd:annotation>
+                    <xsd:documentation>Ibaraki, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-09">
+                <xsd:annotation>
+                    <xsd:documentation>Tochigi, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-10">
+                <xsd:annotation>
+                    <xsd:documentation>Gunma, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-11">
+                <xsd:annotation>
+                    <xsd:documentation>Saitama, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-12">
+                <xsd:annotation>
+                    <xsd:documentation>Chiba, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-13">
+                <xsd:annotation>
+                    <xsd:documentation>Tokyo, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-14">
+                <xsd:annotation>
+                    <xsd:documentation>Kanagawa, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-15">
+                <xsd:annotation>
+                    <xsd:documentation>Niigata, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-16">
+                <xsd:annotation>
+                    <xsd:documentation>Toyama, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-17">
+                <xsd:annotation>
+                    <xsd:documentation>Ishikawa, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-18">
+                <xsd:annotation>
+                    <xsd:documentation>Fukui, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-19">
+                <xsd:annotation>
+                    <xsd:documentation>Yamanashi, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-20">
+                <xsd:annotation>
+                    <xsd:documentation>Nagano, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-21">
+                <xsd:annotation>
+                    <xsd:documentation>Gifu, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-22">
+                <xsd:annotation>
+                    <xsd:documentation>Shizuoka, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-23">
+                <xsd:annotation>
+                    <xsd:documentation>Aichi, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-24">
+                <xsd:annotation>
+                    <xsd:documentation>Mie, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-25">
+                <xsd:annotation>
+                    <xsd:documentation>Shiga, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-26">
+                <xsd:annotation>
+                    <xsd:documentation>Kyoto, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-27">
+                <xsd:annotation>
+                    <xsd:documentation>Osaka, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-28">
+                <xsd:annotation>
+                    <xsd:documentation>Hyogo, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-29">
+                <xsd:annotation>
+                    <xsd:documentation>Nara, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-30">
+                <xsd:annotation>
+                    <xsd:documentation>Wakayama, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-31">
+                <xsd:annotation>
+                    <xsd:documentation>Tottori, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-32">
+                <xsd:annotation>
+                    <xsd:documentation>Shimane, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-33">
+                <xsd:annotation>
+                    <xsd:documentation>Okayama, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-34">
+                <xsd:annotation>
+                    <xsd:documentation>Hiroshima, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-35">
+                <xsd:annotation>
+                    <xsd:documentation>Yamaguchi, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-36">
+                <xsd:annotation>
+                    <xsd:documentation>Tokushima, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-37">
+                <xsd:annotation>
+                    <xsd:documentation>Kagawa, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-38">
+                <xsd:annotation>
+                    <xsd:documentation>Ehime, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-39">
+                <xsd:annotation>
+                    <xsd:documentation>Kochi, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-40">
+                <xsd:annotation>
+                    <xsd:documentation>Fukuoka, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-41">
+                <xsd:annotation>
+                    <xsd:documentation>Saga, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-42">
+                <xsd:annotation>
+                    <xsd:documentation>Nagasaki, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-43">
+                <xsd:annotation>
+                    <xsd:documentation>Kumamoto, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-44">
+                <xsd:annotation>
+                    <xsd:documentation>Oita, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-45">
+                <xsd:annotation>
+                    <xsd:documentation>Miyazaki, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-46">
+                <xsd:annotation>
+                    <xsd:documentation>Kagoshima, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="JP-47">
+                <xsd:annotation>
+                    <xsd:documentation>Okinawa, Japan</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="mexicoType">
+        <xsd:restriction base="xsd:token">
+<!--
+            <xsd:enumeration value="MX-QRO">
+                <xsd:annotation>
+                    <xsd:documentation>Quer??taro, Mexico</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="malaysiaType">
+        <xsd:restriction base="xsd:token">
+<!--
+            <xsd:enumeration value="MY-Kual">
+                <xsd:annotation>
+                    <xsd:documentation>Kuala Lumpur, Malaysia</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+<!--this is Pulau Pinang
+            <xsd:enumeration value="MY-Pena">
+                <xsd:annotation>
+                    <xsd:documentation>Penang, Malaysia</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+<!--
+            <xsd:enumeration value="MY-Putr">
+                <xsd:annotation>
+                    <xsd:documentation>Putrajaya, Malaysia</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="netherlandsType">
+        <xsd:restriction base="xsd:token">
+<!--
+            <xsd:enumeration value="NL-FLD">
+                <xsd:annotation>
+                    <xsd:documentation>Flevopolder, Netherlands</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="newZealandType">
+        <xsd:restriction base="xsd:token">
+<!--
+            <xsd:enumeration value="NZ-Hawk">
+                <xsd:annotation>
+                    <xsd:documentation>Hawkes Bay, New Zealand</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="NZ-Mana">
+                <xsd:annotation>
+                    <xsd:documentation>Manawatu, New Zealand</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="philippinesType">
+        <xsd:restriction base="xsd:token">
+<!--not correct level, this is a city level
+            <xsd:enumeration value="PH-Metr">
+                <xsd:annotation>
+                    <xsd:documentation>Metropolitan Manila Area, Philippines</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+<!--spelling
+            <xsd:enumeration value="PH-Sama">
+                <xsd:annotation>
+                    <xsd:documentation>Samar, Philippines</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+-->
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="unitedStatesOfAmericaType">
+        <xsd:restriction base="xsd:token">
+            <xsd:enumeration value="US-AK">
+                <xsd:annotation>
+                    <xsd:documentation>Alaska, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-AL">
+                <xsd:annotation>
+                    <xsd:documentation>Alabama, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-AR">
+                <xsd:annotation>
+                    <xsd:documentation>Arkansas, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-AS">
+                <xsd:annotation>
+                    <xsd:documentation>American Samoa (see also separate entry under AS), United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-AZ">
+                <xsd:annotation>
+                    <xsd:documentation>Arizona, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-CA">
+                <xsd:annotation>
+                    <xsd:documentation>California, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-CO">
+                <xsd:annotation>
+                    <xsd:documentation>Colorado, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-CT">
+                <xsd:annotation>
+                    <xsd:documentation>Connecticut, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-DC">
+                <xsd:annotation>
+                    <xsd:documentation>District of Columbia, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-DE">
+                <xsd:annotation>
+                    <xsd:documentation>Delaware, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-FL">
+                <xsd:annotation>
+                    <xsd:documentation>Florida, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-GA">
+                <xsd:annotation>
+                    <xsd:documentation>Georgia, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-GU">
+                <xsd:annotation>
+                    <xsd:documentation>Guam (see also separate entry under GU), United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-HI">
+                <xsd:annotation>
+                    <xsd:documentation>Hawaii, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-IA">
+                <xsd:annotation>
+                    <xsd:documentation>Iowa, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-ID">
+                <xsd:annotation>
+                    <xsd:documentation>Idaho, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-IL">
+                <xsd:annotation>
+                    <xsd:documentation>Illinois, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-IN">
+                <xsd:annotation>
+                    <xsd:documentation>Indiana, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-KS">
+                <xsd:annotation>
+                    <xsd:documentation>Kansas, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-KY">
+                <xsd:annotation>
+                    <xsd:documentation>Kentucky, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-LA">
+                <xsd:annotation>
+                    <xsd:documentation>Louisiana, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-MA">
+                <xsd:annotation>
+                    <xsd:documentation>Massachusetts, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-MD">
+                <xsd:annotation>
+                    <xsd:documentation>Maryland, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-ME">
+                <xsd:annotation>
+                    <xsd:documentation>Maine, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-MI">
+                <xsd:annotation>
+                    <xsd:documentation>Michigan, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-MN">
+                <xsd:annotation>
+                    <xsd:documentation>Minnesota, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-MO">
+                <xsd:annotation>
+                    <xsd:documentation>Missouri, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-MP">
+                <xsd:annotation>
+                    <xsd:documentation>Northern Mariana Islands (see also separate entry under MP), United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-MS">
+                <xsd:annotation>
+                    <xsd:documentation>Mississippi, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-MT">
+                <xsd:annotation>
+                    <xsd:documentation>Montana, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-NC">
+                <xsd:annotation>
+                    <xsd:documentation>North Carolina, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-ND">
+                <xsd:annotation>
+                    <xsd:documentation>North Dakota, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-NE">
+                <xsd:annotation>
+                    <xsd:documentation>Nebraska, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-NH">
+                <xsd:annotation>
+                    <xsd:documentation>New Hampshire, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-NJ">
+                <xsd:annotation>
+                    <xsd:documentation>New Jersey, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-NM">
+                <xsd:annotation>
+                    <xsd:documentation>New Mexico, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-NV">
+                <xsd:annotation>
+                    <xsd:documentation>Nevada, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-NY">
+                <xsd:annotation>
+                    <xsd:documentation>New York, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-OH">
+                <xsd:annotation>
+                    <xsd:documentation>Ohio, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-OK">
+                <xsd:annotation>
+                    <xsd:documentation>Oklahoma, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-OR">
+                <xsd:annotation>
+                    <xsd:documentation>Oregon, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-PA">
+                <xsd:annotation>
+                    <xsd:documentation>Pennsylvania, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-PR">
+                <xsd:annotation>
+                    <xsd:documentation>Puerto Rico (see also separate entry under PR), United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-RI">
+                <xsd:annotation>
+                    <xsd:documentation>Rhode Island, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-SC">
+                <xsd:annotation>
+                    <xsd:documentation>South Carolina, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-SD">
+                <xsd:annotation>
+                    <xsd:documentation>South Dakota, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-TN">
+                <xsd:annotation>
+                    <xsd:documentation>Tennessee, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-TX">
+                <xsd:annotation>
+                    <xsd:documentation>Texas, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-UM">
+                <xsd:annotation>
+                    <xsd:documentation>United States Minor Outlying Islands (see also separate entry under UM), United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-UT">
+                <xsd:annotation>
+                    <xsd:documentation>Utah, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-VA">
+                <xsd:annotation>
+                    <xsd:documentation>Virginia, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-VI">
+                <xsd:annotation>
+                    <xsd:documentation>Virgin Islands, U.S. (see also separate entry under VI), United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-VT">
+                <xsd:annotation>
+                    <xsd:documentation>Vermont, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-WA">
+                <xsd:annotation>
+                    <xsd:documentation>Washington, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-WI">
+                <xsd:annotation>
+                    <xsd:documentation>Wisconsin, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-WV">
+                <xsd:annotation>
+                    <xsd:documentation>West Virginia, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-WY">
+                <xsd:annotation>
+                    <xsd:documentation>Wyoming, United States</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-AA">
+                <xsd:annotation>
+                    <xsd:documentation>Armed Forces Americas, United States of America</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-AE">
+                <xsd:annotation>
+                    <xsd:documentation>Armed Forces Middle East, United States of America</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-AP">
+                <xsd:annotation>
+                    <xsd:documentation>Armed Forces Pacific, United States of America</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-FM">
+                <xsd:annotation>
+                    <xsd:documentation>FEDERATED STATES OF MICRONESIA, United States of America</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-MH">
+                <xsd:annotation>
+                    <xsd:documentation>MARSHALL ISLANDS, United States of America</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="US-PW">
+                <xsd:annotation>
+                    <xsd:documentation>PALAU, United States of America</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

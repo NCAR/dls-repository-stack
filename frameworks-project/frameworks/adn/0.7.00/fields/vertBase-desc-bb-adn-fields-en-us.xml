@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: vertBase-desc-bb-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:48 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Description - vertical base level - bounding box" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/geospatialCoverages/geospatialCoverage/boundBox/bbVert/vertBase/@desc">
+		<definition>information about the vertical base level and/or datum level</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2006-03-08" link1="vertical base level - bounding box" style1="bold" link2="Ground level" style2="bold">If the vertical base level - bounding box field has a value of Ground level, use this field to indicate a numerical value for the vertical base level.</practice>
+				<practice status="current" originDate="2006-03-08" link1="vertical base level - bounding box" style1="bold" link2="Datum level" style2="bold">If the vertical base level - bounding box field has a value of Datum level, use this field to indicate the datum being used and a numerical value for the vertical base level.</practice>
+
+			</dos>
+			<examples>
+				<practice status="current" originDate="2005-05-02" link1="Datum level" style1="bold">Datum level description: the vertical base level is described by datum XYZ and has a vertical base level of ABC.</practice>
+				<practice status="current" originDate="2005-05-02" link1="Ground level" style1="bold">Ground level description: the vertical base level starts at 9,000 feet above sea level.</practice>
+				<practice status="current" originDate="2005-05-05" link1="Sea level" style1="bold">Sea level description: the vertical base level is mean sea level.</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>The vertical base level of Ground level is at 9,000 feet above sea level.</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/detVert/vertBase/@desc</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

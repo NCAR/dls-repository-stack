@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.nsdl.org/ncs" xsi:schemaLocation="http://ns.nsdl.org/ncs http://ns.nsdl.org/ncs/ncs_item/1.02/schemas/ncs-item.xsd">
+  <general>
+    <recordID>NCS-SMPL-000-000-000-002</recordID>
+
+    <url>http://www.bgbm.fu-berlin.de/iapt/nomenclature/code/SaintLouis/0001ICSLContents.htm</url>
+    <title>International Code of Botanical Nomenclature (St. Louis Code)</title>
+    <description>The International Code of Botanical Nomenclature (ICBN) is a set of procedures and rules for the assignment of formal botanical names to plants to ensure that each taxonomic group of plants has only one correct name, accepted worldwide. It is intended to provide a uniform method of naming taxonomic groups in order to avoid error or ambiguity. This is the online version of the code developed by the XVI International Botanical Congress held in St Louis in 1999. Topics include taxa and their ranks; status, typification, and priority of names; nomenclature of taxa according to rank, publication issues; author citations; criteria for the rejection of names; and others.</description>
+    <subject>Botanical nomenclature; naming plants; plant names; International code of botanical nomenclature; St. Louis code; Saint Louis code; Names of taxa; Nomenclature of taxa; Nomina familiarum; Scientific names; Valid publication</subject>
+    <subject>Biological science</subject>
+    <subject>Botany</subject>
+
+    <subject>Taxonomy</subject>
+    <subject>Nomenclature</subject>
+    <languages>
+      <ISOcode>eng</ISOcode>
+    </languages>
+  </general>
+  <educational>
+
+    <educationLevels>
+      <nsdlEdLevel>Higher Education</nsdlEdLevel>
+      <nsdlEdLevel>Undergraduate (Lower Division)</nsdlEdLevel>
+      <nsdlEdLevel>Undergraduate (Upper Division)</nsdlEdLevel>
+      <nsdlEdLevel>Graduate/Professional</nsdlEdLevel>
+    </educationLevels>
+    <types>
+
+      <nsdlType>Reference Material</nsdlType>
+      <nsdlType>Nonfiction Reference</nsdlType>
+      <nsdlType>Scientific Standard</nsdlType>
+      <dcmiType>Text</dcmiType>
+    </types>
+    <audiences>
+      <nsdlAudience>Professional/Practitioner</nsdlAudience>
+
+      <nsdlAudience>Researcher</nsdlAudience>
+    </audiences>
+  </educational>
+  <technical>
+    <mimeTypes>
+      <mimeType>text/html</mimeType>
+    </mimeTypes>
+  </technical>
+
+  <dates>
+    <date>
+      <W3Cdate>2001-12-05</W3Cdate>
+    </date>
+  </dates>
+  <contributions>
+    <publishers>
+      <publisher>Botanic Garden and Botanical Museum Berlin-Dahlem, Freie Universitat Berlin</publisher>
+
+    </publishers>
+    <creators>
+      <creator>International Association for Plant Taxonomy</creator>
+    </creators>
+  </contributions>
+  <rights>
+    <accessRights>
+      <meansOfAccess>Free access</meansOfAccess>
+
+    </accessRights>
+    <rights>Copyright International Association for Plant Taxonomy</rights>
+  </rights>
+</record>

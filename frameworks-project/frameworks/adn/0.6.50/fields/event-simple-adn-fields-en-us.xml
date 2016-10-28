@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: event-simple-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/non-vocab-fields.xsd">
+	<field name="Event info - simple" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/general/simplePlacesAndEvents/placeAndEvent/event">
+		<definition>the name of an event, without the use of geospatial coordinates, that is the subject or primary content of a resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-05-05">Capitalize proper nouns.</practice>
+				<practice status="current" originDate="2005-05-05">The event should have affected the entered place.</practice>
+			</dos>
+			<examples>
+				<practice status="current" originDate="2005-05-05">Hurricane Fran.</practice>
+				<practice status="current" originDate="2005-05-05">Valentine's Day snowstorm.</practice>
+				<practice status="current" originDate="2005-05-05">San Francisco earthquake.</practice>
+				<practice status="current" originDate="2005-05-05">Mt. St. Helen's eruption.</practice>
+				<practice status="current" originDate="2005-05-05">Hayman wildfire.</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>Valentine's Day Snowstorm</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/detEvents/event</note>
+				<note>Other XPATH: /itemRecord/geospatialCoverages/geospatialCoverage/boundBox/bbEvents/event</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

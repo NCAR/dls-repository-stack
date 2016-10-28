@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib
+  xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd"
+  version="2.0">
+
+  <tlib-version>1.0</tlib-version>
+  <short-name>sf</short-name>
+  <uri>/tlds/schemedit-functions</uri>
+  
+  	<function>
+		<name>hasRole</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			boolean hasRole (edu.ucar.dls.schemedit.security.user.User, java.lang.String )
+		</function-signature>
+	</function>
+  
+	
+  	<function>
+		<description>Does user have specified role in specified collection</description>
+		<name>hasCollectionRole</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			boolean hasCollectionRole (edu.ucar.dls.schemedit.security.user.User, java.lang.String, java.lang.String )
+		</function-signature>
+	</function>
+	
+  	<function>
+		<name>isAuthorized</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			boolean isAuthorized (java.lang.String, edu.ucar.dls.schemedit.SessionBean)
+		</function-signature>
+	</function>
+
+  	<function>
+		<name>fileExists</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			boolean fileExists (java.lang.String,  javax.servlet.http.HttpServletRequest)
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>
+		  Returns the xpath for the provided named schema path (pathName) as configured for the 
+		  specified framework (xmlFormat). Used on the "create collection page" to give background
+		  information about some optional information associated with some frameworks.
+		</description>
+		<name>getNamedXPath</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			java.lang.String getNamedXPath (java.lang.String, java.lang.String, edu.ucar.dls.schemedit.FrameworkRegistry)
+		</function-signature>
+	</function>
+	
+	<function>
+		<name>getStatusLabel</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			java.lang.String getStatusLabel (java.lang.String, java.lang.String, edu.ucar.dls.schemedit.SessionBean)
+		</function-signature>
+	</function>
+	
+  	<function>
+		<name>truncate</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			java.lang.String truncate (java.lang.String, int)
+		</function-signature>
+	</function>
+    
+  	<function>
+		<name>getFullName</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			java.lang.String getFullName (java.lang.String, edu.ucar.dls.schemedit.security.user.UserManager)
+		</function-signature>
+	</function>	
+	
+  	<function>
+		<name>listContains</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			boolean listContains (java.util.List, java.lang.String)
+		</function-signature>
+	</function>
+  
+  	<function>
+		<name>indexOf</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			int indexOf (java.util.List, java.lang.Object)
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>
+		  Extracts the encoded xpath from a predicate of the form 
+		  "getEnumeratedValues(/record/foo)" to return just the path (/record/foo)
+		</description>
+		<name>extractPredicateXPath</name>
+		<function-class>edu.ucar.dls.schemedit.input.InputManager</function-class>
+		<function-signature>
+			java.lang.String stripFunctionCall (java.lang.String)
+		</function-signature>
+	</function>
+	
+	<function>
+		<name>arrayContains</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			boolean arrayContains (java.lang.String[], java.lang.String)
+		</function-signature>
+	</function>
+	
+	<function>
+		<name>getLocalizedSchemaXML</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			java.lang.String getLocalizedSchemaXML (java.lang.String)
+		</function-signature>
+	</function>
+	
+	<function>
+		<name>getADNFragDocReader</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			edu.ucar.dls.schemedit.ADNFragDocReader getADNFragDocReader (edu.ucar.dls.index.reader.DocReader, java.lang.String)
+		</function-signature>
+	</function>		
+  
+  	<function>
+		<name>getDcsDataDocReader</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			edu.ucar.dls.schemedit.DcsDataDocReader getDcsDataDocReader (edu.ucar.dls.index.reader.DocReader)
+		</function-signature>
+	</function>
+  
+  	<function>
+		<name>getDcsField</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			java.lang.String getDcsField (java.lang.String, edu.ucar.dls.index.reader.DocReader)
+		</function-signature>
+	</function>
+  
+	<function>
+		<name>getSetLabel</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			java.lang.String getSetLabel (edu.ucar.dls.repository.SetInfo)
+		</function-signature>
+	</function>
+	
+	<function>
+		<name>getDcsSetInfo</name>
+		<function-class>edu.ucar.dls.schemedit.SchemEditUtils</function-class>
+		<function-signature>
+			edu.ucar.dls.schemedit.dcs.DcsSetInfo getDcsSetInfo (java.lang.String, java.util.List)
+		</function-signature>
+	</function>
+	
+  	<function>
+		<name>decodePath</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			java.lang.String decodePath (java.lang.String)
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>
+			Converts either a list or a iterable to a comma-delmited string,
+			which can then be converted into a list for use by Javascript (and
+			in particular Prototype.Array). Used to convert a jsp 
+			object (List or Array) into a javascript variable.
+		</description>	
+		<name>toCommaDelimited</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			java.lang.String toCommaDelimited (java.lang.Object)
+		</function-signature>
+	</function>	
+	
+	<function>
+		<name>pathToId</name>
+		<function-class>edu.ucar.dls.schemedit.display.CollapseUtils</function-class>
+		<function-signature>
+			java.lang.String pathToId (java.lang.String)
+		</function-signature>
+	</function>
+
+	<function>
+		<name>pairToId</name>
+		<function-class>edu.ucar.dls.schemedit.display.CollapseUtils</function-class>
+		<function-signature>
+			java.lang.String pairToId (java.lang.String, java.lang.String)
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>
+			Converts an xpath (decoded as an id by replacing characters that might confuse javascript) 
+			back into xpath form. Inverse of pathToID
+		</description>	
+		<name>idToPath</name>
+		<function-class>edu.ucar.dls.schemedit.display.CollapseUtils</function-class>
+		<function-signature>
+			java.lang.String idToPath (java.lang.String)
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>
+			Returns name of leaf node with indexing (if any) removed
+		</description>	
+		<name>getNodeName</name>
+		<function-class>XPathUtils.getNodeName</function-class>
+		<function-signature>
+			java.lang.String getNodeName (java.lang.String)
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>
+			Gets the prompts defined in the fieldFile for the current xpath and framework.
+		</description>	
+		<name>getPrompts</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			java.util.List getPrompts (java.lang.String, edu.ucar.dls.schemedit.MetaDataFramework)
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>
+			Returns a asn standards node from the StandardsRegistry
+		</description>	
+		<name>getAsnStandard</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			edu.ucar.dls.schemedit.standards.asn.AsnStandardsNode getAsnStandard (java.lang.String)
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>
+			Returns a asn standards document from the StandardsRegistry
+		</description>	
+		<name>getAsnDocument</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			edu.ucar.dls.schemedit.standards.asn.AsnStandardsDocument getAsnDocument (java.lang.String)
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>
+			Returns a NLDR asset url created from the supplied physical url
+		</description>	
+		<name>getNldrAssetUrl</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			java.lang.String getNldrAssetUrl (java.lang.String)
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>
+			Returns the elements out of provided list representing ASN standards in the LAR framework
+		</description>	
+		<name>getAsnLarStandards</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			java.util.List getAsnLarStandards (java.util.List)
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>
+			Returns the elements out of provided list representing NON-ASN standards in the LAR framework
+		</description>	
+		<name>getNonAsnLarStandards</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			java.util.List getNonAsnLarStandards (java.util.List)
+		</function-signature>
+	</function>
+	
+	<function>
+		<description>
+			Returns true if provided key corresponds to a descendent of a AsnLarStandard element in provided list
+		</description>	
+		<name>isAsnLarStandardDescendent</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			boolean isAsnLarStandardDescendent (java.lang.String, java.util.List)
+		</function-signature>
+	</function>
+
+	<function>
+		<description>
+			Returns true if provided key corresponds to a descendent of a NONAsnLarStandard element in provided list
+		</description>	
+		<name>isNonAsnLarStandardDescendent</name>
+		<function-class>edu.ucar.dls.schemedit.JspFunctions</function-class>
+		<function-signature>
+			boolean isNonAsnLarStandardDescendent (java.lang.String, java.util.List)
+		</function-signature>
+	</function>
+	
+</taglib>

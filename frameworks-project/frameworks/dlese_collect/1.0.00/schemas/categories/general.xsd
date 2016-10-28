@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  OVERVIEW  *************************</xsd:documentation>
+		<xsd:documentation>Framework: Collection-level CATEGORY schema</xsd:documentation>
+		<xsd:documentation>Tag(s) defined: general</xsd:documentation>
+		<xsd:documentation>Source: DLESE Program Center (DPC); http://www.dlese.org</xsd:documentation>
+		<xsd:documentation>Last update:	2004-01-26</xsd:documentation>
+		<xsd:documentation>Notes: Developed and maintained at the DPC</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. </xsd:documentation>
+		<xsd:documentation>These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  CATEGORY schemas to include  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="commonfields.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>*****  VOCABULARY schemas to include  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="union-vocabs.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>*****  ROOT element   *************************</xsd:documentation>
+		<xsd:documentation>There is no root element for this schema.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  Complex Types (alpha order)  *******************</xsd:documentation>
+		<xsd:documentation>generalType is part of collectionType in collection.xsd</xsd:documentation>
+		<xsd:documentation>gradeRangesType is part of generalType</xsd:documentation>
+		<xsd:documentation>keywordsType is part of generalType </xsd:documentation>
+		<xsd:documentation>policiesType is part of generalType</xsd:documentation>
+		<xsd:documentation>policyType is part of policiesType</xsd:documentation>
+		<xsd:documentation>reviewProcessType is part of generalType</xsd:documentation>
+		<xsd:documentation>subjectsOtherType is part of generalType</xsd:documentation>
+		<xsd:documentation>subjectsType is part of generalType</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***** 	generalType    *************************</xsd:documentation>
+		<xsd:documentation>fullTitle is a string - Full title or name of the collection with acronyms spelled out</xsd:documentation>
+		<xsd:documentation>shortTitle is a string - Short title or name (30 characters or less) of the collection</xsd:documentation>
+		<xsd:documentation>description see commonfields.xsd - general description describing the purpose of the collection</xsd:documentation>
+		<xsd:documentation>language see commonfields.xsd - the language of most of the resource in the collection</xsd:documentation>
+		<xsd:documentation>subjects is complex; see subjectDLESE.xsd - broad discipline (geoscience) areas covered by the collection</xsd:documentation>
+		<xsd:documentation>subjectsOther is complex - collection specific vocabularies</xsd:documentation>
+		<xsd:documentation>kewords is complex - words or phrases that describe the collection</xsd:documentation>
+		<xsd:documentation>gradeRanges is complex; see gradeRangeDLESE.xsd - collection education level by grade ranges</xsd:documentation>
+		<xsd:documentation>cost is complex; see vocab cost.xsd - indicates whether a cost is necessary to use the collection</xsd:documentation>
+		<xsd:documentation>policies is complex - provides links to collection documents</xsd:documentation>
+		<xsd:documentation>logo is a string (url) - link to a collection logo or brand</xsd:documentation>
+		<xsd:documentation>additionalInfo is a string - self explanatory</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="generalType">
+		<xsd:all>
+			<xsd:element name="fullTitle" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="shortTitle" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="description" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="reviewProcess" type="reviewProcessType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="language" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="subjects" type="subjectsType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="subjectsOther" type="subjectsOtherType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="keywords" type="keywordsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="gradeRanges" type="gradeRangesType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="cost" type="DLESEcostType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="policies" type="policiesType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="logo" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="additionalInfo" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  gradeRangesType   *************************</xsd:documentation>
+		<xsd:documentation>gradeRange is simple type; see gradeRangeDLESE.xsd - education level by grouped grade ranges</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="gradeRangesType">
+		<xsd:sequence>
+			<xsd:element name="gradeRange" type="union.gradeRangeType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  	keywordsType  *************************</xsd:documentation>
+		<xsd:documentation>keyword is simple type (string-like) - words or phrases that describe the collection</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="keywordsType">
+		<xsd:sequence>
+			<xsd:element name="keyword" type="stringTextType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  	policiesType   *************************</xsd:documentation>
+		<xsd:documentation>policy is complex - provides links to collection documents</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="policiesType">
+		<xsd:sequence>
+			<xsd:element name="policy" type="policyType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  	policyType   *************************</xsd:documentation>
+		<xsd:documentation>type is simple; see policyType.xsd - the type of policy being linked (e.g. scope)</xsd:documentation>
+		<xsd:documentation>url is a string - the URL to the policy</xsd:documentation>
+		<xsd:documentation>name is a string - the name of the policy</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="policyType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="type" type="policyTypeType" use="optional"/>
+				<xsd:attribute name="url" type="xsd:string" use="optional"/>
+				<xsd:attribute name="name" type="xsd:string" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  	reviewProcessType   *************************</xsd:documentation>
+		<xsd:documentation>url is simple - the URL to the document that describes the review processes for the collection; should only be used with collections accepted into the DLESE Reviewed Collection (DRC)</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="reviewProcessType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="url" type="xsd:string" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****	subjectsOtherType   *************************</xsd:documentation>
+		<xsd:documentation>subjectOther is simple type - collection specific vocabularies</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="subjectsOtherType">
+		<xsd:sequence>
+			<xsd:element name="subjectOther" type="union.subjectOtherType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  	subjectsType   *************************</xsd:documentation>
+		<xsd:documentation>subject is simple type - broad discipline (geoscience) areas covered by the collection</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="subjectsType">
+		<xsd:sequence>
+			<xsd:element name="subject" type="union.subjectType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  	Simple Types (alpha order)   *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  	union.gradeRangeType   *************************</xsd:documentation>
+		<xsd:documentation>union.gradeRangeType; see gradeRangeDLESE.xsd</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="union.gradeRangeType">
+		<xsd:union memberTypes="DLESEgradeRangeType suppliedType notapplicableType"/>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*****  	union.subjectType   *************************</xsd:documentation>
+		<xsd:documentation>union.subjectType; see subjectDLESE.xsd</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="union.subjectType">
+		<xsd:union memberTypes="DLESEsubjectType suppliedType"/>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*****  	union.subjectOtherType   *************************</xsd:documentation>
+		<xsd:documentation>union.subjectOtherType; see subjectOtherDLESE.xsd</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="union.subjectOtherType">
+		<xsd:union memberTypes="DLESEsubjectOtherType"/>
+	</xsd:simpleType>
+</xsd:schema>

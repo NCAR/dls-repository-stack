@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: gradeRange-adn-groups-default-en-us.xml,v 1.1 2009/01/30 21:34:41 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Grade range</title>
+<groups:concept id="gr" language="en-us" metaFormat="adn" metaVersion="0.6.50" text="Grade range" audience="default" path="/itemRecord/educational/audiences/audience/gradeRange" deftn="the appropriate grade range or context for users of the resource"/>
+</head>
+<body>
+<outline groups:vocab="DLESE:General public" type="vocab" groups:id="00" text="General public" groups:deftn="learners in the general population"/>
+<outline groups:vocab="DLESE:Graduate or professional" type="vocab" groups:id="01" text="Graduate or professional" groups:deftn="learners who have completed an undergraduate degree or who advancing their own knowledge as it relates to their employment"/>
+<outline groups:vocab="DLESE:High school" type="vocab" groups:id="02" text="High school" groups:deftn="learners in grades 9-12"/>
+<outline groups:vocab="DLESE:Informal education" type="vocab" groups:id="03" text="Informal education" groups:deftn="learners in museum settings, community continuing education programs, community technology centers, park naturalists settings, nature centers and home schooling"/>
+<outline groups:vocab="DLESE:Intermediate elementary" type="vocab" groups:id="04" text="Intermediate elementary" groups:deftn="learners in grades 3-5"/>
+<outline groups:vocab="DLESE:Middle school" type="vocab" groups:id="05" text="Middle school" groups:deftn="learners in grades 6-8"/>
+<outline groups:vocab="DLESE:Primary elementary" type="vocab" groups:id="07" text="Primary elementary" groups:deftn="learners in grades K-2"/>
+<outline groups:vocab="DLESE:Undergraduate lower division" type="vocab" groups:id="09" text="Undergraduate lower division" groups:deftn="generally learners in the first two years of a baccalaureate degree or completing an introductory course"/>
+<outline groups:vocab="DLESE:Undergraduate upper division" type="vocab" groups:id="0a" text="Undergraduate upper division" groups:deftn="generally learners in the last two years of a baccalaureate degree or completing an advanced course"/>
+<outline groups:vocab="DLESE:Not applicable" type="vocab" groups:id="06" text="Not applicable" groups:deftn="it is not appropriate to assign a grade range to the resource"/>
+<outline groups:vocab="DLESE:To be supplied" type="vocab" groups:id="08" text="To be supplied" groups:deftn="grade range information is currently unknown but will be supplied at a later date"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

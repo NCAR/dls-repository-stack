@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: standard-mast-fields-en-us.xml,v 1.5 2009/07/30 15:27:17 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/non-vocab-fields.xsd">
+  <field name="Standard" metaFormat="mast" metaVersion="1.0" language="en-us" path="/record/educational/standards/standard">
+		<definition attribution="GEM 2.0 Element Descriptions at http://www.thegateway.org/about/documentation/metadataElements">State and/or national academic standards mapped to the entity being described.</definition> 
+		
+		<bestPractices>
+			<dos>
+			<practice status="current" originDate="2008-10-20">This field is for text-based entry of standards information.</practice>
+			<practice status="current" originDate="2008-10-20">Useful standards metadata includes information for the following facets:  </practice>
+				<practice status="current" originDate="2008-10-20">Promulgating Body - The name of the organization (governmental or otherwise) that created the set of standards being correlated;</practice>
+				<practice status="current" originDate="2008-10-20">Standards Version - Standards evolve over time and it is important that the end user know the precise version of the standard used in the correlation; </practice>
+				<practice status="current" originDate="2008-10-20"> Correlator - Since standards correlations involve considerable levels of subjective judgment, end users are interested in the identity of the person or organization that did the correlating;</practice>
+				<practice status="current" originDate="2008-10-20"> Domain - The precise domain or subject area as defined (and stated) in the standard–e.g., 'Science' or 'Mathematics'; </practice>
+				<practice status="current" originDate="2008-10-20">Academic or Training Level - Where appropriate, the grade level(s) to which the promulgating body says the standard applies;</practice>
+				<practice status="current" originDate="2008-10-20">Standard Text - The actual text of the academic standard.</practice>
+				
+				<practice status="current" originDate="2008-10-20">The standard correlation should be recorded in the metadata at the same level of granularity that is included in the resource. E.g., if a resource is correlated at a benchmark level more refined than at a top-level standards level, record the correlation at the benchmark level.</practice>
+
+			</dos>
+		
+		</bestPractices>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

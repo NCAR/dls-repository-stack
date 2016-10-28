@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: GEMsubject.xsd,v 1.8 2009/07/30 16:12:03 ginger Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.00">
+	<xs:annotation>
+		<xs:documentation>*****************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*****************************************</xs:documentation>
+		<xs:documentation>Created: 2008-02-29</xs:documentation>
+		<xs:documentation>Author: Katy Ginger, University Corporation for Atmospheric Research (UCAR),  ginger@ucar.edu</xs:documentation>
+		<xs:documentation>Purpose: Gateway to Educational Materials (GEM) subject list</xs:documentation>
+		<xs:documentation>GEM Source: http://www.thegateway.org/about/documentation/gem-controlled-vocabularies/vocabulary-subject/view</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>None. See ../categories/educational.xsd</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  SIMPLE TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="GEMsubjectType">
+		<xs:annotation>
+			<xs:documentation>***** GEMsubjectType  *****</xs:documentation>
+			<xs:documentation>Valid values for the element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Arts"><!--parent topic--></xs:enumeration>
+			<xs:enumeration value="Arts:Architecture"/>
+			<xs:enumeration value="Arts:Art therapy"/>
+			<xs:enumeration value="Arts:Careers"/>
+			<xs:enumeration value="Arts:Computers in art"/>
+			<xs:enumeration value="Arts:Dance"/>
+			<xs:enumeration value="Arts:Drama/dramatics"/>
+			<xs:enumeration value="Arts:Film"/>
+			<xs:enumeration value="Arts:History"/>
+			<xs:enumeration value="Arts:Informal education"/>
+			<xs:enumeration value="Arts:Instructional issues"/>
+			<xs:enumeration value="Arts:Music"/>
+			<xs:enumeration value="Arts:Photography"/>
+			<xs:enumeration value="Arts:Popular culture"/>
+			<xs:enumeration value="Arts:Process skills"/>
+			<xs:enumeration value="Arts:Technology"/>
+			<xs:enumeration value="Arts:Theater arts"/>
+			<xs:enumeration value="Arts:Visual arts"/>
+			<!--*************************************************** -->
+			<xs:enumeration value="Educational technology"><!--parent topic--></xs:enumeration>
+			<xs:enumeration value="Educational technology:Audio-visual equipment"/>
+			<xs:enumeration value="Educational technology:Careers"/>
+			<xs:enumeration value="Educational technology:Educational media"/>
+			<xs:enumeration value="Educational technology:History"/>
+			<xs:enumeration value="Educational technology:Informal education"/>
+			<xs:enumeration value="Educational technology:Instructional issues"/>
+			<xs:enumeration value="Educational technology:Integrating technology into the classroom"/>
+			<xs:enumeration value="Educational technology:Language laboratories"/>
+			<xs:enumeration value="Educational technology:Multimedia education"/>
+			<xs:enumeration value="Educational technology:Process skills"/>
+			<xs:enumeration value="Educational technology:Staff inservice"/>
+			<xs:enumeration value="Educational technology:Technology"/>
+			<xs:enumeration value="Educational technology:Technology planning"/>
+			<!--*************************************************** -->
+			<xs:enumeration value="Foreign languages"><!--parent topic--></xs:enumeration>
+			<xs:enumeration value="Foreign languages:Alphabet"/>
+			<xs:enumeration value="Foreign languages:Bilingualism"/>
+			<xs:enumeration value="Foreign languages:Careers"/>
+			<xs:enumeration value="Foreign languages:Cultural awareness"/>
+			<xs:enumeration value="Foreign languages:Grammar"/>
+			<xs:enumeration value="Foreign languages:History"/>
+			<xs:enumeration value="Foreign languages:Informal education"/>
+			<xs:enumeration value="Foreign languages:Instructional issues"/>
+			<xs:enumeration value="Foreign languages:Linguistics"/>
+			<xs:enumeration value="Foreign languages:Listening comprehension"/>
+			<xs:enumeration value="Foreign languages:Process skills"/>
+			<xs:enumeration value="Foreign languages:Reading"/>
+			<xs:enumeration value="Foreign languages:Speaking"/>
+			<xs:enumeration value="Foreign languages:Spelling"/>
+			<xs:enumeration value="Foreign languages:Technology"/>
+			<xs:enumeration value="Foreign languages:Vocabulary"/>
+			<xs:enumeration value="Foreign languages:Writing"/>
+			<!--*************************************************** -->
+			<xs:enumeration value="Health"><!--parent topic--></xs:enumeration>
+			<xs:enumeration value="Health:Aging"/>
+			<xs:enumeration value="Health:Body systems and senses"/>
+			<xs:enumeration value="Health:Careers"/>
+			<xs:enumeration value="Health:Chronic conditions"/>
+			<xs:enumeration value="Health:Consumer health"/>
+			<xs:enumeration value="Health:Death and dying"/>
+			<xs:enumeration value="Health:Disease"/>
+			<xs:enumeration value="Health:Environmental health"/>
+			<xs:enumeration value="Health:Family life"/>
+			<xs:enumeration value="Health:History"/>
+			<xs:enumeration value="Health:Human sexuality"/>
+			<xs:enumeration value="Health:Informal education"/>
+			<xs:enumeration value="Health:Instructional issues"/>
+			<xs:enumeration value="Health:Mental/emotional health"/>
+			<xs:enumeration value="Health:Nutrition"/>
+			<xs:enumeration value="Health:Process skills"/>
+			<xs:enumeration value="Health:Safety"/>
+			<xs:enumeration value="Health:Smoking"/>
+			<xs:enumeration value="Health:Substance abuse prevention"/>
+			<xs:enumeration value="Health:Technology"/>
+			<!--*************************************************** -->
+			<xs:enumeration value="Language arts"><!--parent topic--></xs:enumeration>
+			<xs:enumeration value="Language arts:Alphabet"/>
+			<xs:enumeration value="Language arts:Careers"/>
+			<xs:enumeration value="Language arts:Debate"/>
+			<xs:enumeration value="Language arts:Grammar"/>
+			<xs:enumeration value="Language arts:Handwriting"/>
+			<xs:enumeration value="Language arts:History"/>
+			<xs:enumeration value="Language arts:Informal education"/>
+			<xs:enumeration value="Language arts:Instructional issues"/>
+			<xs:enumeration value="Language arts:Journalism"/>
+			<xs:enumeration value="Language arts:Listening comprehension"/>
+			<xs:enumeration value="Language arts:Literature"/>
+			<xs:enumeration value="Language arts:Mechanics"/>
+			<xs:enumeration value="Language arts:Phonics"/>
+			<xs:enumeration value="Language arts:Process skills"/>
+			<xs:enumeration value="Language arts:Reading"/>
+			<xs:enumeration value="Language arts:Reading aloud"/>
+			<xs:enumeration value="Language arts:Speech"/>
+			<xs:enumeration value="Language arts:Spelling"/>
+			<xs:enumeration value="Language arts:Story telling"/>
+			<xs:enumeration value="Language arts:Technology"/>
+			<xs:enumeration value="Language arts:Vocabulary"/>
+			<xs:enumeration value="Language arts:Whole language"/>
+			<xs:enumeration value="Language arts:Writing (composition)"/>
+			<!--*************************************************** -->
+			<xs:enumeration value="Mathematics"><!-- parent topic --></xs:enumeration>
+			<xs:enumeration value="Mathematics:Algebra"/>
+			<xs:enumeration value="Mathematics:Applied mathematics"/>
+			<xs:enumeration value="Mathematics:Arithmetic"/>
+			<xs:enumeration value="Mathematics:Calculus"/>
+			<xs:enumeration value="Mathematics:Careers"/>
+			<xs:enumeration value="Mathematics:Discrete mathematics"/>
+			<xs:enumeration value="Mathematics:Functions"/>
+			<xs:enumeration value="Mathematics:Geometry"/>
+			<xs:enumeration value="Mathematics:History"/>
+			<xs:enumeration value="Mathematics:Informal education"/>
+			<xs:enumeration value="Mathematics:Instructional issues"/>
+			<xs:enumeration value="Mathematics:Measurement"/>
+			<xs:enumeration value="Mathematics:Number sense"/>
+			<xs:enumeration value="Mathematics:Number theory"/>
+			<xs:enumeration value="Mathematics:Patterns"/>
+			<xs:enumeration value="Mathematics:Probability"/>
+			<xs:enumeration value="Mathematics:Process skills"/>
+			<xs:enumeration value="Mathematics:Statistics"/>
+			<xs:enumeration value="Mathematics:Technology"/>
+			<xs:enumeration value="Mathematics:Trigonometry"/>
+			<!--*************************************************** -->
+			<xs:enumeration value="Philosophy"><!--parent topic--></xs:enumeration>
+			<xs:enumeration value="Philosophy:Aesthetics"/>
+			<xs:enumeration value="Philosophy:Careers"/>
+			<xs:enumeration value="Philosophy:Educational philosophy"/>
+			<xs:enumeration value="Philosophy:Epistemology"/>
+			<xs:enumeration value="Philosophy:Ethics"/>
+			<xs:enumeration value="Philosophy:Existentialism"/>
+			<xs:enumeration value="Philosophy:Hermeneutics"/>
+			<xs:enumeration value="Philosophy:History"/>
+			<xs:enumeration value="Philosophy:Informal education"/>
+			<xs:enumeration value="Philosophy:Instructional issues"/>
+			<xs:enumeration value="Philosophy:Logic"/>
+			<xs:enumeration value="Philosophy:Marxism"/>
+			<xs:enumeration value="Philosophy:Phenomenology"/>
+			<xs:enumeration value="Philosophy:Platonism"/>
+			<xs:enumeration value="Philosophy:Process skills"/>
+			<xs:enumeration value="Philosophy:Semiotics"/>
+			<xs:enumeration value="Philosophy:Technology"/>
+			<!--*************************************************** -->
+			<xs:enumeration value="Physical education"><!--parent topic--></xs:enumeration>
+			<xs:enumeration value="Physical education:Adventure and risk challenge activities"/>
+			<xs:enumeration value="Physical education:Aquatics"/>
+			<xs:enumeration value="Physical education:Careers"/>
+			<xs:enumeration value="Physical education:Games (educational)"/>
+			<xs:enumeration value="Physical education:Gymnastics (educational)"/>
+			<xs:enumeration value="Physical education:History"/>
+			<xs:enumeration value="Physical education:Individual sports"/>
+			<xs:enumeration value="Physical education:Informal education"/>
+			<xs:enumeration value="Physical education:Instructional issues"/>
+			<xs:enumeration value="Physical education:Motor/movement skills"/>
+			<xs:enumeration value="Physical education:Outdoor education"/>
+			<xs:enumeration value="Physical education:Process skills"/>
+			<xs:enumeration value="Physical education:Rhythms and dance"/>
+			<xs:enumeration value="Physical education:Skill-related fitness"/>
+			<xs:enumeration value="Physical education:Team sports"/>
+			<xs:enumeration value="Physical education:Technology"/>
+			<!--*************************************************** -->
+			<xs:enumeration value="Religion"><!--parent topic--></xs:enumeration>
+			<xs:enumeration value="Religion:Buddhism"/>
+			<xs:enumeration value="Religion:Careers"/>
+			<xs:enumeration value="Religion:Christianity"/>
+			<xs:enumeration value="Religion:Confucianism"/>
+			<xs:enumeration value="Religion:History"/>
+			<xs:enumeration value="Religion:Informal education"/>
+			<xs:enumeration value="Religion:Instructional issues"/>
+			<xs:enumeration value="Religion:Islam"/>
+			<xs:enumeration value="Religion:Judaism"/>
+			<xs:enumeration value="Religion:Process skills"/>
+			<xs:enumeration value="Religion:Taoism"/>
+			<xs:enumeration value="Religion:Technology"/>
+			<!--*************************************************** -->
+			<!-- not including a parent topic because general science exists as a vocab term-->
+			<xs:enumeration value="Science:Agriculture"></xs:enumeration>
+			<xs:enumeration value="Science:Astronomy"/>
+			<xs:enumeration value="Science:Biological and life sciences"/>
+			<xs:enumeration value="Science:Biology"/>
+			<xs:enumeration value="Science:Botany"/>
+			<xs:enumeration value="Science:Careers"/>
+			<xs:enumeration value="Science:Chemistry"/>
+			<xs:enumeration value="Science:Earth science"/>
+			<xs:enumeration value="Science:Ecology"/>
+			<xs:enumeration value="Science:Embryology"/>
+			<xs:enumeration value="Science:Engineering"/>
+			<xs:enumeration value="Science:Entomology"/>
+			<xs:enumeration value="Science:General science"/>
+			<xs:enumeration value="Science:Geology"/>
+			<xs:enumeration value="Science:Histology"/>
+			<xs:enumeration value="Science:History"/>
+			<xs:enumeration value="Science:Informal education"/>
+			<xs:enumeration value="Science:Instructional issues"/>
+			<xs:enumeration value="Science:Metallurgy"/>
+			<xs:enumeration value="Science:Meteorology"/>
+			<xs:enumeration value="Science:Natural history"/>
+			<xs:enumeration value="Science:Oceanography"/>
+			<xs:enumeration value="Science:Paleontology"/>
+			<xs:enumeration value="Science:Pharmacology"/>
+			<xs:enumeration value="Science:Physical sciences"/>
+			<xs:enumeration value="Science:Physics"/>
+			<xs:enumeration value="Science:Process skills"/>
+			<xs:enumeration value="Science:Space sciences"/>
+			<xs:enumeration value="Science:Technology"/>
+			<!--*************************************************** -->
+			<xs:enumeration value="Social studies"><!-- parent topic --></xs:enumeration>
+			<xs:enumeration value="Social studies:Anthropology"/>
+			<xs:enumeration value="Social studies:Careers"/>
+			<xs:enumeration value="Social studies:Civics"/>
+			<xs:enumeration value="Social studies:Comparative political systems"/>
+			<xs:enumeration value="Social studies:Criminology"/>
+			<xs:enumeration value="Social studies:Current events/issues"/>
+			<xs:enumeration value="Social studies:Economics"/>
+			<xs:enumeration value="Social studies:Geography"/>
+			<xs:enumeration value="Social studies:Gerontology"/>
+			<xs:enumeration value="Social studies:History"/>
+			<xs:enumeration value="Social studies:Human behavior"/>
+			<xs:enumeration value="Social studies:Human relations"/>
+			<xs:enumeration value="Social studies:Informal education"/>
+			<xs:enumeration value="Social studies:Instructional issues"/>
+			<xs:enumeration value="Social studies:Process skills"/>
+			<xs:enumeration value="Social studies:Psychology"/>
+			<xs:enumeration value="Social studies:Social work"/>
+			<xs:enumeration value="Social studies:Sociology"/>
+			<xs:enumeration value="Social studies:State history"/>			
+			<xs:enumeration value="Social studies:Technology"/>
+			<xs:enumeration value="Social studies:Technology and civilization"/>			
+			<xs:enumeration value="Social studies:United States Constitution"/>			
+			<xs:enumeration value="Social studies:United States government"/>			
+			<xs:enumeration value="Social studies:United States history"/>			
+			<xs:enumeration value="Social studies:Urban studies"/>			
+			<xs:enumeration value="Social studies:World history"/>			
+			<!--*************************************************** -->
+			<xs:enumeration value="Vocational education"><!--parent topic--></xs:enumeration>			
+			<xs:enumeration value="Vocational education:Agriculture"/>			
+			<xs:enumeration value="Vocational education:Allied health occupations"/>			
+			<xs:enumeration value="Vocational education:Business"/>			
+			<xs:enumeration value="Vocational education:Careers"/>
+			<xs:enumeration value="Vocational education:Cooperative education"/>			
+			<xs:enumeration value="Vocational education:Distributive"/>			
+			<xs:enumeration value="Vocational education:History"/>
+			<xs:enumeration value="Vocational education:Informal education"/>
+			<xs:enumeration value="Vocational education:Instructional issues"/>
+			<xs:enumeration value="Vocational education:Occupational home economics"/>			
+			<xs:enumeration value="Vocational education:Process skills"/>
+			<xs:enumeration value="Vocational education:School-to-work"/>			
+			<xs:enumeration value="Vocational education:Tech prep"/>			
+			<xs:enumeration value="Vocational education:Technical"/>			
+			<xs:enumeration value="Vocational education:Technology"/>
+			<xs:enumeration value="Vocational education:Trade and industrial"/>			
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:annotation>
+		<xs:documentation>*******************************************************</xs:documentation>
+		<xs:documentation>*****  LICENSE/COPYRIGHT INFORMATION  *****</xs:documentation>
+		<xs:documentation>*******************************************************</xs:documentation>
+		<xs:documentation>See below</xs:documentation>
+	</xs:annotation>
+</xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

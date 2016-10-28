@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: collaboration-osm-groups-submission-en-us.xml,v 1.8 2011/06/14 15:29:27 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/collaboration.xsd"
+version="2.0">
+	<head>
+		<title>Collaboration</title>
+		<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="Collaboration" audience="submission" path="/record/classify/collaboration" deftn="The partnership between the entities responsible for the intellectual content of the resource."/>
+	</head>
+	<body>
+		<outline type="vocab" vocab="UCAR only" text="UCAR only" deftn="all contributors to the intellectual content of the resource were UCAR employees at the time it was created"/>
+		<outline type="vocab" vocab="UCAR and University" text="UCAR and University" deftn="contributors to the intellectual content were UCAR employees and representatives from a university"/>
+		<outline type="vocab" vocab="UCAR and Other" text="UCAR and Other" deftn="contributors to the intellectual content were UCAR employees and representatives from a non-university institution"/>
+		<outline type="vocab" vocab="UCAR, University and Other" text="UCAR, University and Other" deftn="contributors to the intellectual content were UCAR employees, representatives from a university, and representatives from a non-university institution"/>
+		<outline type="vocab" vocab="No UCAR Authors" text="No UCAR Authors" deftn="either no contributors to the intellectual content were UCAR employees, or the work associated with the resource was done when a UCAR author was at an institution other than UCAR" display="false"/>
+		<!-- 2011-06-14: make No UCAR authors display = false because want the submission form to be used for UCAR collaborations; when have just services, be sure to change display=true-->
+	</body>
+		 <bestPractices>
+				<practice>Review acknowledgements and other supplementary sections of a resource to help complete this field.</practice>
+		 </bestPractices>
+
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->
+
+
+

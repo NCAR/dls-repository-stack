@@ -1,0 +1,2228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="English">
+  <mapping>
+    <acsrInfo id="947212c8-0853-4259-88cc-d2dd13da76f3">
+      <title>English Language Arts Content Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AK</jurisdiction>
+      <fileName>English Language Arts Content Stand</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000071">
+      <title>English Language Arts Content Standards</title>
+      <created>2000</created>
+      <topic>English</topic>
+      <author>Alaska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="24a45f0d-901b-4177-b831-e21d74689b6a">
+      <title>Alaska Content Standards English/Language Arts</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AK</jurisdiction>
+      <fileName>Content Standards English/Language</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000232">
+      <title>Alaska Content Standards English/Language Arts</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>Alaska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e45165a7-2964-495d-b734-1ed62d18d375">
+      <title>Reading and Writing Performance Standards (Grade Level Expectations) For Grades 3-10</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AK</jurisdiction>
+      <fileName>Reading&amp;Writing Performance GLEs</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000233">
+      <title>Reading and Writing Performance Standards (Grade Level Expectations) For Grades 3-10</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>Alaska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="438ae579-7ede-4fad-b72f-e56d00e19531">
+      <title>Alabama Course of Study: English Language Arts</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AL</jurisdiction>
+      <fileName>Course of Study: English Language A</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000014">
+      <title>Alabama Course of Study: English Language Arts</title>
+      <created>1999</created>
+      <topic>English</topic>
+      <author>Alabama</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1ca4f000-1cf0-4280-af9d-ef5a4845134d">
+      <title>Alabama Course of Study: English Language Arts Addendum: Reading</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AL</jurisdiction>
+      <fileName>Language Arts Addendum: Reading</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000028">
+      <title>Alabama Course of Study: English Language Arts Addendum: Reading</title>
+      <created>2003</created>
+      <topic>English</topic>
+      <author>Alabama</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="07d6589c-8698-4b84-8339-518658f890b8">
+      <title>Alabama Course of Study: English Language Arts</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AL</jurisdiction>
+      <fileName>Alabama Course of Study: ELA</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000333">
+      <title>Alabama Course of Study: English Language Arts</title>
+      <created>2007</created>
+      <topic>English</topic>
+      <author>Alabama</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2b0535f4-fc49-44fc-b0b6-f005397da38f">
+      <title>Arkansas State Language Arts Frameworks</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Language Arts Frameworks</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100002A">
+      <title>Arkansas State Language Arts Frameworks</title>
+      <created>1998</created>
+      <topic>English</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1167a881-906f-41a1-94c4-9d6c1e03d829">
+      <title>Grades 9-12 English Language Arts Curriculum Framework, Amended 2006</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>9-12 English Amended 2006</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100037A">
+      <title>Grades 9-12 English Language Arts Curriculum Framework, Amended 2006</title>
+      <created>2003</created>
+      <topic>English</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ac84dce4-326c-43be-a949-94e2ef00a555">
+      <title>K-12 English Language Arts Curriculum Framework</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>K-12 ELA Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000105">
+      <title>K-12 English Language Arts Curriculum Framework</title>
+      <created>2003</created>
+      <topic>English</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f5d48070-7543-4161-ab67-f2d72a32e003">
+      <title>Academic Standards: Language Arts</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Academic Standards: Language Arts</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000030">
+      <title>Academic Standards: Language Arts</title>
+      <created>1996</created>
+      <topic>English</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b25e7b91-71bf-46d2-b306-9c2e5c305acc">
+      <title>Standard 3: Listening/Speaking, Adopted 7.8.96</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Standard 3: Listening/Speaking 96</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100037E">
+      <title>Standard 3: Listening/Speaking, Adopted 7.8.96</title>
+      <created>1996</created>
+      <topic>English</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a235090c-ca06-4f57-acf9-37363c55b1c2">
+      <title>Standard 4: Viewing/Presenting, Adopted 7.8.96</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Standard 4: Viewing/Presenting 96</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100037F">
+      <title>Standard 4: Viewing/Presenting, Adopted 7.8.96</title>
+      <created>1996</created>
+      <topic>English</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="64f802c4-abeb-413b-a6b9-90988ef7e734">
+      <title>Academic Content Standards - Language Arts: Reading</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Language Arts: Reading</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000FD">
+      <title>Academic Content Standards - Language Arts: Reading</title>
+      <created>2003</created>
+      <topic>English</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2f4f5c93-cf8b-4ed6-b152-eaa4ceb53957">
+      <title>Academic Content Standards - Language Arts: Writing</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Language Arts: Writing</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100001E">
+      <title>Academic Content Standards - Language Arts: Writing</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7dab2f5a-c406-4eee-b924-abc274248f89">
+      <title>English-Language Arts Content Standards for California Public Schools, Kindergarten Through Grade Twelve</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>CA</jurisdiction>
+      <fileName>English-Language Arts Content Stand</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000AD">
+      <title>English-Language Arts Content Standards for California Public Schools, Kindergarten Through Grade Twelve</title>
+      <created>1997</created>
+      <topic>English</topic>
+      <author>California</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="851dce1d-90c8-41cf-935a-2546500d15d6">
+      <title>Common Core State Standards for English Language Arts &amp;amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+      <localAdoptionDate>2010</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>CCSS</jurisdiction>
+      <fileName>Common Core ELA</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003FC">
+      <title>Common Core State Standards for English Language Arts &amp;amp; Literacy in History/Social Studies, Science, and Technical Subjects</title>
+      <created>2010</created>
+      <topic>English</topic>
+      <author>CCSS</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f90c4519-2732-4ca2-86eb-c5711a6c6631">
+      <title>Colorado Model Content Standards for Reading and Writing</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Standards for Reading &amp; Writing</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000234">
+      <title>Colorado Model Content Standards for Reading and Writing</title>
+      <created>1995</created>
+      <topic>English</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2532c85c-9703-4c67-8631-abaa63cadb31">
+      <title>Colorado Model Content Standards for Reading and Writing &amp;amp; Suggested Grade Level Expectations</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Standards for Reading and Writing</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000AA">
+      <title>Colorado Model Content Standards for Reading and Writing &amp;amp; Suggested Grade Level Expectations</title>
+      <created>2001</created>
+      <topic>English</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0f0ff3be-5963-4042-85a3-c2dd7c45467e">
+      <title>Colorado Academic Standards for Reading, Writing and Communicating</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Reading, Writing and Communicating</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003F4">
+      <title>Colorado Academic Standards for Reading, Writing and Communicating</title>
+      <created>2009</created>
+      <topic>English</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f5fd8f0a-dba6-449b-9810-0a6051a0739a">
+      <title>The Connecticut Language Arts Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>Language Arts Curriculum</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001EA">
+      <title>The Connecticut Language Arts Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <created>1998</created>
+      <topic>English</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cf2d56d7-8a98-4712-8f12-be07acc40457">
+      <title>Connecticut English Language Arts Curriculum Framework</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>English Language Arts Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000239">
+      <title>Connecticut English Language Arts Curriculum Framework</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="71db8804-1803-486b-9e5c-4c58e60e1b98">
+      <title>PreK-8 English Language Arts Curriculum Standards</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>PreK-8 English Language Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003B1">
+      <title>PreK-8 English Language Arts Curriculum Standards</title>
+      <created>2008</created>
+      <topic>English</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="345caa60-fe56-4492-9177-bece28a452f5">
+      <title>Reading/English Language Arts Standards</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>DC</jurisdiction>
+      <fileName>Reading_English Language Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100035C">
+      <title>Reading/English Language Arts Standards</title>
+      <created>2005</created>
+      <topic>English</topic>
+      <author>District of Columbia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bb0b564f-669a-4c87-9a47-fdc4af02841f">
+      <title>State of Delaware English Language Arts Curriculum Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>English Language Arts</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000011">
+      <title>State of Delaware English Language Arts Curriculum Framework</title>
+      <created>1995</created>
+      <topic>English</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f490ba75-8e38-4442-ab75-bff1d024c461">
+      <title>Delaware English Standards and Grade Level Expectations</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>English Standards and Grade Level</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000296">
+      <title>Delaware English Standards and Grade Level Expectations</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2d7871bc-32fa-47d6-9dbb-53524de11b4e">
+      <title>Sunshine State Standards Grade Level Expectations: Language Arts</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Sunshine State Standards GLEs ELA</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000167">
+      <title>Sunshine State Standards Grade Level Expectations: Language Arts</title>
+      <created>1996</created>
+      <topic>English</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2b1200fd-add5-44f8-be8a-4e097dcba157">
+      <title>Sunshine State Standards: Language Arts</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Sunshine State Standards: ELA</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000243">
+      <title>Sunshine State Standards: Language Arts</title>
+      <created>1996</created>
+      <topic>English</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="72a07835-3f06-4754-bfa7-0fef09c816a1">
+      <title>Sunshine State Standards K-12 Reading &amp;amp; Language Arts</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>SSS K-12 Reading &amp; Language Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100028E">
+      <title>Sunshine State Standards K-12 Reading &amp;amp; Language Arts</title>
+      <created>2007</created>
+      <topic>English</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cb732201-8fd2-4d17-a02f-9c8cc418ad3b">
+      <title>Georgia Quality Core Curriculum Standards for English Language Arts</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>QCC Standards for ELA</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000CC">
+      <title>Georgia Quality Core Curriculum Standards for English Language Arts</title>
+      <created>1996</created>
+      <topic>English</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="68a5919f-17db-4b86-ac21-1851369e5ed0">
+      <title>Georgia English/Language Arts Performance Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>English/Language Arts Perf Stand</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001DF">
+      <title>Georgia English/Language Arts Performance Standards</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3ceb543f-66a4-44dc-8052-1c03b3ff3abf">
+      <title>Language Arts Content Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>HI</jurisdiction>
+      <fileName>Language Arts Content Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001E8">
+      <title>Language Arts Content Standards</title>
+      <created>1999</created>
+      <topic>English</topic>
+      <author>Hawaii</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c86d62f7-1538-4b18-a50b-ac837707a619">
+      <title>HCPS III Language Arts</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>HI</jurisdiction>
+      <fileName>HCPS III Language Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000244">
+      <title>HCPS III Language Arts</title>
+      <created>2005</created>
+      <topic>English</topic>
+      <author>Hawaii</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3e8955a9-ac2d-4b47-a064-0c5e1133a61c">
+      <title>Idaho State Achievement Standards K-12 in English Language Arts</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Achievement Standards English Langu</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001F1">
+      <title>Idaho State Achievement Standards K-12 in English Language Arts</title>
+      <created>2001</created>
+      <topic>English</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="987308c9-72f1-40d2-bcf4-db9b68f840c7">
+      <title>Idaho Language Arts/Communication Achievement Standards</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Language Arts/Communication Achieve</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100004A">
+      <title>Idaho Language Arts/Communication Achievement Standards</title>
+      <created>2002</created>
+      <topic>English</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5f87fa61-5297-4d01-9937-cab1261b2ed6">
+      <title>Idaho Content Standards - Language Arts</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Content Standards - Language Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100023A">
+      <title>Idaho Content Standards - Language Arts</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4465b1d2-f7dd-4dbd-b69b-79a2d115353d">
+      <title>Illinois Learning Standards for English Language Arts</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Learning Standards for English Lang</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100010A">
+      <title>Illinois Learning Standards for English Language Arts</title>
+      <created>1997</created>
+      <topic>English</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6c194c37-4138-4ca1-a0db-5f4eeb60d2e7">
+      <title>English Language Arts Performance Descriptors</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Language Arts Performance Descripto</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100014D">
+      <title>English Language Arts Performance Descriptors</title>
+      <created>2002</created>
+      <topic>English</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1f824aa6-35a5-470d-bae4-b0c1ebff886d">
+      <title>Indiana's Academic Standards 2000 in English/Language Arts</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Academic Standards English Language</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000B9">
+      <title>Indiana's Academic Standards 2000 in English/Language Arts</title>
+      <created>2000</created>
+      <topic>English</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="658f028b-0e51-438c-ba30-2824c247acc5">
+      <title>IndianaÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Academic Standards English/Language Arts</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Academic Standards English/Language</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100023E">
+      <title>IndianaÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Academic Standards English/Language Arts</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2392652e-3643-4e75-98ff-584990e7b586">
+      <title>IndianaÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Core Standards for English/Language Arts</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Core Standards for ELA</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000347">
+      <title>IndianaÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Core Standards for English/Language Arts</title>
+      <created>2008</created>
+      <topic>English</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fb96bf1f-0d34-4265-8519-3d0ac8cb118a">
+      <title>Primary School Curriculum English</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>Ireland</jurisdiction>
+      <fileName>Primary School Curriculum English</fileName>
+      <status>In Process</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000356">
+      <title>Primary School Curriculum English</title>
+      <created>1999</created>
+      <topic>English</topic>
+      <author></author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ede8cfc5-50ee-4463-9983-4eec2b93110e">
+      <title>Kansas Curriculum for Reading and Writing</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Curriculum for Reading Writing</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000163">
+      <title>Kansas Curriculum for Reading and Writing</title>
+      <created>1998</created>
+      <topic>English</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6a0f5db5-81ea-4e0c-bc5f-d1b62ff7679f">
+      <title>Kansas Curricular Standards for Reading and Writing</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Curricular Standards Reading and Wr</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100006F">
+      <title>Kansas Curricular Standards for Reading and Writing</title>
+      <created>2003</created>
+      <topic>English</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="28c9f0b8-fd74-4a37-8a62-e0665a520f05">
+      <title>Kansas Curricular Standards for Reading and Writing</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Curricular Standards Reading and Wr</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000245">
+      <title>Kansas Curricular Standards for Reading and Writing</title>
+      <created>2005</created>
+      <topic>English</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9a909d9e-e55c-46de-aa61-40683275f376">
+      <title>Program of Studies - Primary English/Language Arts</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Program of Studies - Primary Englis</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001B0">
+      <title>Program of Studies - Primary English/Language Arts</title>
+      <created>2003</created>
+      <topic>English</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ae7029a7-d946-49c4-902b-9d7d9b09fa05">
+      <title>Core Content for Reading and Writing</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Core Content for Reading Writing</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000291">
+      <title>Core Content for Reading and Writing</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b60b7d49-0314-4642-8dca-cb0eabf00b2b">
+      <title>Program of Study English/Language Arts (Reading, Writing and Speaking, Listening and Observing)</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Program of Study English/Language</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000292">
+      <title>Program of Study English/Language Arts (Reading, Writing and Speaking, Listening and Observing)</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c38babbd-815e-41e4-b7c9-bd5b9d587ce8">
+      <title>English Language Arts Content Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>English Language Arts Content Stand</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000A1">
+      <title>English Language Arts Content Standards</title>
+      <created>1997</created>
+      <topic>English</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="16356ad7-937e-4415-8e6c-95693abe7ffd">
+      <title>English Language Arts (ELA) Grade-Level Expectations</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>(ELA) Grade-Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000BC">
+      <title>English Language Arts (ELA) Grade-Level Expectations</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="aab18163-c9b6-4cdf-b2f1-d52649d61071">
+      <title>Louisiana English Language Arts Content Standards</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>English Language Arts Content Stand</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100023C">
+      <title>Louisiana English Language Arts Content Standards</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="307675ab-e45d-4e5c-ad89-ae209f918454">
+      <title>Louisiana Content Standards for English Language Arts</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Content Standards Language Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100028C">
+      <title>Louisiana Content Standards for English Language Arts</title>
+      <created>2005</created>
+      <topic>English</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7db91c10-25a5-47dc-9bc0-e7234adf2b4f">
+      <title>Massachusetts Curriculum Framework: English Language Arts</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>Curriculum Framework: English Langu</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000017">
+      <title>Massachusetts Curriculum Framework: English Language Arts</title>
+      <created>1997</created>
+      <topic>English</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="920b6def-8d54-4dd2-92f2-852947a0421f">
+      <title>Massachusetts English Language Arts Curriculum Framework</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>English Language Arts Curriculum Fr</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100011C">
+      <title>Massachusetts English Language Arts Curriculum Framework</title>
+      <created>2001</created>
+      <topic>English</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5db1b3d5-3e10-40ce-b181-a23e189e1bb7">
+      <title>Supplement to the Massachusetts English Language Arts Curriculum Framework</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>Supplement English Language Arts Cu</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000D5">
+      <title>Supplement to the Massachusetts English Language Arts Curriculum Framework</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b65487b7-f07d-42d5-b36d-43a7d336d84f">
+      <title>Maryland State Content Standards for Language Arts</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Content Standards for Language Arts</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100017C">
+      <title>Maryland State Content Standards for Language Arts</title>
+      <created>2000</created>
+      <topic>English</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d1ea5aa2-778e-4489-815f-b5e12805f3f2">
+      <title>English High School Core Learning Goals</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>English Core Learning Goals</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000367">
+      <title>English High School Core Learning Goals</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="51b448c1-23f6-4dc5-9f0d-e00a225cad14">
+      <title>Voluntary State Curriculum for Reading/English Language Arts</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Voluntary State Curriculum for Read</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100005B">
+      <title>Voluntary State Curriculum for Reading/English Language Arts</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4d121096-ce0b-422c-baf3-95b34b44af70">
+      <title>Learning Results for English Language Arts</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Learning Results for English Langua</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000BD">
+      <title>Learning Results for English Language Arts</title>
+      <created>1997</created>
+      <topic>English</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5d86f860-6042-49bb-870d-8b1481fa9765">
+      <title>2007 Reading Grade Level Expectations for Grades 3-8</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Reading Grade Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100028B">
+      <title>2007 Reading Grade Level Expectations for Grades 3-8</title>
+      <created>2007</created>
+      <topic>English</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5a1a24e7-8321-44fb-9413-a67085239196">
+      <title>English Language Arts Learning Results: Parameters for Essential Instruction</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Language Arts Learning Results</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000387">
+      <title>English Language Arts Learning Results: Parameters for Essential Instruction</title>
+      <created>2007</created>
+      <topic>English</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c04c0691-90bf-4a35-a2b4-7836666acd7f">
+      <title>Maine Federal, State, and Local Accountability Standards - English Language Arts</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Maine Federal, State, and Local</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003B5">
+      <title>Maine Federal, State, and Local Accountability Standards - English Language Arts</title>
+      <created>2008</created>
+      <topic>English</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3ae9149a-b681-448a-9494-49abdc82ba4f">
+      <title>English Language Arts Content Standards with Working Draft Benchmarks</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>ELA Content Standards Working Draft</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000189">
+      <title>English Language Arts Content Standards with Working Draft Benchmarks</title>
+      <created>1995</created>
+      <topic>English</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="63dfea6e-eecf-4c46-860e-691b6f0ac9f9">
+      <title>English Language Arts Grade Level Expectations v.12.05</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>English Language Arts v.12.05 Grade</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000124">
+      <title>English Language Arts Grade Level Expectations v.12.05</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="638333f0-ce94-4a37-ba1a-56073234d99c">
+      <title>English Language Proficiency Standards for K-12 Schools</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>English Language Proficiency Standa</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003D6">
+      <title>English Language Proficiency Standards for K-12 Schools</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="329a1f1f-9c76-4b1f-87d3-40d050e7c5ec">
+      <title>High School English Language Arts Content Standards and Expectations</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>High School ELA Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100027F">
+      <title>High School English Language Arts Content Standards and Expectations</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="95c404d2-a2c2-4a45-96a0-37ffea284e37">
+      <title>Minnesota Graduation Standards for English</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Graduation Standards for English</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001A2">
+      <title>Minnesota Graduation Standards for English</title>
+      <created>1998</created>
+      <topic>English</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fa6f054d-9eb2-4dee-9062-c83a1082b311">
+      <title>Minnesota Academic Standards Language Arts K-12</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Academic Standards Language Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000084">
+      <title>Minnesota Academic Standards Language Arts K-12</title>
+      <created>2003</created>
+      <topic>English</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f808dc75-2b47-4436-ab0d-ba74a723d868">
+      <title>Framework for Curriculum Development in Communication Arts K-12</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>Framework for Curriculum Developmen</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100009C">
+      <title>Framework for Curriculum Development in Communication Arts K-12</title>
+      <created>1996</created>
+      <topic>English</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a5bc5f13-3c33-465f-aa18-e8258055ca83">
+      <title>Communication Arts Grade-Level Expectations</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>Communication Arts Grade-Level Expe</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000019">
+      <title>Communication Arts Grade-Level Expectations</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1172f2c2-438a-489c-a747-97da1611b756">
+      <title>Version 2.0 Grade-Level Expectations Communication Arts, October 2008</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>2.0 Communication Arts October 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000370">
+      <title>Version 2.0 Grade-Level Expectations Communication Arts, October 2008</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5d345260-7a7f-44de-9709-e455bdc91cd9">
+      <title>Marco Polo Discovers Mississippi Language Arts Framework</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MS</jurisdiction>
+      <fileName>Marco Polo Discovers Mississippi La</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100003A">
+      <title>Marco Polo Discovers Mississippi Language Arts Framework</title>
+      <created>2000</created>
+      <topic>English</topic>
+      <author>Mississippi</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9f5bcac8-66c3-469f-8975-3fc08102c675">
+      <title>Mississippi Language Arts Framework</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MS</jurisdiction>
+      <fileName>Language Arts Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000246">
+      <title>Mississippi Language Arts Framework</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>Mississippi</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4d992d77-befa-4ab1-b261-a8cae49f14a6">
+      <title>Montana Communication Arts Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Montana Communication Arts Standard</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000DE">
+      <title>Montana Communication Arts Standards</title>
+      <created>2000</created>
+      <topic>English</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ed66ce30-9799-4820-bc4c-64483c529a24">
+      <title>Montana Standards for Communication Arts</title>
+      <localAdoptionDate>2010</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Montana Standards for Communication</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003E2">
+      <title>Montana Standards for Communication Arts</title>
+      <created>2010</created>
+      <topic>English</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="368efbaf-769b-44b3-be48-3836304b5b17">
+      <title>English Language Arts Standard Course of Study</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>English Language Arts Standard Cour</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001A3">
+      <title>English Language Arts Standard Course of Study</title>
+      <created>1999</created>
+      <topic>English</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bafac6f8-d220-4d5b-8900-5aa99f7d9132">
+      <title>English Language Arts Standard Course of Study and Grade Level Competencies</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>English Language Arts Standard Cour</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100024A">
+      <title>English Language Arts Standard Course of Study and Grade Level Competencies</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7851ea22-e7c7-4579-9ae4-1343a5c5e366">
+      <title>New Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NCEE</jurisdiction>
+      <fileName>New Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001D4">
+      <title>New Standards</title>
+      <created>1997</created>
+      <topic>English</topic>
+      <author>NCEE</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="de9ad85f-9d18-412e-8b2c-abbd6373b793">
+      <title>Primary Literacy Standards for Kindergarten Through Grade Three</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NCEE</jurisdiction>
+      <fileName>Primary Literacy Standards for Kind</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000AC">
+      <title>Primary Literacy Standards for Kindergarten Through Grade Three</title>
+      <created>1999</created>
+      <topic>English</topic>
+      <author>NCEE</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1b06bfdd-8e5e-401b-9f2d-dd800abe77b7">
+      <title>NCTE-IRA Standards for the English Language Arts</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NCTE-IRA</jurisdiction>
+      <fileName>NCTE IRA Standards for the Englis</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003BB">
+      <title>NCTE-IRA Standards for the English Language Arts</title>
+      <created>1996</created>
+      <topic>English</topic>
+      <author>NCTE-IRA</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="950451d0-f0ba-4ab4-9f75-2fcf87db5105">
+      <title>North Dakota English Language Arts Content and Achievement Standards</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>English Language Arts Content and A</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000249">
+      <title>North Dakota English Language Arts Content and Achievement Standards</title>
+      <created>2005</created>
+      <topic>English</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="52d253a0-1095-4116-8deb-7e2e111b87a3">
+      <title>Nebraska Reading/Writing Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Reading Writing Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000113">
+      <title>Nebraska Reading/Writing Standards</title>
+      <created>1998</created>
+      <topic>English</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ddd7286c-07a6-4719-9ad9-4ec6e9f26d63">
+      <title>Nebraska Reading/Writing Standards</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Reading Writing Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000162">
+      <title>Nebraska Reading/Writing Standards</title>
+      <created>2001</created>
+      <topic>English</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="74d63bb9-1975-4365-920e-da5d20a91556">
+      <title>Nebraska Language Arts Standards</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Nebraska Language Arts Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003B2">
+      <title>Nebraska Language Arts Standards</title>
+      <created>2008</created>
+      <topic>English</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f4f47542-7b89-4291-a812-85ec2e264a43">
+      <title>K-12 English Language Arts Curriculum Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 English Language Arts Curricul</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000120">
+      <title>K-12 English Language Arts Curriculum Framework</title>
+      <created>1995</created>
+      <topic>English</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5c1ac267-3222-4a13-a304-b92a17b14aa0">
+      <title>K-12 Reading New Hampshire Curriculum Framework</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Reading Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000250">
+      <title>K-12 Reading New Hampshire Curriculum Framework</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1ebe3380-8268-4065-96fb-f17496ab8c72">
+      <title>K-12 Written and Oral Communication New Hampshire Curriculum Framework</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Written and Oral Communication</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000251">
+      <title>K-12 Written and Oral Communication New Hampshire Curriculum Framework</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="13142e44-8b55-4baf-8bd2-0e11d67db1af">
+      <title>New Jersey Core Curriculum Content Standards for Language Arts Literacy</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Language Arts</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001F6">
+      <title>New Jersey Core Curriculum Content Standards for Language Arts Literacy</title>
+      <created>1998</created>
+      <topic>English</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a88fd12f-1f2a-49a2-9ffb-6b17db1db390">
+      <title>New Jersey Core Curriculum Content Standards for Language Arts Literacy</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Language Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000127">
+      <title>New Jersey Core Curriculum Content Standards for Language Arts Literacy</title>
+      <created>2002</created>
+      <topic>English</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="917e37c2-4536-4044-bafd-807d49009203">
+      <title>New Jersey Core Curriculum Content Standards for Language Arts Literacy</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Language Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000237">
+      <title>New Jersey Core Curriculum Content Standards for Language Arts Literacy</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="883979a8-ecee-441f-85e4-5d4a4a368732">
+      <title>9-12 Language Arts Literacy Core Curriculum Content Standards, January 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>9-12 Language Arts Jan. 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100037D">
+      <title>9-12 Language Arts Literacy Core Curriculum Content Standards, January 2008</title>
+      <created>2008</created>
+      <topic>English</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b0daae6f-746f-48f7-850c-7d2c63caf505">
+      <title>New Mexico Curriculum Framework Language Arts</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Curriculum Framework Language Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000111">
+      <title>New Mexico Curriculum Framework Language Arts</title>
+      <created>2000</created>
+      <topic>English</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f951aa45-7557-44e1-89dd-32aa34e4f433">
+      <title>Nevada English Language Arts Contents Standards for Kindergarten and Grades 1, 2, 3, 4, 5, 6, 7, 8, and 12</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>English Language Arts Contents Stan</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000197">
+      <title>Nevada English Language Arts Contents Standards for Kindergarten and Grades 1, 2, 3, 4, 5, 6, 7, 8, and 12</title>
+      <created>2001</created>
+      <topic>English</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="66bb93ae-66a0-4282-8cf5-941b8d0c5a9f">
+      <title>Nevada English Language Arts Standards</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>English Language Arts Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000330">
+      <title>Nevada English Language Arts Standards</title>
+      <created>2007</created>
+      <topic>English</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9323fe4f-3e3f-4c1f-87ed-fe7f91ef33fa">
+      <title>English Language Resource Guide with Core Curriculum</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>English Language Resource Guide wit</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000013">
+      <title>English Language Resource Guide with Core Curriculum</title>
+      <created>1996</created>
+      <topic>English</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3972c108-3b12-43ec-b5ed-540d3159db9e">
+      <title>Learning Standards for English Language Arts</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>Learning Standards for English Lang</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100016A">
+      <title>Learning Standards for English Language Arts</title>
+      <created>1996</created>
+      <topic>English</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0462a7b6-21e0-4e6c-b1a5-7106b8f3fc55">
+      <title>English Language Arts Core Curriculum</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>English Language Arts Core Curricul</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000242">
+      <title>English Language Arts Core Curriculum</title>
+      <created>2005</created>
+      <topic>English</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="89b54c91-4428-4423-b80d-4a2394fef14a">
+      <title>Academic Content Standards K-12 English Language Arts</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Academic Content Standards K-12 Eng</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100015A">
+      <title>Academic Content Standards K-12 English Language Arts</title>
+      <created>2001</created>
+      <topic>English</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2bfb9613-589a-4b49-b740-ba155ce5e4eb">
+      <title>Early Learning Content Standards - English Language Arts</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Early Learning Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000350">
+      <title>Early Learning Content Standards - English Language Arts</title>
+      <created>2003</created>
+      <topic>English</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d8589f71-c710-4be4-902e-cf5d6e1fdbbf">
+      <title>Priority Academic Student Skills for Language Arts</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Language Arts</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100006B">
+      <title>Priority Academic Student Skills for Language Arts</title>
+      <created>2000</created>
+      <topic>English</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="805f5f06-57d1-4fef-a64a-034ef044ccbe">
+      <title>Priority Academic Student Skills (PASS) for English</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for English</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000203">
+      <title>Priority Academic Student Skills (PASS) for English</title>
+      <created>2002</created>
+      <topic>English</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5327ca4f-8716-4cc3-89d1-0b4bcd842d77">
+      <title>English Content Standards 2001-2002</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>English Content Standards 2001-2002</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001ED">
+      <title>English Content Standards 2001-2002</title>
+      <created>2001</created>
+      <topic>English</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4e0ec876-5dd1-4a4d-adb4-7ebb02cb786c">
+      <title>English Language Arts Content Standards K-3, Oregon Standards Newspaper 2008-2009</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>ELA K-3 2008-2009</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000377">
+      <title>English Language Arts Content Standards K-3, Oregon Standards Newspaper 2008-2009</title>
+      <created>2002</created>
+      <topic>English</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0d559683-3434-4414-8be5-911492c434c0">
+      <title>English Language Arts Content Standards 4-HS, Oregon Standards Newspaper 2008-2009</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>ELA 4-HS 2008-2009</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000378">
+      <title>English Language Arts Content Standards 4-HS, Oregon Standards Newspaper 2008-2009</title>
+      <created>2003</created>
+      <topic>English</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e827baee-9172-4a15-99c6-0731c49e2a13">
+      <title>English/Language Arts Grade-level Standards</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>English/Language Arts Grade-level</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100024E">
+      <title>English/Language Arts Grade-level Standards</title>
+      <created>2003</created>
+      <topic>English</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="621bb62c-c1e3-40aa-b01e-3e22ef807713">
+      <title>Academic Standards for Reading, Writing, Speaking and Listening</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>PA</jurisdiction>
+      <fileName>Reading, Writing, Speaking and List</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001AA">
+      <title>Academic Standards for Reading, Writing, Speaking and Listening</title>
+      <created>1999</created>
+      <topic>English</topic>
+      <author>Pennsylvania</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5bb35270-efcd-4070-944f-e1657cc23dea">
+      <title>The Rhode Island English Language Arts Framework</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>RI</jurisdiction>
+      <fileName>English Language Arts Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000033">
+      <title>The Rhode Island English Language Arts Framework</title>
+      <created>1996</created>
+      <topic>English</topic>
+      <author>Rhode Island</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="774afd9e-3b2d-4ca8-a664-d0374f590f66">
+      <title>Reading Grade Level Expectations and Grade Span Expectations</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>RI</jurisdiction>
+      <fileName>Reading Grade Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000342">
+      <title>Reading Grade Level Expectations and Grade Span Expectations</title>
+      <created>2007</created>
+      <topic>English</topic>
+      <author>Rhode Island</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7f3955ce-c283-4c10-94e9-ada76449e450">
+      <title>Written and Oral Communication Grade Level Expectations</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>RI</jurisdiction>
+      <fileName>Written and Oral Communication GLEs</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000343">
+      <title>Written and Oral Communication Grade Level Expectations</title>
+      <created>2007</created>
+      <topic>English</topic>
+      <author>Rhode Island</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d4e22218-dc11-4120-a3bb-dc7000077b9f">
+      <title>Reading/English Language Arts Curriculum Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>SC</jurisdiction>
+      <fileName>Reading English Language Arts Curri</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100004D">
+      <title>Reading/English Language Arts Curriculum Standards</title>
+      <created>1998</created>
+      <topic>English</topic>
+      <author>South Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6eee6b84-14fb-46bd-b685-0d37520d99b2">
+      <title>English Language Arts Curriculum Standards</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>SC</jurisdiction>
+      <fileName>English Language Arts Curriculum St</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001F4">
+      <title>English Language Arts Curriculum Standards</title>
+      <created>2002</created>
+      <topic>English</topic>
+      <author>South Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="28bc14b4-7afb-40ce-925f-17f83b46392e">
+      <title>South Carolina Academic Standards for English Language Arts</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>SC</jurisdiction>
+      <fileName>Academic Standards for English Lang</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100028F">
+      <title>South Carolina Academic Standards for English Language Arts</title>
+      <created>2007</created>
+      <topic>English</topic>
+      <author>South Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9b542dd4-0cb2-4d0d-bb36-3d78c1f34b14">
+      <title>South Carolina Academic Standards for English Language Arts</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>SC</jurisdiction>
+      <fileName>South Carolina Standards for ELA</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000379">
+      <title>South Carolina Academic Standards for English Language Arts</title>
+      <created>2008</created>
+      <topic>English</topic>
+      <author>South Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b0ebb9a0-1d89-4bca-8110-e616a07099dd">
+      <title>Communication/Language Arts Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Communication/Language Arts Standar</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000016">
+      <title>Communication/Language Arts Standards</title>
+      <created>1998</created>
+      <topic>English</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9bdb997f-e9f8-411c-9c66-78aa11ff2edb">
+      <title>Communication Arts Content Standards</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Communication Arts Content Standard</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000108">
+      <title>Communication Arts Content Standards</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8e3be2d8-3472-4d10-9957-2ce91d82d0f1">
+      <title>South Dakota Reading Content Standards</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Reading Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100024D">
+      <title>South Dakota Reading Content Standards</title>
+      <created>2007</created>
+      <topic>English</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8948663e-ae47-44dd-83a8-9696c9a00b4d">
+      <title>Writing/Listening, Viewing and Speaking Standards</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Writing/Listening, Viewing and Spea</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100028D">
+      <title>Writing/Listening, Viewing and Speaking Standards</title>
+      <created>2007</created>
+      <topic>English</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3f51e50a-66db-47bc-8377-282d62b5d41f">
+      <title>Curriculum Framework English Language Arts</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Curriculum Framework English Langua</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001C7">
+      <title>Curriculum Framework English Language Arts</title>
+      <created>1996</created>
+      <topic>English</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f2092392-3f7e-4f62-b744-049a6840d3c7">
+      <title>English/Language Arts Curriculum Standards</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>English/Language Arts Curriculum St</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000206">
+      <title>English/Language Arts Curriculum Standards</title>
+      <created>2001</created>
+      <topic>English</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bc09e27a-6863-4e6a-b0bc-1cb6c6dbc8cb">
+      <title>Tennessee English Language Arts Standards</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>English Language Arts Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100033B">
+      <title>Tennessee English Language Arts Standards</title>
+      <created>2009</created>
+      <topic>English</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="eb8bb3ae-20c6-44f2-8d7a-1db6012199b7">
+      <title>Chapter 110. Texas Essential Knowledge and Skills (TEKS) for English Language Arts and Reading</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>Chapter 110. TEKS for ELA and Readi</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001B5">
+      <title>Chapter 110. Texas Essential Knowledge and Skills (TEKS) for English Language Arts and Reading</title>
+      <created>1998</created>
+      <topic>English</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="81defe13-481b-4e2e-9ad8-d849d11e8461">
+      <title>Chapter 110. Texas Essential Knowledge and Skills for English Language Arts and Reading, Amended 2008</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>TEKS ELA Amended 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100036C">
+      <title>Chapter 110. Texas Essential Knowledge and Skills for English Language Arts and Reading, Amended 2008</title>
+      <created>1998</created>
+      <topic>English</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cafe10d0-39db-4a2d-9825-a872d22ebfa1">
+      <title>Elementary Language Arts Core Curriculum</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>UT</jurisdiction>
+      <fileName>Elementary Language Arts Core Curri</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000DB">
+      <title>Elementary Language Arts Core Curriculum</title>
+      <created>2003</created>
+      <topic>English</topic>
+      <author>Utah</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4eac152a-6276-48c3-9adb-4c63923da54a">
+      <title>Secondary Language Arts Core Curriculum</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>UT</jurisdiction>
+      <fileName>Secondary Language Arts Core Curric</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000248">
+      <title>Secondary Language Arts Core Curriculum</title>
+      <created>2006</created>
+      <topic>English</topic>
+      <author>Utah</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="05f31748-6c1a-4278-8e09-079f9349424f">
+      <title>English Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>English Standards of Learning for V</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100020E">
+      <title>English Standards of Learning for Virginia Public Schools</title>
+      <created>1995</created>
+      <topic>English</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e8cf1007-00f7-486e-8cdc-0386bd99a3d9">
+      <title>English Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>English Standards of Learning for V</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000204">
+      <title>English Standards of Learning for Virginia Public Schools</title>
+      <created>2002</created>
+      <topic>English</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="53ed001b-fec0-4f1e-9b44-b95eae40b7eb">
+      <title>English Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2010</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>English SOL January 2010</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003EF">
+      <title>English Standards of Learning for Virginia Public Schools</title>
+      <created>2010</created>
+      <topic>English</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="be94d96e-eae8-43c0-adee-3c487b475db9">
+      <title>Vermont's Framework of Standards and Learning Opportunities: Communication Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Vermont's Framework of Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001A8">
+      <title>Vermont's Framework of Standards and Learning Opportunities: Communication Standards</title>
+      <created>2000</created>
+      <topic>English</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a5db3ac8-bd3f-4c42-837c-59801c2c83ac">
+      <title>Reading and Writing Grade Expectations for VermontÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Framework of Standards and Learning Opportunities</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Reading and Writing Grade Expectati</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000294">
+      <title>Reading and Writing Grade Expectations for VermontÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Framework of Standards and Learning Opportunities</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9d91f281-731b-468f-82c9-1058b10d4730">
+      <title>Essential Academic Learning Requirements in Reading; Essential Academic Learning Requirements in Writing; Essential Academic Learning Requirements in Communications</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Essential Academic Learning Require</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001CD">
+      <title>Essential Academic Learning Requirements in Reading; Essential Academic Learning Requirements in Writing; Essential Academic Learning Requirements in Communications</title>
+      <created>1997</created>
+      <topic>English</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="74d79930-00ce-4ee9-af81-c1f5ead20b88">
+      <title>Reading K-10 Grade Level Expectations</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Reading K-10 Grade Level Expectatio</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000077">
+      <title>Reading K-10 Grade Level Expectations</title>
+      <created>2004</created>
+      <topic>English</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f7129f34-e681-4995-b2ad-5c877735c264">
+      <title>Communication K-10 Grade Level Expectations</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Communication K-10 Grade Level Expe</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003DD">
+      <title>Communication K-10 Grade Level Expectations</title>
+      <created>2005</created>
+      <topic>English</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d0084cfc-af93-4b36-a866-9ad51559f037">
+      <title>Writing K-10 Grade Level Expectations</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Writing K-10 Grade Level Expectatio</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000252">
+      <title>Writing K-10 Grade Level Expectations</title>
+      <created>2005</created>
+      <topic>English</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="185e18cf-daba-4f73-91e6-100bd5f62cc7">
+      <title>Wisconsin Model Academic Standards for English Language Arts</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>WI</jurisdiction>
+      <fileName>Wisconsin Model Academic Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001CC">
+      <title>Wisconsin Model Academic Standards for English Language Arts</title>
+      <created>1998</created>
+      <topic>English</topic>
+      <author>Wisconsin</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4e3b4a05-a7e1-41b3-83b5-98c8ba8a5187">
+      <title>West Virginia's Reading and Language Arts Instructional Goals and Objectives</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia's Reading and Languag</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000C0">
+      <title>West Virginia's Reading and Language Arts Instructional Goals and Objectives</title>
+      <created>2000</created>
+      <topic>English</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c26cd9bd-c249-4f24-9b28-250218c04135">
+      <title>Reading and English Language Arts Content Standards and Objectives for West Virginia Schools</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>Reading and English Language Arts C</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001C2">
+      <title>Reading and English Language Arts Content Standards and Objectives for West Virginia Schools</title>
+      <created>2003</created>
+      <topic>English</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3489168f-ae10-447c-98ca-74fd46bf2057">
+      <title>21st Century Reading and English Language Arts Content Standards and Objectives for West Virginia Schools</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>Reading English Language Arts Conte</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000293">
+      <title>21st Century Reading and English Language Arts Content Standards and Objectives for West Virginia Schools</title>
+      <created>2008</created>
+      <topic>English</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a1dcd8c3-6c0d-4d15-873e-b2143da7207e">
+      <title>Language Arts Content Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Language Arts Content Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100008C">
+      <title>Language Arts Content Standards</title>
+      <created>1998</created>
+      <topic>English</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fb605fc1-069f-471f-a601-cea1b3a024d1">
+      <title>Language Arts Content and Performance Standards</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Language Arts Content and Performan</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100006A">
+      <title>Language Arts Content and Performance Standards</title>
+      <created>2003</created>
+      <topic>English</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="360a3afb-1cfe-410f-9d75-de5454bccb2e">
+      <title>Wyoming Language Arts Content and Performance Standards</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>English</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Wyoming Language Arts Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000383">
+      <title>Wyoming Language Arts Content and Performance Standards</title>
+      <created>2008</created>
+      <topic>English</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+</mappings>

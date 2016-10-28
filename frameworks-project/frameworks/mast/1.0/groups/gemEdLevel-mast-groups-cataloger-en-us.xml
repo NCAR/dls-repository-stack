@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: gemEdLevel-mast-groups-cataloger-en-us.xml,v 1.6 2009/07/30 16:11:56 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/GEMedLevel.xsd">
+
+	<head>
+		<title>GEM Education Level</title>
+		<concept language="en-us" metaFormat="mast" metaVersion="1.0" text="GEM Education Level" audience="cataloger" path="/record/educational/audiences/gemEdLevel" deftn="A general statement describing the education or training context. Alternatively, a more specific statement of the location of the audience in terms of its progression through an education or training context."/>
+	</head>
+	<body>
+		
+		<outline type="group" text="Pre-K to 12" deftn="Learners in pre-Kindergarten through high school.">
+			<outline vocab="Preschool education" type="vocab" text="Preschool education"/>
+			<outline vocab="Kindergarten" type="vocab" text="Kindergarten"/>
+			<outline vocab="1" type="vocab" text="grade 1"/>
+			<outline vocab="2" type="vocab" text="grade 2"/>
+			<outline vocab="3" type="vocab" text="grade 3"/>
+			<outline vocab="4" type="vocab" text="grade 4"/>
+			<outline vocab="5" type="vocab" text="grade 5"/>
+			<outline vocab="6" type="vocab" text="grade 6" wrap="true"/>
+			<outline vocab="7" type="vocab" text="grade 7"/>
+			<outline vocab="8" type="vocab" text="grade 8"/>
+			<outline vocab="9" type="vocab" text="grade 9"/>
+			<outline vocab="10" type="vocab" text="grade 10"/>
+			<outline vocab="11" type="vocab" text="grade 11"/>
+			<outline vocab="12" type="vocab" text="grade 12"/>
+		</outline>
+		<outline type="group" text="Other educational levels" deftn="Learners other than pre-Kindergarten through high school.">
+			<outline vocab="Community college" type="vocab" text="Community college"/>
+			<outline vocab="Higher education" type="vocab" text="Higher education"/>
+			<outline vocab="Vocational education" type="vocab" text="Vocational education" wrap="true"/>
+			<outline vocab="Adult/continuing education" type="vocab" text="Adult/continuing education" />
+			<outline vocab="All" type="vocab" text="All" wrap="true"/>
+			<outline vocab="Unspecified" type="vocab" text="Unspecified"/>
+		</outline>
+	</body>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

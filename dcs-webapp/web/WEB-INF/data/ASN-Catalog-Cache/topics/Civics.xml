@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AsnDocuments topic="Civics">
+  <asnDocument id="http://asn.jesandco.org/resources/D10000C4">
+    <title>Minnesota Graduation Standards for Social Studies</title>
+    <topic>Civics</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2386793">
+    <title>Minnesota K-12 Academic Standards in Social Studies</title>
+    <topic>Civics</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000150">
+    <title>Wisconsin Model Academic Standards for Social Studies</title>
+    <topic>Civics</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100013A">
+    <title>Montana Standards for Social Studies</title>
+    <topic>Civics</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000102">
+    <title>Social Studies Content Standards and Benchmarks</title>
+    <topic>Civics</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000141">
+    <title>Social Studies Standard Course of Study</title>
+    <topic>Civics</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000023">
+    <title>Essential Academic Learning Requirements in Social Studies</title>
+    <topic>Civics</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002A1">
+    <title>Civics Essential Academic Learning Requirements</title>
+    <topic>Civics</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100016B">
+    <title>Illinois Learning Standards for Social Science</title>
+    <topic>Civics</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2407056">
+    <title>Illinois Learning Standards for Social Science</title>
+    <topic>Civics</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>1997</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000BF">
+    <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+    <topic>Civics</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000087">
+    <title>Social Studies Proficiency Guide</title>
+    <topic>Civics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569943">
+    <title>Indiana Academic Standards for Social Studies: United States Government</title>
+    <topic>Civics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569949">
+    <title>Indiana Academic Standards for Social Studies: Grade 8</title>
+    <topic>Civics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569950">
+    <title>Indiana Academic Standards for Social Studies: Grade 7</title>
+    <topic>Civics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569951">
+    <title>Indiana Academic Standards for Social Studies: Grade 5</title>
+    <topic>Civics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569952">
+    <title>Indiana Academic Standards for Social Studies: Grade 6</title>
+    <topic>Civics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569953">
+    <title>Indiana Academic Standards for Social Studies: Grade 4</title>
+    <topic>Civics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569954">
+    <title>Indiana Academic Standards for Social Studies: Grade 3</title>
+    <topic>Civics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569956">
+    <title>Indiana Academic Standards for Social Studies: Grade 2</title>
+    <topic>Civics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569957">
+    <title>Indiana Academic Standards for Social Studies: Grade 1</title>
+    <topic>Civics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2569958">
+    <title>Indiana Academic Standards for Social Studies: Kindergarten</title>
+    <topic>Civics</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000EF">
+    <title>K-12 Social Studies Curriculum Framework</title>
+    <topic>Civics</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000123">
+    <title>Nebraska Social Studies/History Standards</title>
+    <topic>Civics</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2499255">
+    <title>Nebraska Social Studies Standards</title>
+    <topic>Civics</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002D9">
+    <title>Alaska Content Standards Government and Citizenship</title>
+    <topic>Civics</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000168">
+    <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+    <topic>Civics</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2575544">
+    <title>Alabama Course of Study: Social Studies</title>
+    <topic>Civics</topic>
+    <author>AL</author>
+    <authorName>Alabama</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000092">
+    <title>Academic Standards: Social Studies</title>
+    <topic>Civics</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000287">
+    <title>Social Studies Strand 3 - Civics/Government</title>
+    <topic>Civics</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000021">
+    <title>Massachusetts History and Social Science Framework</title>
+    <topic>Civics</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003ED">
+    <title>Delaware Civics Standards</title>
+    <topic>Civics</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000170">
+    <title>Social Studies Curriculum Frameworks Revised 2000</title>
+    <topic>Civics</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000070">
+    <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+    <topic>Civics</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000037">
+    <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+    <topic>Civics</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000034">
+    <title>West Virginia Social Studies Content Standards K-12</title>
+    <topic>Civics</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2553359">
+    <title>Next Generation Content Standards and Objectives for Social Studies in West Virginia</title>
+    <topic>Civics</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001B7">
+    <title>Learning Results for Social Studies</title>
+    <topic>Civics</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000040">
+    <title>Social Studies Content Standards</title>
+    <topic>Civics</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000136">
+    <title>Maryland State Content Standards for Social Studies</title>
+    <topic>Civics</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001D1">
+    <title>Social Studies Content and Performance Standards</title>
+    <topic>Civics</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000A2">
+    <title>Social Sciences 2001-2002</title>
+    <topic>Civics</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000003">
+    <title>Social Studies Content Standards</title>
+    <topic>Civics</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100015B">
+    <title>Social Studies Grade-Level Expectations</title>
+    <topic>Civics</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2381866">
+    <title>Louisiana PreK-Grade 12 Social Studies</title>
+    <topic>Civics</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000198">
+    <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+    <topic>Civics</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001D9">
+    <title>Social Studies Frameworks K-12</title>
+    <topic>Civics</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000F3">
+    <title>Academic Standards for Civics and Government</title>
+    <topic>Civics</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2384125">
+    <title>Academic Standards for Civics and Government (Pre-K-3)</title>
+    <topic>Civics</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2384126">
+    <title>Academic Standards for Civics and Government (Elementary)</title>
+    <topic>Civics</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2384127">
+    <title>Academic Standards for Civics and Government (Secondary)</title>
+    <topic>Civics</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001AB">
+    <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+    <topic>Civics</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100018A">
+    <title>Social Studies (Primary, Intermediate, High School)</title>
+    <topic>Civics</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000115">
+    <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+    <topic>Civics</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000007">
+    <title>New Mexico Standards for Social Studies</title>
+    <topic>Civics</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2390527">
+    <title>Social Studies K-4 Content Standards with Benchmarks and Performance Standards</title>
+    <topic>Civics</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2390528">
+    <title>Social Studies 5-8 Content Standards with Benchmarks and Performance Standards</title>
+    <topic>Civics</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2390529">
+    <title>Social Studies 9-12 Content Standards with Benchmarks and Performance Standards</title>
+    <topic>Civics</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100013B">
+    <title>Colorado Model Content Standards for Civics</title>
+    <topic>Civics</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001BA">
+    <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+    <topic>Civics</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001F3">
+    <title>Social Studies Quality Core Curriculum K-12</title>
+    <topic>Civics</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2529774">
+    <title>Georgia Performance Standards for Social Studies - Grade 6</title>
+    <topic>Civics</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2529919">
+    <title>Georgia Performance Standards for Social Studies - Grade 7</title>
+    <topic>Civics</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2576605">
+    <title>Georgia Performance Standards for Social Studies - Grade 8</title>
+    <topic>Civics</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10002C6">
+    <title>Nevada Social Studies Standards Civics K-12 Standards</title>
+    <topic>Civics</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100003C">
+    <title>Civics, Citizenship, and Government</title>
+    <topic>Civics</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100018B">
+    <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+    <topic>Civics</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100008F">
+    <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+    <topic>Civics</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000074">
+    <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+    <topic>Civics</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100005E">
+    <title>Social Studies Standards</title>
+    <topic>Civics</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000098">
+    <title>Social Studies: Ohio's Model Competency-Based Program</title>
+    <topic>Civics</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>1994</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000F1">
+    <title>Academic Content Standards Social Studies</title>
+    <topic>Civics</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000041">
+    <title>Priority Academic Student Skills for Social Studies</title>
+    <topic>Civics</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001E4">
+    <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+    <topic>Civics</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000101">
+    <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+    <topic>Civics</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+</AsnDocuments>

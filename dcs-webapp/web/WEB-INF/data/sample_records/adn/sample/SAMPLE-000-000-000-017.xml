@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>Geologic Time: Online Edition</title>
+<description>Offered by the United States Geological Survey (USGS) as a general interest publication, this site is an online edition of a text by the same name, offering a concise overview of the concepts associated with the age of the Earth. The online edition was revised in October of 1997 to reflect current thinking on this topic. Section headers are Geologic Time, Relative Time Scale, Major Divisions of Geologic Time, Index Fossils, Radiometric Time Scale, and Age of the Earth.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Geologic time</subject>
+</subjects>
+</general>
+<lifecycle>
+<contributors>
+<contributor date="1997-10-09" role="Publisher">
+<organization>
+<instName>United States Geological Survey (USGS) Information Services</instName>
+</organization>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-017">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-11-17" created="2000-11-17"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://pubs.usgs.gov/gip/geotime/index.html</primaryURL>
+<mediums>
+<medium>text/html</medium>
+</mediums>
+<requirements>
+<requirement>
+<reqType>DLESE:General:No specific technical requirements</reqType>
+</requirement>
+</requirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:General public</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Text:Book</resourceType>
+</resourceTypes>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>Copyright and Other Restrictions Information is Unknown</description>
+</rights>
+</itemRecord>

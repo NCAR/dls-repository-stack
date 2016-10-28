@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<termsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/adn-i/roleLife.xsd">
+	<field name="roleLife" id="rl" language="en-us">
+		<definition system="meta" interface="default">The role of persons or organizations contributing to the content of a resource, includes author, contact and publisher information</definition>
+		<definition system="dds" interface="default">String</definition>
+
+		<value vocab="Author" id="">
+			<definition system="meta" interface="default">The person(s) or entity responsible for creating intellectual content of resources</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+
+		<value vocab="Contact" id="">
+			<definition system="meta" interface="default">The person(s) or entity to contact regarding use, copyright, or availability of a resource</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+
+		<value vocab="Contributor" id="">
+			<definition system="meta" interface="default">Any person(s) or entity who helps in creating the intellectual content or design of a resource</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+
+		<value vocab="Editor" id="">
+			<definition system="meta" interface="default">The person(s) or entity who edits the content of a resource</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+
+		<value vocab="Principal Investigator" id="">
+			<definition system="meta" interface="default">The person(s) listed on a National Science Foundation (NSF) grant under which a resource is created</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+
+		<value vocab="Publisher" id="">
+			<definition system="meta" interface="default">The person(s) or entity responsible for making a resource available</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+
+	</field>
+</termsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

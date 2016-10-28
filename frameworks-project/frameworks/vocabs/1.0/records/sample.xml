@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabTerm xsi:schemaLocation="http://nldr.library.ucar.edu/metadata/osm http://nldr.library.ucar.edu/metadata/vocabs/1.0/schemas/vocab.xsd" xmlns="http://nldr.library.ucar.edu/metadata/osm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<recordID>String</recordID>
+	<recordDate modified="1967-08-13" created="1967-08-13"/>
+	<recordCreator>String</recordCreator>
+	<recordsAffected>1</recordsAffected>
+	<fullName>String</fullName>
+	<citationAbbreviation>String</citationAbbreviation>
+	<type>Poster</type>
+	<sourceInfo>
+		<dateVerified>1967-08-13</dateVerified>
+		<authority id="String">Organization website</authority>
+		<url>String</url>
+		<description>String</description>
+	</sourceInfo>
+	<validDates start="1967-08-13" end="1967-08-13">String</validDates>
+	<otherNotes>String</otherNotes>
+</vocabTerm>

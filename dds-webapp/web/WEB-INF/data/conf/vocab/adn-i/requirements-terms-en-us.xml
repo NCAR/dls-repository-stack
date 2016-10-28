@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<termsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/adn-i/requirements.xsd">
+	<field name="reqType" id="rq" language="en-us">
+		<definition system="meta" interface="default">Type of computer requirements that are necessary to access, interact or operate a component of the resource. The technical information should refer to digital, not non-digital information.</definition>
+		<definition system="dds" interface="default"></definition>
+
+		<value vocab="DLESE:Browser:Internet Explorer" id="00">
+			<definition system="meta" interface="default">The Microsoft Internet Explorer browser is specifically required to make the resource work properly</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Browser:Netscape" id="01">
+			<definition system="meta" interface="default">The Netscape browser is specifically required to make the resource work properly</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:General:No specific technical requirements" id="02">
+			<definition system="meta" interface="default">The resource needs only a browser to work and no other requirements</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Operating system:Macintosh" id="03">
+			<definition system="meta" interface="default">The Macintosh operating system is needed to make the resource function</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Operating system:Microsoft Windows" id="04">
+			<definition system="meta" interface="default">Microsoft Windows is needed to make the resource function</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Operating system:PC DOS" id="05">
+			<definition system="meta" interface="default">The DOS operating system is specifically required to make the resource function</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Operating system:Unix" id="06">
+			<definition system="meta" interface="default">The Unix operating system is needed to make the resource function</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Other:More specific technical requirements" id="07">
+			<definition system="meta" interface="default">In order for the resource to work properly, a tool that is not part of the technical requirements list is needed</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Software or plug-in:Adobe Acrobat reader" id="08">
+			<definition system="meta" interface="default">A type of viewer from Adobe that is needed to access .pdf (portable document format) files within a resource</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Software or plug-in:ArcGIS" id="09">
+			<definition system="meta" interface="default">Software that is needed to interact fully with geographic data (at an industry standard level) within a resource, including visualizations, queries, analysis, integration capabilities and the ability to create and edit geographic data</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Software or plug-in:ArcView" id="0a">
+			<definition system="meta" interface="default">Software that is needed to interact fully with geographic data within a resource, including visualizations, queries, analysis, integration capabilities and the ability to create and edit geographic data</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Software or plug-in:Cosmoplayer" id="0b">
+			<definition system="meta" interface="default">A type of viewer called Cosmo Player that is needed to access different types of media files within a resource</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Software or plug-in:Excel" id="0c">
+			<definition system="meta" interface="default">A type of spreadsheet program that is needed to access .xls files within a resource</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Software or plug-in:Flash player" id="0d">
+			<definition system="meta" interface="default">A type of viewer called Flash Player that is needed to access different types of media files within a resource</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Software or plug-in:Java" id="0e">
+			<definition system="meta" interface="default">Java software is needed to interact fully with a resource</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Software or plug-in:NIH image" id="0f">
+			<definition system="meta" interface="default">A public domain image processing and analysis program from the National Institute of Health that is needed to interact fully with a resource</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Software or plug-in:Platform emulation software" id="0g">
+			<definition system="meta" interface="default">Software that is required to make a system act like another system, such as making a PC act like a Mac or a Mac act like a PC</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Software or plug-in:QuickTime" id="0h">
+			<definition system="meta" interface="default">A type of viewer called QuickTime that is needed to access .mov (movie) or .mpg (moving picture experts group) files within a resource</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Software or plug-in:Real player" id="0i">
+			<definition system="meta" interface="default">A type of viewer called RealPlayer or RealOne that is needed to access different types of media files within a resource</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Software or plug-in:Shockwave player" id="0j">
+			<definition system="meta" interface="default">A type of viewer called Shockwave that is needed to access image or movies, often animated .gif (graphics interchange format) files, within a resource</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Software or plug-in:Scalable Vector Graphics (SVG) viewer" id="0m">
+			<definition system="meta" interface="default">A type of viewer called SVG, that stands for Scalable Vector Graphics and that has been popularized by Adobe, that is needed to render still or animaged images created in SVG format. </definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:To be supplied" id="0k">
+			<definition system="meta" interface="default">String</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+		<value vocab="DLESE:Unknown:Technical information not easily determined" id="0l">
+			<definition system="meta" interface="default">String</definition>
+			<definition system="dds" interface="default">String</definition>
+		</value>
+		
+	</field>
+</termsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

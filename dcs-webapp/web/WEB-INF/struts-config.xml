@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- This is the struts config for the DLESE OAI application -->
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+        "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<!--
+   This is a blank Struts configuration file based on the example application,
+   with commented examples of some items.
+
+   NOTE: If you have a generator tool to create the corresponding Java classes
+   for you, you could include the details in the "form-bean" declarations.
+   Otherwise, you would only define the "form-bean" element itself, with the
+   corresponding "name" and "type" attributes, as shown here.
+
+   $Id $
+-->
+<struts-config>
+
+    <!-- ========== Form Bean Definitions =================================== -->
+
+    <form-beans>
+        <form-bean
+                name="sef"
+                type="edu.ucar.dls.schemedit.action.form.SchemEditForm"/>
+        <form-bean
+                name="svf"
+                type="edu.ucar.dls.xml.schema.action.form.SchemaViewerForm"/>
+        <form-bean
+                name="aqf"
+                type="edu.ucar.dls.xml.schema.action.form.AdvancedQueryForm"/>
+        <form-bean
+                name="fff"
+                type="edu.ucar.dls.xml.schema.action.form.FieldFilesForm"/>
+        <form-bean
+                name="adminForm"
+                type="edu.ucar.dls.schemedit.action.form.SchemEditAdminForm"/>
+        <form-bean
+                name="faForm"
+                type="edu.ucar.dls.schemedit.action.form.FrameworkAdminForm"/>
+        <form-bean
+                name="browseForm"
+                type="edu.ucar.dls.schemedit.action.form.DCSBrowseForm"/>
+        <form-bean
+                name="csForm"
+                type="edu.ucar.dls.schemedit.action.form.CollectionServicesForm"/>
+        <form-bean
+                name="carForm"
+                type="edu.ucar.dls.schemedit.action.form.CreateADNRecordForm"/>
+        <form-bean
+                name="sessionsForm"
+                type="edu.ucar.dls.schemedit.action.form.SessionsForm" />
+        <form-bean
+                name="srForm"
+                type="edu.ucar.dls.schemedit.action.form.StaticRecordForm" />
+
+        <!-- DDS Stuff -->
+        <form-bean
+                name="queryForm"
+                type="edu.ucar.dls.schemedit.action.form.DCSQueryForm"/>
+        <form-bean
+                name="reportForm"
+                type="edu.ucar.dls.dds.action.form.DDSAdminQueryForm"/>
+        <form-bean
+                name="def"
+                type="edu.ucar.dls.dds.action.form.DDSEditRecordForm"/>
+
+        <form-bean
+                name="sif"
+                type="edu.ucar.dls.schemedit.sif.action.form.SIFReferenceForm"/>
+
+        <form-bean
+                name="daf"
+                type="edu.ucar.dls.schemedit.action.form.DCSAdminForm"/>
+        <form-bean
+                name="drf"
+                type="edu.ucar.dls.dds.action.form.DDSReportingForm"/>
+        <!-- OAI support -->
+        <form-bean
+                name="raf"
+                type="edu.ucar.dls.repository.action.form.RepositoryAdminForm"/>
+        <form-bean
+                name="rsf"
+                type="edu.ucar.dls.repository.action.form.RepositoryAnalyticsForm"/>
+        <form-bean
+                name="rf"
+                type="edu.ucar.dls.repository.action.form.RepositoryForm"/>
+        <form-bean
+                name="repositoryInfoForm"
+                type="edu.ucar.dls.repository.action.form.RepositoryInfoForm" />
+        <form-bean
+                name="opsf"
+                type="edu.ucar.dls.oai.provider.action.form.OaiPmhSearchForm"/>
+        <!-- DDS web service support -->
+        <form-bean
+                name="df"
+                type="edu.ucar.dls.services.dds.action.form.DDSServicesForm"/>
+        <!-- DDSWS1-1 -->
+        <form-bean
+                name="df11"
+                type="edu.ucar.dls.services.dds.action.form.DDSServicesForm_1_1"/>
+        <!-- DCS web service support -->
+        <form-bean
+                name="dcssf"
+                type="edu.ucar.dls.services.dcs.action.form.DCSServicesForm"/>
+        <!-- DCS recommender service support -->
+        <form-bean
+                name="recForm"
+                type="edu.ucar.dls.services.dcs.action.form.RecommenderForm"/>
+        <!-- Status -->
+        <form-bean
+                name="statusForm"
+                type="edu.ucar.dls.schemedit.action.form.StatusForm"/>
+
+        <!-- new view bean -->
+        <form-bean
+                name="viewForm"
+                type="edu.ucar.dls.schemedit.action.form.DCSViewForm"/>
+
+        <!-- batch operations bean -->
+        <form-bean
+                name="bof"
+                type="edu.ucar.dls.schemedit.action.form.BatchOperationsForm"/>
+
+        <!-- record operations bean -->
+        <form-bean
+                name="rof"
+                type="edu.ucar.dls.schemedit.action.form.RecordOperationsForm"/>
+
+        <!-- NDR beans -->
+        <form-bean
+                name="ndrForm"
+                type="edu.ucar.dls.schemedit.ndr.action.form.NDRForm"/>
+
+        <!-- NDR beans -->
+        <form-bean
+                name="uploadForm"
+                type="edu.ucar.dls.schemedit.ndr.action.form.FileUploadForm"/>
+
+        <form-bean
+                name="ciForm"
+                type="edu.ucar.dls.schemedit.ndr.action.form.CollectionIntegrationForm"/>
+
+        <!-- Roles forms -->
+        <form-bean      name="logonForm"
+                        type="edu.ucar.dls.schemedit.security.action.form.LogonForm"/>
+
+        <form-bean      name="amForm"
+                        type="edu.ucar.dls.schemedit.security.action.form.AccessManagerForm"/>
+
+        <form-bean      name="umForm"
+                        type="edu.ucar.dls.schemedit.security.action.form.UserManagerForm"/>
+
+        <form-bean      name="caForm"
+                        type="edu.ucar.dls.schemedit.security.action.form.CollectionAccessForm"/>
+
+        <form-bean      name="userForm"
+                        type="edu.ucar.dls.schemedit.security.action.form.UserInfoForm"/>
+
+        <!-- UCAS People DB proxy form -->
+        <form-bean
+                name="ucasForm"
+                type="edu.ucar.dls.schemedit.action.form.UcasProxyForm"/>
+
+        <!-- General Purpose JsonProxy -->
+        <form-bean
+                name="jsonProxyForm"
+                type="edu.ucar.dls.schemedit.action.form.JsonProxyForm"/>
+
+        <form-bean
+                name="asnForm"
+                type="edu.ucar.dls.schemedit.standards.action.form.AsnStandardsForm"/>
+
+        <form-bean
+                name="nldrToolsForm"
+                type="edu.ucar.dls.schemedit.action.form.NLDRToolsForm"/>
+
+        <!-- Upload -->
+        <form-bean
+                name="uploadForm"
+                type="edu.ucar.dls.schemedit.ccs.action.form.UploadForm" />
+
+    </form-beans>
+
+    <!-- ========== Global Forward Definitions ============================== -->
+    <global-forwards>
+        <forward name="welcome_reporting" path="/admin/reporting/report.do"/>
+        <forward name="best.practices" path="/lib/best_practices.jsp"/>
+        <forward name="dcsData" path="/lib/dcs-data.jsp"/>
+        <forward name="view.xml" path="/lib/view-xml.jsp"/>
+
+        <forward name="browse.query" path="/browse/searching/search.jsp"/>
+        <forward name="browse.home" path="/browse/home.do" />
+
+        <forward name="error.page" path="/error.jsp" />
+        <forward name="session.timeout.msg" path="/session_timed_out.jsp" />
+        <!-- OAI admin -->
+        <forward name="update.repository.info" path="/admin/oai/repository_info_form.jsp" />
+
+        <!-- metadata-editor ajax responses -->
+        <forward name="async.json" path="/editor/async_json.jsp"/>
+
+        <!-- Login forwards -->
+        <forward   name="logon"                path="/auth/logon.jsp"/>
+    </global-forwards>
+
+
+    <!-- ========== Action Mapping Definitions ============================== -->
+
+
+
+    <action-mappings>
+
+        <action	path="/jsonProxy"
+                   type="edu.ucar.dls.schemedit.action.JsonProxyAction"
+                   scope="session"
+                   name="jsonProxyForm">
+            <forward name="json.response" path="/proxy/json-response.jsp"/>
+        </action>
+
+        <action	path="/proxy/ucas"
+                   type="edu.ucar.dls.schemedit.action.UcasProxyAction"
+                   scope="session"
+                   name="ucasForm">
+            <forward name="ucas.info" path="/proxy/ucas.jsp"/>
+        </action>
+
+
+        <!-- DCS Browse -->
+        <action	path="/browse/home"
+                   type="edu.ucar.dls.schemedit.action.DCSBrowseAction"
+                   scope="session"
+                   name="browseForm">
+            <forward name="browse.home" path="/browse/home.jsp"/>
+        </action>
+
+        <!-- search and display pages -->
+        <action	path="/browse/query"
+                   type="edu.ucar.dls.schemedit.action.DCSQueryAction"
+                   scope="session"
+                   name="queryForm">
+            <forward name="report.query" path="/browse/reporting/report.jsp" />
+        </action>
+
+        <action	path="/browse/view"
+                   type="edu.ucar.dls.schemedit.action.DCSViewAction"
+                   scope="session"
+                   name="viewForm"
+                   validate="true"
+                   input="view.record">
+            <forward name="view.record" path="/browse/viewing/full_view.jsp"/>
+            <forward name="collection.config.display" path="/admin/config/view_collection_config.jsp"/>
+            <forward name="framework.config.display" path="/admin/config/view_framework_config.jsp"/>
+        </action>
+
+        <!-- keyword search and display pages - e.g., when viewing XML or validating pages (both
+        in normal and admin search page results -->
+        <action	path="/browse/display"
+                   type="edu.ucar.dls.schemedit.action.DCSQueryAction"
+                   scope="session"
+                   name="queryForm">
+            <forward name="data.display" path="/browse/viewing/display.jsp"/>
+        </action>
+
+        <action	path="/browse/static"
+                   type="edu.ucar.dls.schemedit.action.StaticRecordAction"
+                   scope="session"
+                   name="srForm">
+            <forward name="static.record" path="/browse/static/static-record.jsp"/>
+        </action>
+
+        <!-- Record Operations  group -->
+
+        <!-- Edit Status Records -->
+        <action	path="/record_op/status"
+                   type="edu.ucar.dls.schemedit.action.StatusAction"
+                   name="statusForm"
+                   scope="session"
+                   validate="true"
+                   input="edit.status">
+            <forward name="edit.status" path="/record_op/edit_status.jsp"/>
+            <forward name="edit.status.modal" path="/record_op/edit_status_modal.jsp"/>
+        </action>
+
+        <!-- Single Record Operations -->
+        <action	path="/record_op/single"
+                   type="edu.ucar.dls.schemedit.action.RecordOperationsAction"
+                   scope="session"
+                   name="rof">
+            <forward name="move.record" path="/record_op/move_record.jsp"/>
+            <forward name="copy.move.record" path="/record_op/copy_move_record.jsp"/>
+        </action>
+
+        <!-- CREATE ADN Record action -->
+        <action	path="/record_op/adn"
+                   type="edu.ucar.dls.schemedit.action.CreateADNRecordAction"
+                   name="carForm"
+                   scope="session"
+                   validate="false">
+            <forward name="adn.create" path="/record_op/create_adn.jsp"/>
+            <!-- <forward name="browse.home" path="/browse/home.do" /> -->
+            <forward name="adn.confirm" path="/record_op/create_adn_confirm.jsp"/>
+        </action>
+
+        <!-- CREATE Mast Record action -->
+        <action	path="/record_op/mast"
+                   type="edu.ucar.dls.schemedit.action.CreateMastRecordAction"
+                   name="carForm"
+                   scope="session"
+                   validate="false">
+            <forward name="mast.confirm" path="/record_op/create_mast_confirm.jsp"/>
+            <forward name="mast.create" path="/record_op/create_mast_record.jsp"/>
+        </action>
+
+        <!-- batch operations -->
+        <action	path="/record_op/batch"
+                   type="edu.ucar.dls.schemedit.action.BatchOperationsAction"
+                   scope="session"
+                   name="bof">
+            <forward name="batch.move.records" path="/record_op/batch_move_records.jsp"/>
+            <forward name="batch.copy.move.records" path="/record_op/batch_copy_move_records.jsp"/>
+            <forward name="batch.delete.records" path="/record_op/batch_delete_records.jsp"/>
+            <forward name="batch.status.change" path="/record_op/batch_status_change.jsp"/>
+        </action>
+
+        <!-- ================================== -->
+
+        <!-- SIF	Reference Tool -->
+        <action	path="/editor/sif"
+                   type="edu.ucar.dls.schemedit.sif.action.SIFReferenceAction"
+                   scope="session"
+                   name="sif">
+            <forward name="sif.finder" path="/editor/sif/object-finder.jsp"/>
+            <forward name="sif.creator" path="/editor/sif/object-creator.jsp"/>
+            <forward name="sif.confirm" path="/editor/sif/object-confirm.jsp"/>
+            <forward name="sif.error" path="/editor/sif/error.jsp"/>
+        </action>
+
+        <!-- ================================== -->
+        <!-- SchemEdit Admin -->
+        <action	path="/admin/editor_admin"
+                   type="edu.ucar.dls.schemedit.action.SchemEditAdminAction"
+                   scope="session"
+                   name="adminForm"
+                   validate="true"
+                   input="admin">
+            <!-- <forward name="admin" path="/admin/editing/editor-admin.jsp"/> -->
+            <forward name="admin" path="/admin/editing/editor-admin.jsp"/>
+        </action>
+
+        <!-- SchemEdit Admin -->
+        <action	path="/admin/frameworks"
+                   type="edu.ucar.dls.schemedit.action.FrameworkAdminAction"
+                   scope="session"
+                   name="faForm">
+            <forward name="frameworks.admin" path="/admin/config/frameworks_settings.jsp"/>
+        </action>
+
+        <!-- Editor -->
+        <action	path="/editor/edit"
+                   type="edu.ucar.dls.schemedit.action.DCSSchemEditAction"
+                   scope="session"
+                   name="sef"
+                   validate="true"
+                   input="editor">
+            <forward name="editor" path="/editor/editorMaster.jsp"/>
+            <forward name="async.standards.display" path="/lib/stds/async-display.jsp"/>
+            <forward name="resqual.representation.benchmarks" path="/lib/stds/res_qual/representation_benchmarks.jsp"/>
+            <forward name="resqual.phenomenon.benchmarks" path="/lib/stds/res_qual/phenomenon_benchmarks.jsp"/>
+            <forward name="async.multi.layout" path="/lib/async-vocab-layout/async-multi-vocab-layout.jsp"/>
+            <forward name="async.single.layout" path="/lib/async-vocab-layout/async-single-vocab-layout.jsp"/>
+            <forward name="lar.asn.standards" path="/lib/stds/lar/asn-standards.jsp"/>
+            <forward name="comm_anno.asn.standards" path="/lib/stds/comm_anno/asn-standards.jsp"/>
+            <forward name="cow_item.asn.standards" path="/lib/stds/cow_item/asn-standards.jsp"/>
+
+        </action>
+
+        <!-- SchemaViewer -->
+        <action	path="/schema/schema"
+                   type="edu.ucar.dls.xml.schema.action.SchemaViewerAction"
+                   scope="session"
+                   name="svf"
+                   validate="false">
+            <forward name="schema.index" path="/schema/schema-index.jsp"/>
+            <forward name="schema.report" path="/schema/report.jsp"/>
+        </action>
+
+        <!-- SchemaViewer -->
+        <action	path="/schema/fields"
+                   type="edu.ucar.dls.xml.schema.action.FieldFilesAction"
+                   scope="session"
+                   name="fff"
+                   validate="false">
+            <forward name="fields.files" path="/schema/fields-files.jsp"/>
+        </action>
+
+        <!-- Advanced Query -->
+        <action	path="/schema/query"
+                   type="edu.ucar.dls.xml.schema.action.AdvancedQueryAction"
+                   scope="session"
+                   name="aqf"
+                   validate="false">
+            <forward name="advanced.query" path="/schema/advanced-query.jsp"/>
+            <forward name="advanced.query.choices" path="/schema/advanced-query-choices.jsp"/>
+        </action>
+
+        <!-- framework-config -->
+        <action	path="/editor/framework_config"
+                   type="edu.ucar.dls.schemedit.action.FrameworkConfigAction"
+                   scope="session"
+                   name="sef"
+                   validate="true"
+                   input="editor">
+            <forward name="editor" path="/editor/framework_config/editorMaster.jsp"/>
+        </action>
+
+        <!-- collection-config -->
+        <action	path="/editor/collection_config"
+                   type="edu.ucar.dls.schemedit.action.CollectionConfigAction"
+                   scope="session"
+                   name="sef"
+                   validate="true"
+                   input="editor">
+            <forward name="collection_config.index" path="/admin/admin.do?page=collections"/>
+            <forward name="collection.settings" path="/admin/admin.do?page=collections"  redirect="true"/>
+            <forward name="editor" path="/editor/collection_config/editorMaster.jsp"/>
+        </action>
+
+        <!-- Admin -->
+        <action	path="/admin/admin"
+                   type="edu.ucar.dls.schemedit.action.DCSAdminAction"
+                   scope="session"
+                   name="daf"
+                   validate="false">
+            <forward name="edit.repository.settings" path="/admin/config/collection_settings.jsp"/>
+            <forward name="collection.settings" path="/admin/config/collection_settings.jsp"/>
+            <forward name="editors.settings" path="/admin/config/editors_settings.jsp"/>
+            <forward name="services.settings" path="/admin/config/services_settings.jsp"/>
+            <forward name="index.settings" path="/admin/config/index_settings.jsp"/>
+            <forward name="access.settings" path="/admin/config/access_settings.jsp"/>
+            <forward name="config.settings" path="/admin/config/config_settings.jsp"/>
+            <forward name="debug" path="/admin/config/debug.jsp"/>
+        </action>
+
+        <!-- DDS reporting -->
+        <action	path="/admin/reporting/report"
+                   type="edu.ucar.dls.dds.action.DDSReportingAction"
+                   name="drf"
+                   scope="session"
+                   validate="false">
+            <forward name="ddsreporting.termcount" path="/admin/reporting/TermCount.jsp"/>
+            <forward name="ddsreporting.viewstems" path="/admin/reporting/ViewStems.jsp"/>
+            <forward name="ddsreporting.index" path="/admin/reporting/index_page.jsp"/>
+            <forward name="ddsreporting.putrecord" path="/admin/reporting/PutRecord.jsp"/>
+        </action>
+
+        <action	path="/repository_analytics"
+                   type="edu.ucar.dls.repository.action.RepositoryAnalyticsAction"
+                   scope="request"
+                   name="rsf"
+                   validate="true"
+                   input="/repository_analytics.jsp">
+            <forward name="display.repository.analytics" path="/repository_analytics.jsp"/>
+
+        </action>
+        <action	path="/svg_transcoder"
+                   type="edu.ucar.dls.repository.action.SVGTranscoder"
+                   scope="request"
+                   validate="true">
+        </action>
+
+        <!--  Reports pages (incl indexing errors) -->
+        <action	path="/admin/report"
+                   type="edu.ucar.dls.dds.action.DDSAdminQueryAction"
+                   scope="request"
+                   name="reportForm"
+                   validate="false">
+            <forward name="report.query" path="/admin/reports.jsp"/>
+            <forward name="weblogreport.query" path="/admin/reports.jsp"/>
+        </action>
+
+        <!-- ______________ MANAGE ______________ -->
+
+        <!-- CREATE Collection pages -->
+        <action	path="/manage/collections"
+                   type="edu.ucar.dls.schemedit.action.CollectionServicesAction"
+                   name="csForm"
+                   scope="session"
+                   validate="false">
+            <forward name="create.collection.input" path="/manage/create_collection.jsp"/>
+            <forward name="manage.collections" path="/manage/manage_collections.jsp"/>
+            <forward name="confirm.page" path="/manage/create_collection_confirm.jsp"/>
+
+            <forward name="export.collection" path="/manage/export_collection.jsp"/>
+            <forward name="export.reports" path="/manage/export_reports.jsp"/>
+
+            <forward name="validate.collection" path="/manage/validate_collection.jsp"/>
+            <forward name="validation.reports" path="/manage/validation_reports.jsp"/>
+            <forward name="progress" path="/manage/progress.jsp"/>
+
+        </action>
+
+        <!-- NLDR tools -->
+        <action	path="/manage/nldr"
+                   type="edu.ucar.dls.schemedit.action.NLDRToolsAction"
+                   name="nldrToolsForm"
+                   scope="session"
+                   validate="false">
+            <forward name="nldr.tools" path="/manage/nldr_tools.jsp"/>
+            <forward name="progress" path="/manage/nldr_progress.jsp"/>
+
+        </action>
+
+        <action    path="/manage/userManager"
+                   type="edu.ucar.dls.schemedit.security.action.UserManagerAction"
+                   name="umForm"
+                   scope="request"
+                   validate="true"
+                   input="manage.users">
+            <forward name="manage.users"              path="/manage/access/manage-users.jsp"/>
+            <forward name="user.access"          path="/manage/access/user-access.jsp"/>
+        </action>
+
+        <!-- Collection Access management -->
+        <action    path="/manage/collectionAccessManager"
+                   type="edu.ucar.dls.schemedit.security.action.CollectionAccessAction"
+                   name="caForm"
+                   scope="request"
+                   validate="false">
+            <forward name="collection.access"  path="/manage/access/collection-access.jsp"/>
+            <forward name="edit.collection.access"  path="/manage/access/edit-collection-access.jsp"/>
+        </action>
+
+        <action    path="/manage/sessions"
+                   type="edu.ucar.dls.schemedit.action.SessionsAction"
+                   name="sessionsForm"
+                   scope="request"
+                   validate="false">
+            <forward name="manage.sessions" path="/manage/sessions.jsp"/>
+        </action>
+
+        <action    path="/user/ui-info"
+                   type="edu.ucar.dls.schemedit.action.SessionInfoAction"
+                   scope="request"
+                   validate="false">
+        </action>
+
+        <!-- ___________ WEB SERVICES _____________ -->
+
+        <!-- The DDS web service -->
+        <action	path="/services/ddsws1-0"
+                   type="edu.ucar.dls.services.dds.action.DDSServicesAction"
+                   name="df"
+                   scope="request"
+                   validate="false">
+            <forward name="ddsservices.UrlCheck" path="/services/ddsws1-0/UrlCheck.jsp"/>
+            <forward name="ddsservices.GetRecord" path="/services/ddsws1-0/GetRecord.jsp"/>
+            <forward name="ddsservices.Search" path="/services/ddsws1-0/Search.jsp"/>
+            <forward name="ddsservices.ListXmlFormats" path="/services/ddsws1-0/ListXmlFormats.jsp"/>
+            <forward name="ddsservices.ListCollections" path="/services/ddsws1-0/ListCollections.jsp"/>
+            <forward name="ddsservices.ListVocabEntries" path="/services/ddsws1-0/ListVocabEntries.jsp"/>
+            <forward name="ddsservices.ServiceInfo" path="/services/ddsws1-0/ServiceInfo.jsp"/>
+            <forward name="ddsservices.error" path="/services/ddsws1-0/errors.jsp"/>
+            <forward name="ddsservices.disabled" path="/services/ddsws1-0/disabled.jsp"/>
+        </action>
+
+        <!-- The DDS web service v1.1 -->
+        <action	path="/services/ddsws1-1"
+                   type="edu.ucar.dls.services.dds.action.DDSServicesAction_1_1"
+                   name="df11"
+                   scope="request"
+                   validate="false">
+            <forward name="ddsservices.UrlCheck" path="/services/ddsws1-1/UrlCheck.jsp"/>
+            <forward name="ddsservices.GetRecord" path="/services/ddsws1-1/GetRecord.jsp"/>
+            <forward name="ddsservices.ListFields" path="/services/ddsws1-1/ListFields.jsp"/>
+            <forward name="ddsservices.ListTerms" path="/services/ddsws1-1/ListTerms.jsp"/>
+            <forward name="ddsservices.Search" path="/services/ddsws1-1/Search.jsp"/>
+            <forward name="ddsservices.ListXmlFormats" path="/services/ddsws1-1/ListXmlFormats.jsp"/>
+            <forward name="ddsservices.ListCollections" path="/services/ddsws1-1/ListCollections.jsp"/>
+            <forward name="ddsservices.ListVocabEntries" path="/services/ddsws1-1/ListVocabEntries.jsp"/>
+            <forward name="ddsservices.ServiceInfo" path="/services/ddsws1-1/ServiceInfo.jsp"/>
+            <forward name="ddsservices.error" path="/services/ddsws1-1/errors.jsp"/>
+            <forward name="ddsservices.disabled" path="/services/ddsws1-1/disabled.jsp"/>
+        </action>
+
+        <!-- The DCS web service -->
+        <action	path="/services/dcsws1-0"
+                   type="edu.ucar.dls.services.dcs.action.DCSServicesAction"
+                   name="dcssf"
+                   scope="request"
+                   validate="false">
+            <forward name="dcsservices.GetId" path="/services/dcsws1-0/GetId.jsp"/>
+            <forward name="dcsservices.PutRecord" path="/services/dcsws1-0/PutRecord.jsp"/>
+            <forward name="dcsservices.UpdateStatus" path="/services/dcsws1-0/UpdateStatus.jsp"/>
+            <forward name="dcsservices.UrlCheck" path="/services/dcsws1-0/UrlCheck.jsp"/>
+            <forward name="dcsservices.ExportCollection" path="/services/dcsws1-0/ExportCollection.jsp"/>
+            <forward name="dcsservices.ValidateCollection" path="/services/dcsws1-0/ValidateCollection.jsp"/>
+            <forward name="dcsservices.DeleteRecord" path="/services/dcsws1-0/DeleteRecord.jsp"/>
+            <!-- <forward name="dcsservices.IngestCollection" path="/services/dcsws1-0/IngestCollection.jsp"/> -->
+            <forward name="dcsservices.error" path="/services/dcsws1-0/errors.jsp"/>
+            <forward name="dcsservices.disabled" path="/services/dcsws1-0/disabled.jsp"/>
+        </action>
+
+        <!-- The OpenSky web service -->
+        <action	path="/services/opensky"
+                   type="edu.ucar.dls.services.dcs.action.OpenSkyAction"
+                   name="recForm"
+                   scope="request"
+                   validate="false">
+            <forward name="dcsservices.PutRecord" path="/services/opensky/PutRecord.jsp"/>
+            <forward name="dcsservices.error" path="/services/opensky/errors.jsp"/>
+        </action>
+
+        <!-- The NCS web service -->
+        <action	path="/services/recommend"
+                   type="edu.ucar.dls.services.dcs.action.RecommenderAction"
+                   name="recForm"
+                   scope="request"
+                   validate="false">
+            <forward name="dcsservices.RecommendResource" path="/services/recommend/RecommendResource.jsp"/>
+            <forward name="dcsservices.RecommendCollection" path="/services/recommend/RecommendCollection.jsp"/>
+            <forward name="dcsservices.error" path="/services/recommend/errors.jsp"/>
+            <forward name="dcsservices.disabled" path="/services/recommend/disabled.jsp"/>
+        </action>
+
+
+        <!-- The OAI-PMH data provider (Note: These JSPs are imported from dds webapp) -->
+        <action	path="/services/oai2-0"
+                   type="edu.ucar.dls.repository.action.RepositoryAction"
+                   name="rf"
+                   scope="request"
+                   validate="false">
+            <forward name="oaipmh.Identify" path="/services/oai2-0/oai_requests/Identify.jsp"/>
+            <forward name="oaipmh.ListSets" path="/services/oai2-0/oai_requests/ListSets.jsp"/>
+            <forward name="oaipmh.ListIdentifiers" path="/services/oai2-0/oai_requests/ListIdentifiers.jsp"/>
+            <forward name="oaipmh.ListMetadataFormats" path="/services/oai2-0/oai_requests/ListMetadataFormats.jsp"/>
+            <forward name="oaipmh.ListRecords" path="/services/oai2-0/oai_requests/ListRecords.jsp"/>
+            <forward name="oaipmh.GetRecord" path="/services/oai2-0/oai_requests/GetRecord.jsp"/>
+            <forward name="oaipmh.error" path="/services/oai2-0/oai_requests/errors.jsp"/>
+            <forward name="oaipmh.disabled" path="/services/oai2-0/oai_requests/disabled.jsp"/>
+            <forward name="error.500" path="/WEB-INF/error_pages/error_page_500.jsp"/>
+        </action>
+
+        <!-- View/edit the OAI provider's metadata and other coniguration -->
+        <action	path="/admin/data-provider-info"
+                   type="edu.ucar.dls.repository.action.RepositoryAdminAction"
+                   scope="request"
+                   name="raf"
+                   validate="true"
+                   input="edit.repository.settings">
+            <forward name="display.repository.settings" path="/admin/oai/repository_administration.jsp"/>
+            <forward name="edit.repository.settings" path="/admin/oai/response_length_form.jsp"/>
+        </action>
+
+        <!-- Input for handling repository info (name, description, e-mail etc) -->
+        <action path="/admin/repository_info-view" forward="/admin/oai/repository_info_form.jsp" />
+        <action path="/admin/update_repository_info" forward="/admin/data-provider-info.do" />
+        <action path="/admin/repository_info-validate"
+                type="org.apache.struts.actions.ForwardAction"
+                name="repositoryInfoForm"
+                scope="request"
+                parameter="/admin/data-provider-info.do"
+                validate="true"
+                input="input" >
+            <forward name="input" path="/admin/repository_info-view.do" />
+        </action>
+
+        <!-- Provider explorer page -->
+        <action	path="/admin/oai/oaisearch"
+                   type="edu.ucar.dls.oai.provider.action.OaiPmhSearchAction"
+                   scope="session"
+                   name="opsf"
+                   validate="true"
+                   input="oaipmh.search">
+            <forward name="oaipmh.search" path="/admin/oai/oai_explorer.jsp"/>
+        </action>
+
+        <!-- Security, Roles and Access Mappings -->
+        <!-- Role Management -->
+        <action    path="/admin/roles/accessManager"
+                   type="edu.ucar.dls.schemedit.security.action.AccessManagerAction"
+                   name="amForm"
+                   scope="request"
+                   validate="false">
+            <forward name="edit.access"              path="/admin/roles/edit-access.jsp"/>
+        </action>
+
+
+        <!-- User Info -->
+        <action    path="/user/userInfo"
+                   type="edu.ucar.dls.schemedit.security.action.UserInfoAction"
+                   name="userForm"
+                   scope="request"
+                   validate="true"
+                   input="edit.user">
+            <forward name="edit.user"              path="/user/edit-user.jsp"/>
+            <forward name="ldap.user.info"         path="/user/ldap_user_info.jsp"/>
+            <forward name="popup.user.info"         path="/user/popup_user_info.jsp"/>
+        </action>
+
+        <!-- Process a user logoff -->
+        <action    path="/logoff"
+                   type="edu.ucar.dls.schemedit.security.action.LogoffAction">
+            <forward name="logoff"              path="/logoff.jsp"/>
+        </action>
+
+        <!-- Process a user logon -->
+        <action    path="/auth/logon"
+                   type="edu.ucar.dls.schemedit.security.action.LogonAction"
+                   name="logonForm"
+                   scope="request"
+                   input="logon">
+            <forward name="dcs.collections" path="/browse/home.do" redirect="true"/>
+        </action>
+
+        <!-- NDR -->
+        <action	path="/ndr/ndr"
+                   type="edu.ucar.dls.schemedit.ndr.action.NDRAction"
+                   scope="session"
+                   name="ndrForm"
+                   validate="false">
+            <forward name="collections.home" path="/browse/home.do"/>
+            <forward name="ndr.confirm.load" path="/ndr/load_collection_confirm.jsp" />
+            <forward name="ndr.report" path="/ndr/export_report.jsp"/>
+            <forward name="ndr.sync.report" path="/ndr/sync_report.jsp"/>
+            <forward name="ndr.sync.progress" path="/ndr/sync_progress.jsp"/>
+            <forward name="proxy.response" path="/ndr/proxy_response.jsp"/>
+            <forward name="ndr.explorer" path="/ndr/ndr_explorer.jsp"/>
+            <forward name="sat.explorer" path="/ndr/sat_explorer.jsp"/>
+            <forward name="ndr.manage" path="/ndr/manage_ndr_collections.jsp"/>
+            <forward name="ndr.browse" path="/ndr/browse_ndr_collections.jsp"/>
+            <forward name="ndr.finder" path="/ndr/ndr_finder.jsp"/>
+        </action>
+
+        <action	path="/ndr/ci"
+                   type="edu.ucar.dls.schemedit.ndr.action.CollectionIntegrationAction"
+                   scope="session"
+                   name="ciForm"
+                   validate="false">
+            <forward name="ci.mappings" path="/ndr/ci/mappings.jsp"/>
+            <forward name="mapping.info" path="/ndr/ci/mapping-info.jsp"/>
+        </action>
+
+        <action	path="/ndr/upload"
+                   type="edu.ucar.dls.schemedit.ndr.action.FileUploadAction"
+                   scope="session"
+                   name="uploadForm"
+                   validate="false">
+            <forward name="ndr.upload.form" path="/ndr/upload/uploader.jsp"/>
+            <forward name="ndr.upload.confirm" path="/ndr/upload/confirm.jsp"/>
+        </action>
+
+        <action	path="/asn/asn"
+                   type="edu.ucar.dls.schemedit.standards.action.AsnStandardsAction"
+                   scope="session"
+                   name="asnForm"
+                   validate="false">
+            <forward name="all.asn.docs" path="/asn/all_docs.jsp"/>
+            <forward name="manage.asn.docs" path="/asn/manage_standards.jsp"/>
+            <forward name="manage.framework.standards" path="/asn/manage_framework_standards.jsp"/>
+            <forward name="edit.asn.docs" path="/asn/edit_standards.jsp"/>
+            <forward name="set.default.doc" path="/asn/set_default_doc.jsp"/>
+        </action>
+
+        <!-- 		<action path="/proxy"
+                    type="edu.ucar.dls.schemedit.ndr.action.ProxyAction"
+                    scope="session"
+                    validate="false"> -->
+
+        <action	path="/editor/upload"
+                   type="edu.ucar.dls.schemedit.ccs.action.UploadAction"
+                   name="uploadForm"
+                   scope="session"
+                   input="upload.input">
+            <forward name="upload.input" path="/editor/upload/upload.jsp" />
+            <forward name="upload.helper" path="/editor/upload/upload_helper.jsp" />
+            <forward name="upload.display" path="/editor/upload/upload_complete_display.jsp" />
+            <forward name="upload.error" path="/editor/upload/upload_complete_display.jsp" />
+            <forward name="upload.search.response" path="/editor/upload/upload_action_response.jsp" />
+            <forward name="error.400" path="/WEB-INF/error_pages/error_page_400.jsp"/>
+        </action>
+
+
+    </action-mappings>
+
+    <!-- This is where the maximum file size is set for file uploads.
+        -1 is an unlimited size. If you
+        don't specify this here, it defaults to -1. -->
+
+    <!-- <controller maxFileSize="2M" /> -->
+    <controller maxFileSize="2M"
+                inputForward="true"
+                processorClass="edu.ucar.dls.schemedit.RequestProcessor"/>
+
+    <!-- Resource bundle -->
+    <message-resources null="false" parameter="ApplicationResources"/>
+
+    <!-- ====================== Plug Ins Configuration ======================   -->
+
+    <!--
+       Add multiple validator resource files by setting the pathnames property
+       with a comma delimitted list of resource files to load.
+    -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+        <set-property property="stopOnFirstError" value="true" />
+    </plug-in>
+
+</struts-config>

@@ -1,0 +1,15 @@
+<%-- display ndr info (used at top of pages) --%>
+<table cellspacing="0" cellpadding="0" width="100%">
+<td width="90%">&nbsp;</td>
+<td align="right" style="white-space:nowrap">
+<div style="margin:5px 0px 0px 0px" align="right">
+	<div class="dcs-table-row" style="font-size:85%;padding:3px 5px 3px 5px">
+	The Mappings data you are viewing was compiled using <br/>
+		<b>${ciForm.mappingsManager.ndrServer}</b> at
+	<b>${ciForm.mappingsManager.timeStamp}</b><br/>
+	read from ${ciForm.mappingsManager.dataFile}</div>
+</div>
+</td>
+</table>
+
+

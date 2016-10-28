@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- simple framework configuration record - 
+	Copy this file to the "frameworks" directory within the main configuration directory (configured
+	as "dcsConfig" parameter in the application's context descriptor)
+	
+	This record contains the minimum information required to create a framework in the NCS:
+	xmlFormat - a short name for this framework
+	schemaURI - either a file path or a URL to a XML Schema file. The only relative path permitted
+				is relative to the WEB-INF directory of this application. Absolute File paths must
+				begin with "file:/"
+	rootElementName - the name of the root element of the XML instance document
+-->
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.dlese.org/Metadata/dcs/framework-config/dcsFrameworkConfig.xsd">
+  <xmlFormat>custom_framework</xmlFormat>
+  <schemaInfo>
+    <schemaURI>WEB-INF/data/custom_framework/record.xsd</schemaURI>
+	<rootElementName>record</rootElementName>
+  </schemaInfo>
+</frameworkConfigRecord>

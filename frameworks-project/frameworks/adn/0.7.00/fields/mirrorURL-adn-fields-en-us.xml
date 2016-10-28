@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: mirrorURL-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:47 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="URL - mirror" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/technical/online/mirrorURLs/mirrorURL">
+		<definition>another URL that resolves to the same resource, in content, language and file format, as the primary URL (resource) being cataloged</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2001-01-01" link1="http://www.physics.louisville.edu/nineplanets/" url1="http://www.physics.louisville.edu/nineplanets/" link2="http://www.asi.org/nineplanets/" url2="http://www.asi.org/nineplanets/">Mirror sites are URLs with a different domain name but same content, language and file format. For example, http://www.physics.louisville.edu/nineplanets/ and http://www.asi.org/nineplanets/ have different domains (physics.louisville.edu vs. asi.org) that resolve to the same site, The Nine Planets.</practice>
+
+				<practice status="current" originDate="2005-10-06" link1="http://www.dlese.org/" url1="bold" link2="http://www.dlese.org/index.jsp" url2="bold">Mirror sites can be URLs with the same domain but a different file name that resolves to the same site. That is, http://www.dlese.org/ and http://www.dlese.org/index.jsp can be considered mirror sites because they resolve to the same web page.</practice>
+
+				<practice status="current" originDate="2001-01-01">Begin URLs with an appropriate Internet scheme like http://, ftp://, https://, etc.</practice>
+
+				<practice status="current" originDate="2001-01-01">URLs with ampersands, equal signs, question marks, spaces, percent 20's, underscores and numbers are okay, but, if possible, minimize cataloging such URLs.</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2006-07-17" link1="relations" style1="bold" link2="Is version of" style2="bold">Do not make a mirror site if the mirror site is a different version of the resource's intellectual content. Use the relations field to express this relationship as Is version of. </practice>
+				<practice status="current" originDate="2006-07-17" link1="relations" style1="bold" link2="Is format of" style2="bold">Do not make a mirror site if the mirror site is a different format of the resource's intellectual content. Use the relations field for different formats like jpeg versus gif, html versus pdf to express the relationship as Is format of.</practice>
+				<practice status="current" originDate="2006-07-17" link1="relations" style1="bold" link2="Is version of" style2="bold">Do not make a mirror site if the mirror site is a different language of the resource's intellectual content. Use the relations field to express this relationship as Is version of.</practice>
+
+<!--			<practice status="obsolete" originDate="2001-01-01" archDate="2005-10-06">Do not use mirror sites when the domain name does not change. That is, http://www.asite.org/index.html and http://www.asite.org/home.html are not mirror sites because they have the same domain of www.asite.org.</practice>
+				<practice status="obsolete" originDate="2001-01-01" archDate="2005-03-01">Do not use other URL specifiers (ftp or https) other than http because they are not supported and will cause this tool to crash.</practice>-->
+			</donts>
+			
+			<examples>
+				<practice status="current" originDate="2006-07-17" link1="http://www.nineplanets.org/" url1="http://www.nineplanets.org/" link2="http://www.seds.org/nineplanets/nineplanets/nineplanets.html" url2="http://www.seds.org/nineplanets/nineplanets/nineplanets.html">Different domain: http://www.nineplanets.org/ and http://www.seds.org/nineplanets/nineplanets/nineplanets.html</practice>
+				<practice status="current" originDate="2006-09-19" link1="http://www.nature.nps.gov/water/index.cfm" url1="http://www.nature.nps.gov/water/index.cfm" link2="http://www1.nature.nps.gov/water/index.cfm" url2="http://www1.nature.nps.gov/water/index.cfm">Same domain: http://www.nature.nps.gov/water/index.cfm and http://www1.nature.nps.gov/water/index.cfm</practice>
+				<practice status="current" originDate="2006-07-17" link1="http://www.glyfac.buffalo.edu/gerp/eruption.html" url1="http://www.glyfac.buffalo.edu/gerp/eruption.html" link2="http://wings.buffalo.edu/academic/department/geology/gerp/eruption.html
+" url2="http://wings.buffalo.edu/academic/department/geology/gerp/eruption.html
+">Same domain: http://www.glyfac.buffalo.edu/gerp/eruption.html and http://wings.buffalo.edu/academic/department/geology/gerp/eruption.html
+</practice>
+				<practice status="current" originDate="2006-09-18" link1="http://www.dlese.org/resources/gradeLevelResk_5.html" url1="http://www.dlese.org/resources/gradeLevelResk_5.html" link2="http://www.dlese.org/resources/handoutk-5.doc" url2="http://www.dlese.org/resources/handoutk-5.doc">Different format: Examples of exemplary resources for the K - 5 levels in html and MSWord: http://www.dlese.org/resources/gradeLevelResk_5.html and http://www.dlese.org/resources/handoutk-5.doc</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>http://dept.physics.upenn.edu/nineplanets/</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

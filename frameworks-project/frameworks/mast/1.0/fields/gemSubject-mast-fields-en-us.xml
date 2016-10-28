@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- $Id: gemSubject-mast-fields-en-us.xml,v 1.12 2009/07/30 15:27:17 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/GEMsubject.xsd">
+
+  <field name="GEM Subject" metaFormat="mast" metaVersion="1.0" language="en-us" path="/record/general/subjects/gemSubject">
+		<definition attribution="Dublin Core Metadata Element Set, Version 1.1: Reference Description at http://dublincore.org/documents/dces/">The topic of the content of the resource.</definition> 
+		
+		
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="GEM Subject" levelDeftn="The nature or genre of the content of the resource."/>
+		</vocabLevels>
+
+		<terms><!--From: http://www.thegateway.org/about/documentation/gem-controlled-vocabularies/vocabulary-subject-->
+			<termAndDeftn vocab="Arts"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Architecture"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Art therapy"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Careers"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Computers in art"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Dance"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Drama/dramatics"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Film"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:History"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Informal education"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Instructional issues"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Music"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Photography"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Popular culture"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Process skills"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Technology"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Theater arts"></termAndDeftn> 
+			<termAndDeftn vocab="Arts:Visual arts"></termAndDeftn> 
+			<termAndDeftn vocab="Educational technology"></termAndDeftn> 
+			<termAndDeftn vocab="Educational technology:Audio-visual equipment"></termAndDeftn> 
+			<termAndDeftn vocab="Educational technology:Careers"></termAndDeftn> 
+			<termAndDeftn vocab="Educational technology:Educational media"></termAndDeftn> 
+			<termAndDeftn vocab="Educational technology:History"></termAndDeftn> 
+			<termAndDeftn vocab="Educational technology:Informal education"></termAndDeftn> 
+			<termAndDeftn vocab="Educational technology:Instructional issues"></termAndDeftn> 
+			<termAndDeftn vocab="Educational technology:Integrating technology into the classroom"></termAndDeftn> 
+			<termAndDeftn vocab="Educational technology:Language laboratories"></termAndDeftn> 
+			<termAndDeftn vocab="Educational technology:Multimedia education"></termAndDeftn> 
+			<termAndDeftn vocab="Educational technology:Staff inservice"></termAndDeftn> 
+			<termAndDeftn vocab="Educational technology:Technology"></termAndDeftn> 
+			<termAndDeftn vocab="Educational technology:Technology planning"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Alphabet"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Bilingualism"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Careers"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Cultural awareness"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Grammar"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:History"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Informal education"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Instructional issues"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Linguistics"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Listening comprehension"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Process skills"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Reading"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Speaking"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Spelling"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Technology"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Vocabulary"></termAndDeftn> 
+			<termAndDeftn vocab="Foreign languages:Writing"></termAndDeftn> 
+			<termAndDeftn vocab="Health"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Aging"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Body systems and senses"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Careers"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Chronic conditions"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Consumer health"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Death and dying"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Disease"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Environmental health"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Family life"></termAndDeftn> 
+			<termAndDeftn vocab="Health:History"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Human sexuality"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Informal education"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Instructional issues"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Mental/emotional health"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Nutrition"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Safety"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Smoking"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Substance abuse prevention"></termAndDeftn> 
+			<termAndDeftn vocab="Health:Technology"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Alphabet"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Careers"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Debate"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Grammar"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Handwriting"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:History"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Informal education"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Instructional issues"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Journalism"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Listening comprehension"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Literature"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Mechanics"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Phonics"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Process skills"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Reading"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Reading aloud"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Speech"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Spelling"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Story telling"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Technology"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Vocabulary"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Whole language"></termAndDeftn> 
+			<termAndDeftn vocab="Language arts:Writing (composition)"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Algebra"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Applied mathematics"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Arithmetic"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Calculus"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Careers"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Discrete mathematics"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Functions"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Geometry"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:History"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Informal education"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Instructional issues"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Measurement"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Number sense"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Number theory"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Patterns"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Probability"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Process skills"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Statistics"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Technology"></termAndDeftn> 
+			<termAndDeftn vocab="Mathematics:Trigonometry"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Aesthetics"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Careers"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Educational philosophy"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Epistemology"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Ethics"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Existentialism"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Hermeneutics"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:History"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Informal education"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Instructional issues"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Logic"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Marxism"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Phenomenology"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Platonism"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Process skills"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Semiotics"></termAndDeftn> 
+			<termAndDeftn vocab="Philosophy:Technology"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Adventure and risk challenge activities"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Aquatics"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Careers"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Games (educational)"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Gymnastics (educational)"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:History"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Individual sports"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Informal education"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Instructional issues"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Motor/movement skills"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Outdoor education"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Process skills"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Rhythms and dance"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Skill-related fitness"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Team sports"></termAndDeftn> 
+			<termAndDeftn vocab="Physical education:Technology"></termAndDeftn> 
+			<termAndDeftn vocab="Religion"></termAndDeftn> 
+			<termAndDeftn vocab="Religion:Buddhism"></termAndDeftn> 
+			<termAndDeftn vocab="Religion:Careers"></termAndDeftn> 
+			<termAndDeftn vocab="Religion:Christianity"></termAndDeftn> 
+			<termAndDeftn vocab="Religion:Confucianism"></termAndDeftn> 
+			<termAndDeftn vocab="Religion:History"></termAndDeftn> 
+			<termAndDeftn vocab="Religion:Informal education"></termAndDeftn> 
+			<termAndDeftn vocab="Religion:Instructional issues"></termAndDeftn> 
+			<termAndDeftn vocab="Religion:Islam"></termAndDeftn> 
+			<termAndDeftn vocab="Religion:Judaism"></termAndDeftn> 
+			<termAndDeftn vocab="Religion:Process skills"></termAndDeftn> 
+			<termAndDeftn vocab="Religion:Taoism"></termAndDeftn> 
+			<termAndDeftn vocab="Religion:Technology"></termAndDeftn> 
+			<!-- not including a parent topic because general science exists as a vocab term-->
+			<termAndDeftn vocab="Science:Agriculture"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Astronomy"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Biological and life sciences"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Biology"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Botany"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Careers"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Chemistry"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Earth science"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Ecology"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Embryology"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Engineering"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Entomology"></termAndDeftn> 
+			<termAndDeftn vocab="Science:General science"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Geology"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Histology"></termAndDeftn> 
+			<termAndDeftn vocab="Science:History"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Informal education"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Instructional issues"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Metallurgy"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Meteorology"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Natural history"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Oceanography"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Paleontology"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Paleontology"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Pharmacology"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Physical sciences"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Physics"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Process skills"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Space sciences"></termAndDeftn> 
+			<termAndDeftn vocab="Science:Technology"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Anthropology"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Careers"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Civics"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Comparative political systems"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Criminology"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Current events/issues"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Economics"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Geography"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Gerontology"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:History"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Human behavior"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Human relations"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Informal education"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Instructional issues"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Psychology"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Social work"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Sociology"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:State history"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Technology"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Technology and civilization"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:United States Constitution"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:United States government"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:United States history"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:Urban studies"></termAndDeftn> 
+			<termAndDeftn vocab="Social studies:World history"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Agriculture"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Allied health occupations"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Business"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Careers"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Cooperative education"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Distributive"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:History"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Informal education"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Instructional issues"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Occupational home economics"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Process skills"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:School-to-work"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Tech prep"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Technical"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Technology"></termAndDeftn> 
+			<termAndDeftn vocab="Vocational education:Trade and industrial"></termAndDeftn> 
+	</terms>
+
+<bestPractices>
+			<dos>
+				<practice status="current" originDate="2008-10-20">Choose at least one subject term. Choose terms that describe the predominant content of the resource: e.g. what the content of the resource is about or what it is. Most resources are adequately described using four or less appropriate subjects.</practice> <!--source:DLESE and CDP-->
+			
+			</dos>
+			<donts>
+				<practice status="current" originDate="2008-10-20">The Subject element in GEM metadata is to represent the "aboutness" or "topicality" of the resource. The test of whether a term should be assigned by the cataloger is to ask whether an end user who is looking for something on the topic of the term would be satisfied when retrieving the resource. If the answer is "no", do not assign the term.</practice><!--source:GEM-->
+				
+			</donts>
+		
+	   </bestPractices>
+	</field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->
+

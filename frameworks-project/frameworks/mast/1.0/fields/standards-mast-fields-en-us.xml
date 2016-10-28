@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: standards-mast-fields-en-us.xml,v 1.4 2009/07/30 15:27:17 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/non-vocab-fields.xsd">
+  <field name="Standards" metaFormat="mast" metaVersion="1.0" language="en-us" path="/record/educational/standards">
+		<definition attribution="Digital Learning Sciences at the University Corporation for Atmospheric Research">A list of state and/or national academic standards mapped to the entity being described.</definition> 
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2008-10-20">This element has two subelements, one in which a unique identifier can be used to reference a standard (asnID), and one that allows for text-based entry of standards alignment information (standard). Either or both elements can be used.</practice>
+
+				<practice status="current" originDate="2008-10-20">Where the resource has been correlated to academic standards by its creator or publisher and that information is available in the resource, it is useful to capture that information in the Standards element.</practice>
+				<practice status="current" originDate="2008-10-20">In most instances, standards correlations require considerable expertise in the methods and processes of teaching and learning and in student intellectual development. As a result, doing such correlations is beyond the expertise of most individuals creating metadata. Therefore, unless local cataloging policy dictates otherwise, it is best to do "copy cataloging" only of such correlations.</practice>
+				
+				<practice status="current" originDate="2008-10-20">The standard correlation should be recorded in the metadata at the same level of granularity that is included in the resource. E.g., if a resource is correlated at a benchmark level more refined than at a top-level standards level, record the correlation at the benchmark level.</practice>
+
+			</dos>
+		
+		</bestPractices>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

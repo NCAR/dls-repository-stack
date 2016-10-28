@@ -1,0 +1,8 @@
+<!ELEMENT load_vocabulary_files (definitions, user_interfaces)>
+
+<!ELEMENT definitions (file+)>
+<!ELEMENT user_interfaces (file+)>
+
+<!ELEMENT file (#PCDATA)>
+
+

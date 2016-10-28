@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- alphabetical listing of framework fields filenames -->
+<!-- alphabetical listing of framework fields field names -->
+<metadataFieldsInfo>
+	<files>
+		<file>oai_dc/2.0/fields/contributor-oai-dc-fields-en-us.xml</file>
+		<file>oai_dc/2.0/fields/type-oai-dc-fields-en-us.xml</file>
+		<file>oai_dc/2.0/fields/title-oai-dc-fields-en-us.xml</file>
+	</files>
+	<fields>
+		<field>Contributor</field>
+		<field>Resource Type</field>
+		<field>Title</field>
+	</fields>
+</metadataFieldsInfo>

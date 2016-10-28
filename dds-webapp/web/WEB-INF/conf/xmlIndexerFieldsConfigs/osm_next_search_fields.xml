@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="osm_next">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<xpaths>
+				<xpath>/record/general/recordID</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="url">
+			<xpaths>
+				<xpath>/record/general/urlOfRecord</xpath>
+				<xpath>/record/resources/primaryAsset/@url</xpath>
+			</xpaths>		
+		</standardField>		
+		<standardField name="title">
+			<xpaths>
+				<xpath>/record/general/title</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/record/general/description</xpath>
+			</xpaths>		
+		</standardField>		
+	</standardFields>
+	<customFields>
+		<!-- customField attributes: name, store, [type OR analyzer] -->
+		<customField name="osmDateFiscal" store="yes" type="key">
+			<xpaths>
+				<xpath>/record/coverage/date[@type='Fiscal']</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmDatePublished" store="yes" type="key">
+			<xpaths>
+				<xpath>/record/coverage/date[@type='Published']</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmDateCreated" store="yes" type="key">
+			<xpaths>
+				<xpath>/record/coverage/date[@type='Created']</xpath>
+			</xpaths>
+		</customField>
+
+		<customField name="osmDateRangePublishedStart" store="yes" type="key">
+			<xpaths>
+				<xpath>/record/coverage/dateRange[@type='Published']/@start</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmDateRangePublishedEnd" store="yes" type="key">
+			<xpaths>
+				<xpath>/record/coverage/dateRange[@type='Published']/@end</xpath>
+			</xpaths>
+		</customField>
+
+		<!-- 
+			The following fields enable ordering search results by author order using a query like:
+				osmAuthorLastNameOrder1:(washington)^5 OR 
+				osmAuthorLastNameOrder2:(washington)^4 OR 
+				osmAuthorLastNameOrder3:(washington)^3 OR 
+				osmAuthorLastName:(washington) 
+		-->
+		<customField name="osmAuthorLastName" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Author']/lastName</xpath>
+			</xpaths>
+		</customField>		
+		<customField name="osmAuthorLastNameOrder1" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Author'][@order='1']/lastName</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmAuthorLastNameOrder2" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Author'][@order='2']/lastName</xpath>
+			</xpaths>
+		</customField>
+		<customField name="osmAuthorLastNameOrder3" store="yes" type="text">
+			<xpaths>
+				<xpath>/record/contributors/person[@role='Author'][@order='3']/lastName</xpath>
+			</xpaths>
+		</customField>		
+	</customFields>
+</XMLIndexerFieldsConfig>

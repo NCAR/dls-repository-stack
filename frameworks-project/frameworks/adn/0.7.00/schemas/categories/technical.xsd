@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.7.00">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Overview  **************************************************************
+				This is an ADN item-level CATEGORY schema.
+				Tags defined: technical
+
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Other CATEGORY Schemas to Include  ********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="commonfields.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  VOCABULARY Schemas to Include  ***********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="../vocabs/defaults.xsd"/>
+	<xsd:include schemaLocation="../vocabs/objectTypeDLESE.xsd"/>
+	<xsd:include schemaLocation="../vocabs/requirementTypeDLESE.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  ROOT Element  **********************************************
+							There is no root element for this schema.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Other Elements  **********************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Complex Types  (alpha order) *****************************
+	
+				mediumsType		 			is part onlineType 
+				mirrorURLsType					is part of onlineType
+				objectTypesType	 			is part of offlineType 
+				offlineType			 			is part of technicalType
+				onlineType			 			is part of technicalType
+				otherRequirementType			is part of otherRequirementsType
+				otherRequirementsType			is part of onlineType
+				requirementType				is part of requirementsType
+				requirementsType				is part of onlineType
+				technicalType					is part of ADNmetdataType in record.xsd
+				
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="mediumsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  mediumsType  *************************************************
+				These elements have the following types or schema associated with them.
+				medium					is simple; see commonfields.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="medium" type="stringTextType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="mirrorURLsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  mirrorURLsType  *************************************************
+				mirrorURL				is simple; see commonfields.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="mirrorURL" type="stringTextType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="objectTypesType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  objectTypesType  *************************************************
+				These elements have the following types or schema associated with them.
+				objectType				is  simple
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="objectType" type="union.objectTypeType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="offlineType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  offlineType  *************************************************
+				These elements have the following types or schema associated with them.
+				objectDescription			is simple; see commonfields.xsd
+				accessInformation			is simple; see commonfields.xsd
+				objectTypes					is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="objectDescription" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="accessInformation" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="objectTypes" type="objectTypesType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="onlineType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  onlineType  *************************************************
+				These elements have the following types or schema associated with them.
+				primaryURL				is simple; see commonfields.xsd
+				mirrorURLs				is complex
+				mediums				is complex
+				size					is simple; see commonfields.xsd
+				duration					is simple
+				description				is global; see commonfields.xsd
+				requirements			is complex
+				otherRequirements		is complex	
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="primaryURL" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="mirrorURLs" type="mirrorURLsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="mediums" type="mediumsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="size" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="duration" type="xsd:duration" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="description" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="requirements" type="requirementsType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="otherRequirements" type="otherRequirementsType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="otherRequirementType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  otherRequirementType  *************************************************
+				otherType					is simple; see commonfields.xsd
+				minimumVersion				is simple; see commonfields.xsd
+				maximumVersion			is simple; see commonfields.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="otherType" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="minimumVersion" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="maximumVersion" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="otherRequirementsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  otherRequirementsType  *************************************************
+				These elements have the following types or schema associated with them.
+				otherRequirement				is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="otherRequirement" type="otherRequirementType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="requirementType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  requirementType  *************************************************
+				These elements have the following types or schema associated with them.
+				reqType					is a simple type
+				minimumVersion				is simple; see commonfields.xsd
+				maximumVersion			is simple; see commonfields.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="reqType" type="union.reqTypeType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="minimumVersion" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="maximumVersion" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="requirementsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  requirementsType  *************************************************
+				These elements have the following types or schema associated with them.
+				requirement				is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="requirement" type="requirementType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="technicalType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  technicalType  *************************************************
+				These elements have the following types or schema associated with them.
+				online					is complex
+				offline					is  complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="online" type="onlineType" maxOccurs="1"/>
+			<xsd:element name="offline" type="offlineType" maxOccurs="1"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************
+				These elements have the following types or schema associated with them.
+
+				union.objectTypeType	see objectTypeDLESE.xsd
+				union.reqTypeType		see requirementTypeDLESE.xsd
+
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="union.objectTypeType">
+		<xsd:union memberTypes="DLESEobjectTypeType "/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.reqTypeType">
+		<xsd:union memberTypes="DLESEreqTypeType suppliedType"/>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: contributor-mast-fields-en-us.xml,v 1.6 2009/07/29 22:19:29 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:DCMI="http://purl.org/dc/dcmitype/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/non-vocab-fields.xsd">
+	<field name="Contributor" language="en-us" metaFormat="mast" metaVersion="1.0" path="/record/contributions/contributors/contributor">
+		<definition attribution="Dublin Core Metadata Element Set, Version 1.1: Reference Description at http://dublincore.org/documents/dces/">An entity responsible for making contributions to the resource.</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2008-11-17">The Contributor element is intended to contain the names of entities making contributions to the intellectual content of the resource being described whose roles are lesser than those of principal authors/creators. Thus, the creator of an index to a work created by a different author would be considered a contributor to the resource.</practice><!--GEM-->
+				<practice status="current" originDate="2008-11-17">If a resource has more than one contributor, the Contributor element should be repeated--once for each contributor.</practice><!--GEM-->
+				<practice status="current" originDate="2008-11-17">Enter multiple contributors either in the order in which they appear in the resource, or in order of their importance. Use separate Contributor elements to enter multiple contributors or clearly separate each entry by a semicolon and a space within an element.</practice><!--CDP-->
+				<practice status="current" originDate="2008-11-17">In the case of organizations where there is clearly a hierarchy present, list the parts of the hierarchy from largest to smallest, separated by full stops (periods). If it is not clear whether there is a hierarchy present, or unclear which is the larger or smaller portion of the body, give the name as it appears in the entity being described.</practice><!--GEM-->
+				<practice status="current" originDate="2006-10-06">Spell out organizational acronyms.</practice><!--UCAR-->
+				<practice status="current" originDate="2006-11-17">Personal names should be listed surname or family name first, followed by forename or given name. When in doubt, give the name as it appears, and do not invert.</practice><!--GEM-->
+				
+				<practice status="current" originDate="2006-11-17">If there is doubt as to how to enter a name and the form of name cannot be verified in a controlled vocabulary, enter it as it appears and do not invert. For example: 'Sitting Bull.'</practice>
+				<practice status="current" originDate="2006-11-17">Optional: The function of a contributor may be included in parentheses after the name. For example: 'Rockwell, Norman, 1894-1978 (illustrator).'</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2004-12-20">Do not include person, organization or services involved in creating metadata information.</practice>
+			</donts>
+		</bestPractices>
+
+	</field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

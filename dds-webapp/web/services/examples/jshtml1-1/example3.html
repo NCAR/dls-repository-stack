@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+	<title>Example DLESE search page</title>
+
+	<!-- 
+		Include the suggested_styles.css sheet to obtain basic display options for your page
+		You may override any of the style definitions later on, copy them into your
+		own style sheet or place them directly in you HTML page
+	 -->
+	<LINK REL="stylesheet" TYPE="text/css" HREF="@DDS_SERVER_BASE_URL@/services/jshtml1-1/suggested_styles.css">
+	
+	<style type="text/css">
+		<!--
+		/* Note: All of the text returned by the service is within a TD element */
+		TD { 
+			font-family: Arial, Helvetica, sans-serif; 
+			font-size: 10pt; 
+		} 	
+		H1 {
+			font-family:  Arial, Helvetica, sans-serif; 
+			font-size: 14pt; 
+		} 		
+		H2 { 
+			font-family: Arial, Helvetica, sans-serif; 
+			font-size: 12pt; 
+		} 
+		-->
+	</style>	
+	
+	
+</head>
+<body>
+
+<table class="stdTable">
+	<tr class="stdTable">
+		<td class="stdTable">
+			<h1>Search the Digital Library for Earth System Education (DLESE)</h1>
+			
+			<p><a href="index.html#examples">Back to the Examples</a></p>
+			
+			<!-- 
+				To create a smart link, use the SmartLink command in your <a> tag.
+				The SmartLink command takes two parameters: the first is the
+				search query that defines the SmartLink, the second is the label
+				that gets displayed in the search results.
+			-->
+			<b>Choose a category:</b><br>
+			<a href='JavaScript:SmartLink("oceans OR subject:ocean*","Oceans")'>Oceans</a><br>
+			<a href='JavaScript:SmartLink("\"Atmospheric science\"","Atmospheric science")'>Atmospheric science</a><br>
+			<a href='JavaScript:SmartLink("hurricane OR storm OR blizzard OR hail OR thunder OR lightning","Weather events")'>Weather events</a><br>
+			
+			<br>
+			<b>Enter a keyword or topic:</b>
+		</td>
+	</tr>
+</table>
+
+<!-- 
+	The following two <SCRIPT> elements are required to render the DLESE search.
+	These may be placed at any location in your page to customize where the DLESE
+	search is displayed.
+-->
+<SCRIPT TYPE="text/javascript" SRC="@DDS_SERVER_BASE_URL@/services/jshtml1-1/javascript_search_service.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript">
+	<!--	
+	
+	/*
+		To display various elements in your page, use the ShowElement command.
+		The ShowElement takes a single parameter and there are many
+		to choose from. All possible ShowElement commands are shown here 
+		and may be un-commented to activate them - try them to see what they 
+		control in the display of your page. Note that the order in which
+		the ShowElement command appears in your page does not effect the
+		order in which the elemtents are displayed.
+	*/	
+	ShowElement("gradeLevelsMenu");
+	//ShowElement("resourceTypesMenu");
+	//ShowElement("subjectsMenu");
+	//ShowElement("contentStandardsMenu");
+	//ShowElement("collectionsMenu");	
+
+	/*
+		To create a custom menu, use the CustomMenuItem command.
+		The CustomMenuItem command takes three parameters:
+		the first is the name and label for the menu - if no custom menu
+		exists by that name, one will be created. The second
+		parameter is the name and label of the item in the menu. The
+		third is the query that gets mapped to the item in the menu.
+		Custom menus are displayed in the order in which they are 
+		place in your page.
+	*/
+	CustomMenuItem("Domains","NASA","url:h*nasa.gov*");
+	CustomMenuItem("Domains","NOAA", "url:h*noaa.gov*");
+	CustomMenuItem("Domains","EDU", "url:h*.edu*");
+		
+	CustomMenuItem("Topics","Biology","Biology");
+	CustomMenuItem("Topics","Ecology", "Ecology");
+	CustomMenuItem("Topics","Geology", "Geology");
+	CustomMenuItem("Topics","Ocean science", "subject:ocean*");
+	
+	ShowElement("searchBox");
+	ShowElement("searchWithinSmartLinkResults");
+	
+	ShowElement("gradeLevelSR");
+	ShowElement("resourceTypeSR");
+	ShowElement("subjectSR");	
+	//ShowElement("collectionSR");
+	//ShowElement("accessionDateSR");	
+	//ShowElement("annotations");
+
+	/*
+		The HideElement command hides elements that normally would be
+		disalayed.
+	*/		
+   //HideElement("titleRewrite");
+   //HideElement("logo");
+   //HideElement("pager");		
+	
+	/*
+		The following commands control certain behaviors in the search
+		page, as indicated by their name. Try them to see how they 
+		effect the behavior or display features of your page.
+	*/	
+	//SuppressErrors();
+	//SearchConstraint("california");
+	//SearchBoost("california");
+	//MaxResultsPerPage("5");	
+	//MaxLinkLength("40"); 
+	//MaxDescriptionLength("200");		
+	//RedirectSearchTo("example2.html");
+	//SortBy("mostrelevent");	
+	//SortBy("mostrecent");
+	//SortBy("title");	
+	
+	/* 
+		The RenderPage command instructs the service to perform the search and 
+		render the page. This is the only command that is required, and must 
+		be the last command in your page. 
+	*/
+	RenderPage();	
+	
+	-->
+</SCRIPT>
+
+<!-- Provide a message if JavaScript is disabled in the user's browser -->
+<NOSCRIPT>
+	This page requires that JavaScript be turned on. Please activate JavaScript in your browser.
+</NOSCRIPT> 
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.7.00">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Overview  **************************************************************
+				This is an ADN item-level CATEGORY schema.
+				Tags defined: educational
+
+				Abbreviations:
+				AAAS: American Asssociation for the Advancement of Science
+				NCGE: National Council for Geographic Education
+				NCTM: National Council of Teachers of Mathematics
+				NSES: National Science Education Standards
+				NETS: National Educational Technology Standards
+				LOM: Learning Object Model
+				GEM: Gateway to Educational Materials
+
+
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Other CATEGORY Schemas to Include  ********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="commonfields.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  VOCABULARY Schemas to Include  ***********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="../vocabs/beneficiaryDLESE.xsd"/>
+	<xsd:include schemaLocation="../vocabs/beneficiaryGEM.xsd"/>
+	<xsd:include schemaLocation="../vocabs/defaults.xsd"/>
+	<xsd:include schemaLocation="../vocabs/gradeRangeDLESE.xsd"/>
+	<xsd:include schemaLocation="../vocabs/interactivityLevelLOM.xsd"/>
+	<xsd:include schemaLocation="../vocabs/interactivityTypeLOM.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsAAASbenchmarksContentCommon.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsAAASbenchmarksContentDesigned.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsAAASbenchmarksContentHabits.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsAAASbenchmarksContentHistorical.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsAAASbenchmarksContentHuman.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsAAASbenchmarksContentLiving.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsAAASbenchmarksContentMath.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsAAASbenchmarksContentPhysical.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsAAASbenchmarksContentScience.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsAAASbenchmarksContentTechnology.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsNCGE.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsNCTMcontent.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsNCTMprocess.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsNETScontent.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsNETSteaching.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsNSEScontent.xsd"/>
+	<xsd:include schemaLocation="../vocabs/standardsNSESteaching.xsd"/>
+	<xsd:include schemaLocation="../vocabs/resourceTypeDC.xsd"/>
+	<xsd:include schemaLocation="../vocabs/resourceTypeDLESE.xsd"/>
+	<xsd:include schemaLocation="../vocabs/teachingMethodDLESE.xsd"/>
+	<xsd:include schemaLocation="../vocabs/teachingMethodGEM.xsd"/>
+	<xsd:include schemaLocation="../vocabs/toolForDLESE.xsd"/>
+	<xsd:include schemaLocation="../vocabs/toolForGEM.xsd"/>
+	<xsd:include schemaLocation="../vocabs/roleLifecycle.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  ROOT Element  **********************************************
+							There is no root element for this schema.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Other Elements  **********************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Complex Types  (alpha order) *****************************
+	
+				audienceType		  			is part of audiencesType
+				audiencesType		  			is part of educationalType
+				contentStandardsType			is part of educationalType
+				educationalType					is part of ADNmetdataType in record.xsd 
+				resourceTypesType				is part of educationalType
+				teachingMethodsType			is part of audienceType
+				teachingStandardsType			is part of educationalType
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="audienceType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  audienceType  ***************************************************
+				These elements have the following types or schema associated with them.
+				toolFor					is a simple type
+				beneficiary				is a simple type
+				gradeRange				is a simple type
+				teachingMethods		is complex 
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="toolFor" type="union.toolForType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="beneficiary" type="union.beneficiaryType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="gradeRange" type="union.gradeRangeType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="typicalAgeRange" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="instructionalGoal" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="teachingMethods" type="teachingMethodsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="typicalUseTime" type="xsd:duration" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="audiencesType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  audiencesType  ***************************************************
+				These elements have the following types or schema associated with them.
+				audience				is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="audience" type="audienceType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="contentStandardsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  contentStandardsType  *************************************************
+				These elements have the following types or schema associated with them.
+				contentStandard			is a simple type 
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="contentStandard" type="union.contentStandardType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="educationalType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  educationalType  ***************************************************
+				These elements have the following types or schema associated with them.
+				audiences				is a complex type; contains required gradeRange
+				resourceTypes			is complex 
+				contentStandards		is complex
+				teachingStandards		is complex
+				interactivityLevel		is a simple type
+				interactivityType			is a simple type
+				description				is a global; see commonfields.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="audiences" type="audiencesType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="resourceTypes" type="resourceTypesType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="contentStandards" type="contentStandardsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="processStandards" type="processStandardsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="teachingStandards" type="teachingStandardsType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="interactivityLevel" type="union.interactivityLevelType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="interactivityType" type="union.interactivityTypeType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="description" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="processStandardsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				*************************************** processStandardsType  *************************************************
+				These elements have the following types or schema associated with them.
+				processStandard			is a simple type 
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="processStandard" type="union.processStandardType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="resourceTypesType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  resourceTypesType  *************************************
+				These elements have the following types or schema associated with them.
+				resourceType				is a simple type
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="resourceType" type="union.resourceTypeType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="teachingMethodsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  teachingMethodsType  *************************************************
+				These elements have the following types or schema associated with them.
+				teachingMethod			is a simple type 
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="teachingMethod" type="union.teachingMethodType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="teachingStandardsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  teachingStandardsType  *************************************************
+				These elements have the following types or schema associated with them.
+				teachingStandard			is a simple type 
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="teachingStandard" type="union.teachingStandardType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>
+			*******************************************  Simple Types  *************************************
+			For this section see the appropriately included vocabulary schemas near the top.
+			union.beneficiaryType			
+			union.contentStandardsType
+			union.gradeRangeType
+			union.interactivityLevelType
+			union.interactivityTypeType
+			union.resourceTypeType
+			union.teachingStandardsType
+			union.teachingMethodType
+			union.toolForType
+			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="union.beneficiaryType">
+		<xsd:union memberTypes="DLESEbeneficiaryType GEMbeneficiaryType"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="union.contentStandardType">
+		<xsd:union memberTypes="NCGEgeographyContentStandardsType NCTMmathContentStandardsType NSESscienceContentStandardsAllType AAAScontentCommonType AAAScontentDesignedType AAAScontentHabitsType AAAScontentHistoricalType AAAScontentHumanType AAAScontentLivingType AAAScontentMathType AAAScontentPhysicalType AAAScontentScienceType AAAScontentTechnologyType NETStechnologyContentStandardsType"/>
+	</xsd:simpleType>
+
+<!--ADN version 0.6.50-->
+<!--	<xsd:simpleType name="union.contentStandardType">
+		<xsd:union memberTypes="NCGEgeographyContentStandardsType NCTMmathContentStandardsType NSESscienceContentStandardsType AAAScontentCommonType AAAScontentDesignedType AAAScontentHabitsType AAAScontentHistoricalType AAAScontentHumanType AAAScontentLivingType AAAScontentMathType AAAScontentPhysicalType AAAScontentScienceType AAAScontentTechnologyType NETStechnologyContentStandardsType"/>
+	</xsd:simpleType> -->
+
+	<xsd:simpleType name="union.gradeRangeType">
+		<xsd:union memberTypes="DLESEgradeRangeType suppliedType notapplicableType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.interactivityLevelType">
+		<xsd:union memberTypes="LOMinteractivityLevelType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.interactivityTypeType">
+		<xsd:union memberTypes="LOMinteractivityTypeType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.processStandardType">
+		<xsd:union memberTypes="NCTMmathProcessStandardsType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.resourceTypeType">
+		<xsd:union memberTypes="DLESEresourceTypeType suppliedType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.teachingStandardType">
+		<xsd:union memberTypes="NSESscienceTeachingStandardsType NETStechnologyTeachingStandardsType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.teachingMethodType">
+		<xsd:union memberTypes="DLESEteachingMethodType GEMteachingMethodType"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="union.toolForType">
+		<xsd:union memberTypes="DLESEtoolForType GEMtoolForType"/>
+	</xsd:simpleType>
+</xsd:schema>

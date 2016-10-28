@@ -1,0 +1,52 @@
+<!-- Ant scripts for deploying frameworks -->
+
+<project name="frameworks-support" default="info" basedir="." >
+
+	<!-- frameworks properties file should define frameworks.dest property -->
+	<property file="../frameworks.properties"/>
+
+	<!-- framework.dest property specifies the base directory into which individual framework
+	directories are deployed -->
+	<property name="frameworks.dest" value="" />
+	<property name="frameworks.home" value="../frameworks" />
+	
+	<!-- Info Target
+		- displays values of selected properties
+		- use to verify destinations, etc -->
+	<target name="info">
+		<echo>${ant.project.name} project</echo>
+		<echo>basedir = ${basedir}</echo>
+	</target>
+
+	<!-- DEPLOY_OSM target -->
+	<target name="deploy-osm" depends="info" description="deploy nldr schemas, groups and fields files">
+		<property name="osm.dest" value="${frameworks.dest}/osm" />
+		<property name="osm.home" value="${frameworks.home}/osm" />
+		<echo>deploying to "${osm.dest}"</echo>
+		<echo>osm.dest: ${osm.dest}</echo>
+		<echo>osm.home: ${osm.home}</echo>
+		<mkdir  dir="${osm.dest}"/>
+		<copy todir="${osm.dest}"> 
+		   <fileset dir="${osm.home}" />
+		</copy>
+	</target>
+	
+	
+	<!-- CVS Update target - UNDER DEVELOPMENT
+		- may not work on windows
+		- may require 'cvs' to be aliased in shell environment. -->
+	<target name="cvs_update" description="updates this project from CVS">
+		<cvs dest=".." command="update -dP" />
+	</target>
+	
+	<!-- NLDR Deploy - deploy the specified nldr frameworks (see fileset->includes) 
+	     to the frameworks.dest directory -->
+	<target name="nldr-deploy" depends="info" description="deploy nldr schemas, groups and fields files">
+		<mkdir  dir="${frameworks.dest}"/>
+		<copy todir="${frameworks.dest}"> 
+			<fileset dir="${frameworks.home}"
+					includes="citation/  fields/  groups/  library_dc/  opml/  osm/  osm_collect/  rights_info/" />
+		</copy>
+	</target>	
+
+</project>

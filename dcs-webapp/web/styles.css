@@ -1,0 +1,474 @@
+/* Style sheets for Schemedit front pages */
+
+BODY {
+	background-color: #ffffff;
+	color:#000000;
+}
+
+BODY, TD, TH, .help-em  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+	margin: 7px;
+}
+
+form {
+	margin:0px;
+}
+
+/*
+	global link styles
+*/
+A:link { 
+	Font-Family : Arial, Helvetica, sans-serif;
+	Color : #333366
+} 
+
+A:active {
+	Color : #333366;
+	text-decoration: none;
+} 
+
+A:visited { 
+	Color : #333366
+} 
+
+.red-link:link, .red-link:visited {
+	color: red;
+}
+
+TD {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+}
+
+/* Header styles swiped from dlese-styles, but take dark blue color from dlese_admin_styles */
+H1 { 
+	font-size: 145%;
+	font-weight: bold;
+	Color : #333366;
+	margin-top: 0px;
+	padding-top: 7px;
+} 
+H2 { 
+	font-size: 130%;
+	font-weight: bold;
+	font-style: italic;
+	color: #333366;
+	margin-top: 0px;
+	padding-top: 3px;	 	
+	padding-bottom: 5px;
+} 
+H3 { 	
+	font-size: 125%;
+	font-weight: bold;
+	color: #333366; 
+	margin-top: 0px;
+	margin-bottom: 0px;
+	/* padding-left: 7px; */
+	padding-top: 7px;
+} 
+H4 { 
+	font-size: 110%;
+	font-style: italic;
+	font-weight: bold;
+	color: #333366; 	
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-top: 7px;	
+} 
+H5 { 
+	font-size: 90%;
+	font-weight: bold;
+	color: #000000; 
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 7px;
+	padding-top: 5px;	
+} 
+H6 { 
+	font-size: 85%;	
+	font-weight: normal; 
+	color: #000000; 
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 7px;
+	padding-top: 5px;
+	font-style: italic;	
+}
+
+/* rule to highlight search terms in results */
+.keyword {
+	color:#000099;
+	font-weight:bold;
+}
+
+.admin_blue1 {
+	background-color: #e3e4f1;		
+}
+
+.admin_yellow {
+	background-color: #ffffcc;		
+}
+
+/* breadcrumbs displayed at top of dcs pages for orientation and navigation */
+.breadcrumbs {
+	font-size:90%;
+	/* font-style:italic; */
+	vertical-align:baseline;
+	margin:3px 0px 10px 0px;
+
+}
+
+/* breadcrumb of current page */
+.breadcrumbs .current {
+}
+
+.breadcrumbs a {
+	color:black;
+	text-decoration: none;
+}
+
+.breadcrumbs A:hover {
+	text-decoration: underline;
+	background-color:#e3e4f1;
+}
+
+/* box around generic jsp page messages */
+.page-message-block {
+	/* width:100%; */
+	/* background-color:#efefef; */
+	border:1px black solid;
+	padding:5px 5px 0px 5px;
+	margin:10px 0px 10px 0px;
+}
+
+.lock-notification {
+	text-align:center;
+	color:red;
+	border:thin red solid;
+}
+
+.lock-notification em {
+	font-style:italic;
+	font-weight:bold;
+}
+
+.best-practices {
+	font-size:x-small;
+	color:blue;
+}
+
+/* BANNER Stuff */
+
+.dcs-instance {
+	font-weight:bold;
+	font-size:125%;
+	color:#333366;
+}
+
+
+/* display the name of the current tool 
+	color matches dlese_admin_styles.H1
+*/
+.tool-label {
+	color:#333366;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:200%;
+	font-style:normal;
+	padding:10px 0px 0px 0px;
+}
+
+/* system name displayed in banner */
+.system-label {
+	color:#333366;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:120%; 
+	font-style:normal;
+}
+
+/* end banner stuff */
+
+/* form element input labal */
+.input-label {
+	color: #333366; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 9pt; 
+}
+
+/* 
+	browse-item-nav-links - view XML, Validate XML
+	dcs-data - last Editor, Status, last touch
+*/
+.dcs-data, .browse-item-nav-links, .view-item-header {
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:90%;
+}
+
+.dcs-data, .session-data {
+	font-size:85%;
+}
+
+/*
+sort-by-links - sort recs in search results table
+*/
+.sort-by-link {
+	text-align:center;
+	font-size:100%;
+}
+
+.browse-item-nav-links {text-align:right}
+
+.current-collection-browse {
+	color:black;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:24px;
+	font-style:normal;
+}
+
+/* title of items shown in searching and viewing */
+.browse-item-title {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:1.2em;
+	font-style:normal;
+	margin-left: 2px;
+	margin-bottom: 5px;
+}
+
+/* used by the concepts framework */
+.browse-item-long-title {
+	font-style: italic;
+	font-size: 1.1em;
+	margin-bottom: 3px;
+	margin-left: 2px;
+}
+
+.searchResultValues { 
+	margin-top: 0px;
+	margin-bottom: 3px;
+	margin-left: 11px;
+	margin-right: 7px;
+	text-indent: -9px;
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 0.95em;
+	padding: 0px;
+} 
+
+.record-action-button, .record-action-button-disabled,
+.collection-action-button {
+/* 	color:white;
+	background-color:black; */
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	font-size:0.8em;
+	font-style:normal;
+ 	padding:0px;
+	margin:0px;
+}
+
+.record-action-button-disabled {
+	color:gray;
+}
+/* -------------------- */
+
+.help-em, .doc-em {
+	font-weight:bold;
+	font-style:italic;
+}
+
+.page-head {
+	font-size:150%;
+	font-family: arial, helvetica;
+	text-align:left;
+	font-weight:bold;
+}
+
+.toc-header-row {
+	background-color:#cccccc;
+}
+
+.toc-header-cell {
+	font-family: verdana, helvetica;
+	font-size:x-small;
+	font-weight:bold;
+	text-align:left;
+}
+
+.discussion-link {
+	font-family: verdana, helvetica;
+	font-size:x-small; /* 10pt; */
+	font-weight:normal;
+	text-align:center;
+}
+
+.editor-info {
+	font-family: verdana, helvetica;
+	font-size:10pt;
+	margin-left:5px;
+}
+
+
+/* dropdown-menu styles control the pop-up settings menu in the page header */
+.dropdown-menu-box {
+	border:solid #333366;
+	border-width: 0px 1px 1px 0px;
+	padding:1px 4px 4px 1px;
+	background-color:#CCCEE6;
+}
+
+.dropdown-menu-item {
+	padding:2px;
+	background-color:#E8ECF4;
+	text-align:center;
+	font-weight:bold;
+	font-size:90%;
+}
+
+.dropdown-menu-item a {
+	text-decoration:none;
+}
+
+.dropdown-menu-item a:hover {
+	text-decoration:underline;
+}
+/* instances of dropdown menus */
+#manage-menu {
+	position:absolute;
+	display:none;
+	top:32;
+	left:120;
+ 	width:150;
+}
+#settings-menu {
+	position:absolute;
+	display:none;
+	top:32;
+	left:180;
+ 	width:150;
+}
+
+/* DCS instance label appearing at top of each page */
+.dcs-instance {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	font-style:normal;
+	color:green;
+}
+
+/* PAGE MENU STYLES */
+
+#pageMenu {
+ 	position:relative;
+	top:0px;
+	left:0px;
+	width:420px;
+}
+
+#pageMenu table {
+	/* background-color:red; */
+	border-collapse: collapse;
+}
+
+#pageMenu table td {
+	vertical-align:middle;
+	/* border:1px yellow solid; */
+}
+
+.subMenu {
+	position:absolute;
+	border-right:2px #333366 solid;
+	border-bottom:2px #333366 solid;
+	border-left:1px #333366 solid;
+	z-index:10;
+}
+
+.subMenu table {
+	/* background-color:red; */
+	border-collapse: collapse;
+}
+
+/* 3px bottom padding is important to MenuItems - don't change! 
+	text alignment is achieved with padding, since the area has no extra space
+*/
+.menuItem {
+	padding:2px 7px 3px 5px;
+	white-space:nowrap;
+}
+
+.menuItem.current {
+	background-color:#333366;
+}
+
+.menu-item-label {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	font-style:normal;	
+	color:#333366;
+	vertical-align:top;
+	text-decoration:underline;
+}
+
+.menu-item-label.current {
+	color:white;
+	text-decoration:none;
+	cursor:default;
+}
+
+.menu-item-label.disabled {
+	color:gray;
+	text-decoration:none;
+}
+
+.subMenuItem {
+	padding:1px 7px 5px 7px;
+	white-space:nowrap;
+	background-color:white;
+	text-decoration:none;
+	color:#333366;
+}
+
+.subMenuItem.over, .menuItem.over {
+	background-color:#E3E4F1;
+	cursor:pointer;
+}
+
+/* error and confirmation messages */
+.page-error-box, .confirm-msg-box  {
+	padding:10px;
+	/* width:100%; */
+}
+
+.confirm-msg-box {
+	border:1px blue solid;
+}
+
+.page-error-box {
+	border:1px red solid;
+}
+
+.error-msg, .confirm-msg, .field-error-msg {
+/* 	font-size:0.6em;
+	font-family: verdana, helvetica; */
+	color:red;
+}
+
+.element-error-msg {
+	color:white;
+	background-color:red;
+}
+
+.confirm-msg {
+	color:blue;
+}
+
+.error-msg A:link, .error-msg A:visited {color: #ff0000}
+/* .error-msg A:visited {color: #660000} */
+

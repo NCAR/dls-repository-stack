@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="dlese_anno">
+	<!-- The dlese_anno framework has a Java indexer that provides the standard and custom search fields. -->
+	
+	<!-- Relationships that this format of record defines. -->	
+	<relationships>
+		<!-- 	Relationship of the target record to this.
+		
+				The given relationship name will be attached to the target record, not this record.
+				
+				Examples:
+					target 'isAnnotatedBy' this
+					target 'isExtendedBy' this
+					target 'isMemberOf' this
+					etc.
+					
+				attributes: name=[relationshop name] -->
+		<relationship name="isAnnotatedBy">
+			<!-- Xpath where the target record's ID or URL is stored
+				 attribute type=[id|url] -->
+			<xpaths>
+				<xpath type="id">/annotationRecord/item/itemID</xpath>
+				<xpath type="id">/annotationRecord/itemID</xpath>
+			</xpaths>		
+		</relationship>	
+	</relationships>
+	
+	 <customFields>
+	<!--	<customField facetCategory="AnnotationType">
+			<xpaths>
+				<xpath>/annotationRecord/annotation/type</xpath>
+			</xpaths>		
+		</customField>	-->
+	
+		<customField facetCategory="CCSAssetUrl"> 
+			<xpaths>
+				<!-- Index protected asset urls found in the Asset record -->
+				<!-- no effect after deploy, now restarting to see if that is required ...
+					sweet - it seems to be working. after indexing just comment_bscs there are 524 terms
+					now indexing entire repository ... and we now have 2662 
+					this represents all the dlese_anno records - now we have to index
+					['adn', 'dlese_anno', 'nsdl_dc', 'assessments']
+					and finally we have 3606 terms.
+					-->
+				<xpath>/annotationRecord/annotation/content/url[(starts-with(.,'http://ccs.dls.ucar.edu/home/protected/'))]</xpath>
+
+			</xpaths>		
+		</customField>
+	</customFields>
+	
+</XMLIndexerFieldsConfig>

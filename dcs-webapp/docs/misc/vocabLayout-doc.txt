@@ -1,0 +1,33 @@
+Description of VocabLayout scheme as of 6/9/2009
+
+VocabLayout is a replacement for the legacy MUI groups functionality.
+
+The VocabLayout scheme is a lightweight version which (like the MUI groups)
+supports the layout of controlled vocabs in the metadata editor.
+
+VocabLayout files (aka "groups files") are used to create a structural
+organization of vocabulary terms. Vocabs can be grouped into a flat list
+(rendered as checkboxes) or a hierarchy of terms with headers and nested headers
+and vocabs.
+
+in this document, "leaf" is used to refer to elements in the vocabLayout file
+that have no children (these elements have a "vocab" value for the "type"
+attribute). "header" is used to refer to elements having children (header
+elements have a "group" value for the "type" attribute).
+
+WRAPPING
+the "wrap" attribute is used to force a new column in the display. A leaf
+element having a "true" value for the wrap attribute will be displayed in a new
+column.
+
+likewise, a header element with "wrap" attribute with a value of "true" will
+force the display of that header element in new column. NOTE: a "wrap" attribute
+should only be used on TOP-LEVEL hierarchy elements!
+
+COLLAPSIBLE headers
+header elements having an collapsible="true" attribute are displayed with a
+collapse widget which shows/hides the children of the header.
+
+SELECTABLE headers
+header elements having a vocab="XX" attribute are displayed with a checkbox,
+which, when checked, returns the vocab value.

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.dlese.org/Metadata/dcs/framework-config/dcsFrameworkConfig.xsd">
+  <xmlFormat>nsdl_anno</xmlFormat>
+  <schemaInfo>
+    <rootElementName>nsdl_anno</rootElementName>
+    <schemaURI>http://ns.nsdl.org/ncs/nsdl_anno/1.00/schemas/nsdl_anno.xsd</schemaURI>
+    <paths>
+      <path pathName="id" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="true">/nsdl_anno/recordID</path>
+      <path pathName="dateCreated" requiredByCopyRecord="true" requiredByMinimalRecord="true" valueType="date" readOnly="true">/nsdl_anno/date/@created</path>
+    </paths>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>2</baseRenderLevel>
+    <firstPage>nsdl_anno</firstPage>
+    <rebuildOnStart>true</rebuildOnStart>
+    <fieldInfoURI></fieldInfoURI>
+  </editorInfo>
+  <name>NSDL Annotation</name>
+</frameworkConfigRecord>

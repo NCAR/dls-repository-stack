@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: description-no-fields-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/news-opps/1.0.00/non-vocab-fields.xsd">
+	<field name="Description" language="en-us" metaFormat="news_opps" metaVersion="1.0.00" path="/news-oppsRecord/description">
+		<definition>a textual narrative describing the content, purpose, organization, or goal of the news, event, or opportunity.</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-09-01">Include information that would be helpful to users in discovering the news, event or opportunity.</practice>
+				<practice status="current" originDate="2005-01-25">Include the most important information first.</practice>
+				<practice status="current" originDate="2004-09-01">Use complete sentences in a voice that does not imply the user is at the news, event or opportunity web site but rather is reading a library description.</practice>
+				<practice status="current" originDate="2004-10-21">Summarize specific information like the purpose or goals of the resource.</practice>
+				<practice status="current" originDate="2004-11-04">If a news, event of opportunity is overly complex, including a URL in the description is okay if it helps clarify intent or purpose.</practice>
+				<practice status="current" originDate="2005-01-25">If a description is copied directly from a web site and includes many capitalized words, see if the capitalized words can be lowercased to make for easier reading.</practice>
+				<practice status="current" originDate="2005-02-22" link1="contributor" style1="bold">Generally, put sponsors, agencies, departments, projects and institutions in the contributor field. If knowing the institution in the description helps to understand the item, include only the institution name.</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2005-01-25">Avoid using lots of capitalized words. Lowercase words to make the description easier to read.</practice>
+				<practice status="current" originDate="2004-09-01">Avoid using quotes and ampersands. This allows for easier reading.</practice>
+				<practice status="current" originDate="2004-09-01">Generally, do not include information that can be entered in other fields. That is, do not include location information, dates or sponsors.</practice>
+				<practice status="current" originDate="2004-11-04">Do not include URLs to multiple parts of the news, event or opportunity. That is, pick an appropriate page to catalog like a workshop announcement page and then do not include links to workshop registration pages and workshop agenda pages, etc.</practice>
+				<practice status="current" originDate="2005-02-05" link1="contributor" style1="bold">Do not include a list of agencies or institutions. It is best to put institutions in the contributor field.</practice>
+			</donts>
+
+			<otherPractices>
+				<otherPractice header="Want to use special characters like ©, é, ñ or ê? Do this:">
+					<practice status="current" originDate="2005-10-05" link1="entity references" url1="http://www.w3schools.com/tags/ref_entities.asp">Enter special characters and symbols using their entity references numbers. For the copyright symbol this means entering an ampersand symbol followed by the pound sign followed by the number 169 followed by a semicolon.</practice>
+				</otherPractice>
+
+				<otherPractice header="Cataloging NSF, EPA, NOAA or other government announcement? Do this">
+					<practice status="current">Enter agency names as a contributor with the role of sponsor and spell out the agency and department names in the institutional name and department fields.</practice>
+				</otherPractice>
+				<otherPractice header="Workshop example description">
+				<practice status="current" originDate="2004-10-21" link1="description" style1="bold" link2="location" style2="bold" link3="keyword" style3="bold">An example workshop for the AS-1 Seismograph Workshop is 'Workshop participants will learn to set up, calibrate, operate and troubleshoot an AS-1 seismograph as well as share its data. Participants will also be exposed to classroom activities that make use of the data. Most attendees are expected to be part of the IRIS Seismographs in Schools Network.' The information that this workshop occurs in Seattle, WA at the Northwest Regional National Science Teachers Association conference should not be put in the description field because this information should be entered in the location and keyword fields.</practice>
+				</otherPractice>
+
+				<otherPractice header="Job example description">
+					<practice status="current" originDate="2005-01-25">Include major job duties.</practice>
+					<practice status="current" originDate="2005-01-26">Do not include necessary job qualifications since these often change.</practice>
+					<practice status="current" originDate="2004-10-21" link1="location" style1="bold">An example job announcement is 'EarthScope is inviting applications for the job position of Education and Outreach Manager. The successful candidate will be responsible for coordinating the development of a high-profile education program for EarthScope that emphasizes the integrated nature of the project and the importance of EarthScope's research initiatives.' Again, the fact that this job occurs in Washington, DC should be entered in the location field.</practice>
+				</otherPractice>
+
+				<otherPractice header="Learning or research opportunity example description">
+				<practice status="current" originDate="2004-10-01" link1="description" style1="bold" link2="location" style2="bold" link3="keyword" style3="bold">An example learning or research opportunity for the EstuaryLive web site is: 'EstuaryLive is hosting a two days fun-filled live, web-based interactive field trip to the Rachel Carson Reserve. The event is free but participants are asked to sign up ahead of time. Following the local EstuaryLive will be the National Estuaries Day celebration with live sessions from around the United States. This is a great opportunity to see and compare estuaries around the country.' The information that this event occurs in Beaufort, North Carolina should not be put in the description field because this information belongs in the location field. The fact the the opportunity tries to address the North Carolina science standards should be entered in the keyword field.</practice>
+				</otherPractice>
+				
+				<otherPractice header="Grant or proposal example description">
+					<practice status="current" originDate="2004-10-21">A grant or proposal example for the Environmental Protection Agency is: 'The Environmental Protection Agency (EPA)'s Office of Environmental Education sponsors a grant program to support environmental education projects that enhance the public's awareness, knowledge, and skills to help people make informed decisions that affect environmental quality. Most grants for this program receive less than $15,000.'</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>EarthScope is inviting applications for the job position of Education and Outreach Manager.</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

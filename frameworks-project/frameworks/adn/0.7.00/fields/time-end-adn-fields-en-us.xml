@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: time-end-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:48 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Time - end" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/temporalCoverages/timeAndPeriod/timeInfo/timeAD/end/@time">
+		<definition>an ending time associated with some aspect of the temporal event described in the resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2004-09-03">Use time only on those dates in which the year, month and day are known.</practice>
+
+				<practice status="current" originDate="2004-09-03">Enter one time to signify when an important temporal event ended.</practice>
+
+				<practice status="current" originDate="2004-09-03" link1="convert from local to Universal Coordinated Time (UTC)" url1="http://www.dlese.org/Metadata/documents/how-tos/time-conversion.htm">Enter time in Universal Coordinated Time (UTC) in the format of hh:mm:ssZ, e.g. 18:32:20Z. If help is needed to determine UTC, please see how to convert from local to Universal Coordinated Time (UTC).</practice>
+
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2004-09-03">Do not use time when the year, month and day are not known</practice>
+			</donts>
+
+			<examples>
+				<practice status="current" originDate="2004-10-15">18:00:00Z.</practice>
+				<practice status="current" originDate="2004-09-03">For Boulder, Colorado, United States a time of 5pm on December 27, 2004 is 18:00:00Z.</practice>
+			</examples>
+		</bestPractices>
+
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>time</XMLdataType>
+			</XMLdataTypes>
+			<domain>numerical time format</domain>
+			<example>08:00:00Z</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /itemRecord/temporalCoverages/timeAndPeriod/timeInfo/timeAD/begin/@time</note>
+			</notes>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: share-no-groups-default-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Share</title>
+<groups:concept language="en-us" metaFormat="news_opps" metaVersion="1.0.00" text="Share" audience="default" path="/news-oppsRecord/contributors/contributor/@share" deftn="a boolean value that indicates whether a contributor's name and email address is displayed on DLESE user interfaces"/>
+</head>
+<body>
+<outline groups:vocab="true" type="vocab" text="true" groups:deftn="yes, the name and email address of the contributor will be displayed on DLESE user interfaces"/>
+<outline groups:vocab="false" type="vocab" text="false" groups:deftn="no, the name and the email address of the contributor will not be displayed on DLESE user interfaces"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

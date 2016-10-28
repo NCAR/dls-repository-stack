@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>Sea Surface Temperature Satellite Image Archive</title>
+<description>This site provides access to the University of Rhode Island, Graduate School of Oceanography's archive of sea surface temperature satellite images. Images are processed Advanced Very High Resolution Radiometer (AVHRR) data from NOAA (National Oceanographic and Atmospheric Administration) satellites. The archive contains in excess of 20,000 images from April 1979 to the present. New images are added to the archive daily at 10:30 GMT. During the first two years of the archive holdings, coverage is quite spotty, but subsequent years generally have several images for each day. These images clearly show the Gulf Stream as it heads up the Eastern North American coastline and out into the Atlantic Ocean. A lesson plan describing some of the uses and interpretation of the images is also included.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Physical oceanography</subject>
+<subject>DLESE:Technology</subject>
+</subjects>
+</general>
+<lifecycle>
+<contributors>
+<contributor role="Publisher">
+<organization>
+<instName>University of Rhode Island, Graduate School of Oceanography</instName>
+<instEmail>datamaster@mail.po.gso.uri.edu</instEmail>
+</organization>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-037">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-11-21" created="2000-11-21"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://rs.gso.uri.edu/avhrr-archive/archive.html</primaryURL>
+<mediums>
+<medium>text/html</medium>
+<medium>image/gif</medium>
+</mediums>
+<requirements>
+<requirement>
+<reqType>DLESE:General:No specific technical requirements</reqType>
+</requirement>
+</requirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:Graduate or professional</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:High school</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate lower division</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate upper division</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Learning materials:Lesson plan</resourceType>
+<resourceType>DLESE:Visual:Remotely sensed imagery</resourceType>
+<resourceType>DLESE:Visual:Scientific visualization</resourceType>
+</resourceTypes>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>Copyright and Other Restrictions Information is Unknown</description>
+</rights>
+<geospatialCoverages>
+<geospatialCoverage>
+<body>
+<planet>Earth</planet>
+</body>
+<geodeticDatumGlobalOrHorz>DLESE:Unknown</geodeticDatumGlobalOrHorz>
+<projection type="DLESE:Unknown"/>
+<coordinateSystem type="DLESE:Geographic latitude and longitude"/>
+<boundBox>
+<westCoord>-96.22</westCoord>
+<eastCoord>-33.77</eastCoord>
+<northCoord>60.58</northCoord>
+<southCoord>9.40</southCoord>
+<bbSrcName>Cataloger supplied</bbSrcName>
+</boundBox>
+<detGeos>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="60.58" longitude="-33.77"/>
+<longLat latitude="9.40" longitude="-33.77"/>
+<longLat latitude="9.40" longitude="-96.22"/>
+<longLat latitude="60.58" longitude="-96.22"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+</detGeo>
+</detGeos>
+</geospatialCoverage>
+</geospatialCoverages>
+</itemRecord>

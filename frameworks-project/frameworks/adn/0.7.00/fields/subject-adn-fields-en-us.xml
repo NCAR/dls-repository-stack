@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: subject-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:48 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/subject.xsd">
+	<field name="Subject" id="su" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/general/subjects/subject">
+		<definition>a content or topic area addressed by a resource</definition>
+
+		<vocabLevels number="2">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="DLESE">Digital Library for Earth System Education</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="2" levelName="Subject" levelDeftn="a content or topic area addressed by a resource; see the allowed combination of terms below; the resource part of the term is the phrase after the last colon"/>				
+		</vocabLevels>
+			
+		<terms>
+			<termAndDeftn vocab="DLESE:Agricultural science" id="00">the science of cultivating soil, crops or livestock</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Atmospheric science" id="01">the study of Earth's atmosphere including both its physical and chemical properties such as composition, precipitation patterns, energy cycles, chemical cycles, pressure, wind patterns and temperature distributions</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Biological oceanography" id="02">the study of the flora and fauna of oceans in relation to the marine environment</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Biology" id="03">the study of living organisms including both animals (zoology) and plants (botany) with respect to their structure and function, origin and evolution, the interrelationships between and distribution of species, and the classification of species</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Chemical oceanography" id="04">the hydrographic and physical characterization of the ocean, including the chemical composition of seawater, salinity, the vertical and regional variation of elements, the mineralogical composition and distribution of marine sediments and the oceanic cycle of organic and inorganic carbon and associated elements</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Chemistry" id="05">the study of a substance's composition, structure, properties and the changes it undergoes in all three including associated energy changes. Includes molecular structure, solution and concentration, acid/base/salts, and the periodic table of elements.</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Climatology" id="06">the study of the mean physical state of the atmosphere; it's statistical variation over a period of time and space as evidenced by weather patterns over long periods of time. Includes the analysis of the causes of different climates, the presentation of climatic data and the application of climatic data to problems.</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Cryology" id="07">the study of ice and snow, including glaciers, sea ice and ice shelves</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Ecology" id="08">the study of the relationships between organisms and their environments (both living and non-living) at the population, community and ecosystem levels</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Educational theory and practice" id="09">the study of methods of teaching, learning and pedagogy</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Environmental science" id="0a">an interdisciplinary, systems approach to understanding the link between human activities and the natural environment as well as the related impacts of humanity on individual species, ecological systems, and human health. Topics include resource use, environmental sustainability, responses of systems to anthropogenic stress, population growth, biodiversity, conservation, pollution and water quality.</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Forestry" id="0b">the science of developing and managing forests for wood, wildlife, recreation, water and forage</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Geochemistry" id="0c">the study of chemical composition, structure and phase changes in the solid matter of the Earth and the processes which have produced the observed distribution of elements and nuclides. Topics include stable, radiogenic and radioactive isotopes, crystal structures and the  formation and abundance of elements.</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Geologic time" id="0d">any formal division of geologic chronology, more popularly, a span of millions or billions of years in the past prior to the start of modern history. Includes methods to calculate or estimate Earth's history like carbon dating.</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Geology" id="0e">the study of the Earth and its history as represented in rocks including the materials of which it is made, the processes that act on these materials (weathering, sedimentation) and the products formed (geologic features and rock formations). Includes plate tectonics (global scale) and volcanoes.</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Geophysics" id="0f">the interdisciplinary study of physics of the Earth and its environment (i.e. earth, air, and by extension space). Includes the study of earthquake waves, geomagnetism, gravitational fields, and electrical conductivity using precise quantitative principles.</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:History and philosophy of science" id="0g">the study of the origin and nature of scientific thought, theory and investigations</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Human geography" id="0h">the study of the characteristics and phenomena of the Earth's surface that relates directly to or are due to human activities. Also known as anthropogeography.</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Hydrology" id="0i">the scientific study of the occurrence, circulation, distribution, and properties of terrestrial water, in particular inland water before its discharge into the oceans or evaporation into the atmosphere. It includes the study of the occurrence and movement of water and ice on or under the Earth's surface (e.g. surface water, groundwater and limnology).</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Mathematics" id="0j">the science of numbers, their operations, interrelations, combinations, generalizations and abstractions</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Mineralogy or petrology" id="0k">the science of minerals and rocks dealing with their origin, crystallography, properties and classification. In particular petrology focuses on the origin, occurrence, structure and history of rock.</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Natural hazards" id="0l">events or phenomena that have the potential to inflict property damage and loss of life such as floods, hurricanes, earthquakes, tornadoes, volcanic eruptions and tidal waves</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Other" id="0x">no choice within the list is appropriate</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Paleontology" id="0n">the study of extinct organisms, including their structure, environment, evolution and distribution, as revealed by their fossil remains</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Physical geography" id="0o">the study of the description, distribution and interaction of diverse physical features of Earth's surface</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Physical oceanography" id="0p">the study of the physical properties of Earth's oceans including temperature, salinity, sea level height, tides, currents, the movements of the sea, and the variability of these factors in relationship to the atmosphere and the ocean bottom.</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Physics" id="0q">the study of the laws that determine the structure of the universe with reference to the matter and energy of which it consists. It is concerned not with chemical changes that occur but with the forces that exist between objects and the interrelationship between matter and energy.</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Policy issues" id="0r">the study of laws, protocols, treaties etc. as they impact the environment or education</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Soil science" id="0s">the study of the formation, classification and properties of soil including soil management and agronomy</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Space science" id="0t">the study of matter and objects outside the Earth's atmosphere including the physical and chemical properties of  condensed matter, planets, moons, comets, galaxies etc.</termAndDeftn>
+
+			<!-- retired this definition on Mar 30, 2005: Structural geology - a branch of geology concerned with the form, arrangement, and internal structure of rocks, folding and faulting of the Earth's crust on a moderate to small scale-->
+
+			<termAndDeftn vocab="DLESE:Structural geology" id="0u">the study of rock geometry, movement of rock through time, and the mechanics of rock deformation</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Technology" id="0v">resources that focus on the use of technical methods, processes or knowledge. Includes resources that involve the development of technical skills such as GIS, GPS and image processing as a significant component of the learning objective.</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:To be supplied" id="0w">not immediately known, therefore will be supplied at a future date</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2000-06-30">Choose at least one subject term.</practice>
+				<practice status="current" originDate="2004-12-16">Choose terms that describe the predominant content of the resource.</practice>
+				<practice status="current" originDate="2006-07-07">Choose terms that describe the resource in the context of physical properties and affects on the Earth system.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2002-06-30">Do not choose more than 3 to 4 subjects. Most resources are adequately described using four or less appropriate subjects.</practice>
+				<practice status="current" originDate="2006-07-07">Avoid describing resources that do not relate their content to physical properties or affects on the Earth system.</practice>
+			</donts>
+			<otherPractices>
+				<otherPractice header="Information about using the term Other">
+				<practice status="current" originDate="2006-09-19" link1="Other" style1="bold">Do not use the subject term Other if another subject has been chosen.</practice>
+					<practice status="current" originDate="2004-08-17" link1="Other" style1="bold" link2="keyword" style2="bold">If no subject terms fits or accurately describes the resource, choose the subject term Other and then enter appropriate subject terms in the keyword  field.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>DLESE:Hydrology, DLESE:Geology</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

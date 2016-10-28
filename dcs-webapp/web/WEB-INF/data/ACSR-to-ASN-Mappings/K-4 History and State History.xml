@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="K-4 History and State History">
+  <mapping>
+    <acsrInfo id="496774c8-1c78-48e5-82a2-f9a7db50221c">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>K-4 History&amp;State History Rev. 2000</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000009">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <created>2000</created>
+      <topic>K-4 History and State History</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7ddbd6aa-c907-40e4-a67c-ba36e69cf117">
+      <title>Academic Standards: Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>K-4 History and State History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100009B">
+      <title>Academic Standards: Social Studies</title>
+      <created>2000</created>
+      <topic>K-4 History and State History</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="51f044e0-bea0-4fc1-95ac-0c9d8c62b35a">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>CA</jurisdiction>
+      <fileName>K-4 History and State History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001F2">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <created>1998</created>
+      <topic>K-4 History and State History</topic>
+      <author>California</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="647a77de-4404-4685-9a39-0564682da8a8">
+      <title>Colorado Model Content Standards for History</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>K-4 History&amp;State History Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000208">
+      <title>Colorado Model Content Standards for History</title>
+      <created>1995</created>
+      <topic>K-4 History and State History</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dfd14c2a-b9be-4331-8c0c-487e608c03e2">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>K-4 History and State History Goals</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000186">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <created>1998</created>
+      <topic>K-4 History and State History</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8f3517e3-0e9f-475a-bd88-0579badd7c2d">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Sunshine State Standards K-4 Histor</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000209">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <created>1999</created>
+      <topic>K-4 History and State History</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6249e289-9fed-4ec6-8323-a98ee5b19a1c">
+      <title>Social Studies Quality Core Curriculum K-12</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>Social Studies QCC K-4 History and</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000DF">
+      <title>Social Studies Quality Core Curriculum K-12</title>
+      <created>1999</created>
+      <topic>K-4 History and State History</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6a23adee-6903-4eed-ae00-6ea78c6dbf78">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>HI</jurisdiction>
+      <fileName>Social Studies K-4 History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100012E">
+      <title>Social Studies Content Standards</title>
+      <created>1999</created>
+      <topic>K-4 History and State History</topic>
+      <author>Hawaii</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="959ab9f2-c198-4035-acb6-926ad46552b2">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Achievement Standards K-4 History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000100">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <created>2001</created>
+      <topic>K-4 History and State History</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dd03c00f-dfc6-4b4f-a580-bfa63c9835dc">
+      <title>Illinois Learning Standards for Social Science</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Learning Standards K-4 History and</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000A7">
+      <title>Illinois Learning Standards for Social Science</title>
+      <created>1997</created>
+      <topic>K-4 History and State History</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c7f95e6a-475e-4f6f-8fc3-05f270b9a53c">
+      <title>Social Studies Proficiency Guide</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Proficiency Guide K-4 History and H</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100020B">
+      <title>Social Studies Proficiency Guide</title>
+      <created>1996</created>
+      <topic>K-4 History and State History</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6d380a3e-20ab-4174-b97f-5d0a6adffeb4">
+      <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Curricular Standards K-4 History an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000149">
+      <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+      <created>1999</created>
+      <topic>K-4 History and State History</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f75603a9-778c-4fb0-84c8-126436728790">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Social Studies K-4 History and Stat</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001D2">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <created>1998</created>
+      <topic>K-4 History and State History</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="add6da05-fecf-4ca4-a28f-742baf78035b">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>K-4 History State History Content S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100013E">
+      <title>Social Studies Content Standards</title>
+      <created>1997</created>
+      <topic>K-4 History and State History</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="67b0de38-8f94-44f2-848c-f05482c06922">
+      <title>Social Studies Grade-Level Expectations</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>K-4 History State History Grade-Lev</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100002C">
+      <title>Social Studies Grade-Level Expectations</title>
+      <created>2003</created>
+      <topic>K-4 History and State History</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="48e69f5e-e9f7-41c9-8657-d0048a4a3b56">
+      <title>Massachusetts History and Social Science Framework</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>History and Social Science Framewor</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100006C">
+      <title>Massachusetts History and Social Science Framework</title>
+      <created>2003</created>
+      <topic>K-4 History and State History</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="40f31868-ba90-46f9-a898-531e7146a8d1">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000166">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>K-4 History and State History</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="97735db4-9c2d-428d-8a98-de9d69e2c673">
+      <title>Learning Results for Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Learning Results for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000056">
+      <title>Learning Results for Social Studies</title>
+      <created>1997</created>
+      <topic>K-4 History and State History</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cb4464c3-e37b-4386-aa22-114f2716169e">
+      <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Social Studies Standards Working Dr</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001CF">
+      <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+      <created>1995</created>
+      <topic>K-4 History and State History</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d58330d1-82bd-4540-a7d9-fad8fa24c27e">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Graduation Standards for Social Stu</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100000C">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <created>1998</created>
+      <topic>K-4 History and State History</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="70789d89-dc1d-45ee-8cc8-c8b13243c9c6">
+      <title>Montana Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Montana Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000086">
+      <title>Montana Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>K-4 History and State History</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a1c84ec6-3ae2-41b6-869b-5707b0a7d485">
+      <title>Social Studies Standard Course of Study</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Social Studies Standard Course of S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000172">
+      <title>Social Studies Standard Course of Study</title>
+      <created>1996</created>
+      <topic>K-4 History and State History</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e03abf43-23be-4801-87cb-0a3b1c8b933b">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Social Studies Content Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000210">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <created>2000</created>
+      <topic>K-4 History and State History</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5a97b7b7-029a-483e-bf3b-373b000924dc">
+      <title>Nebraska Social Studies/History Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Social Studies History Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100019E">
+      <title>Nebraska Social Studies/History Standards</title>
+      <created>1998</created>
+      <topic>K-4 History and State History</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b4146ec2-5e61-497d-8f1b-45a614b17e4d">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Social Studies Curriculum Fram</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000182">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <created>1995</created>
+      <topic>K-4 History and State History</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a9b08cde-ef71-47ab-84b1-247cf307f5b1">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001C1">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <created>1996</created>
+      <topic>K-4 History and State History</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1fa67dcf-8e1c-48e3-a436-99bc65479a2f">
+      <title>New Mexico Standards for Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Standards for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000C5">
+      <title>New Mexico Standards for Social Studies</title>
+      <created>2001</created>
+      <topic>K-4 History and State History</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5584ad22-6f7c-4a5b-9a20-0dffdc947fd1">
+      <title>Learning Standards for Social Studies</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>Learning Standards for Social Studi</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001F5">
+      <title>Learning Standards for Social Studies</title>
+      <created>1996</created>
+      <topic>K-4 History and State History</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="aadffae9-d13f-42b9-9af8-16a1485fe3d4">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <localAdoptionDate>1994</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Social Studies: Ohio's Model Compet</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001DA">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <created>1994</created>
+      <topic>K-4 History and State History</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ac618d42-55ad-486f-829f-6e450cf9a5da">
+      <title>Academic Content Standards Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Academic Content Standards Social S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100012D">
+      <title>Academic Content Standards Social Studies</title>
+      <created>2002</created>
+      <topic>K-4 History and State History</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9702b14e-71f8-4656-91c1-81d6f348295d">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000116">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <created>2002</created>
+      <topic>K-4 History and State History</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="519b45f6-dd20-4d2b-b6fa-00ce16acfc41">
+      <title>Social Sciences 2001-2002</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Social Sciences 2001-2002</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001FF">
+      <title>Social Sciences 2001-2002</title>
+      <created>2001</created>
+      <topic>K-4 History and State History</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c2907276-3cf2-4775-8663-206797062ebc">
+      <title>Academic Standards for History</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>PA</jurisdiction>
+      <fileName>Academic Standards for History</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001BB">
+      <title>Academic Standards for History</title>
+      <created>2003</created>
+      <topic>K-4 History and State History</topic>
+      <author>Pennsylvania</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="34e4cd5f-4690-4ec8-ba12-ddeabd0b97d7">
+      <title>Social Studies Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Social Studies Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000053">
+      <title>Social Studies Standards</title>
+      <created>1997</created>
+      <topic>K-4 History and State History</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8fd8ca42-624a-4a9e-8041-7a6f8ebbcdb4">
+      <title>Social Studies Frameworks K-12</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Social Studies Frameworks K-12</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100010B">
+      <title>Social Studies Frameworks K-12</title>
+      <created>1996</created>
+      <topic>K-4 History and State History</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bc66f675-7011-48e1-b939-7adb299e085d">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>Chapter 113. TEKS for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100010E">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <created>1997</created>
+      <topic>K-4 History and State History</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a53e8af3-119e-42d9-a7ba-c6efd391a67d">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000081">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>1995</created>
+      <topic>K-4 History and State History</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6e33091d-efd7-47e5-bce3-b275ed31bc52">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100008D">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>2001</created>
+      <topic>K-4 History and State History</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f2b2bd36-7803-443b-b9ec-53f4a8b688e4">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Vermont's Framework of Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000169">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <created>2000</created>
+      <topic>K-4 History and State History</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9e4486bb-5ac9-4463-a982-71445b7d2c78">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia's Social Studies Inst</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000137">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <created>2000</created>
+      <topic>K-4 History and State History</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7c36d15b-4b71-405b-90d4-b04fba166e4f">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia Social Studies Conten</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000B7">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <created>2004</created>
+      <topic>K-4 History and State History</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dada265a-1372-464a-8e39-1823c59a0685">
+      <title>Social Studies Content and Performance Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>K-4 History and State History</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Social Studies Content and Performa</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001DE">
+      <title>Social Studies Content and Performance Standards</title>
+      <created>1999</created>
+      <topic>K-4 History and State History</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+</mappings>

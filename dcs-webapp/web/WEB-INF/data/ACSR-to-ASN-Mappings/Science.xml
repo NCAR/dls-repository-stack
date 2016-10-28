@@ -1,0 +1,2324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="Science">
+  <mapping>
+    <acsrInfo id="3c1383e6-ef75-4412-8555-647ad9da3742">
+      <title>Benchmarks for Science Literacy</title>
+      <localAdoptionDate>1993</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>AAAS</jurisdiction>
+      <fileName>Benchmarks for Science Literacy</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000152">
+      <title>Benchmarks for Science Literacy</title>
+      <created>1993</created>
+      <topic>Science</topic>
+      <author>AAAS</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dfd2d317-cbe6-4dc8-9244-49a483ee7eee">
+      <title>Benchmarks for Science Literacy</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>AAAS</jurisdiction>
+      <fileName>Benchmarks for Science Literacy</fileName>
+      <status>In Process</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D2365735">
+      <title>Benchmarks for Science Literacy</title>
+      <created>2008</created>
+      <topic>Science</topic>
+      <author>AAAS</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2f443c5d-f112-4e0a-98c5-e37629c17b94">
+      <title>Science Performance Standards</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>AK</jurisdiction>
+      <fileName>Science Performance Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100021C">
+      <title>Science Performance Standards</title>
+      <created>2005</created>
+      <topic>Science</topic>
+      <author>Alaska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0b5fca80-f59c-4133-8cfb-7764c6fff2cb">
+      <title>Alaska Content Standards Science</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>AK</jurisdiction>
+      <fileName>Content Standards Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000254">
+      <title>Alaska Content Standards Science</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Alaska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1d2681f9-6de0-4fdb-a7f5-73371a043367">
+      <title>Alabama Course of Study: Science</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>AL</jurisdiction>
+      <fileName>Course of Study: Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100013C">
+      <title>Alabama Course of Study: Science</title>
+      <created>2001</created>
+      <topic>Science</topic>
+      <author>Alabama</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3895e583-ddb4-4c82-9dd0-1f2087a44f7e">
+      <title>Alabama Course of Study: Science</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>AL</jurisdiction>
+      <fileName>Course of Study: Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000255">
+      <title>Alabama Course of Study: Science</title>
+      <created>2005</created>
+      <topic>Science</topic>
+      <author>Alabama</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="78ef0dd0-2013-4f2f-aa77-b0530f7aae74">
+      <title>Science Curriculum Framework</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Science Curriculum Framework</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000B8">
+      <title>Science Curriculum Framework</title>
+      <created>1999</created>
+      <topic>Science</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="079d6980-286f-48f9-8f41-6305f92f8203">
+      <title>Science Curriculum Framework</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Science Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100025D">
+      <title>Science Curriculum Framework</title>
+      <created>2005</created>
+      <topic>Science</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e3318b58-12d5-4d2f-a41f-9b03db886520">
+      <title>Academic Standards: Science</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Academic Standards: Science</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000C8">
+      <title>Academic Standards: Science</title>
+      <created>1997</created>
+      <topic>Science</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="102c4f3c-fca0-4de7-8245-d1257903a8ed">
+      <title>Academic Content Standards - Science</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Content Standards - Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100006D">
+      <title>Academic Content Standards - Science</title>
+      <created>2004</created>
+      <topic>Science</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="aafab29d-47de-4480-ad2d-b0c4ed31b732">
+      <title>Science Content Standards for California Public Schools, Kindergarten Through Grade Twelve</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>CA</jurisdiction>
+      <fileName>Science Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000BA">
+      <title>Science Content Standards for California Public Schools, Kindergarten Through Grade Twelve</title>
+      <created>1998</created>
+      <topic>Science</topic>
+      <author>California</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="00a6d3fc-0cad-4048-bafa-bc0be9d2c2cd">
+      <title>Colorado Model Content Standards Science, Amended 2-8-07</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Standards Science Amended 2007</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100027B">
+      <title>Colorado Model Content Standards Science, Amended 2-8-07</title>
+      <created>1995</created>
+      <topic>Science</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8a21e106-f10a-41f2-8afa-e46704a49acb">
+      <title>Colorado Model Content Standards for Science</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Content Standards for Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100003B">
+      <title>Colorado Model Content Standards for Science</title>
+      <created>1995</created>
+      <topic>Science</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="28500caa-5eeb-4cdd-8256-bec29bc35c2c">
+      <title>Colorado Academic Standards for Science</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Academic Standards for Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003F2">
+      <title>Colorado Academic Standards for Science</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4571c1cb-95f4-41c3-96f1-24a6d30b3c61">
+      <title>Core Science Curriculum Framework</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>Core Science Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000211">
+      <title>Core Science Curriculum Framework</title>
+      <created>2004</created>
+      <topic>Science</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7e1b649d-2297-434f-be30-4cd84bd5197c">
+      <title>PreK-8 Science Curriculum Standards Including Grade-Level Expectations</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>PreK-8 Science Curriculum Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003B3">
+      <title>PreK-8 Science Curriculum Standards Including Grade-Level Expectations</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b4717e47-f238-4905-a718-52a22b91d236">
+      <title>Science Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>DC</jurisdiction>
+      <fileName>Science Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100035E">
+      <title>Science Standards</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>District of Columbia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="98d6773e-6a85-40b9-b983-4436f1d716a7">
+      <title>State of Delaware Science Curriculum Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Science Curriculum Framework</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100017E">
+      <title>State of Delaware Science Curriculum Framework</title>
+      <created>1995</created>
+      <topic>Science</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d29a31af-a192-48be-9977-dd560f5c11b8">
+      <title>Delaware Science Content Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Science Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100025F">
+      <title>Delaware Science Content Standards</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c772fb94-dea7-4094-86df-cadd03ad38e2">
+      <title>Sunshine State Standards Grade Level Expectations: Science</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Sunshine State Standards GLE Sci</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000062">
+      <title>Sunshine State Standards Grade Level Expectations: Science</title>
+      <created>1996</created>
+      <topic>Science</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="34bfeb29-d032-4761-a168-5694400b3194">
+      <title>Sunshine State Standards: Science</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Sunshine State Standards: Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000338">
+      <title>Sunshine State Standards: Science</title>
+      <created>2008</created>
+      <topic>Science</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="34d3ca4c-8340-4169-8792-1ae214abb6d5">
+      <title>Georgia Quality Core Curriculum Standards for Science</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>QCC Standards for Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001E5">
+      <title>Georgia Quality Core Curriculum Standards for Science</title>
+      <created>1999</created>
+      <topic>Science</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e4c7c69f-249f-41f5-b15b-451ff6fa084c">
+      <title>Georgia Science Performance Standards</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>Science Performance Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000180">
+      <title>Georgia Science Performance Standards</title>
+      <created>2004</created>
+      <topic>Science</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bda2bc2d-02ae-476e-9236-d7f3571de706">
+      <title>Georgia Science Performance Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>Science Performance Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100033D">
+      <title>Georgia Science Performance Standards</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4011dcd2-b8fe-49fb-b61c-dbfe3ff875ee">
+      <title>Georgia Performance Standards - Astronomy Curriculum, Revised February 9, 2009</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS - Astronomy Curriculum</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003C6">
+      <title>Georgia Performance Standards - Astronomy Curriculum, Revised February 9, 2009</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b6283779-49bc-4ce9-9b0e-dce67c107348">
+      <title>Georgia Performance Standards - Botany Curriculum, Revised February 8, 2009</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS - Botany Curriculum</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003C7">
+      <title>Georgia Performance Standards - Botany Curriculum, Revised February 8, 2009</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="912933f8-811e-4a4a-816c-c314d368b9ba">
+      <title>Georgia Performance Standards - Ecology Curriculum, Revised February 8, 2009</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS - Ecology Curriculum</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003C8">
+      <title>Georgia Performance Standards - Ecology Curriculum, Revised February 8, 2009</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a45e14a4-701e-42ae-b7e9-22c5e106e5a3">
+      <title>Georgia Performance Standards - Entomology Curriculum, Revised February 9, 2009</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS - Entomology Curriculum</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003C9">
+      <title>Georgia Performance Standards - Entomology Curriculum, Revised February 9, 2009</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7bd1d51d-1e4c-442d-bc1f-9411da64c73c">
+      <title>Georgia Performance Standards - Forensic Science Curriculum, Revised February 9, 2009</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS - Forensic Science Curriculum</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003CA">
+      <title>Georgia Performance Standards - Forensic Science Curriculum, Revised February 9, 2009</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="554fcba5-14cf-4f6a-93ab-ed2998206450">
+      <title>Georgia Performance Standards - Geology Curriculum, Revised February 9, 2009</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS - Geology Curriculum</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003CB">
+      <title>Georgia Performance Standards - Geology Curriculum, Revised February 9, 2009</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b171b92a-630a-4b4a-a369-fb17cca2fdd0">
+      <title>Georgia Performance Standards - Meteorology Curriculum, Revised February 9, 2009</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS - Meteorology Curriculum</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003CC">
+      <title>Georgia Performance Standards - Meteorology Curriculum, Revised February 9, 2009</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="71c08de1-4bca-404e-8499-41afadd5ab5f">
+      <title>Georgia Performance Standards - Microbiology Curriculum, Revised February 9, 2009</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS - Microbiology Curriculum</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003CD">
+      <title>Georgia Performance Standards - Microbiology Curriculum, Revised February 9, 2009</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bb34aa0e-270f-42cd-8710-4eb87c4c2fd5">
+      <title>Georgia Performance Standards - Oceanography Curriculum, Revised February 9, 2009</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS - Oceanography Curriculum</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003CE">
+      <title>Georgia Performance Standards - Oceanography Curriculum, Revised February 9, 2009</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="051b5d35-5525-4000-9d65-e88ee0fc614d">
+      <title>Georgia Performance Standards - Zoology Curriculum, Revised February 9, 2009</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS - Zoology Curriculum</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003CF">
+      <title>Georgia Performance Standards - Zoology Curriculum, Revised February 9, 2009</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e543f211-a8c1-4dec-9a67-0f80a3152759">
+      <title>Science Content Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>HI</jurisdiction>
+      <fileName>Science Content Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001FD">
+      <title>Science Content Standards</title>
+      <created>1999</created>
+      <topic>Science</topic>
+      <author>Hawaii</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="16e984e9-361d-4c22-9e8f-a2f92fc18680">
+      <title>HCPS III Science</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>HI</jurisdiction>
+      <fileName>HCPS III Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000270">
+      <title>HCPS III Science</title>
+      <created>2005</created>
+      <topic>Science</topic>
+      <author>Hawaii</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cd71c5ae-6f4f-4255-903e-3595e28013ed">
+      <title>Science Core Content Standards and Benchmarks Corresponding to the Iowa Tests</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>IA</jurisdiction>
+      <fileName>Science Core Content Corresponding</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000275">
+      <title>Science Core Content Standards and Benchmarks Corresponding to the Iowa Tests</title>
+      <created>2005</created>
+      <topic>Science</topic>
+      <author>Iowa</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7b18f3c9-c72f-41f7-ab23-b85cfe4cf792">
+      <title>Science Model Core Curriculum for Iowa High Schools</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>IA</jurisdiction>
+      <fileName>Science Core Curriculum for Iowa Hi</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000277">
+      <title>Science Model Core Curriculum for Iowa High Schools</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Iowa</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d771eb72-59cb-4f18-84f9-c562862f69d2">
+      <title>Science Grade Level Indicators</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>IA</jurisdiction>
+      <fileName>Science Grade Level Indicators</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100034E">
+      <title>Science Grade Level Indicators</title>
+      <created>2008</created>
+      <topic>Science</topic>
+      <author>Iowa</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cb79cf35-40dc-4f8b-8ec3-b3923be1d5b4">
+      <title>Iowa Core Curriculum K-12 Science</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>IA</jurisdiction>
+      <fileName>Iowa Core Curriculum K-12 Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003E4">
+      <title>Iowa Core Curriculum K-12 Science</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Iowa</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="be824813-de50-4261-819b-db34b782ebf9">
+      <title>Idaho State Achievement Standards K-12 in Science</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Achievement Standards Science</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000047">
+      <title>Idaho State Achievement Standards K-12 in Science</title>
+      <created>2001</created>
+      <topic>Science</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9369ae74-67d0-4faa-af38-4e970b6113dd">
+      <title>Idaho Content Standards - Science</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Content Standards - Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000267">
+      <title>Idaho Content Standards - Science</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a5d7f293-fcbe-48c0-8181-8b028ab4511c">
+      <title>Illinois Learning Standards for Science</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Learning Standards Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000ED">
+      <title>Illinois Learning Standards for Science</title>
+      <created>1997</created>
+      <topic>Science</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ca84f075-b187-4e00-8665-ae4b32378855">
+      <title>Science Performance Descriptors</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Science Performance Descriptors</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000B4">
+      <title>Science Performance Descriptors</title>
+      <created>2002</created>
+      <topic>Science</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ded72865-269a-437c-958d-675dc3311280">
+      <title>Indiana's Academic Standards 2000 for K-12 Science</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Academic Standards K-12 Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000157">
+      <title>Indiana's Academic Standards 2000 for K-12 Science</title>
+      <created>2000</created>
+      <topic>Science</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fb3718ef-0d9e-4743-93ee-9f6012b84b79">
+      <title>Indiana's Advanced Life Science Standards: Animals</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Advanced Life Science Animals</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000358">
+      <title>Indiana's Advanced Life Science Standards: Animals</title>
+      <created>2004</created>
+      <topic>Science</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="110958df-0ab6-4c29-b428-bf50aedaccfe">
+      <title>Indiana's Advanced Life Science Standards: Plants and Soils</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Advanced Life Science Plants_Soils</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100035A">
+      <title>Indiana's Advanced Life Science Standards: Plants and Soils</title>
+      <created>2004</created>
+      <topic>Science</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="209b268c-d52f-407f-a50e-0934e53aced0">
+      <title>Indiana's Advanced Life Science Standards: Foods</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Advanced Life Science Foods</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000359">
+      <title>Indiana's Advanced Life Science Standards: Foods</title>
+      <created>2005</created>
+      <topic>Science</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6c469aed-af01-48fc-869a-a9141576ed82">
+      <title>Indianaâ€™s Core Standards for Science</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Core Standards for Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000346">
+      <title>Indianaâ€™s Core Standards for Science</title>
+      <created>2008</created>
+      <topic>Science</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f927a25b-8f64-4407-89b2-4c628190fb1c">
+      <title>Environmental Education Standards for Kansas</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Environmental Education Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000365">
+      <title>Environmental Education Standards for Kansas</title>
+      <created>1999</created>
+      <topic>Science</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c259872d-07c2-4dfd-bab7-0b2ace27ec9b">
+      <title>Kansas Science Education Standards</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Science Education Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001EC">
+      <title>Kansas Science Education Standards</title>
+      <created>2001</created>
+      <topic>Science</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4ddbd2f4-51fe-414c-82d7-48d42eac1490">
+      <title>Kansas Science Education Standards</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Science Education Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100027A">
+      <title>Kansas Science Education Standards</title>
+      <created>2007</created>
+      <topic>Science</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="671c325a-cbf0-40ea-a210-378f99d5a040">
+      <title>Program of Studies for Science and Health Education</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Program of Studies Science and Heal</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001A0">
+      <title>Program of Studies for Science and Health Education</title>
+      <created>1998</created>
+      <topic>Science</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="52720a5b-3f18-480f-b38d-3eeec0233c13">
+      <title>Core Content for Science Assessment</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Core Content for Science Assessment</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000219">
+      <title>Core Content for Science Assessment</title>
+      <created>1999</created>
+      <topic>Science</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9bdee605-3d96-4dd8-bf8e-37c6393877a1">
+      <title>Core Content for Science</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Core Content for Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000259">
+      <title>Core Content for Science</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c887d25d-1db0-4a34-8a17-fa5a342ce67b">
+      <title>Program of Study Science</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Program of Study Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000258">
+      <title>Program of Study Science</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ddec5232-d982-42b0-bc8a-c6a50e37b761">
+      <title>Science Grade-Level Expectations</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Science Grade-Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100007F">
+      <title>Science Grade-Level Expectations</title>
+      <created>2004</created>
+      <topic>Science</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="34d8eabb-a9b7-43e7-9d79-1d16a97aac4a">
+      <title>Louisiana Content Standards for Science</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Content Standards for Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100026A">
+      <title>Louisiana Content Standards for Science</title>
+      <created>2005</created>
+      <topic>Science</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="056c05c9-2e6c-4721-bf90-25df73c1e0fa">
+      <title>Massachusetts Science and Technology Curriculum Framework: Owning the Questions</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>Science and Technology Owning the Q</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001C4">
+      <title>Massachusetts Science and Technology Curriculum Framework: Owning the Questions</title>
+      <created>1996</created>
+      <topic>Science</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="29871e63-e20c-4a98-b7f2-876134a8621e">
+      <title>Massachusetts Science and Technology/Engineering Curriculum Framework</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>Science and Technology Engineering</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000E2">
+      <title>Massachusetts Science and Technology/Engineering Curriculum Framework</title>
+      <created>2001</created>
+      <topic>Science</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8481d58e-e167-445b-be77-783aff27eda5">
+      <title>Massachusetts Science and Technology/Engineering Curriculum Framework</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>Science and Technology Engineering</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000272">
+      <title>Massachusetts Science and Technology/Engineering Curriculum Framework</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="05092529-8f63-4b7c-9db9-73b415269151">
+      <title>Massachusetts Science and Technology/Engineering Curriculum Framework Appendix I</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>Science and Technology Appendix I</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100025B">
+      <title>Massachusetts Science and Technology/Engineering Curriculum Framework Appendix I</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="18593f42-c56c-4f5c-a343-5535862a8eb4">
+      <title>Maryland State Content Standards for Science</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Content Standards for Science</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100016D">
+      <title>Maryland State Content Standards for Science</title>
+      <created>2000</created>
+      <topic>Science</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="55ee659f-7d99-48f5-89fd-c7e3faedaf3b">
+      <title>Science Core Learning Goals</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Science Core Learning Goals</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000265">
+      <title>Science Core Learning Goals</title>
+      <created>2002</created>
+      <topic>Science</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1c173c35-d85e-4791-b0e2-c030216f975c">
+      <title>Voluntary State Curriculum for Science</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Voluntary State Curriculum for Scie</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100021D">
+      <title>Voluntary State Curriculum for Science</title>
+      <created>2005</created>
+      <topic>Science</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0168e8fc-a471-4d52-89cf-1b9801954103">
+      <title>Voluntary State Curriculum - Science, Grades 3-8 January 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Voluntary State Curriculum - Scienc</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003C1">
+      <title>Voluntary State Curriculum - Science, Grades 3-8 January 2008</title>
+      <created>2008</created>
+      <topic>Science</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c2e7da88-6f78-4c71-8156-8431bcffa4b1">
+      <title>Learning Results for Science and Technology</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Learning Results for Science and Te</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100011B">
+      <title>Learning Results for Science and Technology</title>
+      <created>1997</created>
+      <topic>Science</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ca713118-f6b1-4a33-91f1-86c2e4779b8e">
+      <title>2007 Science and Technology Grade Span Expectations for Grades 3-8</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Science and Technology Grade Span E</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100026C">
+      <title>2007 Science and Technology Grade Span Expectations for Grades 3-8</title>
+      <created>2007</created>
+      <topic>Science</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d283b2be-3704-4851-bdc8-700a2f0d418f">
+      <title>Science and Technology Section Learning Results: Parameters for Essential Instruction</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Science Technology Learning Results</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000386">
+      <title>Science and Technology Section Learning Results: Parameters for Essential Instruction</title>
+      <created>2007</created>
+      <topic>Science</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ec5782b8-bcd0-4645-bb35-f13ff2644d1e">
+      <title>Maine Federal, State, and Local Accountability Standards - Science and Technology</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Maine Federal, State, and Local</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003B7">
+      <title>Maine Federal, State, and Local Accountability Standards - Science and Technology</title>
+      <created>2008</created>
+      <topic>Science</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d1b14657-e779-4183-9a63-2a1fc2de57eb">
+      <title>Science Content Standards with Working Draft Benchmarks</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Content Standards with Working Draf</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001C9">
+      <title>Science Content Standards with Working Draft Benchmarks</title>
+      <created>1995</created>
+      <topic>Science</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9a91b641-5061-4bca-bfd2-a14057681ef9">
+      <title>Michigan Curriculum Framework Science Benchmarks</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Curriculum Framework Science</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000D3">
+      <title>Michigan Curriculum Framework Science Benchmarks</title>
+      <created>2000</created>
+      <topic>Science</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="52599f91-70af-4e63-aa55-e54554993478">
+      <title>Biology High School Content Expectations</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Biology High School</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000361">
+      <title>Biology High School Content Expectations</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7fe551bb-d2cf-4dc4-8b55-a84f8d910bef">
+      <title>Chemistry High School Content Expectations</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Chemistry High School</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000362">
+      <title>Chemistry High School Content Expectations</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d211d112-71e3-43b2-bd15-056db789ecbc">
+      <title>Earth Science High School Content Expectations</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Earth Science High School</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000363">
+      <title>Earth Science High School Content Expectations</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e144f267-0773-4c54-ac9f-89d662082f40">
+      <title>High School Science Essential Content Standards and Expectations</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>High School Science Essential Conte</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000280">
+      <title>High School Science Essential Content Standards and Expectations</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9d98fda8-41a0-4800-a242-ab471201847f">
+      <title>Physics High School Content Expectations</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Physics High School</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000364">
+      <title>Physics High School Content Expectations</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d9e3ff0e-d83c-4c51-ba1e-b60cbaa5f423">
+      <title>Science Grade Level Content Expectations v.12.07</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Science K-7 Content Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000332">
+      <title>Science Grade Level Content Expectations v.12.07</title>
+      <created>2007</created>
+      <topic>Science</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a39ec9a7-69fa-4a82-a4f8-7c81e06fb02d">
+      <title>Minnesota Graduation Standards for Science</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Graduation Standards for Science</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100010F">
+      <title>Minnesota Graduation Standards for Science</title>
+      <created>1998</created>
+      <topic>Science</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="abcc5686-6fe8-4f70-8221-98cc27e0460b">
+      <title>Minnesota Academic Standards Science K-12</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Academic Standards Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000C2">
+      <title>Minnesota Academic Standards Science K-12</title>
+      <created>2003</created>
+      <topic>Science</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7f61a262-4512-4ca5-8c9b-fa9df4509538">
+      <title>Science Grade-Level Expectations</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>Science Grade-Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000212">
+      <title>Science Grade-Level Expectations</title>
+      <created>2005</created>
+      <topic>Science</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a9199ed4-77c1-40eb-87f6-fae090437b5c">
+      <title>Science Course-Level Expectations Biology I, Updated Version 11/24/08</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>Science Course-Level Bio 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003B8">
+      <title>Science Course-Level Expectations Biology I, Updated Version 11/24/08</title>
+      <created>2008</created>
+      <topic>Science</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b2ef3726-e44a-4085-b4f8-978cd057b360">
+      <title>Version 2.0 Science Grade Level Expectations, March 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>Version 2.0 Science GLE March 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000371">
+      <title>Version 2.0 Science Grade Level Expectations, March 2008</title>
+      <created>2008</created>
+      <topic>Science</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1841f4ff-2686-44f8-8a73-bb8af68a8a2e">
+      <title>Mississippi Science Framework</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MS</jurisdiction>
+      <fileName>Science Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100009F">
+      <title>Mississippi Science Framework</title>
+      <created>2001</created>
+      <topic>Science</topic>
+      <author>Mississippi</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="24f611cf-649e-4406-bbe2-8bdf2c31c22b">
+      <title>2010 Mississippi Science Framework</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MS</jurisdiction>
+      <fileName>2010 Mississippi Science Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100036D">
+      <title>2010 Mississippi Science Framework</title>
+      <created>2008</created>
+      <topic>Science</topic>
+      <author>Mississippi</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4604341f-c334-4b30-8638-6c9f058807d8">
+      <title>Montana Standards for Science</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Montana Standards for Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000128">
+      <title>Montana Standards for Science</title>
+      <created>1999</created>
+      <topic>Science</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="21ef1809-592b-49a3-aa4c-43374c67b50e">
+      <title>Montana Standards for Science</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Montana Standards for Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000262">
+      <title>Montana Standards for Science</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="700233b0-0239-4159-a25a-24a2b95ca1bc">
+      <title>Science Grade Level Expectations</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Science Grade Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100032F">
+      <title>Science Grade Level Expectations</title>
+      <created>2007</created>
+      <topic>Science</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5e0c9263-6f03-42fe-914a-04d20bc1fcff">
+      <title>Essential Learning Expectations (ELE) for Science</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>ELE for Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003B4">
+      <title>Essential Learning Expectations (ELE) for Science</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="04184b8e-6b41-41a1-b056-65f682770a02">
+      <title>Science Standard Course of Study and Grade Level Competencies</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Science Standard Course of Study an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000156">
+      <title>Science Standard Course of Study and Grade Level Competencies</title>
+      <created>1999</created>
+      <topic>Science</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="eabb0198-e3eb-4bd7-89d3-ef0fb1734e65">
+      <title>Science Standard Course of Study and Grade Level Competencies</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Science Standard Course of Study an</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000213">
+      <title>Science Standard Course of Study and Grade Level Competencies</title>
+      <created>2004</created>
+      <topic>Science</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1a418d1e-16f4-4e9b-957d-022a0e826376">
+      <title>New Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NCEE</jurisdiction>
+      <fileName>New Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000202">
+      <title>New Standards</title>
+      <created>1997</created>
+      <topic>Science</topic>
+      <author>NCEE</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="323059e6-c8c4-47b2-90ec-af77c902fdcf">
+      <title>Science Content Standards and Benchmarks</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Science Content Standards and Bench</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000B6">
+      <title>Science Content Standards and Benchmarks</title>
+      <created>2002</created>
+      <topic>Science</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6c03af07-2a35-45df-97c9-c876d442befc">
+      <title>North Dakota Science Content and Achievement Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Science Content and Achievement Sta</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000264">
+      <title>North Dakota Science Content and Achievement Standards</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="258000ff-22fc-42ce-8e18-7e17007f570d">
+      <title>Nebraska Science Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Nebraska Science Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000112">
+      <title>Nebraska Science Standards</title>
+      <created>1998</created>
+      <topic>Science</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a9dfa28b-5158-4395-86fb-98cae75b1567">
+      <title>K-12 Science Curriculum Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Science Curriculum Framework</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000C1">
+      <title>K-12 Science Curriculum Framework</title>
+      <created>1995</created>
+      <topic>Science</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="87846f99-edfa-4176-83ac-29c57f8e4668">
+      <title>K-12 Science Literacy New Hampshire Curriculum Framework</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Science Literacy Curriculum Fr</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100026E">
+      <title>K-12 Science Literacy New Hampshire Curriculum Framework</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7ba14431-3d13-468a-afd1-d88553dd36a6">
+      <title>New Jersey Core Curriculum Content Standards for Science</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Science</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000042">
+      <title>New Jersey Core Curriculum Content Standards for Science</title>
+      <created>1998</created>
+      <topic>Science</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dd7847ff-9d26-44ce-8bf2-eefda995b5c3">
+      <title>New Jersey Core Curriculum Content Standards for Science</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000027">
+      <title>New Jersey Core Curriculum Content Standards for Science</title>
+      <created>2002</created>
+      <topic>Science</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a18fd102-2178-47fc-9f38-59b8b1a4ba80">
+      <title>New Jersey Core Curriculum Content Standards for Science</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>CCCS - Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003D8">
+      <title>New Jersey Core Curriculum Content Standards for Science</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d4d87b3e-6ae1-46ec-9b77-bef4de1e8391">
+      <title>New Mexico Science Content Standards and Benchmarks</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Science Content Standards and Bench</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000A6">
+      <title>New Mexico Science Content Standards and Benchmarks</title>
+      <created>1996</created>
+      <topic>Science</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c1b648ef-d20d-46f1-8d70-835a2c8a4266">
+      <title>New Mexico Science Content Standards, Benchmarks, and Performance Standards</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Science Content Standards, Benchmar</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000119">
+      <title>New Mexico Science Content Standards, Benchmarks, and Performance Standards</title>
+      <created>2003</created>
+      <topic>Science</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c34aacc8-c457-4e44-8623-11832f3ef589">
+      <title>National Science Education Standards</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NSES</jurisdiction>
+      <fileName>National Science Education Standard</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001D0">
+      <title>National Science Education Standards</title>
+      <created>1995</created>
+      <topic>Science</topic>
+      <author>NSES</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="75b9db63-5614-4868-b071-ca5fc12f8869">
+      <title>Nevada Science Content Standards for Grades 2, 3, 5, 8, and 12 and Grade Level Indicators for Kindergarten and Grades 1, 4, 6 and 7</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>Science Content Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000060">
+      <title>Nevada Science Content Standards for Grades 2, 3, 5, 8, and 12 and Grade Level Indicators for Kindergarten and Grades 1, 4, 6 and 7</title>
+      <created>1998</created>
+      <topic>Science</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7da8d387-0372-475f-bcad-780d4c1e59fd">
+      <title>Nevada K-12 Science Standards</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>K-12 Science Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100021A">
+      <title>Nevada K-12 Science Standards</title>
+      <created>2005</created>
+      <topic>Science</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0d581808-7bfc-4d39-a9a5-a10dded4b18c">
+      <title>Elementary Science, Intermediate Science, Living Environment, Earth Science, Chemistry, and Physics Core Curriculum</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>Elementary Science, Intermediate Sc</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000D2">
+      <title>Elementary Science, Intermediate Science, Living Environment, Earth Science, Chemistry, and Physics Core Curriculum</title>
+      <created>1996</created>
+      <topic>Science</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="66f8632e-fdfd-487c-a65e-6fb4157b0370">
+      <title>Science: Ohio's Model Competency-Based Program</title>
+      <localAdoptionDate>1994</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Science: Ohio's Model Competency-Ba</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000131">
+      <title>Science: Ohio's Model Competency-Based Program</title>
+      <created>1994</created>
+      <topic>Science</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8f27218f-6aa0-4f19-a998-4d6114af6421">
+      <title>Academic Content Standards K-12 Science</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Academic Content Standards K-12 Sci</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100015E">
+      <title>Academic Content Standards K-12 Science</title>
+      <created>2002</created>
+      <topic>Science</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="04bebefc-f9f6-4a78-9381-631d242f7687">
+      <title>Early Learning Content Standards - Science</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Early Learning Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000352">
+      <title>Early Learning Content Standards - Science</title>
+      <created>2003</created>
+      <topic>Science</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6ff93114-3a58-4fa2-86ac-8fddc57df45a">
+      <title>Priority Academic Student Skills for Science</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Science</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000FA">
+      <title>Priority Academic Student Skills for Science</title>
+      <created>2000</created>
+      <topic>Science</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8052545f-8c97-464c-90f6-7347bf8f1096">
+      <title>Priority Academic Student Skills (PASS) for Science</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100013D">
+      <title>Priority Academic Student Skills (PASS) for Science</title>
+      <created>2002</created>
+      <topic>Science</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4a8601f1-f68a-4849-bfa6-371ceef8319f">
+      <title>Academic Content Standards - Science</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Academic Content Standards - Scienc</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000214">
+      <title>Academic Content Standards - Science</title>
+      <created>2001</created>
+      <topic>Science</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="131d3d72-7e00-4c2c-9d9e-f251147af311">
+      <title>Science Standards, Oregon Standards Newspaper 2008-2009</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Science Standards 2008-2009</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000376">
+      <title>Science Standards, Oregon Standards Newspaper 2008-2009</title>
+      <created>2001</created>
+      <topic>Science</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="417fecad-0084-48a1-ad26-b671be75b77b">
+      <title>K-HS Science Content Standards</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>K-HS Science Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003B0">
+      <title>K-HS Science Content Standards</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1409b3d1-6f3a-4323-b689-56976fc29b45">
+      <title>Academic Standards for Science and Technology and Environment and Ecology</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>PA</jurisdiction>
+      <fileName>Science and Technology and Environm</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000171">
+      <title>Academic Standards for Science and Technology and Environment and Ecology</title>
+      <created>2002</created>
+      <topic>Science</topic>
+      <author>Pennsylvania</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d6e773a9-cee1-4a2c-8849-204a97c324ca">
+      <title>The Rhode Island State Science Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>RI</jurisdiction>
+      <fileName>Science Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001B9">
+      <title>The Rhode Island State Science Framework</title>
+      <created>1995</created>
+      <topic>Science</topic>
+      <author>Rhode Island</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1d048650-d93d-4069-ac90-2a8029bca55b">
+      <title>Life Science Grade Span Expectations K-12</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>RI</jurisdiction>
+      <fileName>Life Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000335">
+      <title>Life Science Grade Span Expectations K-12</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Rhode Island</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="444a2d2e-d843-46b9-8384-2160d1fd4353">
+      <title>Physical Science Grade Span Expectations K-12</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>RI</jurisdiction>
+      <fileName>Physical Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000336">
+      <title>Physical Science Grade Span Expectations K-12</title>
+      <created>2006</created>
+      <topic>Science</topic>
+      <author>Rhode Island</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="82a28ff2-986a-44fa-b7e7-e86714b80db2">
+      <title>Earth and Space Science Grade Span Expectations K-12</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>RI</jurisdiction>
+      <fileName>Earth and Space Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000334">
+      <title>Earth and Space Science Grade Span Expectations K-12</title>
+      <created>2007</created>
+      <topic>Science</topic>
+      <author>Rhode Island</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3b0b4b9e-cb70-43e7-9cc7-5c6978528384">
+      <title>Science Curriculum Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>SC</jurisdiction>
+      <fileName>Science Curriculum Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000146">
+      <title>Science Curriculum Standards</title>
+      <created>2000</created>
+      <topic>Science</topic>
+      <author>South Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="62a76951-e09c-4ece-9729-f3fa214ed19c">
+      <title>South Carolina Science Academic Standards</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>SC</jurisdiction>
+      <fileName>Science Academic Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000268">
+      <title>South Carolina Science Academic Standards</title>
+      <created>2005</created>
+      <topic>Science</topic>
+      <author>South Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="27af30dc-6728-4840-b331-58e144e728e1">
+      <title>Science Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Science Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000175">
+      <title>Science Standards</title>
+      <created>1999</created>
+      <topic>Science</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ff614075-24a6-45f9-8cf1-b6533986f81b">
+      <title>Science Content Standards</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Science Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100021E">
+      <title>Science Content Standards</title>
+      <created>2005</created>
+      <topic>Science</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b35624c1-7875-4b9d-8346-01e2232cd495">
+      <title>Science Curriculum Standards</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Science Curriculum Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000201">
+      <title>Science Curriculum Standards</title>
+      <created>2001</created>
+      <topic>Science</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="afe39fc9-239e-4f9a-9316-275c6330493c">
+      <title>Tennessee Science Standards</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Science Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100033F">
+      <title>Tennessee Science Standards</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="05e35849-3eed-4ee3-9abc-6929d6ad94c9">
+      <title>Chapter 112. Texas Essential Knowledge and Skills (TEKS) for Science</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>Chapter 112. TEKS for Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000125">
+      <title>Chapter 112. Texas Essential Knowledge and Skills (TEKS) for Science</title>
+      <created>1997</created>
+      <topic>Science</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a1e0b57f-2d9e-4038-bc9e-c46a37a8e1af">
+      <title>Chapter 112. Texas Essential Knowledge and Skills for Science, Amended 2009</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>TEKS Science Amended 2009</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003DA">
+      <title>Chapter 112. Texas Essential Knowledge and Skills for Science, Amended 2009</title>
+      <created>1998</created>
+      <topic>Science</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="79d4a6ca-7856-458d-a74c-518332b29f1e">
+      <title>Science - Utah Education Network</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>UT</jurisdiction>
+      <fileName>Science - Utah Education Network</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000217">
+      <title>Science - Utah Education Network</title>
+      <created>2003</created>
+      <topic>Science</topic>
+      <author>Utah</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d84f1a1e-e6b9-492d-8b11-d5946808bfcc">
+      <title>Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>Science Standards of Learning for V</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000072">
+      <title>Science Standards of Learning for Virginia Public Schools</title>
+      <created>1995</created>
+      <topic>Science</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a4b6c3e0-d080-4936-9406-f43788bbf973">
+      <title>Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>Science Standards of Learning for V</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000000">
+      <title>Science Standards of Learning for Virginia Public Schools</title>
+      <created>2003</created>
+      <topic>Science</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c7987720-5a25-4d01-a595-6c4b12eeb5ed">
+      <title>Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2010</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>Science SOL January 2010</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003F0">
+      <title>Science Standards of Learning for Virginia Public Schools</title>
+      <created>2010</created>
+      <topic>Science</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="45d74b04-dba0-476a-b5e3-df496d689f46">
+      <title>Vermont's Framework of Standards and Learning Opportunities</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Vermont's Framework of Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000058">
+      <title>Vermont's Framework of Standards and Learning Opportunities</title>
+      <created>2000</created>
+      <topic>Science</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e9250ea3-8cfa-463f-956c-f25f5a957aed">
+      <title>Grade Expectations for Vermont's Framework of Standards and Learning Opportunities</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Grade Expectations for Vermont's Fr</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000215">
+      <title>Grade Expectations for Vermont's Framework of Standards and Learning Opportunities</title>
+      <created>2004</created>
+      <topic>Science</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4ffde87f-68ad-470a-9de7-89333f609247">
+      <title>Essential Academic Learning Requirements in Science</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Essential Academic Learning Require</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000E9">
+      <title>Essential Academic Learning Requirements in Science</title>
+      <created>1998</created>
+      <topic>Science</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e1ea81ed-51c1-4278-8de4-bc468ee62718">
+      <title>Science K-10 Grade Level Expectations</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Essential Academic Learning Require</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000216">
+      <title>Science K-10 Grade Level Expectations</title>
+      <created>2005</created>
+      <topic>Science</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="39be4cc8-3942-4d77-b263-f090822c8409">
+      <title>Washington State K-12 Science Standards Revised April 26, 2009</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Washington State K-12 Science Stand</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003BE">
+      <title>Washington State K-12 Science Standards Revised April 26, 2009</title>
+      <created>2009</created>
+      <topic>Science</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2ce7dc6d-1d57-49db-89e6-b8d5c8b859cb">
+      <title>Wisconsin Model Academic Standards for Science</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>WI</jurisdiction>
+      <fileName>Wisconsin Model Academic Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000096">
+      <title>Wisconsin Model Academic Standards for Science</title>
+      <created>1998</created>
+      <topic>Science</topic>
+      <author>Wisconsin</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f810163f-8192-4e2c-b23c-6e5485e6de29">
+      <title>Wisconsin's Model Academic Standards for Environmental Education</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>WI</jurisdiction>
+      <fileName>Wisconsin Environmental Education</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100035B">
+      <title>Wisconsin's Model Academic Standards for Environmental Education</title>
+      <created>1998</created>
+      <topic>Science</topic>
+      <author>Wisconsin</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="61ef5235-e4f5-4e7b-b4fb-5d8e4a85c56f">
+      <title>Science Content Standards and Objectives for West Virginia Schools</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>Science Content Standards and Objec</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100014B">
+      <title>Science Content Standards and Objectives for West Virginia Schools</title>
+      <created>2003</created>
+      <topic>Science</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0ca97bd0-e638-4c1c-90cb-3a7c716b7e2f">
+      <title>21st Century Science 9-12 Content Standards and Objectives for West Virginia Schools</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>9-12 Science Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100033E">
+      <title>21st Century Science 9-12 Content Standards and Objectives for West Virginia Schools</title>
+      <created>2008</created>
+      <topic>Science</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3e173a67-a114-4a48-b909-3177b6a896b2">
+      <title>21st Century Science K-8 Content Standards and Objectives for West Virginia Schools</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>21st Century Science K-8 Content St</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100025C">
+      <title>21st Century Science K-8 Content Standards and Objectives for West Virginia Schools</title>
+      <created>2008</created>
+      <topic>Science</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="38e8ff88-f3c7-41f9-af26-5e26ecbb51b3">
+      <title>21st Century Science 9-12 Content Standards and Objectives for West Virginia Schools</title>
+      <localAdoptionDate>2010</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>Science 9-12 Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003F1">
+      <title>21st Century Science 9-12 Content Standards and Objectives for West Virginia Schools</title>
+      <created>2010</created>
+      <topic>Science</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a42a8c04-e925-4db0-9b79-8a14077d4d2b">
+      <title>Science Content and Performance Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Science Content and Performance Sta</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000EB">
+      <title>Science Content and Performance Standards</title>
+      <created>1999</created>
+      <topic>Science</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e69cb12c-384d-4a94-a4eb-8c08455a4929">
+      <title>Science Content and Performance Standards</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Science Content and Performance Sta</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000F0">
+      <title>Science Content and Performance Standards</title>
+      <created>2003</created>
+      <topic>Science</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="287c5ad8-496a-45e4-9bb6-be32722f98c3">
+      <title>Wyoming Science Content and Performance Standards</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Science</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Wyoming Science Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000382">
+      <title>Wyoming Science Content and Performance Standards</title>
+      <created>2008</created>
+      <topic>Science</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+</mappings>

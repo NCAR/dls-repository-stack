@@ -1,0 +1,82 @@
+<%-- dcsSearchItemHeader
+	produces the top row of the display for each record in the Browse record listing
+	
+	higlighting of the header occurs if the records id matches an id search OR if
+	the id of the record matches the sessionBean's recID
+ --%>
+
+<a name="${viewForm.docReader.id}" />
+<table width="100%" bgcolor="#999999"  cellspacing="1" cellpadding="3">
+	<tr bgcolor="#CCCEE6">
+		<td width="55%" align="right">&nbsp;
+			<%-- <div class="view-item-header">${viewForm.docReader.nativeFormat}</div> --%>
+		</td>
+		<td width="15%">
+			<div class="view-item-header">Last Editor</div>
+		</td>
+
+		<td width="15%">
+			<div class="view-item-header">Status</div>
+		</td>
+
+		<td width="15%" >
+			<div class="view-item-header">Last Touch</div>			
+		</td>
+	</tr>
+
+	<tr class="admin_blue1">
+		<td width="55%">
+		<table cellspacing="0" cellpadding="0" width="100%"><tr>
+			<td align="left">${viewForm.docReader.id}</td>
+			<td align="right">
+				<div class="browse-item-nav-links"> 
+				[
+					<c:if test="${docMap['dcsisValid'] != 'true'}">
+						<a href='${contextPath}/browse/display.do?fileid=${viewForm.docReader.id}&rt=validate' 
+							title="validate this record (warning: cryptic output!)"><font color="red">Validate Record</font></a>
+					</c:if>
+					<c:if test="${docMap['dcsisValid'] == 'true'}">
+						<font color="green">Record is Valid</font>
+					</c:if>
+				|
+					<a href='${contextPath}/browse/display.do?fileid=${viewForm.docReader.id}&rt=text' 
+						target="_blank"
+						title="view this record as XML">View XML</a>
+				]
+				</div>
+			</td>
+		</tr></table>
+			
+		</td>
+		<td width="15%"><%--  lastEditor --%>
+			<div class="dcs-data">
+				<c:if test="${not empty docMap['dcslastEditor']}">
+					${sf:getFullName (docMap['dcslastEditor'], userManager)}
+				</c:if>
+				<c:if test="${empty docMap['dcslastEditor']}">&nbsp;</c:if>
+			</div>
+		</td>
+
+		<td width="15%"><%--  Status --%>
+			<div class="dcs-data">
+				<c:if test="${not empty docMap['dcsstatus']}">
+					<a href="${contextPath}/record_op/status.do?command=edit&recId=${viewForm.docReader.id}"
+					   title="edit status for this record"
+					   >${sf:getStatusLabel(docMap['dcsstatus'], viewForm.docReader.collection, sessionBean)}</a>
+				</c:if>
+				<c:if test="${empty docMap['dcsstatus']}">&nbsp;</c:if>
+			</div>
+		</td>
+
+		<td width="15%"><%--  lastTouchDate --%>
+			<div class="dcs-data">
+				<c:if test="${not empty docMap['dcslastTouchDate']}">
+						<fmt:formatDate value="${f:luceneDate(docMap['dcslastTouchDate'])}" 
+							pattern="yyyy-MM-dd h:mm a"/>
+				</c:if>
+				<c:if test="${empty docMap['dcslastTouchDate']}">&nbsp;</c:if>
+			</div>
+		</td>
+	</tr>
+</table>
+<%-- end Dcs Data --%>

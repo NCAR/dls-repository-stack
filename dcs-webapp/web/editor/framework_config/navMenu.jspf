@@ -1,0 +1,72 @@
+<%-- STANDALONE Navigation Menu --%>
+<div class="nav-menu-box" align="center">
+<c:if test="${not empty sef.pageList.pages}">
+	<%-- subelements nave bar --%>
+	<table cellspacing="1" cellpadding="3" border="0"  width="100%" bgcolor="black"> 
+	<tr align="center">
+		<c:forEach var="aPage" items="${sef.pageList.pages}">
+			<c:choose> 
+				<c:when test="${aPage.mapping == sef.currentPage}" > 
+				<c:set var="currentPageLabel" scope="page" value="${aPage.name}"/>
+					<td class="nav-menu-item-selected"><div class="nav-menu-text">${aPage.name}</div></td>
+				</c:when> 
+				<c:otherwise> 
+					<td class="nav-menu-item"><a href="javascript:changeForm ('${aPage.mapping}')">
+						<div class="nav-menu-text">${aPage.name}</div></a>
+					</td>
+				</c:otherwise> 
+			</c:choose> 
+		</c:forEach>
+	</tr>
+	</table>
+</c:if>
+	<table cellspacing="0" cellpadding="0" border="0"  width="100%" >
+		<tr>
+			<td align="left">
+			<%-- Save and Exit Button --%>
+<%-- 			<input type="button" value="Save and exit" onClick="doDoneConfig()"
+					title="Save this record to disk and exit the editor"/> --%>
+			
+			<%-- Save button --%>
+			<input type="button" value="Save" onClick="doSave()"
+				title="Save this record to disk"/>
+		
+			</td> 
+
+			<%-- VALIDATE button --%>
+			<td align="center" NOWRAP="1">
+				<c:choose>
+					<c:when test="${sef.currentPage != 'viewRecord'}" >
+						<input type="button" value="Validate" onClick="doSubmit()"
+									title="Validate the fields in this form"/>
+						<jsp:include page="/lib/tool-help-link.jsp">
+							<jsp:param name="topic" value="validate"/>
+						</jsp:include>
+					</c:when>
+					<c:otherwise>&nbsp;</c:otherwise>
+				</c:choose>
+			</td>
+			
+			<%-- Full view --%>
+			<td>
+				<c:if test="${sef.currentPage == 'viewRecord'}">
+				<input type="button" value="Edit" onClick="changeForm('${sef.previousPage}')"
+							title="See full view of record"/>
+				</c:if>
+				<c:if test="${sef.currentPage != 'viewRecord'}">
+				<input type="button" value="View record" onClick="changeForm('viewRecord')"
+							title="See full view of record"/>
+				</c:if>
+			</td>
+			
+			<%-- Exit button --%>
+			<td align="right" >
+					<input type="button" value="Exit editor" onClick="guardedExit('${contextPath}/admin/frameworks.do');"
+						title="Exit without saving"/>
+			</td>
+
+		</tr>
+	</table>
+
+</div>
+

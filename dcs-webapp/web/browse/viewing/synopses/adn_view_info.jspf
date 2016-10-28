@@ -1,0 +1,9 @@
+
+		<div class="browse-item-title">${viewForm.docReader.title}</div>
+		
+		<div class="searchResultValues">
+			<a href='${viewForm.docReader.url}' target="_blank"
+				title="view resource in new window">${sf:truncate(viewForm.docReader.url, urlTruncateLen)}</a>
+		</div>
+					
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: processStandard-NCTM-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/processStandard.xsd">
+	<field name="Process standard" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/educational/processStandards/processStandard">
+		<definition>specific skills necessary to engage in mathematical pursuits</definition>
+
+		<vocabLevels number="3">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="NCTM">National Council of Teachers of Mathematics</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="2" levelName="Standard" levelDeftn="a broad topic area within the mathematical realm">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="Problem Solving">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Reasoning and Proof">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Communication">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Connections">self-explanatory</levelTermAndDeftn>
+					<levelTermAndDeftn term="Representation">self-explanatory</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>
+			
+			<levelAndDeftn level="3" levelName="Process" levelDeftn="specific skills necessary to engage in mathematical pursuits; see the allowed combination of terms below; the process part of the term is the phrase after the last colon"/>
+		</vocabLevels>
+
+
+		<terms>
+			<termAndDeftn vocab="NCTM:Problem Solving:Build new mathematical knowledge through problem solving">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Problem Solving:Solve problems that arise in mathematics and in other contexts">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Problem Solving:Apply and adapt a variety of appropriate strategies to solve problems">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Problem Solving:Monitor and reflect on the process of mathematical problem solving">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NCTM:Reasoning and Proof:Recognize reasoning and proof as fundamental aspects of mathematics">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Reasoning and Proof:Make and investigate mathematical conjectures">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Reasoning and Proof:Develop and evaluate mathematical arguments and proofs">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Reasoning and Proof:Select and use various types of reasoning and methods of proof">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NCTM:Communication:Organize and consolidate their mathematical thinking through communication">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Communication:Communicate their mathematical thinking coherently and clearly to peers, teachers, and others">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Communication:Analyze and evaluate the mathematical thinking and strategies of others">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Communication:Use the language of mathematics to express mathematical ideas precisely">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NCTM:Connections:Recognize and use connections among mathematical ideas">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Connections:Understand how mathematical ideas interconnect and build on one another to produce a coherent whole">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Connections:Recognize and apply mathematics in contexts outside of mathematics">self-explanatory</termAndDeftn>
+
+			<termAndDeftn vocab="NCTM:Representation:Create and use representations to organize, record, and communicate mathematical ideas">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Representation:Select, apply, and translate among mathematical representations to solve problems">self-explanatory</termAndDeftn>
+			<termAndDeftn vocab="NCTM:Representation:Use representations to model and interpret physical, social, and mathematical phenomena">self-explanatory</termAndDeftn>
+		</terms>
+
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2006-02-24">Choosing a standard signifies that the content of the resource supports specific skills necessary to engage in mathematical pursuits.</practice>
+
+				<practice status="current" originDate="2006-02-24">Catalogers with experience and familiarity with mathematical education may associate these standards with resources.</practice>
+			</dos>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>NCTM:Connections:Recognize and apply mathematics in contexts outside of mathematics</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

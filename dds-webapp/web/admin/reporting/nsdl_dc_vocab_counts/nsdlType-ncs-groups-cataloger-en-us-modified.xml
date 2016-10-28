@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: nsdlType-ncs-groups-cataloger-en-us-modified.xml,v 1.1 2010/04/26 23:34:34 jweather Exp $-->
+<opml xmlns="http://ns.nsdl.org/ncs/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://ns.nsdl.org/ncs/fields http://ns.nsdl.org/ncs/ncs_item/1.02/schemas/fields/nsdlType.xsd"
+version="2.0">
+	<!-- Modified from http://ns.nsdl.org/ncs/ncs_item/1.02/groups/nsdlType-ncs-groups-cataloger-en-us.xml
+		to include DCMI types as well... JW -->
+	<head>
+		<title>Type - NSDL (modified to include DCMI types as well)</title>
+		<concept language="en-us" metaFormat="ncs_item" metaVersion="1.02" text="Type - NSDL" audience="cataloger" path="/record/educational/types/nsdlType" smartCheckBox="true"/>
+	</head>
+	<body>
+		<outline text="Assessment Materials" type="group" deftn="material that enables evaluation or measurement of progress, development, ability, skill, understanding, knowledge, aptitude, achievement, or an opinion/attitude" vocab="Assessment Material">
+			<outline vocab="Answer Key" type="vocab" text="Answer Key"/>
+			<outline vocab="Portfolio" type="vocab" text="Portfolio"/>
+			<outline vocab="Rubric" type="vocab" text="Rubric"/>
+			<outline vocab="Test" type="vocab" text="Test"/>
+		</outline>
+		<outline vocab="Collection" type="group" text="Collection"/><!-- DCMI vocab -->
+		<outline text="Datasets" type="group" deftn="visual, factual, or numerical information that comes from a sensing device" vocab="Dataset">
+			<outline vocab="Database" type="vocab" text="Database"/>
+			<outline vocab="List/Table" type="vocab" text="List/Table"/>
+			<outline vocab="Observed Data" type="vocab" text="Observed Data"/>
+			<outline vocab="Remotely Sensed Data" type="vocab" text="Remotely Sensed Data"/>
+			<outline vocab="Trial" type="vocab" text="Trial"/>
+		</outline>
+		<outline text="Events" type="group" deftn="a non-persistent, time-based occurrence" vocab="Event">
+			<outline vocab="Award/Recognition/Scholarship" type="vocab" text="Award, Recognition or Scholarship"/>
+			<outline vocab="Broadcast" type="vocab" text="Broadcast"/>
+			<outline vocab="Call for Participation" type="vocab" text="Call for Participation"/>
+			<outline vocab="Conference" type="vocab" text="Conference"/>
+			<outline vocab="Exhibit" type="vocab" text="Exhibit"/>
+			<outline vocab="Learning/Research Opportunity" type="vocab" text="Learning or Research Opportunity"/>
+			<outline vocab="Job" type="vocab" text="Job"/>
+			<outline vocab="News" type="vocab" text="News"/>
+			<outline vocab="Workshop" type="vocab" text="Workshop"/>
+		</outline>
+		<outline text="Instructional Materials" type="group" deftn="resource or learning object intended to facilitate teaching or enable learning" vocab="Instructional Material" wrap="true">
+			<outline vocab="Activity" type="vocab" text="Activity"/>
+			<outline vocab="Annotation" type="vocab" text="Annotation"/>
+			<outline vocab="Case Study" type="vocab" text="Case Study"/>
+			<outline vocab="Course" type="vocab" text="Course"/>
+			<outline vocab="Curriculum" type="vocab" text="Curriculum"/>
+			<outline vocab="Demonstration" type="vocab" text="Demonstration"/>
+			<outline vocab="Experiment/Lab Activity" type="vocab" text="Experiment/Lab"/>
+			<outline vocab="Field Trip" type="vocab" text="Field Trip"/>
+			<outline vocab="Game" type="vocab" text="Game"/>
+			<outline vocab="Instructional Strategy" type="vocab" text="Instructional Strategy"/>
+			<outline vocab="Instructor Guide/Manual" type="vocab" text="Instructor Guide/Manual"/>
+			<outline vocab="Interactive Simulation" type="vocab" text="Interactive Simulation"/>
+			<outline vocab="Lecture/Presentation" type="vocab" text="Lecture or Presentation"/>
+			<outline vocab="Lesson/Lesson Plan" type="vocab" text="Lesson or Lesson Plan"/>
+			<outline vocab="Model" type="vocab" text="Model"/>
+			<outline vocab="Problem Set" type="vocab" text="Problem Set"/>
+			<outline vocab="Project" type="vocab" text="Project"/>
+			<outline vocab="Simulation" type="vocab" text="Simulation"/>
+			<outline vocab="Student Guide" type="vocab" text="Student Guide"/>
+			<outline vocab="Syllabus" type="vocab" text="Syllabus"/>
+			<outline vocab="Textbook" type="vocab" text="Textbook"/>
+			<outline vocab="Tutorial" type="vocab" text="Tutorial"/>
+			<outline vocab="Unit of Instruction" type="vocab" text="Unit of Instruction"/>
+			<outline vocab="InteractiveResource" type="vocab" text="Interactive Resource"/><!-- DCMI vocab -->
+		</outline>
+		<outline vocab="PhysicalObject" type="group" text="Physical Object"/><!-- DCMI vocab -->
+		<outline text="Reference Materials" type="group" deftn="information intended as an authoritative source or to stimulate topical research" vocab="Reference Material" wrap="true">
+			<outline vocab="Abstract" type="vocab" text="Abstract"/>
+			<outline vocab="Article" type="vocab" text="Article"/>
+			<outline vocab="Bibliography" type="vocab" text="Bibliography"/>
+			<outline vocab="Career Information" type="vocab" text="Career Information"/>
+			<outline vocab="Classification Key" type="vocab" text="Classification Key"/>
+			<outline vocab="Educational Standard" type="vocab" text="Educational Standard"/>
+			<outline vocab="FAQ" type="vocab" text="FAQ"/>
+			<outline vocab="Fiction" type="vocab" text="Fiction"/>
+			<outline vocab="Glossary/Index" type="vocab" text="Glossary or Index"/>
+			<outline vocab="Outline" type="vocab" text="Outline"/>
+			<outline vocab="Nonfiction Reference" type="vocab" text="Nonfiction Reference"/>
+			<outline vocab="Periodical" type="vocab" text="Periodical"/>
+			<outline vocab="Policy" type="vocab" text="Policy"/>
+			<outline vocab="Proceedings" type="vocab" text="Proceedings"/>
+			<outline vocab="Proposal" type="vocab" text="Proposal"/>
+			<outline vocab="Report" type="vocab" text="Report"/>
+			<outline vocab="Scientific Standard" type="vocab" text="Scientific Standard"/>
+			<outline vocab="Specimen" type="vocab" text="Specimen"/>
+			<outline vocab="Thesis/Dissertation" type="vocab" text="Thesis or Dissertation"/>
+		</outline>
+		<outline text="Community" type="group" deftn="a resource that facilitates communications and interactions" vocab="Community" wrap="true">
+			<outline vocab="Ask-an-Expert" type="vocab" text="Ask-an-Expert"/>
+			<outline vocab="Forum" type="vocab" text="Forum"/>
+			<outline vocab="Listserv" type="vocab" text="Listserv"/>
+			<outline vocab="Weblog" type="vocab" text="Weblog"/>
+			<outline vocab="Wiki" type="vocab" text="Wiki"/>
+		</outline>
+		<outline vocab="Service" type="group" text="Service"/><!-- DCMI vocab -->
+		<outline vocab="Text" type="group" text="Text"/><!-- DCMI vocab -->
+		<outline text="Tools" type="group" deftn="physical hardware or computer software that facilitates interacting with a resource" vocab="Tool">
+			<outline vocab="Code" type="vocab" text="Code"/>
+			<outline vocab="Equipment" type="vocab" text="Equipment"/>
+			<outline vocab="Form" type="vocab" text="Form"/>
+			<outline vocab="Numerical Model" type="vocab" text="Numerical Model"/>
+			<outline vocab="Search Engine" type="vocab" text="Search Engine"/>
+			<outline vocab="Software" type="vocab" text="Software"/>
+		</outline>
+		<outline text="Audio/Visuals" type="group" deftn="representations other than text" vocab="Audio/Visual">
+			<outline vocab="Graph" type="vocab" text="Graph"/>
+			<outline vocab="Illustration" type="vocab" text="Illustration"/>
+			<outline vocab="Image/Image Set" type="vocab" text="Image or Image Set"/>
+			<outline vocab="Map" type="vocab" text="Map"/>
+			<outline vocab="Movie/Animation" type="vocab" text="Movie or Animation"/>
+			<outline vocab="Music" type="vocab" text="Music"/>
+			<outline vocab="Photograph" type="vocab" text="Photograph"/>
+			<outline vocab="Sound" type="vocab" text="Sound"/>
+			<outline vocab="Voice Recording" type="vocab" text="Voice Recording"/>
+			<outline vocab="Image" type="vocab" text="Image"/><!-- DCMI vocab -->
+			<outline vocab="StillImage" type="vocab" text="Still Image"/><!-- DCMI vocab -->
+			<outline vocab="MovingImage" type="vocab" text="Moving Image"/><!-- DCMI vocab -->
+		</outline>
+	</body>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

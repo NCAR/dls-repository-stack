@@ -1,0 +1,2148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="The Arts">
+  <mapping>
+    <acsrInfo id="d5b33f33-8a2f-4f5e-857a-20ca7b379fbf">
+      <title>Alaska Content Standards Arts</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AK</jurisdiction>
+      <fileName>Arts Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002D8">
+      <title>Alaska Content Standards Arts</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Alaska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="16ddd6d9-f8cf-4011-bbac-f290702da77a">
+      <title>Alabama Course of Study: Arts Education Dance</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AL</jurisdiction>
+      <fileName>Arts Education Dance</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000300">
+      <title>Alabama Course of Study: Arts Education Dance</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Alabama</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="79d0de62-9d77-4acc-b5cc-23e61dc53094">
+      <title>Alabama Course of Study: Arts Education Music</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AL</jurisdiction>
+      <fileName>Arts Education Music</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000301">
+      <title>Alabama Course of Study: Arts Education Music</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Alabama</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3b4759ab-f63e-4013-8b8f-cb642f95d70c">
+      <title>Alabama Course of Study: Arts Education Theatre</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AL</jurisdiction>
+      <fileName>Arts Education Theatre</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000302">
+      <title>Alabama Course of Study: Arts Education Theatre</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Alabama</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fbf2ca29-9166-4152-b6f1-ec83352c80b1">
+      <title>Alabama Course of Study: Arts Education Visual Arts</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AL</jurisdiction>
+      <fileName>Arts Education Visual Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000303">
+      <title>Alabama Course of Study: Arts Education Visual Arts</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Alabama</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e00572eb-deaf-4dcf-b2a3-3e8d78004fb9">
+      <title>Arkansas Fine Arts Curriculum Framework</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Fine Arts Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002E9">
+      <title>Arkansas Fine Arts Curriculum Framework</title>
+      <created>2001</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f22753e7-283a-4c1e-b712-3ae1a6cb2e08">
+      <title>5-8 Instrumental Performance Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>5-8 Instrumental Perf. Revised 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000391">
+      <title>5-8 Instrumental Performance Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6b502044-5c4f-4da3-9da2-0122975e754e">
+      <title>5-8 Vocal Performance Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>5-8 Vocal Performance Rev. 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000392">
+      <title>5-8 Vocal Performance Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="559b8ca7-592d-4ad9-bd37-e9cbc3c81884">
+      <title>Art History I Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Art History I Fine Arts Revised 08</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100039C">
+      <title>Art History I Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7843af10-dce7-4065-b431-a116f15f8088">
+      <title>Art History II Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Art History II Fine Arts Revised 08</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100039D">
+      <title>Art History II Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6d7c0d8e-a6c5-46dc-9a07-8b36ec2c8569">
+      <title>Art I Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Art I Fine Arts Revised 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000393">
+      <title>Art I Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8dfa6557-c669-406a-8423-cfff1810d652">
+      <title>Art II Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Art II Fine Arts Revised 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000398">
+      <title>Art II Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7e57b8a8-6515-4ac5-92bd-63835e3150fb">
+      <title>Art III Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Art III Fine Arts Revised 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100039A">
+      <title>Art III Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2cb0cbbe-36a0-472b-9813-1f820447c4d0">
+      <title>Art IV Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Art IV Fine Arts Revised 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100039B">
+      <title>Art IV Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="16a3e2c9-70da-4589-b95c-2e57c21cfab0">
+      <title>Instrumental Music I Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Instrumental Music I Rev. 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100039E">
+      <title>Instrumental Music I Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="80fe1ec8-1cbe-42f8-8e0d-7a76aebbe065">
+      <title>Instrumental Music II Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Instrumental Music II Rev. 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100039F">
+      <title>Instrumental Music II Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ed146125-fa79-408a-bf2e-220a4b76b82b">
+      <title>Instrumental Music III Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Instrumental Music III Rev. 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003A0">
+      <title>Instrumental Music III Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fe8d3c23-63e5-4868-b9dd-7421fab5b696">
+      <title>Instrumental Music IV Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Instrumental Music IV Rev. 08</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003A1">
+      <title>Instrumental Music IV Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4741bed0-6630-43b9-851c-be5bb9d5b45f">
+      <title>K-8 Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>K-8 Fine Arts Revised 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000390">
+      <title>K-8 Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e781e929-8eb0-4b5b-b352-db84af950304">
+      <title>Music Theory Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Music Theory Revised 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003A2">
+      <title>Music Theory Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6453481f-b7c4-4a14-9a6d-6d29924c443f">
+      <title>Studio Art 2-D Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Studio Art 2-D Revised 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003A3">
+      <title>Studio Art 2-D Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="79e57d8a-a302-4d4d-a1c0-d0b46c636f71">
+      <title>Studio Art 3-D Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Studio Art 3-D Revised 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003A4">
+      <title>Studio Art 3-D Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="92c65883-f830-4c19-9b41-fa339505a430">
+      <title>Survey of Fine Arts Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Survey of Fine Arts Rev. 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003A5">
+      <title>Survey of Fine Arts Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1241051e-a3ac-4d0c-982e-bb82c0e2ced3">
+      <title>Vocal Music I Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Vocal Music I Revised 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003A6">
+      <title>Vocal Music I Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="46bc94b8-fc4b-41b4-991d-d79426e84a84">
+      <title>Vocal Music II Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Vocal Music II Revised 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003A8">
+      <title>Vocal Music II Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7e897eae-3c11-4598-8ac9-71b024a8d6f7">
+      <title>Vocal Music III Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Vocal Music III Revised 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003A9">
+      <title>Vocal Music III Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="15f85d51-ae71-48de-8d80-1a73cf21479a">
+      <title>Vocal Music IV Fine Arts Curriculum Framework Revised 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Vocal Music IV Revised 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003AA">
+      <title>Vocal Music IV Fine Arts Curriculum Framework Revised 2008</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0c6fe4dd-b4df-458e-8a95-29ce7ddd21a9">
+      <title>Fine Arts Theatre and Dance Curriculum Framework</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Fine Arts Theatre and Dance Curricu</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003BF">
+      <title>Fine Arts Theatre and Dance Curriculum Framework</title>
+      <created>2009</created>
+      <topic>The Arts</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7fb590cb-7855-4bf1-a589-aedf0a603991">
+      <title>Arizona Academic Standards for Dance</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Academic Standards for Dance</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000305">
+      <title>Arizona Academic Standards for Dance</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b26a5227-aae2-4fea-a25b-fa3d6f310350">
+      <title>Arizona Music Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Music Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000306">
+      <title>Arizona Music Standards</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cb948246-3ab3-4541-adf3-1745c4e172c5">
+      <title>Arizona Standards for the Visual Arts</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Standards for the Visual Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000307">
+      <title>Arizona Standards for the Visual Arts</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0b137192-daf9-45f0-b0df-79270c8809a8">
+      <title>Arizona Theatre Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Theatre Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000308">
+      <title>Arizona Theatre Standards</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a868aa65-981e-4952-a21c-9e33df7b2c43">
+      <title>Visual and Performing Arts Content Standards for California Public Schools</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>CA</jurisdiction>
+      <fileName>Visual and Performing Art Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000315">
+      <title>Visual and Performing Arts Content Standards for California Public Schools</title>
+      <created>2001</created>
+      <topic>The Arts</topic>
+      <author>California</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2d1654b2-54e5-4ad2-9a3a-ad3137394cc5">
+      <title>Colorado Model Content Standards for Music</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Model Content Standards for Music</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002D1">
+      <title>Colorado Model Content Standards for Music</title>
+      <created>1997</created>
+      <topic>The Arts</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1b921ee9-a9b5-4dc3-a320-e872cab95f9f">
+      <title>Colorado Model Content Standards for Visual Arts</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Content Standards for Visual Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002D7">
+      <title>Colorado Model Content Standards for Visual Arts</title>
+      <created>1997</created>
+      <topic>The Arts</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8bb36031-9b7b-4388-b556-27b02f688ede">
+      <title>Colorado Model Content Standards for Dance</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Model Content Standards for Dance</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002D5">
+      <title>Colorado Model Content Standards for Dance</title>
+      <created>2000</created>
+      <topic>The Arts</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bb393b91-f3cf-4ed3-b566-28e5f38b1589">
+      <title>Colorado Model Content Standards for Theatre</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Model Content Standards for Theatre</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002D6">
+      <title>Colorado Model Content Standards for Theatre</title>
+      <created>2000</created>
+      <topic>The Arts</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7184a2fc-2288-4388-8490-a214160a64a2">
+      <title>Colorado Academic Standards for Dance</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Academic Standards for Dance</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003F6">
+      <title>Colorado Academic Standards for Dance</title>
+      <created>2009</created>
+      <topic>The Arts</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="28ffd827-3b97-4714-ac10-27d67fddd650">
+      <title>Colorado Academic Standards for Drama and Theatre Arts</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Academic Standards for Drama and Th</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003F7">
+      <title>Colorado Academic Standards for Drama and Theatre Arts</title>
+      <created>2009</created>
+      <topic>The Arts</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="87427423-5716-4efe-aa64-6bba86063076">
+      <title>Colorado Academic Standards for Music</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Academic Standards for Music</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003F9">
+      <title>Colorado Academic Standards for Music</title>
+      <created>2009</created>
+      <topic>The Arts</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5930451d-f5eb-42c2-8003-d017a8b4e8b3">
+      <title>Colorado Academic Standards for Visual Arts</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Academic Standards for Visual Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003F8">
+      <title>Colorado Academic Standards for Visual Arts</title>
+      <created>2009</created>
+      <topic>The Arts</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fdf9accd-0eff-45d2-8296-08d08bea22c3">
+      <title>Connecticut Arts Curriculum Framework</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>Arts Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002F7">
+      <title>Connecticut Arts Curriculum Framework</title>
+      <created>1998</created>
+      <topic>The Arts</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2ff39747-f03e-4114-9b99-99c6c14b2c3a">
+      <title>Arts Education Learning Standards</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>DC</jurisdiction>
+      <fileName>Arts Education Learning Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000360">
+      <title>Arts Education Learning Standards</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>District of Columbia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a826f7f9-e75f-405b-85fe-7e6cf33f83c7">
+      <title>Dance Content Standards and Grade Level Expectations</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Dance Content Standards and GLEs</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002DD">
+      <title>Dance Content Standards and Grade Level Expectations</title>
+      <created>2007</created>
+      <topic>The Arts</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c200afab-f06b-40fe-8e18-2652d5d558e6">
+      <title>Music Content Standards and Grade Level Expectations</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Music Content Standards and GLEs</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002DE">
+      <title>Music Content Standards and Grade Level Expectations</title>
+      <created>2007</created>
+      <topic>The Arts</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7168a454-c33b-4b21-803f-06d56b661450">
+      <title>Theatre Content Standards and Grade Level Expectations</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Theatre Content Standards and GLEs</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002DF">
+      <title>Theatre Content Standards and Grade Level Expectations</title>
+      <created>2007</created>
+      <topic>The Arts</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="296fe96f-539d-4c74-a3ff-227096bd3a52">
+      <title>Visual Art Content Standards and Grade Level Expectations</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Visual Art Standards and GLEs</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002E0">
+      <title>Visual Art Content Standards and Grade Level Expectations</title>
+      <created>2007</created>
+      <topic>The Arts</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="27fd10bf-44b8-4888-8963-2c4d8aa352fe">
+      <title>Sunshine State Standards Arts: Dance</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>SSS Arts Dance</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002ED">
+      <title>Sunshine State Standards Arts: Dance</title>
+      <created>1996</created>
+      <topic>The Arts</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8eab0410-cab0-4650-ae7a-cfcf70987907">
+      <title>Sunshine State Standards Arts: Music</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>SSS Arts: Music</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002EE">
+      <title>Sunshine State Standards Arts: Music</title>
+      <created>1996</created>
+      <topic>The Arts</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="13431bd4-c1a9-457a-958d-0a62d961f2af">
+      <title>Sunshine State Standards Arts: Theatre</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>SSS Arts: Theatre</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002EF">
+      <title>Sunshine State Standards Arts: Theatre</title>
+      <created>1996</created>
+      <topic>The Arts</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b8052a1f-cea2-4f3a-86db-182cfa08d333">
+      <title>Sunshine State Standards Arts: Visual Arts</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>SSS Arts: Visual Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002F0">
+      <title>Sunshine State Standards Arts: Visual Arts</title>
+      <created>1996</created>
+      <topic>The Arts</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8fca393b-d003-498a-8ce4-6d49088781ae">
+      <title>Georgia Performance Standards Fine Arts â€“ Dance Education, Final 2-11-2010</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS - Fine Arts Dance</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003E5">
+      <title>Georgia Performance Standards Fine Arts â€“ Dance Education, Final 2-11-2010</title>
+      <created>2009</created>
+      <topic>The Arts</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a9e3f4c5-bc74-4da0-b002-9a02cf265277">
+      <title>Georgia Performance Standards Fine Arts â€“ Music Education, Final 2-11-2010</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS Fine Arts - Music</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003E8">
+      <title>Georgia Performance Standards Fine Arts â€“ Music Education, Final 2-11-2010</title>
+      <created>2009</created>
+      <topic>The Arts</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="073aa0ab-2c1b-469a-aed1-3faabd015f37">
+      <title>Georgia Performance Standards Fine Arts â€“ Theatre Arts Education, Final 2-11-2010</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS Fine Arts - Theatre Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003E6">
+      <title>Georgia Performance Standards Fine Arts â€“ Theatre Arts Education, Final 2-11-2010</title>
+      <created>2009</created>
+      <topic>The Arts</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ef5f02e4-b7cf-4207-b882-c3ab400c1f9f">
+      <title>Georgia Performance Standards Fine Arts â€“ Visual Arts Education, Final 2-11-2010</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>GPS Fine Arts - Visual Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003E7">
+      <title>Georgia Performance Standards Fine Arts â€“ Visual Arts Education, Final 2-11-2010</title>
+      <created>2009</created>
+      <topic>The Arts</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dcf802a6-0396-4e28-b77b-61b3743153d6">
+      <title>HCPS III Fine Arts</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>HI</jurisdiction>
+      <fileName>HCPS III Fine Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002F6">
+      <title>HCPS III Fine Arts</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Hawaii</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="39f3bd35-afe4-4e4a-a849-a9c5c2b6c697">
+      <title>Idaho Content Standards Humanities: Dance</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Idaho Humanities: Dance, 4-24-06</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100038A">
+      <title>Idaho Content Standards Humanities: Dance</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="397c9fc0-0549-4947-8cb9-aa95361aa984">
+      <title>Idaho Content Standards Humanities: Music</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Idaho Humanities: Music, 4-24-06</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100038B">
+      <title>Idaho Content Standards Humanities: Music</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5e2e4f69-9a9a-4f89-bedb-08c726325721">
+      <title>Idaho Content Standards Humanities: Theatre</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Idaho Humanities: Theatre, 4-24-06</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100038C">
+      <title>Idaho Content Standards Humanities: Theatre</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c039bb67-5720-49e7-bdba-90d8cc7d06b2">
+      <title>Idaho Content Standards Humanities: Visual Arts</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Idaho Humanities Visual Art 4-24-06</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100038D">
+      <title>Idaho Content Standards Humanities: Visual Arts</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="667f5020-884c-4b93-a5c7-f7eb19d8a4ab">
+      <title>Illinois Learning Standards for Fine Arts</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Learning Standards for Fine Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002E1">
+      <title>Illinois Learning Standards for Fine Arts</title>
+      <created>1997</created>
+      <topic>The Arts</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7dc8df33-66b0-432a-aa4e-15839ae64dea">
+      <title>Fine Arts Performance Descriptors</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Fine Arts Performance Descriptors</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003C4">
+      <title>Fine Arts Performance Descriptors</title>
+      <created>2002</created>
+      <topic>The Arts</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="98ee4824-b58e-4fcf-aefb-cdce45eb924f">
+      <title>Indiana Academic Standards for Visual Arts</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Academic Standards for Visual Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002FD">
+      <title>Indiana Academic Standards for Visual Arts</title>
+      <created>2002</created>
+      <topic>The Arts</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f5707e5c-1031-462d-9e5b-dd13846e283c">
+      <title>Indiana Academic Standards for Theatre</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Academic Standards for Theatre</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002FF">
+      <title>Indiana Academic Standards for Theatre</title>
+      <created>2003</created>
+      <topic>The Arts</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="84cef9d7-e07a-47e9-9314-6deba706fa8a">
+      <title>Indiana Academic Standards for Dance</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Academic Standards for Dance</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002FE">
+      <title>Indiana Academic Standards for Dance</title>
+      <created>2004</created>
+      <topic>The Arts</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="36f947c6-2117-4d3d-8e89-ea4dfab12406">
+      <title>Indiana's Academic Standards Music</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Academic Standards Music</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002FB">
+      <title>Indiana's Academic Standards Music</title>
+      <created>2007</created>
+      <topic>The Arts</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="791412a5-4617-479f-b956-adb1dd53188d">
+      <title>Indianaâ€™s Academic Standards for Visual Art</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Standards for Visual Art</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000354">
+      <title>Indianaâ€™s Academic Standards for Visual Art</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d2fcf172-630f-4883-be62-9dfa94f39ffb">
+      <title>Kansas Curricular Standards for Theatre</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Curricular Standards for Theatre</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100031E">
+      <title>Kansas Curricular Standards for Theatre</title>
+      <created>2004</created>
+      <topic>The Arts</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dcff6556-d10f-4d01-8a49-aeb78ee245ec">
+      <title>Kansas Model Curricular Standard for Music</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Model Curricular Standard for Music</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100031D">
+      <title>Kansas Model Curricular Standard for Music</title>
+      <created>2005</created>
+      <topic>The Arts</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="312b6981-1a10-4c5d-ba6e-1ec144a3ffd7">
+      <title>Kansas Model Curricular Standards for Dance and Creative Movement</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Model Curricular Standards Dance</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100031C">
+      <title>Kansas Model Curricular Standards for Dance and Creative Movement</title>
+      <created>2005</created>
+      <topic>The Arts</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="87fa6e4b-c404-4e77-b724-b1985c0cc174">
+      <title>Kansas Curricular Standards for Visual Arts</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Curricular Standards Visual Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100031F">
+      <title>Kansas Curricular Standards for Visual Arts</title>
+      <created>2007</created>
+      <topic>The Arts</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7250f5c4-1ff5-466c-9459-d3dbce3445fb">
+      <title>Core Content for Arts and Humanities Assessment</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Core Content Arts and Humanities</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000316">
+      <title>Core Content for Arts and Humanities Assessment</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="68c96817-abee-47cb-a726-74255986736f">
+      <title>Program of Studies Arts and Humanities</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>POS Arts and Humanities</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000317">
+      <title>Program of Studies Arts and Humanities</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="84f78db7-6d2e-4e36-ae1f-9c01a64aac64">
+      <title>Louisiana Arts Content Standards</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Arts Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002FA">
+      <title>Louisiana Arts Content Standards</title>
+      <created>2004</created>
+      <topic>The Arts</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d68522b3-f215-434b-80df-92325588d12f">
+      <title>Massachusetts Arts Curriculum Framework</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>Arts Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002F1">
+      <title>Massachusetts Arts Curriculum Framework</title>
+      <created>1999</created>
+      <topic>The Arts</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cdc15c81-d78e-41c3-91d5-4983a77d2aa9">
+      <title>Visual and Performing Arts Learning Results: Parameters for Essential Instruction</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Visual and Performing Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000331">
+      <title>Visual and Performing Arts Learning Results: Parameters for Essential Instruction</title>
+      <created>2007</created>
+      <topic>The Arts</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ebb452d1-128a-48ed-9a8e-20ae6dd818d0">
+      <title>Arts Education Content Standards and Benchmarks</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Arts Education Content Standards an</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000281">
+      <title>Arts Education Content Standards and Benchmarks</title>
+      <created>1998</created>
+      <topic>The Arts</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="30d043f0-aba3-455d-bd47-d7e279a89d6e">
+      <title>Michigan Merit Curriculum Credit Guidelines for Visual, Performing, and Applied Arts 8.06</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Merit Curriculum Arts 8.06</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000396">
+      <title>Michigan Merit Curriculum Credit Guidelines for Visual, Performing, and Applied Arts 8.06</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b29a5883-b3dd-44fa-ad20-59cdbe6b4ca3">
+      <title>Minnesota K-12 Academic Standards in the Arts</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Academic Standards in the Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002DB">
+      <title>Minnesota K-12 Academic Standards in the Arts</title>
+      <created>2003</created>
+      <topic>The Arts</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cf5dc7d6-456b-4a78-87d3-71170003b200">
+      <title>Theater Grade-Level Expectations</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>Theater Grade-Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100030D">
+      <title>Theater Grade-Level Expectations</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="60a5203b-d9f2-458b-99a3-deeccbaee7a8">
+      <title>Music Grade Level Expectations</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>Music Grade Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100030C">
+      <title>Music Grade Level Expectations</title>
+      <created>2007</created>
+      <topic>The Arts</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="eb9162bc-7436-449a-8427-e964970cdb18">
+      <title>Visual Art Grade Level Expectations</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>Visual Art Grade Level Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100030E">
+      <title>Visual Art Grade Level Expectations</title>
+      <created>2007</created>
+      <topic>The Arts</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="be43960a-12ed-4059-9d45-dd6b6caf328b">
+      <title>Mississippi Visual and Performing Arts Dance Framework</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>MS</jurisdiction>
+      <fileName>Visual and Performing Arts Dance</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000321">
+      <title>Mississippi Visual and Performing Arts Dance Framework</title>
+      <created>2003</created>
+      <topic>The Arts</topic>
+      <author>Mississippi</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ae064617-9295-4703-9e0b-2d8a657ca048">
+      <title>Mississippi Visual and Performing Arts Music Framework</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>MS</jurisdiction>
+      <fileName>Visual and Performing Arts Music</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000322">
+      <title>Mississippi Visual and Performing Arts Music Framework</title>
+      <created>2003</created>
+      <topic>The Arts</topic>
+      <author>Mississippi</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4d92386b-de04-489d-bb75-48bb43dfd924">
+      <title>Mississippi Visual and Performing Arts Theatre Framework</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>MS</jurisdiction>
+      <fileName>Visual and Performing Arts Theatre</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000323">
+      <title>Mississippi Visual and Performing Arts Theatre Framework</title>
+      <created>2003</created>
+      <topic>The Arts</topic>
+      <author>Mississippi</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="42ae327d-4bf0-4cbd-b9d5-1627b85e3054">
+      <title>Mississippi Visual and Performing Arts Visual Arts Framework</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>MS</jurisdiction>
+      <fileName>Visual Performing Arts Visual Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000324">
+      <title>Mississippi Visual and Performing Arts Visual Arts Framework</title>
+      <created>2003</created>
+      <topic>The Arts</topic>
+      <author>Mississippi</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d7bfe0af-e1ed-41c2-8d83-fbc4a7712c73">
+      <title>Montana Standards for Arts</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Standards for Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002E7">
+      <title>Montana Standards for Arts</title>
+      <created>2000</created>
+      <topic>The Arts</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="526c64c5-5e05-4832-9f69-32f8343a547d">
+      <title>The North Carolina Arts Education Standard Course of Study</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Arts Education Course of Study</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002EC">
+      <title>The North Carolina Arts Education Standard Course of Study</title>
+      <created>2000</created>
+      <topic>The Arts</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cdcf1cc8-2ef2-4ca3-bb32-20084da0c0c5">
+      <title>North Dakota Dance Content Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Dance Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002F2">
+      <title>North Dakota Dance Content Standards</title>
+      <created>2000</created>
+      <topic>The Arts</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="73eb59b2-76e9-4d29-bb3e-b3dac0a313e5">
+      <title>North Dakota Drama Content Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Drama Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002F3">
+      <title>North Dakota Drama Content Standards</title>
+      <created>2000</created>
+      <topic>The Arts</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f5d5f2f1-6fea-4ad7-adb5-c34decfb31d5">
+      <title>North Dakota Music Content Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Music Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002F4">
+      <title>North Dakota Music Content Standards</title>
+      <created>2000</created>
+      <topic>The Arts</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7e20b34d-a419-46cc-92f1-0f2773909f8a">
+      <title>North Dakota Visual Arts Content Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Visual Arts Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002F5">
+      <title>North Dakota Visual Arts Content Standards</title>
+      <created>2000</created>
+      <topic>The Arts</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="50b89628-1df6-4819-a472-c9883dd3cce8">
+      <title>K-12 Curriculum Framework for the Arts</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Curriculum Framework Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002EB">
+      <title>K-12 Curriculum Framework for the Arts</title>
+      <created>2001</created>
+      <topic>The Arts</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7e45fc4a-7a1b-408e-86c6-d41be7a521ca">
+      <title>New Jersey Core Curriculum Content Standards For Visual and Performing Arts</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards For Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002FC">
+      <title>New Jersey Core Curriculum Content Standards For Visual and Performing Arts</title>
+      <created>2004</created>
+      <topic>The Arts</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dff400af-439c-4f1f-ba3d-346b6fdaf3cf">
+      <title>New Jersey Core Curriculum Content Standards for Visual and Performing Arts</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>CCCS - Visual and Performing Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003D9">
+      <title>New Jersey Core Curriculum Content Standards for Visual and Performing Arts</title>
+      <created>2009</created>
+      <topic>The Arts</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b63d7070-9494-4926-bf1d-8e1635bd4d9f">
+      <title>New Mexico Arts Content Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Arts Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000304">
+      <title>New Mexico Arts Content Standards</title>
+      <created>1997</created>
+      <topic>The Arts</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c9e5a479-09a6-4286-9aef-eae95ace4007">
+      <title>The National Standards for Arts Education</title>
+      <localAdoptionDate>1994</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>NSAE</jurisdiction>
+      <fileName>The National Standards for Arts Edu</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003BC">
+      <title>The National Standards for Arts Education</title>
+      <created>1994</created>
+      <topic>The Arts</topic>
+      <author>NSAE</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1061b35f-fb59-4e9c-ae14-94d52d200a23">
+      <title>Nevada Arts Standards - Music</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>Arts Standards - Music</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000309">
+      <title>Nevada Arts Standards - Music</title>
+      <created>2000</created>
+      <topic>The Arts</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c506f16c-fd02-4acf-8b18-a17248dceba4">
+      <title>Nevada Arts Standards - Theater</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>Arts Standards - Theater</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100030A">
+      <title>Nevada Arts Standards - Theater</title>
+      <created>2000</created>
+      <topic>The Arts</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="389f3a44-db50-43db-94c6-8144bc1dcf12">
+      <title>Nevada Arts Standards - Visual Arts</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>Arts Standards - Visual Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100030B">
+      <title>Nevada Arts Standards - Visual Arts</title>
+      <created>2000</created>
+      <topic>The Arts</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="86d29b4c-9637-48da-a243-ae630b051886">
+      <title>Learning Standards for The Arts</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>Learning Standards for The Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002F9">
+      <title>Learning Standards for The Arts</title>
+      <created>1996</created>
+      <topic>The Arts</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="47b99f63-d44d-4fd5-83dc-e997f925a6d7">
+      <title>Fine Arts Academic Content Standards</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Fine Arts Academic Content Stnds</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000320">
+      <title>Fine Arts Academic Content Standards</title>
+      <created>2003</created>
+      <topic>The Arts</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d63fa445-421c-4c57-b3e6-4cd0b33af5db">
+      <title>Priority Academic Student Skills The Arts</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS The Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002E6">
+      <title>Priority Academic Student Skills The Arts</title>
+      <created>2003</created>
+      <topic>The Arts</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="122b94c3-c887-4f89-be7e-a49c4dc2cb97">
+      <title>Revised Arts Content Standards</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Revised Arts Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002E8">
+      <title>Revised Arts Content Standards</title>
+      <created>2004</created>
+      <topic>The Arts</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="74b23c11-70d5-4856-85e6-fb4503caecb7">
+      <title>The Arts Standards, Oregon Standards Newspaper 2008-2009</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>The Arts 2008-2009</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000375">
+      <title>The Arts Standards, Oregon Standards Newspaper 2008-2009</title>
+      <created>2004</created>
+      <topic>The Arts</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c6fe17b1-aa67-4de5-9624-f56740441616">
+      <title>Academic Standards for the Arts and Humanities</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>PA</jurisdiction>
+      <fileName>Standards for the Arts and Humaniti</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002DC">
+      <title>Academic Standards for the Arts and Humanities</title>
+      <created>2002</created>
+      <topic>The Arts</topic>
+      <author>Pennsylvania</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="171583bb-4eb3-4e4d-96ca-90e6805a573f">
+      <title>South Carolina Visual and Performing Arts Curriculum Standards</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>SC</jurisdiction>
+      <fileName>Visual and Performing Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002E5">
+      <title>South Carolina Visual and Performing Arts Curriculum Standards</title>
+      <created>2003</created>
+      <topic>The Arts</topic>
+      <author>South Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b9588121-6cc2-460b-ae54-eeef432dca35">
+      <title>Fine Arts Content Standards</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Fine Arts Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002EA">
+      <title>Fine Arts Content Standards</title>
+      <created>1996</created>
+      <topic>The Arts</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dcd97755-b192-43d3-9732-666b65893888">
+      <title>Dance Curriculum Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Dance Curriculum Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000325">
+      <title>Dance Curriculum Standards</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bc0b5aea-92da-4050-ab11-0e703388cc89">
+      <title>Music Curriculum Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Music Curriculum Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000326">
+      <title>Music Curriculum Standards</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="876fe7af-15d3-4a26-9d50-b983e30c5e84">
+      <title>Theatre Curriculum Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Theatre Curriculum Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000327">
+      <title>Theatre Curriculum Standards</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d6eb244a-5fbb-48d8-b8db-41c950b1e88e">
+      <title>Visual Art Curriculum Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Visual Art Curriculum Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000328">
+      <title>Visual Art Curriculum Standards</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="844a407c-b1d1-45f4-966d-b88670c2f038">
+      <title>Tennessee Theatre K-5 Standards</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Tennessee Theatre K-5 Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003D0">
+      <title>Tennessee Theatre K-5 Standards</title>
+      <created>2009</created>
+      <topic>The Arts</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="12d8437e-0afd-4031-95c3-f2b42c005ee7">
+      <title>Chapter 117. Texas Essential Knowledge and Skills for Fine Arts</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>TEKS Fine Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002F8">
+      <title>Chapter 117. Texas Essential Knowledge and Skills for Fine Arts</title>
+      <created>1997</created>
+      <topic>The Arts</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fff4aa9a-fa39-460e-a815-a5a640cee32b">
+      <title>Utah Fine Arts - Dance</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>UT</jurisdiction>
+      <fileName>Utah Fine Arts - Dance</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000329">
+      <title>Utah Fine Arts - Dance</title>
+      <created>1997</created>
+      <topic>The Arts</topic>
+      <author>Utah</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5172ac4f-cc2d-41eb-830a-a09f7b8945d8">
+      <title>Utah Fine Arts - Music</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>UT</jurisdiction>
+      <fileName>Utah Fine Arts - Music</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100032A">
+      <title>Utah Fine Arts - Music</title>
+      <created>1997</created>
+      <topic>The Arts</topic>
+      <author>Utah</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f25aa535-ef82-45b8-84e5-b1215efc77f5">
+      <title>Utah Fine Arts - Theatre</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>UT</jurisdiction>
+      <fileName>Utah Fine Arts - Theatre</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100032B">
+      <title>Utah Fine Arts - Theatre</title>
+      <created>1997</created>
+      <topic>The Arts</topic>
+      <author>Utah</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8fd975ee-f8bf-4e31-97a2-ceb4e3d5e81e">
+      <title>Utah Fine Arts - Visual Arts</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>UT</jurisdiction>
+      <fileName>Utah Fine Arts - Visual Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100032C">
+      <title>Utah Fine Arts - Visual Arts</title>
+      <created>1997</created>
+      <topic>The Arts</topic>
+      <author>Utah</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="72f5a5c3-eb6c-4731-9924-fb9a4aabdf5e">
+      <title>Dance Arts Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>Dance Arts Standards of Learning</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100031A">
+      <title>Dance Arts Standards of Learning for Virginia Public Schools</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5de10a6e-93a1-46a8-a4ac-85c862c7290e">
+      <title>Music Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>Music Standards of Learning</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000318">
+      <title>Music Standards of Learning for Virginia Public Schools</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="00e27ecc-bdec-4966-a4f8-20642b2ba001">
+      <title>Theatre Arts Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>Theatre Arts Standards of Learning</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100031B">
+      <title>Theatre Arts Standards of Learning for Virginia Public Schools</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dfd0f034-560d-4b2e-bf88-a77db8d6987e">
+      <title>Visual Arts Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>Visual Arts Standards of Learning</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000319">
+      <title>Visual Arts Standards of Learning for Virginia Public Schools</title>
+      <created>2006</created>
+      <topic>The Arts</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="be9d37d8-ba86-4626-a989-e3decf1a259b">
+      <title>Grade Expectations for Vermontâ€™s Framework of Standards and Learning Opportunities</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Grade Expectations for Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100030F">
+      <title>Grade Expectations for Vermontâ€™s Framework of Standards and Learning Opportunities</title>
+      <created>2004</created>
+      <topic>The Arts</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6323b725-acc3-44e6-9c15-b3ca571d662e">
+      <title>Essential Academic Learning Requirements - The Arts</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>EALRs - The Arts</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000314">
+      <title>Essential Academic Learning Requirements - The Arts</title>
+      <created>2001</created>
+      <topic>The Arts</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1236f8b0-27fd-43b1-a0c0-ac13cd48ecce">
+      <title>Wisconsin's Model Academic Standards for Dance</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>WI</jurisdiction>
+      <fileName>Model Academic Standards for Dance</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002E2">
+      <title>Wisconsin's Model Academic Standards for Dance</title>
+      <created>1997</created>
+      <topic>The Arts</topic>
+      <author>Wisconsin</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="46149d13-8872-4124-bdd7-ed7b0d5a3ceb">
+      <title>Wisconsin's Model Academic Standards for Music</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>WI</jurisdiction>
+      <fileName>Model Academic Standards for Music</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002E3">
+      <title>Wisconsin's Model Academic Standards for Music</title>
+      <created>1997</created>
+      <topic>The Arts</topic>
+      <author>Wisconsin</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1ec20dde-af49-4972-acba-72fc73dc2401">
+      <title>Wisconsin's Model Academic Standards for Theatre</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>WI</jurisdiction>
+      <fileName>Model Academic Standards Theatre</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002E4">
+      <title>Wisconsin's Model Academic Standards for Theatre</title>
+      <created>1997</created>
+      <topic>The Arts</topic>
+      <author>Wisconsin</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ad03ef7d-baf1-4696-bc76-787f4d98c6a4">
+      <title>Wisconsinâ€™s Model Academic Standards for Art and Design Education</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>WI</jurisdiction>
+      <fileName>Standards for Art and Design</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100034B">
+      <title>Wisconsinâ€™s Model Academic Standards for Art and Design Education</title>
+      <created>2000</created>
+      <topic>The Arts</topic>
+      <author>Wisconsin</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d8a6b121-2d6f-4ef3-8227-bb8ec15ce18f">
+      <title>21st Century Dance Content Standards and Objectives for West Virginia Schools</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>Dance Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000310">
+      <title>21st Century Dance Content Standards and Objectives for West Virginia Schools</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c2965f7e-9143-402b-846f-568633cadeeb">
+      <title>21st Century Music Content Standards and Objectives for West Virginia Schools</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>Music Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000311">
+      <title>21st Century Music Content Standards and Objectives for West Virginia Schools</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ec1772ac-9cba-41e8-bf87-9c04db685efc">
+      <title>21st Century Theatre Content Standards and Objectives for West Virginia Schools</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>Theatre Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000312">
+      <title>21st Century Theatre Content Standards and Objectives for West Virginia Schools</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4c8abde8-2cb2-4eb4-9f87-d7efd32272e6">
+      <title>21st Century Visual Arts Content Standards and Objectives for West Virginia Schools</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>Visual Arts Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000313">
+      <title>21st Century Visual Arts Content Standards and Objectives for West Virginia Schools</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d58b8baf-e26c-427d-96d5-321bb55d3452">
+      <title>Wyoming Fine and Performing Arts Content Standards</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Fine and Performing Arts Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002D4">
+      <title>Wyoming Fine and Performing Arts Content Standards</title>
+      <created>2003</created>
+      <topic>The Arts</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6c00c2b5-df26-455c-8c06-d40e7fef9839">
+      <title>Wyoming Fine and Performing Arts Content and Performance Standards</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>The Arts</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Fine and Performing Arts Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000380">
+      <title>Wyoming Fine and Performing Arts Content and Performance Standards</title>
+      <created>2008</created>
+      <topic>The Arts</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+</mappings>

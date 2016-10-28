@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: mimeType.xsd,v 1.1 2009/05/12 15:46:32 ginger Exp $-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.00">
+	<xs:annotation>
+		<xs:documentation>*********************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*********************************************</xs:documentation>
+		<xs:documentation>Created: 2009-04-10</xs:documentation>
+		<xs:documentation>Author: Katy Ginger, University Corporation for Atmospheric Research (UCAR),  ginger@ucar.edu</xs:documentation>
+		<xs:documentation>Purpose: Controlled vocabulary for mime types</xs:documentation>
+		<xs:documentation>Source: Middle School Portal (MSP) http://www.msteacher.org/resources/authority.aspx?type=format</xs:documentation>
+		<xs:documentation>Copyright from Source: Copyright: The Ohio State University holds copyright on all original materials we publish and routinely grants permission for materials to be reproduced or to be adapted and used by others for non-commercial purposes only. Requests for permission to do so may be submitted to Kimberly Lightle. Please use the following format to credit OSU: Reprinted/Modified from ENCdl mathematics subject list, version 1.0. Retrieved 4 15, 2009, from NSDL Middle School Portal: http://www.msteacher.org/resources/authority.aspx?type=format. Copyright The Ohio State University.</xs:documentation>
+		<xs:documentation>Copyright for this file: See LICENSE AND COPYRIGHT at the end of this file.</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>**********************************************************</xs:documentation>
+		<xs:documentation>*****  HISTORY OF IMPORTANT CHANGES  *****</xs:documentation>
+		<xs:documentation>**********************************************************</xs:documentation>
+		<xs:documentation>None at the moment.</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>None</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  SIMPLE TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="mimeTypeType">
+		<xs:annotation>
+			<xs:documentation>***** mimeTypeType  *****</xs:documentation>
+			<xs:documentation>Valid values for the element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="application/ms-excel"/>
+			<xs:enumeration value="application/mspowerpoint"/>
+			<xs:enumeration value="application/msword"/>
+			<xs:enumeration value="application/pdf"/>
+			<xs:enumeration value="application/postscript"/>
+			<xs:enumeration value="application/x-director"/>
+			<xs:enumeration value="application/x-java applet"/>
+			<xs:enumeration value="application/x-shockwave-flash"/>
+
+			<xs:enumeration value="audio/basic"/>
+			<xs:enumeration value="audio/mpeg"/>
+			<xs:enumeration value="audio/QuickTime"/>
+			<xs:enumeration value="audio/x-aiff"/>
+			<xs:enumeration value="audio/x-midi"/>
+			<xs:enumeration value="audio/x-pn-realaudio"/>
+			<xs:enumeration value="audio/x-wav"/>
+
+			<xs:enumeration value="image/gif"/>
+			<xs:enumeration value="image/jpeg"/>
+			<xs:enumeration value="image/png"/>
+			<xs:enumeration value="image/tiff"/>
+
+			<xs:enumeration value="model/vrml"/>
+
+			<xs:enumeration value="text/html"/>
+			<xs:enumeration value="text/plain"/>
+			<xs:enumeration value="text/richtext"/>
+			<xs:enumeration value="text/xml"/>
+
+			<xs:enumeration value="video/avi"/>
+			<xs:enumeration value="video/mpeg"/>
+			<xs:enumeration value="video/quickTime"/>
+			<xs:enumeration value="video/realvideo"/>
+			<xs:enumeration value="video/shockwave"/>
+			<xs:enumeration value="video/x-ms-wmv"/>
+			<xs:enumeration value="video/x-pn-realvideo-plugin"/>
+			
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

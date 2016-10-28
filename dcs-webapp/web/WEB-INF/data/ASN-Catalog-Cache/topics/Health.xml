@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AsnDocuments topic="Health">
+  <asnDocument id="http://asn.jesandco.org/resources/D100021B">
+    <title>Mississippi Physical Education and Health</title>
+    <topic>Health</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2581211">
+    <title>Mississippi Contemporary Health (K-8) Framework</title>
+    <topic>Health</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2581212">
+    <title>Mississippi Contemporary Health (9-12) Framework</title>
+    <topic>Health</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2582981">
+    <title>Health Education Grade Level Expectations</title>
+    <topic>Health</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2402428">
+    <title>Wisconsin Model Academic Standards for Nutrition Education</title>
+    <topic>Health</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2403639">
+    <title>Wisconsin Standards for Health Education</title>
+    <topic>Health</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2532090">
+    <title>Wisconsin Standards for Health Science</title>
+    <topic>Health</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2499251">
+    <title>Montana Standards for Health Enhancement</title>
+    <topic>Health</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>1999</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2438253">
+    <title>North Dakota Health Content Standards</title>
+    <topic>Health</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2401231">
+    <title>North Carolina Essential Standards for Health Education K-2</title>
+    <topic>Health</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2401232">
+    <title>North Carolina Essential Standards for Health Education 3-5</title>
+    <topic>Health</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2401233">
+    <title>North Carolina Essential Standards for Health Education 6-8</title>
+    <topic>Health</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2401234">
+    <title>North Carolina Essential Standards for Health Education 9-12</title>
+    <topic>Health</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2414467">
+    <title>Washington State K-12 Health and Fitness Standards</title>
+    <topic>Health</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2504262">
+    <title>Rhode Island Health Education Framework</title>
+    <topic>Health</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000EC">
+    <title>Illinois Standards for Physical Development and Health</title>
+    <topic>Health</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2406779">
+    <title>Illinois Learning Standards for Physical Development and Health</title>
+    <topic>Health</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>1997</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2405538">
+    <title>New Jersey Comprehensive Health and Physical Education Standards</title>
+    <topic>Health</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2594343">
+    <title>New Jersey Core Curriculum Content Standards for Health and Physical Education Standards</title>
+    <topic>Health</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2512521">
+    <title>Indiana Academic Standards for Health &amp; Wellness</title>
+    <topic>Health</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2518336">
+    <title>K-12 Health Education New Hampshire Curriculum Guidelines</title>
+    <topic>Health</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>2003</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2475091">
+    <title>Alaska Content Standards Skills For A Healthy Life</title>
+    <topic>Health</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2374072">
+    <title>Idaho Content Standards - Health Education</title>
+    <topic>Health</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2500933">
+    <title>Alabama Course of Study: Health Education</title>
+    <topic>Health</topic>
+    <author>AL</author>
+    <authorName>Alabama</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2588061">
+    <title>Iowa Core 21st Century Skills - Health Literacy</title>
+    <topic>Health</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2467198">
+    <title>Arizona Health Education Standards</title>
+    <topic>Health</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2407201">
+    <title>Massachusetts Comprehensive Health Curriculum Framework</title>
+    <topic>Health</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>1999</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2404399">
+    <title>Delaware Health Education Standards</title>
+    <topic>Health</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2508951">
+    <title>Delaware Health Education Standards</title>
+    <topic>Health</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2416513">
+    <title>District of Columbia Health Education Standards</title>
+    <topic>Health</topic>
+    <author>DC</author>
+    <authorName>District of Columbia</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2583676">
+    <title>Physical Education and Health Curriculum Framework (K-8)</title>
+    <topic>Health</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2585253">
+    <title>Health and Wellness Grades 9-12</title>
+    <topic>Health</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000282">
+    <title>Grade Level Content Expectations for Health Education (K-8)</title>
+    <topic>Health</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000394">
+    <title>Michigan Merit Curriculum Credit Guidelines for Health Education</title>
+    <topic>Health</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2560500">
+    <title>21st Century Wellness PreK-4 Content Standards and Objectives for West Virginia Schools</title>
+    <topic>Health</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2561567">
+    <title>Next Generation Health Education 5-12 Content Standards and Objectives for West Virginia Schools</title>
+    <topic>Health</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2582693">
+    <title>Health Education and Physical Education Learning Results: Parameters for Essential Instruction</title>
+    <topic>Health</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2448113">
+    <title>Hawaii Content and Performance Standards for Health</title>
+    <topic>Health</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2442634">
+    <title>Maryland State Curriculum - Health Education</title>
+    <topic>Health</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2400245">
+    <title>Wyoming Health Education Content and Performance Standards</title>
+    <topic>Health</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2491404">
+    <title>Oregon Health Education Standards and Benchmarks</title>
+    <topic>Health</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2560113">
+    <title>Oregon Health Education Standards and Benchmarks</title>
+    <topic>Health</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2404814">
+    <title>Louisiana Health Education Content Standards</title>
+    <topic>Health</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2405959">
+    <title>Louisiana Health Education Grade-Level Expectations</title>
+    <topic>Health</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2567593">
+    <title>Kansas Model Curricular Standards for Health Education</title>
+    <topic>Health</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2585393">
+    <title>Tennessee Health Education Standards Health and Wellness (PreK-2)</title>
+    <topic>Health</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2585980">
+    <title>Tennessee Health Education Standards Health and Wellness (3-5)</title>
+    <topic>Health</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2586532">
+    <title>Tennessee Health Education Standards Health and Wellness (6-8)</title>
+    <topic>Health</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2587692">
+    <title>Lifetime Wellness</title>
+    <topic>Health</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2386177">
+    <title>Academic Standards for Health, Safety &amp; Physical Education</title>
+    <topic>Health</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2002</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2403043">
+    <title>Health Education Content Standards for California Public Schools, Kindergarten Through Grade Twelve</title>
+    <topic>Health</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001A0">
+    <title>Program of Studies for Science and Health Education</title>
+    <topic>Health</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2584329">
+    <title>Kentucky Core Academic Standards - Practical Living</title>
+    <topic>Health</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000218">
+    <title>Chapter 115. Texas Essential Knowledge and Skills (TEKS) for Health Education</title>
+    <topic>Health</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2487445">
+    <title>Texas Essential Knowledge and Skills for Health Education</title>
+    <topic>Health</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>1998</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2393138">
+    <title>Health K-4 Content Standards with Benchmarks and Performance Standards</title>
+    <topic>Health</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2393139">
+    <title>Health 5-8 Content Standards with Benchmarks and Performance Standards</title>
+    <topic>Health</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2393140">
+    <title>Health 9-12 Content Standards with Benchmarks and Performance Standards</title>
+    <topic>Health</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2507287">
+    <title>Colorado Academic Standards for Comprehensive Health and Physical Education</title>
+    <topic>Health</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2584833">
+    <title>Grade Expectations for Vermont's Framework of Standards and Learning Opportunities</title>
+    <topic>Health</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2408031">
+    <title>Georgia Performance Standards for Health Education</title>
+    <topic>Health</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2499268">
+    <title>Nevada Health Content Standards</title>
+    <topic>Health</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2392328">
+    <title>Learning Standards for Health, Physical Education, and Family and Consumer Sciences</title>
+    <topic>Health</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1996</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2459764">
+    <title>Health Education Standards of Learning for Virginia Public Schools</title>
+    <topic>Health</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2436638">
+    <title>Health Education Next Generation Sunshine State Standards</title>
+    <topic>Health</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2532469">
+    <title>Health Education Next Generation Sunshine State Standards</title>
+    <topic>Health</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2519523">
+    <title>Utah Health Education</title>
+    <topic>Health</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>1997</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2519939">
+    <title>Utah Health Education</title>
+    <topic>Health</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2395769">
+    <title>South Carolina Academic Standards for Health and Safety Education</title>
+    <topic>Health</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2435603">
+    <title>South Dakota Health Education Standards</title>
+    <topic>Health</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2399464">
+    <title>Health, Safety and Physical Education Priority Academic Student Skills</title>
+    <topic>Health</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2002</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2419351">
+    <title>Connecticut Healthy and Balanced Living Curriculum Framework Comprehensive School Health and Physical Education</title>
+    <topic>Health</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+</AsnDocuments>

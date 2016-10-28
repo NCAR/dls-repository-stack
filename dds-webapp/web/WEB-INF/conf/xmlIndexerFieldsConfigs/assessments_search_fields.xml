@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="assessments">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<xpaths>
+				<xpath>/assessment/recordID</xpath>
+			</xpaths>		
+		</standardField>
+		<!-- Use the question URL, if supplied... -->
+		<standardField name="url">
+			<xpaths>
+				<xpath>/assessment/question/outline/@url</xpath>
+				<xpath>/assessment/answer/outline/@url</xpath>
+			</xpaths>
+		</standardField>
+		<standardField name="title">
+			<xpaths>
+				<xpath>/assessment/title</xpath>
+			</xpaths>		
+		</standardField>		
+	</standardFields>
+	
+	<!-- Relationships that this format of record defines. -->	
+	<relationships>
+		<!-- 	Relationship of the target record to this.
+		
+				The given relationship name will be attached to the target record, not this record.
+				
+				Examples:
+					target 'isAnnotatedBy' this
+					target 'isExtendedBy' this
+					target 'isMemberOf' this
+					etc.
+					
+				attributes: name=[relationshop name] -->
+		<relationship name="isAssessedBy">
+			<!-- Xpath where the target record's ID or URL is stored
+				 attribute type=[id|url] -->
+			<xpaths>
+				<xpath type="id">/assessment/annotatedID</xpath>
+			</xpaths>		
+		</relationship>	
+	</relationships>
+	
+	 <customFields>
+	
+		<customField facetCategory="CCSAssetUrl"> 
+			<xpaths>
+				<!-- Index protected asset urls found in the assessments record -->
+				<xpath>//outline/@url[(starts-with(.,'http://ccs.dls.ucar.edu/home/protected/'))]</xpath>
+				<!-- <xpath>/assessment/answer//outline/@url[(starts-with(.,'http://ccs.dls.ucar.edu/home/protected/'))]</xpath> -->
+
+			</xpaths>		
+		</customField>
+	</customFields>
+	
+</XMLIndexerFieldsConfig>

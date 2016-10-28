@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="playlist">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<xpaths>
+				<xpath>/playList/recordID</xpath>
+			</xpaths>		
+		</standardField>		
+		<standardField name="title">
+			<xpaths>
+				<xpath>/playList/title</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/playList/description</xpath>
+			</xpaths>		
+		</standardField>		
+	</standardFields>		
+</XMLIndexerFieldsConfig>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>The Hydrologic Cycle: Online Meteorology Guide</title>
+<description>The Hydrologic Cycle is one of several online guides produced by WW2010 at the University of Illinois. These guides use multimedia technology and the dynamic capabilities of the web to incorporate text, colorful diagrams, animations, computer simulations, audio and video to introduce topics and concepts for a wide variety of disciplines. The Hydrologic Cycle is part of the Meteorology Guide, and focuses on the circulation and conservation of the earth's water. There are nine sections: The Earth's Water Budget, Evaporation, Condensation, Transport, Precipitation, Groundwater, Transpiration, Runoff, and a Summary and Example of the hydrologic cycle at work. Each section has diagrams and text, as well as hyperlinks that further define and illustrate concepts presented in the section.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Hydrology</subject>
+</subjects>
+</general>
+<lifecycle>
+<contributors>
+<contributor role="Publisher">
+<organization>
+<instName>University of Illinois- Urbana-Champaign, Department of Atmospheric Sciences, WW2010</instName>
+</organization>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-021">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-10-19" created="2000-10-19"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://ww2010.atmos.uiuc.edu/(Gh)/guides/mtr/hyd/home.rxml</primaryURL>
+<requirements>
+<requirement>
+<reqType>DLESE:Browser:Internet Explorer</reqType>
+<minimumVersion>5.0</minimumVersion>
+</requirement>
+<requirement>
+<reqType>DLESE:Browser:Netscape</reqType>
+<minimumVersion>4.0</minimumVersion>
+</requirement>
+</requirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:High school</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate lower division</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Learning materials:Tutorial</resourceType>
+</resourceTypes>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>Non-Commercial Use: Non-commercial use must be accompanied by appropriate credit visible with respect to the used item. &quot;Image/Text/Data from the University of Illinois WW2010 Project.&quot; Web utilizations should, if possible, provide a link to our server nearby. University of Illinois Copyright: Content of this server are Copyright 1997 by the University of Illinois Board of Trustees (except in the the case of photos and other resources which are specifically identified). The names &quot;Weather World 2010&quot; and &quot;WW2010&quot; are trademarks ? of the University of Illinois. Teachers and Educators: Permission is hereby granted to individual teachers to print out, copy and distribute the pages herein to their students for educational purposes. Disclaimer: No guarantee as to the availability or accuracy of the Weather World 2010 Current Weather Products, data, text, orlinks provided herein is implied. The user assumes all risk in deciding the suitability of these resources for any particular use. Site Mirroring: Mirroring of the Weather World 2010 Current Weather Products or any other resources on this server is not allowed without the explicit written permission from the developers at the University of Illinois. For additional information contact: ww2010@atmos.uiuc.edu.</description>
+</rights>
+<relations>
+<relation>
+<urlEntry kind="DC:Is part of" url="http://ww2010.atmos.uiuc.edu/(Gh)/guides/mtr/home.rxml"/>
+</relation>
+</relations>
+</itemRecord>

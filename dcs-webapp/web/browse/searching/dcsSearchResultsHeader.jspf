@@ -1,0 +1,31 @@
+<%-- DCS BrowseTableHeader 
+	this file produces the html for the top row of the item browse table for the browse.jsp page
+--%>
+<table width="100%" bgcolor="#999999" cellspacing="1" cellpadding="3">	
+	<tr bgcolor="#CCCEE6"><%-- Results and Pager --%>
+		<td width="55%">
+			<div class="sort-by-link">
+				<st:sortWidget widget="${queryForm.recordIdWidget}" />
+			</div>
+		</td>
+
+		<td width="15%">
+			<div class="sort-by-link">
+				<st:sortWidget widget="${queryForm.lastEditorWidget}" />
+			</div>
+		</td>
+
+		<td width="15%">
+			<div class="sort-by-link">
+				<st:sortWidget widget="${queryForm.statusWidget}" />
+			</div>
+		
+		</td>
+
+		<td width="15%" >
+			<div class="sort-by-link">
+				<st:sortWidget widget="${queryForm.lastTouchDateWidget}" />
+			</div>			
+		</td>
+	</tr>
+</table>

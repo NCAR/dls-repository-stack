@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groupsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/adn-i/kind.xsd">
+	<concept name="kind" system="dds" interface="default" language="en-us" label="Relationship between resources" abbrev="Relation">
+		<item vocab="DC:Requires">requires </item>
+		<item vocab="DC:Conforms to">conforms to </item>
+		<item vocab="DC:Has format">preceded and is essentially equal to </item>
+		<item vocab="DC:Has part">contains </item>
+		<item vocab="DC:Has version">is one version. Another version or adaptation is: </item>
+		<item vocab="DC:Is format of">is equal to but has a different form than </item>
+		<item vocab="DC:Is part of">is part of </item>
+		<item vocab="DC:Is referenced by">is referenced by </item>
+		<item vocab="DC:Is replaced by">is replaced by </item>
+		<item vocab="DC:Is required by">is required by </item>
+		<item vocab="DC:Is version of">is a version of </item>
+		<item vocab="DC:References">references </item>
+		<item vocab="DC:Replaces">replaces </item>
+		<item vocab="DLESE:Has thumbnail">has a thumbnail image at </item>
+		<item vocab="DLESE:Is associated with">is contextually associated with or described by </item>
+		<item vocab="DLESE:Is based on">is based on </item>
+		<item vocab="DLESE:Is basis for">is the basis for </item>
+	</concept>
+</groupsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

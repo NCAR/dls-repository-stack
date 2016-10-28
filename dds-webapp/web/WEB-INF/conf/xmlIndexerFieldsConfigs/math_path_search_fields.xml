@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="math_path">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<xpaths>
+				<xpath>/record/general/recordID</xpath>
+			</xpaths>		
+		</standardField>	
+		<standardField name="url">
+			<xpaths>
+				<xpath>/record/general/url</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="title">
+			<xpaths>
+				<xpath>/record/general/title</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/record/general/description</xpath>
+			</xpaths>		
+		</standardField>		
+	</standardFields>		
+</XMLIndexerFieldsConfig>

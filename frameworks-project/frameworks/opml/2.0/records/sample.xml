@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: sample.xml,v 1.1 2008/02/20 17:06:29 ginger Exp $ -->
+<opml xmlns="http://www.dlsciences.org/frameworks/opml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlsciences.org/frameworks/opml
+http://www.dlsciences.org/frameworks/opml/2.0/schemas/opml.xsd" version="2.0">
+        <head>
+                <title>String</title>
+        </head>
+        <body>
+                <outline text="string" type="text">
+                	<outline text="string" type="link"></outline>
+                </outline>
+        </body>
+</opml>

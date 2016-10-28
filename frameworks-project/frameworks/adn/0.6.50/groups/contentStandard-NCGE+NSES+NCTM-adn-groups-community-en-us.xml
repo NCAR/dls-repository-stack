@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: contentStandard-NCGE+NSES+NCTM-adn-groups-community-en-us.xml,v 1.1 2009/01/30 21:34:41 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+	<head>
+		<title>Content standard - NSES + NCGE + NCTM</title>
+		<groups:concept id="cs" language="en-us" metaFormat="adn" metaVersion="0.6.50" text="Standards" audience="community" path="/itemRecord/educational/contentStandards/contentStandard" deftn="educational content standards for science, geography and mathematics"/>
+	</head>
+	<body>
+		<outline text="National Science Education Standards (NSES)" type="group" groups:textAbbrev="NSES" groups:collapsible="false" groups:deftn="NSES represents the National Science Education Standards">
+<!--K-4-->			
+			<outline text="K-4" type="group" groups:deftn="Pertains to content for kindergarten through 4th grade">
+
+<!--Unifying concepts-->
+				<outline text="Unifying concepts and processes" type="group" groups:collapsible="false" groups:deftn="Empahsizes conceptual and procedural schemes that unify science disciplines">
+					<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Change, constancy, and measurement" type="vocab" text="Change, constancy, and measurement"/>
+					<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Evidence, models, and explanation"  type="vocab" text="Evidence, models, and explanation"/>
+					<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Evolution and equilibrium" type="vocab" text="Evolution and equilibrium"/>
+					<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Form and function" type="vocab" text="Form and function"/>
+					<outline groups:vocab="NSES:K-4:Unifying Concepts and Processes Standards:Systems, order, and organization" type="vocab" text="Systems, order, and organization"/>
+				</outline>
+
+<!--K-4: Std A -->			
+				<outline text="A - Science as inquiry" type="group" groups:collapsible="false" groups:deftn="The combination of the processes of science, scientific knowledge and reasoning to understand science">
+					<outline groups:vocab="NSES:K-4:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" type="vocab" text="Abilities necessary to do scientific inquiry"/>
+					<outline groups:vocab="NSES:K-4:Content Standard A Science as Inquiry Standards:Understanding about scientific inquiry" type="vocab" text="Understanding about scientific inquiry"/>
+				</outline>
+
+<!--K-4: Std B -->
+				<outline text="B - Physical science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of physical science">
+					<outline groups:vocab="NSES:K-4:Content Standard B Physical Science Standards:Light, heat, electricity, and magnetism" type="vocab" text="Light, heat, electricity, and magnetism"/>
+					<outline groups:vocab="NSES:K-4:Content Standard B Physical Science Standards:Position and motion of objects" type="vocab" text="Position and motion of objects"/>
+					<outline groups:vocab="NSES:K-4:Content Standard B Physical Science Standards:Properties of objects and materials" type="vocab" text="Properties of objects and materials"/>
+				</outline>
+
+<!--K-4: Std C -->
+				<outline text="C - Life science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of life science">
+					<outline groups:vocab="NSES:K-4:Content Standard C Life Science Standards:Characteristics of organisms" type="vocab" text="Characteristics of organisms"/>
+					<outline groups:vocab="NSES:K-4:Content Standard C Life Science Standards:Life cycles of organisms" type="vocab" text="Life cycles of organisms"/>
+					<outline groups:vocab="NSES:K-4:Content Standard C Life Science Standards:Organisms and environments" type="vocab" text="Organisms and environments"/>
+				</outline>
+
+<!--K-4: Std D -->
+				<outline text="D - Earth and space science" groups:collapsible="false" type="group" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of Earth and space science">
+					<outline groups:vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Changes in earth and sky" type="vocab" text="Changes in earth and sky"/>
+					<outline groups:vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Objects in the sky" type="vocab" text="Objects in the sky"/>
+					<outline groups:vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Properties of earth materials" type="vocab" text="Properties of earth materials"/>
+				</outline>
+				
+<!--K-4: Std E -->
+				<outline text="E - Science and technology" groups:collapsible="false" type="group" groups:deftn="Establish connections between the natural and designed worlds and provide opportunities to develop decision-making abilities">
+					<outline groups:vocab="NSES:K-4:Content Standard E Science and Technology Standards:Abilities of technological design" type="vocab" text="Abilities of technological design"/>
+					<outline groups:vocab="NSES:K-4:Content Standard E Science and Technology Standards:Abilities to distinguish between natural objects and objects made by humans" type="vocab" text="Abilities to distinguish between natural objects and objects made by humans" groups:textFull="Abilities to distinguish between natural objects and objects made by humans"/>
+					<outline groups:vocab="NSES:K-4:Content Standard E Science and Technology Standards:Understanding about science and technology" type="vocab" text="Understanding about sci. / tech." groups:textFull="Understanding about science and technology"/>
+				</outline>				
+
+<!--K-4: Std F -->
+				<outline text="F - Science in personal / social perspectives" groups:collapsible="false" type="group" groups:deftn="Develop decision-making skills in relation to personal social issues">
+					<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Changes in environments" type="vocab" text="Changes in environments"/>
+					<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Characteristics and changes in populations" text="Characteristics / changes in populations" type="vocab" groups:textFull="Characteristics and changes in populations"/>
+					<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Personal health" type="vocab" text="Personal health"/>
+					<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in local challenges" type="vocab" text="Sci. / tech. in local challenges" groups:textFull="Science and technology in local challenges"/>
+					<outline groups:vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Types of resources" type="vocab" text="Types of resources"/>
+				</outline>
+				
+<!--K-4: Std G-->
+				<outline text="G - History and nature of science" groups:collapsible="false" type="group" groups:deftn="Emphasizes the clarification of different aspects of scientific inquiry, the human aspects of science, and the role that science has played in the development of various cultures">
+					<outline groups:vocab="NSES:K-4:Content Standard G History and Nature of Science Standards:Science as a human endeavor" type="vocab" text="Science as a human endeavor"/>
+				</outline>				
+			</outline>
+
+<!--5-8: Unifying -->
+			<outline text="5-8" type="group" groups:deftn="Pertains to content for 5th through 8th grade">
+				<outline text="Unifying concepts and processes" type="group" groups:collapsible="false" groups:deftn="Empahsizes conceptual and procedural schemes that unify science disciplines">
+					<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Change, constancy, and measurement" type="vocab" text="Change, constancy, and measurement"/>
+					<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Evidence, models, and explanation" type="vocab" text="Evidence, models, and explanation"/>
+					<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Evolution and equilibrium" type="vocab" text="Evolution and equilibrium"/>
+					<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Form and function" type="vocab" text="Form and function"/>
+					<outline groups:vocab="NSES:5-8:Unifying Concepts and Processes Standards:Systems, order, and organization" type="vocab" text="Systems, order, and organization"/>
+				</outline>
+				
+<!--5-8: Std A -->
+				<outline text="A - Science as inquiry" type="group" groups:collapsible="false" groups:deftn="The combination of the processes of science, scientific knowledge and reasoning to understand science">
+					<outline groups:vocab="NSES:5-8:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" type="vocab" text="Abilities necessary to do scientific inquiry"/>
+					<outline groups:vocab="NSES:5-8:Content Standard A Science as Inquiry Standards:Understanding about scientific inquiry" type="vocab" text="Understanding about scientific inquiry"/>
+				</outline>
+				
+<!--5-8: Std B -->
+				<outline text="B - Physical science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of physical science">
+					<outline groups:vocab="NSES:5-8:Content Standard B Physical Science Standards:Motion and forces" type="vocab" text="Motion and forces"/>
+					<outline groups:vocab="NSES:5-8:Content Standard B Physical Science Standards:Properties and changes of properties in matter" type="vocab" text="Properties and changes of properties in matter"/>
+					<outline groups:vocab="NSES:5-8:Content Standard B Physical Science Standards:Transfer of energy" type="vocab" text="Transfer of energy"/>
+				</outline>				
+				
+<!--5-8: Std C -->	
+				<outline text="C - Life science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of life science">
+					<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Diversity and adaptations of organisms" type="vocab" text="Diversity and adaptations of organisms"/>
+					<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Population and ecosystems" type="vocab" text="Population and ecosystems"/>
+					<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Regulation and behavior" type="vocab" text="Regulation and behavior"/>
+					<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Reproduction and heredity" type="vocab" text="Reproduction and heredity"/>
+					<outline groups:vocab="NSES:5-8:Content Standard C Life Science Standards:Structure and function in living systems" type="vocab" text="Structure and function in living systems"/>
+				</outline>
+
+<!--5-8: Std D -->
+				<outline text="D - Earth and space science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of Earth and space science"> 
+					<outline groups:vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth in the solar system" type="vocab" text="Earth in the solar system"/>
+					<outline groups:vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth's history" type="vocab" text="Earth's history"/>
+					<outline groups:vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Structure of the earth system" type="vocab" text="Structure of the earth system"/>
+				</outline>
+
+<!--5-8: Std E -->
+				<outline text="E - Science and technology" type="group" groups:collapsible="false" groups:deftn="Establish connections between the natural and designed worlds and provide opportunities to develop decision-making abilities">
+					<outline groups:vocab="NSES:5-8:Content Standard E Science and Technology Standards:Abilities of technological design" type="vocab" text="Abilities of technological design"/>
+					<outline groups:vocab="NSES:5-8:Content Standard E Science and Technology Standards:Understandings about science and technology" type="vocab"  text="Understandings about sci. / tech." groups:textFull="Understandings about science and technology"/>
+				</outline>							
+
+<!--5-8: Std F -->
+				<outline text="F - Science in personal / social perspectives" type="group" groups:collapsible="false" groups:deftn="Develop decision-making skills in relation to personal social issues">
+					<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Natural hazards" type="vocab" text="Natural hazards"/>
+					<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Personal health" type="vocab" text="Personal health"/>
+					<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Populations, resources, and environments" type="vocab" text="Populations, resources, environments" groups:textFull="Populations, resources, and environments"/>
+					<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Risks and benefits" type="vocab" text="Risks and benefits"/>
+					<outline groups:vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in society" type="vocab" text="Sci. / tech. in society" groups:textFull="Science and technology in society"/>
+				</outline>
+
+<!--5-8: Std G -->
+				<outline text="G - History and nature of science" type="group" groups:collapsible="false" groups:deftn="Emphasizes the clarification of different aspects of scientific inquiry, the human aspects of science, and the role that science has played in the development of various cultures">
+					<outline groups:vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:History of science" type="vocab" text="History of science"/>
+					<outline groups:vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:Nature of science" type="vocab" text="Nature of science"/>
+					<outline groups:vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:Science as a human endeavor" type="vocab" text="Science as a human endeavor"/>
+				</outline>
+			</outline>
+
+<!--9-12: Unifying-->
+			<outline text="9-12" type="group" groups:deftn="Pertains to content for 9th through 12th grade">
+				<outline text="Unifying concepts and processes" type="group" groups:collapsible="false" groups:deftn="Empahsizes conceptual and procedural schemes that unify science disciplines">
+					<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Change, constancy, and measurement" type="vocab" text="Change, constancy, and measurement"/>
+					<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Evidence, models, and explanation" type="vocab" text="Evidence, models, and explanation"/>
+					<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Evolution and equilibrium" type="vocab" text="Evolution and equilibrium"/>
+					<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Form and function" type="vocab" text="Form and function"/>
+					<outline groups:vocab="NSES:9-12:Unifying Concepts and Processes Standards:Systems, order, and organization" type="vocab" text="Systems, order, and organization"/>
+				</outline>
+
+<!--9-12: Std A -->
+				<outline text="A - Science as inquiry" type="group" groups:collapsible="false" groups:deftn="The combination of the processes of science, scientific knowledge and reasoning to understand science">
+					<outline groups:vocab="NSES:9-12:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry" type="vocab" text="Abilities necessary to do scientific inquiry"/>
+					<outline groups:vocab="NSES:9-12:Content Standard A Science as Inquiry Standards:Understandings about scientific inquiry" type="vocab" text="Understandings about scientific inquiry"/>
+				</outline>
+
+<!--9-12: Std B -->
+				<outline text="B - Physical science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of physical science">
+					<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Chemical reactions" type="vocab" text="Chemical reactions"/>
+					<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Conservation of energy and increase in disorder" type="vocab" text="Conservation of energy and increase in disorder"/>
+					<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Interactions of energy and matter" type="vocab" text="Interactions of energy and matter"/>
+					<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Motions and forces" type="vocab" text="Motions and forces"/>
+					<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Structure and properties of matter" type="vocab" text="Structure and properties of matter"/>
+					<outline groups:vocab="NSES:9-12:Content Standard B Physical Science Standards:Structure of atoms" type="vocab" text="Structure of atoms"/>
+				</outline>				
+
+<!--9-12: Std C -->
+				<outline text="C - Life science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of life science">
+					<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Behavior of organisms" type="vocab" text="Behavior of organisms"/>
+					<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Biological evolution" type="vocab" text="Biological evolution"/>
+					<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Interdependence of organisms" type="vocab" text="Interdependence of organisms"/>
+					<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Matter, energy, and organization in living systems" type="vocab" text="Matter, energy, and organization in living systems"/>
+					<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:Molecular basis of heredity" type="vocab" text="Molecular basis of heredity"/>
+					<outline groups:vocab="NSES:9-12:Content Standard C Life Science Standards:The cell" type="vocab" text="The cell"/>
+				</outline>
+
+<!--9-12: Std D-->
+				<outline text="D - Earth and space science" type="group" groups:collapsible="false" groups:deftn="Encompasses the subject matter, facts, concepts, principls, theories and models of Earth and space science">
+					<outline groups:vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Energy in the earth system" type="vocab" text="Energy in the earth system"/>
+					<outline groups:vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Geochemical cycles" type="vocab" text="Geochemical cycles"/>
+					<outline groups:vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Origin and evolution of the earth system" type="vocab" text="Origin and evolution of the earth system"/>
+					<outline groups:vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Origin and evolution of the universe" type="vocab" text="Origin and evolution of the universe"/>
+				</outline>
+
+<!--9-12: Std E-->
+				<outline text="E - Science and technology" type="group" groups:collapsible="false" groups:deftn="Establish connections between the natural and designed worlds and provide opportunities to develop decision-making abilities">
+					<outline groups:vocab="NSES:9-12:Content Standard E Science and Technology Standards:Abilities of technological design" type="vocab" text="Abilities of technological design"/>
+					<outline groups:vocab="NSES:9-12:Content Standard E Science and Technology Standards:Understandings about science and technology" type="vocab" text="Understandings about science and technology"/>
+				</outline>
+
+<!--9-12: Std F -->
+				<outline text="F - Science in personal / social perspectives" type="group" groups:collapsible="false" groups:deftn="Develop decision-making skills in relation to personal social issues">
+					<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Environmental quality" type="vocab" text="Environmental quality"/>
+					<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural and human-induced hazards" type="vocab" text="Natural and human-induced hazards"/>
+					<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural resources" type="vocab" text="Natural resources"/>
+					<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Personal and community health" type="vocab" text="Personal and community health"/>
+					<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Population growth" type="vocab" text="Population growth"/>
+					<outline groups:vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in local, national, and global challenges" type="vocab" text="Sci. / tech. in local, national, and global challenges" groups:textFull="Science and technology in local, national, and global challenges"/>
+				</outline>
+
+<!--9-12: Std G -->
+				<outline text="G - History and nature of science" type="group" groups:collapsible="false" groups:deftn="Emphasizes the clarification of different aspects of scientific inquiry, the human aspects of science, and the role that science has played in the development of various cultures">
+					<outline groups:vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Historical perspectives" type="vocab" text="Historical perspectives"/>
+					<outline groups:vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Nature of scientific knowledge" type="vocab" text="Nature of scientific knowledge"/>
+					<outline groups:vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Science as a human endeavor" type="vocab" text="Science as a human endeavor"/>
+				</outline>
+			</outline>
+		</outline>	
+
+		<outline text="National Geography Standards" type="group" groups:collapsible="false" groups:deftn="National Geography Standards published by the National Council for Geographic Education (NCGE)">
+			<outline text="Environment and society" type="group">
+				<outline groups:vocab="NCGE:Environment and Society:How human actions modify the physical environment" type="vocab" text="How human actions modify the physical env." groups:textFull="How human actions modify the physical environment"/>
+				<outline groups:vocab="NCGE:Environment and Society:How physical systems affect human systems" type="vocab" text="How physical systems affect human systems"/>
+				<outline groups:vocab="NCGE:Environment and Society:The changes that occur in the meaning, use, distribution, and importance of resources" type="vocab" text="The changes that occur in the meaning, use, distribution, and importance of resources" groups:textFull="The changes that occur in the meaning, use, distribution, and importance of resources"/>
+			</outline>
+		
+			<outline text="Human systems" type="group">
+				<outline groups:vocab="NCGE:Human Systems:How forces of cooperation and conflict among people influence the division and control of Earth's surface" type="vocab" text="How forces of cooperation and conflict among people influence the division and control of Earth's surface" groups:textFull="How forces of cooperation and conflict among people influence the division and control of Earth's surface"/>
+				<outline groups:vocab="NCGE:Human Systems:The characteristics, distribution, and migration of human populations on Earth's surface" type="vocab" text="The characteristics, distribution, and migration of human populations on Earth's surface" groups:textFull="The characteristics, distribution, and migration of human populations on Earth's surface"/>
+				<outline groups:vocab="NCGE:Human Systems:The characteristics, distributions, and complexity of Earth's cultural mosaics" type="vocab" text="The characteristics, distributions, and complexity of Earth's cultural mosaics" groups:textFull="The characteristics, distributions, and complexity of Earth's cultural mosaics"/>
+				<outline groups:vocab="NCGE:Human Systems:The patterns and networks of economic interdependence on Earth's surface" type="vocab" text="The patterns and networks of economic interdependence on Earth's surface" groups:textFull="The patterns and networks of economic interdependence on Earth's surface"/>
+				<outline groups:vocab="NCGE:Human Systems:The process, patterns, and functions of human settlement" type="vocab" text="The process, patterns, and functions of human settlement"/>
+			</outline>
+
+			<outline text="Physical systems" type="group">
+				<outline groups:vocab="NCGE:Physical Systems:The characteristics and spatial distribution of ecosystems on Earth's surface" type="vocab" text="The characteristics and spatial distribution of ecosystems on Earth's surface" groups:textFull="The characteristics and spatial distribution of ecosystems on Earth's surface"/>
+				<outline groups:vocab="NCGE:Physical Systems:The physical processes that shape the patterns of Earth's surface" type="vocab" text="The physical processes that shape the patterns of Earth's surface" groups:textFull="The physical processes that shape the patterns of Earth's surface"/>
+			</outline>
+
+			<outline text="Places and regions" type="group">
+				<outline groups:vocab="NCGE:Places and Regions:How culture and experience influence people's perception of places and regions" type="vocab" text="How culture and experience influence people's perception of places and regions" groups:textFull="How culture and experience influence people's perception of places and regions"/>
+				<outline groups:vocab="NCGE:Places and Regions:That people create regions to interpret Earth's complexity" type="vocab" text="That people create regions to interpret Earth's complexity"/>
+				<outline groups:vocab="NCGE:Places and Regions:The physical and human characteristics of places" type="vocab" text="The physical and human characteristics of places"/>
+			</outline>
+		
+			<outline text="The uses of geography" type="group">
+				<outline groups:vocab="NCGE:The Uses of Geography:How to apply geography to interpret the past" type="vocab" text="How to apply geography to interpret the past"/>
+				<outline groups:vocab="NCGE:The Uses of Geography:How to apply geography to interpret the present and plan for the future" type="vocab" text="How to apply geography to interpret the present and plan for the future" groups:textFull="How to apply geography to interpret the present and plan for the future"/>
+			</outline>
+		
+			<outline text="The world in spatial terms" type="group">
+				<outline groups:vocab="NCGE:The World in Spatial Terms:How to analyze the spatial organization of people, places, and environments on Earth's surface" type="vocab" text="How to analyze the spatial organization of people, places, and environments on Earth's surface" groups:textFull="How to analyze the spatial organization of people, places, and environments on Earth's surface"/>
+				<outline groups:vocab="NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information" type="vocab" text="How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information" groups:textFull="How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information"/>
+				<outline groups:vocab="NCGE:The World in Spatial Terms:How to use mental maps to organize information about people, places, and environments" type="vocab" text="How to use mental maps to organize information about people, places, and environments" groups:textFull="How to use mental maps to organize information about people, places, and environments"/>
+			</outline>
+		</outline>
+
+		<outline text="National Council of Teachers of Mathematics (NCTM)" type="group" groups:textAbbrev="NCTM" groups:collapsible="false" groups:deftn="NCTM represents the math content standards" groups:display="false">
+<!--Pre-K-2-->
+			<outline text="Pre K-2" type="group" groups:deftn="Pertains to content for pre-kindergarten through 2nd grade">
+
+<!--Pre-K-2: Number and operations-->
+				<outline text="Number and operations" type="group" groups:deftn="arithmetic manipulations">
+
+<!--Pre-K-2: Number and operations: Understand numbers-->
+					<outline text="Understand numbers" type="group" groups:collapsible="false" groups:deftn="ways of representing numbers, relationships among numbers, and number systems">
+						<outline groups:vocab="NCTM:Pre-K-2:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Count with understanding and recognize 'how many' in sets of objects" type="vocab" text="Count with understanding and recognize 'how many' in sets of objects"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Use multiple models to develop initial understandings of place value and the base-ten number system" type="vocab" text="Use multiple models to develop initial understandings of place value and the base-ten number system"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Develop understanding of the relative position and magnitude of whole numbers and of ordinal and cardinal numbers and their connections" type="vocab" text="Develop understanding of the relative position and magnitude of whole numbers and of ordinal and cardinal numbers and their connections"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Develop a sense of whole numbers and represent and use them in flexible ways, including relating, composing, and decomposing numbers" type="vocab" text="Develop a sense of whole numbers and represent and use them in flexible ways, including relating, composing, and decomposing numbers"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Connect number words and numerals to the quantities they represent, using various physical models and representations" type="vocab" text="Connect number words and numerals to the quantities they represent, using various physical models and representations"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Understand and represent commonly used fractions, such as 1/4, 1/3, and 1/2" type="vocab" text="Understand and represent commonly used fractions, such as 1/4, 1/3, and 1/2"/>
+					</outline>
+
+<!--Pre-K-2: Number and operations: Understand meanings of operations-->
+					<outline text="Understand meanings of operations" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Number and operations:Understand meanings of operations and how they relate to one another:Understand various meanings of addition and subtraction of whole numbers and the relationship between the two operations" type="vocab" text="Understand various meanings of addition and subtraction of whole numbers and the relationship between the two operations"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Number and operations:Understand meanings of operations and how they relate to one another:Understand the effects of adding and subtracting whole numbers" type="vocab" text="Understand the effects of adding and subtracting whole numbers"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Number and operations:Understand meanings of operations and how they relate to one another:Understand situations that entail multiplication and division, such as equal groupings of objects and sharing equally" type="vocab" text="Understand situations that entail multiplication and division, such as equal groupings of objects and sharing equally"/>
+					</outline>
+
+<!--Pre-K-2: Number and operations: Compute fluently-->
+					<outline text="Compute fluently and make reasonable estimates" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Number and operations:Compute fluently and make reasonable estimates:Develop and use strategies for whole-number computations, with a focus on addition and subtraction" type="vocab" text="Develop and use strategies for whole-number computations, with a focus on addition and subtraction"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Number and operations:Compute fluently and make reasonable estimates:Develop fluency with basic number combinations for addition and subtraction" type="vocab" text="Develop fluency with basic number combinations for addition and subtraction"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Number and operations:Compute fluently and make reasonable estimates:Use a variety of methods and tools to compute, including objects, mental computation, estimation, paper and pencil, and calculators" type="vocab" text="Use a variety of methods and tools to compute, including objects, mental computation, estimation, paper and pencil, and calculators"/>
+					</outline>
+				</outline>
+
+<!--Pre-K-2: Algebra-->
+				<outline text="Algebra" type="group" groups:deftn="properties and relationships between entities that are represented in symbolic form">
+
+<!--Pre-K-2: Algebra:Understand patterns, relations, and functions-->
+					<outline text="Understand patterns, relations, and functions" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Algebra:Understand patterns, relations, and functions:Sort, classify, and order objects by size, number, and other properties" type="vocab" text="Sort, classify, and order objects by size, number, and other properties"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Algebra:Understand patterns, relations, and functions:Recognize, describe, and extend patterns such as sequences of sounds and shapes or simple numeric patterns and translate from one representation to another" type="vocab" text="Recognize, describe, and extend patterns such as sequences of sounds and shapes or simple numeric patterns and translate from one representation to another"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Algebra:Understand patterns, relations, and functions:Analyze how both repeating and growing patterns are generated" type="vocab" text="Analyze how both repeating and growing patterns are generated"/>
+					</outline>
+
+<!--Pre-K-2: Algebra:Represent and analyze mathematical situations-->
+					<outline text="Represent and analyze mathematical situations" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Illustrate general principles and properties of operations, such as commutativity, using specific numbers" type="vocab" text="Illustrate general principles and properties of operations, such as commutativity, using specific numbers"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Use concrete, pictorial, and verbal representations to develop an understanding of invented and conventional symbolic notations" type="vocab" text="Use concrete, pictorial, and verbal representations to develop an understanding of invented and conventional symbolic notations"/>
+					</outline>
+
+<!--Pre-K-2: Algebra:Use mathematical models to represent and understand quantitative relationships-->
+					<outline text="Use mathematical models to represent and understand quantitative relationships" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Algebra:Use mathematical models to represent and understand quantitative relationships:Model situations that involve the addition and subtraction of whole numbers, using objects, pictures, and symbols" type="vocab" text="Model situations that involve the addition and subtraction of whole numbers, using objects, pictures, and symbols"/>
+					</outline>
+
+<!--Pre-K-2: Algebra:Analyze change in various contexts-->
+					<outline text="Analyze change in various contexts" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Algebra:Analyze change in various contexts:Describe qualitative change, such as a student's growing taller" type="vocab" text="Describe qualitative change, such as a student's growing taller"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Algebra:Analyze change in various contexts:Describe quantitative change, such as a student's growing two inches in one year" type="vocab" text="Describe quantitative change, such as a student's growing two inches in one year"/>
+					</outline>
+				</outline>
+
+<!--Pre-K-2: Geometry-->
+				<outline text="Geometry" type="group" groups:deftn="properties and relationships of points, lines, angles, surfaces and solids">
+
+<!--Pre-K-2: Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes-->
+					<outline text="Analyze characteristics and properties of two- and three-dimensional geometric shapes" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Recognize, name, build, draw, compare, and sort two- and three-dimensional shapes" type="vocab" text="Recognize, name, build, draw, compare, and sort two- and three-dimensional shapes"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Describe attributes and parts of two- and three-dimensional shapes" type="vocab" text="Describe attributes and parts of two- and three-dimensional shapes"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Investigate and predict the results of putting together and taking apart two- and three-dimensional shapes" type="vocab" text="Investigate and predict the results of putting together and taking apart two- and three-dimensional shapes"/>
+					</outline>
+
+<!--Pre-K-2: Geometry:Specify locations and describe spatial relationships-->
+					<outline text="Specify locations and describe spatial relationships" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Describe, name, and interpret relative positions in space and apply ideas about relative position" type="vocab" text="Describe, name, and interpret relative positions in space and apply ideas about relative position"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Describe, name, and interpret direction and distance in navigating space and apply ideas about direction and distance" type="vocab" text="Describe, name, and interpret direction and distance in navigating space and apply ideas about direction and distance"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Find and name locations with simple relationships such as 'near to' and in coordinate systems such as maps" type="vocab" text="Find and name locations with simple relationships such as 'near to' and in coordinate systems such as maps"/>
+					</outline>
+
+<!--Pre-K-2: Geometry:Apply transformations and use symmetry to analyze mathematical situations-->
+					<outline text="Apply transformations and use symmetry to analyze mathematical situations" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Recognize and apply slides, flips, and turns" type="vocab" text="Recognize and apply slides, flips, and turns"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Recognize and create shapes that have symmetry" type="vocab" text="Recognize and create shapes that have symmetry"/>
+					</outline>
+
+<!--Pre-K-2: Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems-->
+					<outline text="Use visualization, spatial reasoning, and geometric modeling to solve problems" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Create mental images of geometric shapes using spatial memory and spatial visualization" type="vocab" text="Create mental images of geometric shapes using spatial memory and spatial visualization"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Recognize and represent shapes from different perspectives" type="vocab" text="Recognize and represent shapes from different perspectives"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Relate ideas in geometry to ideas in number and measurement" type="vocab" text="Relate ideas in geometry to ideas in number and measurement"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Recognize geometric shapes and structures in the environment and specify their location" type="vocab" text="Recognize geometric shapes and structures in the environment and specify their location"/>
+					</outline>
+				</outline>
+
+<!--Pre-K-2: Measurement-->
+				<outline text="Measurement" type="group" groups:deftn="the assignment of a numerical value to an attribute of an object">
+
+<!--Pre-K-2: Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement-->
+					<outline text="Understand measurable attributes of objects and the units, systems, and processes of measurement" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Recognize the attributes of length, volume, weight, area, and time" type="vocab" text="Recognize the attributes of length, volume, weight, area, and time"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Compare and order objects according to these attributes" type="vocab" text="Compare and order objects according to these attributes"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand how to measure using nonstandard and standard units" type="vocab" text="Understand how to measure using nonstandard and standard units"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Select an appropriate unit and tool for the attribute being measured" type="vocab" text="Select an appropriate unit and tool for the attribute being measured"/>
+					</outline>
+
+<!--Pre-K-2: Measurement:Apply appropriate techniques, tools, and formulas to determine measurements-->
+					<outline text="Apply appropriate techniques, tools, and formulas to determine measurements" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Measure with multiple copies of units of the same size, such as paper clips laid end to end" type="vocab" text="Measure with multiple copies of units of the same size, such as paper clips laid end to end"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Use repetition of a single unit to measure something larger than the unit, for instance, measuring the length of a room with a single meterstick" type="vocab" text="Use repetition of a single unit to measure something larger than the unit, for instance, measuring the length of a room with a single meterstick"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Use tools to measure" type="vocab" text="Use tools to measure"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Develop common referents for measures to make comparisons and estimates" type="vocab" text="Develop common referents for measures to make comparisons and estimates"/>
+					</outline>
+				</outline>
+
+<!--Pre-K-2: Data analysis and probability-->
+				<outline text="Data analysis and probability" type="group" groups:deftn="numerical or statistical information that can be used to make decisions">
+
+<!--Pre-K-2: Data analysis:Formulate questions-->
+					<outline text="Formulate questions" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Pose questions and gather data about themselves and their surroundings" type="vocab" text="Pose questions and gather data about themselves and their surroundings"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Sort and classify objects according to their attributes and organize data about the objects" type="vocab" text="Sort and classify objects according to their attributes and organize data about the objects"/>
+						<outline groups:vocab="NCTM:Pre-K-2:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Represent data using concrete objects, pictures, and graphs" type="vocab" text="Represent data using concrete objects, pictures, and graphs"/>
+					</outline>
+
+<!--Pre-K-2: Data analysis:Select and use appropriate statistical methods to analyze data-->
+					<outline text="Select and use appropriate statistical methods to analyze data" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Describe parts of the data and the set of data as a whole to determine what the data show" type="vocab" text="Describe parts of the data and the set of data as a whole to determine what the data show"/>
+					</outline>
+
+<!--Pre-K-2: Data analysis:Develop and evaluate inferences and predictions that are based on data-->
+					<outline text="Develop and evaluate inferences and predictions that are based on data" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Discuss events related to students' experiences as likely or unlikely" type="vocab" text="Discuss events related to students' experiences as likely or unlikely"/>
+					</outline>
+
+<!--Pre-K-2: Data analysis:Understand and apply basic concepts of probability-->
+					<outline text="Understand and apply basic concepts of probability" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:Pre-K-2:Data analysis and probability:Understand and apply basic concepts of probability" type="vocab" text="Understand and apply basic concepts of probability"/>
+					</outline>
+				</outline>
+
+<!--Pre-K-2: Problem solving-->
+				<outline text="Problem solving" type="group" groups:deftn="methods and abilities to use mathematical reasoning to arrive at unknown solutions">
+					<outline groups:vocab="NCTM:Pre-K-2:Problem solving:Build new mathematical knowledge through problem solving" type="vocab" text="Build new mathematical knowledge through problem solving"/>
+					<outline groups:vocab="NCTM:Pre-K-2:Problem solving:Solve problems that arise in mathematics and in other contexts" type="vocab" text="Solve problems that arise in mathematics and in other contexts"/>
+					<outline groups:vocab="NCTM:Pre-K-2:Problem solving:Apply and adapt a variety of appropriate strategies to solve problems" type="vocab" text="Apply and adapt a variety of appropriate strategies to solve problems"/>
+					<outline groups:vocab="NCTM:Pre-K-2:Problem solving:Monitor and reflect on the process of mathematical problem solving" type="vocab" text="Monitor and reflect on the process of mathematical problem solving"/>
+				</outline>
+
+<!--Pre-K-2: Reasoning and proof-->
+				<outline text="Reasoning and proof" type="group" groups:deftn="the ability to make a hypothesis and apply mathematical logic (inductive reasoning) to arrive at conclusions">
+					<outline groups:vocab="NCTM:Pre-K-2:Reasoning and proof:Recognize reasoning and proof as fundamental aspects of mathematics" type="vocab" text="Recognize reasoning and proof as fundamental aspects of mathematics"/>
+					<outline groups:vocab="NCTM:Pre-K-2:Reasoning and proof:Make and investigate mathematical conjectures" type="vocab" text="Make and investigate mathematical conjectures"/>
+					<outline groups:vocab="NCTM:Pre-K-2:Reasoning and proof:Develop and evaluate mathematical arguments and proofs" type="vocab" text="Develop and evaluate mathematical arguments and proofs"/>
+					<outline groups:vocab="NCTM:Pre-K-2:Reasoning and proof:Select and use various types of reasoning and methods of proof" type="vocab" text="Select and use various types of reasoning and methods of proof"/>
+				</outline>
+
+<!--Pre-K-2: Communication-->
+				<outline text="Communication" type="group" groups:deftn="the ability to express and share mathematical concepts">
+					<outline groups:vocab="NCTM:Pre-K-2:Communication:Organize and consolidate their mathematical thinking through communication" type="vocab" text="Organize and consolidate their mathematical thinking through communication"/>
+					<outline groups:vocab="NCTM:Pre-K-2:Communication:Communicate their mathematical thinking coherently and clearly to peers, teachers, and others" type="vocab" text="Communicate their mathematical thinking coherently and clearly to peers, teachers, and others"/>
+					<outline groups:vocab="NCTM:Pre-K-2:Communication:Analyze and evaluate the mathematical thinking and strategies of others" type="vocab" text="Analyze and evaluate the mathematical thinking and strategies of others"/>
+				</outline>
+
+<!--Pre-K-2: Connections-->
+				<outline text="Connections" type="group" groups:deftn="the ability to recognize common themes across different mathematical concepts or other subjects">
+					<outline groups:vocab="NCTM:Pre-K-2:Connections:Recognize and use connections among mathematical ideas" type="vocab" text="Recognize and use connections among mathematical ideas"/>
+					<outline groups:vocab="NCTM:Pre-K-2:Connections:Understand how mathematical ideas interconnect and build on one another to produce a coherent whole" type="vocab" text="Understand how mathematical ideas interconnect and build on one another to produce a coherent whole"/>
+					<outline groups:vocab="NCTM:Pre-K-2:Connections:Recognize and apply mathematics in contexts outside of mathematics" type="vocab" text="Recognize and apply mathematics in contexts outside of mathematics"/>
+				</outline>
+
+<!--Pre-K-2: Representation-->
+				<outline text="Representation" type="group" groups:deftn="the ability to illustrate mathematical concepts">
+					<outline groups:vocab="NCTM:Pre-K-2:Representation:Create and use representations to organize, record, and communicate mathematical ideas" type="vocab" text="Create and use representations to organize, record, and communicate mathematical ideas"/>
+					<outline groups:vocab="NCTM:Pre-K-2:Representation:Select, apply, and translate among mathematical representations to solve problems" type="vocab" text="Select, apply, and translate among mathematical representations to solve problems"/>
+					<outline groups:vocab="NCTM:Pre-K-2:Representation:Use representations to model and interpret physical, social, and mathematical phenomena" type="vocab" text="Use representations to model and interpret physical, social, and mathematical phenomena"/>
+				</outline>
+			</outline>
+
+<!--3-5-->
+			<outline text="3-5" type="group" groups:deftn="Pertains to content for 3rd through 5th grades">
+
+<!--3-5: Number and operations-->
+				<outline text="Number and operations" type="group" groups:deftn="arithmetic manipulations">
+
+<!--3-5: Number and operations: Understand numbers-->
+					<outline text="Understand numbers" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Understand the place-value structure of the base-ten number system and be able to represent and compare whole numbers and decimals" type="vocab" text="Understand the place-value structure of the base-ten number system and be able to represent and compare whole numbers and decimals"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Recognize equivalent representations for the same number and generate them by decomposing and composing numbers" type="vocab" text="Recognize equivalent representations for the same number and generate them by decomposing and composing numbers"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Develop understanding of fractions as parts of unit wholes, as parts of a collection, as locations on number lines, and as divisions of whole numbers" type="vocab" text="Develop understanding of fractions as parts of unit wholes, as parts of a collection, as locations on number lines, and as divisions of whole numbers"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Use models, benchmarks, and equivalent forms to judge the size of fractions" type="vocab" text="Use models, benchmarks, and equivalent forms to judge the size of fractions"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Recognize and generate equivalent forms of commonly used fractions, decimals, and percents" type="vocab" text="Recognize and generate equivalent forms of commonly used fractions, decimals, and percents"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Explore numbers less than 0 by extending the number line and through familiar applications" type="vocab" text="Explore numbers less than 0 by extending the number line and through familiar applications"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Describe classes of numbers according to characteristics such as the nature of their factors" type="vocab" text="Describe classes of numbers according to characteristics such as the nature of their factors"/>
+					</outline>
+
+<!--3-5: Number and operations: Understand meanings of operations-->
+					<outline text="Understand meanings of operations" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Number and operations:Understand meanings of operations and how they relate to one another:Understand various meanings of multiplication and division" type="vocab" text="Understand various meanings of multiplication and division"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Understand meanings of operations and how they relate to one another:Understand the effects of multiplying and dividing whole numbers" type="vocab" text="Understand the effects of multiplying and dividing whole numbers"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Understand meanings of operations and how they relate to one another:Identify and use relationships between operations, such as division as the inverse of multiplication, to solve problems" type="vocab" text="Identify and use relationships between operations, such as division as the inverse of multiplication, to solve problems"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Understand meanings of operations and how they relate to one another:Understand and use properties of operations, such as the distributivity of multiplication over addition" type="vocab" text="Understand and use properties of operations, such as the distributivity of multiplication over addition"/>
+					</outline>
+
+<!--3-5: Number and operations: Compute fluently and make reasonable estimates-->
+					<outline text="Compute fluently and make reasonable estimates" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Number and operations:Compute fluently and make reasonable estimates:Develop fluency with basic number combinations for multiplication and division and use these combinations to mentally compute related problems, such as 30 x 50" type="vocab" text="Develop fluency with basic number combinations for multiplication and division and use these combinations to mentally compute related problems, such as 30 x 50"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Compute fluently and make reasonable estimates:Develop fluency in adding, subtracting, multiplying, and dividing whole numbers" type="vocab" text="Develop fluency in adding, subtracting, multiplying, and dividing whole numbers"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Compute fluently and make reasonable estimates:Develop and use strategies to estimate the results of whole-number computations and to judge the reasonableness of such results" type="vocab" text="Develop and use strategies to estimate the results of whole-number computations and to judge the reasonableness of such results"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Compute fluently and make reasonable estimates:Develop and use strategies to estimate computations involving fractions and decimals in situations relevant to students' experience" type="vocab" text="Develop and use strategies to estimate computations involving fractions and decimals in situations relevant to students' experience"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Compute fluently and make reasonable estimates:Use visual models, benchmarks, and equivalent forms to add and subtract commonly used fractions and decimals" type="vocab" text="Use visual models, benchmarks, and equivalent forms to add and subtract commonly used fractions and decimals"/>
+						<outline groups:vocab="NCTM:3-5:Number and operations:Compute fluently and make reasonable estimates:Select appropriate methods and tools for computing with whole numbers from among mental computation, estimation, calculators, and paper and pencil according to the context and nature of the computation and use the selected method or tools" type="vocab" text="Select appropriate methods and tools for computing with whole numbers from among mental computation, estimation, calculators, and paper and pencil according to the context and nature of the computation and use the selected method or tools"/>
+					</outline>
+				</outline>
+
+<!--3-5: Algebra-->
+				<outline text="Algebra" type="group" groups:deftn="properties and relationships between entities that are represented in symbolic form">
+
+<!--3-5: Algebra:Understand patterns, relations, and functions-->
+					<outline text="Understand patterns, relations, and functions" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Algebra:Understand patterns, relations, and functions:Describe, extend, and make generalizations about geometric and numeric patterns" type="vocab" text="Describe, extend, and make generalizations about geometric and numeric patterns"/>
+						<outline groups:vocab="NCTM:3-5:Algebra:Understand patterns, relations, and functions:Represent and analyze patterns and functions, using words, tables, and graphs" type="vocab" text="Represent and analyze patterns and functions, using words, tables, and graphs"/>
+					</outline>
+
+<!--3-5: Algebra:Represent and analyze mathematical situations-->
+					<outline text="Represent and analyze mathematical situations" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Identify such properties as commutativity, associativity, and distributivity and use them to compute with whole numbers" type="vocab" text="Identify such properties as commutativity, associativity, and distributivity and use them to compute with whole numbers"/>
+						<outline groups:vocab="NCTM:3-5:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Represent the idea of a variable as an unknown quantity using a letter or a symbol" type="vocab" text="Represent the idea of a variable as an unknown quantity using a letter or a symbol"/>
+						<outline groups:vocab="NCTM:3-5:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Express mathematical relationships using equations" type="vocab" text="Express mathematical relationships using equations"/>
+					</outline>
+
+<!--3-5: Algebra:Use mathematical models to represent and understand quantitative relationships-->
+					<outline text="Use mathematical models to represent and understand quantitative relationships" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Algebra:Use mathematical models to represent and understand quantitative relationships:Model problem situations with objects and use representations such as graphs, tables, and equations to draw conclusions" type="vocab" text="Model problem situations with objects and use representations such as graphs, tables, and equations to draw conclusions"/>
+					</outline>
+
+<!--3-5: Algebra:Analyze change in various contexts-->
+					<outline text="Analyze change in various contexts" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Algebra:Analyze change in various contexts:Investigate how a change in one variable relates to a change in a second variable" type="vocab" text="Investigate how a change in one variable relates to a change in a second variable"/>
+						<outline groups:vocab="NCTM:3-5:Algebra:Analyze change in various contexts:Identify and describe situations with constant or varying rates of change and compare them" type="vocab" text="Identify and describe situations with constant or varying rates of change and compare them"/>
+					</outline>
+				</outline>
+
+<!--3-5: Geometry-->
+				<outline text="Geometry" type="group" groups:deftn="properties and relationships of points, lines, angles, surfaces and solids">
+
+<!--3-5: Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes-->
+					<outline text="Analyze characteristics and properties of two- and three-dimensional geometric shapes" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about:Identify, compare, and analyze attributes of two- and three-dimensional shapes and develop vocabulary to describe the attributes" type="vocab" text="Identify, compare, and analyze attributes of two- and three-dimensional shapes and develop vocabulary to describe the attributes"/>
+						<outline groups:vocab="NCTM:3-5:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about:Classify two- and three-dimensional shapes according to their properties and develop definitions of classes of shapes such as triangles and pyramids" type="vocab" text="Classify two- and three-dimensional shapes according to their properties and develop definitions of classes of shapes such as triangles and pyramids"/>
+						<outline groups:vocab="NCTM:3-5:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about:Investigate, describe, and reason about the results of subdividing, combining, and transforming shapes" type="vocab" text="Investigate, describe, and reason about the results of subdividing, combining, and transforming shapes"/>
+						<outline groups:vocab="NCTM:3-5:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about:Explore congruence and similarity" type="vocab" text="Explore congruence and similarity"/>
+						<outline groups:vocab="NCTM:3-5:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about:Make and test conjectures about geometric properties and relationships and develop logical arguments to justify conclusions" type="vocab" text="Make and test conjectures about geometric properties and relationships and develop logical arguments to justify conclusions"/>
+					</outline>
+
+<!--3-5: Geometry:Specify locations and describe spatial relationships-->
+					<outline text="Specify locations and describe spatial relationships" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Describe location and movement using common language and geometric vocabulary" type="vocab" text="Describe location and movement using common language and geometric vocabulary"/>
+						<outline groups:vocab="NCTM:3-5:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Make and use coordinate systems to specify locations and to describe paths" type="vocab" text="Make and use coordinate systems to specify locations and to describe paths"/>
+						<outline groups:vocab="NCTM:3-5:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Find the distance between points along horizontal and vertical lines of a coordinate system" type="vocab" text="Find the distance between points along horizontal and vertical lines of a coordinate system"/>
+					</outline>
+
+<!--3-5: Geometry:Apply transformations and use symmetry to analyze mathematical situations-->
+					<outline text="Apply transformations and use symmetry to analyze mathematical situations" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Predict and describe the results of sliding, flipping, and turning two-dimensional shapes" type="vocab" text="Predict and describe the results of sliding, flipping, and turning two-dimensional shapes"/>
+						<outline groups:vocab="NCTM:3-5:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Describe a motion or a series of motions that will show that two shapes are congruent" type="vocab" text="Describe a motion or a series of motions that will show that two shapes are congruent"/>
+						<outline groups:vocab="NCTM:3-5:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Identify and describe line and rotational symmetry in two- and three-dimensional shapes and designs" type="vocab" text="Identify and describe line and rotational symmetry in two- and three-dimensional shapes and designs"/>
+					</outline>
+
+<!--3-5: Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems-->
+					<outline text="Use visualization, spatial reasoning, and geometric modeling to solve problems" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Build and draw geometric objects" type="vocab" text="Build and draw geometric objects"/>
+						<outline groups:vocab="NCTM:3-5:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Create and describe mental images of objects, patterns, and paths" type="vocab" text="Create and describe mental images of objects, patterns, and paths"/>
+						<outline groups:vocab="NCTM:3-5:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Identify and build a three-dimensional object from two-dimensional representations of that object" type="vocab" text="Identify and build a three-dimensional object from two-dimensional representations of that object"/>
+						<outline groups:vocab="NCTM:3-5:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Identify and draw a two-dimensional representation of a three-dimensional object" type="vocab" text="Identify and draw a two-dimensional representation of a three-dimensional object"/>
+						<outline groups:vocab="NCTM:3-5:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use geometric models to solve problems in other areas of mathematics, such as number and measurement" type="vocab" text="Use geometric models to solve problems in other areas of mathematics, such as number and measurement"/>
+						<outline groups:vocab="NCTM:3-5:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Recognize geometric ideas and relationships and apply them to other disciplines and to problems that arise in the classroom or in everyday life" type="vocab" text="Recognize geometric ideas and relationships and apply them to other disciplines and to problems that arise in the classroom or in everyday life"/>
+					</outline>
+				</outline>
+
+<!--3-5: Measurement-->
+				<outline text="Measurement" type="group" groups:deftn="the assignment of a numerical value to an attribute of an object">
+
+<!--3-5: Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement-->
+					<outline text="Understand measurable attributes of objects and the units, systems, and processes of measurement" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand such attributes as length, area, weight, volume, and size of angle and select the appropriate type of unit for measuring each attribute" type="vocab" text="Understand such attributes as length, area, weight, volume, and size of angle and select the appropriate type of unit for measuring each attribute"/>
+						<outline groups:vocab="NCTM:3-5:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand the need for measuring with standard units and become familiar with standard units in the customary and metric systems" type="vocab" text="Understand the need for measuring with standard units and become familiar with standard units in the customary and metric systems"/>
+						<outline groups:vocab="NCTM:3-5:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Carry out simple unit conversions, such as from centimeters to meters, within a system of measurement" type="vocab" text="Carry out simple unit conversions, such as from centimeters to meters, within a system of measurement"/>
+						<outline groups:vocab="NCTM:3-5:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand that measurements are approximations and how differences in units affect precision" type="vocab" text="Understand that measurements are approximations and how differences in units affect precision"/>
+						<outline groups:vocab="NCTM:3-5:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Explore what happens to measurements of a two-dimensional shape such as its perimeter and area when the shape is changed in some way" type="vocab" text="Explore what happens to measurements of a two-dimensional shape such as its perimeter and area when the shape is changed in some way"/>
+					</outline>
+
+<!--3-5: Measurement:Apply appropriate techniques, tools, and formulas to determine measurements-->
+					<outline text="Apply appropriate techniques, tools, and formulas to determine measurements" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Develop strategies for estimating the perimeters, areas, and volumes of irregular shapes" type="vocab" text="Develop strategies for estimating the perimeters, areas, and volumes of irregular shapes"/>
+						<outline groups:vocab="NCTM:3-5:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Select and apply appropriate standard units and tools to measure length, area, volume, weight, time, temperature, and the size of angles" type="vocab" text="Select and apply appropriate standard units and tools to measure length, area, volume, weight, time, temperature, and the size of angles"/>
+						<outline groups:vocab="NCTM:3-5:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Select and use benchmarks to estimate measurements" type="vocab" text="Select and use benchmarks to estimate measurements"/>
+						<outline groups:vocab="NCTM:3-5:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Develop, understand, and use formulas to find the area of rectangles and related triangles and parallelograms" type="vocab" text="Develop, understand, and use formulas to find the area of rectangles and related triangles and parallelograms"/>
+						<outline groups:vocab="NCTM:3-5:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Develop strategies to determine the surface areas and volumes of rectangular solids" type="vocab" text="Develop strategies to determine the surface areas and volumes of rectangular solids"/>
+					</outline>
+				</outline>
+
+<!--3-5 Data analysis and probability-->
+				<outline text="Data analysis and probability" type="group" groups:deftn="numerical or statistical information that can be used to make decisions">
+
+<!--3-5: Data analysis:Formulate questions-->
+					<outline text="Formulate questions" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Design investigations to address a question and consider how data-collection methods affect the nature of the data set" type="vocab" text="Design investigations to address a question and consider how data-collection methods affect the nature of the data set"/>
+						<outline groups:vocab="NCTM:3-5:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Collect data using observations, surveys, and experiments" type="vocab" text="Collect data using observations, surveys, and experiments"/>
+						<outline groups:vocab="NCTM:3-5:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Represent data using tables and graphs such as line plots, bar graphs, and line graphs" type="vocab" text="Represent data using tables and graphs such as line plots, bar graphs, and line graphs"/>
+						<outline groups:vocab="NCTM:3-5:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Recognize the differences in representing categorical and numerical data" type="vocab" text="Recognize the differences in representing categorical and numerical data"/>
+					</outline>
+
+<!--3-5: Data analysis:Select and use appropriate statistical methods to analyze data-->
+					<outline text="Select and use appropriate statistical methods to analyze data" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Describe the shape and important features of a set of data and compare related data sets, with an emphasis on how the data are distributed" type="vocab" text="Describe the shape and important features of a set of data and compare related data sets, with an emphasis on how the data are distributed"/>
+						<outline groups:vocab="NCTM:3-5:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Use measures of center, focusing on the median, and understand what each does and does not indicate about the data set" type="vocab" text="Use measures of center, focusing on the median, and understand what each does and does not indicate about the data set"/>
+						<outline groups:vocab="NCTM:3-5:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Compare different representations of the same data and evaluate how well each representation shows important aspects of the data" type="vocab" text="Compare different representations of the same data and evaluate how well each representation shows important aspects of the data"/>
+					</outline>
+
+<!--3-5: Data analysis:Develop and evaluate inferences and predictions that are based on data-->
+					<outline text="Develop and evaluate inferences and predictions that are based on data" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Propose and justify conclusions and predictions that are based on data and design studies to further investigate the conclusions or predictions" type="vocab" text="Propose and justify conclusions and predictions that are based on data and design studies to further investigate the conclusions or predictions"/>
+					</outline>
+
+<!--3-5: Data analysis:Understand and apply basic concepts of probability-->
+					<outline text="Understand and apply basic concepts of probability" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:3-5:Data analysis and probability:Understand and apply basic concepts of probability:Describe events as likely or unlikely and discuss the degree of likelihood using such words as certain, equally likely, and impossible" type="vocab" text="Describe events as likely or unlikely and discuss the degree of likelihood using such words as certain, equally likely, and impossible"/>
+						<outline groups:vocab="NCTM:3-5:Data analysis and probability:Understand and apply basic concepts of probability:Predict the probability of outcomes of simple experiments and test the predictions" type="vocab" text="Predict the probability of outcomes of simple experiments and test the predictions"/>
+						<outline groups:vocab="NCTM:3-5:Data analysis and probability:Understand and apply basic concepts of probability:Understand that the measure of the likelihood of an event can be represented by a number from 0 to 1" type="vocab" text="Understand that the measure of the likelihood of an event can be represented by a number from 0 to 1"/>
+					</outline>
+				</outline>
+
+<!--3-5: Problem solving-->
+				<outline text="Problem solving" type="group" groups:deftn="methods and abilities to use mathematical reasoning to arrive at unknown solutions">
+					<outline groups:vocab="NCTM:3-5:Problem solving:Build new mathematical knowledge through problem solving" type="vocab" text="Build new mathematical knowledge through problem solving"/>
+					<outline groups:vocab="NCTM:3-5:Problem solving:Solve problems that arise in mathematics and in other contexts" type="vocab" text="Solve problems that arise in mathematics and in other contexts"/>
+					<outline groups:vocab="NCTM:3-5:Problem solving:Apply and adapt a variety of appropriate strategies to solve problems" type="vocab" text="Apply and adapt a variety of appropriate strategies to solve problems"/>
+					<outline groups:vocab="NCTM:3-5:Problem solving:Monitor and reflect on the process of mathematical problem solving" type="vocab" text="Monitor and reflect on the process of mathematical problem solving"/>
+				</outline>
+
+<!--3-5: Reasoning and proof-->
+				<outline text="Reasoning and proof" type="group" groups:deftn="the ability to make a hypothesis and apply mathematical logic (inductive reasoning) to arrive at conclusions">
+					<outline groups:vocab="NCTM:3-5:Reasoning and proof:Recognize reasoning and proof as fundamental aspects of mathematics" type="vocab" text="Recognize reasoning and proof as fundamental aspects of mathematics"/>
+					<outline groups:vocab="NCTM:3-5:Reasoning and proof:Make and investigate mathematical conjectures" type="vocab" text="Make and investigate mathematical conjectures"/>
+					<outline groups:vocab="NCTM:3-5:Reasoning and proof:Develop and evaluate mathematical arguments and proofs" type="vocab" text="Develop and evaluate mathematical arguments and proofs"/>
+					<outline groups:vocab="NCTM:3-5:Reasoning and proof:Select and use various types of reasoning and methods of proof" type="vocab" text="Select and use various types of reasoning and methods of proof"/>
+				</outline>
+
+<!--3-5: Communication-->
+				<outline text="Communication" type="group" groups:deftn="the ability to express and share mathematical concepts">
+					<outline groups:vocab="NCTM:3-5:Communication:Organize and consolidate their mathematical thinking through communication" type="vocab" text="Organize and consolidate their mathematical thinking through communication"/>
+					<outline groups:vocab="NCTM:3-5:Communication:Communicate their mathematical thinking coherently and clearly to peers, teachers, and others" type="vocab" text="Communicate their mathematical thinking coherently and clearly to peers, teachers, and others"/>
+					<outline groups:vocab="NCTM:3-5:Communication:Analyze and evaluate the mathematical thinking and strategies of others" type="vocab" text="Analyze and evaluate the mathematical thinking and strategies of others"/>
+					<outline groups:vocab="NCTM:3-5:Communication:Use the language of mathematics to express mathematical ideas precisely" type="vocab" text="Use the language of mathematics to express mathematical ideas precisely"/>
+				</outline>
+
+<!--3-5: Connections-->
+				<outline text="Connections" type="group" groups:deftn="the ability to recognize common themes across different mathematical concepts or other subjects">
+					<outline groups:vocab="NCTM:3-5:Connections:Recognize and use connections among mathematical ideas" type="vocab" text="Recognize and use connections among mathematical ideas"/>
+					<outline groups:vocab="NCTM:3-5:Connections:Understand how mathematical ideas interconnect and build on one another to produce a coherent whole" type="vocab" text="Understand how mathematical ideas interconnect and build on one another to produce a coherent whole"/>
+					<outline groups:vocab="NCTM:3-5:Connections:Recognize and apply mathematics in contexts outside of mathematics" type="vocab" text="Recognize and apply mathematics in contexts outside of mathematics"/>
+				</outline>
+
+<!--3-5: Representation-->
+				<outline text="Representation" type="group" groups:deftn="the ability to illustrate mathematical concepts">
+					<outline groups:vocab="NCTM:3-5:Representation:Create and use representations to organize, record, and communicate mathematical ideas" type="vocab" text="Create and use representations to organize, record, and communicate mathematical ideas"/>
+					<outline groups:vocab="NCTM:3-5:Representation:Select, apply, and translate among mathematical representations to solve problems" type="vocab" text="Select, apply, and translate among mathematical representations to solve problems"/>
+					<outline groups:vocab="NCTM:3-5:Representation:Use representations to model and interpret physical, social, and mathematical phenomena" type="vocab" text="Use representations to model and interpret physical, social, and mathematical phenomena"/>
+				</outline>
+			</outline>
+
+<!--6-8-->
+			<outline text="6-8" type="group" groups:deftn="Pertains to content for 6th through 8th grades">
+
+<!--6-8: Number and operations-->
+				<outline text="Number and operations" type="group" groups:deftn="arithmetic manipulations">
+
+<!--6-8: Number and operations: Understand numbers-->
+					<outline text="Understand numbers" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Work flexibly with fractions, decimals, and percents to solve problems" type="vocab" text="Work flexibly with fractions, decimals, and percents to solve problems"/>
+						<outline groups:vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Compare and order fractions, decimals, and percents efficiently and find their approximate locations on a number line" type="vocab" text="Compare and order fractions, decimals, and percents efficiently and find their approximate locations on a number line"/>
+						<outline groups:vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Develop meaning for percents greater than 100 and less than 1" type="vocab" text="Develop meaning for percents greater than 100 and less than 1"/>
+						<outline groups:vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Understand and use ratios and proportions to represent quantitative relationships" type="vocab" text="Understand and use ratios and proportions to represent quantitative relationships"/>
+						<outline groups:vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Develop an understanding of large numbers and recognize and appropriately use exponential, scientific, and calculator notation" type="vocab" text="Develop an understanding of large numbers and recognize and appropriately use exponential, scientific, and calculator notation"/>
+						<outline groups:vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Use factors, multiples, prime factorization, and relatively prime numbers to solve problems" type="vocab" text="Use factors, multiples, prime factorization, and relatively prime numbers to solve problems"/>
+						<outline groups:vocab="NCTM:6-8:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Develop meaning for integers and represent and compare quantities with them" type="vocab" text="Develop meaning for integers and represent and compare quantities with them"/>
+					</outline>
+
+<!--6-8: Number and operations: Understand meanings of operations-->
+					<outline text="Understand meanings of operations" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Number and operations:Understand meanings of operations and how they relate to one another:Understand the meaning and effects of arithmetic operations with fractions, decimals, and integers" type="vocab" text="Understand the meaning and effects of arithmetic operations with fractions, decimals, and integers"/>
+						<outline groups:vocab="NCTM:6-8:Number and operations:Understand meanings of operations and how they relate to one another:Use the associative and commutative properties of addition and multiplication and the distributive property of multiplication over addition to simplify computations with integers, fractions, and decimals" type="vocab" text="Use the associative and commutative properties of addition and multiplication and the distributive property of multiplication over addition to simplify computations with integers, fractions, and decimals"/>
+						<outline groups:vocab="NCTM:6-8:Number and operations:Understand meanings of operations and how they relate to one another:Understand and use the inverse relationships of addition and subtraction, multiplication and division, and squaring and finding square roots to simplify computations and solve problems" type="vocab" text="Understand and use the inverse relationships of addition and subtraction, multiplication and division, and squaring and finding square roots to simplify computations and solve problems"/>
+					</outline>
+
+<!--6-8: Number and operations: Compute fluently and make reasonable estimates-->
+					<outline text="Compute fluently and make reasonable estimates" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Number and operations:Compute fluently and make reasonable estimates:Select appropriate methods and tools for computing with fractions and decimals from among mental computation, estimation, calculators or computers, and paper and pencil, depending on the situation, and apply the selected methods" type="vocab" text="Select appropriate methods and tools for computing with fractions and decimals from among mental computation, estimation, calculators or computers, and paper and pencil, depending on the situation, and apply the selected methods"/>
+						<outline groups:vocab="NCTM:6-8:Number and operations:Compute fluently and make reasonable estimates:Develop and analyze algorithms for computing with fractions, decimals, and integers and develop fluency in their use" type="vocab" text="Develop and analyze algorithms for computing with fractions, decimals, and integers and develop fluency in their use"/>
+						<outline groups:vocab="NCTM:6-8:Number and operations:Compute fluently and make reasonable estimates:Develop and use strategies to estimate the results of rational-number computations and judge the reasonableness of the results" type="vocab" text="Develop and use strategies to estimate the results of rational-number computations and judge the reasonableness of the results"/>
+						<outline groups:vocab="NCTM:6-8:Number and operations:Compute fluently and make reasonable estimates:Develop, analyze, and explain methods for solving problems involving proportions, such as scaling and finding equivalent ratios" type="vocab" text="Develop, analyze, and explain methods for solving problems involving proportions, such as scaling and finding equivalent ratios"/>
+					</outline>
+				</outline>
+
+<!--6-8: Algebra-->
+				<outline text="Algebra" type="group" groups:deftn="properties and relationships between entities that are represented in symbolic form">
+
+<!--6-8: Algebra:Understand patterns, relations, and functions-->
+					<outline text="Understand patterns, relations, and functions" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Algebra:Understand patterns, relations, and functions:Represent, analyze, and generalize a variety of patterns with tables, graphs, words, and, when possible, symbolic rules" type="vocab" text="Represent, analyze, and generalize a variety of patterns with tables, graphs, words, and, when possible, symbolic rules"/>
+						<outline groups:vocab="NCTM:6-8:Algebra:Understand patterns, relations, and functions:Relate and compare different forms of representation for a relationship" type="vocab" text="Relate and compare different forms of representation for a relationship"/>
+						<outline groups:vocab="NCTM:6-8:Algebra:Understand patterns, relations, and functions:Identify functions as linear or nonlinear and contrast their properties from tables, graphs, or equations" type="vocab" text="Identify functions as linear or nonlinear and contrast their properties from tables, graphs, or equations"/>
+					</outline>
+
+<!--6-8: Algebra:Represent and analyze mathematical situations-->
+					<outline text="Represent and analyze mathematical situations" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Develop an initial conceptual understanding of different uses of variables" type="vocab" text="Develop an initial conceptual understanding of different uses of variables"/>
+						<outline groups:vocab="NCTM:6-8:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Explore relationships between symbolic expressions and graphs of lines, paying particular attention to the meaning of intercept and slope" type="vocab" text="Explore relationships between symbolic expressions and graphs of lines, paying particular attention to the meaning of intercept and slope"/>
+						<outline groups:vocab="NCTM:6-8:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Use symbolic algebra to represent situations and to solve problems, especially those that involve linear relationships" type="vocab" text="Use symbolic algebra to represent situations and to solve problems, especially those that involve linear relationships"/>
+						<outline groups:vocab="NCTM:6-8:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Recognize and generate equivalent forms for simple algebraic expressions and solve linear equations" type="vocab" text="Recognize and generate equivalent forms for simple algebraic expressions and solve linear equations"/>
+					</outline>
+
+<!--6-8: Algebra:Use mathematical models to represent and understand quantitative relationships-->
+					<outline text="Use mathematical models to represent and understand quantitative relationships" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Algebra:Use mathematical models to represent and understand quantitative relationships:Model and solve contextualized problems using various representations, such as graphs, tables, and equations" type="vocab" text="Model and solve contextualized problems using various representations, such as graphs, tables, and equations"/>
+					</outline>
+
+<!--6-8: Algebra:Analyze change in various contexts-->
+					<outline text="Analyze change in various contexts" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Algebra:Analyze change in various contexts:Use graphs to analyze the nature of changes in quantities in linear relationships" type="vocab" text="Use graphs to analyze the nature of changes in quantities in linear relationships"/>
+					</outline>
+				</outline>
+
+<!--6-8: Geometry-->
+				<outline text="Geometry" type="group" groups:deftn="properties and relationships of points, lines, angles, surfaces and solids">
+
+<!--6-8: Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes-->
+					<outline text="Analyze characteristics and properties of two- and three-dimensional geometric shapes" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Precisely describe, classify, and understand relationships among types of two- and three-dimensional objects using their defining properties" type="vocab" text="Precisely describe, classify, and understand relationships among types of two- and three-dimensional objects using their defining properties"/>
+						<outline groups:vocab="NCTM:6-8:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Understand relationships among the angles, side lengths, perimeters, areas, and volumes of similar objects" type="vocab" text="Understand relationships among the angles, side lengths, perimeters, areas, and volumes of similar objects"/>
+						<outline groups:vocab="NCTM:6-8:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Create and critique inductive and deductive arguments concerning geometric ideas and relationships, such as congruence, similarity, and the Pythagorean relationship" type="vocab" text="Create and critique inductive and deductive arguments concerning geometric ideas and relationships, such as congruence, similarity, and the Pythagorean relationship"/>
+					</outline>
+
+<!--6-8: Geometry:Specify locations and describe spatial relationships-->
+					<outline text="Specify locations and describe spatial relationships" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Use coordinate geometry to represent and examine the properties of geometric shapes" type="vocab" text="Use coordinate geometry to represent and examine the properties of geometric shapes"/>
+						<outline groups:vocab="NCTM:6-8:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Use coordinate geometry to examine special geometric shapes, such as regular polygons or those with pairs of parallel or perpendicular sides" type="vocab" text="Use coordinate geometry to examine special geometric shapes, such as regular polygons or those with pairs of parallel or perpendicular sides"/>
+					</outline>
+
+<!--6-8: Geometry:Apply transformations and use symmetry to analyze mathematical situations-->
+					<outline text="Apply transformations and use symmetry to analyze mathematical situations" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Describe sizes, positions, and orientations of shapes under informal transformations such as flips, turns, slides, and scaling" type="vocab" text="Describe sizes, positions, and orientations of shapes under informal transformations such as flips, turns, slides, and scaling"/>
+						<outline groups:vocab="NCTM:6-8:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Examine the congruence, similarity, and line or rotational symmetry of objects using transformations" type="vocab" text="Examine the congruence, similarity, and line or rotational symmetry of objects using transformations"/>
+					</outline>
+
+<!--6-8: Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems-->
+					<outline text="Use visualization, spatial reasoning, and geometric modeling to solve problems" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Draw geometric objects with specified properties, such as side lengths or angle measures" type="vocab" text="Draw geometric objects with specified properties, such as side lengths or angle measures"/>
+						<outline groups:vocab="NCTM:6-8:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use two-dimensional representations of three-dimensional objects to visualize and solve problems such as those involving surface area and volume" type="vocab" text="Use two-dimensional representations of three-dimensional objects to visualize and solve problems such as those involving surface area and volume"/>
+						<outline groups:vocab="NCTM:6-8:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use visual tools such as networks to represent and solve problems" type="vocab" text="Use visual tools such as networks to represent and solve problems"/>
+						<outline groups:vocab="NCTM:6-8:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use geometric models to represent and explain numerical and algebraic relationships" type="vocab" text="Use geometric models to represent and explain numerical and algebraic relationships"/>
+						<outline groups:vocab="NCTM:6-8:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Recognize and apply geometric ideas and relationships in areas outside the mathematics classroom, such as art, science, and everyday life" type="vocab" text="Recognize and apply geometric ideas and relationships in areas outside the mathematics classroom, such as art, science, and everyday life"/>
+					</outline>
+				</outline>
+
+<!--6-8: Measurement-->
+				<outline text="Measurement" type="group" groups:deftn="the assignment of a numerical value to an attribute of an object">
+
+<!--6-8: Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement-->
+					<outline text="Understand measurable attributes of objects and the units, systems, and processes of measurement" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand both metric and customary systems of measurement" type="vocab" text="Understand both metric and customary systems of measurement"/>
+						<outline groups:vocab="NCTM:6-8:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand relationships among units and convert from one unit to another within the same system" type="vocab" text="Understand relationships among units and convert from one unit to another within the same system"/>
+						<outline groups:vocab="NCTM:6-8:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Understand, select, and use units of appropriate size and type to measure angles, perimeter, area, surface area, and volume" type="vocab" text="Understand, select, and use units of appropriate size and type to measure angles, perimeter, area, surface area, and volume"/>
+					</outline>
+
+<!--6-8: Measurement:Apply appropriate techniques, tools, and formulas to determine measurements-->
+					<outline text="Apply appropriate techniques, tools, and formulas to determine measurements" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Use common benchmarks to select appropriate methods for estimating measurements" type="vocab" text="Use common benchmarks to select appropriate methods for estimating measurements"/>
+						<outline groups:vocab="NCTM:6-8:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Select and apply techniques and tools to accurately find length, area, volume, and angle measures to appropriate levels of precision" type="vocab" text="Select and apply techniques and tools to accurately find length, area, volume, and angle measures to appropriate levels of precision"/>
+						<outline groups:vocab="NCTM:6-8:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Develop and use formulas to determine the circumference of circles and the area of triangles, parallelograms, trapezoids, and circles and develop strategies to find the area of more-complex shapes" type="vocab" text="Develop and use formulas to determine the circumference of circles and the area of triangles, parallelograms, trapezoids, and circles and develop strategies to find the area of more-complex shapes"/>
+						<outline groups:vocab="NCTM:6-8:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Develop strategies to determine the surface area and volume of selected prisms, pyramids, and cylinders" type="vocab" text="Develop strategies to determine the surface area and volume of selected prisms, pyramids, and cylinders"/>
+						<outline groups:vocab="NCTM:6-8:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Solve problems involving scale factors, using ratio and proportion" type="vocab" text="Solve problems involving scale factors, using ratio and proportion"/>
+						<outline groups:vocab="NCTM:6-8:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Solve simple problems involving rates and derived measurements for such attributes as velocity and density" type="vocab" text="Solve simple problems involving rates and derived measurements for such attributes as velocity and density"/>
+					</outline>
+				</outline>
+
+<!--6-8: Data analysis and probability-->
+				<outline text="Data analysis and probability" type="group" groups:deftn="numerical or statistical information that can be used to make decisions">
+
+<!--6-8: Data analysis:Formulate questions-->
+					<outline text="Formulate questions" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Formulate questions, design studies, and collect data about a characteristic shared by two populations or different characteristics within one population" type="vocab" text="Formulate questions, design studies, and collect data about a characteristic shared by two populations or different characteristics within one population"/>
+						<outline groups:vocab="NCTM:6-8:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Select, create, and use appropriate graphical representations of data, including histograms, box plots, and scatterplots" type="vocab" text="Select, create, and use appropriate graphical representations of data, including histograms, box plots, and scatterplots"/>
+					</outline>
+
+<!--6-8: Data analysis:Select and use appropriate statistical methods to analyze data-->
+					<outline text="Select and use appropriate statistical methods to analyze data" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Find, use, and interpret measures of center and spread, including mean and interquartile range" type="vocab" text="Find, use, and interpret measures of center and spread, including mean and interquartile range"/>
+						<outline groups:vocab="NCTM:6-8:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Discuss and understand the correspondence between data sets and their graphical representations, especially histograms, stem-and-leaf plots, box plots, and scatterplots" type="vocab" text="Discuss and understand the correspondence between data sets and their graphical representations, especially histograms, stem-and-leaf plots, box plots, and scatterplots"/>
+					</outline>
+
+<!--6-8: Data analysis:Develop and evaluate inferences and predictions that are based on data-->
+					<outline text="Develop and evaluate inferences and predictions that are based on data" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Use observations about differences between two or more samples to make conjectures about the populations from which the samples were taken" type="vocab" text="Use observations about differences between two or more samples to make conjectures about the populations from which the samples were taken"/>
+						<outline groups:vocab="NCTM:6-8:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Make conjectures about possible relationships between two characteristics of a sample on the basis of scatterplots of the data and approximate lines of fit" type="vocab" text="Make conjectures about possible relationships between two characteristics of a sample on the basis of scatterplots of the data and approximate lines of fit"/>
+						<outline groups:vocab="NCTM:6-8:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Use conjectures to formulate new questions and plan new studies to answer them" type="vocab" text="Use conjectures to formulate new questions and plan new studies to answer them"/>
+					</outline>
+
+<!--6-8: Data analysis:Understand and apply basic concepts of probability-->
+					<outline text="Understand and apply basic concepts of probability" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:6-8:Data analysis and probability:Understand and apply basic concepts of probability:Understand and use appropriate terminology to describe complementary and mutually exclusive events" type="vocab" text="Understand and use appropriate terminology to describe complementary and mutually exclusive events"/>
+						<outline groups:vocab="NCTM:6-8:Data analysis and probability:Understand and apply basic concepts of probability:Use proportionality and a basic understanding of probability to make and test conjectures about the results of experiments and simulations" type="vocab" text="Use proportionality and a basic understanding of probability to make and test conjectures about the results of experiments and simulations"/>
+						<outline groups:vocab="NCTM:6-8:Data analysis and probability:Understand and apply basic concepts of probability:Compute probabilities for simple compound events, using such methods as organized lists, tree diagrams, and area models" type="vocab" text="Compute probabilities for simple compound events, using such methods as organized lists, tree diagrams, and area models"/>
+					</outline>
+				</outline>
+
+<!--6-8: Problem solving-->
+				<outline text="Problem solving" type="group" groups:deftn="methods and abilities to use mathematical reasoning to arrive at unknown solutions">
+					<outline groups:vocab="NCTM:6-8:Problem solving:Build new mathematical knowledge through problem solving" type="vocab" text="Build new mathematical knowledge through problem solving"/>
+					<outline groups:vocab="NCTM:6-8:Problem solving:Solve problems that arise in mathematics and in other contexts" type="vocab" text="Solve problems that arise in mathematics and in other contexts"/>
+					<outline groups:vocab="NCTM:6-8:Problem solving:Apply and adapt a variety of appropriate strategies to solve problems" type="vocab" text="Apply and adapt a variety of appropriate strategies to solve problems"/>
+					<outline groups:vocab="NCTM:6-8:Problem solving:Monitor and reflect on the process of mathematical problem solving" type="vocab" text="Monitor and reflect on the process of mathematical problem solving"/>
+					<outline groups:vocab="NCTM:6-8:Reasoning and proof:Recognize reasoning and proof as fundamental aspects of mathematics" type="vocab" text="Recognize reasoning and proof as fundamental aspects of mathematics"/>
+				</outline>
+
+<!--6-8: Reasoning and proof-->
+				<outline text="Reasoning and proof" type="group" groups:deftn="the ability to make a hypothesis and apply mathematical logic (inductive reasoning) to arrive at conclusions">
+					<outline groups:vocab="NCTM:6-8:Reasoning and proof:Make and investigate mathematical conjectures" type="vocab" text="Make and investigate mathematical conjectures"/>
+					<outline groups:vocab="NCTM:6-8:Reasoning and proof:Develop and evaluate mathematical arguments and proofs" type="vocab" text="Develop and evaluate mathematical arguments and proofs"/>
+					<outline groups:vocab="NCTM:6-8:Reasoning and proof:Select and use various types of reasoning and methods of proof" type="vocab" text="Select and use various types of reasoning and methods of proof"/>
+				</outline>
+
+<!--6-8: Communication-->
+				<outline text="Communication" type="group" groups:deftn="the ability to express and share mathematical concepts">
+					<outline groups:vocab="NCTM:6-8:Communication:Organize and consolidate their mathematical thinking through communication" type="vocab" text="Organize and consolidate their mathematical thinking through communication"/>
+					<outline groups:vocab="NCTM:6-8:Communication:Communicate their mathematical thinking coherently and clearly to peers, teachers, and others" type="vocab" text="Communicate their mathematical thinking coherently and clearly to peers, teachers, and others"/>
+					<outline groups:vocab="NCTM:6-8:Communication:Analyze and evaluate the mathematical thinking and strategies of others" type="vocab" text="Analyze and evaluate the mathematical thinking and strategies of others"/>
+					<outline groups:vocab="NCTM:6-8:Communication:Use the language of mathematics to express mathematical ideas precisely" type="vocab" text="Use the language of mathematics to express mathematical ideas precisely"/>
+				</outline>
+
+<!--6-8: Connections-->
+				<outline text="Connections" type="group" groups:deftn="the ability to recognize common themes across different mathematical concepts or other subjects">
+					<outline groups:vocab="NCTM:6-8:Connections:Recognize and use connections among mathematical ideas" type="vocab" text="Recognize and use connections among mathematical ideas"/>
+					<outline groups:vocab="NCTM:6-8:Connections:Understand how mathematical ideas interconnect and build on one another to produce a coherent whole" type="vocab" text="Understand how mathematical ideas interconnect and build on one another to produce a coherent whole"/>
+					<outline groups:vocab="NCTM:6-8:Connections:Recognize and apply mathematics in contexts outside of mathematics" type="vocab" text="Recognize and apply mathematics in contexts outside of mathematics"/>
+				</outline>
+
+<!--6-8: Representation-->
+				<outline text="Representation" type="group" groups:deftn="the ability to illustrate mathematical concepts">
+					<outline groups:vocab="NCTM:6-8:Representation:Create and use representations to organize, record, and communicate mathematical ideas" type="vocab" text="Create and use representations to organize, record, and communicate mathematical ideas"/>
+					<outline groups:vocab="NCTM:6-8:Representation:Select, apply, and translate among mathematical representations to solve problems" type="vocab" text="Select, apply, and translate among mathematical representations to solve problems"/>
+					<outline groups:vocab="NCTM:6-8:Representation:Use representations to model and interpret physical, social, and mathematical phenomena" type="vocab" text="Use representations to model and interpret physical, social, and mathematical phenomena"/>
+				</outline>
+			</outline>
+
+<!--9-12-->
+			<outline text="9-12" type="group" groups:deftn="Pertains to content for 9th through 12th grades">
+<!--9-12: Number and operations-->
+				<outline text="Number and operations" type="group" groups:deftn="arithmetic manipulations">
+
+<!--9-12: Number and operations: Understand numbers-->
+					<outline text="Understand numbers" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Understand numbers:Develop a deeper understanding of very large and very small numbers and of various representations of them" type="vocab" text="Develop a deeper understanding of very large and very small numbers and of various representations of them"/>
+						<outline groups:vocab="NCTM:9-12:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Compare and contrast the properties of numbers and number systems, including the rational and real numbers, and understand complex numbers as solutions to quadratic equations that do not have real solutions" type="vocab" text="Compare and contrast the properties of numbers and number systems, including the rational and real numbers, and understand complex numbers as solutions to quadratic equations that do not have real solutions"/>
+						<outline groups:vocab="NCTM:9-12:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Understand vectors and matrices as systems that have some of the properties of the real-number system" type="vocab" text="Understand vectors and matrices as systems that have some of the properties of the real-number system"/>
+						<outline groups:vocab="NCTM:9-12:Number and operations:Understand numbers, ways of representing numbers, relationships among numbers, and number systems:Use number-theory arguments to justify relationships involving whole numbers" type="vocab" text="Use number-theory arguments to justify relationships involving whole numbers"/>
+					</outline>
+
+<!--9-12: Number and operations: Understand meanings of operations-->
+					<outline text="Understand meanings of operations" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Number and operations:Understand meanings of operations and how they relate to one another:Judge the effects of such operations as multiplication, division, and computing powers and roots on the magnitudes of quantities" type="vocab" text="Judge the effects of such operations as multiplication, division, and computing powers and roots on the magnitudes of quantities"/>
+						<outline groups:vocab="NCTM:9-12:Number and operations:Understand meanings of operations and how they relate to one another:Develop an understanding of properties of, and representations for, the addition and multiplication of vectors and matrices" type="vocab" text="Develop an understanding of properties of, and representations for, the addition and multiplication of vectors and matrices"/>
+						<outline groups:vocab="NCTM:9-12:Number and operations:Understand meanings of operations and how they relate to one another:Develop an understanding of permutations and combinations as counting techniques" type="vocab" text="Develop an understanding of permutations and combinations as counting techniques"/>
+					</outline>
+
+<!--9-12: Number and operations: Compute fluently and make reasonable estimates-->
+					<outline text="Compute fluently and make reasonable estimates" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Number and operations:Compute fluently and make reasonable estimates:Develop fluency in operations with real numbers, vectors, and matrices, using mental computation or paper-and-pencil calculations for simple cases and technology for more-complicated cases" type="vocab" text="Develop fluency in operations with real numbers, vectors, and matrices, using mental computation or paper-and-pencil calculations for simple cases and technology for more-complicated cases"/>
+						<outline groups:vocab="NCTM:9-12:Number and operations:Compute fluently and make reasonable estimates:Judge the reasonableness of numerical computations and their results" type="vocab" text="Judge the reasonableness of numerical computations and their results"/>
+					</outline>
+				</outline>
+
+<!--9-12: Algebra-->
+				<outline text="Algebra" type="group" groups:deftn="properties and relationships between entities that are represented in symbolic form">
+
+<!--9-12: Algebra:Understand patterns, relations, and functions-->
+					<outline text="Understand patterns, relations, and functions" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Algebra:Understand patterns, relations, and functions:Generalize patterns using explicitly defined and recursively defined functions" type="vocab" text="Generalize patterns using explicitly defined and recursively defined functions"/>
+						<outline groups:vocab="NCTM:9-12:Algebra:Understand patterns, relations, and functions:Understand relations and functions and select, convert flexibly among, and use various representations for them" type="vocab" text="Understand relations and functions and select, convert flexibly among, and use various representations for them"/>
+						<outline groups:vocab="NCTM:9-12:Algebra:Understand patterns, relations, and functions:Analyze functions of one variable by investigating rates of change, intercepts, zeros, asymptotes, and local and global behavior" type="vocab" text="Analyze functions of one variable by investigating rates of change, intercepts, zeros, asymptotes, and local and global behavior"/>
+						<outline groups:vocab="NCTM:9-12:Algebra:Understand patterns, relations, and functions:Understand and perform transformations such as arithmetically combining, composing, and inverting commonly used functions, using technology to perform such operations on more-complicated symbolic expressions" type="vocab" text="Understand and perform transformations such as arithmetically combining, composing, and inverting commonly used functions, using technology to perform such operations on more-complicated symbolic expressions"/>
+						<outline groups:vocab="NCTM:9-12:Algebra:Understand patterns, relations, and functions:Understand and compare the properties of classes of functions, including exponential, polynomial, rational, logarithmic, and periodic functions" type="vocab" text="Understand and compare the properties of classes of functions, including exponential, polynomial, rational, logarithmic, and periodic functions"/>
+						<outline groups:vocab="NCTM:9-12:Algebra:Understand patterns, relations, and functions:Interpret representations of functions of two variables" type="vocab" text="Interpret representations of functions of two variables"/>
+					</outline>
+
+<!--9-12: Algebra:Represent and analyze mathematical situations-->
+					<outline text="Represent and analyze mathematical situations" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Understand the meaning of equivalent forms of expressions, equations, inequalities, and relations" type="vocab" text="Understand the meaning of equivalent forms of expressions, equations, inequalities, and relations"/>
+						<outline groups:vocab="NCTM:9-12:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Write equivalent forms of equations, inequalities, and systems of equations and solve them with fluency, mentally or with paper and pencil in simple cases and using technology in all cases" type="vocab" text="Write equivalent forms of equations, inequalities, and systems of equations and solve them with fluency, mentally or with paper and pencil in simple cases and using technology in all cases"/>
+						<outline groups:vocab="NCTM:9-12:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Use symbolic algebra to represent and explain mathematical relationships" type="vocab" text="Use symbolic algebra to represent and explain mathematical relationships"/>
+						<outline groups:vocab="NCTM:9-12:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Use a variety of symbolic representations, including recursive and parametric equations, for functions and relations" type="vocab" text="Use a variety of symbolic representations, including recursive and parametric equations, for functions and relations"/>
+						<outline groups:vocab="NCTM:9-12:Algebra:Represent and analyze mathematical situations and structures using algebraic symbols:Judge the meaning, utility, and reasonableness of the results of symbol manipulations, including those carried out by technology" type="vocab" text="Judge the meaning, utility, and reasonableness of the results of symbol manipulations, including those carried out by technology"/>
+					</outline>
+
+<!--9-12: Algebra:Use mathematical models to represent and understand quantitative relationships-->
+					<outline text="Use mathematical models to represent and understand quantitative relationships" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Algebra:Use mathematical models to represent and understand quantitative relationships:Identify essential quantitative relationships in a situation and determine the class or classes of functions that might model the relationships" type="vocab" text="Identify essential quantitative relationships in a situation and determine the class or classes of functions that might model the relationships"/>
+						<outline groups:vocab="NCTM:9-12:Algebra:Use mathematical models to represent and understand quantitative relationships:Use symbolic expressions, including iterative and recursive forms, to represent relationships arising from various contexts" type="vocab" text="Use symbolic expressions, including iterative and recursive forms, to represent relationships arising from various contexts"/>
+						<outline groups:vocab="NCTM:9-12:Algebra:Use mathematical models to represent and understand quantitative relationships:Draw reasonable conclusions about a situation being modeled" type="vocab" text="Draw reasonable conclusions about a situation being modeled"/>
+					</outline>
+
+<!--9-12: Algebra:Analyze change in various contexts-->
+					<outline text="Analyze change in various contexts" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Algebra:Analyze change in various contexts:Approximate and interpret rates of change from graphical and numerical data" type="vocab" text="Approximate and interpret rates of change from graphical and numerical data"/>
+					</outline>
+				</outline>
+
+<!--9-12: Geometry-->
+				<outline text="Geometry" type="group" groups:deftn="properties and relationships of points, lines, angles, surfaces and solids">
+
+<!--9-12: Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes-->
+					<outline text="Analyze characteristics and properties of two- and three-dimensional geometric shapes" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Analyze properties and determine attributes of two- and three-dimensional objects" type="vocab" text="Analyze properties and determine attributes of two- and three-dimensional objects"/>
+						<outline groups:vocab="NCTM:9-12:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Explore relationships (including congruence and similarity) among classes of two- and three-dimensional geometric objects, make and test conjectures about them, and solve problems involving them" type="vocab" text="Explore relationships (including congruence and similarity) among classes of two- and three-dimensional geometric objects, make and test conjectures about them, and solve problems involving them"/>
+						<outline groups:vocab="NCTM:9-12:Geometry:Analyze characteristics and properties of two- and three-dimensional geometric shapes and develop mathematical arguments about geometric relationships:Establish the validity of geometric conjectures using deduction, prove theorems, and critique arguments made by others" type="vocab" text="Establish the validity of geometric conjectures using deduction, prove theorems, and critique arguments made by others"/>
+						<outline groups:vocab="NCTM:9-12:Geometry:Analyze characteristics:Use trigonometric relationships to determine lengths and angle measures" type="vocab" text="Use trigonometric relationships to determine lengths and angle measures"/>
+					</outline>
+
+<!--9-12: Geometry:Specify locations and describe spatial relationships-->
+					<outline text="Specify locations and describe spatial relationships" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Use Cartesian coordinates and other coordinate systems, such as navigational, polar, or spherical systems, to analyze geometric situations" type="vocab" text="Use Cartesian coordinates and other coordinate systems, such as navigational, polar, or spherical systems, to analyze geometric situations"/>
+						<outline groups:vocab="NCTM:9-12:Geometry:Specify locations and describe spatial relationships using coordinate geometry and other representational systems:Investigate conjectures and solve problems involving two- and three-dimensional objects represented with Cartesian coordinates" type="vocab" text="Investigate conjectures and solve problems involving two- and three-dimensional objects represented with Cartesian coordinates"/>
+					</outline>
+
+<!--9-12: Geometry:Apply transformations and use symmetry to analyze mathematical situations-->
+					<outline text="Apply transformations and use symmetry to analyze mathematical situations" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Understand and represent translations, reflections, rotations, and dilations of objects in the plane by using sketches, coordinates, vectors, function notation, and matrices" type="vocab" text="Understand and represent translations, reflections, rotations, and dilations of objects in the plane by using sketches, coordinates, vectors, function notation, and matrices"/>
+						<outline groups:vocab="NCTM:9-12:Geometry:Apply transformations and use symmetry to analyze mathematical situations:Use various representations to help understand the effects of simple transformations and their compositions" type="vocab" text="Use various representations to help understand the effects of simple transformations and their compositions"/>
+					</outline>
+
+<!--9-12: Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems-->
+					<outline text="Use visualization, spatial reasoning, and geometric modeling to solve problems" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Draw and construct representations of two- and three-dimensional geometric objects using a variety of tools" type="vocab" text="Draw and construct representations of two- and three-dimensional geometric objects using a variety of tools"/>
+						<outline groups:vocab="NCTM:9-12:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Visualize three-dimensional objects and spaces from different perspectives and analyze their cross sections" type="vocab" text="Visualize three-dimensional objects and spaces from different perspectives and analyze their cross sections"/>
+						<outline groups:vocab="NCTM:9-12:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use vertex-edge graphs to model and solve problems" type="vocab" text="Use vertex-edge graphs to model and solve problems"/>
+						<outline groups:vocab="NCTM:9-12:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use geometric models to gain insights into, and answer questions in, other areas of mathematics" type="vocab" text="Use geometric models to gain insights into, and answer questions in, other areas of mathematics"/>
+						<outline groups:vocab="NCTM:9-12:Geometry:Use visualization, spatial reasoning, and geometric modeling to solve problems:Use geometric ideas to solve problems in, and gain insights into, other disciplines and other areas of interest such as art and architecture" type="vocab" text="Use geometric ideas to solve problems in, and gain insights into, other disciplines and other areas of interest such as art and architecture"/>
+					</outline>
+				</outline>
+
+<!--9-12: Measurement-->
+				<outline text="Measurement" type="group" groups:deftn="the assignment of a numerical value to an attribute of an object">
+
+<!--9-12: Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement-->
+					<outline text="Understand measurable attributes of objects and the units, systems, and processes of measurement" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Measurement:Understand measurable attributes of objects and the units, systems, and processes of measurement:Make decisions about units and scales that are appropriate for problem situations involving measurement" type="vocab" text="Make decisions about units and scales that are appropriate for problem situations involving measurement"/>
+					</outline>
+
+<!--9-12: Measurement:Apply appropriate techniques, tools, and formulas to determine measurements-->
+					<outline text="Apply appropriate techniques, tools, and formulas to determine measurements" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Analyze precision, accuracy, and approximate error in measurement situations" type="vocab" text="Analyze precision, accuracy, and approximate error in measurement situations"/>
+						<outline groups:vocab="NCTM:9-12:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Understand and use formulas for the area, surface area, and volume of geometric figures, including cones, spheres, and cylinders" type="vocab" text="Understand and use formulas for the area, surface area, and volume of geometric figures, including cones, spheres, and cylinders"/>
+						<outline groups:vocab="NCTM:9-12:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Apply informal concepts of successive approximation, upper and lower bounds, and limit in measurement situations" type="vocab" text="Apply informal concepts of successive approximation, upper and lower bounds, and limit in measurement situations"/>
+						<outline groups:vocab="NCTM:9-12:Measurement:Apply appropriate techniques, tools, and formulas to determine measurements:Use unit analysis to check measurement computations" type="vocab" text="Use unit analysis to check measurement computations"/>
+					</outline>
+				</outline>
+
+<!--9-12: Data analysis and probability-->
+				<outline text="Data analysis and probability" type="group" groups:deftn="numerical or statistical information that can be used to make decisions">
+
+<!--9-12: Data analysis:Formulate questions-->
+					<outline text="Formulate questions" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Understand the differences among various kinds of studies and which types of inferences can legitimately be drawn from each" type="vocab" text="Understand the differences among various kinds of studies and which types of inferences can legitimately be drawn from each"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Know the characteristics of well-designed studies, including the role of randomization in surveys and experiments" type="vocab" text="Know the characteristics of well-designed studies, including the role of randomization in surveys and experiments"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Understand the meaning of measurement data and categorical data, of univariate and bivariate data, and of the term variable" type="vocab" text="Understand the meaning of measurement data and categorical data, of univariate and bivariate data, and of the term variable"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Understand histograms, parallel box plots, and scatterplots and use them to display data" type="vocab" text="Understand histograms, parallel box plots, and scatterplots and use them to display data"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Formulate questions that can be addressed with data and collect, organize, and display relevant data to answer them:Compute basic statistics and understand the distinction between a statistic and a parameter" type="vocab" text="Compute basic statistics and understand the distinction between a statistic and a parameter"/>
+					</outline>
+
+<!--9-12: Data analysis:Select and use appropriate statistical methods to analyze data-->
+					<outline text="Select and use appropriate statistical methods to analyze data" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Select and use appropriate statistical methods to analyze data:For univariate measurement data, be able to display the distribution, describe its shape, and select and calculate summary statistics" type="vocab" text="For univariate measurement data, be able to display the distribution, describe its shape, and select and calculate summary statistics"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Select and use appropriate statistical methods to analyze data:For bivariate measurement data, be able to display a scatterplot, describe its shape, and determine regression coefficients, regression equations, and correlation coefficients using technological tools" type="vocab" text="For bivariate measurement data, be able to display a scatterplot, describe its shape, and determine regression coefficients, regression equations, and correlation coefficients using technological tools"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Display and discuss bivariate data where at least one variable is categorical" type="vocab" text="Display and discuss bivariate data where at least one variable is categorical"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Recognize how linear transformations of univariate data affect shape, center, and spread" type="vocab" text="Recognize how linear transformations of univariate data affect shape, center, and spread"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Select and use appropriate statistical methods to analyze data:Identify trends in bivariate data and find functions that model the data or transform the data so that they can be modeled" type="vocab" text="Identify trends in bivariate data and find functions that model the data or transform the data so that they can be modeled"/>
+					</outline>
+
+<!--9-12: Data analysis:Develop and evaluate inferences and predictions that are based on data-->
+					<outline text="Develop and evaluate inferences and predictions that are based on data" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Use simulations to explore the variability of sample statistics from a known population and to construct sampling distributions" type="vocab" text="Use simulations to explore the variability of sample statistics from a known population and to construct sampling distributions"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Understand how sample statistics reflect the values of population parameters and use sampling distributions as the basis for informal inference" type="vocab" text="Understand how sample statistics reflect the values of population parameters and use sampling distributions as the basis for informal inference"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Evaluate published reports that are based on data by examining the design of the study, the appropriateness of the data analysis, and the validity of conclusions" type="vocab" text="Evaluate published reports that are based on data by examining the design of the study, the appropriateness of the data analysis, and the validity of conclusions"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Develop and evaluate inferences and predictions that are based on data:Understand how basic statistical techniques are used to monitor process characteristics in the workplace" type="vocab" text="Understand how basic statistical techniques are used to monitor process characteristics in the workplace"/>
+					</outline>
+
+<!--9-12: Data analysis:Understand and apply basic concepts of probability-->
+					<outline text="Understand and apply basic concepts of probability" type="group" groups:collapsible="false">
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Understand and apply basic concepts of probability:Understand the concepts of sample space and probability distribution and construct sample spaces and distributions in simple cases" type="vocab" text="Understand the concepts of sample space and probability distribution and construct sample spaces and distributions in simple cases"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Understand and apply basic concepts of probability:Use simulations to construct empirical probability distributions" type="vocab" text="Use simulations to construct empirical probability distributions"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Understand and apply basic concepts of probability:Compute and interpret the expected value of random variables in simple cases" type="vocab" text="Compute and interpret the expected value of random variables in simple cases"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Understand and apply basic concepts of probability:Understand the concepts of conditional probability and independent events" type="vocab" text="Understand the concepts of conditional probability and independent events"/>
+						<outline groups:vocab="NCTM:9-12:Data analysis and probability:Understand and apply basic concepts of probability:Understand how to compute the probability of a compound event" type="vocab" text="Understand how to compute the probability of a compound event"/>
+					</outline>
+				</outline>
+
+<!--9-12: Problem solving-->
+				<outline text="Problem solving" type="group" groups:deftn="methods and abilities to use mathematical reasoning to arrive at unknown solutions">
+					<outline groups:vocab="NCTM:9-12:Problem solving:Build new mathematical knowledge through problem solving" type="vocab" text="Build new mathematical knowledge through problem solving"/>
+					<outline groups:vocab="NCTM:9-12:Problem solving:Solve problems that arise in mathematics and in other contexts" type="vocab" text="Solve problems that arise in mathematics and in other contexts"/>
+					<outline groups:vocab="NCTM:9-12:Problem solving:Apply and adapt a variety of appropriate strategies to solve problems" type="vocab" text="Apply and adapt a variety of appropriate strategies to solve problems"/>
+					<outline groups:vocab="NCTM:9-12:Problem solving:Monitor and reflect on the process of mathematical problem solving" type="vocab" text="Monitor and reflect on the process of mathematical problem solving"/>
+				</outline>
+
+<!--9-12: Reasoning and proof-->
+				<outline text="Reasoning and proof" type="group" groups:deftn="the ability to make a hypothesis and apply mathematical logic (inductive reasoning) to arrive at conclusions">
+					<outline groups:vocab="NCTM:9-12:Reasoning and proof:Recognize reasoning and proof as fundamental aspects of mathematics" type="vocab" text="Recognize reasoning and proof as fundamental aspects of mathematics"/>
+					<outline groups:vocab="NCTM:9-12:Reasoning and proof:Make and investigate mathematical conjectures" type="vocab" text="Make and investigate mathematical conjectures"/>
+					<outline groups:vocab="NCTM:9-12:Reasoning and proof:Develop and evaluate mathematical arguments and proofs" type="vocab" text="Develop and evaluate mathematical arguments and proofs"/>
+					<outline groups:vocab="NCTM:9-12:Reasoning and proof:Select and use various types of reasoning and methods of proof" type="vocab" text="Select and use various types of reasoning and methods of proof"/>
+				</outline>
+
+<!--9-12: Communication-->
+				<outline text="Communication" type="group" groups:deftn="the ability to express and share mathematical concepts">
+					<outline groups:vocab="NCTM:9-12:Communication:Organize and consolidate their mathematical thinking through communication" type="vocab" text="Organize and consolidate their mathematical thinking through communication"/>
+					<outline groups:vocab="NCTM:9-12:Communication:Communicate their mathematical thinking coherently and clearly to peers, teachers, and others" type="vocab" text="Communicate their mathematical thinking coherently and clearly to peers, teachers, and others"/>
+					<outline groups:vocab="NCTM:9-12:Communication:Analyze and evaluate the mathematical thinking and strategies of others" type="vocab" text="Analyze and evaluate the mathematical thinking and strategies of others"/>
+					<outline groups:vocab="NCTM:9-12:Communication:Use the language of mathematics to express mathematical ideas precisely" type="vocab" text="Use the language of mathematics to express mathematical ideas precisely"/>
+				</outline>
+
+<!--9-12: Connections-->
+				<outline text="Connections" type="group" groups:deftn="the ability to recognize common themes across different mathematical concepts or other subjects">
+					<outline groups:vocab="NCTM:9-12:Connection:Recognize and use connections among mathematical ideas" type="vocab" text="Recognize and use connections among mathematical ideas"/>
+					<outline groups:vocab="NCTM:9-12:Connection:Understand how mathematical ideas interconnect and build on one another to produce a coherent whole" type="vocab" text="Understand how mathematical ideas interconnect and build on one another to produce a coherent whole"/>
+					<outline groups:vocab="NCTM:9-12:Connection:Recognize and apply mathematics in contexts outside of mathematics" type="vocab" text="Recognize and apply mathematics in contexts outside of mathematics"/>
+				</outline>
+
+<!--9-12: Representation-->
+				<outline text="Representation" type="group" groups:deftn="the ability to illustrate mathematical concepts">
+					<outline groups:vocab="NCTM:9-12:Representation:Create and use representations to organize, record, and communicate mathematical ideas" type="vocab" text="Create and use representations to organize, record, and communicate mathematical ideas"/>
+					<outline groups:vocab="NCTM:9-12:Representation:Select, apply, and translate among mathematical representations to solve problems" type="vocab" text="Select, apply, and translate among mathematical representations to solve problems"/>
+					<outline groups:vocab="NCTM:9-12:Representation:Use representations to model and interpret physical, social, and mathematical phenomena" type="vocab" text="Use representations to model and interpret physical, social, and mathematical phenomena"/>
+				</outline>
+			</outline>
+		</outline>
+	</body>
+</opml>	
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

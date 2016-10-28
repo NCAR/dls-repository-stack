@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: entryG-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:38 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Record ID - other catalog number" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/general/catalogEntries/catalog/@entry">
+		<definition>an identification number of another metadata record that catalogs the same resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-10-06" link1="www.dlese.org" url1="http://www.dlese.org" link2="record ID - library catalog number" style2="bold">If referencing a resource in DLESE, use www.dlese.org to determine the record ID - library catalog number of the resource to which a relationship is being created. Record ID numbers are found on full description pages. Use this record ID information as content for this field.</practice>
+				<practice status="current" originDate="2006-09-21">If referencing a resource that is not in DLESE, use record ID information from the catalog/library/repository the referenced resource resides in.</practice>
+			</dos>
+			<donts>
+				<practice status="current" originDate="2006-09-21">Generally avoid spaces, apostrophes, quotes, slashes, less than or greater than signs, question marks, equal signs or URLs as part of record ID numbers.</practice>
+				<practice status="current" originDate="2006-09-21">If using a DLESE cataloging tool, do not use spaces, apostrophes, quotes, slashes, less than or greater than signs, question marks, equal signs or URLs as part of record ID numbers.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2004-10-24">DLESE-000-000-000-123</practice>
+				<practice status="current" originDate="2004-10-26">ABC-000-000-000-123</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>DLESE-000-000-000-123</example>
+			<other>true</other>
+			<notes>
+				<note>Entry is an attribute of the catalog field.</note>
+				<note>Other XPATH: /itemRecord/metaMetadata/catalogEntries/catalog/@entry</note>
+				<note>Other XPATH: /itemRecord/relations/relation/idEntry/@entry</note>
+			</notes>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

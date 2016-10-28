@@ -1,0 +1,178 @@
+/* $Id: dds_styles_menu.css,v 1.2 2009/02/23 00:30:58 jweather Exp $ */ 
+
+/* ---------------- DLESE OPML Tree Menus styles ---------------- */
+
+/* Page content TABLE (two-column table with tree on left, text on right): */
+.dlese_treeMenuTable, .dlese_treeMenuPageContentTable {
+	/* position: absolute; 
+	top: 0px;  */
+	border: 0px; 
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	border-collapse: collapse;
+}
+/* Tree Menu TD: */
+.dlese_treeMenuTableCellMenu {
+	vertical-align: top;
+	background-color: #5364a1; 
+	padding-top: 0px;
+	padding-right: 1px;
+	margin-right: 1px;
+	padding-left: 0px;
+}
+/* Page body content TD: */
+.dlese_treeMenuTableCellText {
+	vertical-align: top;
+	width: 99%;
+	padding-left: 0px;
+	margin-left: 10px;
+	padding-right: 8px;
+	margin-right: 8px;
+	padding-top: 0px;
+}
+/* .dlese_treeMenuTableCellText H1,H2,H3,H4,H5,H6,P,.dlese_topLink { 
+	margin-left:10px; padding-left: 0px; 
+} */
+.dlese_treeMenuTableCellText TABLE {
+	margin-left: 10px; padding-left: 0px; 
+}
+/* The entire tree is wrapped in a DIV as this: */
+.dlese_treeMenu {
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	top: 10px;
+}
+/* Each menu entry is rendered as its own TABLE: */
+.dlese_treeMenuTables {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	border: 0px;
+}
+.dlese_treeMenuTables TD {
+	padding: 0px;
+	margin: 0px;
+	background-color: #5364a1;
+}
+/* All labels (TR of the entry TABLE): */
+.dlese_treeMenuLabels {
+	color: #ffffff;
+	font-weight: bold;
+	margin: 0px; 
+	padding: 0px;
+	font-size: 95%;
+}
+/* All label text: */
+.dlese_treeMenuLabelText {
+	margin-left: 1px;
+	margin-right: 3px;
+	margin-top: 4px;
+	margin-bottom: 3px;
+	line-height: 98%;
+	padding-left: 1px;
+	background-color: #5364a1;
+}
+/* Link unvisited/visited/hover colors: */
+.dlese_treeMenuLabels A:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+.dlese_treeMenuLabels A:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+.dlese_treeMenuLabels A:hover {
+	color: #ffffaa;
+	text-decoration: none;
+}
+/* Top-level labels (rows): */
+.dlese_treeMenuTopLabels .dlese_treeMenuLabelText {
+	font-weight: bold;
+}
+/* Sub-menu labels (rows): */
+.dlese_treeMenuSubLabels {
+	/* font-family: Arial narrow; UNCOMMENT FOR SKINNY TEXT */
+	font-weight: normal;
+	background-color: #42538f;
+}
+/* Current page label (row): */
+.dlese_treeMenuSelectedLabel {
+	color: #ffffaa;
+	background-color: #213687;
+}
+/* Image (transparent GIF) icons: */
+.dlese_treeMenuIcons {
+	width: 9px;
+	height: 100%;
+}
+/* Icons indent from left edge: */
+.dlese_treeMenuIconsIndent {
+	margin-left: 4px;
+}
+/* Horizontal rule images: */
+.dlese_treeMenuHR {
+	width: 95%;
+	height: 7px;
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+/* Indenting lines before a HR: */
+.dlese_treeMenuHRLines {
+	width: 9px;
+	height: 7px;
+}
+/* RSS includes underneath site menus: */
+.rssItem {
+	border-top: 1px solid #000000;
+	background-color: #6374b1; 
+	color: #000000;	
+	font-size: 85%;
+	margin-left: 4px;
+	padding-left: 4px;
+	margin-right: 4px;
+	padding-right: 2px;
+	margin-bottom: 0px;
+	padding-bottom: 2px;
+	margin-top: 18px;
+	padding-top: 0px;
+	line-height: 12px;
+}
+.rssItem UL {
+	padding: 0px;
+	margin: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+.rssItem LI {
+	padding: 0px;
+	margin: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 2px;
+}
+.rssItem H1 {
+	font-family: verdana;
+	font-size: 80%;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.rssItem A, .rssItem A:link, .rssItem A:visited {
+	color: #000000;
+	text-decoration: none;
+}
+.rssItem A:hover {
+	text-decoration: underline;
+}
+

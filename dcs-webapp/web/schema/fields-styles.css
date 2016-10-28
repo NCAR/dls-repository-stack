@@ -1,0 +1,70 @@
+h4 {
+	margin-top:5px;
+	margin-bottom:3px;
+}
+
+form {
+	margin:0px;
+}
+
+.noToggle, .togglerClosed {
+	padding: 3px 0px 3px 12px;
+}
+
+.togglerClosed {
+	background-image: url(images/arrow_right_gray.gif);
+	background-repeat: no-repeat;
+	background-position: center left;
+	white-space:nowrap;
+	outline: 0;
+}
+
+.togglerOpen {
+	background-image: url(images/arrow_down_gray.gif);
+	outline: 0;
+}
+
+.togglerOver {
+	cursor:pointer;
+	background-color:#f6f6d9;
+}
+
+.debug {
+	font-size:10px;
+	font-style:italic;
+}
+
+/* FIELDS FILE LISTING STYLES */
+ul#fields-file-listing {
+	list-style-type:none;
+}
+
+ul#fields-file-listing li {
+	margin-bottom:10px;
+	font-family:verdana;
+	font-size:14px;
+}
+
+.field-name {
+	font-weight:bold;
+}
+
+.path, .field-link, .small-text {
+	font-family:verdana;
+	font-size:11px;
+}
+
+.field-link a:hover {
+	background-color:#f6f6d9;
+}
+
+/* Fields checker styles */
+ul.report-list {
+	margin:3px 0px 3px 0px;
+}
+
+ul.report-list li {
+	font-size:11px;
+	font-family:verdana;
+	margin:0px 0px 3px 0px;
+}

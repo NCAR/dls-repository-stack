@@ -1,0 +1,230 @@
+<style type="text/css">
+/* #outer-table, #outer-table td {
+	border:blue solid 1px;
+}
+
+#inner-table, #inner-table td {
+	border:yellow solid 1px;
+}
+ */
+#inner-table label {
+	margin:0px 7px 0px 0px;
+}
+</style>
+
+<%-- <c:if test="${queryForm.searchMode == 'status_note'}">
+	<h4>StatusNote!</h4>
+	</c:if> --%>
+
+<html:form styleId="queryForm" action="/browse/query" method="GET">
+		<input type="hidden" name="s" value="0"/>
+	<table id="outer-table" cellspacing="4">
+	  <tr valign="bottom">
+			<td colspan="2">
+				<table id="inner-table" cellspacing="0" cellpadding="0" width="100%">
+					<tr>
+						<td class="input-label"  style="white-space:nowrap">
+							<label for="searchString">Search for:</label></td>
+						<td style="white-space:nowrap">
+							<html:radio property="searchMode" value="raw" styleId="raw_id"/> <label for="raw_id">term</label>
+							<html:radio property="searchMode" value="id" styleId="id_id"/> <label for="id_id">id</label>
+							<html:radio property="searchMode" value="url" styleId="url_id" /> <label for="url_id">url</label>
+							<html:radio property="searchMode" value="status_note" styleId="status_note_id" /> 
+								<label for="status_note_id">status note</label>
+							<%@ include file="search_box_widget.jspf" %>
+						</td>
+						<td align="right">
+							<input type="button" value="Clear search form" class="clearbutton" 
+							 onClick="clearAllSelections();"/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<html:text property="q" styleId="searchString" size="70"/>
+							<%-- <input type="text" value="${queryForm.q}" id="searchString" size="60"/> --%>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td align="center">
+				<html:submit value="  Go  "/>
+			</td>
+	  </tr>
+
+	  <tr valign=top>			
+		<td align="left" valign="top" nowrap="1">
+			<div style="white-space:nowrap">
+				<a href="javascript:toggleVisibility('collection');" 
+					title="Click to show/hide" 
+					class="vocabHeading checkboxHeading"><img src='../images/btnExpandClsd.gif'  id='collection_arrow'
+					alt="Click to show/hide" border="0" hspace="5" width="11" hight="11" />Collection</a>
+					<span class="checkbox-control" style="display:none">
+						<a href="javascript:setBoxes('scs');">all</a> |
+						<a href="javascript:clearBoxes('scs');">none</a>
+					</span>
+			</div>
+		
+			<div id="collection" style=" width:100%;display:none">
+				<div style="margin-left:${indentAmount}px">
+					<c:choose>
+						<c:when test="${empty sessionBean.collectionLabelValues}"><i>no collections</i></c:when>
+						<c:otherwise>
+							<c:forEach var="labelValueBean" items="${sessionBean.collectionLabelValues}" varStatus="i">
+								<input type="checkbox" id="${labelValueBean.value}_scs_id" name="scs" 
+								value="${labelValueBean.value}"
+								<c:if test="${sf:arrayContains(queryForm.scs, labelValueBean.value)}">checked</c:if> /><label 
+								for="${labelValueBean.value}_scs_id">${labelValueBean.label}</label><br/>				
+							</c:forEach>
+						</c:otherwise>
+					</c:choose>				
+				</div>
+			</div>
+			<%-- last editors --%>
+			<div>
+				<a 	href="javascript:toggleVisibility('editor');" 
+					title="Click to show/hide" 
+					class="vocabHeading checkboxHeading"><img src='../images/btnExpandClsd.gif'  id='editor_arrow'
+					alt="Click to show/hide" border="0" hspace="5" width="11" hight="11" />Last Editor</a>
+					<span class="checkbox-control" style="display:none">
+						<a href="javascript:setBoxes('ses');">all</a> |
+						<a href="javascript:clearBoxes('ses');">none</a>
+					</span>
+			</div>
+			<div id="editor" style=" width:100%;display:none">
+				<div style="margin-left:${indentAmount}px">
+					<c:choose>
+						<c:when test="${empty sessionBean.editors}"><i>no editors</i></c:when>
+						<c:otherwise>
+							<c:forEach var="editor" items="${sessionBean.editors}" varStatus="i">
+								<c:set var="editor_label" value="${sf:getFullName (editor, userManager)}" />
+								<input type="checkbox" id="${editor}_editor_id" name="ses" 
+								value="${editor}"
+								<c:if test="${sf:arrayContains(queryForm.ses, editor)}">checked</c:if> /><label 
+								for="${editor}_editor_id">${editor_label}</label><br/>				
+							</c:forEach>
+						</c:otherwise>
+					</c:choose>
+				</div>
+			</div>	
+				
+				<%-- record creators --%>
+			<div>
+				<a 	href="javascript:toggleVisibility('creator');" 
+					title="Click to show/hide" 
+					class="vocabHeading checkboxHeading"><img src='../images/btnExpandClsd.gif'  id='creator_arrow'
+					alt="Click to show/hide" border="0" hspace="5" width="11" hight="11" />Record Creator</a>
+					<span class="checkbox-control" style="display:none">
+						<a href="javascript:setBoxes('srcs');">all</a> |
+						<a href="javascript:clearBoxes('srcs');">none</a>
+					</span>
+			</div>
+			<div id="creator" style=" width:100%;display:none">
+				<div style="margin-left:${indentAmount}px">
+					<c:choose>
+						<c:when test="${empty sessionBean.creators}"><i>no creators</i></c:when>
+						<c:otherwise>
+							<c:forEach var="creator" items="${sessionBean.creators}" varStatus="i">
+								<c:set var="creator_label" value="${sf:getFullName (creator, userManager)}" />
+								<input type="checkbox" id="${creator}_creator_id" name="srcs" 
+								value="${creator}"
+								<c:if test="${sf:arrayContains(queryForm.srcs, creator)}">checked</c:if> /><label 
+								for="${creator}_creator_id">${creator_label}</label><br/>				
+							</c:forEach>
+						</c:otherwise>
+					</c:choose>
+			</div>
+		</div>					
+				
+		</td>
+		<td align="left" valign="top" nowrap="1">
+		<%-- metadata format --%>
+			<div>
+				<a 	href="javascript:toggleVisibility('format');" 
+					title="Click to show/hide" 
+					class="vocabHeading checkboxHeading"><img src='../images/btnExpandClsd.gif' id='format_arrow'
+					alt="Click to show/hide" border="0" hspace="5" width="11" hight="11" />Metadata Format</a>
+					<span class="checkbox-control" style="display:none">
+						<a href="javascript:setBoxes('sfmts');">all</a> |
+						<a href="javascript:clearBoxes('sfmts');">none</a>
+					</span>					
+			</div>
+			<div id="format" style=" width:100%;display:none">
+				<div style="margin-left:${indentAmount}px">
+					<c:choose>
+						<c:when test="${empty sessionBean.indexedFormats}"><i>no formats</i></c:when>
+						<c:otherwise>
+							<c:forEach var="fmt" items="${sessionBean.indexedFormats}" varStatus="i">
+								<c:set var="fmt_label" value="${fmt.label}" />
+								<input type="checkbox" id="${fmt.value}_fmt_id" name="sfmts" 
+								value="${fmt.value}"
+								<c:if test="${sf:arrayContains(queryForm.sfmts, fmt.value)}">checked</c:if> /><label 
+								for="${fmt.value}_fmt_id">${fmt_label}</label><br/>				
+							</c:forEach>
+						</c:otherwise>
+					</c:choose>
+				</div>
+			</div>	
+			
+			<%-- validity --%>
+			<div>
+				<a 	href="javascript:toggleVisibility('validity');" 
+					title="Click to show/hide" 
+					class="vocabHeading checkboxHeading"><img src='../images/btnExpandClsd.gif'  id='validity_arrow'
+					alt="Click to show/hide" border="0" hspace="5" width="11" hight="11" />Validity</a>
+			</div>
+			<div id="validity" style=" width:100%;display:none">
+				<div style="margin-left:${indentAmount}px">
+					<input type="radio" id="valid_all_id" name="vld"
+							value=""
+							<c:if test="${empty queryForm.vld}">checked</c:if> /><label 
+							for="valid_all_id">all</label><br/>
+					<input type="radio" id="valid_id" name="vld" 
+							value="valid"
+							<c:if test="${queryForm.vld == 'valid'}">checked</c:if> /><label 
+							for="valid_id">valid records</label><br/>				
+					<input type="radio" id="notvalid_id" name="vld" 
+						value="notvalid"
+						<c:if test="${queryForm.vld == 'notvalid'}">checked</c:if> /><label 
+						for="notvalid_id">non-valid records</label><br/>	
+				</div>
+			</div>	
+			
+			<%-- status --%>
+			<div>
+				<a 	href="javascript:toggleVisibility('status');" 
+					title="Click to show/hide" 
+					class="vocabHeading checkboxHeading"><img src='../images/btnExpandClsd.gif'  id='status_arrow'
+					alt="Click to show/hide" border="0" hspace="5" width="11" hight="11" />Status</a>
+					<span class="checkbox-control" style="display:none">
+						<a href="javascript:setBoxes('sss');">all</a> |
+						<a href="javascript:clearBoxes('sss');">none</a>
+					</span>					
+			</div>
+			<div id="status" style=" width:100%;display:none">
+				<div style="margin-left:${indentAmount}px">
+					<c:choose>
+						<c:when test="${empty sessionBean.statuses}"><i>no statuses</i></c:when>
+						<c:otherwise>
+							<c:forEach var="entry" items="${sessionBean.statuses}" varStatus="i">
+								<input type="checkbox" id="${entry.key}_status_id" name="sss" 
+									value="${entry.key}"
+									<c:if test="${sf:arrayContains(queryForm.sss, entry.key)}">checked</c:if> /><label 
+									for="${entry.key}_status_id" >${entry.key}</label><br/>
+							</c:forEach>
+						</c:otherwise>
+					</c:choose>
+				</div>
+			</div>	
+		</td>
+		
+		<td align="center" nowrap="true">
+			<div class="input-label">Results per page</div>
+			<html:select name="queryForm" property="resultsPerPage"
+				onchange="doSetNumPagingRecords(this.form.resultsPerPage.value)">
+			<html:options property="resultsPerPageOptions" />
+			</html:select>
+		</td>
+	 </tr>		
+
+	 </table>
+ </html:form>

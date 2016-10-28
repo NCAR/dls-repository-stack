@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.7.00">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Schema Overview  **************************************************************
+			Definition: 			Controlled vocabulary schema for DLESE metadata frameworks
+			Framework use: 	ADN-I (item)
+			Source org:			DLESE Program Center (DPC); http://www.dlese.org
+			Source values:		DPC
+			Source last update:	2003-05-07
+			DPC last update:		2002-02-17
+			Notes: 				Developed and maintained at the DPC. Put together from community input, GEM and IMS.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>********************** History of Change *************************
+2003-02-13: The term in situ remains in situ because could not come to a consensus as to which is correct, in situ or in-situ
+2003-02-17: Changes Learning Materials to Learning materials
+2003-05-07: Removed 'Text:Annotation' as a resource type
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="DLESEresourceTypeType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  DLESEresourceType  **************************************
+				Lists the values that will appear in the metadata record
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="DLESE:Audio:Audio book"/>
+			<xsd:enumeration value="DLESE:Audio:Audio webcast"/>
+			<xsd:enumeration value="DLESE:Audio:Lecture"/>
+			<xsd:enumeration value="DLESE:Audio:Music"/>
+			<xsd:enumeration value="DLESE:Audio:Oral history"/>
+			<xsd:enumeration value="DLESE:Audio:Radio broadcast"/>
+			<xsd:enumeration value="DLESE:Audio:Sound"/>
+			<xsd:enumeration value="DLESE:Data:In situ dataset"/>
+			<xsd:enumeration value="DLESE:Data:Modeled dataset"/>
+			<xsd:enumeration value="DLESE:Data:Remotely sensed dataset"/>
+			<xsd:enumeration value="DLESE:Learning materials:Assessment"/>
+			<xsd:enumeration value="DLESE:Learning materials:Case study"/>
+			<xsd:enumeration value="DLESE:Learning materials:Classroom activity"/>
+			<xsd:enumeration value="DLESE:Learning materials:Computer activity"/>
+			<xsd:enumeration value="DLESE:Learning materials:Course"/>
+			<xsd:enumeration value="DLESE:Learning materials:Curriculum"/>
+			<xsd:enumeration value="DLESE:Learning materials:Field activity"/>
+			<xsd:enumeration value="DLESE:Learning materials:Field trip guide"/>
+			<xsd:enumeration value="DLESE:Learning materials:Instructor guide"/>
+			<xsd:enumeration value="DLESE:Learning materials:Lab activity"/>
+			<xsd:enumeration value="DLESE:Learning materials:Lesson plan"/>
+			<xsd:enumeration value="DLESE:Learning materials:Module or unit"/>
+			<xsd:enumeration value="DLESE:Learning materials:Presentation or demonstration"/>
+			<xsd:enumeration value="DLESE:Learning materials:Problem set"/>
+			<xsd:enumeration value="DLESE:Learning materials:Project"/>
+			<xsd:enumeration value="DLESE:Learning materials:Syllabus"/>
+			<xsd:enumeration value="DLESE:Learning materials:Tutorial"/>
+			<xsd:enumeration value="DLESE:Learning materials:Virtual field trip"/>
+			<xsd:enumeration value="DLESE:Offline:Physical object"/>
+			<xsd:enumeration value="DLESE:Portal:Commercial portal"/>
+			<xsd:enumeration value="DLESE:Portal:Educational portal"/>
+			<xsd:enumeration value="DLESE:Portal:Government portal"/>
+			<xsd:enumeration value="DLESE:Portal:Nonprofit portal"/>
+			<xsd:enumeration value="DLESE:Service:Ask an expert"/>
+			<xsd:enumeration value="DLESE:Service:Clearinghouse"/>
+			<xsd:enumeration value="DLESE:Service:Forum or discussion"/>
+			<xsd:enumeration value="DLESE:Service:Listserv"/>
+			<xsd:enumeration value="DLESE:Service:Message board"/>
+			<xsd:enumeration value="DLESE:Service:Search engine"/>
+			<xsd:enumeration value="DLESE:Text:Abstract or summary"/>
+			<xsd:enumeration value="DLESE:Text:Book"/>
+			<xsd:enumeration value="DLESE:Text:Glossary"/>
+			<xsd:enumeration value="DLESE:Text:Index or bibliography"/>
+			<xsd:enumeration value="DLESE:Text:Journal article"/>
+			<xsd:enumeration value="DLESE:Text:Periodical"/>
+			<xsd:enumeration value="DLESE:Text:Policy or procedure"/>
+			<xsd:enumeration value="DLESE:Text:Proceedings"/>
+			<xsd:enumeration value="DLESE:Text:Proposal"/>
+			<xsd:enumeration value="DLESE:Text:Reference"/>
+			<xsd:enumeration value="DLESE:Text:Report"/>
+			<xsd:enumeration value="DLESE:Text:Thesis"/>
+			<xsd:enumeration value="DLESE:Tool:Calculation or conversion tool"/>
+			<xsd:enumeration value="DLESE:Tool:Code"/>
+			<xsd:enumeration value="DLESE:Tool:Software"/>
+			<xsd:enumeration value="DLESE:Visual:Artistic illustration"/>
+			<xsd:enumeration value="DLESE:Visual:Map"/>
+			<xsd:enumeration value="DLESE:Visual:Photograph"/>
+			<xsd:enumeration value="DLESE:Visual:Remotely sensed imagery"/>
+			<xsd:enumeration value="DLESE:Visual:Scientific illustration"/>
+			<xsd:enumeration value="DLESE:Visual:Scientific visualization"/>
+			<xsd:enumeration value="DLESE:Visual:Video"/>
+			<xsd:enumeration value="DLESE:Visual:Visual webcast"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DLESEresourceTypeLeafType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  DLESEresourceLeafType  **************************************
+				Lists leaf values
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Abstract or summary"/>
+			<xsd:enumeration value="Artistic illustration"/>
+			<xsd:enumeration value="Ask an expert"/>
+			<xsd:enumeration value="Assessment"/>
+			<xsd:enumeration value="Audio book"/>
+			<xsd:enumeration value="Audio webcast"/>
+			<xsd:enumeration value="Book"/>
+			<xsd:enumeration value="Calculation or conversion tool"/>
+			<xsd:enumeration value="Case study"/>
+			<xsd:enumeration value="Classroom activity"/>
+			<xsd:enumeration value="Clearinghouse"/>
+			<xsd:enumeration value="Code"/>
+			<xsd:enumeration value="Commercial portal"/>
+			<xsd:enumeration value="Computer activity"/>
+			<xsd:enumeration value="Course"/>
+			<xsd:enumeration value="Curriculum"/>
+			<xsd:enumeration value="Educational portal"/>
+			<xsd:enumeration value="Field activity"/>
+			<xsd:enumeration value="Field trip guide"/>
+			<xsd:enumeration value="Forum or discussion"/>
+			<xsd:enumeration value="Glossary"/>
+			<xsd:enumeration value="Government portal"/>
+			<xsd:enumeration value="In situ dataset"/>
+			<xsd:enumeration value="Index or bibliography"/>
+			<xsd:enumeration value="Instructor guide"/>
+			<xsd:enumeration value="Journal article"/>
+			<xsd:enumeration value="Lab activity"/>
+			<xsd:enumeration value="Lecture"/>
+			<xsd:enumeration value="Lesson plan"/>
+			<xsd:enumeration value="Listserv"/>
+			<xsd:enumeration value="Map"/>
+			<xsd:enumeration value="Message board"/>
+			<xsd:enumeration value="Modeled dataset"/>
+			<xsd:enumeration value="Module or unit"/>
+			<xsd:enumeration value="Music"/>
+			<xsd:enumeration value="Nonprofit portal"/>
+			<xsd:enumeration value="Oral history"/>
+			<xsd:enumeration value="Periodical"/>
+			<xsd:enumeration value="Photograph"/>
+			<xsd:enumeration value="Physical object"/>
+			<xsd:enumeration value="Policy or procedure"/>
+			<xsd:enumeration value="Presentation or demonstration"/>
+			<xsd:enumeration value="Problem set"/>
+			<xsd:enumeration value="Proceedings"/>
+			<xsd:enumeration value="Project"/>
+			<xsd:enumeration value="Proposal"/>
+			<xsd:enumeration value="Radio broadcast"/>
+			<xsd:enumeration value="Reference"/>
+			<xsd:enumeration value="Remotely sensed dataset"/>
+			<xsd:enumeration value="Remotely sensed imagery"/>
+			<xsd:enumeration value="Report"/>
+			<xsd:enumeration value="Scientific illustration"/>
+			<xsd:enumeration value="Scientific visualization"/>
+			<xsd:enumeration value="Search engine"/>
+			<xsd:enumeration value="Software"/>
+			<xsd:enumeration value="Sound"/>
+			<xsd:enumeration value="Syllabus"/>
+			<xsd:enumeration value="Thesis"/>
+			<xsd:enumeration value="Tutorial"/>
+			<xsd:enumeration value="Video"/>
+			<xsd:enumeration value="Virtual field trip"/>
+			<xsd:enumeration value="Visual webcast"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

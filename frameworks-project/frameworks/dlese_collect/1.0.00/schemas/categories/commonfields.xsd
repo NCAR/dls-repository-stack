@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  OVERVIEW  *************************</xsd:documentation>
+		<xsd:documentation>Framework: Collection-level CATEGORY schema</xsd:documentation>
+		<xsd:documentation>Tag(s) defined: global elements, person, organization</xsd:documentation>
+		<xsd:documentation>Source: DLESE Program Center (DPC); http://www.dlese.org</xsd:documentation>
+		<xsd:documentation>Last update:	2004-01-26</xsd:documentation>
+		<xsd:documentation>Notes: Developed and maintained at the DPC</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. </xsd:documentation>
+		<xsd:documentation>These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  VOCABULARY schemas to include  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="union-vocabs.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>*****  ROOT element   *************************</xsd:documentation>
+		<xsd:documentation>There is no root element for this schema.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  GLOBAL Elements  (alpha order)   *************************</xsd:documentation>
+		<xsd:documentation>The individual CATEGORYschemas determine the minimum and maximum occurrences for these elements.</xsd:documentation>
+		<xsd:documentation>description is simple (string-like) - general descriptive information; see specific use for type of descriptive information</xsd:documentation>
+		<xsd:documentation>language is language - language information for metadata or resources; see specific use to determine which</xsd:documentation>
+		<xsd:documentation>title - </xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="description" type="stringTextType"/>
+	<xsd:element name="language" type="xsd:language"/>
+	<xsd:element name="title" type="stringTextType"/>
+	<xsd:annotation>
+		<xsd:documentation>*****  Complex Types  (alpha order) *************************</xsd:documentation>
+		<xsd:documentation>catalogType is part of catalogEntriesType</xsd:documentation>
+		<xsd:documentation>catalogEntriesType used in general, metaMetadata and relation</xsd:documentation>
+		<!--		<xsd:documentation>IDandURLType used in many places</xsd:documentation> -->
+		<xsd:documentation>organizationType used in lifecycle and metaMetadata</xsd:documentation>
+		<xsd:documentation>personType used in lifecycle and metaMetadata</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  catalogType  *************************</xsd:documentation>
+		<xsd:documentation>entry is simple - the catalog record number (id number)</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="catalogType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+<!--2005-05-10: Changed to xsd:string to accomdate the need in the DLESE Collection System to create valide collection format records with a prefix other than DLESE-COLLECTION-->			
+<!--			<xsd:attribute name="entry" type="entryType" use="required"/> -->
+				<xsd:attribute name="entry" type="xsd:string" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>***** catalogEntriesType  *************************</xsd:documentation>
+		<xsd:documentation>catalog is complex - catalog or library info. including the record number and possibly the name of the catalog or library</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="catalogEntriesType">
+		<xsd:sequence>
+			<xsd:element name="catalog" type="catalogType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--	<xsd:complexType name="IDandURLType">
+		<xsd:annotation>
+			<xsd:documentation>*****  	IDandURLType  *************************</xsd:documentation>
+			<xsd:documentation>URL is a an attribute string</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="URL" type="stringTextType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType> -->
+	<xsd:annotation>
+		<xsd:documentation>*****  	organizationType  *************************</xsd:documentation>
+		<xsd:documentation>email	is a simple type</xsd:documentation>
+		<xsd:documentation>Note: xsd:string is used because transforms (particularly from DLESE-IMS to ADN) and the suppression of cataloger information may cause no content. But if the tag is required, then this null content must be allowed to happen. Therefore, use xsd:string (on the required elements except email) becuase it allows null compared to stringTextType
+</xsd:documentation>
+		<xsd:documentation>instName is a string - an organization's name</xsd:documentation>
+		<xsd:documentation>instDept is simple - an organization's department name</xsd:documentation>
+		<xsd:documentation>instPosition is simple - an aribitrary job positions in the organization (e.g. librarian)</xsd:documentation>
+		<xsd:documentation>instUrl is simple - the organization web address</xsd:documentation>
+		<xsd:documentation>instEmail is simple - the organization's email address</xsd:documentation>
+		<xsd:documentation>contactID is simple - not used - an internal DPC tracking number to the contributor</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="organizationType">
+		<xsd:sequence>
+			<xsd:element name="instName" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="instDept" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="instPosition" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="instUrl" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="instEmail" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="contactID" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  	personType  *************************</xsd:documentation>
+		<xsd:documentation>Note: xsd:string is used because transforms (particularly from DLESE-IMS to ADN) and the suppression of cataloger information may cause no content. But if the tag is required, then this null content must be allowed to happend. Therefore, use xsd:string (on the required elements except email) becuase it allows null compared to stringTextType.</xsd:documentation>
+		<xsd:documentation>nameTitle is simple; see nameTitle.xsd; the salutation of a person contributor</xsd:documentation>
+		<xsd:documentation>nameFirst is a string - the first name of a person contributor</xsd:documentation>
+		<xsd:documentation>nameMiddle is a string - the middle name of a person contributor</xsd:documentation>
+		<xsd:documentation>nameLast is a string - the last name of a person contributor</xsd:documentation>
+		<xsd:documentation>instName is a string - an organization's name</xsd:documentation>
+		<xsd:documentation>instDept is simple - an organization's department name</xsd:documentation>
+		<xsd:documentation>emailPrimary is simple - the main email address for a person contributor</xsd:documentation>
+		<xsd:documentation>emailAlt is simple - the alternate email address for a person contributor</xsd:documentation>
+		<xsd:documentation>contactID is simple - not used - an internal DPC tracking number to the contributor</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="personType">
+		<xsd:sequence>
+			<xsd:element name="nameTitle" type="nameTitleType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="nameFirst" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="nameMiddle" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="nameLast" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="instName" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="instDept" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="emailPrimary" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="emailAlt" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="contactID" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>*****  Simple Types (alpha order) *************************</xsd:documentation>
+		<xsd:documentation>entryType is part of catalogType</xsd:documentation>
+		<xsd:documentation>emailType is part of personType and organizationType</xsd:documentation>
+		<xsd:documentation>stringTextType is part of many types</xsd:documentation>
+		<xsd:documentation>union.dateType is part of many types</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  entryType  *************************</xsd:documentation>
+		<xsd:documentation> Pattern for the collection record id numbers</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="entryType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="DLESE-COLLECTION-[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*****  emailType  *************************</xsd:documentation>
+		<xsd:documentation>E-Mail address on the Internet (must be in name@company.net format). Both numbers and letters are allowed on either side of the @ sign.******** Not currently being used. But may be used in the future. ******** Really need a better pattern on emails</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="emailType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[\p{L}_-{\d}]+(\.[\p{L}_-{\d}]+)*@[\p{L}_{\d}]+(\.[\p{L}_{\d}]+)+"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*****  stringTextType  *************************</xsd:documentation>
+		<xsd:documentation>
+				Use this patterned string to ensure that a null tag is not valid string content.
+				Note: that xsd:string allows content to be null even if the element is required.
+				Note: xsd:string is used in person and organization because for some situations null may be needed.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="stringTextType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value=".[\S\s]*"/>
+			<!-- 		<xsd:pattern value="(.)+"/> does not allow carriage returns -->
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*****  union.dateType  *************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="union.dateType">
+		<xsd:union memberTypes="xsd:date xsd:gYearMonth xsd:gYear"/>
+	</xsd:simpleType>
+</xsd:schema>

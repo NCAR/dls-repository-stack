@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: contactIDO-no-fields-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/news-opps/1.0.00/non-vocab-fields.xsd">
+	<field name="Contact ID - organization" language="en-us" metaFormat="news_opps" metaVersion="1.0.00" path="/news-oppsRecord/contributors/contributor/organization/contactID">
+		<definition>a number or code that is used to refer to an organization and its corresponding contact information</definition>
+
+		<bestPractices>
+			<donts>
+				<practice status="current" originDate="2004-10-26">Do not use this field. It is underdevelopment.</practice>
+			</donts>
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>Not being used at this so no example is provided</example>
+			<other>true</other>
+			<notes>
+				<note>The intent of this field is to use a number or code to refer to an organization without having to enter organization information. The ability to accomplish this task is still under development and therefore this field should not be used unless it is being used for local needs only. Local needs information should be removed prior to sharing metadata records.</note>
+				<note>The field also occurs with the following XPATH: /news-oppsRecord/contributors/contributor/person/contactID</note>
+			</notes>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

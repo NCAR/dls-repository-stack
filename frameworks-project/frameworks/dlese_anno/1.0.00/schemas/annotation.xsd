@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  $Id: annotation.xsd,v 1.1 2009/01/30 21:32:40 ginger Exp $--> 
+<xsd:schema targetNamespace="http://www.dlese.org/Metadata/annotation" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.dlese.org/Metadata/annotation" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.00">
+	<xsd:annotation>
+		<xsd:documentation>*****  SCHEMA PURPOSE  ******</xsd:documentation>
+		<xsd:documentation>Defines the annotation metadata framework for the Digital Library for Earrth System Education (DLESE)</xsd:documentation>
+		<xsd:documentation>Allows comments, teaching tips, opinions, reviews on use or context, educational standards</xsd:documentation>
+		<xsd:documentation>Includes information on the status of the annotation, the type of annotation, format of the annotation, the annotating service and access to the annotation contents either directly or through a URL</xsd:documentation>
+		<xsd:documentation>Includes the name of the individual annotator or annotating organization but it may be anonymous</xsd:documentation>
+		<xsd:documentation>Allows for resources to be rated; see the rating controlled vocabulary in ratings.xsd</xsd:documentation>
+		<xsd:documentation>Contains pathway information for deciding when annotated items are part of the DLESE Reviewed Collection (DRC)</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  SCHEMA EXPLANATION  *****</xsd:documentation>
+		<xsd:documentation>This is the MAIN schema for the DLESE annotation metadata framework</xsd:documentation>
+		<xsd:documentation>This MAIN schema may call other CATEGORY schemas to create the metadata framework structure.</xsd:documentation>
+		<xsd:documentation>CATEGORY schemas may call other CATEGORY schemas or VOCABULARY schemas in building the metadata structure.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  NAMESPACES  *****</xsd:documentation>    
+		<xsd:documentation>The chameleon approach to namespace conventions is used in the CATEGORY and VOCABULARY schemas.</xsd:documentation>
+		<xsd:documentation>Only this MAIN schema has a target namespace, http://www.dlese.org/annotation</xsd:documentation>
+		<xsd:documentation>The CATEGORY and VOCABULARY schemas do not have target namespaces (allows for plug-n-play components and vocabularies).</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  ROOT ELEMENT  *****</xsd:documentation>  
+		<xsd:documentation>The root element of this schema is annotationRecord.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  SCHEMA DEVELOPMENT  *****</xsd:documentation>       
+		<xsd:documentation>The Venetian Blind approach is used for this MAIN schema and all other CATEGORY and VOCABULARY schemas.</xsd:documentation>
+		<xsd:documentation>Elements within all schemas are used for fields (quantities) of the annotation metadata framework.</xsd:documentation>
+		<xsd:documentation>When elements have controlled vocabularies that are hierarchal, the vocabularies appear in the element as a colon separated text string.</xsd:documentation>
+		<xsd:documentation>Attributes are used when additional information is required for the content of an element or if two pieces of information are required.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*****  HISTORY  *****</xsd:documentation>
+		<xsd:documentation>2006-11-13: In the content element, changed xsd:choice min occurs=1, max occurs=3 to xsd:all</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** DEFINING COMPLEX and SIMPLE TYPES  *****</xsd:documentation>    
+		<xsd:documentation>Since the metadata framework uses Venetian Blind schema development, most metadata fields are defined as complex or simple types.</xsd:documentation>
+		<xsd:documentation>This improves re-use for other frameworks developed at the DLESE Program Center (DPC) or within the DLESE community.</xsd:documentation>
+		<xsd:documentation>As such, each schema has a complex and simple type section. Built-in simple types are defined when an elment is defined.</xsd:documentation>
+		<xsd:documentation>Derived simple types are used when a metadata field appears more than once in a CATEGORY schema or if restrictions are needed on element content.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. </xsd:documentation>
+		
+<xsd:documentation>This schema is free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA </xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:annotation>
+		<xsd:documentation>*****  Other CATEGORY schemas to include  *****</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:annotation>
+		<xsd:documentation>*****  VOCABULARY schemas to include  *****</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="vocabs/format.xsd"/>
+	<xsd:include schemaLocation="vocabs/pathway.xsd"/>
+	<xsd:include schemaLocation="vocabs/roleAnnotation.xsd"/>
+	<xsd:include schemaLocation="vocabs/nameTitle.xsd"/>
+	<xsd:include schemaLocation="vocabs/rating.xsd"/>
+	<xsd:include schemaLocation="vocabs/status.xsd"/>
+	<xsd:include schemaLocation="vocabs/type.xsd"/>
+
+	<xsd:annotation>
+		<xsd:documentation>*****  ROOT element  *****</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="annotationRecord" type="annotationRecordType"/>
+
+	<xsd:annotation>
+		<xsd:documentation>annotationRecordType is complex</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:annotation>
+		<xsd:documentation>*****  Complex Types and Groups (alpha order)  *****</xsd:documentation>
+
+		<xsd:documentation>annotationType - part of annotationRecordType</xsd:documentation>		
+		<xsd:documentation>annotationRecordType - is the ROOT type</xsd:documentation>
+		<xsd:documentation>contentType - part of annotationType</xsd:documentation>		
+		<xsd:documentation>contributorType - part of contributorsType</xsd:documentation>		
+		<xsd:documentation>contributorsType - part annotationType</xsd:documentation>		
+		<xsd:documentation>dateType - part of serviceType</xsd:documentation>		
+		<xsd:documentation>moreInfoType - part of annotationRecordType</xsd:documentation>		
+		<xsd:documentation>organizationType - part of contributorType</xsd:documentation>		
+		<xsd:documentation>personType - part of contributorType</xsd:documentation>		
+		<xsd:documentation>serviceType - part of annotationType</xsd:documentation>		
+	</xsd:annotation>
+
+	<xsd:complexType name="annotationType">
+		<xsd:annotation>
+			<xsd:documentation>*****  annotationType  *****</xsd:documentation>
+			<xsd:documentation>annotationType - information (contents, contributor, type, etc.) about the annotation</xsd:documentation>
+			<xsd:documentation>title - the title of the annotation if one exists; simple type</xsd:documentation>
+			<xsd:documentation>type - the type of annotation; complex type; see type.xsd</xsd:documentation>
+			<xsd:documentation>format - the format of the annotation; simple type, see format.xsd</xsd:documentation>
+			<xsd:documentation>date - the date of the annotation; simple type</xsd:documentation>
+			<xsd:documentation>status - indicates a status associated with the annotation information; simple type; see status.xsd</xsd:documentation>
+			<xsd:documentation>content - the content of the annotation expressed as a rating, decription or URL; complex type</xsd:documentation>
+			<xsd:documentation>context - a URL within (not the primary resource URL) the annotated resource to which the annotation applies; complex type</xsd:documentation>
+			<xsd:documentation>contributors - persons or organizations making the annotation; complex type</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="title" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="type" type="typeType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="format" type="formatType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="status" type="statusType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="content" type="contentType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="context"  type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="contributors" type="contributorsType" minOccurs="1" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="annotationRecordType">
+		<xsd:annotation>
+			<xsd:documentation>*****  annotationRecordType  *****</xsd:documentation>
+			<xsd:documentation>annotationRecordType - the type for the root element of annotationRecord</xsd:documentation>
+			<xsd:documentation>service - information about the annotation service and the metadata record; complex type</xsd:documentation>
+			<xsd:documentation>itemID - the catalog record identification number of the item being annotated; simple type</xsd:documentation>
+			<xsd:documentation>annotation - information (contents, contributor, type, etc.) about the annotation; complex type</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="service" type="serviceType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemID" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="annotation" type="annotationType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="moreInfo" type="moreInfoType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="contentType">
+		<xsd:annotation>
+			<xsd:documentation>*****  contentType  *****</xsd:documentation>
+			<xsd:documentation>contentType - the content of the annotation expressed as a rating, decription or URL</xsd:documentation>
+			<xsd:documentation>description - the narrative of or an explanation about the annotation; simple type</xsd:documentation>
+			<xsd:documentation>rating - an overall judgment of a resource; complext type; see rating.xsd</xsd:documentation>
+			<xsd:documentation>url	- a link that provides access to or more information about the annotation; simple type</xsd:documentation>
+			<xsd:documentation>stringTextType - a regular expression requiring content to be present (text or child elements); simple type</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="rating" type="ratingType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="description" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="url" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>			
+	</xsd:complexType>
+
+	<xsd:complexType name="contributorType">
+		<xsd:annotation>
+			<xsd:documentation>*****  contributorType  *****</xsd:documentation>
+			<xsd:documentation>contributorType - an individual person or individual ogranization making the annotation</xsd:documentation>
+			<xsd:documentation>date - the calendar date the contributor made the annotation; attribute; simple type; (may only be known to the year)</xsd:documentation>
+			<xsd:documentation>organization - the organization making the annotation; complex type</xsd:documentation>
+			<xsd:documentation>person - the individual making the annotation; complex type</xsd:documentation>
+			<xsd:documentation>role - the role of the annotator in making the annotation; simple type; attribute; see roleAnnotation.xsd</xsd:documentation>
+			<xsd:documentation>share - an indication of whether the contributor inforamtion can be made public; built-in type</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="person" type="personType" maxOccurs="1"/>
+			<xsd:element name="organization" type="organizationType" maxOccurs="1"/>
+		</xsd:choice>
+		<xsd:attribute name="role" type="roleAnnotationType" use="required"/>
+		<xsd:attribute name="date" type="union.dateType" use="required"/>
+		<xsd:attribute name="share" type="xsd:boolean" use="optional" default="false"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="contributorsType">
+		<xsd:annotation>
+			<xsd:documentation>*****  contributorsType  *****</xsd:documentation>
+			<xsd:documentation>contributorsType - persons or organizations making the annotation</xsd:documentation>
+			<xsd:documentation>contributor - an individual person or individual ogranization making the annotation; complex type</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="contributor" type="contributorType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="dateType">
+		<xsd:annotation>
+			<xsd:documentation>*****  dateType  *****</xsd:documentation>
+			<xsd:documentation>dateType - calendar date for the creation or modification of the metadata record</xsd:documentation>
+			<xsd:documentation>created - the creation date of the annotation metadata record; built-in type; attribute</xsd:documentation>
+			<xsd:documentation>modified	- the modification date of the annoation metadata record; built-in type; attribute</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="created" type="xsd:date" use="required"/>
+				<xsd:attribute name="modified" type="xsd:date" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="moreInfoType">
+		<xsd:annotation>
+			<xsd:documentation>*****  moreInfoType  *****</xsd:documentation>
+			<xsd:documentation>moreInfoType - allows any additional XML elements (not plain text) to be in the metadata record</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="organizationType">
+		<xsd:annotation>
+			<xsd:documentation>*****  organizationType  *****</xsd:documentation>
+			<xsd:documentation>organizationType - information about the organization making the annotation</xsd:documentation>
+			<xsd:documentation>instName - the name of the institution; simple type</xsd:documentation>
+			<xsd:documentation>instDept - the department name within the institution; simple type</xsd:documentation>
+			<xsd:documentation>instPosition - a professional position within the institution; simple type</xsd:documentation>
+			<xsd:documentation>url  - the url of the institution; simple type</xsd:documentation>
+			<xsd:documentation>email - an email address for the institution; simple type</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="instName" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="instDept" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="instPosition" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="url" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="email" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:complexType name="personType">
+		<xsd:annotation>
+			<xsd:documentation>*****  personType  *****</xsd:documentation>
+			<xsd:documentation>personType - information about an individual person</xsd:documentation>
+			<xsd:documentation>nameTitle - the form of address of the individual person; simple type; see nameTitle.xsd</xsd:documentation>
+			<xsd:documentation>nameFirst - the first name of the individual person; simple type</xsd:documentation>
+			<xsd:documentation>nameMiddle - the middle name of the individual person; simple type</xsd:documentation>
+			<xsd:documentation>nameLast - the last name or family name of the individual person; simple type</xsd:documentation>
+			<xsd:documentation>instName - the institutional affiliation of the individual person; simple type</xsd:documentation>
+			<xsd:documentation>instDept - the department of the institution the individual person is associated with; simple type</xsd:documentation>
+			<xsd:documentation>instPosition - the professional position of the individual person in their affiliated institution; simple type</xsd:documentation>
+			<xsd:documentation>email - the email of the inidividual person; simple type</xsd:documentation>
+			<xsd:documentation>emailAlt - an alternate email of the inidividual person; simple type</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="nameTitle" type="nameTitleType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="nameFirst" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="nameMiddle" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="nameLast" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="instName" type="stringTextType" minOccurs="1" maxOccurs="1" default="No institutional affiliation"/>
+			<xsd:element name="instDept" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="instPosition" type="stringTextType" minOccurs="0" maxOccurs="1" />
+			<xsd:element name="email" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="emailAlt" type="stringTextType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="serviceType">
+		<xsd:annotation>
+			<xsd:documentation>*****  serviceType  *****</xsd:documentation>
+			<xsd:documentation>serviceType - information about the annotation service</xsd:documentation>
+			<xsd:documentation>name - the name of the annotation service; simple type</xsd:documentation>
+			<xsd:documentation>recordID - the catalog record number of the metadata record; simple type</xsd:documentation>
+			<xsd:documentation>date - information pertaining to date the annotation record was created or modified; complex type</xsd:documentation>
+			<xsd:documentation>pathway - the name of the group approving resources for the DLESE Reviewed Collection (DRC); should only be used in consultation with the DLESE Program Center; simple type; see pathway.xsd</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="name" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="pathway" type="pathwayType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="recordID" type="stringTextType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="date" type="dateType" minOccurs="1" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:documentation>*****  Simple Types (alpha order)  *****</xsd:documentation>
+		<xsd:documentation>stringTextType - a pattern used to exclude null content from strings</xsd:documentation>
+		<xsd:documentation>union.dateType - calendar dates of the form YYYY, YYYY-MM, YYYY-MM-DD</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:simpleType name="stringTextType">
+		<xsd:annotation>
+			<xsd:documentation>stringTextType - a regular expression that enforce the presence of content (text or elements)</xsd:documentation>
+			<xsd:documentation>Pattern \s*.[\S\s]* ensures that a null tag is not valid string content</xsd:documentation>
+			<xsd:documentation>Pattern \s*.[\S\s]* allows leading blank characters and leading carriage returns</xsd:documentation>
+			<xsd:documentation>Pattern .[\S\s]* ensures that a null tag is not valid string content</xsd:documentation>
+			<xsd:documentation>Pattern .[\S\s]* does not allow leading blank characters or carriage returns</xsd:documentation>
+			<xsd:documentation>Pattern .*\S+[\s\S]* ensures that a null tag is not valid string content</xsd:documentation>
+			<xsd:documentation>Pattern .*\S+[\s\S]* allows leading blank characters but not leading carriage returns</xsd:documentation>
+			<xsd:documentation>Note: that xsd:string allows content to be null even if the element is required</xsd:documentation>
+			<xsd:documentation>Note: that xsd:string with nillable equal false allows content to be null even if the element is required</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\s*.[\S\s]*" />
+<!--		<xsd:pattern value=".[\S\s]*"/>-->
+<!--		<xsd:pattern value=".*\S+[\s\S]*"/> -->
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="union.dateType">
+		<xsd:annotation>
+			<xsd:documentation>union.dateType - calendar dates of the form YYYY, YYYY-MM, YYYY-MM-DD</xsd:documentation>
+		</xsd:annotation>
+		<xsd:union memberTypes="xsd:date xsd:gYearMonth xsd:gYear"/>
+	</xsd:simpleType>
+
+</xsd:schema>

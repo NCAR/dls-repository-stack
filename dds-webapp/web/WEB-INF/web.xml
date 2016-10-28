@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+		PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+		"http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<!-- 
+	web.xml deployment descriptor for the Digital Discovery Server (DDS) application.
+	
+	Note: Init and context params used to define file or directory paths can be designated as 
+	absolute (e.g. /export/devel/tomcat/webapps/dds/WEB-INF/logs/myLog.log)
+	or relative to the servlet context (e.g. WEB-INF/logs/myLog.log). 
+-->
+
+<web-app>
+	<display-name>Digital Discovery System (DDS v@VERSION@)</display-name>
+
+	<!-- 
+		Context params used in the DDS application.
+	
+		Context params can be overridded by providing an alternate definition for them such as:
+		<Context ...>
+			<Parameter override="false" name="paramName" value="paramValue" />
+		</Context>
+
+		These may go in a <Context> element in the Tomcat configuration, 
+		which can be placed at one of the following locations: 
+			${tomcat}/conf/[enginename]/[hostname]/dds.xml or 
+			${tomcat}/conf/server.xml.  		
+		
+		See http://tomcat.apache.org/tomcat-6.0-doc/config/context.html for reference.
+		
+		Note: context params are accessed globally from within 
+		servlets and jsp pages via:
+		String value = getServletContext().getInitParameter("name");
+	-->
+
+	<context-param>
+		<param-name>globalInstallationBanner</param-name>
+		<param-value>DDS Repository</param-value>
+		<description>
+			This text is displayed at the top of every page above the DDS logo.
+			May contain HTML (encode reserved characters as entity references).
+			Leave blank to display none.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>defaultSearchFieldName</param-name>
+		<param-value>default</param-value>
+		<description>
+			The default search field used by the query parser in the Search API and elsewhere when no search field is explicilty specified.
+			This is normally set to 'default' but can be overridden to specify a custom field if desired.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>recordDataSource</param-name>
+		<param-value>@RECORD_DATA_SOURCE@</param-value>
+		<description>
+			The primary source for the records for this repository.
+			There are two possible values:
+			1. 'fileSystem' - Records from the file system will be used to
+			generate and maintain the repository
+
+			or
+
+			2. 'dcs' - The DCS webapp will manage the repository
+
+			or
+
+			3. One or more concrete classes that implement the interface edu.ucar.dls.repository.indexing.IndexingEventHandler
+			as a comma separated list. For example 'edu.ucar.dls.dds.ndr.NDRIndexer' or
+			'edu.ucar.dls.dds.ndr.NDRIndexer,edu.ucar.dls.oai.OAIHarvestIndexer'
+			If anything other than 'fileSystem' appears, the system will attempt to instantiate
+			the instance(s_ of the class(es) indicated and records from the external data source(s)
+			that is handled by that class will be used to for the repository.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>repositoryData</param-name>
+		<param-value>WEB-INF/example_repository</param-value>
+		<description>
+			The directory where the repository resides (index, persistent data, and (optionally) records).
+			Upon start up, the following directory structure is created here or loaded if it already exists:
+
+			- $(repositoryData}/repository_000001 - The base directory for the initial active repository
+			- $(repositoryData}/repository_000001/data - Directory for persistent repository data files
+			- $(repositoryData}/repository_000001/index - Directory for repository index (previous DDS versions used 'indexLocation' to specify this)
+			- $(repositoryData}/repository_000001/records - Directory for repository XML records (unless specified otherwise by 'collBaseDir')
+			- $(repositoryData}/repository_info_bean.xml - File that stores the current state of the repository (active repository, etc.)
+
+			If a background indexer is being used (performBackgroundIndexing=true), the active repository base directory
+			will be incremented with each successive index build (repository_000002, repository_000003, etc.).
+
+			For a long-term operational deployment, this directory should be configured to point to a local directory outside of Tomcat.
+			This directory may also be backed up and used to restore a DDS repository
+			if long term data preservation is desired.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>collBaseDir</param-name>
+		<param-value></param-value>
+		<description>
+			Specifies the directory under which the metadata files for the repository are
+			located (optional). Path must be absolute or relative to the servlet context.
+
+			If not specified this defaults to:
+			{repositoryData}/repository_000001/records
+
+			This directory may reside anywhere, however it is recommended that it be
+			set to the following directory so that all data resides inside ${repositoryData}
+			for ease of backup:
+			{repositoryData}/records
+
+			All metadata files must reside in sub-directores
+			by format and collection key:
+			{collBaseDir}/{xml_format}/{collection_key}/{file}
+			for example:
+			{collBaseDir}/adn/dcc/DLESE-000-000-000-001.xml
+
+			Unless otherwise specified below, the repository will configure
+			it's collections using the collection level records located at:
+			{collBaseDir}/dlese_collect/collect
+
+			For a long-term operational deployment,
+			this should be configured to point to a local directory outside of Tomcat.
+			This directory may also be backed up and used to restore a DDS repository
+			if long term data preservation is desired.
+		</description>
+	</context-param>
+
+	<!-- There are 3 different types of indexes that you can setup using the following two
+	config params(performBackgroundIndexing, importRepositoryDestinations). The following 
+	uncommented out params is an example of a foreground index. Which is one that the current
+	index that is serving requests is also the one being updated by indexing. This
+	is the case when performBackgroundIndexing is true 
+	while importRepositoryDestinations is empty which means do no import repositories from
+	external sources-->
+	<context-param>
+		<param-name>performBackgroundIndexing</param-name>
+		<param-value>false</param-value>
+		<description>
+			Set to true to have indexing performed in the background. The background indexer builds
+			a separate index and then commits it to the DDS repository after a batch operation is complete.
+
+			The default behaviour is for incremental indexing to occur directly on the same index
+			that is serving the repository (commits are seen immediately).
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>importRepositoryDestinations</param-name>
+		<param-value></param-value>
+		<description>List of absolute path destinations for the index instance to import repositories from.
+			Having any value here is telling the indexer thats its essentially a read-only index and the
+			index is only updated when an external source places a valid index in the destination folder.
+			You cannot import repositories and also have a background indexer. The system will turn off
+			the background indexer to avoid conflicts
+		</description>
+	</context-param>
+
+	<!-- The below commented out case would be if you want a background index to do all the indexing.
+	Note importRepositoryDestinations is still blank, because we again do not want to import external
+	repositories but instead index it ourselves in the background.
+	<<context-param> 
+      <param-name>performBackgroundIndexing</param-name>  
+      <param-value>true</param-value>  
+	</context-param>
+	<cotext-param>
+	    <param-name>importRepositoryDestinations</param-name>
+		<param-value></param-value>
+	</cotext-param>
+	 -->
+
+	<!-- The last commented out example would be a case if no indexing should be done on this
+    instance but instead should be a read only index waiting for repositories to be imported from
+    an external source. This external source defined in importRepositoryDestinations. This field
+    may contain more then one import destinations.
+   <<context-param>
+     <param-name>performBackgroundIndexing</param-name>
+     <param-value>false</param-value>
+   </context-param>
+   <cotext-param>
+       <param-name>importRepositoryDestinations</param-name>
+       <param-value>/tomcat/tomcat_data/repos_imports</param-value>
+   </cotext-param>
+    -->
+
+	<context-param>
+		<param-name>exportRepositoryDestinations</param-name>
+		<param-value></param-value>
+		<description>List of absolute path destinations for the index instance export commited to. This will
+			not export repositories that had threshold errors and an admin marks it as a permanent ignore.
+			This works hand in hand with  importRepositoryDestinations. This instance would export its
+			repositories to the destination and another repository would use importRepositoryDestinations
+			to import it.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>enableNewSets</param-name>
+		<param-value>true</param-value>
+		<description>
+			Are new sets that are created in the Collection Manager initially set to 'enabled?' [true | false]
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>maxNumResultsDDSWS</param-name>
+		<param-value>1000</param-value>
+		<description>
+			The maximum number of results that can be returned by the Search or UserSearch
+			request in the DDSWS service, as indicated by the 's' argument.
+			A larger number requires more resources by the server (memory, CPU)
+			but allows clients to fetch more records per request.
+		</description>
+	</context-param>
+
+	<!-- Values displayed in the response to the Search API ServiceInfo request -->
+	<context-param>
+		<param-name>ddswsAdminEmail</param-name>
+		<param-value></param-value>
+		<description>
+			Contact e-mail displayed in the Search API ServiceInfo response,
+			for example j.doe@example.org
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>ddswsServiceName</param-name>
+		<param-value>Digital Discovery System Repository Search API</param-value>
+		<description>
+			The service name displayed in the Search API ServiceInfo response.
+			Configure this to provide a specific title for your repository, for example
+			"XXX library repository search API"
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>ddswsDescription</param-name>
+		<param-value>The Digital Discovery System Web service is a RESTful search API for items that reside in the repository.</param-value>
+		<description>
+			Service description displayed in the Search API ServiceInfo response.
+			Configure this to provide a specific description for your repository, for example
+			"The XXX library repository contains resources about..."
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>enableRepositoryUpdateWebService</param-name>
+		<param-value>false</param-value>
+		<description>
+			Is the repository update Web service (ddsupdatews) enabled? Any value other than 'true'
+			will disable the service. If enabled, it is recommended to disable automatic indexing
+			via the indexingStartTime param.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>itemIndexerConfigDir</param-name>
+		<param-value>WEB-INF/conf/itemIndexerConfigs</param-value>
+		<description>
+			The directory ItemIndexer configurations reside (the NR indexer (NRIndexer) and others).
+
+			For a long-term operational deployment, this should be configured to pont to a local directory outside of Tomcat.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>indexingStartTime</param-name>
+		<param-value>disabled</param-value>
+		<description>
+			The time of day to run the indexer in H:mm (24 hour time) format, for example '0:35' or '23:35'.
+			The fileSystem or NRIndexer will run at this time on the days of the week specified by 'indexingDaysOfWeek'.
+			Set to 'disabled' to disable automatic indexing and allow manual indexing only via the Web UI.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>indexingDaysOfWeek</param-name>
+		<param-value>all</param-value>
+		<description>
+			The days of week to run the indexer at the time specified by 'indexingStartTime',
+			as a comma separated list of integers, for example '1,3,5'
+			where 1=Sunday, 2=Monday, 7=Saturday etc.
+			Set to 'all' to run the indexer on all days.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>performContinuousIndexing</param-name>
+		<param-value>false</param-value>
+		<description>
+			Set to true to have indexing of all collections performed continuously and automatically
+			from the fileSystem or NRIndexer. Use this option instead of indexingStartTime/indexingDaysOfWeek
+			options above.
+
+			When the system stats up, indexing will begin automatically. When the indexing
+			session completes, a new session will being again within a five minutes.
+		</description>
+	</context-param>
+
+	<!-- <context-param>       
+		<param-name>collectionRecordsLocation</param-name>
+		<param-value>WEB-INF/data/sample_records/dlese_collect/collect</param-value>	
+		<description>
+			The directory for the collection-level records that define
+			which collecitons appear in the repository.
+			Path should be absolute or relative to the servlet context.
+			If no value is provided, the repository will look for it's
+			collection level records at {collBaseDir}/dlese_collect/collect 
+		</description>
+	</context-param> -->
+	<context-param>
+		<param-name>repositoryConfigDir</param-name>
+		<param-value>WEB-INF/conf</param-value>
+		<description>
+			The directory where the RepositoryManager config files reside,
+			such as the config for default search fields, field boosting
+			level, synonyms and other application configuration properties,
+			XMLIndexerFieldsConfig global config, etc.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>ddsws11BaseUrlOverride</param-name>
+		<param-value>[determine-from-client]</param-value>
+		<description>
+			This parameter defines the DDSWS 1-1 Base URL that is displayed in the UI and returned in responses.
+			Use '[determine-from-client]' to have the baseURL determined
+			automatically using the URL supplied by the client (default).
+			If set, this value overrides the entire baseURL. Use this setting for proxy configurations
+			to ensure the proper baseUrl is returned/displayed.
+		</description>
+	</context-param>
+	<!-- OAI services - Change these values to enable/disable OAI-PMH -->
+	<context-param>
+		<param-name>oaiPmhEnabled</param-name>
+		<param-value>true</param-value>
+		<description>
+			Are standard OAI ListRecord and ListIdentifier responses enabled?
+			Set to true to enable standard OAI-PMH, false to only allow ODL search
+			requests via the OAI base URL. Defaults to true if ommitted.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>dataProviderBaseUrlPathEnding</param-name>
+		<param-value>services/oai2-0</param-value>
+		<description>
+			The last portion of the OAI data provider's Base URL, for example
+			'provider' or 'OAI2-0'.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>oaiBaseUrlOverride</param-name>
+		<param-value>[determine-from-client]</param-value>
+		<description>
+			This parameter defines the OAI Base URL that is returned in OAI-PMH responses.
+			Use '[determine-from-client]' to have the baseURL determined
+			automatically using the URL supplied by the client (default).
+			If set, this value overrides the entire baseURL, including the value set for
+			dataProviderBaseUrlPathEnding. Use this setting for proxy configurations
+			to ensure the proper baseUrl is returned.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>oaiBaseUrlDisplay</param-name>
+		<param-value>http://www.dlese.org/oai/provider</param-value>
+		<description>
+			The OAI baseURL displayed in the OAI data provider page.
+			Leave blank to use the current context OAI data provider
+			as the base URL.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>showNumRecordsInOAIListSets</param-name>
+		<param-value>true</param-value>
+		<description>
+			Set to 'false' to disable the display of the number of records in each set
+			in the OAI ListSets response. Any other value than 'false' will enable this feature.
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>annotationPathwaysSchemaUrl</param-name>
+		<param-value>http://www.dlese.org/Metadata/annotation/current/vocabs/pathway.xsd</param-value>
+		<description>
+			The URL of the schema that defines the accepted pathways to the DRC.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>collectionKeySchemaUrl</param-name>
+		<param-value>http://www.dlese.org/Metadata/collection/current/vocabs/key.xsd</param-value>
+		<description>
+			The URL of the collection keys schema that defines the valid keys for collections.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>metadataFormatSchemaUrl</param-name>
+		<param-value>http://www.dlese.org/Metadata/collection/current/vocabs/itemFormat.xsd</param-value>
+		<description>
+			The URL of the collection keys schema that defines the valid keys for collections.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>doResourceDeDuplication</param-name>
+		<param-value>false</param-value>
+		<description>
+			True to have the indexer perform resource de-duplication, combining
+			all records that catalog a given resource URL into a sinlge document
+			in the index, false to create separate index entries for all
+			records [true | false ]. (previous param-name was filterDups)
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>queryLogFile</param-name>
+		<param-value>WEB-INF/logs/clf_extended.log</param-value>
+		<description>The file used to log user querries</description>
+	</context-param>
+	<context-param>
+		<param-name>resourceResultLinkRedirectURL</param-name>
+		<param-value>http://rd.dlese.org/</param-value>
+		<description>
+			Absolute URL reference to an Apache redirect for mining clicks on results list resource links.
+			Example values might include 'http://rd.dlese.org/' or 'http://rd.dlese.org/my_dev/'
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>showEditButtonForAdmins</param-name>
+		<param-value>false</param-value>
+		<description>
+			Show an 'Edit' button in the admin search area of the UI that enables simple editing of the
+			XML records. Anything other than 'true' will disable this feature.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>debug</param-name>
+		<param-value>false</param-value>
+		<description>Indicates whether or not debugging messages will
+			be output to standard out. Must be [true | false].
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>contentCacheBaseUrl</param-name>
+		<param-value>disabled</param-value>
+		<description>
+			The baseURL to the ContentCache service used to fetch crawled textual content
+			from resoruce URLs. The primary ContentCache server baseURL at NSDL is
+			http://contentcache.nsdl.org (do not include slash at the end)
+
+			If enabled, DDS will index the crawled textual content of the resource.
+
+			Set to 'disabled' or blank to disable.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>asnResolverBaseUrl</param-name>
+		<param-value>disabled</param-value>
+		<description>
+			The baseURL to the ASN standards resolution service used to index ASN standards for faceting and searching.
+			An instance of the service is available at BaseUrl http://nsdldev.org/asn/service
+			Set to 'disabled' or blank to disable. This setting is used by class AsnStandardsIdFieldPreprocessor.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>dbURL</param-name>
+		<param-value>id_mapper_not_used</param-value>
+		<description>
+			The URL to the IDmapper database. An example config to a real DB looks like:
+			'jdbc:mysql://quake:3306/DLESE_Systems?user=steves&amp;password=xxx'.
+			This value is set to 'id_mapper_not_used' to run DDS without using the ID mapper
+			database.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>idMapperExclusionFile</param-name>
+		<param-value>none</param-value>
+		<description>
+			The path or URL to an XML file that defines record IDs that should not be flagged
+			as duplicates by the IDMapper service. Use 'none' use none.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>vocabConfigDir</param-name>
+		<param-value>WEB-INF/vocab-ui-project</param-value>
+		<description>Location of vocab configuration files (should be a current version of the vocab-ui-project)</description>
+	</context-param>
+	<context-param>
+		<param-name>siteSearchBaseUrl</param-name>
+		<param-value>http://www.dlese.org/site_search/search.jsp</param-value>
+		<description>Base location of Nutch-based site search (/site_search/)</description>
+	</context-param>
+	<context-param>
+		<param-name>showSurvey</param-name>
+		<param-value>false</param-value>
+		<description>Set to false to supress the fly-in user survey in browse</description>
+	</context-param>
+	<context-param>
+		<param-name>nsdlDcVocabsConfig</param-name>
+		<param-value>http://ns.nsdl.org/ncs/ddsws/1-1/groups/</param-value>
+		<description>
+			Location of the file that defines the vocabulary configs and
+			search fields used to generate the record count reports.
+			Note that the similar but different config for normalizing NSDL DC records
+			is configured in the NFRIndexer item indexer config.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>DDS_UUID</param-name>
+		<param-value>dds_uuid</param-value>
+		<description>
+			When multiple DDS/DCS instances are deployed in a single Tomcat/container, each must set a unique DDS_UUID String
+			value to prevent temp file name clashes. The String should contain alpha-numeric values dashes and underscores
+			only.
+		</description>
+	</context-param>
+
+	<!-- 
+		Database connectivity for vocabulary management/tracking, etc.  If sqlURL is 
+		left empty, then the vocabs will not create any new encoded system IDs, or 
+		register changes in UI label values.  This value should be overridden in
+		server.xml with something like:
+		
+		jdbc:mysql://localhost/dds
+	-->
+	<context-param>
+		<param-name>sqlDriver</param-name>
+		<param-value>org.gjt.mm.mysql.Driver</param-value>
+		<description>SQL driver class</description>
+	</context-param>
+	<context-param>
+		<param-name>sqlURL</param-name>
+		<param-value></param-value>
+		<description>SQL connection URL</description>
+	</context-param>
+	<context-param>
+		<param-name>sqlUser</param-name>
+		<param-value></param-value>
+		<description>SQL connection user</description>
+	</context-param>
+	<context-param>
+		<param-name>sqlPassword</param-name>
+		<param-value></param-value>
+		<description>SQL connection password</description>
+	</context-param>
+
+	<context-param>
+		<param-name>UriSpoof.config</param-name>
+		<param-value>/WEB-INF/spoof-uri.xml</param-value>
+		<description>XML config file for mapping "static" looking URIs to dynamic ones</description>
+	</context-param>
+
+
+	<!-- Validation, admin emailing and commiting -->
+
+	<context-param>
+		<param-name>ddsDomain</param-name>
+		<param-value>http://nsdl.org</param-value>
+		<description>
+			URL that references the domain to the dds. So the validation email knows what url to show for
+			linking.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>mailServer</param-name>
+		<param-value>mail.smtp.host</param-value>
+		<description>
+			Server used to send e-mails
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>mailType</param-name>
+		<param-value>dev</param-value>
+		<description>
+			One of 'store' (imap) or 'mail.smtp.host' (smtp) or 'transport' (smtp) or dev. The value
+			dev requires edits to the SummaryEmail class to enable using gmail etc.. mail servers.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>validationToEmails</param-name>
+		<param-value></param-value>
+		<description>Email addresses that should receive index summary emails when a index is finished
+			indexing</description>
+	</context-param>
+	<context-param>
+		<param-name>fromEmail</param-name>
+		<param-value>&quot;DDS Indexer&quot; &lt;j.doe@example.ucar.edu&gt;</param-value>
+		<description>The from addresses field that will be sent in the validation email</description>
+	</context-param>
+	<context-param>
+		<param-name>emailOnSuccessfulCommits</param-name>
+		<param-value>true</param-value>
+		<description>
+			Boolean that tells the system to also send out index summary validation emails when
+			no errors were found during indexing</description>
+	</context-param>
+	<context-param>
+		<param-name>maxThresholdForRecordRemovals</param-name>
+		<param-value></param-value>
+		<description>
+			Threshold for record removals per collection that are allowed. Anything
+			over this number will cause a flag to be thrown and the index to require admin overview before
+			it can be commited. If this field is blank it turns off the threshold limit
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>maxThresholdForCollectionCountChanges</param-name>
+		<param-value></param-value>
+		<description>
+			Threshold for collection count changes that are allowed. Anything
+			over this number will cause a flag to be thrown and the index to require admin overview before
+			it can be commited. This includes both collections removed and added to the system.
+			If this field is blank it turns off the threshold limit
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>repositoryAnalyticsData</param-name>
+		<param-value>WEB-INF/data/repository_analytics</param-value>
+		<description>
+			Path that is used for the data analytics tool to pull data from. This path is also used by
+			the repository manager to dump monthly summary reports of the repositories so they can be viewed
+			in repository analytics.
+		</description>
+	</context-param>
+
+	<!-- ***************** XML format converters ****************** -->
+
+	<!-- To configure a format conveter that uses an XSL stylesheet, the param-name 
+	must begin with the string 'xslconverter' and must be unique. The param-value 
+	must be of the form 'xslfile.xsl|[from format]\[to format]' or pass in 'disabled' to
+	disable the format converter. 
+	The XSL file must be placed in the directory WEB-INF/xsl_files/. -->
+	<context-param>
+		<param-name>xslconverter - DLESE IMS to ADN converter</param-name>
+		<param-value>dlese-ims-to-adn-v0.6.50-all.xsl|dlese_ims|adn</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - ADN to briefmeta converter</param-name>
+		<param-value>adn-v0.6.50-to-briefmeta-v0.1.01.xsl|adn|briefmeta</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - news_opps to oai_dc converter</param-name>
+		<param-value>news-opps-v1.0.00-to-oai_dc.xsl|news_opps|oai_dc</param-value>
+	</context-param>
+	<!-- <context-param>  
+	  <param-name>xslconverter - Converts from dlese_collect to dlese_collect localized</param-name>    
+	  <param-value>remove-namespaces-and-localize.xsl|dlese_collect|dlese_collect-localized</param-value>  
+	</context-param> -->
+	<context-param>
+		<param-name>xslconverter - Converts from adn to adn localized</param-name>
+		<param-value>remove-namespaces-and-localize.xsl|adn|adn-localized</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - Converts from dlese_anno to dlese_anno localized</param-name>
+		<param-value>remove-namespaces-and-localize.xsl|dlese_anno|dlese_anno-localized</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - Converts from news_opps to news_opps localized</param-name>
+		<param-value>remove-namespaces-and-localize.xsl|news_opps|news_opps-localized</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - adn to nsdl_dc converter</param-name>
+		<param-value>adn-v0.6.50-to-nsdl_dc-v1.02-asn-identifiers.xsl|adn|nsdl_dc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - adn to oai_dc converter</param-name>
+		<param-value>adn-v0.6.50-to-oai_dc.xsl|adn|oai_dc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - dlese_anno to comm_anno v1.00 converter</param-name>
+		<param-value>dlese_anno-1.0.00-to-comm_anno-1.00.xsl|dlese_anno|comm_anno</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - dlese_anno (v0.1 or v1.0) to oai_dc converter</param-name>
+		<param-value>dlese_anno-v1.0.00-and-v0.1.01-to-oai_dc.xsl|dlese_anno|oai_dc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - dlese_anno to nsdl_dc converter</param-name>
+		<param-value>dlese_anno-1.0.00-to-nsdl_dc-1.02.xsl|dlese_anno|nsdl_dc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - lar to oai_dc converter</param-name>
+		<param-value>lar2oai_dc.xsl|lar|oai_dc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - lar to gmd converter</param-name>
+		<param-value>lar2gmd.xsl|lar|gmd</param-value>
+	</context-param>
+
+	<!-- The below lar to nsdl_dc converter uses the NR database to pull the normalized nsdl_dc record when available, otherwise it uses the XSL converter -->
+	<context-param>
+		<param-name>javaconverter - lar to nsdl_dc converter</param-name>
+		<param-value>edu.ucar.dls.xml.NRIndexer2LARToNSDLDCFormatConverter|lar|nsdl_dc</param-value>
+	</context-param>
+
+	<!-- The below lar to nsdl_dc converter uses the XSL file to perform the conversion (will work for transform even if no DB is present) -->
+	<!-- <context-param>  
+      <param-name>xslconverter - lar to nsdl_dc converter</param-name>  
+      <param-value>lar-v1.00-to-nsdl_dc-v1.02.020.xsl|lar|nsdl_dc</param-value>  
+    </context-param> -->
+
+
+	<!-- 
+		The dlese_collect to nsdl_dc/oai_dc converters are disabled by default, since we don't want these exposed in the NSDL OAI data provider and Search API
+		(only educational resources should be available in nsdl_dc/oai_dc format) 
+	-->
+	<!-- 
+	<context-param>  
+      <param-name>xslconverter - dlese_collect to nsdl_dc converter</param-name>  
+      <param-value>dlese_collect-v1.0.00-to-nsdl_dc-1.02-dds.xsl|dlese_collect|nsdl_dc</param-value>  
+    </context-param> 
+	<context-param>  
+      <param-name>xslconverter - dlese_collect to oai_dc converter</param-name>  
+	  <param-value>dlese_collect-v1.0.00-to-oai_dc-dds.xsl|dlese_collect|oai_dc</param-value>  
+    </context-param>	
+	-->
+	<context-param>
+		<param-name>xslconverter - news_opps to nsdl_dc converter</param-name>
+		<param-value>news_opps-v1.0.00-to-nsdl_dc-1.02.xsl|news_opps|nsdl_dc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - nsdl_dc to oai_dc converter</param-name>
+		<param-value>nsdl_dc2oai_dc.xsl|nsdl_dc|oai_dc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - dif to oai_dc</param-name>
+		<param-value>dif2dc.xsl|dif|oai_dc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - dif to fgdc</param-name>
+		<param-value>difxml_to_fgdcxml_9.7.xsl|dif|fgdc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xslconverter - ncs_collect to nsdl_dc</param-name>
+		<param-value>ncs-collect-v1.02-to-nsdl-dc-v1.02.020.xsl|ncs_collect|nsdl_dc</param-value>
+	</context-param>
+
+
+	<!-- To configure a format converter that uses a Java class, the param-name must begin with
+	the string 'javaconverter' and must be unique. The param-value 
+	must be of the form '[fully qualified Java class]|[from format]\[to format]' or pass in 'disabled' to
+	disable the format converter. 
+	The Java class must implement XMLFormatConverter (in package edu.ucar.dls.xml)
+	and be placed in the class path for this servlet -->
+	<!-- 
+	<context-param>  
+	  <param-name>javaconverter - Converts from adn to the OAI DC format</param-name>    
+	  <param-value>edu.ucar.dls.xml.ADNToOAIDCFormatConverter|adn|oai_dc</param-value>
+	</context-param> 
+	-->
+
+
+
+	<!-- ***************** Global content filters  ****************** -->
+
+	<!-- To configure a filter to remove content from the Search API and OAI responses
+	(Search, GetRecord, UrlCheck, ListRecords, ListIdentifiers),
+	create a context-param as follows:
+	
+	The param-name must begin with the string 'repositoryfilter' and must be unique. The param-value 
+	must be of the form [filterName]|[one of 'disableFilterAllowed' or 'disableFilterNotAllowed']|[lucene query].
+	If 'disableFilterAllowed' is indicated in the second argument then [filterName] may be passed into the service
+	requests (&disableFilter=[filterName]) to disable the filter for that request and allow the otherwise filtered content through 
+	Any number of content filters may be defined. -->
+	<!-- 
+	<context-param>  
+	  <param-name>repositoryfilter - Filter records that have the word ocean in the title</param-name>  
+	  <param-value>oceanRecords|disableFilterAllowed|title:(ocean)</param-value>  
+	</context-param> 
+	-->
+
+
+	<!-- ***************** Params used by the Java XML converters ****************** -->
+
+	<context-param>
+		<param-name>adn-to-oai-dc-xsl</param-name>
+		<param-value>adn-v0.6.50-to-oai_dc.xsl</param-value>
+	</context-param>
+	<context-param>
+		<param-name>adn-to-nsdl-dc-xsl</param-name>
+		<param-value>adn-v0.6.50-to-nsdl_dc-v1.02-asn-identifiers.xsl</param-value>
+		<!-- <param-value>adn-v0.6.50-to-nsdl_dc-v1.02.xsl</param-value> -->
+	</context-param>
+	<context-param>
+		<param-name>namespace-out-xsl</param-name>
+		<param-value>namespace-out.xsl</param-value>
+	</context-param>
+
+	<!-- ***************** Params used by MetadataVocab ****************** -->
+	<context-param>
+		<param-name>metadataGroupsLoaderFile</param-name>
+		<param-value>WEB-INF/frameworks-project/frameworks/DLESEMetadataUI.xml</param-value>
+		<description>Location of the MetadataVocab loader (lists of groups/fields lists)</description>
+	</context-param>
+	<context-param>
+		<param-name>metadataVocabInstanceAttributeName</param-name>
+		<param-value>MetadataVocab</param-value>
+		<description>Application context attribute name that the MetadataVocab instance is stored as</description>
+	</context-param>
+	<context-param>
+		<param-name>metadataVocabAudience</param-name>
+		<param-value>community</param-value>
+		<description>User interface audience</description>
+	</context-param>
+	<context-param>
+		<param-name>metadataVocabLanguage</param-name>
+		<param-value>en-us</param-value>
+		<description>User interface language</description>
+	</context-param>
+
+	<!-- 
+			To configure an indexing plugin, specify an context-param that has a unique 
+			param-name that begins with the string 'fileindexingplugin'. The param-value 
+			must be of the form '[fully qualified Java class]|[xmlFormat]', or 
+			[fully qualified Java class] to specify a plugin to use for all XML formats. 
+			The Java class must implement FileIndexingPlugin (in package edu.ucar.dls.index.writer)
+			and be placed in the class path for this servlet. 
+		
+			To configure one or more Lucene Analyzers to use on a per-field basis for your plugins, provide a
+			properties file within your application's class path named 'FileIndexingPluginLuceneAnalyzers.properties'
+			See class edu.ucar.dls.index.analysis.PerFieldAnalyzer for details.
+		-->
+	<context-param>
+		<param-name>fileindexingplugin - An indexing plugin that indexes meta-metadata about items in the repository</param-name>
+		<param-value>edu.ucar.dls.index.writer.DDSItemMetaMetadataIndexingPlugin|adn</param-value>
+	</context-param>
+
+
+	<!--  Default XMLFormat schema and namespace definitions for OAI ListMetadataFormats response
+        The <param-name> String must start with the String 'xmlformatinfo' and must be unique.
+        The <param-value> is of the form: [metadataPrefix]|[schema]|[namespace]
+    -->
+	<context-param>
+		<param-name>xmlformatinfo - oai_dc schema and namespace</param-name>
+		<param-value>oai_dc|http://www.openarchives.org/OAI/2.0/oai_dc.xsd|http://www.openarchives.org/OAI/2.0/oai_dc/</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - nsdl_dc schema and namespace</param-name>
+		<param-value>nsdl_dc|http://ns.nsdl.org/schemas/nsdl_dc/nsdl_dc_v1.02.xsd|http://ns.nsdl.org/nsdl_dc_v1.02/</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - adn schema and namespace</param-name>
+		<param-value>adn|http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd|http://adn.dlese.org</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - news_opps schema and namespace</param-name>
+		<param-value>news_opps|http://www.dlese.org/Metadata/news-opps/1.0.00/news-opps.xsd|http://newsopps.dlese.org</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - dlese_anno schema and namespace</param-name>
+		<param-value>dlese_anno|http://www.dlese.org/Metadata/annotation/1.0.00/annotation.xsd|http://www.dlese.org/Metadata/annotation</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - dlese_collect schema and namespace</param-name>
+		<param-value>dlese_collect|http://www.dlese.org/Metadata/collection/1.0.00/collection.xsd|http://collection.dlese.org</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - briefmeta schema and namespace</param-name>
+		<param-value>briefmeta|http://www.dlese.org/Metadata/briefmeta/0.1.01/brief-record.xsd|http://www.dlese.org/Metadata/briefmeta</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - msp2 schema and namespace</param-name>
+		<param-value>msp2|http://ns.nsdl.org/ncs/msp2/1.00/schemas/record.xsd|http://ns.nsdl.org/ncs/msp2</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - comm_anno schema and namespace</param-name>
+		<param-value>comm_anno|http://ns.nsdl.org/ncs/comm_anno/1.00/schemas/comm_anno.xsd|http://ns.nsdl.org/ncs/comm_anno</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - comm_para schema and namespace</param-name>
+		<param-value>comm_para|http://ns.nsdl.org/ncs/comm_para/1.00/schemas/comm_para.xsd|http://ns.nsdl.org/ncs/comm_para</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - ncs_collect schema and namespace</param-name>
+		<param-value>ncs_collect|http://ns.nsdl.org/ncs/ncs_collect/1.02/schemas/ncs-collect.xsd|http://ns.nsdl.org/ncs</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - eng_path schema and namespace</param-name>
+		<param-value>eng_path|http://ns.nsdl.org/ncs/eng_path/1.00/schemas/record.xsd|http://ns.nsdl.org/ncs/eng_path</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - math_path schema and namespace</param-name>
+		<param-value>math_path|http://ns.nsdl.org/ncs/math_path/1.00/schemas/record.xsd|http://ns.nsdl.org/ncs/math_path</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - dif schema and namespace</param-name>
+		<param-value>dif|http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/dif_v9.4.xsd|http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - assessments schema and namespace</param-name>
+		<param-value>assessments|http://www.dlsciences.org/frameworks/assessments/1.00/schemas/assessments.xsd|http://www.dlsciences.org/frameworks/assessments</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - ccs_org_config schema and namespace</param-name>
+		<param-value>ccs_org_config|http://www.dlsciences.org/frameworks/ccs_org_config/1.00/schemas/ccs_org_config.xsd|http://www.dlsciences.org/frameworks/ccs_org_config</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - concepts schema and namespace</param-name>
+		<param-value>concepts|http://www.dlsciences.org/frameworks/concepts/1.0/schemas/concepts.xsd|http://www.dlsciences.org/frameworks/concepts</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - teach schema and namespace</param-name>
+		<param-value>teach|http://www.dlsciences.org/frameworks/teach/1.00/schemas/teach.xsd|http://www.dlsciences.org/frameworks/teach</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - comm_core schema and namespace</param-name>
+		<param-value>comm_core|http://ns.nsdl.org/ncs/comm_core/1.00/schemas/record.xsd|http://ns.nsdl.org/ncs/msp2</param-value>
+	</context-param>
+	<context-param>
+		<param-name>xmlformatinfo - lar schema and namespace</param-name>
+		<param-value>lar|http://ns.nsdl.org/ncs/lar/1.00/schemas/lar.xsd|http://ns.nsdl.org/ncs/lar</param-value>
+	</context-param>
+
+
+	<!-- 	Send pages through the XMLPostProcessingFilter, which performs XML validation iff
+		the there is a parameter rt=validate or XML2JSON serialization iff parameter output=json. 
+		This filter also performs gzip compression
+		of all responses regardless of whether they are validated. -->
+	<filter>
+		<filter-name>XMLPostProcessingFilter</filter-name>
+		<filter-class>edu.ucar.dls.webapps.servlets.filters.XMLPostProcessingFilter</filter-class>
+	</filter>
+
+	<!-- 	Send pages through a gzip filter to compress the response sent to the browser. -->
+	<filter>
+		<filter-name>GzipFilter</filter-name>
+		<filter-class>edu.ucar.dls.webapps.servlets.filters.GzipFilter</filter-class>
+	</filter>
+
+	<!-- 	A Servlet Filter that converts any JSP page into JavaScript writeln statements. -->
+	<filter>
+		<filter-name>JavaScriptWritelnFilter</filter-name>
+		<filter-class>edu.ucar.dls.webapps.servlets.filters.JavaScriptWritelnFilter</filter-class>
+	</filter>
+
+	<!-- Configure all pages to be gzipped. Note that the gzip filter does not handle 404
+    errors, so pages that may return 404 cannot be included such as the view_record.jsp page
+    or things such as *.jsp -->
+	<filter-mapping>
+		<filter-name>GzipFilter</filter-name>
+		<url-pattern>/collections/view.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>GzipFilter</filter-name>
+		<url-pattern>/view_resource.do</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>GzipFilter</filter-name>
+		<url-pattern>/query.do</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>GzipFilter</filter-name>
+		<url-pattern>/index.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>XMLPostProcessingFilter</filter-name>
+		<url-pattern>/admin/display.do</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>XMLPostProcessingFilter</filter-name>
+		<url-pattern>/services/ddsws1-0</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>XMLPostProcessingFilter</filter-name>
+		<url-pattern>/services/ddsws1-1</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>XMLPostProcessingFilter</filter-name>
+		<url-pattern>/services/ddsupdatews1-1</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>XMLPostProcessingFilter</filter-name>
+		<url-pattern>/services/oai2-0</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>XMLPostProcessingFilter</filter-name>
+		<url-pattern>/services/rss2-0</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>JavaScriptWritelnFilter</filter-name>
+		<url-pattern>/services/jshtml1-0/tpl/js_search_server.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>JavaScriptWritelnFilter</filter-name>
+		<url-pattern>/services/jshtml1-1</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>JavaScriptWritelnFilter</filter-name>
+		<url-pattern>/services/examples/ddsws/templates/index.jsp</url-pattern>
+	</filter-mapping>
+	<!-- <filter-mapping>
+		<filter-name>JavaScriptWritelnFilter</filter-name>
+		<url-pattern>/services/examples/ddsws/*</url-pattern>
+	</filter-mapping> -->
+	<!-- <filter-mapping>
+		<filter-name>JavaScriptWritelnFilter</filter-name>
+		<url-pattern>/services/js/fv/index.jsp</url-pattern>		
+	</filter-mapping>	 -->
+
+	<!-- MetadataVocabServlet places a MetadataVocabOPML instance into the application scope -->
+	<servlet>
+		<servlet-name>MetadataVocabServlet</servlet-name>
+		<description>Initializes a MetadataVocabOPML instance</description>
+		<servlet-class>edu.ucar.dls.vocab.MetadataVocabServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<!-- DDSServlet definition and init params -->
+	<servlet>
+		<servlet-name>DDSServlet</servlet-name>
+		<description>Initializes the discovery system</description>
+		<servlet-class>edu.ucar.dls.dds.DDSServlet</servlet-class>
+		<init-param>
+			<param-name>analysisType</param-name>
+			<param-value>2</param-value>
+			<description>
+				The analyzer type used for indexing and queries.
+				Value must be in integer.
+			</description>
+		</init-param>
+		<init-param>
+			<param-name>ddsContext</param-name>
+			<param-value>dds-webapp</param-value>
+			<description>
+				A string that indicates the context in which DDS is running.
+				Possible values:
+				dds-webapp, dcs-webapp (add others like joai if needed)
+			</description>
+		</init-param>
+
+
+
+
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+
+
+	<!-- Standard Struts Action Servlet Configuration -->
+	<servlet>
+		<servlet-name>action</servlet-name>
+		<servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+		<init-param>
+			<param-name>application</param-name>
+			<param-value>ApplicationResources</param-value>
+		</init-param>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/struts-config.xml</param-value>
+		</init-param>
+		<init-param>
+			<param-name>validate</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>0</param-value>
+		</init-param>
+		<init-param>
+			<param-name>detail</param-name>
+			<param-value>0</param-value>
+		</init-param>
+		<load-on-startup>3</load-on-startup>
+	</servlet>
+
+	<!-- Make like a HTML file and Google -->
+	<servlet>
+		<servlet-name>UriSpoofServlet</servlet-name>
+		<servlet-class>edu.ucar.dls.util.uri.UriSpoofServlet</servlet-class>
+		<load-on-startup>4</load-on-startup>
+	</servlet>
+
+
+	<!-- Search API(s) -->
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>/services/ddsws1-0</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>/services/ddsws1-1</url-pattern>
+	</servlet-mapping>
+
+	<!-- Update API -->
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>/services/ddsupdatews1-1</url-pattern>
+	</servlet-mapping>
+
+	<!-- JavaScript search client -->
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>/services/jshtml1-1</url-pattern>
+	</servlet-mapping>
+
+	<!-- OAI-PMH/ODL -->
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>/services/oai2-0</url-pattern>
+	</servlet-mapping>
+
+	<!-- RSS -->
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>/services/rss2-0</url-pattern>
+	</servlet-mapping>
+
+	<!-- Send *.htm requests to UriSpoofServlet -->
+	<servlet-mapping>
+		<servlet-name>UriSpoofServlet</servlet-name>
+		<url-pattern>*.htm</url-pattern>
+	</servlet-mapping>
+
+	<!-- Send all .do extensions to Struts -->
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- Define maximum session timeout -->
+	<session-config>
+		<session-timeout>10</session-timeout>
+	</session-config>
+
+	<!-- The Usual Welcome File List -->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<!-- Define pages to display errors -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/error_pages/error_page_404.jsp</location>
+	</error-page>
+	<!-- Use 404 for 400 as well -->
+	<error-page>
+		<error-code>400</error-code>
+		<location>/WEB-INF/error_pages/error_page_404.jsp</location>
+	</error-page>
+	<error-page>
+		<!-- Custom 401 works in TC 5.0 but not 5.5.12 -->
+		<error-code>401</error-code>
+		<location>/WEB-INF/error_pages/error_page_401.jsp</location>
+	</error-page>
+	<!-- <error-page>
+		<error-code>500</error-code>
+		<location>/WEB-INF/error_pages/error_page_500.jsp</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/WEB-INF/error_pages/error_page_500.jsp</location>
+	</error-page>
+		 -->
+	<!--
+        To enable password access to DDS administration (Tomcat 5.5 or greater),
+        edit the file conf/tomcat-users.xml in your Tomcat installation and
+        add the role 'dds_admin' and at least one user assigned to that role.
+
+        For exaple:
+
+        <tomcat-users>
+            <role rolename="dds_admin"/>
+            ... additional roles not shown ...
+
+            <user username="jdoe" password="mypassword" roles="dds_admin"/>
+            ... additional users not shown...
+        </tomcat-users>
+
+        Multiple users can be defined as well as multiple roles.
+        The application must be restarted before changes in these definitions
+        are seen.
+    -->
+	<!-- Configuration for user authentication (comment-out below to disable authentication all together) -->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>DDS Application</web-resource-name>
+			<url-pattern>/admin/*</url-pattern>
+			<url-pattern>/admin.do</url-pattern>
+			<url-pattern>/display.do</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>dds_admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>DDS Administration</realm-name>
+	</login-config>
+	<security-role>
+		<role-name>dds_admin</role-name>
+	</security-role>
+</web-app>

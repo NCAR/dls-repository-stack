@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: instName-person-osm-fields-en-us.xml,v 1.4 2011/07/01 16:42:57 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/instName.xsd">
+  <field name="Institutional name - person" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/contributors/person/affiliation/instName">
+		<definition>the institution or organization that a person is affiliated with</definition> 
+		 <bestPractices>
+			<dos>
+				<practice status="current" originDate="2010-05-31">This is a required field if affiliation information is being added.</practice> 
+				<practice status="current" originDate="2010-05-31">This field can only be repeated by adding a new affiliation tag set.</practice> 
+				<practice status="current" originDate="2010-05-31">Most often used to indicate authors, editors, submitters, speakers or contributors.</practice> 
+				<practice status="current" originDate="2010-05-31">May also be used to indicate interviewees or interviewers.</practice> 
+				<practice status="current" originDate="2010-05-31">If the person is a non-UCAR individual, it is not necessary to complete individual affiliation information.</practice> 
+				<practice status="current" originDate="2010-05-31">Use the controlled vocabulary or enter a new institutional name.</practice> 
+				<practice status="current" originDate="2010-05-31">Before using a new name, be sure to check the controlled vocabulary list carefully before entering the new institutional name.</practice> 
+				<practice status="current" originDate="2010-05-31">Spell out new names completely, capitalizing all proper names and all major words.</practice> 
+				<practice status="current" originDate="2010-05-31">If an external institutional name is provided already, double check for accuracy.</practice> 				
+			 </dos>
+			 <donts>
+				<practice status="current" originDate="2010-05-31">Do not use this field for meeting sponsor or publisher unless an individual, rather than an institution, is really playing that role.</practice>
+			</donts>
+			<examples>
+				<practice status="current" originDate="2010-05-31" link1="UCAR" style1="bold">UCAR: University Corporation for Atmospheric Research (UCAR)</practice>
+				<practice status="current" originDate="2010-05-31">Scripps Institution of Oceanography</practice>
+				<practice status="current" originDate="2010-05-31">U.S. Bureau of Reclamation</practice>
+				<practice status="current" originDate="2010-05-31">Universit&#0224; di Milano</practice>
+				<practice status="current" originDate="2010-05-31">The World Bank</practice>
+				<practice status="current" originDate="2010-05-31">National Institute for Environmental Studies (Japan)</practice>
+			</examples>
+			<otherPractices>
+				<otherPractice header="Special Characters to Encode? Do This:">
+					<practice status="current" originDate="2011-06-10" link1="numeric entity encodings" url1="http://theorem.ca/~mvcorks/code/charsets/auto.html">All special characters like subscripts, superscripts, copyright and other symbols must be entity encoded numerically. See the numeric entity encodings.</practice>
+				</otherPractice>
+			</otherPractices>
+		 </bestPractices>
+		 <documentation>
+				<obligation>required metadata if parent tag is present</obligation>
+				<min>1</min>
+				<max>1</max>
+				<XMLdataTypes>
+					<XMLdataType>string</XMLdataType>
+				</XMLdataTypes>
+				<domain>controlled vocabulary</domain>
+				<example>MIT Press</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

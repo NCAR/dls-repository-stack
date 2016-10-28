@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library_dc:record xsi:schemaLocation="http://www.dlsciences.org/frameworks/library_dc http://www.dlsciences.org/frameworks/library_dc/1.0/schemas/library_dc.xsd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:library_dc="http://www.dlsciences.org/frameworks/library_dc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<library_dc:recordID>RECORD-123</library_dc:recordID>
+	<library_dc:dateCataloged>1967-08-13</library_dc:dateCataloged>
+	<library_dc:URL>http://www.ucar.edu</library_dc:URL>
+	<library_dc:issue>Vol. 1 Num. 2</library_dc:issue>
+	<dc:source>String</dc:source>
+	<dc:title>UCAR Homepage</dc:title>
+	<library_dc:altTitle>text</library_dc:altTitle>
+	<dc:creator>String</dc:creator>
+	<dc:contributor>String</dc:contributor>
+	<dc:description>String</dc:description>
+	<dc:date>String</dc:date>
+	<library_dc:date_digitized>String</library_dc:date_digitized>
+	<dc:subject>String</dc:subject>
+	<library_dc:instName>National Center for Atmospheric Research (NCAR)</library_dc:instName>
+	<library_dc:instDivision>Advanced Study Program (ASP)</library_dc:instDivision>
+	<library_dc:libraryType>BOOK</library_dc:libraryType>
+	<dc:type>Collection</dc:type>
+	<dc:format>String</dc:format>
+	<dc:identifier>String</dc:identifier>
+	<dc:language>String</dc:language>
+	<dc:relation>String</dc:relation>
+	<dc:coverage>String</dc:coverage>
+	<dc:rights>String</dc:rights>
+	<dc:publisher>String</dc:publisher>
+</library_dc:record>

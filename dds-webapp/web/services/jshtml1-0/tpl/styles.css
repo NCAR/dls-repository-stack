@@ -1,0 +1,150 @@
+/* ------ Styles used throughout ------ */
+BODY {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 15px;
+	margin-bottom: 1px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10pt; 			
+} 
+
+H1 { 
+	Font-Family : Arial, Helvetica, sans-serif; 
+	Font-Size : 14pt ;
+	Color : #333366; 
+} 
+
+H2 { 
+	Font-Family : Arial, Helvetica, sans-serif; 
+	Font-Size : 12pt ;
+	Color : #333366; 
+} 
+
+H3 { 
+	Font-Family : Arial, Helvetica, sans-serif; 
+	Font-Size : 10pt ;
+	Color : #333366;
+	margin-bottom: 0px;
+} 
+	  
+TD { 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10pt; 
+} 
+		  
+A { text-decoration: underline; } 
+
+A:link { 
+	Font-Family: Arial, Helvetica, sans-serif;
+	Color: #333366
+} 
+
+A:active {
+	Color: #333366;
+	text-decoration: none;
+} 
+
+/* A link tha appears black (no underline, etc) */
+A.blackul:link {
+	color: #000000; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 11pt; 	
+}
+
+A.blackul:visited {
+	color: #000000; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 11pt; 	
+}
+
+/* Style used in the square box headings for sections in the page */
+.resultSectionHeading {
+	color: #ffffff;
+	font-size: 12pt; 
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif; 
+} 
+.resultSectionHeading DIV {
+	padding-left:4px;
+	padding-top:2px;
+	padding-bottom:2px;
+} 
+.resultSectionHeading TR {
+	background-color: #aaaadd;			
+} 
+
+.collectionTitle {
+	color: #000000; 
+	font-weight: bold;
+	font-size: 11pt; 	
+}
+
+/* Style used to highlight 'Your selections' */
+.selectionsHighlight {
+	color: #000066;
+} 
+
+/* Style used in the text displayed as a custom smart link */ 
+.cusTitle {
+	font-weight: bold;
+} 
+
+
+/* ------ Styles used in the full descripion ------ */
+.description { 
+	padding-left: 10px; 	
+	padding-right: 14px; 		
+	padding-bottom: 8px; 
+}
+.edTop { 
+	font-weight: bold;
+	color: #333333; 
+	padding-left: 4px; 	
+	padding-top: 10px; 		
+} 
+.edEn { 
+	padding-left: 12px; 	
+}		
+
+
+/* ------ Styles used in the checkbox menus ------ */
+
+A.vocabHeading:link {
+	color: #333366; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 9pt; 	
+}
+A.vocabHeading:visited {
+	color: #333366; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 9pt; 	
+}	
+A.vocabHeading:active {
+	color: #333366; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 9pt; 	
+}	
+.vocabSubHeading { 
+	color: #333366; 
+	text-decoration: none; 
+	font-weight: bold;
+	font-size: 9pt; 			
+}
+.vocabListLabels { 
+	font-size: 9pt; 
+}
+.clearbutton {
+	font-size: 9px;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	color: #333366; 
+	height: 16px; 
+	background-color: #eeeeee;
+}	
+

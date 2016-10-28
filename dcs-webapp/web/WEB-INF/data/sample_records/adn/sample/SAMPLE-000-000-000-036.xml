@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>Remote Sensing Using Satellites</title>
+<description>This website was developed for undergraduate students enrolled in an introductory earth or atmospheric science course. It is designed to supplement lecture and textbooks. Its goal is to make you a better consumer of weather information by providing dynamic graphics, animations, and science content about remote sensing, visible and infrared satellite imagery, and hurricanes. As part of the module, you will apply what you've learned by exploring recent hurricanes through satellite imagery. When you have completed this module, you should be able to view satellite imagery in a typical weather forecast on TV or the Web and recognize the importance of some features.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Atmospheric science</subject>
+<subject>DLESE:Technology</subject>
+</subjects>
+<keywords>
+<keyword>Weather satellite imagery</keyword>
+<keyword>Geostationary Operational Environmental Satellite (GOES)</keyword>
+<keyword>Visible and infrared satellite imagery feature identification</keyword>
+<keyword>Hurricane Opal</keyword>
+<keyword>Storm intensity</keyword>
+<keyword>Hurricane Nora</keyword>
+<keyword>Hurricane Fran</keyword>
+</keywords>
+</general>
+<lifecycle>
+<version>1</version>
+<contributors>
+<contributor date="1998-06-30" role="Author">
+<person>
+<nameTitle>Ms</nameTitle>
+<nameFirst>Kathryn</nameFirst>
+<nameMiddle>M.</nameMiddle>
+<nameLast>Ginger</nameLast>
+<instName>University Corporation for Atmospheric Research (UCAR)/ DLESE Program Center (DPC)</instName>
+<emailPrimary>ginger@ucar.edu</emailPrimary>
+</person>
+</contributor>
+<contributor role="Contact">
+<person>
+<nameTitle>Dr</nameTitle>
+<nameFirst>Greg</nameFirst>
+<nameLast>Byrd</nameLast>
+<instName>University Corporation for Atmospheric Research (UCAR)/ Cooperative Program for Operational Meteorology, Education and Training (COMET)</instName>
+<emailPrimary>byrd@ucar.edu</emailPrimary>
+</person>
+</contributor>
+<contributor date="1998-06-30" role="Publisher">
+<organization>
+<instName>University Corporation for Atmospheric Research (UCAR)/ Cooperative Program for Operational Meteorology, Education and Training (COMET)</instName>
+<instEmail>info@comet.ucar.edu</instEmail>
+<instUrl>http://www.comet.ucar.edu</instUrl>
+</organization>
+</contributor>
+<contributor date="1998-06-30" role="Publisher">
+<organization>
+<instName>University Corporation for Atmospheric Research (UCAR)/ Program for the Advancement for Geoscience Education (PAGE)</instName>
+<instEmail>info@page.ucar.edu</instEmail>
+<instUrl>http://www.page.ucar.edu</instUrl>
+</organization>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-036">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-04-19" created="2000-04-19"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://www.comet.ucar.edu/nsflab/index.htm</primaryURL>
+<mediums>
+<medium>text/html</medium>
+<medium>application/x-flash</medium>
+</mediums>
+<size>115000000</size>
+<requirements>
+<requirement>
+<reqType>DLESE:Software or plug-in:Shockwave player</reqType>
+<minimumVersion>Version 4</minimumVersion>
+</requirement>
+<requirement>
+<reqType>DLESE:Other:More specific technical requirements</reqType>
+</requirement>
+</requirements>
+<otherRequirements>
+<otherRequirement>
+<otherType>This module must have a Java-enabled browser. This module is operated using a browser and the Shockwave plug-in. The module can also be downloaded in order to operate onto a PC (Shockwave still required) or a Unix machine.</otherType>
+</otherRequirement>
+</otherRequirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:High school</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate lower division</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Learning materials:Computer activity</resourceType>
+<resourceType>DLESE:Learning materials:Lab activity</resourceType>
+<resourceType>DLESE:Learning materials:Module or unit</resourceType>
+<resourceType>DLESE:Visual:Remotely sensed imagery</resourceType>
+</resourceTypes>
+<contentStandards>
+<contentStandard>NSES:9-12:Content Standard D Earth and Space Science Standards:Energy in the earth system</contentStandard>
+<contentStandard>NSES:9-12:Content Standard E Science and Technology Standards:Abilities of technological design</contentStandard>
+<contentStandard>NSES:9-12:Content Standard E Science and Technology Standards:Understandings about science and technology</contentStandard>
+<contentStandard>NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural and human-induced hazards</contentStandard>
+<contentStandard>NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information</contentStandard>
+</contentStandards>
+<interactivityLevel>LOM:Medium</interactivityLevel>
+<interactivityType>LOM:Active</interactivityType>
+<description>Lab exercise or lecture supplement</description>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>This Website was developed by the Cooperative Program for Operational Meteorology, Education and Training (COMET) and the Program for the Advancement of Geoscience Education (PAGE) both of the University Corporation for Atmospheric Research (UCAR) under National Science Foundation (NSF) Cooperative Agreement No. ATM-9209181, Scientific Program Order (SPO) No. 10 and under the sponsorship of the National Oceanic and Atmospheric Administration (NOAA), Award Number NA67WD0097. Access to and use of the content on this Website shall impose the following obligations on the user. The user is granted the right, without any fee or cost, to access, link to and use, create derivative works, publish, distribute, disseminate, transfer, or in any manner alter, modify, revise, crop, copy (an unlimited number of times), edit, digitize, and authorize such uses for third parties for any non-profit training, research, or educational purpose whatsoever and not for any direct or indirect commercial purpose or advantage. The user must include an appropriate citation for any source used. THE CONTENT ON THIS WEBSITE IS PROVIDED BY UCAR &quot;AS IS&quot;. IN NO EVENT SHALL UCAR BE LIABLE FOR ANY SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER.</description>
+</rights>
+<relations>
+<relation>
+<idEntry entry="DLESE-000-000-001-043" kind="DC:Is referenced by"/>
+</relation>
+</relations>
+<geospatialCoverages>
+<geospatialCoverage>
+<body>
+<planet>Earth</planet>
+</body>
+<geodeticDatumGlobalOrHorz>DLESE:Unknown</geodeticDatumGlobalOrHorz>
+<projection type="DLESE:Unknown"/>
+<coordinateSystem type="DLESE:Geographic latitude and longitude"/>
+<boundBox>
+<westCoord>-135.0</westCoord>
+<eastCoord>-60.0</eastCoord>
+<northCoord>60.0</northCoord>
+<southCoord>15.0</southCoord>
+<bbSrcName>Cataloger supplied</bbSrcName>
+</boundBox>
+<detGeos>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="45.0" longitude="-62.0"/>
+<longLat latitude="22.0" longitude="-62.0"/>
+<longLat latitude="22.0" longitude="-86.0"/>
+<longLat latitude="45.0" longitude="-86.0"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detPlaces>
+<place>
+<name>East Coast, United States</name>
+<source>Unknown</source>
+</place>
+</detPlaces>
+<detEvents>
+<event>
+<name>Hurricane Fran</name>
+<source>Unknown</source>
+</event>
+</detEvents>
+</detGeo>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="30.0" longitude="-80.0"/>
+<longLat latitude="18.0" longitude="-80.0"/>
+<longLat latitude="18.0" longitude="-100.00"/>
+<longLat latitude="30.0" longitude="-100.00"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detPlaces>
+<place>
+<name>Gulf of Mexico</name>
+<source>Unknown</source>
+</place>
+</detPlaces>
+<detEvents>
+<event>
+<name>Hurricane Opal</name>
+<source>Unknown</source>
+</event>
+</detEvents>
+</detGeo>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="32.0" longitude="-107.0"/>
+<longLat latitude="17.0" longitude="-107.0"/>
+<longLat latitude="17.0" longitude="-117.0"/>
+<longLat latitude="32.0" longitude="-117.0"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detPlaces>
+<place>
+<name>Baja</name>
+<source>Unknown</source>
+</place>
+</detPlaces>
+<detEvents>
+<event>
+<name>Hurricane Nora</name>
+<source>Unknown</source>
+</event>
+</detEvents>
+</detGeo>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="60.0" longitude="-60.0"/>
+<longLat latitude="15.0" longitude="-60.0"/>
+<longLat latitude="15.0" longitude="-135.0"/>
+<longLat latitude="60.0" longitude="-135.0"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+</detGeo>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="38.0" longitude="-75.00"/>
+<longLat latitude="18.00" longitude="-75.00"/>
+<longLat latitude="18.00" longitude="-100.00"/>
+<longLat latitude="38.0" longitude="-100.00"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detPlaces>
+<place>
+<name>Southeast United States</name>
+<source>Unknown</source>
+</place>
+</detPlaces>
+<detEvents>
+<event>
+<name>Hurricane Opal</name>
+<source>Unknown</source>
+</event>
+</detEvents>
+</detGeo>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="38.0" longitude="-107.0"/>
+<longLat latitude="32.0" longitude="-107.0"/>
+<longLat latitude="32.0" longitude="-115.0"/>
+<longLat latitude="38.0" longitude="-115.0"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detPlaces>
+<place>
+<name>Arizona, United States</name>
+<source>Unknown</source>
+</place>
+</detPlaces>
+<detEvents>
+<event>
+<name>Hurricane Nora</name>
+<source>Unknown</source>
+</event>
+</detEvents>
+</detGeo>
+</detGeos>
+</geospatialCoverage>
+</geospatialCoverages>
+<temporalCoverages>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="1996-09-03" time="11:15:00Z"/>
+<end date="1996-09-06" time="18:15:00Z"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="1995-10-02" time="14:15:00Z"/>
+<end date="1995-10-04" time="15:15:00Z"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="1997-09-23" time="15:00:00Z"/>
+<end date="1997-09-25" time="13:00:00Z"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="1994-07"/>
+<end date="1998-06"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="1995-10-04" time="15:15:00Z"/>
+<end date="1995-10-05" time="17:15:00Z"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="1997-09-25" time="13:00:00Z"/>
+<end date="1997-09-25" time="23:30:00Z"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+</temporalCoverages>
+</itemRecord>

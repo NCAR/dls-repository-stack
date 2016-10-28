@@ -1,0 +1,51 @@
+<c:if test="${true}">
+<div style="margin: 0px 0px 10px 20px;border:0.5px solid blue;">
+<style>
+li.foo {font-size:8pt;}
+</style>
+	<table cellpadding="10">
+		<tr>
+			<td>
+				<h3>Session Id</h3>
+				${sessionBean.sessionId}		
+				<h3>Locked Records</h3>
+				<c:if test="${not empty sessionBean.lockedRecords}">
+					<c:forEach var="recId" items="${sessionBean.lockedRecords}">
+						<li>${recId}</li>
+					</c:forEach>
+				</c:if>
+				<c:if test="${empty sessionBean.lockedRecords}"><i>there are no locked records</i></c:if>
+			</td>
+		</tr>
+		<c:if test="${true}">
+		<tr valign="top">
+			<td width="33%">
+			<h3>Interaction State</h3>
+				
+				<li class="foo">searchParams: ${sessionBean.searchParams}</li>
+				<li class="foo">pageParam: ${sessionBean.paigingParam}</li>
+				<li class="foo">recId: ${sessionBean.recId}</li>
+				<li class="foo">sortRecsBy: ${sessionBean.sortRecsBy}</li>
+				<li class="foo">recIndex: ${sessionBean.recIndex}</li>
+			
+			</td>
+			<td width="33%">
+			<h3>SessionScope attributes</h3>
+			
+				<c:forEach var="attName" items="${sessionBean.sessionAttributeNames}">
+				  <li class="foo">${attName}</li>
+			   </c:forEach>
+			</td>
+			<td>
+			<h3>ApplicationScope attributes</h3>
+			
+				<c:forEach var="attName" items="${sessionBean.servletContextAttributeNames}">
+				  <li class="foo">${attName}</li>
+			   </c:forEach>
+			   
+			</td>
+		</tr>
+		</c:if>
+	</table>
+</div>
+</c:if>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: gemSubject-mast-groups-cataloger-en-us.xml,v 1.11 2009/07/30 16:11:56 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/GEMsubject.xsd">
+
+	<head>
+		<title>GEM Subject</title>
+		<concept language="en-us" metaFormat="mast" metaVersion="1.0" text="GEM Subject" audience="cataloger" path="/record/general/subjects/gemSubject" deftn="The topic of the content of the resource."/>
+	</head>
+	<body> 
+		<outline type="group" text="Arts" vocab="Arts" deftn="Subjects having to do with a diverse range of human creativity and artifacts."><!--18 terms-->
+			<outline vocab="Arts:Architecture" type="vocab" text="Architecture"/>
+			<outline vocab="Arts:Art therapy" type="vocab" text="Art therapy"/>
+			<outline vocab="Arts:Careers" type="vocab" text="Careers"/>
+			<outline vocab="Arts:Computers in art" type="vocab" text="Computers in art"/>
+			<outline vocab="Arts:Dance" type="vocab" text="Dance" wrap="true"/>
+			<outline vocab="Arts:Drama/dramatics" type="vocab" text="Drama/dramatics"/>
+			<outline vocab="Arts:Film" type="vocab" text="Film"/>
+			<outline vocab="Arts:History" type="vocab" text="History"/>
+			<outline vocab="Arts:Informal education" type="vocab" text="Informal education" wrap="true"/>
+			<outline vocab="Arts:Instructional issues" type="vocab" text="Instructional issues"/>
+			<outline vocab="Arts:Music" type="vocab" text="Music"/>
+			<outline vocab="Arts:Photography" type="vocab" text="Photography"/>
+			<outline vocab="Arts:Popular culture" type="vocab" text="Popular culture"/>
+			<outline vocab="Arts:Process skills" type="vocab" text="Process skills" wrap="true"/>
+			<outline vocab="Arts:Technology" type="vocab" text="Technology"/>
+			<outline vocab="Arts:Theater arts" type="vocab" text="Theater arts"/>
+			<outline vocab="Arts:Visual arts" type="vocab" text="Visual arts"/>	
+		</outline>
+	
+		<outline type="group" text="Educational Technology" vocab="Educational technology" deftn="Subjects that pertain to informational technology used in the delivery of educational materials."><!--14 terms-->
+			<outline vocab="Educational technology:Audio-visual equipment" type="vocab" text="Audio-visual equipment"/>
+			<outline vocab="Educational technology:Careers" type="vocab" text="Careers"/>
+			<outline vocab="Educational technology:Educational media" type="vocab" text="Educational media"/>
+			<outline vocab="Educational technology:History" type="vocab" text="History" wrap="true"/>
+			<outline vocab="Educational technology:Informal education" type="vocab" text="Informal education"/>
+			<outline vocab="Educational technology:Instructional issues" type="vocab" text="Instructional issues"/>
+			<outline vocab="Educational technology:Integrating technology into the classroom" type="vocab" text="Integrating technology" wrap="true"/>
+			<outline vocab="Educational technology:Language laboratories" type="vocab" text="Language laboratories"/>
+			<outline vocab="Educational technology:Multimedia education" type="vocab" text="Multimedia education"/>	
+			<outline vocab="Educational technology:Process skills" type="vocab" text="Process skills" wrap="true"/>
+			<outline vocab="Educational technology:Staff inservice" type="vocab" text="Staff inservice"/>
+			<outline vocab="Educational technology:Technology" type="vocab" text="Technology"/>
+			<outline vocab="Educational technology:Technology planning" type="vocab" text="Technology planning"/>
+		</outline>
+
+		<outline type="group" text="Foreign Languages" vocab="Foreign languages" deftn="A group of instructional programs that describes the structure and use of language that is common or indigenous to individuals of the same community or nation, the same geographical area, or the same cultural traditions."> <!--US Dept. Ed, Institute of Education Sciences Glossary--> <!-- 18 terms-->
+			<outline vocab="Foreign languages:Alphabet" type="vocab" text="Alphabet"/>
+			<outline vocab="Foreign languages:Bilingualism" type="vocab" text="Bilingualism"/>
+			<outline vocab="Foreign languages:Careers" type="vocab" text="Careers"/>
+			<outline vocab="Foreign languages:Cultural awareness" type="vocab" text="Cultural awareness"/>
+			<outline vocab="Foreign languages:Grammar" type="vocab" text="Grammar" wrap="true"/>
+			<outline vocab="Foreign languages:History" type="vocab" text="History"/>
+			<outline vocab="Foreign languages:Informal education" type="vocab" text="Informal education"/>
+			<outline vocab="Foreign languages:Instructional issues" type="vocab" text="Instructional issues"/>
+			<outline vocab="Foreign languages:Linguistics" type="vocab" text="Linguistics" wrap="true"/>
+			<outline vocab="Foreign languages:Listening comprehension" type="vocab" text="Listening comprehension"/>
+			<outline vocab="Foreign languages:Process skills" type="vocab" text="Process skills"/>
+			<outline vocab="Foreign languages:Reading" type="vocab" text="Reading"/>
+			<outline vocab="Foreign languages:Speaking" type="vocab" text="Speaking" wrap="true"/>
+			<outline vocab="Foreign languages:Spelling" type="vocab" text="Spelling"/>
+			<outline vocab="Foreign languages:Technology" type="vocab" text="Technology"/>
+			<outline vocab="Foreign languages:Vocabulary" type="vocab" text="Vocabulary"/>
+			<outline vocab="Foreign languages:Writing" type="vocab" text="Writing"/>
+		</outline>
+		
+		<outline type="group" text="Health" vocab="Health" deftn="Subjects having to do with the condition of the body."><!--21 terms-->
+			<outline vocab="Health:Aging" type="vocab" text="Aging"/>
+			<outline vocab="Health:Body systems and senses" type="vocab" text="Body systems and senses"/>
+			<outline vocab="Health:Careers" type="vocab" text="Careers"/>
+			<outline vocab="Health:Chronic conditions" type="vocab" text="Chronic conditions"/>
+			<outline vocab="Health:Consumer health" type="vocab" text="Consumer health"/>
+			<outline vocab="Health:Death and dying" type="vocab" text="Death and dying" wrap="true"/>
+			<outline vocab="Health:Disease" type="vocab" text="Disease"/>
+			<outline vocab="Health:Environmental health" type="vocab" text="Environmental health"/>
+			<outline vocab="Health:Family life" type="vocab" text="Family life"/>
+			<outline vocab="Health:History" type="vocab" text="History"/>
+			<outline vocab="Health:Human sexuality" type="vocab" text="Human sexuality" wrap="true"/>
+			<outline vocab="Health:Informal education" type="vocab" text="Informal education"/>
+			<outline vocab="Health:Instructional issues" type="vocab" text="Instructional issues"/>
+			<outline vocab="Health:Mental/emotional health" type="vocab" text="Mental/emotional health"/>
+			<outline vocab="Health:Nutrition" type="vocab" text="Nutrition"/>
+			<outline vocab="Health:Process skills" type="vocab" text="Process skills" wrap="true"/>
+			<outline vocab="Health:Safety" type="vocab" text="Safety"/>
+			<outline vocab="Health:Smoking" type="vocab" text="Smoking"/>
+			<outline vocab="Health:Substance abuse prevention" type="vocab" text="Substance abuse prevention"/>
+			<outline vocab="Health:Technology" type="vocab" text="Technology"/>
+		</outline>
+		
+		
+	
+		<outline type="group" text="Language Arts" vocab="Language arts" deftn="Subjects that aim at developing the student's comprehension and capacity for use of written and oral language"> <!-- Websters--> <!--24 terms-->
+			<outline vocab="Language arts:Alphabet" type="vocab" text="Alphabet"/>
+			<outline vocab="Language arts:Careers" type="vocab" text="Careers"/>
+			<outline vocab="Language arts:Debate" type="vocab" text="Debate"/>
+			<outline vocab="Language arts:Grammar" type="vocab" text="Grammar"/>
+			<outline vocab="Language arts:Handwriting" type="vocab" text="Handwriting"/>
+			<outline vocab="Language arts:History" type="vocab" text="History" wrap="true"/>
+			<outline vocab="Language arts:Informal education" type="vocab" text="Informal education"/>
+			<outline vocab="Language arts:Instructional issues" type="vocab" text="Instructional issues"/>
+			<outline vocab="Language arts:Journalism" type="vocab" text="Journalism"/>
+			<outline vocab="Language arts:Listening comprehension" type="vocab" text="Listening comprehension"/>
+			<outline vocab="Language arts:Literature" type="vocab" text="Literature"/>
+			<outline vocab="Language arts:Mechanics" type="vocab" text="Mechanics" wrap="true"/>
+			<outline vocab="Language arts:Phonics" type="vocab" text="Phonics"/>
+			<outline vocab="Language arts:Process skills" type="vocab" text="Process skills"/>
+			<outline vocab="Language arts:Reading" type="vocab" text="Reading"/>
+			<outline vocab="Language arts:Reading aloud" type="vocab" text="Reading aloud"/>
+			<outline vocab="Language arts:Speech" type="vocab" text="Speech"/>
+			<outline vocab="Language arts:Spelling" type="vocab" text="Spelling" wrap="true"/>
+			<outline vocab="Language arts:Story telling" type="vocab" text="Story telling"/>
+			<outline vocab="Language arts:Technology" type="vocab" text="Technology"/>
+			<outline vocab="Language arts:Vocabulary" type="vocab" text="Vocabulary"/>
+			<outline vocab="Language arts:Whole language" type="vocab" text="Whole language"/>
+			<outline vocab="Language arts:Writing (composition)" type="vocab" text="Writing (composition)"/>
+		</outline>
+		
+		<outline type="group" text="Mathematics" vocab="Mathematics" deftn=" The science of numbers, their operations, interrelations, combinations, generalizations and abstractions."> <!--DLESE/UCAR--> <!--21 terms-->
+			<outline vocab="Mathematics:Algebra" type="vocab" text="Algebra"/>
+			<outline vocab="Mathematics:Applied mathematics" type="vocab" text="Applied mathematics"/>
+			<outline vocab="Mathematics:Arithmetic" type="vocab" text="Arithmetic"/>
+			<outline vocab="Mathematics:Calculus" type="vocab" text="Calculus"/>
+			<outline vocab="Mathematics:Careers" type="vocab" text="Careers"/>
+			<outline vocab="Mathematics:Discrete mathematics" type="vocab" text="Discrete mathematics" wrap="true"/>
+			<outline vocab="Mathematics:Functions" type="vocab" text="Functions"/>
+			<outline vocab="Mathematics:Geometry" type="vocab" text="Geometry"/>
+			<outline vocab="Mathematics:History" type="vocab" text="History"/>
+			<outline vocab="Mathematics:Informal education" type="vocab" text="Informal education"/>
+			<outline vocab="Mathematics:Instructional issues" type="vocab" text="Instructional issues" wrap="true"/>
+			<outline vocab="Mathematics:Measurement" type="vocab" text="Measurement"/>
+			<outline vocab="Mathematics:Number sense" type="vocab" text="Number sense"/>
+			<outline vocab="Mathematics:Number theory" type="vocab" text="Number theory"/>
+			<outline vocab="Mathematics:Patterns" type="vocab" text="Patterns"/>
+			<outline vocab="Mathematics:Probability" type="vocab" text="Probability" wrap="true"/>
+			<outline vocab="Mathematics:Process skills" type="vocab" text="Process skills"/>
+			<outline vocab="Mathematics:Statistics" type="vocab" text="Statistics"/>
+			<outline vocab="Mathematics:Technology" type="vocab" text="Technology"/>
+			<outline vocab="Mathematics:Trigonometry" type="vocab" text="Trigonometry"/>
+		</outline>
+		
+		
+		<outline type="group" text="Philosophy" vocab="Philosophy" deftn="Subjects having to do with the study of beliefs of systems of beliefs."><!--18 terms -->
+			<outline vocab="Philosophy:Aesthetics" type="vocab" text="Aesthetics"/>
+			<outline vocab="Philosophy:Careers" type="vocab" text="Careers"/>
+			<outline vocab="Philosophy:Educational philosophy" type="vocab" text="Educational philosophy"/>
+			<outline vocab="Philosophy:Epistemology" type="vocab" text="Epistemology"/>
+			<outline vocab="Philosophy:Ethics" type="vocab" text="Ethics" wrap="true"/>
+			<outline vocab="Philosophy:Existentialism" type="vocab" text="Existentialism"/>
+			<outline vocab="Philosophy:Hermeneutics" type="vocab" text="Hermeneutics"/>
+			<outline vocab="Philosophy:History" type="vocab" text="History"/>
+			<outline vocab="Philosophy:Informal education" type="vocab" text="Informal education" wrap="true"/>
+			<outline vocab="Philosophy:Instructional issues" type="vocab" text="Instructional issues"/>
+			<outline vocab="Philosophy:Logic" type="vocab" text="Logic"/>
+			<outline vocab="Philosophy:Marxism" type="vocab" text="Marxism"/>
+			<outline vocab="Philosophy:Phenomenology" type="vocab" text="Phenomenology" wrap="true"/>
+			<outline vocab="Philosophy:Platonism" type="vocab" text="Platonism"/>
+			<outline vocab="Philosophy:Process skills" type="vocab" text="Process skills"/>
+			<outline vocab="Philosophy:Semiotics" type="vocab" text="Semiotics"/>
+			<outline vocab="Philosophy:Technology" type="vocab" text="Technology"/>
+		</outline>
+		
+		<outline type="group" text="Physical Education" vocab="Physical education" deftn="Subjects having to do with exercise, physical activity and the development of motor skills."><!--17 terms-->
+			<outline vocab="Physical education:Adventure and risk challenge activities" type="vocab" text="Adventure and risk challenge activities"/>
+			<outline vocab="Physical education:Aquatics" type="vocab" text="Aquatics"/>
+			<outline vocab="Physical education:Careers" type="vocab" text="Careers"/>
+			<outline vocab="Physical education:Games (educational)" type="vocab" text="Games (educational)"/>
+			<outline vocab="Physical education:Gymnastics (educational)" type="vocab" text="Gymnastics (educational)" wrap="true"/>
+			<outline vocab="Physical education:History" type="vocab" text="History"/>
+			<outline vocab="Physical education:Individual sports" type="vocab" text="Individual sports"/>
+			<outline vocab="Physical education:Informal education" type="vocab" text="Informal education"/>
+			<outline vocab="Physical education:Instructional issues" type="vocab" text="Instructional issues" wrap="true"/>
+			<outline vocab="Physical education:Motor/movement skills" type="vocab" text="Motor/movement skills"/>
+			<outline vocab="Physical education:Outdoor education" type="vocab" text="Outdoor education"/>
+			<outline vocab="Physical education:Process skills" type="vocab" text="Process skills"/>
+			<outline vocab="Physical education:Rhythms and dance" type="vocab" text="Rhythms and dance" wrap="true"/>
+			<outline vocab="Physical education:Skill-related fitness" type="vocab" text="Skill-related fitness"/>
+			<outline vocab="Physical education:Team sports" type="vocab" text="Team sports"/>
+			<outline vocab="Physical education:Technology" type="vocab" text="Technology"/>
+		</outline>
+		
+		<outline type="group" text="Religion" vocab="Religion" deftn="Subjects having to do with specific sets of religious attitudes, beliefs and practices."><!--13 terms-->
+			<outline vocab="Religion:Buddhism" type="vocab" text="Buddhism"/>
+			<outline vocab="Religion:Careers" type="vocab" text="Careers"/>
+			<outline vocab="Religion:Christianity" type="vocab" text="Christianity"/>
+			<outline vocab="Religion:Confucianism" type="vocab" text="Confucianism" wrap="true"/>
+			<outline vocab="Religion:History" type="vocab" text="History"/>
+			<outline vocab="Religion:Informal education" type="vocab" text="Informal education"/>
+			<outline vocab="Religion:Instructional issues" type="vocab" text="Instructional issues" wrap="true"/>
+			<outline vocab="Religion:Islam" type="vocab" text="Islam"/>
+			<outline vocab="Religion:Judaism" type="vocab" text="Judaism"/>
+			<outline vocab="Religion:Process skills" type="vocab" text="Process skills" wrap="true"/>
+			<outline vocab="Religion:Taoism" type="vocab" text="Taoism"/>
+			<outline vocab="Religion:Technology" type="vocab" text="Technology"/>
+		</outline>
+		
+		<outline type="group" text="Science" vocab="Science:General science" deftn="The body of related courses concerned with knowledge of the physical and biological world and with the processes of discovering and validating this knowledge."> <!--US Dept. Ed, Institute of Education Sciences Glossary--><!--29 terms-->
+			<outline vocab="Science:Agriculture" type="vocab" text="Agriculture"/>
+			<outline vocab="Science:Astronomy" type="vocab" text="Astronomy"/>
+			<outline vocab="Science:Biological and life sciences" type="vocab" text="Biological and life sciences"/>
+			<outline vocab="Science:Biology" type="vocab" text="Biology"/>
+			<outline vocab="Science:Botany" type="vocab" text="Botany"/>
+			<outline vocab="Science:Careers" type="vocab" text="Careers"/>
+			<outline vocab="Science:Chemistry" type="vocab" text="Chemistry"/>
+			<outline vocab="Science:Earth science" type="vocab" text="Earth science" wrap="true"/>
+			<outline vocab="Science:Ecology" type="vocab" text="Ecology"/>
+			<outline vocab="Science:Embryology" type="vocab" text="Embryology"/>
+			<outline vocab="Science:Engineering" type="vocab" text="Engineering"/>
+			<outline vocab="Science:Entomology" type="vocab" text="Entomology"/>
+			<outline vocab="Science:Geology" type="vocab" text="Geology"/>
+			<outline vocab="Science:Histology" type="vocab" text="Histology"/>
+			<outline vocab="Science:History" type="vocab" text="History" wrap="true"/>
+			<outline vocab="Science:Informal education" type="vocab" text="Informal education"/>
+			<outline vocab="Science:Instructional issues" type="vocab" text="Instructional issues"/>
+			<outline vocab="Science:Metallurgy" type="vocab" text="Metallurgy"/>
+			<outline vocab="Science:Meteorology" type="vocab" text="Meteorology"/>
+			<outline vocab="Science:Natural history" type="vocab" text="Natural history"/>
+			<outline vocab="Science:Oceanography" type="vocab" text="Oceanography"/>
+			<outline vocab="Science:Paleontology" type="vocab" text="Paleontology" wrap="true"/>
+			<outline vocab="Science:Pharmacology" type="vocab" text="Pharmacology"/>
+			<outline vocab="Science:Physical sciences" type="vocab" text="Physical sciences"/>
+			<outline vocab="Science:Physics" type="vocab" text="Physics"/>
+			<outline vocab="Science:Process skills" type="vocab" text="Process skills"/>
+			<outline vocab="Science:Space sciences" type="vocab" text="Space sciences"/>
+			<outline vocab="Science:Technology" type="vocab" text="Technology"/>
+		</outline>
+	
+		<outline type="group" text="Social Studies" vocab="Social studies" deftn="A group of instructional programs that describes the substantive portions of behavior, past and present activities, interactions, and organizations of people associated together for religious, benevolent, cultural, scientific, political, patriotic, or other purposes."> <!--US Dept. Ed, Institute of Education Sciences Glossary--><!--27 terms-->
+			<outline vocab="Social studies:Anthropology" type="vocab" text="Anthropology"/>
+			<outline vocab="Social studies:Careers" type="vocab" text="Careers"/>
+			<outline vocab="Social studies:Civics" type="vocab" text="Civics"/>
+			<outline vocab="Social studies:Comparative political systems" type="vocab" text="Comparative political systems"/>
+			<outline vocab="Social studies:Criminology" type="vocab" text="Criminology"/>
+			<outline vocab="Social studies:Current events/issues" type="vocab" text="Current events/issues"/>
+			<outline vocab="Social studies:Economics" type="vocab" text="Economics"/>
+			<outline vocab="Social studies:Geography" type="vocab" text="Geography" wrap="true"/>
+			<outline vocab="Social studies:Gerontology" type="vocab" text="Gerontology"/>
+			<outline vocab="Social studies:History" type="vocab" text="History"/>
+			<outline vocab="Social studies:Human behavior" type="vocab" text="Human behavior"/>
+			<outline vocab="Social studies:Human relations" type="vocab" text="Human relations"/>
+			<outline vocab="Social studies:Informal education" type="vocab" text="Informal education"/>
+			<outline vocab="Social studies:Instructional issues" type="vocab" text="Instructional issues"/>
+			<outline vocab="Social studies:Process skills" type="vocab" text="Process skills" wrap="true"/>
+			<outline vocab="Social studies:Psychology" type="vocab" text="Psychology"/>
+			<outline vocab="Social studies:Social work" type="vocab" text="Social work"/>
+			<outline vocab="Social studies:Sociology" type="vocab" text="Sociology"/>
+			<outline vocab="Social studies:State history" type="vocab" text="State history"/>
+			<outline vocab="Social studies:Technology" type="vocab" text="Technology"/>
+			<outline vocab="Social studies:Technology and civilization" type="vocab" text="Technology and civilization"/>
+			<outline vocab="Social studies:United States Constitution" type="vocab" text="United States Constitution" wrap="true"/>
+			<outline vocab="Social studies:United States government" type="vocab" text="United States government"/>
+			<outline vocab="Social studies:United States history" type="vocab" text="United States history"/>
+			<outline vocab="Social studies:Urban studies" type="vocab" text="Urban studies"/>
+			<outline vocab="Social studies:World history" type="vocab" text="World history"/>
+		</outline>
+		
+		<outline type="group" text="Vocational Education" vocab="Vocational education" deftn="Organized educational activities that offer a sequence of courses that provides individuals with the academic and technical knowledge and skills needed to prepare for further education and for careers requiring less than a bachelor’s degree."><!--US Dept. Ed, Institute of Education Sciences Glossary--><!-- 17 terms-->
+			<outline vocab="Vocational education:Agriculture" type="vocab" text="Agriculture"/>
+			<outline vocab="Vocational education:Allied health occupations" type="vocab" text="Allied health occupations"/>
+			<outline vocab="Vocational education:Business" type="vocab" text="Business"/>
+			<outline vocab="Vocational education:Careers" type="vocab" text="Careers"/>
+			<outline vocab="Vocational education:Cooperative education" type="vocab" text="Cooperative education" wrap="true"/>
+			<outline vocab="Vocational education:Distributive" type="vocab" text="Distributive"/>
+			<outline vocab="Vocational education:History" type="vocab" text="History"/>
+			<outline vocab="Vocational education:Informal education" type="vocab" text="Informal education"/>
+			<outline vocab="Vocational education:Instructional issues" type="vocab" text="Instructional issues" wrap="true"/>
+			<outline vocab="Vocational education:Occupational home economics" type="vocab" text="Occupational home economics"/>
+			<outline vocab="Vocational education:Process skills" type="vocab" text="Process skills"/>
+			<outline vocab="Vocational education:School-to-work" type="vocab" text="School-to-work"/>
+			<outline vocab="Vocational education:Tech prep" type="vocab" text="Tech prep" wrap="true"/>
+			<outline vocab="Vocational education:Technical" type="vocab" text="Technical"/>
+			<outline vocab="Vocational education:Technology" type="vocab" text="Technology"/>
+			<outline vocab="Vocational education:Trade and industrial" type="vocab" text="Trade and industrial"/>
+		</outline>
+	
+	</body>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

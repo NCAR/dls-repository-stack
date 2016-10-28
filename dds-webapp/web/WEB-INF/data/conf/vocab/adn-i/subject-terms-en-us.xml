@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<termsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/adn-i/subject.xsd">
+	<field name="subject" id="su" language="en-us">
+		<definition system="meta" interface="default">The content area(s) of science and learning addressed by the resource</definition>
+		<definition system="dcs" interface="default"></definition>
+		<definition system="dds" interface="default"></definition>
+
+		<value vocab="DLESE:Agricultural science" id="00">
+			<definition system="meta" interface="default">The science of cultivating soil, crops or livestock</definition>
+			<definition system="dcs" interface="default">The science of cultivating soil, crops or livestock</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Atmospheric science" id="01">
+			<definition system="meta" interface="default">The study of Earth's atmosphere including both its physical and chemical properties such as composition, precipitation patterns, energy cycles, chemical cycles, pressure, wind patterns and temperature distributions</definition>
+			<definition system="dcs" interface="default">String</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Biological oceanography" id="02">
+			<definition system="meta" interface="default">The study of the flora and fauna of oceans in relation to the marine environment</definition>
+			<definition system="dcs" interface="default">The study of the flora and fauna of oceans in relation to the marine environment</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Biology" id="03">
+			<definition system="meta" interface="default">The study of living organisms including both animals (zoology) and plants (botany) with respect to their structure and function, origin and evolution, the interrelationships between and distribution of species, and the classification of species</definition>
+			<definition system="dcs" interface="default">The study of living organisms including both animals (zoology) and plants (botany) with respect to their structure and function, origin and evolution, the interrelationships between and distribution of species, and the classification of species</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Chemical oceanography" id="04">
+			<definition system="meta" interface="default">The hydrographic and physical characterization of the ocean, including the chemical composition of seawater, salinity, the vertical and regional variation of elements, the mineralogical composition and distribution of marine sediments and the oceanic cycle of organic and inorganic carbon and associated elements</definition>
+			<definition system="dcs" interface="default">The hydrographic and physical characterization of the ocean, including the chemical composition of seawater, salinity, the vertical and regional variation of elements, the mineralogical composition and distribution of marine sediments and the oceanic cycle of organic and inorganic carbon and associated elements</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Chemistry" id="05">
+			<definition system="meta" interface="default">The study of a substance's composition, structure, properties and the changes it undergoes in all three including associated energy changes. Includes molecular structure, solution and concentration, acid/base/salts, and the periodic table of elements.</definition>
+			<definition system="dcs" interface="default">The study of a substance's composition, structure, properties and the changes it undergoes in all three including associated energy changes. Includes molecular structure, solution and concentration, acid/base/salts, and the periodic table of elements.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Climatology" id="06">
+			<definition system="meta" interface="default">The study of the mean physical state of the atmosphere, it's statistical variation over time and space as evidenced by weather patterns over long periods of time. Includes the analysis of the causes of different climates, the presentation of climatic data and the application of climatic data to problems.</definition>
+			<definition system="dcs" interface="default">The study of the mean physical state of the atmosphere, it's statistical variation over time and space as evidenced by weather patterns over long periods of time. Includes the analysis of the causes of different climates, the presentation of climatic data and the application of climatic data to problems.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Cryology" id="07">
+			<definition system="meta" interface="default">The study of ice and snow, including glaciers, sea ice and ice shelves</definition>
+			<definition system="dcs" interface="default">The study of ice and snow, including glaciers, sea ice and ice shelves</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Ecology" id="08">
+			<definition system="meta" interface="default">The study of the relationships between organisms and their environments (both living and non-living) at the population, community and ecosystem levels</definition>
+			<definition system="dcs" interface="default">The study of the relationships between organisms and their environments (both living and non-living) at the population, community and ecosystem levels</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Educational theory and practice" id="09">
+			<definition system="meta" interface="default">The study of methods of teaching, learning and pedagogy</definition>
+			<definition system="dcs" interface="default">The study of methods of teaching, learning and pedagogy</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Environmental science" id="0a">
+			<definition system="meta" interface="default">An interdisciplinary, systems approach to understanding the link between human activities and the natural environment as well as the related impacts of humanity on individual species, ecological systems, and human health. Topics include resource use, environmental sustainability, responses of systems to anthropogenic stress, population growth, biodiversity and conservation, pollution and water quality.</definition>
+			<definition system="dcs" interface="default">An interdisciplinary, systems approach to understanding the link between human activities and the natural environment as well as the related impacts of humanity on individual species, ecological systems, and human health. Topics include resource use, environmental sustainability, responses of systems to anthropogenic stress, population growth, biodiversity and conservation, pollution and water quality.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Forestry" id="0b">
+			<definition system="meta" interface="default">The science of developing and managing forests for wood, wildlife, recreation, water and forage</definition>
+			<definition system="dcs" interface="default">The science of developing and managing forests for wood, wildlife, recreation, water and forage</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Geochemistry" id="0c">
+			<definition system="meta" interface="default">The study of chemical composition, structure and phase changes in the solid matter of the Earth and the processes which have produced the observed distribution of elements and nuclides. Topics include stable, radiogenic and radioactive isotopes, crystal structures and the  formation and abundance of elements.</definition>
+			<definition system="dcs" interface="default">The study of chemical composition, structure and phase changes in the solid matter of the Earth and the processes which have produced the observed distribution of elements and nuclides. Topics include stable, radiogenic and radioactive isotopes, crystal structures and the  formation and abundance of elements.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Geologic time" id="0d">
+			<definition system="meta" interface="default">Any formal division of geologic chronology, more popularly, a span of millions or billions of years in the past prior to the start of modern history. Includes methods to calculate or estimate Earth's history like carbon dating.</definition>
+			<definition system="dcs" interface="default">Any formal division of geologic chronology, more popularly, a span of millions or billions of years in the past prior to the start of modern history. Includes methods to calculate or estimate Earth's history like carbon dating.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Geology" id="0e">
+			<definition system="meta" interface="default">The study of the Earth and it's history as represented in rocks including the materials of which it is made, the processes that act on these materials (weathering, sedimentation) and the products formed (geologic features and rock formations). Includes plate tectonics (global scale) and volcanoes.</definition>
+			<definition system="dcs" interface="default">The study of the Earth and it's history as represented in rocks including the materials of which it is made, the processes that act on these materials (weathering, sedimentation) and the products formed (geologic features and rock formations). Includes plate tectonics (global scale) and volcanoes.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Geophysics" id="0f">
+			<definition system="meta" interface="default">The interdisciplinary study of physics of the Earth and its environment (i.e. earth, air, and by extension space). Includes the study of earthquake waves, geomagnetism, gravitational fields, and electrical conductivity using precise quantitative principles.</definition>
+			<definition system="dcs" interface="default">The interdisciplinary study of physics of the Earth and its environment (i.e. earth, air, and by extension space). Includes the study of earthquake waves, geomagnetism, gravitational fields, and electrical conductivity using precise quantitative principles.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:History and philosophy of science" id="0g">
+			<definition system="meta" interface="default">The study of the origin and nature of scientific thought, theory and investigations</definition>
+			<definition system="dcs" interface="default">The study of the origin and nature of scientific thought, theory and investigations</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Human geography" id="0h">
+			<definition system="meta" interface="default">The study of the characteristics and phenomena of the Earth's surface that relates directly to or are due to human activities. Also known as anthropogeography.</definition>
+			<definition system="dcs" interface="default">The study of the characteristics and phenomena of the Earth's surface that relates directly to or are due to human activities. Also known as anthropogeography.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Hydrology" id="0i">
+			<definition system="meta" interface="default">The scientific study of the occurrence, circulation, distribution, and properties of terrestrial water, in particular inland water before its discharge into the oceans or evaporation into the atmosphere. It includes the study of the occurrence and movement of water and ice on or under the earth's surface (e.g. surface water, groundwater and limnology).</definition>
+			<definition system="dcs" interface="default">The scientific study of the occurrence, circulation, distribution, and properties of terrestrial water, in particular inland water before its discharge into the oceans or evaporation into the atmosphere. It includes the study of the occurrence and movement of water and ice on or under the earth's surface (e.g. surface water, groundwater and limnology).</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Mathematics" id="0j">
+			<definition system="meta" interface="default">The science of numbers, their operations, interrelations, combinations, generalizations and abstractions</definition>
+			<definition system="dcs" interface="default">The science of numbers, their operations, interrelations, combinations, generalizations and abstractions</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Mineralogy or petrology" id="0k">
+			<definition system="meta" interface="default">The science of minerals and rocks dealing with their origin, crystallography, properties and classification. In particular petrology focuses on the origin, occurrence, structure and history of rock, especially igneous and metamorphic rock.</definition>
+			<definition system="dcs" interface="default">The science of minerals and rocks dealing with their origin, crystallography, properties and classification. In particular petrology focuses on the origin, occurrence, structure and history of rock, especially igneous and metamorphic rock.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Natural hazards" id="0l">
+			<definition system="meta" interface="default">Events or phenomena that have the potential to inflict property damage and loss of life such as floods, hurricanes, earthquakes, tornadoes, volcanic eruptions and tidal waves</definition>
+			<definition system="dcs" interface="default">Events or phenomena that have the potential to inflict property damage and loss of life such as floods, hurricanes, earthquakes, tornadoes, volcanic eruptions and tidal waves</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Other" id="0x">
+			<definition system="meta" interface="default">No choice within the list is appropriate</definition>
+			<definition system="dcs" interface="default">No choice within the list is appropriate</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Paleontology" id="0n">
+			<definition system="meta" interface="default">The study of extinct organisms, including their structure, environment, evolution and distribution, as revealed by their fossil remains</definition>
+			<definition system="dcs" interface="default">The study of extinct organisms, including their structure, environment, evolution and distribution, as revealed by their fossil remains</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Physical geography" id="0o">
+			<definition system="meta" interface="default">The study of the description, distribution and interaction of diverse physical features of Earth's surface</definition>
+			<definition system="dcs" interface="default">The study of the description, distribution and interaction of diverse physical features of Earth's surface</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Physical oceanography" id="0p">
+			<definition system="meta" interface="default">The study of the physical properties of Earth's oceans including temperature, salinity, sea level height, tides, currents, the movements of the sea, and the variability of these factors in relationship to the atmosphere and the ocean bottom.</definition>
+			<definition system="dcs" interface="default">The study of the physical properties of Earth's oceans including temperature, salinity, sea level height, tides, currents, the movements of the sea, and the variability of these factors in relationship to the atmosphere and the ocean bottom.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Physics" id="0q">
+			<definition system="meta" interface="default">The study of the laws that determine the structure of the universe with reference to the matter and energy of which it consists. It is concerned not with chemical changes that occur but with the forces that exist between objects and the interrelationship between matter and energy.</definition>
+			<definition system="dcs" interface="default">The study of the laws that determine the structure of the universe with reference to the matter and energy of which it consists. It is concerned not with chemical changes that occur but with the forces that exist between objects and the interrelationship between matter and energy.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Policy issues" id="0r">
+			<definition system="meta" interface="default">The study of laws, protocols, treaties etc. as they impact the environment or education</definition>
+			<definition system="dcs" interface="default">The study of laws, protocols, treaties etc. as they impact the environment or education</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Soil science" id="0s">
+			<definition system="meta" interface="default">The study of the formation, classification and properties of soil including soil management and agronomy</definition>
+			<definition system="dcs" interface="default">The study of the formation, classification and properties of soil including soil management and agronomy</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Space science" id="0t">
+			<definition system="meta" interface="default">The study of matter and objects outside the Earth's atmosphere including the physical and chemical properties of  condensed matter, planets, moons, comet, galaxies etc.</definition>
+			<definition system="dcs" interface="default">The study of matter and objects outside the Earth's atmosphere including the physical and chemical properties of  condensed matter, planets, moons, comet, galaxies etc.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Structural geology" id="0u">
+			<definition system="meta" interface="default">A branch of geology concerned with the form, arrangement, and internal structure of rocks particularly tectonics, and folding and faulting of the Earth's crust on a moderate to small scale</definition>
+			<definition system="dcs" interface="default">A branch of geology concerned with the form, arrangement, and internal structure of rocks particularly tectonics, and folding and faulting of the Earth's crust on a moderate to small scale</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:Technology" id="0v">
+			<definition system="meta" interface="default">Resources that focus on the use of technical methods, processes or knowledge. Includes resources that involve the development of technical skills such as GIS, GPS and image processing as a significant component of the learning objective.</definition>
+			<definition system="dcs" interface="default">Resources that focus on the use of technical methods, processes or knowledge. Includes resources that involve the development of technical skills such as GIS, GPS and image processing as a significant component of the learning objective.</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="DLESE:To be supplied" id="0w">
+			<definition system="meta" interface="default">Not immediately known, therefore will be supplied at a future date</definition>
+			<definition system="dcs" interface="default">Not immediately known, therefore will be supplied at a future date</definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		
+	</field>
+</termsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

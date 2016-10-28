@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.7.00">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Overview  **************************************************************
+			Definition: 			Controlled vocabulary schema for DLESE metadata frameworks
+			Framework use: 	ADN-I (item)
+			Source org:			Government of Ontario Information and Technology Standards; http://www.gov.on.ca/MBS/techstan/
+			Source values:		http://www.gov.on.ca/MBS/techstan/72-00apa.htm
+			Source last update:	1996
+			DPC last update:		2002-10-31
+			Notes: 	
+			NAVD29 is National Geodetic Vertical Datum of 1929			
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>2003-2-6: Definition: Verical datum is a base reference for a coordinate system. It includes the position of an initial point of orgin and the orientation of an ellipsoid that models the surface of the earh in the region of interest.
+2003-2-6: There are horizontal, veritcal and global datums.
+2003-2-6: The schema has both global and vertical datums with global datums listed first.
+2003-2-6: Added DLESE: and kept Other to the vocab because there are so many local vertical datums that could be used.
+2003-2-6: Removed vocab term Unknown because vertical measurements can't have an unknown datum while they can have an Other
+2003-2-6: Added Sea level because it is the most popular vertical reference point.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="DLESEgeodeticDatumGlobalOrVertType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  geodeticGlobalOrVertType  *****************************************
+				Lists the values that will appear in the metadata record
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="DLESE:WGS72"/>
+			<!--WGS72 is a global geodetic system-->
+			<xsd:enumeration value="DLESE:WGS84"/>
+			<!--WGS84 is a global geodetic system-->
+			<xsd:enumeration value="DLESE:PZ-90"/>
+			<!--PZ-90 is global:Russian analog to WGS84-->
+			<xsd:enumeration value="DLESE:CGD28-CDN"/>
+			<!--CGD28-CDN is a vertical datum used in Canada-->
+			<xsd:enumeration value="DLESE:NAVD29-USA"/>
+			<!--NAVD29 is a vetical datum used in North American, est. 1929-->
+			<xsd:enumeration value="DLESE:NAVD88"/>
+			<!--NAVD88 is a vertical datum used in North American, est. 1988-->
+			<xsd:enumeration value="DLESE:IGLD55"/>
+			<!--IGLD55 is a vertical datum-->
+			<xsd:enumeration value="DLESE:IGLD88"/>
+			<!--IGLD88 is a vertical datum-->
+			<xsd:enumeration value="DLESE:Sea level"/>
+			<!-- Sea level is vertical datum-->
+			<xsd:enumeration value="DLESE:Other"/>
+			<!-- the attribute datumGV will indicate whether it is veritcal or horizontal-->
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DLESEgeodeticDatumGlobalOrVertLeafType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  DLESEgeodeticDatumGlobalOrVertLeafType  ***********************
+				Lists leaf values
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="WGS72"/>
+			<!--WGS72 is a global geodetic system-->
+			<xsd:enumeration value="WGS84"/>
+			<!--WGS84 is a global geodetic system-->
+			<xsd:enumeration value="PZ-90"/>
+			<!--PZ-90 is global:Russian analog to WGS84-->
+			<xsd:enumeration value="CGD28-CDN"/>
+			<!--CGD28-CDN is a vertical datum used in Canada-->
+			<xsd:enumeration value="NAVD29-USA"/>
+			<!--NAVD29 is a vetical datum used in North American, est. 1929-->
+			<xsd:enumeration value="NAVD88"/>
+			<!--NAVD88 is a vertical datum used in North American, est. 1988-->
+			<xsd:enumeration value="IGLD55"/>
+			<!--IGLD55 is a vertical datum-->
+			<xsd:enumeration value="IGLD88"/>
+			<!--IGLD88 is a vertical datum-->
+			<xsd:enumeration value="Sea level"/>
+			<!-- Sea level is vertical datum-->
+			<xsd:enumeration value="Other"/>
+			<!-- the attribute datumGV will indicate whether it is veritcal or horizontal-->
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

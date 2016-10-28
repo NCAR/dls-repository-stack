@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="Economics">
+  <mapping>
+    <acsrInfo id="8b312347-3dd2-45c6-9648-548fd89b8dec">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Economics Revised 2000</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100016C">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <created>2000</created>
+      <topic>Economics</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6e48ca0f-3884-437a-92b9-f7a6ab4bd787">
+      <title>Academic Standards: Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Social Studies Economics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000004">
+      <title>Academic Standards: Social Studies</title>
+      <created>2000</created>
+      <topic>Economics</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="78d24873-7cbc-4e6c-bff5-9d68a9bb67a5">
+      <title>Social Studies Strand 5 - Economics</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Strand 5 - Economics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000285">
+      <title>Social Studies Strand 5 - Economics</title>
+      <created>2006</created>
+      <topic>Economics</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="08041e85-8c3b-4411-b33a-717a8632d56b">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>CA</jurisdiction>
+      <fileName>Social Science Economics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000138">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <created>1998</created>
+      <topic>Economics</topic>
+      <author>California</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e78d2238-e054-467b-9c5b-db6fa1dfde1c">
+      <title>Colorado Model Content Standards for Economics</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Model Content Standards Economics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000049">
+      <title>Colorado Model Content Standards for Economics</title>
+      <created>1998</created>
+      <topic>Economics</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d6e97b77-1a7f-407c-9547-ba0bac2b4a80">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>Social Studies Economics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100009A">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <created>1998</created>
+      <topic>Economics</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="01afc7de-158e-43a0-a9af-98b77789dd6d">
+      <title>Economics Standards, updated January 2010</title>
+      <localAdoptionDate>2010</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Economics Standards updated 2010</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003EC">
+      <title>Economics Standards, updated January 2010</title>
+      <created>2010</created>
+      <topic>Economics</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7e0952fa-d535-458c-88d5-0e2aab14ade6">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Sunshine State Standards Econ</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001F8">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <created>1999</created>
+      <topic>Economics</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="652d7b82-dd3a-4bcc-8f63-e87daac35fec">
+      <title>Social Studies Quality Core Curriculum K-12</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>Social Studies QCC Economics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100001C">
+      <title>Social Studies Quality Core Curriculum K-12</title>
+      <created>1999</created>
+      <topic>Economics</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="58fc9195-ef37-4138-9982-88835bce91d7">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>HI</jurisdiction>
+      <fileName>Social Studies Economics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000E5">
+      <title>Social Studies Content Standards</title>
+      <created>1999</created>
+      <topic>Economics</topic>
+      <author>Hawaii</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a61862b2-05f1-4504-b660-7815a5bd4409">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Achievement Standards Economics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000107">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <created>2001</created>
+      <topic>Economics</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fef5acd2-7802-4b10-9775-b7dea7e7c3ff">
+      <title>Illinois Learning Standards for Social Science</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Learning Standards Economics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000095">
+      <title>Illinois Learning Standards for Social Science</title>
+      <created>1997</created>
+      <topic>Economics</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c6182872-0c98-488f-8b03-eb3cf79d9f25">
+      <title>Social Studies Proficiency Guide</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Economics Proficiency Guide</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100001F">
+      <title>Social Studies Proficiency Guide</title>
+      <created>1996</created>
+      <topic>Economics</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2a067e3d-4dc2-4a8b-9a7d-ade34e3a1a83">
+      <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Curricular Standards Economics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000B2">
+      <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+      <created>1999</created>
+      <topic>Economics</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f42e870f-ce5b-4bf1-8936-cbcc6820c7b4">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Social Studies Economics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000065">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <created>1998</created>
+      <topic>Economics</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="22a25f5b-9b2f-4979-8404-87bbb840c79e">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Economics Content Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000E3">
+      <title>Social Studies Content Standards</title>
+      <created>1997</created>
+      <topic>Economics</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7f947986-2d9f-4cd8-9d58-6828788a10e2">
+      <title>Social Studies Grade-Level Expectations</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Social Studies Economics Grade-Leve</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000159">
+      <title>Social Studies Grade-Level Expectations</title>
+      <created>2003</created>
+      <topic>Economics</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b864f55e-4578-478b-80ee-ccf40e673625">
+      <title>Massachusetts History and Social Science Framework</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>History and Social Science Framewor</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000067">
+      <title>Massachusetts History and Social Science Framework</title>
+      <created>2003</created>
+      <topic>Economics</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e51aaf78-eb91-4cbf-bf51-e1934d348734">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000035">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>Economics</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fb6cbe9b-2828-484c-b103-1ba0e4a503b4">
+      <title>Learning Results for Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Learning Results for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001E7">
+      <title>Learning Results for Social Studies</title>
+      <created>1997</created>
+      <topic>Economics</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="02fa61dd-76f1-459b-b0bc-cdc7f19f01cd">
+      <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Social Studies Standards Working Dr</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000069">
+      <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+      <created>1995</created>
+      <topic>Economics</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ff538f60-f16d-4d33-9eb2-2abbb236d536">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Graduation Standards for Social Stu</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001CA">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <created>1998</created>
+      <topic>Economics</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e9acc523-420d-4260-91e2-059d841f695c">
+      <title>Montana Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Montana Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100020A">
+      <title>Montana Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>Economics</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0d5c6c54-3fb3-4999-ae50-f2c3a6157f05">
+      <title>Social Studies Standard Course of Study</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Social Studies Standard Course of S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100002F">
+      <title>Social Studies Standard Course of Study</title>
+      <created>1996</created>
+      <topic>Economics</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ab8de757-6f42-4ec4-a574-92c90f258912">
+      <title>Voluntary National Content Standards in Economics</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>NCEE</jurisdiction>
+      <fileName>National Content Standards Econ</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000368">
+      <title>Voluntary National Content Standards in Economics</title>
+      <created>1997</created>
+      <topic>Economics</topic>
+      <author>NCEE</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="be52d2c6-c6e2-4c1d-a712-9e745ec57f40">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Social Studies Content Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000CE">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <created>2000</created>
+      <topic>Economics</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f6f19b9b-568a-492a-a4c9-e0049bac42ad">
+      <title>Nebraska Social Studies/History Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Social Studies History Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100005A">
+      <title>Nebraska Social Studies/History Standards</title>
+      <created>1998</created>
+      <topic>Economics</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2d295603-53ef-478d-aad6-0e1cb07326a9">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Social Studies Curriculum Fram</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001F7">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <created>1995</created>
+      <topic>Economics</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8c6ce795-17e7-4208-9c3b-3f0b1214fdef">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001AC">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <created>1996</created>
+      <topic>Economics</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d5de03b2-b95b-434b-8449-219f31ffdf43">
+      <title>New Mexico Standards for Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Standards for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001BE">
+      <title>New Mexico Standards for Social Studies</title>
+      <created>2001</created>
+      <topic>Economics</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3b470eae-94de-4298-8857-29690c67762f">
+      <title>Nevada Social Studies Standards Economics K-12 Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>Economics K-12 Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002C5">
+      <title>Nevada Social Studies Standards Economics K-12 Standards</title>
+      <created>2000</created>
+      <topic>Economics</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="20a5578e-413e-4d01-852e-469ee24e6ddf">
+      <title>Economics</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>Economics</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000184">
+      <title>Economics</title>
+      <created>1996</created>
+      <topic>Economics</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a3e84000-d186-41e0-a1d6-e547494a79c2">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <localAdoptionDate>1994</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Social Studies: Ohio's Model Compet</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100003D">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <created>1994</created>
+      <topic>Economics</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="35512c44-df93-4d5d-b1b0-334ffd1c0782">
+      <title>Academic Content Standards Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Academic Content Standards Social S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000199">
+      <title>Academic Content Standards Social Studies</title>
+      <created>2002</created>
+      <topic>Economics</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f17af7d2-bbef-40fa-bc44-c97f4b9288be">
+      <title>Priority Academic Student Skills for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100005D">
+      <title>Priority Academic Student Skills for Social Studies</title>
+      <created>2000</created>
+      <topic>Economics</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4a1e3a88-db60-49fe-af25-a4cbba1fb71e">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000D9">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <created>2002</created>
+      <topic>Economics</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="12991438-882d-4e3a-9e0f-5ca655bc9eb3">
+      <title>Social Sciences 2001-2002</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Social Sciences 2001-2002</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000147">
+      <title>Social Sciences 2001-2002</title>
+      <created>2001</created>
+      <topic>Economics</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="25ebd6ea-da1f-407c-8300-abbd13caf761">
+      <title>Academic Standards for Economics</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>PA</jurisdiction>
+      <fileName>Academic Standards for Economics</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000AB">
+      <title>Academic Standards for Economics</title>
+      <created>2003</created>
+      <topic>Economics</topic>
+      <author>Pennsylvania</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d04ef235-1c35-4536-a220-1c316b780063">
+      <title>Social Studies Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Social Studies Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001E9">
+      <title>Social Studies Standards</title>
+      <created>1997</created>
+      <topic>Economics</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7bf79eae-7581-49a4-8f8b-b7ce2383e6ca">
+      <title>Social Studies Frameworks K-12</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Social Studies Frameworks K-12</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000094">
+      <title>Social Studies Frameworks K-12</title>
+      <created>1996</created>
+      <topic>Economics</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="51703199-ee0d-4ac2-b37a-30bb9972734f">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>Chapter 113. TEKS for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000193">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <created>1997</created>
+      <topic>Economics</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5d85968e-1c36-43cd-b70a-06673b4e8c75">
+      <title>Chapter 118. Texas Essential Knowledge and Skills for Economics with Emphasis on the Free Enterprise System and Its Benefits</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>Chapter 118. TEKS Economics Free En</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100024F">
+      <title>Chapter 118. Texas Essential Knowledge and Skills for Economics with Emphasis on the Free Enterprise System and Its Benefits</title>
+      <created>1997</created>
+      <topic>Economics</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="afac7334-9070-4147-85eb-a544d5d12242">
+      <title>CTE/Economic &amp;amp; Entrepreneurship Education</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>UT</jurisdiction>
+      <fileName>CTE/Economic &amp; Entrepreneurship Edu</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002C0">
+      <title>CTE/Economic &amp;amp; Entrepreneurship Education</title>
+      <created>2000</created>
+      <topic>Economics</topic>
+      <author>Utah</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d1edf9ab-cd2c-413a-9132-6cb7f4442f4d">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000129">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>1995</created>
+      <topic>Economics</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fea0ee0c-1338-48e7-aa41-1ffd9159c255">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001B8">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>2001</created>
+      <topic>Economics</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b48f14c4-0db3-4562-b9b6-7f1d035f29eb">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Vermont's Framework of Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000114">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <created>2000</created>
+      <topic>Economics</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="43903d92-4b56-4d42-905e-e24368b856ed">
+      <title>Essential Academic Learning Requirements in Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Essential Academic Learning Require</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000036">
+      <title>Essential Academic Learning Requirements in Social Studies</title>
+      <created>1997</created>
+      <topic>Economics</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="6520c995-8675-42d1-bf08-8892b5a596ac">
+      <title>Economics Essential Academic Learning Requirements</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Economics EALR</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002B2">
+      <title>Economics Essential Academic Learning Requirements</title>
+      <created>2003</created>
+      <topic>Economics</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0f1a6233-f5d9-4d28-9995-c491a9670f3d">
+      <title>Wisconsin Model Academic Standards for Social Studies</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>WI</jurisdiction>
+      <fileName>Wisconsin Academic Standards Econom</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100007C">
+      <title>Wisconsin Model Academic Standards for Social Studies</title>
+      <created>1998</created>
+      <topic>Economics</topic>
+      <author>Wisconsin</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b2fe7e8a-7f04-464e-ab1d-15057a05087a">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia's Social Studies Inst</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001D6">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <created>2000</created>
+      <topic>Economics</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="15cbf8ee-3947-4101-ba2d-ee4a753fb786">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia Social Studies Conten</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000026">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <created>2004</created>
+      <topic>Economics</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1678ab57-58bc-484f-aeee-b1d45c931373">
+      <title>Social Studies Content and Performance Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Economics</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Social Studies Content and Performa</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100008A">
+      <title>Social Studies Content and Performance Standards</title>
+      <created>1999</created>
+      <topic>Economics</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+</mappings>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: detGeos-adn-fields-en-us.xml,v 1.1 2009/01/30 21:34:12 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.6.50/non-vocab-fields.xsd">
+	<field name="Detailed geometries" language="en-us" metaFormat="adn" metaVersion="0.6.50" path="/itemRecord/geospatialCoverages/geospatialCoverage/detGeos">
+		<definition>a list of geographic footprints (bounding boxes, polylines, points or polygons) for areas on Earth's surface (or other planetary body) that is the subject or primary content of a resource</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-05-04" link1="description - simple places and events" style1="bold">Complete geospatial information when geographic location information is integral to understanding or working with a resource. To provide place and event name information without geospatial coordinates, use the description - simple places and events metadata field.</practice>
+
+				<practice status="current" originDate="2005-04-19" link1="detailed geometry" style1="bold">Complete the required subfield of detailed geometry.</practice>
+
+				<practice status="current" originDate="2005-06-01" link1="detailed geometry" style1="bold">To make detailed geometries that include contiguous states, national parks or monuments, enter multiple detailed geometry sets, one for each area and then add the appropriate name to the correct coordinates.</practice>
+
+<!--can't gaurantee so don't display as a best practice-->
+<!--				<practice status="hide" originDate="2005-05-10" link1="detailed geometry field" style1="bold" link2="name - period" style2="bold">If a detailed geometry needs to correspond to a particular period name, complete the detailed geometry field and the name - period field in the same order.</practice>-->
+
+			</dos>
+		</bestPractices>
+
+		<documentation>
+			<children>
+				<child>detGeo</child>
+			</children>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>complex</XMLdataType>
+			</XMLdataTypes>
+			<domain>the child element</domain>
+			<example>&lt;detGeo&gt;</example>
+			<notes>
+				<note>Temporal and geospatial information are independent.</note>
+			</notes>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

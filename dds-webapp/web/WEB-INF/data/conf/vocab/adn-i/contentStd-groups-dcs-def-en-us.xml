@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groupsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/adn-i/contentStd.xsd">
+	<concept name="contentStandard" system="dcs" interface="default" language="en-us" label="Educational Content Standards">
+		<group label="National Geography Standards">
+			<deftn>National Geography Standards published by the National Council for Geographic Education (NCGE)</deftn>
+			<group label="Environment and Society">
+				<deftn>Describes the interplay between humans and the environment</deftn>
+				<item vocab="NCGE:Environment and Society:How human actions modify the physical environment"></item>
+				<item vocab="NCGE:Environment and Society:How physical systems affect human systems"></item>
+				<item vocab="NCGE:Environment and Society:The changes that occur in the meaning, use, distribution, and importance of resources"></item>
+			</group>
+			<group label="Human Systems">
+				<deftn>Identifies issues of a human impact on the Earth's surface</deftn>
+				<item vocab="NCGE:Human Systems:How forces of cooperation and conflict among people influence the division and control of Earth's surface"></item>
+				<item vocab="NCGE:Human Systems:The characteristics, distribution, and migration of human populations on Earth's surface"></item>
+				<item vocab="NCGE:Human Systems:The characteristics, distributions, and complexity of Earth's cultural mosaics"></item>
+				<item vocab="NCGE:Human Systems:The patterns and networks of economic interdependence on Earth's surface"></item>
+				<item vocab="NCGE:Human Systems:The process, patterns, and functions of human settlement"></item>
+			</group>
+			<group label="Physical Systems">
+				<deftn>Describes the characteristics of the Earth's surface</deftn>
+				<item vocab="NCGE:Physical Systems:The characteristics and spatial distribution of ecosystems on Earth's surface"></item>
+				<item vocab="NCGE:Physical Systems:The physical processes that shape the patterns of Earth's surface"></item>
+			</group>
+			<group label="Places and Regions">
+				<deftn>Identifies locations from a physical and human perspective</deftn>
+				<item vocab="NCGE:Places and Regions:How culture and experience influence people's perception of places and regions"></item>
+				<item vocab="NCGE:Places and Regions:That people create regions to interpret Earth's complexity"></item>
+				<item vocab="NCGE:Places and Regions:The physical and human characteristics of places"></item>
+			</group>
+
+			<group label="The Uses of Geography">
+				<deftn>Considers the past, present and future</deftn>
+				<item vocab="NCGE:The Uses of Geography:How to apply geography to interpret the past"></item>
+				<item vocab="NCGE:The Uses of Geography:How to apply geography to interpret the present and plan for the future"></item>
+			</group>
+
+			<group label="The World in Spatial Terms">
+				<deftn>Uses maps and analyzes people, places and the environments</deftn>
+				<item vocab="NCGE:The World in Spatial Terms:How to analyze the spatial organization of people, places, and environments on Earth's surface"></item>
+				<item vocab="NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information"></item>
+				<item vocab="NCGE:The World in Spatial Terms:How to use mental maps to organize information about people, places, and environments"></item>
+			</group>
+		</group>
+
+		<group label="NSES">
+			<deftn>NSES represents the National Science Education Standards</deftn>
+			
+			<group label="K-4">
+				<deftn>Pertains to content for kindergarten through 4th grade</deftn>
+
+				<group label="Unifying Concepts and Processes">
+					<deftn>Empahsizes conceptual and procedural schemes that unify science disciplines</deftn>
+					<item vocab="NSES:K-4:Unifying Concepts and Processes Standards:Change, constancy, and measurement"></item>
+					<item vocab="NSES:K-4:Unifying Concepts and Processes Standards:Evidence, models, and explanation"></item>
+					<item vocab="NSES:K-4:Unifying Concepts and Processes Standards:Evolution and equilibrium"></item>
+					<item vocab="NSES:K-4:Unifying Concepts and Processes Standards:Form and function"></item>
+					<item vocab="NSES:K-4:Unifying Concepts and Processes Standards:Systems, order, and organization"></item>
+				</group>
+
+				<group label="Standard A - Science as Inquiry">
+					<deftn>The combination of the processes of science, scientific knowledge and reasoning to understand science</deftn>
+					<item vocab="NSES:K-4:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry"></item>
+					<item vocab="NSES:K-4:Content Standard A Science as Inquiry Standards:Understanding about scientific inquiry"></item>
+				</group>
+
+				<group label="Standard B - Physical Science">
+					<deftn>Encompasses the subject matter, facts, concepts, principls, theories and models of physical science</deftn>
+					<item vocab="NSES:K-4:Content Standard B Physical Science Standards:Light, heat, electricity, and magnetism"></item>
+					<item vocab="NSES:K-4:Content Standard B Physical Science Standards:Position and motion of objects"></item>
+					<item vocab="NSES:K-4:Content Standard B Physical Science Standards:Properties of objects and materials"></item>
+				</group>
+
+				<group label="Standard C - Life Science">
+					<deftn>Encompasses the subject matter, facts, concepts, principls, theories and models of life science</deftn>
+					<item vocab="NSES:K-4:Content Standard C Life Science Standards:Characteristics of organisms"></item>
+					<item vocab="NSES:K-4:Content Standard C Life Science Standards:Life cycles of organisms"></item>
+					<item vocab="NSES:K-4:Content Standard C Life Science Standards:Organisms and environments"></item>
+				</group>
+
+				<group label="Standard D - Earth and Space Science">
+					<deftn>Encompasses the subject matter, facts, concepts, principls, theories and models of Earth and space science</deftn>
+					<item vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Changes in earth and sky"></item>
+					<item vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Objects in the sky"></item>
+					<item vocab="NSES:K-4:Content Standard D Earth and Space Science Standards:Properties of earth materials"></item>
+				</group>
+
+				<group label="Standard E - Science and Technology">
+					<deftn>Establish connections between the natural and designed worlds and provide opportunities to develop decision-making abilities</deftn>
+					<item vocab="NSES:K-4:Content Standard E Science and Technology Standards:Abilities of technological design"></item>
+					<item vocab="NSES:K-4:Content Standard E Science and Technology Standards:Abilities to distinguish between natural objects and objects made by humans"></item>
+					<item vocab="NSES:K-4:Content Standard E Science and Technology Standards:Understanding about science and technology"></item>
+				</group>
+
+				<group label="Standard F - Science in Personal and Social Perspectives">
+					<deftn>Develop decision-making skills in relation to personal social issues</deftn>
+					<item vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Changes in environments"></item>
+					<item vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Characteristics and changes in populations"></item>
+					<item vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Personal health"></item>
+					<item vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in local challenges"></item>
+					<item vocab="NSES:K-4:Content Standard F Science in Personal and Social Perspectives Standards:Types of resources"></item>
+				</group>
+
+				<group label="Standard G - History and Nature of Science">
+					<deftn>Emphasizes the clarification of different aspects of scientific inquiry, the human aspects of science, and the role that science has played in the development of various cultures</deftn>
+					<item vocab="NSES:K-4:Content Standard G History and Nature of Science Standards:Science as a human endeavor"></item>
+				</group>
+			</group>
+
+			<group label="5-8">
+				<deftn>Pertains to content for 5th through 8th grade</deftn>
+
+				<group label="Unifying Concepts and Processes">
+					<deftn>Empahsizes conceptual and procedural schemes that unify science disciplines</deftn>
+					<item vocab="NSES:5-8:Unifying Concepts and Processes Standards:Change, constancy, and measurement"></item>
+					<item vocab="NSES:5-8:Unifying Concepts and Processes Standards:Evidence, models, and explanation"></item>
+					<item vocab="NSES:5-8:Unifying Concepts and Processes Standards:Evolution and equilibrium"></item>
+					<item vocab="NSES:5-8:Unifying Concepts and Processes Standards:Form and function"></item>
+					<item vocab="NSES:5-8:Unifying Concepts and Processes Standards:Systems, order, and organization"></item>
+				</group>
+
+				<group label="Standard A - Science as Inquiry">
+					<deftn>The combination of the processes of science, scientific knowledge and reasoning to understand science</deftn>
+					<item vocab="NSES:5-8:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry"></item>
+					<item vocab="NSES:5-8:Content Standard A Science as Inquiry Standards:Understanding about scientific inquiry"></item>
+				</group>
+
+				<group label="Standard B - Physical Science">
+					<deftn>Encompasses the subject matter, facts, concepts, principls, theories and models of physical science</deftn>
+					<item vocab="NSES:5-8:Content Standard B Physical Science Standards:Motion and forces"></item>
+					<item vocab="NSES:5-8:Content Standard B Physical Science Standards:Properties and changes of properties in matter"></item>
+					<item vocab="NSES:5-8:Content Standard B Physical Science Standards:Transfer of energy"></item>
+				</group>
+
+				<group label="Standard C - Life Science">
+					<deftn>Encompasses the subject matter, facts, concepts, principls, theories and models of life science</deftn>
+					<item vocab="NSES:5-8:Content Standard C Life Science Standards:Diversity and adaptations of organisms"></item>
+					<item vocab="NSES:5-8:Content Standard C Life Science Standards:Population and ecosystems"></item>
+					<item vocab="NSES:5-8:Content Standard C Life Science Standards:Regulation and behavior"></item>
+					<item vocab="NSES:5-8:Content Standard C Life Science Standards:Reproduction and heredity"></item>
+					<item vocab="NSES:5-8:Content Standard C Life Science Standards:Structure and function in living systems"></item>
+				</group>
+
+				<group label="Standard D - Earth and Space Science">
+					<deftn>Encompasses the subject matter, facts, concepts, principls, theories and models of Earth and space science</deftn>
+					<item vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth in the solar system"></item>
+					<item vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Earth's history"></item>
+					<item vocab="NSES:5-8:Content Standard D Earth and Space Science Standards:Structure of the earth system"></item>
+				</group>
+
+				<group label="Standard E - Science and Technology">
+					<deftn>Establish connections between the natural and designed worlds and provide opportunities to develop decision-making abilities</deftn>
+					<item vocab="NSES:5-8:Content Standard E Science and Technology Standards:Abilities of technological design"></item>
+					<item vocab="NSES:5-8:Content Standard E Science and Technology Standards:Understandings about science and technology"></item>
+				</group>
+
+				<group label="Standard F - Science in Personal and Social Perspectives">
+					<deftn>Develop decision-making skills in relation to personal social issues</deftn>
+					<item vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Natural hazards"></item>
+					<item vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Personal health"></item>
+					<item vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Populations, resources, and environments"></item>
+					<item vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Risks and benefits"></item>
+					<item vocab="NSES:5-8:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in society"></item>
+				</group>
+
+				<group label="Standard G - History and Nature of Science">
+					<deftn>Emphasizes the clarification of different aspects of scientific inquiry, the human aspects of science, and the role that science has played in the development of various cultures</deftn>
+					<item vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:History of science"></item>
+					<item vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:Nature of science"></item>
+					<item vocab="NSES:5-8:Content Standard G History and Nature of Science Standards:Science as a human endeavor"></item>
+				</group>
+			</group>
+			
+			<group label="9-12">
+				<deftn>Pertains to content for 9th through 12th grade</deftn>
+
+				<group label="Unifying Concepts and Processes">
+					<deftn>Empahsizes conceptual and procedural schemes that unify science disciplines</deftn>
+					<item vocab="NSES:9-12:Unifying Concepts and Processes Standards:Change, constancy, and measurement"></item>
+					<item vocab="NSES:9-12:Unifying Concepts and Processes Standards:Evidence, models, and explanation"></item>
+					<item vocab="NSES:9-12:Unifying Concepts and Processes Standards:Evolution and equilibrium"></item>
+					<item vocab="NSES:9-12:Unifying Concepts and Processes Standards:Form and function"></item>
+					<item vocab="NSES:9-12:Unifying Concepts and Processes Standards:Systems, order, and organization"></item>
+				</group>
+
+
+				<group label="Standard A - Science as Inquiry">
+					<deftn>The combination of the processes of science, scientific knowledge and reasoning to understand science</deftn>
+					<item vocab="NSES:9-12:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry"></item>
+					<item vocab="NSES:9-12:Content Standard A Science as Inquiry Standards:Understandings about scientific inquiry"></item>
+				</group>
+				
+				<group label="Standard B - Physical Science">
+					<deftn>Encompasses the subject matter, facts, concepts, principls, theories and models of physical science</deftn>
+					<item vocab="NSES:9-12:Content Standard B Physical Science Standards:Chemical reactions"></item>
+					<item vocab="NSES:9-12:Content Standard B Physical Science Standards:Conservation of energy and increase in disorder"></item>
+					<item vocab="NSES:9-12:Content Standard B Physical Science Standards:Interactions of energy and matter"></item>
+					<item vocab="NSES:9-12:Content Standard B Physical Science Standards:Motions and forces"></item>
+					<item vocab="NSES:9-12:Content Standard B Physical Science Standards:Structure and properties of matter"></item>
+					<item vocab="NSES:9-12:Content Standard B Physical Science Standards:Structure of atoms"></item>
+				</group>
+				
+				<group label="Standard C - Life Science">
+					<deftn>Encompasses the subject matter, facts, concepts, principls, theories and models of life science</deftn>
+					<item vocab="NSES:9-12:Content Standard C Life Science Standards:Behavior of organisms"></item>
+					<item vocab="NSES:9-12:Content Standard C Life Science Standards:Biological evolution"></item>
+					<item vocab="NSES:9-12:Content Standard C Life Science Standards:Interdependence of organisms"></item>
+					<item vocab="NSES:9-12:Content Standard C Life Science Standards:Matter, energy, and organization in living systems"></item>
+					<item vocab="NSES:9-12:Content Standard C Life Science Standards:Molecular basis of heredity"></item>
+					<item vocab="NSES:9-12:Content Standard C Life Science Standards:The cell"></item>
+				</group>
+				
+				<group label="Standard D - Earth and Space Science">
+					<deftn>Encompasses the subject matter, facts, concepts, principls, theories and models of Earth and space science</deftn>
+					<item vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Energy in the earth system"></item>
+					<item vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Geochemical cycles"></item>
+					<item vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Origin and evolution of the earth system"></item>
+					<item vocab="NSES:9-12:Content Standard D Earth and Space Science Standards:Origin and evolution of the universe"></item>
+				</group>
+				
+				<group label="Standard E - Science and Technology">
+					<deftn>Establish connections between the natural and designed worlds and provide opportunities to develop decision-making abilities</deftn>
+					<item vocab="NSES:9-12:Content Standard E Science and Technology Standards:Abilities of technological design"></item>
+					<item vocab="NSES:9-12:Content Standard E Science and Technology Standards:Understandings about science and technology"></item>
+				</group>
+				
+				<group label="Standard F - Science in Personal and Social Perspectives">
+					<deftn>Develop decision-making skills in relation to personal social issues</deftn>
+					<item vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Environmental quality"></item>
+					<item vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural and human-induced hazards"></item>
+					<item vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural resources"></item>
+					<item vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Personal and community health"></item>
+					<item vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Population growth"></item>
+					<item vocab="NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Science and technology in local, national, and global challenges"></item>
+				</group>
+				
+				<group label="Standard G - History and Nature of Science">
+					<deftn>Emphasizes the clarification of different aspects of scientific inquiry, the human aspects of science, and the role that science has played in the development of various cultures</deftn>
+					<item vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Historical perspectives"></item>
+					<item vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Nature of scientific knowledge"></item>
+					<item vocab="NSES:9-12:Content Standard G History and Nature of Science Standards:Science as a human endeavor"></item>
+				</group>
+				
+			</group>
+
+		</group>
+	</concept>
+</groupsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+	<title>DLESE search</title>
+	
+	<!-- 
+	Note: When this code is inserted into an external HTML page, the URL 
+	below will need to be absolute, for example, 
+	"http://www.dlese.org/dds/services/jshtml1-0/tpl/styles.css" -->
+	<link rel='stylesheet' type='text/css' href='/dds/services/jshtml1-0/tpl/styles.css'>
+    <style type="text/css">
+		<!--	
+			/* Override the default CSS style with our own */
+			/* .resultSectionHeading {
+				color:000000;
+				font-size: 16pt; 				
+				background-color: #ffffff;
+				padding-left:0px;
+			}	
+			.resultSectionHeading TR {
+				background-color: #ffffff;
+			}	
+			.resultSectionHeading DIV {
+				padding-left: 0px;			
+			}	 */			
+		-->
+	</style>	
+</head>
+
+<body>
+
+<h2>Search the Digital Library for Earth System Education</h2>
+
+<p>
+<b>Quick links for annotations:</b>
+<div style="padding-left:14px">
+	<div><a href="?d=Resources+with+teaching+tips&qh=itemannotypes:tip">Resources with teaching tips</a></div>
+	<div><a href="?d=Resources+with+comments&qh=itemannotypes:comment">Resources with comments</a></div>
+	<div><a href="?d=Resources+with+quantitative+assessments&qh=itemannotypes:aggregated">Resources with quantitative assessments</a></div>
+	<div><a href="?d=Resources+currently+under+review&qh=itemannotypes:review+AND+itemannostatus:progress">Resources currently under review</a></div>
+</div>
+</p>
+
+<!-- This <SCRIPT> element renders the DLESE search -->
+<SCRIPT TYPE="text/javascript">
+	<!--	
+
+	/* 
+	Note: When this code is inserted into an HTML page, the URL 
+	below needs to be fully-qualified, for example, 
+	"http://www.dlese.org/dds/services/jshtml1-0/tpl/js_search_server.jsp"
+	*/	
+	var baseUrl = "/dds/services/jshtml1-0/tpl/js_search_server.jsp";
+
+	
+	/************
+	The following variables are used to show or hide various 
+	elements in the HTML that is returned by the JavaScript service.
+	
+		Usage:
+			Set to 'true' to show the given element
+			set to 'false' to hide the given element
+			
+		Note: 
+			The default behavior is 'true'. If these are not defined 
+			or are set to anyting other than 'false' they will 
+			default to 'true'
+	************/
+	
+	/* Show the <html>, <head> and <body> tags and the initial DLESE banner */
+	var showhdr="false";
+	/* Show the DLESE logos that are displayed */	
+	var showlogo="true";
+
+	/************ 
+	Search form controls - The following variables control the rendering
+	of the search form and menus (grade ranges, subjects, etc).
+	************/
+
+	/* Show the entire search form, including the text box and all menus.
+	Note that when this is set to 'false', the variables below have no effect */
+	var showform = "true";			
+	
+	/* Show the search text input box */
+	var showtb = "true";		
+	/* Show the grade ranges menu */	
+	var showgr = "true";
+	/* Show the subjects menu */		
+	var showsu = "true";
+	/* Show the resource types menu */
+	var showre = "true";	
+	/* Show the content standards menu */
+	var showcs = "false";
+	/* Show the collections menu */
+	var showky = "false";
+
+	/* Show the search <form> and </form> tags. By hiding these tags, you
+	can use your own form within your page. */
+	var showformtags = "true";		
+
+	/****** End search form controls ******/
+
+	
+	/* The maximum number of results to return per page of results.
+	Must be an integer from 1 to 50. If not supplied, defaults to 10. */	
+	var numresults="10";
+	
+	/* The sbc variable applies a search boosting and constraint query 
+	to all searches from your page page. Leave blank to apply none. */
+	var sbc = "";	
+
+
+	
+	/******************** DO NOT EDIT BELOW ********************/	
+	
+	/* Construct the query string sent to JavaScript server: */
+	var queryString = window.location.search.substring(1);
+	var jsUrl = baseUrl 
+		+ "?rt=jswl&showgr=" + showgr + "&showsu=" + showsu + "&showre=" + showre 
+		+ "&showcs=" + showcs + "&showky=" + showky + "&showtb=" + showtb 
+		+ "&showhdr=" + showhdr + "&showlogo=" + showlogo + "&showformtags=" + showformtags 
+		+ "&showform=" + showform + "&numresults=" + numresults + "&sbc=" + sbc;
+	if(queryString != null && queryString.length > 0)
+		jsUrl += "&" + queryString;	
+
+	document.write( "\<SCRIPT" );
+	document.write( '   LANGUAGE="JAVASCRIPT"' );
+	document.write( "   SRC='" + jsUrl + "'" );
+	document.write( "\>" );
+	document.write( "\</SCRIPT\>" );
+	
+	-->
+</SCRIPT>
+
+
+</body>
+</html>
+
+
+

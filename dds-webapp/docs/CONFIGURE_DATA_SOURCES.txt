@@ -1,0 +1,158 @@
+
+==== Configure the Data Source for DDS ===
+
+Content and metadata can be imported and synched with the DDS repository
+from XML files stored on disk or from an MySQL database that contain metadata
+stored and managed by the Harvest Manager Web application.
+
+When the file system data source is used, the Update API may also
+be used by a client to create, updated and delete items in the repository.
+The Update API is not supported with a MySQL database configuration.
+
+
+--- File System Data Source ---
+
+To use the file system (files on disk) as the data source for the DDS, 
+required for using the Update API, do the following:
+
+1. Set the following parameters in the Tomcat Context configuration for DDS. See
+http://tomcat.apache.org/tomcat-6.0-doc/config/context.html for reference.
+These go in the <Context> element in the Tomcat configuration, 
+which can be placed at one of the following locations: ${tomcat}/conf/[enginename]/[hostname]/dds.xml or ${tomcat}/conf/server.xml.  
+See default values and notes in ${tomcat}/webapps/dds/WEB-INF/web.xml:
+
+'recordDataSource' set to to 'fileSystem'
+	- Tells DDS to use the the file system for it's data source.
+	
+'collBaseDir' set to 'WEB-INF/data/sample_records' (or another location you choose) 
+	- Defines where DDS should read and store records.  In a production
+	installation, this should be set to a location outside the Tomcat container
+	using an absolute path.
+
+2. Start/restart Tomcat. The settings above will install DDS with two sample collections: 
+an oai_dc collection and an adn collection
+
+3. View and manage the collections and records using the Collection Manager Web interface at:
+http://localhost:8080/dds/admin/admin.do
+You'll need to enter the user name and password defined above.
+
+4. To use the Update API to manage collections
+and items in DDS, set the Tomcat context parameter 
+'enableRepositoryUpdateWebService' to 'true'. This enables
+external clients to create, update and delete collections and 
+items in the repository and the corresponding files on disk using the API.
+See the Update API documentation for additional information and
+configuration instructions.
+
+
+To manually add collections and records directly from files, do the following:
+
+5. To add/remove records from one of the collections, simply add, 
+delete or update the files in the directory for that collection. For example
+${collBaseDir}/adn/dcc
+${collBaseDir}/oai_dc/testoaidc
+
+Then re-index the collection from the Collecton Manager interface.
+
+6. To add a new collection, add a new collection-level record to
+${collBaseDir}/dlese_collect/collect
+
+Start by copying and then editing an existing collection-level record.
+
+Each new collection record must have a unique collection key at XPath:
+/collectionRecord/access/key
+
+And a unique ID at XPath:
+/collectionRecord/metaMetadata/catalog@entry
+
+The xml format for the records in the collection is defined at XPath:
+/collectionRecord/access/key@libraryFormat
+
+All other fields in the collection record are not used for the purpose 
+of defining a collection in the system (e.g. they do not need to be edited unless desired).
+
+Records for the collection must be placed at
+${collBaseDir}/${xml_format}/${collection_key}
+
+
+DDS file system structure:
+
+	${collBaseDir} - The base directory where all XML files are located and stored 
+		inside sub-directories, one record per file
+	${collBaseDir}/dlese_collect/collect/COLLECTIONS-COLLECTION-001.xml - The master collection record
+		(master collection *must* be XML format 'dlese_collect', collectionKey 'collect')
+	${collBaseDir}/dlese_collect/collect - The master collection of collections directory. 
+		Each dlese_collect record in this collection defines a DDS collection (more info below)*
+	
+	${collBaseDir}/${xml_format}/${collection_key} - The sub-directories that contain 
+		the records for each DDS collection, where ${xml_format} is the format of the records 
+		in that collection and ${collection_key} is the unique collectionKey for that collection
+		
+	*Each collection record that resides in the master collection defines a DDS collection where:
+		-Element /collectionRecord/access/catalogEntries/catalog/@entry - Defines the ID of the 
+			collection record, for example 'RECORD-123' (must be unique)
+		-Element /collectionRecord/metaMetadata/key - Defines the collectionKey for that collection, 
+			for example 'dcc' (must be unique)
+		-Attribute /collectionRecord/access/key/@libraryFormat - Defines the XML format of the records 
+			in that collection, for example 'oai_dc'
+		-The ID and collectionKey may be the same
+		
+		
+7. Back up and restore a DDS repository using the file system
+
+When running DDS using the file system as a data source, the repository may be backed up 
+or mirrored by making a copy of the ${collBaseDir} directory. To do so, make a 
+zip copy of the directory.
+
+To rebuild or restore the repository from a saved copy, do the following:
+
+-Unzip the saved repostory files into the location specified by ${collBaseDir}.
+The directory structure should conform to the structure described above.
+-In the DDS Collection Manager UI, click the button 'Load collections'. Then
+click the button 'Reindex all records' to rebuild the repository index from the 
+saved files.
+
+
+--- MySQL Harvest Manager DB Data Source ---
+
+The Harvest Manager is a Web application that maintains a MySQL database of metadata collections
+that are harvested from remote repositories via OAI, the Learning Registry, or other
+protocols.
+
+Information and documentation for the Harvest Manager and it's MySQL database is available here:
+https://wiki.ucar.edu/display/nsdlto/Harvest+Manager
+
+To configure a Harvest Manager MySQL database as the data source for DDS, do the following:
+
+1. Edit the file ${tomcat}/webapps/dds/WEB-INF/conf/itemIndexerConfigs/NRIndexer_conf.xml
+to define the Harvest Manager repository collections you wish to include in your DDS repository, as described
+in that file. This file should be moved to a location outside of the Tomcat installation (see
+itemIndexerConfigDir in step 2).
+
+2. Set the following parameters in the Tomcat Context configuration for DDS. See
+http://tomcat.apache.org/tomcat-6.0-doc/config/context.html for reference.
+These go in the <Context> element in the Tomcat configuration, 
+which can be placed at one of the following locations: ${tomcat}/conf/[enginename]/[hostname]/dds.xml or ${tomcat}/conf/server.xml.  
+See default values and notes in ${tomcat}/webapps/dds/WEB-INF/web.xml:
+
+'itemIndexerConfigDir' defaults to 'WEB-INF/conf/itemIndexerConfigs' 
+	- Define the directory where the NR indexer configuration file resides (see step 1).
+
+'recordDataSource' set this to 'edu.ucar.dls.dds.nr.NRIndexer3'
+	- Tells DDS to use the NR for it's data source (the above class implements the indexing routines from the DB).
+
+'collBaseDir' set to 'WEB-INF/data/item_indexer_records' (or another location you choose) 
+	- Defines where DDS should store it's cache of records.  In a production
+	installation, this should be set to a location outside the Tomcat container
+	using an absolute path.
+
+3. Start/restart Tomcat and navigate to the Collection Manager Web page in the application: 
+http://localhost:8080/dds/admin/admin.do (replace localhost:8080 with the URL to your Tomcat).
+Click 'Index data sources' to pull in and synchronize the collections from the DB.
+Click 'Load collections' to pull in any changes made to the collections configuration file (step 1)
+
+
+4. Back up and restore a DDS repository using the Harvest Manager database
+
+When running DDS using the Harvest Manager database data source, the database represents the authority backup of collections
+and records. A DDS index can be updated or restored at any time from the database.

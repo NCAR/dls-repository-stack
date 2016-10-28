@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: format-anno-groups-default-en-us.xml,v 1.1 2009/01/30 21:32:40 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Format</title>
+<groups:concept language="en-us" metaFormat="dlese_anno" metaVersion="1.0.00" text="Format" audience="default" path="/annotationRecord/annotation/format" deftn="the format of the content of annotation"/>
+</head>
+<body>
+<outline groups:vocab="Audio" type="vocab" text="Audio" groups:deftn="the content of the annotation is primarily sound to be heard"/>
+<outline groups:vocab="Graphical" type="vocab" text="Graphical" groups:deftn="the content of the annotation is primarily an image or graphic to view or overlay"/>
+<outline groups:vocab="Text" type="vocab" text="Text" groups:deftn="the content of the annotation is primarily text to be read"/>
+<outline groups:vocab="Video" type="vocab" text="Video" groups:deftn="the content of the annotation is primarily sound and pictures"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

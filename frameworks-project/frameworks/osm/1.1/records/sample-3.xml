@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xsi:schemaLocation="http://nldr.library.ucar.edu/metadata/osm http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/osm.xsd" xmlns="http://nldr.library.ucar.edu/metadata/osm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<general>
+		<recordID>ABC-000-000-000-101</recordID>
+		<recordDate>1967-08-13</recordDate>
+		<urlOfRecord>ftp://0.AA</urlOfRecord>
+		<pubName type="Poster">Abstracts of Papers of the American Chemical Society</pubName>
+		<eventName>10th Conference on Severe Local Storms</eventName>
+		<volume>String</volume>
+		<issue>String</issue>
+		<edition>3rd</edition>
+		<appVersion>jfdljfkd</appVersion>
+		<pages>String</pages>
+		<title type="Newsletter">String</title>
+		<altTitle>String</altTitle>
+		<earlierTitle>String</earlierTitle>
+		<laterTitle>String</laterTitle>
+		<description>String</description>
+		<abstract>String</abstract>
+		<keyword>String</keyword>
+		<OSMsubject>Unknown</OSMsubject>
+		<LCSHsubject>Architecture1960-1970.</LCSHsubject>
+		<thumbnail>http://toa.thumbnail.jpg</thumbnail>
+	</general>
+	<resources>
+		<primaryAsset  order="1" url="http://nldr.library.ucar.edu/collections/staffnotes/asset-000-000-000-001.pdf">
+			<title>String</title>
+			<size>String</size>
+			<mimeType>application/ms-excel</mimeType>
+			<version>Publisher's final</version>
+			<description>String</description>
+			<duration>P1Y2M3DT10H30M0S</duration>
+			<dimensions>String</dimensions>
+			<creatingApplication name="String" notes="String" version="String">String</creatingApplication>
+			<requirementsToView>String</requirementsToView>
+			<archiveDigital>String</archiveDigital>
+		</primaryAsset>
+		<relation type="Is published" title="This is pretty" description="String" url="http://www.ucar.edu/communications/staffnotes/9505/index.html"/>
+		<relation type="Has image" title="Photo" description="This Lockheed L1011 jet carried a Pegasus rocket to its launch above Vandenberg Air Force Base on 3 April. In turn, the rocket sent a MicroLab-1 satellite bearing the GPS/MET receiver into orbit. (Photo courtesy Orbital Sciences Corporation)"/>
+		<relation type="Has version" recordID="XYZ-000-000-000-001"/>
+		<relation type="Has version" version="Preprint" url="http://url.to.aaa/page.html"/>
+	</resources>
+	<contributors>
+		<person role="Author" order="1" PUBSid="12" UCARid="12">
+			<lastName>String</lastName>
+			<firstName>String</firstName>
+			<middleName>String</middleName>
+			<suffix>String</suffix>
+			<publishingName>String</publishingName>
+			<contactInfo email="String" phone="String">String</contactInfo>
+			<affiliation>
+				<instName>Aeronautical Research Associates of Princeton, Inc.</instName>
+				<instDivision>Acid Deposition Modeling Project (ADMP)</instDivision>
+				<instDivision>Acid Deposition Modeling Project (ADMP)</instDivision>
+				<instProject>GARP Atlantic Tropical Experiment (GATE)</instProject>
+				<instProject>Joint Numerical Testbed</instProject>
+			</affiliation>
+			<affiliation>
+				<instName>Academic Press</instName>
+				<instDivision>University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):Computational and Information Systems Laboratory (CISL):CISL Administrative Office (CISLAO)</instDivision>
+				<instProject>Developmental Testbed Center</instProject>
+			</affiliation>
+			<affiliation>
+				<instName>CSIRO Publishing, Leiden</instName>
+				<instDivision>University Corporation For Atmospheric Research (UCAR):National Center for Atmospheric Research (NCAR):NCAR Earth System Laboratory (NESL):Mesoscale and Microscale Meteorology Division (MMM):Systems Management Group (SMG)</instDivision>
+				<instProject>Joint Numerical Testbed</instProject>
+			</affiliation>
+		</person>
+		<organization role="Publisher">
+			<affiliation>
+				<instName>University Corporation for Atmospheric Research (UCAR)</instName>
+				<instDivision>Communications</instDivision>
+				<instProject>GARP Atlantic Tropical Experiment (GATE)</instProject>
+			</affiliation>
+		</organization>
+		<organization role="Meeting sponsor">
+			<affiliation>
+				<instName>National Science Foundation</instName>
+			</affiliation>
+		</organization>
+	</contributors>
+	<classify>
+		<language>en</language>
+		<status>Accepted</status>
+		<classification>Non-refereed</classification>
+		<idNumber type="CALL"> djfldjf</idNumber>
+		<collaboration>UCAR only</collaboration>
+		<fundingSource>NSF only</fundingSource>
+		<fundingEntity>IBM Shared University Research Program</fundingEntity>
+		<fundingEntity grantNumber="NOAA-123-456">National Oceanic and Atmospheric Administration (NOAA)</fundingEntity>
+		<services>Computing</services>	
+		<NCARlibrary>Foothills (FL)</NCARlibrary>
+	</classify>
+	<coverage>
+		<fiscalYear>2011</fiscalYear>
+		<date type="Digitized">1967-09-09</date>
+		<dateRange type="Meeting" start="1967-08-13" end="1967-08-13"> </dateRange>
+		<location type="Meeting" country="US" city="Chicago" state="US-IL"/>
+	</coverage>
+	<rights>
+		<copyrightNotice url="http://www.ucar.edu" holder="UCAR" type="UCAR ownership">Copyright 2010 University Corporation for Atmospheric Research (UCAR). All rights reserved</copyrightNotice>
+		<notesToCurator>blah blah</notesToCurator>
+	</rights>
+</record>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<frameworkConfigRecord 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="http://ns.nsdl.org/ncs/framework_config/1.00/schemas/dcsFrameworkConfig.xsd">
+  <xmlFormat>framework_config</xmlFormat>
+  <schemaInfo>
+    <rootElementName>frameworkConfigRecord</rootElementName>
+    <schemaURI>http://ns.nsdl.org/ncs/framework_config/1.00/schemas/dcsFrameworkConfig.xsd</schemaURI>
+    <paths>
+      <path pathName="id" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="true">/frameworkConfigRecord/xmlFormat</path>
+    </paths>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>2</baseRenderLevel>
+    <firstPage>frameworkConfigRecord</firstPage>
+    <rebuildOnStart>true</rebuildOnStart>
+  </editorInfo>
+  <standAloneInfo>
+    <recordsDir>not configured here - see "dcsConfig" in web.xml and server.xml</recordsDir>
+  </standAloneInfo>
+</frameworkConfigRecord>

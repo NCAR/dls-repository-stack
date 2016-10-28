@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: latitude-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:47 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/non-vocab-fields.xsd">
+	<field name="Latitude" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/longLats/longLat/@latitude">
+		<definition>the latitude coordinate, in decimal degrees, when describing a detailed geometry</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-05-04">Latitudes run parallel to the equator and range from -90&#176; to 90&#176;</practice>
+				<practice status="current" originDate="2005-05-04">Enter latitude values in decimal degrees.</practice>
+				<practice status="current" originDate="2005-05-04">Enter values in the following format ##.##, that is, to a maximum of two decimal places.</practice>
+				<practice status="current" originDate="2005-05-04">For those values less than 1 degree, use a leading zero, e.g. 0.93.</practice>
+				<practice status="current" originDate="2005-05-04">Use positive values for latitudes north of the equator (Northern hemisphere).</practice>
+				<practice status="current" originDate="2005-05-04">Use negative values for latitudes south of the equator (Southern hemisphere).</practice>
+			</dos>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>decimal</XMLdataType>
+			</XMLdataTypes>
+			<domain>-90.00 to 90.00</domain>
+			<example>-36.58</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

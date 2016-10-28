@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.6.50">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Overview  **************************************************************
+				This is an ADN item-level CATEGORY schema.
+				Tags defined: metaMetadata
+
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Other CATEGORY schemas to include  ********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="commonfields.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  VOCABULARY schemas to include  ***********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="../vocabs/status.xsd"/>
+	<xsd:include schemaLocation="../vocabs/roleMetaMetadata.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  ROOT element  **********************************************
+							There is no root element for this schema.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Complex Types  (alpha order) *****************************
+	
+				contributorMetaMetadataType	is part of contributorsMetaMetadataType
+				contributorsMetaMetadataType	is part of metaMetadataType
+				dateInfoType		 			is part of metaMetadataType
+				metaMetadataType				is part of ADNmetdataType in record.xsd
+				statusOfType					is part of metaMetadataType
+				termsOfUseType				is part of metaMetadataType
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="contributorMetaMetadataType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  contributorMetaMetadataType  ******************************
+				These elements have the following types or schema associated with them.
+				role							is a simple type attribute; see roleMetaMetadata.xsd
+				date						is a simple type attribute; see commonfields.xsd; should be known so required; but may only be known to the year
+				organization					is complex; see commonfields.xsd
+				person						is complex; see commonfields.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="person" type="personType" maxOccurs="1"/>
+			<xsd:element name="organization" type="organizationType" maxOccurs="1"/>
+		</xsd:choice>
+		<xsd:attribute name="role" type="roleMetaMetadataType" use="required"/>
+		<xsd:attribute name="date" type="union.dateType"/>
+	</xsd:complexType>
+	<xsd:complexType name="contributorsMetaMetadataType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  contributorsMetaMetadataType  ******************************
+				These elements have the following types or schema associated with them.
+				contributor				is complex 
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="contributor" type="contributorMetaMetadataType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="dateInfoType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  dateInfoType  **********************************************
+				These elements have the following types or schema associated with them.
+				Made dates, except lastModified, union.dateType in case only the year is known.
+				created					is a required attribute of simple type; see commonfields.xsd
+				accessioned			is an attribute of simple type; see commonfields.xsd
+				lastModified				is an attribute; requires time in order to be more specific
+				deaccessioned			is an attribute of simple type; see commonfields.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="created" type="union.dateType" use="required"/>
+				<xsd:attribute name="accessioned" type="union.dateType"/>
+				<xsd:attribute name="lastModified" type="xsd:dateTime"/>
+				<xsd:attribute name="deaccessioned" type="union.dateType"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="metaMetadataType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  metaMetadataType  ****************************************
+				These elements have the following types or schema associated with them.
+				catalogEntries			is complex; see commonfields.xsd
+				dateInfo					is complex 
+				statusOf				is complex 
+				language				is a global; see commonfields.xsd
+				termsOfUse				is complex
+				description				is a global; see commonfields.xsd
+				contributors				is complex; minOccurs is 0 (done: 2002-10-29)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="catalogEntries" type="catalogEntriesType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="dateInfo" type="dateInfoType" minOccurs="1" maxOccurs="1" nillable="true"/>
+			<!-- nillable must be here to allow this tag to be empty -->
+			<xsd:element name="statusOf" type="statusOfType" minOccurs="1" maxOccurs="1" nillable="true"/>
+			<xsd:element ref="language" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="scheme" type="xsd:string" fixed="ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="copyright" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="termsOfUse" type="termsOfUseType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element ref="description" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="contributors" type="contributorsMetaMetadataType" minOccurs="0" maxOccurs="1"/>
+			<!-- made contributors minOccurs 0 because collections may not want to share cataloger info -->
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="statusOfType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  statusOfType  *****************************************
+				These elements have the following types or schema associated with them.
+				status					is an attribute; see status.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="status" type="statusType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="termsOfUseType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  termsOfUseType  *********************************************
+				These elements have the following types or schema associated with them.
+				URI				is a required attribute
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="URI" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

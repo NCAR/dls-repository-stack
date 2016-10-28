@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org
+
+http://www.dlese.org/Metadata/adn-item/0.7.00/record.xsd">
+
+	<general>
+
+		<title>Title Goes Here</title>
+
+		<description>This is a great site. It has lots of information.</description>
+
+		<language>en</language>
+
+		<subjects>
+
+			<subject>DLESE:Physics</subject>
+
+		</subjects>
+
+		<simplePlacesAndEvents>
+
+			<placeAndEvent>
+
+				<place>Washington, DC</place>
+
+				<event>Valentine's Day snowstorm</event>
+
+				<description>Text string</description>
+
+			</placeAndEvent>
+
+			<placeAndEvent>
+
+				<place>Jackson, Mississippi</place>
+
+			</placeAndEvent>
+
+			<placeAndEvent>
+
+				<place>Jackson, Mississippi</place>
+
+				<event>something</event>
+
+			</placeAndEvent>
+
+		</simplePlacesAndEvents>
+
+		<simpleTemporalCoverages>
+
+			<description>Morning and afternoon</description>
+
+			<description>Fall</description>
+
+			<description>First quarter</description>
+
+		</simpleTemporalCoverages>
+
+	</general>
+
+	<lifecycle>
+
+		<contributors>
+
+			<contributor role="Contributor">
+
+				<organization>
+
+					<instName>Forecast Systems Laboratory</instName>
+
+				</organization>
+
+			</contributor>
+
+		</contributors>
+
+	</lifecycle>
+
+	<metaMetadata>
+
+		<catalogEntries>
+
+			<catalog entry="DLESE-000-000-000-123">Digital Library for Earth System Education</catalog>
+
+		</catalogEntries>
+
+		<dateInfo created="2002-04-09" accessioned="2002-09-09" lastModified="2002-05-12T18:30:00Z"/>
+
+		<statusOf status="Accessioned">A record can only have one status. If need be, put descriptive information about status here.</statusOf>
+
+		<language>en</language>
+
+		<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+
+		<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research). All rights reserved.</copyright>
+
+		<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+
+		<description>String</description>
+
+	</metaMetadata>
+
+	<technical>
+
+	<!-- choose either online or offline as the tag set in techincal -->
+
+		<online>
+
+			<primaryURL>http://the-url-of-the-resource</primaryURL>
+
+			<requirements>
+
+				<requirement>
+
+					<reqType>DLESE:Operating system:Unix</reqType>
+
+					<minimumVersion>String</minimumVersion>
+
+					<maximumVersion>String</maximumVersion>
+
+				</requirement>
+
+			</requirements>
+
+		</online>		
+
+	</technical>
+
+	<educational>
+
+		<audiences>
+
+			<audience>
+
+				<gradeRange>DLESE:Primary elementary</gradeRange>
+
+			</audience>
+
+		</audiences>
+
+		<resourceTypes>
+
+			<resourceType>DLESE:Learning materials:Case study</resourceType>
+
+		</resourceTypes>
+
+	</educational>
+
+	<rights>
+
+		<cost>DLESE:No</cost>
+
+		<description>For educational use only</description>
+
+	</rights>
+
+	<geospatialCoverages>
+
+		<geospatialCoverage>
+
+			<body>
+
+				<planet>Earth</planet>
+
+			</body>
+
+			<geodeticDatumGlobalOrHorz>DLESE:WGS84</geodeticDatumGlobalOrHorz>
+
+			<projection type="DLESE:Mercator">Information about the projection goes here.</projection>
+
+			<coordinateSystem type="DLESE:Geographic latitude and longitude">Information about the coordinate system goes here</coordinateSystem>
+
+			<boundBox>
+
+				<westCoord>-124.58</westCoord>
+
+				<eastCoord>-102.0</eastCoord>
+
+				<northCoord>46.33</northCoord>
+
+				<southCoord>37.0</southCoord>
+
+				<bbSrcName>Cataloger supplied</bbSrcName>
+
+				<bbSrcIDandURL URL="String">None</bbSrcIDandURL>
+
+				<bbSrcDesc>String</bbSrcDesc>
+
+				<bbAccEst>String</bbAccEst>
+
+				<description>Extra information goes here about the bounding box goes here.</description>
+
+				<bbVert>
+
+					<geodeticDatumGlobalOrVert>DLESE:CGD28-CDN</geodeticDatumGlobalOrVert>
+
+					<vertBase>Datum level</vertBase>
+
+					<vertMin units="centimeters (cm)">10</vertMin>
+
+					<vertMax units="centimeters (cm)">300</vertMax>
+
+					<vertAcc>Information about veritcal accuracy goes here (e.g. The measurement is accurate to the nearest meter).</vertAcc>
+
+				</bbVert>
+
+				<bbPlaces>
+
+					<place>
+
+						<name>If appropriate enter a name (e.g. Great Plains, United States). Generally bounding boxes encompassing detailed geometries do not have place names while detailed geometries and bounding boxes not encompassing detailed geometries do have place names</name>
+
+						<source>Cataloger supplied</source>
+
+						<IDandURL URL="String">String</IDandURL>
+
+						<sourceDesc>String</sourceDesc>
+
+					</place>
+
+				</bbPlaces>
+
+				<bbEvents>
+
+					<event>
+
+						<name>If appropriate enter a name (e.g. Hurricane Fran). Generally bounding boxes encompassing detailed geometries do not to have event names while detailed geometries and bounding boxes not encompassing detailed geometries have event names.</name>
+
+						<source>String</source>
+
+						<IDandURL URL="String">String</IDandURL>
+
+						<sourceDesc>String</sourceDesc>
+
+					</event>
+
+				</bbEvents>
+
+			</boundBox>
+
+			<detGeos>
+
+				<detGeo>
+
+					<typeDetGeo>Bounding box</typeDetGeo>
+
+					<geoNumPts>4</geoNumPts>
+
+					<geoPtOrder>Inside</geoPtOrder>
+
+					<longLats>
+
+						<longLat longitude="-124.58" latitude="46.33"/>
+
+						<longLat longitude="-124.58" latitude="42.0"/>
+
+						<longLat longitude="-116.58" latitude="42.0"/>
+
+						<longLat longitude="-116.58" latitude="46.33"/>
+
+					</longLats>
+
+					<detSrcName>Cataloger supplied</detSrcName>
+
+					<detPlaces>
+
+						<place>
+
+							<name>Oregon</name>
+
+							<source>Cataloger supplied</source>
+
+						</place>
+
+					</detPlaces>
+
+				</detGeo>
+
+				<detGeo>
+
+					<typeDetGeo>Bounding box</typeDetGeo>
+
+					<geoNumPts>4</geoNumPts>
+
+					<geoPtOrder>Inside</geoPtOrder>
+
+					<longLats>
+
+						<longLat longitude="-109" latitude="41"/>
+
+						<longLat longitude="-109" latitude="37"/>
+
+						<longLat longitude="-102" latitude="37"/>
+
+						<longLat longitude="-102" latitude="41"/>
+
+					</longLats>
+
+					<detSrcName>Cataloger supplied</detSrcName>
+
+					<detPlaces>
+
+						<place>
+
+							<name>Colorado</name>
+
+							<source>Cataloger supplied</source>
+
+						</place>
+
+					</detPlaces>
+
+				</detGeo>
+
+				<detGeo>
+
+					<typeDetGeo>Point</typeDetGeo>
+
+					<geoNumPts>1</geoNumPts>
+
+					<geoPtOrder>None</geoPtOrder>
+
+					<longLats>
+
+						<longLat longitude="-121.69" latitude="45.37"/>
+
+					</longLats>
+
+					<detSrcName>Alexandria Digital Library (ADL) Gazetteer</detSrcName>
+
+					<detVert>
+
+						<geodeticDatumGlobalOrVert>DLESE:WGS84</geodeticDatumGlobalOrVert>
+
+						<vertBase>Datum level</vertBase>
+
+						<vertMin units="feet (ft)">11240</vertMin>
+
+						<vertMax units="feet (ft)">11240</vertMax>
+
+						<vertAcc>Unknown</vertAcc>
+
+					</detVert>
+
+					<detPlaces>
+
+						<place>
+
+							<name>Mt Hood, Oregon, United States</name>
+
+							<source>Alexandria Digital Library (ADL) Gazetteer</source>
+
+							<IDandURL URL="http://fat-albert.alexandria.ucsb.edu:8827/gazetteer/">adlgaz-1-10998-27</IDandURL>
+
+							<sourceDesc>A gazetteer service provided byu ADL</sourceDesc>
+
+						</place>
+
+					</detPlaces>
+
+					<detEvents>
+
+						<event>
+
+							<name>Mt. Hood eruption</name>
+
+							<source>Cataloger supplied</source>
+
+						</event>
+
+					</detEvents>
+
+				</detGeo>
+
+			</detGeos>
+
+		</geospatialCoverage>
+
+		<geospatialCoverage>
+
+			<body>
+
+				<planet>Mars</planet>
+
+			</body>
+
+			<geodeticDatumGlobalOrHorz>DLESE:Unknown</geodeticDatumGlobalOrHorz>
+
+			<projection type="DLESE:Unknown"></projection>
+
+			<coordinateSystem type="DLESE:Geographic latitude and longitude"></coordinateSystem>
+
+			<boundBox>
+
+				<westCoord>30.0</westCoord>
+
+				<eastCoord>30.0</eastCoord>
+
+				<northCoord>30.0</northCoord>
+
+				<southCoord>30.0</southCoord>
+
+				<bbSrcName>Cataloger supplied</bbSrcName>
+
+			</boundBox>
+
+		</geospatialCoverage>
+
+		<geospatialCoverage>
+
+			<body>
+
+				<otherPlanetaryBody>Saturn's moon</otherPlanetaryBody>
+
+			</body>
+
+			<geodeticDatumGlobalOrHorz>DLESE:Unknown</geodeticDatumGlobalOrHorz>
+
+			<projection type="DLESE:Unknown"></projection>
+
+			<coordinateSystem type="DLESE:Geographic latitude and longitude"></coordinateSystem>
+
+			<boundBox>
+
+				<westCoord>30.0</westCoord>
+
+				<eastCoord>30.0</eastCoord>
+
+				<northCoord>30.0</northCoord>
+
+				<southCoord>30.0</southCoord>
+
+				<bbSrcName>Cataloger supplied</bbSrcName>
+
+			</boundBox>
+
+		</geospatialCoverage>
+
+	</geospatialCoverages>
+
+	<temporalCoverages>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeAD>
+
+					<begin date="1920-06-15" time="08:30:00Z"/>
+
+					<end date="1929-08-13" time="14:20:00Z"/>
+
+				</timeAD>
+
+			</timeInfo>
+
+			<periods>
+
+				<period>
+
+					<name>Roaring 20's</name>
+
+					<source>Cataloger supplied</source>
+
+				</period>
+
+				<period>
+
+					<name>The Age of the Flapper</name>
+
+					<source>Cataloger supplied</source>
+
+				</period>
+
+				<period>
+
+					<name>Pre-depression era</name>
+
+					<source>U.S. History: A Look at the 1920's</source>
+
+					<IDandURL URL="http://theURL.tothe.site">ID number of the item being used</IDandURL>
+
+					<sourceDesc>This is a gazetteer for United States history that is sponsored by XXXXX.</sourceDesc>
+
+				</period>
+
+			</periods>
+
+		</timeAndPeriod>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeAD>
+
+					<begin date="1920-06-15"/>
+
+					<end date="Present"/>
+
+				</timeAD>
+
+			</timeInfo>
+
+		</timeAndPeriod>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeAD>
+
+					<begin date="1920"/>
+
+					<end date="1929"/>
+
+				</timeAD>
+
+			</timeInfo>
+
+		</timeAndPeriod>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeBC>
+
+					<begin>-8700</begin>
+
+					<end>-2500</end>
+
+				</timeBC>
+
+			</timeInfo>
+
+		</timeAndPeriod>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeRelative>
+
+					<begin units="Billion years ago">13.5</begin>
+
+					<end units="Billion years ago">9.75</end>
+
+				</timeRelative>
+
+			</timeInfo>
+
+		</timeAndPeriod>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeRelative>
+
+					<begin units="Years forward">200</begin>
+
+					<end units="Years forward">1000</end>
+
+				</timeRelative>
+
+			</timeInfo>
+
+		</timeAndPeriod>
+
+		<timeAndPeriod>
+
+			<timeInfo>
+
+				<timeRelative>
+
+					<begin units="Days ago">30</begin>
+
+					<end units="Days ago">0</end>
+
+				</timeRelative>
+
+			</timeInfo>
+
+		</timeAndPeriod>
+
+	</temporalCoverages>
+
+	<objectsInSpace>
+
+		<object>
+
+			<rightAscension>24</rightAscension>
+
+			<declination>30.0</declination>
+
+			<epoch>epoch1950.0</epoch>
+
+			<description>A nebula</description>
+
+		</object>
+
+	</objectsInSpace>
+
+</itemRecord>
+

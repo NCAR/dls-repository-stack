@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="comm_anno">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<!-- No ID path configured: Let it be set using the NSDL handle/file name -->
+			<!-- <xpaths>
+				<xpath>/comm_anno/recordID</xpath>
+			</xpaths> -->		
+		</standardField>	
+		<standardField name="url">
+			<xpaths>
+				<xpath>/comm_anno/url</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="title">
+			<xpaths>
+				<xpath>/comm_anno/title</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/comm_anno/description</xpath>
+			</xpaths>		
+		</standardField>		
+	</standardFields>
+	
+	<!-- Relationships that this format of record defines. -->	
+	<relationships>
+		<!-- 	Relationship of the target record to this.
+		
+				The given relationship name will be attached to the target record, not this record.
+				
+				Examples:
+					target 'isAnnotatedBy' this
+					target 'isExtendedBy' this
+					target 'isMemberOf' this
+					etc.
+					
+				attributes: name=[relationshop name] -->
+				
+		<!-- Xpath where the source record's ID or URL is stored
+			 attribute type=[id|url] -->				
+		<relationship name="isAnnotatedBy">
+			<xpaths>
+				<xpath type="id">/comm_anno/annotatedID[@idType!='URL']</xpath>
+			</xpaths>		
+		</relationship>
+		<relationship name="isAnnotatedBy">
+			<xpaths>
+				<xpath type="url">/comm_anno/annotatedID[@idType='URL']</xpath>
+			</xpaths>		
+		</relationship>			
+	</relationships>
+	
+	<customFields>
+		<customField facetCategory="CCSAssetUrl"> 
+			<xpaths>
+				<!-- Index protected asset urls found in the comm_anno record -->
+				<xpath>/comm_anno/standardURL[(starts-with(.,'http://ccs.dls.ucar.edu/home/protected/'))]</xpath>
+				<xpath>/comm_anno/url[(starts-with(.,'http://ccs.dls.ucar.edu/home/protected/'))]</xpath>
+			</xpaths>		
+		</customField>
+	</customFields>
+	
+</XMLIndexerFieldsConfig>

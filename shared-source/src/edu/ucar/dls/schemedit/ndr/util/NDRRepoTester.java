@@ -1,0 +1,145 @@
+
+package edu.ucar.dls.schemedit.ndr.util;
+
+import edu.ucar.dls.ndr.NdrUtils;
+import edu.ucar.dls.ndr.reader.*;
+import edu.ucar.dls.ndr.request.*;
+import edu.ucar.dls.ndr.apiproxy.InfoXML;
+import edu.ucar.dls.ndr.apiproxy.NDRConstants;
+import edu.ucar.dls.ndr.apiproxy.NDRConstants.NDRObjectType;
+import edu.ucar.dls.schemedit.SchemEditUtils;
+import edu.ucar.dls.schemedit.test.TesterUtils;
+import edu.ucar.dls.schemedit.config.CollectionConfigReader;
+import edu.ucar.dls.xml.Dom4jUtils;
+import edu.ucar.dls.xml.XSLTransformer;
+import edu.ucar.dls.util.Files;
+import org.dom4j.Element;
+import org.dom4j.Node;
+import org.dom4j.Document;
+import org.dom4j.DocumentHelper;
+import org.dom4j.XPath;
+import java.io.File;
+import java.net.URL;
+import java.util.*;
+import java.text.*;
+import javax.xml.transform.Transformer;
+
+/**
+ *  Utilities for testing an NDR repository
+ - can we create and modify a resource??
+ *
+ * @author     ostwald<p>
+ *
+ */
+public class NDRRepoTester {
+
+	private static boolean debug = true;
+	private static boolean verbose = true;
+	String mdpHandle = null;
+	String aggHandle = null;
+	String mdHandle = null;
+	String resHandle = null;
+	String agentHandle = null;
+	
+	public NDRRepoTester () throws Exception {
+		SimpleNdrRequest.setDebug (debug);
+		SimpleNdrRequest.setVerbose (verbose);
+		
+		prtln ("agentHandle: " + NDRConstants.getNcsAgent());
+		prtln ("ndrApiBaseUrl: " + NDRConstants.getNdrApiBaseUrl());
+	}
+
+
+	void addResource (String resourceUrl) throws Exception {
+		// does the resource exist?
+		String resHandle = NdrUtils.findResource(resourceUrl);
+		if (resHandle != null)
+			prtln ("resource for " + resourceUrl + " EXISTS");
+		else {
+			prtln ("resource for " + resourceUrl + " DOES NOT exists");
+			AddResourceRequest addResReq = new AddResourceRequest ();
+			addResReq.setIdentifier(resourceUrl);
+			// aggregator isn't necessary ...
+			if (this.aggHandle != null)
+				addResReq.addCommand("relationship", "memberOf", this.aggHandle);
+		
+			// add it (don't need an aggregator)
+			InfoXML response = addResReq.submit();
+			if (response.hasErrors()) {
+				throw new Exception(response.getError());
+			}
+	
+			resHandle = response.getHandle();
+		}
+		
+		// By here we've created or found a resource, or we've thrown an exception
+		
+		
+		// set a property
+		
+		
+		// test by reading the resource object
+	}
+	
+	/**
+	 *  The main program for the NDRRepoTester class
+	 *
+	 * @param  args           The command line arguments
+	 * @exception  Exception  NOT YET DOCUMENTED
+	 */
+	public static void main(String[] args) throws Exception {
+		File propFile = null; // propFile must be assigned!
+		NdrUtils.setup (propFile);
+		
+		NDRRepoTester tester = new NDRRepoTester();
+		
+		// tester.aggHandle = "2200/test.20090211175402341T";
+		
+		String url = "http://www.nsidc.org/noaa/noodle/bowl";
+		tester.addResource(url);
+	}
+	
+	/**
+	* Doesn't work for some strange reason ...
+	*/
+	void deleteDataStream (String mdHandle, String fmt) throws Exception {
+		ModifyMetadataRequest request = new ModifyMetadataRequest (mdHandle);
+		request.deleteDataStream(fmt);
+		request.submit();
+	}
+		
+	
+	/**
+	 *  NOT YET DOCUMENTED
+	 *
+	 * @param  node  NOT YET DOCUMENTED
+	 */
+	private static void pp(Node node) {
+		prtln(Dom4jUtils.prettyPrint(node));
+	}
+
+
+	/**
+	 *  Sets the debug attribute of the NDRRepoTester class
+	 *
+	 * @param  bool  The new debug value
+	 */
+	public static void setDebug(boolean bool) {
+		debug = bool;
+	}
+
+
+	/**
+	 *  Description of the Method
+	 *
+	 * @param  s  Description of the Parameter
+	 */
+	private static void prtln(String s) {
+		if (debug) {
+			// SchemEditUtils.prtln(s, "NDRRepoTester");
+			SchemEditUtils.prtln(s, "");
+		}
+	}
+
+}
+

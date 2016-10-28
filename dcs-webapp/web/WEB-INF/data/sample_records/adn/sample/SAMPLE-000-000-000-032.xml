@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>Visit to an Ocean Planet</title>
+<description>Visit to an Ocean Planet is an innovative CD-ROM that has been transferred to the web. Visit to an Ocean Planet is for grades 5-12 that makes science, ocean, climate and life education fun and interactive. There are three sections, expedition, mission and guide. The expedition section engages students in exploring the 1997 El Nino, a look at oceanographers and their work, and an ocean science research cruise planning exercise. In the mission section, students discover many details about the TOPEX/Poseidon mission and learn about previous and future missions. They also learn how to measure ocean topography. The guide section contains lessons and classroom activities in climate, oceanography, and life in our oceans. The climate activities cover properties of fresh water and sea water, Earth's hydrologic cycle, coastal versus inland temperatures ocean currents and coastal temperatures, metric measurements, solar energy and distance, salinity, deep ocean circulations and greenhouse gases. The oceanography activities cover density of water, evaporation, mixing, sound in water, wind-driven currents, tides, upwelling and the Cartesian diver. The life in our oceans activities cover plankton, bioluminescence, oil spils and plastics in the ocean. Classroom activities can be downloaded directly from the website as .pdf files. The guide section also contains movies, images, and background materials. If you are an educator or home schooler, you can obtain a copy of the &quot;Visit to an Ocean Planet&quot; CD-ROM free of charge from the JPL Physical Oceanography DAAC: http://podaac.jpl.nasa.gov/edu.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Biological oceanography</subject>
+<subject>DLESE:Chemical oceanography</subject>
+<subject>DLESE:Climatology</subject>
+<subject>DLESE:Physical oceanography</subject>
+<subject>DLESE:Technology</subject>
+</subjects>
+</general>
+<lifecycle>
+<contributors>
+<contributor date="1998" role="Publisher">
+<organization>
+<instName>National Aeronautics and Space Administration (NASA), Jet Propulsion Lab (JPL), California Institute of Technology</instName>
+<instEmail>topex@jpl.nasa.gov</instEmail>
+<instUrl>http://podaac.jpl.nasa.gov/</instUrl>
+</organization>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-032">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-11-01" created="2000-11-01"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://topex-www.jpl.nasa.gov/education/cdrom.html</primaryURL>
+<mediums>
+<medium>text/html</medium>
+</mediums>
+<requirements>
+<requirement>
+<reqType>DLESE:Software or plug-in:Shockwave player</reqType>
+</requirement>
+<requirement>
+<reqType>DLESE:Software or plug-in:Adobe Acrobat reader</reqType>
+</requirement>
+<requirement>
+<reqType>DLESE:Software or plug-in:QuickTime</reqType>
+<maximumVersion>2.1.2</maximumVersion>
+</requirement>
+<requirement>
+<reqType>DLESE:Operating system:Microsoft Windows</reqType>
+</requirement>
+<requirement>
+<reqType>DLESE:Operating system:Macintosh</reqType>
+</requirement>
+<requirement>
+<reqType>DLESE:Other:More specific technical requirements</reqType>
+</requirement>
+</requirements>
+<otherRequirements>
+<otherRequirement>
+<otherType>Apparently, there are some problems with MacOS 9.0, with regard to running the CD, but workarounds are provided in the FAQ on the website.</otherType>
+</otherRequirement>
+</otherRequirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:High school</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Middle school</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Learning materials:Classroom activity</resourceType>
+<resourceType>DLESE:Learning materials:Computer activity</resourceType>
+<resourceType>DLESE:Learning materials:Lab activity</resourceType>
+<resourceType>DLESE:Learning materials:Module or unit</resourceType>
+<resourceType>DLESE:Text:Glossary</resourceType>
+</resourceTypes>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>If you are an educator or home schooler, you can obtain a copy of the &quot;Visit to an Ocean Planet&quot; CD-ROM free of charge from the JPL Physical Oceanography DAAC: http://podaac.jpl.nasa.gov/edu. Produced by the TOPEX/Poseidon project. Copyright 1998 California Institute of Technology and its licensors. U.S. Government sponsorship is acknowledged. All rights reserved.</description>
+</rights>
+</itemRecord>

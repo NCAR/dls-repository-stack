@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+This is an example groups file used by NFRIndexer to normalize NSDL DC vocabs.
+
+The file defines what vocabs are valid and how to map alternate vocabs to the core ones.
+
+-->
+<opml xmlns="http://ns.nsdl.org/ncs/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://ns.nsdl.org/ncs/fields http://ns.nsdl.org/ncs/ncs_item/1.02/schemas/fields/non-vocab-fields.xsd"
+version="2.0">
+	<head>
+		<title>Resource Type</title>
+		<concept language="en-us" metaFormat="nsdl_dc" metaVersion="1.02" text="Resource Type" audience="search" path="/nsdl_dc:nsdl_dc/dc:type"/>
+	</head>
+	<body>
+
+		<!-- 	The top-level type="group" outline defines a core vocab that is allowed for this field.
+				In this example, vocab="Computing and Information" is the core vocab to use.
+				The atribte text="Computing and Information" should match this verbatim.
+				An optional 'attribution' attribute may be included to indicate the attrubite that 
+				should be written in the normalized XML, for example attribution="nsdl_dc:NSDLType"
+				All vocab terms defined within will be mapped to this vocab and re-written in the ndsl_dc record.
+		
+				Nesting: It is possible to nest <outlines> within outlines to define sub-cagegories withing a given 
+				vocab group. All sub-categores will be mapped to all groups above them.
+				
+				Other attributes may exists: This documentation describes only those used by DDS in the normalization process.
+				-->
+		<outline type="group" vocab="Assessment Material" text="Assessment Materials" deftn="materials for evaluation or measurements of progress, development, ability, skill, understanding, knowledge, aptitude or achievement" attribution="nsdl_dc:NSDLType">
+			<outline vocab="Assessment" type="vocab" text="Assessment"/>
+			<outline vocab="Assessment Material" type="vocab" text="Assessment Material"/>
+			<outline vocab="Assessment Materials" type="vocab" text="Assessment Materials"/>
+			<outline vocab="Assessment: other" type="vocab" text="Assessment: other"/>
+			<outline vocab="Assessment: tool" type="vocab" text="Assessment: tool"/>
+			<outline vocab="Assessment/Evaluation" type="vocab" text="Assessment or Evaluation"/>
+			<outline vocab="Assessment- other" type="vocab" text="Assessment- other"/>
+			<outline vocab="Assessment- tool" type="vocab" text="Assessment- tool"/>
+			<outline vocab="Assessments" type="vocab" text="Assessments"/>
+			<outline vocab="Online educator tools (quiz makers, free email, web hosting sites)" type="vocab" text="Online educator tools (quiz makers, free email, web hosting sites)"/>
+			<outline vocab="Other Assessment Type" type="vocab" text="Other Assessment Type"/>
+			<outline vocab="Peer Assessment" type="vocab" text="Peer Assessment"/>
+			<outline vocab="Self-assessment" type="vocab" text="Self=assessment"/>
+			<outline vocab="Test Manuals" type="vocab" text="Test Manuals"/>
+			<outline vocab="Test Reviews" type="vocab" text="Test Reviews"/>
+			<outline vocab="Test Reviews" type="vocab" text="Test Reviews"/>
+
+			<outline type="group" vocab="Answer Key" text="Answer Key" deftn="a correct solution or response to a question, problem	or test" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Answer Key" type="vocab" text="Answer Key"/>
+				<outline vocab="Answer Sheets" type="vocab" text="Answer Sheets"/>
+			</outline>
+			<outline type="group" vocab="Portfolio" text="Portfolio" deftn="a collection of student work that demonstrates academic progress or knowledge acquisition over a period of time" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Portfolio" type="vocab" text="Portfolio"/>
+			</outline>
+			<outline type="group" vocab="Rubric" text="Rubric" deftn="statements describing the abilities, knowledge, or understanding of a content area in order to reach a certain level of mastery" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Rubric" type="vocab" text="Rubric"/>
+			</outline>
+			<outline type="group" vocab="Test" text="Test" deftn="an oral or written examination comprising questions, exercises, and/or problems that measure the skill, knowledge, capacity, or aptitude of an individual or group; may or may not include an answer key" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Assessment: exam with answer key" type="vocab" text="Assessment: exam with answer key"/>
+				<outline vocab="Assessment: exam w/o answer key" type="vocab" text="Assessment: exam w/o answer key"/>
+				<outline vocab="Assessment- exam with answer key" type="vocab" text="Assessment- exam with answer key"/>
+				<outline vocab="Assessments:Knowledge Survey" type="vocab" text="Assessments:Knowledge Survey"/>
+				<outline vocab="Assessments:On line" type="vocab" text="Assessments:On line"/>
+				<outline vocab="ConcepTests" type="vocab" text="Concept Tests"/>
+				<outline vocab="Concept Test" type="vocab" text="Concept Test"/>
+				<outline vocab="Quiz/Test" type="vocab" text="Quiz/Test"/>
+				<outline vocab="test" type="vocab" text="test"/>
+				<outline vocab="Test" type="vocab" text="Test"/>
+			</outline>
+		</outline>
+<!--end Assessment Materials group -->
+				
+		<!-- AUDIO/VISUALS -->
+		<outline  vocab="Audio/Visual" text="Audio/Visual" type="group" deftn="representations other than text" attribution="nsdl_dc:NSDLType">
+			<outline vocab="CDROM" type="vocab" text="CDROM"/>
+		
+			<outline type="group" vocab="Graph" text="Graph" deftn="visual representation of data with the purpose of providing meaning to the data (use for: pie charts, line graphs)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="chart" type="vocab" text="chart"/>
+				<outline vocab="Charts and Diagrams" type="vocab" text="Charts and Diagrams"/>
+				<outline vocab="diagram" type="vocab" text="diagram"/>
+				<outline vocab="Diagram" type="vocab" text="Diagram"/>
+				<outline vocab="Diagrams" type="vocab" text="Diagrams"/>
+				<outline vocab="graph" type="vocab" text="graph"/>
+				<outline vocab="Graph" type="vocab" text="Graph"/>
+				<outline vocab="graph/chart" type="vocab" text="graph/chart"/>
+				<outline vocab="Graph/chart" type="vocab" text="Graph/chart"/>
+				<outline vocab="Graph/Chart" type="vocab" text="Graph/Chart"/>
+			</outline>
+		
+			<outline type="group" vocab="Illustration" text="Illustration" deftn="visual material used to clarify or annotate pieces of text (use for: drawing, diagram)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="&lt;span class='vocabprefix'&gt;Audio/Visual:&lt;/span&gt;Images/Illustrations" type="vocab" text="&lt;span class='vocabprefix'&gt;Audio/Visual:&lt;/span&gt;Images/Illustrations"/>
+				<outline vocab="Audio/Visual:Images/Illustrations" type="vocab" text="Images and Illustrations"/>
+				<outline vocab="illustration" type="vocab" text="illustration"/>
+				<outline vocab="Illustration" type="vocab" text="Illustration"/>
+			</outline>
+		
+			<outline type="group" vocab="Image/Image Set" text="Image/Image Set" deftn="visual material that is not in motion and is not intended to annotate pieces of text (use for: poster, digital image of a painting or print)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="35mm slide" type="vocab" text="Slide"/>
+				<outline vocab="Image" type="vocab" text="Image"/><!-- DCMI vocab -->
+				<outline vocab="image" type="vocab" text="Image"/>
+				<outline vocab="image/gif" type="vocab" text="image/gif"/>
+				<outline vocab="image/jpeg" type="vocab" text="image/jpeg"/>
+				<outline vocab="Image/Image Set" type="vocab" text="Image or Image Set"/>
+				<outline vocab="Images/Illustrations" type="vocab" text="Images/Illustrations"/>
+				<outline vocab="JPEG Image" type="vocab" text="JPEG Image"/>
+				<outline vocab="StillImage" type="vocab" text="Still Image"/><!-- DCMI vocab -->
+				<outline vocab="Still Image" type="vocab" text="Still Image"/>
+			</outline>
+		
+			<outline type="group" vocab="Map" text="Map" deftn="representation of physical features or data of a discrete area, often done on a flat surface at a point in time (use for: topographic map, soil map, road map, bedrock map, or atlas)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Audio/Visual:Maps" type="vocab" text="Maps"/>
+				<outline vocab="map" type="vocab" text="map"/>
+				<outline vocab="Map" type="vocab" text="Map"/>
+				<outline vocab="maps" type="vocab" text="maps"/>
+				<outline vocab="Maps" type="vocab" text="Map"/>
+			</outline>
+		
+			<outline type="group" vocab="Movie/Animation" text="Movie/Animation" deftn="in-motion, dynamic, audio/visual material played in a linear fashion and often not related to a specific date in time (use for: webcast about a science concept, podcast); (see Broadcast for concert, performance, newscast)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Animations/Video" type="vocab" text="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Animations/Video"/>
+				<outline vocab="animation" type="vocab" text="Animation"/>
+				<outline vocab="Animation" type="vocab" text="Animation"/>
+				<outline vocab="Animations/Video" type="vocab" text="Animations/Video"/>
+				<outline vocab="Audio/Visual" type="vocab" text="Audio/Visual"/>
+				<outline vocab="Audio/Visual:Animations/Video" type="vocab" text="Animation or Video"/>
+				<outline vocab="Audio/Visual:Collections" type="vocab" text="Audio/Visual:Collections"/>
+				<outline vocab="classroom footage" type="vocab" text="classroom footage"/>
+				<outline vocab="classroom footage, expert interview" type="vocab" text="classroom footage, expert interview"/>
+				<outline vocab="classroom footage, expert interview, clip from finished program" type="vocab" text="classroom footage, expert interview, clip from finished program"/>
+				<outline vocab="classroom footage, expert interview, student ideas, clip from finished program" type="vocab" text="classroom footage, expert interview, student ideas, clip from finished program"/>				
+				<outline vocab="classroom footage, expert interview, teacher interview, clip from finished program" type="vocab" text="classroom footage, expert interview, teacher interview, clip from finished program"/>
+				<outline vocab="classroom footage, raw" type="vocab" text="classroom footage, raw"/>
+				<outline vocab="classroom footage, raw footage" type="vocab" text="classroom footage, raw footage"/>
+				<outline vocab="classroom footage, student ideas, clip from finished program" type="vocab" text="classroom footage, student ideas, clip from finished program"/>
+				<outline vocab="classroom footage, student ideas, expert interview, workshop, clip from finished program" type="vocab" text="classroom footage, student ideas, expert interview, workshop, clip from finished program"/>
+				<outline vocab="classroom footage, teacher interview" type="vocab" text="classroom footage, teacher interview"/>
+				<outline vocab="classroom footage, teacher interview, clip from finished program" type="vocab" text="classroom footage, teacher interview, clip from finished program"/>
+				<outline vocab="classroom footage, teacher interview, clip of uncut footage" type="vocab" text="classroom footage, teacher interview, clip of uncut footage"/>
+				<outline vocab="classroom footage, teacher interview, expert and teacher discussion, clip from finished program" type="vocab" text="classroom footage, teacher interview, expert and teacher discussion, clip from finished program"/>
+				<outline vocab="classroom footage, teacher interview, expert interview, clip from finished program" type="vocab" text="classroom footage, teacher interview, expert interview, clip from finished program"/>
+				<outline vocab="classroom footage, teacher interview, student ideas, clip from finished program" type="vocab" text="classroom footage, teacher interview, student ideas, clip from finished program"/>
+				<outline vocab="classroom footage, teacher interview, teacher and expert discussion, clip from finished program" type="vocab" text="classroom footage, teacher interview, teacher and expert discussion, clip from finished program"/>
+				<outline vocab="classroom footage, workshop, clip from finished program" type="vocab" text="classroom footage, workshop, clip from finished program"/>
+				<outline vocab="classroom footage, workshop, teacher intervew, clip from finished program" type="vocab" text="classroom footage, workshop, teacher intervew, clip from finished program"/>
+				<outline vocab="clip from finished program" type="vocab" text="clip from finished program"/>
+				<outline vocab="clip from finished program, classroom footage" type="vocab" text="clip from finished program, classroom footage"/>
+				<outline vocab="clip from finished program, expert interview" type="vocab" text="clip from finished program, expert interview"/>
+				<outline vocab="clip from finished program, expert interview, classroom footage" type="vocab" text="clip from finished program, expert interview, classroom footage"/>
+				<outline vocab="clips from finished program" type="vocab" text="clips from finished program"/>
+				<outline vocab="demonstrations, student ideas, expert interview, classroom footage, clip from finished program" type="vocab" text="demonstrations, student ideas, expert interview, classroom footage, clip from finished program"/>
+				<outline vocab="Expert Interview" type="vocab" text="Expert Interview"/>
+				<outline vocab="Expert Interview, Classroom Footage, Demonstration, clip from finished program" type="vocab" text="Expert Interview, Classroom Footage, Demonstration, clip from finished program"/>
+				<outline vocab="Expert Interview, raw" type="vocab" text="Expert Interview, raw"/>
+				<outline vocab="Expert Interview, raw footage" type="vocab" text="Expert Interview, raw footage"/>
+				<outline vocab="expert interview" type="vocab" text="expert interview"/>
+				<outline vocab="expert interview, clip from finished program" type="vocab" text="expert interview, clip from finished program"/>
+				<outline vocab="expert interview, clip from finished program, demonstration" type="vocab" text="expert interview, clip from finished program, demonstration"/>
+				<outline vocab="expert interview, raw" type="vocab" text="expert interview, raw"/>
+				<outline vocab="expert interview, raw footage" type="vocab" text="expert interview, raw footage"/>
+				<outline vocab="expert interview, raw, uncut footage," type="vocab" text="expert interview, raw, uncut footage,"/>
+				<outline vocab="expert interview, student ideas, demonstration, clip from finished program" type="vocab" text="expert interview, student ideas, demonstration, clip from finished program"/>
+				<outline vocab="expert interview, teacher interview, classroom footage, clip from finished program" type="vocab" text="expert interview, teacher interview, classroom footage, clip from finished program"/>
+				<outline vocab="expert interview, workshop, clip from finished program" type="vocab" text="expert interview, workshop, clip from finished program"/>
+				<outline vocab="finished program" type="vocab" text="finished program"/>
+				<outline vocab="Film" type="vocab" text="Film"/>
+				<outline vocab="Movie/Animation" type="vocab" text="Movie or Animation"/>
+				<outline vocab="MovingImage" type="vocab" text="Moving Image"/><!-- DCMI vocab -->
+				<outline vocab="Moving Image" type="vocab" text="Moving Image"/>
+				<outline vocab="QuickTime Movie" type="vocab" text="QuickTime Movie"/>
+				<outline vocab="raw" type="vocab" text="raw"/>
+				<outline vocab="raw footage, classroom footage" type="vocab" text="raw footage, classroom footage"/>
+				<outline vocab="raw, classroom footage" type="vocab" text="raw, classroom footage"/>
+				<outline vocab="raw, expert interview" type="vocab" text="raw, expert interview"/>
+				<outline vocab="raw, student ideas" type="vocab" text="raw, student ideas"/>
+				<outline vocab="raw footage" type="vocab" text="raw footage"/>
+				<outline vocab="raw footage, student ideas" type="vocab" text="raw footage, student ideas"/>
+				<outline vocab="Short movies" type="vocab" text="Short Movies"/>
+				<outline vocab="student ideas" type="vocab" text="student ideas"/>
+				<outline vocab="student ideas, demonstration, expert interview, classroom footage, clip from finished program" type="vocab" text="student ideas, demonstration, expert interview, classroom footage, clip from finished program"/>
+				<outline vocab="student ideas, demonstration, workshop, classroom footage, clip from finished program" type="vocab" text="student ideas, demonstration, workshop, classroom footage, clip from finished program"/>
+				<outline vocab="student ideas, expert interview, demonstration, clip from finished program" type="vocab" text="student ideas, expert interview, demonstration, clip from finished program"/>
+				<outline vocab="student ideas, expert interview, teacher interviews, clip from finished program" type="vocab" text="student ideas, expert interview, teacher interviews, clip from finished program"/>
+				<outline vocab="student ideas, raw" type="vocab" text="student ideas, raw"/>
+				<outline vocab="student ideas, workshop, classroom footage, demonstration, clip from finished program" type="vocab" text="student ideas, workshop, classroom footage, demonstration, clip from finished program"/>
+				<outline vocab="teacher interview" type="vocab" text="teacher interview"/>
+				<outline vocab="teacher interview, classroom footage" type="vocab" text="teacher interview, classroom footage"/>
+				<outline vocab="teacher interview, classroom footage, clip from finished program" type="vocab" text="teacher interview, classroom footage, clip from finished program"/>
+				<outline vocab="teacher interview, classroom footage, workshop, clip from finished program" type="vocab" text="teacher interview, classroom footage, workshop, clip from finished program"/>
+				<outline vocab="teacher interview, clip from finished program" type="vocab" text="teacher interview, clip from finished program"/>
+				<outline vocab="teacher interview, expert interview, classroom footage, clip from finished program" type="vocab" text="teacher interview, expert interview, classroom footage, clip from finished program"/>
+				<outline vocab="teacher interview, raw footage, student ideas, classroom footage" type="vocab" text="teacher interview, raw footage, student ideas, classroom footage"/>
+				<outline vocab="teacher interview, workshop, classroom footage, clip from finished program" type="vocab" text="teacher interview, workshop, classroom footage, clip from finished program"/>
+				<outline vocab="teacher interview, workshop, demonstration, classroom footage, clip from finished program" type="vocab" text="teacher interview, workshop, demonstration, classroom footage, clip from finished program"/>
+				<outline vocab="Video" type="vocab" text="Video"/>
+				<outline vocab="video" type="vocab" text="video"/>
+				<outline vocab="video/quicktime" type="vocab" text="video/quicktime"/>
+				<outline vocab="Windows Video" type="vocab" text="Windows Video"/>
+				<outline vocab="webcast" type="vocab" text="webcast"/>
+				<outline vocab="Webcast" type="vocab" text="Webcast"/>
+				<outline vocab="workshop, classroom footage, clip from final program" type="vocab" text="workshop, classroom footage, clip from final program"/>
+				<outline vocab="workshop, classroom footage, clip from finished program" type="vocab" text="workshop, classroom footage, clip from finished program"/>
+				<outline vocab="workshop, classroom footage, student ideas, finished program" type="vocab" text="workshop, classroom footage, student ideas, finished program"/>
+				<outline vocab="workshop, classroom footage, teacher interview, student group work, clip from final program" type="vocab" text="workshop, classroom footage, teacher interview, student group work, clip from final program"/>
+				<outline vocab="workshop, classroom footage, teacher interviews, clip from finished program" type="vocab" text="workshop, classroom footage, teacher interviews, clip from finished program"/>
+				<outline vocab="workshop, clip finished program" type="vocab" text="workshop, clip finished program"/>
+				<outline vocab="workshop, clip from finished program" type="vocab" text="workshop, clip from finished program"/>
+				<outline vocab="workshop, clip from finished program, expert interviews" type="vocab" text="workshop, clip from finished program, expert interviews"/>
+				<outline vocab="workshop, clip from finished program, expert interviews, classroom footage" type="vocab" text="workshop, clip from finished program, expert interviews, classroom footage"/>
+				<outline vocab="workshop, clip from finished program, student ideas" type="vocab" text="workshop, clip from finished program, student ideas"/>
+				<outline vocab="workshop, clips from classrooms, student group work, clip from final program" type="vocab" text="workshop, clips from classrooms, student group work, clip from final program"/>
+				<outline vocab="workshop, demonstrations, expert interview, classroom footage, clip from finished program" type="vocab" text="workshop, demonstrations, expert interview, classroom footage, clip from finished program"/>
+				<outline vocab="workshop, expert interview, classroom footage, clip from finished program" type="vocab" text="workshop, expert interview, classroom footage, clip from finished program"/>
+				<outline vocab="workshop, expert interview, classroom footage, finished program" type="vocab" text="workshop, expert interview, classroom footage, finished program"/>
+				<outline vocab="workshop, expert interview, clip from finished program" type="vocab" text="workshop, expert interview, clip from finished program"/>
+				<outline vocab="workshop, student ideas, classroom footage, clip from finished program" type="vocab" text="workshop, student ideas, classroom footage, clip from finished program"/>
+				<outline vocab="workshop, student ideas, clip from finished program" type="vocab" text="workshop, student ideas, clip from finished program"/>
+				<outline vocab="workshop, student ideas, clip from finished program, classroom footage" type="vocab" text="workshop, student ideas, clip from finished program, classroom footage"/>
+				<outline vocab="workshop, student ideas, clip from finished program, classroom footage, teacher interview" type="vocab" text="workshop, student ideas, clip from finished program, classroom footage, teacher interview"/>
+				<outline vocab="workshop, student ideas, clip from finished program, teacher interview, classroom footage" type="vocab" text="workshop, student ideas, clip from finished program, teacher interview, classroom footage"/>
+				<outline vocab="Workshop, teacher observation, student observation, classroom, clip from final program" type="vocab" text="Workshop, teacher observation, student observation, classroom, clip from final program"/>
+				<outline vocab="worshop, classroom footage, clip from finished program" type="vocab" text="worshop, classroom footage, clip from finished program"/>
+			</outline>
+			
+			<outline type="group" vocab="Music" text="Music" deftn="vocal, instrumental, electronically-produced, or mechanical sound featuring rhythm, melody and/or harmony" attribution="nsdl_dc:NSDLType">
+				<outline vocab="MP3 Format" type="vocab" text="MP3Format"/>
+				<outline vocab="Music" type="vocab" text="Music"/>
+			</outline>
+		
+			<outline type="group" vocab="Photograph" text="Photograph" deftn="image produced by radiant energy, especially visible light (use for: photo, digital camera, or computer generated photograph, slide)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Photograph" type="vocab" text="Photograph"/>
+				<outline vocab="Photographs/images" type="vocab" text="Photograph or Image"/>
+			</outline>
+		
+			<outline type="group" vocab="Sound" text="Sound" deftn="non-musical, non-vocal, recorded auditory material (use for: natural world, mechanical, noise, tones)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="AIFF Sound" type="vocab" text="AIFF Sound"/>
+				<outline vocab="Audio" type="vocab" text="Audio"/>
+				<outline vocab="Audio elements" type="vocab" text="Audio elements"/>
+				<outline vocab="Audio/Visual:Audio" type="vocab" text="Audio/Visual:Audio"/>
+				<outline vocab="Sound" type="vocab" text="Sound"/>
+				<outline vocab="Wave Sound" type="vocab" text="Wave Sound"/>
+			</outline>
+		
+			<outline type="group" vocab="Voice Recording" text="Voice Recording" deftn="recorded material that tends to be descriptive in nature; may or may not be drawn from written texts (use for: audio book, oral history, interview, podcast)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Audio Book" type="vocab" text="Audio Book"/>
+				<outline vocab="Voice Recording" type="vocab" text="Voice Recording"/>
+			</outline>
+		</outline><!--end Audio/Visual-->
+
+<!--Book/Chapter-->
+		<outline vocab="Book/Chapter" type="group" text="Book/Chapter" deftn="any book or chapter that can't be classified by the above groups"> 
+			<outline vocab="Book" type="vocab" text="Book"/>
+			<outline vocab="Book Chapter" type="vocab" text="Book Chapter"/>
+			<outline vocab="Book chapter" type="vocab" text="Book chapter"/>
+			<outline vocab="Book/Chapter" type="vocab" text="Book/Chapter"/>
+			<outline vocab="Book Review" type="vocab" text="Book Review"/>
+			<outline vocab="Chapter" type="vocab" text="Chapter"/>
+			<outline vocab="Electronic book" type="vocab" text="Electronic book"/>
+			<outline vocab="Electronic Book" type="vocab" text="Electronic Book"/>
+			<outline vocab="Illustrate Book" type="vocab" text="Illustrate Book"/>
+			<outline vocab="Illustrate book" type="vocab" text="Illustrate book"/>
+			<outline vocab="Illustrated Book" type="vocab" text="Illustrated Book"/>
+			<outline vocab="Illustrated book" type="vocab" text="Illustrated book"/>
+		</outline><!--end Book/chapter-->
+
+
+<!--COLLECTION-->				
+		<outline vocab="Collection" type="group" text="Collection" deftn="portals, large sets or groups of related materials" attribution="dct:DCMIType">
+			<outline vocab="Clearinghouse" type="vocab" text="Clearinghouse"/>
+			<outline vocab="Collection" type="vocab" text="Collection"/>
+			<outline vocab="Collections" type="vocab" text="Collections"/>
+			<outline vocab="Searchable info collections (databases, clearinghouses, encyclos)" type="vocab" text="Searchable info collections (databases, clearinghouses, encyclos)"/>
+			<outline vocab="Series/Collection" type="vocab" text="Series/Collection"/>
+		</outline>	<!-- end Collection -->
+		
+
+		<!-- COMMUNITY -->
+		<outline text="Community" type="group" deftn="resources facilitating communications and interactions" vocab="Community" attribution="nsdl_dc:NSDLType">
+			<outline vocab="Community" type="vocab" text="Community"/>
+
+			<outline type="group" vocab="Ask-an-Expert" text="Ask-an-Expert" deftn="resource affording the ability to submit questions to a responsive individual or group possessed with specific expertise in the area of interest" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Ask-an-Expert" type="vocab" text="Ask-an-Expert"/>
+			</outline>
+	
+			<outline type="group" vocab="Forum" text="Forum" deftn="meeting or medium (synchronous/asynchronous) enabling the exchange of views (use for: message board, chat)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Electronic discussion forums" type="vocab" text="Electronic discussion forums"/>
+				<outline vocab="Forum" type="vocab" text="Forum"/>
+			</outline>
+		
+			<outline type="group" vocab="Listserv" text="Listserv" deftn="email-based communication that is usually topic-focused and distributed to a member-based group of individuals via a single email address and including the archive of the email list" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Discussion group/List serv" type="vocab" text="Discussion group/List serv"/>
+				<outline vocab="Discussion group/Listserv" type="vocab" text="Discussion group/Listserv"/>
+				<outline vocab="Discussion group/Listserv archive" type="vocab" text="Discussion group/Listserv archive"/>
+				<outline vocab="Discussion group/listserv" type="vocab" text="Discussion group/listserv"/>
+				<outline vocab="Discussion group/listserv archive" type="vocab" text="Discussion group/listserv archive"/>
+				<outline vocab="Listserv" type="vocab" text="Listserv"/>
+				<outline vocab="Student Email interaction (includes Keypals, Ask an Expert services)" type="vocab" text="Student Email interaction (includes Keypals, Ask an Expert services)"/>
+			</outline>
+		
+			<outline type="group" vocab="Weblog" text="Weblog" deftn="a web-based publication consisting primarily of articles or entries, written by one person or a group" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Weblog" type="vocab" text="Weblog"/>
+				<outline vocab="Blog" type="vocab" text="x"/>
+				<outline vocab="blog" type="vocab" text="x"/>
+			</outline>
+		
+			<outline type="group" vocab="Wiki" text="Wiki" deftn="website that allows visitors to add, remove, edit, link, and change content, typically without the need for registration" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Wiki" type="vocab" text="Wiki"/>
+			</outline>
+		</outline><!--end Community-->
+
+	
+	<!-- DATASET -->
+		<outline vocab="Dataset" text="Dataset" type="group" deftn="visual, factual, or numerical information that comes from a sensing device, whether instrument-measured or human-observed; describes both unprocessed, raw information as well as information already organized into lists, tables, or databases" attribution="nsdl_dc:NSDLType">
+			<outline vocab="data" type="vocab" text="Data"/>
+			<outline vocab="Dataset" type="vocab" text="Datasets"/>
+			<outline vocab="Datasets" type="vocab" text="Dataset"/>
+			<outline vocab="Datasets and Tools" type="vocab" text="Datasets and Tools"/>
+			<outline vocab="Datasets and Tools:Datasets" type="vocab" text="Datasets and Tools:Datasets"/>
+			<outline vocab="Datasets and Tools:Datasets with Teaching Activities" type="vocab" text="Datasets and Tools:Datasets with Teaching Activities"/>
+			<outline vocab="&lt;span class='vocabprefix'&gt;Datasets and Tools:&lt;/span&gt;Datasets with Teaching Activities" type="vocab" text="&lt;span class='vocabprefix'&gt;Datasets and Tools:&lt;/span&gt;Datasets with Teaching Activities"/>
+			<outline vocab="Datasets and Tools:Datasets with Tools" type="vocab" text="Datasets and Tools:Datasets with Tools"/>				
+			<outline vocab="Datasets and Tools:Tools" type="vocab" text="Datasets and Tools:Tools"/>
+			<outline vocab="Datasets with Teaching Activities" type="vocab" text="Dataset with Teaching Activity"/>
+			<outline vocab="Datasets with Tools" type="vocab" text="Dataset with Tools"/>
+			
+			<outline type="group" vocab="Database" text="Database" deftn="information held electronically and organized for rapid search and retrieval by a computer" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Database" type="vocab" text="Database"/>
+				<outline vocab="database" type="vocab" text="database"/>
+				<outline vocab="database, graph" type="vocab" text="database, graph"/>
+				<outline vocab="database, list/table" type="vocab" text="database, list/table"/>
+				<outline vocab="list/table, database" type="vocab" text="list/table, database"/>
+			</outline>
+		
+			<outline type="group" vocab="List/Table" text="List/Table" deftn="factual or numerical information arranged for ready reference and interpretation by users" attribution="nsdl_dc:NSDLType">
+				<outline vocab="List/Table" type="vocab" text="List/Table"/>
+				<outline vocab="List/Table, Database" type="vocab" text="List/Table, Database"/>
+				<outline vocab="table" type="vocab" text="table"/>
+				<outline vocab="Table" type="vocab" text="Table"/>
+				<outline vocab="Tables (Data)" type="vocab" text="Tables (Data)"/>
+			</outline>
+		
+			<outline type="group" vocab="Observed Data" text="Observed Data" deftn="visual, factual or numerical information generated from human observations or in-situ instrument measurements" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Observed Data" type="vocab" text="Observed Data"/>
+				<outline vocab="Importation of field observations into the classroom" type="vocab" text="Importation of field observations into the classroom"/>
+			</outline>
+		
+			<outline type="group" vocab="Remotely Sensed Data" text="Remotely Sensed Data" deftn="imagery generated from measuring devices that are not in direct contact with the medium they are measuring (use for: radar or satellite imagery)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Remotely Sensed Data" type="vocab" text="Remotely Sensed Data"/>
+			</outline>
+
+			<outline type="group" vocab="Trial" text="Trial" deftn="one of a number of repetitions of an experiment" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Trial" type="vocab" text="Trial"/>
+			</outline>
+		</outline>	<!--end Datasets -->
+	
+	
+	
+	<!-- EVENT -->	
+		<outline vocab="Event" text="Event" type="group" deftn="a non-persistent, time-based occurrence" attribution="nsdl_dc:NSDLType">
+			<outline vocab="annual meeting" type="vocab" text="annual meeting"/>
+			<outline vocab="Event" type="vocab" text="Event"/>
+			<outline vocab="Events" type="vocab" text="Events"/>
+		
+			<outline type="group" vocab="Award/Recognition/Scholarship" text="Award/Recognition/Scholarship" deftn="monetary or honorary acknowledgement bestowed for merit, research, performance, study, writing, or other professional/educational endeavors (includes honorarium or stipends)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Award/Recognition/Scholarship" type="vocab" text="Award, Recognition or Scholarship"/>
+				<outline vocab="Award, recognition or scholarship" type="vocab" text="Award, recognition or scholarship"/>
+				<outline vocab="Award/Recognition/Scholarship" type="vocab" text="Award, Recognition or Scholarship"/>
+				<outline vocab="Award, recognition or scholarship" type="vocab" text="Award, recognition or scholarship"/>
+				<outline vocab="Carl B. Allendorfer Award" type="vocab" text="Carl B. Allendorfer Award"/>
+				<outline vocab="Chauvenet Prize" type="vocab" text="Chauvenet Prize"/>
+				<outline vocab="George Polya Award" type="vocab" text="George Polya Award"/>
+				<outline vocab="Hasse Award" type="vocab" text="Hasse Award"/>
+				<outline vocab="Lester R. Ford Award" type="vocab" text="Lester R. Ford Award"/>
+				<outline vocab="Trevor Evans Award" type="vocab" text="Trevor Evans Award"/>
+			</outline>
+		
+			<outline type="group" vocab="Broadcast" text="Broadcast" deftn="media presentation (audio, video and/or text) prepared and intended for a wide or specific audience, often with limited or controlled audience participation, occurring on a certain date and often archived for later use; may lose relevancy over time (use for: concert webcast, podcast, newscast, or talk show)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Broadcast" type="vocab" text="Broadcast"/>
+				<outline vocab="webinar" type="vocab" text="webinar"/>
+			</outline>
+			
+			<outline type="group" vocab="Call for Participation" text="Call for Participation" deftn="time-sensitive invitation for contribution, involvement or input on a product, event, or project (use for: call for papers, call for input, testing, feedback, formative evaluations, or collaborations)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Call for participation" type="vocab" text="Call for participation"/>
+				<outline vocab="Call for Participation" type="vocab" text="Call for Participation"/>
+			</outline>
+		
+			<outline type="group" vocab="Conference" text="Conference" deftn="physical or virtual meeting of broad or tightly focused appeal targeted for a specific academic and/or professional community and typically sponsored" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Conference" type="vocab" text="Conference"/>
+				<outline vocab="Conference Poster" type="vocab" text="Conference Poster"/> <!--also appears under reference materials-->
+				<outline vocab="Conference Proceedings" type="vocab" text="Conference Proceedings"/> <!--also appears under reference materials.proceedings-->
+			</outline>
+			
+			<outline type="group" vocab="Exhibit" text="Exhibit" deftn="a non-permanent display of artifacts, images, or resources organized around a particular theme or topic" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Exhibit" type="vocab" text="Exhibit"/>
+				<outline vocab="Student publishing/exhibiting opportunities" type="vocab" text="Student publishing/exhibiting opportunities"/>
+			</outline>
+		
+			<outline type="group" vocab="Learning/Research Opportunity" text="Learning/Research Opportunity" deftn="activity whose primary object is professional/academic development and practical research experience; may or may not include a stipend or honorarium (use for: field project, course, internship, mentoring, tutoring, exchange, or college credit opportunity)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Learning/Research Opportunity" type="vocab" text="Learning or Research Opportunity"/>
+				<outline vocab="Learning or research opportunity" type="vocab" text="Learning or research opportunity"/>
+			</outline>
+			
+			<outline type="group" vocab="Job" text="Job" deftn="position for which participants receive remuneration (pay for work done but not a stipend or honorarium) (use for: postdoc, internship, fellowship, assistantship, or research associateship)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Job" type="vocab" text="Job"/>
+			</outline>
+		
+			<outline type="group" vocab="News" text="News" deftn="general information or announcement that loses its immediate relevancy after a short time (use for: newsletter, press release)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="News" type="vocab" text="News"/>
+				<outline vocab="Newsletter" type="vocab" text="Newsletter"/>
+				<outline vocab="Press release" type="vocab" text="Press Release"/>
+			</outline>
+		
+			<outline type="group" vocab="Workshop" text="Workshop" deftn="short-term meeting or interaction, typically with a well-defined outcome like professional-skills development" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Meeting presentation" type="vocab" text="Meeting Presentation"/>
+				<outline vocab="Oral Presentation" type="vocab" text="Oral Presentation"/>
+				<outline vocab="Presentation" type="field" text="Presentation"/><!--not included in instructional materials.lecture or presentation because these presentation resources tended to be about workshops-->
+				<outline vocab="Presentation/Demo" type="vocab" text="Presentation/Demo"/><!--not included in instructional materials.demonstration because these presentation/demo resources tended to be about workshops-->
+				<outline vocab="Workshop" type="vocab" text="Workshop"/>
+			</outline>		
+		</outline>	<!-- end Events -->
+		
+	
+		
+	<!-- INSTRUCTIONAL MATERIAL -->
+		<outline vocab="Instructional Material" type="group" text="Instructional Material" deftn="materials intended to facilitate teaching or enable learning" attribution="nsdl_dc:NSDLType">
+			<outline vocab="Auto-Instructional Aids" type="vocab" text="Auto-Instructional Aids"/>
+			<outline vocab="Bilingual Instructional Materials" type="vocab" text="Bilingual Instructional Materials"/>
+			<outline vocab="Classroom" type="vocab" text="Classroom"/>
+			<outline vocab="Focus on Microbiology Education" type="vocab" text="Focus on Microbiology Education"/>
+			<outline vocab="For the classroom" type="vocab" text="For the classroom"/>
+			<outline vocab="Instructional Material" type="vocab" text="Instructional Material"/>
+			<outline vocab="Instructional Material -- Activity" type="vocab" text="Instructional Material -- Activity"/>
+			<outline vocab="Instructional Materials" type="vocab" text="Instructional Material"/>
+			<outline vocab="Learning or research opportunity" type="vocab" text="Learning or research opportunity"/>
+			<outline vocab="Other curriculum resources" type="vocab" text="Other curriuclum resource"/>
+
+			<outline type="group" vocab="Activity" text="Activity" deftn="non-laboratory material designed to stimulate learning and help students develop particular skills, specific knowledge, or reflexive habits of mind" attribution="nsdl_dc:NSDLType">
+				<outline vocab="activity" type="vocab" text="activity"/>
+				<outline vocab="Activity" type="vocab" text="Activity"/>
+				<outline vocab="Activities" type="vocab" text="Activities"/>
+				<outline vocab="Activities:Classroom Activity" type="vocab" text="Activities:Classroom Activity"/>
+				<outline vocab="Activities:Classroom Activity:Short Activity" type="vocab" text="Activities:Classroom Activity:Short Activity"/>
+				<outline vocab="Activities:Classroom Activity:Short Activity:Socratic Questioning" type="vocab" text="Activities:Classroom Activity:Short Activity:Socratic Questioning"/>
+				<outline vocab="Activities:Writing Assignment" type="vocab" text="Activities:Writing Assignment"/>
+				<outline vocab="Assignment/Activity (non-laboratory)" type="vocab" text="Assignment/Activity (non-laboratory)"/>
+				<outline vocab="Assignment/Activity" type="vocab" text="Assignment/Activity"/>
+				<outline vocab="Assignment/activity (non-laboratory)" type="vocab" text="Assignment/activity (non-laboratory)"/>
+				<outline vocab="Assignment /Activity (non-laboratory)" type="vocab" text="Assignment /Activity (non-laboratory)"/>
+				<outline vocab="Classroom Activity" type="vocab" text="Classroom Activity"/>
+				<outline vocab="Computer Activity" type="vocab" text="Computer Activity"/>
+				<outline vocab="Datasets with Teaching Activities" type="vocab" text="Dataset with Teaching Activity"/>
+				<outline vocab="Drill and Practice" type="vocab" text="Drill and Practice"/>
+				<outline vocab="Exercise" type="vocab" text="Exercise"/>
+				<outline vocab="Gallery Walk" type="vocab" text="Gallery Walk"/>
+				<outline vocab="Handout based activities" type="vocab" text="Handout based activity"/>
+				<outline vocab="Research experiences for students" type="vocab" text="Research experiences for students"/>
+				<outline vocab="Review" type="vocab" text="Review"/>
+				<outline vocab="Short Activity" type="vocab" text="Short Activity"/>
+				<outline vocab="Think-Pair-Share" type="vocab" text="Think-Pair-Share"/>
+				<outline vocab="Worksheets" type="vocab" text="Worksheets"/>
+				<outline vocab="Writing Assignment" type="vocab" text="Writing Assignment"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Classroom Activity" type="vocab" text="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Classroom Activity"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;Activities:&lt;/span&gt;Classroom Activity" type="vocab" text="&lt;span class='vocabprefix'&gt;Activities:&lt;/span&gt;Classroom Activity"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;Activities:&lt;/span&gt;Field Activity" type="vocab" text="&lt;span class='vocabprefix'&gt;Activities:&lt;/span&gt;Field Activity"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Writing Assignment" type="vocab" text="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Writing Assignment"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;Activities:&lt;/span&gt;Writing Assignment" type="vocab" text="&lt;span class='vocabprefix'&gt;Activities:&lt;/span&gt;Writing Assignment"/>
+			</outline>
+		
+			<outline type="group" vocab="Annotation" text="Annotation" deftn="a comment, review, graphic, question, tip, or link associated with an existing resource and providing further explanation, expansion, and/or reaction" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Annotation" type="vocab" text="Annotation"/>
+			</outline>
+		
+			<outline type="group" vocab="Case Study" text="Case Study" deftn="resource offering intensive analysis of discrete, or a combination of, peoples, locations, environments, objects, time periods, or concepts" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Activities:Project:Investigative Case Studies" type="vocab" text="Activities:Project:Investigative Case Studies"/>
+				<outline vocab="Case Study" type="vocab" text="Case Study"/>
+				<outline vocab="Cases" type="vocab" text="Cases"/>
+				<outline vocab="Investigative Case Studies" type="vocab" text="Investigative Case Studies"/>
+			</outline>
+		
+			<outline type="group" vocab="Course" text="Course" deftn="a set of teaching materials (generally for instructors) or learning materials (generally for students) intended to achieve a range of objectives over an extended period of time" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Course" type="vocab" text="Course"/>
+				<outline vocab="Course Descriptions" type="vocab" text="Course Descriptions"/>
+				<outline vocab="Course Information" type="vocab" text="Course Information"/>
+				<outline vocab="Course Information:Course Site" type="vocab" text="Course Information:Course Site"/>
+				<outline vocab="Course Information:Course Site:Course Notes" type="vocab" text="Course Information:Course Site:Course Notes"/>
+				<outline vocab="Course Notes" type="vocab" text="Course Notes"/>
+				<outline vocab="Course Site" type="vocab" text="Course Site"/>
+				<outline vocab="Courseware Profile" type="vocab" text="Courseware Profile"/>
+			</outline>
+			
+			<outline type="group" vocab="Curriculum" text="Curriculum" deftn="a program of study which may or may not include assessment material" attribution="nsdl_dc:NSDLType">
+				<outline vocab="curricular_unit" type="vocab" text="curricular_unit"/>
+				<outline vocab="curriculum" type="vocab" text="curriculum"/>
+				<outline vocab="Curriculum" type="vocab" text="Curriculum"/>
+				<outline vocab="Curriculum support" type="vocab" text="Curriculum Support"/>
+				<outline vocab="Curriculum units/projects" type="vocab" text="Curriuclum Unit/Project"/>
+			</outline>
+		
+			<outline type="group" vocab="Demonstration" text="Demonstration" deftn="a resource that exposes the nature and requirements of a procedure, process, or principle by manipulating real objects (term is distinct from Simulation in that demonstrations have real objects in them as opposed to representations)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Demonstration" type="vocab" text="Demonstration"/>
+				<outline vocab="Demonstrations" type="vocab" text="Demonstrations"/>
+			</outline>
+		
+			<outline type="group" vocab="Experiment/Lab Activity" text="Experiment/Lab Activity" deftn="a scientific procedure undertaken to make a discovery, test a hypothesis, or demonstrate a known fact [Compact Oxford English Dictionary]" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Activities:Lab Activity" type="vocab" text="Activities:Lab Activity"/>
+				<outline vocab="Experiment/Lab Activity" type="vocab" text="Experiment/Lab Activity"/>
+				<outline vocab="Field laboratories" type="vocab" text="Field laboratories"/>
+				<outline vocab="Instructional Material -- Experiment/Lab Activity" type="vocab" text="Instructional Material -- Experiment/Lab Activity"/>
+				<outline vocab="Lab" type="vocab" text="Lab"/>
+				<outline vocab="Lab Activity" type="vocab" text="Laboratory Activity"/>
+				<outline vocab="Laboratory" type="vocab" text="Laboratory"/>
+				<outline vocab="Laboratory Modules" type="vocab" text="Laboratory Modules"/>
+				<outline vocab="Laboratory exercise" type="vocab" text="Labortory excercise"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;Activities:&lt;/span&gt;Lab Activity" type="vocab" text="&lt;span class='vocabprefix'&gt;Activities:&lt;/span&gt;Lab Activity"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Lab Activity" type="vocab" text="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Lab Activity"/>
+			</outline>
+		
+			<outline type="group" vocab="Field Trip" text="Field Trip" deftn="excursion to a place to gain firsthand information, knowledge, or experience (use for: descriptions or plans for field trips, virtual field trips)">
+				<outline vocab="Activities:Field Activity" type="vocab" text="Activities:Field Activity"/>
+				<outline vocab="Activities:Field Activity:Field laboratories" type="vocab" text="Activities:Field Activity:Field laboratories"/>
+				<outline vocab="Activities:Field Activity:Field trip" type="vocab" text="Activities:Field Activity:Field trip"/>
+				<outline vocab="Activities:Field Activity:Importation of field observations into the classroom" type="vocab" text="Activities:Field Activity:Importation of field observations into the classroom"/>
+				<outline vocab="Activities:Virtual Field Trip" type="vocab" text="Activities:Virtual Field Trip"/>
+				<outline vocab="Field Activity" type="vocab" text="Field Activity"/>
+				<outline vocab="Field trip" type="vocab" text="Field trip"/>
+				<outline vocab="Field Trip" type="vocab" text="Field Trip"/>
+				<outline vocab="Fieldtrip guide" type="vocab" text="Fieldtrip guide"/>
+				<outline vocab="Importation of field observations into the classroom" type="vocab" text="Importation of field observations into the classroom"/>
+				<outline vocab="Virtual Field Trip" type="vocab" text="Virtual Field Trip"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;Activities:Field Activity:&lt;/span&gt;Field laboratories" type="vocab" text="&lt;span class='vocabprefix'&gt;Activities:Field Activity:&lt;/span&gt;Field laboratories"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;Activities:Field Activity:&lt;/span&gt;Field trip" type="vocab" text="&lt;span class='vocabprefix'&gt;Activities:Field Activity:&lt;/span&gt;Field trip"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Field Activity" type="vocab" text="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Field Activity"/>
+			</outline>
+		
+			<outline type="group" vocab="Game" text="Game" deftn="an interactive environment in which participants compete, strategize, play, role-play, troubleshoot, or make decisions in order to learn a subject or skill" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Game" type="vocab" text="Game"/>
+				<outline vocab="Instructional Material (Game, Simulation)" type="vocab" text="Instructional Material (Game, Simulation)"/>
+				<outline vocab="Jigsaw" type="field" text="Jigsaw"/>
+			</outline>
+		
+			<outline type="group" vocab="Instructional Strategy" text="Instructional Strategy" deftn="a guideline, pedagogical description, or tip for effective teaching and learning" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Description of Pedagogic Method" type="vocab" text="Description of Pedagogic Method"/>
+				<outline vocab="Instructional Strategy" type="vocab" text="Instructional Strategy"/>
+				<outline vocab="Just in Time Teaching" type="vocab" text="Just in Time Teaching"/>
+				<outline vocab="Other professional development resources" type="vocab" text="Other professional development resources"/>
+				<outline vocab="Pedagogic Resources" type="vocab" text="Pedagogic Resources"/>
+				<outline vocab="Pedagogic Resources:Bibliography" type="vocab" text="Pedagogic Resources:Bibliography"/>
+				<outline vocab="Pedagogic Resources:Collection" type="vocab" text="Pedagogic Resources:Collection"/>
+				<outline vocab="Pedagogic Resources:Opinion" type="vocab" text="Pedagogic Resources:Opinion"/>
+				<outline vocab="Pedagogic Resources:Overview/Summary" type="vocab" text="Pedagogic Resources:Overview/Summary"/>
+				<outline vocab="Pedagogic Resources:Research Results" type="vocab" text="Pedagogic Resources:Research Results"/>
+				<outline vocab="Process Oriented Guided Inquiry" type="vocab" text="Process Oriented Guided Inquiry"/>
+				<outline vocab="Professional development" type="vocab" text="Professional development"/>
+				<outline vocab="Service Learning" type="vocab" text="Service Learning"/>
+				<outline vocab="Socratic Questioning" type="vocab" text="Socratic Questioning"/>
+				<outline vocab="Teaching strategies &amp; guidelines" type="vocab" text="Teaching Strategies &amp; Guidelines"/>
+				<outline vocab="Teaching strat egies &amp; guidelines" type="vocab" text="Teaching strat egies &amp; guidelines"/>
+				<outline vocab="Technology advice/info for educators" type="vocab" text="Vocabulary advice/info for educators"/>
+			</outline>
+		
+			<outline type="group" vocab="Instructor Guide/Manual" text="Instructor Guide/Manual" deftn="resource for teachers regarding the use of learning materials with respect to educational objectives, classroom management, materials development, assessment, and additional reference material" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Instructional Material -- Instructor Guide/Manual" type="vocab" text="Instructional Material -- Instructor Guide/Manual"/>
+				<outline vocab="Instructor Guide" type="vocab" text="Instructor Guide"/>
+				<outline vocab="Instructor Guide/Manual" type="vocab" text="Instructor Guide/Manual"/>
+				<outline vocab="Teacher Tool" type="vocab" text="Teacher Tool"/>
+				<outline vocab="Teaching Guides" type="vocab" text="Teaching Guides"/>
+			</outline>
+			
+			<outline type="group" vocab="Interactive Simulation" text="Interactive Simulation" deftn="a representation of a system, process or environment where learners control and manipulate variables or other objects to affect outcomes (use for: applet, mathlet)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="InteractiveResource" type="vocab" text="Interactive Resource"/><!-- DCMI vocab -->
+				<outline vocab="Interactive Simulation" type="vocab" text="Interactive Simulation"/>
+				<outline vocab="Online interactive activities" type="vocab" text="Online interactive activities"/>
+				<outline vocab="phenomenon" type="vocab" text="phenomenon"/> <!-- instructional visualizations -->
+			</outline>
+		
+			<outline type="group" vocab="Lecture/Presentation" text="Lecture/Presentation" deftn="audio or text record of a speech or a unit of instruction organized and delivered by an instructor for the purpose of informing a group about a topic" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Digital presen tation (powerpoint)" type="vocab" text="Digital presen tation (powerpoint)"/>
+				<outline vocab="Digital presentation (Powerpoint)" type="vocab" text="Digital presentation (Powerpoint)"/>
+				<outline vocab="Digital presentation (powerpoint)" type="vocab" text="Digital presentation (powerpoint)"/>
+				<outline vocab="Lecture/Lecture outline" type="vocab" text="Lecture/Lecture outline"/>
+				<outline vocab="Lecture/lecture outline" type="vocab" text="Lecture/lecture outline"/>
+				<outline vocab="Lecture/Presentation" type="vocab" text="Lecture/Presentation"/>
+			</outline>
+		
+			<outline type="group" vocab="Lesson/Lesson Plan" text="Lesson/Lesson Plan" deftn="resource to support students' learning of specific concepts, skills, or content; often includes teaching instructions, educational goals, learning objectives, and procedures" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Instructional Material -- Lesson/Lesson Plan" type="vocab" text="Instructional Material -- Lesson/Lesson Plan"/>
+				<outline vocab="lesson" type="vocab" text="lesson"/>
+				<outline vocab="Lesson" type="vocab" text="Lesson"/>
+				<outline vocab="lesson plan" type="vocab" text="lesson plan"/>
+				<outline vocab="Lesson plan" type="vocab" text="Lesson plan"/>
+				<outline vocab="Lesson Plan" type="vocab" text="Lesson Plan"/>
+				<outline vocab="Lesson Plans" type="vocab" text="Lesson Plans"/>
+				<outline vocab="Lesson/activity plans" type="vocab" text="Lesson/activity plans"/>
+				<outline vocab="Lesson/Lesson Plan" type="vocab" text="Lesson/Lesson Plan"/>
+				<outline vocab="lesson/lesson plan, activity" type="vocab" text="lesson/lesson plan, activity"/>
+			</outline>
+		
+			<outline type="group" vocab="Model" text="Model" deftn="a mathematical or physical construct intended to study or represent a real-world system or phenomenon" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Models/Simulations (animated demonstrations, diagrams, maps)" type="vocab" text="Models/Simulations (animated demonstrations, diagrams, maps)"/>
+				<outline vocab="representation" type="vocab" text="representation"/>
+			</outline>
+		
+			<outline type="group" vocab="Problem Set" text="Problem Set" deftn="series of tasks or questions posed to the student, as in homework or other assignment (use for: worksheet)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Activities:Problem Set" type="vocab" text="Activities:Problem Set"/>
+				<outline vocab="Problem Set" type="vocab" text="Problem Set"/>
+				<outline vocab="Problem Sets" type="vocab" text="Problem Sets"/>
+				<outline vocab="Problem/Problem Set" type="vocab" text="Problem/Problem Set"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;Activities:&lt;/span&gt;Problem Set" type="vocab" text="&lt;span class='vocabprefix'&gt;Activities:&lt;/span&gt;Problem Set"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Problem Set" type="vocab" text="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Problem Set"/>
+			</outline>
+		
+			<outline type="group" vocab="Project" text="Project" deftn="individual or group activity or problem that supplements and applies classroom studies and often results in a product" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Activities:Project" type="vocab" text="Activities:Project"/>
+				<outline vocab="Activities:Project:Independent Research" type="vocab" text="Activities:Project:Independent Research"/>
+				<outline vocab="Instructional Material -- Project" type="vocab" text="Instructional Material -- Project"/>
+				<outline vocab="Project" type="vocab" text="Project"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;Activities:&lt;/span&gt;Project" type="vocab" text="&lt;span class='vocabprefix'&gt;Activities:&lt;/span&gt;Project"/>
+				<outline vocab="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Project" type="vocab" text="&lt;span class='vocabprefix'&gt;&lt;/span&gt;Project"/>
+			</outline>
+		
+			<outline type="group" vocab="Simulation" text="Simulation" deftn="imitative representation of a system, process, photo, setting, or principle (note that the imitative nature of Simulation distinguishes it from a Demonstration, which employs real objects)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Instructional Material -- Simulation" type="vocab" text="Instructional Material -- Simulation"/>
+				<outline vocab="Scientific Visualization" type="vocab" text="Scientific Visualization"/>
+				<outline vocab="simulation" type="vocab" text="simulation"/>
+				<outline vocab="Simulation" type="vocab" text="Simulation"/>
+				<outline vocab="Visualization" type="vocab" text="Visualization"/>
+			</outline>
+		
+			<outline type="group" vocab="Student Guide" text="Student Guide" deftn="resource for learners to help facilitate learning and comprehension of subject matter content (use for: lab manual, study guide, workbook)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Laboratory manual" type="vocab" text="Laboratory manual"/>
+				<outline vocab="Learner Tool" type="vocab" text="Learner Tool"/>
+				<outline vocab="Learning Module" type="vocab" text="Learning Module"/>
+				<outline vocab="Self-guided tutorials" type="vocab" text="Self-guided tutorials"/>
+				<outline vocab="Student Guide" type="vocab" text="Student Guide"/>
+				<outline vocab="Study guide" type="vocab" text="Study guide"/>
+				<outline vocab="Study Guides" type="vocab" text="Study Guides"/>
+				<outline vocab="Workbooks" type="vocab" text="Workbooks"/>
+			</outline>
+		
+			<outline type="group" vocab="Syllabus" text="Syllabus" deftn="plan showing the structure of a particular course, including course description and objectives, grading policy, materials, assignments, lesson sequence, and course calendar [iLumina]" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Course Information:Goals/Syllabi" type="vocab" text="Course Information:Goals/Syllabi"/>
+				<outline vocab="Course syllabus" type="vocab" text="Course syllabus"/>
+				<outline vocab="Goals/Syllabi" type="vocab" text="Goals/Syllabi"/>
+				<outline vocab="Syllabus" type="vocab" text="Syllabus"/>
+			</outline>
+			
+			<outline type="group" vocab="Textbook" text="Textbook" deftn="resource providing comprehensive materials for specific topics (use for: chapters or other typical book components) [ENC]" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Full text books" type="vocab" text="Full text books"/>
+				<outline vocab="Textbook" type="vocab" text="Textbook"/>
+				<outline vocab="Textbooks" type="vocab" text="Textbooks"/>
+			</outline>
+		
+		
+			<outline type="group" vocab="Tutorial" text="Tutorial" deftn="resource that provides guided information about a specific subject" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Tutorial" type="vocab" text="Tutorial"/>
+			</outline>
+			
+			<outline type="group" vocab="Unit of Instruction" text="Unit of Instruction" deftn="a set of teaching materials, generally for instructors, or alternatively learning materials, generally for students, intended to achieve specific and focused objectives over a limited period of time such that units often constitute a Course" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Instructional Material -- Unit of Instruction" type="vocab" text="Instructional Material -- Unit of Instruction"/>
+				<outline vocab="Module/Unit" type="vocab" text="Module/Unit"/>
+				<outline vocab="Unit of Instruction" type="vocab" text="Unit of Instruction"/>
+			</outline>
+		</outline><!--end instructional materials-->
+			
+	
+	<!-- REFERENCE MATERIAL -->
+		<outline text="Reference Material" type="group" vocab="Reference Material" deftn="information intended as an authoritative source or to stimulate topical research" attribution="nsdl_dc:NSDLType">
+			<outline vocab="archive" type="vocab" text="archive"/>
+			<outline vocab="Conference Poster" type="vocab" text="Conference Poster"/><!--also appears under event.conference-->
+			<outline vocab="Electronic library" type="vocab" text="Electronic Library"/>
+			<outline vocab="Example" type="vocab" text="Example"/> <!-- this is a collection of scientific images -->
+			<outline vocab="For researchers" type="vocab" text="For researchers"/>
+			<outline vocab="Independent Research" type="vocab" text="Independent Research"/>
+			<outline vocab="Library Guide" type="vocab" text="Library Guide"/>
+			<outline vocab="Literature Reviews" type="vocab" text="Literature Reviews"/>
+			<outline vocab="Overview/Reference Work" type="vocab" text="Overview/Reference Work"/>
+			<outline vocab="Overview/Summary" type="vocab" text="Overview/Summary"/>
+			<outline vocab="Overviews" type="vocab" text="Overviews"/>	
+			<outline vocab="Organizations" type="vocab" text="Organizations"/>
+			<outline vocab="Orientation Materials" type="vocab" text="Orientation Materials"/>
+			<outline vocab="Other information resources" type="vocab" text="Other information resources"/>
+			<outline vocab="Primary sources/data" type="vocab" text="Primary soures/data"/>
+			<outline vocab="Reference" type="vocab" text="Reference"/>
+			<outline vocab="Reference Material" type="vocab" text="Reference Material"/>
+			<outline vocab="Reference Type" type="vocab" text="Reference Type"/>
+			<outline vocab="Reference material" type="vocab" text="Reference material"/>
+
+			<outline type="group" vocab="Abstract" text="Abstract" deftn="condensed version or summary of a larger piece of work outlining major points and conclusions [DLESE]" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Abstract" type="vocab" text="Abstract"/>
+			</outline>
+		
+			<outline type="group" vocab="Article" text="Article" deftn="generally nonfiction writing communicating ideas, concepts, results, or facts; often, but not always, part of a monograph, journal, magazine, or newspaper (use for: essays, information sheets, pamphlets, brochures, preprints)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Article" type="vocab" text="Article"/>
+				<outline vocab="Full text short readings/articles" type="vocab" text="Full text short readings/articles"/>
+				<outline vocab="Non-journal article" type="vocab" text="Non-Journal article"/>
+				<outline vocab="non-journal article" type="vocab" text="non-journal article"/>
+				<outline vocab="Preprint" type="vocab" text="Preprint"/>
+			</outline>
+		
+			<outline type="group" vocab="Bibliography" text="Bibliography" deftn="a list, often with descriptive or critical notes, of writings relating to a particular subject, period or author [Merriam-Webster Online]" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Bibliography" type="vocab" text="Bibliography"/>
+				<outline vocab="Bibliographies" type="vocab" text="Bibliography"/>
+				<outline vocab="Biographical Resources" type="vocab" text="Biographical Resources"/>
+				<outline vocab="Scientific Resources:Bibliography" type="vocab" text="Scientific Resources:Bibliography"/>
+			</outline>
+			
+			<outline type="group" vocab="Career Information" text="Career Information" deftn="resource describing specific science, technology, engineering, and mathematic (STEM) information and/or insight into STEM careers and requisite skills (use for: camps, internship programs, or informational programs which inform and support individuals interested in pursuing STEM careers)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Career Information" type="vocab" text="Career Information"/>
+				<outline vocab="Career materials" type="vocab" text="Career materials"/>
+				<outline vocab="Careers" type="vocab" text="Careers"/>
+			</outline>
+			
+			<outline type="group" vocab="Classification Key" text="Classification Key" deftn="resource providing guidelines or methods for identifying, sorting, or categorizing objects (use for: cloud chart, soil chart, taxonomic keys)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Classification Key" type="vocab" text="Classification Key"/>
+			</outline>
+		
+			<outline type="group" vocab="Educational Standard" text="Educational Standard" deftn="level of achievement to which learners or educators are expected to aspire" attribution="nsdl_dc:NSDLType">
+				<outline vocab="benchmark" type="vocab" text="benchmark"/>
+				<outline vocab="Benchmark" type="vocab" text="Benchmark"/>
+				<outline vocab="Curriculum standards" type="vocab" text="Curriculum Standards"/>
+				<outline vocab="Educational Standard" type="vocab" text="Educational Standard"/>
+				<outline vocab="Educational standards" type="vocab" text="Educational standards"/>
+				<outline vocab="educational standards" type="vocab" text="educational standards"/>
+				<outline vocab="Educator standards" type="vocab" text="Educator standards"/>
+				<outline vocab="Reference Material -- Educational Standard" type="vocab" text="Reference Material -- Educational Standard"/>
+				<outline vocab="Standards or Frameworks" type="vocab" text="Educational Standard or Framework"/>
+			</outline>
+		
+			<outline type="group" vocab="FAQ" text="FAQ" deftn="frequently asked questions about a topic, organization, or event that are intended to help users" attribution="nsdl_dc:NSDLType">
+				<outline vocab="FAQ" type="vocab" text="FAQ"/>
+				<outline vocab="FAQs" type="vocab" text="FAQs"/>
+				<outline vocab="FAQS" type="vocab" text="FAQS"/>
+			</outline>
+		
+			<outline type="group" vocab="Fiction" text="Fiction" deftn="narrative or verse describing imaginary events, people, or objects (use for: prose literature, novels, poems)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Fiction" type="vocab" text="Fiction"/>
+			</outline>
+		
+			<outline type="group" vocab="Glossary/Index" text="Glossary/Index" deftn="a compiled or alphabetical list of words relating to a specific subject, situation, text, or dialect that variously include definitions, explanations, page references, or descriptions (use for: dictionary, table of contents)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Dictionary/glossary" type="vocab" text="Dictionary/glossary"/>
+				<outline vocab="Dictionary/Glossary" type="vocab" text="Dictionary/Glossary"/>
+				<outline vocab="Glossary/Index" type="vocab" text="Glossary or Index"/>
+				<outline vocab="Index" type="vocab" text="Index"/>
+			</outline>
+		
+			<outline type="group" vocab="Outline" text="Outline" deftn="set of preliminary ideas and thoughts, generally in a list-like format, about a project, paper, or other endeavor" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Outline" type="vocab" text="Outline"/>
+			</outline>
+		
+			<outline type="group" vocab="Nonfiction Reference" text="Nonfiction Reference" deftn="writing describing facts, places, events, and things but not including instructional activities" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Atlas" type="vocab" text="Atlas"/>
+				<outline vocab="Biography" type="vocab" text="Biography"/>
+				<outline vocab="Field guide" type="vocab" text="Field guide"/>
+				<outline vocab="Guide/Report/Fact sheet" type="vocab" text="Guide/Report/Fact sheet"/>
+				<outline vocab="Historical document" type="vocab" text="Historical document"/>
+				<outline vocab="Manual" type="vocab" text="Manual"/>
+				<outline vocab="Mathematics Materials" type="vocab" text="Mathematics Materials"/>
+				<outline vocab="Nonfiction Reference" type="vocab" text="Nonfiction Reference"/>
+				<outline vocab="Nonfiction reference" type="vocab" text="Nonfiction reference"/>
+				<outline vocab="Reading Materials" type="vocab" text="Reading Materials"/>
+				<outline vocab="Scientific Resources" type="vocab" text="Scientific Resources"/>
+				<outline vocab="Scientific Resources:Overview/Reference Work" type="vocab" text="Scientific Resources: Overview and Reference Works"/>
+				<outline vocab="transcript" type="vocab" text="transcript"/>
+			</outline>
+		
+			<outline type="group" vocab="Periodical" text="Periodical" deftn="materials in any medium issued under the same title with discrete parts or articles, appearing at regular or irregular intervals; may or may not describe materials with peer review (use for: journal, peer-reviewed journal, magazine, serial)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Article/Journal" type="vocab" text="Article or Journal"/>
+				<outline vocab="Journal" type="vocab" text="Journal"/>
+				<outline vocab="Journal Article" type="vocab" text="Journal Article"/>
+				<outline vocab="Journal article/issue" type="vocab" text="Journal article/issue"/>
+				<outline vocab="Journal article/Issue" type="vocab" text="Journal article/Issue"/>
+				<outline vocab="Other ASM publication" type="vocab" text="Other ASM publication"/>
+				<outline vocab="Periodical" type="vocab" text="Periodical"/>
+				<outline vocab="Periodicals" type="vocab" text="Periodicals"/>
+				<outline vocab="Publication" type="vocab" text="Publication"/>
+			</outline>
+		
+			<outline type="group" vocab="Policy" text="Policy" deftn="document containing statements or series of steps for a particular way of accomplishing a goal [DLESE]" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Policy" type="vocab" text="Policy"/>
+				<outline vocab="Policy Resources" type="vocab" text="Policy Resources"/>
+				<outline vocab="Policy Resources:Opinion" type="vocab" text="Policy Resources:Opinion"/>
+			</outline>
+		
+			<outline type="group" vocab="Proceedings" text="Proceedings" deftn="collection of papers or abstracts presented at a specific meeting or event with defined outcomes" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Proceedings" type="vocab" text="Proceedings"/>
+				<outline vocab="Conference Proceedings" type="vocab" text="Conference Proceedings"/><!--also appears under event.conference-->
+			</outline>
+		
+			<outline type="group" vocab="Proposal" text="Proposal" deftn="a formal document detailing an intended or future project, recommendation, plan, or idea" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Proposal" type="vocab" text="Proposal"/>
+			</outline>
+		
+				<outline type="group" vocab="Report" text="Report" deftn="detailed account or statement, often outlining the results or events of a meeting, endeavor, activity, topic, issue, or study (use for: review, reviews, evaluation, monograph)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Best practice" type="vocab" text="Best practice"/>
+				<outline vocab="Book Review" type="vocab" text="Book Review"/>
+				<outline vocab="Book Reviews/Recommended Readings" type="vocab" text="Book Reviews/Recommended Readings"/>
+				<outline vocab="Case studies/best practices" type="vocab" text="Case studies/best practices"/>
+				<outline vocab="Department Technical Report" type="vocab" text="Department Technical Report"/>
+				<outline vocab="Project Profile" type="vocab" text="Project Profile"/>
+				<outline vocab="report" type="vocab" text="report"/>
+				<outline vocab="Report" type="vocab" text="Report"/>
+				<outline vocab="Research" type="vocab" text="Research"/>
+				<outline vocab="Research study" type="vocab" text="Research study"/>
+				<outline vocab="Research Study" type="vocab" text="Research Study"/>
+				<outline vocab="Research Results" type="vocab" text="Research Results"/>
+				<outline vocab="Research Study" type="vocab" text="Research Study"/>
+				<outline vocab="review" type="vocab" text="review"/>
+				<outline vocab="Reviews" type="vocab" text="Reviews"/>
+				<outline vocab="Scientific Resources:Opinion" type="vocab" text="Scientific Resources:Opinion"/>
+				<outline vocab="Scientific Resources:Research Results" type="vocab" text="Scienctific Resources:Research Results"/>
+				<outline vocab="Technical Paper" type="vocab" text="Technical Paper"/>
+				<outline vocab="Written Report" type="vocab" text="Written Report"/>
+			</outline>
+		
+			<outline type="group" vocab="Scientific Standard" text="Scientific Standard" deftn="information regarding physical constants, units of measurement, expressing uncertainty of measurement, conversion factors, and equations" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Protocol" type="vocab" text="Protocol"/>
+				<outline vocab="Scientific Standard" type="vocab" text="Scientific Standard"/>
+				<outline vocab="Scientific standards and guidelines" type="vocab" text="Scientific Standards and Guidelines"/>
+			</outline>
+		
+			<outline type="group" vocab="Specimen" text="Specimen" deftn="an object from the natural world that is intended for study (use for: rock sample, lab sample, cultures, insect)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Science Materials" type="vocab" text="Science Materials"/>
+				<outline vocab="Specimen" type="vocab" text="Specimen"/>
+			</outline>
+		
+			<outline type="group" vocab="Thesis/Dissertation" text="Thesis/Dissertation" deftn="research text written in partial fulfillment of the requirements for an academic degree (typically postgraduate)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Thesis" type="vocab" text="Thesis"/>
+				<outline vocab="Thesis/Dissertation" type="vocab" text="Thesis or Dissertation"/>
+			</outline>
+		</outline>		<!-- end Reference Material -->
+	
+<!--Service-->	
+		<outline vocab="Service" type="group" text="Service" deftn="materials for professional development servives" attribution="dct:DCMIType"> 
+			<outline vocab="Professional Development Services" type="vocab" text="Professional Development Services"/>
+			<outline vocab="Service" type="vocab" text="Service"/>
+		</outline><!--end service-->
+
+<!--TEXT-->
+		<outline vocab="Text" type="group" text="Text" deftn="primarily publishers textbooks and chapters" attribution="dct:DCMIType"> 
+			<outline vocab="correspondence" type="vocab" text="correspondence"/>
+			<outline vocab="e-prints" type="vocab" text="e-prints"/>
+			<outline vocab="Memo" type="vocab" text="Memo"/>
+			<outline vocab="Pamphlet/Brochure" type="vocab" text="Pamphlet/Brochure"/>
+			<outline vocab="Pamphlet/brochure" type="vocab" text="Pamphlet/brochure"/>
+			<outline vocab="Portable Document Format" type="vocab" text="Portable Document Format"/>
+			<outline vocab="Seminar Paper" type="vocab" text="Seminar Paper"/>
+			<outline vocab="Stories/poems/writings" type="vocab" text="Stories/poems/writings"/> <!-- websites --> <!--was under instructional materials-->
+			<outline vocab="Text" type="vocab" text="Text"/>
+			<outline vocab="Text Document" type="vocab" text="Text Document"/> <!-- not text - websites linked from Exploratorium -->
+			<outline vocab="Working Paper" type="vocab" text="Working Paper"/>
+		</outline> <!--end text-->
+
+		
+	<!-- TOOLS -->
+		<outline vocab="Tool" text="Tool" type="group" deftn="computer hardware or software that facilitates interacting with a resource" attribution="nsdl_dc:NSDLType">
+			<outline vocab="Calculation or Conversion Tool" type="vocab" text="Calculation or Converstion Tool"/>
+			<outline vocab="converter" type="vocab" text="converter"/>
+			<outline vocab="online tool" type="vocab" text="online tool"/>
+			<outline vocab="Online tool" type="vocab" text="Online tool"/>
+			<outline vocab="Tool" type="vocab" text="Tool"/>
+			<outline vocab="Tools" type="vocab" text="Tools"/>
+			<outline vocab="Tool/Toolbox" type="vocab" text="Tool"/>
+
+			<outline type="group" vocab="Code" text="Code" deftn="set of computer instructions or scripts that enhance a resource; generally does not stand alone" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Code" type="vocab" text="Code"/>
+				<outline vocab="Scripts" type="vocab" text="Scripts"/>
+			</outline>
+		
+			<outline type="group" vocab="Equipment" text="Equipment" deftn="physical device or implement needed to interact with a resource" attribution="nsdl_dc:NSDLType">
+				 <outline vocab="Equipment" type="vocab" text="Equipment"/>
+			</outline>
+		
+			<outline type="group" vocab="Form" text="Form" deftn="formatted document containing blank fields that users populate with data (use for: calculator, online survey form)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Form" type="vocab" text="Form"/>
+			</outline>
+			
+			<outline type="group" vocab="Numerical Model" text="Numerical Model" deftn="set of computer instructions intended to operate on a Dataset in order to understand the natural world by predicting current, past, or future situations given a set of initial conditions" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Mathematical Models" type="vocab" text="Mathematical Models"/>
+				<outline vocab="Model" type="vocab" text="Model"/>
+				<outline vocab="Models" type="vocab" text="Models"/>
+				<outline vocab="Numerical Model" type="vocab" text="Numerical Model"/>
+			</outline>
+		
+			<outline type="group" vocab="Search Engine" text="Search Engine" deftn="mechanism by which the web or a sub-component thereof is searched, prompted by a specific query entered by a user" attribution="nsdl_dc:NSDLType">
+				<outline vocab="Search Engine" type="vocab" text="Search Engine"/>
+			</outline>
+		
+			<outline type="group" vocab="Software" text="Software" deftn="stand-alone tool that provides access, interaction, and the ability to run resources; it does not enhance another piece of software and it is distinct from Numerical Model (use for: data analysis tools, content creation tools)" attribution="nsdl_dc:NSDLType">
+				<outline vocab="application" type="vocab" text="application"/> <!-- websites -->
+				<outline vocab="Application" type="vocab" text="Application"/>
+				<outline vocab="Computer Applications" type="vocab" text="Computer Applications"/>
+				<outline vocab="Manager Tool" type="vocab" text="Manager Tool"/>
+				<outline vocab="Shareware, freeware, or trial software" type="vocab" text="Shareware, freeware, or trial software"/>
+				<outline vocab="Software" type="vocab" text="Software"/>
+				<outline vocab="Software/technology reviews" type="vocab" text="Software/technology reviews"/>
+			</outline>
+		</outline><!-- end Tools -->
+
+
+<!--suppress matDL terms because not appropriate for search interface-->
+<!--
+		<outline text="Specific MatDL Terms" type="group" vocab="MatDL" deftn="materials specific to the Material Digital Library">
+			<outline vocab="Generic Document" type="vocab" text="Generic Document"/>
+			<outline vocab="Fedora Collection Display" type="vocab" text="Fedora Collection Display"/>
+			<outline vocab="Fedora Community Display" type="vocab" text="Fedora Community Display"/>
+		</outline>
+-->	
+
+<!--suppress
+		<outline vocab="PhysicalObject" type="group" text="Physical Object" deftn="specimens or real world objects" attribution="dct:DCMIType">
+			<outline vocab="PhysicalObject" type="vocab" text="Physical Object" deftn="specimens or real world objects"/>
+		</outline>
+-->
+
+
+<!--Other Suppressed Terms because not placed into groups above-->
+
+			<!--<outline vocab="application/pdf" type="vocab" text="application/pdf"/>--> <!--kg pulled from audio/vis; but Exploratoirum uses it 35 times and no other resource type or format but exploratorium is now deaccessioned-->
+			<!--<outline vocab="File" type="vocab" text="File"/>-->
+			<!--<outline vocab="Free materials (print materials, media sent by request)" type="vocab" text="Free materials (print materials, media sent by request)"/>-->
+			<!--<outline vocab="Metadata" type="vocab" text="Metadata"/>--> <!--kg pulled from data; only 1 return-->
+			<!--<outline vocab="Other" type="vocab" text="Other"/>--> <!-- MathDL activities, applets, flash, tutorials, and so on -->
+			<!--	<outline vocab="Portal" type="vocab" text="Portal"/>-->
+			<!--	<outline vocab="Scientific Resources:Collection" type="vocab" text="Scientific Resources:Collection"/>--> <!-- more websites than collections -->
+			<!--<outline vocab="subject_area"  type="vocab" text="subject_area"/>-->
+			<!--<outline vocab="text/html" type="vocab" text="text/html"/>--><!--kg pulled from instructional materials; but Exploratorium uses it 322 times and no other resource type and no format but exploratorium is now deaccessioned-->
+			<!--<outline vocab="Web Page" type="vocab" text="Web Page"/>--> <!-- mathdemos.gcsu.edu -->
+			<!--<outline vocab="Webpage" type="vocab" text="Webpage"/>-->
+			<!--<outline vocab="Website" type="vocab" text="Website"/>-->
+
+	</body>
+</opml>

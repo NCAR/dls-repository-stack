@@ -1,0 +1,147 @@
+/* Not used */
+.toggling-header img {
+	margin:0px 5px 0px 0px;
+}
+
+/* Not used */
+.toggling-header a {
+	font-weight:bold;
+}
+
+div.search-control {
+	background-color:#CCCEE6;
+	padding:2px 0px 2px 4px;
+}
+
+/* Not used */
+.directory-search-header {
+	margin-top:12px;
+}
+
+div.search-control-label {
+	font-size:85%;
+}
+
+/* used for search results and selected result */
+.sub-header {
+	background-color:#CCCEE6;
+	width:100%;
+	padding:3px 0px 3px 3px;
+	font-size: 120%;
+	font-weight:bold;
+	color: #333366; 
+	margin:0px 0px 10px 0px;
+}
+
+#ucas-display {
+
+	border:#333366 solid 1px;
+}
+
+.search-results-wrapper {
+	height:200px;
+	overflow:auto;
+}
+
+/* search-results-table */
+#search-results {
+	width:100%;
+	border-collapse:collapse;
+	background-color:#666666;
+}
+
+#search-results tr {
+	background-color:white;
+}
+#search-results tr.result-row-over {
+	background-color:#ffffcc;
+	cursor:pointer;
+}
+#search-results tr.result-row-selected {
+	background-color:yellow;
+	cursor:pointer;
+}
+
+#search-results td,
+#search-results th {
+	border:1px solid #666666;
+	padding:3px;
+	font-size:12px;
+}
+
+/* #search-results tr.dup td {
+	background-color:#FFFFCC;
+} */
+
+/* Search results header */
+#search-results th {
+	background-color:#E3E4F1;
+}
+#search-results th div {
+	font-size:85%;
+}
+
+/* ----------- */
+/* selected-result-table */
+#selected-result {
+	width:100%;
+	border-collapse:collapse;
+	background-color:#666666;
+}
+
+#selected-result tr {
+	background-color:white;
+}
+#selected-result tr.result-row-over {
+	background-color:#ffffcc;
+	cursor:pointer;
+}
+#selected-result tr.result-row-selected {
+	background-color:yellow;
+	cursor:pointer;
+}
+
+#selected-result td,
+#selected-result th {
+	border:1px solid #666666;
+	padding:3px;
+}
+
+/* #selected-result tr.dup td {
+	background-color:#FFFFCC;
+} */
+
+/* Search results header */
+#selected-result th {
+	background-color:#E3E4F1;
+}
+#selected-result th div {
+	font-size:85%;
+}
+
+table#search-scope {
+	width:100%;
+	padding:0px;
+	margin:0px;
+	border-collapse:collapse;
+}
+
+ul.hor-list {
+	margin:0px;
+	padding:0px;
+	list-type-style:none;
+	display:inline;
+}
+
+ul.hor-list li {
+	display:inline;
+	font-size:12px;
+	margin:0px;
+	padding-left:3px;
+}
+
+/* ul.hor-list input {
+	position:relative;
+	top:2px;
+	left:2px;
+} */

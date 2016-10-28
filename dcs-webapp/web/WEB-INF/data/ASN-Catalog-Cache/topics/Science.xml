@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AsnDocuments topic="Science">
+  <asnDocument id="http://asn.jesandco.org/resources/D100009F">
+    <title>Mississippi Science Framework</title>
+    <topic>Science</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100036D">
+    <title>Mississippi Science Framework</title>
+    <topic>Science</topic>
+    <author>MS</author>
+    <authorName>Mississippi</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2454611">
+    <title>A Framework for K-12 Science Education: Practices, Crosscutting Concepts, and Core Ideas</title>
+    <topic>Science</topic>
+    <author>NRC</author>
+    <authorName>NRC</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100010F">
+    <title>Minnesota Graduation Standards for Science</title>
+    <topic>Science</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000C2">
+    <title>Minnesota Academic Standards Science K-12</title>
+    <topic>Science</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2362333">
+    <title>Minnesota Academic Standards in Science</title>
+    <topic>Science</topic>
+    <author>MN</author>
+    <authorName>Minnesota</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000212">
+    <title>Science Grade-Level Expectations</title>
+    <topic>Science</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003B8">
+    <title>Science Course-Level Expectations Biology I, Updated Version 11/24/08</title>
+    <topic>Science</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000371">
+    <title>Version 2.0 Science Grade Level Expectations, March 2008</title>
+    <topic>Science</topic>
+    <author>MO</author>
+    <authorName>Missouri</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2454348">
+    <title>Next Generation Science Standards</title>
+    <topic>Science</topic>
+    <author>NGSS</author>
+    <authorName>NGSS</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100035B">
+    <title>Wisconsin's Model Academic Standards for Environmental Education</title>
+    <topic>Science</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>1998</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000096">
+    <title>Wisconsin Model Academic Standards for Science</title>
+    <topic>Science</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>1998</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000128">
+    <title>Montana Standards for Science</title>
+    <topic>Science</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000262">
+    <title>Montana K-12 Science Content Standards Framework</title>
+    <topic>Science</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100032F">
+    <title>Science Grade Level Expectations</title>
+    <topic>Science</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003B4">
+    <title>Montana Essential Learning Expectations (ELE) for Science</title>
+    <topic>Science</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000B6">
+    <title>Science Content Standards and Benchmarks</title>
+    <topic>Science</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000264">
+    <title>North Dakota Science Content Standards</title>
+    <topic>Science</topic>
+    <author>ND</author>
+    <authorName>North Dakota</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000156">
+    <title>Science Standard Course of Study and Grade Level Competencies</title>
+    <topic>Science</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000213">
+    <title>Science Standard Course of Study and Grade Level Competencies</title>
+    <topic>Science</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2363294">
+    <title>North Carolina Science Essential Standards</title>
+    <topic>Science</topic>
+    <author>NC</author>
+    <authorName>North Carolina</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000E9">
+    <title>Essential Academic Learning Requirements in Science</title>
+    <topic>Science</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000216">
+    <title>Essential Academic Learning Requirements in Science</title>
+    <topic>Science</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003BE">
+    <title>Washington State K-12 Science Standards Revised June 2010</title>
+    <topic>Science</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2597531">
+    <title>Washington State K-12 Science Learning Standards</title>
+    <topic>Science</topic>
+    <author>WA</author>
+    <authorName>Washington</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001B9">
+    <title>The Rhode Island State Science Framework</title>
+    <topic>Science</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000335">
+    <title>Life Science Grade Span Expectations K-12</title>
+    <topic>Science</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000336">
+    <title>Physical Science Grade Span Expectations K-12</title>
+    <topic>Science</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000334">
+    <title>Earth and Space Science Grade Span Expectations K-12</title>
+    <topic>Science</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2599181">
+    <title>Next Generation Science Standards</title>
+    <topic>Science</topic>
+    <author>RI</author>
+    <authorName>Rhode Island</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000ED">
+    <title>Illinois Learning Standards for Science</title>
+    <topic>Science</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000B4">
+    <title>Science Performance Descriptors</title>
+    <topic>Science</topic>
+    <author>IL</author>
+    <authorName>Illinois</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000042">
+    <title>New Jersey Core Curriculum Content Standards for Science</title>
+    <topic>Science</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000027">
+    <title>New Jersey Core Curriculum Content Standards for Science</title>
+    <topic>Science</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003D8">
+    <title>New Jersey Core Curriculum Content Standards for Science</title>
+    <topic>Science</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2009</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2598911">
+    <title>New Jersey Core Curriculum Content Standards for Science (NGSS)</title>
+    <topic>Science</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000157">
+    <title>Indiana's Academic Standards 2000 for K-12 Science</title>
+    <topic>Science</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000358">
+    <title>Indiana's Advanced Life Science Standards: Animals</title>
+    <topic>Science</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100035A">
+    <title>Indiana's Advanced Life Science Standards: Plants and Soils</title>
+    <topic>Science</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000359">
+    <title>Indiana's Advanced Life Science Standards: Foods</title>
+    <topic>Science</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000346">
+    <title>Indiana's Core Standards for Science</title>
+    <topic>Science</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2367757">
+    <title>Indiana’s Academic Standards for Science</title>
+    <topic>Science</topic>
+    <author>IN</author>
+    <authorName>Indiana</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000C1">
+    <title>K-12 Science Curriculum Framework</title>
+    <topic>Science</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100026E">
+    <title>K-12 Science Literacy New Hampshire Curriculum Framework</title>
+    <topic>Science</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000112">
+    <title>Nebraska Science Standards</title>
+    <topic>Science</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2377913">
+    <title>Nebraska Science Standards</title>
+    <topic>Science</topic>
+    <author>NE</author>
+    <authorName>Nebraska</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100021C">
+    <title>Science Performance Standards (Grade Level Expectations) for Grades 3-11</title>
+    <topic>Science</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000254">
+    <title>Alaska Content Standards Science</title>
+    <topic>Science</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000047">
+    <title>Idaho State Achievement Standards K-12 in Science</title>
+    <topic>Science</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000267">
+    <title>Idaho Content Standards - Science</title>
+    <topic>Science</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2373726">
+    <title>Idaho Content Standards - Chemistry (Grade 11-12)</title>
+    <topic>Science</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2374047">
+    <title>Idaho Extended Content Standards - Science</title>
+    <topic>Science</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2567481">
+    <title>Idaho Science End-Of-Course (EOC) Biology Content Standards</title>
+    <topic>Science</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2567533">
+    <title>Idaho Science End-Of-Course (EOC) Chemistry Content Standards</title>
+    <topic>Science</topic>
+    <author>ID</author>
+    <authorName>Idaho</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100013C">
+    <title>Alabama Course of Study: Science</title>
+    <topic>Science</topic>
+    <author>AL</author>
+    <authorName>Alabama</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000255">
+    <title>Alabama Course of Study: Science</title>
+    <topic>Science</topic>
+    <author>AL</author>
+    <authorName>Alabama</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000275">
+    <title>Science Core Content Standards and Benchmarks Corresponding to the Iowa Tests</title>
+    <topic>Science</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000277">
+    <title>Science Model Core Curriculum for Iowa High Schools</title>
+    <topic>Science</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100034E">
+    <title>Science Grade Level Indicators</title>
+    <topic>Science</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003E4">
+    <title>Iowa Core Science</title>
+    <topic>Science</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000C8">
+    <title>Academic Standards: Science</title>
+    <topic>Science</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100006D">
+    <title>Academic Content Standards - Science</title>
+    <topic>Science</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2004</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001C4">
+    <title>Massachusetts Science and Technology Curriculum Framework: Owning the Questions</title>
+    <topic>Science</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000E2">
+    <title>Massachusetts Science and Technology/Engineering Curriculum Framework</title>
+    <topic>Science</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100025B">
+    <title>Massachusetts Science and Technology/Engineering Curriculum Framework Appendix I</title>
+    <topic>Science</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000272">
+    <title>Massachusetts Science and Technology/Engineering Curriculum Framework</title>
+    <topic>Science</topic>
+    <author>MA</author>
+    <authorName>Massachusetts</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100017E">
+    <title>State of Delaware Science Curriculum Framework</title>
+    <topic>Science</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100025F">
+    <title>Delaware Science Content Standards</title>
+    <topic>Science</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2507858">
+    <title>Delaware Science Grade Level Expectations</title>
+    <topic>Science</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2603111">
+    <title>Next Generation Science Standards</title>
+    <topic>Science</topic>
+    <author>DE</author>
+    <authorName>Delaware</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100035E">
+    <title>District of Columbia Science Standards</title>
+    <topic>Science</topic>
+    <author>DC</author>
+    <authorName>District of Columbia</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2601214">
+    <title>Next Generation Science Standards</title>
+    <topic>Science</topic>
+    <author>DC</author>
+    <authorName>District of Columbia</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000202">
+    <title>New Standards</title>
+    <topic>Science</topic>
+    <author>NCEE</author>
+    <authorName>NCEE</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000B8">
+    <title>Science Curriculum Framework</title>
+    <topic>Science</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100025D">
+    <title>Science Curriculum Framework</title>
+    <topic>Science</topic>
+    <author>AR</author>
+    <authorName>Arkansas</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001C9">
+    <title>Science Content Standards with Working Draft Benchmarks</title>
+    <topic>Science</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000D3">
+    <title>Michigan Curriculum Framework Science Benchmarks</title>
+    <topic>Science</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000361">
+    <title>Biology High School Content Expectations</title>
+    <topic>Science</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000362">
+    <title>Chemistry High School Content Expectations</title>
+    <topic>Science</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000363">
+    <title>Earth Science High School Content Expectations</title>
+    <topic>Science</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000280">
+    <title>High School Science Essential Content Standards and Expectations</title>
+    <topic>Science</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000364">
+    <title>Physics High School Content Expectations</title>
+    <topic>Science</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000332">
+    <title>Science Grade Level Content Expectations (K-7)</title>
+    <topic>Science</topic>
+    <author>MI</author>
+    <authorName>Michigan</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100014B">
+    <title>Science Content Standards and Objectives for West Virginia Schools</title>
+    <topic>Science</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100025C">
+    <title>21st Century Science K-8 Content Standards and Objectives for West Virginia Schools</title>
+    <topic>Science</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100033E">
+    <title>21st Century Science 9-12 Content Standards and Objectives for West Virginia Schools</title>
+    <topic>Science</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003F1">
+    <title>21st Century Science 9-12 Content Standards and Objectives for West Virginia Schools</title>
+    <topic>Science</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2010</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2575648">
+    <title>21st Century Science 9-12 Content Standards and Objectives for West Virginia Schools</title>
+    <topic>Science</topic>
+    <author>WV</author>
+    <authorName>West Virginia</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100011B">
+    <title>Learning Results for Science and Technology</title>
+    <topic>Science</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100026C">
+    <title>2007 Science and Technology Grade Span Expectations for Grades 3-8</title>
+    <topic>Science</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000386">
+    <title>Science and Technology Learning Results: Parameters for Essential Instruction</title>
+    <topic>Science</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003B7">
+    <title>Maine Federal, State, and Local Accountability Standards - Science and Technology</title>
+    <topic>Science</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2008</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001FD">
+    <title>Science Content Standards</title>
+    <topic>Science</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000270">
+    <title>Hawaii Content and Performance Standards for Science</title>
+    <topic>Science</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100016D">
+    <title>Maryland State Content Standards for Science</title>
+    <topic>Science</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000265">
+    <title>Maryland Science Core Learning Goals</title>
+    <topic>Science</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2002</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100021D">
+    <title>Voluntary State Curriculum for Science</title>
+    <topic>Science</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003C1">
+    <title>Maryland State Curriculum - Science</title>
+    <topic>Science</topic>
+    <author>MD</author>
+    <authorName>Maryland</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000EB">
+    <title>Science Content and Performance Standards</title>
+    <topic>Science</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000F0">
+    <title>Science Content and Performance Standards</title>
+    <topic>Science</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000382">
+    <title>Wyoming Science Content and Performance Standards</title>
+    <topic>Science</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000214">
+    <title>Academic Content Standards - Science</title>
+    <topic>Science</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000376">
+    <title>Science Standards, Oregon Standards Newspaper 2008-2009</title>
+    <topic>Science</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003B0">
+    <title>Oregon Science Academic Content Standards</title>
+    <topic>Science</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2597530">
+    <title>Oregon Science Standards (NGSS)</title>
+    <topic>Science</topic>
+    <author>OR</author>
+    <authorName>Oregon</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000152">
+    <title>Benchmarks for Science Literacy</title>
+    <topic>Science</topic>
+    <author>AAAS</author>
+    <authorName>AAAS</authorName>
+    <created>1993</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2365735">
+    <title>Benchmarks for Science Literacy</title>
+    <topic>Science</topic>
+    <author>AAAS</author>
+    <authorName>AAAS</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100007F">
+    <title>Louisiana Science Grade-Level Expectations</title>
+    <topic>Science</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2004</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100026A">
+    <title>Louisiana Content Standards for Science</title>
+    <topic>Science</topic>
+    <author>LA</author>
+    <authorName>Louisiana</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000365">
+    <title>Environmental Education Standards for Kansas</title>
+    <topic>Science</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001EC">
+    <title>Kansas Science Education Standards</title>
+    <topic>Science</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100027A">
+    <title>Kansas Science Education Standards</title>
+    <topic>Science</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2592577">
+    <title>Kansas College and Career Ready Standards for Science</title>
+    <topic>Science</topic>
+    <author>KS</author>
+    <authorName>Kansas</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000201">
+    <title>Science Curriculum Standards</title>
+    <topic>Science</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2001</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100033F">
+    <title>Tennessee Science Standards</title>
+    <topic>Science</topic>
+    <author>TN</author>
+    <authorName>Tennessee</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000171">
+    <title>Academic Standards for Science and Technology and Environment and Ecology</title>
+    <topic>Science</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2381498">
+    <title>Academic Standards for Science and Technology and Engineering Education (Secondary)</title>
+    <topic>Science</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2381762">
+    <title>Academic Standards for Science and Technology and Engineering Education (PreK-3)</title>
+    <topic>Science</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2382283">
+    <title>Academic Standards for Environment and Ecology</title>
+    <topic>Science</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2382902">
+    <title>Academic Standards for Science and Technology and Engineering Education (Elementary)</title>
+    <topic>Science</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2581951">
+    <title>Academic Standards for Environment and Ecology (PreK-3)</title>
+    <topic>Science</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000BA">
+    <title>Science Content Standards for California Public Schools, Kindergarten Through Grade Twelve</title>
+    <topic>Science</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001D0">
+    <title>National Science Education Standards</title>
+    <topic>Science</topic>
+    <author>NSES</author>
+    <authorName>NSES</authorName>
+    <created>1995</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000219">
+    <title>Core Content for Science Assessment</title>
+    <topic>Science</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000259">
+    <title>Core Content for Science Assessment</title>
+    <topic>Science</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000258">
+    <title>Program of Study Science</title>
+    <topic>Science</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2006</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2592576">
+    <title>Kentucky Core Academic Standards - Science</title>
+    <topic>Science</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000125">
+    <title>Chapter 112. Texas Essential Knowledge and Skills (TEKS) for Science</title>
+    <topic>Science</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>1997</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003DA">
+    <title>Texas Essential Knowledge and Skills for Science, Amended 2010</title>
+    <topic>Science</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000A6">
+    <title>New Mexico Science Content Standards and Benchmarks</title>
+    <topic>Science</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000119">
+    <title>Science Content Standards, Benchmarks, and Performance Standards</title>
+    <topic>Science</topic>
+    <author>NM</author>
+    <authorName>New Mexico</authorName>
+    <created>2003</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100003B">
+    <title>Colorado Model Content Standards for Science</title>
+    <topic>Science</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100027B">
+    <title>Colorado Model Content Standards Science, Amended 2-8-07</title>
+    <topic>Science</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003F2">
+    <title>Colorado Academic Standards for Science</title>
+    <topic>Science</topic>
+    <author>CO</author>
+    <authorName>Colorado</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000058">
+    <title>Vermont's Framework of Standards and Learning Opportunities</title>
+    <topic>Science</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000215">
+    <title>Grade Expectations for Vermont's Framework of Standards and Learning Opportunities</title>
+    <topic>Science</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2599182">
+    <title>Next Generation Science Standards</title>
+    <topic>Science</topic>
+    <author>VT</author>
+    <authorName>Vermont</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10001E5">
+    <title>Georgia Quality Core Curriculum Standards for Science</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000180">
+    <title>Georgia Science Performance Standards</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100033D">
+    <title>Georgia Science Performance Standards</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003C6">
+    <title>Georgia Performance Standards - Astronomy Curriculum</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003C7">
+    <title>Georgia Performance Standards - Botany Curriculum</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003C8">
+    <title>Georgia Performance Standards - Ecology Curriculum</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003C9">
+    <title>Georgia Performance Standards - Entomology Curriculum</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003CA">
+    <title>Georgia Performance Standards - Forensic Science Curriculum</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003CB">
+    <title>Georgia Performance Standards - Geology Curriculum</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003CC">
+    <title>Georgia Performance Standards - Meteorology Curriculum</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003CD">
+    <title>Georgia Performance Standards - Microbiology Curriculum</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003CE">
+    <title>Georgia Performance Standards - Oceanography Curriculum</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003CF">
+    <title>Georgia Performance Standards - Zoology Curriculum</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2575368">
+    <title>8th Grade Science Research</title>
+    <topic>Science</topic>
+    <author>GA</author>
+    <authorName>Georgia</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000060">
+    <title>Nevada Science Content Standards for Grades 2, 3, 5, 8, and 12 and Grade Level Indicators for Kindergarten and Grades 1, 4, 6 and 7</title>
+    <topic>Science</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>1998</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100021A">
+    <title>Nevada K-12 Science Standards</title>
+    <topic>Science</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2007</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2597529">
+    <title>Nevada Academic Content Standards for Science</title>
+    <topic>Science</topic>
+    <author>NV</author>
+    <authorName>Nevada</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000D2">
+    <title>Elementary Science, Intermediate Science, Living Environment, Earth Science, Chemistry, and Physics Core Curriculum</title>
+    <topic>Science</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2381392">
+    <title>Learning Standards for Mathematics, Science, and Technology - Standard 4</title>
+    <topic>Science</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1996</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000072">
+    <title>Science Standards of Learning for Virginia Public Schools</title>
+    <topic>Science</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>1995</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000000">
+    <title>Science Standards of Learning for Virginia Public Schools</title>
+    <topic>Science</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003F0">
+    <title>Science Standards of Learning for Virginia Public Schools</title>
+    <topic>Science</topic>
+    <author>VA</author>
+    <authorName>Virginia</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000062">
+    <title>Sunshine State Standards Grade Level Expectations: Science</title>
+    <topic>Science</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>1996</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000338">
+    <title>Science Next Generation Sunshine State Standards</title>
+    <topic>Science</topic>
+    <author>FL</author>
+    <authorName>Florida</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000217">
+    <title>Science - Utah Education Network</title>
+    <topic>Science</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2435462">
+    <title>Utah Secondary Earth Science Core Standards</title>
+    <topic>Science</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2520900">
+    <title>Utah Elementary Science Core Curriculum</title>
+    <topic>Science</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2521037">
+    <title>Utah Elementary Science Core Curriculum - Grades 3-6</title>
+    <topic>Science</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2002</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2521372">
+    <title>Utah Secondary Science Core Curriculum</title>
+    <topic>Science</topic>
+    <author>UT</author>
+    <authorName>Utah</authorName>
+    <created>2003</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000146">
+    <title>Science Curriculum Standards</title>
+    <topic>Science</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000268">
+    <title>South Carolina Science Academic Standards</title>
+    <topic>Science</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2535169">
+    <title>South Carolina Academic Standards and Performance Indicators for Science</title>
+    <topic>Science</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000175">
+    <title>South Dakota Science Standards</title>
+    <topic>Science</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>1999</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100021E">
+    <title>South Dakota Science Content Standards</title>
+    <topic>Science</topic>
+    <author>SD</author>
+    <authorName>South Dakota</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000131">
+    <title>Science: Ohio's Model Competency-Based Program</title>
+    <topic>Science</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>1994</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100015E">
+    <title>Academic Content Standards K-12 Science</title>
+    <topic>Science</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000352">
+    <title>Early Learning Content Standards - Science</title>
+    <topic>Science</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2003</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2462762">
+    <title>Ohio's New Learning Standards: K-8 Science</title>
+    <topic>Science</topic>
+    <author>OH</author>
+    <authorName>Ohio</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10000FA">
+    <title>Priority Academic Student Skills for Science</title>
+    <topic>Science</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2000</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D100013D">
+    <title>Priority Academic Student Skills (PASS) for Science</title>
+    <topic>Science</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2002</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2372584">
+    <title>Priority Academic Student Skills - Science</title>
+    <topic>Science</topic>
+    <author>OK</author>
+    <authorName>Oklahoma</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000211">
+    <title>Core Science Curriculum Framework</title>
+    <topic>Science</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>2004</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003B3">
+    <title>Connecticut Prekindergarten-Grade 8 Science Curriculum Standards</title>
+    <topic>Science</topic>
+    <author>CT</author>
+    <authorName>Connecticut</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+</AsnDocuments>

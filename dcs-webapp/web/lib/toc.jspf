@@ -1,0 +1,64 @@
+<%-- table of contents for saved records --%>
+
+ 
+ 	<div style="font-family:helvetica;padding-top:12px"><b>Current Directory</b>
+	<span style="font-size:small">${sef.recordsDir}</span>
+<%--	</div>
+	<input type="button" value="Up to Parent Directory" 
+		           onClick="doParentDir()"
+				   title="Go to Parent Directory" />
+	<c:if test="${not empty sef.dirs}">
+		<div style="font-family:helvetica;padding-top:12px"><b>Directories</b></div>
+		<table cellpadding="3" cellspacing="1" bgcolor="#cccccc">
+			<tr class="toc-header-row">
+				<td class="toc-header-cell" width="250px">Directory</td>
+			</tr>
+			<c:forEach items="${sef.dirs}" var="dir">
+				<tr bgcolor="#ffffff">
+					<td>
+					<a href="${sef.submitAction}?command=changeDir&pathArg=${dir}">${dir}</a><BR>
+					</td>
+				</tr>
+			</c:forEach>
+		</table>
+	</c:if> --%>
+	
+	<div style="font-family:helvetica;padding-top:12px"><b>Records</b></div>
+	<c:choose>
+		<c:when test="${not empty sef.records}">
+		<%-- 
+			<div style="font-family:helvetica;font-size:small;padding:10px;">Note: Only files containing XML in 
+			<b>${sef.xmlFormat}</b>
+			format can be edited from this interface. If you have navigated
+			to a directory having files that are not in <b>${sef.xmlFormat}</b> format, 
+			attempting to open them from this interface will produce
+			unpredictable results!</div>
+		 --%>
+			<table cellpadding="3" cellspacing="1" bgcolor="#cccccc">
+				<tr class="toc-header-row">
+					<td class="toc-header-cell" width="250px">Id</td>
+					<td class="toc-header-cell">&nbsp;</td>
+					<td class="toc-header-cell" width="250px">Last modified</td>
+				</tr>
+				<c:forEach items="${sef.records}" var="record" varStatus="status">
+					<tr bgcolor="#ffffff">
+						<td>
+							<a href="${sef.submitAction}?recId=${record.id}&command=edit&src=local">${record.id}</a>
+						</td>
+						<td>
+							<a href="${sef.submitAction}?recId=${record.id}&command=viewxml">View XML</a>
+						</td>						
+						<td>
+							<table width="100%">
+							<tr>
+								<td align="left" width="150px">${record.lastModDate}</td>
+								<td align="right">${record.lastModTime}</td>
+							</tr>
+						</table>
+					</tr>
+				</c:forEach>
+			</table>
+		</c:when>
+		<c:otherwise><i>there are no records in this directory</i></c:otherwise>
+	</c:choose>
+

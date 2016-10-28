@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: division.xsd,v 1.5 2008/10/23 15:33:46 ginger Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xs:annotation>
+		<xs:documentation>*****************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*****************************************</xs:documentation>
+		<xs:documentation>Modified: 2008-10-20</xs:documentation>
+		<xs:documentation>Created: 2008-09-03</xs:documentation>
+		<xs:documentation>Author: Katy Ginger, University Corporation for Atmospheric Research (UCAR),  ginger@ucar.edu</xs:documentation>
+		<xs:documentation>Purpose: NCAR Library division controlled vocabulary</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>None. See ../library_dc.xsd</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  SIMPLE TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="divisionType">
+		<xs:annotation>
+			<xs:documentation>***** divisionType  *****</xs:documentation>
+			<xs:documentation>Valid values for the element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Acid Deposition Modeling Project (ADMP)"/>
+			<xs:enumeration value="Advanced Study Program (ASP)"/>
+			<xs:enumeration value="Aeronomy Laboratory"/>
+			<xs:enumeration value="Atmospheric Analysis and Prediction Division (AAP)"/>
+			<xs:enumeration value="Atmospheric Chemistry and Aeronomy Division (ACAD)"/>
+			<xs:enumeration value="Atmospheric Chemistry Division (ACD)"/>
+			<xs:enumeration value="Atmospheric Quality Division (AQD)"/>
+			<xs:enumeration value="Atmospheric Quality and Modification Division (AQM)"/>
+			<xs:enumeration value="Atmospheric Technology Division (ATD)"/>
+			<xs:enumeration value="Balloon Facility"/>
+			<xs:enumeration value="Climate and Global Dynamics Division (CGD)"/>
+			<xs:enumeration value="Communications"/>
+			<xs:enumeration value="Communications - News Center (Comm)"/>
+			<xs:enumeration value="Communications Services Dept."/>
+			<xs:enumeration value="Computational and Information Systems Laboratory (CISL)"/>
+			<xs:enumeration value="Convective Storms Division"/>
+			<xs:enumeration value="Cooperative Convective Precipitation Experiment (CCOPE)"/>
+			<xs:enumeration value="Corporate Partners Program"/>
+			<xs:enumeration value="Earth Observing Laboratory (EOL)"/>
+			<xs:enumeration value="Education and Outreach (EO)"/>
+			<xs:enumeration value="Environmental Research Laboratories (ERL)"/>
+			<xs:enumeration value="Environmental and Societal Impacts Group (ESIG)"/>
+			<xs:enumeration value="Facilities for Atmospheric Research"/>
+			<xs:enumeration value="Facilities Laboratory"/>
+			<xs:enumeration value="Field Observing Facility (FOF)"/>
+			<xs:enumeration value="Global Atmospheric Research Programme Atlantic Tropical Experiment (GATE)"/>
+			<xs:enumeration value="High Altitude Observatory (HAO)"/>
+			<xs:enumeration value="Human Resources (HR)"/>
+			<xs:enumeration value="Laboratory of Atmospheric Science (LAS)"/>
+			<xs:enumeration value="LEARN: Atmospheric Science Explorers"/>
+			<xs:enumeration value="Line Islands Critique"/>
+			<xs:enumeration value="Media Relations Office"/>
+			<xs:enumeration value="Mesoscale and Microscale Meteorology Division (MMM)"/>
+			<xs:enumeration value="NCAR Library"/>
+			<xs:enumeration value="Office of Development and Government Affairs"/>
+			<xs:enumeration value="Office of Government Affairs (OGA)"/>
+			<xs:enumeration value="Office for Interdisciplinary Earth Studies (OIES)"/>
+			<xs:enumeration value="Publications Office"/>
+			<xs:enumeration value="Research Applications Laboratory (RAL)"/>
+			<xs:enumeration value="Research Applications Program (RAP)"/>
+			<xs:enumeration value="Research Aviation Facility (RAF)"/>
+			<xs:enumeration value="Safety and Site Services (SaSS)"/>
+			<xs:enumeration value="Scientific Balloon Facility (SBF)"/>
+			<xs:enumeration value="Scientific Computing Division (SCD)"/>
+			<xs:enumeration value="Significant Opportunities in Atmospheric Research and Science (SOARS)"/>
+			<xs:enumeration value="SOARS Program Office"/>
+			<xs:enumeration value="Societal Impacts Program (SIP)"/>
+			<xs:enumeration value="Transportation  Alternatives Program (TAP)"/>
+			<xs:enumeration value="Unidata Program Center (Unidata)"/>
+			<xs:enumeration value="U.S. Monex Project Office"/>
+			<xs:enumeration value="Weather Research Program. Environmental Research Laboratories"/>	
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:annotation>
+		<xs:documentation>*******************************************************</xs:documentation>
+		<xs:documentation>*****  LICENSE/COPYRIGHT INFORMATION  *****</xs:documentation>
+		<xs:documentation>*******************************************************</xs:documentation>
+		<xs:documentation>Copyright (c) 2008 University Corporation for Atmospheric Research (UCAR) P.O. Box 3000, Boulder, CO 80307, United States of America</xs:documentation>
+	</xs:annotation>
+</xs:schema>

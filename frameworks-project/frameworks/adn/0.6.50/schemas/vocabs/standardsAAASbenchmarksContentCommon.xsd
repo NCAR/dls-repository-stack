@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.6.50">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Overview  **************************************************************
+			Definition: 			Controlled vocabulary schema for DLESE metadata frameworks
+			Framework use: 	ADN-I (item)
+			Source org:			American Association for the Advancement of Science (AAAS); http://www.aaas.org/
+			Vocab values:		http://www.project2061.org/tools/benchol/bolframe.htm
+			Vocab last update:	
+			DPC last update:		2002-10-31
+			Notes: 				This is common themes.	
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>********************** History of Change ******************************************
+2003-02-10:Added comments below to indicate where changes exist between AAAS website and DPC XML schema encoding.
+2003-02-10:Learned there more new benchmarks that are not on the AAAS website. Not dealing with those yet.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="AAAScontentCommonType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  AAAScontentCommonType  ***************************************
+				Lists the values that will appear in the metadata record
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Systems:K-2:Most things are made of parts."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Systems:K-2:Something may not work if some of its parts are missing."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Systems:K-2:When parts are put together, they can do things that they couldn't do by themselves."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Systems:3-5:In something that consists of many parts, the parts usually influence one another."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Systems:3-5:Something may not work as well (or at all) if a part of it is missing, broken, worn out, mismatched, or misconnected."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Systems:6-8:A system can include processes as well as things."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Systems:6-8:Thinking about things as systems means looking for how every part relates to others. The output from one part of a system (which can include material, energy, or information) can become the input to other parts. Such feedback can serve to control what goes on in the system as a whole."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Systems:6-8:Any system is usually connected to other systems, both internally and externally. Thus a system may be thought of as containing subsystems and as being a subsystem of a larger system."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Systems:9-12:A system usually has some properties that are different from those of its parts, but appear because of the interaction of those parts."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Systems:9-12:Understanding how things work and designing solutions to problems of almost any kind can be facilitated by systems analysis. In defining a system, it is important to specify its boundaries and subsystems, indicate its relation to other systems, and identify what its input and its output are expected to be."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Systems:9-12:The successful operation of a designed system usually involves feedback. The feedback of output from some parts of a system to input of other parts can be used to encourage what is going on in a system, discourage it, or reduce its discrepancy from some desired value. The stability of a system can be greater when it includes appropriate feedback mechanisms."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Systems:9-12:Even in some very simple systems, it may not always be possible to predict accurately the result of changing some part or connection."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Models:K-2:Many of the toys children play with are like real things only in some ways. They are not the same size, are missing many details, or are not able to do all of the same things."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Models:K-2:A model of something is different from the real thing but can be used to learn something about the real thing."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Models:K-2:One way to describe something is to say how it is like something else."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Models:3-5:Seeing how a model works after changes are made to it may suggest how the real thing would work if the same were done to it."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Models:3-5:Geometric figures, number sequences, graphs, diagrams, sketches, number lines, maps, and stories can be used to represent objects, events, and processes in the real world, although such representations can never be exact in every detail."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Models:6-8:Models are often used to think about processes that happen too slowly, too quickly, or on too small a scale to observe directly, or that are too vast to be changed deliberately, or that are potentially dangerous."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Models:6-8:Mathematical models can be displayed on a computer and then modified to see what happens."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Models:6-8:Different models can be used to represent the same thing. What kind of a model to use and how complex it should be depends on its purpose. The usefulness of a model may be limited if it is too simple or if it is needlessly complicated. Choosing a useful model is one of the instances in which intuition and creativity come into play in science, mathematics, and engineering."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Models:9-12:The basic idea of mathematical modeling is to find a mathematical relationship that behaves in the same ways as the objects or processes under investigation. A mathematical model may give insight about how something really works or may fit observations very well without any intuitive meaning."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Models:9-12:Computers have greatly improved the power and use of mathematical models by performing computations that are very long, very complicated, or repetitive. Therefore computers can show the consequences of applying complex rules or of changing the rules. The graphic capabilities of computers make them useful in the design and testing of devices and structures and in the simulation of complicated processes."/>
+			<!--In the next benchmark, the word true originally had double quites. It was changed to single quotes  because a double quote is a reserved XML character.-->
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Models:9-12:The usefulness of a model can be tested by comparing its predictions to actual observations in the real world. But a close match does not necessarily mean that the model is the only 'true' model or the only one that would work."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:K-2:Things change in some ways and stay the same in some ways."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:K-2:People can keep track of some things, seeing where they come from and where they go."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:K-2:Things can change in different ways, such as in size, weight, color, and movement. Some small changes can be detected by taking measurements."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:K-2:Some changes are so slow or so fast that they are hard to see."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:3-5:Some features of things may stay the same even when other features change. Some patterns look the same when they are shifted over, or turned, or reflected, or seen from different directions."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:3-5:Things change in steady, repetitive, or irregular ways or sometimes in more than one way at the same time. Often the best way to tell which kinds of change are happening is to make a table or graph of measurements."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:6-8:Physical and biological systems tend to change until they become stable and then remain that way unless their surroundings change."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:6-8:A system may stay the same because nothing is happening or because things are happening but exactly counterbalance one another."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:6-8:Many systems contain feedback mechanisms that serve to keep changes within specified limits."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:6-8:Symbolic equations can be used to summarize how the quantity of something changes over time or in response to other changes."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:6-8:Symmetry (or the lack of it) may determine properties of many objects, from molecules and crystals to organisms and designed structures."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:6-8:Cycles, such as the seasons or body temperature, can be described by their cycle length or frequency, what their highest and lowest values are, and when these values occur. Different cycles range from many thousands of years down to less than a billionth of a second."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:9-12:A system in equilibrium may return to the same state of equilibrium if the disturbances it experiences are small. But large disturbances may cause it to escape that equilibrium and eventually settle into some other state of equilibrium."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:9-12:Along with the theory of atoms, the concept of the conservation of matter led to revolutionary advances in chemical science. The concept of conservation of energy is at the heart of advances in fields as diverse as the study of nuclear particles and the study of the origin of the universe."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:9-12:Things can change in detail but remain the same in general (the players change, but the team remains; cells are replaced, but the organism remains). Sometimes counterbalancing changes are necessary for a thing to retain its essential constancy in the presence of changing conditions."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:9-12:Graphs and equations are useful (and often equivalent) ways for depicting and analyzing patterns of change."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:9-12:In many physical, biological, and social systems, changes in one direction tend to produce opposing (but somewhat delayed) influences, leading to repetitive cycles of behavior."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:9-12:In evolutionary change, the present arises from the materials and forms of the past, more or less gradually, and in ways that can be explained."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Constancy and change:9-12:Most systems above the molecular level involve so many parts and forces and are so sensitive to tiny differences in conditions that their precise behavior is unpredictable, even if all the rules for change are known. Predictable or not, the precise future of a system is not completely determined by its present state and circumstances but also depends on the fundamentally uncertain outcomes of events on the atomic scale."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Scale:K-2:Things in nature and things people make have very different sizes, weights, ages, and speeds."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Scale:3-5:Almost anything has limits on how big or small it can be."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Scale:3-5:Finding out what the biggest and the smallest possible values of something are is often as revealing as knowing what the usual value is."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Scale:6-8:Properties of systems that depend on volume, such as capacity and weight, change out of proportion to properties that depend on area, such as strength or surface processes."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Scale:6-8:As the complexity of any system increases, gaining an understanding of it depends increasingly on summaries, such as averages and ranges, and on descriptions of typical examples of that system."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Scale:9-12:Representing large numbers in terms of powers of ten makes it easier to think about them and to compare things that are greatly different."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Scale:9-12:Because different properties are not affected to the same degree by changes in scale, large changes in scale typically change the way that things work in physical, biological, or social systems."/>
+			<xsd:enumeration value="AAASbenchmarks:Common themes:Scale:9-12:As the number of parts of a system increases, the number of possible interactions between pairs of parts increases much more rapidly."/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="AAAScontentCommonLeafType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  AAAScontentCommonLeafType  ***************************************
+				Lists leaf values
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Most things are made of parts."/>
+			<xsd:enumeration value="Something may not work if some of its parts are missing."/>
+			<xsd:enumeration value="When parts are put together, they can do things that they couldn't do by themselves."/>
+			<xsd:enumeration value="In something that consists of many parts, the parts usually influence one another."/>
+			<xsd:enumeration value="Something may not work as well (or at all) if a part of it is missing, broken, worn out, mismatched, or misconnected."/>
+			<xsd:enumeration value="A system can include processes as well as things."/>
+			<xsd:enumeration value="Thinking about things as systems means looking for how every part relates to others. The output from one part of a system (which can include material, energy, or information) can become the input to other parts. Such feedback can serve to control what goes on in the system as a whole."/>
+			<xsd:enumeration value="Any system is usually connected to other systems, both internally and externally. Thus a system may be thought of as containing subsystems and as being a subsystem of a larger system."/>
+			<xsd:enumeration value="A system usually has some properties that are different from those of its parts, but appear because of the interaction of those parts."/>
+			<xsd:enumeration value="Understanding how things work and designing solutions to problems of almost any kind can be facilitated by systems analysis. In defining a system, it is important to specify its boundaries and subsystems, indicate its relation to other systems, and identify what its input and its output are expected to be."/>
+			<xsd:enumeration value="The successful operation of a designed system usually involves feedback. The feedback of output from some parts of a system to input of other parts can be used to encourage what is going on in a system, discourage it, or reduce its discrepancy from some desired value. The stability of a system can be greater when it includes appropriate feedback mechanisms."/>
+			<xsd:enumeration value="Even in some very simple systems, it may not always be possible to predict accurately the result of changing some part or connection."/>
+			<xsd:enumeration value="Many of the toys children play with are like real things only in some ways. They are not the same size, are missing many details, or are not able to do all of the same things."/>
+			<xsd:enumeration value="A model of something is different from the real thing but can be used to learn something about the real thing."/>
+			<xsd:enumeration value="One way to describe something is to say how it is like something else."/>
+			<xsd:enumeration value="Seeing how a model works after changes are made to it may suggest how the real thing would work if the same were done to it."/>
+			<xsd:enumeration value="Geometric figures, number sequences, graphs, diagrams, sketches, number lines, maps, and stories can be used to represent objects, events, and processes in the real world, although such representations can never be exact in every detail."/>
+			<xsd:enumeration value="Models are often used to think about processes that happen too slowly, too quickly, or on too small a scale to observe directly, or that are too vast to be changed deliberately, or that are potentially dangerous."/>
+			<xsd:enumeration value="Mathematical models can be displayed on a computer and then modified to see what happens."/>
+			<xsd:enumeration value="Different models can be used to represent the same thing. What kind of a model to use and how complex it should be depends on its purpose. The usefulness of a model may be limited if it is too simple or if it is needlessly complicated. Choosing a useful model is one of the instances in which intuition and creativity come into play in science, mathematics, and engineering."/>
+			<xsd:enumeration value="The basic idea of mathematical modeling is to find a mathematical relationship that behaves in the same ways as the objects or processes under investigation. A mathematical model may give insight about how something really works or may fit observations very well without any intuitive meaning."/>
+			<xsd:enumeration value="Computers have greatly improved the power and use of mathematical models by performing computations that are very long, very complicated, or repetitive. Therefore computers can show the consequences of applying complex rules or of changing the rules. The graphic capabilities of computers make them useful in the design and testing of devices and structures and in the simulation of complicated processes."/>
+			<!--In the next benchmark, the word true originally had double quites. It was changed to single quotes  because a double quote is a reserved XML character.-->
+			<xsd:enumeration value="The usefulness of a model can be tested by comparing its predictions to actual observations in the real world. But a close match does not necessarily mean that the model is the only 'true' model or the only one that would work."/>
+			<xsd:enumeration value="Things change in some ways and stay the same in some ways."/>
+			<xsd:enumeration value="People can keep track of some things, seeing where they come from and where they go."/>
+			<xsd:enumeration value="Things can change in different ways, such as in size, weight, color, and movement. Some small changes can be detected by taking measurements."/>
+			<xsd:enumeration value="Some changes are so slow or so fast that they are hard to see."/>
+			<xsd:enumeration value="Some features of things may stay the same even when other features change. Some patterns look the same when they are shifted over, or turned, or reflected, or seen from different directions."/>
+			<xsd:enumeration value="Things change in steady, repetitive, or irregular ways or sometimes in more than one way at the same time. Often the best way to tell which kinds of change are happening is to make a table or graph of measurements."/>
+			<xsd:enumeration value="Physical and biological systems tend to change until they become stable and then remain that way unless their surroundings change."/>
+			<xsd:enumeration value="A system may stay the same because nothing is happening or because things are happening but exactly counterbalance one another."/>
+			<xsd:enumeration value="Many systems contain feedback mechanisms that serve to keep changes within specified limits."/>
+			<xsd:enumeration value="Symbolic equations can be used to summarize how the quantity of something changes over time or in response to other changes."/>
+			<xsd:enumeration value="Symmetry (or the lack of it) may determine properties of many objects, from molecules and crystals to organisms and designed structures."/>
+			<xsd:enumeration value="Cycles, such as the seasons or body temperature, can be described by their cycle length or frequency, what their highest and lowest values are, and when these values occur. Different cycles range from many thousands of years down to less than a billionth of a second."/>
+			<xsd:enumeration value="A system in equilibrium may return to the same state of equilibrium if the disturbances it experiences are small. But large disturbances may cause it to escape that equilibrium and eventually settle into some other state of equilibrium."/>
+			<xsd:enumeration value="Along with the theory of atoms, the concept of the conservation of matter led to revolutionary advances in chemical science. The concept of conservation of energy is at the heart of advances in fields as diverse as the study of nuclear particles and the study of the origin of the universe."/>
+			<xsd:enumeration value="Things can change in detail but remain the same in general (the players change, but the team remains; cells are replaced, but the organism remains). Sometimes counterbalancing changes are necessary for a thing to retain its essential constancy in the presence of changing conditions."/>
+			<xsd:enumeration value="Graphs and equations are useful (and often equivalent) ways for depicting and analyzing patterns of change."/>
+			<xsd:enumeration value="In many physical, biological, and social systems, changes in one direction tend to produce opposing (but somewhat delayed) influences, leading to repetitive cycles of behavior."/>
+			<xsd:enumeration value="In evolutionary change, the present arises from the materials and forms of the past, more or less gradually, and in ways that can be explained."/>
+			<xsd:enumeration value="Most systems above the molecular level involve so many parts and forces and are so sensitive to tiny differences in conditions that their precise behavior is unpredictable, even if all the rules for change are known. Predictable or not, the precise future of a system is not completely determined by its present state and circumstances but also depends on the fundamentally uncertain outcomes of events on the atomic scale."/>
+			<xsd:enumeration value="Things in nature and things people make have very different sizes, weights, ages, and speeds."/>
+			<xsd:enumeration value="Almost anything has limits on how big or small it can be."/>
+			<xsd:enumeration value="Finding out what the biggest and the smallest possible values of something are is often as revealing as knowing what the usual value is."/>
+			<xsd:enumeration value="Properties of systems that depend on volume, such as capacity and weight, change out of proportion to properties that depend on area, such as strength or surface processes."/>
+			<xsd:enumeration value="As the complexity of any system increases, gaining an understanding of it depends increasingly on summaries, such as averages and ranges, and on descriptions of typical examples of that system."/>
+			<xsd:enumeration value="Representing large numbers in terms of powers of ten makes it easier to think about them and to compare things that are greatly different."/>
+			<xsd:enumeration value="Because different properties are not affected to the same degree by changes in scale, large changes in scale typically change the way that things work in physical, biological, or social systems."/>
+			<xsd:enumeration value="As the number of parts of a system increases, the number of possible interactions between pairs of parts increases much more rapidly."/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,15 @@
+<commParadata xmlns="http://ns.nsdl.org/ncs/comm_para" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ns.nsdl.org/ncs/comm_para http://ns.nsdl.org/ncs/comm_para/1.00/schemas/comm_para.xsd">
+  <recordId catalog="ICPALMS">RESOURCE-PARA-1034</recordId>
+  <paradataTitle>
+    <string language="en">Paradata for 'Free Math Worksheets/Addition and Subtraction'</string>
+  </paradataTitle>
+  <paradataDescription>
+    <string language="en">This record contains paradata for the resource 'Free Math Worksheets/Addition and Subtraction'</string>
+  </paradataDescription>
+  <usageDataResourceURL>http://www.mathfactcafe.com/view/view.aspx?t=P&amp;g=2</usageDataResourceURL>
+  <usageDataSummary>
+    <integer type="viewed" dateTimeStart="2010-11-01T00:00:00" dateTimeEnd="2012-08-12T23:08:37">635</integer>
+    <integer type="relatedTo" dateTimeStart="2010-11-01T00:00:00" dateTimeEnd="2012-08-12T23:08:37">1</integer>
+    <integer type="downloaded" dateTimeStart="2010-11-01T00:00:00" dateTimeEnd="2012-08-12T23:08:37">2</integer>
+  </usageDataSummary>
+</commParadata>

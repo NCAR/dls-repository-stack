@@ -1,0 +1,10 @@
+<!--List of the fields and groups files-->
+<!--Fields files contain metadata field definitions, terms (and definitions) and cataloging best practices-->
+<!--Groups files contain audience-based groupings and layout of controlled vocabulary terms-->
+
+<metadataInfoLists>
+	<files>
+		<groups>mast/1.0/build/groups-list.xml</groups>
+		<fields>mast/1.0/build/fields-list.xml</fields>
+	</files>
+</metadataInfoLists>

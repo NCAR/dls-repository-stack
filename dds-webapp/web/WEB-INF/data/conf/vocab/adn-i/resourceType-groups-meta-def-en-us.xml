@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groupsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/adn-i/resourceType.xsd">
+	<concept name="resourceType" system="meta" interface="default" language="en-us" label="Resource type">
+		<group label="Audio" >
+			<deftn source="DPC">A resource whose content is primarily audio or intended to be realized in audio (use for recorded items that have no visual component</deftn>
+			<item vocab="DLESE:Audio:Audio book"/>
+			<item vocab="DLESE:Audio:Audio webcast"/>
+			<item vocab="DLESE:Audio:Lecture"/>
+			<item vocab="DLESE:Audio:Music"/>
+			<item vocab="DLESE:Audio:Oral history"/>
+			<item vocab="DLESE:Audio:Radio broadcast"/>
+			<item vocab="DLESE:Audio:Sound"/>
+			<item vocab="DLESE"></item>
+			<item vocab="DLESE"></item>
+			
+		</group>
+	</concept>
+</groupsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

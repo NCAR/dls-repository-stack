@@ -1,0 +1,19 @@
+<%@ include file="scopes-include.jspf" %>
+
+<%-- Request --%>
+<div class="props-wrapper">
+	<h3>Request Scope Variables  <span class="control"> [ hide/show ]</span></h3>
+	<table class="props" width="100%">
+	<tr>
+		<th>key</th>
+		<th>value</th>
+	</tr>
+	
+	<c:forEach var="attr" items="${requestScope}" >
+		<tr valign="top">
+			<td width="30%">${attr.key}</td>
+			<td>${attr.value}</td>
+		</tr>
+	</c:forEach>
+	</table>
+</div>

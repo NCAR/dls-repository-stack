@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE form-validation PUBLIC
+		"-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1.3//EN"
+		"http://jakarta.apache.org/commons/dtds/validator_1_1_3.dtd">
+<form-validation>
+	<!--
+        This file is used to define the validators that are envoked for
+        given fields in the given Struts form bean.
+
+        Elements and attributes:
+            form name = The name of the form that will be validated
+            property = The property (field) that is validated
+            depends = Validation action that is performed on the property,
+                        as defined in validator-rules.xml
+            key = The resource bundle key to use to display the error message
+    -->
+
+
+	<!-- Validation for the repository information (default language formset) (copied from joai-project) -->
+	<formset>
+		<form name="repositoryInfoForm">
+			<field property="namespaceIdentifier" depends="namespaceidentifier" />
+			<field property="repositoryName" depends="required">
+				<msg name="required" key="error.repositoryName"/>
+			</field>
+			<field property="adminEmail" depends="email">
+				<msg name="email" key="error.adminEmail"/>
+			</field>
+			<field property="adminEmail" depends="required">
+				<msg name="required" key="error.empty.adminEmail"/>
+			</field>
+		</form>
+	</formset>
+
+</form-validation>

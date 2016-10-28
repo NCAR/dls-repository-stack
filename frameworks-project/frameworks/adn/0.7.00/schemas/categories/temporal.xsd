@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.7.00">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Overview  **************************************************************
+				This is an ADN item-level CATEGORY schema.
+				Tags defined: temporalCoverages
+		
+				Time interpretation notes for begin and end
+				begin - always the furthest back in time
+				end - always the most recent in time
+
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Other CATEGORY Schemas to Include  ********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="commonfields.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  VOCABULARY Schemas to Include  ***********************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:include schemaLocation="../vocabs/timeUnits.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>************************  ROOT Element  **********************************************
+							There is no root element for this schema.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************  Complex Types  (alpha order) *****************************
+	
+				ADType		  					is part of timeADType
+				pastType						is part of timePastType
+				periodType						is part of periodsType
+				periodsType					is part of timeAndPeriodType
+				temporalCoveragesType  		is part of ADNmetdataType in record.xsd
+				timeADType						is part of timeInfoType
+				timeAndPeriodType				is part of temporalCoveragesType
+				timeBCType						is part of timeInfoType
+				timeInfoType 					is part of timeAndPeriodType
+				timeRelativeType				is part of timeInfoType
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="ADType">
+		<xsd:annotation>
+			<xsd:documentation>
+				************   ADType  **************************************
+				These elements have the following types or schema associated with them.
+				date				is an attribute
+				time				is an attribute
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="date" type="union.dateType" use="required"/>
+				<xsd:attribute name="time" type="xsd:time" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="periodType">
+		<xsd:annotation>
+			<xsd:documentation>
+				************   periodType  **************************************
+				These elements have the following types or schema associated with them.
+				name			is a global; see commonfields.xsd
+				source			is a global; see commonfields.xsd
+				IDandURL		is complex; see commonfields.xsd
+				sourceDescr	is a global; see commonfields.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element ref="name" minOccurs="1" maxOccurs="1"/>
+			<xsd:element ref="source" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="IDandURL" type="IDandURLType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="sourceDesc" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="periodsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				************   periodsType  **************************************
+				These elements have the following types or schema associated with them.
+				period				is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="period" type="periodType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="relativeType">
+		<xsd:annotation>
+			<xsd:documentation>
+				******************   relativeType  **************************************
+				These elements have the following types or schema associated with them.
+				units			is an attribute; see timeUnits.xsd
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="relativeNumberType">
+				<xsd:attribute name="units" type="timeUnitsType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="temporalCoveragesType">
+		<xsd:annotation>
+			<xsd:documentation>
+				************   temporalCoverages Type  **************************************
+				temporalType is the root element for this schema.
+				These elements have the following types or schema associated with them.
+				timeAndPeriod			is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="timeAndPeriod" type="timeAndPeriodType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="timeADType">
+		<xsd:annotation>
+			<xsd:documentation>
+				************   timeADType  **************************************
+				These elements have the following types or schema associated with them.
+				begin				is complex
+				end					is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="begin" type="ADType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="end" type="ADType" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="timeAndPeriodType">
+		<xsd:annotation>
+			<xsd:documentation>
+				************   timeAndPeriod Type  **************************************
+				These elements have the following types or schema associated with them.
+				timeInfo				is complex
+				periodInfo			is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:all>
+			<xsd:element name="timeInfo" type="timeInfoType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="periods" type="periodsType" minOccurs="0" maxOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="timeBCType">
+		<xsd:annotation>
+			<xsd:documentation>
+				************   timeBCType  **************************************
+				These elements have the following types or schema associated with them.
+				begin				is a simple derived type gYear refers to an actual year; e.g -0357 with 4 digits as a minimum
+				begin				is furthest back in time
+				end					is a simpe derived; type gYear refers to an acutal year; e.g -0046 with 4 digits as a minimum
+				end					is the most recent in time
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="begin" type="BCType" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="end" type="BCType" minOccurs="1" maxOccurs="1" nillable="false"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="timeInfoType">
+		<xsd:annotation>
+			<xsd:documentation>
+				************   timeInfoType  **************************************
+				These elements have the following types or schema associated with them.
+				timeAD				is complex
+				timeBC				is complex
+				timeRelative			is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice minOccurs="1" maxOccurs="1">
+			<xsd:element name="timeAD" type="timeADType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="timeBC" type="timeBCType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="timeRelative" type="timeRelativeType" minOccurs="1" maxOccurs="1"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="timeRelativeType">
+		<xsd:annotation>
+			<xsd:documentation>
+				************   timeRelative Type  **************************************
+				These elements have the following types or schema associated with them.
+				begin				is complex
+				end					is complex
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="begin" type="relativeType" minOccurs="1" maxOccurs="1" nillable="false"/>
+			<xsd:element name="end" type="relativeType" minOccurs="1" maxOccurs="1" nillable="false"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************
+				BCType							is used in timeBCType
+				endADType						is used in timeADType
+				relativeNumberType				is used in relativeType
+
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="BCType">
+		<xsd:annotation>
+			<xsd:documentation>
+				************   BC Type  **************************************
+				- Ensures that null content is not accepted for the begin and end tags for the timeBCType
+				- Type gYear refers to an actual year; e.g -0357 with 4 digits as a minimum
+				- Since begin and end are to be before 0000 AD, the maxinclusive value has been set to 0001
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:gYear">
+			<xsd:maxInclusive value="-0001"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="relativeNumberType">
+		<xsd:annotation>
+			<xsd:documentation>
+				************   relativeNumberType  **************************************
+				Ensures that null content is not accepted for the begin and end tags for the timePastType
+				0.0 is allowed in order to represent concepts like 30 days ago to present
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:decimal">
+			<xsd:minInclusive value="0.0"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

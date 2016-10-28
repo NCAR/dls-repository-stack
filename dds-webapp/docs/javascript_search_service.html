@@ -1,0 +1,48 @@
+<html>
+<head>
+<title> Documentation for the DLESE JavaScript Search Service </title>
+	<link rel="stylesheet" type="text/css" href="/dlese_shared/dlese_styles.css" />
+	<link rel="stylesheet" type="text/css" href="/libdev/docs/docs_styles.css" />
+</head>
+<body>
+<h1> Documentation for the DLESE 
+    JavaScript Search Service </h1>
+<h2> Version 1.1</h2>
+<h2> Description </h2> 
+<p>The DLESE JavaScript Search  Service is used by internal and external web developers to create custom DLESE search web pages and to display  DLESE resources dynamically in static HTML pages. To implement a client, developers need only to use HTML, JavaScript and CSS, and  clients can be deployed to any static-page web server without the need to run CGI, Tomcat or other application software. The service returns HTML as a JavaScript write( ) statement, which is inserted into the static page using a JavaScript-based service API. Using the API, developers are able to customize both  the functional and display features of their client.  Functional features include the ability to limit the search page scope to a given sub-set of resources that are defined by term or field, ability to boost results that contain given terms or fields, and the ability to define and render custom menus and smart links that are defined by terms or fields. Display features include the ability to display or omit various HTML elements  in the search page. The available elements for display include a text form for submitting a search, menus for selecting grade levels, subjects, resource types, collection or standards, and control over what is displayed in the search results. </p>
+<h2> Audience </h2> 
+<p> This service is meant to be used by web page developers, library developers, educational designers or others wishing to incorporate DLESE resources and search functionality into their web sites.
+</p>
+<h2> How this component is used </h2>
+<p>The DLESE JavaScript search service is used by internal and external web developers to create custom DLESE search web pages and to display DLESE resources dynamically in static HTML pages. To implement a client, developers need only to use HTML, JavaScript and CSS, and clients can be deployed to any static-page web server without the need to run CGI, Tomcat or other application software.</p>
+<h2> Functional requirements </h2>
+<ul>
+  <li>Support distributed access to DLESE's search functionality repository of library resources.</li>
+  <li>Support the design, development and deployment of custom  interfaces that access and display DLESE resources.</li>
+  <li>Use technology that is readily available, relatively easy use, and can be deployed to a static web server.</li>
+</ul>
+<h2> Technologies used </h2>
+<p>The service is implement using Java 1.4, J2EE, Struts, Lucene 1.4, Tomcat 5, Dom4j, JSTL 1.1 tag libraries. Clients that access the service are implemented using HTML, JavaScript and CSS.
+</p>
+<h2> Development process and workflow </h2>
+<p>See the <a href="software-development-process.html">development process documentation</a>. </p>
+<h2>Dependencies on other DLESE components </h2>
+<p>The JavaScript search  service is built over the <a href="dds-documentation.html">DLESE Discovery System</a> (DDS). </p>
+<h2> Testing and maintenance procedures </h2>
+<p>See the <a href="software-development-process.html#testing">development process 
+  documentation section on testing</a>. 
+</p>
+<h2> Links to additional documentation </h2>
+<ul>
+  <li>The <a href="http://www.dlese.org/dds/services/jshtml1-1/">DLESE JavaScript Search Service home page</a>. </li>
+  <li>The <a href="http://www.dlese.org/dds/services/">DLESE Services portal</a>.</li>
+</ul>
+<p><br>
+  <i>Last updated: May 2007 </i><br>
+  <i>Author: John Weatherley</i><br>
+</p>
+</body>
+</html>
+
+
+

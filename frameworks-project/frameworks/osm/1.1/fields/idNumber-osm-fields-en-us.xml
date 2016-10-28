@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: idNumber-osm-fields-en-us.xml,v 1.3 2011/06/16 19:51:33 ginger Exp $ --> 
+<metadataFieldInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dlsciences.org/frameworks/fields" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/non-vocab-fields.xsd">
+  <field name="ID number" metaFormat="osm" metaVersion="1.1" language="en-us" path="/record/classify/idNumber">
+		<definition>a number that, as part of a well-defined scheme or convention, may be reliably referenced to recall or cite a resource</definition> 
+
+		 <bestPractices>
+			<dos>
+				<practice status="current" originDate="2010-05-31">This is field is optional.</practice> 
+				<practice status="current" originDate="2010-05-31">This field can be repeated.</practice> 
+				<practice status="current" originDate="2010-05-31">Enter the identifier, using digits, Roman numerals and/or letters as appropriate.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="arXiv" style1="bold">arXiv identifiers employ the following format: arXiv:0706.001v1. The 'v' is utilized to indicate versions of a given resource, and may or may not be present in the identifier. arXiv identifiers should begin with 'arXiv:'.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="Call" style1="bold">Call numbers have a variety of formats, and utilize both letters and Arabic numerals.  Do not preface call numbers with 'Call' or any other text or symbols.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="Citation/Article" style1="bold">Citation/Article numbers have a variety of formats, and often take the place of page numbers. In such cases, do not enter page numbers, rather catalog the citation/article number. Enter the number exactly as it is found on the publication or in the citation. Do not preface citation/article numbers with any text, abbreviation, or symbol.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="DOI" style1="bold">DOI names have two components; the prefix and the suffix. These are separated by a forward slash. The two components together form a DOI (e.g. 10.1000/123456). Enter DOIs exactly as they appear on the publication or in the citation. Do not preface DOIs with any text, abbreviation, or symbol.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="EPRINTS" style1="bold">EPRINTS identifiers are associated with an e-prints or online repository service. Each service has its own structure and format.  Enter e-prints identifiers exactly as they appear on the publication or in the citation. Include prefixes that help to identify the associated service, but do not include generic prefixes such as 'no.' and '#'.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="ISBNs" style1="bold">ISBNs have either 10 or 13 digits, separated by dashes. They include no letters, but should be prefaced by 'ISBN.'</practice> 
+				<practice status="current" originDate="2010-05-31" link1="ISSNs" style1="bold">ISSNs have 8 digits, separated by dashes. They include no letters, but should be prefaced by 'ISSN.'</practice> 
+				<practice status="current" originDate="2010-05-31" link1="PubID" style1="bold">PubID numbers indicate resources once held in the UCAR (NESL) publications database.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="Reports" style1="bold">Reports often use a mix of numbers and letters, including NCAR Technical Note numbers (e.g. NCAR/TN-481+STR).</practice> 
+				<practice status="current" originDate="2010-05-31" link1="SRef" style1="bold">SRef identifies resources associated with the scientific reference linking system SRef.  SRef-IDs will include a numerical prefix, an abbreviation indicating the publication name, and a suffix, each separated by forward slashes (e.g. 1680-7324/acp/2006-6-957). Precede the identifier with 'SRef :'.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="WMO" style1="bold">WMO identifiers have the general form of A1bwnnn or A1bwnnnnn. When this field. Precede the identifier with the prefix 'WMO'.</practice> 
+				<practice status="current" originDate="2010-05-31" link1="WOS" style1="bold">WOS identifiers include both Roman numerals and letters (e.g. 694EE).  When known, enter the WOS ID exactly as it appears on the publication or in the citation or bibliographic record. Precede the identifier with 'WOS'.</practice> 
+			 </dos>
+			 <donts>
+				 <practice status="current" originDate="2010-05-31">Do not preface or follow the text with a number sign, 'Number,' 'No.', or any other generic prefixes.</practice> 
+			 </donts>
+			 <examples>
+				<practice status="current" originDate="2010-05-31" link1="DOI" style1="bold" link2="Citation/Article" style2="bold">DOI and Citation/Article: England, S.L.  (2010), Modeling of multiple effects of tides on the ionosphere, J. Geophys. Res., 115, A05308, doi:10.1029. In this citation A05308 is the citation/article number and 10.1029 is the DOI.</practice>
+				<practice status="current" originDate="2010-05-31" link1="DOI" style1="bold">DOI: 10.1175/BAMS-87-3-343</practice>
+				<practice status="current" originDate="2010-05-31" link1="DOI" style1="bold">DOI: 10.5194/acp-10-169-2010</practice>
+				<practice status="current" originDate="2010-05-31" link1="Citation/Article" style1="bold">Citation/Article: 2010arXiv1003.4638G</practice>
+				<practice status="current" originDate="2010-05-31" link1="Citation/Article" style1="bold">Citation/Article: 2009AGUFMSM31A1517W</practice>
+				<practice status="current" originDate="2010-05-31" link1="ISBN" style1="bold">ISBN 85-359-0277-5</practice>
+				<practice status="current" originDate="2010-05-31" link1="ISBN" style1="bold">ISBN 978-0-306-40615-3</practice>
+				<practice status="current" originDate="2010-05-31" link1="WMO" style1="bold">WMO: WMO TD-No. 1485</practice>
+				<practice status="current" originDate="2010-05-31" link1="SREF" style1="bold">SREF: SREF:1607-7962/gra/EGU05-A-05634</practice>
+				<practice status="current" originDate="2010-05-31" link1="EPrint" style1="bold">EPrint: arXiv:1008.3382</practice>				
+			</examples>
+		 </bestPractices>
+		 <documentation>
+				<obligation>optional</obligation>
+		 	<min>0</min>
+				<max>unbounded</max>
+				<XMLdataTypes>
+					<XMLdataType>string</XMLdataType>
+				</XMLdataTypes>
+				<domain>free text</domain>
+				<example>xxx</example>
+			</documentation>
+  </field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

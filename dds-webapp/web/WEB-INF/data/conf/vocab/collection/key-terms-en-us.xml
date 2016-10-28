@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<termsRecord xmlns="http://www.vocabs.dlese" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vocabs.dlese
+http://www.dlese.org/Metadata/vocabularies/management/collection/key.xsd">
+	<field name="key" id="ky" language="en-us">
+		<definition system="meta" interface="default">An internal identifier by the DPC for identifying a collection</definition>
+		<definition system="dcs" interface="default"></definition>
+		<definition system="dds" interface="default"></definition>
+
+		<value vocab="adl" id="006" abbrv="ADL">
+			<definition system="meta" interface="default">Alexandria Digital Library adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="annos" id="00">
+			<definition system="meta" interface="default">All Digital Library for Earth System Education annotation item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="avc" id="01" abbrv="AVC">
+			<definition system="meta" interface="default">Atmospheric Visualization Collection adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="ceis" id="03" abbrv="Discover our Earth">
+			<definition system="meta" interface="default">Cornell Earth Information System Project: Discover Our Earth adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="collect" id="04">
+			<definition system="meta" interface="default">All Digital Library for Earth System Education collection records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="comet" id="05" abbrv="COMET">
+			<definition system="meta" interface="default">Cooperative Program for Operational Meteorology, Education and Training adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="crs" id="06" abbrv="CRS">
+			<definition system="meta" interface="default">Community Review System annotation item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="curl" id="08" abbrv="CURL">
+			<definition system="meta" interface="default">Curricular Resource Library adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="dcc" id="09" abbrv="DCC">
+			<definition system="meta" interface="default">Digital Library for Earth System Education Community Collection adn resource item-level records with cataloger info</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="dcccatout" id="0a">
+			<definition system="meta" interface="default">Digital Library for Earth System Education Community Collection adn resource item-level records without Cataloger info</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="dlese" id="0b">
+			<definition system="meta" interface="default">All Digital Library for Earth System Education adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="drc" id="0c" abbrv="DRC">
+			<definition system="meta" interface="default">Digital Library for Earth System Education Reviewed Collection annotation records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="dwel" id="0e" abbrv="DWEL">
+			<definition system="meta" interface="default">Digital Water Education Library adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="dwelanno" id="0f" abbrv="DWEL">
+			<definition system="meta" interface="default">Digital Water Education Library annotation item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="edmall" id="0g" abbrv="ED Mall">
+			<definition system="meta" interface="default">Education Mall adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="eseanno" id="007">
+			<definition system="meta" interface="default">NASA's Earth Science Education Reviewed Annotation Collection annotation item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="esedl" id="0h" abbrv="ESEDL">
+			<definition system="meta" interface="default">Earth Science Education Digital Library adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="eserev" id="008">
+			<definition system="meta" interface="default">NASA's Earth Science Education Reviewed Collection adn item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="evaltlkt" id="0i" abbrv="Eval Toolkit">
+			<definition system="meta" interface="default">Evaluation Toolkit</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="indent" id="005" abbrv="INDENT">
+			<definition system="meta" interface="default">INDENT annotation item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="jesse" id="0j" abbrv="JESSE">
+			<definition system="meta" interface="default">Journal for Earth System Science Education annotation item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="newsopps" id="0l" abbrv="News">
+			<definition system="meta" interface="default">Digital Library for Earth System Education news and opportunities item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="nsdladn" id="00b">
+			<definition system="meta" interface="default">The NSDL ADN collection (composed of DCC plus other collections)</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="nsdlanno" id="00c">
+			<definition system="meta" interface="default">The NSDL annotation collection (composed of annos and drc)</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="nsdlcollect" id="00d">
+			<definition system="meta" interface="default">The NSDL collection-level collection (composed of collect, esedl, serc)</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="serc" id="0m" abbrv="SERC">
+			<definition system="meta" interface="default">All Science Education Resource Center adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="serceet" id="0r" abbrv="Earth Explr Toolbk">
+			<definition system="meta" interface="default">Science Education Resource Center - Earth Exploration Toolbook adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="sercideas" id="0s" abbrv="Ideas">
+			<definition system="meta" interface="default">Science Education Resource Center - Ideas for Use annotation item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="sercnagt" id="0o" abbrv="Cutting Edge">
+			<definition system="meta" interface="default">Carleton College Science Education Resource Center (SERC) - National Association of Geoscience Teachers (NAGT) Cutting Edge Collection adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="sercstrtpt" id="0t" abbrv="Starting Point">
+			<definition system="meta" interface="default">Science Education Resource Center - Starting Point adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="sio" id="009">
+			<definition system="meta" interface="default">Scripps Institution of Oceanography Collection adn item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="testanno" id="00a">
+			<definition system="meta" interface="default">test collection annotation item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="test" id="0p">
+			<definition system="meta" interface="default">test collection adn item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+		<value vocab="thredds" id="0q" abbrv="THREDDS">
+			<definition system="meta" interface="default">Thematic Realtime Environmental Distributed Data Services adn resource item-level records</definition>
+			<definition system="dcs" interface="default"></definition>
+			<definition system="dds" interface="default"></definition>
+		</value>
+
+
+	</field>
+</termsRecord>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

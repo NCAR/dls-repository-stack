@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<dcsDataRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/devel/ostwald/tomcat/tomcat-clean/webapps/schemedit/WEB-INF/metadata-frameworks/dcs-data/dcs-data-v0-0-3.xsd">
+  <recordID>SAMPLE-000-000-000-025</recordID>
+  <isValid/>
+  <statusEntries>
+    <statusEntry>
+      <status>Unknown</status>
+      <statusNote/>
+      <editor>Unknown</editor>
+      <changeDate>2005-12-02T12:39:33Z</changeDate>
+    </statusEntry>
+  </statusEntries>
+  <lastTouchDate>2005-12-02T12:39:33Z</lastTouchDate>
+  <validationReport/>
+  <badChars/>
+</dcsDataRecord>

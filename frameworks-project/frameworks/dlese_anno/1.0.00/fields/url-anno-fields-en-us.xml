@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: url-anno-fields-en-us.xml,v 1.1 2009/01/30 21:32:40 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/annotation/1.0.00/non-vocab-fields.xsd">
+	<field name="Url - annotation content" language="en-us" metaFormat="dlese_anno" metaVersion="1.0.00" path="/annotationRecord/annotation/content/url">
+		<definition>a web page that augments user interaction with the resource being annotated</definition>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2006-02-16">Use to present the content of the annotation.</practice>
+				<practice status="current" originDate="2006-02-16">Use to provide contextual or supportive information for interacting with or using the resource.</practice>
+				<practice status="current" originDate="2005-04-15">Begin URLs with the proper Internet scheme like http://</practice>
+				<practice status="current" originDate="2005-04-15">URLs with ampersands, percent 20's, equal signs, underscores and question marks are okay.</practice>
+				<practice status="current" originDate="2005-04-15">Enter a URL which links directly to the annotation.</practice>
+			</dos>
+			<examples>
+				<practice status="current" originDate="2006-02-16" link1="http://serc.carleton.edu/climatechange/22.html" url1="http://serc.carleton.edu/climatechange/22.html">Content of an annotation: http://serc.carleton.edu/climatechange/22.html</practice>
+				<practice status="current" originDate="2006-02-16" link1="http://serc.carleton.edu/introgeo/teachingwdata/Graphs.html" url1="http://serc.carleton.edu/introgeo/teachingwdata/Graphs.html">Contextual or supportive information: (for a resource that requires graphing) http://serc.carleton.edu/introgeo/teachingwdata/Graphs.html</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>choice</obligation>
+			<min>1 or 0</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>free text</domain>
+			<example>http://url.tothe.annotation/content.html</example>
+			<other>true</other>
+			<notes>
+				<note>Other XPATH: /annotationRecord/annotation/contributors/contributor/organization/url</note>
+			</notes>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<frameworkConfigRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.dlese.org/Metadata/dcs/framework-config/dcsFrameworkConfig.xsd">
+  <xmlFormat>mymarc</xmlFormat>
+  <schemaInfo>
+    <schemaURI>http://www.dpc.ucar.edu/people/ostwald/Metadata/tester/myMarc.xsd</schemaURI>
+    <paths>
+      <path pathName="id" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="true">/collection/@id</path>
+      <path pathName="ind1" requiredByCopyRecord="true" requiredByMinimalRecord="true" readOnly="false" defaultValue=" " maxLen="1">/collection/record/datafield/@ind1</path>
+    </paths>
+    <rootElementName>collection</rootElementName>
+    <nameSpaceInfo/>
+  </schemaInfo>
+  <editorInfo>
+    <renderer>DleseEditorRenderer</renderer>
+    <baseRenderLevel>2</baseRenderLevel>
+    <rebuildOnStart>true</rebuildOnStart>
+    <editorConfig>noframes</editorConfig>
+  </editorInfo>
+</frameworkConfigRecord>

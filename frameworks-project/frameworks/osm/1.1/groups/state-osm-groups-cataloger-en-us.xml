@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: state-osm-groups-cataloger-en-us.xml,v 1.13 2011/05/13 18:53:52 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/state.xsd"
+version="2.0">
+	<head>
+		<title>State</title>
+<!--		This method of collapse-expand creates 2 hyperlinks (expand all | collapse all); the grouping method in outline creates a single triangle >expand/collapse all states. Use the hyperlink version there are subgroups because the expand all and collapse all will not work correctly. it is okay to use the outline grouping methos when the whole vocab can be grouped.-->
+<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="State" audience="cataloger" path="/record/coverage/location/@state" collapseExpand="true"/>
+
+
+	</head>
+	<body>
+		<outline text="United States" type="group" collapsible="true">
+			<outline text="Alabama" type="vocab" vocab="US-AL"/>
+			<outline text="Alaska" type="vocab" vocab="US-AK"/>
+			<outline text="American Samoa" type="vocab" vocab="US-AS"/>
+			<outline text="Arizona" type="vocab" vocab="US-AZ"/>
+			<outline text="Arkansas" type="vocab" vocab="US-AR"/>
+			<outline text="California" type="vocab" vocab="US-CA"/>
+			<outline text="Colorado" type="vocab" vocab="US-CO"/>
+			<outline text="Connecticut" type="vocab" vocab="US-CT"/>
+			<outline text="Delaware" type="vocab" vocab="US-DE"/>
+			<outline text="District of Columbia" type="vocab" vocab="US-DC"/>
+			<outline text="Florida" type="vocab" vocab="US-FL"/>
+			<outline text="Georgia" type="vocab" vocab="US-GA"/>
+			<outline text="Guam" type="vocab" vocab="US-GU"/>
+			<outline text="Hawaii" type="vocab" vocab="US-HI"/>
+			<outline text="Idaho" type="vocab" vocab="US-ID"/>
+			<outline text="Illinois" type="vocab" vocab="US-IL"/>
+			<outline text="Indiana" type="vocab" vocab="US-IN"/>
+			<outline text="Iowa" type="vocab" vocab="US-IA"/>
+			<outline text="Kansas" type="vocab" vocab="US-KS"/>
+			<outline text="Kentucky" type="vocab" vocab="US-KY"/>
+			<outline text="Louisiana" type="vocab" vocab="US-LA"/>
+			<outline text="Maine" type="vocab" vocab="US-ME"/>
+			<outline text="Maryland" type="vocab" vocab="US-MD"/>
+			<outline text="Massachusetts" type="vocab" vocab="US-MA"/>
+			<outline text="Michigan" type="vocab" vocab="US-MI"/>
+			<outline text="Minnesota" type="vocab" vocab="US-MN"/>
+			<outline text="Mississippi" type="vocab" vocab="US-MS"/>
+			<outline text="Missouri" type="vocab" vocab="US-MO"/>
+			<outline text="Montana" type="vocab" vocab="US-MT"/>
+			<outline text="Nebraska" type="vocab" vocab="US-NE"/>
+			<outline text="Nevada" type="vocab" vocab="US-NV"/>
+			<outline text="New Hampshire" type="vocab" vocab="US-NH"/>
+			<outline text="New Jersey" type="vocab" vocab="US-NJ"/>
+			<outline text="New Mexico" type="vocab" vocab="US-NM"/>
+			<outline text="New York" type="vocab" vocab="US-NY"/>
+			<outline text="North Carolina" type="vocab" vocab="US-NC"/>
+			<outline text="North Dakota" type="vocab" vocab="US-ND"/>
+			<outline text="Northern Mariana Islands" type="vocab" vocab="US-MP"/>
+			<outline text="Ohio" type="vocab" vocab="US-OH"/>
+			<outline text="Oklahoma" type="vocab" vocab="US-OK"/>
+			<outline text="Oregon" type="vocab" vocab="US-OR"/>
+			<outline text="Pennsylvania" type="vocab" vocab="US-PA"/>
+			<outline text="Puerto Rico" type="vocab" vocab="US-PR"/>
+			<outline text="Rhode Island" type="vocab" vocab="US-RI"/>
+			<outline text="South Carolina" type="vocab" vocab="US-SC"/>
+			<outline text="South Dakota" type="vocab" vocab="US-SD"/>
+			<outline text="Tennessee" type="vocab" vocab="US-TN"/>
+			<outline text="Texas" type="vocab" vocab="US-TX"/>
+			<outline text="US Minor Outlying Islands" type="vocab" vocab="US-UM"/>
+			<outline text="US Virgin Islands" type="vocab" vocab="US-VI"/>
+			<outline text="Utah" type="vocab" vocab="US-UT"/>
+			<outline text="Virginia" type="vocab" vocab="US-VA"/>
+			<outline text="Vermont" type="vocab" vocab="US-VT"/>
+			<outline text="Washington" type="vocab" vocab="US-WA"/>
+			<outline text="West Virginia" type="vocab" vocab="US-WV"/>
+			<outline text="Wisconsin" type="vocab" vocab="US-WI"/>
+			<outline text="Wyoming" type="vocab" vocab="US-WY"/>
+			<outline text="Armed Forces Americas (except Canada)" type="vocab" vocab="US-AA"/>
+			<outline text="Armed Forces Canada, Europe, Africa, Middle East" type="vocab" vocab="US-AE"/>
+			<outline text="Armed Forces Pacific" type="vocab" vocab="US-AP"/>
+		</outline>
+		<outline text="Australia" type="group"  collapsible="true">
+			<outline text="Australian Capital Territory" type="vocab" vocab="AU-ACT"/>
+			<outline text="New South Wales" type="vocab" vocab="AU-NSW"/>
+			<outline text="Northern Territory" type="vocab" vocab="AU-NT"/>
+			<outline text="Queensland" type="vocab" vocab="AU-QLD"/>
+			<outline text="South Australia" type="vocab" vocab="AU-SA"/>
+			<outline text="Tasmania" type="vocab" vocab="AU-TAS"/>
+			<outline text="Victoria" type="vocab" vocab="AU-VIC"/>
+			<outline text="Western Australia" type="vocab" vocab="AU-WA"/>
+		</outline>
+		<outline text="Austria" type="group"  collapsible="true">
+			<outline text="Burgenland" type="vocab" vocab="AT-1"/>
+			<outline text="Karnten" type="vocab" vocab="AT-2"/>
+			<outline text="Niederosterreich" type="vocab" vocab="AT-3"/>
+			<outline text="Oberosterreich" type="vocab" vocab="AT-4"/>
+			<outline text="Salzburg" type="vocab" vocab="AT-5"/>
+			<outline text="Steiermark" type="vocab" vocab="AT-6"/>
+			<outline text="Tirol" type="vocab" vocab="AT-7"/>
+			<outline text="Vorarlberg" type="vocab" vocab="AT-8"/>
+			<outline text="Wien" type="vocab" vocab="AT-9"/>
+		</outline>
+		<outline text="Brazil" type="group"  collapsible="true">
+			<outline text="Acre" type="vocab" vocab="BR-AC"/>
+			<outline text="Alagoas" type="vocab" vocab="BR-AL"/>
+			<outline text="Amazonas" type="vocab" vocab="BR-AM"/>
+			<outline text="Amapa" type="vocab" vocab="BR-AP"/>
+			<outline text="Bahia" type="vocab" vocab="BR-BA"/>
+			<outline text="Ceara" type="vocab" vocab="BR-CE"/>
+			<outline text="Distrito Federal" type="vocab" vocab="BR-DF"/>
+			<outline text="Espirito Santo" type="vocab" vocab="BR-ES"/>
+			<outline text="Goias" type="vocab" vocab="BR-GO"/>
+			<outline text="Maranhao" type="vocab" vocab="BR-MA"/>
+			<outline text="Mato Grosso" type="vocab" vocab="BR-MT"/>
+			<outline text="Mato Grosso do Sul" type="vocab" vocab="BR-MS"/>
+			<outline text="Minas Gerais" type="vocab" vocab="BR-MG"/>
+			<outline text="Para" type="vocab" vocab="BR-PA"/>
+			<outline text="Paraiba" type="vocab" vocab="BR-PB"/>
+			<outline text="Parana" type="vocab" vocab="BR-PR"/>
+			<outline text="Pernambuco" type="vocab" vocab="BR-PE"/>
+			<outline text="Piaui" type="vocab" vocab="BR-PI"/>
+			<outline text="Rio de Janeiro" type="vocab" vocab="BR-RJ"/>
+			<outline text="Rio Grande do Norte" type="vocab" vocab="BR-RN"/>
+			<outline text="Rio Grande do Sul" type="vocab" vocab="BR-RS"/>
+			<outline text="Rondonia" type="vocab" vocab="BR-RO"/>
+			<outline text="Roraima" type="vocab" vocab="BR-RR"/>
+			<outline text="Santa Catarina" type="vocab" vocab="BR-SC"/>
+			<outline text="Sao Paulo" type="vocab" vocab="BR-SP"/>
+			<outline text="Sergipe" type="vocab" vocab="BR-SE"/>
+			<outline text="Tocantins" type="vocab" vocab="BR-TO"/>
+		</outline>
+		<outline text="Canada" type="group"  collapsible="true">
+			<outline text="Alberta" type="vocab" vocab="CA-AB"/>
+			<outline text="British Columbia" type="vocab" vocab="CA-BC"/>
+			<outline text="Manitoba" type="vocab" vocab="CA-MB"/>
+			<outline text="New Brunswick" type="vocab" vocab="CA-NB"/>
+			<outline text="Newfoundland and Labrador" type="vocab" vocab="CA-NL"/>
+			<outline text="Northwest Territories" type="vocab" vocab="CA-NT"/>
+			<outline text="Nova Scotia" type="vocab" vocab="CA-NS"/>
+			<outline text="Nunavut" type="vocab" vocab="CA-NU"/>
+			<outline text="Ontario" type="vocab" vocab="CA-ON"/>
+			<outline text="Prince Edward Island" type="vocab" vocab="CA-PE"/>
+			<outline text="Quebec" type="vocab" vocab="CA-QC"/>
+			<outline text="Saskatchewan" type="vocab" vocab="CA-SK"/>
+			<outline text="Yukon Territory" type="vocab" vocab="CA-YT"/>
+		</outline>
+		<outline text="China" type="group"  collapsible="true">
+			<outline text="Anhui" type="vocab" vocab="CN-34"/>
+			<outline text="Aomen" type="vocab" vocab="CN-92"/>
+			<outline text="Beijing" type="vocab" vocab="CN-11"/>
+			<outline text="Chongqing" type="vocab" vocab="CN-50"/>
+			<outline text="Fujian" type="vocab" vocab="CN-35"/>
+			<outline text="Gansu" type="vocab" vocab="CN-62"/>
+			<outline text="Guangdong" type="vocab" vocab="CN-44"/>
+			<outline text="Guangxi" type="vocab" vocab="CN-45"/>
+			<outline text="Guizhou" type="vocab" vocab="CN-52"/>
+			<outline text="Hainan" type="vocab" vocab="CN-46"/>
+			<outline text="Hebei" type="vocab" vocab="CN-13"/>
+			<outline text="Heilongjiang" type="vocab" vocab="CN-23"/>
+			<outline text="Henan" type="vocab" vocab="CN-41"/>
+			<outline text="Hubei" type="vocab" vocab="CN-42"/>
+			<outline text="Hunan" type="vocab" vocab="CN-43"/>
+			<outline text="Jilin" type="vocab" vocab="CN-22"/>
+			<outline text="Jiangsu" type="vocab" vocab="CN-32"/>
+			<outline text="Jiangxi" type="vocab" vocab="CN-36"/>
+			<outline text="Liaoning" type="vocab" vocab="CN-21"/>
+			<outline text="Nei Mongol (Inner Mongolia)" type="vocab" vocab="CN-15"/>
+			<outline text="Ningxia" type="vocab" vocab="CN-64"/>
+			<outline text="Qinghai" type="vocab" vocab="CN-63"/>
+			<outline text="Shandong" type="vocab" vocab="CN-37"/>
+			<outline text="Shanghai" type="vocab" vocab="CN-31"/>
+			<outline text="Shanxi" type="vocab" vocab="CN-14"/>
+			<outline text="Sichuan" type="vocab" vocab="CN-51"/>
+			<outline text="Shaanxi" type="vocab" vocab="CN-61"/>
+<!--2011-04-01: removed so that taiwan will only appear as a country and not a country and a province
+			<outline text="Taiwan" type="vocab" vocab="CN-71"/>
+-->
+			<outline text="Tianjin" type="vocab" vocab="CN-12"/>
+			<outline text="Xianggang (Hong Kong)" type="vocab" vocab="CN-91"/>
+			<outline text="Xinjiang" type="vocab" vocab="CN-65"/>
+			<outline text="Xizang (Tibet)" type="vocab" vocab="CN-54"/>
+			<outline text="Yunnan" type="vocab" vocab="CN-53"/>
+			<outline text="Zhejiang" type="vocab" vocab="CN-33"/>
+		</outline>
+
+		<outline text="Egypt" type="group"  collapsible="true">
+			<outline text="Al Minufiyah" type="vocab" vocab="EG-MNF"/>
+		</outline>
+
+		<outline text="France" type="group"  collapsible="true">
+			<outline text="Ain" type="vocab" vocab="FR-01"/>
+			<outline text="Aisne" type="vocab" vocab="FR-02"/>
+			<outline text="Allier" type="vocab" vocab="FR-03"/>
+			<outline text="Alpes-de-Haute-Provence" type="vocab" vocab="FR-04"/>
+			<outline text="Alpes-Maritimes" type="vocab" vocab="FR-06"/>
+			<outline text="Ardennes" type="vocab" vocab="FR-08"/>
+			<outline text="Ardeche" type="vocab" vocab="FR-07"/>
+			<outline text="Ariege" type="vocab" vocab="FR-09"/>
+			<outline text="Aube" type="vocab" vocab="FR-10"/>
+			<outline text="Aude" type="vocab" vocab="FR-11"/>
+			<outline text="Aveyron" type="vocab" vocab="FR-12"/>
+			<outline text="Bas-Rhin" type="vocab" vocab="FR-67"/>
+			<outline text="Bouches-du-Rhone" type="vocab" vocab="FR-13"/>
+			<outline text="Calvados" type="vocab" vocab="FR-14"/>
+			<outline text="Cantal" type="vocab" vocab="FR-15"/>
+			<outline text="Charente" type="vocab" vocab="FR-16"/>
+			<outline text="Charente-Maritime" type="vocab" vocab="FR-17"/>
+			<outline text="Cher" type="vocab" vocab="FR-18"/>
+			<outline text="Clipperton" type="vocab" vocab="FR-CP"/>
+			<outline text="Correze" type="vocab" vocab="FR-19"/>
+			<outline text="Corse-du-Sud" type="vocab" vocab="FR-2A"/>
+			<outline text="Creuse" type="vocab" vocab="FR-23"/>
+			<outline text="Cote-d'Or" type="vocab" vocab="FR-21"/>
+			<outline text="Cotes-d'Armor" type="vocab" vocab="FR-22"/>
+			<outline text="Deux-Sevres" type="vocab" vocab="FR-79"/>
+			<outline text="Dordogne" type="vocab" vocab="FR-24"/>
+			<outline text="Doubs" type="vocab" vocab="FR-25"/>
+			<outline text="Drome" type="vocab" vocab="FR-26"/>
+			<outline text="Essonne" type="vocab" vocab="FR-91"/>
+			<outline text="Eure" type="vocab" vocab="FR-27"/>
+			<outline text="Eure-et-Loir" type="vocab" vocab="FR-28"/>
+			<outline text="Finistere" type="vocab" vocab="FR-29"/>
+			<outline text="Gard" type="vocab" vocab="FR-30"/>
+			<outline text="Gers" type="vocab" vocab="FR-32"/>
+			<outline text="Gironde" type="vocab" vocab="FR-33"/>
+			<outline text="Haut-Rhin" type="vocab" vocab="FR-68"/>
+			<outline text="Haute-Corse" type="vocab" vocab="FR-2B"/>
+			<outline text="Haute-Garonne" type="vocab" vocab="FR-31"/>
+			<outline text="Haute-Loire" type="vocab" vocab="FR-43"/>
+			<outline text="Haute-Marne" type="vocab" vocab="FR-52"/>
+			<outline text="Haute-Savoie" type="vocab" vocab="FR-74"/>
+			<outline text="Haute-Saone" type="vocab" vocab="FR-70"/>
+			<outline text="Haute-Vienne" type="vocab" vocab="FR-87"/>
+			<outline text="Hautes-Alpes" type="vocab" vocab="FR-05"/>
+			<outline text="Hautes-Pyrenees" type="vocab" vocab="FR-65"/>
+			<outline text="Hauts-de-Seine" type="vocab" vocab="FR-92"/>
+			<outline text="Herault" type="vocab" vocab="FR-34"/>
+			<outline text="Ille-et-Vilaine" type="vocab" vocab="FR-35"/>
+			<outline text="Indre" type="vocab" vocab="FR-36"/>
+			<outline text="Indre-et-Loire" type="vocab" vocab="FR-37"/>
+			<outline text="Isere" type="vocab" vocab="FR-38"/>
+			<outline text="Jura" type="vocab" vocab="FR-39"/>
+			<outline text="Landes" type="vocab" vocab="FR-40"/>
+			<outline text="Loir-et-Cher" type="vocab" vocab="FR-41"/>
+			<outline text="Loire" type="vocab" vocab="FR-42"/>
+			<outline text="Loire-Atlantique" type="vocab" vocab="FR-44"/>
+			<outline text="Loiret" type="vocab" vocab="FR-45"/>
+			<outline text="Lot" type="vocab" vocab="FR-46"/>
+			<outline text="Lot-et-Garonne" type="vocab" vocab="FR-47"/>
+			<outline text="Lozere" type="vocab" vocab="FR-48"/>
+			<outline text="Maine-et-Loire" type="vocab" vocab="FR-49"/>
+			<outline text="Manche" type="vocab" vocab="FR-50"/>
+			<outline text="Marne" type="vocab" vocab="FR-51"/>
+			<outline text="Mayenne" type="vocab" vocab="FR-53"/>
+			<outline text="Meurthe-et-Moselle" type="vocab" vocab="FR-54"/>
+			<outline text="Meuse" type="vocab" vocab="FR-55"/>
+			<outline text="Morbihan" type="vocab" vocab="FR-56"/>
+			<outline text="Moselle" type="vocab" vocab="FR-57"/>
+			<outline text="Nievre" type="vocab" vocab="FR-58"/>
+			<outline text="Nord" type="vocab" vocab="FR-59"/>
+			<outline text="Oise" type="vocab" vocab="FR-60"/>
+			<outline text="Orne" type="vocab" vocab="FR-61"/>
+			<outline text="Paris" type="vocab" vocab="FR-75"/>
+			<outline text="Pas-de-Calais" type="vocab" vocab="FR-62"/>
+			<outline text="Puy-de-Dome" type="vocab" vocab="FR-63"/>
+			<outline text="Pyrenees-Atlantiques" type="vocab" vocab="FR-64"/>
+			<outline text="Pyrenees-Orientales" type="vocab" vocab="FR-66"/>
+			<outline text="Rhone" type="vocab" vocab="FR-69"/>
+			<outline text="Sarthe" type="vocab" vocab="FR-72"/>
+			<outline text="Savoie" type="vocab" vocab="FR-73"/>
+			<outline text="Saone-et-Loire" type="vocab" vocab="FR-71"/>
+			<outline text="Seine-et-Marne" type="vocab" vocab="FR-77"/>
+			<outline text="Seine-Maritime" type="vocab" vocab="FR-76"/>
+			<outline text="Seine-Saint-Denis" type="vocab" vocab="FR-93"/>
+			<outline text="Somme" type="vocab" vocab="FR-80"/>
+			<outline text="Tarn" type="vocab" vocab="FR-81"/>
+			<outline text="Tarn-et-Garonne" type="vocab" vocab="FR-82"/>
+			<outline text="Territoire de Belfort" type="vocab" vocab="FR-90"/>
+			<outline text="Val-d'Oise" type="vocab" vocab="FR-95"/>
+			<outline text="Val-de-Marne" type="vocab" vocab="FR-94"/>
+			<outline text="Var" type="vocab" vocab="FR-83"/>
+			<outline text="Vaucluse" type="vocab" vocab="FR-84"/>
+			<outline text="Vendee" type="vocab" vocab="FR-85"/>
+			<outline text="Vienne" type="vocab" vocab="FR-86"/>
+			<outline text="Vosges" type="vocab" vocab="FR-88"/>
+			<outline text="Yonne" type="vocab" vocab="FR-89"/>
+			<outline text="Yvelines" type="vocab" vocab="FR-78"/>
+		</outline>
+
+		<outline text="Germany" type="group"  collapsible="true" wrap="true">
+			<outline text="Baden-Wurttemberg" type="vocab" vocab="DE-BW"/>
+			<outline text="Bayern" type="vocab" vocab="DE-BY"/>
+			<outline text="Berlin" type="vocab" vocab="DE-BE"/>
+			<outline text="Brandenburg" type="vocab" vocab="DE-BB"/>
+			<outline text="Bremen" type="vocab" vocab="DE-HB"/>
+			<outline text="Hamburg" type="vocab" vocab="DE-HH"/>
+			<outline text="Hessen" type="vocab" vocab="DE-HE"/>
+			<outline text="Mecklenburg-Vorpommern" type="vocab" vocab="DE-MV"/>
+			<outline text="Niedersachsen" type="vocab" vocab="DE-NI"/>
+			<outline text="Nordrhein-Westfalen" type="vocab" vocab="DE-NW"/>
+			<outline text="Rheinland-Pfalz" type="vocab" vocab="DE-RP"/>
+			<outline text="Saarland" type="vocab" vocab="DE-SL"/>
+			<outline text="Sachsen" type="vocab" vocab="DE-SN"/>
+			<outline text="Sachsen-Anhalt" type="vocab" vocab="DE-ST"/>
+			<outline text="Schleswig-Holstein" type="vocab" vocab="DE-SH"/>
+			<outline text="Thuringen" type="vocab" vocab="DE-TH"/>
+		</outline>
+    
+		<outline text="India" type="group"  collapsible="true">
+			<outline text="Andaman and Nicobar Islands" type="vocab" vocab="IN-AN"/>
+			<outline text="Andhra Pradesh" type="vocab" vocab="IN-AP"/>
+			<outline text="Arunachal Pradesh" type="vocab" vocab="IN-AR"/>
+			<outline text="Assam" type="vocab" vocab="IN-AS"/>
+			<outline text="Bihar" type="vocab" vocab="IN-BR"/>
+			<outline text="Chandigarh" type="vocab" vocab="IN-CH"/>
+			<outline text="Chhattisgarh" type="vocab" vocab="IN-CT"/>
+			<outline text="Dadra and Nagar Haveli" type="vocab" vocab="IN-DN"/>
+			<outline text="Daman and Diu" type="vocab" vocab="IN-DD"/>
+			<outline text="Delhi" type="vocab" vocab="IN-DL"/>
+			<outline text="Goa" type="vocab" vocab="IN-GA"/>
+			<outline text="Gujarat" type="vocab" vocab="IN-GJ"/>
+			<outline text="Haryana" type="vocab" vocab="IN-HR"/>
+			<outline text="Himachal Pradesh" type="vocab" vocab="IN-HP"/>
+			<outline text="Jammu and Kashmir" type="vocab" vocab="IN-JK"/>
+			<outline text="Jharkhand" type="vocab" vocab="IN-JH"/>
+			<outline text="Karnataka" type="vocab" vocab="IN-KA"/>
+			<outline text="Kerala" type="vocab" vocab="IN-KL"/>
+			<outline text="Lakshadweep" type="vocab" vocab="IN-LD"/>
+			<outline text="Maharashtra" type="vocab" vocab="IN-MH"/>
+			<outline text="Manipur" type="vocab" vocab="IN-MN"/>
+			<outline text="Madhya Pradesh" type="vocab" vocab="IN-MP"/>
+			<outline text="Meghalaya" type="vocab" vocab="IN-ML"/>
+			<outline text="Mizoram" type="vocab" vocab="IN-MZ"/>
+			<outline text="Nagaland" type="vocab" vocab="IN-NL"/>
+			<outline text="Orissa" type="vocab" vocab="IN-OR"/>
+			<outline text="Pondicherry" type="vocab" vocab="IN-PY"/>
+			<outline text="Punjab" type="vocab" vocab="IN-PB"/>
+			<outline text="Rajasthan" type="vocab" vocab="IN-RJ"/>
+			<outline text="Sikkim" type="vocab" vocab="IN-SK"/>
+			<outline text="Tamil Nadu" type="vocab" vocab="IN-TN"/>
+			<outline text="Tripura" type="vocab" vocab="IN-TR"/>
+			<outline text="Uttaranchal" type="vocab" vocab="IN-UL"/>
+			<outline text="Uttar Pradesh" type="vocab" vocab="IN-UP"/>
+			<outline text="West Bengal" type="vocab" vocab="IN-WB"/>
+		</outline>
+		<outline text="Ireland" type="group"  collapsible="true">
+			<outline text="Carlow" type="vocab" vocab="IE-CW"/>
+			<outline text="Cavan" type="vocab" vocab="IE-CN"/>
+			<outline text="Clare" type="vocab" vocab="IE-CE"/>
+			<outline text="Cork" type="vocab" vocab="IE-C"/>
+			<outline text="Donegal" type="vocab" vocab="IE-DL"/>
+			<outline text="Dublin" type="vocab" vocab="IE-D"/>
+			<outline text="Galway" type="vocab" vocab="IE-G"/>
+			<outline text="Kildare" type="vocab" vocab="IE-KE"/>
+			<outline text="Kilkenny" type="vocab" vocab="IE-KK"/>
+			<outline text="Kerry" type="vocab" vocab="IE-KY"/>
+			<outline text="Laois" type="vocab" vocab="IE-LS"/>
+			<outline text="Leitrim" type="vocab" vocab="IE-LM"/>
+			<outline text="Limerick" type="vocab" vocab="IE-LK"/>
+			<outline text="Longford" type="vocab" vocab="IE-LD"/>
+			<outline text="Louth" type="vocab" vocab="IE-LH"/>
+			<outline text="Mayo" type="vocab" vocab="IE-MO"/>
+			<outline text="Meath" type="vocab" vocab="IE-MH"/>
+			<outline text="Monaghan" type="vocab" vocab="IE-MN"/>
+			<outline text="Offaly" type="vocab" vocab="IE-OY"/>
+			<outline text="Roscommon" type="vocab" vocab="IE-RN"/>
+			<outline text="Sligo" type="vocab" vocab="IE-SO"/>
+			<outline text="Tipperary" type="vocab" vocab="IE-TA"/>
+			<outline text="Waterford" type="vocab" vocab="IE-WD"/>
+			<outline text="Westmeath" type="vocab" vocab="IE-WH"/>
+			<outline text="Wexford" type="vocab" vocab="IE-WX"/>
+			<outline text="Wicklow" type="vocab" vocab="IE-WW"/>
+		</outline>
+		<outline text="Italy" type="group"  collapsible="true">
+			<outline text="Agrigento" type="vocab" vocab="IT-AG"/>
+			<outline text="Alessandria" type="vocab" vocab="IT-AL"/>
+			<outline text="Ancona" type="vocab" vocab="IT-AN"/>
+			<outline text="Aosta" type="vocab" vocab="IT-AO"/>
+			<outline text="Arezzo" type="vocab" vocab="IT-AR"/>
+			<outline text="Ascoli Piceno" type="vocab" vocab="IT-AP"/>
+			<outline text="Asti" type="vocab" vocab="IT-AT"/>
+			<outline text="Avellino" type="vocab" vocab="IT-AV"/>
+			<outline text="Bari" type="vocab" vocab="IT-BA"/>
+			<outline text="Barletta-Andria-Trani" type="vocab" vocab="IT-BT"/>
+			<outline text="Bergamo" type="vocab" vocab="IT-BG"/>
+			<outline text="Belluno" type="vocab" vocab="IT-BL"/>
+			<outline text="Benevento" type="vocab" vocab="IT-BN"/>
+			<outline text="Biella" type="vocab" vocab="IT-BI"/>
+			<outline text="Bologna" type="vocab" vocab="IT-BO"/>
+			<outline text="Bolzano" type="vocab" vocab="IT-BZ"/>
+			<outline text="Brescia" type="vocab" vocab="IT-BS"/>
+			<outline text="Brindisi" type="vocab" vocab="IT-BR"/>
+			<outline text="Cagliari" type="vocab" vocab="IT-CA"/>
+			<outline text="Caltanissetta" type="vocab" vocab="IT-CL"/>
+			<outline text="Campobasso" type="vocab" vocab="IT-CB"/>
+			<outline text="Carbonia-Iglesias" type="vocab" vocab="IT-CI"/>
+			<outline text="Caserta" type="vocab" vocab="IT-CE"/>
+			<outline text="Catania" type="vocab" vocab="IT-CT"/>
+			<outline text="Catanzaro" type="vocab" vocab="IT-CZ"/>
+			<outline text="Chieti" type="vocab" vocab="IT-CH"/>
+			<outline text="Como" type="vocab" vocab="IT-CO"/>
+			<outline text="Cosenza" type="vocab" vocab="IT-CS"/>
+			<outline text="Cremona" type="vocab" vocab="IT-CR"/>
+			<outline text="Cuneo" type="vocab" vocab="IT-CN"/>
+			<outline text="Enna" type="vocab" vocab="IT-EN"/>
+			<outline text="Fermo" type="vocab" vocab="IT-FM"/>
+			<outline text="Ferrara" type="vocab" vocab="IT-FE"/>
+			<outline text="Firenze" type="vocab" vocab="IT-FI"/>
+			<outline text="Foggia" type="vocab" vocab="IT-FG"/>
+			<outline text="Forli-Cesena" type="vocab" vocab="IT-FC"/>
+			<outline text="Frosinone" type="vocab" vocab="IT-FR"/>
+			<outline text="Genova" type="vocab" vocab="IT-GE"/>
+			<outline text="Gorizia" type="vocab" vocab="IT-GO"/>
+			<outline text="Grosseto" type="vocab" vocab="IT-GR"/>
+			<outline text="Imperia" type="vocab" vocab="IT-IM"/>
+			<outline text="Isernia" type="vocab" vocab="IT-IS"/>
+			<outline text="Crotone" type="vocab" vocab="IT-KR"/>
+			<outline text="L'Aquila" type="vocab" vocab="IT-AQ"/>
+			<outline text="La Spezia" type="vocab" vocab="IT-SP"/>
+			<outline text="Latina" type="vocab" vocab="IT-LT"/>
+			<outline text="Lecce" type="vocab" vocab="IT-LE"/>
+			<outline text="Lecco" type="vocab" vocab="IT-LC"/>
+			<outline text="Livorno" type="vocab" vocab="IT-LI"/>
+			<outline text="Lodi" type="vocab" vocab="IT-LO"/>
+			<outline text="Lucca" type="vocab" vocab="IT-LU"/>
+			<outline text="Macerata" type="vocab" vocab="IT-MC"/>
+			<outline text="Mantova" type="vocab" vocab="IT-MN"/>
+			<outline text="Massa-Carrara" type="vocab" vocab="IT-MS"/>
+			<outline text="Matera" type="vocab" vocab="IT-MT"/>
+			<outline text="Medio Campidano" type="vocab" vocab="IT-MA"/>
+			<outline text="Messina" type="vocab" vocab="IT-ME"/>
+			<outline text="Milano" type="vocab" vocab="IT-MI"/>
+			<outline text="Modena" type="vocab" vocab="IT-MO"/>
+			<outline text="Monza e Brianza" type="vocab" vocab="IT-MB"/>
+			<outline text="Napoli" type="vocab" vocab="IT-NA"/>
+			<outline text="Novara" type="vocab" vocab="IT-NO"/>
+			<outline text="Nuoro" type="vocab" vocab="IT-NU"/>
+			<outline text="Ogliastra" type="vocab" vocab="IT-OG"/>
+			<outline text="Olbia-Tempio" type="vocab" vocab="IT-OL"/>
+			<outline text="Oristano" type="vocab" vocab="IT-OR"/>
+			<outline text="Padova" type="vocab" vocab="IT-PD"/>
+			<outline text="Palermo" type="vocab" vocab="IT-PA"/>
+			<outline text="Parma" type="vocab" vocab="IT-PR"/>
+			<outline text="Pavia" type="vocab" vocab="IT-PV"/>
+			<outline text="Pesaro e Urbino" type="vocab" vocab="IT-PS"/>
+			<outline text="Pescara" type="vocab" vocab="IT-PE"/>
+			<outline text="Perugia" type="vocab" vocab="IT-PG"/>
+			<outline text="Piacenza" type="vocab" vocab="IT-PC"/>
+			<outline text="Pisa" type="vocab" vocab="IT-PI"/>
+			<outline text="Pistoia" type="vocab" vocab="IT-PT"/>
+			<outline text="Pordenone" type="vocab" vocab="IT-PN"/>
+			<outline text="Potenza" type="vocab" vocab="IT-PZ"/>
+			<outline text="Prato" type="vocab" vocab="IT-PO"/>
+			<outline text="Ragusa" type="vocab" vocab="IT-RG"/>
+			<outline text="Ravenna" type="vocab" vocab="IT-RA"/>
+			<outline text="Reggio Calabria" type="vocab" vocab="IT-RC"/>
+			<outline text="Reggio Emilia" type="vocab" vocab="IT-RE"/>
+			<outline text="Rieti" type="vocab" vocab="IT-RI"/>
+			<outline text="Rimini" type="vocab" vocab="IT-RN"/>
+			<outline text="Roma" type="vocab" vocab="IT-RM"/>
+			<outline text="Rovigo" type="vocab" vocab="IT-RO"/>
+			<outline text="Salerno" type="vocab" vocab="IT-SA"/>
+			<outline text="Sassari" type="vocab" vocab="IT-SS"/>
+			<outline text="Savona" type="vocab" vocab="IT-SV"/>
+			<outline text="Siena" type="vocab" vocab="IT-SI"/>
+			<outline text="Siracusa" type="vocab" vocab="IT-SR"/>
+			<outline text="Sondrio" type="vocab" vocab="IT-SO"/>
+			<outline text="Teramo" type="vocab" vocab="IT-TE"/>
+			<outline text="Taranto" type="vocab" vocab="IT-TA"/>
+			<outline text="Terni" type="vocab" vocab="IT-TR"/>
+			<outline text="Torino" type="vocab" vocab="IT-TO"/>
+			<outline text="Trapani" type="vocab" vocab="IT-TP"/>
+			<outline text="Trento" type="vocab" vocab="IT-TN"/>
+			<outline text="Treviso" type="vocab" vocab="IT-TV"/>
+			<outline text="Trieste" type="vocab" vocab="IT-TS"/>
+			<outline text="Udine" type="vocab" vocab="IT-UD"/>
+			<outline text="Verbano-Cusio-Ossola" type="vocab" vocab="IT-VB"/>
+			<outline text="Varese" type="vocab" vocab="IT-VA"/>
+			<outline text="Venezia" type="vocab" vocab="IT-VE"/>
+			<outline text="Vercelli" type="vocab" vocab="IT-VC"/>
+			<outline text="Verona" type="vocab" vocab="IT-VR"/>
+			<outline text="Vibo Valentia" type="vocab" vocab="IT-VV"/>
+			<outline text="Vicenza" type="vocab" vocab="IT-VI"/>
+			<outline text="Viterbo" type="vocab" vocab="IT-VT"/>
+		</outline>
+
+		<outline text="Japan" type="group"  collapsible="true">
+			<outline text="Aichi" type="vocab" vocab="JP-23"/>
+			<outline text="Akita" type="vocab" vocab="JP-05"/>
+			<outline text="Aomori" type="vocab" vocab="JP-02"/>
+			<outline text="Chiba" type="vocab" vocab="JP-12"/>
+			<outline text="Ehime" type="vocab" vocab="JP-38"/>
+			<outline text="Fukui" type="vocab" vocab="JP-18"/>
+			<outline text="Fukuoka" type="vocab" vocab="JP-40"/>
+			<outline text="Fukushima" type="vocab" vocab="JP-07"/>
+			<outline text="Gifu" type="vocab" vocab="JP-21"/>
+			<outline text="Gunma" type="vocab" vocab="JP-10"/>
+			<outline text="Hiroshima" type="vocab" vocab="JP-34"/>
+			<outline text="Hokkaido" type="vocab" vocab="JP-01"/>
+			<outline text="Hyogo" type="vocab" vocab="JP-28"/>
+			<outline text="Ibaraki" type="vocab" vocab="JP-08"/>
+			<outline text="Ishikawa" type="vocab" vocab="JP-17"/>
+			<outline text="Iwate" type="vocab" vocab="JP-03"/>
+			<outline text="Kagawa" type="vocab" vocab="JP-37"/>
+			<outline text="Kagoshima" type="vocab" vocab="JP-46"/>
+			<outline text="Kanagawa" type="vocab" vocab="JP-14"/>
+			<outline text="Kochi" type="vocab" vocab="JP-39"/>
+			<outline text="Kumamoto" type="vocab" vocab="JP-43"/>
+			<outline text="Kyoto" type="vocab" vocab="JP-26"/>
+			<outline text="Mie" type="vocab" vocab="JP-24"/>
+			<outline text="Miyagi" type="vocab" vocab="JP-04"/>
+			<outline text="Miyazaki" type="vocab" vocab="JP-45"/>
+			<outline text="Nagano" type="vocab" vocab="JP-20"/>
+			<outline text="Nagasaki" type="vocab" vocab="JP-42"/>
+			<outline text="Nara" type="vocab" vocab="JP-29"/>
+			<outline text="Niigata" type="vocab" vocab="JP-15"/>
+			<outline text="Oita" type="vocab" vocab="JP-44"/>
+			<outline text="Okayama" type="vocab" vocab="JP-33"/>
+			<outline text="Okinawa" type="vocab" vocab="JP-47"/>
+			<outline text="Osaka" type="vocab" vocab="JP-27"/>
+			<outline text="Saga" type="vocab" vocab="JP-41"/>
+			<outline text="Saitama" type="vocab" vocab="JP-11"/>
+			<outline text="Shiga" type="vocab" vocab="JP-25"/>
+			<outline text="Shimane" type="vocab" vocab="JP-32"/>
+			<outline text="Shizuoka" type="vocab" vocab="JP-22"/>
+			<outline text="Tochigi" type="vocab" vocab="JP-09"/>
+			<outline text="Tokushima" type="vocab" vocab="JP-36"/>
+			<outline text="Tokyo" type="vocab" vocab="JP-13"/>
+			<outline text="Tottori" type="vocab" vocab="JP-31"/>
+			<outline text="Toyama" type="vocab" vocab="JP-16"/>
+			<outline text="Wakayama" type="vocab" vocab="JP-30"/>
+			<outline text="Yamagata" type="vocab" vocab="JP-06"/>
+			<outline text="Yamaguchi" type="vocab" vocab="JP-35"/>
+			<outline text="Yamanashi" type="vocab" vocab="JP-19"/>
+		</outline>
+		<outline text="Malaysia" type="group"  collapsible="true" wrap="true">
+			<outline text="Johor" type="vocab" vocab="MY-01"/>
+			<outline text="Kedah" type="vocab" vocab="MY-02"/>
+			<outline text="Kelantan" type="vocab" vocab="MY-03"/>
+			<outline text="Melaka" type="vocab" vocab="MY-04"/>
+			<outline text="Negeri Sembilan" type="vocab" vocab="MY-05"/>
+			<outline text="Pahang" type="vocab" vocab="MY-06"/>
+			<outline text="Perak" type="vocab" vocab="MY-08"/>
+			<outline text="Perlis" type="vocab" vocab="MY-09"/>
+			<outline text="Pulau Pinang" type="vocab" vocab="MY-07"/>
+			<outline text="Sabah" type="vocab" vocab="MY-12"/>
+			<outline text="Sarawak" type="vocab" vocab="MY-13"/>
+			<outline text="Selangor" type="vocab" vocab="MY-10"/>
+			<outline text="Terengganu" type="vocab" vocab="MY-11"/>
+			<outline text="Wilayah Persekutuan Kuala Lumpur" type="vocab" vocab="MY-14"/>
+			<outline text="Wilayah Persekutuan Labuan" type="vocab" vocab="MY-15"/>
+			<outline text="Wilayah Persekutuan Putrajaya" type="vocab" vocab="MY-16"/>
+		</outline>
+		<outline text="Marshall Islands" type="group"  collapsible="true">
+			<outline text="Ailinglaplap" type="vocab" vocab="MH-ALL"/>
+			<outline text="Ailuk" type="vocab" vocab="MH-ALK"/>
+			<outline text="Arno" type="vocab" vocab="MH-ARN"/>
+			<outline text="Aur" type="vocab" vocab="MH-AUR"/>
+			<outline text="Ebon" type="vocab" vocab="MH-EBO"/>
+			<outline text="Enewetak" type="vocab" vocab="MH-ENI"/>
+			<outline text="Jabat" type="vocab" vocab="MH-JAB"/>
+			<outline text="Jaluit" type="vocab" vocab="MH-JAL"/>
+			<outline text="Kili" type="vocab" vocab="MH-KIL"/>
+			<outline text="Kwajalein" type="vocab" vocab="MH-KWA"/>
+			<outline text="Lae" type="vocab" vocab="MH-LAE"/>
+			<outline text="Lib" type="vocab" vocab="MH-LIB"/>
+			<outline text="Likiep" type="vocab" vocab="MH-LIK"/>
+			<outline text="Majuro" type="vocab" vocab="MH-MAJ"/>
+			<outline text="Maloelap" type="vocab" vocab="MH-MAL"/>
+			<outline text="Mejit" type="vocab" vocab="MH-MEJ"/>
+			<outline text="Mili" type="vocab" vocab="MH-MIL"/>
+			<outline text="Namdrik" type="vocab" vocab="MH-NMK"/>
+			<outline text="Namu" type="vocab" vocab="MH-NMU"/>
+			<outline text="Rongelap" type="vocab" vocab="MH-RON"/>
+			<outline text="Ujae" type="vocab" vocab="MH-UJA"/>
+			<outline text="Utirik" type="vocab" vocab="MH-UTI"/>
+			<outline text="Wotho" type="vocab" vocab="MH-WTH"/>
+			<outline text="Wotje" type="vocab" vocab="MH-WTJ"/>
+		</outline>
+		<outline text="Mexico" type="group"  collapsible="true">
+			<outline text="Aguascalientes" type="vocab" vocab="MX-AGU"/>
+			<outline text="Baja California" type="vocab" vocab="MX-BCN"/>
+			<outline text="Baja California Sur" type="vocab" vocab="MX-BCS"/>
+			<outline text="Campeche" type="vocab" vocab="MX-CAM"/>
+			<outline text="Chiapas" type="vocab" vocab="MX-CHP"/>
+			<outline text="Chihuahua" type="vocab" vocab="MX-CHH"/>
+			<outline text="Coahuila" type="vocab" vocab="MX-COA"/>
+			<outline text="Colima" type="vocab" vocab="MX-COL"/>
+			<outline text="Distrito Federal" type="vocab" vocab="MX-DIF"/>
+			<outline text="Durango" type="vocab" vocab="MX-DUR"/>
+			<outline text="Guanajuato" type="vocab" vocab="MX-GUA"/>
+			<outline text="Guerrero" type="vocab" vocab="MX-GRO"/>
+			<outline text="Hidalgo" type="vocab" vocab="MX-HID"/>
+			<outline text="Jalisco" type="vocab" vocab="MX-JAL"/>
+			<outline text="Mexico" type="vocab" vocab="MX-MEX"/>
+			<outline text="Michoacan" type="vocab" vocab="MX-MIC"/>
+			<outline text="Morelos" type="vocab" vocab="MX-MOR"/>
+			<outline text="Nayarit" type="vocab" vocab="MX-NAY"/>
+			<outline text="Nuevo Leon" type="vocab" vocab="MX-NLE"/>
+			<outline text="Oaxaca" type="vocab" vocab="MX-OAX"/>
+			<outline text="Puebla" type="vocab" vocab="MX-PUE"/>
+			<outline text="Queretaro" type="vocab" vocab="MX-QUE"/>
+			<outline text="Quintana Roo" type="vocab" vocab="MX-ROO"/>
+			<outline text="San Luis Potosi" type="vocab" vocab="MX-SLP"/>
+			<outline text="Sinaloa" type="vocab" vocab="MX-SIN"/>
+			<outline text="Sonora" type="vocab" vocab="MX-SON"/>
+			<outline text="Tabasco" type="vocab" vocab="MX-TAB"/>
+			<outline text="Tamaulipas" type="vocab" vocab="MX-TAM"/>
+			<outline text="Tlaxcala" type="vocab" vocab="MX-TLA"/>
+			<outline text="Veracruz" type="vocab" vocab="MX-VER"/>
+			<outline text="Yucatan" type="vocab" vocab="MX-YUC"/>
+			<outline text="Zacatecas" type="vocab" vocab="MX-ZAC"/>
+		</outline>
+		<outline text="Micronesia" type="group"  collapsible="true">
+			<outline text="Chuuk" type="vocab" vocab="FM-TRK"/>
+			<outline text="Kosrae" type="vocab" vocab="FM-KSA"/>
+			<outline text="Pohnpei" type="vocab" vocab="FM-PNI"/>
+			<outline text="Yap" type="vocab" vocab="FM-YAP"/>
+		</outline>
+		<outline text="Netherlands" type="group"  collapsible="true">
+			<outline text="Drenthe" type="vocab" vocab="NL-DR"/>
+			<outline text="Flevoland" type="vocab" vocab="NL-FL"/>
+			<outline text="Friesland" type="vocab" vocab="NL-FR"/>
+			<outline text="Gelderland" type="vocab" vocab="NL-GE"/>
+			<outline text="Groningen" type="vocab" vocab="NL-GR"/>
+			<outline text="Limburg" type="vocab" vocab="NL-LI"/>
+			<outline text="Noord-Brabant" type="vocab" vocab="NL-NB"/>
+			<outline text="Noord-Holland" type="vocab" vocab="NL-NH"/>
+			<outline text="Overijssel" type="vocab" vocab="NL-OV"/>
+			<outline text="Utrecht" type="vocab" vocab="NL-UT"/>
+			<outline text="Zeeland" type="vocab" vocab="NL-ZE"/>
+			<outline text="Zuid-Holland" type="vocab" vocab="NL-ZH"/>
+		</outline>
+		<outline text="New Zealand" type="group"  collapsible="true">
+			<outline text="Auckland" type="vocab" vocab="NZ-AUK"/>
+			<outline text="Bay of Plenty" type="vocab" vocab="NZ-BOP"/>
+			<outline text="Canterbury" type="vocab" vocab="NZ-CAN"/>
+			<outline text="Chatham Islands" type="vocab" vocab="NZ-X1~"/>
+			<outline text="Gisborne" type="vocab" vocab="NZ-GIS"/>
+			<outline text="Hawkes's Bay" type="vocab" vocab="NZ-HKB"/>
+			<outline text="Manawatu-Wanganui" type="vocab" vocab="NZ-MWT"/>
+			<outline text="Marlborough" type="vocab" vocab="NZ-MBH"/>
+			<outline text="Nelson" type="vocab" vocab="NZ-NSN"/>
+			<outline text="Northland" type="vocab" vocab="NZ-NTL"/>
+			<outline text="Otago" type="vocab" vocab="NZ-OTA"/>
+			<outline text="Southland" type="vocab" vocab="NZ-STL"/>
+			<outline text="Taranaki" type="vocab" vocab="NZ-TKI"/>
+			<outline text="Tasman" type="vocab" vocab="NZ-TAS"/>
+			<outline text="Waikato" type="vocab" vocab="NZ-WKO"/>
+			<outline text="Wellington" type="vocab" vocab="NZ-WGN"/>
+			<outline text="West Coast" type="vocab" vocab="NZ-WTC"/>
+		</outline>
+		<outline text="Palau" type="group"  collapsible="true">
+			<outline text="Aimeliik" type="vocab" vocab="PW-002"/>
+			<outline text="Airai" type="vocab" vocab="PW-004"/>
+			<outline text="Angaur" type="vocab" vocab="PW-010"/>
+			<outline text="Hatobohei" type="vocab" vocab="PW-050"/>
+			<outline text="Kayangel" type="vocab" vocab="PW-100"/>
+			<outline text="Koror" type="vocab" vocab="PW-150"/>
+			<outline text="Melekeok" type="vocab" vocab="PW-212"/>
+			<outline text="Ngaraard" type="vocab" vocab="PW-214"/>
+			<outline text="Ngarchelong" type="vocab" vocab="PW-218"/>
+			<outline text="Ngardmau" type="vocab" vocab="PW-222"/>
+			<outline text="Ngatpang" type="vocab" vocab="PW-224"/>
+			<outline text="Ngchesar" type="vocab" vocab="PW-226"/>
+			<outline text="Ngeremlengui" type="vocab" vocab="PW-227"/>
+			<outline text="Ngiwal" type="vocab" vocab="PW-228"/>
+			<outline text="Peleliu" type="vocab" vocab="PW-350"/>
+			<outline text="Sonsorol" type="vocab" vocab="PW-370"/>
+		</outline>
+		<outline text="Philippines" type="group"  collapsible="true">
+			<outline text="Abra" type="vocab" vocab="PH-ABR"/>
+			<outline text="Agusan del Norte" type="vocab" vocab="PH-AGN"/>
+			<outline text="Agusan del Sur" type="vocab" vocab="PH-AGS"/>
+			<outline text="Aklan" type="vocab" vocab="PH-AKL"/>
+			<outline text="Albay" type="vocab" vocab="PH-ALB"/>
+			<outline text="Antique" type="vocab" vocab="PH-ANT"/>
+			<outline text="Apayao" type="vocab" vocab="PH-APA"/>
+			<outline text="Aurora" type="vocab" vocab="PH-AUR"/>
+			<outline text="Basilan" type="vocab" vocab="PH-BAS"/>
+			<outline text="Bataan" type="vocab" vocab="PH-BAN"/>
+			<outline text="Batangas" type="vocab" vocab="PH-BTG"/>
+			<outline text="Batanes" type="vocab" vocab="PH-BTN"/>
+			<outline text="Benguet" type="vocab" vocab="PH-BEN"/>
+			<outline text="Biliran" type="vocab" vocab="PH-BIL"/>
+			<outline text="Bohol" type="vocab" vocab="PH-BOH"/>
+			<outline text="Bukidnon" type="vocab" vocab="PH-BUK"/>
+			<outline text="Bulacan" type="vocab" vocab="PH-BUL"/>
+			<outline text="Cagayan" type="vocab" vocab="PH-CAG"/>
+			<outline text="Camarines Norte" type="vocab" vocab="PH-CAN"/>
+			<outline text="Camarines Sur" type="vocab" vocab="PH-CAS"/>
+			<outline text="Camiguin" type="vocab" vocab="PH-CAM"/>
+			<outline text="Capiz" type="vocab" vocab="PH-CAP"/>
+			<outline text="Catanduanes" type="vocab" vocab="PH-CAT"/>
+			<outline text="Cavite" type="vocab" vocab="PH-CAV"/>
+			<outline text="Cebu" type="vocab" vocab="PH-CEB"/>
+			<outline text="Compostela Valley" type="vocab" vocab="PH-COM"/>
+			<outline text="Davao del Sur" type="vocab" vocab="PH-DAS"/>
+			<outline text="Davao del Norte" type="vocab" vocab="PH-DAV"/>
+			<outline text="Davao Oriental" type="vocab" vocab="PH-DAO"/>
+			<outline text="Dinagat" type="vocab" vocab="PH-X1~"/>
+			<outline text="Eastern Samar" type="vocab" vocab="PH-EAS"/>
+			<outline text="Guimaras" type="vocab" vocab="PH-GUI"/>
+			<outline text="Ifugao" type="vocab" vocab="PH-IFU"/>
+			<outline text="Ilocos Norte" type="vocab" vocab="PH-ILN"/>
+			<outline text="Ilocos Sur" type="vocab" vocab="PH-ILS"/>
+			<outline text="Iloilo" type="vocab" vocab="PH-ILI"/>
+			<outline text="Isabela" type="vocab" vocab="PH-ISA"/>
+			<outline text="Kalinga" type="vocab" vocab="PH-KAL"/>
+			<outline text="Laguna" type="vocab" vocab="PH-LAG"/>
+			<outline text="Lanao del Norte" type="vocab" vocab="PH-LAN"/>
+			<outline text="Lanao del Sur" type="vocab" vocab="PH-LAS"/>
+			<outline text="La Union" type="vocab" vocab="PH-LUN"/>
+			<outline text="Leyte" type="vocab" vocab="PH-LEY"/>
+			<outline text="Maguindanao" type="vocab" vocab="PH-MAG"/>
+			<outline text="Manila" type="vocab" vocab="PH-MNL"/>
+			<outline text="Marinduque" type="vocab" vocab="PH-MAD"/>
+			<outline text="Masbate" type="vocab" vocab="PH-MAS"/>
+			<outline text="Mindoro Occidental" type="vocab" vocab="PH-MDC"/>
+			<outline text="Mindoro Oriental" type="vocab" vocab="PH-MDR"/>
+			<outline text="Misamis Occidental" type="vocab" vocab="PH-MSC"/>
+			<outline text="Misamis Oriental" type="vocab" vocab="PH-MSR"/>
+			<outline text="Mountain Province" type="vocab" vocab="PH-MOU"/>
+			<outline text="Negros Occidental" type="vocab" vocab="PH-NEC"/>
+			<outline text="Negros Oriental" type="vocab" vocab="PH-NER"/>
+			<outline text="North Cotabato" type="vocab" vocab="PH-NCO"/>
+			<outline text="Northern Samar" type="vocab" vocab="PH-NSA"/>
+			<outline text="Nueva Ecija" type="vocab" vocab="PH-NUE"/>
+			<outline text="Nueva Vizcaya" type="vocab" vocab="PH-NUV"/>
+			<outline text="Palawan" type="vocab" vocab="PH-PLW"/>
+			<outline text="Pampanga" type="vocab" vocab="PH-PAM"/>
+			<outline text="Pangasinan" type="vocab" vocab="PH-PAN"/>
+			<outline text="Quezon" type="vocab" vocab="PH-QUE"/>
+			<outline text="Quirino" type="vocab" vocab="PH-QUI"/>
+			<outline text="Rizal" type="vocab" vocab="PH-RIZ"/>
+			<outline text="Romblon" type="vocab" vocab="PH-ROM"/>
+			<outline text="Sarangani" type="vocab" vocab="PH-SAR"/>
+			<outline text="Shariff Kabunsuan" type="vocab" vocab="PH-X2~"/>
+			<outline text="Siquijor" type="vocab" vocab="PH-SIG"/>
+			<outline text="Sorsogon" type="vocab" vocab="PH-SOR"/>
+			<outline text="South Cotabato" type="vocab" vocab="PH-SCO"/>
+			<outline text="Southern Leyte" type="vocab" vocab="PH-SLE"/>
+			<outline text="Sultan Kudarat" type="vocab" vocab="PH-SUK"/>
+			<outline text="Sulu" type="vocab" vocab="PH-SLU"/>
+			<outline text="Surigao del Norte" type="vocab" vocab="PH-SUN"/>
+			<outline text="Surigao del Sur" type="vocab" vocab="PH-SUR"/>
+			<outline text="Tarlac" type="vocab" vocab="PH-TAR"/>
+			<outline text="Tawi-Tawi" type="vocab" vocab="PH-TAW"/>
+			<outline text="Western Samar" type="vocab" vocab="PH-WSA"/>
+			<outline text="Zambales" type="vocab" vocab="PH-ZMB"/>
+			<outline text="Zamboanga del Norte" type="vocab" vocab="PH-ZAN"/>
+			<outline text="Zamboanga del Sur" type="vocab" vocab="PH-ZAS"/>
+			<outline text="Zamboanga Sibuguey" type="vocab" vocab="PH-ZSI"/>
+		</outline>
+
+		<outline text="Romaina" type="group"  collapsible="true">
+			<outline text="Sibiu" type="vocab"  vocab="RO-SB"/>
+		</outline>
+		
+		<outline text="Spain" type="group"  collapsible="true">
+			<outline text="A Coruna" type="vocab" vocab="ES-C"/>
+			<outline text="Alava" type="vocab" vocab="ES-VI"/>
+			<outline text="Albacete" type="vocab" vocab="ES-AB"/>
+			<outline text="Alicante" type="vocab" vocab="ES-A"/>
+			<outline text="Almeria" type="vocab" vocab="ES-AL"/>
+			<outline text="Asturias" type="vocab" vocab="ES-O"/>
+			<outline text="Avila" type="vocab" vocab="ES-AV"/>
+			<outline text="Badajoz" type="vocab" vocab="ES-BA"/>
+			<outline text="Baleares" type="vocab" vocab="ES-PM"/>
+			<outline text="Barcelona" type="vocab" vocab="ES-B"/>
+			<outline text="Burgos" type="vocab" vocab="ES-BU"/>
+			<outline text="Cadiz" type="vocab" vocab="ES-CA"/>
+			<outline text="Caceres" type="vocab" vocab="ES-CC"/>
+			<outline text="Cantabria" type="vocab" vocab="ES-S"/>
+			<outline text="Castellon" type="vocab" vocab="ES-CS"/>
+			<outline text="Ceuta" type="vocab" vocab="ES-CE"/>
+			<outline text="Ciudad Real" type="vocab" vocab="ES-CR"/>
+			<outline text="Cordoba" type="vocab" vocab="ES-CO"/>
+			<outline text="Cuenca" type="vocab" vocab="ES-CU"/>
+			<outline text="Girona" type="vocab" vocab="ES-GI"/>
+			<outline text="Granada" type="vocab" vocab="ES-GR"/>
+			<outline text="Guadalajara" type="vocab" vocab="ES-GU"/>
+			<outline text="Guipuzcoa" type="vocab" vocab="ES-SS"/>
+			<outline text="Huelva" type="vocab" vocab="ES-H"/>
+			<outline text="Huesca" type="vocab" vocab="ES-HU"/>
+			<outline text="Jaen" type="vocab" vocab="ES-J"/>
+			<outline text="La Rioja" type="vocab" vocab="ES-LO"/>
+			<outline text="Las Palmas" type="vocab" vocab="ES-GC"/>
+			<outline text="Leon" type="vocab" vocab="ES-LE"/>
+			<outline text="Lleida" type="vocab" vocab="ES-L"/>
+			<outline text="Lugo" type="vocab" vocab="ES-LU"/>
+			<outline text="Madrid" type="vocab" vocab="ES-M"/>
+			<outline text="Malaga" type="vocab" vocab="ES-MA"/>
+			<outline text="Melilla" type="vocab" vocab="ES-ML"/>
+			<outline text="Murcia" type="vocab" vocab="ES-MU"/>
+			<outline text="Navarra" type="vocab" vocab="ES-NA"/>
+			<outline text="Ourense" type="vocab" vocab="ES-OR"/>
+			<outline text="Palencia" type="vocab" vocab="ES-P"/>
+			<outline text="Pontevedra" type="vocab" vocab="ES-PO"/>
+			<outline text="Salamanca" type="vocab" vocab="ES-SA"/>
+			<outline text="Santa Cruz de Tenerife" type="vocab" vocab="ES-TF"/>
+			<outline text="Segovia" type="vocab" vocab="ES-SG"/>
+			<outline text="Sevilla" type="vocab" vocab="ES-SE"/>
+			<outline text="Soria" type="vocab" vocab="ES-SO"/>
+			<outline text="Tarragona" type="vocab" vocab="ES-T"/>
+			<outline text="Teruel" type="vocab" vocab="ES-TE"/>
+			<outline text="Toledo" type="vocab" vocab="ES-TO"/>
+			<outline text="Valencia" type="vocab" vocab="ES-V"/>
+			<outline text="Valladolid" type="vocab" vocab="ES-VA"/>
+			<outline text="Vizcaya" type="vocab" vocab="ES-BI"/>
+			<outline text="Zaragoza" type="vocab" vocab="ES-Z"/>
+			<outline text="Zamora" type="vocab" vocab="ES-ZA"/>
+		</outline>
+		<outline text="Taiwan" type="group"  collapsible="true" wrap="true">
+			<outline text="Taipei" type="vocab" vocab="TW-TPQ"/>
+			<outline text="Taoyuan" type="vocab" vocab="TW-TAO"/>
+		</outline>
+		<outline text="United Kingdom" type="group"  collapsible="true">
+			<outline text="Aberdeen City" type="vocab" vocab="GB-ABE"/>
+			<outline text="Aberdeenshire" type="vocab" vocab="GB-ABD"/>
+			<outline text="Argyll and Bute" type="vocab" vocab="GB-AGB"/>
+			<outline text="Angus" type="vocab" vocab="GB-ANS"/>
+			<outline text="Antrim" type="vocab" vocab="GB-ANT"/>
+			<outline text="Ards" type="vocab" vocab="GB-ARD"/>
+			<outline text="Armagh" type="vocab" vocab="GB-ARM"/>
+			<outline text="Ballymena" type="vocab" vocab="GB-BLA"/>
+			<outline text="Ballymoney" type="vocab" vocab="GB-BLY"/>
+			<outline text="Banbridge" type="vocab" vocab="GB-BNB"/>
+			<outline text="Barnsley" type="vocab" vocab="GB-BNS"/>
+			<outline text="Barking and Dagenham" type="vocab" vocab="GB-BDG"/>
+			<outline text="Barnet" type="vocab" vocab="GB-BNE"/>
+			<outline text="Bath and North East Somerset" type="vocab" vocab="GB-BAS"/>
+			<outline text="Bedfordshire" type="vocab" vocab="GB-BDF"/>
+			<outline text="Belfast" type="vocab" vocab="GB-BFS"/>
+			<outline text="Bexley" type="vocab" vocab="GB-BEX"/>
+			<outline text="Birmingham" type="vocab" vocab="GB-BIR"/>
+			<outline text="Blackburn with Darwen" type="vocab" vocab="GB-BBD"/>
+			<outline text="Blackpool" type="vocab" vocab="GB-BPL"/>
+			<outline text="Blaenau Gwent" type="vocab" vocab="GB-BGW"/>
+			<outline text="Bolton" type="vocab" vocab="GB-BOL"/>
+			<outline text="Bournemouth" type="vocab" vocab="GB-BMH"/>
+			<outline text="Bracknell Forest" type="vocab" vocab="GB-BRC"/>
+			<outline text="Bradford" type="vocab" vocab="GB-BRD"/>
+			<outline text="Brent" type="vocab" vocab="GB-BEN"/>
+			<outline text="Bridgend" type="vocab" vocab="GB-BGE"/>
+			<outline text="Brighton and Hove" type="vocab" vocab="GB-BNH"/>
+			<outline text="Bristol" type="vocab" vocab="GB-BST"/>
+			<outline text="Bromley" type="vocab" vocab="GB-BRY"/>
+			<outline text="Buckinghamshire" type="vocab" vocab="GB-BKM"/>
+			<outline text="Bury" type="vocab" vocab="GB-BUR"/>
+			<outline text="Caerphilly" type="vocab" vocab="GB-CAY"/>
+			<outline text="Calderdale" type="vocab" vocab="GB-CLD"/>
+			<outline text="Cambridgeshire" type="vocab" vocab="GB-CAM"/>
+			<outline text="Camden" type="vocab" vocab="GB-CMD"/>
+			<outline text="Cardiff" type="vocab" vocab="GB-CRF"/>
+			<outline text="Carmarthenshire" type="vocab" vocab="GB-CMN"/>
+			<outline text="Carrickfergus" type="vocab" vocab="GB-CKF"/>
+			<outline text="Castlereagh" type="vocab" vocab="GB-CSR"/>
+			<outline text="Ceredigion" type="vocab" vocab="GB-CGN"/>
+			<outline text="Cheshire" type="vocab" vocab="GB-CHS"/>
+			<outline text="Clackmannanshire" type="vocab" vocab="GB-CLK"/>
+			<outline text="Coleraine" type="vocab" vocab="GB-CLR"/>
+			<outline text="Conwy" type="vocab" vocab="GB-CWY"/>
+			<outline text="Cookstown" type="vocab" vocab="GB-CKT"/>
+			<outline text="Cornwall" type="vocab" vocab="GB-CON"/>
+			<outline text="County of Herefordshire" type="vocab" vocab="GB-HEF"/>
+			<outline text="Coventry" type="vocab" vocab="GB-COV"/>
+			<outline text="Craigavon" type="vocab" vocab="GB-CGV"/>
+			<outline text="Croydon" type="vocab" vocab="GB-CRY"/>
+			<outline text="Cumbria" type="vocab" vocab="GB-CMA"/>
+			<outline text="Darlington" type="vocab" vocab="GB-DAL"/>
+			<outline text="Denbighshire" type="vocab" vocab="GB-DEN"/>
+			<outline text="Derby" type="vocab" vocab="GB-DER"/>
+			<outline text="Derbyshire" type="vocab" vocab="GB-DBY"/>
+			<outline text="Derry" type="vocab" vocab="GB-DRY"/>
+			<outline text="Devon" type="vocab" vocab="GB-DEV"/>
+			<outline text="Doncaster" type="vocab" vocab="GB-DNC"/>
+			<outline text="Dorset" type="vocab" vocab="GB-DOR"/>
+			<outline text="Down" type="vocab" vocab="GB-DOW"/>
+			<outline text="Dudley" type="vocab" vocab="GB-DUD"/>
+			<outline text="Dumfries and Galloway" type="vocab" vocab="GB-DGY"/>
+			<outline text="Dundee City" type="vocab" vocab="GB-DND"/>
+			<outline text="Dungannon" type="vocab" vocab="GB-DGN"/>
+			<outline text="Durham" type="vocab" vocab="GB-DUR"/>
+			<outline text="Ealing" type="vocab" vocab="GB-EAL"/>
+			<outline text="East Ayrshire" type="vocab" vocab="GB-EAY"/>
+			<outline text="East Dunbartonshire" type="vocab" vocab="GB-EDU"/>
+			<outline text="East Lothian" type="vocab" vocab="GB-ELN"/>
+			<outline text="East Renfrewshire" type="vocab" vocab="GB-ERW"/>
+			<outline text="East Riding of Yorkshire" type="vocab" vocab="GB-ERY"/>
+			<outline text="East Sussex" type="vocab" vocab="GB-ESX"/>
+			<outline text="Edinburgh" type="vocab" vocab="GB-EDH"/>
+			<outline text="Eilean Siar" type="vocab" vocab="GB-ELS"/>
+			<outline text="Enfield" type="vocab" vocab="GB-ENF"/>
+			<outline text="Essex" type="vocab" vocab="GB-ESS"/>
+			<outline text="Falkirk" type="vocab" vocab="GB-FAL"/>
+			<outline text="Fermanagh" type="vocab" vocab="GB-FER"/>
+			<outline text="Fife" type="vocab" vocab="GB-FIF"/>
+			<outline text="Flintshire" type="vocab" vocab="GB-FLN"/>
+			<outline text="Gateshead" type="vocab" vocab="GB-GAT"/>
+			<outline text="Glasgow City" type="vocab" vocab="GB-GLG"/>
+			<outline text="Gloucestershire" type="vocab" vocab="GB-GLS"/>
+			<outline text="Greenwich" type="vocab" vocab="GB-GRE"/>
+			<outline text="Gwynedd" type="vocab" vocab="GB-GWN"/>
+			<outline text="Hackney" type="vocab" vocab="GB-HCK"/>
+			<outline text="Halton" type="vocab" vocab="GB-HAL"/>
+			<outline text="Hammersmith and Fulham" type="vocab" vocab="GB-HMF"/>
+			<outline text="Hampshire" type="vocab" vocab="GB-HAM"/>
+			<outline text="Haringey" type="vocab" vocab="GB-HRY"/>
+			<outline text="Harrow" type="vocab" vocab="GB-HRW"/>
+			<outline text="Hartlepool" type="vocab" vocab="GB-HPL"/>
+			<outline text="Havering" type="vocab" vocab="GB-HAV"/>
+			<outline text="Hertfordshire" type="vocab" vocab="GB-HRT"/>
+			<outline text="Hillingdon" type="vocab" vocab="GB-HIL"/>
+			<outline text="Highland" type="vocab" vocab="GB-HLD"/>
+			<outline text="Hounslow" type="vocab" vocab="GB-HNS"/>
+			<outline text="Isle of Anglesey" type="vocab" vocab="GB-AGY"/>
+			<outline text="Isle of Wight" type="vocab" vocab="GB-IOW"/>
+			<outline text="Isles of Scilly" type="vocab" vocab="GB-IOS"/>
+			<outline text="Islington" type="vocab" vocab="GB-ISL"/>
+			<outline text="Inverclyde" type="vocab" vocab="GB-IVC"/>
+			<outline text="Kensington and Chelsea" type="vocab" vocab="GB-KEC"/>
+			<outline text="Kent" type="vocab" vocab="GB-KEN"/>
+			<outline text="Kingston upon Hull" type="vocab" vocab="GB-KHL"/>
+			<outline text="Kingston upon Thames" type="vocab" vocab="GB-KTT"/>
+			<outline text="Kirklees" type="vocab" vocab="GB-KIR"/>
+			<outline text="Knowsley" type="vocab" vocab="GB-KWL"/>
+			<outline text="Lambeth" type="vocab" vocab="GB-LBH"/>
+			<outline text="Lancashire" type="vocab" vocab="GB-LAN"/>
+			<outline text="Larne" type="vocab" vocab="GB-LRN"/>
+			<outline text="Leeds" type="vocab" vocab="GB-LDS"/>
+			<outline text="Leicester" type="vocab" vocab="GB-LCE"/>
+			<outline text="Leicestershire" type="vocab" vocab="GB-LEC"/>
+			<outline text="Lewisham" type="vocab" vocab="GB-LEW"/>
+			<outline text="Limavady" type="vocab" vocab="GB-LMV"/>
+			<outline text="Lincolnshire" type="vocab" vocab="GB-LIN"/>
+			<outline text="Lisburn" type="vocab" vocab="GB-LSB"/>
+			<outline text="Liverpool" type="vocab" vocab="GB-LIV"/>
+			<outline text="London" type="vocab" vocab="GB-LND"/>
+			<outline text="Luton" type="vocab" vocab="GB-LUT"/>
+			<outline text="Magherafelt" type="vocab" vocab="GB-MFT"/>
+			<outline text="Manchester" type="vocab" vocab="GB-MAN"/>
+			<outline text="Middlesbrough" type="vocab" vocab="GB-MDB"/>
+			<outline text="Medway" type="vocab" vocab="GB-MDW"/>
+			<outline text="Merthyr Tydfil" type="vocab" vocab="GB-MTY"/>
+			<outline text="Merton" type="vocab" vocab="GB-MRT"/>
+			<outline text="Midlothian" type="vocab" vocab="GB-MLN"/>
+			<outline text="Milton Keynes" type="vocab" vocab="GB-MIK"/>
+			<outline text="Monmouthshire" type="vocab" vocab="GB-MON"/>
+			<outline text="Moray" type="vocab" vocab="GB-MRY"/>
+			<outline text="Moyle" type="vocab" vocab="GB-MYL"/>
+			<outline text="Neath Port Talbot" type="vocab" vocab="GB-NTL"/>
+			<outline text="Newcastle upon Tyne" type="vocab" vocab="GB-NET"/>
+			<outline text="Newham" type="vocab" vocab="GB-NWM"/>
+			<outline text="Newport" type="vocab" vocab="GB-NWP"/>
+			<outline text="Newry and Mourne" type="vocab" vocab="GB-NYM"/>
+			<outline text="Newtownabbey" type="vocab" vocab="GB-NTA"/>
+			<outline text="Norfolk" type="vocab" vocab="GB-NFK"/>
+			<outline text="North Ayrshire" type="vocab" vocab="GB-NAY"/>
+			<outline text="North Down" type="vocab" vocab="GB-NDN"/>
+			<outline text="North East Lincolnshire" type="vocab" vocab="GB-NEL"/>
+			<outline text="North Lanarkshire" type="vocab" vocab="GB-NLK"/>
+			<outline text="North Lincolnshire" type="vocab" vocab="GB-NLN"/>
+			<outline text="North Somerset" type="vocab" vocab="GB-NSM"/>
+			<outline text="North Tyneside" type="vocab" vocab="GB-NTY"/>
+			<outline text="North Yorkshire" type="vocab" vocab="GB-NYK"/>
+			<outline text="Northamptonshire" type="vocab" vocab="GB-NTH"/>
+			<outline text="Northumberland" type="vocab" vocab="GB-NBL"/>
+			<outline text="Nottingham" type="vocab" vocab="GB-NGM"/>
+			<outline text="Nottinghamshire" type="vocab" vocab="GB-NTT"/>
+			<outline text="Oldham" type="vocab" vocab="GB-OLD"/>
+			<outline text="Omagh" type="vocab" vocab="GB-OMH"/>
+			<outline text="Orkney Islands" type="vocab" vocab="GB-ORK"/>
+			<outline text="Oxfordshire" type="vocab" vocab="GB-OXF"/>
+			<outline text="Pembrokeshire" type="vocab" vocab="GB-PEM"/>
+			<outline text="Perth and Kinross" type="vocab" vocab="GB-PKN"/>
+			<outline text="Peterborough" type="vocab" vocab="GB-PTE"/>
+			<outline text="Plymouth" type="vocab" vocab="GB-PLY"/>
+			<outline text="Poole" type="vocab" vocab="GB-POL"/>
+			<outline text="Portsmouth" type="vocab" vocab="GB-POR"/>
+			<outline text="Powys" type="vocab" vocab="GB-POW"/>
+			<outline text="Reading" type="vocab" vocab="GB-RDG"/>
+			<outline text="Redbridge" type="vocab" vocab="GB-RDB"/>
+			<outline text="Redcar and Cleveland" type="vocab" vocab="GB-RCC"/>
+			<outline text="Renfrewshire" type="vocab" vocab="GB-RFW"/>
+			<outline text="Rhondda" type="vocab" vocab="GB-RCT"/>
+			<outline text="Richmond upon Thames" type="vocab" vocab="GB-RIC"/>
+			<outline text="Rochdale" type="vocab" vocab="GB-RCH"/>
+			<outline text="Rotherham" type="vocab" vocab="GB-ROT"/>
+			<outline text="Rutland" type="vocab" vocab="GB-RUT"/>
+			<outline text="Salford" type="vocab" vocab="GB-SLF"/>
+			<outline text="Sandwell" type="vocab" vocab="GB-SAW"/>
+			<outline text="Scottish Borders" type="vocab" vocab="GB-SCB"/>
+			<outline text="Sefton" type="vocab" vocab="GB-SFT"/>
+			<outline text="Sheffield" type="vocab" vocab="GB-SHF"/>
+			<outline text="Shetland Islands" type="vocab" vocab="GB-ZET"/>
+			<outline text="Shropshire" type="vocab" vocab="GB-SHR"/>
+			<outline text="Slough" type="vocab" vocab="GB-SLG"/>
+			<outline text="Solihull" type="vocab" vocab="GB-SOL"/>
+			<outline text="Somerset" type="vocab" vocab="GB-SOM"/>
+			<outline text="South Ayrshire" type="vocab" vocab="GB-SAY"/>
+			<outline text="South Gloucestershire" type="vocab" vocab="GB-SGC"/>
+			<outline text="South Lanarkshire" type="vocab" vocab="GB-SLK"/>
+			<outline text="South Tyneside" type="vocab" vocab="GB-STY"/>
+			<outline text="Southampton" type="vocab" vocab="GB-STH"/>
+			<outline text="Southend-on-Sea" type="vocab" vocab="GB-SOS"/>
+			<outline text="Southwark" type="vocab" vocab="GB-SWK"/>
+			<outline text="St. Helens" type="vocab" vocab="GB-SHN"/>
+			<outline text="Staffordshire" type="vocab" vocab="GB-STS"/>
+			<outline text="Stirling" type="vocab" vocab="GB-STG"/>
+			<outline text="Stockport" type="vocab" vocab="GB-SKP"/>
+			<outline text="Stockton-on-Tees" type="vocab" vocab="GB-STT"/>
+			<outline text="Stoke-on-Trent" type="vocab" vocab="GB-STE"/>
+			<outline text="Strabane" type="vocab" vocab="GB-STB"/>
+			<outline text="Suffolk" type="vocab" vocab="GB-SFK"/>
+			<outline text="Sunderland" type="vocab" vocab="GB-SND"/>
+			<outline text="Surrey" type="vocab" vocab="GB-SRY"/>
+			<outline text="Sutton" type="vocab" vocab="GB-STN"/>
+			<outline text="Swansea" type="vocab" vocab="GB-SWA"/>
+			<outline text="Swindon" type="vocab" vocab="GB-SWD"/>
+			<outline text="Tameside" type="vocab" vocab="GB-TAM"/>
+			<outline text="Telford and Wrekin" type="vocab" vocab="GB-TFW"/>
+			<outline text="Thurrock" type="vocab" vocab="GB-THR"/>
+			<outline text="Torbay" type="vocab" vocab="GB-TOB"/>
+			<outline text="Torfaen" type="vocab" vocab="GB-TOF"/>
+			<outline text="Tower Hamlets" type="vocab" vocab="GB-TWH"/>
+			<outline text="Trafford" type="vocab" vocab="GB-TRF"/>
+			<outline text="Vale of Glamorgan" type="vocab" vocab="GB-VGL"/>
+			<outline text="Wakefield" type="vocab" vocab="GB-WKF"/>
+			<outline text="Walsall" type="vocab" vocab="GB-WLL"/>
+			<outline text="Waltham Forest" type="vocab" vocab="GB-WFT"/>
+			<outline text="Wandsworth" type="vocab" vocab="GB-WND"/>
+			<outline text="Warrington" type="vocab" vocab="GB-WRT"/>
+			<outline text="Warwickshire" type="vocab" vocab="GB-WAR"/>
+			<outline text="West Berkshire" type="vocab" vocab="GB-WBK"/>
+			<outline text="West Dunbartonshire" type="vocab" vocab="GB-WDU"/>
+			<outline text="West Lothian" type="vocab" vocab="GB-WLN"/>
+			<outline text="West Sussex" type="vocab" vocab="GB-WSX"/>
+			<outline text="Westminster" type="vocab" vocab="GB-WSM"/>
+			<outline text="Wigan" type="vocab" vocab="GB-WGN"/>
+			<outline text="Wiltshire" type="vocab" vocab="GB-WIL"/>
+			<outline text="Windsor and Maidenhead" type="vocab" vocab="GB-WNM"/>
+			<outline text="Wirral" type="vocab" vocab="GB-WRL"/>
+			<outline text="Wokingham" type="vocab" vocab="GB-WOK"/>
+			<outline text="Wolverhampton" type="vocab" vocab="GB-WLV"/>
+			<outline text="Worcestershire" type="vocab" vocab="GB-WOR"/>
+			<outline text="Wrexham" type="vocab" vocab="GB-WRX"/>
+			<outline text="York" type="vocab" vocab="GB-YOR"/>
+		</outline>
+	</body>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->
+
+
+

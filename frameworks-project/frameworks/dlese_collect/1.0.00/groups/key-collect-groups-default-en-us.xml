@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: key-collect-groups-default-en-us.xml,v 1.4 2013/09/16 21:06:04 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Key</title>
+<groups:concept id="ky" language="en-us" metaFormat="dlese_collect" metaVersion="1.0.00" text="Key" audience="default" path="/collectionRecord/access/key" deftn="an internal identifier used by the DLESE Program Center for identifying a collection"/>
+</head>
+<body>
+<outline groups:vocab="adl" type="vocab" groups:id="006" text="adl" groups:deftn="Alexandria Digital Library (ADL)"/>
+<outline groups:vocab="avc" type="vocab" groups:id="01" text="avc" groups:deftn="Atmospheric Visualization Collection (AVC)"/>
+<outline groups:vocab="benchmarks" type="vocab" groups:id="01u" text="benchmarks" groups:deftn="Educational Benchmarks Collection"/>
+<outline groups:vocab="bridge" type="vocab" groups:id="017" text="bridge" groups:deftn="BRIDGE Ocean Resources"/>
+<outline groups:vocab="bridgenews" type="vocab" groups:id="01a" text="bridgenews" groups:deftn="BRIDGE News"/>
+<outline groups:vocab="bridgenoaa" type="vocab" groups:id="022" text="bridgenoaa" groups:deftn="BRIDGE NOAA Resources"/>
+<outline groups:vocab="bridgenoaaother" type="vocab" groups:id="023" text="bridgenoaaother" groups:deftn="BRIDGE NOAA Other Resources"/>
+<outline groups:vocab="bridgeother" type="vocab" groups:id="018" text="bridgeother" groups:deftn="BRIDGE Other Ocean Resources"/>
+<outline groups:vocab="ccc" type="vocab" groups:id="00v" text="ccc" groups:deftn="Climate Change Collection (CCC)"/>
+<outline groups:vocab="ceis" type="vocab" groups:id="03" text="ceis" groups:deftn="Discover Our Earth"/>
+<outline groups:vocab="collect" type="vocab" groups:id="04" text="collect" groups:deftn="Repository Collections"/>
+<outline groups:vocab="comet" type="vocab" groups:id="05" text="comet" groups:deftn="Cooperative Program for Operational Meteorology, Education and Training (COMET)"/>
+<outline groups:vocab="cosee" type="vocab" groups:id="01b" text="cosee" groups:deftn="COSEE Resources"/>
+<outline groups:vocab="coseenews" type="vocab" groups:id="01c" text="coseenews" groups:deftn="COSEE News"/>
+<outline groups:vocab="coseeother" type="vocab" groups:id="01d" text="coseeother" groups:deftn="COSEE Other Resources"/>
+<outline groups:vocab="crs" type="vocab" groups:id="06" text="crs" groups:deftn="Community Annotated Collection"/>
+<outline groups:vocab="curl" type="vocab" groups:id="08" text="curl" groups:deftn="Curricular Resource Library (CURL)"/>
+<outline groups:vocab="dataclass" type="vocab" groups:id="021" text="dataclass" groups:deftn="Data for the Classroom"/>
+<outline groups:vocab="dcc" type="vocab" groups:id="09" text="dcc" groups:deftn="DLESE Community Collection (DCC)"/>
+<outline groups:vocab="dlese" type="vocab" groups:id="0b" text="dlese" groups:deftn="The DLESE Library"/>
+<outline groups:vocab="dlisr" type="vocab" groups:id="019" text="dlisr" groups:deftn="Indigenous Science Resources"/>
+<outline groups:vocab="dlisrother" type="vocab" groups:id="01i" text="dlisrother" groups:deftn="Indigenous Science Other Resources"/>
+<outline groups:vocab="drc" type="vocab" groups:id="0c" text="drc" groups:deftn="DLESE Reviewed Collection (DRC)"/>
+<outline groups:vocab="dwel" type="vocab" groups:id="0e" text="dwel" groups:deftn="Digital Water Education Library (DWEL)"/>
+<outline groups:vocab="earthlabs" type="vocab" groups:id="02x" text="earthlabs" groups:deftn="EarthLabs"/>
+<outline groups:vocab="earthobs" type="vocab" groups:id="00g" text="earthobs" groups:deftn="NASA Earth Observatory"/>
+<outline groups:vocab="edmall" type="vocab" groups:id="0g" text="edmall" groups:deftn="NASA Edmall Collection"/>
+<outline groups:vocab="eee" type="vocab" groups:id="016" text="eee" groups:deftn="Electronic Encyclopedia of Earthquakes (E3)"/>
+<!--commented out on 2013-09-16
+<outline groups:vocab="emvc" type="vocab" groups:id="00r" text="emvc" groups:deftn="EMVC Geology Materials"/>
+-->
+<outline groups:vocab="esa" type="vocab" groups:id="01o" text="esa" groups:deftn="Environmental Science Activities for the 21st Century (ESA21)"/>
+<!--commented out on 2013-09-16
+<outline groups:vocab="evc" type="vocab" groups:id="01p" text="evc" groups:deftn="NOAA Environmental Visualizations"/>
+-->
+
+<outline groups:vocab="eserev" type="vocab" groups:id="008" text="eserev" groups:deftn="NASA Reviewed Collection"/>
+<outline groups:vocab="evaltlkt" type="vocab" groups:id="0i" text="evaltlkt" groups:deftn="Evaluation Toolkit"/>
+<outline groups:vocab="globe" type="vocab" groups:id="00o" text="globe" groups:deftn="GLOBE Collection"/>
+<outline groups:vocab="ien" type="vocab" groups:id="01q" text="ien" groups:deftn="ESS Informal Education Network"/>
+<outline groups:vocab="ienother" type="vocab" groups:id="01v" text="ienother" groups:deftn="ESS Informal Ed. Network - Other Resources"/>
+<outline groups:vocab="jesse" type="vocab" groups:id="0j" text="jesse" groups:deftn="Journal for Earth System Science Education (JESSE)"/>
+<outline groups:vocab="k12geo" type="vocab" groups:id="01w" text="k12geo" groups:deftn="K-12 Geoscience Activities Collection"/>
+<outline groups:vocab="matters" type="vocab" groups:id="01m" text="matters" groups:deftn="DLESE Matters Newsletters"/>
+<outline groups:vocab="mynasadata" type="vocab" groups:id="01e" text="mynasadata" groups:deftn="MY NASA DATA"/>
+<outline groups:vocab="mynasastds" type="vocab" groups:id="01r" text="mynasastds" groups:deftn="MY NASA Standards"/>
+<outline groups:vocab="nap" type="vocab" groups:id="00s" text="nap" groups:deftn="National Academy Press (NAP)"/>
+<outline groups:vocab="nasawave" type="vocab" groups:id="02y" text="nasawave" groups:deftn="NASA Wavelength"/>
+<outline groups:vocab="nocc" type="vocab" groups:id="00x" text="nocc" groups:deftn="News and Opportunities Community Collection (NOCC)"/>
+<outline groups:vocab="nullkey" type="vocab" groups:id="00y" text="nullkey" groups:deftn="Null Collection"/>
+<outline groups:vocab="nyic" type="vocab" groups:id="01f" text="nyic" groups:deftn="New York Instructional Collection"/>
+<outline groups:vocab="nys" type="vocab" groups:id="01k" text="nys" groups:deftn="New York Standards"/>
+<outline groups:vocab="pck" type="vocab" groups:id="01j" text="pck" groups:deftn="Pedagogically Annotated Collection"/>
+<outline groups:vocab="sat" type="vocab" groups:id="01x" text="sat" groups:deftn="SAT Standards Collection"/>
+<outline groups:vocab="serceet" type="vocab" groups:id="0r" text="serceet" groups:deftn="Earth Exploration Toolbook (EET)"/>
+<outline groups:vocab="sercnagt" type="vocab" groups:id="0o" text="sercnagt" groups:deftn="Cutting Edge Collection"/>
+<outline groups:vocab="sercstrtpt" type="vocab" groups:id="0t" text="sercstrtpt" groups:deftn="Starting Point Collection"/>
+<outline groups:vocab="simple" type="vocab" groups:id="01g" text="simple" groups:deftn="SIMPLE Science Resources"/>
+<outline groups:vocab="simpleother" type="vocab" groups:id="01z" text="simpleother" groups:deftn="SIMPLE Science Other Resources"/>
+<outline groups:vocab="svs" type="vocab" groups:id="00h" text="svs" groups:deftn="NASA Scientific Visualization Studio"/>
+<outline groups:vocab="swi" type="vocab" groups:id="01s" text="swi" groups:deftn="Stone Wall Initiative"/>
+<outline groups:vocab="tbox" type="vocab" groups:id="01l" text="tbox" groups:deftn="Teaching Boxes"/>
+<outline groups:vocab="testadn" type="vocab" groups:id="00z" text="testadn" groups:deftn="Test ADN Collection"/>
+<outline groups:vocab="testanno" type="vocab" groups:id="00a" text="testanno" groups:deftn="Test Annotation Collection"/>
+<outline groups:vocab="testcollect" type="vocab" groups:id="010" text="testcollect" groups:deftn="Test Collection Collection"/>
+<outline groups:vocab="testnews" type="vocab" groups:id="011" text="testnews" groups:deftn="Test News Collection"/>
+<outline groups:vocab="testncs" type="vocab" groups:id="020" text="testncs" groups:deftn="Test NSDL_NCS Collection"/>
+<outline groups:vocab="thredds" type="vocab" groups:id="01n" text="thredds" groups:deftn="Thematic Realtime Environmental Distributed Data Services"/>
+<outline groups:vocab="tips" type="vocab" groups:id="024" text="tips" groups:deftn="Tips and Comments"/>
+<outline groups:vocab="usgs" type="vocab" groups:id="01t" text="usgs" groups:deftn="United States Geological Survey (USGS) Education Collection"/>
+<outline groups:vocab="visearth" type="vocab" groups:id="00i" text="visearth" groups:deftn="NASA Visible Earth"/>
+<outline groups:vocab="visionlearn" type="vocab" groups:id="00p" text="visionlearn" groups:deftn="Visionlearning"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

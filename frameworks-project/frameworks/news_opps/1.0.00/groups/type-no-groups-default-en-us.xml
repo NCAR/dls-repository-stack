@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: type-no-groups-default-en-us.xml,v 1.1 2009/01/30 21:49:28 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Date - type</title>
+<groups:concept language="en-us" metaFormat="news_opps" metaVersion="1.0.00" text="Date - type" audience="default" path="/news-oppsRecord/otherDates/otherDate/@type" deftn="a description for the kind of date"/>
+</head>
+<body>
+<outline groups:vocab="applyBy" type="vocab" text="applyBy" groups:deftn="the date to an application for the news, event or opportunity is due"/>
+<outline groups:vocab="due" type="vocab" text="due" groups:deftn="the date when the news, event or opportunity is due"/>
+<outline groups:vocab="eventStart" type="vocab" text="eventStart" groups:deftn="the date the news, event or opportunity begins"/>
+<outline groups:vocab="eventStop" type="vocab" text="eventStop" groups:deftn="the date the news, event or opportunity ends"/>
+<outline groups:vocab="recordModified" type="vocab" text="recordModified" groups:deftn="the date the news, event or opportunity is modified"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

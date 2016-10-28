@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<collectionRecord xmlns="http://collection.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://collection.dlese.org
+
+http://www.dlese.org/Metadata/collection/1.0.00/collection.xsd">
+
+	<general>
+
+		<fullTitle>Hi Put the full name of the collection here. This is required text.</fullTitle>
+
+		<shortTitle>Put the short name of the collection here. This is not required text.</shortTitle>
+
+		<description>Put the overall collection description here. This is required text. Here is an example description. The intent of the Atmospheric Visualization Collection (AVC) is to enhance physical science education and research through visualization of atmospheric data. This collection provides access to an archive of atmospheric data images and educational material based on these images. The data archive focuses on remote sensing related to the effects and interactions of sunlight, radiant energy, clouds, temperature, weather and climate.</description>
+
+		<language>en</language>
+
+		<subjects>
+
+			<subject>DLESE:Atmospheric science</subject>
+
+		</subjects>
+
+		<subjectsOther>
+
+			<subjectOther>DLESE:Not done:Do not use</subjectOther>
+
+		</subjectsOther>
+
+		<keywords>
+
+			<keyword>Remote sensing</keyword>
+
+			<keyword>Radar</keyword>
+
+		</keywords>
+
+		<gradeRanges>
+
+			<gradeRange>DLESE:Undergraduate lower division</gradeRange>
+
+			<gradeRange>DLESE:Undergraduate upper division</gradeRange>
+
+		</gradeRanges>
+
+		<cost>DLESE:No</cost>
+
+		<policies>
+
+			<policy type="Collection scope" url="http://url.to.policy" name="About the Collection">Put the policy summary here. If no policies, write policy summary not available.</policy>
+
+			<policy type="Intellectual property of metadata">Metadata is copyrighted by the XY company but is available for redistribution for educational purposes.</policy>
+
+			<policy type="Terms of use for metadata">Metadata is copyrighted by the XY company but is available for redistribution for educational purposes.</policy>
+
+		</policies>
+
+		<logo>a url to the logo of the collection that is of the size for use in the displaying of search results</logo>
+
+		<additionalInfo>Any other pertinent information about the collection.</additionalInfo>
+
+	</general>
+
+	<lifecycle>
+
+		<contributors>
+
+			<contributor role="Contact" date="1967-08-13">
+
+				<person>
+
+					<nameTitle>Ms</nameTitle>
+
+					<nameFirst>Jane</nameFirst>
+
+					<nameLast>Doe</nameLast>
+
+					<instName>Put institution name here</instName>
+
+					<instDept>Put department name here</instDept>
+
+					<emailPrimary>doe@ucar.edu</emailPrimary>
+
+					<emailAlt>doe.alt@ucar.edu</emailAlt>
+
+					<contactID>this number is internal to the DPC</contactID>
+
+				</person>
+
+			</contributor>
+
+			<contributor role="Responsible party" date="1967-08-13">
+
+				<organization>
+
+					<instName>Colorado School of Mines</instName>
+
+					<instUrl>Put institution url here</instUrl>
+
+					<instEmail>Put institution email here</instEmail>
+
+				</organization>
+
+			</contributor>
+
+		</contributors>
+
+	</lifecycle>
+
+	<approval>
+
+		<collectionStatuses>
+
+			<collectionStatus state="Approved" date="2003-01-10"></collectionStatus>
+
+			<collectionStatus state="Accessioned" date="2003-01-23"></collectionStatus>
+
+		</collectionStatuses>
+
+		<contributors>
+
+			<contributor role="Documentation approver" date="1967-08-13">
+
+				<person>
+
+					<nameTitle>Ms</nameTitle>
+
+					<nameFirst>Holly</nameFirst>
+
+					<nameLast>Devaul</nameLast>
+
+					<instName>University Corporation for Atmospheric Research</instName>
+
+					<instDept>DLESE Program Center</instDept>
+
+					<emailPrimary>devaul@ucar.edu</emailPrimary>
+
+				</person>
+
+			</contributor>
+
+			<contributor role="Technical approver" date="1967-08-13">
+
+				<person>
+
+					<nameTitle>Ms</nameTitle>
+
+					<nameFirst>Katy</nameFirst>
+
+					<nameLast>Ginger</nameLast>
+
+					<instName>University Corporation for Atmospheric Research</instName>
+
+					<instDept>DLESE Program Center</instDept>
+
+					<emailPrimary>ginger@ucar.edu</emailPrimary>
+
+				</person>
+
+			</contributor>
+
+			<contributor role="Accession approver" date="2002-01-12">
+
+				<organization>
+
+					<instName>Formal Collections Approval Committee</instName>
+
+				</organization>
+
+			</contributor>
+
+		</contributors>
+
+	</approval>
+
+	<access>
+
+		<collectionLocation>url to collection</collectionLocation>
+
+		<key libraryFormat="adn" static="false" redistribute="true">dcc</key>
+
+		<drc>false</drc>
+
+		<oaiHarvests>
+
+			<oaiHarvest version="1.1" baseUrl="http://www.dlese.org/oai/provider"  metadata="adn" repName="DLESE Community Collection Respository" set="avc"   updateFrequency="daily"/>
+
+		</oaiHarvests>
+
+		<otherHarvests>
+
+			<otherHarvest metadata="adn" updateFrequency="daily">Explain other access methods here, e.g ftp access</otherHarvest>
+
+		</otherHarvests>
+
+	</access>
+
+	<metaMetadata>
+
+		<catalogEntries>
+
+			<catalog entry="DLESE-COLLECTION-000-000-000-123">String</catalog>
+
+		</catalogEntries>
+
+		<dateInfo created="2002-10-08" accessioned="2003-01-12" lastModified="2003-01-14T09:30:47-05:00" deaccessioned="1967-08-13">Put explantory text here.</dateInfo>
+
+		<statusOf status="Accessioned">String</statusOf>
+
+		<language>en-us</language>
+
+		<scheme>Digital Library for Earth System Education (DLESE) Collection Metadata</scheme>
+
+		<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research). All rights reserved.</copyright>
+
+		<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+
+		<contributors>
+
+			<contributor role="Creator" date="1967-08-13">
+
+				<person>
+
+					<nameTitle>Dr</nameTitle>
+
+					<nameFirst>Thomas</nameFirst>
+
+					<nameMiddle>M.</nameMiddle>
+
+					<nameLast>Boyd</nameLast>
+
+					<instName>Colorado School of Mines</instName>
+
+					<instDept>Department of Geophysics</instDept>
+
+					<emailPrimary>xx@mines.edu</emailPrimary>
+
+					<emailAlt>xx.alt@mines.edu</emailAlt>
+
+					<contactID>this number is internal to the DPC</contactID>
+
+				</person>
+
+			</contributor>
+
+			<contributor role="Validator" date="2003-01-12">
+
+				<person>
+
+					<nameFirst>Holly</nameFirst>
+
+					<nameLast>Devaul</nameLast>
+
+					<instName>Univeristy Corporation for Atmsopheric Research (UCAR)</instName>
+
+					<instDept>DLESE Program Center (DPC)</instDept>
+
+					<emailPrimary>devaul@ucar.edu</emailPrimary>
+
+				</person>
+
+			</contributor>
+
+		</contributors>
+
+	</metaMetadata>
+
+	<NSDL type="dlese" logo="http://www.dlese.org">
+
+		<formats>
+
+			<format>text/html</format>
+
+		</formats>
+
+	</NSDL>
+
+	<relations>
+
+		<relation type="Is a subcollection of" idNum="DLESE-COLLECTION-000-000-000-345"/>
+
+		<relation type="Has a subcollection of" idNum="DLESE-COLLECTION-000-000-000-582"/>
+
+		<relation type="Has an associated collection of" idNum="DLESE-COLLECTION-000-000-000-876"/>
+
+	</relations>
+
+</collectionRecord>
+

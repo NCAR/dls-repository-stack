@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="Geography">
+  <mapping>
+    <acsrInfo id="7587ce17-b33a-4958-bc59-8f43ce0f8115">
+      <title>Alaska Content Standards Geography</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>AK</jurisdiction>
+      <fileName>Content Standards Geography</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000284">
+      <title>Alaska Content Standards Geography</title>
+      <created>2006</created>
+      <topic>Geography</topic>
+      <author>Alaska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dcdb2510-4097-4e8b-b39d-c18e089ab003">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Geography Revised 2000</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000076">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <created>2000</created>
+      <topic>Geography</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c1fed4f1-b868-446c-904b-ddf876419c42">
+      <title>Academic Standards: Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Social Studies Geography</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000054">
+      <title>Academic Standards: Social Studies</title>
+      <created>2000</created>
+      <topic>Geography</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fc84874e-ded7-476e-afa3-76b85dbee185">
+      <title>Social Studies Strand 4 - Geography</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>AZ</jurisdiction>
+      <fileName>Strand 4 - Geography</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000286">
+      <title>Social Studies Strand 4 - Geography</title>
+      <created>2006</created>
+      <topic>Geography</topic>
+      <author>Arizona</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9f4a8475-d997-44a5-82b5-703e4ff96019">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>CA</jurisdiction>
+      <fileName>Social Science Geography</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000134">
+      <title>History-Social Science Content Standards for California Public Schools, Kindergarten through Grade Twelve</title>
+      <created>1998</created>
+      <topic>Geography</topic>
+      <author>California</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1cc7c375-34e4-4d5c-a6f7-710d4d24a726">
+      <title>Colorado Model Content Standards for Geography</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Model Content Standards Geography</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000135">
+      <title>Colorado Model Content Standards for Geography</title>
+      <created>1995</created>
+      <topic>Geography</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e7a7dc93-5f76-4e7e-9c93-c63e269df8cc">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>Social Studies Geography</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100007E">
+      <title>The Connecticut Social Studies Curriculum: K-12 Curriculum Goals and Standards -- 1998</title>
+      <created>1998</created>
+      <topic>Geography</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="1715c1c8-04d4-4214-b804-6ed3ae2ff656">
+      <title>Geography Standards, updated January 2010</title>
+      <localAdoptionDate>2010</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Geography Standards updated 2010</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003EB">
+      <title>Geography Standards, updated January 2010</title>
+      <created>2010</created>
+      <topic>Geography</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="802d5352-2ae0-46eb-bfc0-f85be6d6b030">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Sunshine State Standards Geo</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000006">
+      <title>Sunshine State Standards Grade Level Expectations: Social Studies</title>
+      <created>1999</created>
+      <topic>Geography</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c4e31841-4253-4cf7-ad6c-74ac22d279d9">
+      <title>Social Studies Quality Core Curriculum K-12</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>Social Studies QCC Geography</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000140">
+      <title>Social Studies Quality Core Curriculum K-12</title>
+      <created>1999</created>
+      <topic>Geography</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7b9b1559-69e5-4d22-94a1-2adcb26cf47b">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>HI</jurisdiction>
+      <fileName>Social Studies Geography</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001CB">
+      <title>Social Studies Content Standards</title>
+      <created>1999</created>
+      <topic>Geography</topic>
+      <author>Hawaii</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="240feed9-9ee3-4b98-8f92-d89ed7d027a7">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Achievement Standards Geography</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000043">
+      <title>Idaho State Achievement Standards K-12 in Social Studies</title>
+      <created>2001</created>
+      <topic>Geography</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c710aa8e-e4b3-43bc-afae-1940b55762fc">
+      <title>Illinois Learning Standards for Social Science</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Learning Standards Geography</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001E2">
+      <title>Illinois Learning Standards for Social Science</title>
+      <created>1997</created>
+      <topic>Geography</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5e92dfa8-01db-4e28-93a4-05037b401ee0">
+      <title>Social Studies Proficiency Guide</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Geography Proficiency Guide</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000207">
+      <title>Social Studies Proficiency Guide</title>
+      <created>1996</created>
+      <topic>Geography</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3be5de91-f053-4e8f-bda6-28129257959f">
+      <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Curricular Standards Geography</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001C6">
+      <title>The Kansas Curricular Standards for Civics-Government, Economics, Geography and History</title>
+      <created>1999</created>
+      <topic>Geography</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5520d075-58dc-4127-8b9e-e7391821b6c8">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Social Studies Geography</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000018">
+      <title>Social Studies (Primary, Intermediate, High School)</title>
+      <created>1998</created>
+      <topic>Geography</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="16fd0803-eff8-4c54-b215-ae2a48600782">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Geography Content Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000B3">
+      <title>Social Studies Content Standards</title>
+      <created>1997</created>
+      <topic>Geography</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="aa145753-ddd4-4b00-b55e-f24af8337a09">
+      <title>Social Studies Grade-Level Expectations</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Social Studies Geography Grade-Leve</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100002E">
+      <title>Social Studies Grade-Level Expectations</title>
+      <created>2003</created>
+      <topic>Geography</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="392e3782-5373-4f8c-8e6a-69ddd061dbd5">
+      <title>Massachusetts History and Social Science Framework</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>History and Social Science Framewor</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000126">
+      <title>Massachusetts History and Social Science Framework</title>
+      <created>2003</created>
+      <topic>Geography</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4bdde88f-0dba-4094-97ca-ca5ae31775f5">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100005F">
+      <title>Maryland State Content Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>Geography</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="73a40475-d983-425e-b182-f1a96a33eb02">
+      <title>Learning Results for Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Learning Results for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100002D">
+      <title>Learning Results for Social Studies</title>
+      <created>1997</created>
+      <topic>Geography</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="406fde8e-2a71-4241-9f6c-749e7114cbe3">
+      <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Social Studies Standards Working Dr</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100013F">
+      <title>Social Studies Content Standards with Working Draft Benchmarks</title>
+      <created>1995</created>
+      <topic>Geography</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5692ed2e-6193-4c2a-a55d-abc38910b832">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Graduation Standards for Social Stu</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000AE">
+      <title>Minnesota Graduation Standards for Social Studies</title>
+      <created>1998</created>
+      <topic>Geography</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9ec47df7-9138-4691-af2a-efe87fd2c4e1">
+      <title>Montana Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Montana Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000029">
+      <title>Montana Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>Geography</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="95c27335-88d0-49bb-bc06-4958c9184978">
+      <title>Social Studies Standard Course of Study</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Social Studies Standard Course of S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000188">
+      <title>Social Studies Standard Course of Study</title>
+      <created>1996</created>
+      <topic>Geography</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b817c131-fcef-413e-9fc9-309dcd6b015f">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Social Studies Content Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000192">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <created>2000</created>
+      <topic>Geography</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="058bfa75-9674-43ab-bb69-23d72ccc82b7">
+      <title>Nebraska Social Studies/History Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Social Studies History Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001C0">
+      <title>Nebraska Social Studies/History Standards</title>
+      <created>1998</created>
+      <topic>Geography</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f7856ece-130f-4d73-b5ff-e33009d96e29">
+      <title>Geography for Life: The National Geography Standards</title>
+      <localAdoptionDate>1994</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>NGES</jurisdiction>
+      <fileName>Geography for Life: The National Ge</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100026F">
+      <title>Geography for Life: The National Geography Standards</title>
+      <created>1994</created>
+      <topic>Geography</topic>
+      <author>NGES</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="55b59ac1-d062-4c5b-af6f-3c912d2060b3">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>K-12 Social Studies Curriculum Fram</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001A9">
+      <title>K-12 Social Studies Curriculum Framework</title>
+      <created>1995</created>
+      <topic>Geography</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ffd9a1ae-36eb-434e-ac9e-82812c235133">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000117">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <created>1996</created>
+      <topic>Geography</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d5009279-636e-41c6-839b-4b92d8724b7c">
+      <title>New Mexico Standards for Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Standards for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100015C">
+      <title>New Mexico Standards for Social Studies</title>
+      <created>2001</created>
+      <topic>Geography</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e8b6b162-5c84-413a-8f3c-0bfd2d33167c">
+      <title>Nevada Social Studies Standards Geography K-12 Standards</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>Geography K-12 Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002C4">
+      <title>Nevada Social Studies Standards Geography K-12 Standards</title>
+      <created>2000</created>
+      <topic>Geography</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5d7234ea-8d24-4044-926b-f783762e3c55">
+      <title>Geography</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>Geography</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000002">
+      <title>Geography</title>
+      <created>1996</created>
+      <topic>Geography</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="5a1ca1a4-f076-4da2-be78-ab61db33b94b">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <localAdoptionDate>1994</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Social Studies: Ohio's Model Compet</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000A8">
+      <title>Social Studies: Ohio's Model Competency-Based Program</title>
+      <created>1994</created>
+      <topic>Geography</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="14b30fc0-55f0-444f-b466-65c4fcdc1eba">
+      <title>Academic Content Standards Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Academic Content Standards Social S</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000155">
+      <title>Academic Content Standards Social Studies</title>
+      <created>2002</created>
+      <topic>Geography</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="db86d376-c00c-4159-ba1e-cc723bea0b4f">
+      <title>Priority Academic Student Skills for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000066">
+      <title>Priority Academic Student Skills for Social Studies</title>
+      <created>2000</created>
+      <topic>Geography</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bb844707-f86b-4e97-8654-836f96f47f6b">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS for Social Studies</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100011A">
+      <title>Priority Academic Student Skills (PASS) for Social Studies</title>
+      <created>2002</created>
+      <topic>Geography</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b4328802-6b3e-4e0a-8c46-91f481a39b37">
+      <title>Social Sciences 2001-2002</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Social Sciences 2001-2002</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000FF">
+      <title>Social Sciences 2001-2002</title>
+      <created>2001</created>
+      <topic>Geography</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ee444326-68d7-4fb8-aca2-3addaf0aaaa5">
+      <title>Academic Standards for Geography</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>PA</jurisdiction>
+      <fileName>Academic Standards for Geography</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001A5">
+      <title>Academic Standards for Geography</title>
+      <created>2003</created>
+      <topic>Geography</topic>
+      <author>Pennsylvania</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f689c2a8-86e0-4845-9400-9aafa9d504b6">
+      <title>Social Studies Standards</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Social Studies Standards</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000C7">
+      <title>Social Studies Standards</title>
+      <created>1997</created>
+      <topic>Geography</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cb29588c-daa7-4e49-b540-0c28645fb848">
+      <title>Social Studies Frameworks K-12</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Social Studies Frameworks K-12</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001EF">
+      <title>Social Studies Frameworks K-12</title>
+      <created>1996</created>
+      <topic>Geography</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="205245d6-3bd7-4352-8e79-ab9671a27ede">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>Chapter 113. TEKS for Social Studie</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000A9">
+      <title>Chapter 113. Texas Essential Knowledge and Skills (TEKS) for Social Studies</title>
+      <created>1997</created>
+      <topic>Geography</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="358fbea2-6122-4eb3-927b-ad2ea1a0a463">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>1995</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000B0">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>1995</created>
+      <topic>Geography</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8d977db6-14f4-4dc0-a72d-9f66f3299cbc">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000D0">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>2001</created>
+      <topic>Geography</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="4c6cc008-05b6-42b1-b1aa-197b76882b98">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Vermont's Framework of Standards an</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10001E3">
+      <title>Vermont's Framework of Standards and Learning Opportunities: History and Social Sciences</title>
+      <created>2000</created>
+      <topic>Geography</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="dbb59bf1-99f9-469e-8f9a-64c996717a8f">
+      <title>Essential Academic Learning Requirements in Social Studies</title>
+      <localAdoptionDate>1997</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Essential Academic Learning Require</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000153">
+      <title>Essential Academic Learning Requirements in Social Studies</title>
+      <created>1997</created>
+      <topic>Geography</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e60adfdf-58a5-46ad-b147-e2f837058238">
+      <title>Geography Essential Academic Learning Requirements</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Geography EALR</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002B3">
+      <title>Geography Essential Academic Learning Requirements</title>
+      <created>2003</created>
+      <topic>Geography</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="68bdb7a6-b687-45dd-899a-57dbd7699306">
+      <title>Wisconsin Model Academic Standards for Social Studies</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>WI</jurisdiction>
+      <fileName>Wisconsin Standards for Geography</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000173">
+      <title>Wisconsin Model Academic Standards for Social Studies</title>
+      <created>1998</created>
+      <topic>Geography</topic>
+      <author>Wisconsin</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e8a5769f-7a60-4c87-8dcd-a8a53d3053d2">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia's Social Studies Inst</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000DC">
+      <title>West Virginia's Social Studies Instructional Goals and Objectives</title>
+      <created>2000</created>
+      <topic>Geography</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="81599c5c-3538-4042-b232-306c51e2c040">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>West Virginia Social Studies Conten</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000191">
+      <title>West Virginia Social Studies Content Standards K-12</title>
+      <created>2004</created>
+      <topic>Geography</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="cc4dd7cf-feef-4924-bf27-88580ba15637">
+      <title>Social Studies Content and Performance Standards</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Geography</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Social Studies Content and Performa</fileName>
+      <status>Inactive</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10000E4">
+      <title>Social Studies Content and Performance Standards</title>
+      <created>1999</created>
+      <topic>Geography</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+</mappings>

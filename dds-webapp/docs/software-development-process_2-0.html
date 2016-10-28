@@ -1,0 +1,397 @@
+<html>
+<head>
+<title> Documentation for the software development process at DLESE </title>
+
+	<link rel="stylesheet" type="text/css" href="/dlese_shared/dlese_styles.css" />
+	<link rel="stylesheet" type="text/css" href="/libdev/docs/docs_styles.css" />
+
+</head>
+<body>
+<h1> Documentation for the software development process at DLESE</h1>
+<h2>Version 2.0 </h2>
+<p>Development process v2.0 corresponds to DLESE v2.2 </p>
+<h2>Description </h2>
+<p>The software development process and workflow at DLESE is designed to enable 
+  flexible and incremental development of software conducted concurrently by multiple 
+  software engineers, web designers and others in a distributed fashion. The process 
+  enables uniform, reliable, team-oriented concurrent development of the major 
+  web applications in the library, such as the <a href="dds-documentation_3-1-9.html">DLESE Discovery System</a> (DDS), the <a href="DCS-2_2_0.html">DLESE Collection System</a> (DCS), and 
+  the <a href="oai-documentation_2-0-9.html">DLESE OAI software</a>. This process is also being applied in part or in full 
+  to a number of sub-components and services in the library including the DLESE 
+  Java libraries, the IDMapper service, the Contributor Acknowledgement System (CAS), the vocabulary manager, metadata frameworks 
+  development, the registration service, web log analysis services, and the shared 
+  UI components used throughout the distributed DLESE web sites. Note that the 
+  process of software design and the identification of functional requirements 
+  is not discussed here.</p>
+<h3>Overview of the development process</h3>
+<p>The software development 
+    process diagram below shows the flow of development for a typical web application 
+  such as the DDS, the DCS or the DLESE OAI software. </p>
+<p><img src="development-process-diagram.png" width="750" height="563"></p>
+<p>The numbered items in the diagram 
+    indicate the progression of development over time, which is detailed here:</p>
+<p>1. The developer checks out or updates his or her code and files from the main 
+  CVS repository (see the <a href="#cvs">CVS repository description</a> below). 
+  Each time the developer performs an update, he or she will receive changes made 
+  by other developers working on the project and obtain the latest version of 
+  the software under development. Alternatively, developers may request older 
+  versions of the code and files to work on, if necessary.</p>
+<p>2. Once the developer has updated their working copy of the code and files, 
+  he or she performs an Ant build to compile the software and deploy it to their 
+  personal application server (Tomcat) (see the <a href="#build">software build 
+    description</a> below). The developer can then accesses their server to inspect 
+  the changes that others have committed. The developer will then make changes 
+  to their working copy to add or change functionality, which typically involves 
+  making changes, deploying them to the application server, inspecting, testing 
+  and verifying them multiple times in an iterative fashion. While working in 
+  their development area, the changes that they make are not available to other 
+  developers until they are committed to CVS.</p>
+<p>3. The developer then commits the changes he or she has made to the global 
+  CVS repository, and enters notes about those changes that other developers can 
+  read. Typically commits are made once the developer has verified that the changes 
+  they have made will not break the software or disrupt the work of other developers. 
+  When changes are committed, other developers are notified automatically by e-mail 
+  and they may then update their working copy to obtain the changes when they 
+  are ready. </p>
+<p>4. At major and minor release points, a web administrator will check out the 
+  code and files to perform a master build. Major release points occur infrequently 
+  and involve major changes in the software. Minor release points occur more frequently, 
+  on the order of once or twice a month, and involve small changes in the UI and/or 
+  small bug fixes.</p>
+<p>5. The web admin builds the updated software to an integration server for testing. 
+  The integration server closely mirrors the live environment by bringing together 
+  multiple components of the library that interact with the software. Once built, 
+  DLESE staff performs a series of tests to verify the software (see the <a href="#testing">testing 
+    procedures description</a> below). Bugs that are detected are sent back to 
+  developers for fixes. Fixes then get re-updated to the integration server and 
+  re tested until found satisfactory.</p>
+<p>6. Once the software has completed testing, the web administrator performs 
+  a build to the live web application server. During this build process, traffic 
+  is re-directed through the integration server so that users will see no down 
+  time. Once the build is complete, traffic is once again directed to the live 
+  server. Finally, an administrator tags the code and files in CVS with a version 
+  number for future retrieval by version, if necessary (see the <a href="#versioning">software 
+    versioning description</a> below).</p>
+<h3><a name="structure"></a>Software project structure</h3>
+<p>The typical software project contains all the files and libraries necessary 
+  to build the software within a single directory. Each project resides in the 
+  DLESE CVS repository on SourceForge (<a href="http://cvs.sourceforge.net/viewcvs.py/dlese/">CVS 
+    View</a>). As a rule, each project directory is named xxx-project, where xxx 
+  denotes the software or module name, for example discovery, OAI, etc. In many 
+  cases a project will have dependencies upon other projects at build time and/or 
+  run time. For example the DDS, DCS, OAI and ID mapper projects depend on the DLESE 
+  Java source code project (dlese-tools-project) at build time and the DDS uses 
+  the ID mapper service, the vocabulary manager service and the shared UI components 
+  at run time. Details on projects and project dependencies is provided below. 
+</p>
+<p>The web application projects (DDS, DCS, OAI and others) have the following file and directory 
+  structure:</p>
+<ul>
+  <li> <strong>build_lib</strong> (directory) - contains Java libraries necessary to build but 
+    not run the software.</li>
+  <li><strong>docs</strong> (directory) - contains software documentation, licenses and other information 
+    that are included with the software.</li>
+  <li><strong>junit_src</strong> (directory) - contains JUnit Java code written by DLESE personnel 
+    that is used to perform regression testing on the software.</li>
+  <li><strong>src</strong> (directory) - for web applications, this contains the application resource 
+    bundles (Java properties files); for the dlese-tools-project, this contains 
+    the Java source code.</li>
+  <li><strong>web</strong> (directory) - web applications only - contains web pages (JSP and HTML), 
+    images, css and javascript. 
+    <ul>
+      <li>WEB-INF (directory) - contains the application deployment descriptors 
+        (web.xml used by Tomcat, struts-config.xml used by the Struts application 
+        framework) and other configuration directories and files. 
+        <ul>
+          <li>lib (directory) - contains the Java libraries that are needed to 
+            run this application</li>
+        </ul>
+      </li>
+      <li>docs (directory) - contains software documentation that is deployed 
+        in the web application.</li>
+    </ul>
+  </li>
+  <li><strong>.cvsignore</strong> (file) - defines files and directories in the local work area 
+    that will not be included in the CVS repository. These include the build.properties 
+    file, which contains developer-specific properties used to build the software, 
+    the build directory, which serves as a temporary staging area used during 
+    the build process and the dist directory, which serves as a placeholder for 
+    the software build.</li>
+  <li><strong>build.xml</strong> (file) - the file used by Ant to define and control the build 
+    process. See below for details on the build targets that are typically found 
+    in this file.</li>
+</ul>
+<p>The structure above was taken directly from the OAI project, which represents 
+  a typical web application. Other projects that are not web applications have 
+  similar structures. For example, the dlese-tools-project, which contains the 
+  DLESE Java class libraries, lacks a web directory but instead has a scripts 
+  directory that contains scripts that are used to execute Java code at the command 
+  line, such as the validate and transform commands.<br>
+</p>
+<h3><a name="cvs"></a>The DLESE CVS repository</h3>
+<p>The <a href="http://sourceforge.net/cvs/?group_id=23991">DLESE CVS repository</a> 
+  houses each of the software projects at DLESE. Each project is contained in 
+  a top-level directory within the repository. Here is a summary of the projects 
+  currently in the repository (see the current <a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/dlese/">CVS 
+    view</a> of the repository):</p>
+<ul>
+  <li> <strong>CVSROOT</strong> - the CVS administrative root project contains scripts and setting 
+    used to control the behavior of the CVS repository. For example, the file 
+    cvswrappers contains definitions of files that should be treated as binary 
+    rather than text by CVS; the file loginfo defines how e-mail notifications 
+    are sent when files are committed to the repository. See the <a href="http://sourceforge.net/docman/display_doc.php?docid=768&group_id=1">SourceForge 
+      CVS documentation</a> for information on how this is used.</li>
+  <li><strong>adn-item-project</strong> - a project to manage ADN metadata framework development.</li>
+  <li><strong>annotation-project</strong> - a project to manage the DLESE annotation metadata framework 
+    development.</li>
+  <li><strong>collection-project</strong> - a project to manage the DLESE collection-level metadata 
+    framework development.</li>
+  <li><strong>cas-project</strong> - The <a href="cas_1-0.html">Creator Acknowledgement System</a>, used to notify resource creators that their resource has been included in the library. </li>
+  <li><strong>cvs-demo-project</strong> - a demonstration project that can be used to practice using 
+    CVS commands. Also contains a <a href="http://cvs.sourceforge.net/viewcvs.py/dlese/cvs-demo-project/CVS-TUTORIAL.txt?view=markup">DLESE 
+      CVS tutorial</a> for new developers.</li>
+  <li><strong>dds-project</strong> - the <a href="dds-documentation_3-1-9.html">DLESE Discovery System</a> web application project.</li>
+  <li><strong>dds-webclient-project</strong> - contains a variety of custom search interfaces built using the DDSWS <a href="search_web_services_1-0.html">search web service</a>.</li>
+  <li><strong>dlese-shared-project</strong> - no longer used.</li>
+  <li><strong>dlese-tools-project</strong> - the DLESE Java class source code project.</li>
+  <li><strong>idmap-project</strong> - the<a href="idmapper_1-2.html"> ID mapper service</a>.</li>
+  <li><strong>logs-project</strong> - scripts used to collate and analyze data about user visits 
+    to the library.</li>
+  <li><strong>metadata</strong> - no longer used. </li>
+  <li><strong>news-opps-project</strong> - a web application that enables library visitors to view, search and post news and opportunities for the library community </li>
+  <li><strong>oai-project</strong> - the <a href="oai-documentation_2-0-9.html">DLESE OAI software</a>, which is used to provide and harvest 
+    metadata using the OAI protocol and to expose DLESE metadata as through web 
+    services.</li>
+  <li><strong>objects-project</strong> - a project to manage the objects (tuple) metadata framwork development. </li>
+  <li><strong>odl-webclient-project</strong> - contains a variety of custom search interfaces built using the DLESE ODL search web service.</li>
+  <li><strong>org</strong> - not used.</li>
+  <li><strong>project</strong> - not used.  </li>
+  <li><strong>register-project</strong> - the registration software and, which is used to register 
+    users of the library.</li>
+  <li><strong>schemedit-project</strong> - the <a href="DCS-2_2_0.html">DLESE Collection System</a> web application project. </li>
+  <li><strong>shared-project</strong> - no longer used.</li>
+  <li><strong>sitesearch-project</strong> - the sitesearch software, which is used to index and 
+    search pages on the DLESE web sites.</li>
+  <li><strong>suggest-resource-project</strong> - a web application for library users to suggest resources to be added to the library.</li>
+  <li><strong>suggestor-project</strong> - a simple web application that allows users the ability 
+    to suggest a URL to a resource to be included in the library.</li>
+  <li><strong>the</strong> - not used. </li>
+  <li><strong>tree-menu-project</strong> - DHTML tree menus used in the DLESE web site.</li>
+  <li><strong>vocab-project</strong> - no longer used.</li>
+  <li><strong>vocab-ui-project</strong> - manages XML file used to track DLESE metadata framework 
+    controlled vocabularies (terms and definitions) and controls the labels of 
+    the vocabularies in different DLESE systems (DDS) and user interfaces (front 
+    page, drop-down menus, full display).</li>
+</ul>
+<p>A <a href="http://cvs.sourceforge.net/viewcvs.py/dlese/cvs-demo-project/CVS-TUTORIAL.txt?view=markup">DLESE 
+    CVS tutorial</a> is available for developers to use as a starting point or 
+  as a reference. The tutorial walks through a typical use scenario that exercises 
+  each of the regularly used CVS commands. In addition, the CVS repository contains 
+  a demonstration project (cvs-demo-project) that can be used to practice issuing 
+  CVS commands in a safe environment. The demonstration project is discussed in 
+  the CVS tutorial.<br>
+</p>
+<h3><a name="build"></a>Software build process</h3>
+<p>Many of the software projects require a build step to compile and package the 
+  software for testing, deployment and/or release. The DDS, DCS and OAI projects provide 
+  an example of how a typical web application build process works. Each of these 
+  projects use the <a href="http://ant.apache.org/">Ant</a> utility to organize 
+  and execute the software build, which is defined by the Ant build.xml file. Because the build process is fully defined in this file, each developer can build the software uniformly using the Ant utility in their development area, which may be run on any of the major platforms (Linux, UNIX, Mac OS, and Windows). </p>
+<p>During a build, the Java code is compiled and 
+    each of the files used in the software are copied from the project area to the 
+    appropriate location expected by the web application server (<a href="http://jakarta.apache.org/tomcat/">Tomcat</a>). 
+    For distributable releases, this structure is then packaged as a Java WAR file, 
+    which can be downloaded and dropped into a servlet container such as <a href="http://jakarta.apache.org/tomcat/">Tomcat</a> for deployment. The <a href="#structure">project directory structure</a> outlined 
+    above complements the build process - in some cases an entire directory, such 
+    as the web directory, is copied verbatim during a build. The build process and 
+    directory structure used at the DPC  is similar to the <a href="http://jakarta.apache.org/tomcat/tomcat-4.0-doc/appdev/index.html">deployment 
+      process described by Apache</a>.</p>
+<p>Each project build file contains instructions at the top that outline 
+  what dependencies the project has and defines properties that must be set in 
+  order to build the software. Within the build file there are multiple &quot;targets.&quot; 
+  Each target performs a certain build function, which are defined below. Ant 
+  acts a lot like the Make utility, and many of the target names stem from traditional 
+  Make conventions such as &quot;clean,&quot; &quot;all,&quot; and &quot;compile.&quot; 
+  Like Make, Ant only compiles and copies files when it detects the original source 
+  has been modified, and otherwise leaves them alone.</p>
+<p>Typical Ant targets and their function (taken from the OAI project):</p>
+<p>
+<table width="95%" border="1">
+  <tr> 
+    <td><div align="center"><strong>Ant Target</strong></div></td>
+    <td><div align="center"><strong>Function</strong></div></td>
+  </tr>
+  <tr> 
+    <td>all</td>
+    <td>Deletes all compiled Java byte code and re-compiles from scratch.</td>
+  </tr>
+  <tr> 
+    <td>clean</td>
+    <td>Deletes all compiled Java byte code.</td>
+  </tr>
+  <tr> 
+    <td>clean-tomcat-work</td>
+    <td>Deletes the tomcat work directory, which is used to cache compiled JSP 
+      pages. </td>
+  </tr>
+  <tr> 
+    <td>cleanall</td>
+    <td>Deletes all compiled Java byte code and the software distribution build.</td>
+  </tr>
+  <tr> 
+    <td>cleandist</td>
+    <td>Deletes the software distribution build.</td>
+  </tr>
+  <tr> 
+    <td>compile</td>
+    <td>Builds the Java byte code from source. Note that for the DDS, OAI and 
+      ID mapper projects the byte code is built from the source files found in 
+      the dlese-tools-project.</td>
+  </tr>
+  <tr> 
+    <td>deploy</td>
+    <td>Builds the Java byte code from source and deploys all application files 
+      to the appropriate location in Tomcat. After executing the deploy target 
+      the software can then be run and tested.</td>
+  </tr>
+  <tr> 
+    <td>deploy-clean</td>
+    <td>Deletes all deployed application files from Tomcat.</td>
+  </tr>
+  <tr> 
+    <td>dist</td>
+    <td>Builds the entire software application to a distribution staging area 
+      and creates binary and source distribution zip archives that can be released 
+      to the public.</td>
+  </tr>
+  <tr> 
+    <td>javadoc</td>
+    <td>Builds the Javadoc source-code documentation. Note that for the DDS, OAI 
+      and ID mapper projects the source code resides in the dlese-tools-project.</td>
+  </tr>
+  <tr> 
+    <td>junit</td>
+    <td>Builds the JUnit regression testing code and runs the suite of tests, 
+      outputting the test results to the terminal.</td>
+  </tr>
+  <tr>
+    <td>prepare</td>
+    <td>This target is used by other targets to prepares the software for the 
+      build process and is not meant to be executed manually.</td>
+  </tr>
+</table>
+</p>
+<h3>Project dependencies</h3>
+<p>The following dependencies exist between projects:</p>
+<p>
+<table width="95%" border="1">
+  <tr> 
+    <td><div align="center"><strong>Project</strong></div></td>
+    <td><div align="center"><strong>Build-time dependency</strong></div></td>
+    <td><div align="center"><strong>Run-time dependency</strong></div></td>
+  </tr>
+  <tr> 
+    <td>oai-project</td>
+    <td>dlese-tools-project (Java libraries)</td>
+    <td>None</td>
+  </tr>
+  <tr> 
+    <td>dds-project </td>
+    <td>dlese-tools-project (Java libraries)</td>
+    <td>idmap-project, vocab-ui-project</td>
+  </tr>
+  <tr>
+    <td>idmap-project</td>
+    <td>dlese-tools-project (Java libraries)</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>schemedit-project</td>
+    <td>dlese-tools-project (Java libraries), dds-project </td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>news-opps-project</td>
+    <td>dlese-tools-project (Java libraries)</td>
+    <td>dds-project (uses the search web service), schemedit-project (uses the put record web service) </td>
+  </tr>
+  <tr>
+    <td>cas-project</td>
+    <td>dlese-tools-project (Java libraries)</td>
+    <td>dds-project (uses the search web service) </td>
+  </tr>
+</table>
+</p>
+<h3><a name="versioning"></a>Software versioning scheme </h3>
+<p>At major release points, each software project gets a version, which is tagged 
+  in CVS for retrieval. The version scheme for software applications follow this 
+  convention:</p>
+<p>W.X.Y</p>
+<p>Where:</p>
+<ul>
+  <li>W - denotes a major revision of the software. Major revisions represent 
+    large changes in functionality and/or major architectural modifications.</li>
+  <li>X - denotes a significant addition of features or functionality to an existing 
+    architecture and design.</li>
+  <li>Y - denotes a minor bug fix or minor change in the software.</li>
+</ul>
+<p>Examples: DDS v3.1.9, OAI v2.0.9</p>
+<h2>Audience </h2>
+<p>The development process is used by software developers both internal and external 
+  to the DPC. 
+</p>
+<h2> How this process is used </h2>
+<p>The development process is used to organize and streamline the development of 
+  web applications and other software within the distributed DLESE community. 
+</p>
+<h2> Technologies used </h2>
+<p>Required: Ant, CVS.<br>
+  Typical: Tomcat, Java, JEdit, JUnit.<br>
+</p>
+<h2> <a name="testing"></a>Testing and maintenance procedures </h2>
+<p>In a typical software development workflow, testing occurs at two stages: locally 
+  by the software developer during iterative development, and globally at major 
+  release points by developers, DPC staff and larger DLESE community. </p>
+<h3>Testing performed by developers</h3>
+<p>Typically each developer will test the areas of the software that they have 
+  been developing and, once they are free of noticeable bugs, will commit the 
+  changes to the CVS repository. Thus, once the software is checked in to CVS 
+  the developer has assured the software will compile and run and that the changes 
+  will allow the continuation of development work being done by others.</p>
+<p>To facilitate testing, each major Java software project has a <a href="http://www.junit.org/index.htm">JUnit</a> 
+  test suite that can be extended to provide uniform regression tests for critical 
+  software functionality and required software output. This is important because 
+  the DLESE Java libraries are used by multiple projects. If a developer changes 
+  the functionality of a Java library while working on one project the changes 
+  may effect the run-time accuracy and/or performance of another project. Regression 
+  testing can detect when such changes effect critical functionality across projects, 
+  minimizing the need for manual testing and reducing the occurrence of unintended 
+  bugs in production code. The JUnit test environment works particularly well 
+  for iterative development procedures like those used at the DPC. Currently regression 
+  testing is not being used systematically at the DPC.</p>
+<h3>Performance and accuracy testing performed prior to release</h3>
+<p>In addition to the regression testing that is performed by developers, additional 
+  testing is performed by DPC staff and others in the DLESE community prior to 
+  major releases to ensure the performance and accuracy of the software meets 
+  requirements. Performance testing is used to determine the number of user requests 
+  the software is able to handle in a given amount of time. The DPC uses <a href="http://jakarta.apache.org/jmeter/">JMeter</a> 
+  to perform this type of testing, and has also investigated the use of <a href="http://www.hpl.hp.com/personal/David_Mosberger/httperf.html">HTTPerf</a> 
+  and the <a href="http://httpunit.sourceforge.net/">HTTPUnit</a> plug in to JUnit 
+  to support this form of testing in an automated, iterative fashion.</p>
+<p>In addition to performance testing, DPC staff and the larger DLESE community 
+  also performs systematic testing to determine the accuracy of the application's 
+  output. This involves forming a list of requirements, creating a suite of tasks 
+  that exercise the requirements and then performing the tasks and verifying the 
+  output to establish reasonable accuracy. When problems are encountered, feedback 
+  is passed to developers to address and then testing is performed again in an 
+  iterative fashion. </p>
+<p>
+<i>Contact: <a href="mailto:support@dlese.org">support@dlese.org</a></i><br>
+  <i>Last updated: Document last modified March 18, 2005.</i><br>
+  <i>Author: John Weatherley</i><br>
+</p>
+</body>
+</html>
+
+
+

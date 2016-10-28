@@ -1,0 +1,108 @@
+
+<nsdl_dc:nsdl_dc xmlns:nsdl_dc="http://ns.nsdl.org/nsdl_dc_v1.02/" xmlns:lar="http://ns.nsdl.org/schemas/dc/lar" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ieee="http://www.ieee.org/xsd/LOMv1p0" xmlns:dct="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.02.020" xsi:schemaLocation="http://ns.nsdl.org/nsdl_dc_v1.02/ http://ns.nsdl.org/schemas/nsdl_dc/nsdl_dc_v1.02.xsd">
+  <lar:readiness xsi:type="lar:Ready">Fully ready</lar:readiness>
+  <dc:identifier xsi:type="dct:URI">http://www.visionlearning.com/library/module_viewer.php?mid=148&amp;l=</dc:identifier>
+  <dc:relation xsi:type="nsdl_dc:NSDLPartnerURL">http://www.compadre.org/precollege/items/detail.cfm?ID=10361</dc:relation>
+  <dc:title>Visionlearning: Research Methods: The Practice of Science</dc:title>
+  <dc:description>This instructional module introduces four types of research methods: experimentation, description, comparison, and modeling. It was developed to help learners understand that the classic definition of the "scientific method" does not capture the dynamic nature of science investigation. As learners explore each methodology, they develop an understanding of why scientists use multiple methods to gather data and develop hypotheses. It is appropriate for introductory physics courses and for teachers seeking content support in research practices. &lt;i&gt;Editor's Note: Secondary students often cling to the notion that scientific research follows a stock, standard "scientific method". They may be unaware of the differences between experimental research, correlative studies, observation, and computer-based modeling research. In this resource, they can glimpse each methodology in the context of a real study done by respected scientists.&lt;/i&gt; This resource is part of Visionlearning, an award-winning set of classroom-tested modules for science education.</dc:description>
+  <dc:subject>Education</dc:subject>
+  <dc:subject>Education Practices</dc:subject>
+  <dc:subject>Active Learning</dc:subject>
+  <dc:subject>Modeling</dc:subject>
+  <dc:subject>Data</dc:subject>
+  <dc:subject>Evaluation</dc:subject>
+  <dc:subject>Education Foundations</dc:subject>
+  <dc:subject>Research Design and Methodology</dc:subject>
+  <dc:subject>science modules</dc:subject>
+  <dc:subject>classroom-tested</dc:subject>
+  <dc:subject>evidence-based resources</dc:subject>
+  <dc:subject>evidence-based lessons</dc:subject>
+  <dc:subject>scientific method</dc:subject>
+  <dc:subject>scientific process</dc:subject>
+  <dc:subject>experiment</dc:subject>
+  <dc:subject>validity</dc:subject>
+  <dc:subject>research methodology</dc:subject>
+  <dc:subject>experimental design</dc:subject>
+  <dc:subject>experimental research</dc:subject>
+  <dc:subject>correlation</dc:subject>
+  <dc:subject>correlative studies</dc:subject>
+  <dc:subject>observation</dc:subject>
+  <dc:language>en</dc:language>
+  <dc:format>application/pdf</dc:format>
+  <dc:format>text/html</dc:format>
+  <dc:format>image/jpeg</dc:format>
+  <dc:format>application</dc:format>
+  <dc:format>image</dc:format>
+  <dc:format>text</dc:format>
+  <dct:educationLevel xsi:type="nsdl_dc:NSDLEdLevel">Grade 10</dct:educationLevel>
+  <dct:educationLevel xsi:type="nsdl_dc:NSDLEdLevel">Grade 11</dct:educationLevel>
+  <dct:educationLevel xsi:type="nsdl_dc:NSDLEdLevel">Grade 12</dct:educationLevel>
+  <dct:educationLevel xsi:type="nsdl_dc:NSDLEdLevel">High School</dct:educationLevel>
+  <dct:audience xsi:type="nsdl_dc:NSDLAudience">Learner</dct:audience>
+  <dc:type xsi:type="nsdl_dc:NSDLType">Assessment Material</dc:type>
+  <dc:type xsi:type="nsdl_dc:NSDLType">Test</dc:type>
+  <dc:type xsi:type="nsdl_dc:NSDLType">Instructional Material</dc:type>
+  <dc:type xsi:type="nsdl_dc:NSDLType">Informative Text</dc:type>
+  <dc:type xsi:type="nsdl_dc:NSDLType">Tutorial</dc:type>
+  <lar:readingGradeLevel xsi:type="lar:ReadGrade">Grade 12</lar:readingGradeLevel>
+  <dct:conformsTo>SMS-BMK-0042</dct:conformsTo>
+  <dct:conformsTo>SMS-BMK-0837</dct:conformsTo>
+  <dct:conformsTo>SMS-BMK-1701</dct:conformsTo>
+  <dct:conformsTo>SMS-BMK-1706</dct:conformsTo>
+  <dct:conformsTo>SMS-BMK-1712</dct:conformsTo>
+  <dct:conformsTo>SMS-BMK-1903</dct:conformsTo>
+  <dct:conformsTo>SMS-BMK-1904</dct:conformsTo>
+  <dct:conformsTo>SMS-BMK-2589</dct:conformsTo>
+  <dct:conformsTo>SMS-CLS-2530</dct:conformsTo>
+  <dct:conformsTo>SMS-SEC-0858</dct:conformsTo>
+  <dct:conformsTo>SMS-SEC-0863</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S11437A4</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S1143ABE</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S1143AC1</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S1143ACA</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S1143ADF</dct:conformsTo>
+  <dct:conformsTo>SMS-BMK-0790</dct:conformsTo>
+  <dct:conformsTo>SMS-BMK-1951</dct:conformsTo>
+  <dct:conformsTo>SMS-BMK-2292</dct:conformsTo>
+  <dct:conformsTo>SMS-BMK-2293</dct:conformsTo>
+  <dct:conformsTo>SMS-BMK-2503</dct:conformsTo>
+  <dct:conformsTo>SMS-CLS-2281</dct:conformsTo>
+  <dct:conformsTo>SMS-CLS-2489</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S114340C</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S114340D</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S11434BD</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S11434FE</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S1143500</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S114350A</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S114351D</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S1143543</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S1143547</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S11436A1</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S11436A3</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S2366905</dct:conformsTo>
+  <dct:conformsTo>http://asn.jesandco.org/resources/S2366906</dct:conformsTo>
+  <dct:isPartOf>http://www.visionlearning.com/library/module_viewer.php?mid=176&amp;l=</dct:isPartOf>
+  <dct:created xsi:type="dct:W3CDTF">2000</dct:created>
+  <dct:modified xsi:type="dct:W3CDTF">2010-09-26</dct:modified>
+  <dc:publisher>Visionlearning</dc:publisher>
+  <dc:contributor>National Science Foundation</dc:contributor>
+  <dc:creator>Anthony Carpi</dc:creator>
+  <dc:creator>Anne Egger</dc:creator>
+  <dct:accessRights xsi:type="nsdl_dc:NSDLAccess">Free access</dct:accessRights>
+  <dc:rights>Copyright 2000 visionlearning.com, 2000, http://www.visionlearning.com/docs/terms.php#copyright</dc:rights>
+  <dct:license>Owner license</dct:license>
+  <lar:licenseProperty xsi:type="lar:LicProp">Share alike required</lar:licenseProperty>
+  <lar:licenseProperty xsi:type="lar:LicProp">No derivatives allowed</lar:licenseProperty>
+  <dct:rightsHolder>visionlearning.com, 2000, http://www.visionlearning.com/docs/terms.php#copyright</dct:rightsHolder>
+  <lar:metadataTerms>The following entity, ComPADRE, has claims on the use of this metadata. This claim is as follows: The ComPADRE Digital Library provides this metadata for eduational purposes. These data and metadata may not be exploited for commercial purposes that are not expressly permitted by ComPADRE.</lar:metadataTerms>
+  <lar:metadataTerms>The National Science Digital Library (NSDL), located at the University Corporation for Atmospheric Research (UCAR), provides these metadata terms: These data and metadata may not be reproduced, duplicated, copied, sold, or otherwise exploited for any commercial purpose that is not expressly permitted by NSDL. More information is available at: http://nsdl.org/help/terms-of-use.</lar:metadataTerms>
+</nsdl_dc:nsdl_dc>
+
+
+
+
+
+
+
+          
+

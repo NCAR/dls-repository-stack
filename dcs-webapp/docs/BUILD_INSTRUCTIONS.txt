@@ -1,0 +1,53 @@
+
+Instructions for building the DCS/NCS software v@VERSION@ from source.
+    
+To build the DCS from source you must have the following:
+  
+1. dcs-webapp - the configuration and jsp files for DCS interface
+2. dlese-tools-project - the DLESE Java libraries source code directory
+3. dds-webapp - contains the repository level functionality
+4. joai-project - contains OAI provider functionality
+4. Tomcat version 5.x (available at http://jakarta.apache.org/tomcat/index.html)
+5. Ant (available at http://ant.apache.org/). Available for Windows in the jEdit
+code editor (available at http://www.jedit.org/ - Once installed, install the AntFarm plugin
+using jEdit's plugin manager).
+6. Java2 platform v1.4 or later (available from IBM at http://www6.software.ibm.com/dl/lxdk/lxdk-p
+or from Sun at http://java.sun.com/j2se/). Note that Java2 comes pre-installed on 
+Mac OS X (Jaguar or later).
+
+
+Build instructions:
+
+1. Obtain the dcs-webapp, dlese-tools-project, dds-webapp, and joai-project source code directories (see above).
+
+2. Obtain and install all the required tools - Tomcat, Ant and Java (see above).
+
+3. Place the dcs-webapp, dlese-tools-project and vocab-ui-project directories into a single directory
+where you will be developing the software.
+
+5. Create a file named build.properties in the directory containing the projects 
+(alternatively this can be placed in your home directory).
+
+6. Edit the build.properties file to include the required and optional Ant
+properties used in the build. The required and optional Ant properties are
+listed at the top of the build.xml file at the root level of the dds-webapp.
+For example, you could define the ${app.name} property to change the name of the
+deployed application.
+
+7. Edit the Tomcat server.xml file (located in the Tomcat conf directory)
+and create a context descriptor for schemedit (as described in INSTALL_INSTRUCTIONS.txt)
+to overide default values for a custom configuration. (Note: this step is
+not necessary, but it is highly encouraged for long-term use).
+
+8. Execute the Ant deploy command (available in jEdit or your own Ant tool)
+You should see a number of messages in your terminal. Once complete
+you should see a message like:
+    BUILD SUCCESSFUL
+    Total time: 36 seconds
+
+9. The software will be built into a directory named schemedit inside your
+Tomcat webapps directory. After (re)starting Tomcat you will be able to
+access the software at the URL http://localhost:8080/schemedit/ 
+(substitute localhost with your domain name if appropriate).
+
+

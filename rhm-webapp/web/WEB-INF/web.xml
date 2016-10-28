@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>  
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+ 
+<!-- web.xml setup for the Harvest Repository Manager application -->
+<web-app>			   
+	<display-name>Metadata Repository and Harvest Manager (v@VERSION@)</display-name>
+	<context-param>
+		<param-name>topBannerDisplayText</param-name>
+		<param-value>Metadata Repository</param-value>
+		<description>
+			The text displayed in the center of the top banner in the webapp UI
+		</description>
+	</context-param>
+
+	<context-param>
+		<param-name>harvestManagerUrl</param-name>
+		<param-value></param-value>
+		<description>
+			The public context URL to this Harvest Repository Manager webapp installation
+		</description>
+	</context-param>	
+	<context-param>        
+		<param-name>ncsWebServiceURL</param-name>
+		<param-value></param-value>
+		<description>
+			URL to the DCS/NCS where the master collection records reside.
+		</description>
+	</context-param>
+	<context-param>        
+		<param-name>ucarCollectionsQuery</param-name>
+		<param-value>ky:1201216476279</param-value>
+		<description>
+			The query used to limit the search to fetch the ncs_collect records used 
+			for ucar.org harvests.
+		</description>
+	</context-param>	
+	<context-param>        
+		<param-name>ncsViewEditRecordUrl</param-name>
+		<param-value></param-value>
+		<description>
+			URL to the DCS/NCS to pull up a single record for viewing/editing by
+			appending the DCS/NCS record ID.
+		</description>
+	</context-param>	
+	<context-param>        
+		<param-name>harvestTriggerFileDir</param-name>
+		<param-value>WEB-INF/trigger_files</param-value>
+		<description>
+			Directory where harvest trigger files should be written.
+		</description>
+	</context-param>
+	<context-param>        
+		<param-name>harvestManagerPersistentDataDir</param-name>
+		<param-value>WEB-INF/persistent_data</param-value>
+		<description>
+			This directory contains the XML database used by the HarvestManager.
+			These data store details of the harvests that have occured, which is 
+			used to display the harvest history and calculate when the next harvest 
+			should be run according to each collection's stated harvest frequency.
+			Preserve/backup this database to keep the history of harvests and 
+			the status. Delete this directory to start a new harvest timeline
+			from scratch.
+		</description>
+	</context-param>
+
+	<!-- Harvest log database settings, used to generate the logs display in the 'Harvest Logs' tab in the UI  -->
+	<context-param>        
+		<param-name>harvestDbUrl</param-name>
+		<param-value>jdbc:mysql://localhost:3306</param-value>
+		<description>
+			Url to the harvest logs database used to generate the logs display in the 'Harvest Logs' tab in the UI
+		</description>
+	</context-param>
+	<context-param>        
+		<param-name>harvestDbUser</param-name>
+		<param-value>xxxxxx</param-value>
+		<description>
+			User for the harvest database
+		</description>
+	</context-param> 
+	<context-param>        
+		<param-name>harvestDbPwd</param-name>
+		<param-value>xxxxxx</param-value>
+		<description>
+			Password for harvest database
+		</description>
+	</context-param>
+	
+	<!-- harvest ingester settings -->
+	<context-param>        
+		<param-name>maxIngestorThreads</param-name>
+		<param-value>50</param-value>
+		<description>
+			Max amount of threads that can be running at one time. Once this number is reached an exception is thrown
+			due to the fact that threads are getting hung up somewhere
+		</description>
+	</context-param>
+	<context-param>        
+		<param-name>ingestorBaseFilePathStorage</param-name>
+		<param-value>WEB-INF/file_storage/</param-value>
+		<description>
+			The base path where the ingestor workspace and permanent files should be stored.
+		</description>
+	</context-param>
+	<context-param>        
+		<param-name>ingestorConfigsURI</param-name>
+		<param-value>WEB-INF/conf/harvest-configs/</param-value>
+		<description>
+			The URI path where the config files for the different native formats are located. ie, nsdl_dc.xml, oai_dc.xml etc..
+		</description>
+	</context-param>
+	<context-param>        
+		<param-name>maxErrorThreshold</param-name>
+		<param-value>.2</param-value>
+		<description>
+			Threshold for how many records are allowed to error out before the entire harvest is aborted.
+		</description>
+	</context-param>
+	<context-param>        
+		<param-name>maxProcessorIssueReportingExamples</param-name>
+		<param-value>2</param-value>
+		<description>
+			Max number of examples that will be created when an issue happens within a individual processor.
+		</description>
+	</context-param>
+	<context-param>        
+		<param-name>minRecordCountDiscrepencyThreshold</param-name>
+		<param-value>.5</param-value>
+		<description>
+			Minimum threshold for the difference in record counts between the previous harvest and the new one. 
+			If this threshold is not met, a warning will be added to the harvest but will be allowed to go forward.
+		</description>
+	</context-param>
+	<context-param>        
+		<param-name>handleServiceURL</param-name>
+		<param-value></param-value>
+		<description>
+			URL to get or create resource and metadata handles.
+		</description>
+	</context-param>
+	<context-param>        
+		<param-name>zipHarvestFiles</param-name>
+		<param-value>false</param-value>
+		<description>
+			Whether or not to Zip the harvest files in a compressed file and delete the single files.
+		</description>
+	</context-param>
+	
+	
+	
+	<!-- E-mail notification of harvest success/failure: -->
+	<context-param>        
+		<param-name>mailServer</param-name>
+		<param-value>localhost</param-value>
+		<description>
+			Server used to send e-mails
+		</description>
+	</context-param>
+	<context-param>        
+		<param-name>toEmails</param-name>
+		<param-value></param-value>
+		<description>
+			Comma-separated list of e-mail addresses to send notifications to
+		</description>
+	</context-param>
+	<context-param>        
+		<param-name>fromEmail</param-name>
+		<param-value>&quot;NSDL Metadata Repository (via CDT)&quot; &lt;nsdl-cdt@mailman.ucar.edu&gt;</param-value>
+		<description>
+			The from e-mail address
+		</description>
+	</context-param>	
+	<context-param>        
+		<param-name>mailType</param-name>
+		<param-value>mail.smtp.host</param-value>
+		<description>
+			One of 'store' (imap) or 'mail.smtp.host' (smtp) or 'transport' (smtp)
+		</description>
+	</context-param>
+	
+	<!-- The following parameteres generally do not need changing -->
+	<context-param>        
+		<param-name>harvestRecordsContext</param-name>
+		<param-value>records</param-value>
+		<description>
+			The context/URL to the records saved by the ingest process. This
+			is used to display the harvested/processed records to the user for
+			each collection and harvest attempt.
+		</description>
+	</context-param>	
+	<context-param>        
+		<param-name>reprocessCollectionsMonthly</param-name>
+		<param-value>false</param-value>
+		<description>
+			Set to 'true' to automatically re-process all collections from a snapshot of their previously harvested records
+            monthly on the last day of the month, to pull in any cnahges in the harvest configs.
+
+			If set to 'false', one can still re-process single or all collections manually via the web UI to pull in changes
+			from the harvest configs.
+
+            Re-processing re-normalizes and re-processes each record according to the latest harvest configurations.
+        </description>
+	</context-param>
+	<context-param>        
+		<param-name>harvestCheckTime</param-name>
+		<param-value>18:30</param-value>
+		<description>
+			Time of day to begin the timer to check for and run automatic harvests.
+			Format H:mm, for example 0:35 or 23:35.
+			If harvestCheckInterval is set to 0, this value is ignored.
+		</description>
+	</context-param>
+	<context-param>
+		<param-name>harvestCheckInterval</param-name>
+		<param-value>86400</param-value>
+		<description>
+			Interval upon which to check for and run automatic harvests, in seconds.
+			Set to 0 to disable automatic harvests.
+			Currently, 86400 (every 24 hours) or 0 are the only valid values.
+		</description>
+	</context-param>
+	<context-param>        
+		<param-name>runMode</param-name>
+		<param-value>standard</param-value>
+		<description>
+			Values are: [standard|test]
+			Run in test mode to to display 
+			test links in the UI, etc.
+		</description>
+	</context-param>
+	
+	<context-param>        
+		<param-name>runHarvestSimulation</param-name>
+		<param-value>disabled</param-value>
+		<description>
+			Use this option to simulate harvests run for a given number of days for testing.
+			Upon startup, Harvest Repository Manager will run harvests immediately according to their regular schedule
+			for the given number of simmulated days. To run the test harvest schedule again,
+			re-start Harvest Repository Manager.
+			Warning: This will generate trigger files. Change harvestTriggerFileDir
+			setting to a test directory before running simulation.
+		</description>
+	</context-param>
+	
+	<context-param>        
+		<param-name>debug</param-name>
+		<param-value>true</param-value>
+		<description>
+			Indicates whether or not debugging messages will
+			be output to standard out. Must be [true | false].
+		</description>
+	</context-param> 
+
+	
+	<!-- XMLValidationFilter performs XML validation iff
+		the there is a parameter rt=validate. This filter also performs gzip compression
+		of all responses regardless of whether they are validated. -->  
+	<filter>
+		<filter-name>XMLValidationFilter</filter-name>
+		<filter-class>org.dlese.dpc.webapps.servlets.filters.XMLValidationFilter</filter-class>
+	</filter>
+
+	<!-- Configure XML validation for the OAI data provider responses... --> 
+	<filter-mapping>
+		<filter-name>XMLValidationFilter</filter-name>
+		<url-pattern>/explorer/oai_validation_report.jsp</url-pattern>
+	</filter-mapping>
+	
+	
+	<!-- ===========	The HarvestManagerServlet servlet initializes the app. =========== -->
+	<servlet>  
+		<servlet-name>HarvestManagerServlet</servlet-name>  
+		<servlet-class>edu.ucar.dls.harvestmanager.HarvestManagerServlet</servlet-class>  
+		<load-on-startup>1</load-on-startup>  
+	</servlet>  
+
+	
+  <!-- Struts Action Servlet Configuration (with debugging) -->  
+  <servlet>  
+    <servlet-name>action</servlet-name>  
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>  
+	<init-param>  
+      <param-name>application</param-name>  
+      <param-value>ApplicationResources</param-value>  
+    </init-param> 	
+    <init-param>  
+      <param-name>config</param-name>  
+      <param-value>/WEB-INF/struts-config.xml</param-value>  
+    </init-param>  
+    <init-param>  
+      <param-name>debug</param-name>  
+      <param-value>0</param-value>  
+    </init-param>  
+    <init-param>  
+      <param-name>detail</param-name>  
+      <param-value>2</param-value>  
+    </init-param>   
+    <init-param>  
+      <param-name>validate</param-name>  
+      <param-value>true</param-value>  
+    </init-param>  
+    <load-on-startup>2</load-on-startup>  
+  </servlet>
+    
+  <!-- Standard Action Servlet Mapping -->    
+  <servlet-mapping>  
+    <servlet-name>action</servlet-name>  
+    <url-pattern>*.do</url-pattern>  
+  </servlet-mapping>
+
+  <!-- The default page in dir '/' -->  
+  <welcome-file-list>  
+    <welcome-file>collections.jsp</welcome-file>
+	<welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>  
+  
+	<!-- Define pages to display errors -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/error_pages/error_page_404.jsp</location>
+	</error-page>
+	<error-page>
+		<!-- Note that custom 401 does not work in TC 5.5.12 (known bug) -->
+		<error-code>401</error-code>
+		<location>/WEB-INF/error_pages/error_page_401.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>403</error-code>
+		<location>/WEB-INF/error_pages/error_page_403.jsp</location>
+	</error-page>	
+	<error-page>
+		<error-code>500</error-code>
+		<location>/WEB-INF/error_pages/error_page_500.jsp</location>
+	</error-page>	
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/WEB-INF/error_pages/error_page_500.jsp</location>
+	</error-page>  
+
+
+    <!-- 
+		To enable password access to Harvest Repository Manager administration (Tomcat 5.5 or greater),
+        edit the file conf/tomcat-users.xml in your Tomcat installation and
+		add the role 'harvest_manager_admin' and at least one user assigned to that role.
+		
+		For exaple:
+
+		<tomcat-users>
+			<role rolename="harvest_manager_admin"/>
+			... additional roles not shown ...
+			
+			<user username="jdoe" password="mypassword" roles="harvest_manager_admin"/>
+			... additional users not shown...
+		</tomcat-users>
+			
+		Multiple users can be defined as well as multiple roles. 
+		The application must be restarted before changes in these definitions
+		are seen.
+		
+		Alternatively, a separate file may be used for the users/roles:
+		
+		- Copy the following Context and Realm elements into the <Host> element of the 
+		'server.xml' config file found in the Tomcat 5.x 'conf' directory:
+	
+		   <Realm className="org.apache.catalina.realm.MemoryRealm" 
+								 pathname="conf/harvest_manager_users.xml" />
+		
+		- Then create the file conf/harvest_manager_users.xml with the users/roles as shown above.
+		
+	-->	 
+	
+	<!-- Configuration for user authentication - uncomment to enable (see above) -->
+
+	@DIST-COMMENT-OPEN@ 	
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Harvest Repository Manager Application</web-resource-name>
+			<url-pattern>/admin/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>harvest_manager_admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>Harvest Repository Manager Administration</realm-name>
+	</login-config>
+	<security-role>
+		<role-name>harvest_manager_admin</role-name>
+	</security-role>	
+	@DIST-COMMENT-CLOSE@ 
+  
+</web-app>  

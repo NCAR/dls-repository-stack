@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: DCelements-DCvocab-lang.xsd,v 1.2 2008/02/21 22:21:33 ginger Exp $ -->
+<xsd:schema xmlns="http://purl.org/dc/elements/1.1/" targetNamespace="http://purl.org/dc/elements/1.1/" xmlns:DCMI="http://purl.org/dc/dcmitype/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:annotation>
+		<xsd:documentation>************************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA PUPOSE  and INTENT  *****</xsd:documentation>
+		<xsd:documentation>************************************************</xsd:documentation>
+		<xsd:documentation>Define a simple Dublin Core schema that is similar to the schema provided by Dublin Core but without using the XML schema element of choice but inlcuding the xml:lang attribute.</xsd:documentation>
+		<xsd:documentation>To create a schema that when used in a cataloging tool that creates its interface based directly on a schema, the tool interface will expose the schema elements directly rather than requiring the user to make a choice.</xsd:documentation>
+
+		<xsd:documentation>********************************</xsd:documentation>
+		<xsd:documentation>*****  ROOT ELEMENT *****</xsd:documentation>
+		<xsd:documentation>********************************</xsd:documentation>
+		<xsd:documentation>This schema does not have a root element.</xsd:documentation>
+		<xsd:documentation>To use this schema, create another wrapper or container schema that calls this schema. Then the calling schema can access the elements in this schema.</xsd:documentation>
+		<xsd:documentation>Included schemas do not have a root element either.</xsd:documentation>
+
+		<xsd:documentation>******************************</xsd:documentation>
+		<xsd:documentation>*****  NAMESPACES  *****</xsd:documentation>
+		<xsd:documentation>******************************</xsd:documentation>
+		<xsd:documentation>This schema has a target namespaces of: http://purl.org/dc/elements/1.1/</xsd:documentation>
+		<xsd:documentation>This schema has a default namespace of: http://purl.org/dc/elements/1.1/</xsd:documentation>
+		<xsd:documentation>The schema also has a namespace called DCMI http://purl.org/dc/dcmitype/ to work with imported schemas.</xsd:documentation>
+
+		<xsd:documentation>****************************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMAS TO INCLUDE or IMPORT *****</xsd:documentation>
+		<xsd:documentation>****************************************************</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
+	<xsd:include schemaLocation="vocabs/type-DCvocab-lang.xsd"><!--enforces the values allowed for the type element--></xsd:include>
+	
+	<xsd:annotation>
+		<xsd:documentation>************************************</xsd:documentation>
+		<xsd:documentation>***** GLOBAL ELEMENTS  *****</xsd:documentation>
+		<xsd:documentation>************************************</xsd:documentation>
+		<xsd:documentation>For definitions of the elements, see the Dublin Core Metadata Element Set, Version 1.1: Reference Description at: http://dublincore.org/documents/dces/</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:element name="title" type="elementType"/>
+	<xsd:element name="creator" type="elementType"/>
+	<xsd:element name="subject" type="elementType"/>
+	<xsd:element name="description" type="elementType"/>
+	<xsd:element name="publisher" type="elementType"/>
+	<xsd:element name="contributor" type="elementType"/>
+	<xsd:element name="date" type="elementType"/>
+	<xsd:element name="type" type="elementTypeType"/>
+	<xsd:element name="format" type="elementType"/>
+	<xsd:element name="identifier" type="elementType"/>
+	<xsd:element name="source" type="elementType"/>
+	<xsd:element name="language" type="elementType"/>
+	<xsd:element name="relation" type="elementType"/>
+	<xsd:element name="coverage" type="elementType"/>
+	<xsd:element name="rights" type="elementType"/>
+	
+	
+	<xsd:group name="elementsGroup">
+	<!--must express min and max here because min/max not allowed on global elements like those above (pg 20 of schema book)-->
+		<xsd:sequence>
+			<xsd:element ref="title" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="creator" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="subject" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="description" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="publisher" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="contributor" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="date" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="type" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="format" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="identifier" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="source" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="language" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="relation" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="coverage" minOccurs="0" maxOccurs="unbounded"/> 
+			<xsd:element ref="rights" minOccurs="0" maxOccurs="unbounded"/> 
+		</xsd:sequence>
+	</xsd:group>
+	
+	<xsd:complexType name="elementType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute ref="xml:lang" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:documentation>*****************************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA DEVELOPMENT  *****</xsd:documentation>
+		<xsd:documentation>*****************************************</xsd:documentation>
+		<xsd:documentation>Created: 2006-10-02</xsd:documentation>
+		<xsd:documentation>Last Modified 2006-10-05</xsd:documentation>
+
+		<xsd:documentation>*********************************</xsd:documentation>
+		<xsd:documentation>***** SCHEMA AUTHOR  *****</xsd:documentation>
+		<xsd:documentation>*********************************</xsd:documentation>
+		<xsd:documentation>Katy Ginger, University Corporation for Atmospheric Research (UCAR), ginger@ucar.edu</xsd:documentation>
+
+		<xsd:documentation>****************************************</xsd:documentation>
+		<xsd:documentation>*****  LICENSE INFORMATION  *****</xsd:documentation>
+		<xsd:documentation>****************************************</xsd:documentation>
+		<xsd:documentation>Copyright  (c) 2006 University Corporation for Atmospheric Research (UCAR) P.O. Box 3000, Boulder, CO 80307, United States of America</xsd:documentation>
+		
+		<xsd:documentation>******************************************************</xsd:documentation>
+		<xsd:documentation>*****  OTHER COPYRIGHT INFORMATION  *****</xsd:documentation>
+		<xsd:documentation>******************************************************</xsd:documentation>
+		<xsd:documentation>This schema is based on the Dublin Core schema at: http://dublincore.org/schemas/xmls/simpledc20021212.xsd</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

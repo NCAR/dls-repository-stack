@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+	<title>Resources about Tsunamis from DLESE</title>
+	
+	<!-- 
+		Include the suggested_styles.css sheet to obtain basic display options for your page
+		You may override any of the style definitions later on, copy them into your
+		own style sheet or place them directly in you HTML page
+	 -->
+	<LINK REL="stylesheet" TYPE="text/css" HREF="@DDS_SERVER_BASE_URL@/services/jshtml1-1/suggested_styles.css">
+	
+	<style type="text/css">
+		<!--
+		/* Override the 'suggested' background color behind the resources's title */
+		TR.resourceTitle {
+			background-color:#EFEFFF;
+		}		
+		
+		/* Note: All of the text returned by the service is within a TD element */
+		TD { 
+			font-family: Arial, Helvetica, sans-serif; 
+			font-size: 10pt; 
+		} 	
+		H1 { 
+			font-family:  Arial, Helvetica, sans-serif; 
+			font-size: 14pt; 
+		} 		
+		H2 { 
+			font-family: Arial, Helvetica, sans-serif; 
+			font-size: 12pt; 
+		} 
+		-->
+	</style>	
+	
+</head>
+<body>
+
+
+<table class="stdTable">
+	<tr class="stdTable">
+		<td class="stdTable" style="padding-bottom:0">
+			<h1>Resources about Tsunamis from DLESE</h1>
+			<p><a href="index.html#examples">Back to the Examples</a></p>
+			
+			<p>
+			This page displays the top 20 most relevent resources in the library 
+			about Tsunamis. The RenderSearchResults command is used to do this, using the 
+			query 'tsunamis'.  It also uses the commands MaxResultsPerPage and 
+			HideElement to display only the top 20 resources. This example also 
+			illustrates how to modify the suggested CSS to change the background
+			behind the title of the resources to blue.
+			</p>
+			
+			<b>DLESE Resources about Tsunamis</b>
+		</td>
+	</tr>
+</table>
+
+<!-- 
+	The following two <SCRIPT> elements are required to render the DLESE search.
+	These may be placed at any location in your page to customize where the DLESE
+	search is displayed.
+-->
+<SCRIPT TYPE="text/javascript" SRC="@DDS_SERVER_BASE_URL@/services/jshtml1-1/javascript_search_service.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript">
+	<!--	
+
+	// Show up to 20 resources per page of results
+	MaxResultsPerPage("20");			
+	
+	// Hide the links to page through results so only the top 20 are accessable
+	HideElement("pager");
+
+	// This single command issues a search and displays the result directly in the page.
+	RenderSearchResults("tsunamis");
+	
+	-->
+</SCRIPT>
+
+<!-- Provide a message if JavaScript is disabled in the user's browser -->
+<NOSCRIPT>
+	This page requires that JavaScript be turned on. Please activate JavaScript in your browser.
+</NOSCRIPT> 
+
+</body>
+</html>	

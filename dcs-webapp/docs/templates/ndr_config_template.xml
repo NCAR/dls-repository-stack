@@ -1,0 +1,30 @@
+       
+    <!-- ===== Optional - NDR parameters =====
+        These parameters are necessary to allow the NCS to interact with
+        the NDR (NSDL Data Repository).
+    -->
+    
+    <!-- ndrServiceEnabled (true | false) must be "true" to enable 
+        interaction with NDR -->
+    <Parameter name="ndrServiceEnabled"
+       value="false"
+       override="false"/>
+
+    <!-- ndrServer - full url to the NDR Server API - e.g. "http://ndr.nsdl.org/api" -->
+    <Parameter name="ndrApiBaseUrl"
+       value=""
+       override="false"/> 
+    
+    <!-- ncsAgentHandle - Handle of NDR Agent Object (ncs.nsdl.org) for this application.
+         Note: This value must be obtained from the NDR Administrators -->
+    <Parameter name="ncsAgentHandle"
+       value=""
+       override="false"/>
+       
+    <!-- ncsAgentPrivateKey - Path to a local file holding the private key representing the Agent.
+         for this application.
+         Note: Consult with NDR Administrators about how to create your key -->
+    <Parameter name="ncsAgentPrivateKey"
+       value=""
+       override="false"/>  
+	   

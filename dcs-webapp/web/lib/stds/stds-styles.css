@@ -1,0 +1,93 @@
+.stds-ui-label {
+	font-size:11px;
+	color:#333366;
+	font-weight:bold;
+}
+
+.stds-ui-button {
+	font-size:10px;
+}
+
+.std-doc-label {
+	font-size:16px;
+	font-weight:bold;
+}
+
+.std-doc-title {
+	font-size:12px;
+	/* font-weight:bold; */
+	font-style:italic;
+}
+
+#criteria-table {
+	margin:3px 20px 15px 0px;
+}
+
+/* controler styles */
+.attr, .attr-header {font-size:8pt}
+
+.attr-header {
+	text-align:center;
+	font-weight:bold;
+}
+
+.reset-button {
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	font-size:0.8em;
+	font-style:normal;
+}
+
+/* standards display */
+.suggestion-box {
+	margin:4px 0px 4px 0px;
+	padding:2px;
+	border:#E8ECF4 1px solid;
+}
+.suggestion-box.suggested {
+	background-color:#E8ECF4;
+	/* border-color:#ccffcc; */
+}
+
+/* NOTE: we can't use "selected" here because ID6 gets confused with
+selected modifier used in menus! */
+.suggestion-box.checked {
+	border-color:black;
+}
+
+.list-explanation {
+	margin:2px 0px 2px 0px;
+	font-style:normal;
+	font-size:85%;
+}
+
+/* Overall */
+
+/* used to "grey-out" the display while retrieving CAT results */
+#blanket {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:auto;
+	text-align:center;
+	height:auto;
+	background:white;
+	opacity:0.5;
+	z-index:1; 
+}
+/* activated while retrieving CAT results */
+#spinner {
+	position:absolute;
+	top:100%;
+	left:100%;
+	width:270px;
+	text-align:center;
+	height:auto;
+	padding:8px;
+	border:#333366 solid 3px;
+	background-color:white;
+	z-index:3;
+	color:#333366;
+	font-weight:bold;
+}
+

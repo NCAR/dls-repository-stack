@@ -1,0 +1,77 @@
+<%@ include file="scopes-include.jspf" %>
+
+<hr />
+
+<%-- Request --%>
+<div class="props-wrapper">
+	<h3>Request Scope Variables  <span class="control"> [ hide/show ]</span></h3>
+	<table class="props" width="100%">
+	<tr>
+		<th>key</th>
+		<th>value</th>
+	</tr>
+	
+	<c:forEach var="attr" items="${requestScope}" >
+		<tr valign="top">
+			<td width="30%">${attr.key}</td>
+			<td>${attr.value}</td>
+		</tr>
+	</c:forEach>
+	</table>
+</div>
+
+<%-- Page --%>
+<div class="props-wrapper">
+	<h3>Page Scope Variables <span class="control"> [ hide/show ]</span></h3>
+	<table class="props" width="100%">
+	<tr>
+		<th>key</th>
+		<th>value</th>
+	</tr>
+	
+	<c:forEach var="attr" items="${pageScope}" >
+		<tr valign="top">
+			<td width="30%">${attr.key}</td>
+			<td>${attr.value}</td>
+		</tr>
+	</c:forEach>
+	</table>
+</div>
+
+<%-- Session --%>
+<div class="props-wrapper">
+	<h3>Session Scope Variables  <span class="control"> [ hide/show ]</span></h3>
+	<table class="props" width="100%">
+	<tr>
+		<th>key</th>
+		<th>value</th>
+	</tr>
+	
+	<c:forEach var="attr" items="${sessionScope}" >
+		<tr valign="top">
+			<td width="30%">${attr.key}</td>
+			<td>${attr.value}</td>
+		</tr>
+	</c:forEach>
+	</table>
+</div>
+
+<%-- Application --%>
+<div class="props-wrapper">
+	<h3>Application Scope Variables  <span class="control"> [ hide/show ]</span></h3>
+	<table class="props" width="100%">
+	<tr>
+		<th>key</th>
+		<th>value</th>
+	</tr>
+	
+	<c:forEach var="attr" items="${applicationScope}" >
+	<c:if test="${attr.key != 'org.apache.catalina.jsp_classpath'}">
+		<tr valign="top">
+			<td width="30%">${attr.key}</td>
+			<td>${attr.value}</td>
+		</tr>
+	</c:if>
+	</c:forEach>
+	</table>
+</div>

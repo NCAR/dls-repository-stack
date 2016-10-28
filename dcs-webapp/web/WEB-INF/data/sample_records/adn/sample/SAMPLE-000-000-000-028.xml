@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>The Maury Project: Exploring the Physical Foundations of Oceanography</title>
+<description>The Maury Project is the American Meteorological Society's comprehensive national program of teacher enhancement based on studies of the physical foundations of oceanography. Major components of the program include: (a) the development of a cadre of master oceanographic education resource teachers who provide peer training opportunities for their colleagues throughout the country, and (b) the dissemination and implementation of scientifically accurate and pedagogically sound instructional resource materials directed towards teachers. The program has two teacher enhancement components: (a) summer workshop training, and (b) peer-led training sessions. The workshop phase is held each summer at the United States Naval Academy (USNA) in Annapolis, Maryland, for 24 new participants (all of whom must go through an appliation process). This two-week phase includes intensive training sessions including lectures, tutorials, seminars, research cruises, hands-on laboratory exercises, and field trips. Trainers include faculty members from USNA, scientists from National Oceanic and Atmospheric Administration (NOAA) and other organizations, and professional science educators. In component (b), the teachers trained in the USNA workshop conduct single-topic sessions on an on-going basis, for their peers within their home states, using single topic teaching materials developed by AMS specifically for this purpose. These training sessions, one to two hours in length, are offered by Maury Peer Trainers on a variety of topics treating the physical foundations of oceanography.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Physical oceanography</subject>
+</subjects>
+</general>
+<lifecycle>
+<contributors>
+<contributor role="Contact">
+<person>
+<nameTitle>Dr</nameTitle>
+<nameFirst>Ira</nameFirst>
+<nameMiddle>W.</nameMiddle>
+<nameLast>Geer</nameLast>
+<instName>American Meteorological Society</instName>
+<emailPrimary>amsedu@dc.ametsoc.org</emailPrimary>
+</person>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-028">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-11-14" created="2000-11-14"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://www.ametsoc.org/amsedu/maury/index.html</primaryURL>
+<mediums>
+<medium>text/html</medium>
+</mediums>
+<requirements>
+<requirement>
+<reqType>DLESE:General:No specific technical requirements</reqType>
+</requirement>
+</requirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:High school</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Intermediate elementary</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Middle school</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Primary elementary</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Learning materials:Course</resourceType>
+</resourceTypes>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>Copyright 1998 American Meteorological Society</description>
+</rights>
+</itemRecord>

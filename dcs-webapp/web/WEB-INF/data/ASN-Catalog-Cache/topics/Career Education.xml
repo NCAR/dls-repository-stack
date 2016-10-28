@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AsnDocuments topic="Career Education">
+  <asnDocument id="http://asn.jesandco.org/resources/D2403897">
+    <title>Wisconsin's Model Academic Standards for Business</title>
+    <topic>Career Education</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>1998</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2530716">
+    <title>Wisconsin Common Career and Technical Core Standards</title>
+    <topic>Career Education</topic>
+    <author>WI</author>
+    <authorName>Wisconsin</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2499245">
+    <title>Montana Standards For Career and Vocational Technical Education</title>
+    <topic>Career Education</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2000</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2499254">
+    <title>Montana Standards for Workplace Competencies</title>
+    <topic>Career Education</topic>
+    <author>MT</author>
+    <authorName>Montana</authorName>
+    <created>2000</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2601489">
+    <title>New Jersey Core Curriculum Content Standards for 21st Century Life and Careers</title>
+    <topic>Career Education</topic>
+    <author>NJ</author>
+    <authorName>New Jersey</authorName>
+    <created>2014</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2517365">
+    <title>K-12 Career Development New Hampshire Framework</title>
+    <topic>Career Education</topic>
+    <author>NH</author>
+    <authorName>New Hampshire</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2475147">
+    <title>Alaska Content Standards Employability</title>
+    <topic>Career Education</topic>
+    <author>AK</author>
+    <authorName>Alaska</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2588692">
+    <title>Iowa Core 21st Century Skills - Employability Skills</title>
+    <topic>Career Education</topic>
+    <author>IA</author>
+    <authorName>Iowa</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2528822">
+    <title>Arizona Technical Standards: Accounting and Related Services</title>
+    <topic>Career Education</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2528914">
+    <title>Arizona Technical Standards: Advanced Construction Technologies</title>
+    <topic>Career Education</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2528989">
+    <title>Arizona Technical Standards: Advertising and Public Relations</title>
+    <topic>Career Education</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2529099">
+    <title>Arizona Technical Standards: Aircraft Mechanics</title>
+    <topic>Career Education</topic>
+    <author>AZ</author>
+    <authorName>Arizona</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2605823">
+    <title>Basic Instruction Package for Meteorologists (BIP-M)</title>
+    <topic>Career Education</topic>
+    <author>WMO</author>
+    <authorName>World Meteorological Organization</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2605824">
+    <title>Basic Instruction Package for Meteorological Technicians (BIP-MT)</title>
+    <topic>Career Education</topic>
+    <author>WMO</author>
+    <authorName>World Meteorological Organization</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2516277">
+    <title>Career and Education Development Learning Results: Parameters for Essential Instruction</title>
+    <topic>Career Education</topic>
+    <author>ME</author>
+    <authorName>Maine</authorName>
+    <created>2007</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2448073">
+    <title>Hawaii Content and Performance Standards for Career and Technical Education</title>
+    <topic>Career Education</topic>
+    <author>HI</author>
+    <authorName>Hawaii</authorName>
+    <created>2005</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2400246">
+    <title>Wyoming Career/Vocational Education Content and Performance Standards</title>
+    <topic>Career Education</topic>
+    <author>WY</author>
+    <authorName>Wyoming</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003FD">
+    <title>Educational Leadership Policy Standards: ISLLC 2008</title>
+    <topic>Career Education</topic>
+    <author>ISLLC</author>
+    <authorName>ISLLC</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2400024">
+    <title>Academic Standards for Career Education and Work</title>
+    <topic>Career Education</topic>
+    <author>PA</author>
+    <authorName>Pennsylvania</authorName>
+    <created>2006</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2527589">
+    <title>Competency Index for the Library Field</title>
+    <topic>Career Education</topic>
+    <author>WebJunction</author>
+    <authorName>WebJunction</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D1000257">
+    <title>California Career Technical Education Model Curriculum Standards</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2005</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2535156">
+    <title>California Standards for Career Ready Practice</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2536199">
+    <title>CTE Model Curriculum Standards: Agriculture and Natural Resources</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2537293">
+    <title>CTE Model Curriculum Standards: Arts, Media, and Entertainment</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2537869">
+    <title>CTE Model Curriculum Standards: Building and Construction Trades</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2538854">
+    <title>CTE Model Curriculum Standards: Business and Finance</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2539107">
+    <title>CTE Model Curriculum Standards: Education, Child Development, and Family Services</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2539591">
+    <title>CTE Model Curriculum Standards: Energy, Environment, and Utilities</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2541115">
+    <title>CTE Model Curriculum Standards: Engineering and Architecture</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2541508">
+    <title>CTE Model Curriculum Standards: Fashion and Interior Design</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2541865">
+    <title>CTE Model Curriculum Standards: Health Science and Medical Technology</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2543501">
+    <title>CTE Model Curriculum Standards: Hospitality, Tourism, and Recreation</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2543790">
+    <title>CTE Model Curriculum Standards: Information and Communication Technologies</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2544132">
+    <title>CTE Model Curriculum Standards: Manufacturing and Product Development</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2544413">
+    <title>CTE Model Curriculum Standards: Marketing, Sales, and Service</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2544695">
+    <title>CTE Model Curriculum Standards: Public Services</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2545823">
+    <title>CTE Model Curriculum Standards: Transportation</title>
+    <topic>Career Education</topic>
+    <author>CA</author>
+    <authorName>California</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D10003FE">
+    <title>Kentucky Teacher Standards</title>
+    <topic>Career Education</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2589291">
+    <title>Kentucky Core Academic Standards - Vocational Studies</title>
+    <topic>Career Education</topic>
+    <author>KY</author>
+    <authorName>Kentucky</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2541328">
+    <title>National Healthcare Foundation Standards and Accountability Criteria</title>
+    <topic>Career Education</topic>
+    <author>NCHSE</author>
+    <authorName>NCHSE</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2485394">
+    <title>Texas Essential Knowledge and Skills for Career Development</title>
+    <topic>Career Education</topic>
+    <author>TX</author>
+    <authorName>Texas</authorName>
+    <created>2010</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2490568">
+    <title>Learning Standards for Career Development and Occupational Studies at Three Levels</title>
+    <topic>Career Education</topic>
+    <author>NY</author>
+    <authorName>New York</authorName>
+    <created>1995</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2530236">
+    <title>Child Development I</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2012</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2530359">
+    <title>South Carolina Standards for Professional Development</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2000</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2530441">
+    <title>Family Life Education I</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2013</created>
+    <status>Deprecated</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2530589">
+    <title>Human Development: Responsible Life Choices 1</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2530590">
+    <title>Digital Desktop Publishing</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2530653">
+    <title>Accounting 1</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2530924">
+    <title>Architectural Design 1 and 2</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2530985">
+    <title>Computer Applications</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2531088">
+    <title>Entrepreneurship</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2531337">
+    <title>Integrated Business Applications 1</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2531526">
+    <title>Introduction to Emergency Medical Services (EMS)</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2531610">
+    <title>Keyboarding</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2531646">
+    <title>Medical Terminology</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2009</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2531670">
+    <title>Web Page Design and Development 1</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2531751">
+    <title>Health Science 1</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2013</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2532626">
+    <title>Child Development I</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2012</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2532666">
+    <title>Family Life Education I</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2532720">
+    <title>Personal Finance</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2008</created>
+    <status>Published</status>
+  </asnDocument>
+  <asnDocument id="http://asn.jesandco.org/resources/D2534875">
+    <title>Parenting Education 1</title>
+    <topic>Career Education</topic>
+    <author>SC</author>
+    <authorName>South Carolina</authorName>
+    <created>2011</created>
+    <status>Published</status>
+  </asnDocument>
+</AsnDocuments>

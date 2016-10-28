@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings fileCreated="2010-09-09T11:38:40Z" subject="Social Studies">
+  <mapping>
+    <acsrInfo id="0a5aff41-6182-4b74-8044-5645337bfb86">
+      <title>Alabama Course of Study: Social Studies</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>AL</jurisdiction>
+      <fileName>Course of Study: Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000297">
+      <title>Alabama Course of Study: Social Studies</title>
+      <created>2004</created>
+      <topic>Social Studies</topic>
+      <author>Alabama</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="70fac98e-e258-4db2-9aa4-e8b4f8ccfa03">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Social Studies Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002A6">
+      <title>Social Studies Curriculum Frameworks Revised 2000</title>
+      <created>2000</created>
+      <topic>Social Studies</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="317d76c9-c921-4831-94a5-2509fe669490">
+      <title>Arkansas Social Studies Curriculum Framework</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>AR</jurisdiction>
+      <fileName>Social Studies Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000341">
+      <title>Arkansas Social Studies Curriculum Framework</title>
+      <created>2006</created>
+      <topic>Social Studies</topic>
+      <author>Arkansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d1d25521-553f-465f-9c64-6471c4be5250">
+      <title>History-Social Science Content Standards</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>CA</jurisdiction>
+      <fileName>History-Social Science Content Stan</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002A5">
+      <title>History-Social Science Content Standards</title>
+      <created>1998</created>
+      <topic>Social Studies</topic>
+      <author>California</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="74682367-a9a9-496e-9709-93a0ba0a1164">
+      <title>Colorado Academic Standards for Social Studies</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>CO</jurisdiction>
+      <fileName>Academic Standards for Social Studi</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003F5">
+      <title>Colorado Academic Standards for Social Studies</title>
+      <created>2009</created>
+      <topic>Social Studies</topic>
+      <author>Colorado</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8484cbed-7000-4947-9357-dde9ed095233">
+      <title>The Connecticut Framework K-12 Curricular Goals and Standards -- Social Studies</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>CT</jurisdiction>
+      <fileName>Social Studies Framework K-12</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002A8">
+      <title>The Connecticut Framework K-12 Curricular Goals and Standards -- Social Studies</title>
+      <created>1998</created>
+      <topic>Social Studies</topic>
+      <author>Connecticut</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="fb40feef-0120-4024-b82e-41edc69af9d1">
+      <title>Social Studies Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>DC</jurisdiction>
+      <fileName>Social Studies Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100035F">
+      <title>Social Studies Standards</title>
+      <created>2006</created>
+      <topic>Social Studies</topic>
+      <author>District of Columbia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8830b1a8-bdae-4499-9b8e-ffc848b1d00b">
+      <title>Social Studies Grade Level Expectations</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>DE</jurisdiction>
+      <fileName>Social Studies GLE's</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000298">
+      <title>Social Studies Grade Level Expectations</title>
+      <created>2006</created>
+      <topic>Social Studies</topic>
+      <author>Delaware</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0465e71b-c59b-4ab9-a90e-48b1d9ac75bf">
+      <title>Sunshine State Standards: Social Studies with Grade Level Expectations</title>
+      <localAdoptionDate>1999</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>SSS Social Stuides with GLEs</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002A3">
+      <title>Sunshine State Standards: Social Studies with Grade Level Expectations</title>
+      <created>1999</created>
+      <topic>Social Studies</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="51a863ee-a447-4d80-915f-faaf9c2ab43a">
+      <title>Sunshine State Standards: Social Studies, December 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>FL</jurisdiction>
+      <fileName>Social Studies Standards, Dec. 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000389">
+      <title>Sunshine State Standards: Social Studies, December 2008</title>
+      <created>2008</created>
+      <topic>Social Studies</topic>
+      <author>Florida</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="54c207e3-aede-4175-b568-c16caa8bf663">
+      <title>Performance Standards for Social Studies</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>Perf. Standards for Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000299">
+      <title>Performance Standards for Social Studies</title>
+      <created>2008</created>
+      <topic>Social Studies</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2709c372-a2ed-4c3a-bd21-8c4eaa1c3409">
+      <title>Psychology Standards</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>Psychology Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003AC">
+      <title>Psychology Standards</title>
+      <created>2008</created>
+      <topic>Social Studies</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3627d913-b3de-4ce8-8ae0-d265e28070c9">
+      <title>Sociology Standards</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>GA</jurisdiction>
+      <fileName>Sociology Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003AD">
+      <title>Sociology Standards</title>
+      <created>2008</created>
+      <topic>Social Studies</topic>
+      <author>Georgia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3df8206a-c764-4c91-841c-27c5fc761f33">
+      <title>HCPS III Social Studies Standards</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>HI</jurisdiction>
+      <fileName>HCPS III Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100029C">
+      <title>HCPS III Social Studies Standards</title>
+      <created>2005</created>
+      <topic>Social Studies</topic>
+      <author>Hawaii</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a08cdf19-96b4-4e24-bc95-593c322259e1">
+      <title>Iowa Core Curriculum K-12 Social Studies</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>IA</jurisdiction>
+      <fileName>Iowa Core Curriculum Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003E3">
+      <title>Iowa Core Curriculum K-12 Social Studies</title>
+      <created>2009</created>
+      <topic>Social Studies</topic>
+      <author>Iowa</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e457417d-5ade-44a8-a597-e17122c61f5f">
+      <title>Idaho Content Standards Social Studies</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>ID</jurisdiction>
+      <fileName>Content Standards Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100029A">
+      <title>Idaho Content Standards Social Studies</title>
+      <created>2006</created>
+      <topic>Social Studies</topic>
+      <author>Idaho</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="c514e45e-cdfc-4808-9ca4-6c6e5701873b">
+      <title>Social Science Performance Descriptors</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>IL</jurisdiction>
+      <fileName>Social Science Performance Descript</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003C2">
+      <title>Social Science Performance Descriptors</title>
+      <created>2002</created>
+      <topic>Social Studies</topic>
+      <author>Illinois</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="f28eb491-3baf-4674-b28a-86a42db8660f">
+      <title>Indianaâ€™s Academic Standards Social Studies</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Academic Standards Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100028A">
+      <title>Indianaâ€™s Academic Standards Social Studies</title>
+      <created>2001</created>
+      <topic>Social Studies</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="332d9f6b-9123-44ff-9cb4-9f54ca200502">
+      <title>Indiana's Academic Standards Social Studies</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Academic Standards Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000349">
+      <title>Indiana's Academic Standards Social Studies</title>
+      <created>2008</created>
+      <topic>Social Studies</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a4b83233-0383-4ff8-a55c-2e9092aea79b">
+      <title>Indianaâ€™s Core Standards for Social Studies</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>IN</jurisdiction>
+      <fileName>Core Standards for Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000348">
+      <title>Indianaâ€™s Core Standards for Social Studies</title>
+      <created>2008</created>
+      <topic>Social Studies</topic>
+      <author>Indiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a7314426-9490-4b8f-be56-865491813894">
+      <title>Kansas Curricular Standards for History and Government, Economics and Geography</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>KS</jurisdiction>
+      <fileName>Kansas Curricular Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002D2">
+      <title>Kansas Curricular Standards for History and Government, Economics and Geography</title>
+      <created>2005</created>
+      <topic>Social Studies</topic>
+      <author>Kansas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="df6f9939-7551-4e11-9b04-661c988bd23c">
+      <title>Core Content for Social Studies Assessment Version 4.1</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Core Content for Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002CB">
+      <title>Core Content for Social Studies Assessment Version 4.1</title>
+      <created>2006</created>
+      <topic>Social Studies</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="88a3e77c-4eb4-462c-b144-604340ad1aa1">
+      <title>Program of Studies Social Studies Revised 2006</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>KY</jurisdiction>
+      <fileName>Program of Studies Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002CC">
+      <title>Program of Studies Social Studies Revised 2006</title>
+      <created>2006</created>
+      <topic>Social Studies</topic>
+      <author>Kentucky</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="22685674-78fa-4501-a1c1-e4cc28de0c91">
+      <title>Social Studies Grade-Level Expectations</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Social Studies GLEs</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100034C">
+      <title>Social Studies Grade-Level Expectations</title>
+      <created>2003</created>
+      <topic>Social Studies</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b3a2a3b0-23cf-48d4-b980-8836a2242ed1">
+      <title>Louisiana Content Standards for Social Studies</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>LA</jurisdiction>
+      <fileName>Content Standards Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002B0">
+      <title>Louisiana Content Standards for Social Studies</title>
+      <created>2005</created>
+      <topic>Social Studies</topic>
+      <author>Louisiana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="7ea827c0-60e5-465e-8813-da26a74021e8">
+      <title>Massachusetts History and Social Science Curriculum Framework</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>MA</jurisdiction>
+      <fileName>Social Science Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002BC">
+      <title>Massachusetts History and Social Science Curriculum Framework</title>
+      <created>2003</created>
+      <topic>Social Studies</topic>
+      <author>Massachusetts</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e86e2814-15e1-4b3e-93d3-de6a8af4bc1f">
+      <title>Voluntary State Curriculum - Social Studies</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>MD</jurisdiction>
+      <fileName>VSC - Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002D0">
+      <title>Voluntary State Curriculum - Social Studies</title>
+      <created>2006</created>
+      <topic>Social Studies</topic>
+      <author>Maryland</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="725bc99a-2303-4a3a-9b00-875fb26a230e">
+      <title>2007 Social Studies Learning Results: Parameters for Essential Instruction</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>ME</jurisdiction>
+      <fileName>Social Studies Learning Results</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002AA">
+      <title>2007 Social Studies Learning Results: Parameters for Essential Instruction</title>
+      <created>2007</created>
+      <topic>Social Studies</topic>
+      <author>Maine</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="20fc4d85-86c9-4308-bcaf-9fade562df2d">
+      <title>Social Studies Grade Level Content Expectations v.12.07</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>Grade Level Content Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002CE">
+      <title>Social Studies Grade Level Content Expectations v.12.07</title>
+      <created>2007</created>
+      <topic>Social Studies</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="81ad52db-629b-441e-bd53-cd38c13f5238">
+      <title>Social Studies High School Content Expectations v.10.07</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>MI</jurisdiction>
+      <fileName>High School Content Expectations</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002CD">
+      <title>Social Studies High School Content Expectations v.10.07</title>
+      <created>2007</created>
+      <topic>Social Studies</topic>
+      <author>Michigan</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="505b7026-8a82-45ce-b840-44fd933b575c">
+      <title>Minnesota Academic Standards in Social Studies</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>MN</jurisdiction>
+      <fileName>Academic Standards Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002B8">
+      <title>Minnesota Academic Standards in Social Studies</title>
+      <created>2004</created>
+      <topic>Social Studies</topic>
+      <author>Minnesota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="65cb498f-a367-4c30-b790-4798fda37a2f">
+      <title>Social Studies Grade-Level Expectations</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>Social Studies Grade-Level Expectat</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002CF">
+      <title>Social Studies Grade-Level Expectations</title>
+      <created>2004</created>
+      <topic>Social Studies</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="19d857e9-f5e8-46a6-969a-2d4e5caeec23">
+      <title>Social Studies Grade Level Expectations, September 2007</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>MO</jurisdiction>
+      <fileName>Social Studies GLE Sept. 2007</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003AE">
+      <title>Social Studies Grade Level Expectations, September 2007</title>
+      <created>2007</created>
+      <topic>Social Studies</topic>
+      <author>Missouri</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e2658014-1c77-4d08-85d2-1ae9e0ebde07">
+      <title>Mississippi Social Studies Framework and Guide</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>MS</jurisdiction>
+      <fileName>Social Studies Framework and Guide</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002BD">
+      <title>Mississippi Social Studies Framework and Guide</title>
+      <created>2004</created>
+      <topic>Social Studies</topic>
+      <author>Mississippi</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="503108b5-56ce-442c-8b32-3588c9a6ee90">
+      <title>Montana Standards for Social Studies</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>MT</jurisdiction>
+      <fileName>Montana Standards for Social Studie</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002A2">
+      <title>Montana Standards for Social Studies</title>
+      <created>2000</created>
+      <topic>Social Studies</topic>
+      <author>Montana</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="25482a08-b6d0-4f6a-8d69-8ecf45412558">
+      <title>North Carolina Social Studies Standard Course of Study</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>NC</jurisdiction>
+      <fileName>Course of Study Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002A4">
+      <title>North Carolina Social Studies Standard Course of Study</title>
+      <created>2006</created>
+      <topic>Social Studies</topic>
+      <author>North Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="47c4d9e4-c611-4bed-a19b-a90352c08f68">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Social Studies Standards Benchmarks</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002A7">
+      <title>Social Studies Content Standards and Benchmarks</title>
+      <created>2000</created>
+      <topic>Social Studies</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="512801dd-7f5d-4d72-a0c9-a023ddd84998">
+      <title>North Dakota Social Studies Content and Achievement Standards</title>
+      <localAdoptionDate>2007</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>ND</jurisdiction>
+      <fileName>Social Studies Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100034A">
+      <title>North Dakota Social Studies Content and Achievement Standards</title>
+      <created>2007</created>
+      <topic>Social Studies</topic>
+      <author>North Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="db23d5ad-d8f7-4e80-9165-143f62cbf147">
+      <title>Nebraska Social Studies/History Standards</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>NE</jurisdiction>
+      <fileName>Social Studies/History Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002BA">
+      <title>Nebraska Social Studies/History Standards</title>
+      <created>2003</created>
+      <topic>Social Studies</topic>
+      <author>Nebraska</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="21b8acdd-f6f6-43df-8b1b-5166b66fe33b">
+      <title>K-12 Social Studies New Hampshire Curriculum Framework</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>NH</jurisdiction>
+      <fileName>Social Studies Curriculum Framework</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002B7">
+      <title>K-12 Social Studies New Hampshire Curriculum Framework</title>
+      <created>2006</created>
+      <topic>Social Studies</topic>
+      <author>New Hampshire</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="9983d0bd-09d9-47fa-9ef7-b21b0b54d102">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>Content Standards for Social Studie</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002B6">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <created>2004</created>
+      <topic>Social Studies</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="24c6cee1-e9de-48d9-bb03-93e4260224f5">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <localAdoptionDate>2009</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>NJ</jurisdiction>
+      <fileName>NJCCCS for Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003DE">
+      <title>New Jersey Core Curriculum Content Standards for Social Studies</title>
+      <created>2009</created>
+      <topic>Social Studies</topic>
+      <author>New Jersey</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0b8885a2-aac2-4d26-abb1-77a256654847">
+      <title>Social Studies Content Standards, Benchmarks, and Performance Standards</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>NM</jurisdiction>
+      <fileName>Social Studies Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002A9">
+      <title>Social Studies Content Standards, Benchmarks, and Performance Standards</title>
+      <created>2001</created>
+      <topic>Social Studies</topic>
+      <author>New Mexico</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b88a4013-c001-49fb-af05-390e816052f9">
+      <title>Revised Nevada Social Studies Standards, Dec. 2008</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>NV</jurisdiction>
+      <fileName>Nevada Social Studies Dec. 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100038E">
+      <title>Revised Nevada Social Studies Standards, Dec. 2008</title>
+      <created>2008</created>
+      <topic>Social Studies</topic>
+      <author>Nevada</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d1c3b7e9-7b39-42c3-a732-0f744207913a">
+      <title>Learning Standards for Social Studies</title>
+      <localAdoptionDate>1996</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>NY</jurisdiction>
+      <fileName>Learning Standards Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002AB">
+      <title>Learning Standards for Social Studies</title>
+      <created>1996</created>
+      <topic>Social Studies</topic>
+      <author>New York</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="91417320-b79b-4adb-89cd-d302fa9a158d">
+      <title>Academic Content Standards Social Studies</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Content Standards Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002BE">
+      <title>Academic Content Standards Social Studies</title>
+      <created>2002</created>
+      <topic>Social Studies</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="b5ca1bd6-42b8-470b-a329-1978eeff0d04">
+      <title>Early Learning Content Standards - Social Studies</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>OH</jurisdiction>
+      <fileName>Early Learning Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000353">
+      <title>Early Learning Content Standards - Social Studies</title>
+      <created>2003</created>
+      <topic>Social Studies</topic>
+      <author>Ohio</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="29bccb7b-7d44-4d6d-9c68-ddd6cd18ff06">
+      <title>Priority Academic Student Skills - Social Studies Revised 2009</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS - Social Studies rev.2009</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003D3">
+      <title>Priority Academic Student Skills - Social Studies Revised 2009</title>
+      <created>2003</created>
+      <topic>Social Studies</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="224f1e82-2825-4aa6-952e-4af23bf6589b">
+      <title>Priority Academic Student Skills Social Studies</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>OK</jurisdiction>
+      <fileName>PASS Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002BB">
+      <title>Priority Academic Student Skills Social Studies</title>
+      <created>2003</created>
+      <topic>Social Studies</topic>
+      <author>Oklahoma</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="e7f2b5a0-8024-4250-84b6-396b2584dc8c">
+      <title>Oregon Social Sciences Content Standards</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Social Sciences Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002AC">
+      <title>Oregon Social Sciences Content Standards</title>
+      <created>2001</created>
+      <topic>Social Studies</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="a93874a6-9d28-4c91-8dfe-ba2dfbf828a8">
+      <title>Social Science Content Standards, Oregon Standards Newspaper 2008-2009</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>OR</jurisdiction>
+      <fileName>Social Science Standards 08-09</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000374">
+      <title>Social Science Content Standards, Oregon Standards Newspaper 2008-2009</title>
+      <created>2001</created>
+      <topic>Social Studies</topic>
+      <author>Oregon</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="364c6528-33b0-466b-9efb-33c17d4a4dad">
+      <title>Grade Span Expectations (GSEs) for Civics &amp;amp; Government and Historical Perspectives/Rhode Island History</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>RI</jurisdiction>
+      <fileName>(GSEs) Civics Government Dec. 2008</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D100038F">
+      <title>Grade Span Expectations (GSEs) for Civics &amp;amp; Government and Historical Perspectives/Rhode Island History</title>
+      <created>2008</created>
+      <topic>Social Studies</topic>
+      <author>Rhode Island</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="2c0695eb-23f1-4909-a282-f7558b1de011">
+      <title>South Carolina Social Studies Academic Standards</title>
+      <localAdoptionDate>2005</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>SC</jurisdiction>
+      <fileName>Social Studies Academic Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002B9">
+      <title>South Carolina Social Studies Academic Standards</title>
+      <created>2005</created>
+      <topic>Social Studies</topic>
+      <author>South Carolina</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="91d2a44e-b559-4d85-8114-bc29320d6adc">
+      <title>Social Studies Content Standards</title>
+      <localAdoptionDate>2006</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>SD</jurisdiction>
+      <fileName>Social Studies Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002AE">
+      <title>Social Studies Content Standards</title>
+      <created>2006</created>
+      <topic>Social Studies</topic>
+      <author>South Dakota</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="45927fe4-d7e2-4fdc-b0c9-75b148a493e8">
+      <title>Social Studies Curriculum Standards</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>TN</jurisdiction>
+      <fileName>Social Studies Curriculum Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002D3">
+      <title>Social Studies Curriculum Standards</title>
+      <created>2001</created>
+      <topic>Social Studies</topic>
+      <author>Tennesee</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="3232a9ca-6969-4188-a239-d9fada7aa8cf">
+      <title>Chapter 113. Texas Essential Knowledge and Skills for Social Studies</title>
+      <localAdoptionDate>1998</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>TX</jurisdiction>
+      <fileName>TEKS Social Studies</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002B5">
+      <title>Chapter 113. Texas Essential Knowledge and Skills for Social Studies</title>
+      <created>1998</created>
+      <topic>Social Studies</topic>
+      <author>Texas</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="0d7598b4-ee23-4ee8-bf7b-c01e0655aecb">
+      <title>Elementary Core Curriculum Social Studies 3-6</title>
+      <localAdoptionDate>2000</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>UT</jurisdiction>
+      <fileName>Elementary Core Social Studies 3-6</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002C9">
+      <title>Elementary Core Curriculum Social Studies 3-6</title>
+      <created>2000</created>
+      <topic>Social Studies</topic>
+      <author>Utah</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="bbe9f16a-6e9a-4b36-8b88-9933d0286b65">
+      <title>Secondary Core Curriculum Social Studies 7-12</title>
+      <localAdoptionDate>2002</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>UT</jurisdiction>
+      <fileName>Secondary Core Social Studies 7-12</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002CA">
+      <title>Secondary Core Curriculum Social Studies 7-12</title>
+      <created>2002</created>
+      <topic>Social Studies</topic>
+      <author>Utah</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="07d07bae-dc86-4441-a786-99f8dbb89954">
+      <title>Social Studies Core Curriculum Elementary Grades 3-6</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>UT</jurisdiction>
+      <fileName>Social Studies Core Grades 3-6</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003AF">
+      <title>Social Studies Core Curriculum Elementary Grades 3-6</title>
+      <created>2008</created>
+      <topic>Social Studies</topic>
+      <author>Utah</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d449c3b1-7573-4421-95fa-e8c709dfab72">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2001</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002C8">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>2001</created>
+      <topic>Social Studies</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="d412cd89-4ae9-4f8a-b38f-bd47be2cb3bc">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>VA</jurisdiction>
+      <fileName>History and Social Science Standard</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10003C3">
+      <title>History and Social Science Standards of Learning for Virginia Public Schools</title>
+      <created>2008</created>
+      <topic>Social Studies</topic>
+      <author>Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="553fb393-918e-4632-8e6d-cb297eb4a63d">
+      <title>Grade Expectations for Vermontâ€™s Framework of Standards and Learning Opportunities</title>
+      <localAdoptionDate>2004</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>VT</jurisdiction>
+      <fileName>Framework of Standards and Learning</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002BF">
+      <title>Grade Expectations for Vermontâ€™s Framework of Standards and Learning Opportunities</title>
+      <created>2004</created>
+      <topic>Social Studies</topic>
+      <author>Vermont</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="ad125e9c-bec3-459d-859c-f274b36e7085">
+      <title>Social Studies Skills: Essential Academic Learning Requirements</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Social Studies Skills EALR</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002B4">
+      <title>Social Studies Skills: Essential Academic Learning Requirements</title>
+      <created>2003</created>
+      <topic>Social Studies</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="8df1e44b-de51-453f-8b66-b578b30db6d1">
+      <title>K-12 Social Studies Grade Level Expectations</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>WA</jurisdiction>
+      <fileName>Social Studies GLEs</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000385">
+      <title>K-12 Social Studies Grade Level Expectations</title>
+      <created>2008</created>
+      <topic>Social Studies</topic>
+      <author>Washington</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="09be568a-639f-456b-b410-41b87f306739">
+      <title>21st Century Social Studies Content Standards and Objectives for West Virginia Schools</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>WV</jurisdiction>
+      <fileName>Social Studies Content Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002AF">
+      <title>21st Century Social Studies Content Standards and Objectives for West Virginia Schools</title>
+      <created>2008</created>
+      <topic>Social Studies</topic>
+      <author>West Virginia</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="03433a09-a8df-4261-9346-ff02679b505f">
+      <title>Wyoming Social Studies Content and Performance Standards</title>
+      <localAdoptionDate>2003</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Social Studies Content Performance</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D10002AD">
+      <title>Wyoming Social Studies Content and Performance Standards</title>
+      <created>2003</created>
+      <topic>Social Studies</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+  <mapping>
+    <acsrInfo id="400ad849-1cc8-45db-8315-e2d230dcd892">
+      <title>Wyoming Social Studies Content and Performance Standards</title>
+      <localAdoptionDate>2008</localAdoptionDate>
+      <subject>Social Studies</subject>
+      <jurisdiction>WY</jurisdiction>
+      <fileName>Wyoming Social Studies Standards</fileName>
+      <status>Active</status>
+    </acsrInfo>
+    <asnInfo id="http://purl.org/ASN/resources/D1000384">
+      <title>Wyoming Social Studies Content and Performance Standards</title>
+      <created>2008</created>
+      <topic>Social Studies</topic>
+      <author>Wyoming</author>
+    </asnInfo>
+  </mapping>
+</mappings>

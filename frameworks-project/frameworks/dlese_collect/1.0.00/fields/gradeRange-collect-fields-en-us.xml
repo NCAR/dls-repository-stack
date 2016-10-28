@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: gradeRange-collect-fields-en-us.xml,v 1.1 2009/01/30 21:38:27 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/collection/1.0.00/gradeRange.xsd">
+	<field name="Grade range" id="gr" language="en-us" metaFormat="dlese_collect" metaVersion="1.0.00" path="/collectionRecord/general/gradeRanges/gradeRange">
+		<definition>the appropriate grade range or context for users of items in the collection</definition>
+
+		<vocabLevels number="2">
+			<levelAndDeftn level="1" levelName="Responsible party" levelDeftn="the name of the group or organization responsible for the controlled vocabulary">
+				<levelTermsAndDeftns>
+					<levelTermAndDeftn term="DLESE">Digital Library for Earth System Education</levelTermAndDeftn>
+				</levelTermsAndDeftns>
+			</levelAndDeftn>				
+			
+			<levelAndDeftn level="2" levelName="Grade range" levelDeftn="the appropriate grade range or context for users of the collection; see the allowed combination of terms below; the grade range part of the term is the phrase after the last colon"/>				
+		</vocabLevels>
+			
+		<terms>
+			<termAndDeftn vocab="DLESE:General public" id="00">learners in the general population</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Graduate or professional" id="01">learners who have completed an undergraduate degree or who advancing their own knowledge as it relates to their employment</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:High school" id="02">learners in grades 9-12</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Informal education" id="03">learners in museum settings, community continuing education programs, community technology centers, park naturalists settings, nature centers and home schooling</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Intermediate elementary" id="04">learners in grades 3-5</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Middle school" id="05">learners in grades 6-8</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Primary elementary" id="07">learners in grades K-2</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Undergraduate lower division" id="09">generally learners in the first two years of a baccalaureate degree or completing an introductory course</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Undergraduate upper division" id="0a">generally learners in the last two years of a baccalaureate degree or completing an advanced course</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:Not applicable" id="06">it is not appropriate to assign a grade range to the collection</termAndDeftn>
+
+			<termAndDeftn vocab="DLESE:To be supplied" id="08">grade range information is currently unknown but will be supplied at a later date</termAndDeftn>
+
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2001-04-24">Choose at least one grade range term.</practice>
+
+				<practice status="current" originDate="2001-04-24" link1="Informal education" style1="bold" link2="General public" style2="bold">Indicate all grade ranges (this does not include Informal education or General public) that are relevant to the collection. This means select each grade range individually.</practice>
+
+				<practice status="current" originDate="2001-04-24" link1="General public" style1="bold">If a collection is general in nature, like a group of fact sheets and does not indicate grade range specificity, then the collection is probably appropriate for many audiences. In this case, select the General public term only. Do not add other grade ranges.</practice>
+
+				<practice status="current" originDate="2006-04-24" link1="Informal education" style1="bold">Use the Informal education term for collections specifically designed for learning environments outside of a formal classroom. These environments might include museum settings, Earth Science Week activities, community projects, park naturalists or other interpretive settings, nature centers and home schooling.</practice>
+			</dos>
+
+			<donts>
+				<practice status="current" originDate="2006-04-24" link1="Informal education" style1="bold">Do not use the Informal education term to indicate the collection could be used as reference material.</practice>
+
+				<practice status="current" originDate="2006-04-24" link1="Informal education" style1="bold">Do not use the Informal education term to indicate the collection can be used by the general public.</practice>
+
+				<practice status="current" originDate="2001-04-24">Do choose more than 2-3 grade range terms. Most collections can be adequately described using three or less grade ranges.</practice>
+			</donts>
+		
+		</bestPractices>
+
+		<documentation>
+			<obligation>required</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>DLESE:Middle school, DLESE:General public</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

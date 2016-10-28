@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: idNumberType-osm-groups-submission-en-us.xml,v 1.9 2012/10/01 14:40:23 ginger Exp $-->
+<opml xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://nldr.library.ucar.edu/metadata/osm/1.1/schemas/fields/idNumberType.xsd"
+version="2.0">
+	<head>
+		<title>DOI</title>
+		
+	<!--2011 OS submission form version when the form was used for cataloging
+		<title>ID number type</title>
+-->
+		<concept language="en-us" metaFormat="osm" metaVersion="1.1" text="DOI" audience="submission" path="/record/classify/idNumber/@type" deftn="the Digital Object Identifier (DOI) of the item"/>
+	</head>
+	<body>
+		<outline type="vocab" vocab="arXiv" text="arXiv" display="false"/>
+		<outline type="vocab" vocab="CALL" text="Call" deftn="a unique identifier used to identify a specific copy and relative location of an item within a library's collection" display="false"/>
+		<outline type="vocab" vocab="Citation/Article" text="Citation/Article" deftn="a unique reference label to ensure the persistent and actionable identification of resources" display="false"/>
+		<outline type="vocab" vocab="DOI" text="DOI" deftn="Digital Object Identifier: a set of unique code used by publishers and other disseminators of digital content to ensure the persistent and actionable identification and interoperable exchange of that content"/>
+		<outline type="vocab" vocab="EPRINTS" text="EPRINTS" deftn="a unique identifier used to ensure the persistent and actionable identification of resources held within a digital repository" display="false"/>
+		<outline type="vocab" vocab="ISBN" text="ISBN" deftn="International Standard Book Number: a unique, standardized 10-digit number assigned to a specific edition of a book or other monographic publication" display="false"/>
+		<outline type="vocab" vocab="ISSN" text="ISSN" deftn="International Standard Serial Number: a unique, standardized 8-digit number assigned to a specific serial title" display="false"/>
+		<outline type="vocab" vocab="REPORT" text="REPORT" deftn="identifier used to reference a published report; particularly those published by government entities and other agencies" display="false"/>
+		<outline type="vocab" vocab="SRef-ID" text="SRef-ID" display="false"/>
+		<outline type="vocab" vocab="WMO" text="WMO" deftn="report identification numbers assigned by the World Meteorological Organization" display="false"/>
+		<outline type="vocab" vocab="WOS" text="WOS" display="false"/>
+	</body>
+	<bestPractices>
+		<practice >Complete either this DOI field or the URL to the publisher landing page field.</practice>
+		 <practice>Do not include the label DOI.</practice>
+		<practice link1="DOI" style1="bold">DOI: 10.1175/BAMS-87-3-343</practice>
+		<practice link1="DOI" style1="bold">DOI: 10.5194/acp-10-169-2010</practice>
+
+	
+	<!--2011 OS submission form version when the form was used for cataloging
+		<practice >Complete this field when entering an identifier. Use the drop-down menu.</practice> 
+		<practice>If the type of identifier is not listed, use the notes field to indicate the type and to provide the identifier.</practice>
+		<practice link1="DOI" style1="bold">DOI: 10.1175/BAMS-87-3-343</practice>
+		<practice link1="DOI" style1="bold">DOI: 10.5194/acp-10-169-2010</practice>
+		<practice link1="Citation/Article" style1="bold">Citation/Article: 2010arXiv1003.4638G</practice>
+		<practice link1="Citation/Article" style1="bold">Citation/Article: 2009AGUFMSM31A1517W</practice>
+		<practice link1="Report:" style1="bold">Report: DSX-TN-123</practice>
+		<practice link1="WMO:" style1="bold">WMO: WMO TD-No. 1485</practice>
+		<practice link1="ISBN" style1="bold">ISBN 85-359-0277-5</practice>
+		<practice link1="ISBN" style1="bold">ISBN 978-0-306-40615-3</practice>
+		<practice link1="EPrint" style1="bold">EPrint: arXiv:1008.3382</practice>	
+-->			
+	</bestPractices>
+</opml>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collectionRecord schemaLocation="http://collection.dlese.org http://www.dlese.org/Metadata/collection/1.0.00/collection.xsd">
+	<general>
+		<fullTitle>Sample NCS ITEM Collection</fullTitle>
+		<description>description goes here</description>
+		<language/>
+		<subjects>
+			<subject/>
+		</subjects>
+		<gradeRanges>
+			<gradeRange/>
+		</gradeRanges>
+		<cost/>
+		<policies>
+			<policy url="http://policyUrl.net" type="Collection scope"/>
+		</policies>
+		<shortTitle>Sample Collection</shortTitle>
+	</general>
+	<lifecycle>
+		<contributors>
+			<contributor role=""/>
+		</contributors>
+	</lifecycle>
+	<approval>
+		<collectionStatuses>
+			<collectionStatus state="Accessioned" date="2008-01-18"/>
+		</collectionStatuses>
+		<contributors>
+			<contributor role=""/>
+		</contributors>
+	</approval>
+	<access>
+		<key libraryFormat="ncs_item" static="" redistribute="">ncs-sample</key>
+		<drc/>
+	</access>
+	<metaMetadata>
+		<catalogEntries>
+			<catalog entry="DCS-COLLECTION-000-000-000-002"/>
+		</catalogEntries>
+		<dateInfo created=""/>
+		<statusOf status=""/>
+		<language/>
+		<scheme>Digital Library for Earth System Education (DLESE) Collection Metadata</scheme>
+		<copyright/>
+		<termsOfUse/>
+	</metaMetadata>
+</collectionRecord>

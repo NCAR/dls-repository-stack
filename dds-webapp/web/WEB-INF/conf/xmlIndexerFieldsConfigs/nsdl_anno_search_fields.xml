@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
+<XMLIndexerFieldsConfig xmlFormat="nsdl_anno">
+	<standardFields>
+		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+		<standardField name="id">
+			<xpaths>
+				<xpath>/nsdl_anno/recordID</xpath>
+			</xpaths>		
+		</standardField>	
+		<standardField name="url">
+			<xpaths>
+				<xpath>/nsdl_anno/url</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="title">
+			<xpaths>
+				<xpath>/nsdl_anno/title</xpath>
+			</xpaths>		
+		</standardField>
+		<standardField name="description">
+			<xpaths>
+				<xpath>/nsdl_anno/description</xpath>
+			</xpaths>		
+		</standardField>		
+	</standardFields>
+	
+	<!-- Relationships that this format of record defines. -->	
+	<relationships>
+		<!-- 	Relationship of the target record to this.
+		
+				The given relationship name will be attached to the target record, not this record.
+				
+				Examples:
+					target 'isAnnotatedBy' this
+					target 'isExtendedBy' this
+					target 'isMemberOf' this
+					etc.
+					
+				attributes: name=[relationshop name] -->
+		<relationship name="isAnnotatedBy">
+			<xpaths>
+				<xpath type="id">/nsdl_anno/annotatedID[@idType!='URL']</xpath>
+			</xpaths>		
+		</relationship>
+		<relationship name="isAnnotatedBy">
+			<xpaths>
+				<xpath type="url">/nsdl_anno/annotatedID[@idType='URL']</xpath>
+			</xpaths>		
+		</relationship>
+	</relationships>
+</XMLIndexerFieldsConfig>

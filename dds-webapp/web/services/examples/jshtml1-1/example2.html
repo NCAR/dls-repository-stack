@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+	<title>Resources from the Digital Library for Earth System Education (DLESE) Catalog</title>
+	
+	<!-- 
+		Include the suggested_styles.css sheet to obtain basic display options for your page
+		You may override any of the style definitions later on, copy them into your
+		own style sheet or place them directly in you HTML page
+	 -->
+	<LINK REL="stylesheet" TYPE="text/css" HREF="@DDS_SERVER_BASE_URL@/services/jshtml1-1/suggested_styles.css">
+	
+	<style type="text/css">
+		<!--
+		/* Note: All of the text returned by the service is within a TD element */
+		TD { 
+			font-family: Arial, Helvetica, sans-serif; 
+			font-size: 10pt; 
+		} 	
+		H1 { 
+			font-family:  Arial, Helvetica, sans-serif; 
+			font-size: 14pt; 
+		} 		
+		H2 { 
+			font-family: Arial, Helvetica, sans-serif; 
+			font-size: 12pt; 
+		} 
+		-->
+	</style>	
+	
+</head>
+<body>
+
+
+<table class="stdTable">
+	<tr class="stdTable">
+		<td class="stdTable">
+			<h1>Resources from the Digital Library for Earth System Education (DLESE) Catalog</h1>
+			
+			<p><a href="index.html#examples">Back to the Examples</a></p>
+			
+				<b>Choose a category from the menu below</b>
+				
+				<!-- 
+					To create a smart link drop list, use the SmartLinkDropList command in a <form>
+					and <select> list as illustrated below. The select list must have the attribute 
+					id="smartLinkDropList" set. To define an <option> in your select list use the
+					value="xxx" to define the query for the item, and the body of the option tag
+					to define the label that gets displayed for the item. Use an empty value
+					to define an item that has no action when selected.
+				-->				
+				<form method="get" action="JavaScript:SmartLinkDropList()" style="margin-bottom:2px; margin-top:2px;">
+				
+					<select id="smartLinkDropList" onchange="JavaScript:SmartLinkDropList()">
+						
+						<option value="">
+						   -- Select a category --</option>		   
+						<option value="identifying clouds">
+						  Identifying Clouds</option>
+						<option value="estimating cloud cover">
+						   Estimating Cloud Cover</option>
+						<option value="&quot;heat transfer&quot;">
+						   Heat Transfer</option>
+						<option value="surface ozone">
+						   Surface Ozone</option>					   
+					</select>
+					
+					<!-- You can also use a submit button in addition to or instead of the onchange javascript... -->
+					<!-- <input type="submit" value="Go"> -->
+				</form>
+		</td>
+	</tr>
+</table>
+
+<!-- 
+	The following two <SCRIPT> elements are required to render the DLESE search.
+	These may be placed at any location in your page to customize where the DLESE
+	search is displayed.
+-->
+<SCRIPT TYPE="text/javascript" SRC="@DDS_SERVER_BASE_URL@/services/jshtml1-1/javascript_search_service.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript">
+	<!--	
+	
+	// Hide the links to page through results
+	//HideElement("pager");	
+	
+	// Set the number of results that can be displayed to 100 so they will all be displayed
+	//MaxResultsPerPage("100");
+	
+	// Instruct the service to perform the search and render the page
+	RenderPage();	
+	
+	-->
+</SCRIPT>
+
+<!-- Provide a message if JavaScript is disabled in the user's browser -->
+<NOSCRIPT>
+	This page requires that JavaScript be turned on. Please activate JavaScript in your browser.
+</NOSCRIPT> 
+
+</body>
+</html>	

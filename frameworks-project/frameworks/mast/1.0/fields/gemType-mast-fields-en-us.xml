@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: gemType-mast-fields-en-us.xml,v 1.6 2009/07/30 15:27:17 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlsciences.org/frameworks/fields" xmlns:DCMIType="http://purl.org/dc/dcmitype/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlsciences.org/frameworks/fields http://www.dlsciences.org/frameworks/mast/1.0/schemas/fields/GEMtype.xsd">
+	<field name="GEM Resource Type" language="en-us" metaFormat="mast" metaVersion="1.0" path="/record/educational/types/gemType">
+		<definition attribution="Dublin Core Metadata Element Set, Version 1.1: Reference Description at http://dublincore.org/documents/dces/">The nature or genre of the content of the resource.</definition>
+	
+
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="GEM Resource Type" levelDeftn="The nature or genre of the content of the resource."/>
+		</vocabLevels>
+
+
+		<terms><!--From: http://www.thegateway.org/about/documentation/gem-controlled-vocabularies/vocabulary-resource-type-->
+			<termAndDeftn vocab="Activity" attribution="GEM">A task or exercise that students are asked to do, often as part of a lesson plan or other larger unit of instruction, to help them develop particular skills, knowledge, or habits of mind. Usually, the goals and outcomes are broad.</termAndDeftn>
+			<termAndDeftn vocab="Artifact" attribution="GEM">Objects produced by humans with a view to substantial use. For example art, cultural, or historic objects such as an image of Picasso's Guernica or of a Pueblo Indian pottery bowl.</termAndDeftn>
+			<termAndDeftn vocab="Best practice" attribution="GEM">The processes, practices, or systems identified in public and private organizations that performed exceptionally well and are widely recognized as improving an organization's performance and efficiency in specific areas.</termAndDeftn>
+			<termAndDeftn vocab="Catalog record" attribution="GEM">Another metadata record with deeper, more complex cataloging of the resource it describes than the Gem record provides.</termAndDeftn>
+			<termAndDeftn vocab="Collection" attribution="GEM">A collection of resources or links to other web sites.</termAndDeftn>
+			<termAndDeftn vocab="Community" attribution="GEM">Education listservs and other online communities, i.e. forums for exchanging ideas around particular education topics or challenges.</termAndDeftn>
+			<termAndDeftn vocab="Course" attribution="GEM">A sequence of instructional units, often a semester long, designed by a teacher (or a faculty or other group of teachers) to advance significantly student skills, knowledge, and habits of mind significantly in a particular discipline and to help students meet specified requirements (as set forth in curricula or district or state policy).</termAndDeftn>
+			<termAndDeftn vocab="Curriculum" attribution="GEM">Academic standards: the knowledge, skills, and habits of mind students are expected to acquire in particular grade levels (or clusters of grade levels)–and the units of instruction, often with sample lesson plans, illustrative student activities, and essential and supplementary resources that can help students reach those standards. Is often designed at the state or school district level by a team of teachers, curriculum specialists, and other experts.</termAndDeftn>
+			<termAndDeftn vocab="Curriculum support" attribution="GEM">the equipment, facilities, tools, materials, and personnel available for the teaching of the curriculum.</termAndDeftn>
+			<termAndDeftn vocab="Data set" attribution="GEM">A resource containing only numeric, spatial, spectral, or statistical data. A report of research containing a data set should be assigned the resource type 'Research Study'.</termAndDeftn>
+			<termAndDeftn vocab="Educator's guide" attribution="GEM">A guide intended for use by educators as a supplement to a lesson or unit plan.</termAndDeftn>
+			<termAndDeftn vocab="Environment" attribution="GEM">Any network-based environment intended for simultaneous interaction with one or more participants such as multimedia, games, chat rooms, and virtual reality.</termAndDeftn>
+			<termAndDeftn vocab="Event" attribution="GEM">A non-persistent, time-based occurrence.</termAndDeftn>
+			<termAndDeftn vocab="Form" attribution="GEM">An online document with blank spaces for filling in information before execution.</termAndDeftn>
+			<termAndDeftn vocab="Image set" attribution="GEM">A set of images and photographs of physical objects, paintings, prints, drawings, other images and graphics, animations and moving pictures, film, diagrams, maps, and musical notation.</termAndDeftn>
+			<termAndDeftn vocab="Lesson plan" attribution="GEM">A plan for helping students learn a particular set of skills, knowledge, or habits of mind. Often includes student activities as well as teaching ideas, instructional materials, and other resources. Is shorter (in duration) than, and often part of, a unit of instruction. Goals and outcomes are focused.</termAndDeftn>
+			<termAndDeftn vocab="Literature" attribution="GEM">Writings in prose or verse.</termAndDeftn>
+			<termAndDeftn vocab="Primary source" attribution="GEM">Person, place, or thing that provides firsthand information about something. Examples include oral histories, letters and other original documents.</termAndDeftn>
+			<termAndDeftn vocab="Project" attribution="GEM">Activities organized around a particular academic topic or challenge in which students from various parts of the country (or world) participate, using the Internet. Goals and outcomes are broad. (Example: A semester-long effort to observe, gather, and analyze data on water quality.)</termAndDeftn>
+			<termAndDeftn vocab="Realia" attribution="GEM">All physical objects or encodings of physical phenomenon not produced by humans. In a sense, the universe of physical objects can be divided into realia (naturally occurring objects and phenomena) and artifacts (human made objects and phenomena). Examples might include images of a rock from Mars or trees or the sound of ocean waves.</termAndDeftn>
+			<termAndDeftn vocab="Reference" attribution="GEM">A comprehensive, systematically organized collection of information such as a dictionary, encyclopedia, or almanac.</termAndDeftn>
+			<termAndDeftn vocab="Research study" attribution="GEM">A resource that reports the results of research. A resource containing only a data set resulting from research should be assigned the resource type 'Data Set'.</termAndDeftn>
+			<termAndDeftn vocab="Secondary source" attribution="GEM">Secondary sources are written in response to a primary source. Secondary sources are usually criticism, reviews, or are based on another book or journal.</termAndDeftn>
+			<termAndDeftn vocab="Serial" attribution="GEM via AACR2">Publications in any medium issued in successive parts bearing numerical or chronological designations and intended to be continued indefinitely. Serials include periodicals; newspapers; annuals (reports, yearbooks, etc.); the journals, memiors, proceedings, transactions, etc. of societies; and numbered monographic series.</termAndDeftn>
+			<termAndDeftn vocab="Service" attribution="GEM">Any online service and/or assistance that functions either as an intermediary between the user and online data and information (e.g., an online question-and-answer service such as AskERIC) or as a non-intermediary service (e.g., an online service that monitors and reports on some aspect of education or other activities having an impact on education.)</termAndDeftn>
+			<termAndDeftn vocab="Story" attribution="GEM">A fictional narrative which is shorter than a novel.</termAndDeftn>
+			<termAndDeftn vocab="Study guide" attribution="GEM">A guide created to provide students with hints, techniques, or management ideas in a particular area.</termAndDeftn>
+			<termAndDeftn vocab="Test" attribution="GEM via ERIC">Devices, procedures, or sets of items that are used to measure ability, skill, understanding, knowledge, or achievement.</termAndDeftn>
+			<termAndDeftn vocab="Tool" attribution="GEM">The resource being described is some kind of instrument or tool that may, or may not, be directly accessible over the Internet. In a sense, this category is a special instance of the "Services" resource type.</termAndDeftn>
+			<termAndDeftn vocab="Unit of instruction" attribution="GEM">A sequence of lesson plans designed to teach a set of skills, knowledge, and habits of mind.</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+		<!--From: http://www.thegateway.org/about/documentation/metadataElements/typeRefinements/type-6-6-04-->
+			<dos>
+				<practice status="current" originDate="2008-05-15">The type element is intended to contain statements about the genre of resource being described.</practice>
+					<practice status="current" originDate="2008-05-15">Select a value from the Gateway to Educational Materials controlled vocabulary (included here).</practice>
+				
+<practice status="current" originDate="2008-05-15">Some digital objects may involve more than one type, e.g., a manuscript collection may have text, image, sound, and interactive components. Use separate Type elements to enter multiple types or clearly separate each entry by a semicolon and a space within an element.</practice><!--source:CDP-->
+			</dos>
+
+			<donts>
+				
+				<practice status="current" originDate="2008-05-15">The type element should not be used to contain genre information about resources related to the one being described. For example, if the resource being described is a collection record for a set of lesson plans (i.e., a collection-level record), it should have the value "collection" assigned to the type element but "lesson plan" should not be assigned since the resource itself is not actually a lesson plan.</practice>
+			</donts>
+			
+
+			<otherPractices>
+				<otherPractice header="Attribution of Term Definitions">
+					<practice status="current" originDate="2008-05-22" link1="GEM metadata documentation" url1="http://www.thegateway.org/about/documentation/gem-controlled-vocabularies/vocabulary-resource-type">The definitions of the terms for the controlled vocabulary are from the Gateway to 21st Century Skills: GEM metadata documentation. GEM uses the following sources: ERIC: Thesaurus of ERIC Descriptors, 13th edition; Phoenix, AZ, Orxy Press, 1995 and AACR2.</practice>
+				</otherPractice>
+			</otherPractices>
+		</bestPractices>
+
+		<documentation>
+			<obligation>optional</obligation>
+			<min>0</min>
+			<max>unbounded</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>Activity, Lesson plan</example>
+		</documentation>
+	</field>
+</metadataFieldInfo>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->

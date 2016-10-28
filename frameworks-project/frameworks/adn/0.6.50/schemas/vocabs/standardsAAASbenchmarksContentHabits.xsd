@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.6.50">
+	<xsd:annotation>
+		<xsd:documentation>
+		**********************************************************************  Overview  **************************************************************
+			Definition: 			Controlled vocabulary schema for DLESE metadata frameworks
+			Framework use: 	ADN-I (item)
+			Source org:			American Association for the Advancement of Science (AAAS); http://www.aaas.org/
+			Vocab values:		http://www.project2061.org/tools/benchol/bolframe.htm
+			Vocab last update:	
+			DPC last update:		2003-02-10
+			Notes: 				This is habits of mind.	
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>*** LICENSE INFORMATION *****
+		Copyright 2002, 2003 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These schemas are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These schemas are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>************************* History of Change **************************
+2003-02-10:Added comments below to indicate where changes exist between AAAS website and DPC XML schema encoding.
+2003-02-10:Learned there more new benchmarks that are not on the AAAS website. Not dealing with those yet.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:annotation>
+		<xsd:documentation>***********************  Simple Types (alpha order) *************************************</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="AAAScontentHabitsType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  AAAScontentHabitsType  ***************************************
+				Lists the values that will appear in the metadata record
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Values and attitudes:K-2:Raise questions about the world around them and be willing to seek answers to some of them by making careful observations and trying things out."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Values and attitudes:3-5:Keep records of their investigations and observations and not change the records later."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Values and attitudes:3-5:Offer reasons for their findings and consider reasons suggested by others."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Values and attitudes:6-8:Know why it is important in science to keep honest, clear, and accurate records."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Values and attitudes:6-8:Know that hypotheses are valuable, even if they turn out not to be true, if they lead to fruitful investigations."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Values and attitudes:6-8:Know that often different explanations can be given for the same evidence, and it is not always possible to tell which one is correct."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Values and attitudes:9-12:Know why curiosity, honesty, openness, and skepticism are so highly regarded in science and how they are incorporated into the way science is carried out; exhibit those traits in their own lives and value them in others."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Values and attitudes:9-12:View science and technology thoughtfully, being neither categorically antagonistic nor uncritically positive."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:K-2:Use whole numbers and simple, everyday fractions in ordering, counting, identifying, measuring, and describing things and experiences."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:K-2:Readily give the sums and differences of single-digit numbers in familiar contexts where the operation makes sense to them and they can judge the reasonableness of the answer."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:K-2:Give rough estimates of numerical answers to problems before doing them formally."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:K-2:Explain to other students how they go about solving numerical problems."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:K-2:Make quantitative estimates of familiar lengths, weights, and time intervals and check them by measurements."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:3-5:Add, subtract, multiply, and divide whole numbers mentally, on paper, and with a calculator."/>
+			<!--In the next benchmark, the phrase 'fractions, halves' originally had an m-dash between the words fractions and halves. The m-dash was changed to a comma because then an entity reference does not need to be used in the XML and a comma is grammatically fine.-->
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:3-5:Use fractions and decimals, translating when necessary between decimals and commonly encountered fractions, halves, thirds, fourths, fifths, tenths, and hundredths (but not sixths, sevenths, etc.)."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:3-5:Judge whether measurements and computations of quantities such as length, area, volume, weight, or time are reasonable in a familiar context by comparing them to typical values."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:3-5:State the purpose of each step in a calculation."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:3-5:Read and follow step-by-step instructions in a calculator or computer manual when learning new procedures."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:6-8:Find what percentage one number is of another and figure any percentage of any number."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:6-8:Use, interpret, and compare numbers in several equivalent forms such as integers, fractions, decimals, and percents."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:6-8:Calculate the circumferences and areas of rectangles, triangles, and circles, and the volumes of rectangular solids."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:6-8:Find the mean and median of a set of data."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:6-8:Estimate distances and travel times from maps and the actual size of objects from scale drawings."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:6-8:Insert instructions into computer spreadsheet cells to program arithmetic calculations."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:6-8:Determine what unit (such as seconds, square inches, or dollars per tankful) an answer should be expressed in from the units of the inputs to the calculation, and be able to convert compound units (such as yen per dollar into dollar per yen, or miles per hour into feet per second)."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:6-8:Decide what degree of precision is adequate and round off the result of calculator operations to enough significant figures to reasonably reflect those of the inputs."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:6-8:Express numbers like 100, 1,000, and 1,000,000 as powers of 10."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:6-8:Estimate probabilities of outcomes in familiar situations, on the basis of history or the number of possible outcomes."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:9-12:Use ratios and proportions, including constant rates, in appropriate problems."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:9-12:Find answers to problems by substituting numerical values in simple algebraic formulas and judge whether the answer is reasonable by reviewing the process and checking against typical values."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:9-12:Make up and write out simple algorithms for solving problems that take several steps."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:9-12:Use computer spreadsheet, graphing, and database programs to assist in quantitative analysis."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:9-12:Compare data for two groups by representing their averages and spreads graphically."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:9-12:Express and compare very small and very large numbers using powers-of-ten notation."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:9-12:Trace the source of any large disparity between an estimate and the calculated answer."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:9-12:Recall immediately the relations among 10, 100, 1000, 1 million, and 1 billion (knowing, for example, that 1 million is a thousand thousands)."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Computation and estimation:9-12:Consider the possible effects of measurement errors on calculations."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:K-2:Use hammers, screwdrivers, clamps, rulers, scissors, and hand lenses, and operate ordinary audio equipment."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:K-2:Assemble, describe, take apart and reassemble constructions using interlocking blocks, erector sets, and the like."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:K-2:Make something out of paper, cardboard, wood, plastic, metal, or existing objects that can actually be used to perform a task."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:K-2:Measure the length in whole units of objects having straight edges."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:3-5:Choose appropriate common materials for making simple mechanical constructions and repairing things."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:3-5:Measure and mix dry and liquid materials (in the kitchen, garage, or laboratory) in prescribed amounts, exercising reasonable safety."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:3-5:Keep a notebook that describes observations made, carefully distinguishes actual observations from ideas and speculations about what was observed, and is understandable weeks or months later."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:3-5:Use calculators to determine area and volume from linear dimensions, aggregate amounts of area, volume, weight, time, and cost, and find the difference between two quantities of anything."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:3-5:Make safe electrical connections with various plugs, sockets, and terminals."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:6-8:Use calculators to compare amounts proportionally."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:6-8:Use computers to store and retrieve information in topical, alphabetical, numerical, and key-word files, and create simple files of their own devising."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:6-8:Read analog and digital meters on instruments used to make direct measurements of length, volume, weight, elapsed time, rates, and temperature, and choose appropriate units for reporting various magnitudes."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:6-8:Use cameras and tape recorders for capturing information."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:6-8:Inspect, disassemble, and reassemble simple mechanical devices and describe what the various parts are for; estimate what the effect that making a change in one part of a system is likely to have on the system as a whole."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:9-12:Learn quickly the proper use of new instruments by following instructions in manuals or by taking instructions from an experienced user."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:9-12:Use computers for producing tables and graphs and for making spreadsheet calculations."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:9-12:Troubleshoot common mechanical and electrical systems, checking for possible causes of malfunction, and decide on that basis whether to make a change or get advice from an expert before proceeding."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Manipulation and observation:9-12:Use power tools safely to shape, smooth, and join wood, plastic, and soft metal."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:K-2:Describe and compare things in terms of number, shape, texture, size, weight, color, and motion."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:K-2:Draw pictures that correctly portray at least some features of the thing being described."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:3-5:Write instructions that others can follow in carrying out a procedure."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:3-5:Make sketches to aid in explaining procedures or ideas."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:3-5:Use numerical data in describing and comparing objects and events."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:6-8:Organize information in simple tables and graphs and identify relationships they reveal."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:6-8:Read simple tables and graphs produced by others and describe in words what they show."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:6-8:Locate information in reference books, back issues of newspapers and magazines, compact disks, and computer databases."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:6-8:Understand writing that incorporates circle charts, bar and line graphs, two-way data tables, diagrams, and symbols."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:6-8:Find and describe locations on maps with rectangular and polar coordinates."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:9-12:Make and interpret scale drawings."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:9-12:Write clear, step-by-step instructions for conducting investigations, operating something, or following a procedure."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:9-12:Choose appropriate summary statistics to describe group differences, always indicating the spread of the data as well as the data's central tendencies."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:9-12:Describe spatial relationships in geometric terms such as perpendicular, parallel, tangent, similar, congruent, and symmetrical."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:9-12:Use and correctly interpret relational terms such as if . . . then . . . , and, or, sufficient, necessary, some, every, not, correlates with, and causes."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:9-12:Participate in group discussions on scientific topics by restating or summarizing accurately what others have said, asking for clarification or elaboration, and expressing alternative positions."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Communication skills:9-12:Use tables, charts, and graphs in making arguments and claims in oral and written presentations."/>
+			<!--In the next benchmark, the phrase 'How do you know?' originally had double quotes surrounding it. The double quotes were replaced with single quotes because a double quote is a reserved character in XML schema.-->
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:K-2:Ask 'How do you know?' in appropriate situations and attempt reasonable answers when others ask them the same question."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:3-5:Buttress their statements with facts found in books, articles, and databases, and identify the sources used and expect others to do the same."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:3-5:Recognize when comparisons might not be fair because some conditions are not kept the same."/>
+			<!--In the next benchmark, the phrases 'Everybody knows that' and 'I just know' originally had double quotes surrounding them. The double quotes were replaced with single quotes because a double quote is a reserved character in XML schema.-->
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:3-5:Seek better reasons for believing something than 'Everybody knows that . . .' or 'I  just know' and discount such reasons when given by others."/>
+			<!--In the next benchmark, the phrase 'Leading doctors say' originally had double quotes surrounding it. The double quotes were replaced with single quotes because a double quote is a reserved character in XML schema.-->
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:6-8:Question claims based on vague attributions (such as 'Leading doctors say...') or on statements made by celebrities or others outside the area of their particular expertise."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:6-8:Compare consumer products and consider reasonable personal trade-offs among them on the basis of features, performance, durability, and cost."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:6-8:Be skeptical of arguments based on very small samples of data, biased samples, or samples for which there was no control sample."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:6-8:Be aware that there may be more than one good way to interpret a given set of findings."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:6-8:Notice and criticize the reasoning in arguments in which (1) fact and opinion are intermingled or the conclusions do not follow logically from the evidence given, (2) an analogy is not apt, (3) no mention is made of whether the control groups are very much like the experimental group, or (4) all members of a group (such as teenagers or chemists) are implied to have nearly identical characteristics that differ from those of other groups."/>
+			<!--In the next benchmark, the phrases '9 out of 10 dentists recommend....' and '3,400....1%' originally had double quotes surrounding them. The double quotes were replaced with single quotes because a double quote is a reserved character in XML schema.-->
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:9-12:Notice and criticize arguments based on the faulty, incomplete, or misleading use of numbers, such as in instances when (1) average results are reported, but not the amount of variation around the average, (2) a percentage or fraction is given, but not the total sample size (as in '9 out of 10 dentists recommend...'), (3) absolute and proportional quantities are mixed (as in '3,400 more robberies in our city last year, whereas other cities had an increase of less than 1%'), or (4) results are reported with overstated precision (as in representing 13 out of 19 students as 68.42%)."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:9-12:Check graphs to see that they do not misrepresent results by using inappropriate scales or by failing to specify the axes clearly."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:9-12:Wonder how likely it is that some event of interest might have occurred just by chance."/>
+			<!--In the next benchmark, the phrases 'being taken, whether' and 'others, can' originally had an m-dash between the words taken and whether and others and can . The m-dash was changed to a comma because then an entity reference does not need to be used in the XML and a comma is grammatically fine.-->
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:9-12:Insist that the critical assumptions behind any line of reasoning be made explicit so that the validity of the position being taken, whether one's own or that of others, can be judged."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:9-12:Be aware, when considering claims, that when people try to prove a point, they may select only the data that support it and ignore any that would contradict it."/>
+			<xsd:enumeration value="AAASbenchmarks:Habits of mind:Critical response skills:9-12:Suggest alternative ways of explaining data and criticize arguments in which data, explanations, or conclusions are represented as the only ones worth consideration, with no mention of other possibilities. Similarly, suggest alternative trade-offs in decisions and designs and criticize those in which major trade-offs are not acknowledged."/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="AAAScontentHabitsLeafType">
+		<xsd:annotation>
+			<xsd:documentation>
+				***************************************  AAAScontentHabitsLeafType  ***************************************
+				Lists leaf values
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Raise questions about the world around them and be willing to seek answers to some of them by making careful observations and trying things out."/>
+			<xsd:enumeration value="Keep records of their investigations and observations and not change the records later."/>
+			<xsd:enumeration value="Offer reasons for their findings and consider reasons suggested by others."/>
+			<xsd:enumeration value="Know why it is important in science to keep honest, clear, and accurate records."/>
+			<xsd:enumeration value="Know that hypotheses are valuable, even if they turn out not to be true, if they lead to fruitful investigations."/>
+			<xsd:enumeration value="Know that often different explanations can be given for the same evidence, and it is not always possible to tell which one is correct."/>
+			<xsd:enumeration value="Know why curiosity, honesty, openness, and skepticism are so highly regarded in science and how they are incorporated into the way science is carried out; exhibit those traits in their own lives and value them in others."/>
+			<xsd:enumeration value="View science and technology thoughtfully, being neither categorically antagonistic nor uncritically positive."/>
+			<xsd:enumeration value="Use whole numbers and simple, everyday fractions in ordering, counting, identifying, measuring, and describing things and experiences."/>
+			<xsd:enumeration value="Readily give the sums and differences of single-digit numbers in familiar contexts where the operation makes sense to them and they can judge the reasonableness of the answer."/>
+			<xsd:enumeration value="Give rough estimates of numerical answers to problems before doing them formally."/>
+			<xsd:enumeration value="Explain to other students how they go about solving numerical problems."/>
+			<xsd:enumeration value="Make quantitative estimates of familiar lengths, weights, and time intervals and check them by measurements."/>
+			<xsd:enumeration value="Add, subtract, multiply, and divide whole numbers mentally, on paper, and with a calculator."/>
+			<!--In the next benchmark, the phrase 'fractions, halves' originally had an m-dash between the words fractions and halves. The m-dash was changed to a comma because then an entity reference does not need to be used in the XML and a comma is grammatically fine.-->
+			<xsd:enumeration value="Use fractions and decimals, translating when necessary between decimals and commonly encountered fractions, halves, thirds, fourths, fifths, tenths, and hundredths (but not sixths, sevenths, etc.)."/>
+			<xsd:enumeration value="Judge whether measurements and computations of quantities such as length, area, volume, weight, or time are reasonable in a familiar context by comparing them to typical values."/>
+			<xsd:enumeration value="State the purpose of each step in a calculation."/>
+			<xsd:enumeration value="Read and follow step-by-step instructions in a calculator or computer manual when learning new procedures."/>
+			<xsd:enumeration value="Find what percentage one number is of another and figure any percentage of any number."/>
+			<xsd:enumeration value="Use, interpret, and compare numbers in several equivalent forms such as integers, fractions, decimals, and percents."/>
+			<xsd:enumeration value="Calculate the circumferences and areas of rectangles, triangles, and circles, and the volumes of rectangular solids."/>
+			<xsd:enumeration value="Find the mean and median of a set of data."/>
+			<xsd:enumeration value="Estimate distances and travel times from maps and the actual size of objects from scale drawings."/>
+			<xsd:enumeration value="Insert instructions into computer spreadsheet cells to program arithmetic calculations."/>
+			<xsd:enumeration value="Determine what unit (such as seconds, square inches, or dollars per tankful) an answer should be expressed in from the units of the inputs to the calculation, and be able to convert compound units (such as yen per dollar into dollar per yen, or miles per hour into feet per second)."/>
+			<xsd:enumeration value="Decide what degree of precision is adequate and round off the result of calculator operations to enough significant figures to reasonably reflect those of the inputs."/>
+			<xsd:enumeration value="Express numbers like 100, 1,000, and 1,000,000 as powers of 10."/>
+			<xsd:enumeration value="Estimate probabilities of outcomes in familiar situations, on the basis of history or the number of possible outcomes."/>
+			<xsd:enumeration value="Use ratios and proportions, including constant rates, in appropriate problems."/>
+			<xsd:enumeration value="Find answers to problems by substituting numerical values in simple algebraic formulas and judge whether the answer is reasonable by reviewing the process and checking against typical values."/>
+			<xsd:enumeration value="Make up and write out simple algorithms for solving problems that take several steps."/>
+			<xsd:enumeration value="Use computer spreadsheet, graphing, and database programs to assist in quantitative analysis."/>
+			<xsd:enumeration value="Compare data for two groups by representing their averages and spreads graphically."/>
+			<xsd:enumeration value="Express and compare very small and very large numbers using powers-of-ten notation."/>
+			<xsd:enumeration value="Trace the source of any large disparity between an estimate and the calculated answer."/>
+			<xsd:enumeration value="Recall immediately the relations among 10, 100, 1000, 1 million, and 1 billion (knowing, for example, that 1 million is a thousand thousands)."/>
+			<xsd:enumeration value="Consider the possible effects of measurement errors on calculations."/>
+			<xsd:enumeration value="Use hammers, screwdrivers, clamps, rulers, scissors, and hand lenses, and operate ordinary audio equipment."/>
+			<xsd:enumeration value="Assemble, describe, take apart and reassemble constructions using interlocking blocks, erector sets, and the like."/>
+			<xsd:enumeration value="Make something out of paper, cardboard, wood, plastic, metal, or existing objects that can actually be used to perform a task."/>
+			<xsd:enumeration value="Measure the length in whole units of objects having straight edges."/>
+			<xsd:enumeration value="Choose appropriate common materials for making simple mechanical constructions and repairing things."/>
+			<xsd:enumeration value="Measure and mix dry and liquid materials (in the kitchen, garage, or laboratory) in prescribed amounts, exercising reasonable safety."/>
+			<xsd:enumeration value="Keep a notebook that describes observations made, carefully distinguishes actual observations from ideas and speculations about what was observed, and is understandable weeks or months later."/>
+			<xsd:enumeration value="Use calculators to determine area and volume from linear dimensions, aggregate amounts of area, volume, weight, time, and cost, and find the difference between two quantities of anything."/>
+			<xsd:enumeration value="Make safe electrical connections with various plugs, sockets, and terminals."/>
+			<xsd:enumeration value="Use calculators to compare amounts proportionally."/>
+			<xsd:enumeration value="Use computers to store and retrieve information in topical, alphabetical, numerical, and key-word files, and create simple files of their own devising."/>
+			<xsd:enumeration value="Read analog and digital meters on instruments used to make direct measurements of length, volume, weight, elapsed time, rates, and temperature, and choose appropriate units for reporting various magnitudes."/>
+			<xsd:enumeration value="Use cameras and tape recorders for capturing information."/>
+			<xsd:enumeration value="Inspect, disassemble, and reassemble simple mechanical devices and describe what the various parts are for; estimate what the effect that making a change in one part of a system is likely to have on the system as a whole."/>
+			<xsd:enumeration value="Learn quickly the proper use of new instruments by following instructions in manuals or by taking instructions from an experienced user."/>
+			<xsd:enumeration value="Use computers for producing tables and graphs and for making spreadsheet calculations."/>
+			<xsd:enumeration value="Troubleshoot common mechanical and electrical systems, checking for possible causes of malfunction, and decide on that basis whether to make a change or get advice from an expert before proceeding."/>
+			<xsd:enumeration value="Use power tools safely to shape, smooth, and join wood, plastic, and soft metal."/>
+			<xsd:enumeration value="Describe and compare things in terms of number, shape, texture, size, weight, color, and motion."/>
+			<xsd:enumeration value="Draw pictures that correctly portray at least some features of the thing being described."/>
+			<xsd:enumeration value="Write instructions that others can follow in carrying out a procedure."/>
+			<xsd:enumeration value="Make sketches to aid in explaining procedures or ideas."/>
+			<xsd:enumeration value="Use numerical data in describing and comparing objects and events."/>
+			<xsd:enumeration value="Organize information in simple tables and graphs and identify relationships they reveal."/>
+			<xsd:enumeration value="Read simple tables and graphs produced by others and describe in words what they show."/>
+			<xsd:enumeration value="Locate information in reference books, back issues of newspapers and magazines, compact disks, and computer databases."/>
+			<xsd:enumeration value="Understand writing that incorporates circle charts, bar and line graphs, two-way data tables, diagrams, and symbols."/>
+			<xsd:enumeration value="Find and describe locations on maps with rectangular and polar coordinates."/>
+			<xsd:enumeration value="Make and interpret scale drawings."/>
+			<xsd:enumeration value="Write clear, step-by-step instructions for conducting investigations, operating something, or following a procedure."/>
+			<xsd:enumeration value="Choose appropriate summary statistics to describe group differences, always indicating the spread of the data as well as the data's central tendencies."/>
+			<xsd:enumeration value="Describe spatial relationships in geometric terms such as perpendicular, parallel, tangent, similar, congruent, and symmetrical."/>
+			<xsd:enumeration value="Use and correctly interpret relational terms such as if . . . then . . . , and, or, sufficient, necessary, some, every, not, correlates with, and causes."/>
+			<xsd:enumeration value="Participate in group discussions on scientific topics by restating or summarizing accurately what others have said, asking for clarification or elaboration, and expressing alternative positions."/>
+			<xsd:enumeration value="Use tables, charts, and graphs in making arguments and claims in oral and written presentations."/>
+			<!--In the next benchmark, the phrase 'How do you know?' originally had double quotes surrounding it. The double quotes were replaced with single quotes because a double quote is a reserved character in XML schema.-->
+			<xsd:enumeration value="Ask 'How do you know?' in appropriate situations and attempt reasonable answers when others ask them the same question."/>
+			<xsd:enumeration value="Buttress their statements with facts found in books, articles, and databases, and identify the sources used and expect others to do the same."/>
+			<xsd:enumeration value="Recognize when comparisons might not be fair because some conditions are not kept the same."/>
+			<!--In the next benchmark, the phrases 'Everybody knows that' and 'I just know' originally had double quotes surrounding them. The double quotes were replaced with single quotes because a double quote is a reserved character in XML schema.-->
+			<xsd:enumeration value="Seek better reasons for believing something than 'Everybody knows that . . .' or 'I  just know' and discount such reasons when given by others."/>
+			<!--In the next benchmark, the phrase 'Leading doctors say' originally had double quotes surrounding it. The double quotes were replaced with single quotes because a double quote is a reserved character in XML schema.-->
+			<xsd:enumeration value="Question claims based on vague attributions (such as 'Leading doctors say...') or on statements made by celebrities or others outside the area of their particular expertise."/>
+			<xsd:enumeration value="Compare consumer products and consider reasonable personal trade-offs among them on the basis of features, performance, durability, and cost."/>
+			<xsd:enumeration value="Be skeptical of arguments based on very small samples of data, biased samples, or samples for which there was no control sample."/>
+			<xsd:enumeration value="Be aware that there may be more than one good way to interpret a given set of findings."/>
+			<xsd:enumeration value="Notice and criticize the reasoning in arguments in which (1) fact and opinion are intermingled or the conclusions do not follow logically from the evidence given, (2) an analogy is not apt, (3) no mention is made of whether the control groups are very much like the experimental group, or (4) all members of a group (such as teenagers or chemists) are implied to have nearly identical characteristics that differ from those of other groups."/>
+			<!--In the next benchmark, the phrases '9 out of 10 dentists recommend....' and '3,400....1%' originally had double quotes surrounding them. The double quotes were replaced with single quotes because a double quote is a reserved character in XML schema.-->
+			<xsd:enumeration value="Notice and criticize arguments based on the faulty, incomplete, or misleading use of numbers, such as in instances when (1) average results are reported, but not the amount of variation around the average, (2) a percentage or fraction is given, but not the total sample size (as in '9 out of 10 dentists recommend...'), (3) absolute and proportional quantities are mixed (as in '3,400 more robberies in our city last year, whereas other cities had an increase of less than 1%'), or (4) results are reported with overstated precision (as in representing 13 out of 19 students as 68.42%)."/>
+			<xsd:enumeration value="Check graphs to see that they do not misrepresent results by using inappropriate scales or by failing to specify the axes clearly."/>
+			<xsd:enumeration value="Wonder how likely it is that some event of interest might have occurred just by chance."/>
+			<!--In the next benchmark, the phrases 'being taken, whether' and 'others, can' originally had an m-dash between the words taken and whether and others and can . The m-dash was changed to a comma because then an entity reference does not need to be used in the XML and a comma is grammatically fine.-->
+			<xsd:enumeration value="Insist that the critical assumptions behind any line of reasoning be made explicit so that the validity of the position being taken, whether one's own or that of others, can be judged."/>
+			<xsd:enumeration value="Be aware, when considering claims, that when people try to prove a point, they may select only the data that support it and ignore any that would contradict it."/>
+			<xsd:enumeration value="Suggest alternative ways of explaining data and criticize arguments in which data, explanations, or conclusions are represented as the only ones worth consideration, with no mention of other possibilities. Similarly, suggest alternative trade-offs in decisions and designs and criticize those in which major trade-offs are not acknowledged."/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

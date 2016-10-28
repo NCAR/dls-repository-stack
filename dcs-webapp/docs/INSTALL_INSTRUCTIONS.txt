@@ -1,0 +1,176 @@
+The Digital Collection System (DCS) can be used to generate and manage metadata
+collections based on XML schemas. The DCS is web-based, supporting distributed
+collections management with protection against concurrent editing and a
+roles-based permissions scheme. The DCS was originally developed as, and is
+currently used as, the collection management tool for the Digital Library for
+Earth System Education (DLESE).
+
+The NCore version of the DCS (NCS) offers the ability to manage Digital
+Collections directly in the NSDL Data Repository (NDR). The NCS is currently
+used by the NSDL to manage digital collections in the NDR.
+
+The software runs in a Apache Tomcat servlet container and can be
+installed on Windows, Linux, Mac OS or UNIX systems.
+
+These instructions assume familiarity with Java Servlets, Java Server Pages
+(JSP), the Tomcat servlet container and related technologies.
+
+This procedure tested on LINUX, WindowsXP and MacOS v10.6.8
+
+1 - Obtain and install Tomcat (6.x) and Java (1.5.x or 1.6.x) if necessary.
+The Tomcat distribution provides instructions within the RUNNING.txt file.
+
+In this document, your Tomcat installation directory will be referred to as
+$TOMCAT.
+
+2 - Place the war file (ncs.war) in the webapps directory ($TOMCAT/webapps).
+Start/restart Tomcat to unpack the war files and install the web application.
+
+Startup may take a minute - if you want to monitor progress, you can watch the
+log file using the following unix command:
+	tail \-f \-n100 $TOMCAT/logs/catalina.out
+
+3 - Access the system with your browser at http://localhost:8080/ncs. You will
+land on the NCS "Home" page.
+
+NOTE: At the top of the page you will see a message to the effect that the
+Sample Collection must be reindexed before it can be accessed. This is normal!
+
+There is no need to stop here and play with the sample collection, but if you
+want to try out the tool using the sample collection you may do so after
+navigating to the "Manage -> Manage Collections" page and selecting the
+"Index" link for Sample Collection.
+
+4 - Configure your NCS Application. A Context Descriptor template can be found
+at 'context_descriptor_template.txt' in the distribution directory and also in
+the docs/templates directory of the exploded war file. The Context Descriptor
+template lists the configuration parameters for the NCS. It describes their
+usage and suggests values.
+
+NOTE: The templates directory of the exploded war file contains several template
+files referenced in these instructions.
+
+Configuration Steps:
+
+a - Copy the template and either:
+- insert within $TOMCAT/conf/server.xml (recommended, see NOTES below) OR
+- save as $TOMCAT/conf/Catalina/localhost/ncs.xml.
+
+b - Edit the context descriptor file, whether in server.xml or as a stand-alone
+file, as appropriate for your context. As mentioned above, the context
+descriptor template list parameters for configuration, explanations of the
+parameters, and sample values. If you don't want to configure a given
+parameter, comment it out (e.g., <!--  -->).
+
+NOTES:
+
+i - Inserting into $TOMCAT/conf/server.xml
+The context descriptor is a single 'Context' element ('<Context>'). This element
+is inserted as a child of the <Host> element in server.xml.
+
+ii - Changing the app name (e.g., from "ncs" to "myncs")
+
+	- if you chose to save your context descriptor to its own file, the name of
+	this file must match the app directory (${TOMCAT}/webapps/appName).
+	
+	- in all cases, the "path" attribute of the "Context" element in the context
+	descriptor must match the app directory.
+
+Save the context descriptor Restart Tomcat to apply your configurations.
+
+When Tomcat has started, navigate to "Settings -> Indexings" and select the 
+"Reindex All" button to ensure the index has been properly initialized. This
+action is only necessary when the location of the index and/or metadata files
+has changed since the last system start-up.
+
+5 - Set up User Roles and Permissions (Optional)
+This optional step allows you to define Authenticated users and to assign them a 
+role, which defines the actions they have permission to carry out. Roles are used
+to control access to:
+- Collections
+- System configuration
+
+There are two steps to enable the roles and permissions mechanism:
+
+a - The "authenticationEnabled" parameter must be set to "true" in the context
+descriptor.
+
+b - A parameter must be passed to the JVM when it is invoked (i.e., when Tomcat
+starts). This parameter tells the JVM where to look for the java class necessary
+to support user authentication at login (in the following, $DCS_CONF corresponds 
+to the "dcsConf" parameter defined in the Context Descriptor).
+
+	-Djava.security.auth.login.config==$DCS_CONF/auth/ncslogin.config"
+
+In UNIX, the recommended method for passing the required parameter is via a
+shell script that will start and stop Tomcat (and can be called by an system
+init script if desired). A template for script file can be found at
+$TOMCAT/webapps/$APP_NAME/docs/templates/ncs.sh.template. The template contains
+the necessary instructions for customizing it to your installation.
+
+For WINDOWS, the recommended method is to pass the parameter via the "Apache
+Tomcat Properties" tool (found at $TOMCAT/bin/tomcat5w.exe). After opening the
+properties tool, click on the "Java" tab. Add the following line to the "Java
+Options" pane (after first replacing $DCS_CONF with the value corresponding to
+the parameter defined in the Context Descriptor):
+
+	-Djava.security.auth.login.config==$DCS_CONF\auth\ncslogin.config
+
+Restart Tomcat to apply your change. When you try to access the NCS you will be
+challenged for a username and password. Use the following:
+	username: root
+	password: root!pass
+
+Create and modify users via "Manage -> Manage Users", and specify their access
+to collections via "Manage -> Assign Collection Access"
+	
+NOTE: It is strongly suggested that you change the root user's password!
+
+6 - Configure the ASN Standards Service (optional)
+
+The NCS Standards Service helps catalogers to select and assign educational
+standards, such as the ASN Standards (http://asn.jesandco.org/). ASN standards
+have the form ("http://purl.org/ASN/resources/S10023EC") which is tedious to
+type and which has no semantic meaning. 
+
+The Standards Service displays ASN Standards in textual form, in their
+hierarchical structures. When catalogers select a standard, it is inserted into
+the metadata as an ASN ID.
+
+The standards service is configured via a single XML file as described below.
+The configuration for a particular framework will apply to each
+of the collections belonging to that framework. Each framework is configured by
+specifying:
+
+- the framework, e.g., 'ncs_item'
+
+- the xpath of the metadata field for which ASN standards will be displayed, e.g.,
+'/record/educational/standards/asnID'
+
+- the Standards Documents from which suggestions will be made. There is no need
+to manually configure the individual standards documents, this is done through
+the "Manager -> Standards" page in the running NCS.
+
+An example standards Configuration file can be found at
+templates/standards_service_config.xml. To complete the configuration, perform
+the following steps,
+
+a - copy the template file, and save it to disk (e.g.,
+$DCS_CONF/standardsServiceConfig.xml). Uncomment the frameworks for which you
+would like to use the standards service.
+
+b - set the value for the "standardsServiceConfig" parameter in the
+context descriptor to point to the config file. 
+
+c - choose a location for the ASN Standards Library. This is where downloaded
+ASN Standards Documents are cached (the NCS downloads ASN Docs as necessary as
+you work). Configure the path to the location as the value of the
+"asnStandardsLibrary" param in the context descriptor.
+
+NOTE: The standards service may be disabled or enabled on a per-collection basis
+via the "Settings -> Collection-Settings" page. By default, the suggestion
+service is active if a framework has been configured with a Standards Service.
+To change whether the suggestion service is active or not, Navigating to the
+settings for the particular collection, and edit the "allowSuggestions" field to
+either allow or disallow suggestions.
+

@@ -1,0 +1,138 @@
+/*
+ *  License and Copyright:
+ *
+ *  The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may
+ *  not use this file except in compliance with the License. You should have received a copy of the License
+ *  along with this software; if not, you may obtain a copy of the License at
+ *  http://www.opensource.org/licenses/ecl1.php.
+ *
+ *  Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND,
+ *  either express or implied. See the License for the specific language governing rights and limitations
+ *  under the License.
+ *
+ *  Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR).
+ *  All rights reserved.
+ */
+package edu.ucar.dls.standards.commcore;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import edu.ucar.dls.webapps.tools.GeneralServletTools;
+
+import java.io.*;
+import java.util.*;
+import java.text.SimpleDateFormat;
+
+// Enterprise imports
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
+
+/**
+ *  Servlet responsible for initializing the CommCore resolver service.
+ *
+ * @author    Jonathan Ostwald
+ */
+
+public final class CommCoreServlet extends HttpServlet {
+
+	private boolean debug = true;
+	private CommCoreServiceHelper commCoreServiceHelper = null;
+
+	private static Log log = LogFactory.getLog(CommCoreServlet.class);
+
+
+	/**
+	 *  Intialize the StandardsSuggestionService and place it in the ServletContext
+	 *  where it can be found by the Rest Service Clases.
+	 *
+	 * @param  config                Description of the Parameter
+	 * @exception  ServletException  Description of the Exception
+	 */
+	public void init(ServletConfig config)
+		 throws ServletException {
+		log.info(getDateStamp() + " CommCoreServlet starting");
+		String initErrorMsg = "";
+		try {
+			super.init(config);
+		} catch (Throwable exc) {
+			initErrorMsg = "CommCoreServlet Initialization Error:\n  " + exc;
+			log.error(initErrorMsg);
+		}
+
+		// initialize the AdnStandardsManager
+		String commCoreStandardsPath = getAbsolutePath((String) getServletContext().getInitParameter("commCoreStandardsPath"));
+		if (commCoreStandardsPath == null) {
+			throw new ServletException("init parameter \"commCoreStandardsPath\" not found in servlet context");
+		}
+
+		try {
+			commCoreServiceHelper = new CommCoreServiceHelper(commCoreStandardsPath);
+		} catch (Exception e) {
+			log.error("Failed to initialize StdDocument.", e);
+		}
+
+		if (commCoreServiceHelper != null)
+			getServletContext().setAttribute("commCoreServiceHelper", commCoreServiceHelper);
+		else
+			throw new ServletException("Failed to initialize StdDocument");
+
+		log.info(getDateStamp() + " CommCoreServlet completed.\n");
+	}
+
+
+	/**  Performs shutdown operations. */
+	public void destroy() {
+		log.info("destroy() ...");
+		commCoreServiceHelper = null;
+		System.out.println(getDateStamp() + " CommCoreServlet stopped");
+	}
+
+
+	/**
+	 *  Return a string for the current time and date, sutiable for display in log
+	 *  files and output to standout:
+	 *
+	 * @return    The dateStamp value
+	 */
+	public static String getDateStamp() {
+		return
+			new SimpleDateFormat("MMM d, yyyy h:mm:ss a zzz").format(new Date());
+	}
+
+
+	/**
+	 *  Gets the absolute path to a given file or directory. Assumes the path
+	 *  passed in is eithr already absolute (has leading slash) or is relative to
+	 *  the context root (no leading slash). If the string passed in does not begin
+	 *  with a slash ("/"), then the string is converted. For example, an init
+	 *  parameter to a config file might be passed in as "WEB-INF/conf/serverParms.conf"
+	 *  and this method will return the corresponding absolute path "/export/devel/tomcat/webapps/myApp/WEB-INF/conf/serverParms.conf."
+	 *  <p>
+	 *
+	 *  If the string that is passed in already begings with "/", nothing is done.
+	 *  <p>
+	 *
+	 *  Note: the super.init() method must be called prior to using this method,
+	 *  else a ServletException is thrown.
+	 *
+	 * @param  fname                 An absolute or relative file name or path
+	 *      (relative the the context root).
+	 * @return                       The absolute path to the given file or path.
+	 * @exception  ServletException  An exception related to this servlet
+	 */
+	private String getAbsolutePath(String fname)
+		 throws ServletException {
+		if (fname == null) {
+			return null;
+		}
+		return GeneralServletTools.getAbsolutePath(fname, getServletContext());
+	}
+
+}
+

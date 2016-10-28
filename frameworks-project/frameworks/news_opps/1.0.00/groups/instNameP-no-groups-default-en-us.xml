@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: instNameP-no-groups-default-en-us.xml,v 1.1 2009/01/30 21:49:27 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Organization name - (when describing a person)</title>
+<groups:concept language="en-us" metaFormat="news_opps" metaVersion="1.0.00" text="Organization name - (when describing a person)" audience="default" path="/news-oppsRecord/contributors/contributor/person/instName" deftn="an organization's formal name"/>
+</head>
+<body>
+<outline groups:vocab="American Geophysical Union (AGU)" type="vocab" text="American Geophysical Union (AGU)" groups:deftn="Self-explanatory."/>
+<outline groups:vocab="Digital Library for Earth System Education (DLESE)" type="vocab" text="Digital Library for Earth System Education (DLESE)" groups:deftn="Self-explanatory."/>
+<outline groups:vocab="Geological Society of America (GSA)" type="vocab" text="Geological Society of America (GSA)" groups:deftn="Self-explanatory."/>
+<outline groups:vocab="Incoporated Research Institutions for Seismology (IRIS)" type="vocab" text="Incoporated Research Institutions for Seismology (IRIS)" groups:deftn="Self-explanatory."/>
+<outline groups:vocab="National Aeronautics and Space Administration (NASA)" type="vocab" text="National Aeronautics and Space Administration (NASA)" groups:deftn="Self-explanatory."/>
+<outline groups:vocab="National Association of Geoscience Teachers (NAGT)" type="vocab" text="National Association of Geoscience Teachers (NAGT)" groups:deftn="Self-explanatory."/>
+<outline groups:vocab="National Oceanic and Atmospheric Administration (NOAA)" type="vocab" text="National Oceanic and Atmospheric Administration (NOAA)" groups:deftn="Self-explanatory."/>
+<outline groups:vocab="National Science Digital Library (NSDL)" type="vocab" text="National Science Digital Library (NSDL)" groups:deftn="Self-explanatory."/>
+<outline groups:vocab="National Science Foundation (NSF)" type="vocab" text="National Science Foundation (NSF)" groups:deftn="Self-explanatory."/>
+<outline groups:vocab="National Science Teachers Association (NSTA)" type="vocab" text="National Science Teachers Association (NSTA)" groups:deftn="Self-explanatory."/>
+<outline groups:vocab="University Corporation for Atmospheric Research (UCAR)" type="vocab" text="University Corporation for Atmospheric Research (UCAR)" groups:deftn="Self-explanatory."/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

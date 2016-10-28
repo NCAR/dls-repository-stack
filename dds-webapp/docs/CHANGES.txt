@@ -1,0 +1,1637 @@
+Release notes and version documentation for the 
+Digital Discovery System (DDS)
+
+DDS is a Java-based XML repository, search and discovery system 
+that is built with Lucene. Its repository is accessed through Web service 
+APIs that may be used for a wide variety of applications.
+For more information see https://uc.dls.ucar.edu/dds_uconnect_search/index.jsp
+
+DDS is developed by Digital Learning Sciences (DLS) at the
+University Corporation for Atmospheric Research (UCAR)
+with support from the National Science Foundation (NSF).
+http://dls.ucar.edu/  http://www.ucar.edu/  http://nsf.gov/
+-----------------------------------------------------------------------------
+
+
+Changes in 3.7.0-rc1
+
+- This version combines the DDS, DCS, Harvest Manager, Java libraries, and frameworks-project
+into a single repository (stack) in GitHub. It removed dependency on joai-project,
+and renamed top-level directories to better match their identity.
+-- Renamed all Java packages from org.dlese.dpc.* to edu.ucar.dls.*
+
+- This file describes release changes for the DDS webapp. See the top-level README docs for global change notes.
+
+
+Changes in 3.6.1-rc7
+- Fixed issue with NASA Wavelength collection to filter out records that were retired but still appearing
+ in their OAI feed. Fixed by filtering out records with IDs that start with 'retired-' (for both
+ nsdl_dc and lar record collections - in NRIndexer3)
+- Added option in NRIndexer3 to filter out records that catalog the same resource URL (e.g. allow only one record per
+URL in each collection). Set to false (off) by default. Can configure this NRIndexer config file.
+- Cleaned up search page, docs, and UI in a few places
+
+
+Changes in 3.6.1-rc6
+- Updated and verified to run under Java 8 and Tomcat 7 (also Java 6,7 and Tomcat 6)
+- Fixed issue with temporaty file clashes when running multiple instances of DCS/DDS in a single Tomcat container
+(set unique contextParam DDS_UUID for each instance)
+- Added lar to gmd transform for OAI dissimination
+- New JQuery Search API client implementation for DDSWS Search API (in addition to the prototype.js client -
+see services/examples/ddsws1-1/json_client/dds_search.html)
+- Updated page footer logos to DLS, UCP, NSF. Removed NSDL logo.
+- Removed NSDL links and references in UI and documentation
+- Renamed references to NCS to DCS
+- Refined logic and messaging for 24 hour automatic indexing timer
+- Moved the Search Client path from .../json_example/... to .../json_client/...
+- Renamed 'Repository Update API' to 'Update API'
+
+Changes in 3.6.1-rc5
+- Added javascript code to try to align the line labels in the Repository Analytics page as best as
+  we can. Before sometimes the line labels would appear on top of each other.
+  
+Changes in 3.6.1-rc4
+- Added help page for Repository Analytics page.
+- Fixed some inconsistencies around what the legend shows
+
+Changes in 3.6.1-rc3
+
+- Added in Repository Analytics Functionality. This charting tool, uses the snapshots of summary data for a given 
+  month. The jsp's were written in a way so any client of dlese-tools could easily embed the graphs into
+  its own GUI
+
+- Changed the way summary data was being stored on the system. The new way uses directory structure and includes 
+  total collection facets as well. This is to enable Repository Analytics to be be able to graph per collection
+  
+- Added a cron task called by the servlet to take snap shots of repository stats on a daily basis. This is done for
+  all all types of repositories, foreground, background, and read only. This enables all indexers to be able to use
+  the analytics tools
+  
+Changes in 3.6.1-rc2
+
+- Added close statements to utility functions in order to try to fix the open files issue. The utililty
+files that were missing these close statements were Dom4JUtils and TimedURLConnection
+
+Changes in 3.6.1-rc1
+
+- Added a new validation step during the commit of a background index. Now the record counts are compared
+  against the prior indexes to make sure that certain thresholds were not hit, thereby showing that something
+  went wrong either during indexing or harvesting. These validation emails are then sent to an admin for 
+  review
+  
+- Created a new interface called Repository Maintenance, where an admin can change which index
+  should be used as the current index. This interface also gives administrators a tool to handle when a background
+  index is found to have an issue and a way to view stats of a given index.
+   
+- Added an export repository function to the background index process so one indexer can create an
+  index for an external one to keep an external one from having to use its resources to index. 
+  The related function to this is a config option for an index to be able to then import the created
+  repository.
+   
+- Created a summary report which is kept in the file system which details record counts, collection
+  counts, facets and changes compared to the prior index. These stats are then made available in the repository
+  maintenance interface to compare indexes as well as archived per month so stats can be compared by date through
+  an entire year.
+  
+- Moved xmlformatinfo and fileindexingplugin init params to context parmams to make them more global and able
+  to be overridden in context
+    
+Changes in 3.6.1-rc1
+
+-  Adding new type of indexer, NRIndexer3 which indexes 500 records at a time instead of one at a time. 
+   This improves performance.
+
+-  Changed the order in which we index the collections in NRIndexer3. Instead of just a random order, we do them in a way that
+   contains the least amount of re-indexing dependencies. The new order is comm_para, comm_anno, lar and finally nsdl_dc.
+
+-  Changed the expiration time for asn_standards_cache files to a week instead of 10 minutes. Since many collections
+   take a lot longer then 10 minutes annd a full on index takes 2 days. This makes certain collections that have
+   many alignments take less time.
+   
+-  Added code into the main servlet to make an index that has deDuping turned on, start from scratch instead of 
+   continuing where it left off when the server is restarted. This was done to avoid issues that arise when 
+   re-indexing records de-duped records. 
+
+Changes in 3.6.0 (release tagged on 11/18/2013)
+
+-New lar to nsdl_dc format converter (NRIndexer2LARToNSDLDCFormatConverter) 
+pulls normalized nsdl_dc metadata from the NR repository DB, for use in the OAI configuration for DDS.
+This is now configured by default in web.xml instead of the more universal XSL version.
+
+
+Changes in 3.6.0-rc8
+
+-Moved nsdl_dc and lar normalization code to the Harvest Manager.
+
+-Implemented new NRIndexer2 implemented that expects pre-normalized metadata in the NR repository. 
+
+
+Changes in 3.6.0-rc7
+
+-Greatly improved response time with large repositories for these service requests: OAI ListRecords and ListIdentifiers 
+and Search request when the argument xmlFormat was used. Addressed by caching the list of xml formats internally
+to avoid having to call the index.getTerms() method each time, which is very slow on large indexes. 
+
+
+Changes in 3.6.0-rc6
+
+-NRIndexer: Refactored DB connection to handle the new DB structure implemented by the new integrated Harvest Manager 
+ingest process (stores nsdl_dc metadata into 'target_xml').
+
+-Fixed display of UTF-8 characters in the admin advanced search web pages
+
+
+Changes in 3.6.0-rc5
+
+-NRIndexer: For LAR records, ensured that the <recordID> element is written at the top of the records (and not lower down) 
+to ensure validity
+
+-Fixed issue where the totals displayed in the OAI ListSets response were not accurate if a repository filter
+was being used.
+
+-ListSets request now caches set totals to improve response time.
+
+-Fixed issue with nsdl_dc to oai_dc transform that resulted in non-valid records returned.
+Transform now properly handles the new LAR fields.
+
+-Added lar to oai_dc transform (requires xslt 2.0)
+
+-Added saxon XSLT processor for XSLT 2.0 support
+
+-Changed the boilerplate localize XSLT to a different stylesheet that does not 
+throw the warning "The child axis starting at an attribute node will never select anything"
+from the saxon XSLT processor
+
+-Fixed issue in the Search request response element <facetResults> where a pathDelimiter was sometimes
+indicated when it should not have been for a given facet category.
+
+
+Changes in 3.6.0-rc4
+
+-Implemented an NR indexer class for indexing NSDL collections from the NR MySQL repository.
+--Includes resoruce handles for nsdl_dc and lar formats
+--Pulls in metadata content from binary Blobs
+
+-Added custom field 'commonComments' for nsdl_dc and lar formats that combines all comments from related
+comm_anno (@type='Comment' or @type='Teaching tip') and commParadata records (@type='commented').
+
+-Added lar format info for OAI ListMetadataFormats response
+
+-Added the ability to configure the default search field used by the query parser in the Search API and elsewhere 
+when no search field is explicilty specified. This is normally set to 'default' but can now be overridden to 
+specify a custom field if desired.
+
+-Updated the documentation pages to refer to the APIS as 'Search API' and 'Repository Update API'
+consistently throughout, to include information about configuring the default search field, 
+and a few other edits
+
+-More verbose messages from NRIndexer to summarize the total number of records per collection 
+that had warnings.
+
+-Admin search results display a message that the cached file does not exist if it 
+resides in the index only.
+
+
+Changes in 3.6.0-rc3
+
+-Ability to request facetResults for multiple paths in the same category, instead of just one
+
+-Ability to do facet drilldown into multiple paths for the same category, instead of just one
+
+-The URLs that are indexed in the standard 'url', 'urlenc', and 'uri' fields are now normalized using the scheme
+that was used in the NDR and is used in the Handle Resolution Service to generate handles for resource URLs 
+and the NCS to verify URL input fields
+
+-Relationships that are assigned by URL now use normalized URLs to make the relation connection between records.
+This should more accurately connect records by URL.
+
+-Implemented the ability to pull in custom field content from related documents. To specify custom field 
+content that should be pulled from a related document, add an XPath in the framework configuration file 
+that starts with the relation prefix specifier (e.g. '/relation.isAnnotatedBy/') followed by the XPath into the 
+related document to the content, for example '/relation.isAnnotatedBy//comm_anno/ASNstandard'
+
+-Updated the Search API documentation section on faceting to include the new functionality (and comment out 
+the documentation about the old, but still supported, faceting facilities).
+
+-Updated the custom fields documentation to detail how to configure facet categories in the index and
+to pull in custom field content from related documents into a custom field.
+
+-Updated the custom fields documentation to describe how to define relationships between records
+in the repository
+
+
+Changes in 3.6.0-rc2
+
+-Re-factored the display format for facet counts and added error checking for facet request arguments.
+
+-Implemented facet drilldown into search results
+
+-Search request now allows the number of search results to be set to 0 (n argument), in which case only the
+facetResutls and header is returned
+
+
+Changes in 3.6.0-rc1
+
+-Implemented optimized native support for faceting. Includes ability to configure any number of facets
+for a given XML framework and support for hierarchical facet taxonomies.
+
+-Implemented support for faceting and drill-down of ASN standards hierarchies
+
+-Fixed problem where LAR recordID was not found and properly re-written when indexing as nsdl_dc with related LAR
+collections, which was causing the background indexing sessions to fail
+
+
+Changes in 3.5.3-rc8
+
+-Created separate search fields for nsdl_dc resource and metadata handles: nsdlDcResourceHandle, nsdlDcMetadataHandle
+
+-Admin search results have improved links to NSDL handles and NSDL LAR and weeding status
+
+-Corrected xPath to properly pull in NSDL weeding reason code from the content cache service
+
+-NFRIndexer now checks the following regarding the setSpecs found in the NCS collection records (throws exception if not met): 
+1. setSpec is not empty and 2. setSpecs are unique across all collections.
+
+-NFRIndexer now pulls the setSpec value from the body of the NCS collection record rather than the NCS service response header
+(these two values were the same/redundant).
+
+-Fixed bug where indexer left open files after deleting unused background indexes (lsof showed hanging 'deleted' files)
+
+-Updated to Lucene 3.6 (no API changes from 3.5)
+
+
+Changes in 3.5.3-rc7
+
+-Added required LAR fields to nsdl_dc and lar records during normalization
+
+-Added weeding status to admin UI search result display
+
+-Added message to DDSWS GetRecord response if record was not returned due to filter
+
+-Implemented a framework to filter the content that is dissiminated from a DDS repository. Filters can be defined using a Lucene
+query and configured in the deployment descriptor using a context-param that starts with 'repositoryfilter'
+(see documentation in web.xml with example). Records that match the query will be omitted from the Search API and OAI 
+service responses. The filter can be temporarily turned off (if allowed) by supplying an argument of the form
+disableFilter=[filterName] to the given service request (Search, GetRecord, UrlCheck, ListRecords, ListIdentifiers).
+
+-To configure a global filter to remove NSDL weeded out records, use:
+<Parameter name="repositoryfilter - Filter weeding status OUT"  value="nsdlWeededOut|disableFilterAllowed|weeding.statusCode:(OUT)" override="false" />
+
+-Added ability to configure a custom field content preprocessor Java class (instance of interface IndexFieldPreprocessor)
+for any custom XPath field
+
+
+Changes in 3.5.3-rc6
+
+-Applied patch submitted by Timo Proescholdt, which addresses the following:
+--Fixed OutOfMemoryError errors associated with large repositories.
+--Added ability to configure new indexing handlers (instances of XmlFileIndexingWriter) via the servlet config
+--Fixed issues with threads not shutting down properly when the webapp is stopped/reloaded
+
+
+Changes in 3.5.3-rc5
+
+-Updated to Lucene v3.5.0
+
+-NFRIndexer: Implemented ability to index LAR collections as NSDL DC with separate related LAR collections,
+and ability to configure this behavior (on/off) for Search API vs OAI instances
+
+-Updated NSDL DC normalizer to allow dev resource handles: production handles start with 2200/, dev handles 2200.1/
+
+
+Changes in 3.5.3-rc4
+
+-Removed requirement for collection handle to be present for NFR indexer
+
+
+Changes in 3.5.3-rc3
+
+-Refactored fielded faced search to use a Filter instead of a Query to improve performance
+
+-Ensured NFR indexer reads files as UTF-8 for proper character encoding.
+
+-Fixed bug in DDSWS Search response where the <head><xmlFormat> value returned indicated the native 
+format instead of the actual XML format that was returned when a non-native xmlFormat argument 
+was requested by the client
+
+-Added a new attribute to <head><xmlFormat> element, <xmlFormat nativeFormat="xxx">, which indicates
+the native xmlFormat of the record, which may be different from the XML format that was actually
+returned if an xmlFormat argument was requested by the client
+
+-Implemented NFRIndexer to pull from the NFR file repository structure
+
+-Updated NFRIndexer to get collection handle from NCS collection_info instead of ndr_info metametadata
+
+-Updated links to 2200 handles in Advanced Search to point to the resolved handle landing pages at nsdl.org
+
+
+Changes in 3.5.3-rc1
+
+-In DDSWS and OAI repsonse, changed precedence to pull content from the index rather than
+the file when converting from one format to another so as to keep output in synch with the index version
+
+-Fixed issue where the JSON (and possibly XML) response from the the Web services was returning an improper 
+content length in certain cases. This caused the response to get truncated when accessed by certain client
+libraries like python or php.
+
+-Changed the ant deploy target to not deploy dlese_shared by default
+
+-Ensured that OAI repository information (Name, description, admin e-mail, etc.) is saved between 
+repository commits when background indexing is in use.
+
+
+Changes in 3.5.2 (released to SourceForge 5/26/2011)
+
+-Added index creation and last modified dates to ServiceInfo API response
+
+-NDR indexer: Added check if NDR ListMembers returns 0 for a given collection, this is a fatal error. 
+The indexer will not commit the index and will keep trying until all collections are > 0.
+
+-Custom nsdl_dc.core.subject field now only includes the core subjects (fixed bug where
+some non-core subjects were included)
+
+-Added search fields isRelatedToByCollectionKey, isRelatedToByCollectionKey.[relation], to enable searching
+for records that have been related to by a given collection.
+
+
+Changes in 3.5.2-rc7
+
+-Added <dc:identifier xsi:type="nsdl_dc:MetadataHandle"> to the normalized NSDL DC records to indicate 
+the NSDL metadata handle for the record
+
+-Added collection name to log for reporting missing titles, descriptions, and/or URLs in NSDL DC records
+to collection builders
+
+-Added more info/messages in the Collection Manager UI clarifying the process/state of background indexing.
+
+-Fixed intermittent divide by zero bug in NDR collection indexer.
+
+
+Changes in 3.5.2-rc6
+
+-Re-factored the Collection Manager UI to cache the collections table and to sort the table using javascript.
+Added ability to find/filter collections in the UI.
+
+-Implemented option to manually load a repository that was created externally, without restarting 
+(see context-param 'performBackgroundIndexingExternally').
+
+-Added check to filter out NSDL DC reocrds that are missing title, description, or URL when
+NSDL DC normalization is requested, and generate comma-separated log for reporting
+these errors to collection builders
+
+-Added <dc:identifier xsi:type="nsdl_dc:NSDLPartnerID"> to the normalized NSDL DC records
+to indicate the original NSDL partner ID (OAI ID, NCS ID, etc.) for the record.
+
+-Added ability to request the Lucene score in the Search response. To do so, add
+the argument response=score to the Search request. A <score> is returned at the top of each 
+<record> in the list of matching results.
+
+
+Changes in 3.5.2-rc5
+
+-Implemented option to perform indexing in the background (in additional to default bahavior of
+incremental indexing on the live index). NDR Indexer produces a full, new index of all collections
+in the background and then swaps it into the DDS repository.
+
+-Implemented read-only index and repository, used in the case of background indexing 
+(foreground index/repository is read-only, background one is read/write)
+
+-Configuration change: context-param 'indexLocation' is no longer used. The index is now stored under the same 
+directory indicated in the 'repositoryData' context-param. The directory structure that is created under
+'repositoryData' directory accomodates multiple indexes for background indexing as well as all other 
+persistent data that repsresents the repository.
+
+-Location of the metadta files ('collBaseDir') now defaults to reside inside 'repositoryData' dir 
+but can be defined explicitly if desired (see web.xml for details). 
+Set new default value for 'collBaseDir' to empty in web.xml. 
+Moved sample records to new default location for example repository at WEB-INF/example_repository
+
+
+Changes in 3.5.2-rc4
+
+-Added new request argument response.mode that indicates which response elements are returned by default
+Arguments include:
+* [standardResponse] (default) - Returns the <head> and <metadata> elements inside each <record> returned.
+* [allOff] - Instructs the service to omit all standard response elements (<head>, <metadata>, <collectionMetadata>) 
+from the response except those indicated in the response argument.
+* [allOn] - Instructs the service to include all standard response elements 
+(<head>, <metadata>, <collectionMetadata>) in the response.
+
+-Added new request argument storedContent.mode=multiRecord that instructs the response to include 
+the multi-record content with the storedContent response with the top-hit only and not
+in subsequent alsoCataloedBy records
+
+-The storedContent response element now includes all values for a given stored field as separate
+value elements. Previously all values for a given field were concatinated together in a single 
+value element.
+
+-Added new request argument response=allCollectionsMetadata that returns the metadata that 
+describes all collections in which the resource (URL) resides inside the top-level 
+<record> element only and not inside the nested relation reponse 
+
+-Added ability to index related format types (annotations, paradata, etc.) with canonical NSDL DC metadata.
+
+-Streamlined NDR indexer loading of collections to eliminate need for call to NDR for each collection
+
+-Added dlese_anno to comm_anno XSL format converter
+
+-Added explicit http User-Agent headers in outgoing requests to external service APIs
+
+-JavaScript search client template now uses the storedContent title, description, and url to generate
+the display. If not found it then inspects the XML for the record as a second option for these.
+
+
+Changes in 3.5.2-rc3
+
+-Resource de-duplication: Index can now be built with resource de-duplication enabled. Records that catalog 
+the same resource URL are combined into a single search hit. In the Search request, the individual record 
+that best matches the query is returned as the primary record and all other records may be accessed 
+by requesting the "alsoCatalogedBy" relationship in the relations argument.
+
+-NSDL resource handles are now included in the normalized NSDL DC record <identifier>, (prfix hdl:2200/ )
+
+-Added <dc:identifier xsi:type="nsdl_dc:ResourceHandle"> to the normalized NSDL DC records to indicate 
+the NSDL metadata handle for the resource (URL)
+
+-Crawled content: Indexing can now include crawled content from the NSDL ContentCache service. Crawled content are
+indexed in the fields that start with crawledContent.xxx, plus the default and stems fields
+
+-Changed Search and ListCollections argument 'resp' to 'response' and changed the ouput to be at the top level.
+Available option is 'collectionMetadata', returned in a <collectionMetadata> element in the response.
+
+-Response content <collectionMetadata> and <storedContent> now also displayed in the relation records portion 
+of the response.
+
+-DDSWS 1.1 baseURL can now be set explicitly using a context parameter, which will override the default baseURL
+displayed in the UI and service responses.
+
+-NSDL DC and OAI DC record configurations now filter resource URLs to include only <identifier> that starts
+with http://, https://, or ftp://.
+
+
+
+Changes in 3.5.2-rc2
+
+-ListCollections now accepts optional 'resp' request argument to include the collection record
+or collection additional metadata element in the resoponse.
+
+-ListCollection response is no longer cached (now re-generated on-the-fly for each request)
+
+
+Changes in 3.5.2-rc1
+
+-The search service documentation has been simplified by removing DLESE-specific service references
+and clarifying the universal service features.
+
+-Implemented ability to normalize NSDL DC records, currently available as an option when using the NDRIndexer.
+
+-NDRIndexer now uses the NDR handle as the record ID for all records. Previously the provider's OAI ID was
+used in many cases instead.
+
+-OAI sets refactored for efficiency. Each set is now defined as the stored Lucene field/value for each collection
+rather than using a query.
+
+-ListSets response, for each set: Added <dc:title> (same as <setName>), moved the <dc:description> that 
+showed the number of records in the set to a comment and made it configurable via web.xml
+
+-ListRecords and ListIdentifiers: Now displays the total number of records and the offset window that is currently
+returned as a comment at the top.
+
+-OAI datestamp is now updated only when the XML is changed from the previous version (String comparison). 
+Previously the datestamp changed each time a PutRecord was called or a reindexing was conducted.
+
+-Software build no longer requires Tomcat. The war and dist-* targets can be issued without
+Tomcat in place. The deploy target still requires Tomcat (property catalina.home) to be set.
+
+-UTF-8 characters are now handled properly in OAI set definitions (name, description, etc.).
+This caused NDR indexer to freeze as the sets definitions file (ListSets-config.xml) became currupt.
+
+-NDRIndexer: Fixed problem with deleting records from previous sessions that no longer exist. Note
+that some records that should be deleted may still remain in an existing index. Delete and 
+rebuild the entire index one time to ensure proper deletions going forward.
+
+
+Changes in v3.5.1 (released to SourceForge on Dec 4, 2010)
+
+-Added the OAI data provider to the menu in the UI, exposed as a formal service on the DDS repository
+(OAI had been disabled by default in previous versions of DDS) 
+
+-Added UI to edit OAI data provider settings (repo name, admin e-mail, etc.)
+
+-OAI sets are automatically defined to be the same as the collections, e.g.
+each collection is equal to an OAI set
+
+-joai-project is now a dependency in the software build.
+
+-Updated the Struts (to v 1.2.7) and commons Java libs in the project.
+
+-Added collection-level XPath search fields for all items with prefix /relation.memberOfCollection/, for example:
+/relation.memberOfCollection//key//collectionRecord/access/key
+/relation.memberOfCollection//stems//collectionRecord/access/key
+/relation.memberOfCollection//text//collectionRecord/access/key
+
+-The DDSWS Search request now has basic support for faceting. Accepts agruments using Solr syntax:
+Pass in argument 'facet=true' to turn faceting on. Indicate fields for faceting with 'facet.field' arguments.
+Currently supports faceting on fields but not queires or dates.
+
+-The DDSWS Search request now allows sorting by multiple fields. Accepts a 'sort' argument
+using the same syntax as Solr: The sort argument must contain an ordered list of 
+one or more comma-separated fields, with a directionality specifier (asc or desc) after each field. 
+For example "modtime asc, title desc, score desc". Fields are sorted as Strings unless 'score' is indicated. 
+The default sort order is 'score desc'. Previous 'sortAscendingBy' and 'sortDescendingBy'
+arguments are still supported for backward-compatibility but must not be used in conjunction with 'sort'.
+
+-Removed the links to the deprecated JavaScript search service from the DDS menu in the UI for 
+standard deployment (still resides in the DLESE deployment)
+
+-Added var in the JavaScript example client to remove the collection records from search results
+
+-Fixed display of collection name in the <head> element that appears inside the <relation> 
+portion of the DDSWS 1.1 Search and GetRecord response (when related records are returned in the 
+response for a given record). Collection name was improperly displaying either blank or the 
+collection name of the parent record.
+
+-Fixed search and retrieval problem with collection keys that contained dashes (-) and other 
+non-word characters. The 'ky' and 'key' fields are now *not* tokenized where previously they
+were. If two collections exist in the repository, one with collection key 'example' and 
+another with 'example-two', a search for ky:example will now return only those
+records in the first collection whereas before records from both would have been.
+
+-Added the collection key as a verbatim token for search in the 'collection' field as
+well as with the prefix of 0, to allow for more intuitive searches using that field.
+
+-Updated the DDS Search API documentation with information about faceting, inclusion of response
+content, sorting, relation search fields. Removed documentation for the UserSearch request (deprecated).
+
+-Generated collection records now place the collection's title in fullTitle instead of shortTitle.
+
+-Removed one of the sample collections that come with the installation.
+
+-Changed color styles for the banner in the UI from orange to blue.
+
+-Note: Details about how to configure new relationship types for a given XML format are not yet in the documentation.
+
+
+Changes in v3.5.0 (released to SourceForge on Aug 8th, 2010)
+
+-Summary: This release moves DDS to Lucene 3.0, adds a new request option for Search and GetRecord to
+fetch collection-level metadata along with the results, and changes the requirements for Search results sorting.
+Details below...
+
+-DDSWS sortAscendingBy and sortDescendingBy request parameters now require that
+the specified field be indexed as a single token (e.g. not analyzed). 
+All XPath fields of type 'key' are valid, plus any other field that contains a single 
+token either stored or not stored. Previously, sorting worked on any field that was 
+stored in the index, even if more than one token existed in that field. 
+With this change sorts should perform faster than before.
+
+-Added ability to specify a 'resp' argument in the DDSWS GetRecord and Search request
+to request specific response content be returned that otherwise would not be. 
+The response output appears the top level of each record inside a <respOutputs> element
+just below the <metadata> element.
+For example:
+<respOutputs>
+  <resp type="collectionAdditionalMetadata"> [output content here or empty element if none ] </resp>
+<respOutputs>
+
+-The resp argument now accepts values collectionRecord or collectionAdditionalMetadata, which, when indicated, will
+return the full collection record or just the additionalMetadata element of the collection reocrd (e.g. that was 
+specified in the PutCollection request), respectively. Other response types may be added in the future.
+
+-All Lucene-related classes have been upgraded to Lucene v3.0.2. Major changes include:
+--Search results are now returned in a new ResultDocList Object instead of a ResultDoc[]
+  array. This provides for more efficient searching (does not require an additional
+  loop over results as before) and expandability (methods can be added to the ResultDocList
+  to support future fuctnionality) and better utilizes the built-in Lucene classes
+  for search than before (TopDocs, Sort, etc.)
+--Uses Lucene Sort class for sorting at search time. Replaces logic that sorted
+  results after the search (deprecated but still supported for backward-compatibility)
+
+-Added search field and relationship definitions for the comm_anno, nsdl_anno, assessments, and teach
+frameworks
+  
+-Final previous version was tagged in CVS with 'lucene_2_4_final_version'
+
+  
+Changes in v3.4.3
+
+-Summary: This release adds the ability to configure new relationship types to/from any XML 
+framework, allowing attributes of a related item to be searched on and returned with a
+given item; ability to specifiy arbitrarty additional metadata for a collection;
+added menu navigation to the admin areas in the UI; ability to pull in all NDR 
+collections to generate an NSDL DDS repository automatically.
+Details below...
+
+- Implemented ability to configure DDS to index new relationships to/from any XML framework 
+using RDF-like subject-predicate-object expression. Configuration describes the object, 
+a relationship predicate (isAnnotatedBy, standardProvidedBy, isMemberOfList, etc.)
+and how to find the subject (xPath to an ID or URL in the metadata record). When indexed, 
+the subject acquires the elements and attributes of the object as searchable Lucene fields. 
+Client can also request to retrieve the related items when searching and fetching 
+(subject or object) records from the Web service.
+Configuration options are added to the xmlIndexerFieldsConfig. 
+
+- Added ability to supply additionalMetadata text or XML in the PutCollection
+method and service request, which attaches the metadata to the collection record.
+
+- The PutCollection method and service request now uses the collectionKey as
+the collection record ID.
+
+- Added menus to the admin area in the UI
+
+- Added a search page to the public UI for searching the repository
+
+- Streamlined UI and workflow for editing records
+
+- Added ability to automatically pull in NDR collections that are managed by the NCS. 
+This is done by using the Search web service in NCS to discover the collections that reside 
+in the NDR, then ingesting the metadata records from the NDR. Includes the ability to 
+configure which collections are included based on the collection's NCS status 
+or by a Lucene query.
+
+- Example JavaScript search client: Ensure that only one title and one URL is used
+and that URL (identifier) begins with http. Format number of results display with
+commas.
+
+- Fixed bug in term count report where the field displayed at the top was being
+concatenated each time a new report was run
+
+- Added NSDL DC vocab term record count report to the admin reporting area. Generates 
+total number of NSDL DC records in the DDS repository that catalog given vocabs, 
+for example NSDL Ed Levels, NSDL (resoruce) Types, etc.
+
+- Added 'indexedXpaths' field (as keyword) that contains each xPath that has been indexed for a
+given record. This allows one to search for all records that have any value for
+a given field in the XML, e.g. "show me all records that have /dc/rights assigned"
+Updated service documentation with info about this field.
+
+- The default and stems search fields now contain all content from the Attributes of the 
+record XML as well as the Elements
+
+- All contents form the Elements and Attributes of related records (annotations, etc.) are now included
+in the subject record's default, stems, and admindefault search fields
+
+- Added a contextParam to specify the location of the file that defines the vocabulary configs and
+search fields used to generate the record count report.
+
+
+Changes in v3.4.2 (released March 16, 2010)
+
+-Loosened requirements for PutCollection service request to allow a period char as valid
+in the collectionKey and xmlFormat parameters.
+
+-Updated documentation about how collections and files are configured and stored
+
+-JavaScript search client now properly handles display of repeating metadata elements.
+
+-The admindefault field now includes content from the Attributes of the XML as well as the Elements.
+
+-Updated Search API documentation to clarify how the default and admindefault fields are generated
+and their purpose for use.
+
+-Refactored the way ItemIndexer and NDRIndexer work to allow config to reside
+in an external file.
+
+-Fixed issue where dds_config.properties were not being loaded
+
+-Un-deprecated the JavaScript Search Service to provide more time to migrate training
+to the more general-purpose Search Service API (JSON/Ajax).
+
+-Fixed issue where files that have a byte-order mark (BOM) character (\uFEFF) at the beginning could not be indexed. 
+Fixes problem for users of the Windows Notepad editor, which writes a BOM in files that are saved as UTF-8 encoding.
+
+-Cleaned up the display of settings in the Collection Manager.
+
+
+Changes in v3.4.1 (released December 4, 2009)
+
+-Added a configuration option to display text at the top of each page to 
+identify the given DDS installation. 
+
+-Deprecated the JavaScript Search Service. Users are now directed to the Search Service JSON
+output for general-purpose JavaScript client applications. The JS Service documentation remains
+but links to it have been removed.
+
+-Added ListFields and ListTerms to the available DDSWS v1.1 service requests
+
+-Updated documentation with the new service requests, other changes (still needs
+details on requesting stored content and relations in Search, GetRecord)
+
+-Updated service explorer, cleaned up and removed DLESE-specific search params
+
+-Removed dependency on metadata-ui-project. Groups and fields files are now pulled
+directly from the frameworks-project
+
+-Updated the JSON JavaScript search client to to support smart links, result boosting, 
+keyword highlighting with stemming, more configuration options, and developer options 
+to display output for ListCollections, ListXmlFormats, ListFields, ListTerms, ServiceInfo
+
+-Fixed issued with OPML menus so that the context path can now be renamed to something other than dds.
+The context path for the menus is now dynamically written in the JSPs.
+
+-Implemented automatic Java Bean indexing. XMLIndexer indexes XML that is in the Java Bean 
+format, as encoded by the java.beans.XMLEncoder class, using the bean properties as search field
+names and the bean values as field content.
+
+-Added ability to fetch stored Lucene content from the DDSWS getRecord and Search requests 
+by submitting one or more storedContent={fieldName} parameters in the request
+
+-TO DO: On start-up, check if there are no collections configued and if so, delete the index. 
+If an old index exists, the Search response is returning results even if there are no collections 
+(e.g. the collection records have been cleared out).
+
+-Tested and added build support for Tomcat 6, Java 6
+
+-Implemented a relations framework in for DDSWS search service. Annotations
+'isAnnotatedBy' relation is currently supported for all frameworks. Paves way 
+for other arbitrary relationship types to be defined in the future.
+
+-Annotations are now supported for all record types, not just ADN, as part the the
+new relations framework (see above).
+
+-Updated Admin Search display of stored Lucene content to only show a limited number 
+of fields/data. This makes is possible to view extremely large documents.
+
+-Implemented a LazyDocumentMap for reading stored data from a Lucene Document, making
+it possible to access data from very large Documents in an efficient, lazy-loading, manner.
+
+-Added ability to define exceptions for the resource de-duplication routine by URL in
+addition to ID (used by DLESE instance of DDS)
+
+-Updated the JavaScript Service Tutorial and fixed in CVS repository (was corrupt)
+
+
+Changes in v3.4.0 (released March 23, 2009) 
+
+-This release is included in EduPak version 1.0
+
+-With this release the license has changed from GPL to Educational Community License v1.0.
+
+-Implemented REST service API for making repository updates: putCollection, deleteCollection, putRecord, deleteRecord
+
+-Added 'key' attribute to the Collection element in the ddsws GetRecord and Search response head element
+
+-Added 'maxSearchResultsAllowed' element to ServiceInfo response
+
+-Added and updated documentation for stand-alone release. There is now one set of 
+menus that are displayed when deployed at DLESE, another when deployed as a stand-alone application.
+
+-Changed repository actions in the Collection Manager UI to be submit forms rather than links.
+
+-Added ability to configre which days of the week, not just time of day, to run the indexing cron for 
+both the file system and external (NDR, etc.) data sources
+
+-The NDR indexer config now accepts the full NDR API baseURL, not just the host name, when configuring the repository
+
+-Removed dependency for dlese_shared context when DDS is deployed as stand-alone application. 
+
+-Reverted back to dom4j v1.4 from v1.6.1 to be compatible with NDR API parsers
+
+-Default Java XSL transform engine is now used, to be compatible when running in Tomcat with fedora. 
+Removed the following explicit System.setProperty call: 
+System.setProperty("javax.xml.transform.TransformerFactory", "com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl");
+
+-Updated dlese_anno to nsdl_dc transform to be compatible with the above change (fixed typo)
+
+-Created dist ant targets to build and zip the binary distribution
+
+-Fixed issue with putCollection and deleteCollection calls where sometimes a collection would not get
+updated/deleted properly
+
+
+
+Changes in v3.3.15 (released Feb 4, 2009)
+
+-A geospatial search query can now be conducted in the DDSWS service by supplying the following arguments: 
+geoPredicate, geoBBNorth, geoBBWest, geoBBEast, geoBBSouth, geoClause. Previously, geospatial queries 
+needed to be separately encoded and then supplied as part of the query (q) argument.
+
+-Added a 'code' attribute to the error response element in DDSWS 1.1 that indicates the type of error. This makes it possible to determine
+the reason why a request failed and respond appropriately to users. Error codes include noRecordsMatch, badArgument, badVerb,
+badQuery, notAuthorized, internalServerError. Note that, while this should not effect consumers of XML response from the service,
+the structure of the JSON output has changed slightly and my effect clients that use it.
+
+-Updated the JSON example client to handle the new error code data format.
+
+-If geospatial bounding box footprint extent crosses longitude 180/-180, the indexer now culls the search bounding box to the 
+largest of one side or the other to be compatible with the search algorithm.
+
+-In the DDSWS search service, if the query crosses the 180/-180 longitude it is split into two query regions,
+one on each side, joined by boolean clause.
+
+-More robust error checking is now conducted in the indexer to ensure geospatial bounding box coordinates are error free.
+If a bounding box is non-conformant, it is gracefully dropped from the given record.
+
+-Fixed issue in default XML indexing where default field text across elements was sometimes concatinated, 
+combining the first and last tokens of consecutive XML elements
+
+-Added a configuration framework for specifying search fields for any XML framework. 
+Standard search fields (id, url, title, description, geospatial bounding box: geoBBNorth, geoBBSouth, geoBBWest, geoBBEast) 
+and custom search fields can be defined in a configuration file for a given XML format.
+
+-Added default search fields for all xml formats derived from the xPath to each 
+element and attribute in the XML instance document
+
+-fixed issue in DleseCollectionDocReader where the file path for error docs was not escaped, making 
+admin search fail for error totals
+
+-fixed issue where the file path for error docs was not escaped, making search fail for error totals
+
+-upgraded to lucene v2.4.0
+
+-upgraded to dom4j v1.6.1
+
+-configured indexer to use SnowballAnalyzer for stems fields, which provides improvements over PorterStemmerAnalyzer
+
+-Updated the DDSWS documentation with additional/new information on:
+	-Info on the XPath search fields
+	-Info on conducting a geospatial search
+	-Info about service error codes
+	-More clarification about search fields in general
+
+-Added documentation about how to configure standard and custom search fields for any 
+XML framework in a DDS repository.
+
+
+Changes in v3.3.14 (released Sept 12, 2008)
+
+-Added JSON as an optional output format for the Web services.
+
+-Added option to remove namespaces from XML and JSON output.
+
+-Added a JavaScript/JSON example page for download. 
+
+-Added more ncs_collect specific search fields to the indexer.
+
+-Added dlese_anno to oai_dc and a few other xml format converters
+
+-Updated some documentation pages.
+
+
+Changes in v3.3.13 (released June 20, 2008)
+
+-Added ncs_collect specific search fields to the indexer.
+
+-Updated the DDSWS and other documentation pages and added details about ncs_collect search fields.
+
+
+Changes in v3.3.12 (released June 11, 2008)
+
+-Fixed indexing 'StaleReaderException' caused by reader/writer lock synchronization
+
+
+Changes in v3.3.11 (released May 29, 2008)
+
+-Updated the OAI explorer page to allow users to enter and explore
+different baseURLs
+
+-Added display of schema and namespaces in OAI ListMetadataFormats response,
+configured in web.xml
+
+-Created a config option to allow standard OAI-PMH responses from the data provider. 
+By default, only ODL requests are allowed.
+Still TO-DO: Config for Identify, ListSets and additions for ListMetadataFormats
+
+-Fixed bounding box index encoding problem for geospatial searches
+
+-Created EL functions in DLESETools to generate bounding box geospatial queries
+using lat/lon coordinates
+
+
+Changes in v3.3.10 (released March 13, 2008)
+
+-Fixed IDMapper bug where anchor links were treated as dupes if one resource had
+an anchor and the other did not. Now all resources with anchors are treated as
+non-dupes if the root URL is the same but the anchor is different.
+
+-Cleaned up services documentation to replace "DLESE" Discovery System with "Digital" Discovery System
+in most places. Some DLESE-specific info remains
+
+-Removed CMS/SMS documentation, which is now packaged directly with the Strand Map Service.
+
+
+
+Changes in v3.3.9 (released Feb 29, 2008)
+
+-Created an Indexing Manager framework that allows a developer to insert items into the
+repository from an external data source such as a database, OAI, or the NDR. 
+To use the framework, the developer implements the ItemIndexer Java interface.
+
+-Created an NDR indexer that takes collections in the NDR and places them in the 
+DDS respository, implemented as an ItemIndexer.
+
+-Updated the Collection Manager UI to provide control of and display for external
+data sources that implement the ItemIndexer interface.
+
+-Simplified the menus in the Admin Search page.
+
+-Created a verbose, fielded display of oai_dc and nsdl_dc in the admin search.
+
+-Added nsdl_dc to oai_dc XML format converter.
+
+
+Changes in v3.3.9-rc2
+
+-www.dlese.org web applications deployed to the live CISL server on Nov 2, 2007: 
+DDS, library, news & opps, oai, suggestor, cmb. Previously deployed to CISL 
+live search.dlese.org and www.teachingboxes.org.
+
+-Repository now configures itself for collections that reside only in the 'collect' collection.
+Collection records that reside in other collections no longer become collections in the system
+but are searchable as items in the search service.
+
+-Ability to enable/disable dlese_collect collections in the DDSWS
+
+-Better handling of renderingGuidelines in DDSWS, menus and display in admin pages
+when a metadata vocab entry is not available for a given collection or other
+values
+
+-Updated the indexer for Lucene v2.2.0. After updating to this 
+version of DDS, indexes will need to be rebuilt to accomodate 
+the new Lucene format for Date fields.
+
+-A first cut of 'DLESE as a use case' for the NDR has been implemented. 
+The DDS repository is now able to build using records that are managed 
+in the NDR through the DCS.
+
+-JSHTML now ouputs collection menus and labels using the short title
+from the record if a vocab label is not availble. Collection menu is 
+now not cached, so changes applied in the collection manager will 
+come through
+
+-Added nsdl_dc transforms for dlese_anno, dlese_collect and news_opps formats
+
+
+Changes in v3.3.8 (released May 4, 2007)
+
+-Files are now explicitly read into the index using UTF-8 encoding instead of the 
+native system encoding type (rt ticket 6937). LC_CTYPE no longer needs to be set to UTF-8 in unix
+environments (effects collection docs and other XML formats), and encoding should
+now work properly on Windows. Index Writers expect that the files reside in UTF-8 encoding.
+
+-Updated the ADN to nsdl_dc XML converter to translate standards to ASN identifiers
+
+
+Changes in v3.3.7 (released Feb 23, 2007)
+
+-Fixed issue where corrupt XML data was being seen in the output from XSL 
+format converters, which propagated as data corruption in the DDSWS web service
+output (this caused CAS to throw an error). Fixed by applying synchronization 
+in the XMLConversionService to address this concurrency-related issue. 
+
+-Added a report in the admin area that tabulates the number of resources in the library
+that are associated with UCAR member institutions and affiliates
+
+-Updated DDSWS documentation for some fields that were missing
+
+
+Changes in v3.3.6 (released Nov 4, 2006)
+
+-Fixed null pointer that caused the DDSWS to throw an error if the source XML metadata file
+for a search 'hit' had been deleted or renamed (e.g. as occurs in normal library
+operations). This ultimately caused the DLESE Library search to return an error message to the user.
+
+-Question marks '?' are now removed from user's searches (UserSearch request in the Web services and elsewhere). 
+Previously such searches produced invalid or poor results because '?' is a reserved character in the Lucene query
+syntax. A search for 'is there life on mars?' now returns meaningful results whereas before
+it did not.
+
+
+Changes in v3.3.5 (released Sept 26, 2006)
+
+-Minor updates in the Collection Manager UI display
+
+-Added 'Check indexing messages' link display in the dialog after a collection is
+reindexed
+
+-Updated the MySql JDBC driver from v3.0.15 to v3.1.13 to help with possible
+stability issues found with running multiple DDS's against the same IDMapper DB
+
+-Removed debugging output in a number of places
+
+-Updated indexing routines for more effecient removal of dup records by ID
+
+
+
+Changes in v3.3.4 (released August 16, 2006)
+
+-Updated DDSWS v1.0 and v1.1 to display records in the response header
+<annotatedBy> only if the collection for those records is 'enabled' 
+in the collection manager (<alsoCatalogedBy> already has this behavior)
+
+-DDSWS 1.1 now returns non-localized XML for the Search,
+UserSerach and GetRecord requests if no XML format
+was indicated by the client. DDSWS 1.0 continues
+to return localized XML in this case.
+
+-Enabling/disabling a collection in the Collection Manager
+now reloads the vocabularies and menus to reflect the change
+immediately
+
+-Minor updates in the Collection Manager UI display
+
+
+
+Changes in v3.3.1 (released June 30, 2006)
+
+-Addressed some stability issues
+
+
+
+Changes in v3.3.0 (released June 28, 2006)
+
+-DDSWS v1.1 released. This update to the Search Service includes new 
+features in the XML output, such as the full metadata for all records
+that catalog a given resource and all associated annotations. A new 
+metadata element is included in ADN results that shows the rendering
+guidelines in OPML as specified by the Metadata UI (MUI) system. The new
+service features coincide with the first release of the 
+DLESE Search View (DSV) library view application that is built using 
+the service.
+
+-Backward compatibility for DDSWS v1.0 maintained.
+
+-User search pages have been removed from DDS. These are now implemented
+in the DSV library view application using DDSWS 1.1. Browse pages are 
+rendered by DDS and imported into the library view application. 
+In the future, however, the browse functionality will also be
+implemented in the DDSWS service.
+
+-DDS now uses the MUI system to map metadata vocabulary fields to
+user labels and groupings, and the Vocab UI system has been retired.
+
+-The Services portal area has been updated with side menus (OPML menus 
+rendered using the dlese-gui-project) and includes documentation for OAI,
+which replaces the OAI and services pages previously located at 
+http://www.dlese.org/libdev/interop/oai/. The jOAI download 
+links and installation information has also been moved to this
+location, and downloads are now being served by dlese.org rather
+than sourceforge.net. Downloads are routed through a form to gather
+information from users.
+
+-The indexer now checks for duplicate record IDs in the repository
+and flags duplicates as an error. The records with duplicate IDs can be
+explored in the admin UI for QA purposes.
+
+-Added institution name and department for both person and organization 
+to the index as separate searchable fields
+
+-Added support for annotation framework v1.0 while maintaining 
+compatibility with v0.1. Note that this change requires the index to 
+be rebuilt to work properly.
+
+-Added support for searching by star rating and average star rating
+in the Web service (and regular search)
+
+
+
+Changes in v3.2.2 (released Jan 23, 2006)
+
+-Services Portal page now includes real-time display of uptime and
+availability statistics from Alertra
+
+-Documentation for the DLESE Concept Map Service and CSIP has been 
+added to the Services Portal, which includes a service explorer 
+and query validator. Requires setting the context parameter
+'baseCMSURL' in server.xml to point to the CMS server at DLESE.
+
+-JSHTML v1.1 has been updated for better use of CSS: A CSS class is now 
+applied to the keyword highlighting so it can be modified by the 
+client developer; The body color CSS for brief search results now also 
+applied in full description and collection description; CSS now can 
+be used to change the color of the text in the DLESE logo.
+
+-A new collection can now be added to the repository by simply 
+creatting a new collection record. It is no longer necessary to 
+configure the collection key or XML Format in the VocabManager first.
+Note, however, that collection information does not show up properly 
+in the collections menu or in the brief and full record display unless 
+a vocab entry for them is present.
+
+-Collections are updated automatically in the Collection Manager and 
+admin search when 'Load collection records' is requested via the 
+Collection Manager UI.
+
+-Collection Manager UI now displays totals for files, num indexed
+and num errors
+
+-Records now index using the default values in the XML if the 
+VocabManager does not have information for a given field and/or value. 
+Previously, such records would be indexed as an error and were not 
+discoverable.
+
+-The localized XML that is returned in ddsws is now converted using a 
+general-purpose XSL stylesheet rather than individual classes. This
+XSL removes all namespaces and leaves the schema declaration in place.
+
+-Added an XML converter for the services to support delivery of news_opps 
+records in oai_dc format.
+
+-The index now stores the full content of the XML from the metadata files. 
+This means that when a file is deleted, the Web services and full 
+description pages will still display the data until the index is next updated.
+
+-DDS is now compatible running in Tomcat 5.5.12 using IBM sdk 5.0 (Java 1.5),
+which is the target environment being used for testing. Still compatible 
+for deployment under Tomcat 5.0.x with IBM sdk 1.4.2 target JVM.
+
+-Changed the content search field 'itemContent' to use stemming, for use
+in the ddsws and odl search service APIs
+
+-Resource full description page now handles display of UTF-8 characters
+properly.
+
+-Error pages for http 404, 401, and 500 updated with new banners, and now
+handle catching all Java errors to display a user-friendly 500 page instead
+of the standard Tomcat stack trace page.
+
+
+Changes in v3.2.1 - branch update 1 (released Jan 4, 2006)
+
+- Updated search JSP page to include http parameters needed for 
+News Opps update released today.
+
+
+Changes in v3.2.1 (released Sept 29, 2005)
+
+- Added a SmartLink builder tool to the JavaScript service area
+
+- Links to annotations on the intermediate 'related resources and 
+annotaions' page now open in a separate browser window instead of the
+same window.
+
+- Updated the search mappings for collections to properly include 
+all new annotation collections in searches (e.g. this is no longer
+hard-wired - when a new anno collection is added, it will show up
+properly in searches-by-collection). Requires an index rebuild.
+
+- Fixed bug in DDSWS where the Search request would not return 
+dlese_anno records when searching by collection key (e.g. &ky:06). Now, when  
+searching by an anno collection the Search request returns both dlese_anno and 
+the corresponding adn records.
+
+- Changed logic for which collections are displayed in the search results
+to include all annotation collections, not just those that are in the DRC. 
+Previously only DRC anno collections were displayed. Requires an index rebuild.
+
+- Placed DDSWS, JSHTML, ODL and OAI all into the services portal area
+of the site, with links from there to each
+
+- Updated the JavaScript and DDSWS Service documentation area
+
+- IDMapper service now accepts an XML file that defines IDs that should 
+not be treated as duplicates. The path or URL to this file is configured 
+in DDS web.xml or server.xml using the init parameter 'idMapperExclusionFile'
+
+- Added an IDMapper data viewing page in the reporting area for administrators.
+
+- Fixed some cases where IDMapper erroneously was flagging certain types of
+records as dups that should not have been.
+
+- Upated JSP and HTML pages in the Services Portal area to use the new CSS and js
+in dlese_shared
+
+- Updated the admin search, reports and display pages with more display options
+and made a few diplay fixes
+
+
+Changes in v3.2.0 (released June 21, 2005 - corresponding with release v2.3 of Library)
+
+- JavaScript search service v.1.1 initial release
+
+- Refactored search results sorting routines for greater efficiency 
+and to reduce or eliminate OutOfMemory errors for large result sets
+
+- Fixed issue with accessiondate not sorting properly for de-duped
+results
+
+- Created ability to configure the URL used to link to the annotation
+submission form dynamically, or omit them if no URL is configured
+
+- Refactored the de-duping routines to more accurately determine
+which of the multiple records for a given resource is the 
+best match
+
+- Refactored the FileIndexingService to use a separate writer for
+each record, making garbage collection more transparant and allowing
+for object finalizaion tracking for dubugging purposes 
+
+
+Changes in v3.1.10 (released May 13, 2005)
+
+- Site search updated to use the new Nutch-based crawler and search
+engine. Site search is inserted into the DDS context using the c:import 
+JSP tag.
+
+- Contributor e-mail address are now obsfucated using a Rot 13 encription
+scheme. Users can still see the e-mails in their browsers but spammers
+will have a much more difficult time harvesting them with an automated
+e-mail crawler.
+
+- Added ability to (re)index individual collections in the Collection 
+Manager.
+
+- Updated the search web service template and examples.
+
+- Refactored the indexing routines to use a single index instead of
+swapping between two. 
+
+- Index optimization no longer occurs with each update but instead
+waits until indexing has been idle for a while.
+
+- Indexer now caches the necessary data for each ADN record from the 
+IDMapper database during indexing, thus reducing the number of database
+calls and increasing indexing speed considerably.
+
+
+Changes in v3.1.9 (released Feb 11, 2005 - corresponding with release v2.2 of Library) 
+
+-The CRS collection now only includes resource that have an annotation 
+that is available for reading. Specifically, the CRS collection that 
+is included in the www.dlese.org search and UserSearch Web service 
+request is now defined as those resources that have one or more 
+annotation with collection key 'crs' (06) AND a status of 'completed'. 
+Previously the CRS collection was defined as all resources that 
+contained an annotation with a pathway of 'crs'.
+
+-Primary user search can now be configured to search over the
+resource's content by default as well as the metadata
+
+-Configuration file mechanism added to control which fields are 
+searched by default and which fields are used for boosting (in DDS and 
+DDSWS UserSearch). Configuration can be changed dynamically without
+a server re-start.
+
+-Default settings for searching and boosting set to:
+   Search fields: stems
+   Boost fields: title,titlestems,description,default
+
+-Fixed issue where searching by URL did not always work properly
+
+-Added query stynax error messages in DDSWS
+
+-Omniture Web metrics tracking .js code added to DDS
+
+-Sorting of search results fixed for documents that don't have
+the given field
+
+-De-duped multi-docs now take into account date fields and other
+criteria when sorting is requested. This effects Web service
+search with sort requests such as those used in the CAS
+and News and Opps pages
+
+-UI fixes for duplicate comment annotations being listed on
+the intermediate annotation page
+
+-Added jshtml1-0 - a service that ouputs a configurable 
+DLESE search page template as HTML using JavaScript,
+currently in beta form
+
+-Added the option to request JavaScript output from the DDS
+search Web service
+
+-Added the option to request JavaScript output from the web
+service client template
+
+-Added the ability to look up the IDMapper data in the Collection
+Manager, full record view
+
+
+Changes in v3.1.8.1 (released Oct 13, 2004)
+
+- Survey changed to run for each visitor rather
+than 30% of the time
+
+- Queries that contain multiple terms are now boosted
+by title properly. Fixed bug that caused boosting to 
+occur only on single-term queries
+
+- Full Lucene query syntax now supported for users. Backward-
+compatible with all previous functionality
+
+- Updated the indexing term Analyzer framework, paving the way
+for future development (thesaurus, span-near-query algorighms, etc.)
+
+
+Changes in v3.1.8
+
+- A survey form for users is displayed in DDS pages to gather
+information about use
+
+- CSS for font sizing has been changed throughout, making the
+font sizes more consistent in IE and other browsers (fixes
+tiny font problem when setting font-size to "smaller")
+
+- JavaScript, DHTML and CSS fixes to bring browser Mac compatibility
+in line with Windows
+
+- The content of the resources is being indexed and is now available
+for searching via DDSWebService
+
+- Additional ADN fields that are available in the index include primary, 
+alternate and organization e-mail; the extended audience fields at path 
+educational/audiences/audience including toolFor, beneficiary, 
+typicalAgeRange, instructionalGoal and teachingMethod
+
+- Significant refactoring of the indexing logic simplifies the threading
+model and releases file descriptors more cleanly
+
+- The stems (word stemming) search field now contains the same text found in the default
+search field. Previously not all terms found in the default field were
+included in the stems field.
+
+- The repository index field analyzers are now controllded by a properties file
+configuration. This controls things like whether a search field is stemmed or not
+
+
+Changes in v3.1.7
+
+- Updated the 'Discovery for administrators' page with new menus
+and breadcrumbs selections display
+
+- Updated the default search logic in the Web service to use 
+boolean AND. It is no longer necessary to construct AND queries by
+placing 'AND' between each term / field:term
+
+- ResultDoc DocReaders are now cached. This greatly increases the search
+performance, especially for records that are cataloged by more than one
+collection or that have annotations.
+
+
+Changes in v3.1.6 (released July 1, 2004)
+
+- Added an EL functions library used in the ddsws client template and
+elsewhere to implement stemming for searches
+
+- Fixed issue where reloding the vocabs caused the DDSWebService to 
+return empty metadata.
+
+
+Changes in v3.1.5
+
+- DDSWebServices (ddsws) v1.0 released: Added web service support for generalized 
+searching via the Search and UserSearch requests. Access to non-discoverable 
+records is authorized by IP address. Includes requests for discovery 
+and display of controlled vocabs including ListCollection, ListGradeRanges, 
+ListSubjects, ListResourceTypes, and ListContentStandards requests. Metadata 
+formats available via ListXmlFormats request. Modified and updated the 
+UrlCheck to use same header element as the others.
+
+- ODL web service support added to DDS. OAI is also integrated but  
+ListRecords request disabled (except for ODL requests) so that 
+harvesting is not possible. 
+
+- RSS feeds included for the what's new categories. 
+
+- Query logging now logs what's new queries as type 'whatsnew' instead of
+type 'search' as was previously the case. Logging for web services queries 
+also added with their own, separate types.
+
+- Added place names, event names and temporal coverage names (descriptions)
+to the index default field and separate fields.
+
+- Added reporting GUI for inspecting terms and term/document counts
+and importing term/count reports into Excel
+
+- Collection Manager now allows collections that are deaccessioned to 
+be enabled for discovery.
+
+- Changed indexing logic so that records are still indexed if the IDMapper
+has no entry for them.
+
+- Bug fixes: 'Collections that contain' page now correctly includes the Full
+description link for the current item; Related resources are now displayed
+properly on the Full description and 'Related resources and reviews' page. 
+Rendering of vocabs in brief display are now in alpha order and values
+like "other" are now suppressed
+
+- For related resources by ID, we now check to see that the ID is
+avialable in the repository before displaying the link to the
+related resource
+
+
+Changes in v3.1.4 (released March 4, 2004)
+
+- The new DLESE logo (block letters with blue/green colors) was added, and 
+some other, minor cosmetic changes were made. Corresponded with other
+cosmetic changes made at dlese.org including new printable page view for 
+pages with side menus
+
+- Added ability to search field multirecord back in public discovery
+
+
+Changes in v3.1.3 (released Feb 10, 2004)
+
+- DDS query pages save state using the standard Struts form constructs, no longer 
+saving state in the vocab classes. This makes the URL's query strings much
+simpler and fixes problems observed with excess memory use. Memory requirements 
+of DDS have been greatly reduced, which has led to a substantial increase in the 
+number of total users DDS can support.
+
+- Expanded search capabilitites by site and URL. Users can search by site or URL or 
+add a site or URL to limit an existing search. Use of * wildcarding is supported. 
+Searches use these notations: site:example.org, url:http://example.org or just
+http://example.org. Wildcars may not be used as the first character but may 
+be used at any other position.
+Example searches as entered in the keyword search box: 
+   - site:dlese.org - returns all resourse with a host name of http://dlese.org OR 
+     http://www.dlese.org 
+   - site:*nasa.gov - returns all resourses at any virtual domain within nasa.gov 
+     (example use of the * wildcard). 
+   - site:*nasa.gov mars - returns all resourses at any virtual domain within nasa.gov 
+     that contain the word mars 
+   - http://www.marsquestonline.org/index.html - returns the MarsQuest site 
+     (must be an exact match). 
+   - http://*marsquestonline* - returns all resources that contain marsquestonline 
+     in their URL. 
+   - http://*marsquestonline* canyon - returns all resources that contain marsquestonline 
+     in their URL and contain the word canyon 
+
+- ID searches now support the use of wildcards and can contain additional terms. This 
+may be useful for collection builders and library administrators. 
+Example searches: 
+   - id:DLESE-000-000-*12 - returns all DLESE IDs that end with the number 12 
+   - id:DLESE-000-000-000-012 geological - verify that the term geological appears in 
+     record number DLESE-000-000-000-012 
+
+- Absolute boosting for DRC items is now in place for browse and collection 
+searches that do not include any keywords entered by the user. This effectively
+sorts browse and non-keyword search results using DRC-first order.
+
+- Updates made for compatibility with Tomcat 5.0 include: rework of the "Collections
+that contain" page code, fixing a couple tags in various JSPs so they compile in 5.0.
+No longer using the io:include tag and a number or our custom tags, which produced
+blank pages upon return.
+
+- Upgrade to Lucene 1.3 final (from 1.3 r1). DLESE code changes to incorporate the new
+Lucene getCurrentVersion() method that replaced the lastModifiedTime() method.
+
+- Preliminary DDSWebServices interface incoporated that supports a GetRecord method, which returns
+record data in XML form, and UrlCheck, which allows checking to see if a given URL 
+exists in DDS's repository.
+
+- Fixed the resource full description page to ensure that Related resources information only 
+gets displayed if the related resource is discoverable in DDS
+
+
+
+Changes in v3.1.2 (released Dec 19, 2003 - corresponding with release v2.1 of Library)
+
+- Fixed errors so that error is generated when the ID mapper does not have
+an entry for a given record ID.
+
+
+Changes in v3.1.1
+
+- 'View resources' and 'View collections' verbiage changed to 
+'Browse resoruce & collections,' which is now also a single page instead of two.
+
+- URL 'spoofing' for What's New and Browse resource pages (URLs that end in '.htm' 
+instead of dynamic-looking URLs like ...query.do?q=&s=&sortby=wndate...).
+
+- Link to What's new page added to main menu.
+
+- Stemming support added for searching using a Porter stemming algorithm.
+
+- Normalized result rank boosting for DRC items and resources with multiple records.
+
+- Collection manager UI options for changing boosting levels and enabling/disabling
+stemming.
+
+- Discovery for administrators improvements including a 'clear' button to clear search
+criteria, and more refined display of results.
+
+- Parentheses in searches are ignored. 
+
+- Multi-term searches that use a combination of AND and OR will have varying results 
+depending on the order they appear.
+
+- The NOT opperator is not supported. Records with a given term can be excluded from
+results however using the ! notation, for example: ocean !sea
+
+
+Changes in v3.1.0 (released Dec 5, 2003)
+
+- What's new to the library page searches by date for new DRC annotations, new DRC
+under review and new items.
+
+- Submit Teaching Tips link added that goes to the CRS teaching tip system
+
+- Collection descriptions and information is displayed and pulled directly
+from collection-level records
+
+- The Collection Manager now configures itself from collection-level records
+
+- The Collection Manager now displayes all collections in a table that can be 
+sorted by colleciton name, key, format, number of files, number of files indexed,
+number of indexing errors and enabled/disabled status
+
+- The indexer now runs automatically every 24 hours at a designated time of day
+
+- Search logic now boosts terms that are appear the title field
+
+- Support added for stemming using the Porter stemming algorithm.
+
+- Collection manager provides controls for adjusting relative search boost factors
+for the title field, DRC and stemming
+
+- AND boolean logic fixed for queries longer than two terms. Previously some
+long query strings were ORd instead of ANDed.
+
+- De-duping algorithm has been refined to force display of DRC and
+selected collecions resource descriptions when selected
+
+- Indexer is more robust in detecting and removing duplicate entries for records
+and now requires one instead of two passes. 
+
+- ID mapper service data schema was changed to support tracking of URL available 
+for multiple URLs within the same resource
+
+
+Changes in v3.0.4 (released July 23 with additional update on Sep 3, 2003 - corresponding with release v2.0 of Library)
+
+- See previous notes
+
+
+Changes in v2.0.9
+
+- Gzip filter added that gzips all outgoing .jsp content (except 
+view_record.jsp).
+
+- Added a view=linkbot parameter to list_all_resources.jsp that suppresses 
+all non-dds links. 
+
+- Removed incorrect links to .gif files found in the advanced_search.jsp
+and results_search*.jsp pages
+
+- Changed URL to reviewed colletion from http://www.dlese.org:1050/reviewed/index.jsp to
+http://www.dlese.org/reviewed/index.jsp.
+
+
+Changes in v2.0.8
+
+- Keyword highlighting was changed to: 1. no longer highlight stopwords
+and 2. highlight quoted queries verbatum, including stopwords.
+
+- Added logic to stop out ' from querries (cases like "what's" and
+"they're").
+
+- Fixed bug in redirect links that become broken in Netscape when
+a user entered a multiple-term search. Links are now URL encoded.
+
+- If a user requests a full description for a resource ID that does not
+exist in the index, a user-friendly message is displayed. Previously
+a Java stack was returned with error type 500.
+
+- Changed query logging to ouptut requestors IP instead of host name.
+
+
+Changes in v2.0.7
+
+- Changed indexing of modtime from a long to a search-by-date
+Lucene DateField, enabling searching of records by file modification 
+time ranges.
+
+
+Changes in v2.0.6b:
+
+- Added context config for setting debug output [true|false].
+
+- Added context config for static text separate from images and .css.
+This allows images and .css to be served via relative path when 
+running via Apache.
+
+- Added aggressive garbage collection code to the file synchronizer.
+This reduced memory consumption and aided the speed of synchronization 
+significantly when the number of monitored files was large (> 25,000).
+
+
+Changes in v2.0.5b:
+
+- Added a simple admin UI for getting indexing error reports and
+some simple statistics. More to come here later.
+
+- Began use of the Struts framework. Added Struts configuration for 
+the admin UI and control.
+
+- Added authentication configuration in web.xml to restrict access
+to the admin interface.
+
+- Added configuration so that the location of all static content (.gif, .css, .html)
+is now set via a context variable. This separation of content from functionality
+should aid in the dev process. 
+
+- Rewrote the classes for monitoring the inputfiles directory. This should
+fix a bug where the index was not being updated and kept in 
+sync properly with the metadata files.
+
+- Created a test class (DDSFileMoveTester), which randomly moves
+files in and out of the inputfiles directory. Useful for testing
+and debugging the file monitoring functionality. 
+
+- Added an error page for type 404 errors. Could not configure custom
+pages for type 500 or type 401 errors (need more investigation).
+
+- Many small UI changes.
+
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: type-projection-adn-groups-default-en-us.xml,v 1.1 2009/01/29 22:30:22 ginger Exp $-->
+<opml xmlns="http://www.dlese.org/Metadata/opml" xmlns:groups="http://www.dlese.org/Metadata/ui/groups" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/opml http://www.dlese.org/Metadata/ui/groups/1.0/groups-opml.xsd">
+<head>
+<title>Projection type</title>
+<groups:concept language="en-us" metaFormat="adn" metaVersion="0.7.00" text="Projection type" audience="default" path="/itemRecord/geospatialCoverages/geospatialCoverage/projection/@type" deftn="the systematic presentation (think 2-D map) of objects on the Earth or the celestial sphere using coordinate lines on a flat surface"/>
+</head>
+<body>
+<outline groups:vocab="DLESE:Albers conical equal area" type="vocab" text="Albers conical equal area" groups:deftn="a projection with two standard parallels and the pole as a point"/>
+<outline groups:vocab="DLESE:Does not apply" type="vocab" text="Does not apply" groups:deftn="projection type information does not apply"/>
+<outline groups:vocab="DLESE:Lambert azimuthal equal area" type="vocab" text="Lambert azimuthal equal area" groups:deftn="a projection type where distortion is zero at a center latitude and longitude and increases radially away from the center point"/>
+<outline groups:vocab="DLESE:Lambert conformal conic" type="vocab" text="Lambert conformal conic" groups:deftn="a projection type with two standard parallels and the latitude and longitude of the projection center"/>
+<outline groups:vocab="DLESE:Mercator" type="vocab" text="Mercator" groups:deftn="a cylindrical projection where the meridians and parallels are all straight lines and Earth's equator is the tangency point"/>
+<outline groups:vocab="DLESE:Other" type="vocab" text="Other" groups:deftn="the projection type is known but not part of this vocabulary"/>
+<outline groups:vocab="DLESE:Polar stereographic" type="vocab" text="Polar stereographic" groups:deftn="projection type were the perspective is a plane tangent to the North or South poles; meridians are equally spaced and parallels are unequally spaced circles centered around a pole"/>
+<outline groups:vocab="DLESE:Space oblique Mercator" type="vocab" text="Space oblique Mercator" groups:deftn="a projection type that provides continuous conformal mapping of a swath sensed by an artificial satellite, such as Landsat "/>
+<outline groups:vocab="DLESE:Transverse Mercator" type="vocab" text="Transverse Mercator" groups:deftn="a cylindrical projection where the meridians and parallels are all straight lines and a meridian (not Earth's equator) is the tangency point"/>
+<outline groups:vocab="DLESE:Unknown" type="vocab" text="Unknown" groups:deftn="projection type information applies but the projection type is not known"/>
+</body>
+</opml>
+<!--*** LICENSE INFORMATION *****
+		Copyright  2002-2006 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA-->

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: typeDetGeo-adn-fields-en-us.xml,v 1.1 2009/01/30 21:36:48 ginger Exp $ -->
+<metadataFieldInfo xmlns="http://www.dlese.org/Metadata/fields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dlese.org/Metadata/fields http://www.dlese.org/Metadata/fields/adn-item/0.7.00/typeDetGeo.xsd">
+	<field name="Detailed geometry - type" language="en-us" metaFormat="adn" metaVersion="0.7.00" path="/itemRecord/geospatialCoverages/geospatialCoverage/detGeos/detGeo/typeDetGeo">
+		<definition>the type of geographic footprint</definition>
+
+		<vocabLevels number="1">
+			<levelAndDeftn level="1" levelName="Type" levelDeftn="the type of geographic footprint; see the allowed combination of terms below"/>
+		</vocabLevels>
+
+		<terms>
+			<termAndDeftn vocab="Bounding box">a regular polygon, defined by 4 longitude-latitude pairs, that is parallel to the equator that encloses the area of interest</termAndDeftn>
+			<termAndDeftn vocab="Point">a single longitude-latitude pair</termAndDeftn>
+			<termAndDeftn vocab="Polygon">a closed polygon that is defined with at least 3 longitude-latitude pairs and where the beginning and ending points are the same</termAndDeftn>
+			<termAndDeftn vocab="Polyline">a string of at least 3 longitude-latitude pairs where the beginning and ending points are not the same</termAndDeftn>
+		</terms>
+
+		<bestPractices>
+			<dos>
+				<practice status="current" originDate="2005-05-04">Choose the appropriate detailed geometry type term.</practice>
+			</dos>
+			
+			<examples>
+				<practice status="current" originDate="2005-05-04">Use a polygon to represent the Valles Caldera in New Mexico, United States.</practice>
+				<practice status="current" originDate="2005-05-04">Use multiple polygons to represent the state of California, one polygon for the continental area and another for the Channel Islands.</practice>
+			</examples>
+		</bestPractices>
+
+		<documentation>
+			<obligation>required metadata if parent tag is present</obligation>
+			<min>1</min>
+			<max>1</max>
+			<XMLdataTypes>
+				<XMLdataType>string</XMLdataType>
+			</XMLdataTypes>
+			<domain>controlled vocabulary</domain>
+			<example>Point, Polyline</example>
+		</documentation>
+
+
+	</field>
+</metadataFieldInfo>
+<!--	*** LICENSE INFORMATION *****
+		Copyright 2002, 2003, 2004, 2005 DLESE Program Center
+		University Corporation for Atmospheric Research (UCAR)
+		P.O. Box 3000, Boulder, CO 80307, United States of America
+		email: support@dlese.org. 
+These XML instance documents are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->

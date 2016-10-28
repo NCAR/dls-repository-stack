@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRecord xmlns="http://adn.dlese.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://adn.dlese.org http://www.dlese.org/Metadata/adn-item/0.6.50/record.xsd">
+<general>
+<title>Stratospheric Ozone</title>
+<description>The goal of this NASA Earth Science Enterprise-funded project is to increase the use of satellite data in high school and college science classrooms by developing classroom materials linked to guided inquiry computer exercises. This Stratospheric Ozone module is one of four Studying Earth's Environment from Space (SEES) modules. Each module consists of three sections: Class Resources, Computer Lab Resources and a Glossary and Acronym List. Class Resources is an electronic textbook viewable by a Web browser. Computer Lab Resources contain an instructor's guide, data and software. The instructor's guide contains exercises for using the data and software. The public domain software, a version of NIH-Image for the Macintosh that was modified by NASA Goddard Space Flight Center especially for SEES, is for data display, analysis and tutorial of satellite data. The software will also work on Windows machines with a Mac emulator. Image2000, a cross-platform Java version of the software, is expected to be available by the end of the year 2000. Each module section can stand-alone (e.g. you don't have to use the Class Resources in order to complete the Computer Lab Resources). Students and instructors may continue their own scientific discovery by accessing archived and current data from various NASA Earth Science data centers.</description>
+<language>en</language>
+<subjects>
+<subject>DLESE:Atmospheric science</subject>
+<subject>DLESE:Technology</subject>
+</subjects>
+<keywords>
+<keyword>Stratospheric ozone, Ozone hole</keyword>
+<keyword>Ultraviolet radiation</keyword>
+<keyword>Space science, Environmental science, Atmospheric science</keyword>
+<keyword>Remote sensing, Satellite data, Total Ozone Mapping Spectrometer (TOMS)</keyword>
+<keyword>Image processing</keyword>
+<keyword>Chlorine, Dobson units</keyword>
+<keyword>Chlorofluorocarbons (CFCs)</keyword>
+</keywords>
+</general>
+<lifecycle>
+<contributors>
+<contributor date="2000-06" role="Principal Investigator">
+<person>
+<nameTitle>Dr</nameTitle>
+<nameFirst>Blanche</nameFirst>
+<nameMiddle>W.</nameMiddle>
+<nameLast>Meeson</nameLast>
+<instName>National Aeronautic and Space Administration (NASA)/Goddard Space Flight Center/Earth Sciences Directorate/Scientific and Educational Endeavors</instName>
+<emailPrimary>bmeeson@see.gsfc.nasa.gov</emailPrimary>
+</person>
+</contributor>
+<contributor date="2000-06" role="Principal Investigator">
+<person>
+<nameFirst>Carla</nameFirst>
+<nameLast>Evans</nameLast>
+<instName>National Aeronautic and Space Administration (NASA)/Goddard Space Flight Center, Raytheon ITSS</instName>
+<emailPrimary>cevans@see.gsfc.nasa.gov</emailPrimary>
+</person>
+</contributor>
+<contributor role="Contact">
+<person>
+<nameFirst>Carla</nameFirst>
+<nameLast>Evans</nameLast>
+<instName>National Aeronautic and Space Administration (NASA)/Goddard Space Flight Center, Raytheon ITSS</instName>
+<emailPrimary>cevans@see.gsfc.nasa.gov</emailPrimary>
+</person>
+</contributor>
+<contributor date="2000-06" role="Publisher">
+<organization>
+<instName>National Aeronautic and Space Administration (NASA)/Goddard Space Flight Center/Earth Sciences Directorate/Scientific and Educational Endeavors</instName>
+<instEmail>helpdesk@see.gsfc.nasa.gov</instEmail>
+<instUrl>http://see.gsfc.nasa.gov/index.html</instUrl>
+</organization>
+</contributor>
+<contributor date="2000-06" role="Contributor">
+<person>
+<nameTitle>Dr</nameTitle>
+<nameFirst>Barbara</nameFirst>
+<nameLast>Gage</nameLast>
+<instName>Prince George's Community College</instName>
+<emailPrimary>Unknown</emailPrimary>
+</person>
+</contributor>
+</contributors>
+</lifecycle>
+<metaMetadata>
+<catalogEntries>
+<catalog entry="SAMPLE-000-000-000-038">DLESE Program Center Catalog Record Number</catalog>
+</catalogEntries>
+<dateInfo accessioned="2000-08-29" created="2000-08-29"/>
+<statusOf status="Accessioned"/>
+<language>en</language>
+<scheme>ADN (ADEPT/DLESE/NASA Alexandria Digital Earth Prototype/Digital Library for Earth System Education/National Aeronautics and Space Administration)</scheme>
+<copyright>Copyright (c) 2002 UCAR (University Corporation for Atmospheric Research)</copyright>
+<termsOfUse URI="http://www.dlese.org/documents/policy/terms_use_full.html">Terms of use consistent with DLESE (Digital Library for Earth System Education) policy.</termsOfUse>
+</metaMetadata>
+<technical>
+<online>
+<primaryURL>http://www.ccpo.odu.edu/SEES/ozone/ozone.htm</primaryURL>
+<mediums>
+<medium>text/html</medium>
+<medium>image/gif</medium>
+<medium>application/pdf</medium>
+</mediums>
+<requirements>
+<requirement>
+<reqType>DLESE:Browser:Netscape</reqType>
+<minimumVersion>4.06</minimumVersion>
+</requirement>
+<requirement>
+<reqType>DLESE:Operating system:Macintosh</reqType>
+</requirement>
+<requirement>
+<reqType>DLESE:Software or plug-in:Adobe Acrobat reader</reqType>
+<minimumVersion>3.01</minimumVersion>
+</requirement>
+<requirement>
+<reqType>DLESE:Other:More specific technical requirements</reqType>
+</requirement>
+</requirements>
+<otherRequirements>
+<otherRequirement>
+<otherType>SEE Image. The Class Resources and the textual portion of the Computer Lab Resources are available via a web browser. The SEE Image software, which is Macintosh based, is required to display and analyze imagery and is available from the site. SEE Image may run on PC's with Macintosh emulation software such as ARDI's Executor. All exercises, software, and images can be downloaded and saved to disk.</otherType>
+</otherRequirement>
+</otherRequirements>
+</online>
+</technical>
+<educational>
+<audiences>
+<audience>
+<gradeRange>DLESE:High school</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate lower division</gradeRange>
+</audience>
+<audience>
+<gradeRange>DLESE:Undergraduate upper division</gradeRange>
+</audience>
+</audiences>
+<resourceTypes>
+<resourceType>DLESE:Data:Remotely sensed dataset</resourceType>
+<resourceType>DLESE:Learning materials:Computer activity</resourceType>
+<resourceType>DLESE:Learning materials:Instructor guide</resourceType>
+<resourceType>DLESE:Learning materials:Module or unit</resourceType>
+<resourceType>DLESE:Text:Glossary</resourceType>
+</resourceTypes>
+<contentStandards>
+<contentStandard>NSES:9-12:Content Standard A Science as Inquiry Standards:Abilities necessary to do scientific inquiry</contentStandard>
+<contentStandard>NSES:9-12:Content Standard A Science as Inquiry Standards:Understandings about scientific inquiry</contentStandard>
+<contentStandard>NSES:9-12:Content Standard D Earth and Space Science Standards:Energy in the earth system</contentStandard>
+<contentStandard>NSES:9-12:Content Standard E Science and Technology Standards:Understandings about science and technology</contentStandard>
+<contentStandard>NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural resources</contentStandard>
+<contentStandard>NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Environmental quality</contentStandard>
+<contentStandard>NSES:9-12:Content Standard F Science in Personal and Social Perspectives Standards:Natural and human-induced hazards</contentStandard>
+<contentStandard>NSES:9-12:Content Standard G History and Nature of Science Standards:Nature of scientific knowledge</contentStandard>
+<contentStandard>NCGE:The World in Spatial Terms:How to use maps and other geographic representations, tools, and technologies to acquire, process, and report information</contentStandard>
+</contentStandards>
+<interactivityLevel>LOM:High</interactivityLevel>
+</educational>
+<rights>
+<cost>DLESE:No</cost>
+<description>There are no copyright restrictions on any of the materials that appear in the modules. If you use any of these materials in publications, please acknowledge NASA as follows: NASA. Studying Earth's Environment From Space. June 2000. ( the date you accessed these materials) http://see.gsfc.nasa.gov/edu/SEES/.</description>
+</rights>
+<relations>
+<relation>
+<urlEntry kind="DC:Is part of" url="http://www.ccpo.odu.edu/SEES/index.html"/>
+</relation>
+<relation>
+<urlEntry kind="DC:References" url="http://www.ccpo.odu.edu/SEES/veget/veget.htm"/>
+</relation>
+<relation>
+<urlEntry kind="DC:References" url="http://www.ccpo.odu.edu/SEES/ocean/ocean.htm"/>
+</relation>
+<relation>
+<urlEntry kind="DC:References" url="http://www.ccpo.odu.edu/SEES/polar/polar.htm"/>
+</relation>
+<relation>
+<urlEntry kind="DC:References" url="http://www.ccpo.odu.edu/SEES/ozone/oz_sat.htm"/>
+</relation>
+</relations>
+<geospatialCoverages>
+<geospatialCoverage>
+<body>
+<planet>Earth</planet>
+</body>
+<geodeticDatumGlobalOrHorz>DLESE:Unknown</geodeticDatumGlobalOrHorz>
+<projection type="DLESE:Unknown"/>
+<coordinateSystem type="DLESE:Geographic latitude and longitude"/>
+<boundBox>
+<westCoord>-180</westCoord>
+<eastCoord>180</eastCoord>
+<northCoord>90</northCoord>
+<southCoord>-90</southCoord>
+<bbSrcName>Cataloger supplied</bbSrcName>
+</boundBox>
+<detGeos>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="-66.7" longitude="180.0"/>
+<longLat latitude="-90.0" longitude="180.0"/>
+<longLat latitude="-90.0" longitude="-180.0"/>
+<longLat latitude="-66.7" longitude="-180.0"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detVert>
+<geodeticDatumGlobalOrVert>DLESE:Sea level</geodeticDatumGlobalOrVert>
+<vertBase>Ground level</vertBase>
+<vertMin units="meters (m)">10000</vertMin>
+<vertMax units="meters (m)">50000</vertMax>
+</detVert>
+<detPlaces>
+<place>
+<name>Antarctic Circle</name>
+<source>Unknown</source>
+</place>
+<place>
+<name>Antarctica</name>
+<source>Unknown</source>
+</place>
+<place>
+<name>South Pole</name>
+<source>Unknown</source>
+</place>
+</detPlaces>
+</detGeo>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="90.0" longitude="180.0"/>
+<longLat latitude="66.7" longitude="180.0"/>
+<longLat latitude="66.7" longitude="-180.0"/>
+<longLat latitude="90.0" longitude="-180.0"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+<detVert>
+<geodeticDatumGlobalOrVert>DLESE:Sea level</geodeticDatumGlobalOrVert>
+<vertBase>Ground level</vertBase>
+<vertMin units="meters (m)">10000</vertMin>
+<vertMax units="meters (m)">50000</vertMax>
+</detVert>
+<detPlaces>
+<place>
+<name>Arctic Circle</name>
+<source>Unknown</source>
+</place>
+<place>
+<name>Arctic</name>
+<source>Unknown</source>
+</place>
+<place>
+<name>North Pole</name>
+<source>Unknown</source>
+</place>
+</detPlaces>
+</detGeo>
+<detGeo>
+<typeDetGeo>Bounding box</typeDetGeo>
+<geoNumPts>4</geoNumPts>
+<geoPtOrder>None because the detailed geometry is a point or polyline or bounding box</geoPtOrder>
+<longLats>
+<longLat latitude="90" longitude="180"/>
+<longLat latitude="-90" longitude="180"/>
+<longLat latitude="-90" longitude="-180"/>
+<longLat latitude="90" longitude="-180"/>
+</longLats>
+<detSrcName>Cataloger supplied</detSrcName>
+</detGeo>
+</detGeos>
+</geospatialCoverage>
+</geospatialCoverages>
+<temporalCoverages>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="1979"/>
+<end date="1993"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+<timeAndPeriod>
+<timeInfo>
+<timeAD>
+<begin date="1979"/>
+<end date="1993"/>
+</timeAD>
+</timeInfo>
+</timeAndPeriod>
+</temporalCoverages>
+</itemRecord>

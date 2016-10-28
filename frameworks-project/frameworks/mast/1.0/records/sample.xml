@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xsi:schemaLocation="http://www.dlsciences.org/frameworks/mast http://www.dlsciences.org/frameworks/mast/1.0/schemas/mast-dc-gem.xsd" xmlns="http://www.dlsciences.org/frameworks/mast" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<general>
+		<recordID>String</recordID>
+		<url>http://a.url.tothe/resource</url>
+		<title>String</title>
+		<description>String</description>
+		<subjects>
+			<gemSubject>Arts</gemSubject>
+			<gemSubject>Health:Consumer health</gemSubject>
+			<otherSubject>String</otherSubject>
+			<otherSubject>String</otherSubject>
+		</subjects>
+		<language>en-us</language>
+		<rights>See http://a.url.to/rights</rights>
+		<rights>Text about rights info</rights>
+		<format>String</format>
+		<relation>Related to resource A</relation>
+		<relation>Related to resource B</relation>
+		<date>String</date>
+		<source>String</source>
+		<coverage>String</coverage>
+	</general>
+	<educational>
+		<types>
+			<gemType>Activity</gemType>
+			<dcmiType>Collection</dcmiType>
+			<otherType>String</otherType>
+		</types>
+		<audiences>
+			<gemEdLevel>Kindergarten</gemEdLevel>
+			<audience>String</audience>
+		</audiences>
+		<standards>
+			<asnID>http://purl.org/ASN/resources/S101655E</asnID>
+			<asnID>http://purl.org/ASN/resources/S101ABC</asnID>
+			<standard>Text of other standards</standard>
+		</standards>
+		<instructionalMethods>
+			<gemMethod>Advanced organizers</gemMethod>
+			<gemMethod>Discussions</gemMethod>
+			<gemMethod>Self-directed groups</gemMethod>
+			<otherMethod>String</otherMethod>
+		</instructionalMethods>
+		<essentials>
+			<duration>String</duration>
+			<essentialResource>String</essentialResource>
+		</essentials>
+	</educational>
+	<contributions>
+		<cataloging>
+			<cataloging>String</cataloging>
+		</cataloging>
+		<contributors>
+			<contributor>String</contributor>
+		</contributors>
+		<creators>
+			<creator>String</creator>
+		</creators>
+		<publishers>
+			<publisher>String</publisher>
+		</publishers>
+	</contributions>
+</record>
