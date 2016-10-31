@@ -90,5 +90,6 @@
         <jarDirectory url="file://$MODULE_DIR$/../shared-source/build_lib" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="shared-source" />
   </component>
 </module>
