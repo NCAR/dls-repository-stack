@@ -5,7 +5,7 @@ an XML repository services stack.
 
 - Digital Collection System (DCS) web application - An XML collections management system 
 
-- Digital Discotry System (DDS) web application - A Search API server for XML content built on Lucene
+- Digital Digital System (DDS) web application - A Search API server for XML content built on Lucene
 
 - Repository Harvest Manager - An XML repository manager and harvester that fetches XML collections from OAI and other 
 repositories and maintains normalized XML in a MySQL database. 

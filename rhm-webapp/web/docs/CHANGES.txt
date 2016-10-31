@@ -16,8 +16,8 @@ This file contains the history of changes and versions for the software
 
 v2.6
 
-- This version combines the Harvest Manager, DCS, DDS, Java libraries, and frameworks-project
-into a single repository (stack) in GitHub, and renamed top-level directories to better match their identity.
+- The code projects for DDS, DCS, Harvest Manager, Java libraries, and frameworks-project
+are now combined in a single repository (stack) in GitHub.
 
 - This file describes release changes for the RHM webapp. See the top-level README docs for global change notes.
 

@@ -26,5 +26,16 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../shared-source/build_lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../shared-source/build_lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="shared-source" />
   </component>
 </module>
