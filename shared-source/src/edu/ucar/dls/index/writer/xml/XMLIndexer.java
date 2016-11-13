@@ -581,7 +581,7 @@ public class XMLIndexer {
                                 String indexFieldPreprocessorName = "[none]";
                                 if (indexFieldPreprocessor != null)
                                     indexFieldPreprocessorName = indexFieldPreprocessor.getClass().getName();
-                                prtln("Adding configured field to index:\n  fieldName:" + fieldName + " store:" + fieldStore + " tokenize:" + fieldIndex + " indexFieldPreprocessor:" + indexFieldPreprocessorName + "\n  content:'" + indexContent + "'");
+                                prtln("Adding configured field to index (isFacetField["+isFacetField+"]):\n  fieldName:" + fieldName + " store:" + fieldStore + " tokenize:" + fieldIndex + " indexFieldPreprocessor:" + indexFieldPreprocessorName + "\n  content:'" + indexContent + "'");
                             }
 
 
@@ -624,6 +624,17 @@ public class XMLIndexer {
                                                 //CategoryPath categoryPath = new CategoryPath("root","b","jw1");
                                                 prtln("Adding facet CategoryPath: " + categoryPath);
                                                 documentWrapper.addCategoryPath(categoryPath);
+
+                                                fieldName = "facet." + facetCategory;
+                                                String fieldContent = "";
+                                                for (int jj = 0; jj < pathLeaves.length; jj++){
+                                                    fieldContent += pathLeaves[jj];
+                                                    if(jj < pathLeaves.length-1)
+                                                        fieldContent += ":";
+                                                }
+
+                                                // Add the facet stored field for retrieval in search results:
+                                                luceneDoc.add(new Field(fieldName, fieldContent, Field.Store.YES, Field.Index.NOT_ANALYZED));
                                             }
 
 											/* for(int m = 0; m < SimpleUtils.categories2.length; m++){

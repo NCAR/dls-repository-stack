@@ -20,6 +20,8 @@ are now combined in a single repository (stack) in GitHub. The joai-project is n
 Top-level project directories  were renamed to better match their identity.
 -- Renamed all Java packages from org.dlese.dpc.* to edu.ucar.dls.*
 
+- Added facets to the stored fields that can be returned as storedContent, and documented in the API docs
+
 - This file describes release changes for the DDS webapp. See the top-level README docs for global change notes.
 
 

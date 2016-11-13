@@ -81,6 +81,9 @@
         <li><a href="#requests">Service requests</a></li>
         <ul>
             <li><a href="#Search">Search</a></li>
+            <ul>
+                <li><a href="#facetedSearch">Faceted Search</a></li>
+            </ul>
             <li><a href="#GetRecord">GetRecord</a></li>
             <li><a href="#ListFields">ListFields</a></li>
             <li><a href="#ListTerms">ListTerms</a></li>
@@ -429,7 +432,8 @@ results into which the client wants to see.<br>
         <li>
             <span class="code">storedContent</span> - an <i>optional</i> argument that instructs the service to return
             the given stored content from the index for each record returned. These appear in a <code>&lt;storedContent&gt;</code>
-            element inside the <code>&lt;record&gt;</code> container.
+            element inside the <code>&lt;record&gt;</code> container. Facet fields are also available to return - see information below
+            about faceted search.
             Inputs: a stored field name, for example <code>/text//nsdl_dc/title</code>.
         </li>
     </ul>
@@ -595,11 +599,9 @@ only:<br>
     returned at the top of the Search response.</p>
 <br>
 <p><em>To Find Available Facet Categories</em></p>
-<p>To find the categories that are available for faceted search in the index, use the <code>ListTerms</code> request and
-    request the special field named <code>$facets</code>. In each <code>&lt;term&gt;</code> element returned in the
-    response, the first token listed indicates the facet category and subsequent tokens indicate subcategories. Facet
-    subcategories may be flat (one level deep) or hierarchical (two or more levels deep):</p>
-<p><a href="${ddsws11BaseUrl}?verb=ListTerms&field=$facets" target="_blank">${ddsws11BaseUrl}?verb=ListTerms&amp;field=$facets</a>
+<p>To find the categories that are available for faceted search, use the <code>ListFields</code> request and
+    look for the fields of the form <code>facet.&lt;facetCategory&gt;</code>:</p>
+<p><a href="${ddsws11BaseUrl}?verb=ListFields" target="_blank">${ddsws11BaseUrl}?verb=ListFields</a>
 </p>
 <br>
 <p><em>To Retrieve Facet Counts</em></p>
@@ -635,7 +637,7 @@ only:<br>
     </li>
 </ul>
 <br>
-<p><em>To Drill-down into a Facet</em></p>
+<p><em>To Filter By/Drill-down into a Facet</em></p>
 <ul>
     <li><code>f.drilldown.category=&lt;facetCategory&gt;</code> - (<em>required, repeatable</em>) - Indicates the facet
         category you wish to drill down into. Token must be the same as the one specified in the <code>&lt;facetResult&gt;</code>
@@ -648,6 +650,16 @@ only:<br>
     </li>
     <li>It is not necessary to specify <code>facet=on</code>, but you can request facet counts again while doing a
         drill-down if desired.
+    </li>
+</ul>
+<br>
+<p><em>To Return Facets for Each Record in the Results</em></p>
+<ul>
+    <li><code>storedContent=facet.&lt;facetCategory&gt;</code> - (<em>optional, repeatable</em>) - Indicates to return the facets
+        that are mapped to each record for the given category. These appear in a <code>storedContent</code> element inside the <code>record</code> container.
+        See additional options for <code>storedContent</code> in the section above.
+    </li>
+    <li>It is not necessary to specify <code>facet=on</code> to return the facet(s) that are mapped to the search results.
     </li>
 </ul>
 <br>
