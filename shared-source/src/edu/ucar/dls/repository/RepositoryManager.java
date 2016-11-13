@@ -4943,7 +4943,7 @@ public class RepositoryManager {
                     if (collectionRecordsDir == null)
                         throw new Exception("No location for collection records has been set.");
 
-                    org.dom4j.Document masterCollectionDoc = Dom4jUtils.getXmlDocument(Files.readFileFromJarClasspath("/org/dlese/dpc/repository/COLLECTION-RECORD-TEMPLATE.xml").toString());
+                    org.dom4j.Document masterCollectionDoc = Dom4jUtils.getXmlDocument(Files.readFileFromJarClasspath("/edu/ucar/dls/repository/COLLECTION-RECORD-TEMPLATE.xml").toString());
 
                     masterCollectionDoc = updateCollectionRecord(
                             masterCollectionDoc,
@@ -5028,7 +5028,7 @@ public class RepositoryManager {
 
                     description = (description == null ? "" : description);
 
-                    org.dom4j.Document xmlDoc = Dom4jUtils.getXmlDocument(Files.readFileFromJarClasspath("/org/dlese/dpc/repository/COLLECTION-RECORD-TEMPLATE.xml").toString());
+                    org.dom4j.Document xmlDoc = Dom4jUtils.getXmlDocument(Files.readFileFromJarClasspath("/edu/ucar/dls/repository/COLLECTION-RECORD-TEMPLATE.xml").toString());
 
                     xmlDoc = updateCollectionRecord(xmlDoc, title, description, additionalMetadata, xmlFormat, collectionKey, collRecordId, accessionDate);
 

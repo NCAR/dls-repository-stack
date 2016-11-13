@@ -116,7 +116,7 @@ public class AssetSearcher {
 	
 	AssetUrls obtained from the webservice are cached.
 	- we track the indexVersion
-	- see http://localhost/api/dlese-tools/org/dlese/dpc/services/dds/toolkit/DDSServicesToolkit.html
+	- see http://localhost/api/dlese-tools/edu/ucar/dls/services/dds/toolkit/DDSServicesToolkit.html
 	
 	we cache results for each query (we make a key from the specified collections).
 	test indexVersion to decide whether we return cached or refresh from webservice

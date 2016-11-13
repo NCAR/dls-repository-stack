@@ -288,7 +288,7 @@ public abstract class CATServiceHelper implements SuggestionServiceHelper {
 				// throw new Exception("did not instantate plugin");
 				prtln ("WARNING: no plugin found for " + sef.getXmlFormat());
 			}
-			///Users/ostwald/devel/projects/dlese-tools-project/src/org/dlese/dpc/schemedit/standards/adn/DleseSuggestionServiceHelper.java
+			///Users/ostwald/devel/projects/dlese-tools-project/src/edu/ucar/dls/schemedit/standards/adn/DleseSuggestionServiceHelper.java
 
 			if (sef == null)
 				prtlnErr("getInstance() : actionForm not available");

@@ -74,7 +74,7 @@ public class User {
 	 */
 	public User() throws Exception {
 		String userRecordTemplate =
-				Files.readFileFromJarClasspath("/org/dlese/dpc/schemedit/security/user/USER-RECORD-TEMPLATE.xml").toString();
+				Files.readFileFromJarClasspath("/edu/ucar/dls/schemedit/security/user/USER-RECORD-TEMPLATE.xml").toString();
 		prtln("userRecordTemplate: " + userRecordTemplate);
 		try {
 			this.reader = new UserConfigReader(userRecordTemplate);

@@ -34,7 +34,7 @@ import java.io.*;
 public class AsnAuthors extends AsnHelperService {
 	private static boolean debug = true;
 
-	private static String CASHED_SERVICE_INDEX = "/org/dlese/dpc/standards/asn/cachedxml/ASNJurisdiction.xml";
+	private static String CASHED_SERVICE_INDEX = "/edu/ucar/dls/standards/asn/cachedxml/ASNJurisdiction.xml";
 	private static String  SERVICE_INDEX_URI = "http://asn.jesandco.org/api/1/jurisdictions";
 	// private static String BASE_OBJECT_URI = "http://purl.org/ASN/scheme/ASNJurisdiction/";
 	private static String BASE_OBJECT_URI = AsnConstants.ASN_JURISDICTION_BASE;

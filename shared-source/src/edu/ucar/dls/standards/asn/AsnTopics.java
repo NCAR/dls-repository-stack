@@ -31,7 +31,7 @@ import java.io.*;
 public class AsnTopics extends AsnHelperService {
 	private static boolean debug = true;
 
-	private static String CASHED_SERVICE_INDEX = "/org/dlese/dpc/standards/asn/cachedxml/ASNSubjects.xml";
+	private static String CASHED_SERVICE_INDEX = "/edu/ucar/dls/standards/asn/cachedxml/ASNSubjects.xml";
 	private static String SERVICE_INDEX_URI = "http://asn.jesandco.org/api/1/subjects";
 	
 	private static AsnTopics instance = null;

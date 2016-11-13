@@ -73,7 +73,7 @@ public class MimeTypes {
 	private MimeTypes() throws Exception {
 
 		try {
-			String mappingsXML = Files.readFileFromJarClasspath("/org/dlese/dpc/ndr/toolkit/MIMETYPE-MAPPINGS.xml").toString();
+			String mappingsXML = Files.readFileFromJarClasspath("/edu/ucar/dls/ndr/toolkit/MIMETYPE-MAPPINGS.xml").toString();
 			this.doc = Dom4jUtils.localizeXml(Dom4jUtils.getXmlDocument(mappingsXML));
 		} catch (Exception e) {
 			throw new Exception("unable to process local MIMETYPE-MAPPINGS.xml file");

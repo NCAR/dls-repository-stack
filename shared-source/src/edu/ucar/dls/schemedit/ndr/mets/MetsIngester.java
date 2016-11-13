@@ -139,7 +139,7 @@ public abstract class MetsIngester extends NameSpaceXMLDocReader {
 	 */
 	void ndrToolkitInit() throws Exception {
 		// MimeTypes.setPath ("C:/Program Files/Apache Software Foundation/Tomcat 5.5/conf/web.xml");
-		// MimeTypes.setPath("/Users/ostwald/devel/projects/dlese-tools-project/src/org/dlese/dpc/schemedit/ndr/mets/mime-mappings.xml");
+		// MimeTypes.setPath("/Users/ostwald/devel/projects/dlese-tools-project/src/edu/ucar/dls/schemedit/ndr/mets/mime-mappings.xml");
 		ndrToolkit = new NDRToolkit();
 		if (ndrToolkit == null)
 			throw new Exception("no tool kit");
