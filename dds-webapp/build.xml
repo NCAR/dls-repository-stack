@@ -87,7 +87,7 @@
   <!-- The following properties files are sourced in the following order  -->
   
   <!-- DDS-specific properties should be placed in one of these files (only one should be used): -->
-  <property file="../dds.properties"/>
+  <property file="../../dds.properties"/>
   <property file="${user.home}/dds.properties"/>    
   <property file="${user.home}/build.properties"/> 
   <property file="build.properties"/>    

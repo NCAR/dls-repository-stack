@@ -59,7 +59,7 @@
     -->
 
     <!-- DCS-specific properties should be placed in one of these files (only one should be used): -->
-    <property file="../dcs.properties"/>
+    <property file="../../dcs.properties"/>
 
     <property file="${user.home}/build.properties"/>
     <property file="build.properties"/>

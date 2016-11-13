@@ -82,8 +82,8 @@
 --> 
 
   <!-- Search for properties defined in this order: -->
-  <property file="../hm.properties"/>
-  <property file="../build.properties"/>   
+  <property file="../../hm.properties"/>
+  <property file="../../build.properties"/>
   <property file="${user.home}/build.properties"/> 
   <property file="build.properties"/>    
  
