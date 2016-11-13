@@ -1,154 +1,164 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!-- XMLIndexerFieldsConfig attributes: [xmlFormat OR schema] -->
 <XMLIndexerFieldsConfig xmlFormat="nsdl_dc">
-	<standardFields>
-		<!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->	
-		<standardField name="url">
-			<xpaths>
-				<xpath>/nsdl_dc/identifier[starts-with(.,'http://') or starts-with(.,'https://') or starts-with(.,'ftp://')]</xpath>
-			</xpaths>		
-		</standardField>
-		<standardField name="title">
-			<xpaths>
-				<xpath>/nsdl_dc/title</xpath>
-			</xpaths>		
-		</standardField>
-		<standardField name="description">
-			<xpaths>
-				<xpath>/nsdl_dc/description</xpath>
-			</xpaths>		
-		</standardField>		
-	</standardFields>
-	
-	<customFields>
-		<!-- Field that contains only the core subject vocabs (use starts-with() and string-length() because compare() and matches() not supported by the XML parser) -->
-		<customField name="nsdl_dc.core.subject" store="yes" type="key">
-			<xpaths>
-				<xpath>/nsdl_dc/subject[(starts-with(.,'Chemistry') and string-length(.) = 9)
-				or (starts-with(.,'Computing and Information') and string-length(.) = 25)
-				or (starts-with(.,'Ecology, Forestry and Agriculture') and string-length(.) = 33)
-				or (starts-with(.,'Education') and string-length(.) = 9)
-				or (starts-with(.,'Engineering') and string-length(.) = 11)
-				or (starts-with(.,'General') and string-length(.) = 7)
-				or (starts-with(.,'Geoscience') and string-length(.) = 10)
-				or (starts-with(.,'History/Policy/Law') and string-length(.) = 18)
-				or (starts-with(.,'Life Science') and string-length(.) = 12)
-				or (starts-with(.,'Mathematics') and string-length(.) = 11)
-				or (starts-with(.,'Physics') and string-length(.) = 7)
-				or (starts-with(.,'Social Sciences') and string-length(.) = 15)
-				or (starts-with(.,'Space Science') and string-length(.) = 13)
-				or (starts-with(.,'Technology') and string-length(.) = 10)]</xpath>
-			</xpaths>
-		</customField>
+    <standardFields>
+        <!-- standardField attributes: name=[id|url|title|description|geoBBNorth|geoBBSouth|geoBBWest|geoBBEast] -->
+        <standardField name="url">
+            <xpaths>
+                <xpath>/nsdl_dc/identifier[starts-with(.,'http://') or starts-with(.,'https://') or
+                    starts-with(.,'ftp://')]
+                </xpath>
+            </xpaths>
+        </standardField>
+        <standardField name="title">
+            <xpaths>
+                <xpath>/nsdl_dc/title</xpath>
+            </xpaths>
+        </standardField>
+        <standardField name="description">
+            <xpaths>
+                <xpath>/nsdl_dc/description</xpath>
+            </xpaths>
+        </standardField>
+    </standardFields>
 
-		<!-- Field used for collating by title (sort without 'The', 'A,' at the beginning, etc.)   -->
-		<!-- <customField name="titleCollationSort" store="yes" type="key" indexFieldPreprocessor="edu.ucar.dls.repository.indexing.TestIndexFieldPreprocessor">
-			<xpaths>
-				<xpath>/nsdl_dc/title[1]</xpath>
-			</xpaths>
-		</customField> -->	
-	
-		<!-- customField attributes: name, store, [type OR analyzer] -->
-		<customField name="dcIdentifier" store="yes" type="key">
-			<xpaths>
-				<xpath>/nsdl_dc/identifier</xpath>
-			</xpaths>
-		</customField>		
-		<customField name="dcType" store="yes" type="text">
-			<xpaths>
-				<xpath>/nsdl_dc/type</xpath>
-			</xpaths>
-		</customField>
-		<customField name="dcPublisher" store="yes" type="text">
-			<xpaths>
-				<xpath>/nsdl_dc/publisher</xpath>
-			</xpaths>
-		</customField>
-		
-		<!-- Index resource URLs to aid in reporting -->
-		<customField name="nsdlDcResourceUrl" store="yes" type="key">
-			<xpaths>
-				<xpath>/nsdl_dc/identifier[starts-with(.,'http://') or starts-with(.,'https://') or starts-with(.,'ftp://')]</xpath>
-			</xpaths>		
-		</customField>
-		
-		<!-- Index resource handle -->
-		<customField name="nsdlDcResourceHandle" store="yes" type="key" indexFieldPreprocessor="edu.ucar.dls.xml.HandlePrefixRemoverFieldPreprocessor" >
-			<xpaths>
-				<xpath>/nsdl_dc/identifier[@xsi:type='nsdl_dc:ResourceHandle']</xpath>
-			</xpaths>		
-		</customField>
-		
-		<!-- Index metadata handle -->
-		<customField name="nsdlDcMetadataHandle" store="yes" type="key" indexFieldPreprocessor="edu.ucar.dls.xml.HandlePrefixRemoverFieldPreprocessor" >
-			<xpaths>
-				<xpath>/nsdl_dc/identifier[@xsi:type='nsdl_dc:MetadataHandle']</xpath>
-			</xpaths>		
-		</customField>
-		
-		<!-- Index comments from all relation sources -->
-		<customField name="commonComments" store="yes" type="text"> 
-			<xpaths>
-				<!-- Comments from my related comm_anno records -->
-				<xpath>/relation.isAnnotatedBy//comm_anno/text[@type='Comment' or @type='Teaching tip']</xpath>
-				
-				<!-- Comments from my related paradata records -->
-				<xpath>/relation.paradataProvidedBy//commParadata/usageDataSummary/string[@type='commented']</xpath>
-			</xpaths>			
-		</customField>	
+    <customFields>
+        <!-- Field that contains only the core subject vocabs (use starts-with() and string-length() because compare() and matches() not supported by the XML parser) -->
+        <customField name="nsdl_dc.core.subject" store="yes" type="key">
+            <xpaths>
+                <xpath>/nsdl_dc/subject[(starts-with(.,'Chemistry') and string-length(.) = 9)
+                    or (starts-with(.,'Computing and Information') and string-length(.) = 25)
+                    or (starts-with(.,'Ecology, Forestry and Agriculture') and string-length(.) = 33)
+                    or (starts-with(.,'Education') and string-length(.) = 9)
+                    or (starts-with(.,'Engineering') and string-length(.) = 11)
+                    or (starts-with(.,'General') and string-length(.) = 7)
+                    or (starts-with(.,'Geoscience') and string-length(.) = 10)
+                    or (starts-with(.,'History/Policy/Law') and string-length(.) = 18)
+                    or (starts-with(.,'Life Science') and string-length(.) = 12)
+                    or (starts-with(.,'Mathematics') and string-length(.) = 11)
+                    or (starts-with(.,'Physics') and string-length(.) = 7)
+                    or (starts-with(.,'Social Sciences') and string-length(.) = 15)
+                    or (starts-with(.,'Space Science') and string-length(.) = 13)
+                    or (starts-with(.,'Technology') and string-length(.) = 10)]
+                </xpath>
+            </xpaths>
+        </customField>
 
-		<!-- Indexing configuration for faceting: 
-		Use @facetCategory="[name of facet catogory]" instead of @field to create a facet cagetory.
-		@facetCategory indicates the category name for the facet.
-		@indexFieldPreprocessor is an optional attribute that specifies a IndexFieldPreprocessor that may be used to prepresses the input content, if needed.
-		@facetPathDelimeter is an optional delimeter character used to split the input string into a facet path hierarchy. 
-		Examples: facetPathDelimeter=":" to split on colon; facetPathDelimeter="/" to split on a backward slash. 
-		If ommitted, the facet catory will be flat (e.g. one level deep only) -->
-		<customField facetCategory="Audience">
-			<xpaths>
-				<xpath>/nsdl_dc/audience</xpath>
-			</xpaths>		
-		</customField>		
-		<customField facetCategory="EducationLevel"> 
-			<xpaths>
-				<xpath>/nsdl_dc/educationLevel</xpath>
-			</xpaths>		
-		</customField>
-		<customField facetCategory="Type"> 
-			<xpaths>
-				<xpath>/nsdl_dc/type</xpath>
-			</xpaths>		
-		</customField>
-		
-		<customField facetCategory="ASNStandardID" facetPathDelimeter=":" indexFieldPreprocessor="edu.ucar.dls.standards.asn.AsnStandardsIdFieldPreprocessor">
-			<xpaths>
-				<!-- Index standards found in the nsdl_dc record -->
-				<xpath>/nsdl_dc/conformsTo</xpath>
-				
-				<!-- Index standards found in comm_anno records that annotate the nsdl_dc record -->
-				<xpath>/relation.isAnnotatedBy//comm_anno/ASNstandard</xpath>				
-			</xpaths>		
-		</customField>		
-		
-		<!-- Field that contains only the core subject vocabs (use starts-with() and string-length() because compare() and matches() not supported by the XML parser) -->
-		<customField facetCategory="Subject">
-			<xpaths>
-				<xpath>/nsdl_dc/subject[(starts-with(.,'Chemistry') and string-length(.) = 9)
-				or (starts-with(.,'Computing and Information') and string-length(.) = 25)
-				or (starts-with(.,'Ecology, Forestry and Agriculture') and string-length(.) = 33)
-				or (starts-with(.,'Education') and string-length(.) = 9)
-				or (starts-with(.,'Engineering') and string-length(.) = 11)
-				or (starts-with(.,'General') and string-length(.) = 7)
-				or (starts-with(.,'Geoscience') and string-length(.) = 10)
-				or (starts-with(.,'History/Policy/Law') and string-length(.) = 18)
-				or (starts-with(.,'Life Science') and string-length(.) = 12)
-				or (starts-with(.,'Mathematics') and string-length(.) = 11)
-				or (starts-with(.,'Physics') and string-length(.) = 7)
-				or (starts-with(.,'Social Sciences') and string-length(.) = 15)
-				or (starts-with(.,'Space Science') and string-length(.) = 13)
-				or (starts-with(.,'Technology') and string-length(.) = 10)]</xpath>
-			</xpaths>
-		</customField>		
-		
-	</customFields>	
+        <!-- Field used for collating by title (sort without 'The', 'A,' at the beginning, etc.)   -->
+        <!-- <customField name="titleCollationSort" store="yes" type="key" indexFieldPreprocessor="edu.ucar.dls.repository.indexing.TestIndexFieldPreprocessor">
+            <xpaths>
+                <xpath>/nsdl_dc/title[1]</xpath>
+            </xpaths>
+        </customField> -->
+
+        <!-- customField attributes: name, store, [type OR analyzer] -->
+        <customField name="dcIdentifier" store="yes" type="key">
+            <xpaths>
+                <xpath>/nsdl_dc/identifier</xpath>
+            </xpaths>
+        </customField>
+        <customField name="dcType" store="yes" type="text">
+            <xpaths>
+                <xpath>/nsdl_dc/type</xpath>
+            </xpaths>
+        </customField>
+        <customField name="dcPublisher" store="yes" type="text">
+            <xpaths>
+                <xpath>/nsdl_dc/publisher</xpath>
+            </xpaths>
+        </customField>
+
+        <!-- Index resource URLs to aid in reporting -->
+        <customField name="nsdlDcResourceUrl" store="yes" type="key">
+            <xpaths>
+                <xpath>/nsdl_dc/identifier[starts-with(.,'http://') or starts-with(.,'https://') or
+                    starts-with(.,'ftp://')]
+                </xpath>
+            </xpaths>
+        </customField>
+
+        <!-- Index resource handle -->
+        <customField name="nsdlDcResourceHandle" store="yes" type="key"
+                     indexFieldPreprocessor="edu.ucar.dls.xml.HandlePrefixRemoverFieldPreprocessor">
+            <xpaths>
+                <xpath>/nsdl_dc/identifier[@xsi:type='nsdl_dc:ResourceHandle']</xpath>
+            </xpaths>
+        </customField>
+
+        <!-- Index metadata handle -->
+        <customField name="nsdlDcMetadataHandle" store="yes" type="key"
+                     indexFieldPreprocessor="edu.ucar.dls.xml.HandlePrefixRemoverFieldPreprocessor">
+            <xpaths>
+                <xpath>/nsdl_dc/identifier[@xsi:type='nsdl_dc:MetadataHandle']</xpath>
+            </xpaths>
+        </customField>
+
+        <!-- Index comments from all relation sources -->
+        <customField name="commonComments" store="yes" type="text">
+            <xpaths>
+                <!-- Comments from my related comm_anno records -->
+                <xpath>/relation.isAnnotatedBy//comm_anno/text[@type='Comment' or @type='Teaching tip']</xpath>
+
+                <!-- Comments from my related paradata records -->
+                <xpath>/relation.paradataProvidedBy//commParadata/usageDataSummary/string[@type='commented']</xpath>
+            </xpaths>
+        </customField>
+
+        <!-- Indexing configuration for faceting:
+        Use @facetCategory="[name of facet catogory]" instead of @field to create a facet cagetory.
+        @facetCategory indicates the category name for the facet.
+        @indexFieldPreprocessor is an optional attribute that specifies a IndexFieldPreprocessor that may be used to prepresses the input content, if needed.
+        @facetPathDelimeter is an optional delimeter character used to split the input string into a facet path hierarchy.
+        Examples: facetPathDelimeter=":" to split on colon; facetPathDelimeter="/" to split on a backward slash.
+        If ommitted, the facet catory will be flat (e.g. one level deep only) -->
+        <customField facetCategory="Audience">
+            <xpaths>
+                <xpath>/nsdl_dc/audience</xpath>
+            </xpaths>
+        </customField>
+        <customField facetCategory="EducationLevel">
+            <xpaths>
+                <xpath>/nsdl_dc/educationLevel</xpath>
+            </xpaths>
+        </customField>
+        <customField facetCategory="Type">
+            <xpaths>
+                <xpath>/nsdl_dc/type</xpath>
+            </xpaths>
+        </customField>
+
+        <customField facetCategory="ASNStandardID" facetPathDelimeter=":"
+                     indexFieldPreprocessor="edu.ucar.dls.standards.asn.AsnStandardsIdFieldPreprocessor">
+            <xpaths>
+                <!-- Index standards found in the nsdl_dc record -->
+                <xpath>/nsdl_dc/conformsTo</xpath>
+
+                <!-- Index standards found in comm_anno records that annotate the nsdl_dc record -->
+                <xpath>/relation.isAnnotatedBy//comm_anno/ASNstandard</xpath>
+            </xpaths>
+        </customField>
+
+        <!-- Field that contains only the core subject vocabs (use starts-with() and string-length() because compare() and matches() not supported by the XML parser) -->
+        <customField facetCategory="Subject">
+            <xpaths>
+                <xpath>/nsdl_dc/subject[(starts-with(.,'Biology') and string-length(.) = 7)
+                    or (starts-with(.,'Chemistry') and string-length(.) = 9)
+                    or (starts-with(.,'Computing and Information') and string-length(.) = 25)
+                    or (starts-with(.,'Ecology, Forestry and Agriculture') and string-length(.) = 33)
+                    or (starts-with(.,'Education') and string-length(.) = 9)
+                    or (starts-with(.,'Engineering') and string-length(.) = 11)
+                    or (starts-with(.,'General') and string-length(.) = 7)
+                    or (starts-with(.,'Geoscience') and string-length(.) = 10)
+                    or (starts-with(.,'History/Policy/Law') and string-length(.) = 18)
+                    or (starts-with(.,'Life Science') and string-length(.) = 12)
+                    or (starts-with(.,'Mathematics') and string-length(.) = 11)
+                    or (starts-with(.,'Physics') and string-length(.) = 7)
+                    or (starts-with(.,'Social Sciences') and string-length(.) = 15)
+                    or (starts-with(.,'Space Science') and string-length(.) = 13)
+                    or (starts-with(.,'Technology') and string-length(.) = 10)]
+                </xpath>
+            </xpaths>
+        </customField>
+
+    </customFields>
 </XMLIndexerFieldsConfig>
