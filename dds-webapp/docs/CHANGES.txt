@@ -15,8 +15,8 @@ http://dls.ucar.edu/  http://www.ucar.edu/  http://nsf.gov/
 
 Changes in 3.7.0-rc1
 
-- The code projects for DDS, DCS, Harvest Manager, Java libraries, and frameworks-project
-are now combined in a single repository (stack) in GitHub. The joai-project is no longer a dependency.
+- Moved code to GitHub and combined the projects for DDS, DCS, Harvest Manager, Java libraries, and frameworks-project
+in a single GitHub repository. The joai-project is no longer a dependency.
 Top-level project directories  were renamed to better match their identity.
 -- Renamed all Java packages from org.dlese.dpc.* to edu.ucar.dls.*
 

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<xsl:stylesheet 
+<xsl:stylesheet
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:d="http://adn.dlese.org"
@@ -27,7 +27,7 @@
 <!--License information:
 		Copyright (c) 2006 University Corporation for Atmospheric Research (UCAR)
 		P.O. Box 3000, Boulder, CO 80307, United States of America
-		email: support@dlese.org. 
+		email: support@dlese.org.
 		All rights reserved
 This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  These XML instance documents are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this project; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA -->
 
@@ -43,7 +43,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 <!--8. Does not assume ADN records are valid so there could be ADN elements with no content present-->
 <!--9. Generally checks are made to ensure ADN elements have content before being transformed. In the case of ADN elements with controlled vocabularies, sometimes additional checks are performed to ensure the data is part of the controlled vocabulary (to help reduce the possibility of transforming nonsense). If these checks are not successful occassionally, nonsense is transformed and a DC element is written-->
 <!--10. Complete data checking when ADN records are not valid is not possible within the scope of this transform so some nonsense that does not fit desired encoding schemes can creep into the transformed output-->
-<!--11. ADN educational.audiences.audience.instructionalGoal  or typicalAgeRange is not transformed-->		
+<!--11. ADN educational.audiences.audience.instructionalGoal  or typicalAgeRange is not transformed-->
 <!--12. When possible NSES standards are transformed to use the ASN identifiers; Geography standards are transformed and outputted as text-->
 <!--13. Process and teaching standards are not transformed-->
 <!--14. ADN simple places, event and temporal information are transformed-->
@@ -58,7 +58,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 <!-- **********************************************************-->
 <!--variable for accessing DLESE webservice when given a DLESE library id-->
 <!--webservice 1-1 has namespaces unlike 1-0 so account for them-->
-	<xsl:variable name="DDSWSID">http://www.dlese.org/dds/services/ddsws1-1?verb=GetRecord&amp;id=</xsl:variable>	
+	<xsl:variable name="DDSWSID">http://www.dlese.org/dds/services/ddsws1-1?verb=GetRecord&amp;id=</xsl:variable>
 	<xsl:variable name="reqVocabURL">http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/requirementTypeDLESE.xsd</xsl:variable>
 	<xsl:variable name="teachDVocabURL">http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/teachingMethodDLESE.xsd</xsl:variable>
 	<xsl:variable name="teachGVocabURL">http://www.dlese.org/Metadata/adn-item/0.6.50/vocabs/teachingMethodGEM.xsd</xsl:variable>
@@ -88,14 +88,14 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 <!-- **************************************-->
 	<xsl:template match="d:itemRecord">
 		<nsdl_dc:nsdl_dc schemaVersion="1.02.010" xmlns:nsdl_dc="http://ns.nsdl.org/nsdl_dc_v1.02/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ieee="http://www.ieee.org/xsd/LOMv1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ns.nsdl.org/nsdl_dc_v1.02/ http://ns.nsdl.org/schemas/nsdl_dc/nsdl_dc_v1.02.xsd">
-		
-		
+
+
 
 <!--dc:title-->
 		<xsl:if test="string-length(d:general/d:title) > 0">
 			<xsl:element name="dc:title">
 				<xsl:value-of select="d:general/d:title"/>
-			</xsl:element>	
+			</xsl:element>
 		</xsl:if>
 
 <!--dc:subject - from subjects-->
@@ -118,7 +118,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 			</xsl:for-each>
 		</xsl:variable>
 <!--for nsdl_dc:GEM: Science-->
-		<xsl:if test="contains($allsubjects, 'Atmospheric') or 
+		<xsl:if test="contains($allsubjects, 'Atmospheric') or
 						contains($allsubjects, 'Biology') or
 						contains($allsubjects, 'oceanography') or
 						contains($allsubjects, 'Chemistry') or
@@ -141,9 +141,9 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				<xsl:text>Science</xsl:text>
 			</xsl:element>
 		</xsl:if>
-			
+
 <!--for nsdl_dc:GEM: Earth science-->
-		<xsl:if test="contains($allsubjects, 'Atmospheric') or 
+		<xsl:if test="contains($allsubjects, 'Atmospheric') or
 						contains($allsubjects, 'Biology') or
 						contains($allsubjects, 'oceanography') or
 						contains($allsubjects, 'Climatology') or
@@ -167,7 +167,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 		</xsl:if>
 
 <!--for nsdl_dc:GEM: Physical sciences-->
-		<xsl:if test="contains($allsubjects, 'Atmospheric') or 
+		<xsl:if test="contains($allsubjects, 'Atmospheric') or
 						contains($allsubjects, 'Climatology') or
 						contains($allsubjects, 'Cryology') or
 						contains($allsubjects, 'Environmental science') or
@@ -190,7 +190,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 		</xsl:if>
 
 <!--for nsdl_dc:GEM: Meteorology-->
-		<xsl:if test="contains($allsubjects, 'Atmospheric') or 
+		<xsl:if test="contains($allsubjects, 'Atmospheric') or
 						contains($allsubjects, 'Climatology')">
 			<xsl:element name="dc:subject">
 				<xsl:attribute name="xsi:type">nsdl_dc:GEM</xsl:attribute>
@@ -220,7 +220,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				<xsl:text>Geography</xsl:text>
 			</xsl:element>
 		</xsl:if>
-			
+
 <!--for nsdl_dc:GEM: Oceanogrpahy-->
 		<xsl:if test="contains($allsubjects, 'oceanography')">
 			<xsl:element name="dc:subject">
@@ -228,7 +228,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				<xsl:text>Oceanography</xsl:text>
 			</xsl:element>
 		</xsl:if>
-				
+
 <!--for nsdl_dc:GEM: Chemistry-->
 <!--still test Chemistry, even though it will be present form the DLESE subject list, because now it is part of the GEM type-->
 		<xsl:if test="contains($allsubjects, 'Chemistry') or
@@ -340,14 +340,14 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 
 <!--dc:date-->
 <!--since ADN has many lifecycle.contributors.contributor.date values and these are not required, determine if any are present using a variable to grab all of them-->
- 
+
 <!--	variable for ADN lifecycle.contributors.contributor.date-->
 		<xsl:variable name="alldates">
 			<xsl:for-each select="d:lifecycle/d:contributors/d:contributor/@date">
 				<xsl:value-of select="."/>
 			</xsl:for-each>
 		</xsl:variable>
-		
+
 		<xsl:if test="string-length($alldates)>0">
 		<!--variable to grab the date of the first occurring date attribute only-->
 			<xsl:variable name="dateStr" select="string(normalize-space(d:lifecycle/d:contributors/d:contributor/@date))"/>
@@ -358,14 +358,14 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 			<xsl:variable name="monthStr" select="substring($lowercase, 6, 2)"/>
 			<xsl:variable name="secondSep" select="substring($lowercase, 8, 1)"/>
 			<xsl:variable name="dayStr" select="substring($lowercase, 9, 2)"/>
-	
+
 <!--checking for xsd:gYear (but assuming in CCYY format because to hard to do more) -->
 <!--checking for xsd:gYearMonth (but assuming in CCYY-MM format because to hard to do more) -->
 <!--checking for xsd:date (but assuming in CCYY-MM-DD format because to hard to do more) -->
 <!--NOTE: not checking for correct association of day with month (i.e. 2-30, 9-31 would be 'valid' here )-->
-<!--NOTE: xsd:dateTime is valid, not checking for it -->	
-<!--NOTE: anything else does not get transformed-->						
-			<xsl:if test="(string-length($lowercase) = '4' and not(string(number($yearStr)) = 'NaN')) or 
+<!--NOTE: xsd:dateTime is valid, not checking for it -->
+<!--NOTE: anything else does not get transformed-->
+			<xsl:if test="(string-length($lowercase) = '4' and not(string(number($yearStr)) = 'NaN')) or
 							(string-length($lowercase) = '7' and not(string(number($yearStr)) = 'NaN') and ($firstSep = '-') and
 											not (string(number($monthStr)) = 'NaN') and ($monthStr &gt; '0' ) and ($monthStr &lt; '13' )) or
 							(string-length($lowercase) = '10' and	not (string(number($yearStr)) = 'NaN')  and 
@@ -375,9 +375,9 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				<xsl:element name="dc:date">
 					<xsl:attribute name="xsi:type">dct:W3CDTF</xsl:attribute>
 					<xsl:value-of select="d:lifecycle/d:contributors/d:contributor/@date"/>
-				</xsl:element>	
+				</xsl:element>
 			</xsl:if>
-		</xsl:if>	
+		</xsl:if>
 <!--end: dc:date-->
 
 <!--dc:description-->
@@ -430,13 +430,13 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 		<xsl:apply-templates select="d:lifecycle/d:contributors/d:contributor/d:organization" mode="publisher"/>
 		<!--see template PERSON mode=PUBLISHER-->
 		<!--see template ORGANIZATION mode=PUBLISHER-->
-	
+
 <!--dc:contributor-->
 		<xsl:apply-templates select="d:lifecycle/d:contributors/d:contributor/d:person" mode="contributor"/>
 		<xsl:apply-templates select="d:lifecycle/d:contributors/d:contributor/d:organization" mode="contributor"/>
 		<!--see template PERSON mode=CONTRIBUTOR-->
 		<!--see template ORGANIZATION mode=CONTRIBUTOR-->
-	
+
 
 <!--dc:format-->
 <!--dc:format is defined as the physical or digital manifestation of the resource. Format may include the media-type (mime), dimensions, size and duration and format may be used to determine the software, hardware or other equipment needed to display or operate the resource-->
@@ -457,7 +457,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 <!--use for offline resources only because the DC definition is the material or physical carrier of the resource; e.g. bronze for a sculpture-->
 <!--however, ADN does not collect medium information for offline resources; so do not create a dct:medium element-->
 
-<!--dc:format - type=dct:IMT using ADN mediums--> 
+<!--dc:format - type=dct:IMT using ADN mediums-->
 <!--must select from NSDL list at http://ns.nsdl.org/schemas/mime_type/mime_type_v1.00.xsd-->
 <!--since mediums is free text in ADN, create a variable and test and only write dc:format - type=dct:IMT as needed at the broad mime type category (i.e. text, application, video, audio, image, model, multipart or message) because do not know if the finer free text level (e.g. text/html) in ADN medium would be an accepted term in the mime type vocabulary-->
 
@@ -477,51 +477,51 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				<xsl:attribute name="xsi:type">dct:IMT</xsl:attribute>
 				<xsl:text>application</xsl:text>
 			</xsl:element>
-		</xsl:if> 
+		</xsl:if>
 		<xsl:if test="contains($allmediums, 'message')">
 			<xsl:element name="dc:format">
 				<xsl:attribute name="xsi:type">dct:IMT</xsl:attribute>
 				<xsl:text>message</xsl:text>
 			</xsl:element>
-		</xsl:if> 
+		</xsl:if>
 		<xsl:if test="contains($allmediums, 'video')">
 			<xsl:element name="dc:format">
 				<xsl:attribute name="xsi:type">dct:IMT</xsl:attribute>
 				<xsl:text>video</xsl:text>
 			</xsl:element>
-		</xsl:if> 
+		</xsl:if>
 		<xsl:if test="contains($allmediums, 'audio')">
 			<xsl:element name="dc:format">
 				<xsl:attribute name="xsi:type">dct:IMT</xsl:attribute>
 				<xsl:text>audio</xsl:text>
 			</xsl:element>
-		</xsl:if> 
+		</xsl:if>
 		<xsl:if test="contains($allmediums, 'image')">
 			<xsl:element name="dc:format">
 				<xsl:attribute name="xsi:type">dct:IMT</xsl:attribute>
 				<xsl:text>image</xsl:text>
 			</xsl:element>
-		</xsl:if> 
+		</xsl:if>
 		<xsl:if test="contains($allmediums, 'model')">
 			<xsl:element name="dc:format">
 				<xsl:attribute name="xsi:type">dct:IMT</xsl:attribute>
 				<xsl:text>model</xsl:text>
 			</xsl:element>
-		</xsl:if> 
+		</xsl:if>
 		<xsl:if test="contains($allmediums, 'multipart')">
 			<xsl:element name="dc:format">
 				<xsl:attribute name="xsi:type">dct:IMT</xsl:attribute>
 				<xsl:text>multipart</xsl:text>
 			</xsl:element>
-		</xsl:if> 
+		</xsl:if>
 		<xsl:if test="contains($allmediums, 'text')">
 			<xsl:element name="dc:format">
 				<xsl:attribute name="xsi:type">dct:IMT</xsl:attribute>
 				<xsl:text>text</xsl:text>
 			</xsl:element>
-		</xsl:if> 
-		
-		
+		</xsl:if>
+
+
 <!--dc:format - type=dct:IMT using ADN primaryURL-->
 		<xsl:if test="string-length(d:technical/d:online/d:primaryURL) > 0">
 			<xsl:call-template name="mimetype"/>
@@ -536,7 +536,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 <!--since ADN technical.otherRequirements.otherRequirement is a compound repeating tag, use a template-->
 		<xsl:apply-templates select="d:technical/d:online/d:otherRequirements/d:otherRequirement"/>
 		<!--see template OTHER REQUIREMENT-->
-	
+
 <!--dc:type-->
 <!--use ADN educational.resourceTypes.resourceType and map to NSDL vocab; this excludes ADN terms from output-->
 <!--vocabulary mapping is necessary-->
@@ -548,7 +548,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				<xsl:value-of select="."/>
 			</xsl:for-each>
 		</xsl:variable>
-	
+
 <!--dc:type - plain-->
 <!--includes those ADN resource type terms that do not map to the DCMI type or NSDL_DC type-->
 <!--this includes the ADN terms of Calculation or conversion tool, Code, Software, Scientific visualization because they do not map to NSDL_DC-->
@@ -1210,14 +1210,14 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				<xsl:value-of select="d:technical/d:online/d:primaryURL"/>
 			</xsl:element>
 		</xsl:if>
-		
+
 <!--dc:identifier - dct:ISBN-->
 <!--ADN does not collect-->
 
 <!--dc:identifier - dct:ISSN-->
 <!--ADN does not collect-->
 
-<!--dc: source using ADN relations.relation.idEntry and relation.relations.urlEntry-->		
+<!--dc: source using ADN relations.relation.idEntry and relation.relations.urlEntry-->
 <!--dc:source definition is a reference to a resource form which the present resource is derived. The present resource may be derived from the source resource in whole or part. Include info about a resource that is related intellectually to the described resource but does not fit easily into a relation element-->
 <!--dc:source can be text or a URL; the intent here is to have it be a URL-->
 <!--ADN collects dc:source because it has the concept of 'Is based on' which is not part of the typical dc:relation concepts-->
@@ -1228,7 +1228,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 
 <!--ADN relations.relation.urlEntry can repeat, so use a template-->
 		<xsl:apply-templates select="d:relations/d:relation/d:urlEntry" mode="source"/>
-		
+
 <!--ADN relations.relation.idEntry can repeat, so use a template-->
 		<xsl:apply-templates select="d:relations/d:relation/d:idEntry" mode="source"/>
 
@@ -1246,14 +1246,14 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 <!--dc:language - dct:RFC3066-->
 <!--ADN does not collect-->
 
-	
+
 <!--dc:rights-->
 		<xsl:if test="string-length(d:rights/d:description) > 0">
 			<xsl:element name="dc:rights">
 				<xsl:value-of select="d:rights/d:description"/>
 			</xsl:element>
 		</xsl:if>
-	
+
 <!--dc:coverage and dc:spatial general information-->
 <!--only ADN large bounding box and associated placenames, not detailed geometries, are transformed-->
 <!--put ADN large bound box placenames in dc:coverage-->
@@ -1293,7 +1293,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 <!--dct:temporal xsi:type=dct:W3CDTF for timeAD-->
 		<xsl:apply-templates select="d:temporalCoverages/d:timeAndPeriod/d:timeInfo/d:timeAD" mode="dct:W3CDTF"/>
 		<!--see template TIMEAD mode DCT:W3CDTF-->
-		
+
 <!--dct:temporal - xsi:type=dct:Period for timeBC-->
 		<xsl:apply-templates select="d:temporalCoverages/d:timeAndPeriod/d:timeInfo/d:timeBC"/>
 		<!--see template TIMEBC-->
@@ -1313,7 +1313,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 <!--ADN relations.relation.urlEntry can repeat, so use a template-->
 		<xsl:apply-templates select="d:relations/d:relation/d:urlEntry" mode="relations"/>
 <!--see template URL ENTRY mode=RELATIONS-->
-		
+
 <!--ADN relations.relation.idEntry can repeat, so use a template-->
 		<xsl:apply-templates select="d:relations/d:relation/d:idEntry" mode="relations"/>
 <!--see template ID ENTRY mode=RELATIONS-->
@@ -1421,11 +1421,11 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				<xsl:text>General Public</xsl:text>
 			</xsl:element>
 		</xsl:if>
-		
+
 <!--dct:instructionalMethod-->
 		<xsl:apply-templates select="d:educational/d:audiences/d:audience/d:teachingMethods/d:teachingMethod"/>
 		<!--see template TEACHINGMETHOD-->
-		
+
 
 <!--ieee:interactivityType-->
 		<xsl:if test="string-length(d:educational/d:interactivityType) >0 and starts-with(d:educational/d:interactivityType, 'LOM:')">
@@ -1446,7 +1446,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				<xsl:value-of select="d:educational/d:audiences/d:audience/d:typicalUseTime"/>
 			</xsl:element>
 		</xsl:if>
-		
+
 <!--end nsdl:dc-->
 		</nsdl_dc:nsdl_dc>
 	</xsl:template>
@@ -1469,7 +1469,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 <!--14.	PLACE  and EVENT - SIMPLE writes dc:coverage and dct:temporal from ADN simple (general) place and event info-->
 <!--15. RELATIONS writes URL content (using existing or webservices) of dct:IsVersionOf, dct:hasVersion etc. from ID template.-->
 <!--16. REQUIREMENT writes dc:format from ADN technical requirements-->
-<!--17. SUBJECT mode=subjects writes dc:subject from ADN subjects--> 
+<!--17. SUBJECT mode=subjects writes dc:subject from ADN subjects-->
 <!--18. SUBJECT mode=keywords writes dc:subject from ADN keywords-->
 <!--19.	TEACHINGMETHOD writes dct:intructionalMethod-->
 <!--20.	TEMPORAL DESCRIPTION writes dct:temporal from ADN simple temporal coverages-->
@@ -1683,7 +1683,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 			</xsl:if>
 		</xsl:for-each>
 	</xsl:template>
-	
+
 <!--3. ID-ENTRY template; mode=RELATIONS-->
 <!--assumes the id numbers the resource is based on are also using ADN metadata records that are online resources that have URLs-->
 <!--need to verify that the id number is actually in the library and returns content; use the webservice-->
@@ -1691,9 +1691,9 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 	<xsl:template match="d:idEntry" mode="relations">
 		<xsl:if test="(starts-with(./@kind, 'DLESE:') or starts-with(./@kind, 'DC:')) and string-length(document(concat($DDSWSID, ./@entry))//d:technical/d:online/d:primaryURL)>0">
 			<xsl:apply-templates select="./@kind"/>
-		</xsl:if>		
+		</xsl:if>
 	</xsl:template>
-	
+
 <!--4. ID-ENTRY template; mode=SOURCE-->
 <!--determine if the kind attriubte has a value of 'Is based on'-->
 <!--assumes the id numbers the resource is based on are also using ADN metadata records that are online resources that have URLs-->
@@ -1703,7 +1703,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 			<xsl:element name="dc:source">
 				<xsl:value-of select="document(concat($DDSWSID, ./@entry))//d:technical/d:online/d:primaryURL"/>
 			</xsl:element>
-		</xsl:if>		
+		</xsl:if>
 	</xsl:template>
 
 <!--5. KIND template-->
@@ -1807,7 +1807,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				</xsl:choose>
 			</xsl:element>
 		</xsl:if>
-	</xsl:template>			
+	</xsl:template>
 
 <!--7. ORGANIZATION template mode=CREATOR-->
 	<xsl:template match="d:organization" mode="creator">
@@ -1823,7 +1823,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				</xsl:choose>
 			</xsl:element>
 		</xsl:if>
-	</xsl:template>			
+	</xsl:template>
 
 <!--8. ORGANIZATION template mode=PUBLISHER-->
 	<xsl:template match="d:organization" mode="publisher">
@@ -1839,7 +1839,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				</xsl:choose>
 			</xsl:element>
 		</xsl:if>
-	</xsl:template>			
+	</xsl:template>
 
 <!--9. OTHER REQUIREMENT template-->
 <!--putting the dc:format tag inside the when tag eliminates the possibility of writing a blank tag, but it does not eliminate writing the same tag multiple times if the same ADN data occurs multiple times-->
@@ -1847,22 +1847,22 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 		<xsl:choose>
 			<xsl:when test="string-length(./d:otherType)>0 and string-length(./d:minimumVersion)>0 and string-length(./d:maximumVersion)>0">
 				<xsl:element name="dc:format">
-					<xsl:value-of select="concat(./d:otherType, ' with the following min/max version information: ', ./d:minimumVersion, ', ', ./d:maximumVersion)"/>	
+					<xsl:value-of select="concat(./d:otherType, ' with the following min/max version information: ', ./d:minimumVersion, ', ', ./d:maximumVersion)"/>
 				</xsl:element>
 			</xsl:when>
 			<xsl:when test="string-length(./d:otherType) > 0 and string-length(./d:minimumVersion) > 0">
 				<xsl:element name="dc:format">
-					<xsl:value-of select="concat(./d:otherType, ' with the following minimum version information: ', ./d:minimumVersion)"/>	
+					<xsl:value-of select="concat(./d:otherType, ' with the following minimum version information: ', ./d:minimumVersion)"/>
 				</xsl:element>
 			</xsl:when>
 			<xsl:when test="string-length(./d:otherType) > 0 and string-length(./d:maximumVersion) > 0">
 				<xsl:element name="dc:format">
-					<xsl:value-of select="concat(./d:otherType, ' with the following maximum version information: ', ./d:maximumVersion)"/>	
+					<xsl:value-of select="concat(./d:otherType, ' with the following maximum version information: ', ./d:maximumVersion)"/>
 				</xsl:element>
 			</xsl:when>
 			<xsl:when test="string-length(./d:otherType) > 0">
 				<xsl:element name="dc:format">
-					<xsl:value-of select="./d:otherType"/>	
+					<xsl:value-of select="./d:otherType"/>
 				</xsl:element>
 			</xsl:when>
 		</xsl:choose>
@@ -1875,7 +1875,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				<xsl:value-of select="concat(d:nameFirst,' ',d:nameLast)"/>
 			</xsl:element>
 		</xsl:if>
-	</xsl:template>			
+	</xsl:template>
 
 <!--11. PERSON template mode=CREATOR-->
 	<xsl:template match="d:person" mode="creator">
@@ -1884,7 +1884,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				<xsl:value-of select="concat(d:nameFirst,' ',d:nameLast)"/>
 			</xsl:element>
 		</xsl:if>
-	</xsl:template>			
+	</xsl:template>
 
 <!--12. PERSON template mode=PUBLISHER-->
 	<xsl:template match="d:person" mode="publisher">
@@ -1893,7 +1893,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				<xsl:value-of select="concat(d:nameFirst,' ',d:nameLast)"/>
 			</xsl:element>
 		</xsl:if>
-	</xsl:template>	
+	</xsl:template>
 
 <!--13. PLACE  and EVENT template-->
 	<xsl:template match="d:place | d:event">
@@ -1917,7 +1917,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 			</xsl:element>
 		</xsl:if>
 	</xsl:template>
-	
+
 <!--15. RELATIONS template-->
 <!--webservice 1-1 has namespaces unlike 1-0 so account for them-->
 	<xsl:template name="relations">
@@ -1953,22 +1953,22 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 					<xsl:choose>
 						<xsl:when test="$current=$vocab and string-length($min)>0 and string-length($max)>0">
 							<xsl:element name="dc:format">
-								<xsl:value-of select="concat(substring-after(substring-after($current, 'DLESE:'), ':'), ' with the following min/max version information: ', $min, ', ', $max)"/>	
+								<xsl:value-of select="concat(substring-after(substring-after($current, 'DLESE:'), ':'), ' with the following min/max version information: ', $min, ', ', $max)"/>
 							</xsl:element>
 						</xsl:when>
 						<xsl:when test="$current = $vocab and string-length($min) > 0">
 							<xsl:element name="dc:format">
-								<xsl:value-of select="concat(substring-after(substring-after($current, 'DLESE:'), ':'), ' with the following minimum version information: ', $min)"/>	
+								<xsl:value-of select="concat(substring-after(substring-after($current, 'DLESE:'), ':'), ' with the following minimum version information: ', $min)"/>
 							</xsl:element>
 						</xsl:when>
 						<xsl:when test="$current = $vocab and string-length($max) > 0">
 							<xsl:element name="dc:format">
-								<xsl:value-of select="concat(substring-after(substring-after($current, 'DLESE:'), ':'), ' with the following maximum version information: ', $max)"/>	
+								<xsl:value-of select="concat(substring-after(substring-after($current, 'DLESE:'), ':'), ' with the following maximum version information: ', $max)"/>
 							</xsl:element>
 						</xsl:when>
 						<xsl:when test="$current = $vocab and string-length($min)=0 and string-length($max)=0">
 							<xsl:element name="dc:format">
-								<xsl:value-of select="substring-after(substring-after($current, 'DLESE:'), ':')"/>	
+								<xsl:value-of select="substring-after(substring-after($current, 'DLESE:'), ':')"/>
 							</xsl:element>
 						</xsl:when>
 					</xsl:choose>
@@ -1993,7 +1993,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 				</xsl:element>
 			</xsl:if>
 		</xsl:for-each>
-	</xsl:template>			
+	</xsl:template>
 
 <!--18. SUBJECT template mode=KEYWORDS-->
 	<xsl:template match="d:keyword" mode="keywords">
@@ -2003,7 +2003,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 			</xsl:element>
 		</xsl:if>
 
-	</xsl:template>			
+	</xsl:template>
 
 <!--19. TEACHINGMETHOD template-->
 <!--compares the ADN value against the controlled vocabulary and only transforms data if the content is in the vocabulary-->
@@ -2073,7 +2073,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 							</xsl:otherwise>
 						</xsl:choose>
 					</xsl:otherwise>
-				</xsl:choose>	
+				</xsl:choose>
 			</xsl:element>
 		</xsl:if>
 	</xsl:template>
@@ -2111,7 +2111,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 					<xsl:otherwise>
 						<xsl:value-of select="concat('start=', d:begin, ' BC;end=', d:end, ' BC')"/>
 					</xsl:otherwise>
-				</xsl:choose>	
+				</xsl:choose>
 			</xsl:element>
 		</xsl:if>
 	</xsl:template>
@@ -2129,7 +2129,7 @@ This XML tranformation, written in XSLT 1.0 and XPATH 1.0, are free software; yo
 					<xsl:otherwise>
 						<xsl:value-of select="concat('start=', d:begin, ' ', d:begin/@units, ';end=', d:end, ' ', d:end/@units)"/>
 					</xsl:otherwise>
-				</xsl:choose>	
+				</xsl:choose>
 			</xsl:element>
 		</xsl:if>
 	</xsl:template>
