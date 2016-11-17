@@ -508,6 +508,8 @@ public class XMLIndexer {
 
         org.apache.lucene.document.Document luceneDoc = documentWrapper.getDocument();
 
+        HashMap<String,Object>facetPathIndexedMap = new HashMap<>();
+
         // Loop through each field and add the contents of the xPath to the index for that field
         org.dom4j.Document configXmlDoc = xmlIndexerFieldsConfig.getFormatConfig(xmlFormatOrSchema);
         if (configXmlDoc != null) {
@@ -625,16 +627,23 @@ public class XMLIndexer {
                                                 prtln("Adding facet CategoryPath: " + categoryPath);
                                                 documentWrapper.addCategoryPath(categoryPath);
 
+
                                                 fieldName = "facet." + facetCategory;
                                                 String fieldContent = "";
                                                 for (int jj = 0; jj < pathLeaves.length; jj++){
                                                     fieldContent += pathLeaves[jj];
+                                                    String facetPath = fieldName + ":" + fieldContent;
+                                                    if(!facetPathIndexedMap.containsKey(facetPath)) {
+                                                        prtln("Indexing " + facetPath);
+                                                        facetPathIndexedMap.put(facetPath,null);
+                                                        // Add each facet path segment as stored field for retrieval in search results:
+                                                        luceneDoc.add(new Field(fieldName, fieldContent, Field.Store.YES, Field.Index.NOT_ANALYZED));
+                                                    }
+
                                                     if(jj < pathLeaves.length-1)
                                                         fieldContent += ":";
                                                 }
 
-                                                // Add the facet stored field for retrieval in search results:
-                                                luceneDoc.add(new Field(fieldName, fieldContent, Field.Store.YES, Field.Index.NOT_ANALYZED));
                                             }
 
 											/* for(int m = 0; m < SimpleUtils.categories2.length; m++){
