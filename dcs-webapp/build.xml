@@ -498,7 +498,7 @@
         </ant>
 
         <ant antfile="../dds-webapp/build.xml" inheritAll="false" target="deploy-jsp">
-	    <property name="tomcat.deploy.home" value="${tomcat.deploy.home}" />
+            <property name="tomcat.deploy.home" value="${tomcat.deploy.home}"/>
             <property name="deploy.context.name" value="${deploy.context.name}"/>
             <property name="deploy.web-files.dir" value="analytics"/>
 

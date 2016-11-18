@@ -492,7 +492,7 @@
 	<!-- ***************** Params used by MetadataVocab ****************** -->
 	<context-param>
 		<param-name>metadataGroupsLoaderFile</param-name>
-		<param-value>WEB-INF/data/NoMetadataUI.xml</param-value>
+		<param-value>@MUI_LOADER_FILE@</param-value>
 		<description>Location of the MetadataVocab loader (lists of groups lists)</description>
 	</context-param>
 	<context-param>
