@@ -508,7 +508,7 @@ public class XMLIndexer {
 
         org.apache.lucene.document.Document luceneDoc = documentWrapper.getDocument();
 
-        HashMap<String,Object>facetPathIndexedMap = new HashMap<>();
+        HashMap<String,Object>facetPathIndexedMap = new HashMap<String,Object>();
 
         // Loop through each field and add the contents of the xPath to the index for that field
         org.dom4j.Document configXmlDoc = xmlIndexerFieldsConfig.getFormatConfig(xmlFormatOrSchema);
