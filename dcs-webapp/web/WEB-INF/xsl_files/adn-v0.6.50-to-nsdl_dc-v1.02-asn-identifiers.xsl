@@ -314,6 +314,8 @@
             <!--vocabulary mapping is necessary-->
             <!--to prevent duplicate tags from appearing, make a variable and test it-->
 
+            <!-- resourceType rules simplified 11/19/16 - jlo -->
+
             <!--	variable for ADN educational.resourceTypes.resourceType-->
             <xsl:variable name="allresourceTypes">
                 <xsl:for-each select="d:educational/d:resourceTypes/d:resourceType">
@@ -332,12 +334,7 @@
                     <xsl:text>Calculation or Conversion Tool</xsl:text>
                 </xsl:element>
             </xsl:if>
-            <!--dc:type - plain: Code-->
-            <xsl:if test="contains($allresourceTypes, 'Code')">
-                <xsl:element name="dc:type">
-                    <xsl:text>Code</xsl:text>
-                </xsl:element>
-            </xsl:if>
+
             <!--dc:type - plain: Software-->
             <xsl:if test="contains($allresourceTypes, 'Software')">
                 <xsl:element name="dc:type">
@@ -353,15 +350,10 @@
             <!--dc:type - plain: Audio book-->
             <xsl:if test="contains($allresourceTypes, 'Audio book')">
                 <xsl:element name="dc:type">
-                    <xsl:text>Audio Book</xsl:text>
+                    <xsl:text>Voice Recording</xsl:text>
                 </xsl:element>
             </xsl:if>
-            <!--dc:type - plain: Book-->
-            <xsl:if test="contains($allresourceTypes, 'Book')">
-                <xsl:element name="dc:type">
-                    <xsl:text>Book</xsl:text>
-                </xsl:element>
-            </xsl:if>
+
             <!--dc:type - plain: Sound-->
             <xsl:if test="contains($allresourceTypes, 'Sound')">
                 <xsl:element name="dc:type">
@@ -385,13 +377,7 @@
                     <xsl:text>Dataset</xsl:text>
                 </xsl:element>
             </xsl:if>
-            <!--dc:type - dct:DCMI: Event-->
-            <xsl:if test="contains($allresourceTypes, 'Webcast')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">dct:DCMIType</xsl:attribute>
-                    <xsl:text>Event</xsl:text>
-                </xsl:element>
-            </xsl:if>
+
             <!--dc:type - dct:DCMI: Image-->
             <xsl:if test="contains($allresourceTypes, 'DLESE:Visual')">
                 <xsl:element name="dc:type">
@@ -399,16 +385,7 @@
                     <xsl:text>Image</xsl:text>
                 </xsl:element>
             </xsl:if>
-            <!--dc:type - dct:DCMI: InteractiveResource - Removed 10/2016-->
-            <!--
 
-                    <xsl:if test="contains($allresourceTypes, 'DLESE:Learning') or contains($allresourceTypes, 'Calculation')">
-                        <xsl:element name="dc:type">
-                            <xsl:attribute name="xsi:type">dct:DCMIType</xsl:attribute>
-                            <xsl:text>InteractiveResource</xsl:text>
-                        </xsl:element>
-                    </xsl:if>
-            -->
             <!--dc:type - dct:DCMI: Service-->
             <xsl:if test="contains($allresourceTypes, 'DLESE:Service')">
                 <xsl:element name="dc:type">
@@ -417,19 +394,13 @@
                 </xsl:element>
             </xsl:if>
             <!--dc:type - dct:DCMI: Software-->
-            <xsl:if test="contains($allresourceTypes, 'Code') or contains($allresourceTypes, 'Software')">
+            <xsl:if test="contains($allresourceTypes, 'Code')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">dct:DCMIType</xsl:attribute>
                     <xsl:text>Software</xsl:text>
                 </xsl:element>
             </xsl:if>
-            <!--dc:type - dct:DCMI: Sound-->
-            <xsl:if test="contains($allresourceTypes, 'Audio book') or contains($allresourceTypes, 'Lecture') or contains($allresourceTypes, 'Music') or contains($allresourceTypes, 'Oral') or contains($allresourceTypes, 'Radio') or contains($allresourceTypes, 'Sound')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">dct:DCMIType</xsl:attribute>
-                    <xsl:text>Sound</xsl:text>
-                </xsl:element>
-            </xsl:if>
+
             <!--dc:type - dct:DCMI: Text-->
             <xsl:if test="contains($allresourceTypes, 'DLESE:Text')">
                 <xsl:element name="dc:type">
@@ -453,7 +424,7 @@
             <!--if this becomes required then need to map terms that appear in dc:type - plain somehow)-->
 
             <!--dc:type - nsdl_dc: Audio/Visual:Voice Recording-->
-            <xsl:if test="contains($allresourceTypes, 'Audio book') or contains($allresourceTypes, 'Oral history')">
+            <xsl:if test="contains($allresourceTypes, 'Oral history')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Audio/Visual</xsl:text>
@@ -508,10 +479,6 @@
             <xsl:if test="contains($allresourceTypes, 'Lecture')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Lecture/Presentation</xsl:text>
                 </xsl:element>
             </xsl:if>
@@ -519,24 +486,11 @@
             <xsl:if test="contains($allresourceTypes, 'Music')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Audio/Visual</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Music</xsl:text>
                 </xsl:element>
             </xsl:if>
             <!--dc:type - nsdl_dc: Audio/Visual:Sound-->
-            <xsl:if test="contains($allresourceTypes, 'Sound')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Audio/Visual</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Sound</xsl:text>
-                </xsl:element>
-            </xsl:if>
+
             <!--dc:type - nsdl_dc: Assessment Material-->
             <xsl:if test="contains($allresourceTypes, 'Assessment')">
                 <xsl:element name="dc:type">
@@ -548,19 +502,11 @@
             <xsl:if test="contains($allresourceTypes, 'Case study')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Case Study</xsl:text>
                 </xsl:element>
             </xsl:if>
             <!--dc:type - nsdl_dc: Instructional Material:Lesson/Lesson Plan-->
             <xsl:if test="contains($allresourceTypes, 'Lesson')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Lesson/Lesson Plan</xsl:text>
@@ -570,19 +516,11 @@
             <xsl:if test="contains($allresourceTypes, 'activity')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Activity</xsl:text>
                 </xsl:element>
             </xsl:if>
             <!--dc:type - nsdl_dc: Instructional Material:Experiment/Lab Activity-->
             <xsl:if test="contains($allresourceTypes, 'Lab')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Experiment/Lab Activity</xsl:text>
@@ -592,19 +530,11 @@
             <xsl:if test="contains($allresourceTypes, 'Module or unit')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Unit of Instruction</xsl:text>
                 </xsl:element>
             </xsl:if>
             <!--dc:type - nsdl_dc: Instructional Material:Course-->
             <xsl:if test="contains($allresourceTypes, 'Course')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Course</xsl:text>
@@ -614,30 +544,27 @@
             <xsl:if test="contains($allresourceTypes, 'Curriculum')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Curriculum</xsl:text>
                 </xsl:element>
             </xsl:if>
             <!--dc:type - nsdl_dc: Instructional Material:Instructor Guide/Manual-->
-            <xsl:if test="contains($allresourceTypes, 'Field trip guide') or contains($allresourceTypes, 'Instructor guide')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
+            <xsl:if test="contains($allresourceTypes, 'Instructor guide')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Instructor Guide/Manual</xsl:text>
                 </xsl:element>
             </xsl:if>
-            <!--dc:type - nsdl_dc: Instructional Material:Problem Set-->
-            <xsl:if test="contains($allresourceTypes, 'Problem set')">
+
+            <xsl:if test="contains($allresourceTypes, 'Field trip guide')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
+                    <xsl:text>Field Trip</xsl:text>
                 </xsl:element>
+            </xsl:if>
+
+
+            <!--dc:type - nsdl_dc: Instructional Material:Problem Set-->
+            <xsl:if test="contains($allresourceTypes, 'Problem set')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Problem Set</xsl:text>
@@ -647,19 +574,11 @@
             <xsl:if test="contains($allresourceTypes, 'Project')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Project</xsl:text>
                 </xsl:element>
             </xsl:if>
             <!--dc:type - nsdl_dc: Instructional Material:Syllabus-->
             <xsl:if test="contains($allresourceTypes, 'Syllabus')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Syllabus</xsl:text>
@@ -669,19 +588,11 @@
             <xsl:if test="contains($allresourceTypes, 'Tutorial')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Tutorial</xsl:text>
                 </xsl:element>
             </xsl:if>
             <!--dc:type - nsdl_dc: Instructional Material:Field Trip-->
             <xsl:if test="contains($allresourceTypes, 'Virtual field trip')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Field Trip</xsl:text>
@@ -691,19 +602,11 @@
             <xsl:if test="contains($allresourceTypes, 'Physical object')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Reference Material</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Specimen</xsl:text>
                 </xsl:element>
             </xsl:if>
             <!--dc:type - nsdl_dc: Community:Ask-an-Expert-->
             <xsl:if test="contains($allresourceTypes, 'Ask an expert')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Community</xsl:text>
-                </xsl:element>
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Ask-an-Expert</xsl:text>
@@ -713,19 +616,11 @@
             <xsl:if test="contains($allresourceTypes, 'Forum') or contains($allresourceTypes, 'Message board')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Community</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Forum</xsl:text>
                 </xsl:element>
             </xsl:if>
             <!--dc:type - nsdl_dc: Community:Listserv-->
             <xsl:if test="contains($allresourceTypes, 'Listserv')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Community</xsl:text>
-                </xsl:element>
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Listserv</xsl:text>
@@ -741,16 +636,7 @@
                     <xsl:text>Search Engine</xsl:text>
                 </xsl:element>
             </xsl:if>
-            <!--dc:type - nsdl_dc: Tool:Software-->
-            <xsl:if test="contains($allresourceTypes, 'Software')">
-                <xsl:element name="dc:type">
-                    <xsl:text>Tool</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Software</xsl:text>
-                </xsl:element>
-            </xsl:if>
+
             <!--dc:type - nsdl_dc: Reference Material:Abstract-->
             <xsl:if test="contains($allresourceTypes, 'Abstract')">
                 <xsl:element name="dc:type">
@@ -764,10 +650,6 @@
             </xsl:if>
             <!--dc:type - nsdl_dc: Instructional Material:Textbook-->
             <xsl:if test="contains($allresourceTypes, 'Text:Book')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Instructional Material</xsl:text>
-                </xsl:element>
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Textbook</xsl:text>
@@ -795,10 +677,6 @@
             <xsl:if test="contains($allresourceTypes, 'Glossary') or contains($allresourceTypes, 'Index or bibliography')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Reference Material</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Glossary/Index</xsl:text>
                 </xsl:element>
             </xsl:if>
@@ -817,19 +695,12 @@
             <xsl:if test="contains($allresourceTypes, 'Periodical')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Reference Material</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Periodical</xsl:text>
                 </xsl:element>
             </xsl:if>
             <!--dc:type - nsdl_dc: Reference Material:Policy-->
             <xsl:if test="contains($allresourceTypes, 'Policy')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Reference Material</xsl:text>
-                </xsl:element>
+
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Policy</xsl:text>
@@ -839,19 +710,11 @@
             <xsl:if test="contains($allresourceTypes, 'Proceedings')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Reference Material</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Proceedings</xsl:text>
                 </xsl:element>
             </xsl:if>
             <!--dc:type - nsdl_dc: Reference Material:Proposal-->
             <xsl:if test="contains($allresourceTypes, 'Proposal')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Reference Material</xsl:text>
-                </xsl:element>
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Proposal</xsl:text>
@@ -872,19 +735,11 @@
             <xsl:if test="contains($allresourceTypes, 'Thesis')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Reference Material</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Thesis/Dissertation</xsl:text>
                 </xsl:element>
             </xsl:if>
             <!--dc:type - nsdl_dc: Audio/Visual:Illustration-->
             <xsl:if test="contains($allresourceTypes, 'illustration')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Audio/Visual</xsl:text>
-                </xsl:element>
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Illustration</xsl:text>
@@ -894,19 +749,11 @@
             <xsl:if test="contains($allresourceTypes, 'Map')">
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Audio/Visual</xsl:text>
-                </xsl:element>
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Map</xsl:text>
                 </xsl:element>
             </xsl:if>
             <!--dc:type - nsdl_dc: Audio/Visual:Photograph-->
             <xsl:if test="contains($allresourceTypes, 'Photograph')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Audio/Visual</xsl:text>
-                </xsl:element>
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Photograph</xsl:text>
@@ -954,10 +801,6 @@
             </xsl:if>
             <!--dc:type - nsdl_dc: Tool:Code-->
             <xsl:if test="contains($allresourceTypes, 'Code')">
-                <xsl:element name="dc:type">
-                    <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
-                    <xsl:text>Tool</xsl:text>
-                </xsl:element>
                 <xsl:element name="dc:type">
                     <xsl:attribute name="xsi:type">nsdl_dc:NSDLType</xsl:attribute>
                     <xsl:text>Code</xsl:text>
