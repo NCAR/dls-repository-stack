@@ -92,7 +92,6 @@
             <!-- Insert NSF AWARD INFO encoded in the additionalInfo field as dc:contributor -->
             <xsl:if test="contains(d:general/d:additionalInfo, 'NSF Award')">
                 <xsl:element name="dc:contributor">
-                    <xsl:attribute name="role">Funder</xsl:attribute>
                     National Science Foundation (<xsl:value-of select="d:general/d:additionalInfo"/>)
                 </xsl:element>
             </xsl:if>
