@@ -89,7 +89,13 @@
     <xsl:template match="d:itemRecord">
         <nsdl_dc:nsdl_dc schemaVersion="1.02.010" xmlns:nsdl_dc="http://ns.nsdl.org/nsdl_dc_v1.02/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ieee="http://www.ieee.org/xsd/LOMv1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ns.nsdl.org/nsdl_dc_v1.02/ http://ns.nsdl.org/schemas/nsdl_dc/nsdl_dc_v1.02.xsd">
 
-
+            <!-- Insert NSF AWARD INFO encoded in the additionalInfo field as dc:contributor -->
+            <xsl:if test="contains(d:general/d:additionalInfo, 'NSF Award')">
+                <xsl:element name="dc:contributor">
+                    <xsl:attribute name="role">Funder</xsl:attribute>
+                    National Science Foundation (<xsl:value-of select="d:general/d:additionalInfo"/>)
+                </xsl:element>
+            </xsl:if>
 
             <!--dc:title-->
             <xsl:if test="string-length(d:general/d:title) > 0">
