@@ -30,13 +30,12 @@ Apache Ant build tool
 The applications that make up the DLS Repository Stack were originally managed as separate projects that
 were combined and moved to GitHub. The original projects included:
 
-- dds-project - The DDS webapp was migrated from SourcForge CVS
-- dcs-project - The DCS webapp was migrated from SourceForge CVS
-- shared-source (formerly dlese-tools-project) - The Java code used in the DDS and DCS were originally in the dlese-tools-project on SourceForge CVS.
-The shared Java code now resides in the shared code section.
+- dds-webapp (previously named dds-project) - The DDS webapp was migrated from SourcForge CVS
+- dcs-webapp (previously named dcs-project) - The DCS webapp was migrated from SourceForge CVS
+- shared-source (previously named dlese-tools-project) - The Java code used in the DDS and DCS were originally in the dlese-tools-project on SourceForge CVS.
 - frameworks- project - The XML frameworks project contains XML schemas and related XSL transforms and were originally 
 in a separate project on SourceForge CVS. Most of these schemas (for example adn, dlese_anno) are hosed on the dlese.org domain.
-- harvest-repository-project - The Harvest Repository Manager webapp was originally in the DLS Subversion repository,
-then was moved to it's own repository on GitHub, and finally migrated here
+- rhm-webapp (previously named harvest-repository-project)- The Harvest Repository Manager webapp was originally in the DLS Subversion repository,
+then was moved to it's own repository on GitHub (https://github.com/NCAR/harvest-repository-project), and finally moved here
 - (joai-project) - This project dependency was removed when migrated to GitHub, and the dependent OAI-PMH JSP pages were moved into the DDS project
 and are used in both DDS and DCS webapps.
