@@ -16,4 +16,4 @@ Apache Tomcat
 
 ## History
 
-This project was migrated from UCAR Subversion DLS/harvest_manager_project_tree/trunk/harvest-manager-project/
+This project was migrated from https://github.com/NCAR/harvest-repository-project (and prior to that is was at UCAR Subversion DLS/harvest_manager_project_tree/trunk/harvest-manager-project/)
