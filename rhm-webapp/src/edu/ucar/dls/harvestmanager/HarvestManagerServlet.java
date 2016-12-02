@@ -232,8 +232,7 @@ public final class HarvestManagerServlet extends HttpServlet {
 		{
 			ingestorConfigsURI = new File(GeneralServletTools.getAbsolutePath(ingestorConfigsURI, context)).toURI().toString();
 		}
-		
-		
+
 		float maxErrorThreshold = Float.parseFloat(context.getInitParameter("maxErrorThreshold"));
 		int maxProcessorIssueReportingExamples = Integer.parseInt(context.getInitParameter("maxProcessorIssueReportingExamples"));
 		float minRecordCountDiscrepencyThreshold = Float.parseFloat(context.getInitParameter("minRecordCountDiscrepencyThreshold"));

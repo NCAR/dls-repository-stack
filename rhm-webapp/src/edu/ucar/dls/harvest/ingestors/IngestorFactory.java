@@ -58,6 +58,9 @@ public class IngestorFactory {
 			// Assume that the config file is just native format.xml
 			possibleConfig = new URL(new URL(
 					Config.INGESTOR_CONFIGS_URI), nativeFormat+".xml");
+
+            //System.out.println("Ingestor nativeFormat:" + nativeFormat + " INGESTOR_CONFIGS_URI:" + possibleConfig);
+
 			JAXBContext jaxbContext = JAXBContext.newInstance(
 					JAXB_REGISTERED_CLASSES);
 			
