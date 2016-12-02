@@ -85,7 +85,8 @@
 		<XSLTransform>
    		 	<uri>http://ns.nsdl.org/xsl_harvest_ingest_2_0/lar-v1.00-to-nsdl_dc-v1.02.020.xsl</uri>
    		</XSLTransform>
-      	
+
+		<!-- Include common_nsdl_dc_normalization.xml rules -->
  		&common_nsdl_dc_normalization;
    	</target-format-processors>
 </Ingestor>
