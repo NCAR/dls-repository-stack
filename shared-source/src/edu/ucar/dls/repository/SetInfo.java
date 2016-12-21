@@ -59,7 +59,7 @@ public class SetInfo implements Serializable, Comparable {
 		numFiles = -1;
 		numDeleted = -1;
 
-        System.out.println("SetInfo constructor 1: " + this.toString());
+        //System.out.println("SetInfo constructor 1: " + this.toString());
 	}
 
 
@@ -95,7 +95,7 @@ public class SetInfo implements Serializable, Comparable {
 			dirInfos.add(new DirInfo(dir, format));
 		}
 
-        System.out.println("SetInfo constructor 2: " + this.toString());
+        //System.out.println("SetInfo constructor 2: " + this.toString());
 	}
 
 
@@ -128,7 +128,7 @@ public class SetInfo implements Serializable, Comparable {
         if(existingAttributes != null)
             attributes = existingAttributes;
 
-        System.out.println("SetInfo constructor 3: " + this.toString());
+        //System.out.println("SetInfo constructor 3: " + this.toString());
     }
 
 
