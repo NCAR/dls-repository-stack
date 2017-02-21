@@ -160,5 +160,44 @@
             </xpaths>
         </customField>
 
+
+        <!-- Field that contains only the DLESE subjects (use starts-with() and string-length() because compare() and matches() not supported by the XML parser) -->
+        <customField facetCategory="DLESESubject">
+            <xpaths>
+                <xpath>/nsdl_dc/subject[(starts-with(.,'Agricultural science') and string-length(.) = 20)
+                    or (starts-with(.,'Atmospheric science') and string-length(.) = 19)
+                    or (starts-with(.,'Biology') and string-length(.) = 7)
+                    or (starts-with(.,'Chemistry') and string-length(.) = 9)
+                    or (starts-with(.,'Climatology') and string-length(.) = 11)
+                    or (starts-with(.,'Cryology') and string-length(.) = 8)
+                    or (starts-with(.,'Ecology') and string-length(.) = 7)
+                    or (starts-with(.,'Educational theory and practice') and string-length(.) = 31)
+                    or (starts-with(.,'Environmental science') and string-length(.) = 21)
+                    or (starts-with(.,'Forestry') and string-length(.) = 8)
+                    or (starts-with(.,'Human geography') and string-length(.) = 15)
+                    or (starts-with(.,'Physical geography') and string-length(.) = 18)
+                    or (starts-with(.,'Geochemistry') and string-length(.) = 12)
+                    or (starts-with(.,'Geologic time') and string-length(.) = 13)
+                    or (starts-with(.,'Geology') and string-length(.) = 7)
+                    or (starts-with(.,'Geophysics') and string-length(.) = 10)
+                    or (starts-with(.,'Mineralogy or petrology') and string-length(.) = 23)
+                    or (starts-with(.,'Paleontology') and string-length(.) = 12)
+                    or (starts-with(.,'Structural geology') and string-length(.) = 18)
+                    or (starts-with(.,'History and philosophy of science') and string-length(.) = 33)
+                    or (starts-with(.,'Hydrology') and string-length(.) = 9)
+                    or (starts-with(.,'Mathematics') and string-length(.) = 11)
+                    or (starts-with(.,'Natural hazards') and string-length(.) = 15)
+                    or (starts-with(.,'Biological oceanography') and string-length(.) = 23)
+                    or (starts-with(.,'Chemical oceanography') and string-length(.) = 21)
+                    or (starts-with(.,'Physical oceanography') and string-length(.) = 21)
+                    or (starts-with(.,'Physics') and string-length(.) = 7)
+                    or (starts-with(.,'Policy issues') and string-length(.) = 13)
+                    or (starts-with(.,'Soil science') and string-length(.) = 12)
+                    or (starts-with(.,'Space science') and string-length(.) = 13)
+                    or (starts-with(.,'Technology') and string-length(.) = 10)]
+                </xpath>
+            </xpaths>
+        </customField>
+
     </customFields>
 </XMLIndexerFieldsConfig>
