@@ -42,8 +42,7 @@
 	
 	<a name="license"></a>
 	<h2>License</h2>
-	<p>DDS is released under the Apache 2 license.
-	Read the <a href="license/LICENSE.txt">license</a> and <a href="license/COPYRIGHT.txt">copyright</a> notices.</p>
+	<p>DDS is released under the <a href="license/LICENSE.txt">Apache License v2</a>.</p>
 	
 	<p>This product includes software developed by the Apache Software Foundation (http://www.apache.org/). 
 	This product includes software developed by the Alexandria Digital Library, University of California at Santa Barbara, and its contributors.

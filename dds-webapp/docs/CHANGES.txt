@@ -16,6 +16,7 @@ Changes in 3.7.0-rc2
 
 -Updated license from Education Community License 1.0 to Apache 2
 -Updated copyright statement
+-Implemented facet histogram display in the JavaScript client
 
 
 Changes in 3.7.0-rc1

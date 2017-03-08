@@ -4,12 +4,18 @@
  Requires:
  dds_search.html - The HTML portion of the implementaion
  jquery-1.x.js - JQuery JavaScript framework library
+ defiant.min.js - Defiant js library for JSON XPath and XSL expressions http://www.defiantjs.com
+ e.g.    var nameArray = JSON.search(jsonObj, '//car[color="yellow"]/name');
+ var htm = Defiant.render('books_xsl_template', jsonData);
+ jquery.tablesorter.js - Functionality for sorting tables
+
+ For jQuery BBQ: Back Button & Query Library (leverages the HTML5 hashchange event to allow bookmarkable #hash):
+ http://benalman.com/projects/jquery-bbq-plugin/
 
  Digital Learning Sciences (DLS)
  University Corporation for Atmospheric Research (UCAR)
  P.O. Box 3000
  Boulder, Colorado 80307 USA
- http://dlsciences.org/
 
  This code may be copied and modified, free and with no warranty.
  */
@@ -17,21 +23,32 @@
 var json = null;
 var numResults = 10;
 
-var ajaxTimeout = 30000; // 30 second timeout to detect API outages and errors and display a message to the user.
+var ajaxTimeout = 30000; // 30 sec timeout to detect API outages and errors and display a message to the user.
+
+// Facet params: The hv param must indicate a facet category ('ASNStandardID') or category:path ('ASNStandardID:D2454348:S2467516') to render.
+// There should be a corresponding entry in the facetConfigurationSettings[min|full].js settings file for the given category or category:path
+var params_hv = getParametersByName("hv"); // Array of hv params for each histogram
 
 var param_action = getParameterByName("action");
 var param_q = getParameterByName("q");
 var param_s = getParameterByName("s");
 var param_sl = getParameterByName("sl");
 var param_field = getParameterByName("field");
+var param_category = getParameterByName("category");
+var param_requestedPath = getParameterByName("requestedPath");
+var param_filter = getParameterByName("filter");
 
 var smartLinkQueries = {};
-var smartLinkBooserTerms = {};
+var smartLinkBoosterTerms = {};
 var smartLinkLabels = {};
 var smartLinkNum = 0;
 
-if(!baseUrl)
-    var baseUrl = '@DDS_SERVER_BASE_URL@/services/ddsws1-1';
+var storedContentFacetArgs = '';
+
+// If there is now path to the search client defined, use default (self):
+if(!pathToSearchClient)
+    var pathToSearchClient = "";
+
 
 $( document ).ready(function() {
     onPageLoad();
@@ -42,13 +59,17 @@ var DDSSearch = {
     defineSmartLink: function(sl_httpParm, sl_label, sl_query, sl_boost_terms) {
         if(sl_httpParm && sl_label && sl_query){
             smartLinkQueries[sl_httpParm] = sl_query;
-            smartLinkBooserTerms[sl_httpParm] = sl_boost_terms;
+            smartLinkBoosterTerms[sl_httpParm] = sl_boost_terms;
             smartLinkLabels[sl_httpParm] = sl_label;
         }
     }
-}
+};
 
 function onPageLoad () {
+    // Make the histogram links that are defined in the facetConfigurationSettings JSON (usually included in a separate .js file):
+    if(typeof facetConfigurationSettings != 'undefined')
+        mkHistogramLinks();
+
     // Load smart links that are defined on <a> elements:
     $('.smartLink').each(function(i, elm) {
         var smParam = 'sl' + (++smartLinkNum);
@@ -59,25 +80,30 @@ function onPageLoad () {
         if(label.length == 0)
             label = ' ';
         var query = elm.getAttribute('query');
-        var boostTerms = elm.getAttribute('boost')
+        var boostTerms = elm.getAttribute('boost');
         if(boostTerms)
             boostTerms = boostTerms.split(",");
         //log('define smartLink: httpParam:' + smParam + ' label:' + label + ' query:' + query + ' boostTerms:' + boostTerms);
-        elm.setAttribute('href','?sl='+smParam);
+        elm.setAttribute('href', pathToSearchClient + '?action=Search&sl='+smParam);
         DDSSearch.defineSmartLink(smParam,label,query,boostTerms);
     });
 
-    // Check if this is a Search action:
-    if(!param_action && (param_q != null || param_sl))
-        param_action = 'Search';
-
-    if(typeof(param_action) != 'undefined') {
+    if(param_action) {
         doServiceRequest(param_action);
+    }
+    else {
+        if( $('#searchTips') ) {
+            $('#searchTips').show();
+            $('.searchTipsLink').hide();
+        }
+        else
+            $('#searchResults').html('<p><hr/>Enter a search above or select a category to browse</p>');
+        $('#footerView').show();
     }
 
     // Set browser focus to the search box:
-    if( $('#searchFormQuery') )
-        $('#searchFormQuery').focus();
+    //if( $('#searchFormQuery') )
+    //  $('#searchFormQuery').focus();
 
     if(typeof(showDeveloperInfo) != 'undefined' && showDeveloperInfo && $('showDeveloperInfo'))
         $('#showDeveloperInfo').show();
@@ -93,21 +119,56 @@ function doServiceRequest(action) {
         var userQuery = getUserQuery();
         var s = param_s;
         if(!s) s = 0;
+        var n = numResults;
 
         //var isSmartLinkQuery = false;
         if(param_sl && typeof(smartLinkQueries) != 'undefined') {
             //isSmartLinkQuery = true;
             var smartLinkQuery = '(' + smartLinkQueries[param_sl] + ')';
-            var boosterTerms = smartLinkBooserTerms[param_sl];
+            var boosterTerms = smartLinkBoosterTerms[param_sl];
             if(boosterTerms) {
                 smartLinkQuery += ' AND ' + makeBooserQueryClause(boosterTerms);
             }
         }
 
+        // Faceting view and filters:
+        var facetParams = storedContentFacetArgs;
+        if(params_hv.length > 0 || param_category){
+            facetParams += '&facet=on&facet.maxResults=1000&facet.maxLabels=1000';
+
+            // Hist View can be specified as just a category or category:path
+            for(var i = 0; i < params_hv.length; i++) {
+                var categoryAndPath = params_hv[i].split(':');
+                var theCategory = categoryAndPath[0];
+                facetParams += '&facet.category=' + encodeURIComponent(theCategory);
+                var path = null;
+                if(categoryAndPath.length >1){
+                    path = '';
+                    for(var j = 1; j < categoryAndPath.length; j++) {
+                        if (j > 1)
+                            path += ":";
+                        path += categoryAndPath[j];
+                    }
+                    facetParams += '&f.' + encodeURIComponent(theCategory) + '.path=' + encodeURIComponent(path);
+                }
+            }
+
+            if(param_category)
+                facetParams += '&f.drilldown.category='+encodeURIComponent(param_category);
+            if(param_filter)
+                facetParams += '&f.drilldown.' + encodeURIComponent(param_category) + '.path=' + encodeURIComponent(param_filter);
+
+            var facetQuery = "*:*";
+        }
+
         userQuery = userQuery.replace(/\+/g, ' ').replace(/\?/g, ' ').trim();
-        //log('userQuery:"' + userQuery + '" length:' + userQuery.length + 'isSmartLink' + (!smartLinkQuery));
-        if(userQuery.length == 0 && !smartLinkQuery) {
-            $('#searchResults').html('<p>You did not define a search. Please enter one or more keywords in the text box above. </p>');
+        if(userQuery.length == 0 && !smartLinkQuery && !facetQuery) {
+            if( $('#searchTips') ) {
+                $('#searchTips').show();
+                $('.searchTipsLink').hide();
+            }
+            else
+                $('#searchResults').html('<p>You did not define a search. Please enter one or more keywords in the text box above. </p>');
             return;
         }
 
@@ -121,6 +182,13 @@ function doServiceRequest(action) {
                 query = '('+userQuery+') AND ('+smartLinkQuery+')';
             else
                 query = '('+smartLinkQuery+')';
+        }
+
+        if(facetQuery) {
+            if(userQuery.length > 0)
+                query = '('+userQuery+') AND ('+facetQuery+')';
+            else
+                query = '('+facetQuery+')';
         }
 
         if(typeof(collections) != 'undefined')
@@ -150,7 +218,7 @@ function doServiceRequest(action) {
         var storedContentArgs = '&storedContent=title&storedContent=description&storedContent=url';
 
         // Construct the request to the service:
-        request = baseUrl + '?verb=Search&client=js_client&output=json'+sort+'&transform=localize&s='+s+'&n='+numResults+storedContentArgs+'&q='+encodeURIComponent(query);
+        request = baseUrl + '?verb=Search&client=js_client&output=json'+sort+'&transform=localize&s='+s+'&n='+n+storedContentArgs+facetParams+'&q='+encodeURIComponent(query);
     }
     else if(action.startsWith('List') || action == 'ServiceInfo') {
 
@@ -170,7 +238,6 @@ function doServiceRequest(action) {
     }
 
     $('#loadMsg').show();
-
 
     // Get the search results as JSON, which calls renderResponse() on return
     fetchJson(request);
@@ -203,8 +270,9 @@ function renderResponse(json) {
                 else
                     theHTML = 'No information is available. <!-- Error: The service may be down or the request may be invalid. -->';
 
-                $('#searchResults').html('<p>'+theHTML+'</p>');
+                $('#searchResults').html('<p class="noMatches">'+theHTML+'</p>');
                 $('#loadMsg').hide();
+                $('#footerView').show();
                 return;
             }
             // Handle display of Search results, if one or more records:
@@ -222,35 +290,56 @@ function renderResponse(json) {
                 var pager = '';
                 var qArgs = '';
                 if(param_q)
-                    qArgs += 'q='+encodeURIComponent(param_q);
+                    qArgs += '&q='+encodeURIComponent(param_q);
                 if(param_sl)
-                    qArgs += 'sl='+encodeURIComponent(param_sl);
+                    qArgs += '&sl='+encodeURIComponent(param_sl);
+
+                var hvLinkArgs = qArgs;
+
+                if(params_hv){
+                    for(var j = 0; j < params_hv.length; j++)
+                        qArgs += '&hv='+encodeURIComponent(params_hv[j]);
+                }
+
+                if(param_category) {
+                    qArgs += '&category=' + encodeURIComponent(param_category);
+                    smartLinkLabelDisp = mkFacetSearchHeading(param_category,param_filter);
+                }
+                if(param_requestedPath)
+                    qArgs += '&requestedPath='+encodeURIComponent(param_requestedPath);
+                if(param_filter)
+                    qArgs += '&filter='+encodeURIComponent(param_filter);
+
+
                 if(offset > 0)
-                    pager += '<a href="?'+qArgs+'&s='+(offset-numResults)+'">&#171; Prev</a> - ';
+                    pager += '<a href="?action=Search'+qArgs+'&s='+(offset-numResults)+'"><span class="fa-icon-size"><i class="fa fa-arrow-left"></i></span> Prev</a> - ';
                 if(param_q)
                     pager += 'Results ';
                 pager += (offset+1) + ' - ' + (offset+numReturned) + ' out of ' + formatNumber(totalNumResults);
                 if( offset+numResults < totalNumResults)
-                    pager += ' - <a href="?'+qArgs+'&s='+(offset+numResults)+'">Next &#187;</a>';
+                    pager += ' - <a href="?action=Search'+qArgs+'&s='+(offset+numResults)+'">Next<span class="fa-icon-size"> <i class="fa fa-arrow-right"></i></span></a>';
                 pager = '<div class="pager">' + pager + '</div>';
 
                 searchHTML += smartLinkLabelDisp + pager;
 
                 var i = 0;
-                // Handle multiple results:
-                if( isArray(json.DDSWebService.Search.results.record) ) {
-                    $.each(json.DDSWebService.Search.results.record, function(ii,record) {
-                        searchHTML = searchHTML + getRecordDisplayHtml(record,i++);
-                    });
-                }
-                // Handle single result:
-                else {
-                    searchHTML = searchHTML + getRecordDisplayHtml(json.DDSWebService.Search.results.record,i++);
-                }
+                // Handle one or multiple results (convert to array):
+                $.each( asArray(json.DDSWebService.Search.results.record), function(ii,record) {
+                    searchHTML = searchHTML + mkRecordDisplayHtml(record,i++);
+                });
 
                 searchHTML += pager;
-                $('#searchResults').html('<p>'+searchHTML+'</p>');
+
+                // Render and insert the histogram views:
+                var isHistogram = renderHistogram(json,hvLinkArgs);
+
+                if(isHistogram)
+                    $('#searchResults').html('');
+                else
+                    $('#searchResults').html('<p>'+searchHTML+'</p>');
+
                 $('#loadMsg').hide();
+                $('#footerView').show();
                 return;
             }
             /*
@@ -259,9 +348,10 @@ function renderResponse(json) {
              */
             else if(json.DDSWebService) {
                 // The JsonViewerElement class is implemented in the prototype.js version only...
-                $('#serviceResponse').html('<pre>' + JSONPrettyPrint(json.DDSWebService) + '</pre>');
+                $('#serviceResponse').html('<p style="padding-left:15px">Use the prototype.js version of this client to see the full JSON view.</p>');
                 $('#serviceResponse').show();
                 $('#loadMsg').hide();
+                $('#footerView').show();
                 return;
             }
         }
@@ -272,6 +362,253 @@ function renderResponse(json) {
         //throw e;
     }
     $('#loadMsg').hide();
+    $('#footerView').show();
+}
+
+
+// Create and insert links for users to view the histograms (if configured)
+function mkHistogramLinks(){
+
+    var linkHTML = '';
+    var categoryHeadObj = JSON.search(facetConfigurationSettings, "//categories/category/head");
+
+    // Loop through each label in the config JSON - First pass to calculate the highest categoryCount for calculation:
+    $.each(categoryHeadObj, function (i, headerObj) {
+        //log("Category Name: " + headerObj.name + " i=" + i + " length:" + categoryHeadObj.length);
+        if(i == 0)
+            storedContentFacetArgs += '&storedContent.mode=multiRecord';
+
+        storedContentFacetArgs += '&storedContent=facet.' + headerObj.name;
+
+        var label = null;
+        label = headerObj.label;
+        if(!label)
+            label = headerObj.name;
+
+        linkHTML += '<a class="histLnk" href="'+pathToSearchClient+'?action=Search&hv=' + headerObj.name + '">' + label + '</a>';
+        if(i < categoryHeadObj.length-1)
+            linkHTML += " | ";
+    });
+    $('.histLinks').html(linkHTML);
+}
+
+function renderHistogram(json,hvLinkArgs) {
+    var histogramHTML = '';
+    if(json.DDSWebService.Search.facetResults) {
+
+        var categoryLabel = '';
+        var hasSubtitles = false;
+
+        // Loop through each facet category returned by the API:
+        $.each( asArray(json.DDSWebService.Search.facetResults.facetResult), function (j, facetResult) {
+
+            var category = facetResult.category;
+            var requestedPath = facetResult.requestedPath;
+            var categoryCount = facetResult.count;
+
+            // If we have requested a category sub-path (e.g. 'hv=ASNStandardID:D2454348:S2467516'), grab the config for that:
+            var categoryJsonObj = null;
+            if(requestedPath) {
+                var categoryAndPath = category + ":" + requestedPath;
+                categoryJsonObj = JSON.search(facetConfigurationSettings, "//categories/category[head/name='" + categoryAndPath + "']");
+            }
+            // If we don't have a category sub-path (e.g. just 'hv=ASNStandardID'), grab the config for the category top level (default):
+            if(!categoryJsonObj || categoryJsonObj.length == 0)
+                categoryJsonObj = JSON.search(facetConfigurationSettings, "//categories/category[head/name='"+category+"']");
+
+            categoryLabel = category;
+            var altCatLabel = JSON.search(categoryJsonObj, "//head/label");
+            if(altCatLabel.length > 0)
+                categoryLabel = altCatLabel;
+
+            var orderByLabels = false;
+            var orderBy = JSON.search(categoryJsonObj, "//head/orderBy");
+            if(orderBy == "labels")
+                orderByLabels = true;
+
+            histogramHTML += '<table id="hist-table" class="tablesorter" cellspacing="0" cellpadding="0">';
+            histogramHTML += '<thead>'+mkHistHeadRow(categoryLabel,false)+'</thead>';
+            histogramHTML += '<tbody>'
+
+            // If no results:
+            if(categoryCount == '0') {
+                histogramHTML += '<tr>';
+                histogramHTML += '<td class="hist-left hist-label">No resources for this category</td>';
+                histogramHTML += '<td class="hist-right hist-bar"><nobr><span style="font-size: 5px;">&nbsp;</span> <img src="transparent.gif" border="0" height="7" width="' + 0.2 + '%" alt="No results"/></a> 0</nobr></td>';
+                histogramHTML += '</tr>';
+            }
+            // Display facets in the order they are configured:
+            else if(orderByLabels) {
+
+                categoryCount = 0;
+
+                // Loop through each label in the config JSON - First pass to calculate the highest categoryCount for calculation:
+                $.each(JSON.search(categoryJsonObj,"//labels"), function (ii, labelObj) {
+                    var facetLeaf = labelObj.facet;
+                    var isSubtitle = labelObj.isSubtitle;
+                    if(isSubtitle) {
+                        hasSubtitles = true;
+                    } else {
+                        //var resultObj = JSON.search(facetResult, "//result[contains(path,'" + facetLeaf + "')]");
+
+                        $.each(JSON.search(facetResult,"//result"), function (ii, resultObj){
+                            var path = JSON.search(resultObj, "//path") + "";
+                            var count = parseInt(JSON.search(resultObj, "//count").toString().replace(',',''));
+                            if (path.endsWith(facetLeaf)) {
+                                if (count > categoryCount)
+                                    categoryCount = count;
+                            }
+                        });
+                    }
+                });
+
+                // Loop through each label in the config JSON - Second pass to generate this histogram rows for defined facets:
+                $.each(JSON.search(categoryJsonObj,"//labels"), function (order, labelObj) {
+                    var facetLeaf = labelObj.facet;
+                    var label = labelObj.label;
+                    if(label == undefined)
+                        label = facetLeaf;
+                    var isSubtitle = labelObj.isSubtitle;
+                    if(isSubtitle) {
+                        hasSubtitles = true;
+                        histogramHTML += mkHistHeadRow(label,isSubtitle);
+                    }
+                    else {
+
+                        //var resultObj = JSON.search(facetResult, "//result[contains(path,'" + facetLeaf + "')]");
+                        var k = 0;
+                        $.each(JSON.search(facetResult,"//result"), function (m, resultObj){
+                            var path = JSON.search(resultObj, "//path") + "";
+                            var count = JSON.search(resultObj, "//count");
+
+                            // Set order number to apply the order in the config:
+                            if (path.endsWith(facetLeaf))
+                                histogramHTML += mkHistRow(category,requestedPath,path,label,count,categoryCount,hvLinkArgs,order);
+                        });
+                    }
+                });
+            }
+            // Display facets in the order they were returned by API, and substitute labels if indicated:
+            else {
+                categoryCount = 0;
+
+                // First pass to calculate the highest categoryCount for calculation:
+                $.each(asArray(facetResult.result), function (ii, facet) {
+                    //var count = parseInt(facet.count);
+                    var count = parseInt(facet.count.toString().replace(',',''));
+                    var path = facet.path;
+                    var label = path;
+
+                    var paths = path.split(":");
+                    var leaf = paths[paths.length - 1];
+                    var labelObj = JSON.search(categoryJsonObj, "//labels[facet='"+leaf+"']");
+
+                    var omitFromViews = JSON.search(labelObj, "//omitFromViews") == "true";
+                    if(!omitFromViews) {
+                        if (count > categoryCount)
+                            categoryCount = count;
+                    }
+                });
+
+                // Second pass - Generate the histogram:
+                $.each(asArray(facetResult.result), function (ii, facet) {
+                    var count = facet.count;
+                    var path = facet.path;
+                    var label = path;
+
+                    var paths = path.split(":");
+                    var leaf = paths[paths.length - 1];
+                    var labelObj = JSON.search(categoryJsonObj, "//labels[facet='"+leaf+"']");
+
+                    var omitFromViews = JSON.search(labelObj, "//omitFromViews") == "true";
+                    if(!omitFromViews) {
+                        var altLabel = JSON.search(labelObj, "//label");
+                        if (altLabel.length > 0)
+                            label = altLabel;
+
+                        // Set order number to 0 for all for lexical sorting by label
+                        histogramHTML += mkHistRow(category,requestedPath,path,label,count,categoryCount,hvLinkArgs,0);
+                    }
+                });
+            }
+
+            histogramHTML += '</tbody></table>';
+        });
+
+        $('#histogramView').html('<h2 class="hist">'+categoryLabel+'</h2><hr/>'+histogramHTML);
+
+        // Using jquery.tablesorter.js library to sort table:
+        if(!hasSubtitles) {
+            // If there are no subtitles, apply default sorting and enable sorting in the UI:
+            $("#hist-table").tablesorter(
+                {
+                    // sort on the first column and third column, order asc
+                    sortList: [[0, 0], [1, 0]]
+                }
+            );
+        }
+        return true;
+    }
+    return false;
+}
+
+function mkHistHeadRow(label,isSubtitle){
+    var hRight = 'Number of resources';
+    if(isSubtitle){
+        hRight = '';
+    } else {
+        label = 'Category';
+    }
+    return '<tr><th class="hist-left"><div><nobr>'+label+'</nobr></div></th><th class="hist-right">'+hRight+'</th></tr>';
+}
+
+function mkHistRow(category,requestedPath,path,label,count,categoryCount,hvLinkArgs,orderNum){
+    var categoryAndPath = "&category=" + encodeURIComponent(category);
+    count = count.toString().replace(',',''); // Remove commas to allow sorting and proper calculation
+    if(requestedPath)
+        categoryAndPath += "&requestedPath=" + encodeURIComponent(requestedPath);
+    var percentage = count / categoryCount.toString().replace(',','') * 100;
+    var link = '?action=Search' + hvLinkArgs + categoryAndPath +'&filter='+encodeURIComponent(path);
+    var s = '';
+    s += '<tr>';
+    s += '<td class="hist-left hist-label"><span class="order">'+orderNum+'</span> <a href="'+link+'" title="Search by ' + label + '">' + label + '</a></td>';
+    s += '<td class="hist-right hist-bar"><nobr><span style="font-size: 5px;">&nbsp;</span> <a href="'+link+'" title="Search by ' + label + '"><img src="transparent.gif" border="0" height="7" width="' + percentage + '%" alt="Search by ' + label + '"/></a> ' + count + '</nobr></td>';
+    s += '</tr>';
+    return s;
+}
+
+function mkFacetSearchHeading(param_category,param_filter){
+    if(!param_category && !param_filter)
+        return '';
+
+    var categoryJsonObj = null;
+    if(param_requestedPath){
+        var categoryAndPath = param_category + ":" + param_requestedPath;
+        categoryJsonObj = JSON.search(facetConfigurationSettings, "//categories/category[head/name='"+categoryAndPath+"']");
+    }
+    if(!categoryJsonObj || categoryJsonObj.length == 0)
+        categoryJsonObj = JSON.search(facetConfigurationSettings, "//categories/category[head/name='"+param_category+"']");
+
+    var categoryLabel = param_category;
+    var altCatLabel = JSON.search(categoryJsonObj, "//head/label");
+    if(altCatLabel.length > 0)
+        categoryLabel = altCatLabel;
+
+    var searchHeading = categoryLabel;
+    if(param_filter){
+        var facetLabel = param_filter;
+
+        var paths = param_filter.split(":");
+        var leaf = paths[paths.length-1];
+
+        var altLabel = JSON.search(categoryJsonObj, "//labels[facet='"+leaf+"']/label");
+        if(altLabel.length > 0)
+            facetLabel = altLabel;
+
+        searchHeading += " &gt; " + facetLabel;
+    }
+
+    return '<div class="smartLinkLabel">'+searchHeading+'</div>';
 }
 
 function isArray(myVar){
@@ -280,6 +617,15 @@ function isArray(myVar){
 
 function isString(myVar){
     return (myVar && myVar.constructor === String);
+}
+
+// Convert a single json object or array into an array:
+function asArray(myVar) {
+    if(isArray(myVar))
+        return myVar;
+    if(myVar)
+        return [myVar];
+    return [];
 }
 
 function containsString(str1, str2, ignoreCase) {
@@ -335,7 +681,12 @@ function encodeUtf8( s ) {
     }
 }
 
-function getRecordDisplayHtml(recordJson,i) {
+function mkRecordDisplayHtml(recordJson, i) {
+
+    // If we are generating a histogram view, do not render the search results displays
+    if(params_hv.length > 0)
+        return;
+
     var html = '';
     try {
         var title = decodeUtf8( getRecordTitle(recordJson) );
@@ -344,7 +695,14 @@ function getRecordDisplayHtml(recordJson,i) {
         var collectionDesc = stripScriptsAndTags(recordJson.head.collection.content);
         var recId = stripScriptsAndTags(recordJson.head.id);
         var standards = getRecordStandards(recordJson);
-        var nsfAward = getNsfAwardInfo(recordJson);
+        var contributors = getContributorInfo(recordJson);
+        var dleseId = recId;
+
+        // If we are an nsdl_dc record from UCARConnect:
+        if(recId.startsWith("11510")){
+            dleseId = JSON.search(recordJson, "//metadata/nsdl_dc/identifier[type='nsdl_dc:NSDLPartnerID']/content");
+            dleseId = (dleseId+'').replace('oai:dcs.dlese.org:',''); // Cast to string and replace OAI namespace
+        }
 
         if(!isEmpty(title)) {
             title = title;
@@ -352,23 +710,29 @@ function getRecordDisplayHtml(recordJson,i) {
             if(isEmpty(url))
                 html += '<div class="recordTitle">' + title + '</div>';
             else
-                html += '<div class="recordTitle"><a href="' + url + '">' + title + '</a></div>';
+                html += '<div class="recordTitle"><a href="' + url + '">' + title + '</a> <span class="fa-icon-size"><i class="faOFF fa-external-linkOFF"></i></span></div>';
         }
         if(!isEmpty(url))
             html += '<div class="recordUrl">' + hlKeywords(url) + '</div>';
         if(isEmpty(title) && !isEmpty(url))
-            html += '<div class="recordTitle"><a href="' + url + '">' + hlKeywords(url) + '</a></div>';
+            html += '<div class="recordTitle"><a href="' + url + '">' + hlKeywords(url) + '</a> <span class="fa-icon-size"><i class="fa fa-external-link"></i></span></div>';
         if(!isEmpty(description)) {
             description = description;
-            html += '<div class="recordDesc">' + hlKeywords(description) + '</div>';
+            html += '<div class="recordDesc">' + hlKeywords(description);
+            //html += ' <a href="http://www.dlese.org/library/catalog_' + dleseId + '.htm">Full description</a> <span class="fa-icon-size"><i class="fa fa-external-link"></i></span>.';
+            html += '</div>';
         }
-        if(!isEmpty(nsfAward))
-            html += '<div class="subContent nsfAward">' + nsfAward + '</div>';
+
+        // Render facets vocabs that are configured to view (if tagged in the record):
+        html += mkFacetListHtml(recordJson);
+
+        if(!isEmpty(contributors))
+            html += '<div class="subContent contributors"><i>Supported by:</i> ' + hlKeywords(contributors) + '</div>';
         if(!isEmpty(standards))
             html += '<div class="subContent standards">Aligned to: ' + standards + '</div>';
         if(!isEmpty(html)) {
             if(typeof(displayCollectionName) != 'undefined' && displayCollectionName)
-                html += '<div class="subContent recordSource">From: ' + collectionDesc + '</div>';
+                html += '<div class="subContent recordSource"><i>Included in the following collection:</i> ' + collectionDesc + '</div>';
             if(typeof(displayId) != 'undefined' && displayId)
                 html += '<div class="subContent recordSource">ID: ' + recId + '</div>';
         }
@@ -382,17 +746,83 @@ function getRecordDisplayHtml(recordJson,i) {
     }
     if(typeof(displayFullRecordMetadata) != 'undefined' && displayFullRecordMetadata) {
         html += '<div class="jsonOpener"><span id="jsonOpener'+i+'" onclick="renderJsonTree('+i+')"><a href="javascript:void(0)" id="openerLnk'+i+'" class="openerLnk">+</a> <a href="javascript:void(0)" id="openerTxt'+i+'" class="openerTxt">View full record</a></span></div>';
-        html += '<div class="jsonContainer" id="jsonContainer'+i+'" style="display:none"><pre>' + JSONPrettyPrint(recordJson.metadata) + '</pre></div>';
+        html += '<div class="jsonContainer" id="jsonContainer'+i+'" style="display:none"><p style="padding-left:15px">Use the prototype.js version of this client to see the full JSON view.</p></div>';
     }
     return '<div class="record">' + html + '</div>';
+}
+
+function mkFacetListHtml(recordJson){
+    var s = '';
+
+    // Loop through each configured facet to display, check if the record has them, and generate the display:
+    $.each(JSON.search(facetConfigurationSettings,"//categories/category"), function (ii, categoryJsonObj) {
+        // Categories can be configured with a path, so grab the part before the path:
+        var categoryName = JSON.search(categoryJsonObj,"//head/name").toString().split(":")[0];
+        var categoryLabel = JSON.search(categoryJsonObj,"//head/label");
+        var facetsArray = JSON.search(recordJson, "//storedContent/content[fieldName='facet."+categoryName+"']/content");
+        if(categoryLabel == '')
+            categoryLabel = categoryName;
+        s += mkFacetListHtmlRow(facetsArray, categoryLabel, categoryJsonObj);
+    });
+    return s;
+}
+
+function mkFacetListHtmlRow(facetsArray, categoryLabel, categoryJsonObj) {
+    var html = '';
+
+    var orderByLabels = JSON.search(categoryJsonObj, "//head/orderBy") == "labels";
+
+    if(isArray(facetsArray) && facetsArray.length > 0) {
+        html += '<div class="subContent"><i>'+categoryLabel+': </i> ';
+        var fList = '';
+
+        // Check if already displayed, and only display each facet once:
+        var facetDisplayedMap = new Object();
+
+        $(facetsArray).each(function(i,facet) {
+            var label = null;
+
+            var paths = facet.split(":");
+            var leaf = paths[paths.length-1];
+
+            var facetDisplayed = facetDisplayedMap[leaf] != undefined;
+            facetDisplayedMap[leaf] = "";
+
+            var labelObj = JSON.search(categoryJsonObj, "//labels[facet='"+leaf+"']");
+            var omitFromViews = JSON.search(labelObj, "//omitFromViews") == "true";
+            var altLabel = JSON.search(labelObj, "//label");
+
+            if(altLabel == '')
+                altLabel = JSON.search(labelObj, "//facet");
+
+            if(omitFromViews || facetDisplayed)
+                label = null;
+            else if(altLabel.length > 0)
+                label = altLabel;
+            else if (!orderByLabels)
+                label = facet;
+
+
+            if(label){
+                if(fList.length > 0)
+                    fList += ', ';
+                if(facet == param_filter)
+                    label = '<em>'+label+'</em>';
+                fList += label;
+            }
+        });
+        if(fList.length == 0)
+            return '';
+        else
+            html += hlKeywords(fList) + '</div>';
+    }
+    return html;
 }
 
 function hlKeywords(str) {
     if(!str || (typeof(highlightKeywords) != 'undefined' && !highlightKeywords)) return str;
     var userQuery = getUserQuery();
-    //log("userQuery: " + userQuery);
     $(userQuery.split(/\W+/)).each(function(i,term){
-        //log("term: " +term);
         if(!isStopWord(term) && $.trim(term).length > 0){
             var stem = stemmer(term);
             var pattern = new RegExp('((\\W|^)('+stem+'\\w*)(\\W|$))|((\\W|^)('+term+'\\w*)(\\W|$))','gi');
@@ -400,30 +830,6 @@ function hlKeywords(str) {
         }
     });
     return str;
-}
-
-function JSONPrettyPrint(json){
-    json = JSON.stringify(json, undefined, 2);
-    json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    json = json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
-        var cls = 'json-number';
-        if (/^"/.test(match)) {
-            if (/:$/.test(match)) {
-                cls = 'json-key';
-            } else {
-                cls = 'json-string';
-            }
-        } else if (/true|false/.test(match)) {
-            cls = 'json-boolean';
-        } else if (/null/.test(match)) {
-            cls = 'json-null';
-        }
-        return '<span class="' + cls + '">' + match.replace(/\":/g,' = ').replace(/\"/g,'') + '</span>';
-    });
-    if(typeof(showJsonBrackets) != 'undefined' && !showJsonBrackets)
-        return json.replace(/{/g,'').replace(/\}/g,'').replace(/\[/g,'').replace(/\]/g,'').replace(/\]/g,'').replace(/>,/g,'>').replace(/= <\/span> \n/g,'\n').replace(/\n\s*\n/g,'\n').replace(/\n\s*,\n/g,'\n');
-    else
-        return json;
 }
 
 function isStopWord(term) {
@@ -556,10 +962,23 @@ function getRecordDescription(recordJson){
 }
 
 
-function getNsfAwardInfo(recordJson) {
+function getContributorInfo(recordJson) {
     try {
-        // Check if there is NSF award info:
         var value = null;
+
+        var contributorStr = '';
+
+        // Get contributors including NSF Award numbers, etc:
+        $.each(JSON.search(recordJson, "//metadata/nsdl_dc/contributor"), function (i, elm) {
+            if(i > 0)
+                contributorStr += ', ';
+            //if(elm.startsWith("National Science Foundation"))
+            contributorStr += elm;
+        });
+
+        if(contributorStr != '')
+            return contributorStr;
+
         if(value == null){
             // ADN record:
             if(recordJson.metadata.itemRecord){
@@ -628,10 +1047,13 @@ function getRecordUrl(recordJson){
 }
 
 
-
 function getRelationUrlEntryItem(relation){
     var title = getContent(relation.urlEntry.title);
     var url = getContent(relation.urlEntry.url);
+    var kind = getContent(relation.urlEntry.kind);
+
+    if(kind == undefined || kind != "DC:Conforms to")
+        return '';
 
     if(title == undefined && url == undefined)
         return '';
@@ -663,8 +1085,9 @@ function getRecordStandards(recordJson) {
                     if(isArray(recordJson.metadata.itemRecord.relations.relation)) {
                         var length = recordJson.metadata.itemRecord.relations.relation.length;
                         $.each(recordJson.metadata.itemRecord.relations.relation, function (i, relation) {
-                            value += getRelationUrlEntryItem(relation);
-                            if(!isEmpty(value) && i != length-1)
+                            var relStr = getRelationUrlEntryItem(relation);
+                            value += relStr
+                            if(!isEmpty(relStr) && i != length-1)
                                 value += ", ";
                         });
                     }
@@ -759,8 +1182,11 @@ function renderJsonTree(i) {
                 recordJson = json.DDSWebService.Search.results.record;
             else
                 recordJson = json.DDSWebService.Search.results.record[i];
+
+            // The JsonViewerElement class is implemented in the prototype.js version only
+            //$J(container).render(recordJson.metadata);
         }
-        $(container).toggle( 30, function() {
+        $(container).toggle( "fast", function() {
             if(!$(this).is(":visible")){
                 $('#openerTxt'+i).html('View full record');
                 $('#openerLnk'+i).html('+');
@@ -775,7 +1201,7 @@ function renderJsonTree(i) {
 
 // Perform the service request, fetching data into the given callback function:
 function fetchJson(myUrl) {
-    //log("JSONP request URL: " + myUrl);
+    log("JSONP request URL: " + myUrl);
     $.ajax({
         // myUrl aleady has all the parameters/data applied
         url: myUrl,
@@ -794,6 +1220,7 @@ function fetchJson(myUrl) {
             $('#searchResults').html('<p class="noMatches">The search server is taking longer than expected to respond. ' +
                 'Please check your network connection and/or try again later.</p>');
             $('#loadMsg').hide();
+            $('#footerView').show();
         }
     });
 }
@@ -819,7 +1246,25 @@ function getParameterByName(name, url) {
         results = regex.exec(url);
     if (!results) return null;
     if (!results[2]) return '';
+
     return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+function getParametersByName(name) {
+    qs = window.location.search;
+
+    var params = [];
+    var tokens;
+    var re = /[?&]?([^=]+)=([^&]*)/g;
+
+    while (tokens = re.exec(qs))
+    {
+        if (decodeURIComponent(tokens[1]) == name)
+            params.push(decodeURIComponent(tokens[2]));
+    }
+
+    // Returns an array of matching param values for name:
+    return params;
 }
 
 
