@@ -7,9 +7,7 @@ APIs that may be used for a wide variety of applications.
 For more information see https://uc.dls.ucar.edu/dds_uconnect_search/index.jsp
 
 DDS is developed by Digital Learning Sciences (DLS) at the
-University Corporation for Atmospheric Research (UCAR)
-with support from the National Science Foundation (NSF).
-http://dls.ucar.edu/  http://www.ucar.edu/  http://nsf.gov/
+University Corporation for Atmospheric Research (UCAR) http://www.ucar.edu/
 -----------------------------------------------------------------------------
 
 Changes in 3.7.0-rc2

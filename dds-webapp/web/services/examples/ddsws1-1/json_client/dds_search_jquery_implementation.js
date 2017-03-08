@@ -378,7 +378,10 @@ function mkHistogramLinks(){
         if(i == 0)
             storedContentFacetArgs += '&storedContent.mode=multiRecord';
 
-        storedContentFacetArgs += '&storedContent=facet.' + headerObj.name;
+        var categoryAndPath = headerObj.name.split(':');
+        var theCategory = categoryAndPath[0];
+
+        storedContentFacetArgs += '&storedContent=facet.' + theCategory;
 
         var label = null;
         label = headerObj.label;
