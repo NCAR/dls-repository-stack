@@ -136,7 +136,7 @@
     -->
 
     <property name="app.name" value="dls-libs"/>
-    <property name="app.version" value="1.7.0"/>
+    <property name="app.version" value="1.7.1"/>
     <property name="build.home" value="build"/>
     <property name="build.lib" value="build_lib"/>
     <property name="external.project.build.lib" value="${build.lib}"/>

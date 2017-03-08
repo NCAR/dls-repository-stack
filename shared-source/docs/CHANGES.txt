@@ -14,6 +14,12 @@ with support from the National Science Foundation (NSF).
 http://dls.ucar.edu/  http://www.ucar.edu/  http://nsf.gov/
 -----------------------------------------------------------------------------
 
+Changes in v1.7.1
+
+-Updated license from Education Community License 1.0 to Apache 2
+-Updated copyright statement (placed at the root of the DLS Repository Stack repository)
+
+
 Changes in v1.7.0
 
 This version combined the DDS, DCS, Harvest Manager, dlese-tools-project, and frameworks-project

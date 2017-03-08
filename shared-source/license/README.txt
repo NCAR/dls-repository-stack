@@ -1,4 +1,4 @@
-The license for the DLESE Tools Java libraries
-may be found in the file LICENSE.txt. Third party licenses
-and notices for products included/used by DLESE Tools are found in the folder
+The license for the shared Java libraries
+may be found in the file LICENSE.txt at the root of the code repository. Third party licenses
+and notices for products included/used in the folder
 third_party_licenses_notices.
