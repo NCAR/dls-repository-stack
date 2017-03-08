@@ -12,6 +12,11 @@ with support from the National Science Foundation (NSF).
 http://dls.ucar.edu/  http://www.ucar.edu/  http://nsf.gov/
 -----------------------------------------------------------------------------
 
+Changes in 3.7.0-rc2
+
+-Updated license from Education Community License 1.0 to Apache 2
+-Updated copyright statement
+
 
 Changes in 3.7.0-rc1
 

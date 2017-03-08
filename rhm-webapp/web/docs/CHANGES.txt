@@ -14,6 +14,12 @@ See the UCAR Wiki for more detailed documentation about the Harvest Repository M
 
 This file contains the history of changes and versions for the software
 
+
+v2.7
+
+-Updated license from Education Community License 1.0 to Apache 2
+
+
 v2.6
 
 - The code projects for DDS, DCS, Harvest Manager, Java libraries, and frameworks-project

@@ -7,6 +7,12 @@ with support from the National Science Foundation (NSF).
 http://dls.ucar.edu/  http://www.ucar.edu/  http://nsf.gov/
 
 
+Changes in 2.20.0
+
+-Updated license from Education Community License 1.0 to Apache 2
+-Updated copyright statement
+
+
 Changes in 2.10.0
 
 - The code projects for DDS, DCS, Harvest Manager, Java libraries, and frameworks-project

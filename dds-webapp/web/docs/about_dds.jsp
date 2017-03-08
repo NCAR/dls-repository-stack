@@ -25,7 +25,7 @@
 <div class="bodyContent">
 	<h1>About DDS</h1>
 	
-	<p>The Digital Discovery System (DDS) software is developed by <a href="http://dls.ucar.edu/">Digital Learning Sciences</a> (DLS) at the
+	<p>The Digital Discovery System (DDS) software is developed by Digital Learning Sciences (DLS) at the
 	<a href="http://www.ucar.edu/">University Corporation for Atmospheric Research</a> (UCAR).</p>
 		
 	<p>
@@ -42,8 +42,8 @@
 	
 	<a name="license"></a>
 	<h2>License</h2>
-	<p>DDS is released under the Educational Community License version 1.0.
-	Read the <a href="license/LICENSE.txt">license and copyright notice</a>.</p>
+	<p>DDS is released under the Apache 2 license.
+	Read the <a href="license/LICENSE.txt">license</a> and <a href="license/COPYRIGHT.txt">copyright</a> notices.</p>
 	
 	<p>This product includes software developed by the Apache Software Foundation (http://www.apache.org/). 
 	This product includes software developed by the Alexandria Digital Library, University of California at Santa Barbara, and its contributors.

@@ -100,7 +100,7 @@
 
     <property name="app.name" value="schemedit"/>
     <property name="app.path" value="/${app.name}"/>
-    <property name="app.version" value="2.10.0"/>
+    <property name="app.version" value="2.20.0"/>
     <property name="build.home" value="${basedir}/build"/>
     <property name="catalina.base" value="${catalina.home}"/>
     <property name="dist.home" value="${basedir}/dist"/>

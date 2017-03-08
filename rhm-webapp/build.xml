@@ -92,7 +92,7 @@
 			own development installation of Tomcat --> 
  
   <property name="app.name" 			value="Harvest Repository Manager"/>
-  <property name="app.version" 			value="2.6"/>
+  <property name="app.version" 			value="2.7"/>
   <property name="app.context.name"		value="hm"/>
   <property name="deploy.context.name"	value="${app.context.name}"/>   
   <property name="build.home"    		value="build"/>
