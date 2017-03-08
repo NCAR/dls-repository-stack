@@ -59,7 +59,7 @@
 --> 
  
  
-<project name="RHM Webapp" default="compile" basedir=".">
+<project name="Harvest Manager Webapp" default="compile" basedir=".">
  
 <!-- ===================== Property Definitions ===========================  
  
