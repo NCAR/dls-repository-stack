@@ -152,7 +152,7 @@
     <!-- <property name="catalina.home" value="/export/devel/common/resources/tomcat/jakarta-tomcat-4.1.12"/> -->
 
     <property name="app.name" value="dds"/>
-    <property name="app.version" value="3.7.0-rc2"/>
+    <property name="app.version" value="3.7.1"/>
     <property name="dds.context.name" value="${app.name}"/>
     <property name="deploy.context.name" value="${dds.context.name}"/>
     <property name="dist.context.name" value="${app.name}_${app.version}_dist"/>

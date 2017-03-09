@@ -10,7 +10,7 @@ DDS is developed by Digital Learning Sciences (DLS) at the
 University Corporation for Atmospheric Research (UCAR) http://www.ucar.edu/
 -----------------------------------------------------------------------------
 
-Changes in 3.7.0-rc2
+Changes in 3.7.1
 
 -Updated license from Education Community License 1.0 to Apache 2
 -Updated copyright statement
