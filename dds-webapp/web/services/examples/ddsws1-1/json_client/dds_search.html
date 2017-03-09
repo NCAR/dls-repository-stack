@@ -5,14 +5,14 @@
     Choose either the JQuery or Prototype JS implementation via the script tags below (JQuery is default).
 
     Uses the JSONP output from the DDS Search API (DDSWS). See DDSWS service documentation:
-        http://www.dlese.org/dds/services/ddsws1-1/service_specification.jsp
+        http://uc.dls.ucar.edu/dds_uconnect_search/services/ddsws1-1/service_specification.jsp
 
     All XML formats can be searched and viewed with this client, with some additional
     display features provided for the following formats: oai_dc, nsdl_dc, msp2, ncs_item, adn, dlese_anno,
     dlese_collect, news_opps, concepts.
 
     The page also displays the collections, XML formats, search fields, search terms and service information
-    from the repository.
+    from the repository. The jQuery version can also display facet category histograms for browsing.
 
     Requires:
         dds_search_jquery_implementation.js - The JQuery JavaScript portion of the implementation
@@ -23,14 +23,21 @@
 
 
     To install:
-        - Save this HTML file, dds_search_jquery_implementation.js, jquery-1.12.1.min.js or dds_search_prototypejs_implementation.js
-        and spinner.gif into a single directory.
-            -- To save this HTML file, choose 'Save As' from the 'File' menu in your browser.
-            -- To save the JavaScript files, open a URL to each file in your browser, then choose 'Save'
-            or 'Save As'.
-            -- To save the spinner.gif open the link to ./spinner.gif in your browser, then choose 'Save' or 'Save As'
+        - Save these files to a single directory:
+        -- dds_search.html
+        -- dds_styles.css
+        -- Image files spinner.gif, transparent.gif, asc.gif, desc.gif, bg.gif, hist_ruler.gif
+        -- Plus either the jQuery or Prototype.js implementation files:
+        --- jQuery implementation files:
+        ---- dds_search_jquery_implementation.js
+        ---- facetConfigurationSettings.js
+        ---- jquery-1.12.1.min.js
+        ---- jquery.tablesorter.js
+        ---- defiant.min.js
+        --- Prototype.js implementation file:
+        ---- dds_search_prototypejs_implementation.js
         - Edit the configuration options in the <script> section below to modify certain output and behaviors, as desired.
-        - Edit the CSS styles below to modify the way the page looks (colors, fonts, sizes, etc.), as desired.
+        - Edit the CSS styles to modify the way the page looks (colors, fonts, sizes, etc.), as desired.
 
     Digital Learning Sciences (DLS)
     University Corporation for Atmospheric Research (UCAR)
@@ -69,16 +76,16 @@
         // Set the baseUrl to the desired DDSWS service end point (Some known public DDS repositories listed below):
 
         // UCARConnect DDS end point:
-        var baseUrl = 'http://uc.dls.ucar.edu/search-api';
+        var baseUrl = 'https://uc.dls.ucar.edu/search-api';
 
         // DLESE DDS repository:
-        //var baseUrl = 'http://www.dlese.org/dds/services/ddsws1-1';
+        //var baseUrl = 'https://uc.dls.ucar.edu/dlese-search-api';
 
-        // DLESE Catalog System repository:
-        //var baseUrl = 'http://dcs.dlese.org/schemedit/services/ddsws1-1';
+        // Local DDS installation:
+        //var baseUrl = 'http://localhost:8080/dds/services/ddsws1-1';
 
-        // Localhost for a local DDS installation:
-        //var baseUrl = 'http://localhost/dds/services/ddsws1-1';
+        // Local Digital Collection System (DCS) installation:
+        //var baseUrl = 'http://localhost:8080/schemedit/services/ddsws1-1';
 
 
         // ----- Configuration options for some basic things -----
@@ -139,10 +146,11 @@
     <p style="color:red">JavaScript is required to use this search page. Please enable JavaScript in your browser.</p>
 </noscript>
 
-<h3>Search the repository</h3>
+<h3>Search and Browse</h3>
 
 <form action="" id="searchForm">
     <input size="55" type="text" name="q" id="searchFormQuery"/>
+    <input type="hidden" value="Search" name="action"/>
     <input type="submit" value="Search"/>
 </form>
 
@@ -182,24 +190,9 @@
 
 <!-- Search tips only displayed when a search is not conducted -->
 <div id="searchTips" style="display:none;">
-    <h3>Find a resource</h3>
-
-
     <p>
         Please enter one or more keywords in the text box above or select one of the categories to browse.
     </p>
-
-    <h4>Search Tips</h4>
-    <p>
-        DLESE resources are categorized by <a href="./search.html?action=Search&hv=EducationLevel">Education Level</a>, <a href="./search.html?action=Search&hv=DLESESubject">Subject</a>, and <a href="./search.html?action=Search&hv=Type">Resource Type</a>. To search within one or more
-        of these categories, simply add the category keyword(s) to your search.
-    </p>
-    <p>
-        For example, to search for a resource on <b>climate change</b> for <em>Education Level <b>Middle School</b></em> and
-        <em>Resource Type <b>Activity</b></em>, enter the keywords <a href="./search.html?q=climate+change+middle+school+activity&action=Search">climate change Middle School Activity</a> (not case sensitive).
-    </p>
-
-
 </div>
 
 <!-- ----- Optional: Show useful information for developers (set var showDeveloperInfo=true): ----- -->
@@ -210,14 +203,13 @@
 <div id="showDeveloperInfo" style="display:none;">
     <b>Developer info:</b>
     <div>
-        <a href="" id="devRequestUrl" style="display:none">Web service request and response for this page</a>
+        <a href="" id="devRequestUrl" style="display:none">Search API request and response for this page</a>
     </div>
     <div style="margin-top:2px">
-        <a href="http://www.dlese.org/dds/services/ddsws1-1/service_specification.jsp">Web service documentation
-            reference</a>
+        <a href="http://uc.dls.ucar.edu/dds_uconnect_search/services/ddsws1-1/index.jsp">Search API documentation reference</a>
     </div>
     <div id="quickLinks" style="margin-top:5px;">
-        Web service data:
+        Search API data:
         <div style="padding-left:20px">
             <a href="?action=ListCollections">List collections</a><br/>
             <a href="?action=ListXmlFormats">List XML formats</a><br/>

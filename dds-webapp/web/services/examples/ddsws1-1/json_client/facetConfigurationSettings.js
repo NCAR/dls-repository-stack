@@ -71,18 +71,6 @@ var facetConfigurationSettings = {
                     {
                         omitFromViews: true,
                         facet: "Service"
-                    },
-                    {
-                        omitFromViews: true,
-                        facet: "Tool"
-                    },
-                    {
-                        omitFromViews: true,
-                        facet: "Text"
-                    },
-                    {
-                        omitFromViews: true,
-                        facet: "Instructional Material"
                     }
                 ]
             },
@@ -93,16 +81,15 @@ var facetConfigurationSettings = {
             },
 
             // ------ ASN Standards -------
-            // To DO: Configure additional standards ASN IDs for display. DLESE and other UCARConnect collections have
-            // a number of ASN standards including NGSS, NSES, AAAS, and others. A small portion of the NGSS standards are configured below.
+            // ASN standards facets include NGSS, NSES, AAAS, and others. A small portion of the NGSS standards are configured below.
             // Tip: To view all ASN standards IDs in the records, remove the orderBy:labels in the config
             // Put the leaf ID in this path to view http://asn.jesandco.org/resources/D10001D0
             {
                 head: {
                     // This is a config for a specific category with sub-path (e.g. hv=ASNStandardID:D2454348:S2467517):
                     // Remove the path portion to configure.
-                    name: "ASNStandardID:D2454348:S2467517",
                     label: "Disciplinary Core Idea",
+                    name: "ASNStandardID:D2454348:S2467517",
                     // Use orderBy Labels (optional) to enforce the order that appears in the labels list and to omit facets that are not in the list
                     // orderBy "labels" | "facets" (default)
                     orderBy: "labels"
@@ -251,12 +238,14 @@ var facetConfigurationSettings = {
                         facet: "S2471597"
                     }
                 ]
-            },
+            }
+
+            /*
             {
                 head: {
                     // This is a config for a specific category with sub-path (e.g. hv=ASNStandardID:D2454348:S2467516):
-                    name: "ASNStandardID:D2454348:S2467516",
                     label: "Science and Engineering Practice",
+                    name: "ASNStandardID:D2454348:S2467516",
                     // Use orderBy Labels (optional) to enforce the order that appears in the labels list and to omit facets that are not in the list
                     // orderBy "labels" | "facets" (default)
                     orderBy: "labels"
@@ -317,8 +306,8 @@ var facetConfigurationSettings = {
             {
                 head: {
                     // This is a config for a specific category with sub-path (e.g. hv=ASNStandardID:D2454348:S2467518):
-                    name: "ASNStandardID:D2454348:S2467518",
                     label: "Crosscutting Concept",
+                    name: "ASNStandardID:D2454348:S2467518",
                     // Use orderBy Labels (optional) to enforce the order that appears in the labels list and to omit facets that are not in the list
                     // orderBy "labels" | "facets" (default)
                     orderBy: "labels"
@@ -359,6 +348,10 @@ var facetConfigurationSettings = {
                     }
                 ]
             }
+
+            */
+
+
             /*
 
              // This config does CCCs to the lowest level as an alternative to the above

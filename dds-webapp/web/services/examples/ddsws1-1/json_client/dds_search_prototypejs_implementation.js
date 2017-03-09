@@ -9,9 +9,6 @@
  University Corporation for Atmospheric Research (UCAR)
  P.O. Box 3000
  Boulder, Colorado 80307 USA
- http://dlsciences.org/
-
- e-mail questions to: support@dlese.org
 
  This code may be copied and modified, free and with no warranty.
  */

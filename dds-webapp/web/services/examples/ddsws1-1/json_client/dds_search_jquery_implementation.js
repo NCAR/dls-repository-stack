@@ -114,6 +114,11 @@ function doServiceRequest(action) {
         return;
 
     var request = null;
+    if(typeof(baseUrl) == 'undefined'){
+        log('Error: Search API baseUrl has not been defined');
+        $('#searchResults').html('<p>No matching results (Search API baseUrl has not been defined)</p>');
+        return;
+    }
 
     if(action == 'Search') {
         var userQuery = getUserQuery();
@@ -348,7 +353,7 @@ function renderResponse(json) {
              */
             else if(json.DDSWebService) {
                 // The JsonViewerElement class is implemented in the prototype.js version only...
-                $('#serviceResponse').html('<p style="padding-left:15px">Use the prototype.js version of this client to see the full JSON view.</p>');
+                $('#serviceResponse').html('<pre>' + JSONPrettyPrint(json.DDSWebService) + '</pre>');
                 $('#serviceResponse').show();
                 $('#loadMsg').hide();
                 $('#footerView').show();
@@ -749,7 +754,7 @@ function mkRecordDisplayHtml(recordJson, i) {
     }
     if(typeof(displayFullRecordMetadata) != 'undefined' && displayFullRecordMetadata) {
         html += '<div class="jsonOpener"><span id="jsonOpener'+i+'" onclick="renderJsonTree('+i+')"><a href="javascript:void(0)" id="openerLnk'+i+'" class="openerLnk">+</a> <a href="javascript:void(0)" id="openerTxt'+i+'" class="openerTxt">View full record</a></span></div>';
-        html += '<div class="jsonContainer" id="jsonContainer'+i+'" style="display:none"><p style="padding-left:15px">Use the prototype.js version of this client to see the full JSON view.</p></div>';
+        html += '<div class="jsonContainer" id="jsonContainer'+i+'" style="display:none"><pre>' + JSONPrettyPrint(recordJson.metadata) + '</pre></div>';
     }
     return '<div class="record">' + html + '</div>';
 }
@@ -834,6 +839,32 @@ function hlKeywords(str) {
     });
     return str;
 }
+
+
+function JSONPrettyPrint(json){
+    json = JSON.stringify(json, undefined, 2);
+    json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    json = json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+        var cls = 'json-number';
+        if (/^"/.test(match)) {
+            if (/:$/.test(match)) {
+                cls = 'json-key';
+            } else {
+                cls = 'json-string';
+            }
+        } else if (/true|false/.test(match)) {
+            cls = 'json-boolean';
+        } else if (/null/.test(match)) {
+            cls = 'json-null';
+        }
+        return '<span class="' + cls + '">' + match.replace(/\":/g,' = ').replace(/\"/g,'') + '</span>';
+    });
+    if(typeof(showJsonBrackets) != 'undefined' && !showJsonBrackets)
+        return json.replace(/{/g,'').replace(/\}/g,'').replace(/\[/g,'').replace(/\]/g,'').replace(/\]/g,'').replace(/>,/g,'>').replace(/= <\/span> \n/g,'\n').replace(/\n\s*\n/g,'\n').replace(/\n\s*,\n/g,'\n');
+    else
+        return json;
+}
+
 
 function isStopWord(term) {
     var isStopWord = false;

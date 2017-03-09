@@ -191,6 +191,10 @@ EM {
     font-weight: bold;
 }
 
+#searchTips  {
+    margin-top: 25px;
+}
+
 #serviceResponse {
     margin-top: 15px;
 }

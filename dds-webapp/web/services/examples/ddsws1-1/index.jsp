@@ -40,21 +40,42 @@ link="#220066" vlink="#006600" alink="#220066">
         provides the essential search functionality implemented with HTML, JavaScript, and
         <a href="https://en.wikipedia.org/wiki/JSONP">JSONP</a> and is free to copy and
         modify to support a wide range of search applications. The client can be configured to search an entire DDS repository or just one or more collections,
+        display histograms for browsing the facet categories,
         implement smart links that map search queries to bookmarkable links in the page, provide keyword highlighting,
         word stemming, result boosting, and more.
     </p>
 
     <p style="margin-top: 8px">
-        <b>To install</b>: Save the <a href="json_client/dds_search.html">HTML file</a>, the <a href="json_client/spinner.gif">spinner.gif file</a>, and either the jQuery implementation files
-        <a href="json_client/dds_search_jquery_implementation.js">dds_search_jquery_implementation.js</a>
-        and <a href="json_client/jquery-1.12.1.min.js">jquery-1.12.1.min.js</a>
-        <i>or</i> the Prototype.js implentation file <a href="json_client/dds_search_prototypejs_implementation.js">dds_search_prototypejs_implementation.js</a>
-        into a single directory. Then simply edit the code to customize as desired and deploy to any Web server.
-        See the comments in the files for configuration options and details.<p>
+        <b>To install</b>, save these files into a single directory:
         <ul>
-            <li>To save the HTML file, open the page and choose 'Save As' from the 'File' menu in your browser.</li>
-            <li>To save the spinner.gif file, open the URL to the gif in your browser, then choose 'Save' or 'Save As'.</li>
-            <li>To save the JavaScript files, open the URL to the .js file in your browser, then choose 'Save' or 'Save As'.</li>
+            <li><a href="json_client/dds_search.html">dds_search.html</a></li>
+            <li><a href="json_client/dds_styles.css">dds_styles.css</a></li>
+            <li>Image files <a href="json_client/spinner.gif">spinner.gif</a>,
+                <a href="json_client/transparent.gif">transparent.gif</a>,
+                <a href="json_client/asc.gif">asc.gif</a>,
+                <a href="json_client/desc.gif">desc.gif</a>,
+                <a href="json_client/bg.gif">bg.gif</a>,
+                <a href="json_client/hist_ruler.gif">hist_ruler.gif</a>
+            </li>
+
+            <li>Plus either the jQuery <i>or</i> Prototype.js implementation files:
+                <ul>
+                    <li>jQuery implementation files:
+                        <ul>
+                            <li><a href="json_client/dds_search_jquery_implementation.js">dds_search_jquery_implementation.js</a></li>
+                            <li><a href="json_client/facetConfigurationSettings.js">facetConfigurationSettings.js</a></li>
+                            <li><a href="json_client/jquery-1.12.1.min.js">jquery-1.12.1.min.js</a></li>
+                            <li><a href="json_client/jquery.tablesorter.js">jquery.tablesorter.js</a></li>
+                            <li><a href="json_client/defiant.min.js">defiant.min.js</a></li>
+                        </ul>
+                    </li>
+                    <li>Prototype.js implementation file:
+                        <ul>
+                            <li><a href="json_client/dds_search_prototypejs_implementation.js">dds_search_prototypejs_implementation.js</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </p>
 
