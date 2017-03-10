@@ -1,14 +1,15 @@
 # DLS Repository Stack
 
 The Digital Learning Sciences (DLS) Repository Stack includes three web applications that make up 
-an XML repository services stack.
+an XML repository services stack, and XML frameworks.
 
-- Digital Collection System (DCS) web application - An XML collections management system 
+- [Digital Collection System (DCS) web application](dcs-webapp/README.md) - An XML collections management system 
 
-- Digital Digital System (DDS) web application - A Search API server for XML content built on Lucene
+- [Digital Digital System (DDS) web application](dds-webapp/README.md) - A Search API server for XML content built on Lucene
 
-- Repository Harvest Manager - An XML repository manager and harvester that fetches XML collections from OAI and other 
-repositories and maintains normalized XML in a MySQL database. 
+- [Repository Harvest Manager](rhm-webapp/README.md) - An XML repository manager and harvester that fetches XML collections from OAI and other repositories and maintains normalized XML in a MySQL database.
+
+- [Frameworks Project](frameworks-projects/README.md) - Contains XML frameworks that are used for describing educational resources, annotations, use data (paradata), and other data and objects.
 
 
 ## Getting Started
