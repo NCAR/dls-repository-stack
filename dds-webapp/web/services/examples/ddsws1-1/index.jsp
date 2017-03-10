@@ -45,39 +45,41 @@ link="#220066" vlink="#006600" alink="#220066">
         word stemming, result boosting, and more.
     </p>
 
-    <p style="margin-top: 8px">
-        <b>To install</b>, save these files into a single directory:
-        <ul>
-            <li><a href="json_client/dds_search.html">dds_search.html</a></li>
-            <li><a href="json_client/dds_styles.css">dds_styles.css</a></li>
-            <li>Image files <a href="json_client/spinner.gif">spinner.gif</a>,
-                <a href="json_client/transparent.gif">transparent.gif</a>,
-                <a href="json_client/asc.gif">asc.gif</a>,
-                <a href="json_client/desc.gif">desc.gif</a>,
-                <a href="json_client/bg.gif">bg.gif</a>,
-                <a href="json_client/hist_ruler.gif">hist_ruler.gif</a>
-            </li>
+    <div style="margin-top: 8px; padding: 4px; background-color: rgba(204, 206, 230, 0.42)">
+        <p>
+            <b>To install</b>, save these files into a single directory:
+            <ul>
+                <li><a href="json_client/dds_search.html">dds_search.html</a></li>
+                <li><a href="json_client/dds_styles.css">dds_styles.css</a></li>
+                <li>Image files <a href="json_client/spinner.gif">spinner.gif</a>,
+                    <a href="json_client/transparent.gif">transparent.gif</a>,
+                    <a href="json_client/asc.gif">asc.gif</a>,
+                    <a href="json_client/desc.gif">desc.gif</a>,
+                    <a href="json_client/bg.gif">bg.gif</a>,
+                    <a href="json_client/hist_ruler.gif">hist_ruler.gif</a>
+                </li>
 
-            <li>Plus either the jQuery <i>or</i> Prototype.js implementation files:
-                <ul>
-                    <li>jQuery implementation files:
-                        <ul>
-                            <li><a href="json_client/dds_search_jquery_implementation.js">dds_search_jquery_implementation.js</a></li>
-                            <li><a href="json_client/facetConfigurationSettings.js">facetConfigurationSettings.js</a></li>
-                            <li><a href="json_client/jquery-1.12.1.min.js">jquery-1.12.1.min.js</a></li>
-                            <li><a href="json_client/jquery.tablesorter.js">jquery.tablesorter.js</a></li>
-                            <li><a href="json_client/defiant.min.js">defiant.min.js</a></li>
-                        </ul>
-                    </li>
-                    <li>Prototype.js implementation file:
-                        <ul>
-                            <li><a href="json_client/dds_search_prototypejs_implementation.js">dds_search_prototypejs_implementation.js</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </p>
+                <li>Plus either the jQuery <i>or</i> Prototype.js implementation files:
+                    <ul>
+                        <li>jQuery implementation files:
+                            <ul>
+                                <li><a href="json_client/dds_search_jquery_implementation.js">dds_search_jquery_implementation.js</a>,
+                                    <a href="json_client/facetConfigurationSettings.js">facetConfigurationSettings.js</a>,
+                                    <a href="json_client/jquery-1.12.1.min.js">jquery-1.12.1.min.js</a>,
+                                    <a href="json_client/jquery.tablesorter.js">jquery.tablesorter.js</a>,
+                                    <a href="json_client/defiant.min.js">defiant.min.js</a></li>
+                            </ul>
+                        </li>
+                        <li>Prototype.js implementation file:
+                            <ul>
+                                <li><a href="json_client/dds_search_prototypejs_implementation.js">dds_search_prototypejs_implementation.js</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+    </div>
 
 
    

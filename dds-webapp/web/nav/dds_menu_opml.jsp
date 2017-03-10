@@ -67,8 +67,7 @@
 		<outline text="OAI Data Provider" description="Explore the OAI Data Provider" url="services/oaiDataProvider/oai_explorer.jsp" type="link"/>
 		<outline text="&lt;hr&gt;" type="separator"/>
 		<outline text="Download and Configure" type="link" description="Information about installing and configuring DDS" url="docs/index.jsp">
-			<outline text="Download DDS" url="services/dds_software.jsp" type="link"/>
-			<outline text="Install DDS" description="Installation Instructions for DDS" url="docs/dds_installation_instructions.jsp" type="link" />
+			<outline text="Install or Build" description="Installation Instructions for DDS" url="docs/dds_installation_instructions.jsp" type="link" />
 			<outline text="Configure Data Sources" description="Configure data sources for DDS" url="docs/configure_dds_data_sources.jsp" type="link" />
 			<outline text="Configure Search" description="Configure the fields, facets, and relationships that are used for search" url="docs/configure_dds_search_fields.jsp" type="link" />
 		</outline>

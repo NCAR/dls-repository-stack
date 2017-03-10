@@ -2,7 +2,10 @@
 === Installation instructions for the Digital Discovery System (DDS) ===
 
 DDS runs in a Tomcat servlet container and can be installed on 
-Windows, Linux, Mac OS or UNIX systems. 
+Windows, Linux, Mac OS or UNIX systems.
+
+Access the DDS software code repository on GitHub:
+https://github.com/NCAR/dls-repository-stack/
 
 These instructions assume familiarity with Java Servlets, Java Server Pages (JSP), 
 the Tomcat servlet container and related technologies.
@@ -10,7 +13,7 @@ the Tomcat servlet container and related technologies.
 
 To install DDS from a WAR file, do the following:
   
-1. Obtain the dds.war file from the distribution.
+1. Obtain or build the dds.war file (from the code repository/distribution).
 
 2. Install Java 6 or above and Tomcat 6.x or 7.x
 

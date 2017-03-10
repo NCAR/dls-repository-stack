@@ -1,17 +1,20 @@
   
 === Build instructions for the Digital Discovery System (DDS) ===
 
-To install a pre-built version of DDS from a WAR file, see INSTALL_INSTRUCTIONS.txt.
-If you wish to build the software from source, please follow the instructions
-here.
+These instructions describe how to generate a WAR file for the
+software or deploy directly to Tomcat from source.
+See INSTALL_INSTRUCTIONS.txt for information about installing a pre-built WAR file.
+
+Access the DDS software code repository on GitHub:
+https://github.com/NCAR/dls-repository-stack/
 
 These instructions assume familiarity with the Apache Ant build tool,
 Java, CVS, and Tomcat.
 
 The following are required to build and run the software from source:
--Java 6 or above
+-Java 8 or above
 -Ant build tool (http://ant.apache.org/)
--A CVS client of your choice
+-A Git client of your choice
 
 Optional:
 -Tomcat version 6.x or 7.x (http://tomcat.apache.org/) (needed to deploy directly to Tomcat)
@@ -19,30 +22,20 @@ Optional:
 
 Build instructions:
 
-1. Obtain the required source code modules from CVS:
+1. Obtain the required source code modules from GitHub:
 
 	* dds-webapp - The DDS webapp context files, libraries and JSPs
-	* dlese-tools-project - The Java source code
-	* joai-project - Dependent code used to pull in OAI functionality	
-	* frameworks-project - Dependent metadata vocabulary configuration files
-	
-	Each of the modules may be obtained from the DLS anonymous 
-	CVS repository (sourceforge project dlsciences) here: 
-	http://sourceforge.net/scm/?type=cvs&group_id=198325
-	
-	The modules are tagged with DDS release versions,
-	for example 'dds_v3_3_14'. To obtain a specific version, 
-	checkout all modules using the desired version tag.
-	Supply no tag to obtain the latest development (HEAD) version.
+
 
 2. Obtain and install Ant, Java, and optionally Tomcat (see above).
 
-3. Place the required source code module directories into 
+3. Place the required source code directories into
 a single directory where you will be building the software.
 
 4. Build or deploy the software
 
   --- Option 1: Generate a WAR file ---
+* Change directory into dls-repository-stack/dds-webapp/
 
 * Execute the Ant 'war' target. You should see a number of messages 
 in your terminal. Once complete you should see a message like:
