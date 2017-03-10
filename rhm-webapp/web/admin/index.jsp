@@ -41,6 +41,11 @@
      Run a script using the current server configuration. This is for developers only.
 </p>
 
+<p>
+	<a href='<c:url value="/docs/CHANGES.txt"/>'>CHANGES</a>.
+	This is software version @VERSION@. Application was started on ${startUpDate}.
+</p>
+
 
 
 <%-- Include style/menu templates --%>

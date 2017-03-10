@@ -26,10 +26,6 @@
 	  Tomcat server.xml file, which overrides the default values in the
 	  context's WEB-INF/web.xml file. Restart Tomcat to apply new settings.
 </p>
-<p>
-	This is software version @VERSION@. Application was started on ${startUpDate}.
-	See <a href='<c:url value="/docs/CHANGES.txt"/>'>version change history</a>.
-</p>
 
 <h3>E-mail Notifier Settings</h3>
 <p>
