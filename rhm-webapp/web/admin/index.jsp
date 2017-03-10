@@ -43,7 +43,8 @@
 
 <p>
 	<a href='<c:url value="/docs/CHANGES.txt"/>'>See Changes.txt</a> <br/>
-	This is software version @VERSION@. Application was started on ${startUpDate}.
+	View changes made in the software for each version.
+    This is software version @VERSION@. Application was started on ${startUpDate}.
 </p>
 
 
